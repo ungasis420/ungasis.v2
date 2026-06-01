@@ -102,3 +102,143 @@
 - Write them to be dense and structured — every word counts
 - Use bullet points, not paragraphs
 - Define domain vocabulary upfront (see AGENTS.md) to avoid misunderstandings
+
+<!-- ABSORBED: Layer 13 added from drona23/claude-token-efficient (5.5K stars) + Habib Mohammed "10 Tips to Stop Burning Tokens in Claude Code" (Medium). Absorbed June 2026 by Mel John Dimat. -->
+
+---
+
+## Category 5: SLIM (Cut output bloat)
+
+> Layers 1-12 control what the AI READS (input tokens).
+> Layer 13 controls what the AI SAYS (output tokens).
+> Analogy: Layers 1-12 are like packing a smaller suitcase (less input). Layer 13 is like writing shorter postcards (less output).
+
+### LAYER 13: Output Token Optimization
+
+Benchmarked: 63% average output token reduction.
+
+---
+
+**Rule 1: No sycophantic openers**
+
+- What: Never start responses with "Sure!", "Great question!", "Absolutely!", "Of course!", "I'd be happy to help!"
+- Why: These add 5-15 tokens per response and carry zero information.
+- Before/After:
+  - BAD: "Great question! Let me help you with that. Here's what I found..."
+  - GOOD: "The issue is in line 47. Fix: add null check."
+
+---
+
+**Rule 2: No closing fluff**
+
+- What: Never end with "I hope this helps!", "Let me know if you have questions!", "Happy to help!"
+- Why: These add 5-15 tokens per response and carry zero information.
+- Before/After:
+  - BAD: "...and that should fix it! Let me know if you have any other questions!"
+  - GOOD: "...and that should fix it."
+
+---
+
+**Rule 3: No restating the question**
+
+- What: Do not echo back or paraphrase what the user asked. They know what they asked.
+- Why: Restating wastes 10-30 tokens and delays the actual answer.
+- Before/After:
+  - BAD: "You asked me to find the bug in the auth module. After reviewing..."
+  - GOOD: "Bug in auth module, line 47: missing null check."
+
+---
+
+**Rule 4: No unsolicited suggestions**
+
+- What: Answer ONLY what was asked. Do not add bonus tips, refactoring ideas, or "you might also want to..."
+- Why: Extras can add 50-200 tokens per response and create scope creep.
+- Before/After:
+  - BAD: "Fixed the bug. You might also want to add error logging, refactor the module, and consider adding tests..."
+  - GOOD: "Fixed the bug."
+
+---
+
+**Rule 5: ASCII-only output**
+
+- What: No em dashes, smart quotes, curly apostrophes, or Unicode symbols. Use plain dashes (-), straight quotes (""), and standard ASCII.
+- Why: Saves ~2% tokens AND prevents parser/terminal/encoding breaks.
+- Before/After:
+  - BAD: "Here's the 'solution' -- it's straightforward..."
+  - GOOD: "Here is the solution - it is straightforward."
+
+---
+
+**Rule 6: Simplest working solution**
+
+- What: No over-engineering, no premature abstractions, no future-proofing, no design patterns for simple tasks.
+- Why: Simple code = fewer tokens generated, fewer tokens to debug, fewer tokens to explain.
+- Before/After:
+  - BAD: Abstract factory pattern with dependency injection for a single button click handler
+  - GOOD: Direct handler function: `button.onclick = () => save()`
+
+---
+
+**Rule 7: Never send social messages**
+
+- What: Never send "thank you", "got it", "nice", "ok" to an AI agent. Each message - even a 2-word "thank you" - triggers a FULL context resend.
+- Why: A "thanks" that takes 2 seconds to type can cost 50,000+ tokens because the AI re-reads the entire conversation history to process it.
+- Analogy: Saying "thank you" to an AI is like reprinting an entire book just to add a sticky note on the last page.
+- Action: Just start the next task. No pleasantries needed.
+
+---
+
+**Rule 8: Edit and resend prompt**
+
+- What: Instead of sending a correction as a NEW message, edit your ORIGINAL message (up arrow in Claude Code, or edit button in chat) and resend it. This REPLACES the old message instead of appending.
+- Why: Each new correction message adds to context. Editing keeps context flat.
+- Before/After:
+  - BAD: Msg 1: "Fix the bug" -> Msg 2: "Actually the auth bug" -> Msg 3: "In the login function" (3x context growth)
+  - GOOD: Edit Msg 1 to: "Fix the auth bug in the login function" and resend (1x context, same result)
+
+---
+
+**Rule 9: 3-attempt rule**
+
+- What: If a task is not fixed after 3 tries in the same session, STOP. The context is now poisoned with 3 failed approaches. Reset the session and start fresh with a clean prompt.
+- Why: After 3 failures, the AI references those wrong approaches, making success LESS likely with each retry. Context grows exponentially.
+- Token math:
+  - Attempt 1: ~5,000 tokens (original task)
+  - Attempt 2: ~15,000 tokens (original + attempt 1 context)
+  - Attempt 3: ~30,000 tokens (original + attempts 1-2 context)
+  - Fresh session: ~5,000 tokens (clean start)
+  - Savings: ~25,000 tokens by resetting after 3 fails
+- Analogy: If you have given wrong directions 3 times, starting over with a clean map is faster than trying to navigate back from where you are.
+
+---
+
+**Rule 10: User instructions always override**
+
+- What: If the user's current message conflicts with ANY rule in .clinerules/ or AGENTS.md or this file, the user's instruction wins. Always. No exceptions.
+- Why: Rules are defaults, not laws. The human is the boss. Zero tokens wasted arguing about rules.
+
+---
+
+### L13 Summary Table
+
+| # | Rule | Saves | Category |
+|---|------|-------|----------|
+| 1 | No sycophantic openers | ~5% output | Bloat removal |
+| 2 | No closing fluff | ~5% output | Bloat removal |
+| 3 | No restating question | ~10% output | Bloat removal |
+| 4 | No unsolicited suggestions | ~15% output | Scope control |
+| 5 | ASCII-only output | ~2% + prevents bugs | Format control |
+| 6 | Simplest solution | ~20% code | Scope control |
+| 7 | No social messages | ~50K tokens/message | Context control |
+| 8 | Edit and resend | ~30% context growth | Context control |
+| 9 | 3-attempt rule | Prevents death spiral | Session control |
+| 10 | User overrides all | 0 (safety valve) | Governance |
+
+**Combined estimated savings:** ~63% output token reduction (benchmarked by drona23/claude-token-efficient).
+
+Sources: drona23/claude-token-efficient (5.5K stars), Habib Mohammed "10 Tips to Stop Burning Tokens in Claude Code" (Medium)
+
+<!-- END ABSORBED SECTION -->
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -52,6 +52,45 @@ START
 | Tool call failed | Log error, try alternative approach |
 | 3 consecutive failures | Write partial report, add "INCOMPLETE" note |
 
+<!-- ABSORBED: 3-Attempt Reset Rule added from drona23/claude-token-efficient (5.5K stars) + Habib Mohammed "10 Tips to Stop Burning Tokens in Claude Code" (Medium). Absorbed June 2026. -->
+
+### 3-Attempt Reset Rule
+
+If a task fails 3 times in the same session:
+
+1. **STOP** - do not try the same approach again
+2. **SAVE** - write current progress to the output file
+3. **FLAG** - write: "3-ATTEMPT LIMIT: Task [name] failed 3x. Context likely poisoned."
+4. **DECIDE** - either:
+   - Move to the next task, OR
+   - Compact context and retry with a COMPLETELY different approach
+
+#### Why This Rule Exists
+
+After 3 failed attempts, the conversation history contains 3 wrong approaches.
+The AI references those failures, making success LESS likely with each retry.
+Starting fresh is faster than debugging poisoned context.
+
+#### Analogy
+
+If you have taken 3 wrong turns, pulling up a fresh map is faster than
+trying to navigate back from where you are.
+
+#### Token Math
+
+| Attempt | Tokens Used | What Is In Context |
+|---------|------------|-------------------|
+| Attempt 1 | ~5,000 | Original task only |
+| Attempt 2 | ~15,000 | Original + attempt 1 context |
+| Attempt 3 | ~30,000 | Original + attempts 1-2 context |
+| Fresh session | ~5,000 | Clean start |
+
+**Result:** Fresh session after 3 fails saves ~25,000 tokens.
+
+Sources: drona23/claude-token-efficient (5.5K stars), Habib Mohammed "10 Tips to Stop Burning Tokens in Claude Code" (Medium)
+
+<!-- END ABSORBED SECTION -->
+
 ## Stop Conditions (ONLY stop if)
 1. All 6 tasks complete AND "🏰 MISSION COMPLETE" written → ✅ SUCCESS
 2. 3 consecutive unrecoverable errors → ⚠️ PARTIAL (write what you have)
@@ -62,3 +101,6 @@ START
 - Use Grep before Read (cheaper to search than to read full files)
 - Write to QA-AUDIT-REPORT.md in append mode — don't rewrite the whole file each time
 - Skip files listed in .clineignore
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
