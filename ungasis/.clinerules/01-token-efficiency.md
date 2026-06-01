@@ -1,0 +1,104 @@
+# Token Efficiency Protocol (UNGASIS 12-Layer + Industry Best Practices)
+
+> Saves ~350,000 tokens/month. Every layer compounds.
+
+## LAYER 1-3: PREVENT (Stop waste before it happens)
+
+### L1: Pre-fill templates
+- Use pre-written table structures — don't generate structure from scratch
+- The mission file (QA-MISSION.md) already contains table templates — fill them in
+
+### L2: Knowledge file offloading
+- All 30+ files are ON DISK — read them directly via tool calls
+- Never request the user to paste content
+- Use @-mentions to reference specific files when possible
+- Static info (glossary, tool list, conventions) lives in files, not in chat context
+
+### L3: Example-driven (show, don't describe)
+- Output format is defined (tables with ✅/🟡/🔴) — follow exactly
+- When in doubt, look at the table template in QA-MISSION.md
+- 1 example > 3 paragraphs of description
+
+## LAYER 4-6: OPTIMIZE (Use tokens more efficiently)
+
+### L4: Route by complexity
+- This is an audit task (read + compare) — use the current model
+- Don't request model upgrades or reasoning mode for simple tasks
+- Simple checks (file exists?) → Glob tool
+- Content checks (does file cover §13?) → Grep first, then Read only if needed
+
+### L5: Batch operations
+- Read multiple files in one plan when checking the same pattern
+- Combine related checks: if reading ungasis-prompt-library.md, count templates AND check coverage in one read
+- Don't re-read a file you've already read in this session
+
+### L6: Context pruning
+- Read ONLY headings + first paragraph for inventory (T1)
+- Read FULL content only when verifying specific coverage (T2)
+- Use grep/search for keyword matching instead of full reads
+- Skip node_modules, .git, dist, build, *.lock files
+
+## LAYER 7-9: CONTROL (Limit what AI generates)
+
+### L7: Structured output enforcement
+- ONLY markdown tables — no explanatory prose
+- Prevents AI rambling — saves ~20% response tokens
+- Exception: Final Scorecard may have 2-3 summary sentences
+
+### L8: Response length caps
+- Max 1 line per file in inventory tables
+- Max 1 line per section in coverage tables
+- Keep each response under 2000 tokens
+- If more space needed, write to QA-AUDIT-REPORT.md instead of chat
+
+### L9: Incremental disclosure
+- Don't load all 30 files at once — process in batches of 5-8
+- Load source files first, then check modules against them
+- Reveal file content only when the AI needs it for the current task
+
+## LAYER 10-12: MAINTAIN (Keep sessions efficient over time)
+
+### L10: Cache awareness
+- DeepSeek V4 Flash has 90% cache discount on repeated prefixes
+- Keep .clinerules stable (they cache across turns) — don't edit mid-session
+- The system prompt (these files) gets cached — free repeated reads
+
+### L11: Session checkpointing
+- Write progress to QA-AUDIT-REPORT.md after EACH task (T1-T6) completes
+- If interrupted, the report file has partial results to resume from
+- Never lose work — files persist, chat doesn't
+
+### L12: Compact at 70%
+- If context feels heavy or you've done 15+ tool calls, checkpoint and compact
+- Write "CHECKPOINT: T[N] complete, continuing to T[N+1]" in the report
+- Then use /compact or start a fresh reasoning chain
+
+## Claude Code / GitHub Engineer Best Practices (2026)
+
+### Tool Selection Hierarchy (cheapest → most expensive)
+1. **Glob** — find files by pattern (costs: ~50 tokens)
+2. **Grep** — search content by regex (costs: ~100 tokens)
+3. **Read (partial)** — read specific line ranges (costs: ~200-500 tokens)
+4. **Read (full)** — read entire file (costs: ~500-5000 tokens)
+5. **Web search** — external lookup (costs: ~1000+ tokens)
+→ Always start at level 1 and escalate only if needed
+
+### File Reading Strategy
+- Use `Glob("**/*.md")` to discover all markdown files
+- Use `Grep("67 tools", "**/*.md")` to find the known bug
+- Use `Grep("caveman", "ungasis-prompt-engineering.md")` for keyword checks
+- Only `Read()` full files when you need to verify coverage depth
+
+### Avoid These Token Wastes
+- ❌ Reading the same file twice in one session
+- ❌ Reading .git/, node_modules/, or binary files
+- ❌ Generating long explanations when a table row suffices
+- ❌ Re-describing the task between each step
+- ❌ Asking "shall I continue?" (just continue)
+- ❌ Outputting the full content of files you've read (summarize instead)
+
+### CLAUDE.md / AGENTS.md Approach
+- These instruction files are loaded ONCE and cached for the whole session
+- Write them to be dense and structured — every word counts
+- Use bullet points, not paragraphs
+- Define domain vocabulary upfront (see AGENTS.md) to avoid misunderstandings

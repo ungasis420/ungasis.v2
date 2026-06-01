@@ -1,0 +1,6 @@
+defaults:
+  max_debug: 3
+  max_review_fix: 2
+  auto_merge: false
+  human: true
+  chain: [planner, builder, tester, debugger, reviewer, docs, human]
