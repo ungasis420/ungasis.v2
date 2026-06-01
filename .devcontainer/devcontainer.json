@@ -1,0 +1,43 @@
+{
+  "name": "UNGASIS OS v3.0",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.12"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "saoudrizwan.claude-dev",
+        "github.copilot",
+        "github.copilot-chat",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid"
+      ],
+      "settings": {
+        "editor.wordWrap": "on",
+        "editor.minimap.enabled": false,
+        "editor.fontSize": 14,
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "files.exclude": {
+          "**/archive/**": true,
+          "**/.git": true,
+          "**/node_modules": true
+        },
+        "search.exclude": {
+          "**/archive/**": true
+        },
+        "markdown.preview.fontSize": 14
+      }
+    }
+  },
+
+  "postCreateCommand": "echo '🏰 UNGASIS Codespace ready. Open Cline → configure OpenRouter → paste launch command.' && python --version && node --version"
+}
