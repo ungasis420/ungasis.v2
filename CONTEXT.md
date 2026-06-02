@@ -316,11 +316,40 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - `8e6b918` — feat: Blueprint Architect subagent — auto-generate specs before building
 
 **What's next:**
-1. JARVIS Batch 1 (F11a-d + F14b + F14e + F16a-b) — 35→68% — ~2.5 hrs
-2. JARVIS Batch 2 (F12a-b + F14a + F14d + F14f + F17a-b + F17d) — 68→85%
-3. JARVIS Batch 3 (F13a-b + F14c + F15a + F17c-e + F18a-d) — 85→95%
-4. JARVIS Batch 4 (F12c-d + F13c + F14g + F15b-c + F16c-e) — 95→98%
-5. OR: Start RiftCoach development (Phase 5.7)
+1. JARVIS Batch 1 (F11a-d + F14b + F14e + F16a-b) — 35→68% — ~2.5 hrs (Completed in next session)
+
+**Known issues:** None encountered.
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+
+## Session Handoff — June 3, 2026 🖥️ PC (Sprint Batch 1 Complete)
+
+**Sprint:** Batch 1 (F11a, F11b, F11c, F11d, F14b, F14e, F16a, F16b) — Upgrading JARVIS from 35% to 68%
+**Model:** Gemini 3.5 Flash (Medium)
+
+**What was accomplished:**
+- **F11a (Semantic Memory Engine):** Created `memory-rules.md`, `memory-index.md`, and `memory-queries.md`.
+- **F11b (Engine Interconnect Bus):** Created `bus-manifest.md`, `event-types.md`, and `bus-rules.md`.
+- **F11c (Closed-Loop Evolution):** Created `task-metrics-template.md` and `metrics-pipeline.md`.
+- **F11d (Knowledge Auto-Injection):** Created `auto-inject-rules.md` and `inject-cache.md`.
+- **F14b (Resource Manager):** Created `api-inventory.md`, `budget-tracker.md`, and `resource-rules.md`.
+- **F14e (Communication Layer):** Created `notification-rules.md`, `escalation-matrix.md`, and `comms-templates.md`.
+- **F16a (Cortex Core):** Created `inbox.md`, `processing-rules.md`, and `cortex-index.md`.
+- **F16b (Ideas Garden):** Created `idea-template.md`, `idea-lifecycle.md`, and `idea-connections.md`.
+- **Total:** 22 new files created, all audited and passed by the Quality Auditor.
+
+**Key Metrics:**
+- **Total files:** ~1,122+ files across 209+ folders.
+- **Graphify status:** 20,210 nodes, 23,592 edges, 2,636 communities.
+- **JARVIS score:** 68% complete.
+
+**What's next:**
+1. **JARVIS Batch 2** (F12a-b + F14a + F14d + F14f + F17a-b + F17d) — 68→85%
+2. **JARVIS Batch 3** (F13a-b + F14c + F15a + F17c-e + F18a-d) — 85→95%
+3. **JARVIS Batch 4** (F12c-d + F13c + F14g + F15b-c + F16c-e) — 95→98%
+4. **RiftCoach** — Copy UNGASIS foundation, continue from Phase 5.7
 
 **Known issues:** None encountered.
 
