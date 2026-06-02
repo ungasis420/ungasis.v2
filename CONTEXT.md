@@ -67,4 +67,27 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
+## Session Handoff — June 2, 2026 🖥️ PC (Sprint F7)
+
+**Sprint:** F7 — Token Efficiency Upgrade (12 → 20 Layers)
+**Model:** Gemini 3.5 Flash (Medium)
+
+**What was accomplished:**
+- Updated `CLAUDE.md` to append the Context Decay Protocol (Layer 16) rules.
+- Updated `AGENTS.md` to append the new section for Token Efficiency Layers 13-17.
+- Created `MODEL_ROUTING.md` in root with recommended routing table and reasoning budget controls.
+- Created `.agents/rules/07-graphify-query.md` and `.clinerules/07-graphify-query.md` rules.
+- Created `docs/semantic-cache-plan.md` plan document.
+- Created `.mcp/profiles/` containing task-specific configs: `build.json`, `research.json`, and `full.json`.
+- Updated `modules/ungasis-token-policy.md` to include upgraded 20-Layer Token System (v2.0) details.
+
+**Files created/modified:**
+- Modified: `CLAUDE.md`, `AGENTS.md`, `modules/ungasis-token-policy.md`, `CONTEXT.md`
+- Created: `MODEL_ROUTING.md`, `.agents/rules/07-graphify-query.md`, `.clinerules/07-graphify-query.md`, `docs/semantic-cache-plan.md`, `.mcp/profiles/build.json`, `.mcp/profiles/research.json`, `.mcp/profiles/full.json`
+
+**Status:** UNGASIS OS v4.0 — SPRINT F7 COMPLETE
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+
 

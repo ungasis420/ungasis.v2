@@ -81,4 +81,41 @@ This table estimates the typical token (mana) consumption for standard soloprene
 
 ---
 
+## Upgraded 20-Layer Token System (v2.0)
+
+### PREVENT (Layers 1-3): Stop waste before it starts
+1. Pre-fill templates (50%)
+2. Knowledge file offloading (80%)
+3. Example-driven prompts (40%)
+
+### OPTIMIZE (Layers 4-6): Use tokens efficiently
+4. Route by complexity + reasoning budget (55%)
+5. Batch questions (60%)
+6. Context pruning via Graphify query (98%)
+
+### CONTROL (Layers 7-9): Limit output waste
+7. Structured output enforcement (20%)
+8. Response length caps (30%)
+9. Incremental disclosure (50%)
+
+### MAINTAIN (Layers 10-12): Keep sessions lean
+10. Semantic cache (50% — upgraded from 10%)
+11. Session checkpointing (60%)
+12. Compact at 70% (30%)
+
+### ADVANCED (Layers 13-17): Deep optimization
+13. Retrieval-based memory (75%)
+14. Tool schema pruning (70%)
+15. TOON compact encoding (60%)
+16. Context decay / stale eviction (70%)
+17. Prompt prefix caching (90%)
+
+### Estimated Monthly Impact
+- Before (12 layers): ~150,000 tokens/month
+- After (17 layers): ~30,000-50,000 tokens/month
+- Savings: ~90-95% overall
+- Theoretical max: ~97-98%
+
+---
+
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

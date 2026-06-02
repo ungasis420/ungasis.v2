@@ -15,6 +15,14 @@ Read [LLM_CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/LLM_CONTEXT.md) f
 - Before editing: read the target file first (safety gate)
 - After editing: verify output matches requirements (reflection)
 
+## Context Decay Protocol (Layer 16)
+- After completing a tool call, summarize the result in 1-2 sentences.
+- Drop raw tool output from working memory after summarizing.
+- Keep only: file path + what changed + any errors.
+- After 5+ steps in a multi-step task, discard results from steps 1-3 unless still referenced.
+- Never carry forward file contents that have already been edited — re-read if needed.
+- Goal: working context stays under 4,000 tokens regardless of step count.
+
 ---
 
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
