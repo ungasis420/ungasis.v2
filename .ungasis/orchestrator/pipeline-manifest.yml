@@ -1,0 +1,44 @@
+version: "4.0"
+name: UNGASIS OS Conveyor Belt Orchestrator
+
+stages:
+  plan:
+    agent: m365-copilot
+    output:
+      - spec
+      - acceptance_criteria
+    next: build
+
+  build:
+    agent: dispatch-rules
+    self_heal: true
+    next: test
+
+  test:
+    agent: jules
+    schedule: async-overnight
+    next: review
+
+  review:
+    agent: m365-copilot
+    next_if_pass: merge
+    next_if_fail: fix
+
+  fix:
+    agent: cline
+    max_retries: 2
+    next: review
+
+  merge:
+    agent: human
+    gate: true
+
+safety_rules:
+  human_gates:
+    - merge
+    - security_changes
+    - env_changes
+  max_loop_count: 3
+  kill_switch:
+    file: queue.md
+    trigger: "STOP in queue.md = halt all"

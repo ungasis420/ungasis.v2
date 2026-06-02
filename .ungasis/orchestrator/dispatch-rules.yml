@@ -1,0 +1,44 @@
+version: "4.0"
+name: UNGASIS OS Task Dispatch & Routing Rules
+
+routing_table:
+  - pattern: "new feature (multi-file)"
+    agent: antigravity
+    reason: "1M context, full codebase visibility"
+  
+  - pattern: "bug fix (1-2 files)"
+    agent: cline
+    reason: "Surgical, precise edits and fast iteration"
+  
+  - pattern: "refactor (>500 lines)"
+    agent: antigravity
+    reason: "Needs full context window to prevent regression"
+  
+  - pattern: "tests, docs, stubs"
+    agent: jules
+    reason: "Async execution overnight, free tier usage"
+  
+  - pattern: "architecture, planning, review"
+    agent: m365-copilot
+    reason: "Free, unlimited, deep reasoning"
+  
+  - pattern: "quick autocomplete"
+    agent: vscode-copilot
+    reason: "Inline suggestions, zero effort"
+
+token_routing:
+  - size: "simple"
+    limit: "<100 tokens"
+    model: cerebras
+  
+  - size: "medium"
+    limit: "100-500 tokens"
+    model: groq
+  
+  - size: "complex"
+    limit: "500+ tokens, multi-file"
+    model: antigravity
+  
+  - size: "research"
+    limit: "requires web access"
+    model: chatgpt-enterprise

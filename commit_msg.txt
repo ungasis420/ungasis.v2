@@ -1,1 +1,1 @@
-chore: housekeeping — v4.0-engines-complete tag, fix stale Graphify counts, update engine status
+feat: F8e Auto-Orchestrator — pipeline manifest, dispatch rules, handoff templates, task queue
