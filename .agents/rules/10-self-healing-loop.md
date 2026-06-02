@@ -1,4 +1,8 @@
-# Rule 10: Self-Healing Build Loop
+---
+trigger: always_on
+---
+
+# Self-Healing Build Loop
 
 ## Purpose
 After completing each sprint, the Builder MUST delegate quality review to @quality-auditor before committing to git.

@@ -1,9 +1,31 @@
 # AGENTS.md — Cross-Tool Agent Instructions (Claude Code / Cline / Copilot / ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash)
 
-## Project: UNGASIS OS v4.0 Unified Lossless Repository
+## Project: UNGASIS OS v5.0 JARVIS-Complete Unified Lossless Repository
 ## Owner: Mel John Dimat
-## Purpose: AI builder's personal operating system for solopreneurs
+## Purpose: AI builder's personal operating system for solopreneurs (98% JARVIS score)
 ## Budget: $19.99/mo (Google AI Pro, 3-month trial: June-August 2026) + $0 company-provided tools (M365 Copilot, ChatGPT Enterprise)
+
+## Agent Crew
+| Agent | Icon | Tool | Model | Role |
+|---|---|---|---|---|
+| Commander | 🎖️ | M365 Copilot + Agent Manager | Claude Opus / Gemini 3.5 | Orchestrate, plan, delegate |
+| Blueprint Architect | 📐 | Antigravity IDE / M365 Copilot | Gemini 3.5 High / Opus | Write blueprints (NEVER code) |
+| Builder | 🏗️ | Antigravity IDE Right Panel / agy CLI | Gemini 3.5 Flash | Execute blueprints into files |
+| Surgeon | 🔪 | Cline 2.0 (VS Code) | DeepSeek V4 Flash FREE | Surgical 1-2 file fixes |
+| Quality Auditor | 🔍 | @quality-auditor subagent | Inherit | Review, PASS/FAIL verdict |
+| Graphify Watchdog | 📊 | @graphify-watchdog subagent | Inherit | Re-index knowledge graph |
+
+## Slash Commands
+The system supports 9 slash commands:
+- `/goal` — Autonomous mode
+- `/schedule` — Scheduled task / timer
+- `/grill-me` — Interactive interview
+- `/blueprint` — Spec planning
+- `/scout` — Tech discovery
+- `/tag-sweep` — Stale tag scan
+- `/audit` — Auditor review
+- `/commander` — Commander workflow
+- `/designer` — Designer UI workflow
 
 ## Agent Behavior
 - Read files from disk — never request paste
@@ -58,6 +80,28 @@ modules/          → Generated knowledge files (the bulk of the repo)
 - Rule content is duplicated between .clinerules/ and .agents/rules/ (same content, different locations for different tools)
 - When editing rules: update BOTH locations to stay in sync
 - Skills in .agents/skills/ are Antigravity-only
+
+## Multi-CLI Orchestration
+UNGASIS supports multi-tool orchestration:
+| Tool | Use For | Model |
+|---|---|---|
+| Antigravity IDE (Right Panel) | Primary building, sequential sprints | Gemini 3.5 Flash |
+| Antigravity Agent Manager | Parallel agents, scheduled tasks | Gemini 3.5 Flash |
+| Antigravity CLI (agy) | Terminal-based building, scripts | Gemini 3.5 Flash |
+| Cline 2.0 (VS Code) | Surgical fixes, quick edits | DeepSeek V4 Flash FREE |
+| M365 Copilot | Planning, architecture, Commander | Claude Opus |
+| ChatGPT Enterprise | Research, alternative views | GPT-4.1 |
+
+Signal files in `.ungasis/orchestrator/signals/` enable coordination.
+
+## Blueprint Model Priority
+For blueprint writing (3+ files), use models in this order:
+1. Gemini 3.5 Flash High (Antigravity) — 1M ctx, free
+2. Claude Opus (M365 Copilot) — deep reasoning, free
+3. DeepSeek V4 Flash (Cline FREE) — 1M ctx, free
+4. GPT-4.1 (ChatGPT Enterprise) — alternative view, free
+5. DeepSeek V4 Pro (Cline BYOK) — reasoning mode, ~$0.01
+6. OpenRouter free models (Cline BYOK) — fallback
 
 ## Token Efficiency Layers 13-17 (Upgrade from 12-Layer System)
 

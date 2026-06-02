@@ -391,3 +391,15 @@ Next: git tag v5.0-jarvis-complete → Start RiftCoach Phase 5.7.
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Sprint F20a: Config Sync + Agent Manager (June 3, 2026)
+Updated 6 config files: GEMINI.md, AGENTS.md, LLM_CONTEXT.md, cline-cli-setup.md, CLI_ORCHESTRATION.md, BLUEPRINT_CONTEXT.md
+Created 5 new files: designer subagent, /designer workflow, designer skill, /agent-manager workflow, agent-manager-setup.md
+All configs now reflect v5.0 JARVIS-complete state
+Agent crew: 6 agents + Designer (7 total)
+Slash commands: 10 (/commander, /designer, /agent-manager added)
+Next: F20b automation scripts (daily-pulse.py, warn-check.py, quality-score.py)
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+

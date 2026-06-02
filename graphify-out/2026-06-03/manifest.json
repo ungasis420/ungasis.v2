@@ -850,8 +850,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780433000.4997048,
-    "ast_hash": "61f042756838033a0d31df092321745b",
+    "mtime": 1780433790.3887482,
+    "ast_hash": "7fd592199c19819f275600ee51ea3f4a",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -8770,8 +8770,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\queue.md": {
-    "mtime": 1780415444.067485,
-    "ast_hash": "eabb847d6d862aa5521f217e4197e173",
+    "mtime": 1780433787.0146866,
+    "ast_hash": "d241c57c3242c8c9ac2b4ce3f397392f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\session-conductor.md": {
@@ -8785,8 +8785,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\auto-tagger\\tag-log.md": {
-    "mtime": 1780415444.0664876,
-    "ast_hash": "46138b7452b4f87768f29449531bfc4d",
+    "mtime": 1780433787.0146866,
+    "ast_hash": "2951b4048acaa5a0580faa51179aeeb3",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\auto-tagger\\tag-rules.yml": {
@@ -8970,8 +8970,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\inbox.md": {
-    "mtime": 1780427280.631614,
-    "ast_hash": "30727bdd64ff4725255152f996b1c4a4",
+    "mtime": 1780433769.6976662,
+    "ast_hash": "ab569108db8dfc63e7ba1de613146bf5",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\processing-rules.md": {
@@ -9467,6 +9467,26 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\contacts\\contact-template.md": {
     "mtime": 1780433736.8633766,
     "ast_hash": "bc4776e5ff15be4c64f2e1d3bd64aed9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\synthesis\\monthly-synthesis-template.md": {
+    "mtime": 1780433752.608848,
+    "ast_hash": "ce53b7adc55c71bc8c57810692c7f754",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\synthesis\\weekly-synthesis-template.md": {
+    "mtime": 1780433748.0760145,
+    "ast_hash": "dc0cb2dcccfcdaa429d268851a0c85e6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\_auto\\_proposals\\batch-executor.md": {
+    "mtime": 1780433764.3616614,
+    "ast_hash": "ce1496744aeea0c14f5464ffa89290b0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\knowledge\\wiki\\patterns\\autonomous-batch-pipeline.md": {
+    "mtime": 1780433760.5218227,
+    "ast_hash": "e8ba6a88dd5041ff60608dec43131545",
     "semantic_hash": ""
   }
 }

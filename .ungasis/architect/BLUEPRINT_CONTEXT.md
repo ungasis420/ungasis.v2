@@ -23,6 +23,26 @@
 | Auto-Orchestrator | `.ungasis/orchestrator/` | Active |
 | Auto-Tagger | `.agents/skills/auto-tagger/` | Active |
 | Scout Engine | `.ungasis/scout/` | Active |
+| Memory | `.ungasis/context-engine/` | Active |
+| Bus | `.ungasis/context-engine/` | Active |
+| Cortex | `.ungasis/context-engine/` | Active |
+| Ideas | `.ungasis/context-engine/` | Active |
+| Learnings | `.ungasis/context-engine/` | Active |
+| Contacts | `.ungasis/context-engine/` | Active |
+| Synthesis | `.ungasis/context-engine/` | Active |
+| Decomposer | `.ungasis/context-engine/` | Active |
+| Reasoning | `.ungasis/context-engine/` | Active |
+| Dependencies | `.ungasis/context-engine/` | Active |
+| Rollback | `.ungasis/context-engine/` | Active |
+| Resources | `.ungasis/context-engine/` | Active |
+| Comms | `.ungasis/context-engine/` | Active |
+| Warnings | `.ungasis/context-engine/` | Active |
+| Suggestions | `.ungasis/context-engine/` | Active |
+| Quality | `.ungasis/context-engine/` | Active |
+| Revenue | `.ungasis/context-engine/` | Active |
+| Patterns | `.ungasis/context-engine/` | Active |
+| Multi-Project | `.ungasis/context-engine/` | Active |
+| Prompt Evolution | `.ungasis/context-engine/` | Active |
 
 ## Design DNA Specifications
 | Component | Class / Property | Value |
@@ -45,10 +65,11 @@
 ## Current System State
 | Milestone | Value |
 |---|---|
-| Sprints Completed | 31 sprints |
-| Total File Count | ~1,122 files |
-| JARVIS Readiness | 68% complete |
-| Batch Status | Batch 1 done |
+| Sprints Completed | 66+ completed |
+| Total File Count | ~1,222+ files |
+| JARVIS Readiness | 98% complete |
+| Git Tag | v5.0-jarvis-complete |
+| Graphify | 20,929 nodes, 24,207 edges, 2,713 communities |
 
 ## Knowledge Patterns List
 | Index | Pattern File | Pattern Name |
@@ -75,14 +96,14 @@
 | 7 | `graphify-openai-backend.md` | Graphify OpenAI Dependency |
 
 ## Active Agent Crew
-| Agent Name | Icon | Tooling | Model | Best For |
+| Agent | Icon | Tool | Model | Role |
 |---|---|---|---|---|
-| Commander | 🎖️ | Filesystem + Commands | Inherit | Goal orchestration |
-| Architect | 📐 | Filesystem only | Gemini Pro / Opus | Generating plans |
-| Builder | 🏗️ | Filesystem + Git | Gemini Flash | Code implementation |
-| Surgeon | 🔪 | Filesystem only | Cerebras Llama 8b | Quick bug fixes |
-| Auditor | 🔍 | Filesystem only | Inherit | QA validation checks |
-| Watchdog | 📊 | Git + Graphify | Inherit | File indexing & status |
+| Commander | 🎖️ | M365 Copilot + Agent Manager | Claude Opus / Gemini 3.5 | Orchestrate, plan, delegate |
+| Blueprint Architect | 📐 | Antigravity IDE / M365 Copilot | Gemini 3.5 High / Opus | Write blueprints (NEVER code) |
+| Builder | 🏗️ | Antigravity IDE Right Panel / agy CLI | Gemini 3.5 Flash | Execute blueprints into files |
+| Surgeon | 🔪 | Cline 2.0 (VS Code) | DeepSeek V4 Flash FREE | Surgical 1-2 file fixes |
+| Quality Auditor | 🔍 | @quality-auditor subagent | Inherit | Review, PASS/FAIL verdict |
+| Graphify Watchdog | 📊 | @graphify-watchdog subagent | Inherit | Re-index knowledge graph |
 
 ## Token System Summary
 The UNGASIS token system uses a 20-layer optimization pipeline to reduce token overhead. It prioritizes semantic query graphs and context decay to limit active context to under 4,000 tokens. Stable prefix caching ensures repeat system prompts are discounted by up to 90%.
