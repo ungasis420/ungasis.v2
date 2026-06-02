@@ -1,16 +1,16 @@
 # Graph Report - ungasis  (2026-06-02)
 
 ## Corpus Check
-- 1603 files · ~1,264,288 words
+- 1609 files · ~1,265,512 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 19783 nodes · 23204 edges · 2563 communities (1826 shown, 737 thin omitted)
+- 19816 nodes · 23231 edges · 2566 communities (1830 shown, 736 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 151 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `28aae74c`
+- Built from commit: `958ebb90`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -2375,6 +2375,9 @@
 - [[_COMMUNITY_Community 2426|Community 2426]]
 - [[_COMMUNITY_Community 2427|Community 2427]]
 - [[_COMMUNITY_Community 2428|Community 2428]]
+- [[_COMMUNITY_Community 2429|Community 2429]]
+- [[_COMMUNITY_Community 2430|Community 2430]]
+- [[_COMMUNITY_Community 2431|Community 2431]]
 - [[_COMMUNITY_Community 2434|Community 2434]]
 - [[_COMMUNITY_Community 2435|Community 2435]]
 - [[_COMMUNITY_Community 2436|Community 2436]]
@@ -2532,7 +2535,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (2563 total, 737 thin omitted)
+## Communities (2566 total, 736 thin omitted)
 
 ### Community 0 - "UNGASIS OS Core Sections"
 Cohesion: 0.01
@@ -2815,8 +2818,8 @@ Cohesion: 0.06
 Nodes (33): 0. Simple Idea, 10. Source Fidelity Levels, 11. How to Use the Knowledge Base in Future Tasks, 13. Beginner Workflow: 15 Minutes, 14. Copy-Paste Prompts, 15. Done Checklist, 16. QA Checklist for This Module, 17. UNGASIS Trace (+25 more)
 
 ### Community 70 - "Universal Agent Instructions"
-Cohesion: 0.18
-Nodes (11): CLAUDE.md - Claude Code Instructions (v4.0), .claudeignore (v4): Skip files/folders from context. Configure during setup., Commands: Install:[INSTALL_COMMAND] Test:[TEST_COMMAND] Lint:[LINT_COMMAND] Build:[BUILD_COMMAND], Compacting: Preserve task goal, files changed, decisions, test results, failures, risks, next action. Drop: logs, exploration, abandoned ideas., Context Budget Zones, Context Management, MAX_THINKING_TOKENS (v4): .claude/settings.json: 10K normal, 30K+ complex architecture., On-Demand Skills: .claude/skills/ loaded ONLY when needed: research-to-code, debug-one-bug, code-review. (+3 more)
+Cohesion: 0.11
+Nodes (22): Commands: Test:[TEST_COMMAND] Lint:[LINT_COMMAND] Build:[BUILD_COMMAND], Completion: 1.Changed files 2.Summary 3.Commands 4.Results 5.Risks, Core Rule: Token-efficient coding. Follow AGENTS.md., GEMINI.md - Gemini/Jules Instructions (v4.0), Project: [PROJECT_NAME] | Stack: [TECH_STACK], Read First: AGENTS.md, docs/PROJECT_BRIEF.md, docs/TASK_HANDOFF.md, Rules: Search before reads. Surgical edits. No full rewrites. No claiming untested passes., Sessions under 15-20 messages. Update docs/SESSION_SUMMARY.md at end. (+14 more)
 
 ### Community 71 - "Engine Addition Protocols"
 Cohesion: 0.12
@@ -3067,8 +3070,8 @@ Cohesion: 0.13
 Nodes (21): UNGASIS Router, Behavior, Rigor, and Systems, UNGASIS Engine Kernel, UNGASIS Framework Kernel, UNGASIS Intelligence Kernel, UNGASIS Guardrails, UNGASIS Templates, UNGASIS Regression Tests, Project Memory (+13 more)
 
 ### Community 133 - "Safety Gate Context"
-Cohesion: 0.17
-Nodes (9): Active Context, Sequential Defaults Config, Cline Memory Bank Instructions, Product Context, Progress Tracker, Memory Bank Project Brief, Technical Context, Context Engineering Module (+1 more)
+Cohesion: 0.19
+Nodes (8): Active Context, Sequential Defaults Config, Cline Memory Bank Instructions, Product Context, Progress Tracker, Memory Bank Project Brief, Technical Context, Context Engineering Module
 
 ### Community 134 - "Context Memory Management"
 Cohesion: 0.24
@@ -3143,8 +3146,8 @@ Cohesion: 0.09
 Nodes (21): AI and Prompting, App and Product Basics, Automation, Microsoft, and BI, Beginner Usage Prompts, Business and Monetization, Data Safety Reminder, Git and Project Files, Glossary Index (+13 more)
 
 ### Community 152 - "Agent Behavior Layers"
-Cohesion: 0.13
-Nodes (15): AGENTS.md — Cross-Tool Agent Instructions (Claude Code / Cline / Copilot / ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash), Antigravity-Specific Notes, Budget: $19.99/mo (Google AI Pro, 3-month trial: June-August 2026) + $0 company-provided tools (M365 Copilot, ChatGPT Enterprise), Agent Behavior, Domain Language (Ubiquitous Terms), File Organization, Owner: Mel John Dimat, Purpose: AI builder's personal operating system for solopreneurs (+7 more)
+Cohesion: 0.10
+Nodes (21): AGENTS.md — Cross-Tool Agent Instructions (Claude Code / Cline / Copilot / ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash), Antigravity-Specific Notes, Budget: $19.99/mo (Google AI Pro, 3-month trial: June-August 2026) + $0 company-provided tools (M365 Copilot, ChatGPT Enterprise), Layer 13: Retrieval-Based Memory, Layer 14: Tool Schema Pruning, Layer 15: Compact Encoding (TOON Protocol), Layer 16: Context Decay / Stale Eviction, Layer 17: Prompt Prefix Caching (Provider-Level) (+13 more)
 
 ### Community 153 - "Domain and Security Review"
 Cohesion: 0.17
@@ -3503,8 +3506,8 @@ Cohesion: 0.12
 Nodes (25): Cross-Reference Bridge, type, properties, required, type, type, properties, file (+17 more)
 
 ### Community 242 - "Community 242"
-Cohesion: 0.38
-Nodes (9): Adaptation Approval Levels, Adaptation Rules, Evolution Rules, How It Works, Impact Table, Inputs/Outputs, Metrics Tracked, Purpose (+1 more)
+Cohesion: 0.33
+Nodes (10): Adaptation Approval Levels, Adaptation Rules, Evolution Rules, How It Works, Impact Table, Inputs/Outputs, Metrics Tracked, Purpose (+2 more)
 
 ### Community 243 - "Community 243"
 Cohesion: 0.12
@@ -3691,8 +3694,8 @@ Cohesion: 0.22
 Nodes (7): UNGASIS OS v4.0, Last Session Summary, Rules for This Session, Session Context, This Session's Task, What I'm Building, Who I Am
 
 ### Community 289 - "Community 289"
-Cohesion: 0.53
-Nodes (5): Agent Identity: UNGASIS QA Auditor, Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role
+Cohesion: 0.31
+Nodes (7): Agent Identity: UNGASIS QA Auditor, Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role, .clinerules — UNGASIS QA Audit Session, 🏰 UNGASIS OS v3.0 — QA Audit Report
 
 ### Community 290 - "Community 290"
 Cohesion: 0.12
@@ -3703,8 +3706,8 @@ Cohesion: 0.17
 Nodes (13): Difference, Engine: Automation and Orchestration Engine, Engine: Data Acquisition, Analytics, BI, and Visualization Engine, Engine ID, Engine ID, Engine ID, Ethical Data Acquisition Rules, Modules (+5 more)
 
 ### Community 292 - "Community 292"
-Cohesion: 0.18
-Nodes (11): Agent Instructions, Gap List, Known Bugs, Mission Complete Checklist, 🎯 QA MISSION: UNGASIS OS v3.0 — Final Lossless Audit, Success Criteria (ALL must be met to pass), T1: File Inventory, T3: Count Verification (+3 more)
+Cohesion: 0.13
+Nodes (15): Agent Instructions, Gap List, Known Bugs, Mission Complete Checklist, 🎯 QA MISSION: UNGASIS OS v3.0 — Final Lossless Audit, Source 1: AI_Builders_Master_Workflow_Prompt_v4.0.md, Source 2: playbook v3, Source 3: multi-agent guide v4 (+7 more)
 
 ### Community 293 - "Community 293"
 Cohesion: 0.13
@@ -3715,8 +3718,8 @@ Cohesion: 0.21
 Nodes (14): Rule 08: Skill Observer, Rule 09: Skill Generator, How to Propose, Impact Table, Purpose, Rule 08: Skill Observer, Safety Rules, When to Observe (+6 more)
 
 ### Community 295 - "Community 295"
-Cohesion: 0.10
-Nodes (18): Gap Coverage Matrix, v5 note, AI reliability, Approval required before, Automation safety, Risk and Safety, Safety posture, Secrets handling (+10 more)
+Cohesion: 0.20
+Nodes (9): Gap Coverage Matrix, v5 note, Workflows, Verification examples, Workflow: Build -> Iterate -> Verify, Gap Coverage Matrix, Workflows, Workflow: Automation Safety (+1 more)
 
 ### Community 296 - "Community 296"
 Cohesion: 0.06
@@ -3879,12 +3882,12 @@ Cohesion: 0.16
 Nodes (19): type, properties, required, type, type, type, properties, expected_safe_behavior (+11 more)
 
 ### Community 336 - "Community 336"
-Cohesion: 0.36
-Nodes (9): Self-Iteration Protocol: Don't Stop Until Done, Autonomous Loop, Completion Criteria (ALL must be true), Error Recovery, Mission Objective, Rules, Self-Iteration Protocol: Don't Stop Until Done, Speed Optimizations (+1 more)
+Cohesion: 0.22
+Nodes (13): 3-Attempt Reset Rule, Analogy, Token Math, Why This Rule Exists, Self-Iteration Protocol: Don't Stop Until Done, Autonomous Loop, Completion Criteria (ALL must be true), Error Recovery (+5 more)
 
 ### Community 337 - "Community 337"
-Cohesion: 0.21
-Nodes (16): Agent Behavior Rules, Fail-Loud Rule, Mid-Flight Checkpoint Rule, Pass Criteria, Pre-Flight Checklist, Quick Self-Test, Required Output Format for Agents, Safety Gate Rule (+8 more)
+Cohesion: 0.19
+Nodes (17): Agent Behavior Rules, Fail-Loud Rule, Mid-Flight Checkpoint Rule, Pass Criteria, Pre-Flight Checklist, Quick Self-Test, Required Output Format for Agents, Safety Gate Rule (+9 more)
 
 ### Community 338 - "Community 338"
 Cohesion: 0.22
@@ -4139,7 +4142,7 @@ Cohesion: 0.17
 Nodes (11): Active Goals, Blockers, CONTEXT.md — Current Session State, Domain Language, Fast Start Prompt For New Agent, Files Being Worked On, Next Actions, Purpose (+3 more)
 
 ### Community 401 - "Community 401"
-Cohesion: 0.20
+Cohesion: 0.17
 Nodes (10): Active Goals, Blockers, CONTEXT.md — Current Session State, Domain Language, Fast Start Prompt For New Agent, Files Being Worked On, Purpose, Recent Decisions (+2 more)
 
 ### Community 402 - "Community 402"
@@ -4399,8 +4402,8 @@ Cohesion: 0.20
 Nodes (9): Runbook, Common problems, Feynman explanation, Layman analogy, Problem: AI agent tried risky action, Problem: New version broke, Problem: Secret was pasted into a file, Purpose (+1 more)
 
 ### Community 466 - "Community 466"
-Cohesion: 0.23
-Nodes (13): Active Goals, Blockers, CONTEXT.md — Current Session State, Domain Language, Fast Start Prompt For New Agent, Files Being Worked On, Next Actions, Purpose (+5 more)
+Cohesion: 0.26
+Nodes (12): Active Goals, Blockers, CONTEXT.md — Current Session State, Domain Language, Fast Start Prompt For New Agent, Files Being Worked On, Next Actions, Purpose (+4 more)
 
 ### Community 467 - "Community 467"
 Cohesion: 0.26
@@ -4600,11 +4603,11 @@ Nodes (9): 7. Beginner Examples — Hallucination vs. Verified Fact, Example 1: 
 
 ### Community 517 - "Community 517"
 Cohesion: 0.14
-Nodes (17): On-Demand vs Always-On (v4), .claudeignore, Context Rot Detection, Cross-Analysis: v3.0 -> v4.0, Doctrine, Files Changed from v3, Key Additions, Layer 11: Model Routing (+9 more)
+Nodes (17): .claudeignore, Context Rot Detection, Cross-Analysis: v3.0 -> v4.0, Doctrine, Files Changed from v3, Key Additions, Layer 11: Model Routing, Layer 12: Context Budget (+9 more)
 
 ### Community 518 - "Community 518"
-Cohesion: 0.26
-Nodes (11): Blockers / Risks, Current Task, Decisions Made, Files Changed, Next Action, Status: [not started | in progress | blocked | done], Task Handoff, Tests Run (+3 more)
+Cohesion: 0.23
+Nodes (12): Blockers / Risks, Current Task, Decisions Made, Files Changed, Next Action, Status: [not started | in progress | blocked | done], Task Handoff, Tests Run (+4 more)
 
 ### Community 519 - "Community 519"
 Cohesion: 0.36
@@ -4755,8 +4758,8 @@ Cohesion: 0.22
 Nodes (9): 27. Prompt pack, Prompt 1 - Idea validation, Prompt 2 - UX design, Prompt 3 - AI app builder, Prompt 4 - Cline / AI coding safe task, Prompt 5 - Debugging, Prompt 6 - Launch checklist, Prompt 7 - Source verification (+1 more)
 
 ### Community 558 - "Community 558"
-Cohesion: 0.30
-Nodes (11): Task Handoff, Blockers / Risks, Current Task, Decisions Made, Files Changed, Next Action, Status: [not started | in progress | blocked | done], Task Handoff (+3 more)
+Cohesion: 0.20
+Nodes (13): Current Tasks, File Locks, Simple rule, Task Handoff, Blockers / Risks, Current Task, Decisions Made, Next Action (+5 more)
 
 ### Community 559 - "Community 559"
 Cohesion: 0.36
@@ -5331,12 +5334,12 @@ Cohesion: 0.32
 Nodes (8): 9. 📊 One True Dashboard, Copy-Paste Markdown Dashboard Template, Dashboard Fields (Merged from All Sources), Where to Store the Dashboard, 9. 📊 One True Dashboard, Copy-Paste Markdown Dashboard Template, Dashboard Fields (Merged from All Sources), Where to Store the Dashboard
 
 ### Community 705 - "Community 705"
-Cohesion: 0.13
-Nodes (16): AGENTS.md - Universal Agent Instructions, Aider Configuration (v3), AGENTS.md - Universal Agent Instructions (v4.0), Commands, Completion: 1.Changed files 2.Summary 3.Commands 4.Results 5.Risks 6.Rollback 7.Memory updates, Core Rules, Model Routing (v4), Never Do: Rewrite entire files for small changes | Destructive cmds without confirm | Install without asking | Filler in code mode (+8 more)
+Cohesion: 0.15
+Nodes (15): AGENTS.md - Universal Agent Instructions, Aider Configuration (v3), AGENTS.md - Universal Agent Instructions (v4.0), Commands, Completion: 1.Changed files 2.Summary 3.Commands 4.Results 5.Risks 6.Rollback 7.Memory updates, Core Rules, Model Routing (v4), Never Do: Rewrite entire files for small changes | Destructive cmds without confirm | Install without asking | Filler in code mode (+7 more)
 
 ### Community 706 - "Community 706"
-Cohesion: 0.31
-Nodes (9): Commands: Test:[TEST_COMMAND] Lint:[LINT_COMMAND] Build:[BUILD_COMMAND], Completion: 1.Changed files 2.Summary 3.Commands 4.Results 5.Risks, Core Rule: Token-efficient coding. Follow AGENTS.md., GEMINI.md - Gemini/Jules Instructions (v4.0), Project: [PROJECT_NAME] | Stack: [TECH_STACK], Read First: AGENTS.md, docs/PROJECT_BRIEF.md, docs/TASK_HANDOFF.md, Rules: Search before reads. Surgical edits. No full rewrites. No claiming untested passes., Sessions under 15-20 messages. Update docs/SESSION_SUMMARY.md at end. (+1 more)
+Cohesion: 0.22
+Nodes (9): AI reliability, Approval required before, Automation safety, Risk and Safety, Safety posture, Secrets handling, Workflow: Automation Safety, Automation Safety Checklist (+1 more)
 
 ### Community 707 - "Community 707"
 Cohesion: 0.29
@@ -5459,8 +5462,8 @@ Cohesion: 0.29
 Nodes (6): Cloud Agent Task, Criteria: - [ ] 1, Risk: [low|med|high], Scope: ONLY [files], Task: [desc], Validation: [cmds]
 
 ### Community 737 - "Community 737"
-Cohesion: 0.29
-Nodes (7): Current Tasks, File Locks, Simple rule, Beginner rule, File lock words, Status words, Task Board Guide
+Cohesion: 0.70
+Nodes (4): Beginner rule, File lock words, Status words, Task Board Guide
 
 ### Community 738 - "Community 738"
 Cohesion: 0.36
@@ -8187,12 +8190,12 @@ Cohesion: 0.20
 Nodes (10): 10. 💰 Phase 8 — Add Monetization, 🚦 Decision Point, 🎯 Goal, 📋 Key Actions, Monetization Progression (from Playbook §11), 📦 Output, Payment Options Table (from Playbook §11), ⏱️ Time Estimate (+2 more)
 
 ### Community 2060 - "Community 2060"
-Cohesion: 0.14
-Nodes (16): 11. 📈 Phase 9 — Track Metrics, 3. 💡 Phase 1 — Pick and Narrow the Idea, 💡 Analogy, 🚦 Decision Point, 🚦 Decision Point, 🎯 Goal, 🎯 Goal, Idea Scoring Table (+8 more)
+Cohesion: 0.20
+Nodes (10): 11. 📈 Phase 9 — Track Metrics, 🚦 Decision Point, 🎯 Goal, 🎯 Goal, Metrics Table (from Master Prompt §24.5E), 📦 Output, Product Events to Track (from Playbook §24), ⏱️ Time Estimate (+2 more)
 
 ### Community 2061 - "Community 2061"
 Cohesion: 0.20
-Nodes (10): 6. 🖱️ Phase 4 — Build Clickable Prototype, 🚦 Decision Point, 🎯 Goal, 📋 Key Actions, 📋 Key Actions, 📦 Output, Prototype Checklist (from Playbook §11), ⏱️ Time Estimate (+2 more)
+Nodes (10): 6. 🖱️ Phase 4 — Build Clickable Prototype, 🚦 Decision Point, 🎯 Goal, 📋 Key Actions, 📦 Output, Prototype Checklist (from Playbook §11), ⏱️ Time Estimate, ⏱️ Time Estimate (+2 more)
 
 ### Community 2062 - "Community 2062"
 Cohesion: 0.20
@@ -8516,7 +8519,7 @@ Nodes (5): Coverage table, Deduplication decisions, Researcher Notes Coverage Au
 
 ### Community 2142 - "Community 2142"
 Cohesion: 0.33
-Nodes (6): Layer 13: Retrieval-Based Memory, Layer 14: Tool Schema Pruning, Layer 15: Compact Encoding (TOON Protocol), Layer 16: Context Decay / Stale Eviction, Layer 17: Prompt Prefix Caching (Provider-Level), Token Efficiency Layers 13-17 (Upgrade from 12-Layer System)
+Nodes (6): 3. 💡 Phase 1 — Pick and Narrow the Idea, 💡 Analogy, 🚦 Decision Point, Idea Scoring Table, 📋 Key Actions, 🚫 What NOT to Do Yet
 
 ### Community 2143 - "Community 2143"
 Cohesion: 0.33
@@ -9506,6 +9509,10 @@ Nodes (3): 10. KICKOFF PROMPTS, KICKOFF A: Continue UNGASIS Engines (Sprint F8a-
 Cohesion: 0.67
 Nodes (3): CI Workflow, CI, GitHub Actions
 
+### Community 2393 - "Community 2393"
+Cohesion: 0.33
+Nodes (5): How It Works, Inputs/Outputs, Scout Engine, Scout Rules, Purpose
+
 ### Community 2420 - "Community 2420"
 Cohesion: 0.50
 Nodes (4): 4. How to Use Dummy/Demo Data Safely, ChatGPT Prompt for Demo Data, How to Generate Fake Data, What to Replace
@@ -9515,8 +9522,8 @@ Cohesion: 0.50
 Nodes (3): Auto-Tagger Log, June 2, 2026 — Sweep Type: manual, Sweep Log
 
 ### Community 2422 - "Community 2422"
-Cohesion: 0.50
-Nodes (4): 3-Attempt Reset Rule, Analogy, Token Math, Why This Rule Exists
+Cohesion: 0.33
+Nodes (5): Active Feeds, Adding New Sources, Monitored Sources Overview, Removing Sources, Source Management SOP
 
 ### Community 2423 - "Community 2423"
 Cohesion: 0.50
@@ -9531,8 +9538,8 @@ Cohesion: 0.50
 Nodes (4): 8. How to Create Short Demo Video Scripts, Free Video Tools, The 60-Second Demo Script Template, Video Tips for Beginners
 
 ### Community 2426 - "Community 2426"
-Cohesion: 0.50
-Nodes (4): Source 1: AI_Builders_Master_Workflow_Prompt_v4.0.md, Source 2: playbook v3, Source 3: multi-agent guide v4, T2: Source Coverage Check
+Cohesion: 0.40
+Nodes (4): Purpose, Safety & Budget, Scout Skill, Steps
 
 ### Community 2427 - "Community 2427"
 Cohesion: 0.50
@@ -9542,22 +9549,34 @@ Nodes (4): How to Run the QA Audit, If DeepSeek is slow/rate-limited, Prerequisi
 Cohesion: 0.67
 Nodes (3): 2. What to Backup Regularly, API Key Inventory Template, Complete Backup Inventory
 
+### Community 2429 - "Community 2429"
+Cohesion: 0.40
+Nodes (4): Adaptation Entry Template, Adaptation Queue — Approved Tech Changes, Approved Items, How to Use
+
+### Community 2430 - "Community 2430"
+Cohesion: 0.40
+Nodes (4): How to Trigger, Overview, Scout Skill, Under the Hood
+
+### Community 2431 - "Community 2431"
+Cohesion: 0.40
+Nodes (4): Discovery Entries, How to Use, Log Entry Template, Scout Log — UNGASIS OS v4.0
+
 ## Knowledge Gaps
-- **11687 isolated node(s):** `Purpose`, `How It Works`, `7 Tagging Rules`, `Conductor Rules`, `Inputs/Outputs` (+11682 more)
+- **11707 isolated node(s):** `Overview`, `How to Trigger`, `Under the Hood`, `Purpose`, `Steps` (+11702 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **737 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **736 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Me as MVP Workflow` connect `Data and Cost Monitoring` to `Community 597`, `Community 702`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Why does `UNGASIS Content Module: AI Operating Model` connect `AI Usage Protocols` to `Community 225`, `AI Operating Model`, `Data and Cost Monitoring`, `Community 698`, `Context Loop Workflows`, `Community 2110`, `Community 1151`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `Full SOP Library` connect `Data and Cost Monitoring` to `Feature Router Map`, `Safety Gate Context`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
-- **What connects `Purpose`, `How It Works`, `7 Tagging Rules` to the rest of the system?**
-  _11704 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `Full SOP Library` connect `Data and Cost Monitoring` to `Community 337`, `Feature Router Map`, `Safety Gate Context`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **What connects `Overview`, `How to Trigger`, `Under the Hood` to the rest of the system?**
+  _11724 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `UNGASIS OS Core Sections` be split into smaller, more focused modules?**
   _Cohesion score 0.013605442176870748 - nodes in this community are weakly interconnected._
 - **Should `SOP Library Templates` be split into smaller, more focused modules?**

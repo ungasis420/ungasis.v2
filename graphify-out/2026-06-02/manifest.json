@@ -8565,8 +8565,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\commit_msg.txt": {
-    "mtime": 1780415327.2139318,
-    "ast_hash": "9201d4924b159b30350707310be7f632",
+    "mtime": 1780415361.0690875,
+    "ast_hash": "f0d2e90f7473e603778a51fd1df7da05",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\context-engine\\context-budget.md": {
@@ -8777,6 +8777,21 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\session-conductor.md": {
     "mtime": 1780415289.7717493,
     "ast_hash": "27873f1e0776594cb537a9a290ec8b73",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\auto-tagger\\SKILL.md": {
+    "mtime": 1780415341.6560307,
+    "ast_hash": "899da0287c75ab27c4ea850e48241fed",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\auto-tagger\\tag-log.md": {
+    "mtime": 1780415352.4693751,
+    "ast_hash": "2c88bdbcc4c1f1096ef04f6ac9c9e255",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\auto-tagger\\tag-rules.yml": {
+    "mtime": 1780415347.7956018,
+    "ast_hash": "ce8e294fdcde18ea3e62ce496215ff7b",
     "semantic_hash": ""
   }
 }

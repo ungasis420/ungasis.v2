@@ -1,1 +1,1 @@
-feat: F9d Scout Engine — auto-discover new tech from GitHub, YouTube, dev communities
+chore: update CONTEXT.md — orchestrator, tagger, scout complete. Ready for RiftCoach.

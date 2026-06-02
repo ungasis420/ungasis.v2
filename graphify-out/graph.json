@@ -4,103 +4,490 @@
   "graph": {},
   "nodes": [
     {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L1",
+      "id": "scout_readme",
+      "community": 2430,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Scout Skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L1",
+      "id": "scout_readme_scout_skill",
+      "community": 2430,
+      "norm_label": "scout skill"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L3",
+      "id": "scout_readme_overview",
+      "community": 2430,
+      "norm_label": "overview"
+    },
+    {
+      "label": "How to Trigger",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L6",
+      "id": "scout_readme_how_to_trigger",
+      "community": 2430,
+      "norm_label": "how to trigger"
+    },
+    {
+      "label": "Under the Hood",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L10",
+      "id": "scout_readme_under_the_hood",
+      "community": 2430,
+      "norm_label": "under the hood"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L1",
+      "id": "agents_skills_scout_skill_md_scout_skill",
+      "community": 2426,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Scout Skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L12",
+      "id": "scout_skill_scout_skill",
+      "community": 2426,
+      "norm_label": "scout skill"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L14",
+      "id": "agents_skills_scout_skill_md_scout_skill_purpose",
+      "community": 2426,
+      "norm_label": "purpose"
+    },
+    {
+      "label": "Steps",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L17",
+      "id": "scout_skill_steps",
+      "community": 2426,
+      "norm_label": "steps"
+    },
+    {
+      "label": "Safety & Budget",
+      "file_type": "document",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L28",
+      "id": "scout_skill_safety_budget",
+      "community": 2426,
+      "norm_label": "safety & budget"
+    },
+    {
+      "label": "EVOLUTION_RULES.md",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L1",
+      "id": "evolution_evolution_rules",
+      "community": 242,
+      "norm_label": "evolution_rules.md"
+    },
+    {
+      "label": "Evolution Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L1",
+      "id": "evolution_evolution_rules_evolution_rules",
+      "community": 242,
+      "norm_label": "evolution rules"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L3",
+      "id": "evolution_evolution_rules_purpose",
+      "community": 242,
+      "norm_label": "purpose"
+    },
+    {
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L6",
+      "id": "evolution_evolution_rules_how_it_works",
+      "community": 242,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L21",
+      "id": "evolution_evolution_rules_rules",
+      "community": 242,
+      "norm_label": "rules"
+    },
+    {
+      "label": "Metrics Tracked",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L26",
+      "id": "evolution_evolution_rules_metrics_tracked",
+      "community": 242,
+      "norm_label": "metrics tracked"
+    },
+    {
+      "label": "Adaptation Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L38",
+      "id": "evolution_evolution_rules_adaptation_rules",
+      "community": 242,
+      "norm_label": "adaptation rules"
+    },
+    {
+      "label": "Adaptation Approval Levels",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L49",
+      "id": "evolution_evolution_rules_adaptation_approval_levels",
+      "community": 242,
+      "norm_label": "adaptation approval levels"
+    },
+    {
+      "label": "Inputs/Outputs",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L61",
+      "id": "evolution_evolution_rules_inputs_outputs",
+      "community": 242,
+      "norm_label": "inputs/outputs"
+    },
+    {
+      "label": "Impact Table",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L67",
+      "id": "evolution_evolution_rules_impact_table",
+      "community": 242,
+      "norm_label": "impact table"
+    },
+    {
+      "label": "Scout Integration",
+      "file_type": "document",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L76",
+      "id": "evolution_evolution_rules_scout_integration",
+      "community": 242,
+      "norm_label": "scout integration"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L1",
+      "id": "ungasis_scout_skill_md_scout_skill",
+      "community": 2393,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Scout Engine",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L1",
+      "id": "scout_skill_scout_engine",
+      "community": 2393,
+      "norm_label": "scout engine"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L3",
+      "id": "ungasis_scout_skill_md_scout_skill_purpose",
+      "community": 2393,
+      "norm_label": "purpose"
+    },
+    {
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L6",
+      "id": "scout_skill_how_it_works",
+      "community": 2393,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Scout Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L18",
+      "id": "scout_skill_scout_rules",
+      "community": 2393,
+      "norm_label": "scout rules"
+    },
+    {
+      "label": "Inputs/Outputs",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L27",
+      "id": "scout_skill_inputs_outputs",
+      "community": 2393,
+      "norm_label": "inputs/outputs"
+    },
+    {
+      "label": "adaptation-queue.md",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L1",
+      "id": "scout_adaptation_queue",
+      "community": 2429,
+      "norm_label": "adaptation-queue.md"
+    },
+    {
+      "label": "Adaptation Queue \u2014 Approved Tech Changes",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L1",
+      "id": "scout_adaptation_queue_adaptation_queue_approved_tech_changes",
+      "community": 2429,
+      "norm_label": "adaptation queue \u2014 approved tech changes"
+    },
+    {
+      "label": "How to Use",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L3",
+      "id": "scout_adaptation_queue_how_to_use",
+      "community": 2429,
+      "norm_label": "how to use"
+    },
+    {
+      "label": "Adaptation Entry Template",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L6",
+      "id": "scout_adaptation_queue_adaptation_entry_template",
+      "community": 2429,
+      "norm_label": "adaptation entry template"
+    },
+    {
+      "label": "Approved Items",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L17",
+      "id": "scout_adaptation_queue_approved_items",
+      "community": 2429,
+      "norm_label": "approved items"
+    },
+    {
+      "label": "scout-log.md",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L1",
+      "id": "scout_scout_log",
+      "community": 2431,
+      "norm_label": "scout-log.md"
+    },
+    {
+      "label": "Scout Log \u2014 UNGASIS OS v4.0",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L1",
+      "id": "scout_scout_log_scout_log_ungasis_os_v4_0",
+      "community": 2431,
+      "norm_label": "scout log \u2014 ungasis os v4.0"
+    },
+    {
+      "label": "How to Use",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L3",
+      "id": "scout_scout_log_how_to_use",
+      "community": 2431,
+      "norm_label": "how to use"
+    },
+    {
+      "label": "Log Entry Template",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L8",
+      "id": "scout_scout_log_log_entry_template",
+      "community": 2431,
+      "norm_label": "log entry template"
+    },
+    {
+      "label": "Discovery Entries",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L19",
+      "id": "scout_scout_log_discovery_entries",
+      "community": 2431,
+      "norm_label": "discovery entries"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L1",
+      "id": "sources_readme",
+      "community": 2422,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Monitored Sources Overview",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L1",
+      "id": "sources_readme_monitored_sources_overview",
+      "community": 2422,
+      "norm_label": "monitored sources overview"
+    },
+    {
+      "label": "Active Feeds",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L3",
+      "id": "sources_readme_active_feeds",
+      "community": 2422,
+      "norm_label": "active feeds"
+    },
+    {
+      "label": "Source Management SOP",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L14",
+      "id": "sources_readme_source_management_sop",
+      "community": 2422,
+      "norm_label": "source management sop"
+    },
+    {
+      "label": "Adding New Sources",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L16",
+      "id": "sources_readme_adding_new_sources",
+      "community": 2422,
+      "norm_label": "adding new sources"
+    },
+    {
+      "label": "Removing Sources",
+      "file_type": "document",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L22",
+      "id": "sources_readme_removing_sources",
+      "community": 2422,
+      "norm_label": "removing sources"
+    },
+    {
       "label": "SKILL.md",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L1",
-      "id": "auto_tagger_skill",
       "community": 2105,
-      "norm_label": "skill.md"
+      "norm_label": "skill.md",
+      "id": "auto_tagger_skill"
     },
     {
       "label": "Auto-Tagger Skill",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L11",
-      "id": "auto_tagger_skill_auto_tagger_skill",
       "community": 2105,
-      "norm_label": "auto-tagger skill"
+      "norm_label": "auto-tagger skill",
+      "id": "auto_tagger_skill_auto_tagger_skill"
     },
     {
       "label": "Purpose",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L13",
-      "id": "auto_tagger_skill_purpose",
       "community": 2105,
-      "norm_label": "purpose"
+      "norm_label": "purpose",
+      "id": "auto_tagger_skill_purpose"
     },
     {
       "label": "How It Works",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L16",
-      "id": "auto_tagger_skill_how_it_works",
       "community": 2105,
-      "norm_label": "how it works"
+      "norm_label": "how it works",
+      "id": "auto_tagger_skill_how_it_works"
     },
     {
       "label": "7 Tagging Rules",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L21",
-      "id": "auto_tagger_skill_7_tagging_rules",
       "community": 2105,
-      "norm_label": "7 tagging rules"
+      "norm_label": "7 tagging rules",
+      "id": "auto_tagger_skill_7_tagging_rules"
     },
     {
       "label": "Conductor Rules",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L33",
-      "id": "auto_tagger_skill_conductor_rules",
       "community": 2105,
-      "norm_label": "conductor rules"
+      "norm_label": "conductor rules",
+      "id": "auto_tagger_skill_conductor_rules"
     },
     {
       "label": "Inputs/Outputs",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L39",
-      "id": "auto_tagger_skill_inputs_outputs",
       "community": 2105,
-      "norm_label": "inputs/outputs"
+      "norm_label": "inputs/outputs",
+      "id": "auto_tagger_skill_inputs_outputs"
     },
     {
       "label": "tag-log.md",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/tag-log.md",
       "source_location": "L1",
-      "id": "auto_tagger_tag_log",
       "community": 2421,
-      "norm_label": "tag-log.md"
+      "norm_label": "tag-log.md",
+      "id": "auto_tagger_tag_log"
     },
     {
       "label": "Auto-Tagger Log",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/tag-log.md",
       "source_location": "L1",
-      "id": "auto_tagger_tag_log_auto_tagger_log",
       "community": 2421,
-      "norm_label": "auto-tagger log"
+      "norm_label": "auto-tagger log",
+      "id": "auto_tagger_tag_log_auto_tagger_log"
     },
     {
       "label": "Sweep Log",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/tag-log.md",
       "source_location": "L3",
-      "id": "auto_tagger_tag_log_sweep_log",
       "community": 2421,
-      "norm_label": "sweep log"
+      "norm_label": "sweep log",
+      "id": "auto_tagger_tag_log_sweep_log"
     },
     {
       "label": "June 2, 2026 \u2014 Sweep Type: manual",
       "file_type": "document",
       "source_file": ".agents/skills/auto-tagger/tag-log.md",
       "source_location": "L5",
-      "id": "auto_tagger_tag_log_june_2_2026_sweep_type_manual",
       "community": 2421,
-      "norm_label": "june 2, 2026 \u2014 sweep type: manual"
+      "norm_label": "june 2, 2026 \u2014 sweep type: manual",
+      "id": "auto_tagger_tag_log_june_2_2026_sweep_type_manual"
     },
     {
       "label": "build-to-test.md",
@@ -14521,96 +14908,6 @@
       "id": "evolution_evolution_lock_escalation_policy"
     },
     {
-      "label": "EVOLUTION_RULES.md",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L1",
-      "community": 242,
-      "norm_label": "evolution_rules.md",
-      "id": "evolution_evolution_rules"
-    },
-    {
-      "label": "Evolution Rules",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L1",
-      "community": 242,
-      "norm_label": "evolution rules",
-      "id": "evolution_evolution_rules_evolution_rules"
-    },
-    {
-      "label": "Purpose",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L3",
-      "community": 242,
-      "norm_label": "purpose",
-      "id": "evolution_evolution_rules_purpose"
-    },
-    {
-      "label": "How It Works",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L6",
-      "community": 242,
-      "norm_label": "how it works",
-      "id": "evolution_evolution_rules_how_it_works"
-    },
-    {
-      "label": "Rules",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L21",
-      "community": 242,
-      "norm_label": "rules",
-      "id": "evolution_evolution_rules_rules"
-    },
-    {
-      "label": "Metrics Tracked",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L26",
-      "community": 242,
-      "norm_label": "metrics tracked",
-      "id": "evolution_evolution_rules_metrics_tracked"
-    },
-    {
-      "label": "Adaptation Rules",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L38",
-      "community": 242,
-      "norm_label": "adaptation rules",
-      "id": "evolution_evolution_rules_adaptation_rules"
-    },
-    {
-      "label": "Adaptation Approval Levels",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L49",
-      "community": 242,
-      "norm_label": "adaptation approval levels",
-      "id": "evolution_evolution_rules_adaptation_approval_levels"
-    },
-    {
-      "label": "Inputs/Outputs",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L61",
-      "community": 242,
-      "norm_label": "inputs/outputs",
-      "id": "evolution_evolution_rules_inputs_outputs"
-    },
-    {
-      "label": "Impact Table",
-      "file_type": "document",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L67",
-      "community": 242,
-      "norm_label": "impact table",
-      "id": "evolution_evolution_rules_impact_table"
-    },
-    {
       "label": "README.md",
       "file_type": "document",
       "source_file": ".ungasis/evolution/adaptations/README.md",
@@ -15389,7 +15686,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L62",
-      "community": 2142,
+      "community": 152,
       "norm_label": "token efficiency layers 13-17 (upgrade from 12-layer system)",
       "id": "agents_token_efficiency_layers_13_17_upgrade_from_12_layer_system"
     },
@@ -15398,7 +15695,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L64",
-      "community": 2142,
+      "community": 152,
       "norm_label": "layer 13: retrieval-based memory",
       "id": "agents_layer_13_retrieval_based_memory"
     },
@@ -15407,7 +15704,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L70",
-      "community": 2142,
+      "community": 152,
       "norm_label": "layer 14: tool schema pruning",
       "id": "agents_layer_14_tool_schema_pruning"
     },
@@ -15416,7 +15713,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L77",
-      "community": 2142,
+      "community": 152,
       "norm_label": "layer 15: compact encoding (toon protocol)",
       "id": "agents_layer_15_compact_encoding_toon_protocol"
     },
@@ -15425,7 +15722,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L85",
-      "community": 2142,
+      "community": 152,
       "norm_label": "layer 16: context decay / stale eviction",
       "id": "agents_layer_16_context_decay_stale_eviction"
     },
@@ -15434,7 +15731,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L91",
-      "community": 2142,
+      "community": 152,
       "norm_label": "layer 17: prompt prefix caching (provider-level)",
       "id": "agents_layer_17_prompt_prefix_caching_provider_level"
     },
@@ -20456,7 +20753,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L1",
-      "community": 295,
+      "community": 706,
       "norm_label": "risk_and_safety.md",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety"
     },
@@ -20465,7 +20762,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L1",
-      "community": 295,
+      "community": 706,
       "norm_label": "risk and safety",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_risk_and_safety"
     },
@@ -20474,7 +20771,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L3",
-      "community": 295,
+      "community": 706,
       "norm_label": "safety posture",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_safety_posture"
     },
@@ -20483,7 +20780,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L7",
-      "community": 295,
+      "community": 706,
       "norm_label": "approval required before",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_approval_required_before"
     },
@@ -20492,7 +20789,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L18",
-      "community": 295,
+      "community": 706,
       "norm_label": "secrets handling",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_secrets_handling"
     },
@@ -20501,7 +20798,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L25",
-      "community": 295,
+      "community": 706,
       "norm_label": "automation safety",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_automation_safety"
     },
@@ -20510,7 +20807,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L36",
-      "community": 295,
+      "community": 706,
       "norm_label": "ai reliability",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_ai_reliability"
     },
@@ -23579,7 +23876,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/workflows/automation-safety.md",
       "source_location": "L1",
-      "community": 295,
+      "community": 706,
       "norm_label": "automation-safety.md",
       "id": "archive_ai_project_os_master_v5_workflows_automation_safety_md_workflows_automation_safety"
     },
@@ -23588,7 +23885,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/workflows/automation-safety.md",
       "source_location": "L1",
-      "community": 295,
+      "community": 706,
       "norm_label": "workflow: automation safety",
       "id": "archive_ai_project_os_master_v5_workflows_automation_safety_md_workflows_automation_safety_workflow_automation_safety"
     },
@@ -36350,7 +36647,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L100",
-      "community": 2060,
+      "community": 2142,
       "norm_label": "3. \ud83d\udca1 phase 1 \u2014 pick and narrow the idea",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_3_phase_1_pick_and_narrow_the_idea"
     },
@@ -36368,7 +36665,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L108",
-      "community": 2060,
+      "community": 2142,
       "norm_label": "\ud83d\udca1 analogy",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_analogy"
     },
@@ -36377,7 +36674,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L112",
-      "community": 2061,
+      "community": 2142,
       "norm_label": "\ud83d\udccb key actions",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_key_actions"
     },
@@ -36386,7 +36683,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L122",
-      "community": 2060,
+      "community": 2142,
       "norm_label": "idea scoring table",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_idea_scoring_table"
     },
@@ -36404,7 +36701,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L146",
-      "community": 2060,
+      "community": 976,
       "norm_label": "\ud83d\udee0\ufe0f tools",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_tools"
     },
@@ -36413,7 +36710,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L150",
-      "community": 976,
+      "community": 2061,
       "norm_label": "\u23f1\ufe0f time estimate",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_time_estimate"
     },
@@ -36422,7 +36719,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L154",
-      "community": 2060,
+      "community": 2142,
       "norm_label": "\ud83d\udeab what not to do yet",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_what_not_to_do_yet"
     },
@@ -36431,7 +36728,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L162",
-      "community": 2060,
+      "community": 2142,
       "norm_label": "\ud83d\udea6 decision point",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_decision_point"
     },
@@ -43703,7 +44000,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/AGENTS.md",
       "source_location": "L25",
-      "community": 517,
+      "community": 705,
       "norm_label": "on-demand vs always-on (v4)",
       "id": "archive_token_efficiency_agent_os_v4_agents_md_token_efficiency_agent_os_v4_agents_on_demand_vs_always_on_v4"
     },
@@ -44000,7 +44297,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L1",
-      "community": 706,
+      "community": 70,
       "norm_label": "gemini.md",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini"
     },
@@ -44009,7 +44306,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L1",
-      "community": 706,
+      "community": 70,
       "norm_label": "gemini.md - gemini/jules instructions (v4.0)",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_gemini_md_gemini_jules_instructions_v4_0"
     },
@@ -44018,7 +44315,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L2",
-      "community": 706,
+      "community": 70,
       "norm_label": "project: [project_name] | stack: [tech_stack]",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_project_project_name_stack_tech_stack"
     },
@@ -44027,7 +44324,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L3",
-      "community": 706,
+      "community": 70,
       "norm_label": "core rule: token-efficient coding. follow agents.md.",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_core_rule_token_efficient_coding_follow_agents_md"
     },
@@ -44036,7 +44333,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L4",
-      "community": 706,
+      "community": 70,
       "norm_label": "read first: agents.md, docs/project_brief.md, docs/task_handoff.md",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_read_first_agents_md_docs_project_brief_md_docs_task_handoff_md"
     },
@@ -44045,7 +44342,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L5",
-      "community": 706,
+      "community": 70,
       "norm_label": "commands: test:[test_command] lint:[lint_command] build:[build_command]",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_commands_test_test_command_lint_lint_command_build_build_command"
     },
@@ -44054,7 +44351,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L6",
-      "community": 706,
+      "community": 70,
       "norm_label": "rules: search before reads. surgical edits. no full rewrites. no claiming untested passes.",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_rules_search_before_reads_surgical_edits_no_full_rewrites_no_claiming_untested_passes"
     },
@@ -44063,7 +44360,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L7",
-      "community": 706,
+      "community": 70,
       "norm_label": "sessions under 15-20 messages. update docs/session_summary.md at end.",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_sessions_under_15_20_messages_update_docs_session_summary_md_at_end"
     },
@@ -44072,7 +44369,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L8",
-      "community": 706,
+      "community": 70,
       "norm_label": "completion: 1.changed files 2.summary 3.commands 4.results 5.risks",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_completion_1_changed_files_2_summary_3_commands_4_results_5_risks"
     },
@@ -60974,7 +61271,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/TASK_BOARD.md",
       "source_location": "L1",
-      "community": 737,
+      "community": 558,
       "norm_label": "task_board.md",
       "id": "archive_ungasis_unified_lossless_repo_v3_task_board_md_ungasis_unified_lossless_repo_v3_task_board"
     },
@@ -60983,7 +61280,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/TASK_BOARD.md",
       "source_location": "L1",
-      "community": 737,
+      "community": 558,
       "norm_label": "task_board.md",
       "id": "archive_ungasis_unified_lossless_repo_v3_task_board_md_ungasis_unified_lossless_repo_v3_task_board_task_board_md"
     },
@@ -60992,7 +61289,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/TASK_BOARD.md",
       "source_location": "L5",
-      "community": 737,
+      "community": 558,
       "norm_label": "current tasks",
       "id": "archive_ungasis_unified_lossless_repo_v3_task_board_md_ungasis_unified_lossless_repo_v3_task_board_current_tasks"
     },
@@ -61001,7 +61298,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/TASK_BOARD.md",
       "source_location": "L16",
-      "community": 737,
+      "community": 558,
       "norm_label": "file locks",
       "id": "archive_ungasis_unified_lossless_repo_v3_task_board_md_ungasis_unified_lossless_repo_v3_task_board_file_locks"
     },
@@ -61010,7 +61307,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/TASK_BOARD.md",
       "source_location": "L26",
-      "community": 737,
+      "community": 558,
       "norm_label": "simple rule",
       "id": "archive_ungasis_unified_lossless_repo_v3_task_board_md_ungasis_unified_lossless_repo_v3_task_board_simple_rule"
     },
@@ -64187,7 +64484,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/token-efficiency/TASK_HANDOFF.md",
       "source_location": "L16",
-      "community": 558,
+      "community": 517,
       "norm_label": "files changed",
       "id": "token_efficiency_task_handoff_files_changed"
     },
@@ -110789,7 +111086,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L57",
-      "community": 2422,
+      "community": 336,
       "norm_label": "3-attempt reset rule",
       "id": "clinerules_03_self_iteration_3_attempt_reset_rule"
     },
@@ -110798,7 +111095,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L68",
-      "community": 2422,
+      "community": 336,
       "norm_label": "why this rule exists",
       "id": "clinerules_03_self_iteration_why_this_rule_exists"
     },
@@ -110807,7 +111104,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L74",
-      "community": 2422,
+      "community": 336,
       "norm_label": "analogy",
       "id": "clinerules_03_self_iteration_analogy"
     },
@@ -110816,7 +111113,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L79",
-      "community": 2422,
+      "community": 336,
       "norm_label": "token math",
       "id": "clinerules_03_self_iteration_token_math"
     },
@@ -111365,7 +111662,7 @@
       "file_type": "document",
       "source_file": "ungasis/CLAUDE.md",
       "source_location": "L5",
-      "community": 705,
+      "community": 70,
       "norm_label": "read first: agents.md, docs/project_brief.md, docs/task_handoff.md, docs/test_commands.md",
       "id": "ungasis_claude_read_first_agents_md_docs_project_brief_md_docs_task_handoff_md_docs_test_commands_md"
     },
@@ -111446,7 +111743,7 @@
       "file_type": "document",
       "source_file": "ungasis/CLAUDE.md",
       "source_location": "L27",
-      "community": 705,
+      "community": 70,
       "norm_label": "completion: 1.changed files 2.summary 3.commands 4.results 5.risks 6.rollback 7.memory updates",
       "id": "ungasis_claude_completion_1_changed_files_2_summary_3_commands_4_results_5_risks_6_rollback_7_memory_updates"
     },
@@ -111455,7 +111752,7 @@
       "file_type": "document",
       "source_file": "ungasis/CONTEXT.md",
       "source_location": "L1",
-      "community": 2393,
+      "community": 401,
       "norm_label": "context.md",
       "id": "ungasis_context"
     },
@@ -111527,7 +111824,7 @@
       "file_type": "document",
       "source_file": "ungasis/CONTEXT.md",
       "source_location": "L66",
-      "community": 466,
+      "community": 518,
       "norm_label": "next actions",
       "id": "ungasis_context_next_actions"
     },
@@ -111752,7 +112049,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-AUDIT-REPORT.md",
       "source_location": "L1",
-      "community": 2393,
+      "community": 289,
       "norm_label": "qa-audit-report.md",
       "id": "ungasis_qa_audit_report"
     },
@@ -111761,7 +112058,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-AUDIT-REPORT.md",
       "source_location": "L1",
-      "community": 2393,
+      "community": 289,
       "norm_label": "\ud83c\udff0 ungasis os v3.0 \u2014 qa audit report",
       "id": "ungasis_qa_audit_report_md_qa_audit_report_ungasis_os_v3_0_qa_audit_report"
     },
@@ -111770,7 +112067,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L1",
-      "community": 2393,
+      "community": 401,
       "norm_label": "qa-mission.md",
       "id": "ungasis_qa_mission"
     },
@@ -111815,7 +112112,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L45",
-      "community": 2426,
+      "community": 292,
       "norm_label": "t2: source coverage check",
       "id": "ungasis_qa_mission_md_qa_mission_t2_source_coverage_check"
     },
@@ -111824,7 +112121,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L47",
-      "community": 2426,
+      "community": 292,
       "norm_label": "source 1: ai_builders_master_workflow_prompt_v4.0.md",
       "id": "ungasis_qa_mission_md_qa_mission_source_1_ai_builders_master_workflow_prompt_v4_0_md"
     },
@@ -111833,7 +112130,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L91",
-      "community": 2426,
+      "community": 292,
       "norm_label": "source 2: playbook v3",
       "id": "ungasis_qa_mission_md_qa_mission_source_2_playbook_v3"
     },
@@ -111842,7 +112139,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L94",
-      "community": 2426,
+      "community": 292,
       "norm_label": "source 3: multi-agent guide v4",
       "id": "ungasis_qa_mission_md_qa_mission_source_3_multi_agent_guide_v4"
     },
@@ -170401,7 +170698,7 @@
       "label": "Risk and Safety",
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
-      "community": 295,
+      "community": 706,
       "norm_label": "risk and safety",
       "id": "risk_and_safety_safety"
     },
@@ -173428,7 +173725,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 706,
+      "community": 70,
       "norm_label": "gemini.md - gemini/jules instructions",
       "id": "gemini_md"
     },
@@ -173974,7 +174271,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 133,
+      "community": 337,
       "norm_label": "llms.txt",
       "id": "llms_txt"
     },
@@ -174000,7 +174297,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 133,
+      "community": 337,
       "norm_label": "knowledge base system module",
       "id": "ungasis_knowledge_base"
     },
@@ -175261,7 +175558,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2393,
+      "community": 289,
       "norm_label": ".clinerules \u2014 ungasis qa audit session",
       "id": "ungasis_clinerules_clinerules"
     },
@@ -177310,7 +177607,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 295,
+      "community": 706,
       "norm_label": "automation safety checklist",
       "id": "automation_safety_checklist"
     },
@@ -181323,12 +181620,472 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scout_readme",
+      "target": "scout_readme_scout_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scout_readme_scout_skill",
+      "target": "scout_readme_how_to_trigger",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scout_readme_scout_skill",
+      "target": "scout_readme_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/README.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "scout_readme_scout_skill",
+      "target": "scout_readme_under_the_hood",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "agents_skills_scout_skill_md_scout_skill",
+      "target": "scout_skill_scout_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scout_skill_scout_skill",
+      "target": "agents_skills_scout_skill_md_scout_skill_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "scout_skill_scout_skill",
+      "target": "scout_skill_safety_budget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/scout/SKILL.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scout_skill_scout_skill",
+      "target": "scout_skill_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_lock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_adaptation_approval_levels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_adaptation_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_evolution_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_how_it_works"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_impact_table"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_inputs_outputs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_metrics_tracked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_purpose"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "evolution_evolution_rules_rules"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "evolution_evolution_rules",
+      "target": "model_routing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_adaptation_approval_levels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_adaptation_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_how_it_works"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_impact_table"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_inputs_outputs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_metrics_tracked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_purpose"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "evolution_evolution_rules_evolution_rules",
+      "target": "evolution_evolution_rules_scout_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "ungasis_scout_skill_md_scout_skill",
+      "target": "scout_skill_scout_engine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scout_skill_scout_engine",
+      "target": "scout_skill_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "scout_skill_scout_engine",
+      "target": "scout_skill_inputs_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "scout_skill_scout_engine",
+      "target": "scout_skill_scout_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/SKILL.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scout_skill_scout_engine",
+      "target": "ungasis_scout_skill_md_scout_skill_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scout_adaptation_queue",
+      "target": "scout_adaptation_queue_adaptation_queue_approved_tech_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "scout_adaptation_queue_adaptation_queue_approved_tech_changes",
+      "target": "scout_adaptation_queue_adaptation_entry_template",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "scout_adaptation_queue_adaptation_queue_approved_tech_changes",
+      "target": "scout_adaptation_queue_approved_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/adaptation-queue.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scout_adaptation_queue_adaptation_queue_approved_tech_changes",
+      "target": "scout_adaptation_queue_how_to_use",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scout_scout_log",
+      "target": "scout_scout_log_scout_log_ungasis_os_v4_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scout_scout_log_scout_log_ungasis_os_v4_0",
+      "target": "scout_scout_log_discovery_entries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "scout_scout_log_scout_log_ungasis_os_v4_0",
+      "target": "scout_scout_log_how_to_use",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/scout-log.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "scout_scout_log_scout_log_ungasis_os_v4_0",
+      "target": "scout_scout_log_log_entry_template",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "sources_readme",
+      "target": "sources_readme_monitored_sources_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "sources_readme_monitored_sources_overview",
+      "target": "sources_readme_active_feeds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "sources_readme_monitored_sources_overview",
+      "target": "sources_readme_source_management_sop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "sources_readme_source_management_sop",
+      "target": "sources_readme_adding_new_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/scout/sources/README.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "sources_readme_source_management_sop",
+      "target": "sources_readme_removing_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_skill",
-      "target": "auto_tagger_skill_auto_tagger_skill",
-      "confidence_score": 1.0
+      "target": "auto_tagger_skill_auto_tagger_skill"
     },
     {
       "relation": "contains",
@@ -181336,9 +182093,9 @@
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_skill_auto_tagger_skill",
-      "target": "auto_tagger_skill_7_tagging_rules",
-      "confidence_score": 1.0
+      "target": "auto_tagger_skill_7_tagging_rules"
     },
     {
       "relation": "contains",
@@ -181346,9 +182103,9 @@
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_skill_auto_tagger_skill",
-      "target": "auto_tagger_skill_conductor_rules",
-      "confidence_score": 1.0
+      "target": "auto_tagger_skill_conductor_rules"
     },
     {
       "relation": "contains",
@@ -181356,9 +182113,9 @@
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_skill_auto_tagger_skill",
-      "target": "auto_tagger_skill_how_it_works",
-      "confidence_score": 1.0
+      "target": "auto_tagger_skill_how_it_works"
     },
     {
       "relation": "contains",
@@ -181366,9 +182123,9 @@
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_skill_auto_tagger_skill",
-      "target": "auto_tagger_skill_inputs_outputs",
-      "confidence_score": 1.0
+      "target": "auto_tagger_skill_inputs_outputs"
     },
     {
       "relation": "contains",
@@ -181376,9 +182133,9 @@
       "source_file": ".agents/skills/auto-tagger/SKILL.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_skill_auto_tagger_skill",
-      "target": "auto_tagger_skill_purpose",
-      "confidence_score": 1.0
+      "target": "auto_tagger_skill_purpose"
     },
     {
       "relation": "contains",
@@ -181386,9 +182143,9 @@
       "source_file": ".agents/skills/auto-tagger/tag-log.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_tag_log",
-      "target": "auto_tagger_tag_log_auto_tagger_log",
-      "confidence_score": 1.0
+      "target": "auto_tagger_tag_log_auto_tagger_log"
     },
     {
       "relation": "contains",
@@ -181396,9 +182153,9 @@
       "source_file": ".agents/skills/auto-tagger/tag-log.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_tag_log_auto_tagger_log",
-      "target": "auto_tagger_tag_log_sweep_log",
-      "confidence_score": 1.0
+      "target": "auto_tagger_tag_log_sweep_log"
     },
     {
       "relation": "contains",
@@ -181406,9 +182163,9 @@
       "source_file": ".agents/skills/auto-tagger/tag-log.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auto_tagger_tag_log_sweep_log",
-      "target": "auto_tagger_tag_log_june_2_2026_sweep_type_manual",
-      "confidence_score": 1.0
+      "target": "auto_tagger_tag_log_june_2_2026_sweep_type_manual"
     },
     {
       "relation": "contains",
@@ -201912,16 +202669,6 @@
       "target": "evolution_evolution_lock_rules"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_lock"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
@@ -201980,186 +202727,6 @@
       "confidence_score": 1.0,
       "source": "evolution_evolution_lock_evolution_lock",
       "target": "evolution_evolution_lock_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_adaptation_approval_levels"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_adaptation_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_evolution_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_how_it_works"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_impact_table"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_inputs_outputs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_metrics_tracked"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_purpose"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "evolution_evolution_rules_rules"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "evolution_evolution_rules",
-      "target": "model_routing"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_adaptation_approval_levels"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_adaptation_rules"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_how_it_works"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L67",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_impact_table"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L61",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_inputs_outputs"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_metrics_tracked"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_purpose"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".ungasis/evolution/EVOLUTION_RULES.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "evolution_evolution_rules_evolution_rules",
-      "target": "evolution_evolution_rules_rules"
     },
     {
       "relation": "contains",
@@ -413378,5 +413945,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "28aae74c94d529995b4e7df3d2d9d0a63764f09c"
+  "built_at_commit": "958ebb90acdf19e2cbb5ce0cded0a96318dba634"
 }
