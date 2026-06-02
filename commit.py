@@ -1,4 +1,9 @@
 import subprocess
+import sys
+
+# Ensure UTF-8 printing
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 def run_cmd(args):
     print(f"Running: {' '.join(args)}")
@@ -12,7 +17,7 @@ def run_cmd(args):
 # Commit changes
 commit_code = run_cmd([
     "git", "commit", "-m", 
-    "Sprint F5: Add LLM_CONTEXT, llms.txt, CLAUDE.md, extract templates from archive"
+    "Sprint F7: Token efficiency 12→20 layers — decay, TOON, MCP profiles, graphify query"
 ])
 
 if commit_code == 0 or "nothing to commit" in "stderr/stdout":
@@ -20,3 +25,8 @@ if commit_code == 0 or "nothing to commit" in "stderr/stdout":
     run_cmd(["git", "push"])
 else:
     print(f"Commit failed with return code {commit_code}")
+
+
+
+
+
