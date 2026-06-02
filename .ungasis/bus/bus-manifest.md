@@ -23,6 +23,11 @@ Producer Engine ──> Publishes Event ──> Bus Router ──> Delivers to C
 | Scout Engine | Self-Evolution | `tech_discovered` | Feed discovered tech into adaptation queue | L1 |
 | Task Manager | Self-Evolution | `metrics_logged` | Analyze task performance metrics | L1 |
 | Resource Manager | Decision Engine | `api_limit_near` | Trigger key rotation or pause actions | L3 |
+| Goal Decomposer | Auto-Orchestrator | `goal_decomposed` | Trigger task sizing & queueing | L1 |
+| Goal Decomposer | Auto-Orchestrator | `tasks_queued` | Add decomposed tasks to queue | L1 |
+| Session Planner | Auto-Orchestrator | `session_planned` | Emit session schedule details | L1 |
+| Rollback Engine | Self-Evolution | `rollback_triggered` | Log rollback event as adaptation | L2 |
+| Risk Intelligence | Self-Evolution | `risk_escalated` | Trigger risk mitigation adaptation | L2 |
 
 ## Inputs/Outputs
 

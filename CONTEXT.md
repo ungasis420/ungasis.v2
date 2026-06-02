@@ -364,3 +364,11 @@ New command: /commander. JARVIS: 68%→70%. Next: Batch 2.
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Batch 2 (June 3, 2026) — 8 sprints, 27 files. New engines:
+Decomposer, Session Planner, Reasoning, Dependencies, Rollback,
+Portfolio, Risk, Decision Escalation. JARVIS: 70%→85%. Next: Batch 3.
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+

@@ -850,8 +850,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780427443.5240219,
-    "ast_hash": "ef0370d40245f5f202b7fc1695013244",
+    "mtime": 1780430859.6114922,
+    "ast_hash": "dc6bf412a4ab77dd2f4e64eda40c1edd",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -8545,13 +8545,13 @@
     "semantic_hash": "e8d4baafe1f2261d0ec3afd5becfa8d3"
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\rules\\10-self-healing-loop.md": {
-    "mtime": 1780425672.5067723,
-    "ast_hash": "e1e51b7985cd1626ebec998c816f0815",
+    "mtime": 1780430849.0695703,
+    "ast_hash": "3a2e219611ca2ac028bf43f482ec9b9d",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.clinerules\\10-self-healing-loop.md": {
-    "mtime": 1780425685.8495812,
-    "ast_hash": "3071d2826a1736a3ee42f4891cf56a53",
+    "mtime": 1780430855.6786394,
+    "ast_hash": "6b0bf364c45a82c0821e1d71859b1026",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.gemini\\agents\\graphify-watchdog.md": {
@@ -8565,8 +8565,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\commit_msg.txt": {
-    "mtime": 1780419569.108261,
-    "ast_hash": "0060604d93a63bf670fef591fd3c7b4a",
+    "mtime": 1780430932.7077544,
+    "ast_hash": "b4c025726fa0690eca481ab3643685db",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\context-engine\\context-budget.md": {
@@ -8992,6 +8992,96 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\ideas\\idea-template.md": {
     "mtime": 1780427360.7263315,
     "ast_hash": "4921c1c93f9e1c0b2c7086b03f99d649",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\commander\\SKILL.md": {
+    "mtime": 1780430824.3666742,
+    "ast_hash": "a06aec57814fabfe2b694c090376dff5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\commander\\delegation-templates\\blueprint-request.md": {
+    "mtime": 1780430828.760911,
+    "ast_hash": "4dbcb8f015347d3d575b881cf0ba51c8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\commander\\delegation-templates\\build-request.md": {
+    "mtime": 1780430832.617299,
+    "ast_hash": "032c664eaff6d7a9f0f6fca43f596923",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\commander\\delegation-templates\\fix-request.md": {
+    "mtime": 1780430836.8614688,
+    "ast_hash": "ab83a16aff1ae0114f78fc8029d59e47",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\commander\\delegation-templates\\review-request.md": {
+    "mtime": 1780430845.0569208,
+    "ast_hash": "9ade3408c52e2b384e871a5408a0b416",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\commander\\delegation-templates\\test-request.md": {
+    "mtime": 1780430840.5410113,
+    "ast_hash": "a0955fc47294ff853b66e8e3159bfe57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\commander.md": {
+    "mtime": 1780430820.331787,
+    "ast_hash": "3c492bca218c5077139abe2dac038a75",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.gemini\\agents\\commander.md": {
+    "mtime": 1780430816.3599343,
+    "ast_hash": "1c42fac124bf3ac090bab307f36fbb4b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\architect\\ARCHITECT_RULES.md": {
+    "mtime": 1780430807.3778632,
+    "ast_hash": "e62be9b751e0c03f00055c12899ab77d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\architect\\BLUEPRINT_CONTEXT.md": {
+    "mtime": 1780430755.911816,
+    "ast_hash": "2d88702abb3acc247769a4e0bf457497",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\architect\\blueprint-cache.md": {
+    "mtime": 1780430769.2017121,
+    "ast_hash": "83747a7ebf8813558554857a7ce4b899",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cli-agents\\CLI_ORCHESTRATION.md": {
+    "mtime": 1780430784.1483827,
+    "ast_hash": "c0f58785e8ec491ab556eabd10fc9a68",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cli-agents\\claude-code-setup.md": {
+    "mtime": 1780430792.6292334,
+    "ast_hash": "38206cd8ac289a138ebf7de63e9ab078",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cli-agents\\claude-squad-setup.md": {
+    "mtime": 1780430811.61714,
+    "ast_hash": "0a3798421d9b008a764ee357aa55bee1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cli-agents\\cline-cli-setup.md": {
+    "mtime": 1780430797.3519368,
+    "ast_hash": "a15543a3418433592cce122c919262d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cli-agents\\codex-cli-setup.md": {
+    "mtime": 1780430801.2969558,
+    "ast_hash": "8ce8b4f8640128265146b18b4e5fc1cc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cli-agents\\commander-setup.md": {
+    "mtime": 1780430788.623997,
+    "ast_hash": "56ab00187ec4da6e9504e296ff5dcc6e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\signals\\README.md": {
+    "mtime": 1780430774.050586,
+    "ast_hash": "16593a6981e604883cf1fcddff88420c",
     "semantic_hash": ""
   }
 }

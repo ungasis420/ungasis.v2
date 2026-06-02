@@ -23,6 +23,11 @@ Event Created ──> Validate Schema ──> Check Naming ──> Route to Inte
 | `scout.discovered` | Scout Engine | L1 | `tech_name`, `url`, `relevance_score` |
 | `task.finished` | Task Manager | L1 | `task_id`, `duration_ms`, `status_code` |
 | `api.limit_warning` | Resource Manager | L3 | `api_provider`, `remaining_quota`, `reset_time` |
+| `decomposer.goal_decomposed` | Goal Decomposer | L1 | `goal_id`, `sub_goals_count` |
+| `decomposer.tasks_queued` | Goal Decomposer | L1 | `goal_id`, `task_ids` |
+| `planner.session_planned` | Session Planner | L1 | `session_id`, `duration_minutes`, `task_count` |
+| `rollback.triggered` | Rollback Engine | L2 | `rollback_scope`, `commit_hash`, `reason` |
+| `risk.escalated` | Risk Intelligence | L2 | `risk_id`, `score`, `mitigation_action` |
 
 ## Inputs/Outputs
 
