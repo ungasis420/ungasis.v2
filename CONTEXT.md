@@ -85,9 +85,85 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - Modified: `CLAUDE.md`, `AGENTS.md`, `modules/ungasis-token-policy.md`, `CONTEXT.md`
 - Created: `MODEL_ROUTING.md`, `.agents/rules/07-graphify-query.md`, `.clinerules/07-graphify-query.md`, `docs/semantic-cache-plan.md`, `.mcp/profiles/build.json`, `.mcp/profiles/research.json`, `.mcp/profiles/full.json`
 
-**Status:** UNGASIS OS v4.0 — SPRINT F7 COMPLETE
+
+## Session Handoff — June 2, 2026 🖥️ PC (Sprint F8a-F8d)
+
+**Sprint:** F8a-F8d — The 4 Priority Engines (Project DNA, SOPs, Knowledge Compounding, Revenue Pipeline)
+**Model:** Gemini 3.5 Flash (Medium)
+
+**What was accomplished:**
+- Built Sprint F8a (Project DNA): Created scaffolding genomes (`base-genome.md`, `nextjs-genome.md`, `html-genome.md`, `powerbi-genome.md`, `scaffold-rules.md`) and empty revenue-models folder.
+- Built Sprint F8b (SOP Library): Created 20 operational SOPs covering project lifecycles, daily routines, agent setups, and emergency rollbacks/conflict resolutions.
+- Built Sprint F8c (Knowledge Compounding): Created 25 wiki entries across patterns, gotchas, decisions, and metrics tracking pages.
+- Built Sprint F8d (Revenue Pipeline): Replaced placeholder with full 27-hour deploy-to-revenue math, created standalone validation SOP, and generated 6 monetization model templates.
+
+**Files created:**
+- `.ungasis/dna/base-genome.md` (63 lines)
+- `.ungasis/dna/nextjs-genome.md` (60 lines)
+- `.ungasis/dna/html-genome.md` (37 lines)
+- `.ungasis/dna/powerbi-genome.md` (47 lines)
+- `.ungasis/dna/scaffold-rules.md` (47 lines)
+- `.ungasis/dna/revenue-models/.gitkeep` (1 line)
+- `knowledge/sops/README.md` (41 lines)
+- `knowledge/sops/project-lifecycle/01-idea-to-quest.md` (36 lines)
+- `knowledge/sops/project-lifecycle/02-quest-to-mvp.md` (29 lines)
+- `knowledge/sops/project-lifecycle/03-mvp-to-deploy.md` (33 lines)
+- `knowledge/sops/project-lifecycle/04-deploy-to-revenue.md` (49 lines)
+- `knowledge/sops/project-lifecycle/05-post-launch-maintain.md` (25 lines)
+- `knowledge/sops/daily-workflows/start-pc-session.md` (24 lines)
+- `knowledge/sops/daily-workflows/start-phone-session.md` (22 lines)
+- `knowledge/sops/daily-workflows/device-handoff.md` (25 lines)
+- `knowledge/sops/daily-workflows/end-of-day.md` (24 lines)
+- `knowledge/sops/daily-workflows/weekly-review.md` (24 lines)
+- `knowledge/sops/agent-workflows/antigravity-build.md` (24 lines)
+- `knowledge/sops/agent-workflows/cline-debug.md` (24 lines)
+- `knowledge/sops/agent-workflows/jules-overnight.md` (23 lines)
+- `knowledge/sops/agent-workflows/copilot-plan.md` (24 lines)
+- `knowledge/sops/agent-workflows/multi-agent-sprint.md` (24 lines)
+- `knowledge/sops/emergency/api-key-expired.md` (22 lines)
+- `knowledge/sops/emergency/context-overflow.md` (22 lines)
+- `knowledge/sops/emergency/git-conflict.md` (24 lines)
+- `knowledge/sops/emergency/deploy-rollback.md` (23 lines)
+- `knowledge/sops/emergency/lost-progress.md` (24 lines)
+- `knowledge/wiki/README.md` (modified, +30 net lines)
+- `knowledge/wiki/patterns/glassmorphism.md` (32 lines)
+- `knowledge/wiki/patterns/vite-offline.md` (31 lines)
+- `knowledge/wiki/patterns/surgical-edits.md` (34 lines)
+- `knowledge/wiki/patterns/sky-scroll.md` (32 lines)
+- `knowledge/wiki/patterns/dot-nav.md` (33 lines)
+- `knowledge/wiki/patterns/chart-hex-colors.md` (35 lines)
+- `knowledge/wiki/patterns/single-file-ceiling.md` (30 lines)
+- `knowledge/wiki/patterns/component-max-200.md` (31 lines)
+- `knowledge/wiki/patterns/session-starter-pattern.md` (29 lines)
+- `knowledge/wiki/gotchas/nav-left-zero.md` (30 lines)
+- `knowledge/wiki/gotchas/slideglow-perf.md` (30 lines)
+- `knowledge/wiki/gotchas/cline-rewrite.md` (30 lines)
+- `knowledge/wiki/gotchas/groq-key-expiry.md` (31 lines)
+- `knowledge/wiki/gotchas/ai-rationale-hallucination.md` (31 lines)
+- `knowledge/wiki/gotchas/devstral-timeout.md` (31 lines)
+- `knowledge/wiki/gotchas/graphify-openai-backend.md` (33 lines)
+- `knowledge/wiki/decisions/nextjs-over-astro.md` (28 lines)
+- `knowledge/wiki/decisions/tailwind-over-css-modules.md` (28 lines)
+- `knowledge/wiki/decisions/indexeddb-over-supabase.md` (38 lines)
+- `knowledge/wiki/decisions/cloudflare-over-vercel.md` (28 lines)
+- `knowledge/wiki/decisions/flash-over-pro.md` (28 lines)
+- `knowledge/wiki/decisions/byok-over-subscription.md` (33 lines)
+- `knowledge/wiki/metrics/model-performance.md` (29 lines)
+- `knowledge/wiki/metrics/token-costs.md` (29 lines)
+- `knowledge/wiki/metrics/time-to-ship.md` (29 lines)
+- `knowledge/sops/project-lifecycle/00-revenue-validation.md` (39 lines)
+- `.ungasis/dna/revenue-models/freemium.md` (35 lines)
+- `.ungasis/dna/revenue-models/one-time.md` (25 lines)
+- `.ungasis/dna/revenue-models/subscription.md` (26 lines)
+- `.ungasis/dna/revenue-models/pay-per-use.md` (24 lines)
+- `.ungasis/dna/revenue-models/sponsorship.md` (25 lines)
+- `.ungasis/dna/revenue-models/open-core.md` (24 lines)
+
+**Next steps:**
+1. Sprint F9a-c: Context Engine, Decision Intelligence, Agentic Framework
+2. Setup and integrate local dev pipelines
+
+**Known issues:**
+- PowerShell quoting limits split string parameters during standard Git commits; resolved by running git updates via `commit.py` script.
 
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
-
-
-
