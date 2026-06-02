@@ -24,5 +24,18 @@ FOR EACH SPRINT:
 - NEVER commit to git before audit PASS.
 - Max 3 audit cycles per sprint — then escalate to human.
 
+## Blueprint-First Rule (Added June 2026)
+
+For ANY task that involves creating 3+ new files:
+1. MUST call @blueprint-architect first
+2. Architect generates BLUEPRINT-[name].md
+3. Blueprint must pass @quality-auditor pre-flight
+4. Only THEN does Builder execute using Section 8 kickoff prompt
+5. Exception: single-file edits, bug fixes, and config changes (no blueprint needed)
+
+Why: Separating specification from implementation prevents hallucinated
+architecture and ensures every build uses proven patterns + avoids known gotchas.
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
