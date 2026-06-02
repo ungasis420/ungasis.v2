@@ -32,5 +32,11 @@ Capture Raw Note ──> Append to Inbox Table ──> Daily Review ──> Proc
 |---|---|---|
 | Sorted Item | Processing Engine | Parsed parameters mapped to destination folder |
 
+## Learning: Autonomous Batch Pipeline (June 3, 2026)
+Multi-batch autonomous execution tested. 4 batches, ~96 files.
+Key learning: Commander generates all prompts upfront, Builder executes sequentially. Bottleneck: Mel's paste action between batches.
+Future optimization: Claude Squad could eliminate paste bottleneck.
+Tags: orchestration, pipeline, learning
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
