@@ -10791,7 +10791,7 @@
       "source_file": ".agents/skills/code-review/SKILL.md",
       "source_location": "L1",
       "id": "agents_skills_code_review_skill_md_code_review_skill",
-      "community": 201,
+      "community": 142,
       "norm_label": "skill.md"
     },
     {
@@ -10800,7 +10800,7 @@
       "source_file": ".agents/skills/code-review/SKILL.md",
       "source_location": "L5",
       "id": "code_review_skill_code_review_skill",
-      "community": 201,
+      "community": 142,
       "norm_label": "code review skill"
     },
     {
@@ -10809,7 +10809,7 @@
       "source_file": ".agents/skills/code-review/SKILL.md",
       "source_location": "L7",
       "id": "code_review_skill_purpose",
-      "community": 201,
+      "community": 142,
       "norm_label": "purpose"
     },
     {
@@ -10818,7 +10818,7 @@
       "source_file": ".agents/skills/code-review/SKILL.md",
       "source_location": "L10",
       "id": "code_review_skill_steps",
-      "community": 201,
+      "community": 142,
       "norm_label": "steps"
     },
     {
@@ -11097,7 +11097,7 @@
       "source_file": ".agents/skills/session-handoff/SKILL.md",
       "source_location": "L1",
       "id": "session_handoff_skill",
-      "community": 2590,
+      "community": 2092,
       "norm_label": "skill.md"
     },
     {
@@ -11106,7 +11106,7 @@
       "source_file": ".agents/skills/session-handoff/SKILL.md",
       "source_location": "L5",
       "id": "session_handoff_skill_session_handoff_skill",
-      "community": 2590,
+      "community": 2092,
       "norm_label": "session handoff skill"
     },
     {
@@ -11115,7 +11115,7 @@
       "source_file": ".agents/skills/session-handoff/SKILL.md",
       "source_location": "L7",
       "id": "session_handoff_skill_purpose",
-      "community": 2590,
+      "community": 2092,
       "norm_label": "purpose"
     },
     {
@@ -11124,7 +11124,7 @@
       "source_file": ".agents/skills/session-handoff/SKILL.md",
       "source_location": "L10",
       "id": "session_handoff_skill_steps",
-      "community": 2590,
+      "community": 2092,
       "norm_label": "steps"
     },
     {
@@ -12663,7 +12663,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L1",
       "id": "ungasis_builder_profile_builder_profile_mel_john_dimat",
-      "community": 2102,
+      "community": 288,
       "norm_label": "builder profile \u2014 mel john dimat"
     },
     {
@@ -12672,7 +12672,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L3",
       "id": "ungasis_builder_profile_identity",
-      "community": 2102,
+      "community": 288,
       "norm_label": "identity"
     },
     {
@@ -12681,7 +12681,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L10",
       "id": "ungasis_builder_profile_learning_style",
-      "community": 2102,
+      "community": 288,
       "norm_label": "learning style"
     },
     {
@@ -12690,7 +12690,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L18",
       "id": "ungasis_builder_profile_communication_preferences",
-      "community": 2102,
+      "community": 288,
       "norm_label": "communication preferences"
     },
     {
@@ -12699,7 +12699,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L26",
       "id": "ungasis_builder_profile_tech_context",
-      "community": 2102,
+      "community": 288,
       "norm_label": "tech context"
     },
     {
@@ -12708,7 +12708,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L42",
       "id": "ungasis_builder_profile_design_preferences",
-      "community": 2102,
+      "community": 288,
       "norm_label": "design preferences"
     },
     {
@@ -12717,7 +12717,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L49",
       "id": "ungasis_builder_profile_active_projects",
-      "community": 2102,
+      "community": 288,
       "norm_label": "active projects"
     },
     {
@@ -12726,7 +12726,7 @@
       "source_file": ".ungasis/BUILDER_PROFILE.md",
       "source_location": "L54",
       "id": "ungasis_builder_profile_what_not_to_do",
-      "community": 2102,
+      "community": 288,
       "norm_label": "what not to do"
     },
     {
@@ -12960,7 +12960,7 @@
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L1",
       "id": "agentic_agentic_framework",
-      "community": 2188,
+      "community": 140,
       "norm_label": "agentic_framework.md"
     },
     {
@@ -12969,7 +12969,7 @@
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L1",
       "id": "agentic_agentic_framework_agentic_framework",
-      "community": 2188,
+      "community": 140,
       "norm_label": "agentic framework"
     },
     {
@@ -12978,7 +12978,7 @@
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L3",
       "id": "agentic_agentic_framework_purpose",
-      "community": 2188,
+      "community": 140,
       "norm_label": "purpose"
     },
     {
@@ -12987,7 +12987,7 @@
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L6",
       "id": "agentic_agentic_framework_how_it_works",
-      "community": 2188,
+      "community": 140,
       "norm_label": "how it works"
     },
     {
@@ -12996,7 +12996,7 @@
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L9",
       "id": "agentic_agentic_framework_rules",
-      "community": 2188,
+      "community": 140,
       "norm_label": "rules"
     },
     {
@@ -13005,7 +13005,7 @@
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L14",
       "id": "agentic_agentic_framework_the_7_disciplines_of_agentic_engineering",
-      "community": 2188,
+      "community": 140,
       "norm_label": "the 7 disciplines of agentic engineering"
     },
     {
@@ -13014,7 +13014,7 @@
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L26",
       "id": "agentic_agentic_framework_inputs_outputs",
-      "community": 2188,
+      "community": 140,
       "norm_label": "inputs/outputs"
     },
     {
@@ -13285,6 +13285,195 @@
       "source_location": "L24",
       "id": "agentic_orchestration_patterns_inputs_outputs",
       "community": 833,
+      "norm_label": "inputs/outputs"
+    },
+    {
+      "label": "bus-manifest.md",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L1",
+      "id": "bus_bus_manifest",
+      "community": 1039,
+      "norm_label": "bus-manifest.md"
+    },
+    {
+      "label": "Bus Manifest",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L1",
+      "id": "bus_bus_manifest_bus_manifest",
+      "community": 1039,
+      "norm_label": "bus manifest"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L3",
+      "id": "bus_bus_manifest_purpose",
+      "community": 1039,
+      "norm_label": "purpose"
+    },
+    {
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L6",
+      "id": "bus_bus_manifest_how_it_works",
+      "community": 1039,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L11",
+      "id": "bus_bus_manifest_rules",
+      "community": 1039,
+      "norm_label": "rules"
+    },
+    {
+      "label": "Inter-Engine Connections",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L17",
+      "id": "bus_bus_manifest_inter_engine_connections",
+      "community": 1039,
+      "norm_label": "inter-engine connections"
+    },
+    {
+      "label": "Inputs/Outputs",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L27",
+      "id": "bus_bus_manifest_inputs_outputs",
+      "community": 1039,
+      "norm_label": "inputs/outputs"
+    },
+    {
+      "label": "bus-rules.md",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L1",
+      "id": "bus_bus_rules",
+      "community": 1191,
+      "norm_label": "bus-rules.md"
+    },
+    {
+      "label": "Bus Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L1",
+      "id": "bus_bus_rules_bus_rules",
+      "community": 1191,
+      "norm_label": "bus rules"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L3",
+      "id": "bus_bus_rules_purpose",
+      "community": 1191,
+      "norm_label": "purpose"
+    },
+    {
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L6",
+      "id": "bus_bus_rules_how_it_works",
+      "community": 1191,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L13",
+      "id": "bus_bus_rules_rules",
+      "community": 1191,
+      "norm_label": "rules"
+    },
+    {
+      "label": "Event Priorities and Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L19",
+      "id": "bus_bus_rules_event_priorities_and_rules",
+      "community": 1191,
+      "norm_label": "event priorities and rules"
+    },
+    {
+      "label": "Inputs/Outputs",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L28",
+      "id": "bus_bus_rules_inputs_outputs",
+      "community": 1191,
+      "norm_label": "inputs/outputs"
+    },
+    {
+      "label": "event-types.md",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L1",
+      "id": "bus_event_types",
+      "community": 1218,
+      "norm_label": "event-types.md"
+    },
+    {
+      "label": "Event Types",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L1",
+      "id": "bus_event_types_event_types",
+      "community": 1218,
+      "norm_label": "event types"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L3",
+      "id": "bus_event_types_purpose",
+      "community": 1218,
+      "norm_label": "purpose"
+    },
+    {
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L6",
+      "id": "bus_event_types_how_it_works",
+      "community": 1218,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "Rules",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L11",
+      "id": "bus_event_types_rules",
+      "community": 1218,
+      "norm_label": "rules"
+    },
+    {
+      "label": "Standard Event Types",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L17",
+      "id": "bus_event_types_standard_event_types",
+      "community": 1218,
+      "norm_label": "standard event types"
+    },
+    {
+      "label": "Inputs/Outputs",
+      "file_type": "document",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L27",
+      "id": "bus_event_types_inputs_outputs",
+      "community": 1218,
       "norm_label": "inputs/outputs"
     },
     {
@@ -14454,7 +14643,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L1",
       "id": "evolution_evolution_lock",
-      "community": 242,
+      "community": 1035,
       "norm_label": "evolution_lock.md"
     },
     {
@@ -14463,7 +14652,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L1",
       "id": "evolution_evolution_lock_evolution_lock",
-      "community": 242,
+      "community": 1035,
       "norm_label": "evolution lock"
     },
     {
@@ -14472,7 +14661,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L3",
       "id": "evolution_evolution_lock_purpose",
-      "community": 242,
+      "community": 1035,
       "norm_label": "purpose"
     },
     {
@@ -14481,7 +14670,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L6",
       "id": "evolution_evolution_lock_how_it_works",
-      "community": 242,
+      "community": 1035,
       "norm_label": "how it works"
     },
     {
@@ -14490,7 +14679,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L10",
       "id": "evolution_evolution_lock_rules",
-      "community": 242,
+      "community": 1035,
       "norm_label": "rules"
     },
     {
@@ -14499,7 +14688,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L15",
       "id": "evolution_evolution_lock_locked_files_list",
-      "community": 242,
+      "community": 1035,
       "norm_label": "locked files list"
     },
     {
@@ -14508,7 +14697,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L25",
       "id": "evolution_evolution_lock_inputs_outputs",
-      "community": 242,
+      "community": 1035,
       "norm_label": "inputs/outputs"
     },
     {
@@ -14517,7 +14706,7 @@
       "source_file": ".ungasis/evolution/EVOLUTION_LOCK.md",
       "source_location": "L31",
       "id": "evolution_evolution_lock_escalation_policy",
-      "community": 242,
+      "community": 1035,
       "norm_label": "escalation policy"
     },
     {
@@ -16101,7 +16290,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L62",
       "id": "agents_token_efficiency_layers_13_17_upgrade_from_12_layer_system",
-      "community": 152,
+      "community": 1237,
       "norm_label": "token efficiency layers 13-17 (upgrade from 12-layer system)"
     },
     {
@@ -16110,7 +16299,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L64",
       "id": "agents_layer_13_retrieval_based_memory",
-      "community": 152,
+      "community": 1237,
       "norm_label": "layer 13: retrieval-based memory"
     },
     {
@@ -16119,7 +16308,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L70",
       "id": "agents_layer_14_tool_schema_pruning",
-      "community": 152,
+      "community": 1237,
       "norm_label": "layer 14: tool schema pruning"
     },
     {
@@ -16128,7 +16317,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L77",
       "id": "agents_layer_15_compact_encoding_toon_protocol",
-      "community": 152,
+      "community": 1237,
       "norm_label": "layer 15: compact encoding (toon protocol)"
     },
     {
@@ -16137,7 +16326,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L85",
       "id": "agents_layer_16_context_decay_stale_eviction",
-      "community": 152,
+      "community": 1237,
       "norm_label": "layer 16: context decay / stale eviction"
     },
     {
@@ -16146,7 +16335,7 @@
       "source_file": "AGENTS.md",
       "source_location": "L91",
       "id": "agents_layer_17_prompt_prefix_caching_provider_level",
-      "community": 152,
+      "community": 1237,
       "norm_label": "layer 17: prompt prefix caching (provider-level)"
     },
     {
@@ -18702,7 +18891,7 @@
       "source_file": "archive/ai_project_os_master_v5/.claude/skills/growth-experiment-loop/SKILL.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_claude_skills_growth_experiment_loop_skill_md_growth_experiment_loop_skill",
-      "community": 1230,
+      "community": 167,
       "norm_label": "skill.md"
     },
     {
@@ -18711,7 +18900,7 @@
       "source_file": "archive/ai_project_os_master_v5/.claude/skills/growth-experiment-loop/SKILL.md",
       "source_location": "L6",
       "id": "archive_ai_project_os_master_v5_claude_skills_growth_experiment_loop_skill_md_growth_experiment_loop_skill_growth_experiment_loop",
-      "community": 1230,
+      "community": 167,
       "norm_label": "growth experiment loop"
     },
     {
@@ -18720,7 +18909,7 @@
       "source_file": "archive/ai_project_os_master_v5/.claude/skills/growth-experiment-loop/SKILL.md",
       "source_location": "L10",
       "id": "archive_ai_project_os_master_v5_claude_skills_growth_experiment_loop_skill_md_growth_experiment_loop_skill_process",
-      "community": 1230,
+      "community": 167,
       "norm_label": "process"
     },
     {
@@ -18729,7 +18918,7 @@
       "source_file": "archive/ai_project_os_master_v5/.claude/skills/growth-experiment-loop/SKILL.md",
       "source_location": "L20",
       "id": "archive_ai_project_os_master_v5_claude_skills_growth_experiment_loop_skill_md_growth_experiment_loop_skill_output",
-      "community": 1230,
+      "community": 167,
       "norm_label": "output"
     },
     {
@@ -18738,7 +18927,7 @@
       "source_file": "archive/ai_project_os_master_v5/.claude/skills/growth-experiment-loop/SKILL.md",
       "source_location": "L28",
       "id": "archive_ai_project_os_master_v5_claude_skills_growth_experiment_loop_skill_md_growth_experiment_loop_skill_guardrails",
-      "community": 1230,
+      "community": 167,
       "norm_label": "guardrails"
     },
     {
@@ -21123,7 +21312,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/DECISIONS.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_docs_decisions_md_docs_decisions",
-      "community": 222,
+      "community": 413,
       "norm_label": "decisions.md"
     },
     {
@@ -21132,7 +21321,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/DECISIONS.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_docs_decisions_md_docs_decisions_decisions",
-      "community": 222,
+      "community": 413,
       "norm_label": "decisions"
     },
     {
@@ -21141,7 +21330,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/DECISIONS.md",
       "source_location": "L5",
       "id": "archive_ai_project_os_master_v5_docs_decisions_md_docs_decisions_2026_06_01_use_agents_md_as_cross_agent_source_and_claude_md_as_claude_code_entrypoint",
-      "community": 222,
+      "community": 413,
       "norm_label": "2026-06-01 - use agents.md as cross-agent source and claude.md as claude code entrypoint"
     },
     {
@@ -21150,7 +21339,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/DECISIONS.md",
       "source_location": "L12",
       "id": "archive_ai_project_os_master_v5_docs_decisions_md_docs_decisions_2026_06_01_skills_are_source_of_truth_commands_are_thin_macros",
-      "community": 222,
+      "community": 413,
       "norm_label": "2026-06-01 - skills are source of truth; commands are thin macros"
     },
     {
@@ -21159,7 +21348,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/DECISIONS.md",
       "source_location": "L19",
       "id": "archive_ai_project_os_master_v5_docs_decisions_md_docs_decisions_2026_06_01_keep_docs_and_context_separate",
-      "community": 222,
+      "community": 413,
       "norm_label": "2026-06-01 - keep docs and context separate"
     },
     {
@@ -21168,7 +21357,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/DECISIONS.md",
       "source_location": "L26",
       "id": "archive_ai_project_os_master_v5_docs_decisions_md_docs_decisions_2026_06_01_add_explicit_llm_context_pack_layer",
-      "community": 222,
+      "community": 413,
       "norm_label": "2026-06-01 - add explicit llm context pack layer"
     },
     {
@@ -21177,7 +21366,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/DECISIONS.md",
       "source_location": "L33",
       "id": "archive_ai_project_os_master_v5_docs_decisions_md_docs_decisions_2026_06_01_add_spec_first_and_growth_experiment_layers",
-      "community": 222,
+      "community": 413,
       "norm_label": "2026-06-01 - add spec-first and growth experiment layers"
     },
     {
@@ -21330,7 +21519,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff",
-      "community": 222,
+      "community": 379,
       "norm_label": "handoff.md"
     },
     {
@@ -21339,7 +21528,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_handoff",
-      "community": 222,
+      "community": 379,
       "norm_label": "handoff"
     },
     {
@@ -21348,7 +21537,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L5",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_current_goal",
-      "community": 222,
+      "community": 379,
       "norm_label": "current goal"
     },
     {
@@ -21357,7 +21546,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L9",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_current_state",
-      "community": 222,
+      "community": 379,
       "norm_label": "current state"
     },
     {
@@ -21366,7 +21555,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L13",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_files_changed_recently",
-      "community": 222,
+      "community": 379,
       "norm_label": "files changed recently"
     },
     {
@@ -21375,7 +21564,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L19",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_decisions_made",
-      "community": 222,
+      "community": 379,
       "norm_label": "decisions made"
     },
     {
@@ -21384,7 +21573,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L25",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_commands_checks_run",
-      "community": 222,
+      "community": 379,
       "norm_label": "commands / checks run"
     },
     {
@@ -21393,7 +21582,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L31",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_open_blockers",
-      "community": 222,
+      "community": 379,
       "norm_label": "open blockers"
     },
     {
@@ -21402,7 +21591,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L35",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_next_smallest_step",
-      "community": 222,
+      "community": 379,
       "norm_label": "next smallest step"
     },
     {
@@ -21411,7 +21600,7 @@
       "source_file": "archive/ai_project_os_master_v5/docs/HANDOFF.md",
       "source_location": "L39",
       "id": "archive_ai_project_os_master_v5_docs_handoff_md_docs_handoff_do_not_repeat",
-      "community": 222,
+      "community": 379,
       "norm_label": "do not repeat"
     },
     {
@@ -25218,7 +25407,7 @@
       "source_file": "archive/ai_project_os_master_v5/workflows/automation-safety.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_workflows_automation_safety_md_workflows_automation_safety",
-      "community": 706,
+      "community": 295,
       "norm_label": "automation-safety.md"
     },
     {
@@ -25227,7 +25416,7 @@
       "source_file": "archive/ai_project_os_master_v5/workflows/automation-safety.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_workflows_automation_safety_md_workflows_automation_safety_workflow_automation_safety",
-      "community": 706,
+      "community": 295,
       "norm_label": "workflow: automation safety"
     },
     {
@@ -25434,7 +25623,7 @@
       "source_file": "archive/ai_project_os_master_v5/workflows/growth-experiment-loop.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_workflows_growth_experiment_loop_md_workflows_growth_experiment_loop",
-      "community": 1230,
+      "community": 167,
       "norm_label": "growth-experiment-loop.md"
     },
     {
@@ -25443,7 +25632,7 @@
       "source_file": "archive/ai_project_os_master_v5/workflows/growth-experiment-loop.md",
       "source_location": "L1",
       "id": "archive_ai_project_os_master_v5_workflows_growth_experiment_loop_md_workflows_growth_experiment_loop_workflow_growth_experiment_loop",
-      "community": 1230,
+      "community": 167,
       "norm_label": "workflow: growth experiment loop"
     },
     {
@@ -25452,7 +25641,7 @@
       "source_file": "archive/ai_project_os_master_v5/workflows/growth-experiment-loop.md",
       "source_location": "L5",
       "id": "archive_ai_project_os_master_v5_workflows_growth_experiment_loop_md_workflows_growth_experiment_loop_loop",
-      "community": 1230,
+      "community": 167,
       "norm_label": "loop"
     },
     {
@@ -25461,7 +25650,7 @@
       "source_file": "archive/ai_project_os_master_v5/workflows/growth-experiment-loop.md",
       "source_location": "L11",
       "id": "archive_ai_project_os_master_v5_workflows_growth_experiment_loop_md_workflows_growth_experiment_loop_steps",
-      "community": 1230,
+      "community": 167,
       "norm_label": "steps"
     },
     {
@@ -25470,7 +25659,7 @@
       "source_file": "archive/ai_project_os_master_v5/workflows/growth-experiment-loop.md",
       "source_location": "L23",
       "id": "archive_ai_project_os_master_v5_workflows_growth_experiment_loop_md_workflows_growth_experiment_loop_done_means",
-      "community": 1230,
+      "community": 167,
       "norm_label": "done means"
     },
     {
@@ -25893,7 +26082,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L231",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_05_requirements",
-      "community": 2605,
+      "community": 62,
       "norm_label": "step 05 \u2014 requirements"
     },
     {
@@ -25902,7 +26091,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L245",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_245",
-      "community": 2605,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -25929,7 +26118,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L316",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_07_persona",
-      "community": 2606,
+      "community": 62,
       "norm_label": "step 07 \u2014 persona"
     },
     {
@@ -25938,7 +26127,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L330",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_330",
-      "community": 2606,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -25947,7 +26136,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L357",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_08_spec_prd",
-      "community": 2386,
+      "community": 62,
       "norm_label": "step 08 \u2014 spec/prd"
     },
     {
@@ -25956,7 +26145,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L371",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_371",
-      "community": 2386,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -25965,7 +26154,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L399",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_09_user_stories",
-      "community": 2607,
+      "community": 62,
       "norm_label": "step 09 \u2014 user stories"
     },
     {
@@ -25974,7 +26163,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L413",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_413",
-      "community": 2607,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26091,7 +26280,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L682",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_16_accessibility",
-      "community": 2427,
+      "community": 62,
       "norm_label": "step 16 \u2014 accessibility"
     },
     {
@@ -26100,7 +26289,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L696",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_696",
-      "community": 2427,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26109,7 +26298,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L720",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_17_security",
-      "community": 2608,
+      "community": 62,
       "norm_label": "step 17 \u2014 security"
     },
     {
@@ -26118,7 +26307,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L734",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_734",
-      "community": 2608,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26127,7 +26316,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L766",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_18_feedback",
-      "community": 2609,
+      "community": 62,
       "norm_label": "step 18 \u2014 feedback"
     },
     {
@@ -26136,7 +26325,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L780",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_780",
-      "community": 2609,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26163,7 +26352,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L846",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_20_portfolio_packaging",
-      "community": 2610,
+      "community": 62,
       "norm_label": "step 20 \u2014 portfolio packaging"
     },
     {
@@ -26172,7 +26361,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L860",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_860",
-      "community": 2610,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26199,7 +26388,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L930",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_22_beta_testing",
-      "community": 2611,
+      "community": 62,
       "norm_label": "step 22 \u2014 beta testing"
     },
     {
@@ -26208,7 +26397,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L944",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_944",
-      "community": 2611,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26217,7 +26406,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L972",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_23_beta_feedback_analysis",
-      "community": 2433,
+      "community": 62,
       "norm_label": "step 23 \u2014 beta feedback analysis"
     },
     {
@@ -26226,7 +26415,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L986",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_986",
-      "community": 2433,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26271,7 +26460,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1097",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_26_deployment",
-      "community": 2255,
+      "community": 62,
       "norm_label": "step 26 \u2014 deployment"
     },
     {
@@ -26280,7 +26469,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1111",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_1111",
-      "community": 2255,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26325,7 +26514,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1228",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_29_documentation",
-      "community": 2326,
+      "community": 62,
       "norm_label": "step 29 \u2014 documentation"
     },
     {
@@ -26334,7 +26523,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1242",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_1242",
-      "community": 2326,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26343,7 +26532,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1271",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_30_evolution_log",
-      "community": 2330,
+      "community": 62,
       "norm_label": "step 30 \u2014 evolution log"
     },
     {
@@ -26352,7 +26541,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1285",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_1285",
-      "community": 2330,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26361,7 +26550,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1316",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_31_scale_pivot_archive_decision",
-      "community": 2344,
+      "community": 62,
       "norm_label": "step 31 \u2014 scale/pivot/archive decision"
     },
     {
@@ -26370,7 +26559,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1330",
       "id": "archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_1330",
-      "community": 2344,
+      "community": 62,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -26973,7 +27162,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-prompt-engineering.md",
       "source_location": "L599",
       "id": "archive_chatgpt_ent_archive_ungasis_prompt_engineering_md_archive_ungasis_prompt_engineering_15_how_to_save_and_version_prompts",
-      "community": 1035,
+      "community": 43,
       "norm_label": "15. how to save and version prompts"
     },
     {
@@ -26982,7 +27171,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-prompt-engineering.md",
       "source_location": "L603",
       "id": "archive_chatgpt_ent_archive_ungasis_prompt_engineering_md_archive_ungasis_prompt_engineering_recommended_folder_structure",
-      "community": 1035,
+      "community": 43,
       "norm_label": "recommended folder structure"
     },
     {
@@ -26991,7 +27180,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-prompt-engineering.md",
       "source_location": "L624",
       "id": "archive_chatgpt_ent_archive_ungasis_prompt_engineering_md_archive_ungasis_prompt_engineering_prompt_file_template",
-      "community": 1035,
+      "community": 43,
       "norm_label": "prompt file template"
     },
     {
@@ -27000,7 +27189,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-prompt-engineering.md",
       "source_location": "L667",
       "id": "archive_chatgpt_ent_archive_ungasis_prompt_engineering_md_archive_ungasis_prompt_engineering_version_naming_rule",
-      "community": 1035,
+      "community": 43,
       "norm_label": "version naming rule"
     },
     {
@@ -27009,7 +27198,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-prompt-engineering.md",
       "source_location": "L676",
       "id": "archive_chatgpt_ent_archive_ungasis_prompt_engineering_md_archive_ungasis_prompt_engineering_beginner_rule",
-      "community": 1035,
+      "community": 43,
       "norm_label": "beginner rule"
     },
     {
@@ -27387,7 +27576,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library",
-      "community": 2109,
+      "community": 21,
       "norm_label": "ungasis-sop-library.md"
     },
     {
@@ -27459,7 +27648,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L113",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sops",
-      "community": 2109,
+      "community": 21,
       "norm_label": "sops"
     },
     {
@@ -27468,7 +27657,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L115",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_01_starting_a_new_project",
-      "community": 2181,
+      "community": 2108,
       "norm_label": "sop 01 - starting a new project"
     },
     {
@@ -27495,7 +27684,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L141",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist",
-      "community": 2181,
+      "community": 2108,
       "norm_label": "done checklist"
     },
     {
@@ -27504,7 +27693,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L149",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt",
-      "community": 2191,
+      "community": 2581,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -27558,7 +27747,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L197",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_03_creating_a_project_brief",
-      "community": 2184,
+      "community": 1232,
       "norm_label": "sop 03 - creating a project brief"
     },
     {
@@ -27567,7 +27756,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L209",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_209",
-      "community": 2184,
+      "community": 1232,
       "norm_label": "steps"
     },
     {
@@ -27576,7 +27765,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L219",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_219",
-      "community": 2184,
+      "community": 1232,
       "norm_label": "safety warning"
     },
     {
@@ -27585,7 +27774,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L223",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_223",
-      "community": 2184,
+      "community": 1232,
       "norm_label": "done checklist"
     },
     {
@@ -27594,7 +27783,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L231",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_231",
-      "community": 2184,
+      "community": 1232,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -27738,7 +27927,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L363",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_07_creating_dummy_demo_data",
-      "community": 1237,
+      "community": 1233,
       "norm_label": "sop 07 - creating dummy/demo data"
     },
     {
@@ -27747,7 +27936,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L375",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_375",
-      "community": 1237,
+      "community": 1233,
       "norm_label": "steps"
     },
     {
@@ -27756,7 +27945,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L384",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_384",
-      "community": 1237,
+      "community": 1233,
       "norm_label": "safety warning"
     },
     {
@@ -27765,7 +27954,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L388",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_388",
-      "community": 1237,
+      "community": 1233,
       "norm_label": "done checklist"
     },
     {
@@ -27774,7 +27963,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L395",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_395",
-      "community": 1237,
+      "community": 1233,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -27783,7 +27972,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L403",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_08_creating_a_lightweight_prd",
-      "community": 1233,
+      "community": 2581,
       "norm_label": "sop 08 - creating a lightweight prd"
     },
     {
@@ -27792,7 +27981,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L415",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_415",
-      "community": 1233,
+      "community": 2581,
       "norm_label": "steps"
     },
     {
@@ -27801,7 +27990,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L425",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_425",
-      "community": 1233,
+      "community": 2581,
       "norm_label": "safety warning"
     },
     {
@@ -27810,7 +27999,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L429",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_429",
-      "community": 1233,
+      "community": 2581,
       "norm_label": "done checklist"
     },
     {
@@ -27819,7 +28008,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L436",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_436",
-      "community": 1233,
+      "community": 2581,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -27828,7 +28017,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L444",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_09_creating_a_ux_flow",
-      "community": 1232,
+      "community": 2087,
       "norm_label": "sop 09 - creating a ux flow"
     },
     {
@@ -27837,7 +28026,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L456",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_456",
-      "community": 1232,
+      "community": 2087,
       "norm_label": "steps"
     },
     {
@@ -27846,7 +28035,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L466",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_466",
-      "community": 1232,
+      "community": 2087,
       "norm_label": "safety warning"
     },
     {
@@ -27855,7 +28044,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L470",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_470",
-      "community": 1232,
+      "community": 2087,
       "norm_label": "done checklist"
     },
     {
@@ -27864,7 +28053,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L477",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_477",
-      "community": 1232,
+      "community": 2087,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -28233,7 +28422,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L820",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_18_preparing_portfolio_screenshots",
-      "community": 2191,
+      "community": 2102,
       "norm_label": "sop 18 - preparing portfolio screenshots"
     },
     {
@@ -28242,7 +28431,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L832",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_832",
-      "community": 2191,
+      "community": 2102,
       "norm_label": "steps"
     },
     {
@@ -28251,7 +28440,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L842",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_842",
-      "community": 2191,
+      "community": 2102,
       "norm_label": "safety warning"
     },
     {
@@ -28260,7 +28449,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L846",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_846",
-      "community": 2191,
+      "community": 2102,
       "norm_label": "done checklist"
     },
     {
@@ -28269,7 +28458,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L854",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_854",
-      "community": 2191,
+      "community": 2102,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -28863,7 +29052,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1410",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_reusable_files_mentioned_in_the_sops",
-      "community": 2109,
+      "community": 21,
       "norm_label": "reusable files mentioned in the sops"
     },
     {
@@ -28872,7 +29061,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1427",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_source_ledger",
-      "community": 2109,
+      "community": 21,
       "norm_label": "source ledger"
     },
     {
@@ -28881,7 +29070,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1438",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_qa_checklist_for_this_module",
-      "community": 2109,
+      "community": 21,
       "norm_label": "qa checklist for this module"
     },
     {
@@ -28890,7 +29079,7 @@
       "source_file": "archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1450",
       "id": "archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_ungasis_trace",
-      "community": 2109,
+      "community": 21,
       "norm_label": "ungasis trace"
     },
     {
@@ -29097,7 +29286,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L266",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_9_ai_operating_models_by_work_type",
-      "community": 2432,
+      "community": 53,
       "norm_label": "9. ai operating models by work type"
     },
     {
@@ -29106,7 +29295,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L268",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_a_app_building",
-      "community": 2432,
+      "community": 53,
       "norm_label": "a. app building"
     },
     {
@@ -29115,7 +29304,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L279",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_b_research",
-      "community": 2432,
+      "community": 53,
       "norm_label": "b. research"
     },
     {
@@ -29124,7 +29313,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L289",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_c_coding",
-      "community": 2432,
+      "community": 53,
       "norm_label": "c. coding"
     },
     {
@@ -29133,7 +29322,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L300",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_d_microsoft_365_work",
-      "community": 2432,
+      "community": 53,
       "norm_label": "d. microsoft 365 work"
     },
     {
@@ -29205,7 +29394,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L441",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_11_human_approval_gates",
-      "community": 53,
+      "community": 78,
       "norm_label": "11. human approval gates"
     },
     {
@@ -29214,7 +29403,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L460",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_approval_template",
-      "community": 53,
+      "community": 78,
       "norm_label": "approval template"
     },
     {
@@ -30897,7 +31086,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L257",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_7_pattern_3_constraint_pattern",
-      "community": 297,
+      "community": 2127,
       "norm_label": "7. pattern 3 \u2014 constraint pattern"
     },
     {
@@ -30906,7 +31095,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L259",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_what_it_is_259",
-      "community": 297,
+      "community": 2127,
       "norm_label": "what it is"
     },
     {
@@ -30915,7 +31104,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L263",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_why_it_works_263",
-      "community": 297,
+      "community": 2127,
       "norm_label": "why it works"
     },
     {
@@ -30924,7 +31113,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L276",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_copy_paste_template_276",
-      "community": 297,
+      "community": 2127,
       "norm_label": "copy-paste template"
     },
     {
@@ -30933,7 +31122,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L288",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_beginner_example_288",
-      "community": 297,
+      "community": 2127,
       "norm_label": "beginner example"
     },
     {
@@ -30996,7 +31185,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L342",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_9_pattern_5_step_by_step_pattern",
-      "community": 2511,
+      "community": 297,
       "norm_label": "9. pattern 5 \u2014 step-by-step pattern"
     },
     {
@@ -31005,7 +31194,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L344",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_what_it_is_344",
-      "community": 2511,
+      "community": 297,
       "norm_label": "what it is"
     },
     {
@@ -31014,7 +31203,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L348",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_why_it_works_348",
-      "community": 2511,
+      "community": 297,
       "norm_label": "why it works"
     },
     {
@@ -31023,7 +31212,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L357",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_copy_paste_template_357",
-      "community": 2511,
+      "community": 297,
       "norm_label": "copy-paste template"
     },
     {
@@ -31032,7 +31221,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L369",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_beginner_example_369",
-      "community": 2511,
+      "community": 297,
       "norm_label": "beginner example"
     },
     {
@@ -31086,7 +31275,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L419",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_11_pattern_7_iteration_pattern",
-      "community": 297,
+      "community": 2061,
       "norm_label": "11. pattern 7 \u2014 iteration pattern"
     },
     {
@@ -31095,7 +31284,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L421",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_what_it_is_421",
-      "community": 297,
+      "community": 2061,
       "norm_label": "what it is"
     },
     {
@@ -31104,7 +31293,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L425",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_why_it_works_425",
-      "community": 297,
+      "community": 2061,
       "norm_label": "why it works"
     },
     {
@@ -31113,7 +31302,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L429",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_simple_loop",
-      "community": 297,
+      "community": 2061,
       "norm_label": "simple loop"
     },
     {
@@ -31122,7 +31311,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L443",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_copy_paste_template_443",
-      "community": 297,
+      "community": 2061,
       "norm_label": "copy-paste template"
     },
     {
@@ -31131,7 +31320,7 @@
       "source_file": "archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L463",
       "id": "archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_beginner_example_463",
-      "community": 297,
+      "community": 2061,
       "norm_label": "beginner example"
     },
     {
@@ -35037,7 +35226,7 @@
       "source_file": "archive/m365_copilot_chatgpt/ungasis-decision-matrix.md",
       "source_location": "L39",
       "id": "archive_m365_copilot_chatgpt_ungasis_decision_matrix_md_m365_copilot_chatgpt_ungasis_decision_matrix_2_scoring_legend",
-      "community": 413,
+      "community": 2036,
       "norm_label": "2. scoring legend"
     },
     {
@@ -35046,7 +35235,7 @@
       "source_file": "archive/m365_copilot_chatgpt/ungasis-decision-matrix.md",
       "source_location": "L41",
       "id": "archive_m365_copilot_chatgpt_ungasis_decision_matrix_md_m365_copilot_chatgpt_ungasis_decision_matrix_free_paid_risk",
-      "community": 413,
+      "community": 2036,
       "norm_label": "free/paid risk"
     },
     {
@@ -35055,7 +35244,7 @@
       "source_file": "archive/m365_copilot_chatgpt/ungasis-decision-matrix.md",
       "source_location": "L49",
       "id": "archive_m365_copilot_chatgpt_ungasis_decision_matrix_md_m365_copilot_chatgpt_ungasis_decision_matrix_difficulty",
-      "community": 413,
+      "community": 2036,
       "norm_label": "difficulty"
     },
     {
@@ -35064,7 +35253,7 @@
       "source_file": "archive/m365_copilot_chatgpt/ungasis-decision-matrix.md",
       "source_location": "L59",
       "id": "archive_m365_copilot_chatgpt_ungasis_decision_matrix_md_m365_copilot_chatgpt_ungasis_decision_matrix_data_level",
-      "community": 413,
+      "community": 2036,
       "norm_label": "data level"
     },
     {
@@ -37989,7 +38178,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L100",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_3_phase_1_pick_and_narrow_the_idea",
-      "community": 2227,
+      "community": 2060,
       "norm_label": "3. \ud83d\udca1 phase 1 \u2014 pick and narrow the idea"
     },
     {
@@ -38007,7 +38196,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L108",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_analogy",
-      "community": 2227,
+      "community": 2060,
       "norm_label": "\ud83d\udca1 analogy"
     },
     {
@@ -38016,7 +38205,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L112",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_key_actions",
-      "community": 2227,
+      "community": 98,
       "norm_label": "\ud83d\udccb key actions"
     },
     {
@@ -38025,7 +38214,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L122",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_idea_scoring_table",
-      "community": 2227,
+      "community": 2060,
       "norm_label": "idea scoring table"
     },
     {
@@ -38034,7 +38223,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L140",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_output",
-      "community": 98,
+      "community": 2060,
       "norm_label": "\ud83d\udce6 output"
     },
     {
@@ -38043,7 +38232,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L146",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_tools",
-      "community": 976,
+      "community": 2060,
       "norm_label": "\ud83d\udee0\ufe0f tools"
     },
     {
@@ -38052,7 +38241,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L150",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_time_estimate",
-      "community": 2061,
+      "community": 976,
       "norm_label": "\u23f1\ufe0f time estimate"
     },
     {
@@ -38061,7 +38250,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L154",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_what_not_to_do_yet",
-      "community": 2227,
+      "community": 2060,
       "norm_label": "\ud83d\udeab what not to do yet"
     },
     {
@@ -38070,7 +38259,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L162",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_decision_point",
-      "community": 2227,
+      "community": 2060,
       "norm_label": "\ud83d\udea6 decision point"
     },
     {
@@ -38268,7 +38457,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L335",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_6_phase_4_build_clickable_prototype",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "6. \ud83d\uddb1\ufe0f phase 4 \u2014 build clickable prototype"
     },
     {
@@ -38277,7 +38466,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L339",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_goal_339",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "\ud83c\udfaf goal"
     },
     {
@@ -38286,7 +38475,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L343",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_key_actions_343",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "\ud83d\udccb key actions"
     },
     {
@@ -38295,7 +38484,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L353",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_prototype_checklist_from_playbook_11",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "prototype checklist (from playbook \u00a711)"
     },
     {
@@ -38304,7 +38493,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L362",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_output_362",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "\ud83d\udce6 output"
     },
     {
@@ -38313,7 +38502,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L367",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_tools_367",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "\ud83d\udee0\ufe0f tools"
     },
     {
@@ -38322,7 +38511,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L371",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_time_estimate_371",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "\u23f1\ufe0f time estimate"
     },
     {
@@ -38331,7 +38520,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L375",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_what_not_to_do_yet_375",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "\ud83d\udeab what not to do yet"
     },
     {
@@ -38340,7 +38529,7 @@
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L383",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_decision_point_383",
-      "community": 2061,
+      "community": 2060,
       "norm_label": "\ud83d\udea6 decision point"
     },
     {
@@ -45342,7 +45531,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/AGENTS.md",
       "source_location": "L25",
       "id": "archive_token_efficiency_agent_os_v4_agents_md_token_efficiency_agent_os_v4_agents_on_demand_vs_always_on_v4",
-      "community": 705,
+      "community": 517,
       "norm_label": "on-demand vs always-on (v4)"
     },
     {
@@ -45621,7 +45810,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/CONVENTIONS.md",
       "source_location": "L1",
       "id": "archive_token_efficiency_agent_os_v4_conventions_md_token_efficiency_agent_os_v4_conventions",
-      "community": 705,
+      "community": 2326,
       "norm_label": "conventions.md"
     },
     {
@@ -45630,7 +45819,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/CONVENTIONS.md",
       "source_location": "L1",
       "id": "archive_token_efficiency_agent_os_v4_conventions_md_token_efficiency_agent_os_v4_conventions_conventions_md_aider_conventions_v4_0",
-      "community": 705,
+      "community": 2326,
       "norm_label": "conventions.md - aider conventions (v4.0)"
     },
     {
@@ -45639,7 +45828,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L1",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini",
-      "community": 70,
+      "community": 604,
       "norm_label": "gemini.md"
     },
     {
@@ -45648,7 +45837,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L1",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_gemini_md_gemini_jules_instructions_v4_0",
-      "community": 70,
+      "community": 604,
       "norm_label": "gemini.md - gemini/jules instructions (v4.0)"
     },
     {
@@ -45657,7 +45846,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L2",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_project_project_name_stack_tech_stack",
-      "community": 70,
+      "community": 604,
       "norm_label": "project: [project_name] | stack: [tech_stack]"
     },
     {
@@ -45666,7 +45855,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L3",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_core_rule_token_efficient_coding_follow_agents_md",
-      "community": 70,
+      "community": 604,
       "norm_label": "core rule: token-efficient coding. follow agents.md."
     },
     {
@@ -45675,7 +45864,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L4",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_read_first_agents_md_docs_project_brief_md_docs_task_handoff_md",
-      "community": 70,
+      "community": 604,
       "norm_label": "read first: agents.md, docs/project_brief.md, docs/task_handoff.md"
     },
     {
@@ -45684,7 +45873,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L5",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_commands_test_test_command_lint_lint_command_build_build_command",
-      "community": 70,
+      "community": 604,
       "norm_label": "commands: test:[test_command] lint:[lint_command] build:[build_command]"
     },
     {
@@ -45693,7 +45882,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L6",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_rules_search_before_reads_surgical_edits_no_full_rewrites_no_claiming_untested_passes",
-      "community": 70,
+      "community": 604,
       "norm_label": "rules: search before reads. surgical edits. no full rewrites. no claiming untested passes."
     },
     {
@@ -45702,7 +45891,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L7",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_sessions_under_15_20_messages_update_docs_session_summary_md_at_end",
-      "community": 70,
+      "community": 604,
       "norm_label": "sessions under 15-20 messages. update docs/session_summary.md at end."
     },
     {
@@ -45711,7 +45900,7 @@
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L8",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_completion_1_changed_files_2_summary_3_commands_4_results_5_risks",
-      "community": 70,
+      "community": 604,
       "norm_label": "completion: 1.changed files 2.summary 3.commands 4.results 5.risks"
     },
     {
@@ -47223,7 +47412,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/.claude/skills/code-review.md",
       "source_location": "L1",
       "id": "archive_ungasis_unified_lossless_repo_v3_claude_skills_code_review_md_skills_code_review",
-      "community": 201,
+      "community": 142,
       "norm_label": "code-review.md"
     },
     {
@@ -47232,7 +47421,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/.claude/skills/code-review.md",
       "source_location": "L1",
       "id": "archive_ungasis_unified_lossless_repo_v3_claude_skills_code_review_md_skills_code_review_skill_code_review",
-      "community": 201,
+      "community": 142,
       "norm_label": "skill: code review"
     },
     {
@@ -47241,7 +47430,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/.claude/skills/code-review.md",
       "source_location": "L3",
       "id": "archive_ungasis_unified_lossless_repo_v3_claude_skills_code_review_md_skills_code_review_when_to_use",
-      "community": 201,
+      "community": 142,
       "norm_label": "when to use"
     },
     {
@@ -47250,7 +47439,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/.claude/skills/code-review.md",
       "source_location": "L6",
       "id": "archive_ungasis_unified_lossless_repo_v3_claude_skills_code_review_md_skills_code_review_steps",
-      "community": 201,
+      "community": 142,
       "norm_label": "steps"
     },
     {
@@ -65790,7 +65979,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/token-efficiency/TASK_HANDOFF.md",
       "source_location": "L5",
       "id": "token_efficiency_task_handoff_current_task",
-      "community": 737,
+      "community": 558,
       "norm_label": "current task"
     },
     {
@@ -65826,7 +66015,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/token-efficiency/TASK_HANDOFF.md",
       "source_location": "L16",
       "id": "token_efficiency_task_handoff_files_changed",
-      "community": 517,
+      "community": 558,
       "norm_label": "files changed"
     },
     {
@@ -66798,7 +66987,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/memory/orchestration/DECISIONS.md",
       "source_location": "L1",
       "id": "orchestration_decisions",
-      "community": 222,
+      "community": 413,
       "norm_label": "decisions.md"
     },
     {
@@ -66807,7 +66996,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/memory/orchestration/DECISIONS.md",
       "source_location": "L1",
       "id": "orchestration_decisions_decisions",
-      "community": 222,
+      "community": 413,
       "norm_label": "decisions"
     },
     {
@@ -73620,7 +73809,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/ungasis-core/beginner_app_building_tool_stack_workflow_guide.md",
       "source_location": "L329",
       "id": "ungasis_core_beginner_app_building_tool_stack_workflow_guide_6_beginner_learning_path",
-      "community": 193,
+      "community": 2386,
       "norm_label": "6. beginner learning path"
     },
     {
@@ -73629,7 +73818,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/ungasis-core/beginner_app_building_tool_stack_workflow_guide.md",
       "source_location": "L331",
       "id": "ungasis_core_beginner_app_building_tool_stack_workflow_guide_week_1_learn_the_workflow",
-      "community": 193,
+      "community": 2386,
       "norm_label": "week 1: learn the workflow"
     },
     {
@@ -73638,7 +73827,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/ungasis-core/beginner_app_building_tool_stack_workflow_guide.md",
       "source_location": "L357",
       "id": "ungasis_core_beginner_app_building_tool_stack_workflow_guide_week_2_build_one_tiny_app",
-      "community": 193,
+      "community": 2386,
       "norm_label": "week 2: build one tiny app"
     },
     {
@@ -73647,7 +73836,7 @@
       "source_file": "archive/ungasis-unified-lossless-repo-v3/ungasis-core/beginner_app_building_tool_stack_workflow_guide.md",
       "source_location": "L383",
       "id": "ungasis_core_beginner_app_building_tool_stack_workflow_guide_week_3_add_quality",
-      "community": 193,
+      "community": 2386,
       "norm_label": "week 3: add quality"
     },
     {
@@ -74889,7 +75078,7 @@
       "source_file": "archive/ungasis-v5-absorption-revised-final/ungasis-context-loops.md",
       "source_location": "L50",
       "id": "ungasis_v5_absorption_revised_final_ungasis_context_loops_2_workflow_1_karpathy_loop",
-      "community": 2381,
+      "community": 123,
       "norm_label": "2. workflow 1: karpathy loop"
     },
     {
@@ -74898,7 +75087,7 @@
       "source_file": "archive/ungasis-v5-absorption-revised-final/ungasis-context-loops.md",
       "source_location": "L58",
       "id": "ungasis_v5_absorption_revised_final_ungasis_context_loops_karpathy_loop_when_to_use",
-      "community": 2381,
+      "community": 123,
       "norm_label": "karpathy loop: when to use"
     },
     {
@@ -74907,7 +75096,7 @@
       "source_file": "archive/ungasis-v5-absorption-revised-final/ungasis-context-loops.md",
       "source_location": "L69",
       "id": "ungasis_v5_absorption_revised_final_ungasis_context_loops_karpathy_loop_step_by_step",
-      "community": 2381,
+      "community": 123,
       "norm_label": "karpathy loop: step-by-step"
     },
     {
@@ -74916,7 +75105,7 @@
       "source_file": "archive/ungasis-v5-absorption-revised-final/ungasis-context-loops.md",
       "source_location": "L80",
       "id": "ungasis_v5_absorption_revised_final_ungasis_context_loops_what_goes_into_llm_context_md",
-      "community": 2381,
+      "community": 123,
       "norm_label": "what goes into `llm_context.md`"
     },
     {
@@ -74925,7 +75114,7 @@
       "source_file": "archive/ungasis-v5-absorption-revised-final/ungasis-context-loops.md",
       "source_location": "L95",
       "id": "ungasis_v5_absorption_revised_final_ungasis_context_loops_llms_txt_rule",
-      "community": 2381,
+      "community": 123,
       "norm_label": "`llms.txt` rule"
     },
     {
@@ -74934,7 +75123,7 @@
       "source_file": "archive/ungasis-v5-absorption-revised-final/ungasis-context-loops.md",
       "source_location": "L106",
       "id": "ungasis_v5_absorption_revised_final_ungasis_context_loops_karpathy_loop_done_criteria",
-      "community": 2381,
+      "community": 123,
       "norm_label": "karpathy loop: done criteria"
     },
     {
@@ -78480,7 +78669,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L1",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress",
-      "community": 2183,
+      "community": 133,
       "norm_label": "progress.md"
     },
     {
@@ -78489,7 +78678,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L1",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress_progress_status_and_milestones",
-      "community": 2183,
+      "community": 133,
       "norm_label": "progress \u2014 status and milestones"
     },
     {
@@ -78498,7 +78687,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L3",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress_current_status",
-      "community": 2183,
+      "community": 133,
       "norm_label": "current status"
     },
     {
@@ -78507,7 +78696,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L15",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress_what_works",
-      "community": 2183,
+      "community": 133,
       "norm_label": "what works"
     },
     {
@@ -78516,7 +78705,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L26",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress_what_s_left_to_build",
-      "community": 2183,
+      "community": 133,
       "norm_label": "what's left to build"
     },
     {
@@ -78525,7 +78714,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L43",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress_known_issues",
-      "community": 2183,
+      "community": 133,
       "norm_label": "known issues"
     },
     {
@@ -78534,7 +78723,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L53",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress_evolution_of_decisions",
-      "community": 2183,
+      "community": 133,
       "norm_label": "evolution of decisions"
     },
     {
@@ -78543,7 +78732,7 @@
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/memory-bank/progress.md",
       "source_location": "L63",
       "id": "archive_ungasis_t1_t8_final_repo_package_ungasis_unified_lossless_repo_v3_memory_bank_progress_md_memory_bank_progress_next_validation_step",
-      "community": 2183,
+      "community": 133,
       "norm_label": "next validation step"
     },
     {
@@ -95202,7 +95391,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L11",
       "id": "modules_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_0_start_here_the_1_minute_prompt_rule",
-      "community": 92,
+      "community": 2427,
       "norm_label": "0. start here: the 1-minute prompt rule"
     },
     {
@@ -95211,7 +95400,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L23",
       "id": "modules_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_tiny_formula",
-      "community": 92,
+      "community": 2427,
       "norm_label": "tiny formula"
     },
     {
@@ -95220,7 +95409,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L29",
       "id": "modules_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_everyday_analogy",
-      "community": 92,
+      "community": 2427,
       "norm_label": "everyday analogy"
     },
     {
@@ -95229,7 +95418,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L50",
       "id": "modules_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_1_data_safety_before_prompting",
-      "community": 92,
+      "community": 2432,
       "norm_label": "1. data safety before prompting \ud83d\udd10"
     },
     {
@@ -95238,7 +95427,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L62",
       "id": "modules_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_hard_rule",
-      "community": 92,
+      "community": 2432,
       "norm_label": "hard rule"
     },
     {
@@ -95247,7 +95436,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L69",
       "id": "modules_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_safe_replacement_pattern",
-      "community": 92,
+      "community": 2432,
       "norm_label": "safe replacement pattern"
     },
     {
@@ -97497,7 +97686,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L118",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_01_starting_a_new_project",
-      "community": 2260,
+      "community": 1230,
       "norm_label": "sop 01 - starting a new project"
     },
     {
@@ -97515,7 +97704,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L143",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning",
-      "community": 1399,
+      "community": 2265,
       "norm_label": "safety warning"
     },
     {
@@ -97524,7 +97713,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L147",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist",
-      "community": 2260,
+      "community": 1230,
       "norm_label": "done checklist"
     },
     {
@@ -97533,7 +97722,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L158",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt",
-      "community": 1389,
+      "community": 2587,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -97542,7 +97731,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L166",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_02_naming_files_and_folders",
-      "community": 1402,
+      "community": 2183,
       "norm_label": "sop 02 - naming files and folders"
     },
     {
@@ -97551,7 +97740,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L178",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_178",
-      "community": 1402,
+      "community": 2183,
       "norm_label": "steps"
     },
     {
@@ -97560,7 +97749,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L187",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_187",
-      "community": 1402,
+      "community": 2183,
       "norm_label": "safety warning"
     },
     {
@@ -97569,7 +97758,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L191",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_191",
-      "community": 1402,
+      "community": 2183,
       "norm_label": "done checklist"
     },
     {
@@ -97578,7 +97767,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L198",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_198",
-      "community": 1402,
+      "community": 2183,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -97587,7 +97776,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L206",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_03_creating_a_project_brief",
-      "community": 1399,
+      "community": 1402,
       "norm_label": "sop 03 - creating a project brief"
     },
     {
@@ -97596,7 +97785,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L218",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_218",
-      "community": 1399,
+      "community": 1402,
       "norm_label": "steps"
     },
     {
@@ -97605,7 +97794,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L228",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_228",
-      "community": 1399,
+      "community": 1402,
       "norm_label": "safety warning"
     },
     {
@@ -97614,7 +97803,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L232",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_232",
-      "community": 1399,
+      "community": 1402,
       "norm_label": "done checklist"
     },
     {
@@ -97623,7 +97812,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L240",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_240",
-      "community": 1399,
+      "community": 1402,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -97722,7 +97911,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L332",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_06_saving_and_organizing_sources",
-      "community": 2588,
+      "community": 2265,
       "norm_label": "sop 06 - saving and organizing sources"
     },
     {
@@ -97731,7 +97920,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L344",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_344",
-      "community": 2588,
+      "community": 2265,
       "norm_label": "steps"
     },
     {
@@ -97740,7 +97929,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L353",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_353",
-      "community": 2588,
+      "community": 2265,
       "norm_label": "safety warning"
     },
     {
@@ -97749,7 +97938,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L357",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_357",
-      "community": 2588,
+      "community": 2265,
       "norm_label": "done checklist"
     },
     {
@@ -97758,7 +97947,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L364",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_364",
-      "community": 2588,
+      "community": 2265,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -98352,7 +98541,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L913",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_20_publishing_a_static_demo",
-      "community": 2589,
+      "community": 2587,
       "norm_label": "sop 20 - publishing a static demo"
     },
     {
@@ -98361,7 +98550,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L925",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_925",
-      "community": 2589,
+      "community": 2587,
       "norm_label": "steps"
     },
     {
@@ -98370,7 +98559,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L935",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_935",
-      "community": 2589,
+      "community": 2587,
       "norm_label": "safety warning"
     },
     {
@@ -98379,7 +98568,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L939",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_939",
-      "community": 2589,
+      "community": 2587,
       "norm_label": "done checklist"
     },
     {
@@ -98388,7 +98577,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L947",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_947",
-      "community": 2589,
+      "community": 2587,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -98397,7 +98586,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L955",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_21_preparing_private_beta",
-      "community": 1389,
+      "community": 2184,
       "norm_label": "sop 21 - preparing private beta"
     },
     {
@@ -98406,7 +98595,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L967",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_967",
-      "community": 1389,
+      "community": 2184,
       "norm_label": "steps"
     },
     {
@@ -98415,7 +98604,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L977",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_977",
-      "community": 1389,
+      "community": 2184,
       "norm_label": "safety warning"
     },
     {
@@ -98424,7 +98613,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L981",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_981",
-      "community": 1389,
+      "community": 2184,
       "norm_label": "done checklist"
     },
     {
@@ -98433,7 +98622,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L989",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_989",
-      "community": 1389,
+      "community": 2184,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -98622,7 +98811,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1165",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_26_archiving_a_project",
-      "community": 2584,
+      "community": 1388,
       "norm_label": "sop 26 - archiving a project"
     },
     {
@@ -98631,7 +98820,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1177",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_1177",
-      "community": 2584,
+      "community": 1388,
       "norm_label": "steps"
     },
     {
@@ -98640,7 +98829,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1187",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_1187",
-      "community": 2584,
+      "community": 1388,
       "norm_label": "safety warning"
     },
     {
@@ -98649,7 +98838,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1191",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_1191",
-      "community": 2584,
+      "community": 1388,
       "norm_label": "done checklist"
     },
     {
@@ -98658,7 +98847,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1199",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_1199",
-      "community": 2584,
+      "community": 1388,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -98667,7 +98856,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1207",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_27_emergency_key_secret_accidentally_exposed",
-      "community": 1388,
+      "community": 1230,
       "norm_label": "sop 27 - emergency: key/secret accidentally exposed"
     },
     {
@@ -98676,7 +98865,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1219",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_1219",
-      "community": 1388,
+      "community": 1230,
       "norm_label": "steps"
     },
     {
@@ -98685,7 +98874,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1229",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_1229",
-      "community": 1388,
+      "community": 1230,
       "norm_label": "safety warning"
     },
     {
@@ -98694,7 +98883,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1233",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_1233",
-      "community": 1388,
+      "community": 1230,
       "norm_label": "done checklist"
     },
     {
@@ -98703,7 +98892,7 @@
       "source_file": "modules/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L1241",
       "id": "modules_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_1241",
-      "community": 1388,
+      "community": 1230,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -105921,7 +106110,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L1",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy",
-      "community": 312,
+      "community": 273,
       "norm_label": "ungasis-portfolio-strategy.md"
     },
     {
@@ -105984,7 +106173,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L60",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_2_how_to_turn_a_personal_tool_portfolio_project",
-      "community": 312,
+      "community": 2433,
       "norm_label": "2. how to turn a personal tool \u2192 portfolio project"
     },
     {
@@ -105993,7 +106182,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L62",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_the_8_step_transformation_process",
-      "community": 312,
+      "community": 2433,
       "norm_label": "the 8-step transformation process"
     },
     {
@@ -106002,7 +106191,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L75",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_before_vs_after",
-      "community": 312,
+      "community": 2433,
       "norm_label": "before vs. after"
     },
     {
@@ -106029,7 +106218,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L107",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_4_how_to_use_dummy_demo_data_safely",
-      "community": 1218,
+      "community": 312,
       "norm_label": "4. how to use dummy/demo data safely"
     },
     {
@@ -106038,7 +106227,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L109",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_what_to_replace",
-      "community": 1218,
+      "community": 312,
       "norm_label": "what to replace"
     },
     {
@@ -106047,7 +106236,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L122",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_how_to_generate_fake_data",
-      "community": 1218,
+      "community": 312,
       "norm_label": "how to generate fake data"
     },
     {
@@ -106056,7 +106245,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L131",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_chatgpt_prompt_for_demo_data",
-      "community": 1218,
+      "community": 312,
       "norm_label": "chatgpt prompt for demo data"
     },
     {
@@ -106110,7 +106299,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L217",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_add_your_supabase_keys_to_env_local",
-      "community": 312,
+      "community": 273,
       "norm_label": "add your supabase keys to .env.local"
     },
     {
@@ -106218,7 +106407,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L360",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_9_case_studies_problem_process_solution_result",
-      "community": 273,
+      "community": 2330,
       "norm_label": "9. case studies: problem \u2192 process \u2192 solution \u2192 result"
     },
     {
@@ -106227,7 +106416,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L362",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_the_case_study_template",
-      "community": 273,
+      "community": 2330,
       "norm_label": "the case study template"
     },
     {
@@ -106236,7 +106425,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L394",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_filled_example_1",
-      "community": 273,
+      "community": 2330,
       "norm_label": "filled example 1"
     },
     {
@@ -106245,7 +106434,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L431",
       "id": "modules_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_filled_example_2",
-      "community": 273,
+      "community": 2330,
       "norm_label": "filled example 2"
     },
     {
@@ -106605,7 +106794,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-project-factory.md",
       "source_location": "L206",
       "id": "modules_m365_copilot_opus_ungasis_project_factory_md_m365_copilot_opus_ungasis_project_factory_step_3_build_ai_builds_while_i_review",
-      "community": 2603,
+      "community": 274,
       "norm_label": "step 3: \ud83d\udd28 build \u2014 ai builds while i review"
     },
     {
@@ -106614,7 +106803,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-project-factory.md",
       "source_location": "L217",
       "id": "modules_m365_copilot_opus_ungasis_project_factory_md_m365_copilot_opus_ungasis_project_factory_build_rules",
-      "community": 2603,
+      "community": 274,
       "norm_label": "build rules"
     },
     {
@@ -106623,7 +106812,7 @@
       "source_file": "modules/m365_copilot_opus/ungasis-project-factory.md",
       "source_location": "L226",
       "id": "modules_m365_copilot_opus_ungasis_project_factory_md_m365_copilot_opus_ungasis_project_factory_copy_paste_build_prompt_for_cline",
-      "community": 2603,
+      "community": 274,
       "norm_label": "copy-paste build prompt (for cline)"
     },
     {
@@ -113967,7 +114156,7 @@
       "source_file": "ungasis/CLAUDE.md",
       "source_location": "L5",
       "id": "ungasis_claude_read_first_agents_md_docs_project_brief_md_docs_task_handoff_md_docs_test_commands_md",
-      "community": 70,
+      "community": 705,
       "norm_label": "read first: agents.md, docs/project_brief.md, docs/task_handoff.md, docs/test_commands.md"
     },
     {
@@ -114048,7 +114237,7 @@
       "source_file": "ungasis/CLAUDE.md",
       "source_location": "L27",
       "id": "ungasis_claude_completion_1_changed_files_2_summary_3_commands_4_results_5_risks_6_rollback_7_memory_updates",
-      "community": 70,
+      "community": 705,
       "norm_label": "completion: 1.changed files 2.summary 3.commands 4.results 5.risks 6.rollback 7.memory updates"
     },
     {
@@ -122715,7 +122904,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L150",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_03_validation",
-      "community": 2040,
+      "community": 2589,
       "norm_label": "step 03 \u2014 validation"
     },
     {
@@ -122724,7 +122913,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L164",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_164",
-      "community": 2040,
+      "community": 2589,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -123111,7 +123300,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1057",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_step_25_ai_optimization",
-      "community": 2599,
+      "community": 2040,
       "norm_label": "step 25 \u2014 ai optimization"
     },
     {
@@ -123120,7 +123309,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1071",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_me_as_mvp_workflow_md_archive_ungasis_me_as_mvp_workflow_copy_paste_prompt_1071",
-      "community": 2599,
+      "community": 2040,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -124371,7 +124560,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L157",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_02_naming_files_and_folders",
-      "community": 2041,
+      "community": 2300,
       "norm_label": "sop 02 - naming files and folders"
     },
     {
@@ -124380,7 +124569,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L169",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_169",
-      "community": 2041,
+      "community": 2300,
       "norm_label": "steps"
     },
     {
@@ -124389,7 +124578,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L178",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_178",
-      "community": 2041,
+      "community": 2300,
       "norm_label": "safety warning"
     },
     {
@@ -124398,7 +124587,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L182",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_182",
-      "community": 2041,
+      "community": 2300,
       "norm_label": "done checklist"
     },
     {
@@ -124407,7 +124596,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L189",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_189",
-      "community": 2041,
+      "community": 2300,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -124596,7 +124785,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L363",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_07_creating_dummy_demo_data",
-      "community": 2042,
+      "community": 2043,
       "norm_label": "sop 07 - creating dummy/demo data"
     },
     {
@@ -124605,7 +124794,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L375",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_375",
-      "community": 2042,
+      "community": 2043,
       "norm_label": "steps"
     },
     {
@@ -124614,7 +124803,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L384",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_384",
-      "community": 2042,
+      "community": 2043,
       "norm_label": "safety warning"
     },
     {
@@ -124623,7 +124812,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L388",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_388",
-      "community": 2042,
+      "community": 2043,
       "norm_label": "done checklist"
     },
     {
@@ -124632,7 +124821,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L395",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_395",
-      "community": 2042,
+      "community": 2043,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -124641,7 +124830,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L403",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_08_creating_a_lightweight_prd",
-      "community": 2043,
+      "community": 2041,
       "norm_label": "sop 08 - creating a lightweight prd"
     },
     {
@@ -124650,7 +124839,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L415",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_415",
-      "community": 2043,
+      "community": 2041,
       "norm_label": "steps"
     },
     {
@@ -124659,7 +124848,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L425",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_425",
-      "community": 2043,
+      "community": 2041,
       "norm_label": "safety warning"
     },
     {
@@ -124668,7 +124857,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L429",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_429",
-      "community": 2043,
+      "community": 2041,
       "norm_label": "done checklist"
     },
     {
@@ -124677,7 +124866,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L436",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_436",
-      "community": 2043,
+      "community": 2041,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -125316,7 +125505,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1030",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_sop_23_reviewing_automation_safety",
-      "community": 2309,
+      "community": 2042,
       "norm_label": "sop 23 - reviewing automation safety"
     },
     {
@@ -125325,7 +125514,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1042",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_steps_1042",
-      "community": 2309,
+      "community": 2042,
       "norm_label": "steps"
     },
     {
@@ -125334,7 +125523,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1052",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_safety_warning_1052",
-      "community": 2309,
+      "community": 2042,
       "norm_label": "safety warning"
     },
     {
@@ -125343,7 +125532,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1056",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_done_checklist_1056",
-      "community": 2309,
+      "community": 2042,
       "norm_label": "done checklist"
     },
     {
@@ -125352,7 +125541,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/archive/ungasis-sop-library.md",
       "source_location": "L1064",
       "id": "ungasis_archive_chatgpt_ent_archive_ungasis_sop_library_md_archive_ungasis_sop_library_copy_paste_helper_prompt_1064",
-      "community": 2309,
+      "community": 2042,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -127557,7 +127746,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L11",
       "id": "ungasis_archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_0_start_here_the_1_minute_prompt_rule",
-      "community": 96,
+      "community": 2511,
       "norm_label": "0. start here: the 1-minute prompt rule"
     },
     {
@@ -127566,7 +127755,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L23",
       "id": "ungasis_archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_tiny_formula",
-      "community": 96,
+      "community": 2511,
       "norm_label": "tiny formula"
     },
     {
@@ -127575,7 +127764,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L29",
       "id": "ungasis_archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_everyday_analogy",
-      "community": 96,
+      "community": 2511,
       "norm_label": "everyday analogy"
     },
     {
@@ -127584,7 +127773,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L50",
       "id": "ungasis_archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_1_data_safety_before_prompting",
-      "community": 96,
+      "community": 2584,
       "norm_label": "1. data safety before prompting \ud83d\udd10"
     },
     {
@@ -127593,7 +127782,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L62",
       "id": "ungasis_archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_hard_rule",
-      "community": 96,
+      "community": 2584,
       "norm_label": "hard rule"
     },
     {
@@ -127602,7 +127791,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-prompt-engineering.md",
       "source_location": "L69",
       "id": "ungasis_archive_chatgpt_ent_ungasis_prompt_engineering_md_chatgpt_ent_ungasis_prompt_engineering_safe_replacement_pattern",
-      "community": 96,
+      "community": 2584,
       "norm_label": "safe replacement pattern"
     },
     {
@@ -129861,7 +130050,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L130",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps",
-      "community": 2087,
+      "community": 2047,
       "norm_label": "steps"
     },
     {
@@ -129942,7 +130131,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L206",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_03_creating_a_project_brief",
-      "community": 2087,
+      "community": 2046,
       "norm_label": "sop 03 - creating a project brief"
     },
     {
@@ -129951,7 +130140,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L218",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_218",
-      "community": 2087,
+      "community": 2046,
       "norm_label": "steps"
     },
     {
@@ -129960,7 +130149,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L228",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_228",
-      "community": 2087,
+      "community": 2046,
       "norm_label": "safety warning"
     },
     {
@@ -129969,7 +130158,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L232",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_232",
-      "community": 2087,
+      "community": 2046,
       "norm_label": "done checklist"
     },
     {
@@ -129978,7 +130167,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L240",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_240",
-      "community": 2087,
+      "community": 2046,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -129987,7 +130176,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L248",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_04_setting_up_a_chatgpt_project",
-      "community": 2046,
+      "community": 2047,
       "norm_label": "sop 04 - setting up a chatgpt project"
     },
     {
@@ -129996,7 +130185,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L260",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_260",
-      "community": 2046,
+      "community": 2047,
       "norm_label": "steps"
     },
     {
@@ -130005,7 +130194,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L270",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_270",
-      "community": 2046,
+      "community": 2047,
       "norm_label": "safety warning"
     },
     {
@@ -130014,7 +130203,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L274",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_274",
-      "community": 2046,
+      "community": 2047,
       "norm_label": "done checklist"
     },
     {
@@ -130023,7 +130212,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L282",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_282",
-      "community": 2046,
+      "community": 2047,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -130032,7 +130221,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L290",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_05_setting_up_an_m365_copilot_notebook",
-      "community": 2087,
+      "community": 2045,
       "norm_label": "sop 05 - setting up an m365 copilot notebook"
     },
     {
@@ -130041,7 +130230,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L302",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_302",
-      "community": 2087,
+      "community": 2045,
       "norm_label": "steps"
     },
     {
@@ -130050,7 +130239,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L312",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_312",
-      "community": 2087,
+      "community": 2045,
       "norm_label": "safety warning"
     },
     {
@@ -130059,7 +130248,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L316",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_316",
-      "community": 2087,
+      "community": 2045,
       "norm_label": "done checklist"
     },
     {
@@ -130068,7 +130257,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L324",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_324",
-      "community": 2087,
+      "community": 2045,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -130392,7 +130581,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L619",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_sop_13_testing_locally",
-      "community": 2045,
+      "community": 2309,
       "norm_label": "sop 13 - testing locally"
     },
     {
@@ -130401,7 +130590,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L631",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_steps_631",
-      "community": 2045,
+      "community": 2309,
       "norm_label": "steps"
     },
     {
@@ -130410,7 +130599,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L641",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_safety_warning_641",
-      "community": 2045,
+      "community": 2309,
       "norm_label": "safety warning"
     },
     {
@@ -130419,7 +130608,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L645",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_done_checklist_645",
-      "community": 2045,
+      "community": 2309,
       "norm_label": "done checklist"
     },
     {
@@ -130428,7 +130617,7 @@
       "source_file": "ungasis/archive/chatgpt_ent/ungasis-sop-library.md",
       "source_location": "L653",
       "id": "ungasis_archive_chatgpt_ent_ungasis_sop_library_md_chatgpt_ent_ungasis_sop_library_copy_paste_helper_prompt_653",
-      "community": 2045,
+      "community": 2309,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -134874,7 +135063,7 @@
       "source_file": "ungasis/archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L112",
       "id": "ungasis_archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_key_actions",
-      "community": 2352,
+      "community": 2077,
       "norm_label": "\ud83d\udccb key actions"
     },
     {
@@ -134901,7 +135090,7 @@
       "source_file": "ungasis/archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L146",
       "id": "ungasis_archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_tools",
-      "community": 2077,
+      "community": 2049,
       "norm_label": "\ud83d\udee0\ufe0f tools"
     },
     {
@@ -134919,7 +135108,7 @@
       "source_file": "ungasis/archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L154",
       "id": "ungasis_archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_what_not_to_do_yet",
-      "community": 2049,
+      "community": 2352,
       "norm_label": "\ud83d\udeab what not to do yet"
     },
     {
@@ -138960,7 +139149,7 @@
       "source_file": "ungasis/archive/m365_copilot_opus/ungasis-project-factory.md",
       "source_location": "L206",
       "id": "ungasis_archive_m365_copilot_opus_ungasis_project_factory_md_m365_copilot_opus_ungasis_project_factory_step_3_build_ai_builds_while_i_review",
-      "community": 2604,
+      "community": 389,
       "norm_label": "step 3: \ud83d\udd28 build \u2014 ai builds while i review"
     },
     {
@@ -138969,7 +139158,7 @@
       "source_file": "ungasis/archive/m365_copilot_opus/ungasis-project-factory.md",
       "source_location": "L217",
       "id": "ungasis_archive_m365_copilot_opus_ungasis_project_factory_md_m365_copilot_opus_ungasis_project_factory_build_rules",
-      "community": 2604,
+      "community": 389,
       "norm_label": "build rules"
     },
     {
@@ -138978,7 +139167,7 @@
       "source_file": "ungasis/archive/m365_copilot_opus/ungasis-project-factory.md",
       "source_location": "L226",
       "id": "ungasis_archive_m365_copilot_opus_ungasis_project_factory_md_m365_copilot_opus_ungasis_project_factory_copy_paste_build_prompt_for_cline",
-      "community": 2604,
+      "community": 389,
       "norm_label": "copy-paste build prompt (for cline)"
     },
     {
@@ -158265,7 +158454,7 @@
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L325",
       "id": "modules_ungasis_30day_roadmap_10_human_approval_gates",
-      "community": 53,
+      "community": 78,
       "norm_label": "10. human approval gates"
     },
     {
@@ -158436,7 +158625,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L182",
       "id": "modules_ungasis_ai_operating_model_7_keep_one_source_of_truth",
-      "community": 58,
+      "community": 2344,
       "norm_label": "7. keep one source of truth"
     },
     {
@@ -158445,7 +158634,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L186",
       "id": "modules_ungasis_ai_operating_model_recommended_source_of_truth",
-      "community": 58,
+      "community": 2344,
       "norm_label": "recommended source of truth"
     },
     {
@@ -158454,7 +158643,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L195",
       "id": "modules_ungasis_ai_operating_model_minimum_project_state_md_template",
-      "community": 58,
+      "community": 2344,
       "norm_label": "minimum `project_state.md` template"
     },
     {
@@ -158463,7 +158652,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L219",
       "id": "modules_ungasis_ai_operating_model_cross_tool_rule",
-      "community": 58,
+      "community": 2344,
       "norm_label": "cross-tool rule"
     },
     {
@@ -158535,7 +158724,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L313",
       "id": "modules_ungasis_ai_operating_model_10_ai_quality_control",
-      "community": 604,
+      "community": 58,
       "norm_label": "10. ai quality control"
     },
     {
@@ -158544,7 +158733,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L315",
       "id": "modules_ungasis_ai_operating_model_a_hallucination_spotting",
-      "community": 604,
+      "community": 58,
       "norm_label": "a. hallucination spotting"
     },
     {
@@ -158553,7 +158742,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L331",
       "id": "modules_ungasis_ai_operating_model_hallucination_check_prompt",
-      "community": 604,
+      "community": 58,
       "norm_label": "hallucination check prompt"
     },
     {
@@ -158562,7 +158751,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L353",
       "id": "modules_ungasis_ai_operating_model_b_code_verification",
-      "community": 604,
+      "community": 58,
       "norm_label": "b. code verification"
     },
     {
@@ -158571,7 +158760,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L368",
       "id": "modules_ungasis_ai_operating_model_safe_code_task_prompt_for_cline_claude_code",
-      "community": 604,
+      "community": 58,
       "norm_label": "safe code task prompt for cline / claude code"
     },
     {
@@ -158580,7 +158769,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L398",
       "id": "modules_ungasis_ai_operating_model_c_cross_verification_technique",
-      "community": 604,
+      "community": 58,
       "norm_label": "c. cross-verification technique"
     },
     {
@@ -158589,7 +158778,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L410",
       "id": "modules_ungasis_ai_operating_model_cross_check_prompt",
-      "community": 604,
+      "community": 58,
       "norm_label": "cross-check prompt"
     },
     {
@@ -158598,7 +158787,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L441",
       "id": "modules_ungasis_ai_operating_model_11_human_approval_gates",
-      "community": 58,
+      "community": 78,
       "norm_label": "11. human approval gates"
     },
     {
@@ -158607,7 +158796,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L460",
       "id": "modules_ungasis_ai_operating_model_approval_template",
-      "community": 58,
+      "community": 78,
       "norm_label": "approval template"
     },
     {
@@ -158724,7 +158913,7 @@
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L690",
       "id": "modules_ungasis_ai_operating_model_16_source_ledger",
-      "community": 426,
+      "community": 168,
       "norm_label": "16. source ledger"
     },
     {
@@ -160218,7 +160407,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L1",
       "id": "modules_ungasis_chatgpt_feature_router",
-      "community": 1191,
+      "community": 426,
       "norm_label": "ungasis-chatgpt-feature-router.md"
     },
     {
@@ -160227,7 +160416,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L1",
       "id": "modules_ungasis_chatgpt_feature_router_ungasis_content_module_chatgpt_enterprise_feature_router",
-      "community": 1191,
+      "community": 426,
       "norm_label": "ungasis content module: chatgpt enterprise feature router"
     },
     {
@@ -160236,7 +160425,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L9",
       "id": "modules_ungasis_chatgpt_feature_router_0_beginner_promise",
-      "community": 1191,
+      "community": 426,
       "norm_label": "0. beginner promise"
     },
     {
@@ -160245,7 +160434,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L30",
       "id": "modules_ungasis_chatgpt_feature_router_1_important_safety_rule",
-      "community": 1191,
+      "community": 426,
       "norm_label": "1. important safety rule"
     },
     {
@@ -160254,7 +160443,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L44",
       "id": "modules_ungasis_chatgpt_feature_router_2_fast_router",
-      "community": 1191,
+      "community": 426,
       "norm_label": "2. fast router"
     },
     {
@@ -160263,7 +160452,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L65",
       "id": "modules_ungasis_chatgpt_feature_router_3_quick_feature_matrix",
-      "community": 1191,
+      "community": 426,
       "norm_label": "3. quick feature matrix"
     },
     {
@@ -160569,7 +160758,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L536",
       "id": "modules_ungasis_chatgpt_feature_router_5_beginner_decision_rules",
-      "community": 1191,
+      "community": 426,
       "norm_label": "5. beginner decision rules"
     },
     {
@@ -160578,7 +160767,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L550",
       "id": "modules_ungasis_chatgpt_feature_router_6_copy_paste_master_router_prompt",
-      "community": 1191,
+      "community": 426,
       "norm_label": "6. copy-paste master router prompt"
     },
     {
@@ -160587,7 +160776,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L575",
       "id": "modules_ungasis_chatgpt_feature_router_7_source_ledger",
-      "community": 1191,
+      "community": 426,
       "norm_label": "7. source ledger"
     },
     {
@@ -160596,7 +160785,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L596",
       "id": "modules_ungasis_chatgpt_feature_router_8_qa_checklist_for_this_module",
-      "community": 1191,
+      "community": 426,
       "norm_label": "8. qa checklist for this module"
     },
     {
@@ -160605,7 +160794,7 @@
       "source_file": "ungasis/modules/ungasis-chatgpt-feature-router.md",
       "source_location": "L608",
       "id": "modules_ungasis_chatgpt_feature_router_9_ungasis_trace",
-      "community": 1191,
+      "community": 426,
       "norm_label": "9. ungasis trace"
     },
     {
@@ -161100,7 +161289,7 @@
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L39",
       "id": "modules_ungasis_decision_matrix_2_scoring_legend",
-      "community": 413,
+      "community": 2036,
       "norm_label": "2. scoring legend"
     },
     {
@@ -161109,7 +161298,7 @@
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L41",
       "id": "modules_ungasis_decision_matrix_free_paid_risk",
-      "community": 413,
+      "community": 2036,
       "norm_label": "free/paid risk"
     },
     {
@@ -161118,7 +161307,7 @@
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L49",
       "id": "modules_ungasis_decision_matrix_difficulty",
-      "community": 413,
+      "community": 2036,
       "norm_label": "difficulty"
     },
     {
@@ -161127,7 +161316,7 @@
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L59",
       "id": "modules_ungasis_decision_matrix_data_level",
-      "community": 413,
+      "community": 2036,
       "norm_label": "data level"
     },
     {
@@ -162702,7 +162891,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L353",
       "id": "modules_ungasis_html_manual_spec_part_b_qa_checklist",
-      "community": 379,
+      "community": 168,
       "norm_label": "part b \u2014 qa checklist"
     },
     {
@@ -162711,7 +162900,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L355",
       "id": "modules_ungasis_html_manual_spec_13_functionality_qa",
-      "community": 379,
+      "community": 168,
       "norm_label": "13. functionality qa"
     },
     {
@@ -162720,7 +162909,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L372",
       "id": "modules_ungasis_html_manual_spec_14_content_quality_qa",
-      "community": 379,
+      "community": 168,
       "norm_label": "14. content quality qa"
     },
     {
@@ -162729,7 +162918,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L392",
       "id": "modules_ungasis_html_manual_spec_15_security_qa",
-      "community": 379,
+      "community": 168,
       "norm_label": "15. security qa"
     },
     {
@@ -162738,7 +162927,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L407",
       "id": "modules_ungasis_html_manual_spec_16_quality_accessibility_qa",
-      "community": 379,
+      "community": 168,
       "norm_label": "16. quality / accessibility qa"
     },
     {
@@ -162747,7 +162936,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L424",
       "id": "modules_ungasis_html_manual_spec_17_source_ledger_qa",
-      "community": 379,
+      "community": 168,
       "norm_label": "17. source ledger qa"
     },
     {
@@ -162756,7 +162945,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L437",
       "id": "modules_ungasis_html_manual_spec_18_minimum_v1_content_checklist",
-      "community": 379,
+      "community": 168,
       "norm_label": "18. minimum v1 content checklist"
     },
     {
@@ -162765,7 +162954,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L463",
       "id": "modules_ungasis_html_manual_spec_19_do_not_build_yet_reminder",
-      "community": 379,
+      "community": 168,
       "norm_label": "19. \u201cdo not build yet\u201d reminder"
     },
     {
@@ -162774,7 +162963,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L480",
       "id": "modules_ungasis_html_manual_spec_20_build_prompt_for_future_html_manual",
-      "community": 379,
+      "community": 168,
       "norm_label": "20. build prompt for future html manual"
     },
     {
@@ -162783,7 +162972,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L540",
       "id": "modules_ungasis_html_manual_spec_21_suggested_html_manual_folder_plan",
-      "community": 379,
+      "community": 168,
       "norm_label": "21. suggested html manual folder plan"
     },
     {
@@ -162792,7 +162981,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L566",
       "id": "modules_ungasis_html_manual_spec_22_final_rule",
-      "community": 379,
+      "community": 168,
       "norm_label": "22. final rule"
     },
     {
@@ -162801,7 +162990,7 @@
       "source_file": "ungasis/modules/ungasis-html-manual-spec.md",
       "source_location": "L582",
       "id": "modules_ungasis_html_manual_spec_source_notes",
-      "community": 379,
+      "community": 168,
       "norm_label": "source notes"
     },
     {
@@ -163872,7 +164061,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L243",
       "id": "modules_ungasis_me_as_mvp_workflow_step_03_validation",
-      "community": 1126,
+      "community": 2588,
       "norm_label": "step 03 \u2014 validation"
     },
     {
@@ -163881,7 +164070,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L257",
       "id": "modules_ungasis_me_as_mvp_workflow_copy_paste_prompt_257",
-      "community": 1126,
+      "community": 2588,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -163944,7 +164133,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L409",
       "id": "modules_ungasis_me_as_mvp_workflow_step_07_persona",
-      "community": 1043,
+      "community": 1126,
       "norm_label": "step 07 \u2014 persona"
     },
     {
@@ -163953,7 +164142,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L423",
       "id": "modules_ungasis_me_as_mvp_workflow_copy_paste_prompt_423",
-      "community": 1043,
+      "community": 1126,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -163980,7 +164169,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L492",
       "id": "modules_ungasis_me_as_mvp_workflow_step_09_user_stories",
-      "community": 2612,
+      "community": 1043,
       "norm_label": "step 09 \u2014 user stories"
     },
     {
@@ -163989,7 +164178,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L506",
       "id": "modules_ungasis_me_as_mvp_workflow_copy_paste_prompt_506",
-      "community": 2612,
+      "community": 1043,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -164034,7 +164223,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L609",
       "id": "modules_ungasis_me_as_mvp_workflow_step_12_no_code_prototype",
-      "community": 1043,
+      "community": 1126,
       "norm_label": "step 12 \u2014 no-code prototype"
     },
     {
@@ -164043,7 +164232,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L623",
       "id": "modules_ungasis_me_as_mvp_workflow_copy_paste_prompt_623",
-      "community": 1043,
+      "community": 1126,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -164304,7 +164493,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1233",
       "id": "modules_ungasis_me_as_mvp_workflow_step_27_feedback_loop",
-      "community": 1126,
+      "community": 1043,
       "norm_label": "step 27 \u2014 feedback loop"
     },
     {
@@ -164313,7 +164502,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1247",
       "id": "modules_ungasis_me_as_mvp_workflow_copy_paste_prompt_1247",
-      "community": 1126,
+      "community": 1043,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -164358,7 +164547,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1364",
       "id": "modules_ungasis_me_as_mvp_workflow_step_30_evolution_log",
-      "community": 1043,
+      "community": 1126,
       "norm_label": "step 30 \u2014 evolution log"
     },
     {
@@ -164367,7 +164556,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1378",
       "id": "modules_ungasis_me_as_mvp_workflow_copy_paste_prompt_1378",
-      "community": 1043,
+      "community": 1126,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -164376,7 +164565,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1409",
       "id": "modules_ungasis_me_as_mvp_workflow_step_31_scale_pivot_archive_decision",
-      "community": 1126,
+      "community": 1043,
       "norm_label": "step 31 \u2014 scale/pivot/archive decision"
     },
     {
@@ -164385,7 +164574,7 @@
       "source_file": "ungasis/modules/ungasis-me-as-mvp-workflow.md",
       "source_location": "L1423",
       "id": "modules_ungasis_me_as_mvp_workflow_copy_paste_prompt_1423",
-      "community": 1126,
+      "community": 1043,
       "norm_label": "copy-paste prompt"
     },
     {
@@ -165465,7 +165654,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L1",
       "id": "modules_ungasis_portfolio_strategy",
-      "community": 214,
+      "community": 181,
       "norm_label": "ungasis-portfolio-strategy.md"
     },
     {
@@ -165573,7 +165762,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L107",
       "id": "modules_ungasis_portfolio_strategy_4_how_to_use_dummy_demo_data_safely",
-      "community": 181,
+      "community": 2381,
       "norm_label": "4. how to use dummy/demo data safely"
     },
     {
@@ -165582,7 +165771,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L109",
       "id": "modules_ungasis_portfolio_strategy_what_to_replace",
-      "community": 181,
+      "community": 2381,
       "norm_label": "what to replace"
     },
     {
@@ -165591,7 +165780,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L122",
       "id": "modules_ungasis_portfolio_strategy_how_to_generate_fake_data",
-      "community": 181,
+      "community": 2381,
       "norm_label": "how to generate fake data"
     },
     {
@@ -165600,7 +165789,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L131",
       "id": "modules_ungasis_portfolio_strategy_chatgpt_prompt_for_demo_data",
-      "community": 181,
+      "community": 2381,
       "norm_label": "chatgpt prompt for demo data"
     },
     {
@@ -165654,7 +165843,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L217",
       "id": "modules_ungasis_portfolio_strategy_add_your_supabase_keys_to_env_local",
-      "community": 214,
+      "community": 181,
       "norm_label": "add your supabase keys to .env.local"
     },
     {
@@ -165681,7 +165870,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L262",
       "id": "modules_ungasis_portfolio_strategy_7_how_to_create_screenshots_and_annotated_walkthroughs",
-      "community": 214,
+      "community": 2188,
       "norm_label": "7. how to create screenshots and annotated walkthroughs"
     },
     {
@@ -165690,7 +165879,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L264",
       "id": "modules_ungasis_portfolio_strategy_free_tools_for_screenshots",
-      "community": 214,
+      "community": 2188,
       "norm_label": "free tools for screenshots"
     },
     {
@@ -165699,7 +165888,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L274",
       "id": "modules_ungasis_portfolio_strategy_screenshot_checklist",
-      "community": 214,
+      "community": 2188,
       "norm_label": "screenshot checklist"
     },
     {
@@ -165708,7 +165897,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L285",
       "id": "modules_ungasis_portfolio_strategy_annotation_tips",
-      "community": 214,
+      "community": 2188,
       "norm_label": "annotation tips"
     },
     {
@@ -165717,7 +165906,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L295",
       "id": "modules_ungasis_portfolio_strategy_what_to_always_hide_blur",
-      "community": 214,
+      "community": 2188,
       "norm_label": "what to always hide/blur"
     },
     {
@@ -165825,7 +166014,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L510",
       "id": "modules_ungasis_portfolio_strategy_11_how_to_avoid_exposing_secrets_and_company_data",
-      "community": 2597,
+      "community": 214,
       "norm_label": "11. how to avoid exposing secrets and company data"
     },
     {
@@ -165834,7 +166023,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L512",
       "id": "modules_ungasis_portfolio_strategy_pre_publish_security_checklist",
-      "community": 2597,
+      "community": 214,
       "norm_label": "pre-publish security checklist"
     },
     {
@@ -165843,7 +166032,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L529",
       "id": "modules_ungasis_portfolio_strategy_quick_search_commands",
-      "community": 2597,
+      "community": 214,
       "norm_label": "quick search commands"
     },
     {
@@ -165852,7 +166041,7 @@
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L539",
       "id": "modules_ungasis_portfolio_strategy_if_you_already_pushed_a_secret_to_github",
-      "community": 2597,
+      "community": 214,
       "norm_label": "if you already pushed a secret to github"
     },
     {
@@ -167049,7 +167238,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L599",
       "id": "modules_ungasis_prompt_engineering_15_how_to_save_and_version_prompts",
-      "community": 1039,
+      "community": 40,
       "norm_label": "15. how to save and version prompts"
     },
     {
@@ -167058,7 +167247,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L603",
       "id": "modules_ungasis_prompt_engineering_recommended_folder_structure",
-      "community": 1039,
+      "community": 40,
       "norm_label": "recommended folder structure"
     },
     {
@@ -167067,7 +167256,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L624",
       "id": "modules_ungasis_prompt_engineering_prompt_file_template",
-      "community": 1039,
+      "community": 40,
       "norm_label": "prompt file template"
     },
     {
@@ -167076,7 +167265,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L667",
       "id": "modules_ungasis_prompt_engineering_version_naming_rule",
-      "community": 1039,
+      "community": 40,
       "norm_label": "version naming rule"
     },
     {
@@ -167085,7 +167274,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L676",
       "id": "modules_ungasis_prompt_engineering_beginner_rule",
-      "community": 1039,
+      "community": 40,
       "norm_label": "beginner rule"
     },
     {
@@ -167193,7 +167382,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L894",
       "id": "modules_ungasis_prompt_engineering_18_prompt_economics_better_results_with_fewer_tokens",
-      "community": 2598,
+      "community": 40,
       "norm_label": "18. prompt economics: better results with fewer tokens \ud83d\udcb8"
     },
     {
@@ -167202,7 +167391,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L898",
       "id": "modules_ungasis_prompt_engineering_the_goal",
-      "community": 2598,
+      "community": 40,
       "norm_label": "the goal"
     },
     {
@@ -167211,7 +167400,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L911",
       "id": "modules_ungasis_prompt_engineering_token_efficient_prompt_pattern",
-      "community": 2598,
+      "community": 40,
       "norm_label": "token-efficient prompt pattern"
     },
     {
@@ -167220,7 +167409,7 @@
       "source_file": "ungasis/modules/ungasis-prompt-engineering.md",
       "source_location": "L922",
       "id": "modules_ungasis_prompt_engineering_example_too_much_vs_better",
-      "community": 2598,
+      "community": 40,
       "norm_label": "example: too much vs better"
     },
     {
@@ -169254,7 +169443,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L118",
       "id": "modules_ungasis_sop_library_sop_01_starting_a_new_project",
-      "community": 2127,
+      "community": 2038,
       "norm_label": "sop 01 - starting a new project"
     },
     {
@@ -169272,7 +169461,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L143",
       "id": "modules_ungasis_sop_library_safety_warning",
-      "community": 2127,
+      "community": 2038,
       "norm_label": "safety warning"
     },
     {
@@ -169281,7 +169470,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L147",
       "id": "modules_ungasis_sop_library_done_checklist",
-      "community": 2038,
+      "community": 2294,
       "norm_label": "done checklist"
     },
     {
@@ -169344,7 +169533,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L206",
       "id": "modules_ungasis_sop_library_sop_03_creating_a_project_brief",
-      "community": 2038,
+      "community": 2227,
       "norm_label": "sop 03 - creating a project brief"
     },
     {
@@ -169353,7 +169542,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L218",
       "id": "modules_ungasis_sop_library_steps_218",
-      "community": 2038,
+      "community": 2227,
       "norm_label": "steps"
     },
     {
@@ -169362,7 +169551,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L228",
       "id": "modules_ungasis_sop_library_safety_warning_228",
-      "community": 2038,
+      "community": 2227,
       "norm_label": "safety warning"
     },
     {
@@ -169371,7 +169560,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L232",
       "id": "modules_ungasis_sop_library_done_checklist_232",
-      "community": 2038,
+      "community": 2227,
       "norm_label": "done checklist"
     },
     {
@@ -169380,7 +169569,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L240",
       "id": "modules_ungasis_sop_library_copy_paste_helper_prompt_240",
-      "community": 2038,
+      "community": 2227,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -169704,7 +169893,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L535",
       "id": "modules_ungasis_sop_library_sop_11_asking_cline_to_edit_files_safely",
-      "community": 2127,
+      "community": 2037,
       "norm_label": "sop 11 - asking cline to edit files safely"
     },
     {
@@ -169713,7 +169902,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L547",
       "id": "modules_ungasis_sop_library_steps_547",
-      "community": 2127,
+      "community": 2037,
       "norm_label": "steps"
     },
     {
@@ -169722,7 +169911,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L557",
       "id": "modules_ungasis_sop_library_safety_warning_557",
-      "community": 2127,
+      "community": 2037,
       "norm_label": "safety warning"
     },
     {
@@ -169731,7 +169920,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L561",
       "id": "modules_ungasis_sop_library_done_checklist_561",
-      "community": 2127,
+      "community": 2037,
       "norm_label": "done checklist"
     },
     {
@@ -169740,7 +169929,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L569",
       "id": "modules_ungasis_sop_library_copy_paste_helper_prompt_569",
-      "community": 2127,
+      "community": 2037,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -169974,7 +170163,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L787",
       "id": "modules_ungasis_sop_library_sop_17_checking_for_exposed_secrets",
-      "community": 2300,
+      "community": 2294,
       "norm_label": "sop 17 - checking for exposed secrets"
     },
     {
@@ -169983,7 +170172,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L799",
       "id": "modules_ungasis_sop_library_steps_799",
-      "community": 2300,
+      "community": 2294,
       "norm_label": "steps"
     },
     {
@@ -169992,7 +170181,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L809",
       "id": "modules_ungasis_sop_library_safety_warning_809",
-      "community": 2300,
+      "community": 2294,
       "norm_label": "safety warning"
     },
     {
@@ -170001,7 +170190,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L813",
       "id": "modules_ungasis_sop_library_done_checklist_813",
-      "community": 2300,
+      "community": 2294,
       "norm_label": "done checklist"
     },
     {
@@ -170010,7 +170199,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L821",
       "id": "modules_ungasis_sop_library_copy_paste_helper_prompt_821",
-      "community": 2300,
+      "community": 2294,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -170019,7 +170208,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L829",
       "id": "modules_ungasis_sop_library_sop_18_preparing_portfolio_screenshots",
-      "community": 2037,
+      "community": 2255,
       "norm_label": "sop 18 - preparing portfolio screenshots"
     },
     {
@@ -170028,7 +170217,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L841",
       "id": "modules_ungasis_sop_library_steps_841",
-      "community": 2037,
+      "community": 2255,
       "norm_label": "steps"
     },
     {
@@ -170037,7 +170226,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L851",
       "id": "modules_ungasis_sop_library_safety_warning_851",
-      "community": 2037,
+      "community": 2255,
       "norm_label": "safety warning"
     },
     {
@@ -170046,7 +170235,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L855",
       "id": "modules_ungasis_sop_library_done_checklist_855",
-      "community": 2037,
+      "community": 2255,
       "norm_label": "done checklist"
     },
     {
@@ -170055,7 +170244,7 @@
       "source_file": "ungasis/modules/ungasis-sop-library.md",
       "source_location": "L863",
       "id": "modules_ungasis_sop_library_copy_paste_helper_prompt_863",
-      "community": 2037,
+      "community": 2255,
       "norm_label": "copy-paste helper prompt"
     },
     {
@@ -172125,7 +172314,7 @@
       "source_file": "ungasis/multi-agents/kit/README.md",
       "source_location": "L1",
       "id": "kit_readme",
-      "community": 100,
+      "community": 201,
       "norm_label": "readme.md"
     },
     {
@@ -172134,7 +172323,7 @@
       "source_file": "ungasis/multi-agents/kit/README.md",
       "source_location": "L1",
       "id": "kit_readme_multi_agent_dev_orchestration_kit_v4_0",
-      "community": 100,
+      "community": 201,
       "norm_label": "multi-agent dev orchestration kit v4.0"
     },
     {
@@ -172143,7 +172332,7 @@
       "source_file": "ungasis/multi-agents/kit/README.md",
       "source_location": "L5",
       "id": "kit_readme_quick_start",
-      "community": 100,
+      "community": 201,
       "norm_label": "quick start"
     },
     {
@@ -172152,7 +172341,7 @@
       "source_file": "ungasis/multi-agents/kit/README.md",
       "source_location": "L12",
       "id": "kit_readme_chain",
-      "community": 100,
+      "community": 201,
       "norm_label": "chain"
     },
     {
@@ -172161,7 +172350,7 @@
       "source_file": "ungasis/multi-agents/kit/README.md",
       "source_location": "L15",
       "id": "kit_readme_systems",
-      "community": 100,
+      "community": 201,
       "norm_label": "systems"
     },
     {
@@ -173463,7 +173652,7 @@
       "captured_at": "2026-06-01",
       "author": "Mel John Dimat",
       "contributor": null,
-      "community": 2590,
+      "community": 2092,
       "norm_label": "session handoff skill",
       "id": "skill_session_handoff"
     },
@@ -175063,7 +175252,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 201,
+      "community": 142,
       "norm_label": "reviewer agent",
       "id": "reviewer_agent"
     },
@@ -175076,7 +175265,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 201,
+      "community": 142,
       "norm_label": "skill: code review",
       "id": "skill_code_review"
     },
@@ -175284,7 +175473,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1230,
+      "community": 167,
       "norm_label": "growth experiment loop",
       "id": "growth_experiment_loop"
     },
@@ -175570,7 +175759,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 201,
+      "community": 142,
       "norm_label": "code review skill",
       "id": "code_review_skill"
     },
@@ -176038,7 +176227,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 604,
       "norm_label": "gemini.md - gemini/jules instructions",
       "id": "gemini_md"
     },
@@ -176051,7 +176240,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 705,
+      "community": 2326,
       "norm_label": "conventions.md - aider conventions",
       "id": "conventions_md"
     },
@@ -176207,7 +176396,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 473,
+      "community": 133,
       "norm_label": "system patterns",
       "id": "systempatterns_patterns"
     },
@@ -179015,7 +179204,7 @@
       "captured_at": null,
       "author": "Mel",
       "contributor": null,
-      "community": 100,
+      "community": 201,
       "norm_label": "agent evals & runtime governance module",
       "id": "agent_evals_runtime_governance"
     },
@@ -179769,7 +179958,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 167,
+      "community": 100,
       "norm_label": "parallel agents workflow",
       "id": "parallel_agents_workflow"
     },
@@ -179920,7 +180109,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 706,
+      "community": 295,
       "norm_label": "automation safety checklist",
       "id": "automation_safety_checklist"
     },
@@ -180102,7 +180291,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 222,
+      "community": 413,
       "norm_label": "decisions",
       "id": "docs_decisions"
     },
@@ -180141,7 +180330,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 222,
+      "community": 379,
       "norm_label": "handoff",
       "id": "docs_handoff"
     },
@@ -181324,7 +181513,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 705,
+      "community": 2326,
       "norm_label": "aider configuration (v3)",
       "id": "aider_conf_v3"
     },
@@ -182338,7 +182527,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 100,
+      "community": 201,
       "norm_label": "agent state machine workflow",
       "id": "kit_agent_state_machine"
     },
@@ -182351,7 +182540,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 100,
+      "community": 201,
       "norm_label": "agent scoring configuration",
       "id": "kit_agent_scoring"
     },
@@ -182403,7 +182592,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 100,
+      "community": 201,
       "norm_label": "retry policy configuration",
       "id": "kit_retry_policy"
     },
@@ -183673,7 +183862,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 133,
+      "community": 522,
       "norm_label": "systempatterns.md",
       "id": "memory_bank_systempatterns"
     },
@@ -203144,6 +203333,186 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "bus_bus_manifest",
+      "target": "bus_bus_manifest_bus_manifest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "bus_bus_manifest_bus_manifest",
+      "target": "bus_bus_manifest_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "bus_bus_manifest_bus_manifest",
+      "target": "bus_bus_manifest_inputs_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "bus_bus_manifest_bus_manifest",
+      "target": "bus_bus_manifest_inter_engine_connections",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "bus_bus_manifest_bus_manifest",
+      "target": "bus_bus_manifest_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-manifest.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bus_bus_manifest_bus_manifest",
+      "target": "bus_bus_manifest_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "bus_bus_rules",
+      "target": "bus_bus_rules_bus_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "bus_bus_rules_bus_rules",
+      "target": "bus_bus_rules_event_priorities_and_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "bus_bus_rules_bus_rules",
+      "target": "bus_bus_rules_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "bus_bus_rules_bus_rules",
+      "target": "bus_bus_rules_inputs_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "bus_bus_rules_bus_rules",
+      "target": "bus_bus_rules_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/bus-rules.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "bus_bus_rules_bus_rules",
+      "target": "bus_bus_rules_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "bus_event_types",
+      "target": "bus_event_types_event_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "bus_event_types_event_types",
+      "target": "bus_event_types_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "bus_event_types_event_types",
+      "target": "bus_event_types_inputs_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "bus_event_types_event_types",
+      "target": "bus_event_types_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bus_event_types_event_types",
+      "target": "bus_event_types_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".ungasis/bus/event-types.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "bus_event_types_event_types",
+      "target": "bus_event_types_standard_event_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".ungasis/context-engine/context-budget.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -204927,9 +205296,9 @@
       "source_file": ".ungasis/memory/memory-index.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_index",
-      "target": "memory_memory_index_memory_index",
-      "confidence_score": 1.0
+      "target": "memory_memory_index_memory_index"
     },
     {
       "relation": "contains",
@@ -204937,9 +205306,9 @@
       "source_file": ".ungasis/memory/memory-index.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_index_memory_index",
-      "target": "memory_memory_index_fact_index_table",
-      "confidence_score": 1.0
+      "target": "memory_memory_index_fact_index_table"
     },
     {
       "relation": "contains",
@@ -204947,9 +205316,9 @@
       "source_file": ".ungasis/memory/memory-index.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_index_memory_index",
-      "target": "memory_memory_index_how_it_works",
-      "confidence_score": 1.0
+      "target": "memory_memory_index_how_it_works"
     },
     {
       "relation": "contains",
@@ -204957,9 +205326,9 @@
       "source_file": ".ungasis/memory/memory-index.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_index_memory_index",
-      "target": "memory_memory_index_inputs_outputs",
-      "confidence_score": 1.0
+      "target": "memory_memory_index_inputs_outputs"
     },
     {
       "relation": "contains",
@@ -204967,9 +205336,9 @@
       "source_file": ".ungasis/memory/memory-index.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_index_memory_index",
-      "target": "memory_memory_index_purpose",
-      "confidence_score": 1.0
+      "target": "memory_memory_index_purpose"
     },
     {
       "relation": "contains",
@@ -204977,9 +205346,9 @@
       "source_file": ".ungasis/memory/memory-index.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_index_memory_index",
-      "target": "memory_memory_index_rules",
-      "confidence_score": 1.0
+      "target": "memory_memory_index_rules"
     },
     {
       "relation": "contains",
@@ -204987,9 +205356,9 @@
       "source_file": ".ungasis/memory/memory-queries.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_queries",
-      "target": "memory_memory_queries_memory_queries",
-      "confidence_score": 1.0
+      "target": "memory_memory_queries_memory_queries"
     },
     {
       "relation": "contains",
@@ -204997,9 +205366,9 @@
       "source_file": ".ungasis/memory/memory-queries.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_queries_memory_queries",
-      "target": "memory_memory_queries_how_it_works",
-      "confidence_score": 1.0
+      "target": "memory_memory_queries_how_it_works"
     },
     {
       "relation": "contains",
@@ -205007,9 +205376,9 @@
       "source_file": ".ungasis/memory/memory-queries.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_queries_memory_queries",
-      "target": "memory_memory_queries_inputs_outputs",
-      "confidence_score": 1.0
+      "target": "memory_memory_queries_inputs_outputs"
     },
     {
       "relation": "contains",
@@ -205017,9 +205386,9 @@
       "source_file": ".ungasis/memory/memory-queries.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_queries_memory_queries",
-      "target": "memory_memory_queries_purpose",
-      "confidence_score": 1.0
+      "target": "memory_memory_queries_purpose"
     },
     {
       "relation": "contains",
@@ -205027,9 +205396,9 @@
       "source_file": ".ungasis/memory/memory-queries.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_queries_memory_queries",
-      "target": "memory_memory_queries_query_reference_table",
-      "confidence_score": 1.0
+      "target": "memory_memory_queries_query_reference_table"
     },
     {
       "relation": "contains",
@@ -205037,9 +205406,9 @@
       "source_file": ".ungasis/memory/memory-queries.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_queries_memory_queries",
-      "target": "memory_memory_queries_rules",
-      "confidence_score": 1.0
+      "target": "memory_memory_queries_rules"
     },
     {
       "relation": "contains",
@@ -205047,9 +205416,9 @@
       "source_file": ".ungasis/memory/memory-rules.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_rules",
-      "target": "memory_memory_rules_memory_rules",
-      "confidence_score": 1.0
+      "target": "memory_memory_rules_memory_rules"
     },
     {
       "relation": "contains",
@@ -205057,9 +205426,9 @@
       "source_file": ".ungasis/memory/memory-rules.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_rules_memory_rules",
-      "target": "memory_memory_rules_how_it_works",
-      "confidence_score": 1.0
+      "target": "memory_memory_rules_how_it_works"
     },
     {
       "relation": "contains",
@@ -205067,9 +205436,9 @@
       "source_file": ".ungasis/memory/memory-rules.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_rules_memory_rules",
-      "target": "memory_memory_rules_inputs_outputs",
-      "confidence_score": 1.0
+      "target": "memory_memory_rules_inputs_outputs"
     },
     {
       "relation": "contains",
@@ -205077,9 +205446,9 @@
       "source_file": ".ungasis/memory/memory-rules.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_rules_memory_rules",
-      "target": "memory_memory_rules_purpose",
-      "confidence_score": 1.0
+      "target": "memory_memory_rules_purpose"
     },
     {
       "relation": "contains",
@@ -205087,9 +205456,9 @@
       "source_file": ".ungasis/memory/memory-rules.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_rules_memory_rules",
-      "target": "memory_memory_rules_rules",
-      "confidence_score": 1.0
+      "target": "memory_memory_rules_rules"
     },
     {
       "relation": "contains",
@@ -205097,9 +205466,9 @@
       "source_file": ".ungasis/memory/memory-rules.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_memory_rules_memory_rules",
-      "target": "memory_memory_rules_save_and_recall_criteria",
-      "confidence_score": 1.0
+      "target": "memory_memory_rules_save_and_recall_criteria"
     },
     {
       "relation": "contains",
@@ -418688,5 +419057,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b8da0e2d86b16163b818560cdfaca412978b9712"
+  "built_at_commit": "616c62c2c769cced9cc44fe24a8600867435d06b"
 }
