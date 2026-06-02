@@ -356,3 +356,11 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Sprint F19 (June 3, 2026) — 19 new files, 5 new folders.
+New: .ungasis/architect/, .ungasis/orchestrator/signals/, .ungasis/cli-agents/, .agents/skills/commander/, delegation-templates/. New subagent: commander.md.
+New command: /commander. JARVIS: 68%→70%. Next: Batch 2.
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+

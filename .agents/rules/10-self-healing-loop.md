@@ -36,5 +36,9 @@ For ANY task that involves creating 3+ new files:
 Why: Separating specification from implementation prevents hallucinated
 architecture and ensures every build uses proven patterns + avoids known gotchas.
 
+## Commander Integration (Added Sprint F19)
+When Commander delegates multi-sprint: Commander generates mega prompt → Builder executes sequentially → self-healing runs PER SPRINT inside Builder → Commander reviews FINAL output → if issues: fix-request → Surgeon.
+Signal flow: Commander→blueprint-ready→Builder→(per sprint: build→audit→fix→next)→task-complete→Commander
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
