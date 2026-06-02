@@ -8923,5 +8923,15 @@
     "mtime": 1780426978.6321542,
     "ast_hash": "69849f529a4d36d542b282b2162b0850",
     "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\context-engine\\auto-inject-rules.md": {
+    "mtime": 1780427051.5761635,
+    "ast_hash": "b80c025304612879223f7eb08577cfab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\context-engine\\inject-cache.md": {
+    "mtime": 1780427055.867334,
+    "ast_hash": "282a39d83396f0291fc4df92533a7e12",
+    "semantic_hash": ""
   }
 }
