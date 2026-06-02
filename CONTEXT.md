@@ -156,14 +156,82 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - `.ungasis/dna/revenue-models/one-time.md` (25 lines)
 - `.ungasis/dna/revenue-models/subscription.md` (26 lines)
 - `.ungasis/dna/revenue-models/pay-per-use.md` (24 lines)
-- `.ungasis/dna/revenue-models/sponsorship.md` (25 lines)
 - `.ungasis/dna/revenue-models/open-core.md` (24 lines)
 
-**Next steps:**
-1. Sprint F9a-c: Context Engine, Decision Intelligence, Agentic Framework
-2. Setup and integrate local dev pipelines
+---
 
-**Known issues:**
-- PowerShell quoting limits split string parameters during standard Git commits; resolved by running git updates via `commit.py` script.
+## Session Handoff — June 2, 2026 🖥️ PC (Sprint F9-SETUP + F9a-c + F10a-b)
 
+**Sprint:** F9-SETUP + F9a-c + F10a-b — Complete the UNGASIS Intelligence Layer
+**Model:** Gemini 3.5 Flash (Medium)
+
+**What was accomplished:**
+- Created the 3-agent crew (Quality Auditor subagent, Graphify Watchdog subagent, Rule 10 Build Loop).
+- Built Context Engineering Engine (context composer, budget, loops, and 5 profiles).
+- Built Decision Intelligence Framework (decision framework, matrix template).
+- Formulated Agentic Framework (7 disciplines, capability matrix, agentic loop, handoff protocol, orchestration patterns).
+- Created Self-Evolution Loop (rules, lock, metrics format, adaptations logs).
+- Setup Self-Learning Skills (skill observer, skill generator, auto skills structure, effectiveness metrics, skill evolution workflow).
+- All 9/9 Priority Engines are fully complete.
+
+**Files created:**
+- `.gemini/agents/quality-auditor.md` (104 lines)
+- `.gemini/agents/graphify-watchdog.md` (37 lines)
+- `.agents/rules/10-self-healing-loop.md` (33 lines)
+- `.clinerules/10-self-healing-loop.md` (33 lines)
+- `.ungasis/context-engine/context-composer.md` (46 lines)
+- `.ungasis/context-engine/context-budget.md` (36 lines)
+- `.ungasis/context-engine/context-loops.md` (31 lines)
+- `.ungasis/context-engine/profiles/build.md` (28 lines)
+- `.ungasis/context-engine/profiles/debug.md` (23 lines)
+- `.ungasis/context-engine/profiles/research.md` (23 lines)
+- `.ungasis/context-engine/profiles/refactor.md` (23 lines)
+- `.ungasis/context-engine/profiles/review.md` (23 lines)
+- `knowledge/wiki/decisions/DECISION_FRAMEWORK.md` (77 lines)
+- `knowledge/wiki/decisions/DECISION_MATRIX_TEMPLATE.md` (51 lines)
+- `.ungasis/agentic/AGENTIC_FRAMEWORK.md` (44 lines)
+- `.ungasis/agentic/capability-matrix.md` (44 lines)
+- `.ungasis/agentic/agentic-loop.md` (42 lines)
+- `.ungasis/agentic/handoff-protocol.md` (38 lines)
+- `.ungasis/agentic/orchestration-patterns.md` (28 lines)
+- `.ungasis/evolution/EVOLUTION_RULES.md` (71 lines)
+- `.ungasis/evolution/EVOLUTION_LOCK.md` (37 lines)
+- `.ungasis/evolution/metrics/README.md` (27 lines)
+- `.ungasis/evolution/adaptations/README.md` (29 lines)
+- `.ungasis/evolution/adaptations/model-routing-log.md` (7 lines)
+- `.ungasis/evolution/adaptations/rule-updates-log.md` (7 lines)
+- `.ungasis/evolution/adaptations/knowledge-gaps.md` (7 lines)
+- `.ungasis/evolution/adaptations/blocked-attempts.md` (7 lines)
+- `.agents/rules/08-skill-observer.md` (47 lines)
+- `.agents/rules/09-skill-generator.md` (42 lines)
+- `.clinerules/08-skill-observer.md` (47 lines)
+- `.clinerules/09-skill-generator.md` (42 lines)
+- `.agents/skills/_auto/README.md` (11 lines)
+- `.agents/skills/_auto/_proposals/README.md` (11 lines)
+- `.agents/skills/_auto/_retired/README.md` (8 lines)
+- `.agents/skills/_metrics/usage-log.jsonl` (2 lines)
+- `.agents/skills/_metrics/effectiveness.md` (15 lines)
+- `.agents/workflows/skill-evolution.md` (27 lines)
+
+**Engines completed:** 9/9 — ALL ENGINES DONE
+
+**Graphify status:** 19,695 nodes, 18,272 edges, 3,164 communities
+
+**What's next:** START RIFTCOACH DEVELOPMENT (copy UNGASIS foundation → begin Phase 5.7)
+
+**Known issues:** None encountered.
+
+### Sprint Summary Report
+
+| Sprint | Engine | Files Created | Total Lines | Status |
+|---|---|---|---|---|
+| F9-SETUP | Agent Crew | 4 | 207 | ✅ Completed |
+| F9a | Context Engineering | 8 | 233 | ✅ Completed |
+| F9b | Decision Intelligence | 2 | 128 | ✅ Completed |
+| F9c | Agentic Framework | 5 | 196 | ✅ Completed |
+| F10a | Self-Evolution Loop | 8 | 192 | ✅ Completed |
+| F10b | Self-Learning Skills | 10 | 252 | ✅ Completed |
+| **TOTAL** | **5 Engines + Crew** | **37** | **1208** | **✅ Completed** |
+
+---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
