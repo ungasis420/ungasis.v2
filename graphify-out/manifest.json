@@ -850,8 +850,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780415252.561948,
-    "ast_hash": "a2d8fbcbbbc65649733dd806bab3246a",
+    "mtime": 1780415451.7957976,
+    "ast_hash": "d399fcc4843fa00714fa34130fa43f4e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -8565,8 +8565,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\commit_msg.txt": {
-    "mtime": 1780415415.3239596,
-    "ast_hash": "b1dd55548a89ff3df1a79863951ca68a",
+    "mtime": 1780415457.5971775,
+    "ast_hash": "05262dd1587f822d51187c204c2d63fa",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\context-engine\\context-budget.md": {
@@ -8827,6 +8827,11 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\scout\\watch-list.yml": {
     "mtime": 1780415382.2045825,
     "ast_hash": "0afb2155b2cd8fd264eb362079d6b78a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\tag_sweep.py": {
+    "mtime": 1780415438.403089,
+    "ast_hash": "1a21caabe84827d50817ab289839e268",
     "semantic_hash": ""
   }
 }
