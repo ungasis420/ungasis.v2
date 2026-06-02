@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Readiness Levels",
+  "type": "object",
+  "required": [
+    "levels"
+  ],
+  "properties": {
+    "levels": {
+      "type": "object",
+      "minProperties": 1
+    }
+  }
+}

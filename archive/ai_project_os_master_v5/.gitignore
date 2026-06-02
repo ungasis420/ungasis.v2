@@ -1,0 +1,47 @@
+# Dependencies / build
+node_modules/
+dist/
+build/
+.cache/
+.coverage/
+coverage/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+config/credentials.json
+*.sqlite
+*.db
+
+# Claude local/private settings
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Generated outputs
+outputs/*
+!outputs/.keep
+!outputs/logs/
+outputs/logs/*
+!outputs/logs/.keep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

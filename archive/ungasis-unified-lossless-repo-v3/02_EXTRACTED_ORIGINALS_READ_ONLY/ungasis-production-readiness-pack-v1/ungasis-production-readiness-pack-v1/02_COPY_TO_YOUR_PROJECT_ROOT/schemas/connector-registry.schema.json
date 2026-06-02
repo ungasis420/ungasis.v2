@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Connector Registry",
+  "type": "object",
+  "required": [
+    "connectors"
+  ],
+  "properties": {
+    "connectors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "purpose",
+          "risk",
+          "owner",
+          "approval_required"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "data_touched": {
+            "type": "string"
+          },
+          "secret_needed": {
+            "type": "boolean"
+          },
+          "risk": {
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "critical"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          },
+          "approval_required": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

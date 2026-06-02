@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MCP Config Basic Shape",
+  "type": "object",
+  "required": ["mcpServers", "pruningRules"],
+  "properties": {
+    "mcpServers": {"type": "object"},
+    "pruningRules": {"type": "object"}
+  }
+}

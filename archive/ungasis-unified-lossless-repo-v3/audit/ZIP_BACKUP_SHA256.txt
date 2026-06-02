@@ -1,0 +1,3 @@
+multi-agent-orchestration-kit-v4.zip  7bb776e995e64c7ae60975af9a4e4d7adcd4dc4d2f8d7d549cbc1792edfad46c
+token-efficiency-agent-os-v4.zip  0ebd3eeaefe0ecfe0c30bca891978d80005fd200b20cd3a19dd2c34f4c3364a7
+ungasis-production-readiness-pack-v1.zip  97ffc4d0e62bee80c766f7eb20bcc54ed9ab4a2f7b283cf1edd0d5618b2b2333

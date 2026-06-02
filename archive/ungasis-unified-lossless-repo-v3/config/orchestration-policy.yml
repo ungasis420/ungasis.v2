@@ -1,0 +1,3 @@
+policy:
+  max_parallel: 1
+  require: [handoff, ownership, branch, ci, human_merge]

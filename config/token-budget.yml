@@ -1,0 +1,34 @@
+# Analogy: A token budget is like a restaurant's food inventory for a single day.
+# - This file (token-budget.yml) decides how we split our daily food budget between
+#   appetizers (planner), main course (builder), side dishes (tester), and dessert (docs).
+# - The other file (rate-limit-budget.yml) is like the restaurant's total credit line
+#   with the wholesale supplier (how many deliveries or API calls we can make in a day).
+
+token_budget:
+  # total_per_session: The maximum number of tokens we want to use in a single session.
+  total_per_session: 100000
+
+  # per_agent: The maximum tokens allocated to each specific agent role.
+  per_agent:
+    # planner: Tokens for breaking down tasks and organizing the approach.
+    planner: 12000
+    # builder: Tokens for writing the actual code or content.
+    builder: 20000
+    # tester: Tokens for running tests and verifying code.
+    tester: 9000
+    # debugger: Tokens for finding and fixing errors in code.
+    debugger: 16000
+    # reviewer: Tokens for double-checking quality and standards.
+    reviewer: 20000
+    # docs: Tokens for updating guides, changelogs, and rules.
+    docs: 7000
+    # buffer: Safe reserve tokens held back for unexpected issues.
+    buffer: 16000
+
+  # warning_threshold: Show a warning if we consume 70% of the session token budget.
+  warning_threshold: 70_percent
+
+  # hard_cap: Stop all operations if we hit 95% of the session token budget.
+  hard_cap: 95_percent
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

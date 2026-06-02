@@ -1,0 +1,24 @@
+version: "1.0"
+tests:
+  - name: "coding only gets filesystem"
+    task_type: "coding"
+    allowed_tools:
+      - "filesystem"
+    forbidden_tools:
+      - "github"
+      - "fetch"
+  - name: "bugfix github write needs approval"
+    task_type: "bugfix"
+    allowed_tools:
+      - "filesystem"
+      - "github"
+    approval_required:
+      - "github_write"
+      - "delete_files"
+  - name: "blocked dangerous actions"
+    blocked_by_default:
+      - "move_money"
+      - "change_permissions"
+      - "send_messages"
+      - "delete_records"
+      - "expose_secrets"

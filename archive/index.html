@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UNGASIS — Unified Builder's Wiki v1.0</title>
+<style>
+:root{--bg:#0a0a1a;--sf:#12122a;--cd:rgba(255,255,255,.04);--bd:rgba(255,255,255,.1);--tx:#e0e0f0;--t2:#a0a0c0;--t3:#606080;--ac:#00d4ff;--gn:#4ade80;--yl:#fbbf24;--og:#fb923c;--rd:#f87171;--pu:#a78bfa;--sb:260px;--r:12px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font:15px/1.65 'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+a{color:var(--ac);text-decoration:none}
+h1{font-size:1.7rem;margin-bottom:.5rem}
+h2{font-size:1.25rem;color:var(--ac);margin:1.5rem 0 .5rem;border-bottom:1px solid var(--bd);padding-bottom:.3rem}
+h3{font-size:1rem;color:var(--pu);margin:1rem 0 .4rem}
+p{margin-bottom:.6rem}
+ul,ol{margin:.5rem 0 .5rem 1.2rem;font-size:.85rem;color:var(--t2)}
+li{margin-bottom:.3rem}
+.sidebar{position:fixed;top:0;left:0;width:var(--sb);height:100vh;background:var(--sf);border-right:1px solid var(--bd);overflow-y:auto;z-index:100;transition:transform .3s;display:flex;flex-direction:column}
+.sidebar .brand{padding:1.1rem;text-align:center;border-bottom:1px solid var(--bd)}
+.sidebar .brand h2{font-size:1rem;color:var(--ac);border:none;margin:0;padding:0}
+.sidebar .brand small{color:var(--t3);font-size:.68rem}
+.sb-search{padding:.5rem;border-bottom:1px solid var(--bd)}
+.sb-search input{width:100%;padding:.4rem .6rem;border-radius:6px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);font-size:.8rem;outline:none}
+.sb-search input:focus{border-color:var(--ac)}
+.sb-search input::placeholder{color:var(--t3)}
+.nav-item{display:flex;align-items:center;gap:.5rem;padding:.55rem 1rem;cursor:pointer;font-size:.82rem;color:var(--t2);border-left:3px solid transparent;transition:.15s}
+.nav-item:hover{background:var(--cd);color:var(--tx)}
+.nav-item.active{background:rgba(0,212,255,.08);color:var(--ac);border-left-color:var(--ac);font-weight:600}
+.main{margin-left:var(--sb);padding:1.5rem 2rem 3rem;max-width:1100px}
+.page{display:none}.page.active{display:block;animation:fadeIn .3s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.bc{font-size:.75rem;color:var(--t3);margin-bottom:1rem}
+.bc span{color:var(--ac)}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:var(--r);padding:1rem;margin-bottom:.8rem}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.8rem;margin:.8rem 0}
+.stat-card{text-align:center;padding:1rem .6rem}
+.stat-card .num{font-size:1.8rem;font-weight:700;color:var(--ac)}
+.stat-card .lbl{font-size:.75rem;color:var(--t2);margin-top:.2rem}
+.click-card{cursor:pointer;transition:.2s}
+.click-card:hover{border-color:var(--ac);transform:translateY(-2px)}
+.tbl-wrap{overflow-x:auto;margin:.8rem 0}
+table{width:100%;border-collapse:collapse;font-size:.8rem}
+th{background:rgba(0,212,255,.1);color:var(--ac);text-align:left;padding:.5rem .6rem;white-space:nowrap}
+td{padding:.45rem .6rem;border-bottom:1px solid var(--bd);vertical-align:top;color:var(--t2)}
+tr:hover td{background:rgba(255,255,255,.02)}
+.badge{display:inline-block;padding:.12rem .45rem;border-radius:4px;font-size:.68rem;font-weight:600}
+.b-green{background:rgba(74,222,128,.15);color:var(--gn)}
+.b-yellow{background:rgba(251,191,36,.15);color:var(--yl)}
+.b-orange{background:rgba(251,146,60,.15);color:var(--og)}
+.b-red{background:rgba(248,113,113,.15);color:var(--rd)}
+.b-purple{background:rgba(167,139,250,.15);color:var(--pu)}
+.b-blue{background:rgba(0,212,255,.12);color:var(--ac)}
+.prompt-block{position:relative;background:#0d0d22;border:1px solid var(--bd);border-radius:var(--r);padding:.9rem;margin:.8rem 0;font-family:'Cascadia Code',monospace;font-size:.75rem;line-height:1.5;white-space:pre-wrap;max-height:360px;overflow-y:auto}
+.copy-btn{position:absolute;top:.4rem;right:.4rem;background:var(--ac);color:#000;border:none;padding:.25rem .5rem;border-radius:5px;cursor:pointer;font-size:.68rem;font-weight:600}
+.copy-btn:hover{opacity:.85}
+.acc{border:1px solid var(--bd);border-radius:var(--r);margin:.4rem 0;overflow:hidden}
+.acc-h{display:flex;justify-content:space-between;align-items:center;padding:.6rem .9rem;cursor:pointer;background:var(--cd);font-weight:600;font-size:.85rem;color:var(--tx);user-select:none}
+.acc-h:hover{background:rgba(255,255,255,.06)}
+.acc-h .arrow{transition:transform .25s;color:var(--t3)}
+.acc-h.open .arrow{transform:rotate(90deg)}
+.acc-b{display:none;padding:.7rem .9rem;font-size:.82rem;color:var(--t2)}
+.acc-b.open{display:block}
+.callout{border-left:3px solid var(--ac);background:rgba(0,212,255,.05);padding:.6rem .9rem;border-radius:0 8px 8px 0;margin:.8rem 0;font-size:.83rem}
+.callout.warn{border-left-color:var(--og);background:rgba(251,146,60,.05)}
+.callout.danger{border-left-color:var(--rd);background:rgba(248,113,113,.05)}
+.callout.success{border-left-color:var(--gn);background:rgba(74,222,128,.05)}
+.chk{display:flex;align-items:flex-start;gap:.4rem;padding:.3rem 0;font-size:.83rem;color:var(--t2)}
+.chk input[type=checkbox]{margin-top:.2rem;accent-color:var(--ac)}
+.hero{background:linear-gradient(135deg,rgba(0,212,255,.08),rgba(167,139,250,.08));border:1px solid var(--bd);border-radius:var(--r);padding:1.8rem;text-align:center;margin-bottom:1.2rem}
+.hero h1{font-size:1.9rem;background:linear-gradient(135deg,var(--ac),var(--pu));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{color:var(--t2);font-size:.9rem}
+.hero .tag{display:inline-block;background:var(--cd);border:1px solid var(--bd);padding:.2rem .6rem;border-radius:20px;font-size:.7rem;color:var(--t3);margin-top:.4rem}
+.zone-meter{display:flex;height:32px;border-radius:8px;overflow:hidden;margin:1rem 0}
+.zone-meter div{display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#000}
+.flow{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin:.8rem 0}
+.flow-step{background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:.7rem;text-align:center;flex:1;min-width:90px}
+.flow-step b{font-size:.78rem;color:var(--ac);display:block}
+.flow-step small{font-size:.68rem;color:var(--t3)}
+.flow-arrow{color:var(--t3);font-size:1rem}
+#btt{position:fixed;bottom:1.3rem;right:1.3rem;width:38px;height:38px;border-radius:50%;background:var(--ac);color:#000;border:none;font-size:1.1rem;cursor:pointer;display:none;z-index:200;box-shadow:0 4px 15px rgba(0,212,255,.3)}
+.hamburger{display:none;position:fixed;top:.7rem;left:.7rem;z-index:150;background:var(--cd);border:1px solid var(--bd);border-radius:6px;padding:.35rem .5rem;cursor:pointer;font-size:1.1rem;color:var(--tx)}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:90}
+@media(max-width:768px){
+ .sidebar{transform:translateX(-100%)}.sidebar.open{transform:translateX(0)}
+ .overlay.open{display:block}.hamburger{display:block}
+ .main{margin-left:0;padding:1rem}.card-grid{grid-template-columns:1fr 1fr}
+ .hero h1{font-size:1.3rem}.flow{flex-direction:column}.flow-arrow{transform:rotate(90deg)}
+}
+@media(max-width:480px){.card-grid{grid-template-columns:1fr}}
+@media print{
+ .sidebar,.hamburger,.overlay,#btt,.copy-btn{display:none!important}
+ .main{margin-left:0}.page{display:block!important;page-break-before:always}
+ body{background:#fff;color:#000}th{background:#eee;color:#000}td{border-color:#ccc}
+}
+</style>
+</head>
+<body>
+
+<div class="hamburger" onclick="toggleSidebar()">☰</div>
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<div class="sidebar" id="sidebar">
+<div class="brand"><h2>🏗️ UNGASIS</h2><small>Unified Builder's Wiki v1.0</small></div>
+<div class="sb-search"><input type="text" id="navSearch" placeholder="🔍 Search..." oninput="filterNav(this.value)"></div>
+<div class="nav-item active" data-page="home" onclick="goTo('home')"><span>🏠</span> Dashboard</div>
+<div class="nav-item" data-page="playbook" onclick="goTo('playbook')"><span>🚀</span> App Playbook</div>
+<div class="nav-item" data-page="tools" onclick="goTo('tools')"><span>🧰</span> Build Lanes & Tools</div>
+<div class="nav-item" data-page="workflow" onclick="goTo('workflow')"><span>⚡</span> 10-Phase Workflow</div>
+<div class="nav-item" data-page="roadmap" onclick="goTo('roadmap')"><span>📅</span> 30-Day Roadmap</div>
+<div class="nav-item" data-page="prompts" onclick="goTo('prompts')"><span>📝</span> Prompt Library</div>
+<div class="nav-item" data-page="sops" onclick="goTo('sops')"><span>📋</span> SOPs & Checklists</div>
+<div class="nav-item" data-page="multiagent" onclick="goTo('multiagent')"><span>🤖</span> Multi-Agent Kit</div>
+<div class="nav-item" data-page="tokenefficiency" onclick="goTo('tokenefficiency')"><span>🎯</span> Token Efficiency</div>
+<div class="nav-item" data-page="safety" onclick="goTo('safety')"><span>🔐</span> Data Safety</div>
+<div class="nav-item" data-page="glossary" onclick="goTo('glossary')"><span>📖</span> Glossary</div>
+<div class="nav-item" data-page="sources" onclick="goTo('sources')"><span>📚</span> Sources</div>
+<div style="padding:10px;font-size:10px;color:var(--t3);border-top:1px solid var(--bd);margin-top:auto;">v1.0 • May 2026 • Mel John Dimat</div>
+</div>
+
+<div class="main">
+
+<!-- ═══════ PAGE 1: HOME ═══════ -->
+<div class="page active" id="page-home">
+<div class="bc">📍 <span>Dashboard</span></div>
+<div class="hero">
+<h1>UNGASIS — Unified Builder's Wiki</h1>
+<div class="sub">3 guides → 1 quick-reference wiki for building real apps with AI</div>
+<div class="tag">v1.0 • May 2026 • Free-First • $0 Upfront • Offline-Ready</div>
+</div>
+<div class="card-grid">
+<div class="card stat-card"><div class="num">3</div><div class="lbl">Guides Merged</div></div>
+<div class="card stat-card"><div class="num" style="color:var(--gn)">38</div><div class="lbl">Sections</div></div>
+<div class="card stat-card"><div class="num" style="color:var(--yl)">17</div><div class="lbl">Tool Categories</div></div>
+<div class="card stat-card"><div class="num" style="color:var(--pu)">8</div><div class="lbl">Ready Prompts</div></div>
+<div class="card stat-card"><div class="num" style="color:var(--pk)">5</div><div class="lbl">SOPs</div></div>
+<div class="card stat-card"><div class="num" style="color:var(--og)">50+</div><div class="lbl">Glossary Terms</div></div>
+</div>
+<h2>⚡ Quick Start</h2>
+<div class="card-grid">
+<div class="card click-card" onclick="goTo('playbook')"><b>🚀 App Playbook</b><br><small>Idea → MVP → Revenue</small></div>
+<div class="card click-card" onclick="goTo('tools')"><b>🧰 Tools & Stacks</b><br><small>17 categories, verified pricing</small></div>
+<div class="card click-card" onclick="goTo('workflow')"><b>⚡ 10-Phase Build</b><br><small>Step-by-step to launch</small></div>
+<div class="card click-card" onclick="goTo('prompts')"><b>📝 Prompts</b><br><small>8 copy-paste templates</small></div>
+<div class="card click-card" onclick="goTo('multiagent')"><b>🤖 Multi-Agent</b><br><small>AI pipeline orchestration</small></div>
+<div class="card click-card" onclick="goTo('tokenefficiency')"><b>🎯 Token Efficiency</b><br><small>12-layer optimization</small></div>
+</div>
+<h2>📦 What's Inside</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Guide</th><th>Focus</th><th>Pages</th></tr>
+<tr><td><span class="badge b-blue">Playbook v3</span></td><td>Idea → deployed → monetized</td><td>Playbook · Tools · Workflow · Roadmap · Prompts · SOPs</td></tr>
+<tr><td><span class="badge b-purple">Multi-Agent v4</span></td><td>Orchestrate AI agents safely</td><td>Multi-Agent Kit</td></tr>
+<tr><td><span class="badge b-green">Token OS v4</span></td><td>Maximize context, reduce cost</td><td>Token Efficiency</td></tr>
+</table></div>
+<div class="callout">💡 <b>Made for:</b> Non-coders, ESL learners, aspiring solopreneurs. AI does the heavy lifting — you make the decisions.</div>
+</div>
+
+<!-- ═══════ PAGE 2: PLAYBOOK ═══════ -->
+<div class="page" id="page-playbook">
+<div class="bc">📍 Dashboard / <span>App Playbook</span></div>
+<h1>🚀 Solopreneur App Playbook</h1>
+<h2>🍳 Mental Model</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Step</th><th>Food Stall</th><th>Your App</th></tr>
+<tr><td>1</td><td>Ask neighbors what they'd buy</td><td>Survey 10+ people about their pain</td></tr>
+<tr><td>2</td><td>Cook one dish from a cart</td><td>Build MVP with 3 features</td></tr>
+<tr><td>3</td><td>See if people come back</td><td>Track signups & active users</td></tr>
+<tr><td>4</td><td>Rent a small stall</td><td>Deploy on Cloudflare Pages</td></tr>
+<tr><td>5</td><td>Charge money</td><td>Add Lemon Squeezy checkout</td></tr>
+<tr><td>6</td><td>Add dishes people ask for</td><td>Add features users request</td></tr>
+<tr><td>7</td><td>Open restaurant (if justified)</td><td>Scale to SaaS (if validated)</td></tr>
+</table></div>
+<h2>🏆 Hybrid Lane A + C Strategy</h2>
+<div class="callout success"><b>Week 1–2:</b> Lane A (Bolt/Lovable) → validate fast<br><b>Week 3–4:</b> Lane C (VS Code + Cline + Supabase) → build MVP you own</div>
+<div class="tbl-wrap"><table>
+<tr><th>Factor</th><th>Lane A (No-Code)</th><th>Lane B (Low-Code)</th><th>Lane C (AI-Assisted) ⭐</th></tr>
+<tr><td>Speed</td><td>⚡ 1–3 days</td><td>3–7 days</td><td>⚡ 1–5 days</td></tr>
+<tr><td>Ownership</td><td>❌ None</td><td>🟡 Partial</td><td>✅ 100%</td></tr>
+<tr><td>Lock-in</td><td>🔴 High</td><td>🟡 Medium</td><td>🟢 Low</td></tr>
+<tr><td>Cost @1K users</td><td>$36–69/mo</td><td>$25–80/mo</td><td><b>$0–25/mo</b></td></tr>
+</table></div>
+<h2>🎚️ Rigor Dial</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Stage</th><th>Goal</th><th>Data</th><th>Build</th><th>Pay?</th><th>Security</th></tr>
+<tr><td>💡 Idea</td><td>Capture</td><td>L0</td><td>Notes</td><td>❌</td><td>None</td></tr>
+<tr><td>🏠 Personal</td><td>Own use</td><td>L1</td><td>Tool</td><td>❌</td><td>Basic</td></tr>
+<tr><td>🔧 Prototype</td><td>5–10 users</td><td>L1</td><td>3-screen</td><td>❌</td><td>RLS</td></tr>
+<tr><td>🌐 Public</td><td>Feedback</td><td>L1</td><td>Full MVP</td><td>❌</td><td>HTTPS+RLS</td></tr>
+<tr><td>🧪 Beta</td><td>Validate</td><td>L2</td><td>Test pay</td><td>Test</td><td>Privacy</td></tr>
+<tr><td>💰 Revenue</td><td>First $1</td><td>L2</td><td>Checkout</td><td>✅</td><td>Full</td></tr>
+<tr><td>🏢 SaaS</td><td>Scale</td><td>L3</td><td>Multi-tenant</td><td>✅</td><td>Legal+tax</td></tr>
+</table></div>
+<h2>🏷️ Data Classification</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Level</th><th>Label</th><th>Safe For</th><th>Example</th></tr>
+<tr><td><span class="badge b-green">L0</span></td><td>Public Demo</td><td>GitHub, screenshots</td><td>Fake names</td></tr>
+<tr><td><span class="badge b-yellow">L1</span></td><td>Personal</td><td>Trusted tools</td><td>Notes, to-do</td></tr>
+<tr><td><span class="badge b-orange">L2</span></td><td>Private</td><td>Encrypted local</td><td>Finances</td></tr>
+<tr><td><span class="badge b-red">L3</span></td><td>Company</td><td>M365 only</td><td>Client data</td></tr>
+<tr><td><span class="badge b-purple">L4</span></td><td>Secrets</td><td>NEVER paste</td><td>API keys</td></tr>
+</table></div>
+</div>
+
+<!-- ═══════ PAGE 3: TOOLS ═══════ -->
+<div class="page" id="page-tools">
+<div class="bc">📍 Dashboard / <span>Build Lanes & Tools</span></div>
+<h1>🧰 Master Tool Map</h1>
+<div class="callout warn">⚠️ <b>Vercel Hobby forbids commercial use.</b> Use Cloudflare Pages or Netlify for monetized apps.</div>
+<div class="tbl-wrap"><table>
+<tr><th>Job</th><th>Best Default ⭐</th><th>Alternatives</th><th>Free Tier</th><th>Watch Out</th></tr>
+<tr><td>Idea capture</td><td>Notion</td><td>ChatGPT, Copilot</td><td>✅ Free</td><td>—</td></tr>
+<tr><td>Research</td><td>Google Trends + Reddit</td><td>Tally surveys</td><td>✅ Free</td><td>Don't build on 1 post</td></tr>
+<tr><td>Wireframes</td><td>Excalidraw</td><td>Figma (3 free)</td><td>✅ Free</td><td>—</td></tr>
+<tr><td>UI gen</td><td>v0.dev</td><td>Bolt inline</td><td>~$5/mo credits</td><td>Credits deplete fast</td></tr>
+<tr><td>Quick proto</td><td><b>Bolt.new</b></td><td>Lovable</td><td>1M/mo, 300K/day</td><td>Not for prod dev</td></tr>
+<tr><td>Polish proto</td><td><b>Lovable</b></td><td>Bolt</td><td>5/day (30/mo)</td><td>Public-only free</td></tr>
+<tr><td>Frontend</td><td>Next.js + Tailwind</td><td>Astro</td><td>✅ Open source</td><td>—</td></tr>
+<tr><td>Components</td><td>shadcn/ui</td><td>Radix</td><td>✅ Free</td><td>—</td></tr>
+<tr><td>DB + Auth</td><td><b>Supabase</b></td><td>Firebase</td><td>500MB, 50K MAU</td><td>⚠️ 7d pause</td></tr>
+<tr><td>Hosting (biz)</td><td><b>Cloudflare Pages</b></td><td>Netlify</td><td>∞ BW, 500 builds</td><td>—</td></tr>
+<tr><td>Hosting (dev)</td><td>Vercel</td><td>—</td><td>100GB</td><td>🔴 No commercial!</td></tr>
+<tr><td>Payments</td><td><b>Lemon Squeezy</b></td><td>PayMongo (PH)</td><td>5%+$0.50/sale</td><td>PH payout +1%</td></tr>
+<tr><td>Analytics</td><td>PostHog</td><td>Umami</td><td>1M events/mo</td><td>Set billing limit!</td></tr>
+<tr><td>Forms</td><td>Tally.so</td><td>Google Forms</td><td>✅ Unlimited</td><td>—</td></tr>
+<tr><td>Chat</td><td>Crisp</td><td>—</td><td>2 agents</td><td>—</td></tr>
+<tr><td>Version ctrl</td><td>GitHub</td><td>—</td><td>✅ ∞ repos</td><td>Never commit secrets</td></tr>
+<tr><td>AI coding</td><td>Cline + GPT-4.1</td><td>Copilot, Ollama</td><td>Varies</td><td>Always review output</td></tr>
+</table></div>
+<h2>🏗️ Stack by Stage</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Stage</th><th>Stack</th><th>Cost</th></tr>
+<tr><td>Validation</td><td>Bolt + Tally + Notion</td><td><b>$0</b></td></tr>
+<tr><td>MVP Build</td><td>Next.js + Supabase + Cloudflare</td><td><b>$0</b></td></tr>
+<tr><td>Launched (100)</td><td>+ PostHog + Crisp</td><td><b>$0</b></td></tr>
+<tr><td>Growing (1K)</td><td>+ Lemon Squeezy</td><td><b>$0–25/mo</b></td></tr>
+<tr><td>Scaling (10K)</td><td>Supabase Pro</td><td><b>$25–50/mo</b></td></tr>
+<tr><td>Revenue ($5K/mo)</td><td>Same + upgrades</td><td><b>$25/mo+~5.5%</b></td></tr>
+</table></div>
+</div>
+
+<!-- ═══════ PAGE 4: WORKFLOW ═══════ -->
+<div class="page" id="page-workflow">
+<div class="bc">📍 Dashboard / <span>10-Phase Workflow</span></div>
+<h1>⚡ 10-Phase Workflow</h1>
+<p>From idea to revenue in 30 days. Click to expand.</p>
+<div class="callout warn">🛑 <b>STOP gates:</b> Phase 2 → if &lt;70% confirm, new idea. Phase 6 → if users don't return, pivot.</div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 1: 💡 Pick Idea <span class="badge b-blue">Days 1–2</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Write 3 ideas</li><li>Score Pain × Frequency × WTP</li><li>Check Google Trends + Reddit/X</li><li>Pick ONE idea</li></ul><p><b>Tools:</b> Notion + ChatGPT</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 2: 🔍 Validate Pain <span class="badge b-blue">Days 3–5</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Write problem statement</li><li>Find 10 people</li><li>Create 5Q survey</li><li>Get 15+ responses</li><li>≥70% confirm → GO</li></ul><p><b>Tools:</b> Tally.so + Reddit</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 3: 🎨 Design MVP <span class="badge b-blue">Days 6–7</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>List 3 core screens</li><li>Sketch wireframes</li><li>Define ONE user flow</li><li>Write NOT-building list</li></ul><p><b>Tools:</b> Excalidraw + Figma</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 4: 🖱️ Build Prototype <span class="badge b-blue">Days 8–10</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Describe app in Bolt.new</li><li>Iterate 3–5×</li><li>Add sample data</li><li>Deploy + share with 5 people</li></ul><p><b>Tools:</b> Bolt.new or Lovable</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 5: 🔧 Build Real MVP <span class="badge b-blue">Days 11–20</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Create Next.js project</li><li>Set up Supabase (tables+auth+RLS)</li><li>Build screens with Cline</li><li>Connect to DB</li><li>Test all flows</li></ul><p><b>Tools:</b> VS Code + Cline</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 6: 🧪 Test with Users <span class="badge b-blue">Days 21–23</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Invite 10–20 testers</li><li>Screen share / Loom</li><li>Collect feedback (Tally)</li><li>Fix top 3 bugs</li><li>Decide: persist / pivot / kill</li></ul><p><b>Tools:</b> Tally + Loom</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 7: 🚀 Deploy <span class="badge b-blue">Days 24–25</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Push GitHub → Cloudflare Pages</li><li>Custom domain (~$10/yr)</li><li>Add PostHog/Umami</li><li>Announce publicly</li></ul><p><b>Tools:</b> Cloudflare + PostHog</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 8: 💰 Monetize <span class="badge b-blue">Days 26–28</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Choose model (one-time / sub / freemium)</li><li>Set up Lemon Squeezy</li><li>Create product</li><li>Add checkout button</li><li>Test mode first!</li></ul><p><b>Tools:</b> Lemon Squeezy</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 9: 📈 Track Metrics <span class="badge b-blue">Day 29</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Visitors → signups (&gt;10%)</li><li>Active users (&gt;30% return)</li><li>Paying users (&gt;2%)</li><li>Churn (&lt;5%/mo)</li></ul><p><b>Tools:</b> PostHog + Supabase</p></div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>Phase 10: 🔄 Improve & Scale <span class="badge b-blue">Day 30+</span></span><span class="arrow">▶</span></div><div class="acc-b"><ul><li>Review weekly</li><li>1 feature per 2-week sprint</li><li>Upgrade Supabase @400MB</li><li>Consider Stripe @$5K/mo</li></ul><p><b>Tools:</b> VS Code + analytics</p></div></div>
+</div>
+
+<!-- ═══════ PAGE 5: ROADMAP ═══════ -->
+<div class="page" id="page-roadmap">
+<div class="bc">📍 Dashboard / <span>30-Day Roadmap</span></div>
+<h1>📅 30-Day Roadmap</h1>
+
+<h2>Week 1: VALIDATE 💡🔍</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Day</th><th>Action</th><th>Output</th></tr>
+<tr><td>1</td><td>Write 3 ideas, score each</td><td>Ideas page</td></tr>
+<tr><td>2</td><td>Pick 1. Search Reddit/X</td><td>10+ complaints</td></tr>
+<tr><td>3</td><td>Create 5Q survey</td><td>Survey link</td></tr>
+<tr><td>3–5</td><td>Share in 3–5 communities</td><td>15+ responses</td></tr>
+<tr><td>5</td><td>70%+ confirm? → GO / NO-GO</td><td>Decision</td></tr>
+<tr><td>6</td><td>North Star + 3 features + NOT list</td><td>Scope doc</td></tr>
+<tr><td>7</td><td>Build prototype with Bolt.new</td><td>Clickable proto</td></tr>
+</table></div>
+
+<h2>Week 2: PROTOTYPE & LEARN 🎨📚</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Day</th><th>Action</th><th>Output</th></tr>
+<tr><td>8</td><td>Show prototype to 5 people</td><td>Feedback</td></tr>
+<tr><td>9</td><td>Refine from feedback</td><td>v2</td></tr>
+<tr><td>10</td><td>Set up VS Code, Node, Git</td><td>Dev env</td></tr>
+<tr><td>11</td><td>Learn: create-next-app</td><td>First app</td></tr>
+<tr><td>12</td><td>Learn Supabase: table + row</td><td>Database</td></tr>
+<tr><td>13</td><td>Learn GitHub: repo, push</td><td>Backed up</td></tr>
+<tr><td>14</td><td>Learn Cline: small task</td><td>AI component</td></tr>
+</table></div>
+
+<h2>Week 3: BUILD MVP 🔧🗄️</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Day</th><th>Action</th><th>Output</th></tr>
+<tr><td>15</td><td>Data model + Supabase + RLS</td><td>Secure DB</td></tr>
+<tr><td>16–17</td><td>Screen 1 (Landing)</td><td>Page 1</td></tr>
+<tr><td>18–19</td><td>Screen 2 (Core feature)</td><td>Core done</td></tr>
+<tr><td>20</td><td>Screen 3 (Settings)</td><td>Page 3</td></tr>
+<tr><td>21</td><td>Connect all to Supabase</td><td>Full-stack</td></tr>
+<tr><td>22</td><td>Manual test every flow</td><td>Bug list</td></tr>
+<tr><td>23</td><td>Fix top 5 bugs</td><td>Stable MVP</td></tr>
+</table></div>
+
+<h2>Week 4: DEPLOY & MONETIZE 🚀💰</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Day</th><th>Action</th><th>Output</th></tr>
+<tr><td>24</td><td>GitHub → Cloudflare + keep-alive</td><td>App LIVE!</td></tr>
+<tr><td>25</td><td>Add PostHog + Crisp</td><td>Tracking</td></tr>
+<tr><td>26</td><td>Set up Lemon Squeezy</td><td>Pay ready</td></tr>
+<tr><td>27</td><td>Add checkout to app</td><td>Users pay</td></tr>
+<tr><td>28</td><td>Invite 10–20 testers</td><td>Real users</td></tr>
+<tr><td>29</td><td>Feedback + fix top 3</td><td>v1.1</td></tr>
+<tr><td>30</td><td>Launch post. Share publicly.</td><td>🚀 Launched!</td></tr>
+</table></div>
+
+<h2>📋 Do TODAY</h2>
+<div class="chk"><input type="checkbox"> Create "App Ideas" page in Notion</div>
+<div class="chk"><input type="checkbox"> Write 3 ideas: "[WHO] struggles with [WHAT]"</div>
+<div class="chk"><input type="checkbox"> Search Reddit/X for complaints about it</div>
+<div class="chk"><input type="checkbox"> Create 5-question survey (Tally.so)</div>
+<div class="chk"><input type="checkbox"> Share survey in 2–3 communities</div>
+<div class="chk"><input type="checkbox"> Sketch 3 screens on paper</div>
+<div class="chk"><input type="checkbox"> Try Bolt.new — type your idea</div>
+</div>
+
+
+<!-- ═══════ PAGE 6: PROMPTS ═══════ -->
+<div class="page" id="page-prompts">
+<div class="bc">📍 Dashboard / <span>Prompt Library</span></div>
+<h1>📝 Copy-Paste Prompt Library</h1>
+<p>8 ready-to-use prompts. Click <b>Copy</b> to grab, paste into ChatGPT / Copilot / Cline.</p>
+
+<h3>1. 💡 Idea Validation</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Act as a startup product strategist and beginner teacher.
+My app idea: [DESCRIBE IDEA]
+Target user: [WHO HAS THE PROBLEM]
+Current workaround: [HOW THEY SOLVE IT TODAY]
+
+Help me validate before building. Output:
+1. One-sentence Product North Star
+2. Pain × Frequency × WTP score (1-5 each)
+3. Top 5 assumptions that may be wrong
+4. 10 customer interview questions
+5. 7 Tally survey questions
+6. Pass/fail validation threshold
+7. MVP features: exactly 3
+8. NOT-building list: at least 5 items
+9. Best next action today
+
+Use simple English. Do not encourage building before proving pain.</div>
+
+<h3>2. 🎨 UX Design</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Act as a senior UX designer for beginner-friendly mobile-first apps.
+Product North Star: [ONE SENTENCE]
+Target user: [USER]
+Main workflow: [USER DOES A → B → C → GETS RESULT]
+
+Design the simple MVP experience. Output:
+1. User journey (step by step)
+2. Screen list (max 5 screens)
+3. What each screen shows
+4. Main button on each screen
+5. Empty / loading / error / success states
+6. Simple design system (colors, font, components)
+7. Mobile-first notes
+8. Accessibility basics
+9. What NOT to design yet
+
+Use simple English.</div>
+
+<h3>3. 🤖 AI App Builder (Bolt/Lovable)</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Build a beginner-friendly web app prototype.
+App name: [NAME]
+Purpose: [PRODUCT NORTH STAR]
+Target user: [USER]
+MVP scope: [3 FEATURES ONLY]
+
+Screens:
+1. Landing / welcome
+2. Dashboard
+3. Main action
+4. Result / detail
+5. Settings (if needed)
+
+Data model: [LIST ENTITIES AND FIELDS]
+
+Design: Clean, mobile-first, modern, trustworthy.
+Include empty, loading, error, and success states.
+
+Rules:
+- Use fake/demo data only
+- No real API keys
+- Keep provider logic isolated
+- Add README with run instructions
+- Make it easy to export to GitHub
+
+After building, explain:
+1. File structure  2. How to run  3. Where data is stored
+4. What to test  5. Known limitations</div>
+
+<h3>4. 🔧 Cline / AI Coding Safe Task</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Act as a careful senior developer.
+Project: [APP NAME]
+Goal for this task: [ONE SMALL CHANGE]
+Relevant files: [LIST FILES IF KNOWN]
+
+Rules:
+- Make the smallest safe change
+- Do NOT rewrite unrelated files
+- Do NOT touch secrets or .env files
+- Before editing, say which files you plan to modify
+- After editing, summarize changed files
+- Give exact test steps
+- Include rollback advice
+
+Task: [DESCRIBE CHANGE]</div>
+
+<h3>5. 🐛 Debugging</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Act as a patient senior full-stack developer.
+App stack: [TOOLS]
+Expected behavior: [WHAT SHOULD HAPPEN]
+Actual behavior: [WHAT HAPPENS INSTEAD]
+Error message: [PASTE EXACT ERROR]
+Recent changes: [WHAT CHANGED BEFORE IT BROKE]
+
+Please:
+1. Explain likely cause in simple English
+2. Give the safest first fix
+3. Show exact lines/files to check
+4. Give test steps after fix
+5. Give rollback plan
+6. Tell me what NOT to change yet
+
+Do not rewrite everything unless necessary.</div>
+
+<h3>6. 🚀 Launch Checklist</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Act as a strict but practical launch reviewer.
+App: [APP NAME]
+Target user: [USER]
+Current stage: [PRIVATE BETA / PUBLIC MVP / MONETIZED]
+Stack: [TOOLS]
+
+Review launch readiness. Output:
+1. Readiness score /100
+2. Blockers (must fix before launch)
+3. Nice-to-fix later
+4. Privacy/security checklist
+5. Payment checklist (if monetized)
+6. Analytics checklist
+7. Support checklist
+8. Backup/export checklist
+9. First 7 days after launch plan
+
+Use simple English and be direct.</div>
+
+<h3>7. 🔍 Source Verification</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Act as a source-first research checker.
+Claims to verify:
+[PASTE CLAIMS]
+
+Verify using official sources first. Output:
+| Claim | Official Source | Verified? | Confidence | Notes | Action |
+
+Rules:
+- Do NOT invent citations
+- If not verified, say "unverified"
+- Separate facts from assumptions
+- Use current sources only</div>
+
+<h3>8. 🤝 Session Handoff</h3>
+<div class="prompt-block"><button class="copy-btn" onclick="copyCode(this)">Copy</button>Create a handoff summary for my next AI session.
+Include:
+1. Project name
+2. Current goal
+3. Current stage
+4. Stack/tools used
+5. Decisions made this session
+6. Files created or changed
+7. Known bugs
+8. Next 3 actions
+9. Safety notes
+10. Prompt to continue next session
+
+Keep it compact and beginner-friendly.</div>
+</div>
+
+<!-- ═══════ PAGE 7: SOPs & CHECKLISTS ═══════ -->
+<div class="page" id="page-sops">
+<div class="bc">📍 Dashboard / <span>SOPs & Checklists</span></div>
+<h1>📋 SOPs & Checklists</h1>
+<p>Standard Operating Procedures — follow these every time.</p>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>SOP 1: 🆕 Start a New Project</span><span class="arrow">▶</span></div><div class="acc-b">
+<ol><li>Write Product North Star (1 sentence)</li><li>Create Notion/Markdown project page</li><li>Create validation form (Tally.so)</li><li>Create GitHub repo (if code involved)</li><li>Add README + PROJECT_WORKFLOW.md + .env.example</li><li>Build smallest prototype</li><li>Test one core workflow</li><li>Record next 3 tasks</li></ol>
+<p><b>Done when:</b> project has clear goal, safe storage, and one next action.</p>
+</div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>SOP 2: 🔍 Review AI-Generated Code</span><span class="arrow">▶</span></div><div class="acc-b">
+<ol><li>Read changed files list</li><li>Check NO secrets were added</li><li>Run app locally</li><li>Test main workflow</li><li>Check mobile layout</li><li>Commit ONLY if working</li><li>Write what changed in CHANGELOG</li></ol>
+<p><b>Done when:</b> app runs and rollback exists.</p>
+</div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>SOP 3: 🧪 Prepare Private Beta</span><span class="arrow">▶</span></div><div class="acc-b">
+<ol><li>Use dummy/demo data only</li><li>Create feedback form (Tally)</li><li>Add contact/support method</li><li>Test main flow end-to-end</li><li>Add basic monitoring if public link</li><li>Invite 3–10 testers</li><li>Track feedback weekly</li></ol>
+<p><b>Done when:</b> testers can use the app safely.</p>
+</div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>SOP 4: 💰 Monetization Readiness</span><span class="arrow">▶</span></div><div class="acc-b">
+<ol><li>Validate pain with real users first</li><li>Confirm repeated usage or willingness to pay</li><li>Define offer and price hypothesis</li><li>Choose payment method (Lemon Squeezy / PayMongo)</li><li>Add refund/support policy</li><li>Check privacy/tax/legal requirements</li><li>Test payment flow in TEST mode first</li></ol>
+<p><b>Done when:</b> payment is tied to validated value, not guessing.</p>
+</div></div>
+
+<div class="acc"><div class="acc-h" onclick="toggleAcc(this)"><span>SOP 5: 🚨 Emergency — Leaked Secret</span><span class="arrow">▶</span></div><div class="acc-b">
+<div class="callout danger">⚠️ If it was committed to Git, assume it was exposed. Just deleting the file is NOT enough.</div>
+<ol><li>STOP using the exposed key immediately</li><li>Revoke/rotate in the provider dashboard</li><li>Remove from code + check Git history</li><li>Check hosting environment variables</li><li>Create a NEW key</li><li>Store safely in env variables only</li><li>Document what happened in DECISIONS.md</li></ol>
+</div></div>
+
+<h2>✅ Pre-Build Checklist</h2>
+<p>Do NOT build until these are mostly true:</p>
+<h3>Problem</h3>
+<div class="chk"><input type="checkbox"> I know the exact target user</div>
+<div class="chk"><input type="checkbox"> I know the painful problem</div>
+<div class="chk"><input type="checkbox"> I know current workaround</div>
+<div class="chk"><input type="checkbox"> I contacted real users</div>
+<div class="chk"><input type="checkbox"> At least 3 people agreed to test</div>
+<h3>MVP</h3>
+<div class="chk"><input type="checkbox"> One main workflow defined</div>
+<div class="chk"><input type="checkbox"> Three features max</div>
+<div class="chk"><input type="checkbox"> 3–5 screens max</div>
+<div class="chk"><input type="checkbox"> Clear NOT-building list</div>
+<div class="chk"><input type="checkbox"> Fake/demo data ready</div>
+<h3>Safety</h3>
+<div class="chk"><input type="checkbox"> No secrets in frontend/public code</div>
+<div class="chk"><input type="checkbox"> No secrets in GitHub</div>
+<div class="chk"><input type="checkbox"> No sensitive data in random AI tools</div>
+<div class="chk"><input type="checkbox"> RLS/auth considered if user data exists</div>
+<div class="chk"><input type="checkbox"> Rollback plan exists</div>
+
+<h2>🎨 Design Excellence Checklist</h2>
+<div class="chk"><input type="checkbox"> Main action is obvious on every screen</div>
+<div class="chk"><input type="checkbox"> Mobile layout works</div>
+<div class="chk"><input type="checkbox"> Text is readable (good contrast)</div>
+<div class="chk"><input type="checkbox"> Buttons are easy to tap</div>
+<div class="chk"><input type="checkbox"> Empty states explain what to do</div>
+<div class="chk"><input type="checkbox"> Error states explain what happened</div>
+<div class="chk"><input type="checkbox"> Success states confirm completion</div>
+<div class="chk"><input type="checkbox"> Colors are consistent</div>
+<div class="chk"><input type="checkbox"> No clutter</div>
+<div class="chk"><input type="checkbox"> App looks trustworthy for the stage</div>
+</div>
+
+<!-- ═══════ PAGE 8: MULTI-AGENT KIT ═══════ -->
+<div class="page" id="page-multiagent">
+<div class="bc">📍 Dashboard / <span>Multi-Agent Kit</span></div>
+<h1>🤖 Multi-Agent Orchestration Kit v4.0</h1>
+<p>How to coordinate multiple AI agents safely on one project.</p>
+
+<h2>🏛️ Agent Roles</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Agent</th><th>Edits Code?</th><th>Tool</th><th>Must NOT</th></tr>
+<tr><td><b>Planner</b></td><td>❌ No</td><td>ChatGPT / Copilot</td><td>Edit code</td></tr>
+<tr><td><b>Builder</b></td><td>✅ Scoped</td><td>Cline / Copilot</td><td>Expand scope</td></tr>
+<tr><td><b>Tester</b></td><td>Tests only</td><td>Cline</td><td>Fix code</td></tr>
+<tr><td><b>Reviewer</b></td><td>Read only</td><td>ChatGPT</td><td>Merge</td></tr>
+<tr><td><b>Docs</b></td><td>Docs only</td><td>M365 Copilot</td><td>Change behavior</td></tr>
+</table></div>
+<div class="callout danger">🔒 <b>Rule #5:</b> Human approves merge. ALWAYS. No exceptions.</div>
+
+<h2>🏗️ Tool Stack</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Layer</th><th>Tool</th><th>Role</th></tr>
+<tr><td>Planning</td><td>M365 Copilot</td><td>Business context</td></tr>
+<tr><td>Architecture</td><td>ChatGPT Enterprise</td><td>Lead planner</td></tr>
+<tr><td>Control</td><td>GitHub</td><td>Issues / PRs / Actions</td></tr>
+<tr><td>Cockpit</td><td>VS Code</td><td>Development</td></tr>
+<tr><td>Workers</td><td>Cline + GPT-4.1</td><td>Coding</td></tr>
+<tr><td>Local AI</td><td>Ollama</td><td>Autocomplete / fallback</td></tr>
+</table></div>
+
+<h2>🔄 Sequential Pipeline</h2>
+<div class="flow">
+<div class="flow-step"><b>intake</b><small>Issue created</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>planner</b><small>Scope task</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>builder</b><small>Implement</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>tester</b><small>Run tests</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>reviewer</b><small>Check quality</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>human</b><small>MERGE ✅</small></div>
+</div>
+<div class="callout">Fail path: tester→debugger→tester (max 3). Review fail: reviewer→debugger→tester→reviewer (max 2). Exhausted: →human→manual.</div>
+
+<h2>🛡️ Debug & Self-Healing Levels</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Level</th><th>Action</th><th>When</th></tr>
+<tr><td>1</td><td>Skip optional steps</td><td>Minor failure</td></tr>
+<tr><td>2</td><td>Fallback to simpler model</td><td>Model timeout</td></tr>
+<tr><td>3</td><td>Core-only MVP mode</td><td>Multiple failures</td></tr>
+<tr><td>4</td><td>Checkpoint + pause</td><td>Cascading issues</td></tr>
+<tr><td>5</td><td><span class="badge b-red">EMERGENCY KILL</span></td><td>Security / cost breach</td></tr>
+</table></div>
+
+<h2>💰 Token Budget</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Agent</th><th>Budget</th><th>%</th></tr>
+<tr><td>Planner</td><td>12,000</td><td>12%</td></tr>
+<tr><td>Builder</td><td>20,000</td><td>20%</td></tr>
+<tr><td>Tester</td><td>9,000</td><td>9%</td></tr>
+<tr><td>Debugger</td><td>16,000</td><td>16%</td></tr>
+<tr><td>Reviewer</td><td>20,000</td><td>20%</td></tr>
+<tr><td>Docs</td><td>7,000</td><td>7%</td></tr>
+<tr><td>Buffer</td><td>16,000</td><td>16%</td></tr>
+<tr><td><b>Total</b></td><td><b>100,000</b></td><td><b>100%</b></td></tr>
+</table></div>
+
+<h2>⚠️ Failure Taxonomy</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Type</th><th>Freq</th><th>Recovery</th><th>Key Rule</th></tr>
+<tr><td>Transient (timeout)</td><td>60%</td><td>Retry + backoff</td><td>Retry works here</td></tr>
+<tr><td>Context Overflow</td><td>15%</td><td>Compress</td><td>Compact at 60-70%</td></tr>
+<tr><td>Hallucination</td><td>12%</td><td>Validate + fallback</td><td>Retry makes it WORSE</td></tr>
+<tr><td>Cascading</td><td>8%</td><td>Isolate + rollback</td><td>Stop the chain</td></tr>
+<tr><td>Corruption</td><td>5%</td><td>Checkpoint restore</td><td>Git is your friend</td></tr>
+</table></div>
+
+<h2>🚨 Kill Switch Triggers</h2>
+<p>Stop ALL agents immediately if any of these happen:</p>
+<ul>
+<li>Secret/API key detected in output</li>
+<li>Production data touched without approval</li>
+<li>Cost exceeds $10 in one session</li>
+<li>Unauthorized API call</li>
+<li>Cascading failures (3+ agents failing)</li>
+<li>Agent tries to merge without human approval</li>
+</ul>
+
+<h2>🔗 Protocol Reference</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Protocol</th><th>By</th><th>What</th><th>Analogy</th></tr>
+<tr><td>MCP</td><td>Anthropic</td><td>Agent ↔ tools</td><td>USB-C for AI</td></tr>
+<tr><td>A2A</td><td>Google</td><td>Agent ↔ agent</td><td>Walkie-talkies</td></tr>
+<tr><td>ACP</td><td>IBM</td><td>Governance</td><td>Health inspector</td></tr>
+</table></div>
+<div class="callout">💡 Don't buy power tools until the hand tools work.</div>
+</div>
+
+<!-- ═══════ PAGE 9: TOKEN EFFICIENCY ═══════ -->
+<div class="page" id="page-tokenefficiency">
+<div class="bc">📍 Dashboard / <span>Token Efficiency</span></div>
+<h1>🎯 Token-Efficiency Agent OS v4.0</h1>
+<p>12 layers to reduce AI token waste and maximize context window.</p>
+
+<h2>📐 The 12 Layers</h2>
+<div class="tbl-wrap"><table>
+<tr><th>#</th><th>Layer</th><th>Key Action</th><th>Key File</th></tr>
+<tr><td>1</td><td>Codebase Architecture</td><td>Small files (&lt;300 lines), clear naming</td><td>CONVENTIONS.md</td></tr>
+<tr><td>2</td><td>Instruction Files</td><td>AGENTS.md, CLAUDE.md auto-loaded rules</td><td>AGENTS.md</td></tr>
+<tr><td>3</td><td>Verification & Planning</td><td>Plan 3–5 bullets before coding</td><td>TEST_COMMANDS.md</td></tr>
+<tr><td>4</td><td>Session Management</td><td>15–20 msg cap, compact at 60–70%</td><td>TASK_HANDOFF.md</td></tr>
+<tr><td>5</td><td>Context Compression</td><td>Anchored Iterative Summarisation</td><td>compaction-prompt.md</td></tr>
+<tr><td>6</td><td>Tool & Model Selection</td><td>Right tool for the job, MCP pruning</td><td>MODEL_ROUTING.md</td></tr>
+<tr><td>7</td><td>Knowledge Graphs</td><td>Graphify (6.8–49× boost), Repomix</td><td>GRAPH_MEMORY.md</td></tr>
+<tr><td>8</td><td>Harness Engineering</td><td>Feedforward (context) + Feedback (tests)</td><td>PROJECT_BRIEF.md</td></tr>
+<tr><td>9</td><td>Output Control</td><td>Surgical diffs only, mode-specific output</td><td>AGENTS.md</td></tr>
+<tr><td>10</td><td>Monitoring & Auditing</td><td>Token logging, monthly audits</td><td>TOKEN_LOG.md</td></tr>
+<tr><td>11</td><td>Model Routing <span class="badge b-green">NEW</span></td><td>Match task complexity to model tier</td><td>MODEL_ROUTING.md</td></tr>
+<tr><td>12</td><td>Context Budget <span class="badge b-green">NEW</span></td><td>Fill-% zones with explicit behaviour</td><td>CONTEXT_BUDGET.md</td></tr>
+</table></div>
+
+<h2>🎯 Fill-% Budget Zones</h2>
+<div class="zone-meter">
+<div style="flex:5;background:var(--gn)">🟢 0–50%</div>
+<div style="flex:2;background:var(--yl)">🟡 50–70%</div>
+<div style="flex:1.5;background:var(--og)">🟠 70–85%</div>
+<div style="flex:1.5;background:var(--rd)">🔴 85%+</div>
+</div>
+<div class="card-grid">
+<div class="card" style="border-left:3px solid var(--gn)"><b style="color:var(--gn)">🟢 Green (0–50%)</b><br>Full exploration. Detailed explanations. Examples OK.</div>
+<div class="card" style="border-left:3px solid var(--yl)"><b style="color:var(--yl)">🟡 Yellow (50–70%)</b><br>Efficiency mode. Shorter responses. Skip examples.</div>
+<div class="card" style="border-left:3px solid var(--og)"><b style="color:var(--og)">🟠 Orange (70–85%)</b><br>Compact NOW. Summarise history. Drop old reads.</div>
+<div class="card" style="border-left:3px solid var(--rd)"><b style="color:var(--rd)">🔴 Red (85%+)</b><br>EMERGENCY. No new reads. Complete minimally. Hand off.</div>
+</div>
+
+<h2>🔀 Model Routing</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Task</th><th>Tier</th><th>Models</th></tr>
+<tr><td>Architecture, security audit</td><td><span class="badge b-red">Tier 1</span></td><td>Opus, GPT-4.1</td></tr>
+<tr><td>Complex refactor</td><td><span class="badge b-red">Tier 1</span></td><td>Opus, Sonnet</td></tr>
+<tr><td>Feature implementation</td><td><span class="badge b-yellow">Tier 2</span></td><td>Sonnet, 4.1-mini</td></tr>
+<tr><td>Bug fix</td><td><span class="badge b-yellow">Tier 2</span></td><td>Sonnet, 4.1-mini</td></tr>
+<tr><td>Code review</td><td><span class="badge b-yellow">Tier 2</span></td><td>Sonnet, Flash</td></tr>
+<tr><td>Formatting, renames</td><td><span class="badge b-green">Tier 3</span></td><td>Haiku, 4.1-nano</td></tr>
+<tr><td>Documentation</td><td><span class="badge b-green">Tier 3</span></td><td>Haiku, Flash</td></tr>
+<tr><td>Boilerplate</td><td><span class="badge b-green">Tier 3</span></td><td>Haiku, 4.1-nano</td></tr>
+</table></div>
+
+<h2>⚡ Workflow Pipeline (Every Task)</h2>
+<div class="flow">
+<div class="flow-step"><b>🔍 SCAN</b><small>Read AGENTS.md + BRIEF + HANDOFF</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>📝 PLAN</b><small>3–5 bullet plan</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>⚙️ EDIT</b><small>Minimal diffs only</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>✅ VERIFY</b><small>Run test/lint/build</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>📦 SUMMARIZE</b><small>7-part format</small></div><div class="flow-arrow">→</div>
+<div class="flow-step"><b>🤝 HANDOFF</b><small>Update TASK_HANDOFF</small></div>
+</div>
+
+<h2>📋 Completion Format (7 Parts)</h2>
+<ol><li><b>Changed files</b> — list with descriptions</li><li><b>Summary</b> — 1–2 sentences</li><li><b>Commands run</b> — test/lint/build</li><li><b>Results</b> — pass/fail</li><li><b>Risks</b> — what could break</li><li><b>Rollback</b> — how to undo</li><li><b>Memory updates</b> — DECISIONS.md, GOTCHAS.md</li></ol>
+</div>
+
+<!-- ═══════ PAGE 10: DATA SAFETY ═══════ -->
+<div class="page" id="page-safety">
+<div class="bc">📍 Dashboard / <span>Data Safety</span></div>
+<h1>🔐 Data Safety & Security</h1>
+
+<h2>🏷️ Data Classification</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Level</th><th>Label</th><th>Safe For</th><th>Example</th></tr>
+<tr><td><span class="badge b-green">L0</span></td><td>Public Demo</td><td>GitHub, screenshots, portfolio</td><td>Fake names, sample data</td></tr>
+<tr><td><span class="badge b-yellow">L1</span></td><td>Personal</td><td>Local files, trusted tools</td><td>To-do lists, learning notes</td></tr>
+<tr><td><span class="badge b-orange">L2</span></td><td>Private</td><td>Encrypted local only</td><td>Finances, health notes</td></tr>
+<tr><td><span class="badge b-red">L3</span></td><td>Company</td><td>Approved M365 only</td><td>Internal reports, client data</td></tr>
+<tr><td><span class="badge b-purple">L4</span></td><td>Secrets</td><td>NEVER paste anywhere</td><td>API keys, passwords, PII</td></tr>
+</table></div>
+
+<h2>🔑 API Key Policy</h2>
+<h3>❌ NEVER Do This</h3>
+<ul>
+<li>Put API key inside a React component</li>
+<li>Paste API key into ChatGPT or any AI chat</li>
+<li>Commit .env.local to GitHub</li>
+<li>Screenshot a dashboard showing keys</li>
+<li>Store service_role key in NEXT_PUBLIC_ variable</li>
+</ul>
+<h3>✅ Safer Pattern</h3>
+<div class="tbl-wrap"><table>
+<tr><th>Where</th><th>What Goes Here</th></tr>
+<tr><td><code>.env.local</code></td><td>Real secrets — YOUR machine only</td></tr>
+<tr><td><code>.env.example</code></td><td>Fake placeholder names — in GitHub</td></tr>
+<tr><td>Hosting secrets</td><td>Environment variables in Netlify/Cloudflare</td></tr>
+<tr><td>Server-side code</td><td>Uses secrets (API routes, edge functions)</td></tr>
+<tr><td>Frontend code</td><td>NEVER sees private secrets</td></tr>
+</table></div>
+<div class="callout">💡 <b>Supabase note:</b> The <code>anon</code> key is designed for client use WITH Row Level Security. The <code>service_role</code> key is powerful and must stay server-side only.</div>
+
+<h2>✋ Human Approval Gates</h2>
+<p>Require human approval BEFORE automation does any of these:</p>
+<ul>
+<li>Sends messages to real users</li>
+<li>Deletes records or production data</li>
+<li>Updates permissions</li>
+<li>Submits forms on behalf of users</li>
+<li>Publishes content publicly</li>
+<li>Charges money</li>
+<li>Refunds money</li>
+<li>Contacts customers</li>
+<li>Changes legal/tax/security state</li>
+</ul>
+
+<h2>💸 Cost & Limit Tracker</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Tool Area</th><th>Track</th><th>Warning Sign</th><th>Action</th></tr>
+<tr><td>AI builders</td><td>Tokens/credits</td><td>Running out daily</td><td>Move to VS Code</td></tr>
+<tr><td>Hosting</td><td>Builds, bandwidth</td><td>Build fails/pauses</td><td>Optimize/upgrade</td></tr>
+<tr><td>Database</td><td>DB size, MAUs</td><td>Near 500MB/50K</td><td>Clean/export/upgrade</td></tr>
+<tr><td>Auth</td><td>Active users</td><td>Approaching cap</td><td>Review pricing</td></tr>
+<tr><td>Analytics</td><td>Events/month</td><td>High volume</td><td>Reduce events/set limit</td></tr>
+<tr><td>Automation</td><td>Tasks/ops</td><td>Workflows fail</td><td>Simplify/upgrade</td></tr>
+<tr><td>Payments</td><td>Fees, refunds</td><td>High fee %</td><td>Compare processors</td></tr>
+<tr><td>Support</td><td>Messages/time</td><td>Too many requests</td><td>Improve docs</td></tr>
+<tr><td>AI APIs</td><td>Token cost</td><td>Surprise usage</td><td>Add caching/limits</td></tr>
+</table></div>
+
+<h2>🇵🇭 Philippines Monetization Notes</h2>
+<div class="callout warn">⚠️ This is general planning, NOT legal/tax/accounting advice. Get qualified local review before commercial launch.</div>
+<div class="tbl-wrap"><table>
+<tr><th>Option</th><th>Best Use</th><th>Caveat</th></tr>
+<tr><td><b>Lemon Squeezy</b></td><td>Global digital products, MoR</td><td>5%+$0.50/sale; confirm PH payout details</td></tr>
+<tr><td><b>PayMongo</b></td><td>PH local cards/e-wallets</td><td>Check business requirements</td></tr>
+<tr><td>Stripe</td><td>If supported country/entity</td><td>PH not listed in checked source</td></tr>
+<tr><td>Manual invoice</td><td>First paid pilots</td><td>Needs clean records</td></tr>
+</table></div>
+</div>
+
+<!-- ═══════ PAGE 11: GLOSSARY ═══════ -->
+<div class="page" id="page-glossary">
+<div class="bc">📍 Dashboard / <span>Glossary</span></div>
+<h1>📖 Glossary — Simple Definitions</h1>
+<p>Every technical term explained like you're 12.</p>
+<div class="tbl-wrap"><table>
+<tr><th>Term</th><th>Simple Meaning</th></tr>
+<tr><td>App</td><td>Software people use to do something</td></tr>
+<tr><td>Web app</td><td>App opened in a browser</td></tr>
+<tr><td>SaaS</td><td>Software people use online, often paid monthly</td></tr>
+<tr><td>MVP</td><td>Smallest useful version of your app</td></tr>
+<tr><td>Prototype</td><td>Rough version to test your idea</td></tr>
+<tr><td>Frontend</td><td>Visible screens and buttons users see</td></tr>
+<tr><td>Backend</td><td>Hidden logic and data side</td></tr>
+<tr><td>Database</td><td>Place where app saves data (like a spreadsheet)</td></tr>
+<tr><td>Auth</td><td>Login and identity system</td></tr>
+<tr><td>API</td><td>Way apps talk to each other</td></tr>
+<tr><td>Endpoint</td><td>One specific API address/action</td></tr>
+<tr><td>Environment variable</td><td>Safe setting stored outside code</td></tr>
+<tr><td>.env file</td><td>File that holds environment variables locally</td></tr>
+<tr><td>Secret</td><td>Private key, password, or token</td></tr>
+<tr><td>Token (AI)</td><td>Small text unit AI counts (≈¾ word)</td></tr>
+<tr><td>API key</td><td>Password that lets your app use a service</td></tr>
+<tr><td>Git</td><td>Tool that tracks code history</td></tr>
+<tr><td>GitHub</td><td>Online safe box for code</td></tr>
+<tr><td>Repository (Repo)</td><td>Project folder in GitHub</td></tr>
+<tr><td>Branch</td><td>Safe side path for changes</td></tr>
+<tr><td>Commit</td><td>Saved checkpoint of your code</td></tr>
+<tr><td>Pull request</td><td>Request to merge changes into main</td></tr>
+<tr><td>.gitignore</td><td>File telling Git what to skip</td></tr>
+<tr><td>Deploy</td><td>Put app online so others can use it</td></tr>
+<tr><td>Hosting</td><td>Place where app lives online</td></tr>
+<tr><td>CDN</td><td>Network that serves your app fast worldwide</td></tr>
+<tr><td>CI/CD</td><td>Automatic check-and-deploy process</td></tr>
+<tr><td>Static site</td><td>Website with no server-side logic</td></tr>
+<tr><td>Responsive</td><td>Works on phone, tablet, and desktop</td></tr>
+<tr><td>Wireframe</td><td>Rough screen sketch before building</td></tr>
+<tr><td>Design system</td><td>Reusable colors, fonts, and components</td></tr>
+<tr><td>Component</td><td>Reusable UI piece (button, card, form)</td></tr>
+<tr><td>Accessibility (WCAG)</td><td>Usable by more people, including disabilities</td></tr>
+<tr><td>RLS</td><td>Row Level Security — users see only allowed data</td></tr>
+<tr><td>Supabase</td><td>Free database + auth + storage service</td></tr>
+<tr><td>Cloudflare Pages</td><td>Free hosting for web apps (commercial OK)</td></tr>
+<tr><td>Vercel</td><td>Hosting (free = dev only, NO commercial)</td></tr>
+<tr><td>Netlify</td><td>Free hosting with deploy + functions</td></tr>
+<tr><td>Next.js</td><td>React framework for web apps</td></tr>
+<tr><td>Tailwind CSS</td><td>Utility-first CSS framework</td></tr>
+<tr><td>shadcn/ui</td><td>Free, beautiful UI components</td></tr>
+<tr><td>React</td><td>JavaScript library for building UI</td></tr>
+<tr><td>TypeScript</td><td>JavaScript with type safety</td></tr>
+<tr><td>Node.js</td><td>JavaScript runtime for servers</td></tr>
+<tr><td>npm</td><td>Package manager for Node.js</td></tr>
+<tr><td>Vite</td><td>Fast build tool for web apps</td></tr>
+<tr><td>Bolt.new</td><td>AI app builder (1M tokens/mo free)</td></tr>
+<tr><td>Lovable</td><td>AI app builder (5 credits/day free)</td></tr>
+<tr><td>Cline</td><td>AI coding agent in VS Code</td></tr>
+<tr><td>Lemon Squeezy</td><td>Payment processor, handles tax for you</td></tr>
+<tr><td>Merchant of Record</td><td>Company that handles payment obligations</td></tr>
+<tr><td>PayMongo</td><td>PH-local payment processor</td></tr>
+<tr><td>PostHog</td><td>Product analytics (1M events/mo free)</td></tr>
+<tr><td>Tally.so</td><td>Free form builder (unlimited)</td></tr>
+<tr><td>Rate limit</td><td>Usage speed limit on a service</td></tr>
+<tr><td>Free tier</td><td>Free plan with usage limits</td></tr>
+<tr><td>Vendor lock-in</td><td>Hard to leave a platform</td></tr>
+<tr><td>Rollback</td><td>Return to last working version</td></tr>
+<tr><td>Monitoring</td><td>Watching app after launch</td></tr>
+<tr><td>Dummy data</td><td>Fake safe data for testing</td></tr>
+<tr><td>Beta</td><td>Test version with real users</td></tr>
+<tr><td>Churn</td><td>Users who stop using/paying</td></tr>
+<tr><td>Activation</td><td>User reaches first useful result</td></tr>
+<tr><td>Retention</td><td>Users come back</td></tr>
+<tr><td>Hallucination</td><td>AI making up wrong information</td></tr>
+<tr><td>Context window</td><td>How much text AI can "see" at once</td></tr>
+<tr><td>Prompt engineering</td><td>Crafting better instructions for AI</td></tr>
+<tr><td>Circuit breaker</td><td>Stops retries after repeated failures</td></tr>
+<tr><td>Kill switch</td><td>Emergency stop for all AI agents</td></tr>
+</table></div>
+</div>
+
+<!-- ═══════ PAGE 12: SOURCES ═══════ -->
+<div class="page" id="page-sources">
+<div class="bc">📍 Dashboard / <span>Sources</span></div>
+<h1>📚 Source Ledger</h1>
+<p>Every claim verified from official sources. Accessed May 2026. Re-check before paid launch.</p>
+
+<div class="tbl-wrap"><table>
+<tr><th>Claim / Topic</th><th>Source</th><th>Confidence</th></tr>
+<tr><td>Google AI Studio Build features</td><td><a href="https://ai.google.dev/gemini-api/docs/aistudio-build-mode">ai.google.dev</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Firebase Studio sunset 2027-03-22</td><td><a href="https://firebase.google.com/docs/studio">firebase.google.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Vercel Hobby = non-commercial</td><td><a href="https://vercel.com/pricing">vercel.com/pricing</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Supabase free: 500MB, 50K MAU</td><td><a href="https://supabase.com/docs/guides/platform/org-based-billing">supabase.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Supabase 7-day inactivity pause</td><td>Not verified from official source</td><td><span class="badge b-red">Low</span></td></tr>
+<tr><td>Cloudflare Pages: 500 builds/mo</td><td><a href="https://developers.cloudflare.com/pages/platform/limits/">cloudflare.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Netlify Free plan + credit limits</td><td><a href="https://www.netlify.com/pricing/">netlify.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Bolt.new: 1M/mo, 300K/day free</td><td><a href="https://bolt.new/pricing">bolt.new/pricing</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Lovable free credits</td><td><a href="https://lovable.dev/pricing">lovable.dev</a></td><td><span class="badge b-orange">Low</span></td></tr>
+<tr><td>v0.dev: $5/mo free credits</td><td><a href="https://v0.dev/pricing">v0.dev/pricing</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Lemon Squeezy: 5%+$0.50, MoR</td><td><a href="https://www.lemonsqueezy.com/pricing">lemonsqueezy.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Lemon Squeezy PH payout fee</td><td>Not verified from official source</td><td><span class="badge b-red">Low</span></td></tr>
+<tr><td>Stripe: PH not supported</td><td><a href="https://stripe.com/global">stripe.com/global</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>PayMongo PH payment rates</td><td><a href="https://www.paymongo.com/pricing">paymongo.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>PostHog: 1M events/mo free</td><td><a href="https://posthog.com/pricing">posthog.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Tally.so: unlimited free</td><td><a href="https://tally.so/pricing">tally.so</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Figma Starter free</td><td><a href="https://www.figma.com/pricing/">figma.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>Notion free for individuals</td><td><a href="https://www.notion.com/pricing">notion.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>GitHub Codespaces free quota</td><td><a href="https://docs.github.com/en/billing/concepts/product-billing/github-codespaces">docs.github.com</a></td><td><span class="badge b-green">High</span></td></tr>
+<tr><td>UptimeRobot free plan</td><td><a href="https://uptimerobot.com/pricing/">uptimerobot.com</a></td><td><span class="badge b-green">High</span></td></tr>
+</table></div>
+
+<h2>📖 Multi-Agent & Token Sources</h2>
+<div class="tbl-wrap"><table>
+<tr><th>#</th><th>Source</th><th>Contribution</th></tr>
+<tr><td>1</td><td>Anthropic — Claude Code Best Practices</td><td>Verification-first, subagents</td></tr>
+<tr><td>2</td><td>Martin Fowler — Context Engineering</td><td>Context engineering philosophy</td></tr>
+<tr><td>3</td><td>Martin Fowler — Harness Engineering</td><td>Feedforward + Feedback loops</td></tr>
+<tr><td>4</td><td>GitHub Blog — Token Efficiency</td><td>Agentic workflow efficiency</td></tr>
+<tr><td>5</td><td>Microsoft Research — Token Consumption</td><td>Token breakdown by category</td></tr>
+<tr><td>6</td><td>Factory.ai — Context Compression</td><td>Anchored Iterative Summarisation</td></tr>
+<tr><td>7</td><td>ComputingForGeeks — Token Reduction</td><td>Auto-compaction trap (60–70%)</td></tr>
+<tr><td>8</td><td>Graphify (55K+ stars)</td><td>Knowledge graph 6.8–49× boost</td></tr>
+<tr><td>9</td><td>Repomix (25K+ stars)</td><td>Context packing ~70% reduction</td></tr>
+<tr><td>10</td><td>Cline Official Docs</td><td>Memory Bank 6-file hierarchy</td></tr>
+</table></div>
+
+<div class="callout">💡 <b>Source freshness:</b> All claims checked May 2026. Tool pricing and terms change — re-verify before commercial launch or financial decisions.</div>
+</div>
+
+<!-- ═══════ BACK TO TOP ═══════ -->
+</div><!-- close .main -->
+<button id="btt" onclick="window.scrollTo({top:0})">↑</button>
+
+<!-- ═══════ JAVASCRIPT ═══════ -->
+<script>
+function goTo(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  const pg=document.getElementById('page-'+id);
+  if(pg){pg.classList.add('active')}
+  const ni=document.querySelector('[data-page="'+id+'"]');
+  if(ni)ni.classList.add('active');
+  // close mobile sidebar
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function toggleSidebar(){
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('open');
+}
+
+function filterNav(q){
+  q=q.toLowerCase();
+  document.querySelectorAll('.nav-item').forEach(n=>{
+    const txt=n.textContent.toLowerCase();
+    n.style.display=txt.includes(q)?'flex':'none';
+  });
+  // also search page content
+  if(!q){
+    document.querySelectorAll('.page').forEach(p=>p.style.removeProperty('display'));
+    return;
+  }
+}
+
+function copyCode(btn){
+  const block=btn.parentElement;
+  const text=block.textContent.replace('Copy','').replace('Copied!','').trim();
+  navigator.clipboard.writeText(text).then(()=>{
+    btn.textContent='Copied!';
+    btn.style.background='var(--gn)';
+    setTimeout(()=>{btn.textContent='Copy';btn.style.background='';},2000);
+  });
+}
+
+function toggleAcc(header){
+  header.classList.toggle('open');
+  const body=header.nextElementSibling;
+  body.classList.toggle('open');
+}
+
+// Back to top
+window.addEventListener('scroll',()=>{
+  const btn=document.getElementById('btt');
+  if(window.scrollY>400){btn.style.display='block'}else{btn.style.display='none'}
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Release Checklist",
+  "type": "object",
+  "required": [
+    "version",
+    "owner",
+    "tests_passed",
+    "rollback_plan",
+    "approved"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "tests_passed": {
+      "type": "boolean"
+    },
+    "security_checked": {
+      "type": "boolean"
+    },
+    "rollback_plan": {
+      "type": "string"
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "known_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+connectors:
+  - name: "example_connector"
+    status: "example"
+    owner: "replace-with-owner-name"
+    data_sensitivity: "public_or_test_only"
+    auth_type: "none_for_example"
+    allowed_actions: ["read_test_data"]
+    forbidden_actions: ["delete", "send", "change_permissions", "move_money"]
+    approval_required_for: ["write", "external_send", "sensitive_data"]
+    fallback: "manual review"

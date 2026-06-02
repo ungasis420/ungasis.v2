@@ -1,0 +1,37 @@
+# Analogy: A kill switch is like the big red emergency stop button on a factory assembly line.
+# If a worker sees a dangerous safety hazard (like water leaking onto live wires or a fire starting),
+# they hit the button, and all machines freeze instantly to prevent a disaster.
+
+kill_switch:
+  # enabled: Turns the emergency system ON (true) or OFF (false).
+  enabled: true
+
+  # triggers: Events that automatically activate the emergency stop.
+  triggers:
+    # secret_detected: Stop if an agent accidentally outputs an API key or password.
+    secret_detected: true
+    # production_write: Stop if an agent tries to write files directly to production.
+    production_write: true
+    # cost_exceeds_usd: Stop if this task's token cost goes over $10.
+    cost_exceeds_usd: 10
+    # cascading_failures: Stop if 3 different errors happen one after another.
+    cascading_failures: 3
+    # merge_without_human: Stop if an agent tries to merge code without Mel's approval.
+    merge_without_human: true
+
+  # actions: What the system does automatically when a trigger is hit.
+  actions:
+    # stop_all_agents: Stop all active agents immediately.
+    stop_all_agents: true
+    # lock_workspace: Make all workspace directories read-only to prevent edits.
+    lock_workspace: true
+    # cancel_ci_pipelines: Stop any ongoing build pipelines.
+    cancel_ci_pipelines: true
+    # create_incident_report: Write a report explaining what went wrong.
+    create_incident_report: true
+    # rollback_last_change: Undo the last code edit to restore safety.
+    rollback_last_change: true
+    # notify: Alert Mel and security team immediately.
+    notify: [human, security]
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -1,0 +1,3 @@
+token_budget:
+  total: 100000
+  per_agent: {planner: 12000, builder: 20000, tester: 9000, debugger: 16000, reviewer: 20000, docs: 7000, buffer: 16000}

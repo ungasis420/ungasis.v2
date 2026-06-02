@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Connector Registry",
+  "type": "object",
+  "required": [
+    "connectors"
+  ],
+  "properties": {
+    "connectors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "status",
+          "owner",
+          "data_sensitivity",
+          "auth_type",
+          "allowed_actions",
+          "forbidden_actions",
+          "approval_required_for",
+          "fallback"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "data_sensitivity": {
+            "type": "string"
+          },
+          "auth_type": {
+            "type": "string"
+          },
+          "allowed_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "forbidden_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "approval_required_for": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fallback": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

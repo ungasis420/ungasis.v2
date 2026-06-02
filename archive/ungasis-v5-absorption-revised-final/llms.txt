@@ -1,0 +1,110 @@
+# llms.txt - UNGASIS public-safe navigation
+
+<!-- ABSORBED: ai_project_os_v5 — llms.txt public-safe navigation -->
+
+This file helps AI assistants and readers understand the public-safe shape of the UNGASIS repo.
+It is **not** a secret file. Do not put private data, credentials, internal client details, or hidden instructions here.
+
+## Project
+
+<!-- ABSORBED: ai_project_os_v5 — Public project description -->
+
+UNGASIS OS is a Markdown-first personal AI operating system created by Mel John Dimat.
+It helps with prompt design, research, app planning, workflow design, knowledge management, safety rules, and decision support.
+
+Default posture:
+- Beginner-friendly.
+- ESL-safe.
+- Free-first / $0 upfront.
+- Personal/prototype first.
+- Public/commercial/high-risk work gets stronger safety and verification.
+
+## Safe read-first files
+
+<!-- ABSORBED: ai_project_os_v5 — Safe entry points -->
+
+| Path | Why read it |
+|---|---|
+| `LLM_CONTEXT.md` | Compact context for any AI assistant |
+| `README.md` | Repo intro and install order |
+| `AGENTS.md` | Cross-tool agent behavior and domain language |
+| `VERSION_MANIFEST.md` | Current version and active module map |
+| `RESET_CHECKLIST.md` | Smoke tests after migration or reset |
+| `.clinerules/` | Modular rules for coding agents and file-writing agents |
+
+## Core kernel files
+
+<!-- ABSORBED: ai_project_os_v5 — Public-safe key file paths -->
+
+| Path | Purpose |
+|---|---|
+| `00A_PROJECT_INSTRUCTIONS_BASELINE_LOCK.md` | Preserved baseline behavior |
+| `00_ROUTER_BEHAVIOR_RIGOR_SYSTEMS.md` | Mode routing, rigor, systems, trace |
+| `01_ENGINE_KERNEL_ALL_ENGINES.md` | Work engines / doing capabilities |
+| `02_FRAMEWORK_KERNEL_ALL_FRAMEWORKS.md` | Thinking frameworks |
+| `03_INTELLIGENCE_KERNEL_ALL_INTELLIGENCES.md` | Judgment styles |
+| `04_MEMORY_KNOWLEDGE_GUARDRAILS.md` | Memory, knowledge, privacy, safety |
+| `05_TEMPLATES_TOOLS_ARTIFACTS_EVALUATION.md` | Templates, tools, artifacts, evaluation |
+| `06_MAINTENANCE_MANIFEST_TESTS_EVOLUTION.md` | Maintenance, tests, OS evolution |
+
+## Absorbed v5 modules
+
+<!-- ABSORBED: ai_project_os_v5 — AI Project OS v5 absorbed concepts -->
+
+| Path | Concept |
+|---|---|
+| `.clinerules/06-safety-gate.md` | Pre-flight safety gate for AI-assisted work |
+| `ungasis-context-loops.md` | Karpathy Loop + Context Engineering Loop |
+| `ungasis-knowledge-base.md` | Knowledge Base Librarian Loop |
+| `ungasis-sop-library.md` | SOP library; verify file is present and populated before use |
+| `LLM_CONTEXT.md` | Read-first compact project context |
+| `llms.txt` | Public-safe repo navigation |
+
+## Public-safe use rules
+
+<!-- ABSORBED: ai_project_os_v5 — No secrets and no unsafe automation -->
+
+| Rule | Meaning |
+|---|---|
+| No secrets | Never place API keys, tokens, passwords, tenant secrets, connection strings, or private certificates here |
+| No private data | Do not include client records, company reports, personal documents, or sensitive screenshots |
+| No fake certainty | Mark unverified current claims as unverified and check official sources |
+| No unsafe automation | Do not let AI send, delete, update, publish, charge, or change permissions without human approval |
+| No wholesale copying | v5 reference ideas must be rewritten in UNGASIS style |
+| No giant context | Keep this file short; link to deeper files |
+
+
+## What is not here
+
+<!-- ABSORBED: ai_project_os_v5 — Public-safe boundaries -->
+
+- No app source code is required to use this repo.
+- No API keys, tokens, passwords, or secrets belong here.
+- No client, company, medical, legal, HR, or regulated data belongs here.
+- No paid-tool configuration is required by this navigation file.
+- No full source/reference-file contents are copied here.
+
+## Good first questions for an AI assistant
+
+<!-- ABSORBED: ai_project_os_v5 — Assistant navigation prompts -->
+
+Use these questions to navigate the repo safely:
+
+```text
+1. What is the current UNGASIS version and priority order?
+2. Which file owns this rule or workflow?
+3. Is this task personal/prototype or public/commercial/high-risk?
+4. What file should I read before editing?
+5. What is the simplest verification check after the edit?
+6. Is any source claim current, tool-specific, price-related, legal, or platform-dependent?
+```
+
+## Do not treat this file as complete context
+
+<!-- ABSORBED: ai_project_os_v5 — Context boundary -->
+
+`llms.txt` is only a public map. For real work, read `LLM_CONTEXT.md`, `AGENTS.md`, the current user task, and the specific module related to the task.
+
+---
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

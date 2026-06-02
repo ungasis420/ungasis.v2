@@ -1,0 +1,16 @@
+.env
+.env.local
+*.key
+*.pem
+*.zip
+*.tar.gz
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+package-lock.json
+*.tmp
+*.bak
+*~
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

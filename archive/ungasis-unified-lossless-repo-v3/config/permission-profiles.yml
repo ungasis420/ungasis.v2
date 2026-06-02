@@ -1,0 +1,31 @@
+profiles:
+  read_only:
+    description: "Can read files. Cannot edit or run commands."
+    allow: ["read"]
+    deny: ["write", "delete", "bash", "send_message", "change_permission", "move_money"]
+    approval_required: false
+  draft:
+    description: "Can suggest changes. Cannot apply them."
+    allow: ["read", "suggest"]
+    deny: ["write", "delete", "bash", "send_message", "change_permission", "move_money"]
+    approval_required: false
+  patch_limited:
+    description: "Can edit allowed project files after human approval."
+    allow: ["read", "suggest", "write_limited"]
+    deny: ["delete", "send_message", "change_permission", "move_money"]
+    approval_required: true
+  test_safe:
+    description: "Can run safe local checks after approval."
+    allow: ["read", "run_safe_tests"]
+    deny: ["delete", "send_message", "change_permission", "move_money", "network_scan"]
+    approval_required: true
+  release:
+    description: "Can prepare release notes only. Actual release requires owner approval."
+    allow: ["read", "suggest", "prepare_release"]
+    deny: ["publish", "delete", "change_permission", "move_money"]
+    approval_required: true
+  dangerous_disabled:
+    description: "Dangerous actions are disabled by default."
+    allow: []
+    deny: ["delete", "send_message", "change_permission", "move_money", "public_post", "submit_form"]
+    approval_required: true

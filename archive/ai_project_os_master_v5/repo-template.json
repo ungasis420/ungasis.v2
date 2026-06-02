@@ -1,0 +1,46 @@
+{
+  "name": "AI Project OS Master v5",
+  "version": "5.0",
+  "prepared": "2026-06-01",
+  "purpose": "Reusable project repo template for AI-assisted and AI-augmented work.",
+  "merge_inputs": [
+    "ai_augmented_project_repo_template.zip",
+    "AI-Project-Operating-System-v1.0.zip",
+    "ai-project-os-v2 (1).zip",
+    "ai-project-os-v2.zip"
+  ],
+  "source_of_truth": {
+    "cross_agent_instructions": "AGENTS.md",
+    "claude_code_entrypoint": "CLAUDE.md",
+    "skills": ".claude/skills/*/SKILL.md",
+    "rules": ".claude/rules/*.md",
+    "context": "context/",
+    "formal_docs": "docs/",
+    "workflows": "workflows/"
+  },
+  "key_files": {
+    "llm_context": "LLM_CONTEXT.md",
+    "llms_txt": "llms.txt",
+    "new_video_audit": "docs/NEW_VIDEO_COVERAGE_AUDIT.md"
+  },
+  "workflows": [
+    "karpathy-context-loop",
+    "spec-first-agentic-development",
+    "growth-experiment-loop"
+  ],
+  "major_layers": [
+    "auto-research-loop",
+    "auto-verify-loop",
+    "community-safety-rules",
+    "context-engineering",
+    "cross-functional-enablement",
+    "karpathy-principles",
+    "llm-knowledge-base",
+    "spec-driven-development"
+  ],
+  "validation_commands": [
+    "python scripts/context_budget_check.py",
+    "python scripts/generate_knowledge_index.py",
+    "python scripts/verify_template.py"
+  ]
+}

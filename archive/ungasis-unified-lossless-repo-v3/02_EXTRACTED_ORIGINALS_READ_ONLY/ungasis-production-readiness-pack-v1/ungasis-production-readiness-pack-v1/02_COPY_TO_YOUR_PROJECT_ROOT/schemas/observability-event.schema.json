@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observability Event",
+  "type": "object",
+  "required": [
+    "run_id",
+    "event_type",
+    "timestamp",
+    "summary"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "actor": {
+      "type": "string"
+    },
+    "approval_status": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string"
+    }
+  }
+}

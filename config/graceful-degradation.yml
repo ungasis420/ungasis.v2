@@ -1,0 +1,43 @@
+# Analogy: Graceful degradation is like running a restaurant when you start running out of ingredients.
+# L1: Skip the garnish (skip non-essential work like docs).
+# L2: Use a substitute ingredient (switch to a backup model in the model chain).
+# L3: Simplify the menu to only the core dishes (drop nice-to-have features, keep core/security).
+# L4: Close the kitchen, save the food, and call the owner (checkpoint progress and notify human).
+# L5: Evacuate the kitchen immediately (emergency full stop and lock the workspace).
+
+degradation:
+  # L1: Minor issue. We save energy and tokens by skipping optional tasks.
+  L1:
+    action: "Skip non-essential work"
+    skip: [docs, memory-updates]
+    description: "Minor issue — skip nice-to-haves, keep building"
+
+  # L2: Model issues (e.g. rate limit or API down). We switch to other models in a fallback chain.
+  L2:
+    action: "Switch to backup model"
+    chain: [gpt-4.1, qwen3-14b, devstral, manual]
+    description: "Model issues — try next model in chain"
+
+  # L3: Serious system issues. We drop non-essential features and focus only on critical functions.
+  L3:
+    action: "Drop features, keep core"
+    drop: [nice_to_have]
+    keep: [core, tests, security]
+    description: "Serious issues — deliver minimum viable output"
+
+  # L4: Critical issue. We save our current progress to a file and tell the human.
+  L4:
+    action: "Checkpoint and notify"
+    checkpoint: true
+    notify: true
+    description: "Critical — save progress and alert human"
+
+  # L5: Emergency! We immediately stop all operations and lock the workspace to prevent damage.
+  L5:
+    action: "Full stop"
+    stop_all: true
+    lock: true
+    notify: [human, security]
+    description: "Emergency — stop everything, lock workspace"
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -1,0 +1,48 @@
+# Analogy: A sequential chain is like a factory assembly line.
+# - The Planner agent designs the blueprint.
+# - The Builder agent assembles the product.
+# - The Tester agent checks for defect.
+# - The Debugger agent repairs any issues found by the Tester.
+# - The Reviewer agent performs a final visual inspection.
+# - The Docs agent writes the manual.
+# - The Human Gate (Mel) approves the product before shipping.
+
+sequential_chain:
+  # default_order: The step-by-step sequence of agent roles that run when starting a quest.
+  default_order:
+    # 1. Planner: Sets the path.
+    - role: planner
+      description: "Reads the task, breaks it into steps, assigns to other agents"
+      model_tier: "Gemini 3.5 Flash (Medium) or Claude Sonnet 4.6"
+    # 2. Builder: Writes the content.
+    - role: builder
+      description: "Writes the actual code or content"
+      model_tier: "Gemini 3.5 Flash (Medium) or Antigravity CLI"
+    # 3. Tester: Inspects for quality/bugs.
+    - role: tester
+      description: "Writes and runs tests, checks for bugs"
+      model_tier: "Jules (async) or Gemini 3.5 Flash (Low)"
+    # 4. Debugger: Troubleshoots errors.
+    - role: debugger
+      description: "Fixes any failures from tester"
+      model_tier: "Gemini 3.5 Flash (High) or Claude Sonnet 4.6"
+    # 5. Reviewer: Audits style and rules.
+    - role: reviewer
+      description: "Final quality check before human approval"
+      model_tier: "Claude Opus 4.6 or M365 Copilot"
+    # 6. Docs: Updates repository memory.
+    - role: docs
+      description: "Updates documentation, CHANGELOG, CONTEXT.md"
+      model_tier: "Gemini 3.5 Flash (Low)"
+    # 7. Human Gate: Mel inspects and approves.
+    - role: human_gate
+      description: "Human reviews and approves or rejects"
+      model_tier: "N/A — this is YOU"
+
+  # rules: Strict constraints on how the assembly line operates.
+  rules:
+    - "Each agent passes output to the next via CONTEXT.md"
+    - "If any agent scores below C, the chain stops and escalates"
+    - "Human gate is ALWAYS the final step — no auto-merge"
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

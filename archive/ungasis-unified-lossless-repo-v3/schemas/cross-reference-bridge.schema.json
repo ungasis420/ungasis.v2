@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cross Reference Bridge",
+  "type": "object",
+  "required": ["version", "routes"],
+  "properties": {
+    "version": {"type": "string"},
+    "routes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["situation", "open", "file"],
+        "properties": {
+          "situation": {"type": "string"},
+          "open": {"type": "string"},
+          "file": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEMP v3 — Sequential Pipelines & Self-Healing Loops</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+:root{--bg:#0a0e1a;--card:rgba(255,255,255,0.04);--card-h:rgba(255,255,255,0.08);--border:rgba(255,255,255,0.08);--glow:rgba(99,102,241,0.3);--t1:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--indigo:#818cf8;--violet:#a78bfa;--emerald:#34d399;--amber:#fbbf24;--rose:#fb7185;--sky:#38bdf8;--r:16px;--rs:10px;--tr:all .3s cubic-bezier(.4,0,.2,1)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t1);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at 30% 20%,rgba(99,102,241,.08) 0%,transparent 50%),radial-gradient(ellipse at 70% 80%,rgba(168,85,247,.06) 0%,transparent 50%);animation:drift 20s ease-in-out infinite alternate;z-index:-1;pointer-events:none}
+@keyframes drift{0%{transform:translate(0,0)}100%{transform:translate(-2%,-1%)}}
+.progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--indigo),var(--violet),var(--emerald));z-index:9999}
+.container{max-width:920px;margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-bottom:1px solid var(--border)}
+section:last-child{border-bottom:none}
+.hero{text-align:center;padding:100px 0 72px}
+.badge{display:inline-block;padding:6px 16px;border-radius:100px;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.3);color:var(--indigo);font-size:13px;font-weight:600;letter-spacing:.5px;margin-bottom:20px;text-transform:uppercase}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;line-height:1.1;margin-bottom:14px;background:linear-gradient(135deg,#e2e8f0 0%,#818cf8 50%,#a78bfa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .sub{font-size:clamp(1rem,2vw,1.15rem);color:var(--t2);max-width:680px;margin:0 auto 20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px;margin-bottom:20px;backdrop-filter:blur(12px);transition:var(--tr);position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--indigo),transparent);opacity:0;transition:opacity .3s}
+.card:hover{background:var(--card-h);border-color:var(--glow);box-shadow:0 0 40px rgba(99,102,241,.08);transform:translateY(-2px)}
+.card:hover::before{opacity:1}
+.card h3{font-size:1.1rem;font-weight:700;margin-bottom:8px}
+.card p,.card li{color:var(--t2);font-size:.92rem;line-height:1.7}
+.sh{margin-bottom:40px}
+.sn{display:inline-block;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--indigo),var(--violet));color:white;font-weight:800;font-size:16px;line-height:36px;text-align:center;margin-bottom:12px}
+.sh h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin-bottom:8px}
+.sh .sd{color:var(--t2);font-size:1rem;max-width:700px}
+table.ct{width:100%;border-collapse:separate;border-spacing:0;border-radius:var(--rs);overflow:hidden;margin:20px 0;font-size:.83rem}
+.ct th{background:rgba(99,102,241,.1);color:var(--indigo);padding:10px 14px;text-align:left;font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border)}
+.ct td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2)}
+.ct tr:hover td{background:rgba(99,102,241,.03)}
+.hi{color:var(--emerald);font-weight:600}
+.free-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;background:rgba(52,211,153,.15);color:var(--emerald);border:1px solid rgba(52,211,153,.3)}
+pre{background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:var(--rs);padding:16px;overflow-x:auto;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:.78rem;line-height:1.6;color:var(--t2)}
+code{font-family:'JetBrains Mono',monospace;background:rgba(99,102,241,.1);color:var(--indigo);padding:2px 6px;border-radius:4px;font-size:.83em}
+.analogy{background:linear-gradient(135deg,rgba(251,191,36,.08),rgba(251,146,60,.05));border:1px solid rgba(251,191,36,.2);border-radius:var(--rs);padding:18px 22px;margin:14px 0}
+.analogy::before{content:'🍳 Everyday Analogy';display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--amber);margin-bottom:6px}
+.analogy p{color:var(--t1);font-size:.92rem;font-style:italic}
+.feynman{background:linear-gradient(135deg,rgba(52,211,153,.08),rgba(56,189,248,.05));border:1px solid rgba(52,211,153,.2);border-radius:var(--rs);padding:18px 22px;margin:14px 0}
+.feynman::before{content:'🧪 Feynman Explanation';display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--emerald);margin-bottom:6px}
+.feynman p{color:var(--t1);font-size:.92rem}
+.pipeline{display:flex;align-items:center;gap:0;margin:24px 0;flex-wrap:wrap;justify-content:center}
+.pipe-node{background:var(--card);border:1px solid var(--border);border-radius:var(--rs);padding:14px 18px;text-align:center;min-width:120px;transition:var(--tr)}
+.pipe-node:hover{border-color:var(--glow);background:var(--card-h);transform:translateY(-2px)}
+.pipe-node .pn{font-size:22px;margin-bottom:4px}
+.pipe-node .pl{font-weight:700;font-size:.82rem;color:var(--t1)}
+.pipe-node .pd{font-size:.72rem;color:var(--t3)}
+.pipe-arrow{font-size:20px;color:var(--indigo);padding:0 6px;flex-shrink:0}
+.loop-diagram{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px;margin:20px 0;text-align:center}
+.btt{position:fixed;bottom:32px;right:32px;width:44px;height:44px;border-radius:50%;background:var(--indigo);color:white;border:none;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:0;transition:var(--tr);z-index:999;box-shadow:0 4px 16px rgba(99,102,241,.4)}
+.btt.v{opacity:1}
+.btt:hover{transform:scale(1.1)}
+.scenario{background:linear-gradient(135deg,rgba(99,102,241,.06),rgba(168,85,247,.04));border:1px solid rgba(99,102,241,.15);border-radius:var(--rs);padding:18px 22px;margin:12px 0}
+.scenario::before{content:'🎯 Your Project Example';display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--violet);margin-bottom:6px}
+.scenario p{color:var(--t1);font-size:.88rem}
+@media(max-width:768px){.container{padding:0 16px}section{padding:48px 0}.hero{padding:72px 0 48px}.card{padding:20px}.pipeline{flex-direction:column}.pipe-arrow{transform:rotate(90deg)}}
+</style>
+</head>
+<body>
+<div class="progress" id="sp"></div>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<div class="badge">Chained Agents + Self-Healing Loops</div>
+<h1>Sequential Pipelines &<br>Auto-Fix Loops</h1>
+<p class="sub">How to make Agent A pass work to Agent B, then Agent C — and how to make agents keep debugging until the code actually works. All with free tools.</p>
+<div style="color:var(--t3);font-size:13px;margin-top:8px">📖 ~10 min &nbsp;|&nbsp; 🎓 Beginner-friendly &nbsp;|&nbsp; 💰 Free tools only</div>
+</div>
+</section>
+
+<!-- PATTERN 1: SEQUENTIAL PIPELINE -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">1</div><h2>Pattern 1: The Sequential Pipeline</h2><p class="sd">Agent A finishes → passes output to Agent B → Agent B finishes → passes to Agent C → final result.</p></div>
+
+<div class="analogy">
+<p><strong>Like a factory assembly line.</strong> Worker 1 cuts the wood. Passes it to Worker 2 who sands it. Passes it to Worker 3 who paints it. Each worker only does ONE job, then passes the product to the next person. The result is a finished, painted piece of furniture — none of them could have done all three jobs as well alone.</p>
+</div>
+
+<div class="pipeline">
+<div class="pipe-node"><div class="pn">📋</div><div class="pl">Agent 1: Planner</div><div class="pd">Creates spec + tasks</div></div>
+<div class="pipe-arrow">→</div>
+<div class="pipe-node"><div class="pn">🔨</div><div class="pl">Agent 2: Coder</div><div class="pd">Writes the code</div></div>
+<div class="pipe-arrow">→</div>
+<div class="pipe-node"><div class="pn">🧪</div><div class="pl">Agent 3: Tester</div><div class="pd">Writes + runs tests</div></div>
+<div class="pipe-arrow">→</div>
+<div class="pipe-node"><div class="pn">🔍</div><div class="pl">Agent 4: Reviewer</div><div class="pd">Reviews + approves</div></div>
+<div class="pipe-arrow">→</div>
+<div class="pipe-node" style="border-color:var(--emerald)"><div class="pn">✅</div><div class="pl">Done!</div><div class="pd">Ready to merge</div></div>
+</div>
+
+<div class="feynman">
+<p><strong>How it actually works:</strong> Each agent produces an OUTPUT (a file, a diff, a summary). That output becomes the INPUT for the next agent. Agent 1 writes a spec → Agent 2 reads that spec and writes code → Agent 3 reads that code and writes tests → Agent 4 reads everything and approves. The "passing" is just: the next agent reads what the previous agent produced.</p>
+</div>
+</div>
+</section>
+
+<!-- PATTERN 2: SELF-HEALING LOOP -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">2</div><h2>Pattern 2: The Self-Healing Loop</h2><p class="sd">Agent writes code → runs tests → if tests fail → reads error → fixes code → runs tests again → repeats until ALL tests pass.</p></div>
+
+<div class="analogy">
+<p><strong>Like a student taking a test with unlimited retries.</strong> They answer the questions, submit, get their score. If they failed any questions, they see WHICH ones they got wrong, study those specific topics, and retake the test. They keep retaking until they score 100%. The key: they learn from each failure.</p>
+</div>
+
+<div class="loop-diagram">
+<pre style="background:transparent;border:none;padding:0;color:var(--t1);font-size:.82rem;text-align:left;display:inline-block;">
+    ┌─────────────────────────────────┐
+    │         START: Get Task         │
+    └──────────────┬──────────────────┘
+                   ▼
+    ┌─────────────────────────────────┐
+    │     Agent Writes/Fixes Code     │
+    └──────────────┬──────────────────┘
+                   ▼
+    ┌─────────────────────────────────┐
+    │        Run Tests / Lint         │
+    └──────────────┬──────────────────┘
+                   ▼
+              ┌─────────┐
+              │ Tests    │──── YES ──→  ✅ DONE! Ship it.
+              │ Pass?    │
+              └────┬─────┘
+                   │ NO
+                   ▼
+    ┌─────────────────────────────────┐
+    │  Read Error Logs + Stack Trace  │
+    │  Feed errors back to agent      │
+    └──────────────┬──────────────────┘
+                   │
+                   ▼
+              ┌─────────┐
+              │ Retry    │──── NO ──→  ❌ Escalate to human
+              │ Limit?   │
+              └────┬─────┘
+                   │ YES (retries left)
+                   │
+                   └──────→  ↑ Back to "Agent Writes/Fixes Code"
+</pre>
+</div>
+
+<div class="feynman">
+<p><strong>The magic ingredient is FEEDBACK.</strong> The agent doesn't just retry blindly — it reads the specific error message, understands WHAT went wrong, and makes a targeted fix. Like a GPS that says "wrong turn, recalculating" — it adjusts the route based on where you actually are, not just randomly trying new directions.</p>
+</div>
+</div>
+</section>
+
+<!-- TOOLS THAT DO THIS -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">3</div><h2>Tools That Do This (Free)</h2><p class="sd">Which free tools support sequential pipelines and self-healing loops?</p></div>
+
+<table class="ct">
+<tr><th>Tool</th><th>Sequential Pipeline?</th><th>Self-Healing Loop?</th><th>Cost</th><th>How</th></tr>
+<tr><td><strong>Microsoft Conductor</strong></td><td class="hi">✅ Native</td><td class="hi">✅ Native</td><td><span class="free-tag">FREE</span></td><td>YAML file defines agent chain + conditions + retry loops</td></tr>
+<tr><td><strong>Claude Code Hooks</strong></td><td>⚠️ Manual</td><td class="hi">✅ Native</td><td><span class="free-tag">FREE</span></td><td>PostToolUse hook runs tests after every edit; failures auto-feed back</td></tr>
+<tr><td><strong>Composio Agent Orchestrator</strong></td><td class="hi">✅ Native</td><td class="hi">✅ Native</td><td><span class="free-tag">FREE</span></td><td>Planner → Executor pipeline; auto CI-fix with retry</td></tr>
+<tr><td><strong>Claude Code Subagents</strong></td><td class="hi">✅ Native</td><td class="hi">✅ Native</td><td>Free via Router</td><td>Task tool chains subagents; parent orchestrates sequence</td></tr>
+<tr><td><strong>Cline (VS Code)</strong></td><td>⚠️ Manual</td><td class="hi">✅ Built-in</td><td><span class="free-tag">FREE</span></td><td>Cline already retries on test failures by default</td></tr>
+<tr><td><strong>Gemini CLI</strong></td><td>⚠️ Manual</td><td class="hi">✅ Built-in</td><td><span class="free-tag">FREE</span></td><td>Runs tests, reads errors, fixes, repeats</td></tr>
+</table>
+
+<div class="card" style="border-left:3px solid var(--emerald)">
+<h3>⭐ #1 Pick: Microsoft Conductor (YAML Pipelines)</h3>
+<p>This is literally built for what you're describing. You write a simple text file that says: "Agent 1 does X → if output contains 'error', go to Agent 2 → otherwise go to Agent 3." Zero tokens spent on routing — it's all in the YAML file.</p>
+<p style="margin-top:8px;color:var(--t3)">Released May 14, 2026 by Microsoft. MIT license. Free. Works with Copilot SDK + Claude.</p>
+<pre># Example: Sequential code pipeline with auto-fix loop
+name: build-and-fix
+entry: planner
+
+agents:
+  planner:
+    prompt: "Break this feature request into implementation steps."
+    model: copilot
+    routing:
+      - condition: "{{ exit_code == 0 }}"
+        next: coder
+
+  coder:
+    prompt: "Implement the plan above. Write clean, tested code."
+    model: copilot
+    routing:
+      - condition: "{{ exit_code == 0 }}"
+        next: tester
+
+  tester:
+    prompt: "Run all tests. Report pass/fail with details."
+    model: copilot
+    routing:
+      - condition: "{{ 'FAIL' in output }}"
+        next: fixer          # ← Tests failed? Go to fixer!
+      - condition: "{{ 'PASS' in output }}"
+        next: reviewer       # ← Tests passed? Go to reviewer!
+
+  fixer:
+    prompt: "These tests failed: {{ previous_output }}. Fix the code."
+    model: copilot
+    routing:
+      - condition: "{{ exit_code == 0 }}"
+        next: tester          # ← Back to tester! (THE LOOP)
+    max_retries: 5            # ← Stop after 5 attempts
+
+  reviewer:
+    prompt: "Review all changes for quality and security."
+    model: copilot
+    # No routing = end of pipeline</pre>
+<div class="analogy"><p>This YAML file is like a <strong>flowchart printed on paper</strong>. "If tests fail, go back to the fixer. If tests pass, go to the reviewer." The routing is decided by YOUR rules, not by the AI — so it's predictable and free (zero extra tokens for routing).</p></div>
+</div>
+
+<div class="card" style="border-left:3px solid var(--sky)">
+<h3>⭐ #2 Pick: Claude Code Hooks (Auto-Test After Every Edit)</h3>
+<p>Claude Code Hooks are shell commands that fire automatically when Claude edits a file. You can set up a PostToolUse hook that runs your tests every single time Claude changes code. If tests fail, the error is fed directly back to Claude — creating a natural self-healing loop.</p>
+<pre>// .claude/settings.json — Auto-test after every file edit
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "write:src/**/*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm test -- --bail --findRelatedTests"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+// What happens:
+// 1. Claude edits a file
+// 2. Hook auto-runs related tests
+// 3. If tests fail → error output feeds back to Claude
+// 4. Claude reads the error and fixes the code
+// 5. Hook runs tests again
+// 6. Repeat until tests pass!</pre>
+<div class="feynman"><p>Hooks are like a <strong>teacher standing behind the student</strong>. Every time the student writes an answer (Claude edits a file), the teacher immediately grades it (runs tests). If it's wrong, the teacher says exactly what's wrong (error message), and the student corrects it. This happens automatically — no one needs to tell the teacher to check.</p></div>
+</div>
+
+<div class="card" style="border-left:3px solid var(--violet)">
+<h3>⭐ #3 Pick: Composio Agent Orchestrator (Full Automation)</h3>
+<p>7,300+ GitHub stars. Handles the entire cycle: plan tasks → spawn agents → if CI fails → agent reads logs → agent fixes → re-run CI → repeat until green. All autonomous.</p>
+<pre># How Composio's self-healing works:
+# 1. CI build fails
+# 2. Orchestrator catches the failure
+# 3. Sends error logs to the coding agent
+# 4. Agent reads logs, identifies root cause
+# 5. Agent fixes the code in its own worktree
+# 6. CI runs again automatically
+# 7. If still failing → back to step 3
+# 8. If passing → create PR for human review
+
+# Setup:
+npm install -g @composio/agent-orchestrator
+ao init
+ao spawn --task "Fix CI failure" --agent claude-code --auto-fix</pre>
+</div>
+</div>
+</section>
+
+<!-- COMBINED: PIPELINE + LOOP -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">4</div><h2>The Combined Pattern: Pipeline + Self-Healing</h2><p class="sd">The most powerful setup: sequential handoff between agents, with auto-fix loops at each stage.</p></div>
+
+<div class="loop-diagram">
+<pre style="background:transparent;border:none;padding:0;color:var(--t1);font-size:.78rem;text-align:left;display:inline-block;">
+  ┌──────────┐     ┌──────────┐     ┌──────────┐     ┌──────────┐
+  │ Agent 1  │     │ Agent 2  │     │ Agent 3  │     │ Agent 4  │
+  │ PLANNER  │────→│  CODER   │────→│  TESTER  │────→│ REVIEWER │──→ ✅
+  │          │     │          │     │          │     │          │
+  │ M365     │     │ Cline or │     │ Gemini   │     │ M365     │
+  │ Copilot  │     │ Claude   │     │ CLI      │     │ Copilot  │
+  └──────────┘     └─────┬────┘     └─────┬────┘     └──────────┘
+                         │                │
+                         │  ┌──────────┐  │
+                         │  │ FIXER    │  │
+                         └─→│ (same or │←─┘
+                            │ different│   If tests fail,
+                            │ agent)   │   fixer gets error,
+                            └────┬─────┘   fixes, re-tests.
+                                 │         Loop until pass
+                                 └──→ back to TESTER ↑
+</pre>
+</div>
+
+<div class="scenario">
+<p><strong>RiftCoach: New Champion Build Page.</strong> <strong>Agent 1 (M365 Copilot):</strong> Plans the feature — API route, UI component, data schema. Passes spec to Agent 2. <strong>Agent 2 (Cline):</strong> Writes the code based on the spec. Passes code to Agent 3. <strong>Agent 3 (Gemini CLI):</strong> Writes and runs tests. Tests fail on 2 items. Passes errors to Fixer. <strong>Fixer (Cline again):</strong> Reads errors, fixes code, re-runs tests. Still fails on 1 item. Fixes again. Tests pass. Passes to Agent 4. <strong>Agent 4 (M365 Copilot):</strong> Reviews all changes, approves. <em>Total: fully built, tested, reviewed feature with zero manual debugging.</em></p>
+</div>
+
+<div class="scenario">
+<p><strong>Newmont Dashboard: CSS Bug Fix Sprint.</strong> <strong>Agent 1 (Copilot):</strong> Reads bug report, creates fix plan with acceptance criteria. <strong>Agent 2 (Cline):</strong> Applies CSS fix. <strong>PostToolUse Hook:</strong> Auto-runs Playwright tests after every edit. Test fails — "button still not visible on mobile." Hook feeds error back to Cline. Cline adjusts CSS. Tests pass. <strong>Agent 3 (Copilot):</strong> Reviews the diff, confirms fix is correct. <em>Self-healing loop ran 3 times automatically — you didn't have to debug manually.</em></p>
+</div>
+</div>
+</section>
+
+<!-- YOUR SETUP -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">5</div><h2>How to Set This Up (Your Tools)</h2><p class="sd">Three approaches from simplest to most powerful.</p></div>
+
+<div class="card">
+<h3>🟢 Level 1: Simplest — Claude Code Hooks (5 min setup)</h3>
+<p>You already have Cline + VS Code. Add a PostToolUse hook to auto-run tests. Cline naturally retries when tests fail.</p>
+<pre>// If using Claude Code (via Router with free models):
+// Create .claude/settings.json:
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "write:src/**/*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm test -- --bail 2>&1 | head -50"
+          }
+        ]
+      }
+    ]
+  }
+}
+// That's it! Self-healing loop is now active.</pre>
+<p style="margin-top:8px;color:var(--t3)"><strong>What you get:</strong> Every time the agent edits code → tests run automatically → if tests fail → error feeds back → agent fixes → tests run again → repeat until pass.</p>
+</div>
+
+<div class="card">
+<h3>🟡 Level 2: Medium — Microsoft Conductor Pipeline (15 min setup)</h3>
+<p>Define your entire agent chain in one YAML file. Install Conductor, write the pipeline, run it.</p>
+<pre># Install Conductor (Windows PowerShell):
+irm https://raw.githubusercontent.com/microsoft/conductor/main/install.ps1 | iex
+
+# Create your pipeline file: pipeline.yaml
+name: feature-pipeline
+entry: planner
+agents:
+  planner:
+    prompt: |
+      Break this feature into implementation steps.
+      Feature: {{ user_input }}
+    model: copilot
+    routing:
+      - next: coder
+
+  coder:
+    prompt: |
+      Implement the following plan:
+      {{ previous_output }}
+    model: copilot
+    routing:
+      - next: tester
+
+  tester:
+    prompt: "Run: npm test. Report results."
+    model: copilot
+    tools:
+      - shell
+    routing:
+      - condition: "{{ 'FAIL' in output }}"
+        next: fixer
+      - condition: "{{ 'PASS' in output or 'passing' in output }}"
+        next: reviewer
+
+  fixer:
+    prompt: |
+      Fix these test failures:
+      {{ previous_output }}
+    model: copilot
+    routing:
+      - next: tester
+    max_iterations: 5
+
+  reviewer:
+    prompt: "Review all changes. Approve or request fixes."
+    model: copilot
+
+# Run:
+conductor run pipeline.yaml --input "Add user profile page"</pre>
+</div>
+
+<div class="card">
+<h3>🔴 Level 3: Full Power — Composio Agent Orchestrator (30 min setup)</h3>
+<p>Full automation: parallel agents, CI auto-fix, PR creation, retry loops, dashboard.</p>
+<pre># Install
+npm install -g @composio/agent-orchestrator
+
+# Initialize in your project
+cd your-project
+ao init
+
+# Spawn an agent with auto-fix enabled
+ao spawn \
+  --task "Implement user authentication" \
+  --agent claude-code \
+  --auto-fix \
+  --max-retries 5
+
+# What happens:
+# 1. Agent creates its own worktree + branch
+# 2. Implements the feature
+# 3. Runs CI/tests
+# 4. If CI fails → reads logs → fixes → retries (up to 5x)
+# 5. When CI passes → creates PR
+# 6. You review the PR and merge
+
+# Monitor all agents:
+ao status</pre>
+</div>
+</div>
+</section>
+
+<!-- MANUAL PIPELINE (NO TOOLS) -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">6</div><h2>DIY Pipeline (No Extra Tools Needed)</h2><p class="sd">You can do this TODAY with just your existing tools — manually chaining agents.</p></div>
+
+<div class="card">
+<h3>📋 The Manual Pipeline Method</h3>
+<p>You don't need any orchestrator to chain agents. You ARE the orchestrator. Here's how:</p>
+<pre>
+STEP 1: M365 Copilot (This Chat) — PLAN
+You: "Break this feature into 4 tasks with acceptance criteria."
+Copilot: outputs Task 1-4 with clear specs.
+→ You COPY the output.
+
+STEP 2: Cline (VS Code) — CODE
+You: paste Task 1 spec → Cline writes code.
+→ Cline auto-runs tests (if configured).
+→ If tests fail → Cline reads errors → fixes → retries.
+→ When tests pass → you COPY the diff summary.
+
+STEP 3: ChatGPT Enterprise — REVIEW
+You: paste the diff → "Review this code for bugs and security."
+ChatGPT: outputs review with suggestions.
+→ If issues found → back to Cline to fix.
+→ If approved → proceed.
+
+STEP 4: M365 Copilot — DOCUMENT
+You: paste final changes → "Write changelog and docs."
+Copilot: outputs documentation.
+→ You commit everything. Done!
+</pre>
+<div class="analogy"><p>This is the <strong>"bucket brigade"</strong> approach. Like firefighters passing buckets of water hand-to-hand. Each person (agent) does their part and passes the result to the next. YOU are the person coordinating who passes to whom. It's manual but works perfectly and costs $0.</p></div>
+</div>
+</div>
+</section>
+
+<!-- COMPARISON -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">7</div><h2>Which Approach Should You Start With?</h2><p class="sd">Matching your experience level to the right tool.</p></div>
+
+<table class="ct">
+<tr><th>Level</th><th>Approach</th><th>Setup Time</th><th>Automation</th><th>Best For</th></tr>
+<tr><td>🟢 Beginner</td><td><strong>Manual Pipeline</strong> (copy-paste between agents)</td><td>0 min</td><td>You do the passing</td><td>Start here today</td></tr>
+<tr><td>🟢 Beginner+</td><td><strong>Claude Code Hooks</strong> (auto-test loop)</td><td>5 min</td><td>Self-healing is auto</td><td>Auto-debugging</td></tr>
+<tr><td>🟡 Intermediate</td><td><strong>Microsoft Conductor</strong> (YAML pipeline)</td><td>15 min</td><td>Full pipeline auto</td><td>Repeatable workflows</td></tr>
+<tr><td>🔴 Advanced</td><td><strong>Composio AO</strong> (full orchestration)</td><td>30 min</td><td>Everything auto</td><td>CI/CD integration</td></tr>
+</table>
+
+<div class="card" style="border-left:3px solid var(--amber)">
+<h3>🎯 My Recommendation for You</h3>
+<p><strong>Start with Level 1 (Manual Pipeline + Hooks) today.</strong> You already have all the tools. Use M365 Copilot to plan → Cline to code (with auto-test hooks) → ChatGPT to review. This gives you 80% of the benefit with 0% new tooling.</p>
+<p style="margin-top:8px">Then when you're comfortable, install <strong>Microsoft Conductor</strong> to automate the passing between agents. It's a single YAML file — very beginner-friendly and made by Microsoft (so it works well with your Copilot ecosystem).</p>
+</div>
+
+<div style="text-align:center;margin-top:64px;padding:32px;color:var(--t3);font-size:.85rem;">
+<p>Sequential Pipelines & Self-Healing Loops Guide</p>
+<p>Built by Mel John Dimat | Part of TEMP v3.0</p>
+<p style="margin-top:8px">🔗 Pipelines &nbsp;|&nbsp; 🔄 Self-Healing &nbsp;|&nbsp; 🛠️ 6 Free Tools &nbsp;|&nbsp; 4 Difficulty Levels</p>
+</div>
+</div>
+</section>
+
+<script>
+window.addEventListener('scroll',()=>{const s=window.scrollY,d=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('sp').style.width=(s/d)*100+'%';const b=document.getElementById('btt');s>600?b.classList.add('v'):b.classList.remove('v')});
+</script>
+</body>
+</html>

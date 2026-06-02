@@ -1,0 +1,10 @@
+# CODEOWNERS
+# This tells GitHub who should review important files.
+# Replace @your-github-name with your real GitHub username later.
+
+* @your-github-name
+.github/workflows/ @your-github-name
+scripts/ @your-github-name
+docs/PERMISSION_MATRIX.md @your-github-name
+docs/INCIDENT_RESPONSE.md @your-github-name
+SECURITY.md @your-github-name
