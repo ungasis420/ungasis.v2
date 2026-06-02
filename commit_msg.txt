@@ -1,1 +1,1 @@
-chore: update master blueprint node counts and engine statuses
+chore: update CONTEXT.md — workflows registered, rule loading verified

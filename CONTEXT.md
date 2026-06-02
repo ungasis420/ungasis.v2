@@ -235,7 +235,7 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ## Session Handoff — June 2, 2026 🖥️ PC (Sprint Housekeeping + F8e + F8f + F9d)
 
-**Sprint:** Housekeeping + F8e (Auto-Orchestrator) + F8f (Auto-Tagger) + F9d (Scout Engine)
+**Sprint:** Housekeeping + F8e (Auto-Orchestrator) + F8f (Auto-Tagger) + F9d (Scout Engine) + Workflows
 **Model:** Gemini 3.5 Flash (Medium)
 
 **What was accomplished:**
@@ -244,6 +244,8 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - **Auto-Tagger (F8f):** Created self-maintenance skill with 7 rules, YAML rules config, and tag logs.
 - **Scout Engine (F9d):** Created web monitoring skill, watch-list keywords, scout logs, adaptation queue, sources directory, and registered the Antigravity scout skill. Connected it to `EVOLUTION_RULES.md`.
 - **Post-Sprint Sweeps:** Created and executed a live `scripts/tag_sweep.py` sweeper, successfully identifying 139 maintenance items and adding the top 20 to the task queue.
+- **Workflows Registered:** Created 5 new workflow configuration files in `.agents/workflows/` (scout, tag-sweep, audit, handoff, scaffold) to register them as custom slash-commands.
+- **Rule Loading Status:** Verified that `.agents/rules/08-skill-observer.md`, `09-skill-generator.md`, and `10-self-healing-loop.md` exist on disk. Note: Antigravity restart may be needed if they are not yet visible in the UI Rules tab.
 
 **Files created:**
 - `.ungasis/orchestrator/pipeline-manifest.yml` (38 lines)
@@ -266,6 +268,11 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - `.agents/skills/scout/SKILL.md` (34 lines)
 - `.agents/skills/scout/README.md` (21 lines)
 - `scripts/tag_sweep.py` (119 lines)
+- `.agents/workflows/scout.md` (10 lines)
+- `.agents/workflows/tag-sweep.md` (12 lines)
+- `.agents/workflows/audit.md` (10 lines)
+- `.agents/workflows/handoff.md` (12 lines)
+- `.agents/workflows/scaffold.md` (17 lines)
 
 **Tag applied:** `v4.0-engines-complete` (all 9 engines fully functional)
 
@@ -273,7 +280,7 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 **What's next:** START RIFTCOACH DEVELOPMENT (Kickoff B from blueprint Section 10)
 
-**Known issues:** None.
+**Known issues:** UI rules tab may require Antigravity restart to load newly added rule files.
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
