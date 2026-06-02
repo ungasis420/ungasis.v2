@@ -850,8 +850,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780419543.2561872,
-    "ast_hash": "db98e1688ea4943d63120b5438b994e3",
+    "mtime": 1780415451.7957976,
+    "ast_hash": "d399fcc4843fa00714fa34130fa43f4e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -8565,8 +8565,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\commit_msg.txt": {
-    "mtime": 1780419569.108261,
-    "ast_hash": "0060604d93a63bf670fef591fd3c7b4a",
+    "mtime": 1780415493.9396644,
+    "ast_hash": "d53d97bad6c3eefa0d2da9ea0c1ead95",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\context-engine\\context-budget.md": {
@@ -8832,31 +8832,6 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\tag_sweep.py": {
     "mtime": 1780415438.403089,
     "ast_hash": "1a21caabe84827d50817ab289839e268",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\audit.md": {
-    "mtime": 1780419517.6464229,
-    "ast_hash": "eb296b9d90be6826df8b2a045470c85b",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\handoff.md": {
-    "mtime": 1780419521.8779302,
-    "ast_hash": "f63674cc83f719717950c1439e55c9f0",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\scaffold.md": {
-    "mtime": 1780419525.713569,
-    "ast_hash": "673535dbc0cb1ab05e39bfe9ebe7d4f6",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\scout.md": {
-    "mtime": 1780419508.7344143,
-    "ast_hash": "ef87a343922a6c5bf6b64c8ce31c0e8b",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\tag-sweep.md": {
-    "mtime": 1780419513.1731222,
-    "ast_hash": "191e247d343677c6115b9dd63df541a2",
     "semantic_hash": ""
   }
 }

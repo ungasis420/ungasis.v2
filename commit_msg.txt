@@ -1,1 +1,1 @@
-chore: update CONTEXT.md — workflows registered, rule loading verified
+chore: update task and walkthrough artifacts for workflows sprint
