@@ -8933,5 +8933,20 @@
     "mtime": 1780427055.867334,
     "ast_hash": "282a39d83396f0291fc4df92533a7e12",
     "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\resources\\api-inventory.md": {
+    "mtime": 1780427122.6010716,
+    "ast_hash": "af1c1a9836f5b727a689e334c5c87e50",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\resources\\budget-tracker.md": {
+    "mtime": 1780427127.0291946,
+    "ast_hash": "3ce050a33864de2d4366f7b53e490603",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\resources\\resource-rules.md": {
+    "mtime": 1780427132.0440872,
+    "ast_hash": "865a7c2561c49dc62f8be0bb243b7496",
+    "semantic_hash": ""
   }
 }
