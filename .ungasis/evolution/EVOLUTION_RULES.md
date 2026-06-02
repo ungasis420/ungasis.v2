@@ -73,5 +73,15 @@ Use this table to check if changes require human confirmation:
 | Manual rule updates needed | Weekly | Monthly |
 | Adaptation to new projects | Manual reconfig | Auto-adjusts within 3 sessions |
 
+## Scout Integration
+When the Scout Engine discovers a HIGH-relevance item:
+1. Log to `scout-log.md` (auto)
+2. Flag in `CONTEXT.md` next session summary (auto)
+3. Human reviews and marks ADOPT/WATCH/IGNORE (human)
+4. If ADOPT: move to `adaptation-queue.md` with implementation plan (human)
+5. Implement in next available sprint (follows normal pipeline)
+
+Scout discoveries that affect `MODEL_ROUTING.md` or token budgets require human approval per the Adaptation Approval Levels table.
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

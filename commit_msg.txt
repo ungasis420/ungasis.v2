@@ -1,1 +1,1 @@
-feat: F8f Auto-Tagger — self-maintenance skill with 7 tag rules and queue integration
+feat: F9d Scout Engine — auto-discover new tech from GitHub, YouTube, dev communities

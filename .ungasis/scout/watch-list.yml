@@ -1,0 +1,85 @@
+version: "4.0"
+name: UNGASIS Scout Watch List
+
+topics:
+  - name: "Next.js"
+    priority: "high"
+    keywords: ["next.js 16", "nextjs update", "app router"]
+  
+  - name: "Tailwind CSS"
+    priority: "high"
+    keywords: ["tailwind 5", "tailwind update"]
+
+  - name: "React"
+    priority: "high"
+    keywords: ["react 20", "react compiler", "RSC"]
+
+  - name: "AI Agent Frameworks"
+    priority: "high"
+    keywords: ["agentic AI", "multi-agent", "MCP server", "A2A protocol", "agent orchestration"]
+
+  - name: "Token Efficiency"
+    priority: "high"
+    keywords: ["context engineering", "prompt caching", "token optimization", "context window"]
+
+  - name: "Free AI Tools"
+    priority: "medium"
+    keywords: ["free tier", "open source", "BYOK", "coding agent"]
+
+  - name: "Wild Rift"
+    priority: "medium"
+    keywords: ["patch notes", "new champion", "meta shift", "item changes"]
+
+  - name: "Gemini/Antigravity"
+    priority: "high"
+    keywords: ["gemini cli update", "gemini 3.5", "antigravity update"]
+
+  - name: "Graphify"
+    priority: "medium"
+    keywords: ["graphify update", "knowledge graph", "code graph"]
+
+sources:
+  github:
+    trending:
+      language: "typescript"
+      min_stars: 100
+    topics:
+      - "ai-agents"
+      - "mcp-servers"
+  
+  youtube:
+    channels:
+      - "Fireship"
+      - "Theo-t3gg"
+      - "WebDevSimplified"
+      - "DavidOndrej"
+
+  devto:
+    tags:
+      - "ai"
+      - "nextjs"
+      - "typescript"
+      - "webdev"
+
+  reddit:
+    subreddits:
+      - "r/nextjs"
+      - "r/webdev"
+      - "r/LocalLLaMA"
+      - "r/wildrift"
+
+  hackernews:
+    queries:
+      - "Show HN"
+      - "Ask HN"
+    min_points: 100
+
+  wildrift:
+    urls:
+      - "wildriftfire.com/patch-notes"
+      - "wr-meta.com"
+
+settings:
+  schedule: "weekly Sunday evening"
+  max_discoveries: 10
+  token_budget: 1000

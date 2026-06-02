@@ -8565,8 +8565,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\commit_msg.txt": {
-    "mtime": 1780415265.9779234,
-    "ast_hash": "ac7b4a3a14766f2fe9216635edf2ec05",
+    "mtime": 1780415327.2139318,
+    "ast_hash": "9201d4924b159b30350707310be7f632",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\context-engine\\context-budget.md": {
@@ -8732,6 +8732,51 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\blueprints\\UNGASIS-OS-v4.0-MASTER-BLUEPRINT-UPDATED.md": {
     "mtime": 1780409076.86285,
     "ast_hash": "3006eacf75ca7987deb8728cddd43076",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\dispatch-rules.yml": {
+    "mtime": 1780415284.6813118,
+    "ast_hash": "b2b3116c9f6f23ec6459c2312b47cb7f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\handoff-templates\\build-to-test.md": {
+    "mtime": 1780415305.6010363,
+    "ast_hash": "3265be4802f1a0a686f79a88b038173a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\handoff-templates\\fix-to-merge.md": {
+    "mtime": 1780415317.996194,
+    "ast_hash": "d190e541a6a67877620c7c8bd548b39a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\handoff-templates\\plan-to-build.md": {
+    "mtime": 1780415300.6925778,
+    "ast_hash": "d4cc18f40ac9fedddb6ab67f588e8abd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\handoff-templates\\review-to-fix.md": {
+    "mtime": 1780415314.3326955,
+    "ast_hash": "75ac7e2c845a8db6dae17a96d3582049",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\handoff-templates\\test-to-review.md": {
+    "mtime": 1780415309.0438118,
+    "ast_hash": "ecf2f0286477a36ce6c7e723b23484aa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\pipeline-manifest.yml": {
+    "mtime": 1780415280.6080656,
+    "ast_hash": "f525acec838fbdec7d0bde15ce929ab6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\queue.md": {
+    "mtime": 1780415295.534692,
+    "ast_hash": "986fe01e82fe1c4bd733e7c834fa9def",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\session-conductor.md": {
+    "mtime": 1780415289.7717493,
+    "ast_hash": "27873f1e0776594cb537a9a290ec8b73",
     "semantic_hash": ""
   }
 }

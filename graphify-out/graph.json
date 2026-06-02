@@ -4,319 +4,418 @@
   "graph": {},
   "nodes": [
     {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L1",
+      "id": "auto_tagger_skill",
+      "community": 2105,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Auto-Tagger Skill",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L11",
+      "id": "auto_tagger_skill_auto_tagger_skill",
+      "community": 2105,
+      "norm_label": "auto-tagger skill"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L13",
+      "id": "auto_tagger_skill_purpose",
+      "community": 2105,
+      "norm_label": "purpose"
+    },
+    {
+      "label": "How It Works",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L16",
+      "id": "auto_tagger_skill_how_it_works",
+      "community": 2105,
+      "norm_label": "how it works"
+    },
+    {
+      "label": "7 Tagging Rules",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L21",
+      "id": "auto_tagger_skill_7_tagging_rules",
+      "community": 2105,
+      "norm_label": "7 tagging rules"
+    },
+    {
+      "label": "Conductor Rules",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L33",
+      "id": "auto_tagger_skill_conductor_rules",
+      "community": 2105,
+      "norm_label": "conductor rules"
+    },
+    {
+      "label": "Inputs/Outputs",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L39",
+      "id": "auto_tagger_skill_inputs_outputs",
+      "community": 2105,
+      "norm_label": "inputs/outputs"
+    },
+    {
+      "label": "tag-log.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/tag-log.md",
+      "source_location": "L1",
+      "id": "auto_tagger_tag_log",
+      "community": 2421,
+      "norm_label": "tag-log.md"
+    },
+    {
+      "label": "Auto-Tagger Log",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/tag-log.md",
+      "source_location": "L1",
+      "id": "auto_tagger_tag_log_auto_tagger_log",
+      "community": 2421,
+      "norm_label": "auto-tagger log"
+    },
+    {
+      "label": "Sweep Log",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/tag-log.md",
+      "source_location": "L3",
+      "id": "auto_tagger_tag_log_sweep_log",
+      "community": 2421,
+      "norm_label": "sweep log"
+    },
+    {
+      "label": "June 2, 2026 \u2014 Sweep Type: manual",
+      "file_type": "document",
+      "source_file": ".agents/skills/auto-tagger/tag-log.md",
+      "source_location": "L5",
+      "id": "auto_tagger_tag_log_june_2_2026_sweep_type_manual",
+      "community": 2421,
+      "norm_label": "june 2, 2026 \u2014 sweep type: manual"
+    },
+    {
       "label": "build-to-test.md",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L1",
-      "id": "handoff_templates_build_to_test",
       "community": 1190,
-      "norm_label": "build-to-test.md"
+      "norm_label": "build-to-test.md",
+      "id": "handoff_templates_build_to_test"
     },
     {
       "label": "Handoff: Build to Test",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L1",
-      "id": "handoff_templates_build_to_test_handoff_build_to_test",
       "community": 1190,
-      "norm_label": "handoff: build to test"
+      "norm_label": "handoff: build to test",
+      "id": "handoff_templates_build_to_test_handoff_build_to_test"
     },
     {
       "label": "Implementation Summary",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L3",
-      "id": "handoff_templates_build_to_test_implementation_summary",
       "community": 1190,
-      "norm_label": "implementation summary"
+      "norm_label": "implementation summary",
+      "id": "handoff_templates_build_to_test_implementation_summary"
     },
     {
       "label": "Test Plan",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L7",
-      "id": "handoff_templates_build_to_test_test_plan",
       "community": 1190,
-      "norm_label": "test plan"
+      "norm_label": "test plan",
+      "id": "handoff_templates_build_to_test_test_plan"
     },
     {
       "label": "Known Issues / Developer Notes",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L12",
-      "id": "handoff_templates_build_to_test_known_issues_developer_notes",
       "community": 1190,
-      "norm_label": "known issues / developer notes"
+      "norm_label": "known issues / developer notes",
+      "id": "handoff_templates_build_to_test_known_issues_developer_notes"
     },
     {
       "label": "fix-to-merge.md",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/fix-to-merge.md",
       "source_location": "L1",
-      "id": "handoff_templates_fix_to_merge",
       "community": 2306,
-      "norm_label": "fix-to-merge.md"
+      "norm_label": "fix-to-merge.md",
+      "id": "handoff_templates_fix_to_merge"
     },
     {
       "label": "Handoff: Fix to Merge",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/fix-to-merge.md",
       "source_location": "L1",
-      "id": "handoff_templates_fix_to_merge_handoff_fix_to_merge",
       "community": 2306,
-      "norm_label": "handoff: fix to merge"
+      "norm_label": "handoff: fix to merge",
+      "id": "handoff_templates_fix_to_merge_handoff_fix_to_merge"
     },
     {
       "label": "Changes Summary",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/fix-to-merge.md",
       "source_location": "L3",
-      "id": "handoff_templates_fix_to_merge_changes_summary",
       "community": 2306,
-      "norm_label": "changes summary"
+      "norm_label": "changes summary",
+      "id": "handoff_templates_fix_to_merge_changes_summary"
     },
     {
       "label": "Final Verification Checklist",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/fix-to-merge.md",
       "source_location": "L7",
-      "id": "handoff_templates_fix_to_merge_final_verification_checklist",
       "community": 2306,
-      "norm_label": "final verification checklist"
+      "norm_label": "final verification checklist",
+      "id": "handoff_templates_fix_to_merge_final_verification_checklist"
     },
     {
       "label": "plan-to-build.md",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L1",
-      "id": "handoff_templates_plan_to_build",
       "community": 977,
-      "norm_label": "plan-to-build.md"
+      "norm_label": "plan-to-build.md",
+      "id": "handoff_templates_plan_to_build"
     },
     {
       "label": "Handoff: Plan to Build",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L1",
-      "id": "handoff_templates_plan_to_build_handoff_plan_to_build",
       "community": 977,
-      "norm_label": "handoff: plan to build"
+      "norm_label": "handoff: plan to build",
+      "id": "handoff_templates_plan_to_build_handoff_plan_to_build"
     },
     {
       "label": "Task Details",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L3",
-      "id": "handoff_templates_plan_to_build_task_details",
       "community": 977,
-      "norm_label": "task details"
+      "norm_label": "task details",
+      "id": "handoff_templates_plan_to_build_task_details"
     },
     {
       "label": "Specification",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L8",
-      "id": "handoff_templates_plan_to_build_specification",
       "community": 977,
-      "norm_label": "specification"
+      "norm_label": "specification",
+      "id": "handoff_templates_plan_to_build_specification"
     },
     {
       "label": "Acceptance Criteria",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L11",
-      "id": "handoff_templates_plan_to_build_acceptance_criteria",
       "community": 977,
-      "norm_label": "acceptance criteria"
+      "norm_label": "acceptance criteria",
+      "id": "handoff_templates_plan_to_build_acceptance_criteria"
     },
     {
       "label": "Build Rules",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L16",
-      "id": "handoff_templates_plan_to_build_build_rules",
       "community": 977,
-      "norm_label": "build rules"
+      "norm_label": "build rules",
+      "id": "handoff_templates_plan_to_build_build_rules"
     },
     {
       "label": "review-to-fix.md",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L1",
-      "id": "handoff_templates_review_to_fix",
       "community": 1212,
-      "norm_label": "review-to-fix.md"
+      "norm_label": "review-to-fix.md",
+      "id": "handoff_templates_review_to_fix"
     },
     {
       "label": "Handoff: Review to Fix",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L1",
-      "id": "handoff_templates_review_to_fix_handoff_review_to_fix",
       "community": 1212,
-      "norm_label": "handoff: review to fix"
+      "norm_label": "handoff: review to fix",
+      "id": "handoff_templates_review_to_fix_handoff_review_to_fix"
     },
     {
       "label": "Issues Identified",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L3",
-      "id": "handoff_templates_review_to_fix_issues_identified",
       "community": 1212,
-      "norm_label": "issues identified"
+      "norm_label": "issues identified",
+      "id": "handoff_templates_review_to_fix_issues_identified"
     },
     {
       "label": "Fix Instructions",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L6",
-      "id": "handoff_templates_review_to_fix_fix_instructions",
       "community": 1212,
-      "norm_label": "fix instructions"
+      "norm_label": "fix instructions",
+      "id": "handoff_templates_review_to_fix_fix_instructions"
     },
     {
       "label": "Acceptance Criteria for Fix",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L11",
-      "id": "handoff_templates_review_to_fix_acceptance_criteria_for_fix",
       "community": 1212,
-      "norm_label": "acceptance criteria for fix"
+      "norm_label": "acceptance criteria for fix",
+      "id": "handoff_templates_review_to_fix_acceptance_criteria_for_fix"
     },
     {
       "label": "test-to-review.md",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/test-to-review.md",
       "source_location": "L1",
-      "id": "handoff_templates_test_to_review",
       "community": 2320,
-      "norm_label": "test-to-review.md"
+      "norm_label": "test-to-review.md",
+      "id": "handoff_templates_test_to_review"
     },
     {
       "label": "Handoff: Test to Review",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/test-to-review.md",
       "source_location": "L1",
-      "id": "handoff_templates_test_to_review_handoff_test_to_review",
       "community": 2320,
-      "norm_label": "handoff: test to review"
+      "norm_label": "handoff: test to review",
+      "id": "handoff_templates_test_to_review_handoff_test_to_review"
     },
     {
       "label": "Test Run Results",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/test-to-review.md",
       "source_location": "L3",
-      "id": "handoff_templates_test_to_review_test_run_results",
       "community": 2320,
-      "norm_label": "test run results"
+      "norm_label": "test run results",
+      "id": "handoff_templates_test_to_review_test_run_results"
     },
     {
       "label": "Files to Review",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/handoff-templates/test-to-review.md",
       "source_location": "L8",
-      "id": "handoff_templates_test_to_review_files_to_review",
       "community": 2320,
-      "norm_label": "files to review"
+      "norm_label": "files to review",
+      "id": "handoff_templates_test_to_review_files_to_review"
     },
     {
       "label": "queue.md",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L1",
-      "id": "orchestrator_queue",
       "community": 2088,
-      "norm_label": "queue.md"
+      "norm_label": "queue.md",
+      "id": "orchestrator_queue"
     },
     {
       "label": "Task Queue \u2014 UNGASIS OS v4.0",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L1",
-      "id": "orchestrator_queue_task_queue_ungasis_os_v4_0",
       "community": 2088,
-      "norm_label": "task queue \u2014 ungasis os v4.0"
+      "norm_label": "task queue \u2014 ungasis os v4.0",
+      "id": "orchestrator_queue_task_queue_ungasis_os_v4_0"
     },
     {
       "label": "Pending",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L3",
-      "id": "orchestrator_queue_pending",
       "community": 2088,
-      "norm_label": "pending"
+      "norm_label": "pending",
+      "id": "orchestrator_queue_pending"
     },
     {
       "label": "In Progress",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L7",
-      "id": "orchestrator_queue_in_progress",
       "community": 2088,
-      "norm_label": "in progress"
+      "norm_label": "in progress",
+      "id": "orchestrator_queue_in_progress"
     },
     {
       "label": "Done",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L11",
-      "id": "orchestrator_queue_done",
       "community": 2088,
-      "norm_label": "done"
+      "norm_label": "done",
+      "id": "orchestrator_queue_done"
     },
     {
       "label": "session-conductor.md",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L1",
-      "id": "orchestrator_session_conductor",
       "community": 1013,
-      "norm_label": "session-conductor.md"
+      "norm_label": "session-conductor.md",
+      "id": "orchestrator_session_conductor"
     },
     {
       "label": "Session Conductor",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L1",
-      "id": "orchestrator_session_conductor_session_conductor",
       "community": 1013,
-      "norm_label": "session conductor"
+      "norm_label": "session conductor",
+      "id": "orchestrator_session_conductor_session_conductor"
     },
     {
       "label": "Purpose",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L3",
-      "id": "orchestrator_session_conductor_purpose",
       "community": 1013,
-      "norm_label": "purpose"
+      "norm_label": "purpose",
+      "id": "orchestrator_session_conductor_purpose"
     },
     {
       "label": "How It Works",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L6",
-      "id": "orchestrator_session_conductor_how_it_works",
       "community": 1013,
-      "norm_label": "how it works"
+      "norm_label": "how it works",
+      "id": "orchestrator_session_conductor_how_it_works"
     },
     {
       "label": "Conductor Rules",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L18",
-      "id": "orchestrator_session_conductor_conductor_rules",
       "community": 1013,
-      "norm_label": "conductor rules"
+      "norm_label": "conductor rules",
+      "id": "orchestrator_session_conductor_conductor_rules"
     },
     {
       "label": "Inputs/Outputs",
       "file_type": "document",
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L26",
-      "id": "orchestrator_session_conductor_inputs_outputs",
       "community": 1013,
-      "norm_label": "inputs/outputs"
+      "norm_label": "inputs/outputs",
+      "id": "orchestrator_session_conductor_inputs_outputs"
     },
     {
       "label": "devcontainer.json",
@@ -1120,7 +1219,7 @@
       "file_type": "code",
       "source_file": "archive/ai_project_os_master_v5/repo-template.json",
       "source_location": "L21",
-      "community": 2142,
+      "community": 256,
       "norm_label": "key_files",
       "id": "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files"
     },
@@ -1129,7 +1228,7 @@
       "file_type": "code",
       "source_file": "archive/ai_project_os_master_v5/repo-template.json",
       "source_location": "L22",
-      "community": 2142,
+      "community": 256,
       "norm_label": "llm_context",
       "id": "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_llm_context"
     },
@@ -1138,7 +1237,7 @@
       "file_type": "code",
       "source_file": "archive/ai_project_os_master_v5/repo-template.json",
       "source_location": "L23",
-      "community": 2142,
+      "community": 256,
       "norm_label": "llms_txt",
       "id": "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_llms_txt"
     },
@@ -1147,7 +1246,7 @@
       "file_type": "code",
       "source_file": "archive/ai_project_os_master_v5/repo-template.json",
       "source_location": "L24",
-      "community": 2142,
+      "community": 256,
       "norm_label": "new_video_audit",
       "id": "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_new_video_audit"
     },
@@ -10169,7 +10268,7 @@
       "file_type": "document",
       "source_file": ".agents/rules/.clinerules.md",
       "source_location": "L1",
-      "community": 2153,
+      "community": 306,
       "norm_label": ".clinerules.md",
       "id": "rules_clinerules"
     },
@@ -10178,7 +10277,7 @@
       "file_type": "document",
       "source_file": ".agents/rules/.clinerules.md",
       "source_location": "L5",
-      "community": 2153,
+      "community": 306,
       "norm_label": ".clinerules \u2014 ungasis qa audit session",
       "id": "rules_clinerules_clinerules_ungasis_qa_audit_session"
     },
@@ -10187,7 +10286,7 @@
       "file_type": "document",
       "source_file": ".agents/rules/.clinerules.md",
       "source_location": "L7",
-      "community": 2153,
+      "community": 306,
       "norm_label": "identity",
       "id": "rules_clinerules_identity"
     },
@@ -10196,7 +10295,7 @@
       "file_type": "document",
       "source_file": ".agents/rules/.clinerules.md",
       "source_location": "L11",
-      "community": 2153,
+      "community": 306,
       "norm_label": "token rules (ungasis 12-layer)",
       "id": "rules_clinerules_token_rules_ungasis_12_layer"
     },
@@ -10205,7 +10304,7 @@
       "file_type": "document",
       "source_file": ".agents/rules/.clinerules.md",
       "source_location": "L23",
-      "community": 2153,
+      "community": 306,
       "norm_label": "output",
       "id": "rules_clinerules_output"
     },
@@ -11114,7 +11213,7 @@
       "file_type": "document",
       "source_file": ".agents/skills/qa-audit/SKILL.md",
       "source_location": "L1",
-      "community": 2304,
+      "community": 306,
       "norm_label": "skill.md",
       "id": "qa_audit_skill"
     },
@@ -11123,7 +11222,7 @@
       "file_type": "document",
       "source_file": ".agents/skills/qa-audit/SKILL.md",
       "source_location": "L5",
-      "community": 2304,
+      "community": 306,
       "norm_label": "qa audit skill",
       "id": "qa_audit_skill_qa_audit_skill"
     },
@@ -11132,7 +11231,7 @@
       "file_type": "document",
       "source_file": ".agents/skills/qa-audit/SKILL.md",
       "source_location": "L7",
-      "community": 2304,
+      "community": 306,
       "norm_label": "purpose",
       "id": "qa_audit_skill_purpose"
     },
@@ -11141,7 +11240,7 @@
       "file_type": "document",
       "source_file": ".agents/skills/qa-audit/SKILL.md",
       "source_location": "L10",
-      "community": 2304,
+      "community": 306,
       "norm_label": "steps",
       "id": "qa_audit_skill_steps"
     },
@@ -12860,7 +12959,7 @@
       "file_type": "document",
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L1",
-      "community": 2105,
+      "community": 140,
       "norm_label": "agentic_framework.md",
       "id": "agentic_agentic_framework"
     },
@@ -12869,7 +12968,7 @@
       "file_type": "document",
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L1",
-      "community": 2105,
+      "community": 140,
       "norm_label": "agentic framework",
       "id": "agentic_agentic_framework_agentic_framework"
     },
@@ -12878,7 +12977,7 @@
       "file_type": "document",
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L3",
-      "community": 2105,
+      "community": 140,
       "norm_label": "purpose",
       "id": "agentic_agentic_framework_purpose"
     },
@@ -12887,7 +12986,7 @@
       "file_type": "document",
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L6",
-      "community": 2105,
+      "community": 140,
       "norm_label": "how it works",
       "id": "agentic_agentic_framework_how_it_works"
     },
@@ -12896,7 +12995,7 @@
       "file_type": "document",
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L9",
-      "community": 2105,
+      "community": 140,
       "norm_label": "rules",
       "id": "agentic_agentic_framework_rules"
     },
@@ -12905,7 +13004,7 @@
       "file_type": "document",
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L14",
-      "community": 2105,
+      "community": 140,
       "norm_label": "the 7 disciplines of agentic engineering",
       "id": "agentic_agentic_framework_the_7_disciplines_of_agentic_engineering"
     },
@@ -12914,7 +13013,7 @@
       "file_type": "document",
       "source_file": ".ungasis/agentic/AGENTIC_FRAMEWORK.md",
       "source_location": "L26",
-      "community": 2105,
+      "community": 140,
       "norm_label": "inputs/outputs",
       "id": "agentic_agentic_framework_inputs_outputs"
     },
@@ -15290,7 +15389,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L62",
-      "community": 152,
+      "community": 2142,
       "norm_label": "token efficiency layers 13-17 (upgrade from 12-layer system)",
       "id": "agents_token_efficiency_layers_13_17_upgrade_from_12_layer_system"
     },
@@ -15299,7 +15398,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L64",
-      "community": 152,
+      "community": 2142,
       "norm_label": "layer 13: retrieval-based memory",
       "id": "agents_layer_13_retrieval_based_memory"
     },
@@ -15308,7 +15407,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L70",
-      "community": 152,
+      "community": 2142,
       "norm_label": "layer 14: tool schema pruning",
       "id": "agents_layer_14_tool_schema_pruning"
     },
@@ -15317,7 +15416,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L77",
-      "community": 152,
+      "community": 2142,
       "norm_label": "layer 15: compact encoding (toon protocol)",
       "id": "agents_layer_15_compact_encoding_toon_protocol"
     },
@@ -15326,7 +15425,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L85",
-      "community": 152,
+      "community": 2142,
       "norm_label": "layer 16: context decay / stale eviction",
       "id": "agents_layer_16_context_decay_stale_eviction"
     },
@@ -15335,7 +15434,7 @@
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": "L91",
-      "community": 152,
+      "community": 2142,
       "norm_label": "layer 17: prompt prefix caching (provider-level)",
       "id": "agents_layer_17_prompt_prefix_caching_provider_level"
     },
@@ -15596,7 +15695,7 @@
       "file_type": "document",
       "source_file": "LLM_CONTEXT.md",
       "source_location": "L1",
-      "community": 2142,
+      "community": 256,
       "norm_label": "llm_context.md",
       "id": "llm_context"
     },
@@ -17612,7 +17711,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/AGENTS.md",
       "source_location": "L37",
-      "community": 2175,
+      "community": 202,
       "norm_label": "four community safety rules",
       "id": "archive_ai_project_os_master_v5_agents_md_ai_project_os_master_v5_agents_four_community_safety_rules"
     },
@@ -17621,7 +17720,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/AGENTS.md",
       "source_location": "L39",
-      "community": 2175,
+      "community": 202,
       "norm_label": "token budget rule",
       "id": "archive_ai_project_os_master_v5_agents_md_ai_project_os_master_v5_agents_token_budget_rule"
     },
@@ -17630,7 +17729,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/AGENTS.md",
       "source_location": "L43",
-      "community": 2175,
+      "community": 202,
       "norm_label": "checkpoint rule",
       "id": "archive_ai_project_os_master_v5_agents_md_ai_project_os_master_v5_agents_checkpoint_rule"
     },
@@ -17639,7 +17738,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/AGENTS.md",
       "source_location": "L47",
-      "community": 2175,
+      "community": 202,
       "norm_label": "read-before-write rule",
       "id": "archive_ai_project_os_master_v5_agents_md_ai_project_os_master_v5_agents_read_before_write_rule"
     },
@@ -17648,7 +17747,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/AGENTS.md",
       "source_location": "L51",
-      "community": 2175,
+      "community": 202,
       "norm_label": "fail-loud rule",
       "id": "archive_ai_project_os_master_v5_agents_md_ai_project_os_master_v5_agents_fail_loud_rule"
     },
@@ -20357,7 +20456,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L1",
-      "community": 2087,
+      "community": 295,
       "norm_label": "risk_and_safety.md",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety"
     },
@@ -20366,7 +20465,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L1",
-      "community": 2087,
+      "community": 295,
       "norm_label": "risk and safety",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_risk_and_safety"
     },
@@ -20375,7 +20474,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L3",
-      "community": 2087,
+      "community": 295,
       "norm_label": "safety posture",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_safety_posture"
     },
@@ -20384,7 +20483,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L7",
-      "community": 2087,
+      "community": 295,
       "norm_label": "approval required before",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_approval_required_before"
     },
@@ -20393,7 +20492,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L18",
-      "community": 2087,
+      "community": 295,
       "norm_label": "secrets handling",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_secrets_handling"
     },
@@ -20402,7 +20501,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L25",
-      "community": 2087,
+      "community": 295,
       "norm_label": "automation safety",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_automation_safety"
     },
@@ -20411,7 +20510,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
       "source_location": "L36",
-      "community": 2087,
+      "community": 295,
       "norm_label": "ai reliability",
       "id": "archive_ai_project_os_master_v5_docs_risk_and_safety_md_docs_risk_and_safety_ai_reliability"
     },
@@ -23480,7 +23579,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/workflows/automation-safety.md",
       "source_location": "L1",
-      "community": 2087,
+      "community": 295,
       "norm_label": "automation-safety.md",
       "id": "archive_ai_project_os_master_v5_workflows_automation_safety_md_workflows_automation_safety"
     },
@@ -23489,7 +23588,7 @@
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/workflows/automation-safety.md",
       "source_location": "L1",
-      "community": 2087,
+      "community": 295,
       "norm_label": "workflow: automation safety",
       "id": "archive_ai_project_os_master_v5_workflows_automation_safety_md_workflows_automation_safety_workflow_automation_safety"
     },
@@ -27359,7 +27458,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L266",
-      "community": 2198,
+      "community": 53,
       "norm_label": "9. ai operating models by work type",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_9_ai_operating_models_by_work_type"
     },
@@ -27368,7 +27467,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L268",
-      "community": 2198,
+      "community": 53,
       "norm_label": "a. app building",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_a_app_building"
     },
@@ -27377,7 +27476,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L279",
-      "community": 2198,
+      "community": 53,
       "norm_label": "b. research",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_b_research"
     },
@@ -27386,7 +27485,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L289",
-      "community": 2198,
+      "community": 53,
       "norm_label": "c. coding",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_c_coding"
     },
@@ -27395,7 +27494,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L300",
-      "community": 2198,
+      "community": 53,
       "norm_label": "d. microsoft 365 work",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_d_microsoft_365_work"
     },
@@ -27467,7 +27566,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L441",
-      "community": 78,
+      "community": 58,
       "norm_label": "11. human approval gates",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_11_human_approval_gates"
     },
@@ -27476,7 +27575,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-ai-operating-model.md",
       "source_location": "L460",
-      "community": 78,
+      "community": 58,
       "norm_label": "approval template",
       "id": "archive_chatgpt_ent_ungasis_ai_operating_model_md_chatgpt_ent_ungasis_ai_operating_model_approval_template"
     },
@@ -30059,7 +30158,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L57",
-      "community": 154,
+      "community": 975,
       "norm_label": "quick index",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_quick_index"
     },
@@ -30122,7 +30221,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L136",
-      "community": 154,
+      "community": 975,
       "norm_label": "monetization & business",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_monetization_business"
     },
@@ -30131,7 +30230,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L143",
-      "community": 154,
+      "community": 975,
       "norm_label": "documentation & learning",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_documentation_learning"
     },
@@ -30806,7 +30905,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L3909",
-      "community": 154,
+      "community": 975,
       "norm_label": "monetization & business",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_monetization_business_3909"
     },
@@ -30815,7 +30914,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L3911",
-      "community": 154,
+      "community": 975,
       "norm_label": "tpl-e2-066 \u2014 \ud83d\udcdb monetization readiness assessment",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_tpl_e2_066_monetization_readiness_assessment"
     },
@@ -30824,7 +30923,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L3968",
-      "community": 154,
+      "community": 975,
       "norm_label": "tpl-e2-067 \u2014 \ud83d\udcdb offer design & pricing research",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_tpl_e2_067_offer_design_pricing_research"
     },
@@ -30833,7 +30932,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L4025",
-      "community": 154,
+      "community": 975,
       "norm_label": "tpl-e2-068 \u2014 \ud83d\udcdb landing page copy",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_tpl_e2_068_landing_page_copy"
     },
@@ -30842,7 +30941,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L4083",
-      "community": 154,
+      "community": 975,
       "norm_label": "tpl-e2-069 \u2014 \ud83d\udcdb beta tester feedback collection",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_tpl_e2_069_beta_tester_feedback_collection"
     },
@@ -30851,7 +30950,7 @@
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-prompt-library.md",
       "source_location": "L4140",
-      "community": 154,
+      "community": 975,
       "norm_label": "tpl-e2-070 \u2014 \ud83d\udcdb waitlist / interest form setup",
       "id": "archive_chatgpt_ent_ungasis_prompt_library_md_chatgpt_ent_ungasis_prompt_library_tpl_e2_070_waitlist_interest_form_setup"
     },
@@ -35963,7 +36062,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L273",
-      "community": 359,
+      "community": 2198,
       "norm_label": "7. keep data in portable formats",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_7_keep_data_in_portable_formats"
     },
@@ -35972,7 +36071,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L275",
-      "community": 359,
+      "community": 2198,
       "norm_label": "why portable formats matter",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_why_portable_formats_matter"
     },
@@ -35981,7 +36080,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L281",
-      "community": 359,
+      "community": 2198,
       "norm_label": "format comparison table",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_format_comparison_table"
     },
@@ -35990,7 +36089,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L294",
-      "community": 359,
+      "community": 2198,
       "norm_label": "what to avoid for long-term storage",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_what_to_avoid_for_long_term_storage"
     },
@@ -35999,7 +36098,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L304",
-      "community": 359,
+      "community": 2198,
       "norm_label": "the portability rule",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_the_portability_rule"
     },
@@ -36044,7 +36143,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L359",
-      "community": 706,
+      "community": 359,
       "norm_label": "9. disaster recovery plan",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_9_disaster_recovery_plan"
     },
@@ -36053,7 +36152,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L361",
-      "community": 706,
+      "community": 359,
       "norm_label": "\ud83d\udd34 scenario 1: platform goes down (temporary outage)",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_scenario_1_platform_goes_down_temporary_outage"
     },
@@ -36062,7 +36161,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L371",
-      "community": 706,
+      "community": 359,
       "norm_label": "\ud83d\udd34 scenario 2: you lose account access",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_scenario_2_you_lose_account_access"
     },
@@ -36071,7 +36170,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L381",
-      "community": 706,
+      "community": 359,
       "norm_label": "\ud83d\udd34 scenario 3: data corruption / accidental deletion",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_scenario_3_data_corruption_accidental_deletion"
     },
@@ -36080,7 +36179,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L392",
-      "community": 706,
+      "community": 359,
       "norm_label": "\ud83d\udd34 scenario 4: ai overwrites your code",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_scenario_4_ai_overwrites_your_code"
     },
@@ -36089,7 +36188,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L403",
-      "community": 706,
+      "community": 359,
       "norm_label": "\ud83d\udd34 scenario 5: laptop lost / stolen / crashed",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_scenario_5_laptop_lost_stolen_crashed"
     },
@@ -36098,7 +36197,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L414",
-      "community": 706,
+      "community": 359,
       "norm_label": "restore test: do this quarterly",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_restore_test_do_this_quarterly"
     },
@@ -36125,7 +36224,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L475",
-      "community": 359,
+      "community": 2087,
       "norm_label": "11. the ungasis backup checklist",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_11_the_ungasis_backup_checklist"
     },
@@ -36134,7 +36233,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L479",
-      "community": 359,
+      "community": 2087,
       "norm_label": "\ud83d\udcbb code & version control",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_code_version_control"
     },
@@ -36143,7 +36242,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L487",
-      "community": 359,
+      "community": 2087,
       "norm_label": "\ud83d\uddc4\ufe0f data",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_data"
     },
@@ -36152,7 +36251,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L494",
-      "community": 359,
+      "community": 2087,
       "norm_label": "\ud83d\udd11 secrets & keys",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_secrets_keys"
     },
@@ -36161,7 +36260,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L501",
-      "community": 359,
+      "community": 2087,
       "norm_label": "\ud83d\udcdd documentation",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_documentation"
     },
@@ -36170,7 +36269,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L509",
-      "community": 359,
+      "community": 2087,
       "norm_label": "\ud83e\udd16 ai & prompts",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_ai_prompts"
     },
@@ -36179,7 +36278,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L517",
-      "community": 359,
+      "community": 2087,
       "norm_label": "\u2601\ufe0f cloud & hosting",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_cloud_hosting"
     },
@@ -36188,7 +36287,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-backup-strategy.md",
       "source_location": "L525",
-      "community": 359,
+      "community": 2087,
       "norm_label": "\ud83d\udd04 restore readiness",
       "id": "archive_m365_copilot_opus_ungasis_backup_strategy_md_m365_copilot_opus_ungasis_backup_strategy_restore_readiness"
     },
@@ -36251,7 +36350,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L100",
-      "community": 2147,
+      "community": 2060,
       "norm_label": "3. \ud83d\udca1 phase 1 \u2014 pick and narrow the idea",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_3_phase_1_pick_and_narrow_the_idea"
     },
@@ -36269,7 +36368,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L108",
-      "community": 2147,
+      "community": 2060,
       "norm_label": "\ud83d\udca1 analogy",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_analogy"
     },
@@ -36278,7 +36377,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L112",
-      "community": 2147,
+      "community": 2061,
       "norm_label": "\ud83d\udccb key actions",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_key_actions"
     },
@@ -36287,7 +36386,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L122",
-      "community": 2147,
+      "community": 2060,
       "norm_label": "idea scoring table",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_idea_scoring_table"
     },
@@ -36305,7 +36404,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L146",
-      "community": 976,
+      "community": 2060,
       "norm_label": "\ud83d\udee0\ufe0f tools",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_tools"
     },
@@ -36314,7 +36413,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L150",
-      "community": 2061,
+      "community": 976,
       "norm_label": "\u23f1\ufe0f time estimate",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_time_estimate"
     },
@@ -36323,7 +36422,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L154",
-      "community": 2147,
+      "community": 2060,
       "norm_label": "\ud83d\udeab what not to do yet",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_what_not_to_do_yet"
     },
@@ -36332,7 +36431,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-build-workflow.md",
       "source_location": "L162",
-      "community": 2147,
+      "community": 2060,
       "norm_label": "\ud83d\udea6 decision point",
       "id": "archive_m365_copilot_opus_ungasis_build_workflow_md_m365_copilot_opus_ungasis_build_workflow_decision_point"
     },
@@ -39788,7 +39887,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L107",
-      "community": 170,
+      "community": 2420,
       "norm_label": "4. how to use dummy/demo data safely",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_4_how_to_use_dummy_demo_data_safely"
     },
@@ -39797,7 +39896,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L109",
-      "community": 170,
+      "community": 2420,
       "norm_label": "what to replace",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_what_to_replace"
     },
@@ -39806,7 +39905,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L122",
-      "community": 170,
+      "community": 2420,
       "norm_label": "how to generate fake data",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_how_to_generate_fake_data"
     },
@@ -39815,7 +39914,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L131",
-      "community": 170,
+      "community": 2420,
       "norm_label": "chatgpt prompt for demo data",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_chatgpt_prompt_for_demo_data"
     },
@@ -39878,7 +39977,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L219",
-      "community": 170,
+      "community": 458,
       "norm_label": "open http://localhost:3000",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_open_http_localhost_3000"
     },
@@ -39887,7 +39986,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L246",
-      "community": 170,
+      "community": 458,
       "norm_label": "what each section does",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_what_each_section_does"
     },
@@ -39896,7 +39995,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L262",
-      "community": 170,
+      "community": 2304,
       "norm_label": "7. how to create screenshots and annotated walkthroughs",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_7_how_to_create_screenshots_and_annotated_walkthroughs"
     },
@@ -39905,7 +40004,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L264",
-      "community": 170,
+      "community": 2304,
       "norm_label": "free tools for screenshots",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_free_tools_for_screenshots"
     },
@@ -39914,7 +40013,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L274",
-      "community": 170,
+      "community": 2304,
       "norm_label": "screenshot checklist",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_screenshot_checklist"
     },
@@ -39923,7 +40022,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L285",
-      "community": 170,
+      "community": 2304,
       "norm_label": "annotation tips",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_annotation_tips"
     },
@@ -39932,7 +40031,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L295",
-      "community": 170,
+      "community": 2304,
       "norm_label": "what to always hide/blur",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_what_to_always_hide_blur"
     },
@@ -40040,7 +40139,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L510",
-      "community": 170,
+      "community": 458,
       "norm_label": "11. how to avoid exposing secrets and company data",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_11_how_to_avoid_exposing_secrets_and_company_data"
     },
@@ -40049,7 +40148,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L512",
-      "community": 170,
+      "community": 458,
       "norm_label": "pre-publish security checklist",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_pre_publish_security_checklist"
     },
@@ -40058,7 +40157,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L529",
-      "community": 170,
+      "community": 458,
       "norm_label": "quick search commands",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_quick_search_commands"
     },
@@ -40067,7 +40166,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L539",
-      "community": 170,
+      "community": 458,
       "norm_label": "if you already pushed a secret to github",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_if_you_already_pushed_a_secret_to_github"
     },
@@ -40076,7 +40175,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L550",
-      "community": 170,
+      "community": 458,
       "norm_label": "12. free hosting options for portfolio",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_12_free_hosting_options_for_portfolio"
     },
@@ -40085,7 +40184,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L559",
-      "community": 170,
+      "community": 458,
       "norm_label": "which to choose?",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_which_to_choose"
     },
@@ -40094,7 +40193,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L571",
-      "community": 170,
+      "community": 458,
       "norm_label": "13. how to write about projects for linkedin",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_13_how_to_write_about_projects_for_linkedin"
     },
@@ -40103,7 +40202,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L573",
-      "community": 170,
+      "community": 458,
       "norm_label": "linkedin post template",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_linkedin_post_template"
     },
@@ -40112,7 +40211,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L605",
-      "community": 170,
+      "community": 458,
       "norm_label": "linkedin writing tips",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_linkedin_writing_tips"
     },
@@ -40121,7 +40220,7 @@
       "file_type": "document",
       "source_file": "archive/m365_copilot_opus/ungasis-portfolio-strategy.md",
       "source_location": "L619",
-      "community": 170,
+      "community": 458,
       "norm_label": "14. seo basics for portfolio",
       "id": "archive_m365_copilot_opus_ungasis_portfolio_strategy_md_m365_copilot_opus_ungasis_portfolio_strategy_14_seo_basics_for_portfolio"
     },
@@ -43604,7 +43703,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/AGENTS.md",
       "source_location": "L25",
-      "community": 705,
+      "community": 517,
       "norm_label": "on-demand vs always-on (v4)",
       "id": "archive_token_efficiency_agent_os_v4_agents_md_token_efficiency_agent_os_v4_agents_on_demand_vs_always_on_v4"
     },
@@ -43901,7 +44000,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L1",
-      "community": 70,
+      "community": 706,
       "norm_label": "gemini.md",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini"
     },
@@ -43910,7 +44009,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L1",
-      "community": 70,
+      "community": 706,
       "norm_label": "gemini.md - gemini/jules instructions (v4.0)",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_gemini_md_gemini_jules_instructions_v4_0"
     },
@@ -43919,7 +44018,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L2",
-      "community": 70,
+      "community": 706,
       "norm_label": "project: [project_name] | stack: [tech_stack]",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_project_project_name_stack_tech_stack"
     },
@@ -43928,7 +44027,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L3",
-      "community": 70,
+      "community": 706,
       "norm_label": "core rule: token-efficient coding. follow agents.md.",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_core_rule_token_efficient_coding_follow_agents_md"
     },
@@ -43937,7 +44036,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L4",
-      "community": 70,
+      "community": 706,
       "norm_label": "read first: agents.md, docs/project_brief.md, docs/task_handoff.md",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_read_first_agents_md_docs_project_brief_md_docs_task_handoff_md"
     },
@@ -43946,7 +44045,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L5",
-      "community": 70,
+      "community": 706,
       "norm_label": "commands: test:[test_command] lint:[lint_command] build:[build_command]",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_commands_test_test_command_lint_lint_command_build_build_command"
     },
@@ -43955,7 +44054,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L6",
-      "community": 70,
+      "community": 706,
       "norm_label": "rules: search before reads. surgical edits. no full rewrites. no claiming untested passes.",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_rules_search_before_reads_surgical_edits_no_full_rewrites_no_claiming_untested_passes"
     },
@@ -43964,7 +44063,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L7",
-      "community": 70,
+      "community": 706,
       "norm_label": "sessions under 15-20 messages. update docs/session_summary.md at end.",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_sessions_under_15_20_messages_update_docs_session_summary_md_at_end"
     },
@@ -43973,7 +44072,7 @@
       "file_type": "document",
       "source_file": "archive/token-efficiency-agent-os-v4/GEMINI.md",
       "source_location": "L8",
-      "community": 70,
+      "community": 706,
       "norm_label": "completion: 1.changed files 2.summary 3.commands 4.results 5.risks",
       "id": "archive_token_efficiency_agent_os_v4_gemini_md_token_efficiency_agent_os_v4_gemini_completion_1_changed_files_2_summary_3_commands_4_results_5_risks"
     },
@@ -61658,7 +61757,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/HUMAN_APPROVAL_GATES.md",
       "source_location": "L1",
-      "community": 2118,
+      "community": 357,
       "norm_label": "human_approval_gates.md",
       "id": "docs_human_approval_gates"
     },
@@ -61667,7 +61766,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/HUMAN_APPROVAL_GATES.md",
       "source_location": "L1",
-      "community": 2118,
+      "community": 357,
       "norm_label": "human approval gates",
       "id": "docs_human_approval_gates_human_approval_gates"
     },
@@ -61676,7 +61775,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/HUMAN_APPROVAL_GATES.md",
       "source_location": "L3",
-      "community": 2118,
+      "community": 357,
       "norm_label": "rule",
       "id": "docs_human_approval_gates_rule"
     },
@@ -61685,7 +61784,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/HUMAN_APPROVAL_GATES.md",
       "source_location": "L7",
-      "community": 2118,
+      "community": 357,
       "norm_label": "must ask before",
       "id": "docs_human_approval_gates_must_ask_before"
     },
@@ -61694,7 +61793,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/HUMAN_APPROVAL_GATES.md",
       "source_location": "L21",
-      "community": 2118,
+      "community": 357,
       "norm_label": "approval record",
       "id": "docs_human_approval_gates_approval_record"
     },
@@ -61703,7 +61802,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/HUMAN_APPROVAL_GATES.md",
       "source_location": "L32",
-      "community": 2118,
+      "community": 357,
       "norm_label": "feynman",
       "id": "docs_human_approval_gates_feynman"
     },
@@ -61712,7 +61811,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/HUMAN_APPROVAL_GATES.md",
       "source_location": "L36",
-      "community": 2118,
+      "community": 357,
       "norm_label": "analogy",
       "id": "docs_human_approval_gates_analogy"
     },
@@ -64052,7 +64151,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/token-efficiency/TASK_HANDOFF.md",
       "source_location": "L5",
-      "community": 737,
+      "community": 558,
       "norm_label": "current task",
       "id": "token_efficiency_task_handoff_current_task"
     },
@@ -64088,7 +64187,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis-unified-lossless-repo-v3/docs/token-efficiency/TASK_HANDOFF.md",
       "source_location": "L16",
-      "community": 517,
+      "community": 558,
       "norm_label": "files changed",
       "id": "token_efficiency_task_handoff_files_changed"
     },
@@ -76373,7 +76472,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/README.md",
       "source_location": "L162",
-      "community": 144,
+      "community": 2427,
       "norm_label": "how to run the qa audit",
       "id": "ungasis_unified_lossless_repo_v3_readme_how_to_run_the_qa_audit"
     },
@@ -76382,7 +76481,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/README.md",
       "source_location": "L164",
-      "community": 144,
+      "community": 2427,
       "norm_label": "prerequisites",
       "id": "ungasis_unified_lossless_repo_v3_readme_prerequisites"
     },
@@ -76391,7 +76490,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/README.md",
       "source_location": "L168",
-      "community": 144,
+      "community": 2427,
       "norm_label": "steps",
       "id": "ungasis_unified_lossless_repo_v3_readme_steps"
     },
@@ -76400,7 +76499,7 @@
       "file_type": "document",
       "source_file": "archive/ungasis_T1-T8_final_repo_package/ungasis-unified-lossless-repo-v3/README.md",
       "source_location": "L176",
-      "community": 144,
+      "community": 2427,
       "norm_label": "if deepseek is slow/rate-limited",
       "id": "ungasis_unified_lossless_repo_v3_readme_if_deepseek_is_slow_rate_limited"
     },
@@ -108134,7 +108233,7 @@
       "file_type": "document",
       "source_file": "source-files/AI_Builders_Master_Workflow_Prompt_v4.0.md",
       "source_location": "L1705",
-      "community": 702,
+      "community": 2175,
       "norm_label": "24.5h: 30-day learning/build roadmap",
       "id": "source_files_ai_builders_master_workflow_prompt_v4_0_24_5h_30_day_learning_build_roadmap"
     },
@@ -108143,7 +108242,7 @@
       "file_type": "document",
       "source_file": "source-files/AI_Builders_Master_Workflow_Prompt_v4.0.md",
       "source_location": "L1707",
-      "community": 702,
+      "community": 2175,
       "norm_label": "\ud83d\udcc5 week 1: validate (days 1\u20137)",
       "id": "source_files_ai_builders_master_workflow_prompt_v4_0_week_1_validate_days_1_7"
     },
@@ -108152,7 +108251,7 @@
       "file_type": "document",
       "source_file": "source-files/AI_Builders_Master_Workflow_Prompt_v4.0.md",
       "source_location": "L1721",
-      "community": 702,
+      "community": 2175,
       "norm_label": "\ud83d\udcc5 week 2: prototype & learn (days 8\u201314)",
       "id": "source_files_ai_builders_master_workflow_prompt_v4_0_week_2_prototype_learn_days_8_14"
     },
@@ -108161,7 +108260,7 @@
       "file_type": "document",
       "source_file": "source-files/AI_Builders_Master_Workflow_Prompt_v4.0.md",
       "source_location": "L1735",
-      "community": 702,
+      "community": 2175,
       "norm_label": "\ud83d\udcc5 week 3: build mvp (days 15\u201323)",
       "id": "source_files_ai_builders_master_workflow_prompt_v4_0_week_3_build_mvp_days_15_23"
     },
@@ -108170,7 +108269,7 @@
       "file_type": "document",
       "source_file": "source-files/AI_Builders_Master_Workflow_Prompt_v4.0.md",
       "source_location": "L1747",
-      "community": 702,
+      "community": 2175,
       "norm_label": "\ud83d\udcc5 week 4: deploy & monetize (days 24\u201330)",
       "id": "source_files_ai_builders_master_workflow_prompt_v4_0_week_4_deploy_monetize_days_24_30"
     },
@@ -108179,7 +108278,7 @@
       "file_type": "document",
       "source_file": "source-files/AI_Builders_Master_Workflow_Prompt_v4.0.md",
       "source_location": "L1760",
-      "community": 702,
+      "community": 2175,
       "norm_label": "\ud83d\udcca week-by-week progress visual",
       "id": "source_files_ai_builders_master_workflow_prompt_v4_0_week_by_week_progress_visual"
     },
@@ -110690,7 +110789,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L57",
-      "community": 336,
+      "community": 2422,
       "norm_label": "3-attempt reset rule",
       "id": "clinerules_03_self_iteration_3_attempt_reset_rule"
     },
@@ -110699,7 +110798,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L68",
-      "community": 336,
+      "community": 2422,
       "norm_label": "why this rule exists",
       "id": "clinerules_03_self_iteration_why_this_rule_exists"
     },
@@ -110708,7 +110807,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L74",
-      "community": 336,
+      "community": 2422,
       "norm_label": "analogy",
       "id": "clinerules_03_self_iteration_analogy"
     },
@@ -110717,7 +110816,7 @@
       "file_type": "document",
       "source_file": "ungasis/.clinerules/03-self-iteration.md",
       "source_location": "L79",
-      "community": 336,
+      "community": 2422,
       "norm_label": "token math",
       "id": "clinerules_03_self_iteration_token_math"
     },
@@ -111266,7 +111365,7 @@
       "file_type": "document",
       "source_file": "ungasis/CLAUDE.md",
       "source_location": "L5",
-      "community": 70,
+      "community": 705,
       "norm_label": "read first: agents.md, docs/project_brief.md, docs/task_handoff.md, docs/test_commands.md",
       "id": "ungasis_claude_read_first_agents_md_docs_project_brief_md_docs_task_handoff_md_docs_test_commands_md"
     },
@@ -111347,7 +111446,7 @@
       "file_type": "document",
       "source_file": "ungasis/CLAUDE.md",
       "source_location": "L27",
-      "community": 70,
+      "community": 705,
       "norm_label": "completion: 1.changed files 2.summary 3.commands 4.results 5.risks 6.rollback 7.memory updates",
       "id": "ungasis_claude_completion_1_changed_files_2_summary_3_commands_4_results_5_risks_6_rollback_7_memory_updates"
     },
@@ -111356,7 +111455,7 @@
       "file_type": "document",
       "source_file": "ungasis/CONTEXT.md",
       "source_location": "L1",
-      "community": 401,
+      "community": 2393,
       "norm_label": "context.md",
       "id": "ungasis_context"
     },
@@ -111428,7 +111527,7 @@
       "file_type": "document",
       "source_file": "ungasis/CONTEXT.md",
       "source_location": "L66",
-      "community": 518,
+      "community": 466,
       "norm_label": "next actions",
       "id": "ungasis_context_next_actions"
     },
@@ -111653,7 +111752,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-AUDIT-REPORT.md",
       "source_location": "L1",
-      "community": 289,
+      "community": 2393,
       "norm_label": "qa-audit-report.md",
       "id": "ungasis_qa_audit_report"
     },
@@ -111662,7 +111761,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-AUDIT-REPORT.md",
       "source_location": "L1",
-      "community": 289,
+      "community": 2393,
       "norm_label": "\ud83c\udff0 ungasis os v3.0 \u2014 qa audit report",
       "id": "ungasis_qa_audit_report_md_qa_audit_report_ungasis_os_v3_0_qa_audit_report"
     },
@@ -111671,7 +111770,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L1",
-      "community": 401,
+      "community": 2393,
       "norm_label": "qa-mission.md",
       "id": "ungasis_qa_mission"
     },
@@ -111716,7 +111815,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L45",
-      "community": 292,
+      "community": 2426,
       "norm_label": "t2: source coverage check",
       "id": "ungasis_qa_mission_md_qa_mission_t2_source_coverage_check"
     },
@@ -111725,7 +111824,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L47",
-      "community": 292,
+      "community": 2426,
       "norm_label": "source 1: ai_builders_master_workflow_prompt_v4.0.md",
       "id": "ungasis_qa_mission_md_qa_mission_source_1_ai_builders_master_workflow_prompt_v4_0_md"
     },
@@ -111734,7 +111833,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L91",
-      "community": 292,
+      "community": 2426,
       "norm_label": "source 2: playbook v3",
       "id": "ungasis_qa_mission_md_qa_mission_source_2_playbook_v3"
     },
@@ -111743,7 +111842,7 @@
       "file_type": "document",
       "source_file": "ungasis/QA-MISSION.md",
       "source_location": "L94",
-      "community": 292,
+      "community": 2426,
       "norm_label": "source 3: multi-agent guide v4",
       "id": "ungasis_qa_mission_md_qa_mission_source_3_multi_agent_guide_v4"
     },
@@ -116657,7 +116756,7 @@
       "file_type": "document",
       "source_file": "ungasis/archive/ai_project_os_master_v5/docs/TEST_COMMANDS.md",
       "source_location": "L1",
-      "community": 897,
+      "community": 683,
       "norm_label": "test_commands.md",
       "id": "ungasis_archive_ai_project_os_master_v5_docs_test_commands_md_docs_test_commands"
     },
@@ -116666,7 +116765,7 @@
       "file_type": "document",
       "source_file": "ungasis/archive/ai_project_os_master_v5/docs/TEST_COMMANDS.md",
       "source_location": "L1",
-      "community": 897,
+      "community": 683,
       "norm_label": "test commands",
       "id": "ungasis_archive_ai_project_os_master_v5_docs_test_commands_md_docs_test_commands_test_commands"
     },
@@ -116675,7 +116774,7 @@
       "file_type": "document",
       "source_file": "ungasis/archive/ai_project_os_master_v5/docs/TEST_COMMANDS.md",
       "source_location": "L14",
-      "community": 897,
+      "community": 683,
       "norm_label": "verification response format",
       "id": "ungasis_archive_ai_project_os_master_v5_docs_test_commands_md_docs_test_commands_verification_response_format"
     },
@@ -117305,7 +117404,7 @@
       "file_type": "document",
       "source_file": "ungasis/archive/ai_project_os_master_v5/prompts/12_karpathy_context_file_builder.md",
       "source_location": "L1",
-      "community": 897,
+      "community": 683,
       "norm_label": "12_karpathy_context_file_builder.md",
       "id": "ungasis_archive_ai_project_os_master_v5_prompts_12_karpathy_context_file_builder_md_prompts_12_karpathy_context_file_builder"
     },
@@ -117314,7 +117413,7 @@
       "file_type": "document",
       "source_file": "ungasis/archive/ai_project_os_master_v5/prompts/12_karpathy_context_file_builder.md",
       "source_location": "L1",
-      "community": 897,
+      "community": 683,
       "norm_label": "prompt: karpathy-style context file builder",
       "id": "ungasis_archive_ai_project_os_master_v5_prompts_12_karpathy_context_file_builder_md_prompts_12_karpathy_context_file_builder_prompt_karpathy_style_context_file_builder"
     },
@@ -155474,7 +155573,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L182",
-      "community": 2070,
+      "community": 897,
       "norm_label": "week 4 \u2014 test, deploy, monetize carefully",
       "id": "modules_ungasis_30day_roadmap_week_4_test_deploy_monetize_carefully"
     },
@@ -155483,7 +155582,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L198",
-      "community": 2070,
+      "community": 897,
       "norm_label": "week 4 checklist",
       "id": "modules_ungasis_30day_roadmap_week_4_checklist"
     },
@@ -155492,7 +155591,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L212",
-      "community": 2070,
+      "community": 897,
       "norm_label": "week 4 do-not-build reminder",
       "id": "modules_ungasis_30day_roadmap_week_4_do_not_build_reminder"
     },
@@ -155501,7 +155600,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L219",
-      "community": 2070,
+      "community": 897,
       "norm_label": "4. stage gates",
       "id": "modules_ungasis_30day_roadmap_4_stage_gates"
     },
@@ -155528,7 +155627,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L251",
-      "community": 2070,
+      "community": 897,
       "norm_label": "6. weekly review template",
       "id": "modules_ungasis_30day_roadmap_6_weekly_review_template"
     },
@@ -155537,7 +155636,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L275",
-      "community": 2070,
+      "community": 897,
       "norm_label": "7. next 7 actions template after day 30",
       "id": "modules_ungasis_30day_roadmap_7_next_7_actions_template_after_day_30"
     },
@@ -155546,7 +155645,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L293",
-      "community": 2070,
+      "community": 897,
       "norm_label": "8. ungasis-specific 30-day use",
       "id": "modules_ungasis_30day_roadmap_8_ungasis_specific_30_day_use"
     },
@@ -155555,7 +155654,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L311",
-      "community": 2070,
+      "community": 897,
       "norm_label": "9. anti-bloat rules for the 30 days",
       "id": "modules_ungasis_30day_roadmap_9_anti_bloat_rules_for_the_30_days"
     },
@@ -155564,7 +155663,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L325",
-      "community": 78,
+      "community": 58,
       "norm_label": "10. human approval gates",
       "id": "modules_ungasis_30day_roadmap_10_human_approval_gates"
     },
@@ -155573,7 +155672,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L341",
-      "community": 2070,
+      "community": 897,
       "norm_label": "11. final 30-day rule",
       "id": "modules_ungasis_30day_roadmap_11_final_30_day_rule"
     },
@@ -155582,7 +155681,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-30day-roadmap.md",
       "source_location": "L356",
-      "community": 2070,
+      "community": 897,
       "norm_label": "source notes",
       "id": "modules_ungasis_30day_roadmap_source_notes"
     },
@@ -155735,7 +155834,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L182",
-      "community": 58,
+      "community": 2423,
       "norm_label": "7. keep one source of truth",
       "id": "modules_ungasis_ai_operating_model_7_keep_one_source_of_truth"
     },
@@ -155744,7 +155843,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L186",
-      "community": 58,
+      "community": 2423,
       "norm_label": "recommended source of truth",
       "id": "modules_ungasis_ai_operating_model_recommended_source_of_truth"
     },
@@ -155753,7 +155852,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L195",
-      "community": 58,
+      "community": 2423,
       "norm_label": "minimum `project_state.md` template",
       "id": "modules_ungasis_ai_operating_model_minimum_project_state_md_template"
     },
@@ -155762,7 +155861,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L219",
-      "community": 58,
+      "community": 2423,
       "norm_label": "cross-tool rule",
       "id": "modules_ungasis_ai_operating_model_cross_tool_rule"
     },
@@ -155789,7 +155888,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L266",
-      "community": 58,
+      "community": 2386,
       "norm_label": "9. ai operating models by work type",
       "id": "modules_ungasis_ai_operating_model_9_ai_operating_models_by_work_type"
     },
@@ -155798,7 +155897,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L268",
-      "community": 58,
+      "community": 2386,
       "norm_label": "a. app building",
       "id": "modules_ungasis_ai_operating_model_a_app_building"
     },
@@ -155807,7 +155906,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L279",
-      "community": 58,
+      "community": 2386,
       "norm_label": "b. research",
       "id": "modules_ungasis_ai_operating_model_b_research"
     },
@@ -155816,7 +155915,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L289",
-      "community": 58,
+      "community": 2386,
       "norm_label": "c. coding",
       "id": "modules_ungasis_ai_operating_model_c_coding"
     },
@@ -155825,7 +155924,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L300",
-      "community": 58,
+      "community": 2386,
       "norm_label": "d. microsoft 365 work",
       "id": "modules_ungasis_ai_operating_model_d_microsoft_365_work"
     },
@@ -155834,7 +155933,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L313",
-      "community": 975,
+      "community": 58,
       "norm_label": "10. ai quality control",
       "id": "modules_ungasis_ai_operating_model_10_ai_quality_control"
     },
@@ -155843,7 +155942,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L315",
-      "community": 975,
+      "community": 58,
       "norm_label": "a. hallucination spotting",
       "id": "modules_ungasis_ai_operating_model_a_hallucination_spotting"
     },
@@ -155852,7 +155951,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L331",
-      "community": 975,
+      "community": 58,
       "norm_label": "hallucination check prompt",
       "id": "modules_ungasis_ai_operating_model_hallucination_check_prompt"
     },
@@ -155861,7 +155960,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L353",
-      "community": 975,
+      "community": 58,
       "norm_label": "b. code verification",
       "id": "modules_ungasis_ai_operating_model_b_code_verification"
     },
@@ -155870,7 +155969,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L368",
-      "community": 975,
+      "community": 58,
       "norm_label": "safe code task prompt for cline / claude code",
       "id": "modules_ungasis_ai_operating_model_safe_code_task_prompt_for_cline_claude_code"
     },
@@ -155879,7 +155978,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L398",
-      "community": 975,
+      "community": 58,
       "norm_label": "c. cross-verification technique",
       "id": "modules_ungasis_ai_operating_model_c_cross_verification_technique"
     },
@@ -155888,7 +155987,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L410",
-      "community": 975,
+      "community": 58,
       "norm_label": "cross-check prompt",
       "id": "modules_ungasis_ai_operating_model_cross_check_prompt"
     },
@@ -155897,7 +155996,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L441",
-      "community": 78,
+      "community": 58,
       "norm_label": "11. human approval gates",
       "id": "modules_ungasis_ai_operating_model_11_human_approval_gates"
     },
@@ -155906,7 +156005,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-ai-operating-model.md",
       "source_location": "L460",
-      "community": 78,
+      "community": 58,
       "norm_label": "approval template",
       "id": "modules_ungasis_ai_operating_model_approval_template"
     },
@@ -156113,7 +156212,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L57",
-      "community": 179,
+      "community": 2428,
       "norm_label": "2. what to backup regularly",
       "id": "modules_ungasis_backup_strategy_2_what_to_backup_regularly"
     },
@@ -156122,7 +156221,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L59",
-      "community": 179,
+      "community": 2428,
       "norm_label": "complete backup inventory",
       "id": "modules_ungasis_backup_strategy_complete_backup_inventory"
     },
@@ -156131,7 +156230,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L78",
-      "community": 179,
+      "community": 2428,
       "norm_label": "api key inventory template",
       "id": "modules_ungasis_backup_strategy_api_key_inventory_template"
     },
@@ -156185,7 +156284,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L140",
-      "community": 339,
+      "community": 2147,
       "norm_label": "\u26a1 cloudflare pages / netlify",
       "id": "modules_ungasis_backup_strategy_cloudflare_pages_netlify"
     },
@@ -156257,7 +156356,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L223",
-      "community": 339,
+      "community": 2147,
       "norm_label": "6. exit plan for each critical tool",
       "id": "modules_ungasis_backup_strategy_6_exit_plan_for_each_critical_tool"
     },
@@ -156266,7 +156365,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L225",
-      "community": 339,
+      "community": 2147,
       "norm_label": "\ud83d\uddc4\ufe0f supabase \u2192 alternative postgresql",
       "id": "modules_ungasis_backup_strategy_supabase_alternative_postgresql"
     },
@@ -156275,7 +156374,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L238",
-      "community": 339,
+      "community": 2147,
       "norm_label": "\u26a1 cloudflare pages \u2192 netlify",
       "id": "modules_ungasis_backup_strategy_cloudflare_pages_netlify_238"
     },
@@ -156284,7 +156383,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L249",
-      "community": 339,
+      "community": 2147,
       "norm_label": "\ud83e\udd16 chatgpt \u2192 claude / gemini / local",
       "id": "modules_ungasis_backup_strategy_chatgpt_claude_gemini_local"
     },
@@ -156293,7 +156392,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L260",
-      "community": 339,
+      "community": 2147,
       "norm_label": "\ud83d\udcb3 lemon squeezy \u2192 paymongo / stripe",
       "id": "modules_ungasis_backup_strategy_lemon_squeezy_paymongo_stripe"
     },
@@ -156302,7 +156401,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L273",
-      "community": 179,
+      "community": 2387,
       "norm_label": "7. keep data in portable formats",
       "id": "modules_ungasis_backup_strategy_7_keep_data_in_portable_formats"
     },
@@ -156311,7 +156410,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L275",
-      "community": 179,
+      "community": 2387,
       "norm_label": "why portable formats matter",
       "id": "modules_ungasis_backup_strategy_why_portable_formats_matter"
     },
@@ -156320,7 +156419,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L281",
-      "community": 179,
+      "community": 2387,
       "norm_label": "format comparison table",
       "id": "modules_ungasis_backup_strategy_format_comparison_table"
     },
@@ -156329,7 +156428,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L294",
-      "community": 179,
+      "community": 2387,
       "norm_label": "what to avoid for long-term storage",
       "id": "modules_ungasis_backup_strategy_what_to_avoid_for_long_term_storage"
     },
@@ -156338,7 +156437,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L304",
-      "community": 179,
+      "community": 2387,
       "norm_label": "the portability rule",
       "id": "modules_ungasis_backup_strategy_the_portability_rule"
     },
@@ -156347,7 +156446,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L310",
-      "community": 179,
+      "community": 2424,
       "norm_label": "8. backup schedule recommendation",
       "id": "modules_ungasis_backup_strategy_8_backup_schedule_recommendation"
     },
@@ -156356,7 +156455,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L312",
-      "community": 179,
+      "community": 2424,
       "norm_label": "for active projects (currently building)",
       "id": "modules_ungasis_backup_strategy_for_active_projects_currently_building"
     },
@@ -156365,7 +156464,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L324",
-      "community": 179,
+      "community": 2424,
       "norm_label": "for inactive projects (completed/paused)",
       "id": "modules_ungasis_backup_strategy_for_inactive_projects_completed_paused"
     },
@@ -156374,7 +156473,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-backup-strategy.md",
       "source_location": "L333",
-      "community": 179,
+      "community": 2424,
       "norm_label": "simple backup calendar",
       "id": "modules_ungasis_backup_strategy_simple_backup_calendar"
     },
@@ -158399,7 +158498,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L39",
-      "community": 2036,
+      "community": 78,
       "norm_label": "2. scoring legend",
       "id": "modules_ungasis_decision_matrix_2_scoring_legend"
     },
@@ -158408,7 +158507,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L41",
-      "community": 2036,
+      "community": 78,
       "norm_label": "free/paid risk",
       "id": "modules_ungasis_decision_matrix_free_paid_risk"
     },
@@ -158417,7 +158516,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L49",
-      "community": 2036,
+      "community": 78,
       "norm_label": "difficulty",
       "id": "modules_ungasis_decision_matrix_difficulty"
     },
@@ -158426,7 +158525,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-decision-matrix.md",
       "source_location": "L59",
-      "community": 2036,
+      "community": 78,
       "norm_label": "data level",
       "id": "modules_ungasis_decision_matrix_data_level"
     },
@@ -162764,7 +162863,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L1",
-      "community": 181,
+      "community": 214,
       "norm_label": "ungasis-portfolio-strategy.md",
       "id": "modules_ungasis_portfolio_strategy"
     },
@@ -162953,7 +163052,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L217",
-      "community": 181,
+      "community": 214,
       "norm_label": "add your supabase keys to .env.local",
       "id": "modules_ungasis_portfolio_strategy_add_your_supabase_keys_to_env_local"
     },
@@ -163025,7 +163124,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L307",
-      "community": 214,
+      "community": 2425,
       "norm_label": "8. how to create short demo video scripts",
       "id": "modules_ungasis_portfolio_strategy_8_how_to_create_short_demo_video_scripts"
     },
@@ -163034,7 +163133,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L309",
-      "community": 214,
+      "community": 2425,
       "norm_label": "the 60-second demo script template",
       "id": "modules_ungasis_portfolio_strategy_the_60_second_demo_script_template"
     },
@@ -163043,7 +163142,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L338",
-      "community": 214,
+      "community": 2425,
       "norm_label": "free video tools",
       "id": "modules_ungasis_portfolio_strategy_free_video_tools"
     },
@@ -163052,7 +163151,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L347",
-      "community": 214,
+      "community": 2425,
       "norm_label": "video tips for beginners",
       "id": "modules_ungasis_portfolio_strategy_video_tips_for_beginners"
     },
@@ -163214,7 +163313,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L636",
-      "community": 214,
+      "community": 2153,
       "norm_label": "15. the portfolio honesty rule",
       "id": "modules_ungasis_portfolio_strategy_15_the_portfolio_honesty_rule"
     },
@@ -163223,7 +163322,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L638",
-      "community": 214,
+      "community": 2153,
       "norm_label": "\ud83e\udd1d the core principle",
       "id": "modules_ungasis_portfolio_strategy_the_core_principle"
     },
@@ -163232,7 +163331,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L642",
-      "community": 214,
+      "community": 2153,
       "norm_label": "the 5 honesty rules",
       "id": "modules_ungasis_portfolio_strategy_the_5_honesty_rules"
     },
@@ -163241,7 +163340,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L652",
-      "community": 214,
+      "community": 2153,
       "norm_label": "what is your value (even with ai help)",
       "id": "modules_ungasis_portfolio_strategy_what_is_your_value_even_with_ai_help"
     },
@@ -163250,7 +163349,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L669",
-      "community": 214,
+      "community": 2153,
       "norm_label": "how to write your honesty note",
       "id": "modules_ungasis_portfolio_strategy_how_to_write_your_honesty_note"
     },
@@ -163259,7 +163358,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L686",
-      "community": 214,
+      "community": 2153,
       "norm_label": "\u274c what not to say",
       "id": "modules_ungasis_portfolio_strategy_what_not_to_say"
     },
@@ -163268,7 +163367,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L697",
-      "community": 214,
+      "community": 2118,
       "norm_label": "16. portfolio readiness checklist",
       "id": "modules_ungasis_portfolio_strategy_16_portfolio_readiness_checklist"
     },
@@ -163277,7 +163376,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L701",
-      "community": 214,
+      "community": 2118,
       "norm_label": "\ud83d\udce6 content",
       "id": "modules_ungasis_portfolio_strategy_content"
     },
@@ -163286,7 +163385,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L710",
-      "community": 214,
+      "community": 2118,
       "norm_label": "\ud83d\udd12 security & privacy",
       "id": "modules_ungasis_portfolio_strategy_security_privacy"
     },
@@ -163295,7 +163394,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L720",
-      "community": 214,
+      "community": 2118,
       "norm_label": "\ud83c\udfa8 quality",
       "id": "modules_ungasis_portfolio_strategy_quality"
     },
@@ -163304,7 +163403,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L731",
-      "community": 214,
+      "community": 2118,
       "norm_label": "\ud83d\ude80 deployment",
       "id": "modules_ungasis_portfolio_strategy_deployment"
     },
@@ -163313,7 +163412,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L739",
-      "community": 214,
+      "community": 2118,
       "norm_label": "\ud83d\udce3 presentation",
       "id": "modules_ungasis_portfolio_strategy_presentation"
     },
@@ -163322,7 +163421,7 @@
       "file_type": "document",
       "source_file": "ungasis/modules/ungasis-portfolio-strategy.md",
       "source_location": "L747",
-      "community": 214,
+      "community": 2118,
       "norm_label": "\ud83e\udd1d honesty",
       "id": "modules_ungasis_portfolio_strategy_honesty"
     },
@@ -170302,7 +170401,7 @@
       "label": "Risk and Safety",
       "file_type": "document",
       "source_file": "archive/ai_project_os_master_v5/docs/RISK_AND_SAFETY.md",
-      "community": 2087,
+      "community": 295,
       "norm_label": "risk and safety",
       "id": "risk_and_safety_safety"
     },
@@ -170374,7 +170473,7 @@
       "label": "Me as MVP Workflow",
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-me-as-mvp-workflow.md",
-      "community": 53,
+      "community": 146,
       "norm_label": "me as mvp workflow",
       "id": "ungasis_me_as_mvp_workflow_workflow"
     },
@@ -170382,7 +170481,7 @@
       "label": "Full SOP Library",
       "file_type": "document",
       "source_file": "archive/chatgpt_ent/ungasis-sop-library.md",
-      "community": 53,
+      "community": 146,
       "norm_label": "full sop library",
       "id": "ungasis_sop_library_library"
     },
@@ -170728,7 +170827,7 @@
       "captured_at": "2026-06-01",
       "author": "Mel John Dimat",
       "contributor": null,
-      "community": 2153,
+      "community": 306,
       "norm_label": ".clinerules \u2014 ungasis qa audit session",
       "id": "clinerules_clinerules"
     },
@@ -170741,7 +170840,7 @@
       "captured_at": "2026-06-01",
       "author": "Mel John Dimat",
       "contributor": null,
-      "community": 2304,
+      "community": 306,
       "norm_label": "qa audit skill",
       "id": "skill_qa_audit"
     },
@@ -173329,7 +173428,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 706,
       "norm_label": "gemini.md - gemini/jules instructions",
       "id": "gemini_md"
     },
@@ -173875,7 +173974,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 337,
+      "community": 133,
       "norm_label": "llms.txt",
       "id": "llms_txt"
     },
@@ -173901,7 +174000,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 337,
+      "community": 133,
       "norm_label": "knowledge base system module",
       "id": "ungasis_knowledge_base"
     },
@@ -175162,7 +175261,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 289,
+      "community": 2393,
       "norm_label": ".clinerules \u2014 ungasis qa audit session",
       "id": "ungasis_clinerules_clinerules"
     },
@@ -176527,7 +176626,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 897,
+      "community": 683,
       "norm_label": "test commands",
       "id": "test_commands_test_commands"
     },
@@ -176813,7 +176912,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 897,
+      "community": 683,
       "norm_label": "prompt: karpathy-style context file builder",
       "id": "12_karpathy_context_file_builder_karpathy_context_file_builder"
     },
@@ -177060,7 +177159,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 100,
+      "community": 167,
       "norm_label": "parallel agents workflow",
       "id": "parallel_agents_workflow"
     },
@@ -177211,7 +177310,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2087,
+      "community": 295,
       "norm_label": "automation safety checklist",
       "id": "automation_safety_checklist"
     },
@@ -178030,7 +178129,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 146,
       "norm_label": "ungasis ai operating model",
       "id": "ungasis_ai_operating_model"
     },
@@ -178043,7 +178142,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 53,
+      "community": 146,
       "norm_label": "chatgpt enterprise feature router",
       "id": "ungasis_chatgpt_feature_router"
     },
@@ -179317,7 +179416,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 452,
+      "community": 134,
       "norm_label": "karpathy context file skill",
       "id": "ai_project_os_master_v5_karpathy_context_file"
     },
@@ -179890,7 +179989,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2142,
+      "community": 256,
       "norm_label": "llms.txt",
       "id": "llmstxt_llmstxt"
     },
@@ -181224,12 +181323,102 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "auto_tagger_skill",
+      "target": "auto_tagger_skill_auto_tagger_skill",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "auto_tagger_skill_auto_tagger_skill",
+      "target": "auto_tagger_skill_7_tagging_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "auto_tagger_skill_auto_tagger_skill",
+      "target": "auto_tagger_skill_conductor_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "auto_tagger_skill_auto_tagger_skill",
+      "target": "auto_tagger_skill_how_it_works",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "auto_tagger_skill_auto_tagger_skill",
+      "target": "auto_tagger_skill_inputs_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/SKILL.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "auto_tagger_skill_auto_tagger_skill",
+      "target": "auto_tagger_skill_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/tag-log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "auto_tagger_tag_log",
+      "target": "auto_tagger_tag_log_auto_tagger_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/tag-log.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auto_tagger_tag_log_auto_tagger_log",
+      "target": "auto_tagger_tag_log_sweep_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/auto-tagger/tag-log.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "auto_tagger_tag_log_sweep_log",
+      "target": "auto_tagger_tag_log_june_2_2026_sweep_type_manual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_build_to_test",
-      "target": "handoff_templates_build_to_test_handoff_build_to_test",
-      "confidence_score": 1.0
+      "target": "handoff_templates_build_to_test_handoff_build_to_test"
     },
     {
       "relation": "contains",
@@ -181237,9 +181426,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_build_to_test_handoff_build_to_test",
-      "target": "handoff_templates_build_to_test_implementation_summary",
-      "confidence_score": 1.0
+      "target": "handoff_templates_build_to_test_implementation_summary"
     },
     {
       "relation": "contains",
@@ -181247,9 +181436,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_build_to_test_handoff_build_to_test",
-      "target": "handoff_templates_build_to_test_known_issues_developer_notes",
-      "confidence_score": 1.0
+      "target": "handoff_templates_build_to_test_known_issues_developer_notes"
     },
     {
       "relation": "contains",
@@ -181257,9 +181446,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/build-to-test.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_build_to_test_handoff_build_to_test",
-      "target": "handoff_templates_build_to_test_test_plan",
-      "confidence_score": 1.0
+      "target": "handoff_templates_build_to_test_test_plan"
     },
     {
       "relation": "contains",
@@ -181267,9 +181456,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/fix-to-merge.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_fix_to_merge",
-      "target": "handoff_templates_fix_to_merge_handoff_fix_to_merge",
-      "confidence_score": 1.0
+      "target": "handoff_templates_fix_to_merge_handoff_fix_to_merge"
     },
     {
       "relation": "contains",
@@ -181277,9 +181466,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/fix-to-merge.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_fix_to_merge_handoff_fix_to_merge",
-      "target": "handoff_templates_fix_to_merge_changes_summary",
-      "confidence_score": 1.0
+      "target": "handoff_templates_fix_to_merge_changes_summary"
     },
     {
       "relation": "contains",
@@ -181287,9 +181476,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/fix-to-merge.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_fix_to_merge_handoff_fix_to_merge",
-      "target": "handoff_templates_fix_to_merge_final_verification_checklist",
-      "confidence_score": 1.0
+      "target": "handoff_templates_fix_to_merge_final_verification_checklist"
     },
     {
       "relation": "contains",
@@ -181297,9 +181486,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_plan_to_build",
-      "target": "handoff_templates_plan_to_build_handoff_plan_to_build",
-      "confidence_score": 1.0
+      "target": "handoff_templates_plan_to_build_handoff_plan_to_build"
     },
     {
       "relation": "contains",
@@ -181307,9 +181496,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_plan_to_build_handoff_plan_to_build",
-      "target": "handoff_templates_plan_to_build_acceptance_criteria",
-      "confidence_score": 1.0
+      "target": "handoff_templates_plan_to_build_acceptance_criteria"
     },
     {
       "relation": "contains",
@@ -181317,9 +181506,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_plan_to_build_handoff_plan_to_build",
-      "target": "handoff_templates_plan_to_build_build_rules",
-      "confidence_score": 1.0
+      "target": "handoff_templates_plan_to_build_build_rules"
     },
     {
       "relation": "contains",
@@ -181327,9 +181516,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_plan_to_build_handoff_plan_to_build",
-      "target": "handoff_templates_plan_to_build_specification",
-      "confidence_score": 1.0
+      "target": "handoff_templates_plan_to_build_specification"
     },
     {
       "relation": "contains",
@@ -181337,9 +181526,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/plan-to-build.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_plan_to_build_handoff_plan_to_build",
-      "target": "handoff_templates_plan_to_build_task_details",
-      "confidence_score": 1.0
+      "target": "handoff_templates_plan_to_build_task_details"
     },
     {
       "relation": "contains",
@@ -181347,9 +181536,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_review_to_fix",
-      "target": "handoff_templates_review_to_fix_handoff_review_to_fix",
-      "confidence_score": 1.0
+      "target": "handoff_templates_review_to_fix_handoff_review_to_fix"
     },
     {
       "relation": "contains",
@@ -181357,9 +181546,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_review_to_fix_handoff_review_to_fix",
-      "target": "handoff_templates_review_to_fix_acceptance_criteria_for_fix",
-      "confidence_score": 1.0
+      "target": "handoff_templates_review_to_fix_acceptance_criteria_for_fix"
     },
     {
       "relation": "contains",
@@ -181367,9 +181556,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_review_to_fix_handoff_review_to_fix",
-      "target": "handoff_templates_review_to_fix_fix_instructions",
-      "confidence_score": 1.0
+      "target": "handoff_templates_review_to_fix_fix_instructions"
     },
     {
       "relation": "contains",
@@ -181377,9 +181566,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/review-to-fix.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_review_to_fix_handoff_review_to_fix",
-      "target": "handoff_templates_review_to_fix_issues_identified",
-      "confidence_score": 1.0
+      "target": "handoff_templates_review_to_fix_issues_identified"
     },
     {
       "relation": "contains",
@@ -181387,9 +181576,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/test-to-review.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_test_to_review",
-      "target": "handoff_templates_test_to_review_handoff_test_to_review",
-      "confidence_score": 1.0
+      "target": "handoff_templates_test_to_review_handoff_test_to_review"
     },
     {
       "relation": "contains",
@@ -181397,9 +181586,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/test-to-review.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_test_to_review_handoff_test_to_review",
-      "target": "handoff_templates_test_to_review_files_to_review",
-      "confidence_score": 1.0
+      "target": "handoff_templates_test_to_review_files_to_review"
     },
     {
       "relation": "contains",
@@ -181407,9 +181596,9 @@
       "source_file": ".ungasis/orchestrator/handoff-templates/test-to-review.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "handoff_templates_test_to_review_handoff_test_to_review",
-      "target": "handoff_templates_test_to_review_test_run_results",
-      "confidence_score": 1.0
+      "target": "handoff_templates_test_to_review_test_run_results"
     },
     {
       "relation": "contains",
@@ -181417,9 +181606,9 @@
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_queue",
-      "target": "orchestrator_queue_task_queue_ungasis_os_v4_0",
-      "confidence_score": 1.0
+      "target": "orchestrator_queue_task_queue_ungasis_os_v4_0"
     },
     {
       "relation": "contains",
@@ -181427,9 +181616,9 @@
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_queue_task_queue_ungasis_os_v4_0",
-      "target": "orchestrator_queue_done",
-      "confidence_score": 1.0
+      "target": "orchestrator_queue_done"
     },
     {
       "relation": "contains",
@@ -181437,9 +181626,9 @@
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_queue_task_queue_ungasis_os_v4_0",
-      "target": "orchestrator_queue_in_progress",
-      "confidence_score": 1.0
+      "target": "orchestrator_queue_in_progress"
     },
     {
       "relation": "contains",
@@ -181447,9 +181636,9 @@
       "source_file": ".ungasis/orchestrator/queue.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_queue_task_queue_ungasis_os_v4_0",
-      "target": "orchestrator_queue_pending",
-      "confidence_score": 1.0
+      "target": "orchestrator_queue_pending"
     },
     {
       "relation": "contains",
@@ -181457,9 +181646,9 @@
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_session_conductor",
-      "target": "orchestrator_session_conductor_session_conductor",
-      "confidence_score": 1.0
+      "target": "orchestrator_session_conductor_session_conductor"
     },
     {
       "relation": "contains",
@@ -181467,9 +181656,9 @@
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_session_conductor_session_conductor",
-      "target": "orchestrator_session_conductor_conductor_rules",
-      "confidence_score": 1.0
+      "target": "orchestrator_session_conductor_conductor_rules"
     },
     {
       "relation": "contains",
@@ -181477,9 +181666,9 @@
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_session_conductor_session_conductor",
-      "target": "orchestrator_session_conductor_how_it_works",
-      "confidence_score": 1.0
+      "target": "orchestrator_session_conductor_how_it_works"
     },
     {
       "relation": "contains",
@@ -181487,9 +181676,9 @@
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_session_conductor_session_conductor",
-      "target": "orchestrator_session_conductor_inputs_outputs",
-      "confidence_score": 1.0
+      "target": "orchestrator_session_conductor_inputs_outputs"
     },
     {
       "relation": "contains",
@@ -181497,9 +181686,9 @@
       "source_file": ".ungasis/orchestrator/session-conductor.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "orchestrator_session_conductor_session_conductor",
-      "target": "orchestrator_session_conductor_purpose",
-      "confidence_score": 1.0
+      "target": "orchestrator_session_conductor_purpose"
     },
     {
       "relation": "contains",
@@ -413189,5 +413378,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "adf0e9a44ca149f1f349226d3904d3b7548b0e98"
+  "built_at_commit": "28aae74c94d529995b4e7df3d2d9d0a63764f09c"
 }
