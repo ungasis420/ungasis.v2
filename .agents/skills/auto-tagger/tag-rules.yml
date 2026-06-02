@@ -1,0 +1,59 @@
+version: "4.0"
+name: UNGASIS Auto-Tagger Rules
+
+rules:
+  stale-footer:
+    tag: TAG:STALE
+    pattern: "Last reviewed: *"
+    condition: "review_by_date < today"
+    scope: "*.md"
+    exclude: ["archive/**", "source-files/**"]
+
+  large-file:
+    tag: TAG:LARGE_FILE
+    condition: "line_count > 200"
+    scope: "*.*"
+    exclude: ["*.md", "*.json", "*.yml", "*.yaml", "archive/**", "source-files/**"]
+
+  todo-fixme:
+    tag: TAG:TODO
+    patterns:
+      - "TODO:"
+      - "FIXME:"
+      - "HACK:"
+      - "XXX:"
+    scope: "*.*"
+    exclude: ["archive/**", "source-files/**"]
+
+  typescript-any:
+    tag: TAG:UNSAFE_TYPE
+    pattern: ": any"
+    scope: ["*.ts", "*.tsx"]
+    exclude: ["node_modules/**"]
+
+  missing-test:
+    tag: TAG:NO_TEST
+    condition: "src/components/*.tsx lacks src/components/*.test.tsx"
+    scope: "src/components/*.tsx"
+
+  orphan-file:
+    tag: TAG:ORPHAN
+    condition: "no imports reference the file"
+    scope: "*.*"
+    exclude: ["package.json", "tsconfig.json", "next.config.js", "*.md", "archive/**", "source-files/**"]
+
+  deprecated-pattern:
+    tag: TAG:DEPRECATED
+    condition: "matches deprecated templates from knowledge/wiki/patterns/"
+    scope: "*.*"
+
+schedules:
+  auto:
+    trigger: post-commit
+    rules: [stale-footer, todo-fixme]
+  full:
+    trigger: weekly-sunday
+    rules: [stale-footer, large-file, todo-fixme, typescript-any, missing-test, orphan-file, deprecated-pattern]
+  manual:
+    trigger: tag-sweep-command
+    rules: [stale-footer, large-file, todo-fixme, typescript-any, missing-test, orphan-file, deprecated-pattern]

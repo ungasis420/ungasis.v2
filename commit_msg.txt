@@ -1,1 +1,1 @@
-feat: F8e Auto-Orchestrator — pipeline manifest, dispatch rules, handoff templates, task queue
+feat: F8f Auto-Tagger — self-maintenance skill with 7 tag rules and queue integration
