@@ -1,27 +1,40 @@
-# commander.md — /commander Slash Command Workflow
+---
+name: commander
+description: >
+  Activate Commander orchestration mode to plan, delegate, and review tasks across agents.
+---
 
-## Purpose
-Registers the `/commander` slash command to automate the orchestrator loop execution in the workspace.
+# /commander — Orchestration Mode
 
-## How It Works
-When triggered by the developer, the workspace runs the Commander's decision sequence to parse queue items and delegate tasks to available CLIs.
+Activate Commander mode for task orchestration.
 
-## Execution Steps
-1. **Load Context**: Read `.ungasis/architect/BLUEPRINT_CONTEXT.md`.
-2. **Read Queue**: Load `.ungasis/orchestrator/queue.md` list.
-3. **Assess State**: Read `CONTEXT.md` to identify active step status.
-4. **Decompose**: Split tasks into sub-sprint checklists.
-5. **Delegate**: Assign tasks by emitting signal files.
-6. **Review**: Audit outputs upon completion.
-7. **Learn**: Log lessons and update session documents.
+## When to Use
+- Session start (plan what to work on)
+- When Mel asks "what should I do next?"
+- When a multi-sprint task needs decomposition
+- When routing decisions are needed (which agent handles what)
 
-## Rules
-1. **Trigger Phrase**: Command is activated by typing `/commander`.
-2. **Context First**: Do not delegate before reading all three context files.
+## Steps
+1. Read .ungasis/architect/BLUEPRINT_CONTEXT.md (compressed context)
+2. Read .ungasis/orchestrator/queue.md (pending tasks)
+3. Read CONTEXT.md (last session state)
+4. Check .ungasis/warnings/warning-log.md for active warnings
+5. Assess: What needs to be done? Prioritize by impact.
+6. Decompose: Break large tasks into atomic tasks with agent routing
+   - 3+ files → @blueprint-architect
+   - 1-2 files → Surgeon (Cline)
+   - Heavy build → Builder (Antigravity main)
+   - Quality check → @quality-auditor
+   - Graph update → @graphify-watchdog
+7. Generate delegation prompts using templates from
+   .agents/skills/commander/delegation-templates/
+8. After task completion: review output against acceptance criteria
+9. Update CONTEXT.md with results
+10. Suggest what Mel should do next (Proactive > Reactive)
 
-## Inputs and Outputs
-- **Input**: User trigger `/commander`.
-- **Output**: Multi-CLI task dispatch signals.
+## Token Budget
+- Max 500 tokens per delegation prompt
+- Use BLUEPRINT_CONTEXT.md, not individual files
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
