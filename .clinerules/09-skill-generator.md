@@ -1,0 +1,48 @@
+# Rule 09: Skill Generator
+
+## Purpose
+Define the standard file format and lifecycle management rules for generating skill files.
+
+## Skill File Format
+When a skill proposal is approved, save it in the following format:
+```markdown
+# Skill: [name]
+
+## Trigger
+[phrase or command that activates this skill, e.g., "/build-component" or "build component"]
+
+## Steps
+1. [step 1]
+2. [step 2]
+3. [step 3]
+
+## Token Savings
+Estimated [X] tokens saved per use.
+
+## Evidence
+Observed in sessions: [list dates/descriptions]
+
+## Status
+[Draft / Tested / Proven / Optimized / Retired]
+
+---
+Last reviewed: [date] | Review by: [date+3mo] | Owner: Mel
+```
+
+## Skill Lifecycle
+Skills progress through five states of maturity:
+```
+Born (Draft) → Tested (3 uses) → Proven (10 uses) → Optimized (50 uses) → Retired (Obsolete)
+```
+
+## Promotion Rules
+
+| Current Status | Next Status | Threshold Condition |
+|---|---|---|
+| Draft | Tested | Used 3 times without failure |
+| Tested | Proven | Used 10 times without failure |
+| Proven | Optimized | Used 50 times (compress steps for token savings) |
+| Active | Retired | Not used in 30 days or replaced by better skill |
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

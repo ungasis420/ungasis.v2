@@ -1,0 +1,40 @@
+# Rule 08: Skill Observer
+
+## Purpose
+Track repetitive tool call and file access sequences across sessions to auto-propose new skills for token savings.
+
+## When to Observe
+- Track sequences of 3+ actions that repeat across 3+ sessions.
+- Track tool call patterns (same tools used in the same order).
+- Track file access patterns (same files opened together).
+
+## When to Propose a Skill
+- A pattern is detected 3+ times with >80% similarity.
+- Estimated token savings exceed 500 tokens per use.
+- The sequence has 3+ steps (1-2 step sequences are not worth automating).
+
+## How to Propose
+1. Write the skill draft to `.agents/skills/_auto/_proposals/`.
+2. Include the trigger phrase, steps, estimated savings, and evidence (session logs).
+3. Ask Mel: "I noticed [pattern]. Create a /[name] skill?"
+4. If approved: move the file to `.agents/skills/_auto/`.
+5. If rejected: delete the file and record it in `MEMORY_BANK.md` as "rejected proposal".
+
+## Safety Rules
+- NEVER auto-activate a skill without user approval.
+- NEVER modify existing human-written skills.
+- NEVER create skills that write to `.env` or security-sensitive configuration files.
+- Limit to a maximum of 5 proposals per week to avoid overwhelming Mel.
+
+## Impact Table
+
+| Metric | Static Skills | Self-Learning Skills |
+|---|---|---|
+| Skills after 1 month | 3 (hand-written) | 8-12 (3 manual + 5-9 auto) |
+| Skills after 6 months | 5 | 25-40 (compounding) |
+| Repetitive sequences automated | 0% | 60-80% |
+| Tokens saved per auto-skill | 0 | 500-3,000 per use |
+| Setup effort | Manual writing | Zero (auto-proposed) |
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
