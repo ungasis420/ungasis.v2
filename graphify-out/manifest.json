@@ -850,8 +850,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780433790.3887482,
-    "ast_hash": "7fd592199c19819f275600ee51ea3f4a",
+    "mtime": 1780441280.6223865,
+    "ast_hash": "0fd9209924a77914979bea7a7866463e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -9497,6 +9497,26 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\rules\\skill-observer.md": {
     "mtime": 1780439965.1487765,
     "ast_hash": "6dd47d41c059ee4ab4d9b42a83394d01",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\skills\\designer\\SKILL.md": {
+    "mtime": 1780441266.6852698,
+    "ast_hash": "d9e5cffa59e3f76608bf3d25aa1a4ce6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\agent-manager-guide.md": {
+    "mtime": 1780441271.5839438,
+    "ast_hash": "742a5bd351a3318000d1cf9ddf05d871",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\designer.md": {
+    "mtime": 1780441262.8047166,
+    "ast_hash": "cc6c54aa0fc4a37b51706f3c8ad4ef60",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.gemini\\agents\\designer.md": {
+    "mtime": 1780441258.2203567,
+    "ast_hash": "9f18f12c6ab819b2ebc69f6be68184c5",
     "semantic_hash": ""
   }
 }
