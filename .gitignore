@@ -13,4 +13,8 @@ package-lock.json
 *.bak
 *~
 
+# Graphify
+graphify-out/manifest.json
+graphify-out/cache/
+
 # Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
