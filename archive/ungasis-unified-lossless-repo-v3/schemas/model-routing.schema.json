@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Model Routing",
+  "type": "object",
+  "required": ["version", "default_tier", "tiers", "safety"],
+  "properties": {
+    "version": {"type": "string"},
+    "default_tier": {"type": "integer"},
+    "escalation": {"type": "object"},
+    "tiers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "models", "use_for"],
+        "properties": {
+          "id": {"type": "integer"},
+          "name": {"type": "string"},
+          "models": {"type": "array", "items": {"type": "string"}},
+          "use_for": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "safety": {"type": "object"}
+  }
+}

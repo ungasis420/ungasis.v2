@@ -1,0 +1,562 @@
+{
+  "C:\\Users\\63905\\Downloads\\ungasis\\.devcontainer\\devcontainer.json": {
+    "mtime": 1780395626.5844,
+    "ast_hash": "4b4e9e5231bf2578b87eda676586bbcc",
+    "semantic_hash": "4b4e9e5231bf2578b87eda676586bbcc"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\block-dangerous-bash.sh": {
+    "mtime": 1780395582.5422907,
+    "ast_hash": "1485b03a7a670a328893c78a3b93d6aa",
+    "semantic_hash": "1485b03a7a670a328893c78a3b93d6aa"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\context-budget-check.sh": {
+    "mtime": 1780395582.5428057,
+    "ast_hash": "92c7292df19942f7ce65e4fbe1a4bec5",
+    "semantic_hash": "92c7292df19942f7ce65e4fbe1a4bec5"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\knowledge-index-check.sh": {
+    "mtime": 1780395582.5428057,
+    "ast_hash": "b032e8f9202868296bba4e0ac5f12c42",
+    "semantic_hash": "b032e8f9202868296bba4e0ac5f12c42"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\pre-commit-lint.sh": {
+    "mtime": 1780395582.5433316,
+    "ast_hash": "1e7a2065e09af92ca58496539b227162",
+    "semantic_hash": "1e7a2065e09af92ca58496539b227162"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\settings.example.json": {
+    "mtime": 1780395582.5453925,
+    "ast_hash": "e185d4a9a3ca9b6cab923115ec29d100",
+    "semantic_hash": "e185d4a9a3ca9b6cab923115ec29d100"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\settings.local.example.json": {
+    "mtime": 1780395582.5459068,
+    "ast_hash": "3d442f42308d3a42809f0dba62de30f3",
+    "semantic_hash": "3d442f42308d3a42809f0dba62de30f3"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\repo-template.json": {
+    "mtime": 1780395582.5881436,
+    "ast_hash": "e0f6a93488e156662a3bfe5958cd9612",
+    "semantic_hash": "e0f6a93488e156662a3bfe5958cd9612"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\bootstrap_project.py": {
+    "mtime": 1780395582.5891423,
+    "ast_hash": "97d09489dbba24b00a716b86213cd0ff",
+    "semantic_hash": "97d09489dbba24b00a716b86213cd0ff"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\context_budget_check.py": {
+    "mtime": 1780395582.5891423,
+    "ast_hash": "973e43f46255f9735a012474a7c5b818",
+    "semantic_hash": "973e43f46255f9735a012474a7c5b818"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\generate_knowledge_index.py": {
+    "mtime": 1780395582.5901425,
+    "ast_hash": "69634ed6ad610f6f61c2ef20f2aaa648",
+    "semantic_hash": "69634ed6ad610f6f61c2ef20f2aaa648"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\generate_llm_context.py": {
+    "mtime": 1780395582.5901425,
+    "ast_hash": "6d7a4756f0a4a06a70ca38b119255096",
+    "semantic_hash": "6d7a4756f0a4a06a70ca38b119255096"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\generate_tree.py": {
+    "mtime": 1780395582.5901425,
+    "ast_hash": "8fbf056a3ba2135f8b4343e7e9e2e61e",
+    "semantic_hash": "8fbf056a3ba2135f8b4343e7e9e2e61e"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\verify_template.py": {
+    "mtime": 1780395582.5901425,
+    "ast_hash": "bc285f46948bf7226e459b9bb7b7f9eb",
+    "semantic_hash": "bc285f46948bf7226e459b9bb7b7f9eb"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\multi-agent_orchestration-kit\\.vscode\\settings.json": {
+    "mtime": 1780395582.6312308,
+    "ast_hash": "66517a0ee20c9f8be393b4dd19f4bd2a",
+    "semantic_hash": "66517a0ee20c9f8be393b4dd19f4bd2a"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\multi-agent_orchestration-kit\\mcp\\mcp-config-template.json": {
+    "mtime": 1780395582.636231,
+    "ast_hash": "58260008fc21ac1f6243d35bf6013469",
+    "semantic_hash": "58260008fc21ac1f6243d35bf6013469"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\multi-agent_orchestration-kit\\orchestrators\\langgraph_sequential.py": {
+    "mtime": 1780395582.6392307,
+    "ast_hash": "4dcc2b241f6060a051433c9fdea7f516",
+    "semantic_hash": "4dcc2b241f6060a051433c9fdea7f516"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\create-agent-worktrees.sh": {
+    "mtime": 1780395582.6432307,
+    "ast_hash": "01c9674f9dee65c17d78a7330a717913",
+    "semantic_hash": "01c9674f9dee65c17d78a7330a717913"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\create-sequential-issue.sh": {
+    "mtime": 1780395582.6432307,
+    "ast_hash": "24499762ef8fba3a30add4217ea6f33c",
+    "semantic_hash": "24499762ef8fba3a30add4217ea6f33c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\init-labels.sh": {
+    "mtime": 1780395582.6432307,
+    "ast_hash": "32a31f9f52643fe7f7446c3f082c48f4",
+    "semantic_hash": "32a31f9f52643fe7f7446c3f082c48f4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\verify-kit.sh": {
+    "mtime": 1780395582.6442308,
+    "ast_hash": "29d1b96182f2d561b20dd4152e4b1552",
+    "semantic_hash": "29d1b96182f2d561b20dd4152e4b1552"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\token-efficiency-agent-os-v4\\.claude\\settings.json": {
+    "mtime": 1780395582.653231,
+    "ast_hash": "603270551cae07a580c0707c3292c568",
+    "semantic_hash": "603270551cae07a580c0707c3292c568"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\.claude\\settings.json": {
+    "mtime": 1780395582.673231,
+    "ast_hash": "51f15f5735a491b9a5b14a1d476f53b4",
+    "semantic_hash": "51f15f5735a491b9a5b14a1d476f53b4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\00_LOSSLESS_ARCHIVE_READ_ONLY\\2026-05-31_direct_uploads_raw\\mcp-config.json": {
+    "mtime": 1780395582.6838052,
+    "ast_hash": "c50a6b9fb52a8cfcef8c6922fbf102e7",
+    "semantic_hash": "c50a6b9fb52a8cfcef8c6922fbf102e7"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\.vscode\\settings.json": {
+    "mtime": 1780395582.6933656,
+    "ast_hash": "66517a0ee20c9f8be393b4dd19f4bd2a",
+    "semantic_hash": "66517a0ee20c9f8be393b4dd19f4bd2a"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\mcp\\mcp-config-template.json": {
+    "mtime": 1780395582.7003658,
+    "ast_hash": "58260008fc21ac1f6243d35bf6013469",
+    "semantic_hash": "58260008fc21ac1f6243d35bf6013469"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\orchestrators\\langgraph_sequential.py": {
+    "mtime": 1780395582.702366,
+    "ast_hash": "4dcc2b241f6060a051433c9fdea7f516",
+    "semantic_hash": "4dcc2b241f6060a051433c9fdea7f516"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\create-agent-worktrees.sh": {
+    "mtime": 1780395582.7068884,
+    "ast_hash": "01c9674f9dee65c17d78a7330a717913",
+    "semantic_hash": "01c9674f9dee65c17d78a7330a717913"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\create-sequential-issue.sh": {
+    "mtime": 1780395582.7068884,
+    "ast_hash": "24499762ef8fba3a30add4217ea6f33c",
+    "semantic_hash": "24499762ef8fba3a30add4217ea6f33c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\init-labels.sh": {
+    "mtime": 1780395582.7078955,
+    "ast_hash": "32a31f9f52643fe7f7446c3f082c48f4",
+    "semantic_hash": "32a31f9f52643fe7f7446c3f082c48f4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\verify-kit.sh": {
+    "mtime": 1780395582.7078955,
+    "ast_hash": "29d1b96182f2d561b20dd4152e4b1552",
+    "semantic_hash": "29d1b96182f2d561b20dd4152e4b1552"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\token-efficiency-agent-os-v4\\token-efficiency-agent-os-v4\\.claude\\settings.json": {
+    "mtime": 1780395582.7138953,
+    "ast_hash": "603270551cae07a580c0707c3292c568",
+    "semantic_hash": "603270551cae07a580c0707c3292c568"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\ungasis-production-readiness-pack-v1\\ungasis-production-readiness-pack-v1\\02_COPY_TO_YOUR_PROJECT_ROOT\\schemas\\agent-chain.schema.json": {
+    "mtime": 1780395582.7488961,
+    "ast_hash": "b50b61a52474fbf80a22fbacf3ddc236",
+    "semantic_hash": "b50b61a52474fbf80a22fbacf3ddc236"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\ungasis-production-readiness-pack-v1\\ungasis-production-readiness-pack-v1\\02_COPY_TO_YOUR_PROJECT_ROOT\\schemas\\connector-registry.schema.json": {
+    "mtime": 1780395582.7488961,
+    "ast_hash": "021df9bdf0e34db3ffe3d9fddeeb1134",
+    "semantic_hash": "021df9bdf0e34db3ffe3d9fddeeb1134"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\ungasis-production-readiness-pack-v1\\ungasis-production-readiness-pack-v1\\02_COPY_TO_YOUR_PROJECT_ROOT\\schemas\\eval-suite.schema.json": {
+    "mtime": 1780395582.7498963,
+    "ast_hash": "af5254dc936eb2173c804aa8f21692e8",
+    "semantic_hash": "af5254dc936eb2173c804aa8f21692e8"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\ungasis-production-readiness-pack-v1\\ungasis-production-readiness-pack-v1\\02_COPY_TO_YOUR_PROJECT_ROOT\\schemas\\observability-event.schema.json": {
+    "mtime": 1780395582.7498963,
+    "ast_hash": "a2f5a1c579567c62b1e36b53f8d165e7",
+    "semantic_hash": "a2f5a1c579567c62b1e36b53f8d165e7"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\ungasis-production-readiness-pack-v1\\ungasis-production-readiness-pack-v1\\02_COPY_TO_YOUR_PROJECT_ROOT\\schemas\\permission-matrix.schema.json": {
+    "mtime": 1780395582.7498963,
+    "ast_hash": "a27900b442469b9be1a7e30be940f476",
+    "semantic_hash": "a27900b442469b9be1a7e30be940f476"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\ungasis-production-readiness-pack-v1\\ungasis-production-readiness-pack-v1\\02_COPY_TO_YOUR_PROJECT_ROOT\\schemas\\release-checklist.schema.json": {
+    "mtime": 1780395582.7508962,
+    "ast_hash": "1c012b51a859f9abeaefb3c1808ee3ec",
+    "semantic_hash": "1c012b51a859f9abeaefb3c1808ee3ec"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\ungasis-production-readiness-pack-v1\\ungasis-production-readiness-pack-v1\\02_COPY_TO_YOUR_PROJECT_ROOT\\scripts\\check_readiness.py": {
+    "mtime": 1780395582.7518961,
+    "ast_hash": "9fb8b7de8a91256ab8482bb199c888e4",
+    "semantic_hash": "9fb8b7de8a91256ab8482bb199c888e4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\logs\\examples\\agent-event.example.json": {
+    "mtime": 1780395582.8085515,
+    "ast_hash": "8cc1e46f1b15a37b798233224725053b",
+    "semantic_hash": "8cc1e46f1b15a37b798233224725053b"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\mcp\\mcp-config-template.json": {
+    "mtime": 1780395582.8105526,
+    "ast_hash": "58260008fc21ac1f6243d35bf6013469",
+    "semantic_hash": "58260008fc21ac1f6243d35bf6013469"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\mcp\\mcp-config.safe.example.json": {
+    "mtime": 1780395582.8105526,
+    "ast_hash": "50de24348c9d1f77a59236dd00165e6a",
+    "semantic_hash": "50de24348c9d1f77a59236dd00165e6a"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\orchestrators\\langgraph_sequential.py": {
+    "mtime": 1780395582.8175528,
+    "ast_hash": "4dcc2b241f6060a051433c9fdea7f516",
+    "semantic_hash": "4dcc2b241f6060a051433c9fdea7f516"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\runtime\\safe_dry_run_orchestrator.py": {
+    "mtime": 1780395582.821553,
+    "ast_hash": "a1ab85c5f15d6ef2503c10005b09d5ca",
+    "semantic_hash": "a1ab85c5f15d6ef2503c10005b09d5ca"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\agent-chain.schema.json": {
+    "mtime": 1780395582.8225527,
+    "ast_hash": "e085c71bb57c643f714dfb6b5b75889e",
+    "semantic_hash": "e085c71bb57c643f714dfb6b5b75889e"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\connector-registry.schema.json": {
+    "mtime": 1780395582.8225527,
+    "ast_hash": "78d664045e79335d5596d667e551cf3f",
+    "semantic_hash": "78d664045e79335d5596d667e551cf3f"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\cross-reference-bridge.schema.json": {
+    "mtime": 1780395582.8235528,
+    "ast_hash": "09c690d1c5ab5caf9fcc97ad434b396f",
+    "semantic_hash": "09c690d1c5ab5caf9fcc97ad434b396f"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\eval-suite.schema.json": {
+    "mtime": 1780395582.8235528,
+    "ast_hash": "af5254dc936eb2173c804aa8f21692e8",
+    "semantic_hash": "af5254dc936eb2173c804aa8f21692e8"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\human-approval-gates.schema.json": {
+    "mtime": 1780395582.8235528,
+    "ast_hash": "2176f15a0e7604352b44240d6654db4e",
+    "semantic_hash": "2176f15a0e7604352b44240d6654db4e"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\mcp-config.schema.json": {
+    "mtime": 1780395582.824553,
+    "ast_hash": "1e7ecdef76652a7b6b6fbedd54d7559c",
+    "semantic_hash": "1e7ecdef76652a7b6b6fbedd54d7559c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\mcp-pruning-rules.schema.json": {
+    "mtime": 1780395582.824553,
+    "ast_hash": "f12dd04823e92e325d6f99d08bf6f5e8",
+    "semantic_hash": "f12dd04823e92e325d6f99d08bf6f5e8"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\model-routing.schema.json": {
+    "mtime": 1780395582.8255522,
+    "ast_hash": "349e98497da2f72471d174cc2f124697",
+    "semantic_hash": "349e98497da2f72471d174cc2f124697"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\observability-event.schema.json": {
+    "mtime": 1780395582.8255522,
+    "ast_hash": "b7220f7defeec4eaab0f2d14192bec0c",
+    "semantic_hash": "b7220f7defeec4eaab0f2d14192bec0c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\observability-policy.schema.json": {
+    "mtime": 1780395582.8255522,
+    "ast_hash": "d8f3c18ce3f5c613435c34ddf49e4a73",
+    "semantic_hash": "d8f3c18ce3f5c613435c34ddf49e4a73"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\permission-matrix.schema.json": {
+    "mtime": 1780395582.8265524,
+    "ast_hash": "a27900b442469b9be1a7e30be940f476",
+    "semantic_hash": "a27900b442469b9be1a7e30be940f476"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\permission-profiles.schema.json": {
+    "mtime": 1780395582.8265524,
+    "ast_hash": "b385c9163ece3223a5dec7565ce72ee1",
+    "semantic_hash": "b385c9163ece3223a5dec7565ce72ee1"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\readiness-levels.schema.json": {
+    "mtime": 1780395582.8275523,
+    "ast_hash": "04a23e9d77fdccb6e6eb2f8dff76b0f7",
+    "semantic_hash": "04a23e9d77fdccb6e6eb2f8dff76b0f7"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\release-checklist.schema.json": {
+    "mtime": 1780395582.8275523,
+    "ast_hash": "8cf19a9543e47ceb450c50d2aedfa396",
+    "semantic_hash": "8cf19a9543e47ceb450c50d2aedfa396"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\schemas\\shared-state-protocol.schema.json": {
+    "mtime": 1780395582.8275523,
+    "ast_hash": "6739b2919e6b2742b3f3af1961301a5c",
+    "semantic_hash": "6739b2919e6b2742b3f3af1961301a5c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\check_lossless_merge_v3.py": {
+    "mtime": 1780395582.8295524,
+    "ast_hash": "f166ee8d564f76f139c08a429332d914",
+    "semantic_hash": "f166ee8d564f76f139c08a429332d914"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\check_readiness.py": {
+    "mtime": 1780395582.8295524,
+    "ast_hash": "9fb8b7de8a91256ab8482bb199c888e4",
+    "semantic_hash": "9fb8b7de8a91256ab8482bb199c888e4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\final_readiness_audit.py": {
+    "mtime": 1780395582.8306248,
+    "ast_hash": "acad2acfa8d747c7d69ce92215293edd",
+    "semantic_hash": "acad2acfa8d747c7d69ce92215293edd"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\orchestration\\create-agent-worktrees.sh": {
+    "mtime": 1780395582.8311424,
+    "ast_hash": "01c9674f9dee65c17d78a7330a717913",
+    "semantic_hash": "01c9674f9dee65c17d78a7330a717913"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\orchestration\\create-sequential-issue.sh": {
+    "mtime": 1780395582.8311424,
+    "ast_hash": "24499762ef8fba3a30add4217ea6f33c",
+    "semantic_hash": "24499762ef8fba3a30add4217ea6f33c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\orchestration\\init-labels.sh": {
+    "mtime": 1780395582.8321383,
+    "ast_hash": "32a31f9f52643fe7f7446c3f082c48f4",
+    "semantic_hash": "32a31f9f52643fe7f7446c3f082c48f4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\orchestration\\verify-kit.sh": {
+    "mtime": 1780395582.8321383,
+    "ast_hash": "29d1b96182f2d561b20dd4152e4b1552",
+    "semantic_hash": "29d1b96182f2d561b20dd4152e4b1552"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\run_all_checks.sh": {
+    "mtime": 1780395582.833138,
+    "ast_hash": "af2fc30fbc309bee23f7fe454254a5d7",
+    "semantic_hash": "af2fc30fbc309bee23f7fe454254a5d7"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\scripts\\validate_repo.py": {
+    "mtime": 1780395582.8341374,
+    "ast_hash": "76b0f27a120f7e3e0340b37518aef0f2",
+    "semantic_hash": "76b0f27a120f7e3e0340b37518aef0f2"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\bootstrap_project.py": {
+    "mtime": 1780395582.9173875,
+    "ast_hash": "97d09489dbba24b00a716b86213cd0ff",
+    "semantic_hash": "97d09489dbba24b00a716b86213cd0ff"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\context_budget_check.py": {
+    "mtime": 1780395582.9173875,
+    "ast_hash": "973e43f46255f9735a012474a7c5b818",
+    "semantic_hash": "973e43f46255f9735a012474a7c5b818"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\generate_knowledge_index.py": {
+    "mtime": 1780395582.9173875,
+    "ast_hash": "69634ed6ad610f6f61c2ef20f2aaa648",
+    "semantic_hash": "69634ed6ad610f6f61c2ef20f2aaa648"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\generate_llm_context.py": {
+    "mtime": 1780395582.9183867,
+    "ast_hash": "6d7a4756f0a4a06a70ca38b119255096",
+    "semantic_hash": "6d7a4756f0a4a06a70ca38b119255096"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\generate_tree.py": {
+    "mtime": 1780395582.9183867,
+    "ast_hash": "8fbf056a3ba2135f8b4343e7e9e2e61e",
+    "semantic_hash": "8fbf056a3ba2135f8b4343e7e9e2e61e"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\verify_template.py": {
+    "mtime": 1780395582.9183867,
+    "ast_hash": "bc285f46948bf7226e459b9bb7b7f9eb",
+    "semantic_hash": "bc285f46948bf7226e459b9bb7b7f9eb"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\block-dangerous-bash.sh": {
+    "mtime": 1780395582.2047963,
+    "ast_hash": "1485b03a7a670a328893c78a3b93d6aa",
+    "semantic_hash": "1485b03a7a670a328893c78a3b93d6aa"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\context-budget-check.sh": {
+    "mtime": 1780395582.2057967,
+    "ast_hash": "92c7292df19942f7ce65e4fbe1a4bec5",
+    "semantic_hash": "92c7292df19942f7ce65e4fbe1a4bec5"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\knowledge-index-check.sh": {
+    "mtime": 1780395582.2057967,
+    "ast_hash": "b032e8f9202868296bba4e0ac5f12c42",
+    "semantic_hash": "b032e8f9202868296bba4e0ac5f12c42"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\hooks\\pre-commit-lint.sh": {
+    "mtime": 1780395582.2057967,
+    "ast_hash": "1e7a2065e09af92ca58496539b227162",
+    "semantic_hash": "1e7a2065e09af92ca58496539b227162"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\settings.example.json": {
+    "mtime": 1780395582.2083776,
+    "ast_hash": "e185d4a9a3ca9b6cab923115ec29d100",
+    "semantic_hash": "e185d4a9a3ca9b6cab923115ec29d100"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\.claude\\settings.local.example.json": {
+    "mtime": 1780395582.2083776,
+    "ast_hash": "3d442f42308d3a42809f0dba62de30f3",
+    "semantic_hash": "3d442f42308d3a42809f0dba62de30f3"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\repo-template.json": {
+    "mtime": 1780395582.2534232,
+    "ast_hash": "e0f6a93488e156662a3bfe5958cd9612",
+    "semantic_hash": "e0f6a93488e156662a3bfe5958cd9612"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\bootstrap_project.py": {
+    "mtime": 1780395582.253937,
+    "ast_hash": "97d09489dbba24b00a716b86213cd0ff",
+    "semantic_hash": "97d09489dbba24b00a716b86213cd0ff"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\context_budget_check.py": {
+    "mtime": 1780395582.253937,
+    "ast_hash": "973e43f46255f9735a012474a7c5b818",
+    "semantic_hash": "973e43f46255f9735a012474a7c5b818"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\generate_knowledge_index.py": {
+    "mtime": 1780395582.254936,
+    "ast_hash": "69634ed6ad610f6f61c2ef20f2aaa648",
+    "semantic_hash": "69634ed6ad610f6f61c2ef20f2aaa648"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\generate_llm_context.py": {
+    "mtime": 1780395582.254936,
+    "ast_hash": "6d7a4756f0a4a06a70ca38b119255096",
+    "semantic_hash": "6d7a4756f0a4a06a70ca38b119255096"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\generate_tree.py": {
+    "mtime": 1780395582.254936,
+    "ast_hash": "8fbf056a3ba2135f8b4343e7e9e2e61e",
+    "semantic_hash": "8fbf056a3ba2135f8b4343e7e9e2e61e"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ai_project_os_master_v5\\scripts\\verify_template.py": {
+    "mtime": 1780395582.2559352,
+    "ast_hash": "bc285f46948bf7226e459b9bb7b7f9eb",
+    "semantic_hash": "bc285f46948bf7226e459b9bb7b7f9eb"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\multi-agent_orchestration-kit\\.vscode\\settings.json": {
+    "mtime": 1780395582.2964795,
+    "ast_hash": "66517a0ee20c9f8be393b4dd19f4bd2a",
+    "semantic_hash": "66517a0ee20c9f8be393b4dd19f4bd2a"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\multi-agent_orchestration-kit\\mcp\\mcp-config-template.json": {
+    "mtime": 1780395582.3030443,
+    "ast_hash": "58260008fc21ac1f6243d35bf6013469",
+    "semantic_hash": "58260008fc21ac1f6243d35bf6013469"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\multi-agent_orchestration-kit\\orchestrators\\langgraph_sequential.py": {
+    "mtime": 1780395582.3060431,
+    "ast_hash": "4dcc2b241f6060a051433c9fdea7f516",
+    "semantic_hash": "4dcc2b241f6060a051433c9fdea7f516"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\create-agent-worktrees.sh": {
+    "mtime": 1780395582.3090434,
+    "ast_hash": "01c9674f9dee65c17d78a7330a717913",
+    "semantic_hash": "01c9674f9dee65c17d78a7330a717913"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\create-sequential-issue.sh": {
+    "mtime": 1780395582.3100436,
+    "ast_hash": "24499762ef8fba3a30add4217ea6f33c",
+    "semantic_hash": "24499762ef8fba3a30add4217ea6f33c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\init-labels.sh": {
+    "mtime": 1780395582.3100436,
+    "ast_hash": "32a31f9f52643fe7f7446c3f082c48f4",
+    "semantic_hash": "32a31f9f52643fe7f7446c3f082c48f4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\multi-agent_orchestration-kit\\scripts\\verify-kit.sh": {
+    "mtime": 1780395582.3100436,
+    "ast_hash": "29d1b96182f2d561b20dd4152e4b1552",
+    "semantic_hash": "29d1b96182f2d561b20dd4152e4b1552"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\token-efficiency-agent-os-v4\\.claude\\settings.json": {
+    "mtime": 1780395582.320043,
+    "ast_hash": "603270551cae07a580c0707c3292c568",
+    "semantic_hash": "603270551cae07a580c0707c3292c568"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\.claude\\settings.json": {
+    "mtime": 1780395582.34259,
+    "ast_hash": "51f15f5735a491b9a5b14a1d476f53b4",
+    "semantic_hash": "51f15f5735a491b9a5b14a1d476f53b4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\00_LOSSLESS_ARCHIVE_READ_ONLY\\2026-05-31_direct_uploads_raw\\mcp-config.json": {
+    "mtime": 1780395582.354148,
+    "ast_hash": "c50a6b9fb52a8cfcef8c6922fbf102e7",
+    "semantic_hash": "c50a6b9fb52a8cfcef8c6922fbf102e7"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\.vscode\\settings.json": {
+    "mtime": 1780395582.3731482,
+    "ast_hash": "66517a0ee20c9f8be393b4dd19f4bd2a",
+    "semantic_hash": "66517a0ee20c9f8be393b4dd19f4bd2a"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\mcp\\mcp-config-template.json": {
+    "mtime": 1780395582.3786995,
+    "ast_hash": "58260008fc21ac1f6243d35bf6013469",
+    "semantic_hash": "58260008fc21ac1f6243d35bf6013469"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\orchestrators\\langgraph_sequential.py": {
+    "mtime": 1780395582.3806982,
+    "ast_hash": "4dcc2b241f6060a051433c9fdea7f516",
+    "semantic_hash": "4dcc2b241f6060a051433c9fdea7f516"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\create-agent-worktrees.sh": {
+    "mtime": 1780395582.3846984,
+    "ast_hash": "01c9674f9dee65c17d78a7330a717913",
+    "semantic_hash": "01c9674f9dee65c17d78a7330a717913"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\create-sequential-issue.sh": {
+    "mtime": 1780395582.3846984,
+    "ast_hash": "24499762ef8fba3a30add4217ea6f33c",
+    "semantic_hash": "24499762ef8fba3a30add4217ea6f33c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\init-labels.sh": {
+    "mtime": 1780395582.3856986,
+    "ast_hash": "32a31f9f52643fe7f7446c3f082c48f4",
+    "semantic_hash": "32a31f9f52643fe7f7446c3f082c48f4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\multi-agent-orchestration-kit-v4\\scripts\\verify-kit.sh": {
+    "mtime": 1780395582.3856986,
+    "ast_hash": "29d1b96182f2d561b20dd4152e4b1552",
+    "semantic_hash": "29d1b96182f2d561b20dd4152e4b1552"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\archive\\ungasis-unified-lossless-repo-v3\\02_EXTRACTED_ORIGINALS_READ_ONLY\\token-efficiency-agent-os-v4\\token-efficiency-agent-os-v4\\.claude\\settings.json": {
+    "mtime": 1780395582.3916984,
+    "ast_hash": "603270551cae07a580c0707c3292c568",
+    "semantic_hash": "603270551cae07a580c0707c3292c568"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\multi-agents\\kit\\.vscode\\settings.json": {
+    "mtime": 1780395582.4547904,
+    "ast_hash": "66517a0ee20c9f8be393b4dd19f4bd2a",
+    "semantic_hash": "66517a0ee20c9f8be393b4dd19f4bd2a"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\multi-agents\\kit\\mcp\\mcp-config-template.json": {
+    "mtime": 1780395582.4613593,
+    "ast_hash": "58260008fc21ac1f6243d35bf6013469",
+    "semantic_hash": "58260008fc21ac1f6243d35bf6013469"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\multi-agents\\kit\\orchestrators\\langgraph_sequential.py": {
+    "mtime": 1780395582.4633594,
+    "ast_hash": "4dcc2b241f6060a051433c9fdea7f516",
+    "semantic_hash": "4dcc2b241f6060a051433c9fdea7f516"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\multi-agents\\kit\\scripts\\create-agent-worktrees.sh": {
+    "mtime": 1780395582.4663594,
+    "ast_hash": "01c9674f9dee65c17d78a7330a717913",
+    "semantic_hash": "01c9674f9dee65c17d78a7330a717913"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\multi-agents\\kit\\scripts\\create-sequential-issue.sh": {
+    "mtime": 1780395582.4673593,
+    "ast_hash": "24499762ef8fba3a30add4217ea6f33c",
+    "semantic_hash": "24499762ef8fba3a30add4217ea6f33c"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\multi-agents\\kit\\scripts\\init-labels.sh": {
+    "mtime": 1780395582.4673593,
+    "ast_hash": "32a31f9f52643fe7f7446c3f082c48f4",
+    "semantic_hash": "32a31f9f52643fe7f7446c3f082c48f4"
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\ungasis\\multi-agents\\kit\\scripts\\verify-kit.sh": {
+    "mtime": 1780395582.4673593,
+    "ast_hash": "29d1b96182f2d561b20dd4152e4b1552",
+    "semantic_hash": "29d1b96182f2d561b20dd4152e4b1552"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observability Event",
+  "type": "object",
+  "required": [
+    "run_id",
+    "timestamp_utc",
+    "actor",
+    "agent_name",
+    "action",
+    "input_summary",
+    "output_summary",
+    "tool_used",
+    "approval_status",
+    "risk_level",
+    "token_estimate",
+    "cost_estimate_usd",
+    "error",
+    "rollback_reference"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "timestamp_utc": {
+      "type": "string"
+    },
+    "actor": {
+      "type": "string"
+    },
+    "agent_name": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "input_summary": {
+      "type": "string"
+    },
+    "output_summary": {
+      "type": "string"
+    },
+    "tool_used": {
+      "type": "string"
+    },
+    "approval_status": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string"
+    },
+    "token_estimate": {
+      "type": "number"
+    },
+    "cost_estimate_usd": {
+      "type": "number"
+    },
+    "error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rollback_reference": {
+      "type": "string"
+    }
+  }
+}

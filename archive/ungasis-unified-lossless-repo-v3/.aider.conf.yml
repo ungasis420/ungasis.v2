@@ -1,0 +1,8 @@
+# Safe Aider configuration for this merged repository.
+# Feynman: this stops the coding assistant from saving changes without you seeing them.
+# Analogy: like asking a helper to show you the bill before paying.
+auto-commits: false
+show-diffs: true
+read: CONVENTIONS.md
+map-tokens: 1024
+map-refresh: auto

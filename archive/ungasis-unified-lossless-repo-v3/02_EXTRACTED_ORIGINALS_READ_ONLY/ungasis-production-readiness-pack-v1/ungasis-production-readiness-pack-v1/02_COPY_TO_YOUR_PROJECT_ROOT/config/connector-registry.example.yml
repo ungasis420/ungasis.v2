@@ -1,0 +1,10 @@
+# Example connector registry
+
+connectors:
+  - name: GitHub
+    purpose: Store project files
+    data_touched: Code and docs
+    secret_needed: true
+    risk: medium
+    owner: project_owner
+    approval_required: true

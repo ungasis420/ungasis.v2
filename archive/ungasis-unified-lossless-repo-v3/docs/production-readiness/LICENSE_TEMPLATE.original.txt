@@ -1,0 +1,10 @@
+License template
+
+Choose a real license before sharing this project publicly.
+
+Common beginner choice:
+MIT License
+
+Important:
+This file is a placeholder, not legal advice.
+Ask a qualified person if this will be commercial or public.

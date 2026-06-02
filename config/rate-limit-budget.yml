@@ -1,0 +1,45 @@
+subscription:
+  plan: Google AI Pro
+  cost: $19.99/month
+  period: June-August 2026
+  decision_point: September 2026
+
+daily_limits:
+  antigravity:
+    type: compute-based
+    tier: AI Pro (4x free + 9x post-backlash boost)
+    refresh: every 5 hours
+    priority: true (priority traffic over free users)
+    recommended_sessions_per_day: 3-4
+  jules:
+    tasks_per_day: 100
+    concurrent: 15
+    recommended_daily_use: 50-80 tasks
+    allocation:
+      bug_fixes: 30
+      test_writing: 30
+      code_review: 20
+      documentation: 10
+      buffer: 10
+  gemini_code_assist:
+    requests_per_day: 1500
+    shared_with: Antigravity CLI
+  google_cloud_credits:
+    monthly: $10-45
+    use_for: Firebase hosting and deployment
+  ai_studio:
+    tier: Higher limits with Nano Banana Pro and Gemini Pro models
+
+unlimited_resources:
+  - M365 Copilot Premium (company provided)
+  - ChatGPT Enterprise (company provided)
+  - Ollama local models (PC only, free forever)
+  - Cline with BYOK API keys (30 keys across 6 providers)
+
+fallback_strategy:
+  step_1: Switch to M365 Copilot (unlimited) for planning and review
+  step_2: Switch to Cline + BYOK API keys (unlimited) for building
+  step_3: Switch to Ollama on PC (unlimited) for local AI
+  step_4: Wait for 5-hour Antigravity refresh then resume
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

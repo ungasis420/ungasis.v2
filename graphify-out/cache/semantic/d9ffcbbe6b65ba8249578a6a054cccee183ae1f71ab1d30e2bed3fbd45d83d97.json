@@ -1,0 +1,1 @@
+{"nodes": [{"id": "config_graceful_degradation", "label": "Graceful Degradation Config", "file_type": "code", "source_file": "config/graceful-degradation.yml", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

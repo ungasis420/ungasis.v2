@@ -1,0 +1,7 @@
+{
+  "MAX_THINKING_TOKENS": 10000,
+  "permissions": {
+    "allow": ["Read", "Write", "Bash"],
+    "deny": ["WebFetch"]
+  }
+}

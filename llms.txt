@@ -1,0 +1,32 @@
+# UNGASIS OS v4.0
+
+> Unified Generative AI System for Independent Solopreneurs. A Markdown-first knowledge repo providing token efficiency, multi-agent orchestration, and production readiness frameworks.
+
+## Key Files
+- [LLM_CONTEXT.md](LLM_CONTEXT.md): Project passport — read this first
+- [AGENTS.md](AGENTS.md): Cross-tool agent configuration
+- [GEMINI.md](GEMINI.md): Antigravity IDE project rules
+- [CONTEXT.md](CONTEXT.md): Current session state
+- [README.md](README.md): Project overview
+
+## Modules
+- [Token Policy](modules/ungasis-token-policy.md): Complete token budget guide
+- [Failure Taxonomy](modules/ungasis-failure-taxonomy.md): Agent failure categories
+- [Antigravity Guide](modules/ungasis-antigravity.md): Antigravity ecosystem
+- [Cross-Device](modules/ungasis-cross-device.md): 4-device workflow
+- [Device Sync](modules/ungasis-device-sync.md): Context sync protocol
+- [Extended Memory](modules/ungasis-extended-memory.md): Memory patterns
+
+## Configuration
+- [config/](config/): 9 orchestration YAML configs
+- [.agents/](agents/): Antigravity rules, skills, workflows
+- [.clinerules/](.clinerules/): Cline agent rules
+
+## Documentation
+- [docs/CHANGELOG.md](docs/CHANGELOG.md): Version history
+- [docs/RUNBOOK.md](docs/RUNBOOK.md): Operations guide
+- [docs/QA_TEST_PLAN.md](docs/QA_TEST_PLAN.md): Testing template
+
+---
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

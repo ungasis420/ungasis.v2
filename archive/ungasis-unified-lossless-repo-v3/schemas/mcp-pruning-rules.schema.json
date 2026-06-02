@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MCP Pruning Rules",
+  "type": "object",
+  "required": ["version", "default_mode", "rules", "blocked_by_default"],
+  "properties": {
+    "version": {"type": "string"},
+    "default_mode": {"type": "string"},
+    "rules": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["allow", "require_approval"],
+        "properties": {
+          "allow": {"type": "array", "items": {"type": "string"}},
+          "require_approval": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "blocked_by_default": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,43 +1,27 @@
 {
-  "name": "UNGASIS OS v3.0",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.12"
-    },
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
-    }
-  },
-
+  "name": "UNGASIS v4.0",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
   "customizations": {
     "vscode": {
       "extensions": [
         "saoudrizwan.claude-dev",
-        "github.copilot",
-        "github.copilot-chat",
-        "yzhang.markdown-all-in-one",
-        "bierner.markdown-mermaid"
+        "google.gemini-code-assist",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
       ],
       "settings": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
         "editor.wordWrap": "on",
-        "editor.minimap.enabled": false,
-        "editor.fontSize": 14,
-        "files.autoSave": "afterDelay",
-        "files.autoSaveDelay": 1000,
-        "files.exclude": {
-          "**/archive/**": true,
-          "**/.git": true,
-          "**/node_modules": true
-        },
-        "search.exclude": {
-          "**/archive/**": true
-        },
-        "markdown.preview.fontSize": 14
+        "files.autoSave": "onFocusChange"
       }
     }
   },
-
-  "postCreateCommand": "echo '🏰 UNGASIS Codespace ready. Open Cline → configure OpenRouter → paste launch command.' && python --version && node --version"
+  "postCreateCommand": "npm install && curl -fsSL https://antigravity.google/cli/install.sh | bash && echo 'Antigravity CLI (agy) installed'",
+  "forwardPorts": [3000, 5173],
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  }
 }
+// Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

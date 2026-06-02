@@ -1,0 +1,6 @@
+degradation:
+  L1: {skip: [docs, memory]}
+  L2: {chain: [gpt-4.1, qwen3:14b, devstral, manual]}
+  L3: {drop: [nice_to_have], keep: [core, tests, security]}
+  L4: {checkpoint: true, notify: true}
+  L5: {stop_all: true, lock: true, notify: [human, security]}

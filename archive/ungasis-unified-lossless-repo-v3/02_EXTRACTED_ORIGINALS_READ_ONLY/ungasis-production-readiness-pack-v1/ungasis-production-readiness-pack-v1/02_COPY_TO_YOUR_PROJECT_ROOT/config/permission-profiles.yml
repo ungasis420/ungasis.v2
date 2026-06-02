@@ -1,0 +1,18 @@
+# Permission profiles
+# Beginner meaning: choose how much power the agent has.
+
+profile: learner_safe
+rules:
+  can_read: true
+  can_draft: true
+  can_write: false
+  can_delete: false
+  can_send: false
+  can_pay: false
+  human_approval_required_for:
+    - write
+    - delete
+    - send
+    - pay
+    - publish
+    - change_permissions

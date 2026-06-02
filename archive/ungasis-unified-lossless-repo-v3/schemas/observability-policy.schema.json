@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observability Policy",
+  "type": "object",
+  "required": [
+    "observability"
+  ],
+  "properties": {
+    "observability": {
+      "type": "object",
+      "required": [
+        "required_event_fields",
+        "storage",
+        "retention"
+      ],
+      "properties": {
+        "required_event_fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "storage": {
+          "type": "object"
+        },
+        "retention": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

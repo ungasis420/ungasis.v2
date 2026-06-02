@@ -1,0 +1,16 @@
+{
+  "run_id": "run_example_001",
+  "timestamp_utc": "2026-05-30T00:00:00Z",
+  "actor": "human_owner",
+  "agent_name": "planner",
+  "action": "draft_plan",
+  "input_summary": "User asked for a safe merge plan.",
+  "output_summary": "Agent created a draft plan only.",
+  "tool_used": "none",
+  "approval_status": "not_required_read_only",
+  "risk_level": "low",
+  "token_estimate": 0,
+  "cost_estimate_usd": 0,
+  "error": null,
+  "rollback_reference": "not_needed"
+}

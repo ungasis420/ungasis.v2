@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Human Approval Gates",
+  "type": "object",
+  "required": [
+    "approval_gates"
+  ],
+  "properties": {
+    "approval_gates": {
+      "type": "object",
+      "required": [
+        "must_ask_before",
+        "approval_record_must_include",
+        "default_answer_without_approval"
+      ],
+      "properties": {
+        "must_ask_before": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "approval_record_must_include": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "default_answer_without_approval": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

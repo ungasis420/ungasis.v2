@@ -1,0 +1,22 @@
+observability:
+  required_event_fields:
+    - run_id
+    - timestamp_utc
+    - actor
+    - agent_name
+    - action
+    - input_summary
+    - output_summary
+    - tool_used
+    - approval_status
+    - risk_level
+    - token_estimate
+    - cost_estimate_usd
+    - error
+    - rollback_reference
+  storage:
+    default_path: "logs/agent-events.jsonl"
+    sensitive_data_allowed: false
+  retention:
+    local_learning: "30 days"
+    production_candidate: "90 days or owner policy"

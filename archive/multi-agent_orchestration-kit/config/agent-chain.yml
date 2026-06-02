@@ -1,0 +1,8 @@
+agent_chain:
+  - {role: planner, prompt: prompts/planner-agent-sequential.md}
+  - {role: builder, prompt: prompts/builder-agent-sequential.md}
+  - {role: tester, prompt: prompts/test-agent-sequential.md}
+  - {role: debugger, prompt: prompts/debugger-agent-sequential.md, conditional: true}
+  - {role: reviewer, prompt: prompts/reviewer-agent-sequential.md}
+  - {role: docs, prompt: prompts/docs-memory-agent-sequential.md}
+  - {role: human, manual: true}

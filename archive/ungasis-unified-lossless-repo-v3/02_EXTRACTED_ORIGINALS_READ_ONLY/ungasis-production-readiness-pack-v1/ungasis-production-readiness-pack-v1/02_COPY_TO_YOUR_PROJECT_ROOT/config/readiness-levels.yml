@@ -1,0 +1,16 @@
+# Readiness levels
+
+levels:
+  learning:
+    real_users_allowed: false
+    fake_data_required: true
+    production_allowed: false
+  private_testing:
+    real_users_allowed: trusted_only
+    fake_data_preferred: true
+    production_allowed: false
+  production:
+    real_users_allowed: true
+    tests_required: true
+    rollback_required: true
+    security_review_required: true

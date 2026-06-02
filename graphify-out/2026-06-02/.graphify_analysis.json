@@ -1,0 +1,2712 @@
+{
+  "communities": {
+    "0": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_agent_chain_schema_json_schemas_agent_chain_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_agent_chain_schema_json_schemas_agent_chain_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_agent_chain_schema_json_schemas_agent_chain_schema_title",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema_connectors_items",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema_properties_connectors",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema_properties_name",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema_properties_owner",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_connector_registry_schema_json_schemas_connector_registry_schema_title",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_expected_safe_behavior",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_name",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_prompt",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_risk",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_tests",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_risk_enum",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_tests_items",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_title",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_eval_suite_schema_json_schemas_eval_suite_schema_type",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_agent_chain_schema_json_schemas_agent_chain_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_agent_chain_schema_json_schemas_agent_chain_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_agent_chain_schema_json_schemas_agent_chain_schema_title",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_agent_chain_schema_json_schemas_agent_chain_schema_type",
+      "schemas_agent_chain_schema_agents_items",
+      "schemas_agent_chain_schema_id_type",
+      "schemas_agent_chain_schema_properties_agents",
+      "schemas_agent_chain_schema_properties_allowed_actions",
+      "schemas_agent_chain_schema_properties_approval_required_for",
+      "schemas_agent_chain_schema_properties_id",
+      "schemas_agent_chain_schema_properties_name",
+      "schemas_agent_chain_schema_properties_role",
+      "schemas_agent_chain_schema_required",
+      "schemas_connector_registry_schema_properties_data_touched",
+      "schemas_connector_registry_schema_properties_purpose",
+      "schemas_connector_registry_schema_properties_risk",
+      "schemas_connector_registry_schema_properties_secret_needed",
+      "schemas_connector_registry_schema_purpose_type",
+      "schemas_connector_registry_schema_risk_enum",
+      "schemas_mcp_config_schema",
+      "schemas_mcp_config_schema_properties",
+      "schemas_mcp_config_schema_properties_mcpservers",
+      "schemas_mcp_config_schema_properties_pruningrules",
+      "schemas_mcp_config_schema_required",
+      "schemas_mcp_config_schema_schema",
+      "schemas_mcp_config_schema_title",
+      "schemas_mcp_config_schema_type",
+      "schemas_permission_profiles_schema",
+      "schemas_permission_profiles_schema_deny_items",
+      "schemas_permission_profiles_schema_profiles_additionalproperties",
+      "schemas_permission_profiles_schema_properties",
+      "schemas_permission_profiles_schema_properties_allow",
+      "schemas_permission_profiles_schema_properties_deny",
+      "schemas_permission_profiles_schema_properties_description",
+      "schemas_permission_profiles_schema_properties_profiles",
+      "schemas_permission_profiles_schema_required",
+      "schemas_permission_profiles_schema_schema",
+      "schemas_permission_profiles_schema_title",
+      "schemas_permission_profiles_schema_type"
+    ],
+    "1": [
+      "00_master_start_prompt_master_start_prompt",
+      "01_first_message_to_ai_first_message_to_ai",
+      "03_spec_builder_spec_builder",
+      "07_context_compaction_context_compaction",
+      "12_karpathy_context_file_builder_karpathy_context_file_builder",
+      "13_stop_coding_spec_first_stop_coding_spec_first",
+      "acceptance_acceptance",
+      "ai_project_os_lessons_ai_project_os_lessons",
+      "ai_project_os_lessons_lessons",
+      "commands_growth_loop",
+      "design_design",
+      "docs_growth_experiment_os",
+      "gap_coverage_matrix_gap_coverage_matrix",
+      "handoff_handoff",
+      "index_knowledge_index",
+      "karpathy_context_file_karpathy_context_file",
+      "karpathy_principles_and_community_rules_karpathy_principles_and_community_rules",
+      "knowledge_index_md",
+      "knowledge_rules_knowledge_rules",
+      "knowledge_schema_rules_md",
+      "knowledge_wiki_lessons_md",
+      "knowledge_wiki_readme_md",
+      "lessons_learned_lessons_learned",
+      "llm_knowledge_base_llm_knowledge_base",
+      "merge_audit_merge_audit",
+      "new_video_coverage_audit_new_video_coverage_audit",
+      "project_brief_project_brief",
+      "quality_bar_quality_bar",
+      "raw_readme_raw_readme",
+      "requirements_requirements",
+      "researcher_notes_coverage_audit_audit",
+      "researcher_notes_coverage_audit_researcher_notes_coverage_audit",
+      "risk_and_safety_risk_and_safety",
+      "source_fidelity_source_fidelity",
+      "spec_driven_development_os_os",
+      "spec_driven_development_os_spec_driven_development_os",
+      "spec_first_agentic_development",
+      "spec_spec",
+      "specs_readme_specs_readme",
+      "tasks_tasks",
+      "test_commands_test_commands",
+      "v5_gap_coverage_matrix_matrix",
+      "v5_gap_coverage_matrix_v5_gap_coverage_matrix",
+      "v5_merge_audit_audit",
+      "v5_merge_audit_v5_merge_audit",
+      "video_lesson_capture_video_lesson_capture",
+      "wiki_readme_wiki_readme",
+      "worklog_worklog"
+    ],
+    "2": [
+      "chatgpt_feature_router",
+      "cloudflare_pages",
+      "data_level_system",
+      "instruction_hierarchy_map",
+      "lemon_squeezy",
+      "m365_copilot",
+      "mattpocock_skills",
+      "memory_log",
+      "paymongo",
+      "progressive_disclosure",
+      "self_iteration_protocol",
+      "supabase",
+      "ungasis_10_phase_build_workflow",
+      "ungasis_14_free_first_stack_lanes",
+      "ungasis_30day_roadmap",
+      "ungasis_build_workflow",
+      "ungasis_cost_monitoring",
+      "ungasis_cost_monitoring_o9",
+      "ungasis_decision_matrix",
+      "ungasis_design_checklist",
+      "ungasis_design_excellence_checklist",
+      "ungasis_glossary",
+      "ungasis_gold_skeleton",
+      "ungasis_hallucination_detection_protocol",
+      "ungasis_hallucination_guide",
+      "ungasis_html_manual_spec",
+      "ungasis_instruction_hierarchy",
+      "ungasis_instruction_hierarchy_map",
+      "ungasis_lifecycle_ladder",
+      "ungasis_lifecycle_ladder_r3",
+      "ungasis_m365_feature_router",
+      "ungasis_me_as_mvp_workflow",
+      "ungasis_memory_log",
+      "ungasis_monetization_strategy",
+      "ungasis_output_control_rules",
+      "ungasis_portfolio_strategy",
+      "ungasis_project_factory",
+      "ungasis_prompt_engineering",
+      "ungasis_prompt_library",
+      "ungasis_recovery_mode",
+      "ungasis_sop_library",
+      "ungasis_source_ledger",
+      "ungasis_stack_lanes",
+      "ungasis_tool_stack_strategy",
+      "ungasis_universal_gold_skeleton",
+      "ungasis_verified_source_ledger",
+      "ungasis_version_control"
+    ],
+    "3": [
+      "08_agent_evals_and_runtime_governance_md",
+      "activecontext_context",
+      "agents_md",
+      "claude_md",
+      "clinerules_04_reflection",
+      "clinerules_05_hygiene",
+      "clinerules_06_safety_gate",
+      "config_sequential_defaults",
+      "context_md",
+      "conventions_md",
+      "gemini_md",
+      "karpathy_context_file_builder_prompt",
+      "llms_txt",
+      "master_start_prompt_prompt",
+      "memory_bank_activecontext",
+      "memory_bank_clinerules_memory_bank",
+      "memory_bank_progress",
+      "memory_bank_techcontext",
+      "memory_md",
+      "productcontext_context",
+      "progress_progress",
+      "project_brief_brief",
+      "projectbrief_brief",
+      "readme_md",
+      "systempatterns_patterns",
+      "techcontext_context",
+      "token_efficiency_agent_os_v4_aider_conf_yml",
+      "ungasis_agents",
+      "ungasis_context_engineering",
+      "ungasis_context_loops",
+      "ungasis_knowledge_base"
+    ],
+    "4": [
+      "archive_ai_project_os_master_v5_agents",
+      "archive_ai_project_os_master_v5_claude",
+      "archive_ai_project_os_master_v5_llms_txt",
+      "archive_ai_project_os_master_v5_llmstxt",
+      "archive_ai_project_os_master_v5_project_start_here",
+      "archive_ai_project_os_master_v5_readme",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_llms_txt",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_new_video_audit",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_major_layers",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_merge_inputs",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_name",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_prepared",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_purpose",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_claude_code_entrypoint",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_context",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_cross_agent_instructions",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_formal_docs",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_rules",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_skills",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_validation_commands",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_version",
+      "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_workflows",
+      "archive_ai_project_os_master_v5_template_manifest",
+      "ungasis_llm_context"
+    ],
+    "5": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_actor",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_approval_status",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_error",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_run_id",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_observability_event_schema_json_schemas_observability_event_schema_title",
+      "examples_agent_event_example",
+      "examples_agent_event_example_action",
+      "examples_agent_event_example_actor",
+      "examples_agent_event_example_agent_name",
+      "examples_agent_event_example_approval_status",
+      "examples_agent_event_example_cost_estimate_usd",
+      "examples_agent_event_example_error",
+      "examples_agent_event_example_input_summary",
+      "examples_agent_event_example_output_summary",
+      "examples_agent_event_example_risk_level",
+      "examples_agent_event_example_rollback_reference",
+      "examples_agent_event_example_run_id",
+      "examples_agent_event_example_timestamp_utc",
+      "examples_agent_event_example_token_estimate",
+      "examples_agent_event_example_tool_used",
+      "schemas_observability_event_schema_properties_event_type",
+      "schemas_observability_event_schema_properties_summary",
+      "schemas_observability_event_schema_summary_type"
+    ],
+    "6": [
+      "archive_ungasis_unified_lossless_repo_v3_scripts_validate_repo_py_bool",
+      "archive_ungasis_unified_lossless_repo_v3_scripts_validate_repo_py_int",
+      "archive_ungasis_unified_lossless_repo_v3_scripts_validate_repo_py_path",
+      "archive_ungasis_unified_lossless_repo_v3_scripts_validate_repo_py_str",
+      "scripts_validate_repo",
+      "scripts_validate_repo_add_error",
+      "scripts_validate_repo_add_warning",
+      "scripts_validate_repo_allowed_placeholder_path",
+      "scripts_validate_repo_check_agent_rules",
+      "scripts_validate_repo_check_ci_permissions",
+      "scripts_validate_repo_check_file_status_register",
+      "scripts_validate_repo_check_json_files",
+      "scripts_validate_repo_check_placeholders",
+      "scripts_validate_repo_check_prompt_and_permission_test_files",
+      "scripts_validate_repo_check_python_scripts",
+      "scripts_validate_repo_check_required_files",
+      "scripts_validate_repo_check_schemas",
+      "scripts_validate_repo_check_secrets",
+      "scripts_validate_repo_check_shell_scripts",
+      "scripts_validate_repo_check_yaml_files",
+      "scripts_validate_repo_main",
+      "scripts_validate_repo_read_text",
+      "scripts_validate_repo_rel",
+      "scripts_validate_repo_secret_allowed",
+      "scripts_validate_repo_should_skip_text",
+      "scripts_validate_repo_validate_schema"
+    ],
+    "7": [
+      "07_production_readiness_security_qa_md",
+      "cross_reference_bridge_md",
+      "model_routing_v4_1_md",
+      "production_readiness_report_md",
+      "schemas_cross_reference_bridge_schema_properties",
+      "schemas_cross_reference_bridge_schema_properties_file",
+      "schemas_cross_reference_bridge_schema_properties_open",
+      "schemas_cross_reference_bridge_schema_properties_routes",
+      "schemas_cross_reference_bridge_schema_properties_situation",
+      "schemas_cross_reference_bridge_schema_properties_version",
+      "schemas_cross_reference_bridge_schema_required",
+      "schemas_cross_reference_bridge_schema_routes_items",
+      "schemas_cross_reference_bridge_schema_routes_minitems",
+      "schemas_cross_reference_bridge_schema_schema",
+      "schemas_cross_reference_bridge_schema_title",
+      "schemas_cross_reference_bridge_schema_type",
+      "shared_state_protocol",
+      "shared_state_protocol_md",
+      "ungasis_unified_lossless_repo",
+      "ungasis_unified_lossless_repo_v3_cross_reference_bridge_md",
+      "ungasis_unified_lossless_repo_v3_lossless_merge_audit_v3_md",
+      "ungasis_unified_lossless_repo_v3_merge_map_what_changed_md",
+      "ungasis_unified_lossless_repo_v3_model_routing_v4_1_md",
+      "ungasis_unified_lossless_repo_v3_readme_md",
+      "ungasis_unified_lossless_repo_v3_task_board_md"
+    ],
+    "8": [
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_actor",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_approval_status",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_error",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_properties_run_id",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_observability_event_schema_json_schemas_observability_event_schema_title",
+      "schemas_observability_event_schema_action_type",
+      "schemas_observability_event_schema_properties_action",
+      "schemas_observability_event_schema_properties_agent_name",
+      "schemas_observability_event_schema_properties_cost_estimate_usd",
+      "schemas_observability_event_schema_properties_input_summary",
+      "schemas_observability_event_schema_properties_output_summary",
+      "schemas_observability_event_schema_properties_risk_level",
+      "schemas_observability_event_schema_properties_rollback_reference",
+      "schemas_observability_event_schema_properties_timestamp_utc",
+      "schemas_observability_event_schema_properties_token_estimate",
+      "schemas_observability_event_schema_properties_tool_used"
+    ],
+    "9": [
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_llm_context",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_llms_txt",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_key_files_new_video_audit",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_major_layers",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_merge_inputs",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_name",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_prepared",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_purpose",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_claude_code_entrypoint",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_context",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_cross_agent_instructions",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_formal_docs",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_rules",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth_skills",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_validation_commands",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_version",
+      "ungasis_archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_workflows"
+    ],
+    "10": [
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema_properties_connectors",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema_properties_name",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema_properties_owner",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_connector_registry_schema_json_schemas_connector_registry_schema_title",
+      "schemas_connector_registry_schema_allowed_actions_items",
+      "schemas_connector_registry_schema_properties_allowed_actions",
+      "schemas_connector_registry_schema_properties_approval_required_for",
+      "schemas_connector_registry_schema_properties_auth_type",
+      "schemas_connector_registry_schema_properties_data_sensitivity",
+      "schemas_connector_registry_schema_properties_fallback",
+      "schemas_connector_registry_schema_properties_forbidden_actions",
+      "schemas_connector_registry_schema_properties_status",
+      "schemas_connector_registry_schema_status_type"
+    ],
+    "11": [
+      "schemas_model_routing_schema",
+      "schemas_model_routing_schema_properties",
+      "schemas_model_routing_schema_properties_default_tier",
+      "schemas_model_routing_schema_properties_escalation",
+      "schemas_model_routing_schema_properties_id",
+      "schemas_model_routing_schema_properties_models",
+      "schemas_model_routing_schema_properties_name",
+      "schemas_model_routing_schema_properties_safety",
+      "schemas_model_routing_schema_properties_tiers",
+      "schemas_model_routing_schema_properties_use_for",
+      "schemas_model_routing_schema_properties_version",
+      "schemas_model_routing_schema_required",
+      "schemas_model_routing_schema_schema",
+      "schemas_model_routing_schema_tiers_items",
+      "schemas_model_routing_schema_tiers_minitems",
+      "schemas_model_routing_schema_title",
+      "schemas_model_routing_schema_type"
+    ],
+    "12": [
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_env_github_personal_access_token",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_fetch_args",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_fetch_command",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_github_env",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_fetch",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_filesystem",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_github",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_memory",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_sequential_thinking",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_architecture",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_bugfix",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_coding",
+      "archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_research"
+    ],
+    "13": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_actors_items",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_actor",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_actors",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_approval_needed",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_delete",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_draft",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_read",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_send",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_write",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_notes",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_title",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_type"
+    ],
+    "14": [
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_actors_items",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_actor",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_actors",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_approval_needed",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_delete",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_draft",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_read",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_send",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_can_write",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_properties_notes",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_title",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_permission_matrix_schema_json_schemas_permission_matrix_schema_type"
+    ],
+    "15": [
+      "mcp_mcp_config_safe_example",
+      "mcp_mcp_config_safe_example_env_github_personal_access_token",
+      "mcp_mcp_config_safe_example_fetch_args",
+      "mcp_mcp_config_safe_example_fetch_command",
+      "mcp_mcp_config_safe_example_github_env",
+      "mcp_mcp_config_safe_example_mcpservers",
+      "mcp_mcp_config_safe_example_mcpservers_fetch",
+      "mcp_mcp_config_safe_example_mcpservers_filesystem",
+      "mcp_mcp_config_safe_example_mcpservers_github",
+      "mcp_mcp_config_safe_example_mcpservers_memory",
+      "mcp_mcp_config_safe_example_mcpservers_sequential_thinking",
+      "mcp_mcp_config_safe_example_pruningrules",
+      "mcp_mcp_config_safe_example_pruningrules_architecture",
+      "mcp_mcp_config_safe_example_pruningrules_bugfix",
+      "mcp_mcp_config_safe_example_pruningrules_coding",
+      "mcp_mcp_config_safe_example_pruningrules_research"
+    ],
+    "16": [
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_env_github_personal_access_token",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_fetch_args",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_fetch_command",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_github_env",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_fetch",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_filesystem",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_github",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_memory",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_mcpservers_sequential_thinking",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_architecture",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_bugfix",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_coding",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_00_lossless_archive_read_only_2026_05_31_direct_uploads_raw_mcp_config_json_2026_05_31_direct_uploads_raw_mcp_config_pruningrules_research"
+    ],
+    "17": [
+      "agent_chain_config",
+      "builder_agent_sequential_builder",
+      "debugger_agent_sequential_debugger",
+      "docs_memory_agent_sequential_docs",
+      "human_human_intervention",
+      "multi_agent_sequential_handoff",
+      "orchestration_architecture",
+      "planner_agent_sequential_planner",
+      "reviewer_agent_sequential_reviewer",
+      "sequential_defaults_defaults",
+      "sequential_handoff_workflow",
+      "sequential_handoff_workflow_handoff",
+      "test_agent_sequential_tester",
+      "ungasis_stack_lanes_lane_14_documentation_knowledge",
+      "ungasis_stack_lanes_lane_1_chatgpt_command_center"
+    ],
+    "18": [
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_path",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_agents",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_command_skill_collisions",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_duplicates",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_json",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_no_legacy_roots",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_required",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_secret_patterns",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_skills",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_v5_keywords",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_main",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_rel",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_sha",
+      "archive_ai_project_os_master_v5_scripts_verify_template_py_str"
+    ],
+    "19": [
+      "devcontainer_devcontainer",
+      "devcontainer_devcontainer_customizations",
+      "devcontainer_devcontainer_customizations_vscode",
+      "devcontainer_devcontainer_features",
+      "devcontainer_devcontainer_features_ghcr_io_devcontainers_features_github_cli_1",
+      "devcontainer_devcontainer_forwardports",
+      "devcontainer_devcontainer_image",
+      "devcontainer_devcontainer_name",
+      "devcontainer_devcontainer_postcreatecommand",
+      "devcontainer_devcontainer_settings_editor_formatonsave",
+      "devcontainer_devcontainer_settings_editor_tabsize",
+      "devcontainer_devcontainer_settings_editor_wordwrap",
+      "devcontainer_devcontainer_settings_files_autosave",
+      "devcontainer_devcontainer_vscode_extensions",
+      "devcontainer_devcontainer_vscode_settings"
+    ],
+    "20": [
+      "schemas_mcp_pruning_rules_schema",
+      "schemas_mcp_pruning_rules_schema_allow_items",
+      "schemas_mcp_pruning_rules_schema_properties",
+      "schemas_mcp_pruning_rules_schema_properties_allow",
+      "schemas_mcp_pruning_rules_schema_properties_blocked_by_default",
+      "schemas_mcp_pruning_rules_schema_properties_default_mode",
+      "schemas_mcp_pruning_rules_schema_properties_notes",
+      "schemas_mcp_pruning_rules_schema_properties_require_approval",
+      "schemas_mcp_pruning_rules_schema_properties_rules",
+      "schemas_mcp_pruning_rules_schema_properties_version",
+      "schemas_mcp_pruning_rules_schema_required",
+      "schemas_mcp_pruning_rules_schema_rules_additionalproperties",
+      "schemas_mcp_pruning_rules_schema_schema",
+      "schemas_mcp_pruning_rules_schema_title",
+      "schemas_mcp_pruning_rules_schema_type"
+    ],
+    "21": [
+      "schemas_shared_state_protocol_schema",
+      "schemas_shared_state_protocol_schema_layers_items",
+      "schemas_shared_state_protocol_schema_layers_minitems",
+      "schemas_shared_state_protocol_schema_properties",
+      "schemas_shared_state_protocol_schema_properties_file",
+      "schemas_shared_state_protocol_schema_properties_file_lock_rule",
+      "schemas_shared_state_protocol_schema_properties_layer",
+      "schemas_shared_state_protocol_schema_properties_layers",
+      "schemas_shared_state_protocol_schema_properties_mode",
+      "schemas_shared_state_protocol_schema_properties_version",
+      "schemas_shared_state_protocol_schema_properties_writers",
+      "schemas_shared_state_protocol_schema_required",
+      "schemas_shared_state_protocol_schema_schema",
+      "schemas_shared_state_protocol_schema_title",
+      "schemas_shared_state_protocol_schema_type"
+    ],
+    "22": [
+      "scripts_verify_template_py_path",
+      "scripts_verify_template_py_scripts_verify_template",
+      "scripts_verify_template_py_scripts_verify_template_check_agents",
+      "scripts_verify_template_py_scripts_verify_template_check_command_skill_collisions",
+      "scripts_verify_template_py_scripts_verify_template_check_duplicates",
+      "scripts_verify_template_py_scripts_verify_template_check_json",
+      "scripts_verify_template_py_scripts_verify_template_check_no_legacy_roots",
+      "scripts_verify_template_py_scripts_verify_template_check_required",
+      "scripts_verify_template_py_scripts_verify_template_check_secret_patterns",
+      "scripts_verify_template_py_scripts_verify_template_check_skills",
+      "scripts_verify_template_py_scripts_verify_template_check_v5_keywords",
+      "scripts_verify_template_py_scripts_verify_template_main",
+      "scripts_verify_template_py_scripts_verify_template_rel",
+      "scripts_verify_template_py_scripts_verify_template_sha",
+      "scripts_verify_template_py_str"
+    ],
+    "23": [
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_path",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_agents",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_command_skill_collisions",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_duplicates",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_json",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_no_legacy_roots",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_required",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_secret_patterns",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_skills",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_check_v5_keywords",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_main",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_rel",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_sha",
+      "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_str"
+    ],
+    "24": [
+      "agent_evals_runtime_governance",
+      "archive_index",
+      "archive_ungasis_master_guide_v3",
+      "archive_ungasis_quick_reference_wiki_guide",
+      "claude_code_instructions",
+      "multi_agent_orchestration_guide",
+      "token_efficiency_agent_os",
+      "token_efficiency_agent_os_v4_audit_report_md",
+      "token_efficiency_agent_os_v4_install_md",
+      "token_efficiency_agents_md",
+      "token_efficiency_claude_md",
+      "token_efficiency_context_budget",
+      "token_efficiency_master_protocol",
+      "token_efficiency_model_routing"
+    ],
+    "25": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_release_checklist_schema_json_schemas_release_checklist_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_release_checklist_schema_json_schemas_release_checklist_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_release_checklist_schema_json_schemas_release_checklist_schema_properties_version",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_release_checklist_schema_json_schemas_release_checklist_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_release_checklist_schema_json_schemas_release_checklist_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_schemas_release_checklist_schema_json_schemas_release_checklist_schema_title",
+      "schemas_release_checklist_schema_known_gaps_items",
+      "schemas_release_checklist_schema_owner_type",
+      "schemas_release_checklist_schema_properties_approved",
+      "schemas_release_checklist_schema_properties_known_gaps",
+      "schemas_release_checklist_schema_properties_owner",
+      "schemas_release_checklist_schema_properties_rollback_plan",
+      "schemas_release_checklist_schema_properties_security_checked",
+      "schemas_release_checklist_schema_properties_tests_passed"
+    ],
+    "26": [
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_expected_safe_behavior",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_name",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_prompt",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_risk",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_properties_tests",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_risk_enum",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_tests_items",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_title",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_eval_suite_schema_json_schemas_eval_suite_schema_type"
+    ],
+    "27": [
+      "00_router_behavior_rigor_systems_router",
+      "01_engine_kernel_all_engines_engines",
+      "02_framework_kernel_all_frameworks_frameworks",
+      "03_intelligence_kernel_all_intelligences_intelligences",
+      "04_memory_knowledge_guardrails_guardrails",
+      "05_templates_tools_artifacts_evaluation_templates",
+      "06_maintenance_manifest_tests_evolution_maintenance",
+      "06_maintenance_manifest_tests_evolution_tests",
+      "project_memory_memory",
+      "research_protocol_protocol",
+      "ungasis_unified_lossless_repo_v3_router_behavior_rigor_systems_md"
+    ],
+    "28": [
+      "connector_permission_registry",
+      "docs_learner_how_to",
+      "docs_permission_matrix",
+      "docs_qa_test_plan",
+      "docs_readiness_levels",
+      "docs_runbook",
+      "readme_readiness",
+      "release_rollback_module",
+      "ungasis_agent_evals_governance",
+      "ungasis_observability_incident_response",
+      "ungasis_readiness_security_qa"
+    ],
+    "29": [
+      "schemas_human_approval_gates_schema",
+      "schemas_human_approval_gates_schema_must_ask_before_items",
+      "schemas_human_approval_gates_schema_properties",
+      "schemas_human_approval_gates_schema_properties_approval_gates",
+      "schemas_human_approval_gates_schema_properties_approval_record_must_include",
+      "schemas_human_approval_gates_schema_properties_default_answer_without_approval",
+      "schemas_human_approval_gates_schema_properties_must_ask_before",
+      "schemas_human_approval_gates_schema_required",
+      "schemas_human_approval_gates_schema_schema",
+      "schemas_human_approval_gates_schema_title",
+      "schemas_human_approval_gates_schema_type"
+    ],
+    "30": [
+      "schemas_observability_policy_schema",
+      "schemas_observability_policy_schema_properties",
+      "schemas_observability_policy_schema_properties_observability",
+      "schemas_observability_policy_schema_properties_required_event_fields",
+      "schemas_observability_policy_schema_properties_retention",
+      "schemas_observability_policy_schema_properties_storage",
+      "schemas_observability_policy_schema_required",
+      "schemas_observability_policy_schema_required_event_fields_items",
+      "schemas_observability_policy_schema_schema",
+      "schemas_observability_policy_schema_title",
+      "schemas_observability_policy_schema_type"
+    ],
+    "31": [
+      "00_identity_ungasis_qa_auditor",
+      "02_output_rules_output_rules",
+      "03_self_iteration_self_iteration_protocol",
+      "04_reflection_reflection_protocol",
+      "05_hygiene_rule_hygiene",
+      "bug_fix_skill",
+      "debug_one_bug_skill",
+      "fix_bugs_workflow",
+      "qa_audit_report_qa_audit_report"
+    ],
+    "32": [
+      "archive_ai_project_os_master_v5_scripts_context_budget_check_py_int",
+      "archive_ai_project_os_master_v5_scripts_context_budget_check_py_scripts_context_budget_check_estimate_tokens",
+      "archive_ai_project_os_master_v5_scripts_context_budget_check_py_scripts_context_budget_check_main",
+      "archive_ai_project_os_master_v5_scripts_context_budget_check_py_str",
+      "scripts_context_budget_check_py_int",
+      "scripts_context_budget_check_py_scripts_context_budget_check",
+      "scripts_context_budget_check_py_scripts_context_budget_check_estimate_tokens",
+      "scripts_context_budget_check_py_scripts_context_budget_check_main",
+      "scripts_context_budget_check_py_str"
+    ],
+    "33": [
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_builder",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_debugger",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_docs",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_human",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_planner",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_reviewer",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_route",
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_tester"
+    ],
+    "34": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_builder",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_debugger",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_docs",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_human",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_planner",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_reviewer",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_route",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_tester"
+    ],
+    "35": [
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_builder",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_debugger",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_docs",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_human",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_planner",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_reviewer",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_route",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_tester"
+    ],
+    "36": [
+      "archive_ungasis_unified_lossless_repo_v3_schemas_release_checklist_schema_json_schemas_release_checklist_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_release_checklist_schema_json_schemas_release_checklist_schema_properties",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_release_checklist_schema_json_schemas_release_checklist_schema_properties_version",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_release_checklist_schema_json_schemas_release_checklist_schema_required",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_release_checklist_schema_json_schemas_release_checklist_schema_schema",
+      "archive_ungasis_unified_lossless_repo_v3_schemas_release_checklist_schema_json_schemas_release_checklist_schema_title",
+      "schemas_release_checklist_schema_checks_items",
+      "schemas_release_checklist_schema_checks_type",
+      "schemas_release_checklist_schema_properties_checks"
+    ],
+    "37": [
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_builder",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_debugger",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_docs",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_human",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_planner",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_reviewer",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_route",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_tester"
+    ],
+    "38": [
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_builder",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_debugger",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_docs",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_human",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_planner",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_reviewer",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_route",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_tester"
+    ],
+    "39": [
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_builder",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_debugger",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_docs",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_human",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_planner",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_reviewer",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_route",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_tester"
+    ],
+    "40": [
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template",
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_env_github_personal_access_token",
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_args",
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_command",
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_env",
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers",
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_filesystem",
+      "archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_github"
+    ],
+    "41": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_env_github_personal_access_token",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_github_args",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_github_command",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_github_env",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_filesystem",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_github"
+    ],
+    "42": [
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template",
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template_env_github_personal_access_token",
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template_github_args",
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template_github_command",
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template_github_env",
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers",
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_filesystem",
+      "archive_ungasis_unified_lossless_repo_v3_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_github"
+    ],
+    "43": [
+      "automation_safety_workflow",
+      "build_iterate_verify_workflow",
+      "continuous_improvement_workflow",
+      "daily_session_workflow",
+      "parallel_agents_workflow",
+      "project_kickoff_workflow",
+      "research_to_decision_workflow",
+      "workflows_active_workflows"
+    ],
+    "44": [
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template",
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_env_github_personal_access_token",
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_args",
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_command",
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_env",
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers",
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_filesystem",
+      "ungasis_archive_multi_agent_orchestration_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_github"
+    ],
+    "45": [
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_env_github_personal_access_token",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_github_args",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_github_command",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_github_env",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_filesystem",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_github"
+    ],
+    "46": [
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template",
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_env_github_personal_access_token",
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_args",
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_command",
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_github_env",
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers",
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_filesystem",
+      "ungasis_multi_agents_kit_mcp_mcp_config_template_json_mcp_mcp_config_template_mcpservers_github"
+    ],
+    "47": [
+      "archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example",
+      "archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_aiprojectosnotes",
+      "archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions",
+      "archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions_allow",
+      "archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions_ask",
+      "archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions_deny",
+      "archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_schema"
+    ],
+    "48": [
+      "archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_agentstate",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_agentstate",
+      "archive_ungasis_unified_lossless_repo_v3_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_agentstate",
+      "typeddict",
+      "ungasis_archive_multi_agent_orchestration_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_agentstate",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_agentstate",
+      "ungasis_multi_agents_kit_orchestrators_langgraph_sequential_py_orchestrators_langgraph_sequential_agentstate"
+    ],
+    "49": [
+      "beginner_app_building_guide",
+      "effortless_ai_project_factory",
+      "ungasis_ai_operating_model_operating_model",
+      "ungasis_chatgpt_feature_router_feature_router",
+      "ungasis_me_as_mvp_workflow_mvp_workflow",
+      "ungasis_prompt_engineering_prompt_fundamentals",
+      "ungasis_sop_library_sop_library"
+    ],
+    "50": [
+      "circuit_breaker_circuit_breaker",
+      "circuit_breaker_config",
+      "config_agent_scoring",
+      "config_orchestration_policy",
+      "docs_agent_run_log",
+      "progress_detection_config",
+      "progress_detection_progress_detection"
+    ],
+    "51": [
+      "schemas_readiness_levels_schema",
+      "schemas_readiness_levels_schema_properties",
+      "schemas_readiness_levels_schema_properties_levels",
+      "schemas_readiness_levels_schema_required",
+      "schemas_readiness_levels_schema_schema",
+      "schemas_readiness_levels_schema_title",
+      "schemas_readiness_levels_schema_type"
+    ],
+    "52": [
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_aiprojectosnotes",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions_allow",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions_ask",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_permissions_deny",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_example_json_claude_settings_example_schema"
+    ],
+    "53": [
+      "ungasis_clinerules_00_identity",
+      "ungasis_clinerules_02_output_rules",
+      "ungasis_clinerules_03_self_iteration",
+      "ungasis_clinerules_clinerules",
+      "ungasis_context",
+      "ungasis_qa_audit_report",
+      "ungasis_qa_mission"
+    ],
+    "54": [
+      "archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_path",
+      "archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index",
+      "archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_list_md",
+      "archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_main",
+      "archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_section",
+      "archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_str"
+    ],
+    "55": [
+      "archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings",
+      "archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_max_thinking_tokens",
+      "archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_note",
+      "archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_permissions",
+      "archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_permissions_allow",
+      "archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_permissions_deny"
+    ],
+    "56": [
+      "changelog_md",
+      "file_inventory_md",
+      "ungasis_antigravity_md",
+      "ungasis_cross_device_md",
+      "ungasis_device_sync_md",
+      "ungasis_extended_memory_md"
+    ],
+    "57": [
+      "github_workflow_readiness",
+      "simple_glossary_feynman_deployment",
+      "simple_glossary_feynman_production",
+      "simple_glossary_feynman_production_candidate",
+      "simple_glossary_feynman_production_ready",
+      "simple_glossary_feynman_staging"
+    ],
+    "58": [
+      "prompt_13_spec_first",
+      "specs_readme",
+      "specs_template_acceptance",
+      "specs_template_design",
+      "specs_template_requirements",
+      "specs_template_tasks"
+    ],
+    "59": [
+      "scripts_generate_knowledge_index_py_path",
+      "scripts_generate_knowledge_index_py_scripts_generate_knowledge_index",
+      "scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_list_md",
+      "scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_main",
+      "scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_section",
+      "scripts_generate_knowledge_index_py_str"
+    ],
+    "60": [
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_path",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_list_md",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_main",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_scripts_generate_knowledge_index_section",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_knowledge_index_py_str"
+    ],
+    "61": [
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_max_thinking_tokens",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_note",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_permissions",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_permissions_allow",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_claude_settings_json_claude_settings_permissions_deny"
+    ],
+    "62": [
+      "agents_agents",
+      "clinerules_00identity",
+      "clinerules_clinerules",
+      "gemini_gemini",
+      "skill_qa_audit"
+    ],
+    "63": [
+      "archive_ai_project_os_master_v5_scripts_bootstrap_project_py_bool",
+      "archive_ai_project_os_master_v5_scripts_bootstrap_project_py_path",
+      "archive_ai_project_os_master_v5_scripts_bootstrap_project_py_scripts_bootstrap_project",
+      "archive_ai_project_os_master_v5_scripts_bootstrap_project_py_scripts_bootstrap_project_main",
+      "archive_ai_project_os_master_v5_scripts_bootstrap_project_py_scripts_bootstrap_project_should_edit"
+    ],
+    "64": [
+      "archive_ai_project_os_master_v5_scripts_generate_llm_context_py_int",
+      "archive_ai_project_os_master_v5_scripts_generate_llm_context_py_scripts_generate_llm_context",
+      "archive_ai_project_os_master_v5_scripts_generate_llm_context_py_scripts_generate_llm_context_main",
+      "archive_ai_project_os_master_v5_scripts_generate_llm_context_py_scripts_generate_llm_context_read_section",
+      "archive_ai_project_os_master_v5_scripts_generate_llm_context_py_str"
+    ],
+    "65": [
+      "archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings",
+      "archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_max_thinking_tokens",
+      "archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions",
+      "archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_allow",
+      "archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_deny"
+    ],
+    "66": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_max_thinking_tokens",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_allow",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_deny"
+    ],
+    "67": [
+      "commands_community_gate",
+      "commands_spec_first",
+      "docs_ai_project_os_master_guide",
+      "docs_merge_audit",
+      "ungasis_layer_status"
+    ],
+    "68": [
+      "scripts_bootstrap_project_py_bool",
+      "scripts_bootstrap_project_py_path",
+      "scripts_bootstrap_project_py_scripts_bootstrap_project",
+      "scripts_bootstrap_project_py_scripts_bootstrap_project_main",
+      "scripts_bootstrap_project_py_scripts_bootstrap_project_should_edit"
+    ],
+    "69": [
+      "scripts_generate_llm_context_py_int",
+      "scripts_generate_llm_context_py_scripts_generate_llm_context",
+      "scripts_generate_llm_context_py_scripts_generate_llm_context_main",
+      "scripts_generate_llm_context_py_scripts_generate_llm_context_read_section",
+      "scripts_generate_llm_context_py_str"
+    ],
+    "70": [
+      "ungasis_archive_ai_project_os_master_v5_scripts_bootstrap_project_py_bool",
+      "ungasis_archive_ai_project_os_master_v5_scripts_bootstrap_project_py_path",
+      "ungasis_archive_ai_project_os_master_v5_scripts_bootstrap_project_py_scripts_bootstrap_project",
+      "ungasis_archive_ai_project_os_master_v5_scripts_bootstrap_project_py_scripts_bootstrap_project_main",
+      "ungasis_archive_ai_project_os_master_v5_scripts_bootstrap_project_py_scripts_bootstrap_project_should_edit"
+    ],
+    "71": [
+      "ungasis_archive_ai_project_os_master_v5_scripts_context_budget_check_py_int",
+      "ungasis_archive_ai_project_os_master_v5_scripts_context_budget_check_py_scripts_context_budget_check",
+      "ungasis_archive_ai_project_os_master_v5_scripts_context_budget_check_py_scripts_context_budget_check_estimate_tokens",
+      "ungasis_archive_ai_project_os_master_v5_scripts_context_budget_check_py_scripts_context_budget_check_main",
+      "ungasis_archive_ai_project_os_master_v5_scripts_context_budget_check_py_str"
+    ],
+    "72": [
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_llm_context_py_int",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_llm_context_py_scripts_generate_llm_context",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_llm_context_py_scripts_generate_llm_context_main",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_llm_context_py_scripts_generate_llm_context_read_section",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_llm_context_py_str"
+    ],
+    "73": [
+      "ungasis_archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings",
+      "ungasis_archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_max_thinking_tokens",
+      "ungasis_archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions",
+      "ungasis_archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_allow",
+      "ungasis_archive_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_deny"
+    ],
+    "74": [
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_max_thinking_tokens",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_allow",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_token_efficiency_agent_os_v4_token_efficiency_agent_os_v4_claude_settings_json_claude_settings_permissions_deny"
+    ],
+    "75": [
+      "ungasis_stack_lanes_lane_6_ai_assisted_code_vs_code_cline",
+      "ungasis_tool_stack_strategy_hybrid_strategy_lane_a_c",
+      "ungasis_tool_stack_strategy_lane_a_no_code_ai_builders",
+      "ungasis_tool_stack_strategy_lane_c_ai_assisted_coding",
+      "upgrade_paths_table"
+    ],
+    "76": [
+      "11_schema_contract_system_purpose",
+      "12_release_and_rollback_purpose",
+      "13_supply_chain_security_purpose",
+      "os_update_recommendation"
+    ],
+    "77": [
+      "archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example",
+      "archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example_permissions",
+      "archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example_permissions_ask",
+      "archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example_schema"
+    ],
+    "78": [
+      "blueprint_master",
+      "qa_mission_qa_mission",
+      "readme_readme",
+      "source_master_workflow"
+    ],
+    "79": [
+      "commands_context_engineer",
+      "commands_context_pack",
+      "docs_claude_code_current_notes",
+      "docs_karpathy_context_file"
+    ],
+    "80": [
+      "framework_kernel_frm_008",
+      "intelligence_kernel_int_001",
+      "llm_context_project_identity",
+      "templates_tools_ungasis_trace"
+    ],
+    "81": [
+      "github_workflow_security",
+      "simple_glossary_feynman_api_key",
+      "simple_glossary_feynman_secret",
+      "simple_glossary_feynman_token"
+    ],
+    "82": [
+      "orchestration_create_agent_worktrees",
+      "ungasis_archive_multi_agent_orchestration_kit_scripts_create_agent_worktrees_sh_scripts_create_agent_worktrees",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_create_agent_worktrees_sh_scripts_create_agent_worktrees",
+      "ungasis_multi_agents_kit_scripts_create_agent_worktrees_sh_scripts_create_agent_worktrees"
+    ],
+    "83": [
+      "prompt_01_first_message",
+      "prompt_07_context_compaction",
+      "template_project_brief",
+      "workflow_karpathy_context"
+    ],
+    "84": [
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example_permissions",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example_permissions_ask",
+      "ungasis_archive_ai_project_os_master_v5_claude_settings_local_example_json_claude_settings_local_example_schema"
+    ],
+    "85": [
+      "00a_project_instructions_baseline_lock_baseline",
+      "llm_context_context",
+      "version_manifest_manifest"
+    ],
+    "86": [
+      "agents_cross_agent_instructions",
+      "claude_claude_code_addendum",
+      "karpathy_principles_and_community_rules_principles_rules"
+    ],
+    "87": [
+      "archive_ai_project_os_master_v5_claude_agents_verification_runner",
+      "ungasis_guardrails",
+      "workflow_auto_verify"
+    ],
+    "88": [
+      "archive_ai_project_os_master_v5_scripts_generate_tree_py_path",
+      "archive_ai_project_os_master_v5_scripts_generate_tree_py_scripts_generate_tree",
+      "archive_ai_project_os_master_v5_scripts_generate_tree_py_scripts_generate_tree_walk"
+    ],
+    "89": [
+      "archive_multi_agent_orchestration_kit_scripts_verify_kit_sh_scripts_verify_kit",
+      "archive_multi_agent_orchestration_kit_scripts_verify_kit_sh_scripts_verify_kit_check",
+      "c_users_63905_downloads_ungasis_archive_multi_agent_orchestration_kit_scripts_verify_kit_sh__entry"
+    ],
+    "90": [
+      "archive_multi_agent_orchestration_kit_vscode_settings_json_vscode_settings",
+      "archive_multi_agent_orchestration_kit_vscode_settings_json_vscode_settings_editor_tabsize",
+      "archive_multi_agent_orchestration_kit_vscode_settings_json_vscode_settings_files_trimtrailingwhitespace"
+    ],
+    "91": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_verify_kit_sh_scripts_verify_kit",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_verify_kit_sh_scripts_verify_kit_check",
+      "c_users_63905_downloads_ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_verify_kit_sh__entry"
+    ],
+    "92": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_vscode_settings_json_vscode_settings",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_vscode_settings_json_vscode_settings_editor_tabsize",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_vscode_settings_json_vscode_settings_files_trimtrailingwhitespace"
+    ],
+    "93": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_scripts_check_readiness_py_scripts_check_readiness",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_scripts_check_readiness_py_scripts_check_readiness_main",
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_ungasis_production_readiness_pack_v1_ungasis_production_readiness_pack_v1_02_copy_to_your_project_root_scripts_check_readiness_py_scripts_check_readiness_walk_files"
+    ],
+    "94": [
+      "archive_ungasis_unified_lossless_repo_v3_scripts_check_readiness_py_scripts_check_readiness",
+      "archive_ungasis_unified_lossless_repo_v3_scripts_check_readiness_py_scripts_check_readiness_main",
+      "archive_ungasis_unified_lossless_repo_v3_scripts_check_readiness_py_scripts_check_readiness_walk_files"
+    ],
+    "95": [
+      "blueprints_chatgpt_ent",
+      "blueprints_m365_chatgpt",
+      "blueprints_readme"
+    ],
+    "96": [
+      "c_users_63905_downloads_ungasis_archive_ai_project_os_master_v5_claude_hooks_knowledge_index_check_sh__entry",
+      "c_users_63905_downloads_ungasis_ungasis_archive_ai_project_os_master_v5_claude_hooks_knowledge_index_check_sh__entry",
+      "knowledge_index_index"
+    ],
+    "97": [
+      "c_users_63905_downloads_ungasis_archive_ungasis_unified_lossless_repo_v3_scripts_orchestration_verify_kit_sh__entry",
+      "orchestration_verify_kit",
+      "orchestration_verify_kit_check"
+    ],
+    "98": [
+      "c_users_63905_downloads_ungasis_ungasis_archive_multi_agent_orchestration_kit_scripts_verify_kit_sh__entry",
+      "ungasis_archive_multi_agent_orchestration_kit_scripts_verify_kit_sh_scripts_verify_kit",
+      "ungasis_archive_multi_agent_orchestration_kit_scripts_verify_kit_sh_scripts_verify_kit_check"
+    ],
+    "99": [
+      "c_users_63905_downloads_ungasis_ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_verify_kit_sh__entry",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_verify_kit_sh_scripts_verify_kit",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_verify_kit_sh_scripts_verify_kit_check"
+    ],
+    "100": [
+      "c_users_63905_downloads_ungasis_ungasis_multi_agents_kit_scripts_verify_kit_sh__entry",
+      "ungasis_multi_agents_kit_scripts_verify_kit_sh_scripts_verify_kit",
+      "ungasis_multi_agents_kit_scripts_verify_kit_sh_scripts_verify_kit_check"
+    ],
+    "101": [
+      "github_workflow_ci",
+      "simple_glossary_feynman_ci",
+      "simple_glossary_feynman_github_actions"
+    ],
+    "102": [
+      "incident_report_incident",
+      "kill_switch_kill_switch",
+      "security_and_policy_security"
+    ],
+    "103": [
+      "runtime_safe_dry_run_orchestrator",
+      "runtime_safe_dry_run_orchestrator_log_event",
+      "runtime_safe_dry_run_orchestrator_main"
+    ],
+    "104": [
+      "scripts_generate_tree_py_path",
+      "scripts_generate_tree_py_scripts_generate_tree",
+      "scripts_generate_tree_py_scripts_generate_tree_walk"
+    ],
+    "105": [
+      "token_efficiency_agent_os_v4_codebase_mapper_md",
+      "token_efficiency_agent_os_v4_reviewer_md",
+      "token_efficiency_agent_os_v4_subagent_protocol_md"
+    ],
+    "106": [
+      "ungasis_ai_operating_model_model",
+      "ungasis_me_as_mvp_workflow_workflow",
+      "ungasis_sop_library_library"
+    ],
+    "107": [
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_tree_py_path",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_tree_py_scripts_generate_tree",
+      "ungasis_archive_ai_project_os_master_v5_scripts_generate_tree_py_scripts_generate_tree_walk"
+    ],
+    "108": [
+      "ungasis_archive_multi_agent_orchestration_kit_vscode_settings_json_vscode_settings",
+      "ungasis_archive_multi_agent_orchestration_kit_vscode_settings_json_vscode_settings_editor_tabsize",
+      "ungasis_archive_multi_agent_orchestration_kit_vscode_settings_json_vscode_settings_files_trimtrailingwhitespace"
+    ],
+    "109": [
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_vscode_settings_json_vscode_settings",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_vscode_settings_json_vscode_settings_editor_tabsize",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_vscode_settings_json_vscode_settings_files_trimtrailingwhitespace"
+    ],
+    "110": [
+      "ungasis_assembly_mission",
+      "ungasis_readme",
+      "unified_beginner_solopreneur_app_building_workflow_playbook_v3_playbook"
+    ],
+    "111": [
+      "ungasis_multi_agents_kit_vscode_settings_json_vscode_settings",
+      "ungasis_multi_agents_kit_vscode_settings_json_vscode_settings_editor_tabsize",
+      "ungasis_multi_agents_kit_vscode_settings_json_vscode_settings_files_trimtrailingwhitespace"
+    ],
+    "112": [
+      "ungasis_version_control_beginner_git_workflow",
+      "ungasis_version_control_git_basics",
+      "ungasis_version_control_gitignore_template"
+    ],
+    "113": [
+      "archive_ai_project_os_master_v5_claude_agents_auto_researcher",
+      "archive_ai_project_os_master_v5_claude_skills_auto_research_loop"
+    ],
+    "114": [
+      "archive_ai_project_os_master_v5_claude_hooks_block_dangerous_bash_sh_hooks_block_dangerous_bash",
+      "ungasis_archive_ai_project_os_master_v5_claude_hooks_block_dangerous_bash_sh_hooks_block_dangerous_bash"
+    ],
+    "115": [
+      "archive_ai_project_os_master_v5_claude_hooks_pre_commit_lint_sh_hooks_pre_commit_lint",
+      "c_users_63905_downloads_ungasis_archive_ai_project_os_master_v5_claude_hooks_pre_commit_lint_sh__entry"
+    ],
+    "116": [
+      "archive_multi_agent_orchestration_kit_scripts_create_sequential_issue_sh_scripts_create_sequential_issue",
+      "c_users_63905_downloads_ungasis_archive_multi_agent_orchestration_kit_scripts_create_sequential_issue_sh__entry"
+    ],
+    "117": [
+      "archive_multi_agent_orchestration_kit_scripts_init_labels_sh_scripts_init_labels",
+      "c_users_63905_downloads_ungasis_archive_multi_agent_orchestration_kit_scripts_init_labels_sh__entry"
+    ],
+    "118": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_create_sequential_issue_sh_scripts_create_sequential_issue",
+      "c_users_63905_downloads_ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_create_sequential_issue_sh__entry"
+    ],
+    "119": [
+      "archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_init_labels_sh_scripts_init_labels",
+      "c_users_63905_downloads_ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_init_labels_sh__entry"
+    ],
+    "120": [
+      "c_users_63905_downloads_ungasis_archive_ungasis_unified_lossless_repo_v3_scripts_orchestration_create_sequential_issue_sh__entry",
+      "orchestration_create_sequential_issue"
+    ],
+    "121": [
+      "c_users_63905_downloads_ungasis_archive_ungasis_unified_lossless_repo_v3_scripts_orchestration_init_labels_sh__entry",
+      "orchestration_init_labels"
+    ],
+    "122": [
+      "c_users_63905_downloads_ungasis_ungasis_archive_ai_project_os_master_v5_claude_hooks_pre_commit_lint_sh__entry",
+      "ungasis_archive_ai_project_os_master_v5_claude_hooks_pre_commit_lint_sh_hooks_pre_commit_lint"
+    ],
+    "123": [
+      "c_users_63905_downloads_ungasis_ungasis_archive_multi_agent_orchestration_kit_scripts_create_sequential_issue_sh__entry",
+      "ungasis_archive_multi_agent_orchestration_kit_scripts_create_sequential_issue_sh_scripts_create_sequential_issue"
+    ],
+    "124": [
+      "c_users_63905_downloads_ungasis_ungasis_archive_multi_agent_orchestration_kit_scripts_init_labels_sh__entry",
+      "ungasis_archive_multi_agent_orchestration_kit_scripts_init_labels_sh_scripts_init_labels"
+    ],
+    "125": [
+      "c_users_63905_downloads_ungasis_ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_create_sequential_issue_sh__entry",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_create_sequential_issue_sh_scripts_create_sequential_issue"
+    ],
+    "126": [
+      "c_users_63905_downloads_ungasis_ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_init_labels_sh__entry",
+      "ungasis_archive_ungasis_unified_lossless_repo_v3_02_extracted_originals_read_only_multi_agent_orchestration_kit_v4_scripts_init_labels_sh_scripts_init_labels"
+    ],
+    "127": [
+      "c_users_63905_downloads_ungasis_ungasis_multi_agents_kit_scripts_create_sequential_issue_sh__entry",
+      "ungasis_multi_agents_kit_scripts_create_sequential_issue_sh_scripts_create_sequential_issue"
+    ],
+    "128": [
+      "c_users_63905_downloads_ungasis_ungasis_multi_agents_kit_scripts_init_labels_sh__entry",
+      "ungasis_multi_agents_kit_scripts_init_labels_sh_scripts_init_labels"
+    ],
+    "129": [
+      "chatgpt_mvp_workflow_md",
+      "chatgpt_sop_library_md"
+    ],
+    "130": [
+      "clinerules_02_output_rules",
+      "clinerules_03_self_iteration"
+    ],
+    "131": [
+      "clinerules_02outputrules",
+      "clinerules_03selfiteration"
+    ],
+    "132": [
+      "clinerules_04_reflection_v3",
+      "clinerules_05_hygiene_v3"
+    ],
+    "133": [
+      "clinerules_04reflection",
+      "clinerules_05hygiene"
+    ],
+    "134": [
+      "commands_audit",
+      "rules_security"
+    ],
+    "135": [
+      "commands_auto_research",
+      "docs_auto_research_loop"
+    ],
+    "136": [
+      "commands_auto_verify",
+      "docs_auto_accept_self_verification"
+    ],
+    "137": [
+      "commands_plain_tool",
+      "docs_cross_functional_enablement"
+    ],
+    "138": [
+      "context_context",
+      "skill_session_handoff"
+    ],
+    "139": [
+      "context_engineering_discipline_context_discipline",
+      "llm_context_karpathy_context_file"
+    ],
+    "140": [
+      "docs_incident_response",
+      "observability_incident_response"
+    ],
+    "141": [
+      "failure_taxonomy_failures",
+      "graceful_degradation_degradation"
+    ],
+    "142": [
+      "framework_kernel_frm_002",
+      "intelligence_kernel_int_002"
+    ],
+    "143": [
+      "github",
+      "ungasis_backup_strategy"
+    ],
+    "144": [
+      "kill_switch_config",
+      "security_and_policy"
+    ],
+    "145": [
+      "knowledge_rules_naming",
+      "knowledge_wiki_readme"
+    ],
+    "146": [
+      "maintenance_manifest_tst_001",
+      "templates_tools_tpl_001"
+    ],
+    "147": [
+      "mcp_safety_safety",
+      "readme_mcp_safe_setup_setup"
+    ],
+    "148": [
+      "module_id_map_router_modules",
+      "version_manifest_lineage"
+    ],
+    "149": [
+      "module_writer_skill",
+      "new_module_workflow"
+    ],
+    "150": [
+      "new_video_coverage_audit_audit",
+      "video_lesson_capture_capture"
+    ],
+    "151": [
+      "package_check_report",
+      "package_manifest"
+    ],
+    "152": [
+      "reviewer_agent",
+      "skill_code_review"
+    ],
+    "153": [
+      "simple_glossary_feynman_agent",
+      "simple_glossary_feynman_orchestration"
+    ],
+    "154": [
+      "simple_glossary_feynman_branch",
+      "simple_glossary_feynman_pull_request"
+    ],
+    "155": [
+      "simple_glossary_feynman_least_privilege",
+      "simple_glossary_feynman_permission"
+    ],
+    "156": [
+      "simple_glossary_feynman_log",
+      "simple_glossary_feynman_run_id"
+    ],
+    "157": [
+      "simple_glossary_feynman_observability",
+      "simple_glossary_feynman_trace"
+    ],
+    "158": [
+      "simple_glossary_feynman_sbom",
+      "simple_glossary_feynman_supply_chain"
+    ],
+    "159": [
+      "test_commands_verify_template",
+      "worklog_master_template"
+    ],
+    "160": [
+      "ungasis_clinerules_04_reflection",
+      "ungasis_clinerules_05_hygiene"
+    ],
+    "161": [
+      "ungasis_unified_lossless_repo_v3_context_md",
+      "ungasis_unified_lossless_repo_v3_memory_md"
+    ],
+    "162": [
+      "02_project_discovery_project_discovery"
+    ],
+    "163": [
+      "04_plan_before_code_plan_before_code"
+    ],
+    "164": [
+      "05_implement_small_patch_implement_small_patch"
+    ],
+    "165": [
+      "06_verify_and_review_verify_and_review"
+    ],
+    "166": [
+      "08_parallel_agents_parallel_agents"
+    ],
+    "167": [
+      "09_automation_routines_automation_routines"
+    ],
+    "168": [
+      "09_connector_permission_registry_md"
+    ],
+    "169": [
+      "10_observability_and_incident_response_md"
+    ],
+    "170": [
+      "10_video_lesson_extractor_video_lesson_extractor"
+    ],
+    "171": [
+      "11_schema_contract_system_md"
+    ],
+    "172": [
+      "11_transcript_to_project_os_patch_transcript_to_project_os_patch"
+    ],
+    "173": [
+      "12_release_and_rollback_md"
+    ],
+    "174": [
+      "13_supply_chain_security_md"
+    ],
+    "175": [
+      "14_growth_experiment_operator_growth_experiment_operator"
+    ],
+    "176": [
+      "15_context_engineering_audit_context_engineering_audit"
+    ],
+    "177": [
+      "16_knowledge_ingestion_knowledge_ingestion"
+    ],
+    "178": [
+      "17_spec_driven_feature_builder_spec_driven_feature_builder"
+    ],
+    "179": [
+      "18_autonomous_verify_loop_autonomous_verify_loop"
+    ],
+    "180": [
+      "19_auto_research_loop_auto_research_loop"
+    ],
+    "181": [
+      "20_plain_text_tool_builder_plain_text_tool_builder"
+    ],
+    "182": [
+      "app_intent_product_north_star"
+    ],
+    "183": [
+      "archive_ai_project_os_master_v5_changelog"
+    ],
+    "184": [
+      "archive_ai_project_os_master_v5_claude_agents_architecture_reviewer"
+    ],
+    "185": [
+      "archive_ai_project_os_master_v5_claude_agents_code_implementer"
+    ],
+    "186": [
+      "archive_ai_project_os_master_v5_claude_agents_code_reviewer"
+    ],
+    "187": [
+      "archive_ai_project_os_master_v5_claude_agents_context_curator"
+    ],
+    "188": [
+      "archive_ai_project_os_master_v5_claude_agents_context_engineer"
+    ],
+    "189": [
+      "archive_ai_project_os_master_v5_claude_agents_context_packager"
+    ],
+    "190": [
+      "archive_ai_project_os_master_v5_claude_agents_cross_functional_translator"
+    ],
+    "191": [
+      "archive_ai_project_os_master_v5_claude_agents_debugger"
+    ],
+    "192": [
+      "archive_ai_project_os_master_v5_claude_agents_design_reviewer"
+    ],
+    "193": [
+      "archive_ai_project_os_master_v5_claude_agents_docs_maintainer"
+    ],
+    "194": [
+      "archive_ai_project_os_master_v5_claude_agents_growth_operator"
+    ],
+    "195": [
+      "archive_ai_project_os_master_v5_claude_agents_knowledge_librarian"
+    ],
+    "196": [
+      "archive_ai_project_os_master_v5_claude_agents_product_planner"
+    ],
+    "197": [
+      "archive_ai_project_os_master_v5_claude_agents_research_scout"
+    ],
+    "198": [
+      "archive_ai_project_os_master_v5_claude_agents_security_reviewer"
+    ],
+    "199": [
+      "archive_ai_project_os_master_v5_claude_agents_spec_architect"
+    ],
+    "200": [
+      "archive_ai_project_os_master_v5_claude_agents_test_reviewer"
+    ],
+    "201": [
+      "archive_ai_project_os_master_v5_claude_skills_automation_candidates"
+    ],
+    "202": [
+      "archive_ai_project_os_master_v5_claude_skills_code_generator"
+    ],
+    "203": [
+      "archive_ai_project_os_master_v5_claude_skills_code_review"
+    ],
+    "204": [
+      "archive_ai_project_os_master_v5_claude_skills_community_safety_gate"
+    ],
+    "205": [
+      "archive_ai_project_os_master_v5_claude_skills_context_engineering"
+    ],
+    "206": [
+      "archive_ai_project_os_master_v5_claude_skills_context_handoff"
+    ],
+    "207": [
+      "archive_ai_project_os_master_v5_claude_skills_cross_functional_tool_builder"
+    ],
+    "208": [
+      "archive_ai_project_os_master_v5_claude_skills_debug_one_bug"
+    ],
+    "209": [
+      "archive_ai_project_os_master_v5_claude_skills_documentation_refresh"
+    ],
+    "210": [
+      "archive_ai_project_os_master_v5_claude_skills_implementation_loop"
+    ],
+    "211": [
+      "archive_ai_project_os_master_v5_claude_skills_improve_system"
+    ],
+    "212": [
+      "archive_ai_project_os_master_v5_claude_skills_karpathy_context_file"
+    ],
+    "213": [
+      "archive_ai_project_os_master_v5_claude_skills_knowledge_librarian"
+    ],
+    "214": [
+      "archive_ai_project_os_master_v5_claude_skills_plan_and_scope"
+    ],
+    "215": [
+      "archive_ai_project_os_master_v5_claude_skills_project_kickoff"
+    ],
+    "216": [
+      "archive_ai_project_os_master_v5_claude_skills_research_to_code"
+    ],
+    "217": [
+      "archive_ai_project_os_master_v5_claude_skills_session_closer"
+    ],
+    "218": [
+      "archive_ai_project_os_master_v5_claude_skills_spec_driven_development"
+    ],
+    "219": [
+      "archive_ai_project_os_master_v5_claude_skills_spec_first_builder"
+    ],
+    "220": [
+      "archive_ai_project_os_master_v5_claude_skills_verify_and_test"
+    ],
+    "221": [
+      "archive_ai_project_os_master_v5_claude_skills_video_lesson_extractor"
+    ],
+    "222": [
+      "archive_chatgpt_ent_archive_ungasis_prompt_engineering"
+    ],
+    "223": [
+      "chatgpt_feature_router_md"
+    ],
+    "224": [
+      "chatgpt_glossary_md"
+    ],
+    "225": [
+      "chatgpt_operating_model_md"
+    ],
+    "226": [
+      "chatgpt_prompt_engineering_md"
+    ],
+    "227": [
+      "chatgpt_prompt_library_md"
+    ],
+    "228": [
+      "clinerules_00_identity"
+    ],
+    "229": [
+      "code_review_skill"
+    ],
+    "230": [
+      "codebase_mapper"
+    ],
+    "231": [
+      "commands_debug"
+    ],
+    "232": [
+      "commands_document"
+    ],
+    "233": [
+      "commands_handoff"
+    ],
+    "234": [
+      "commands_knowledge_ingest"
+    ],
+    "235": [
+      "commands_plan"
+    ],
+    "236": [
+      "commands_refactor"
+    ],
+    "237": [
+      "commands_review"
+    ],
+    "238": [
+      "commands_ship"
+    ],
+    "239": [
+      "commands_verify"
+    ],
+    "240": [
+      "commands_wiki_update"
+    ],
+    "241": [
+      "config_kill_switch"
+    ],
+    "242": [
+      "config_rate_limit_budget"
+    ],
+    "243": [
+      "connector_registry_example"
+    ],
+    "244": [
+      "context_decisions"
+    ],
+    "245": [
+      "context_domain"
+    ],
+    "246": [
+      "context_engineering_loop"
+    ],
+    "247": [
+      "context_glossary"
+    ],
+    "248": [
+      "context_pack_skill"
+    ],
+    "249": [
+      "context_readme"
+    ],
+    "250": [
+      "context_stack"
+    ],
+    "251": [
+      "context_user_profile"
+    ],
+    "252": [
+      "continuous_improvement"
+    ],
+    "253": [
+      "contributing_rules"
+    ],
+    "254": [
+      "copilot_instructions"
+    ],
+    "255": [
+      "copilot_instructions_github_copilot_instructions"
+    ],
+    "256": [
+      "cross_functional_tool_loop"
+    ],
+    "257": [
+      "daily_session"
+    ],
+    "258": [
+      "device_sync_workflow"
+    ],
+    "259": [
+      "docs_connector_registry"
+    ],
+    "260": [
+      "docs_decision_log"
+    ],
+    "261": [
+      "docs_eval_harness_guide"
+    ],
+    "262": [
+      "docs_known_gaps"
+    ],
+    "263": [
+      "docs_release_and_rollback"
+    ],
+    "264": [
+      "docs_source_notes"
+    ],
+    "265": [
+      "docs_threat_model"
+    ],
+    "266": [
+      "final_readiness_audit"
+    ],
+    "267": [
+      "framework_kernel_frm_001"
+    ],
+    "268": [
+      "graceful_degradation_config"
+    ],
+    "269": [
+      "growth_experiment_loop"
+    ],
+    "270": [
+      "incident_response_md"
+    ],
+    "271": [
+      "knowledge_base_librarian_loop"
+    ],
+    "272": [
+      "llm_knowledge_base_knowledge_base"
+    ],
+    "273": [
+      "me_as_mvp_workflow"
+    ],
+    "274": [
+      "memory_knowledge_guardrails_memory_capture"
+    ],
+    "275": [
+      "model_routing_routing_table"
+    ],
+    "276": [
+      "orchestration_policy"
+    ],
+    "277": [
+      "orchestration_policy_policy"
+    ],
+    "278": [
+      "parallel_agents"
+    ],
+    "279": [
+      "permission_matrix_md"
+    ],
+    "280": [
+      "permission_profiles"
+    ],
+    "281": [
+      "project_kickoff"
+    ],
+    "282": [
+      "qa_test_plan_md"
+    ],
+    "283": [
+      "quality_bar_bar"
+    ],
+    "284": [
+      "readiness_levels_config"
+    ],
+    "285": [
+      "readiness_levels_md"
+    ],
+    "286": [
+      "research_to_code_skill"
+    ],
+    "287": [
+      "research_to_decision"
+    ],
+    "288": [
+      "risk_and_safety_safety"
+    ],
+    "289": [
+      "rules_ai_workflow"
+    ],
+    "290": [
+      "rules_api_conventions"
+    ],
+    "291": [
+      "rules_code_style"
+    ],
+    "292": [
+      "rules_documentation"
+    ],
+    "293": [
+      "rules_testing"
+    ],
+    "294": [
+      "runbook_md"
+    ],
+    "295": [
+      "schema_contract_system_module"
+    ],
+    "296": [
+      "scripts_check_lossless_merge_v3"
+    ],
+    "297": [
+      "scripts_final_readiness_audit"
+    ],
+    "298": [
+      "scripts_readme"
+    ],
+    "299": [
+      "scripts_run_all_checks"
+    ],
+    "300": [
+      "security_policy"
+    ],
+    "301": [
+      "session_summary_summary"
+    ],
+    "302": [
+      "simple_glossary_feynman_artifact"
+    ],
+    "303": [
+      "simple_glossary_feynman_codeowners"
+    ],
+    "304": [
+      "simple_glossary_feynman_commit"
+    ],
+    "305": [
+      "simple_glossary_feynman_config"
+    ],
+    "306": [
+      "simple_glossary_feynman_dependency"
+    ],
+    "307": [
+      "simple_glossary_feynman_environment_variable"
+    ],
+    "308": [
+      "simple_glossary_feynman_excessive_agency"
+    ],
+    "309": [
+      "simple_glossary_feynman_human_approval_gate"
+    ],
+    "310": [
+      "simple_glossary_feynman_json"
+    ],
+    "311": [
+      "simple_glossary_feynman_metric"
+    ],
+    "312": [
+      "simple_glossary_feynman_monitoring"
+    ],
+    "313": [
+      "simple_glossary_feynman_placeholder"
+    ],
+    "314": [
+      "simple_glossary_feynman_prompt_injection"
+    ],
+    "315": [
+      "simple_glossary_feynman_red_team_test"
+    ],
+    "316": [
+      "simple_glossary_feynman_release"
+    ],
+    "317": [
+      "simple_glossary_feynman_repository"
+    ],
+    "318": [
+      "simple_glossary_feynman_risk"
+    ],
+    "319": [
+      "simple_glossary_feynman_rollback"
+    ],
+    "320": [
+      "simple_glossary_feynman_runtime"
+    ],
+    "321": [
+      "simple_glossary_feynman_schema"
+    ],
+    "322": [
+      "simple_glossary_feynman_script"
+    ],
+    "323": [
+      "simple_glossary_feynman_smoke_test"
+    ],
+    "324": [
+      "simple_glossary_feynman_workflow"
+    ],
+    "325": [
+      "simple_glossary_feynman_yaml"
+    ],
+    "326": [
+      "skill_debug_one_bug"
+    ],
+    "327": [
+      "skill_research_to_code"
+    ],
+    "328": [
+      "source_fidelity_fidelity"
+    ],
+    "329": [
+      "source_notes_agent_skills_context"
+    ],
+    "330": [
+      "source_notes_aider_conventions"
+    ],
+    "331": [
+      "source_notes_anthropic_claude_code"
+    ],
+    "332": [
+      "source_notes_anthropic_claudeignore"
+    ],
+    "333": [
+      "source_notes_awesome_copilot"
+    ],
+    "334": [
+      "source_notes_bezkoder_design"
+    ],
+    "335": [
+      "source_notes_claude_code_wiki"
+    ],
+    "336": [
+      "source_notes_claudecodelab_techniques"
+    ],
+    "337": [
+      "source_notes_cline_docs"
+    ],
+    "338": [
+      "source_notes_computingforgeeks_token"
+    ],
+    "339": [
+      "source_notes_cursor_mdc_docs"
+    ],
+    "340": [
+      "source_notes_factory_ai_compression"
+    ],
+    "341": [
+      "source_notes_geeky_gadgets_token"
+    ],
+    "342": [
+      "source_notes_github_copilot_spaces"
+    ],
+    "343": [
+      "source_notes_github_token_efficiency"
+    ],
+    "344": [
+      "source_notes_graphify"
+    ],
+    "345": [
+      "source_notes_martin_fowler_context"
+    ],
+    "346": [
+      "source_notes_martin_fowler_harness"
+    ],
+    "347": [
+      "source_notes_microsoft_token_consumption"
+    ],
+    "348": [
+      "source_notes_morphllm"
+    ],
+    "349": [
+      "source_notes_repomix"
+    ],
+    "350": [
+      "source_notes_roborhythms"
+    ],
+    "351": [
+      "source_notes_swe_rebench"
+    ],
+    "352": [
+      "source_notes_token_optimisation_101"
+    ],
+    "353": [
+      "spec_driven_development_os_spec_first_workflow"
+    ],
+    "354": [
+      "spec_driven_feature_loop"
+    ],
+    "355": [
+      "subagent_protocol_protocol"
+    ],
+    "356": [
+      "supply_chain_security_module"
+    ],
+    "357": [
+      "task_board_t001"
+    ],
+    "358": [
+      "task_board_t002"
+    ],
+    "359": [
+      "task_board_t003"
+    ],
+    "360": [
+      "task_board_t004"
+    ],
+    "361": [
+      "task_board_t005"
+    ],
+    "362": [
+      "task_board_t006"
+    ],
+    "363": [
+      "task_handoff_handoff"
+    ],
+    "364": [
+      "temp_v3_visual_wiki_guide_4_html"
+    ],
+    "365": [
+      "temp_v3_visual_wiki_guide_5_html"
+    ],
+    "366": [
+      "test_commands_commands"
+    ],
+    "367": [
+      "tests_golden_permission_check"
+    ],
+    "368": [
+      "tests_golden_safe_summary"
+    ],
+    "369": [
+      "tests_manual_smoke_tests"
+    ],
+    "370": [
+      "tests_redteam_delete_data"
+    ],
+    "371": [
+      "tests_redteam_ignore_rules"
+    ],
+    "372": [
+      "token_efficiency_agent_os_v4_agents_md"
+    ],
+    "373": [
+      "token_efficiency_agent_os_v4_context_budget_md"
+    ],
+    "374": [
+      "token_efficiency_agent_os_v4_model_routing_md"
+    ],
+    "375": [
+      "token_efficiency_agent_os_v4_project_brief_md"
+    ],
+    "376": [
+      "token_efficiency_agent_os_v4_source_notes_md"
+    ],
+    "377": [
+      "token_efficiency_agent_os_v4_task_handoff_md"
+    ],
+    "378": [
+      "token_efficiency_agent_os_v4_test_commands_md"
+    ],
+    "379": [
+      "ungasis_baseline_lock"
+    ],
+    "380": [
+      "ungasis_core_module_id_map"
+    ],
+    "381": [
+      "ungasis_core_reset_checklist"
+    ],
+    "382": [
+      "ungasis_design_checklist_r1"
+    ],
+    "383": [
+      "ungasis_failure_taxonomy_md"
+    ],
+    "384": [
+      "ungasis_llms_txt"
+    ],
+    "385": [
+      "ungasis_memory"
+    ],
+    "386": [
+      "ungasis_readiness_ci"
+    ],
+    "387": [
+      "ungasis_sop_library_sop01"
+    ],
+    "388": [
+      "ungasis_sop_library_sop02"
+    ],
+    "389": [
+      "ungasis_sop_library_sop03"
+    ],
+    "390": [
+      "ungasis_sop_library_sop04"
+    ],
+    "391": [
+      "ungasis_sop_library_sop05"
+    ],
+    "392": [
+      "ungasis_sop_library_sop06"
+    ],
+    "393": [
+      "ungasis_sop_library_sop07"
+    ],
+    "394": [
+      "ungasis_sop_library_sop08"
+    ],
+    "395": [
+      "ungasis_stack_lanes_lane_2_m365_copilot_command_center"
+    ],
+    "396": [
+      "ungasis_stack_lanes_lane_3_m365_power_platform"
+    ],
+    "397": [
+      "ungasis_tool_stack_strategy_pick_one_per_job_rule"
+    ],
+    "398": [
+      "version_manifest_patch"
+    ]
+  },
+  "cohesion": {
+    "0": 0.053939714436805924,
+    "1": 0.06560283687943262,
+    "2": 0.056429232192414434,
+    "3": 0.08602150537634409,
+    "4": 0.07692307692307693,
+    "5": 0.09401709401709402,
+    "6": 0.2676923076923077,
+    "7": 0.12666666666666668,
+    "8": 0.1736842105263158,
+    "9": 0.10526315789473684,
+    "10": 0.23529411764705882,
+    "11": 0.22058823529411764,
+    "12": 0.19166666666666668,
+    "13": 0.225,
+    "14": 0.225,
+    "15": 0.19166666666666668,
+    "16": 0.19166666666666668,
+    "17": 0.1523809523809524,
+    "18": 0.2857142857142857,
+    "19": 0.13333333333333333,
+    "20": 0.26666666666666666,
+    "21": 0.23809523809523808,
+    "22": 0.2857142857142857,
+    "23": 0.2857142857142857,
+    "24": 0.15384615384615385,
+    "25": 0.23076923076923078,
+    "26": 0.24358974358974358,
+    "27": 0.23636363636363636,
+    "28": 0.2545454545454545,
+    "29": 0.3090909090909091,
+    "30": 0.2909090909090909,
+    "31": 0.3055555555555556,
+    "32": 0.2777777777777778,
+    "33": 0.2222222222222222,
+    "34": 0.2222222222222222,
+    "35": 0.2222222222222222,
+    "36": 0.3055555555555556,
+    "37": 0.2222222222222222,
+    "38": 0.2222222222222222,
+    "39": 0.2222222222222222,
+    "40": 0.32142857142857145,
+    "41": 0.32142857142857145,
+    "42": 0.32142857142857145,
+    "43": 0.25,
+    "44": 0.32142857142857145,
+    "45": 0.32142857142857145,
+    "46": 0.32142857142857145,
+    "47": 0.2857142857142857,
+    "48": 0.2857142857142857,
+    "49": 0.2857142857142857,
+    "50": 0.2857142857142857,
+    "51": 0.3333333333333333,
+    "52": 0.2857142857142857,
+    "53": 0.2857142857142857,
+    "54": 0.4666666666666667,
+    "55": 0.3333333333333333,
+    "56": 0.6,
+    "57": 0.3333333333333333,
+    "58": 0.3333333333333333,
+    "59": 0.4666666666666667,
+    "60": 0.4666666666666667,
+    "61": 0.3333333333333333,
+    "62": 0.5,
+    "63": 0.5,
+    "64": 0.5,
+    "65": 0.4,
+    "66": 0.4,
+    "67": 0.4,
+    "68": 0.5,
+    "69": 0.5,
+    "70": 0.5,
+    "71": 0.5,
+    "72": 0.5,
+    "73": 0.4,
+    "74": 0.4,
+    "75": 0.4,
+    "76": 0.5,
+    "77": 0.5,
+    "78": 0.5,
+    "79": 0.5,
+    "80": 0.5,
+    "81": 0.5,
+    "82": 0.5,
+    "83": 0.5,
+    "84": 0.5,
+    "85": 0.6666666666666666,
+    "86": 0.6666666666666666,
+    "87": 0.6666666666666666,
+    "88": 0.6666666666666666,
+    "89": 1.0,
+    "90": 0.6666666666666666,
+    "91": 1.0,
+    "92": 0.6666666666666666,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 0.6666666666666666,
+    "96": 0.6666666666666666,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 0.6666666666666666,
+    "102": 0.6666666666666666,
+    "103": 1.0,
+    "104": 0.6666666666666666,
+    "105": 0.6666666666666666,
+    "106": 0.6666666666666666,
+    "107": 0.6666666666666666,
+    "108": 0.6666666666666666,
+    "109": 0.6666666666666666,
+    "110": 0.6666666666666666,
+    "111": 0.6666666666666666,
+    "112": 0.6666666666666666,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0,
+    "222": 1.0,
+    "223": 1.0,
+    "224": 1.0,
+    "225": 1.0,
+    "226": 1.0,
+    "227": 1.0,
+    "228": 1.0,
+    "229": 1.0,
+    "230": 1.0,
+    "231": 1.0,
+    "232": 1.0,
+    "233": 1.0,
+    "234": 1.0,
+    "235": 1.0,
+    "236": 1.0,
+    "237": 1.0,
+    "238": 1.0,
+    "239": 1.0,
+    "240": 1.0,
+    "241": 1.0,
+    "242": 1.0,
+    "243": 1.0,
+    "244": 1.0,
+    "245": 1.0,
+    "246": 1.0,
+    "247": 1.0,
+    "248": 1.0,
+    "249": 1.0,
+    "250": 1.0,
+    "251": 1.0,
+    "252": 1.0,
+    "253": 1.0,
+    "254": 1.0,
+    "255": 1.0,
+    "256": 1.0,
+    "257": 1.0,
+    "258": 1.0,
+    "259": 1.0,
+    "260": 1.0,
+    "261": 1.0,
+    "262": 1.0,
+    "263": 1.0,
+    "264": 1.0,
+    "265": 1.0,
+    "266": 1.0,
+    "267": 1.0,
+    "268": 1.0,
+    "269": 1.0,
+    "270": 1.0,
+    "271": 1.0,
+    "272": 1.0,
+    "273": 1.0,
+    "274": 1.0,
+    "275": 1.0,
+    "276": 1.0,
+    "277": 1.0,
+    "278": 1.0,
+    "279": 1.0,
+    "280": 1.0,
+    "281": 1.0,
+    "282": 1.0,
+    "283": 1.0,
+    "284": 1.0,
+    "285": 1.0,
+    "286": 1.0,
+    "287": 1.0,
+    "288": 1.0,
+    "289": 1.0,
+    "290": 1.0,
+    "291": 1.0,
+    "292": 1.0,
+    "293": 1.0,
+    "294": 1.0,
+    "295": 1.0,
+    "296": 1.0,
+    "297": 1.0,
+    "298": 1.0,
+    "299": 1.0,
+    "300": 1.0,
+    "301": 1.0,
+    "302": 1.0,
+    "303": 1.0,
+    "304": 1.0,
+    "305": 1.0,
+    "306": 1.0,
+    "307": 1.0,
+    "308": 1.0,
+    "309": 1.0,
+    "310": 1.0,
+    "311": 1.0,
+    "312": 1.0,
+    "313": 1.0,
+    "314": 1.0,
+    "315": 1.0,
+    "316": 1.0,
+    "317": 1.0,
+    "318": 1.0,
+    "319": 1.0,
+    "320": 1.0,
+    "321": 1.0,
+    "322": 1.0,
+    "323": 1.0,
+    "324": 1.0,
+    "325": 1.0,
+    "326": 1.0,
+    "327": 1.0,
+    "328": 1.0,
+    "329": 1.0,
+    "330": 1.0,
+    "331": 1.0,
+    "332": 1.0,
+    "333": 1.0,
+    "334": 1.0,
+    "335": 1.0,
+    "336": 1.0,
+    "337": 1.0,
+    "338": 1.0,
+    "339": 1.0,
+    "340": 1.0,
+    "341": 1.0,
+    "342": 1.0,
+    "343": 1.0,
+    "344": 1.0,
+    "345": 1.0,
+    "346": 1.0,
+    "347": 1.0,
+    "348": 1.0,
+    "349": 1.0,
+    "350": 1.0,
+    "351": 1.0,
+    "352": 1.0,
+    "353": 1.0,
+    "354": 1.0,
+    "355": 1.0,
+    "356": 1.0,
+    "357": 1.0,
+    "358": 1.0,
+    "359": 1.0,
+    "360": 1.0,
+    "361": 1.0,
+    "362": 1.0,
+    "363": 1.0,
+    "364": 1.0,
+    "365": 1.0,
+    "366": 1.0,
+    "367": 1.0,
+    "368": 1.0,
+    "369": 1.0,
+    "370": 1.0,
+    "371": 1.0,
+    "372": 1.0,
+    "373": 1.0,
+    "374": 1.0,
+    "375": 1.0,
+    "376": 1.0,
+    "377": 1.0,
+    "378": 1.0,
+    "379": 1.0,
+    "380": 1.0,
+    "381": 1.0,
+    "382": 1.0,
+    "383": 1.0,
+    "384": 1.0,
+    "385": 1.0,
+    "386": 1.0,
+    "387": 1.0,
+    "388": 1.0,
+    "389": 1.0,
+    "390": 1.0,
+    "391": 1.0,
+    "392": 1.0,
+    "393": 1.0,
+    "394": 1.0,
+    "395": 1.0,
+    "396": 1.0,
+    "397": 1.0,
+    "398": 1.0
+  },
+  "gods": [
+    {
+      "id": "scripts_validate_repo_add_error",
+      "label": "add_error()",
+      "degree": 15
+    },
+    {
+      "id": "scripts_validate_repo_read_text",
+      "label": "read_text()",
+      "degree": 14
+    },
+    {
+      "id": "scripts_validate_repo_main",
+      "label": "main()",
+      "degree": 14
+    },
+    {
+      "id": "scripts_validate_repo_rel",
+      "label": "rel()",
+      "degree": 12
+    },
+    {
+      "id": "memory_bank_clinerules_memory_bank",
+      "label": "Cline Memory Bank Instructions",
+      "degree": 11
+    },
+    {
+      "id": "archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_main",
+      "label": "main()",
+      "degree": 10
+    },
+    {
+      "id": "scripts_verify_template_py_scripts_verify_template_main",
+      "label": "main()",
+      "degree": 10
+    },
+    {
+      "id": "ungasis_archive_ai_project_os_master_v5_scripts_verify_template_py_scripts_verify_template_main",
+      "label": "main()",
+      "degree": 10
+    },
+    {
+      "id": "cross_reference_bridge_md",
+      "label": "Cross-Reference Bridge",
+      "degree": 10
+    },
+    {
+      "id": "archive_ai_project_os_master_v5_repo_template_json_ai_project_os_master_v5_repo_template_source_of_truth",
+      "label": "source_of_truth",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "UNGASIS 30-Day Roadmap",
+      "target": "Me as MVP Workflow",
+      "source_files": [
+        "archive/m365_copilot_chatgpt/ungasis-30day-roadmap.md",
+        "ungasis/archive/chatgpt_ent/ungasis-me-as-mvp-workflow.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Specs Artifacts",
+      "target": "Acceptance Template",
+      "source_files": [
+        "archive/ai_project_os_master_v5/specs/README.md",
+        "specs/_template/acceptance.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Acceptance Template` unexpectedly reaches hub `Specs Artifacts`"
+    },
+    {
+      "source": "Specs Artifacts",
+      "target": "Design Template",
+      "source_files": [
+        "archive/ai_project_os_master_v5/specs/README.md",
+        "specs/_template/design.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Design Template` unexpectedly reaches hub `Specs Artifacts`"
+    },
+    {
+      "source": "Specs Artifacts",
+      "target": "Requirements Template",
+      "source_files": [
+        "archive/ai_project_os_master_v5/specs/README.md",
+        "specs/_template/requirements.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Requirements Template` unexpectedly reaches hub `Specs Artifacts`"
+    },
+    {
+      "source": "Specs Artifacts",
+      "target": "Tasks Template",
+      "source_files": [
+        "archive/ai_project_os_master_v5/specs/README.md",
+        "specs/_template/tasks.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Tasks Template` unexpectedly reaches hub `Specs Artifacts`"
+    }
+  ],
+  "tokens": {
+    "input": 269450,
+    "output": 36214
+  }
+}

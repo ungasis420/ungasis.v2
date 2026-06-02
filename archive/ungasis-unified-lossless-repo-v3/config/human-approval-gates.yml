@@ -1,0 +1,22 @@
+approval_gates:
+  must_ask_before:
+    - delete_files
+    - edit_many_files
+    - run_shell_commands
+    - send_messages
+    - change_permissions
+    - update_records
+    - submit_forms
+    - publish_public_content
+    - connect_external_service
+    - access_sensitive_data
+    - move_money
+    - legal_or_medical_or_financial_action
+  approval_record_must_include:
+    - approver_name
+    - date_time
+    - action_requested
+    - risk_level
+    - files_or_systems_affected
+    - rollback_plan
+  default_answer_without_approval: "Do not run. Prepare a draft only."

@@ -1,0 +1,21 @@
+# Analogy: EditorConfig is like a restaurant kitchen uniform rulebook.
+# It makes sure everyone chops vegetables to the same size (indentation size) and keeps
+# the workstation clean in the exact same way, no matter which chef is on duty.
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.yml]
+indent_size = 2
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

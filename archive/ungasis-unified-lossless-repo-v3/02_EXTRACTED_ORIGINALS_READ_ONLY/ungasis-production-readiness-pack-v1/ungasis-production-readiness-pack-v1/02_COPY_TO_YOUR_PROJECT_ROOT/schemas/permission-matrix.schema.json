@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Permission Matrix",
+  "type": "object",
+  "required": [
+    "actors"
+  ],
+  "properties": {
+    "actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "actor",
+          "can_read",
+          "can_draft",
+          "can_write",
+          "can_delete",
+          "can_send",
+          "approval_needed"
+        ],
+        "properties": {
+          "actor": {
+            "type": "string"
+          },
+          "can_read": {
+            "type": "boolean"
+          },
+          "can_draft": {
+            "type": "boolean"
+          },
+          "can_write": {
+            "type": "boolean"
+          },
+          "can_delete": {
+            "type": "boolean"
+          },
+          "can_send": {
+            "type": "boolean"
+          },
+          "approval_needed": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

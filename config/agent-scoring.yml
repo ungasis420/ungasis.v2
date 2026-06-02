@@ -1,0 +1,40 @@
+# Analogy: Agent scoring is like a restaurant health inspection report.
+# - Just like inspectors score a kitchen on cleanliness, food storage, and hygiene, we score our agents on
+#   task completion, code quality, token efficiency, and safety.
+# - Grade A is a clean bill of health (serve food/deploy code immediately).
+# - Grade F means shut down the restaurant (stop execution and escalate to Mel).
+
+agent_scoring:
+  # metrics: The performance areas we grade, with their relative weights (adding up to 100).
+  metrics:
+    # task_completion: Did the agent actually finish what was asked? (40% weight - most important!)
+    task_completion:
+      weight: 40
+      description: "Did the agent finish the task?"
+    # code_quality: Is the output written clean, correct, and matching our coding guidelines?
+    code_quality:
+      weight: 25
+      description: "Is the output clean, correct, and following standards?"
+    # token_efficiency: Did the agent save tokens (mana) and not repeat actions?
+    token_efficiency:
+      weight: 20
+      description: "Did the agent use tokens wisely (not repeat, not over-generate)?"
+    # safety_compliance: Did the agent check the safety rules (read before write)?
+    safety_compliance:
+      weight: 15
+      description: "Did the agent follow safety gates and read-before-write?"
+
+  # grading: The final grade ranges and what action we take next.
+  grading:
+    # A (90-100): Excellent work. Ready to launch.
+    A: "90-100 — Excellent, deploy immediately"
+    # B (75-89): Good work, requires small checks.
+    B: "75-89 — Good, minor review needed"
+    # C (60-74): Works, but needs minor cleanup by Mel.
+    C: "60-74 — Acceptable, needs human cleanup"
+    # D (40-59): Poor quality. We should throw it out and try a different model/prompt.
+    D: "40-59 — Poor, redo with different model or approach"
+    # F (0-39): Failed. Stop immediately and call the manager (Mel).
+    F: "0-39 — Failed, escalate to human"
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

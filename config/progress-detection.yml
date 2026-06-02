@@ -1,0 +1,24 @@
+# Analogy: Progress detection is like a smart kitchen timer.
+# - If the chef keeps stirring the same pot over and over (repeater), the timer beeps to suggest
+#   adding a new ingredient (injecting fresh context) to help them move forward.
+# - If the chef wanders off to clean tables instead of cooking the meal (wanderer), the timer
+#   reminds them to get back to their cooking station (force refocus on the original task).
+
+progress_detection:
+  # repeater: Detection rules for an agent that gets stuck in a loop.
+  repeater:
+    # threshold: The number of times the agent repeats the same command or edit.
+    threshold: 3
+    # action: What we do when stuck. We give the agent fresh context and guidance.
+    action: inject_context
+    description: "If agent repeats same action 3 times, inject fresh context"
+
+  # wanderer: Detection rules for an agent that drifts off-topic.
+  wanderer:
+    # max_off_topic: The maximum number of actions/files edited outside the task scope.
+    max_off_topic: 5
+    # action: What we do. We force the agent to re-read the original goal and focus.
+    action: refocus
+    description: "If agent goes off-topic 5 times, force refocus on original task"
+
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

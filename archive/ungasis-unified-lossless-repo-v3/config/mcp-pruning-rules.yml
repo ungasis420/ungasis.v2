@@ -1,0 +1,38 @@
+version: "1.0"
+default_mode: "least_privilege"
+rules:
+  coding:
+    allow:
+      - filesystem
+    require_approval: []
+  bugfix:
+    allow:
+      - filesystem
+      - github
+    require_approval:
+      - github_write
+      - delete_files
+      - create_pull_request
+  research:
+    allow:
+      - fetch
+      - memory
+    require_approval:
+      - external_post
+      - sensitive_data
+  architecture:
+    allow:
+      - filesystem
+      - memory
+      - sequential-thinking
+    require_approval:
+      - write_architecture_decisions
+blocked_by_default:
+  - move_money
+  - change_permissions
+  - send_messages
+  - delete_records
+  - expose_secrets
+notes:
+  - "Use only the smallest tool set needed for the task."
+  - "Keep GitHub token local. Never commit it."
