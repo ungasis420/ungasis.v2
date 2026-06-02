@@ -284,3 +284,46 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+## Session Handoff — June 3, 2026 🖥️ PC (v5.0 JARVIS Blueprint + Blueprint Architect)
+
+**Sprint:** v5.0 Blueprint Generation + Blueprint Architect Subagent Creation
+**Model:** Claude Opus 4.6 (Thinking)
+
+**What was accomplished:**
+- Generated `UNGASIS-OS-v5.0-JARVIS-BLUEPRINT.md` (~1,373 lines) — the complete v5.0 handoff document with 14 sections covering all 5 JARVIS dimensions, 23-sprint history, 9 engines, 3 automation systems, 4-agent crew, 5-phase JARVIS roadmap (35→98%), 4 kickoff prompts, and complete builder profile.
+- Created `@blueprint-architect` subagent (`.gemini/agents/blueprint-architect.md`) — 6-step process (Understand → Research → Decompose → Design → Plan → Output), produces 8-section blueprints, NEVER writes code.
+- Created `/blueprint` workflow (`.agents/workflows/blueprint.md`) — registers the slash command.
+- Created `docs/blueprints/README.md` — explains blueprints directory and naming conventions.
+- Updated `.agents/rules/10-self-healing-loop.md` — appended Blueprint-First Rule (3+ files → architect required).
+- Updated `.clinerules/10-self-healing-loop.md` — synced Blueprint-First Rule to Cline.
+
+**Files created:**
+- `UNGASIS-OS-v5.0-JARVIS-BLUEPRINT.md` (1,373 lines)
+- `.gemini/agents/blueprint-architect.md` (88 lines)
+- `.agents/workflows/blueprint.md` (25 lines)
+- `docs/blueprints/README.md` (33 lines)
+
+**Files modified:**
+- `.agents/rules/10-self-healing-loop.md` (+12 lines — Blueprint-First Rule)
+- `.clinerules/10-self-healing-loop.md` (+12 lines — synced)
+
+**Agent crew:** Upgraded from 3 to 4 (added @blueprint-architect)
+**Slash commands:** Upgraded from 6 to 7 (added /blueprint)
+
+**Git commits:**
+- `ff5d710` — docs: v5.0 JARVIS Blueprint — complete handoff with 5-phase roadmap to 98% JARVIS
+- `8e6b918` — feat: Blueprint Architect subagent — auto-generate specs before building
+
+**What's next:**
+1. JARVIS Batch 1 (F11a-d + F14b + F14e + F16a-b) — 35→68% — ~2.5 hrs
+2. JARVIS Batch 2 (F12a-b + F14a + F14d + F14f + F17a-b + F17d) — 68→85%
+3. JARVIS Batch 3 (F13a-b + F14c + F15a + F17c-e + F18a-d) — 85→95%
+4. JARVIS Batch 4 (F12c-d + F13c + F14g + F15b-c + F16c-e) — 95→98%
+5. OR: Start RiftCoach development (Phase 5.7)
+
+**Known issues:** None encountered.
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
