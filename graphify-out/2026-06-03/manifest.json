@@ -8963,5 +8963,20 @@
     "mtime": 1780427198.355451,
     "ast_hash": "e771c3d62dbb1a5c8d348d689d7530c5",
     "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\cortex-index.md": {
+    "mtime": 1780427290.8331366,
+    "ast_hash": "d10376d20e0db70aaa3af1e00f19d1ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\inbox.md": {
+    "mtime": 1780427280.631614,
+    "ast_hash": "30727bdd64ff4725255152f996b1c4a4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cortex\\processing-rules.md": {
+    "mtime": 1780427285.5741496,
+    "ast_hash": "09ca0eed32079fc9b9b66fd11482a600",
+    "semantic_hash": ""
   }
 }
