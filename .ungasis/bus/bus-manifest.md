@@ -28,6 +28,19 @@ Producer Engine ──> Publishes Event ──> Bus Router ──> Delivers to C
 | Session Planner | Auto-Orchestrator | `session_planned` | Emit session schedule details | L1 |
 | Rollback Engine | Self-Evolution | `rollback_triggered` | Log rollback event as adaptation | L2 |
 | Risk Intelligence | Self-Evolution | `risk_escalated` | Trigger risk mitigation adaptation | L2 |
+| Warning Engine | Self-Evolution | `warning_triggered` | Feed warning logs into adaptation engine | L2 |
+| Suggestion Engine | Auto-Orchestrator | `suggestion_emitted` | Update queue priorities based on suggestions | L1 |
+| Suggestion Engine | Cortex | `suggestion_adopted` | Record adopted suggestion in cortex learnings | L1 |
+| Test Intelligence | Quality Auditor | `test_completed` | Publish validation results to QA auditor | L1 |
+| Quality Scoring | Quality Auditor | `quality_scored` | Grade finished files based on metrics | L1 |
+| Quality Scoring | Self-Evolution | `quality_trend_dipped` | Trigger remediation on low average quality | L2 |
+| Timeline Engine | Warning Engine | `timeline_delayed` | Warn when task or sprint exceeds estimate | L2 |
+| Energy Management | Session Planner | `energy_level_changed` | Adjust task allocation weights | L1 |
+| Energy Management | Suggestion Engine | `break_recommended` | Trigger fatigue relief suggestion | L1 |
+| JARVIS Core | ALL Engines | `principle_asserted` | Assert core principles on all engine actions | L0 |
+| Situational Awareness | ALL Engines | `pulse_generated` | Broad-pulse status check of active systems | L1 |
+| Constraint Reasoning | Decision Engine | `constraint_raised` | Adjust planning logic under constraints | L2 |
+| Gaps Radar | Cortex | `gap_identified` | Request learning session for missing skill | L1 |
 
 ## Inputs/Outputs
 

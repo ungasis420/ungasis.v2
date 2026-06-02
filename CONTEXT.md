@@ -372,3 +372,12 @@ Portfolio, Risk, Decision Escalation. JARVIS: 70%→85%. Next: Batch 3.
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Batch 3 (June 3, 2026) — 10 sprints, 27 files. New: Warnings,
+Suggestions, Testing, Quality Scoring, Timeline, Energy, JARVIS Core,
+Situational Awareness, Constraint Reasoning, Gaps Radar.
+JARVIS: 85%→95%. Next: Batch 4 (final).
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+

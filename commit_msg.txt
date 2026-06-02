@@ -1,1 +1,1 @@
-feat: F19 multi-cli orchestration — commander infrastructure
+feat: batch-3 proactive+jarvis-core — jarvis 85 to 95
