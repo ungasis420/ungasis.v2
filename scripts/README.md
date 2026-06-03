@@ -23,7 +23,7 @@ These scripts make JARVIS actually DO things. Run them manually or set up as Sch
 | `retro-close.py` | Extract learnings from retrospectives | `python scripts/retro-close.py` | Terminal + Output |
 | `energy-close.py` | Analyze time data vs energy patterns | `python scripts/energy-close.py` | Terminal + Output |
 | `graphify-providers.py` | Register backup AI providers | `python scripts/graphify-providers.py` | Terminal Output |
-| `graphify-run.py` | Graphify auto-failover wrapper | `python scripts/graphify-run.py` | Terminal Output + Re-indexed Graph |
+| `graphify-run.py` | Multi-pass auto-failover wrapper for Graphify. Tries each provider sequentially; each pass only processes chunks that failed in previous passes (graphify caches successes). Providers tried in order: groq → cerebras → openrouter → together → mistral → gemini. | `python scripts/graphify-run.py` | Terminal Output + Re-indexed Graph |
 | `tests/test_parsers.py` | Parser unit tests | `python -m unittest scripts/tests/test_parsers.py` | Test Results |
 
 ## Quick Reference
