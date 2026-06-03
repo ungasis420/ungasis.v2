@@ -1,0 +1,71 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "patterns": [
+    {
+      "id": "direct_neighborhood",
+      "input": "entity_id",
+      "max_depth": 1,
+      "edge_types": "all allowed by filter",
+      "use": "asset relationship panel"
+    },
+    {
+      "id": "synergy_path",
+      "input": "source_entity_id,target_entity_type",
+      "max_depth": 3,
+      "edge_types": [
+        "HAS_EFFECT",
+        "SYNERGIZES_WITH",
+        "USES_ITEM",
+        "USES_RUNE",
+        "USES_SPELL"
+      ],
+      "use": "explain why two assets work together"
+    },
+    {
+      "id": "counterplay_path",
+      "input": "threat_effect_id",
+      "max_depth": 3,
+      "edge_types": [
+        "COUNTERS",
+        "DENIES",
+        "MITIGATES",
+        "HAS_EFFECT"
+      ],
+      "use": "find defensive or denial answers"
+    },
+    {
+      "id": "build_reason_path",
+      "input": "build_id",
+      "max_depth": 3,
+      "edge_types": [
+        "USES_ITEM",
+        "USES_RUNE",
+        "USES_SPELL",
+        "HAS_EFFECT",
+        "RECOMMENDED_WHEN"
+      ],
+      "use": "explain build recommendation"
+    },
+    {
+      "id": "source_provenance_path",
+      "input": "claim_or_entity_id",
+      "max_depth": 2,
+      "edge_types": [
+        "SOURCE_SUPPORTS",
+        "VALIDATED_BY"
+      ],
+      "use": "audit source confidence"
+    },
+    {
+      "id": "patch_impact_path",
+      "input": "patch_version",
+      "max_depth": 3,
+      "edge_types": [
+        "CHANGED_IN_PATCH",
+        "RECOMMENDED_WHEN",
+        "SUPPRESSED_WHEN"
+      ],
+      "use": "detect stale or changed recommendations"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "0.7.1",
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "m365_opus_overlay": {
+    "source_status": "m365_opus_candidate_unverified",
+    "strategy_claims": 868,
+    "exact_mechanic_claims": 240,
+    "exact_values_source_verified": 0,
+    "field_level_provenance_required": true,
+    "promotion_policy": "pending approved-source validation"
+  },
+  "base_report": "quality/source_coverage_report.json"
+}

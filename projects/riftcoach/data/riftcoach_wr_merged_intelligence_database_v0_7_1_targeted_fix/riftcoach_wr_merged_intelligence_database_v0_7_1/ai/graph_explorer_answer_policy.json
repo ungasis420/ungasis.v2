@@ -1,0 +1,11 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "rules": [
+    "Explain graph links in simple terms.",
+    "Always distinguish source-verified fact from generated strategy.",
+    "Use counterplay/deny/mitigate language, not unsafe wording.",
+    "When numeric mechanics are pending, say pending source refresh.",
+    "Do not use LoL-PC mechanics or sources.",
+    "Prefer concise relationship paths over dumping all connected nodes."
+  ]
+}

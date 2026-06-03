@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "cooldown_types": [
+    "global_cooldown",
+    "ability_rank_cooldown",
+    "champion_level_cooldown",
+    "passive_internal_cooldown",
+    "per_target_cooldown",
+    "item_active_cooldown",
+    "item_passive_cooldown",
+    "rune_trigger_cooldown",
+    "summoner_spell_cooldown",
+    "recharge_cooldown",
+    "charge_system",
+    "duration_not_cooldown",
+    "not_applicable"
+  ],
+  "fields_required_by_type": {
+    "ability_rank_cooldown": [
+      "per_rank_seconds",
+      "source_status"
+    ],
+    "per_target_cooldown": [
+      "per_target_cooldown_seconds",
+      "target_scope",
+      "source_status"
+    ],
+    "recharge_cooldown": [
+      "charges",
+      "recharge_time_seconds",
+      "source_status"
+    ],
+    "not_applicable": [
+      "source_status",
+      "reason"
+    ]
+  }
+}

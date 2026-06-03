@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RiftCoach Ability Lockfile",
+  "type": "object",
+  "required": [
+    "metadata",
+    "required_slots",
+    "records"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object"
+    },
+    "required_slots": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "passive",
+          "q",
+          "w",
+          "e",
+          "r"
+        ]
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/championAbilityLock"
+      }
+    }
+  },
+  "$defs": {
+    "championAbilityLock": {
+      "type": "object",
+      "required": [
+        "champion_id",
+        "abilities",
+        "patch_version",
+        "game",
+        "not_lol_pc"
+      ],
+      "properties": {
+        "champion_id": {
+          "type": "string"
+        },
+        "champion_name": {
+          "type": "string"
+        },
+        "game": {
+          "const": "wild_rift"
+        },
+        "not_lol_pc": {
+          "const": true
+        },
+        "patch_version": {
+          "type": "string"
+        },
+        "abilities": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

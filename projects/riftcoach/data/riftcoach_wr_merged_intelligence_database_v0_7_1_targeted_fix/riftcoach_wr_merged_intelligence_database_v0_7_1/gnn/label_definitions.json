@@ -1,0 +1,8 @@
+{
+  "tasks": [
+    "link_prediction",
+    "edge_classification",
+    "synergy_strength_regression"
+  ],
+  "label_status": "seed_only_no_training_labels_yet"
+}

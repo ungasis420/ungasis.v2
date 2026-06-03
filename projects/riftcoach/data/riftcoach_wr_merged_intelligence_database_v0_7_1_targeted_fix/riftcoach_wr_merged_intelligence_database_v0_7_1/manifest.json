@@ -1,0 +1,142 @@
+{
+  "package_name": "riftcoach_wr_merged_intelligence_database_v0_7_1",
+  "version": "0.7.1",
+  "patch_version": "7.1e",
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "description": "v0.7.1 lossless source-aware RiftCoach Wild Rift database with M365/Opus candidate overlay. Root runtime public/data remains compatible; exact M365 mechanics are trace-only.",
+  "source_archives": [
+    "data.zip",
+    "wr_opus.zip",
+    "wr_chatgpt.zip",
+    "src.zip",
+    "wr_champions_merged_v070_full.json"
+  ],
+  "merge_priority": [
+    "protected user corrections",
+    "approved Wild Rift source-verified field claims",
+    "ChatGPT v0.6.0 source-aware canonical seed",
+    "current local runtime compatibility values",
+    "Opus/M365 research output",
+    "generated strategy relationships"
+  ],
+  "hard_locks": {
+    "karma": {
+      "passive": "Mantra",
+      "q": "Inner Flame",
+      "w": "Focused Resolve",
+      "e": "Inspire",
+      "r": "Transcendent Embrace"
+    }
+  },
+  "counts": {
+    "local_champions_simple": 137,
+    "local_wr_champion_records": 140,
+    "opus_champions": 135,
+    "v06_champions": 138,
+    "canonical_champions": 141,
+    "canonical_abilities": 705,
+    "canonical_items": 164,
+    "canonical_runes": 53,
+    "canonical_spells": 10,
+    "public_data_champions": 138,
+    "public_data_items": 164,
+    "public_data_runes": 53,
+    "public_data_spells": 10,
+    "public_data_builds": 220,
+    "canonical_champions_total_including_excluded_source_records": 141,
+    "canonical_champions_active_runtime": 138,
+    "m365_opus_postmerge_champions": 138,
+    "m365_opus_candidate_strategy_claims": 868,
+    "m365_opus_candidate_exact_mechanic_claims": 240,
+    "m365_opus_candidate_source_value_trace_rows": 1108,
+    "merge_ledger_rows": 4500,
+    "targeted_fix_ledger_rows_added": 4
+  },
+  "required_folders_present": [
+    "raw_sources",
+    "staging",
+    "public/data",
+    "database",
+    "rag",
+    "graph",
+    "gnn",
+    "analytics",
+    "warehouse",
+    "features",
+    "ai",
+    "architecture",
+    "quality",
+    "lineage",
+    "schemas"
+  ],
+  "key_reports": [
+    "quality/lossless_preservation_report.json",
+    "quality/duplicate_detection_report.json",
+    "quality/conflict_report.json",
+    "quality/source_coverage_report.json",
+    "quality/runtime_compatibility_report.json",
+    "quality/no_lol_pc_contamination_report.json",
+    "quality/karma_regression_report.json",
+    "lineage/merge_ledger.jsonl",
+    "quality/m365_opus_overlay_merge_report.json",
+    "quality/m365_opus_crosscheck_report.json",
+    "lineage/m365_opus_overlay_ledger.jsonl",
+    "quality/targeted_fix_v0_7_1_report.json"
+  ],
+  "limitations": [
+    "No web refresh was performed; this package merges uploaded sources and preserves unverified exact values as pending/legacy/candidate unless provenance marks them source_verified.",
+    "src.zip did not include package.json, so runtime validation is static rather than full Next.js build/typecheck."
+  ],
+  "runtime_exclusions": [
+    {
+      "id": "hwei",
+      "name": "Hwei",
+      "reason": "Not yet released in Wild Rift as of Patch 7.1d. Coming 2026 but not in game."
+    },
+    {
+      "id": "sejuani",
+      "name": "Sejuani",
+      "reason": "Not in Wild Rift 137 champion roster."
+    },
+    {
+      "id": "tahm_kench",
+      "name": "Tahm Kench",
+      "reason": "Not in Wild Rift. PC League of Legends only."
+    }
+  ],
+  "final_validation_status": "pass",
+  "final_validation_report": "quality/final_v0_7_1_validation_report.json",
+  "generated_package_scripts": "scripts/build_v0_7/",
+  "final_package_file_count": 475,
+  "final_uncompressed_bytes": 201032223,
+  "m365_opus_overlay_policy": {
+    "raw_preserved_losslessly": true,
+    "canonical_official_fields_overwritten": 0,
+    "root_public_runtime_data_modified": false,
+    "strategy_overlay_added": true,
+    "exact_mechanics_promoted": false,
+    "exact_mechanics_preserved_in_trace_only": true,
+    "approved_source_verification_required_for_exact_values": true,
+    "legacy_top_level_abilities_used_for_identity": false,
+    "abilities_by_key_used_for_identity_comparison": true,
+    "karma_lock_enforced": {
+      "passive": "Mantra",
+      "q": "Inner Flame",
+      "w": "Focused Resolve",
+      "e": "Inspire",
+      "r": "Transcendent Embrace"
+    }
+  },
+  "targeted_fixes": [
+    {
+      "id": "v0_7_1_targeted_fix_2026_05_22_nunu_ability_keys",
+      "timestamp_utc": "2026-05-22T13:45:40.197428+00:00",
+      "summary": "Changed active runtime/canonical Nunu champion ID to nunu_willump and normalized public/data/champions.json abilities to passive/skill_1/skill_2/skill_3/ultimate.",
+      "raw_sources_modified": false,
+      "m365_opus_overlay_modified": false,
+      "champion_count_changed": false,
+      "public_data_champions_count": 138,
+      "fix_report": "quality/targeted_fix_v0_7_1_report.json"
+    }
+  ]
+}

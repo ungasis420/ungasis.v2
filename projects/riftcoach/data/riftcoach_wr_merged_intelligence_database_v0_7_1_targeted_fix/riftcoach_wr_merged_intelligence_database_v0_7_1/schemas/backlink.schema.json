@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/backlink_set.schema.json",
+  "title": "Backlink Set",
+  "description": "Reverse-link set for Obsidian-style backlinks.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "entity_id",
+    "entity_type",
+    "backlinks"
+  ],
+  "properties": {
+    "entity_id": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "backlinks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "computed_at": {
+      "type": "string"
+    },
+    "source_status_counts": {
+      "type": "object"
+    }
+  }
+}

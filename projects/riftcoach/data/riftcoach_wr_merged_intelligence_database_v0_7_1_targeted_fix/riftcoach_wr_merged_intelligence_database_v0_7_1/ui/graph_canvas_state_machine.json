@@ -1,0 +1,50 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "states": [
+    "idle",
+    "loading_graph",
+    "rendering",
+    "node_selected",
+    "edge_selected",
+    "filtering",
+    "saving_view",
+    "error"
+  ],
+  "transitions": [
+    {
+      "from": "idle",
+      "event": "OPEN_VIEW",
+      "to": "loading_graph"
+    },
+    {
+      "from": "loading_graph",
+      "event": "DATA_READY",
+      "to": "rendering"
+    },
+    {
+      "from": "rendering",
+      "event": "CLICK_NODE",
+      "to": "node_selected"
+    },
+    {
+      "from": "rendering",
+      "event": "CLICK_EDGE",
+      "to": "edge_selected"
+    },
+    {
+      "from": "rendering",
+      "event": "APPLY_FILTER",
+      "to": "filtering"
+    },
+    {
+      "from": "filtering",
+      "event": "FILTER_DONE",
+      "to": "rendering"
+    },
+    {
+      "from": "*",
+      "event": "ERROR",
+      "to": "error"
+    }
+  ]
+}

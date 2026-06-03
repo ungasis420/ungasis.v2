@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/graph_traversal_request.schema.json",
+  "title": "Graph Traversal Request",
+  "description": "Graph traversal request.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "start_node_id",
+    "max_depth"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "start_node_id": {
+      "type": "string"
+    },
+    "target_node_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relationship_types": {
+      "type": "array"
+    },
+    "max_depth": {
+      "type": "integer"
+    },
+    "filters": {
+      "type": "object"
+    },
+    "explain": {
+      "type": "boolean"
+    }
+  }
+}

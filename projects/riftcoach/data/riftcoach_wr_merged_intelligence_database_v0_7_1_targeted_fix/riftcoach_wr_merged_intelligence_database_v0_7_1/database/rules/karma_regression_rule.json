@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "test_id": "karma_ability_regression_test",
+  "champion_id": "karma",
+  "must_match": {
+    "passive": "Mantra",
+    "q": "Inner Flame",
+    "w": "Focused Resolve",
+    "e": "Inspire",
+    "r": "Transcendent Embrace"
+  },
+  "must_include_effects": [
+    "mantra_stacks",
+    "magic_damage",
+    "slow",
+    "tether",
+    "true_sight",
+    "root",
+    "shield",
+    "movement_speed",
+    "knock_in"
+  ],
+  "failure_severity": "blocker"
+}

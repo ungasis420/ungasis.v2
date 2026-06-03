@@ -1,0 +1,25 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "states": {
+    "empty": {
+      "title": "No relationships yet",
+      "message": "This asset has no generated or verified graph relationships in the current filters."
+    },
+    "loading": {
+      "title": "Building relationship map",
+      "message": "Loading nodes, edges, filters, and source statuses."
+    },
+    "filtered_empty": {
+      "title": "Filters hid all links",
+      "message": "Relax confidence/source filters or expand depth."
+    },
+    "error": {
+      "title": "Graph failed to load",
+      "message": "Check JSON/JSONL format and relationship references."
+    },
+    "large_graph_warning": {
+      "title": "Large graph hidden",
+      "message": "Narrow filters or use saved views to avoid unreadable hairballs."
+    }
+  }
+}

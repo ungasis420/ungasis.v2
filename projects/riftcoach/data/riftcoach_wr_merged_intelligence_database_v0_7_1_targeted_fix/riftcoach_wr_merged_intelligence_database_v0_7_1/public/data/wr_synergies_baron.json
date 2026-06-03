@@ -1,0 +1,1294 @@
+{
+  "meta": {
+    "type": "synergies",
+    "scope": "baron",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 27,
+    "total_entries": 108,
+    "confidence_source": "theorycraft_meta_inference"
+  },
+  "synergies": [
+    {
+      "champion_id": "aatrox",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_root_into_aatrox_r_sustain",
+          "combo": [
+            "amumu_r",
+            "aatrox_r"
+          ],
+          "notes": "Amumu R roots. Aatrox R sustains through grouped enemies."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "cataclysm_traps_for_q",
+          "combo": [
+            "jarvan_r",
+            "aatrox_q"
+          ],
+          "notes": "J4 traps. Aatrox Q sweetspots on trapped enemies."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "cc_chain_for_q_sweetspots",
+          "combo": [
+            "nautilus_r",
+            "aatrox_q"
+          ],
+          "notes": "Nautilus R locks target. Aatrox Q sweetspots guaranteed."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "double_ad_armor_stacked",
+          "issue": "Both AD. Enemy stacks armor."
+        }
+      ]
+    },
+    {
+      "champion_id": "camille",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "galio",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "r_lockdown_galio_r_follows",
+          "combo": [
+            "camille_r",
+            "galio_r"
+          ],
+          "notes": "S-tier. Camille R locks target. Galio R onto Camille for AoE knockup."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "ball_on_camille_r_dive",
+          "combo": [
+            "orianna_e",
+            "camille_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Camille. Camille R dives. Ori R Shockwave."
+        },
+        {
+          "ally": "lee_sin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "kick_into_r_lockdown",
+          "combo": [
+            "lee_sin_r",
+            "camille_r"
+          ],
+          "notes": "Lee kicks carry. Camille R locks down kicked target."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kog_maw",
+          "score": 0.35,
+          "reason": "both_need_different_team_support",
+          "issue": "Camille dives. Kog needs peel. Conflicting needs."
+        }
+      ]
+    },
+    {
+      "champion_id": "darius",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "w_speed_on_ghost_darius",
+          "combo": [
+            "lulu_w",
+            "darius_ghost"
+          ],
+          "notes": "Lulu W speed + Darius Ghost = unstoppable juggernaut. R knockup peel."
+        },
+        {
+          "ally": "karma",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "r_e_speed_on_ghost",
+          "combo": [
+            "karma_r_e",
+            "darius_ghost"
+          ],
+          "notes": "Karma R+E speed + Ghost = Darius runs everyone down."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "attached_healer_on_juggernaut",
+          "combo": [
+            "yuumi_attached",
+            "darius_ghost_r"
+          ],
+          "notes": "Yuumi on Darius = unkillable. Ghost + heals + R execute resets."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.35,
+          "reason": "no_followup_on_engage",
+          "issue": "Darius needs team to follow. Ezreal pokes from distance."
+        }
+      ]
+    },
+    {
+      "champion_id": "fiora",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "shen",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "shen_r_enables_split_push",
+          "combo": [
+            "fiora_split",
+            "shen_r_team"
+          ],
+          "notes": "Fiora splits. Shen R joins team for 4v5. Fiora takes towers."
+        },
+        {
+          "ally": "nocturne",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "noc_r_while_fiora_splits",
+          "combo": [
+            "fiora_split",
+            "nocturne_r"
+          ],
+          "notes": "Fiora splits. Nocturne R dives enemy team. Split pressure."
+        },
+        {
+          "ally": "twisted_fate",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "tf_r_while_fiora_splits",
+          "combo": [
+            "fiora_split",
+            "twisted_fate_r"
+          ],
+          "notes": "Fiora splits. TF R joins team. Split + global pressure."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kog_maw",
+          "score": 0.35,
+          "reason": "fiora_splits_kog_needs_group",
+          "issue": "Fiora splits. Kog needs 5v5 protection."
+        }
+      ]
+    },
+    {
+      "champion_id": "irelia",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "orianna",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "ball_on_irelia_dive",
+          "combo": [
+            "orianna_e",
+            "irelia_r_engage",
+            "orianna_r"
+          ],
+          "notes": "Ball on Irelia. Irelia R engage. Ori R Shockwave."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_for_burst",
+          "combo": [
+            "nautilus_r",
+            "irelia_e_q"
+          ],
+          "notes": "Nautilus R locks target. Irelia E stun + Q burst."
+        },
+        {
+          "ally": "leona",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "engage_into_dive",
+          "combo": [
+            "leona_r",
+            "irelia_r_engage"
+          ],
+          "notes": "Leona R AoE stun. Irelia follows into stunned team."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "double_ad",
+          "issue": "Both AD. Enemy stacks armor."
+        }
+      ]
+    },
+    {
+      "champion_id": "jax",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "shen",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "shen_r_enables_split",
+          "combo": [
+            "jax_split",
+            "shen_r_team"
+          ],
+          "notes": "Jax splits (best 1v1 late). Shen R joins team."
+        },
+        {
+          "ally": "nocturne",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "noc_r_while_jax_splits",
+          "combo": [
+            "jax_split",
+            "nocturne_r"
+          ],
+          "notes": "Jax splits. Nocturne R dives. Double pressure."
+        },
+        {
+          "ally": "twisted_fate",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "tf_r_while_jax_splits",
+          "combo": [
+            "jax_split",
+            "twisted_fate_r"
+          ],
+          "notes": "Jax splits. TF joins team. Global + split."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kog_maw",
+          "score": 0.35,
+          "reason": "jax_splits_kog_needs_team",
+          "issue": "Jax splits. Kog needs team."
+        }
+      ]
+    },
+    {
+      "champion_id": "riven",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "orianna",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "ball_on_riven_engage",
+          "combo": [
+            "orianna_e",
+            "riven_r_engage",
+            "orianna_r"
+          ],
+          "notes": "Ball on Riven. Riven E+R flash engage. Ori R Shockwave."
+        },
+        {
+          "ally": "yasuo",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "q3_knockup_enables_yasuo_r",
+          "combo": [
+            "riven_q3",
+            "yasuo_r"
+          ],
+          "notes": "Riven Q3 knockup. Yasuo R follow-up."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "cc_chain_for_combo",
+          "combo": [
+            "nautilus_r",
+            "riven_combo"
+          ],
+          "notes": "Nautilus R locks target. Riven full combo on CCd target."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "double_ad",
+          "issue": "Both AD. Armor stacking."
+        }
+      ]
+    },
+    {
+      "champion_id": "sett",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "orianna",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "ball_on_sett_r_slam",
+          "combo": [
+            "orianna_e",
+            "sett_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Sett. Sett R slams tank into team. Ori R Shockwave."
+        },
+        {
+          "ally": "yasuo",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "r_slam_knockup_yasuo_r",
+          "combo": [
+            "sett_r",
+            "yasuo_r"
+          ],
+          "notes": "Sett R slam = airborne. Yasuo R follow-up."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "cc_chain_for_haymaker",
+          "combo": [
+            "nautilus_r",
+            "sett_e_w"
+          ],
+          "notes": "Nautilus R locks. Sett E pull + W haymaker center."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "double_ad",
+          "issue": "Both AD."
+        }
+      ]
+    },
+    {
+      "champion_id": "renekton",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_dominus",
+          "combo": [
+            "jarvan_r",
+            "renekton_r"
+          ],
+          "notes": "J4 traps. Renekton R Dominus AoE inside arena."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_for_burst",
+          "combo": [
+            "nautilus_r",
+            "renekton_w_q"
+          ],
+          "notes": "Nautilus R locks target. Renekton fury W burst."
+        },
+        {
+          "ally": "lee_sin",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "kick_into_w_stun",
+          "combo": [
+            "lee_sin_r",
+            "renekton_w"
+          ],
+          "notes": "Lee kicks carry. Renekton W stun follow-up."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "double_ad",
+          "issue": "Both AD."
+        }
+      ]
+    },
+    {
+      "champion_id": "gwen",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "root_into_sustained_dps",
+          "combo": [
+            "amumu_r",
+            "gwen_q_sustained"
+          ],
+          "notes": "Amumu R roots. Gwen sustained DPS in mist on rooted enemies."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_for_dps",
+          "combo": [
+            "nautilus_r",
+            "gwen_q"
+          ],
+          "notes": "Nautilus R locks target. Gwen sustained Q center true damage."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "knockup_into_dps",
+          "combo": [
+            "malphite_r",
+            "gwen_q"
+          ],
+          "notes": "Malphite R groups. Gwen Q true damage on grouped enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.35,
+          "reason": "pushes_gwen_targets",
+          "issue": "Janna R pushes enemies from Gwen mist range."
+        }
+      ]
+    },
+    {
+      "champion_id": "malphite",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "yasuo",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "r_knockup_enables_yasuo_r",
+          "combo": [
+            "malphite_r",
+            "yasuo_r"
+          ],
+          "notes": "S-tier. Malphite R AoE knockup. Yasuo R on all knocked-up enemies."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "ball_on_malphite_r",
+          "combo": [
+            "orianna_e",
+            "malphite_r",
+            "orianna_r"
+          ],
+          "notes": "S-tier. Ball on Malphite. Malphite R. Ori R Shockwave."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "r_knockup_into_mf_r",
+          "combo": [
+            "malphite_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Malphite R groups. MF R channels on grouped enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.4,
+          "reason": "double_ad_ap_needed",
+          "issue": "Malphite is AP tank. Needs AP carry. Vayne is AD."
+        }
+      ]
+    },
+    {
+      "champion_id": "ornn",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "yasuo",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "r_ram_knockup_yasuo_r",
+          "combo": [
+            "ornn_r",
+            "yasuo_r"
+          ],
+          "notes": "Ornn R ram knockup. Yasuo R follow-up on all knocked up."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "ball_on_ornn_r_engage",
+          "combo": [
+            "orianna_e",
+            "ornn_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Ornn. R ram engage. Ori R Shockwave."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_knockup_into_mf_r",
+          "combo": [
+            "ornn_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Ornn R groups. MF R on grouped enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "yi_doesnt_need_frontline_engage",
+          "issue": "Ornn is team fight. Yi is cleanup. Different win conditions."
+        }
+      ]
+    },
+    {
+      "champion_id": "k_sante",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "yasuo",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "q3_knockup_enables_yasuo_r",
+          "combo": [
+            "k_sante_q3",
+            "yasuo_r"
+          ],
+          "notes": "K'Sante Q3 knockup. Yasuo R follow-up."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "ball_on_k_sante_engage",
+          "combo": [
+            "orianna_e",
+            "k_sante_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on K'Sante. K'Sante R isolates. Ori R on team."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "cc_chain_for_r",
+          "combo": [
+            "nautilus_r",
+            "k_sante_r"
+          ],
+          "notes": "Nautilus R locks carry. K'Sante R isolates."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "different_win_conditions",
+          "issue": "K'Sante teamfights. Yi needs cleanup resets."
+        }
+      ]
+    },
+    {
+      "champion_id": "shen",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "nocturne",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "double_global_dive",
+          "combo": [
+            "nocturne_r",
+            "shen_r"
+          ],
+          "notes": "S-tier. Nocturne R dives. Shen R shields Nocturne during dive."
+        },
+        {
+          "ally": "twisted_fate",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "double_global_map_control",
+          "combo": [
+            "shen_r",
+            "twisted_fate_r"
+          ],
+          "notes": "Shen R joins team. TF R ganks. Triple global pressure."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "global_shield_on_carry",
+          "combo": [
+            "shen_r",
+            "jinx_rockets"
+          ],
+          "notes": "Shen R shields Jinx globally. Jinx survives dives."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "shen_peels_yi_dives",
+          "issue": "Shen peels. Yi dives. Different playstyles."
+        }
+      ]
+    },
+    {
+      "champion_id": "gnar",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "yasuo",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "mega_r_knockup_yasuo_r",
+          "combo": [
+            "gnar_mega_r",
+            "yasuo_r"
+          ],
+          "notes": "Mega Gnar R wall stun = airborne. Yasuo R follow-up."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "ball_on_gnar_mega_r",
+          "combo": [
+            "orianna_e",
+            "gnar_mega_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Gnar. Mega R engage. Ori R Shockwave."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "mega_r_into_mf_r",
+          "combo": [
+            "gnar_mega_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Mega R stuns team into wall. MF R channels."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "gnar_teamfights_yi_splits",
+          "issue": "Gnar is teamfight. Yi is cleanup. Different needs."
+        }
+      ]
+    },
+    {
+      "champion_id": "nasus",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "shen",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "shen_r_enables_split",
+          "combo": [
+            "nasus_split",
+            "shen_r_team"
+          ],
+          "notes": "Nasus splits. Shen R joins team for 4v5."
+        },
+        {
+          "ally": "nocturne",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "noc_r_while_nasus_splits",
+          "combo": [
+            "nasus_split",
+            "nocturne_r"
+          ],
+          "notes": "Nasus splits. Nocturne R dives enemy team."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.75,
+          "type": "PEEL",
+          "reason": "global_heal_on_split",
+          "combo": [
+            "nasus_split",
+            "soraka_r"
+          ],
+          "notes": "Nasus splits. Soraka R global heals if he gets ganked."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.35,
+          "reason": "both_need_early_resources",
+          "issue": "Draven needs early kills. Nasus needs farm. Conflicting resource allocation."
+        }
+      ]
+    },
+    {
+      "champion_id": "kayle",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "peel_for_hypercarry",
+          "combo": [
+            "lulu_w_e_r",
+            "kayle_late"
+          ],
+          "notes": "Lulu peels for Kayle. Both hyperscale. Late-game monsters."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "sustain_through_early",
+          "combo": [
+            "soraka_w_r",
+            "kayle_scale"
+          ],
+          "notes": "Soraka sustains Kayle through weak early. Both scale."
+        },
+        {
+          "ally": "janna",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "disengage_for_scaling",
+          "combo": [
+            "janna_r_q",
+            "kayle_scale"
+          ],
+          "notes": "Janna disengage protects Kayle. Both scale."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.3,
+          "reason": "both_need_gold",
+          "issue": "Draven needs kills. Kayle needs farm. Conflicting gold needs."
+        }
+      ]
+    },
+    {
+      "champion_id": "kennen",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_r_stun",
+          "combo": [
+            "jarvan_r",
+            "kennen_r"
+          ],
+          "notes": "J4 traps. Kennen R Slicing Maelstrom inside arena."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_cc",
+          "combo": [
+            "amumu_r",
+            "kennen_r"
+          ],
+          "notes": "Amumu R root. Kennen R stun. Double AoE CC."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_stun_into_mf_r",
+          "combo": [
+            "kennen_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Kennen R stun. MF R channels on stunned enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "different_win_conditions",
+          "issue": "Kennen teamfights. Yi needs cleanup."
+        }
+      ]
+    },
+    {
+      "champion_id": "teemo",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "shen",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "shen_r_enables_split",
+          "combo": [
+            "teemo_split_mushroom",
+            "shen_r_team"
+          ],
+          "notes": "Teemo splits with mushroom map control. Shen R joins team."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "cc_chain_for_burst",
+          "combo": [
+            "nautilus_r",
+            "teemo_q_aa"
+          ],
+          "notes": "Nautilus R locks target. Teemo Q blind + AA poke."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "root_into_mushroom_zone",
+          "combo": [
+            "amumu_r",
+            "teemo_r_mushrooms"
+          ],
+          "notes": "Amumu R root. Enemies rooted on mushrooms."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.35,
+          "reason": "teemo_splits_draven_needs_team",
+          "issue": "Teemo splits. Draven needs team fights."
+        }
+      ]
+    },
+    {
+      "champion_id": "tryndamere",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "shen",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "shen_r_enables_split",
+          "combo": [
+            "tryndamere_split",
+            "shen_r_team"
+          ],
+          "notes": "Trynd splits. Shen R joins team. Best split + global combo."
+        },
+        {
+          "ally": "nocturne",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "noc_r_while_trynd_splits",
+          "combo": [
+            "tryndamere_split",
+            "nocturne_r"
+          ],
+          "notes": "Trynd splits. Nocturne R dives. Double pressure."
+        },
+        {
+          "ally": "twisted_fate",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "tf_r_while_trynd_splits",
+          "combo": [
+            "tryndamere_split",
+            "twisted_fate_r"
+          ],
+          "notes": "Trynd splits. TF R joins team. Global + split."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kog_maw",
+          "score": 0.3,
+          "reason": "trynd_splits_kog_needs_group",
+          "issue": "Trynd splits. Kog needs 5v5 protection."
+        }
+      ]
+    },
+    {
+      "champion_id": "dr_mundo",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "speed_shield_on_unkillable",
+          "combo": [
+            "lulu_w_e",
+            "dr_mundo_r"
+          ],
+          "notes": "Lulu W speed on Mundo R = fastest unkillable tank."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "attached_healer_on_tank",
+          "combo": [
+            "yuumi_attached",
+            "dr_mundo_r"
+          ],
+          "notes": "Yuumi on Mundo = unkillable. Mundo R + Yuumi heals."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.75,
+          "type": "PEEL",
+          "reason": "heal_stacking",
+          "combo": [
+            "soraka_w_r",
+            "dr_mundo_r"
+          ],
+          "notes": "Soraka heals + Mundo R regen = impossible to kill."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.35,
+          "reason": "mundo_needs_team_draven_needs_kills",
+          "issue": "Mundo teamfights. Draven needs early kills."
+        }
+      ]
+    },
+    {
+      "champion_id": "sion",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "yasuo",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "q_knockup_enables_yasuo_r",
+          "combo": [
+            "sion_q",
+            "yasuo_r"
+          ],
+          "notes": "Sion Q charged knockup. Yasuo R follow-up."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "ball_on_sion_r_charge",
+          "combo": [
+            "orianna_e",
+            "sion_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Sion. Sion R charges into team. Ori R Shockwave."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "r_charge_into_mf_r",
+          "combo": [
+            "sion_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Sion R knockup. MF R channels."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "different_win_conditions",
+          "issue": "Sion teamfights. Yi cleanup."
+        }
+      ]
+    },
+    {
+      "champion_id": "gragas",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "yasuo",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "e_knockup_enables_yasuo_r",
+          "combo": [
+            "gragas_e",
+            "yasuo_r"
+          ],
+          "notes": "Gragas E body slam knockup. Yasuo R follow-up."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "ball_on_gragas_e_engage",
+          "combo": [
+            "orianna_e",
+            "gragas_e_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Gragas. E engage + R knockback. Ori R."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_knockback_into_mf_r",
+          "combo": [
+            "gragas_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Gragas R knocks enemies into MF R channel."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "r_knockback_pushes_yi_targets",
+          "issue": "Gragas R pushes enemies away from Yi."
+        }
+      ]
+    },
+    {
+      "champion_id": "ambessa",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_for_r_suppress",
+          "combo": [
+            "nautilus_r",
+            "ambessa_r"
+          ],
+          "notes": "Nautilus R locks target. Ambessa R suppress follow-up."
+        },
+        {
+          "ally": "orianna",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "ball_on_ambessa_engage",
+          "combo": [
+            "orianna_e",
+            "ambessa_engage",
+            "orianna_r"
+          ],
+          "notes": "Ball on Ambessa. Ambessa dives. Ori R Shockwave."
+        },
+        {
+          "ally": "leona",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "engage_into_suppress",
+          "combo": [
+            "leona_r",
+            "ambessa_r"
+          ],
+          "notes": "Leona R stun. Ambessa R suppress follow-up."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "double_ad",
+          "issue": "Both AD. Armor stacking."
+        }
+      ]
+    },
+    {
+      "champion_id": "garen",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "yuumi",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "unkillable_juggernaut",
+          "combo": [
+            "yuumi_attached",
+            "garen_q_r"
+          ],
+          "notes": "Yuumi on Garen = unkillable. Q silence + Yuumi heals + R execute."
+        },
+        {
+          "ally": "lulu",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "speed_shield_on_garen",
+          "combo": [
+            "lulu_w",
+            "garen_q"
+          ],
+          "notes": "Lulu W speed + Garen Q MS = fastest engage. R knockup peel."
+        },
+        {
+          "ally": "karma",
+          "score": 0.75,
+          "type": "PEEL",
+          "reason": "r_e_speed_engage",
+          "combo": [
+            "karma_r_e",
+            "garen_q"
+          ],
+          "notes": "Karma R+E speed + Garen Q MS = run at enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.35,
+          "reason": "no_followup",
+          "issue": "Garen runs in. Ezreal stays back."
+        }
+      ]
+    },
+    {
+      "champion_id": "singed",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "shen",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "shen_r_enables_proxy",
+          "combo": [
+            "singed_proxy",
+            "shen_r_team"
+          ],
+          "notes": "Singed proxies. Shen R joins team. Split + global."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "attached_on_running_singed",
+          "combo": [
+            "yuumi_attached",
+            "singed_q_poison"
+          ],
+          "notes": "Yuumi on Singed = healed while running and poisoning."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "fling_into_root",
+          "combo": [
+            "singed_e_fling",
+            "amumu_r"
+          ],
+          "notes": "Singed flings enemy into Amumu R. Double CC."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kog_maw",
+          "score": 0.3,
+          "reason": "singed_proxies_kog_alone",
+          "issue": "Singed proxies. Kog needs team protection."
+        }
+      ]
+    },
+    {
+      "champion_id": "rumble",
+      "role": "baron",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_equalizer",
+          "combo": [
+            "jarvan_r",
+            "rumble_r"
+          ],
+          "notes": "S-tier. J4 traps. Rumble R Equalizer inside arena. Enemies melt."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "root_into_equalizer",
+          "combo": [
+            "amumu_r",
+            "rumble_r"
+          ],
+          "notes": "Amumu R root. Rumble R Equalizer on rooted team."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "double_aoe_ult",
+          "combo": [
+            "rumble_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Rumble R zone + MF R channel. Double AoE devastation."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.35,
+          "reason": "pushes_from_equalizer",
+          "issue": "Janna R pushes enemies out of Equalizer zone."
+        }
+      ]
+    }
+  ]
+}

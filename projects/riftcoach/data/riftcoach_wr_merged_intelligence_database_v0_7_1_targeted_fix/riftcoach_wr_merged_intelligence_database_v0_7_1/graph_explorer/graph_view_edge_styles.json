@@ -1,0 +1,66 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "edge_types": {
+    "HAS_ABILITY": {
+      "line": "solid",
+      "arrow": "forward",
+      "importance": "structural"
+    },
+    "HAS_EFFECT": {
+      "line": "solid",
+      "arrow": "forward",
+      "importance": "mechanic"
+    },
+    "SYNERGIZES_WITH": {
+      "line": "solid",
+      "arrow": "optional",
+      "importance": "positive"
+    },
+    "COUNTERS": {
+      "line": "dashed",
+      "arrow": "forward",
+      "importance": "counterplay"
+    },
+    "DENIES": {
+      "line": "bold_dashed",
+      "arrow": "forward",
+      "importance": "counterplay_strong"
+    },
+    "MITIGATES": {
+      "line": "dotted",
+      "arrow": "forward",
+      "importance": "counterplay_soft"
+    },
+    "RECOMMENDED_WHEN": {
+      "line": "solid",
+      "arrow": "forward",
+      "importance": "recommendation"
+    },
+    "SUPPRESSED_WHEN": {
+      "line": "dashed",
+      "arrow": "forward",
+      "importance": "avoidance"
+    },
+    "SOURCE_SUPPORTS": {
+      "line": "thin_solid",
+      "arrow": "forward",
+      "importance": "provenance"
+    },
+    "CHANGED_IN_PATCH": {
+      "line": "solid",
+      "arrow": "forward",
+      "importance": "patch"
+    },
+    "BACKLINK_FROM": {
+      "line": "thin_dotted",
+      "arrow": "reverse",
+      "importance": "navigation"
+    }
+  },
+  "edge_label_policy": {
+    "show_labels_default_depth": 1,
+    "show_reason_on_hover": true,
+    "show_confidence_badge": true,
+    "show_source_status_badge": true
+  }
+}

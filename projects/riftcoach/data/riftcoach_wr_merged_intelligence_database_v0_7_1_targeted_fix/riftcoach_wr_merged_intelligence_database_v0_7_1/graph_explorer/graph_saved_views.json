@@ -1,0 +1,127 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "saved_views": [
+    {
+      "view_id": "view_karma_support_enchanter_graph",
+      "name": "Karma Support Enchanter Graph",
+      "center_node_id": "karma",
+      "description": "Explore Karma shield/movement-speed effects into enchanter runes/items/builds.",
+      "filters": {
+        "entity_type": [
+          "Champion",
+          "Ability",
+          "Effect",
+          "Rune",
+          "Item",
+          "Build"
+        ],
+        "relationship_type": [
+          "HAS_ABILITY",
+          "HAS_EFFECT",
+          "SYNERGIZES_WITH",
+          "RECOMMENDED_WHEN"
+        ],
+        "source_status": [
+          "source_verified",
+          "user_corrected_pending_revalidation",
+          "generated_rule",
+          "generated_archetype"
+        ],
+        "confidence_min": 0.55,
+        "patch_version": "7.1e"
+      },
+      "layout_profile": "build_reasoning_path",
+      "max_depth": 3,
+      "use_cases": [
+        "build_explanation",
+        "beginner_learning",
+        "support_archetype_analysis"
+      ]
+    },
+    {
+      "view_id": "view_anti_burst_defense_graph",
+      "name": "Anti-Burst Defense Graph",
+      "center_node_id": "effect.burst_damage",
+      "description": "Explore defensive and timing-window options against burst/all-in patterns.",
+      "filters": {
+        "relationship_type": [
+          "DENIES",
+          "MITIGATES",
+          "COUNTERS",
+          "HAS_EFFECT"
+        ],
+        "effect_tag": [
+          "stasis",
+          "shield",
+          "damage_reduction",
+          "magic_resist",
+          "armor",
+          "cleanse"
+        ],
+        "confidence_min": 0.5,
+        "patch_version": "7.1e"
+      },
+      "layout_profile": "counterplay_map",
+      "max_depth": 3,
+      "use_cases": [
+        "counterplay",
+        "defensive_itemization"
+      ]
+    },
+    {
+      "view_id": "view_source_claim_audit_graph",
+      "name": "Source Claim Audit Graph",
+      "center_node_id": "source_claims",
+      "description": "Inspect entity fields connected to source claims and validation reports.",
+      "filters": {
+        "entity_type": [
+          "SourceClaim",
+          "Patch",
+          "Champion",
+          "Ability",
+          "Item",
+          "Rune",
+          "Spell",
+          "ValidationRule"
+        ],
+        "relationship_type": [
+          "SOURCE_SUPPORTS",
+          "VALIDATED_BY",
+          "CHANGED_IN_PATCH"
+        ],
+        "source_status": [
+          "source_verified",
+          "source_conflict",
+          "pending_allowed_source_refresh"
+        ],
+        "patch_version": "7.1e"
+      },
+      "layout_profile": "source_claim_map",
+      "max_depth": 2,
+      "use_cases": [
+        "qa",
+        "source_audit"
+      ]
+    },
+    {
+      "view_id": "view_patch_impact_graph",
+      "name": "Patch Impact Graph",
+      "center_node_id": "patch.7_1e",
+      "description": "Show Patch 7.1e to changed entities and affected builds or relationship edges.",
+      "filters": {
+        "relationship_type": [
+          "CHANGED_IN_PATCH",
+          "RECOMMENDED_WHEN",
+          "SUPPRESSED_WHEN"
+        ],
+        "patch_version": "7.1e"
+      },
+      "layout_profile": "patch_impact_map",
+      "max_depth": 3,
+      "use_cases": [
+        "meta_analysis",
+        "stale_recommendation_detection"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RiftCoach Ability Correction",
+  "type": "object",
+  "required": [
+    "correction_id",
+    "entity_id",
+    "field",
+    "source_status",
+    "severity"
+  ],
+  "properties": {
+    "correction_id": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "correct_value": {},
+    "source_status": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "info",
+        "normal",
+        "warning",
+        "blocker"
+      ]
+    }
+  }
+}

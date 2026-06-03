@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "final_spells": [
+    "Heal",
+    "Ghost",
+    "Barrier",
+    "Exhaust",
+    "Ignite",
+    "Cleanse",
+    "Flash",
+    "Smite",
+    "Teleport"
+  ],
+  "excluded_spells": [
+    "Mark",
+    "Mark#Dash",
+    "Clarity"
+  ],
+  "validations": [
+    "spell_set_equals_allowlist",
+    "excluded_spells_absent",
+    "every_spell_has_structured_cooldown",
+    "every_spell_has_active_passive_effects"
+  ]
+}

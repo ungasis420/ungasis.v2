@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "goals": [
+    "accurate Wild Rift database",
+    "legal builds",
+    "source-traceable mechanics",
+    "contextual coaching",
+    "RAG/vector readiness",
+    "graph/analytics readiness"
+  ],
+  "objectives": [
+    "reduce hallucinations",
+    "detect stale patch data",
+    "validate item golds",
+    "validate cooldowns",
+    "support archetype builds",
+    "explain synergies and counters"
+  ]
+}

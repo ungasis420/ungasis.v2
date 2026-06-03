@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "rune_loadout_rules": {
+    "keystone_slots": 1,
+    "primary_rune_slots": 3,
+    "secondary_rune_slots": 1,
+    "primary_path_rule": "Primary runes must come from one non-keystone path and fill slot_1, slot_2, slot_3 exactly once.",
+    "secondary_path_rule": "Secondary rune uses one rune from an allowed non-keystone path/slot pool; validate against current Wild Rift rule source before marking source_verified.",
+    "validation_required": true
+  },
+  "keystones": [
+    "Electrocute",
+    "Dark Harvest",
+    "Empowerment",
+    "Lethal Tempo",
+    "Fleet Footwork",
+    "Conqueror",
+    "Grasp of the Undying",
+    "Guardian",
+    "Aery",
+    "Arcane Comet",
+    "Phase Rush",
+    "First Strike",
+    "Ice Overlord"
+  ],
+  "primary_paths": {
+    "Domination": {
+      "slot_1": [
+        "Cheap Shot",
+        "Sudden Impact",
+        "Empowered Attack"
+      ],
+      "slot_2": [
+        "Chain Assault",
+        "Tyrant",
+        "Hubris"
+      ],
+      "slot_3": [
+        "Eyeball Collection",
+        "Ingenious Hunter",
+        "Relentless Hunter",
+        "Zombie Ward"
+      ]
+    },
+    "Precision": {
+      "slot_1": [
+        "Brutal",
+        "Triumph",
+        "Battle Zeal"
+      ],
+      "slot_2": [
+        "Last Stand",
+        "Cut Down",
+        "Coup de Grace"
+      ],
+      "slot_3": [
+        "Legend: Alacrity",
+        "Legend: Tenacity",
+        "Legend: Bloodline"
+      ]
+    },
+    "Resolve": {
+      "slot_1": [
+        "Demolish",
+        "Font of Life",
+        "Courage of the Colossus",
+        "Unshakeable"
+      ],
+      "slot_2": [
+        "Second Wind",
+        "Nullifying Orb",
+        "Bone Plating"
+      ],
+      "slot_3": [
+        "Overgrowth",
+        "Revitalize",
+        "Perseverance"
+      ]
+    },
+    "Sorcery": {
+      "slot_1": [
+        "Axiom Arcanist",
+        "Manaflow Band",
+        "Botanist",
+        "Hexflash"
+      ],
+      "slot_2": [
+        "Transcendence",
+        "Celerity",
+        "Absolute Focus"
+      ],
+      "slot_3": [
+        "Scorch",
+        "Nimbus Cloak",
+        "Gathering Storm",
+        "Ixtali Seedjar"
+      ]
+    }
+  },
+  "aliases": {
+    "tryrant": "Tyrant",
+    "hextech_flashtraption": "Hexflash",
+    "eyeball_collector": "Eyeball Collection",
+    "ixtal_seedjar": "Ixtali Seedjar",
+    "ixtali_seedjar": "Ixtali Seedjar"
+  },
+  "blocker_validations": [
+    "exactly_one_keystone",
+    "exactly_three_primary_runes",
+    "exactly_one_secondary_rune",
+    "primary_slot_1_2_3_present",
+    "no_duplicate_runes",
+    "all_runes_exist_in_wr_runes_full"
+  ]
+}

@@ -1,0 +1,2 @@
+{"eval_id": "graph_reasoning_no_official_overclaim_001", "input": "Explain why Karma E connects to Aery using this generated edge.", "expected": ["labels generated_rule", "mentions shield/movement speed", "does not claim official source verification"]}
+{"eval_id": "graph_reasoning_counterplay_limitations_001", "input": "Explain Stasis vs burst path.", "expected": ["mentions timing", "mentions cooldown pending if not verified", "uses deny/mitigate language"]}

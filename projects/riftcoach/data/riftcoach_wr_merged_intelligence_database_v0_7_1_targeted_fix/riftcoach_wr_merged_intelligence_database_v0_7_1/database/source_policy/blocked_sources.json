@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "database_version": "0.6.0-chunk1",
+  "blocked_source_policy": "blocker",
+  "reason": "Prevent LoL-PC, generic League, outdated, or unapproved data contamination.",
+  "blocked_source_patterns": [
+    "^https://www\\.leagueoflegends\\.com/.*/champions/.*",
+    "^https://www\\.leagueoflegends\\.com/.*/news/game-updates/patch-.*",
+    "^https://wiki\\.leagueoflegends\\.com/en-us/(?!WR:|WR%3A).*",
+    "^https://www\\.mobafire\\.com/league-of-legends/.*",
+    "^https://u\\.gg/.*",
+    "^https://op\\.gg/.*",
+    "^https://lolalytics\\.com/.*",
+    "^https://mobalytics\\.gg/lol/.*",
+    "^https://leagueofgraphs\\.com/.*",
+    "^https://reddit\\.com/.*",
+    "^https://www\\.reddit\\.com/.*",
+    "^https://youtube\\.com/.*",
+    "^https://www\\.youtube\\.com/.*",
+    "^https://tiktok\\.com/.*",
+    "^https://www\\.tiktok\\.com/.*"
+  ],
+  "blocked_mechanic_sources": [
+    "League PC champion pages",
+    "League PC patch notes",
+    "League PC item pages",
+    "League PC rune pages",
+    "League PC summoner spell pages",
+    "generic wiki pages without WR prefix",
+    "third-party guide sites not explicitly approved by the user"
+  ]
+}

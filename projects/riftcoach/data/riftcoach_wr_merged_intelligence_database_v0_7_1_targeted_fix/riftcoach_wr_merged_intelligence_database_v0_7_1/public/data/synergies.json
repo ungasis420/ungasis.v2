@@ -1,0 +1,543 @@
+{
+  "patch": "7.1d",
+  "updated": "2026-05-12",
+  "duo_lane": [
+    {
+      "support": "karma",
+      "adc": "ezreal",
+      "score": 9,
+      "tag": "poke",
+      "note": "Mantra Q + Ezreal Q = relentless poke. Shield + speed helps Ez reposition."
+    },
+    {
+      "support": "karma",
+      "adc": "jhin",
+      "score": 9,
+      "tag": "poke",
+      "note": "Root + W = guaranteed 4th shot. Speed boost extends Jhin's kiting."
+    },
+    {
+      "support": "karma",
+      "adc": "caitlyn",
+      "score": 8,
+      "tag": "poke",
+      "note": "Double poke lane. Mantra Q + Caitlyn Q shoves and harasses."
+    },
+    {
+      "support": "karma",
+      "adc": "xayah",
+      "score": 7,
+      "tag": "utility",
+      "note": "Shield + speed helps Xayah position feathers for recall."
+    },
+    {
+      "support": "karma",
+      "adc": "ashe",
+      "score": 8,
+      "tag": "poke",
+      "note": "Double slow + poke. Arrow + root chain CC is lethal."
+    },
+    {
+      "support": "karma",
+      "adc": "varus",
+      "score": 8,
+      "tag": "poke",
+      "note": "Poke lane. Mantra Q + Varus Q chunks from range."
+    },
+    {
+      "support": "nautilus",
+      "adc": "jhin",
+      "score": 10,
+      "tag": "kill",
+      "note": "Hook + passive root into Jhin W root = death. Best kill lane."
+    },
+    {
+      "support": "nautilus",
+      "adc": "xayah",
+      "score": 9,
+      "tag": "kill",
+      "note": "Hook CC chain gives Xayah time to set feathers and recall."
+    },
+    {
+      "support": "nautilus",
+      "adc": "caitlyn",
+      "score": 9,
+      "tag": "kill",
+      "note": "Hook into trap. Caitlyn headshots during CC chain."
+    },
+    {
+      "support": "nautilus",
+      "adc": "lucian",
+      "score": 8,
+      "tag": "kill",
+      "note": "Hook + Lucian burst combo. Aggressive all-in at level 2."
+    },
+    {
+      "support": "nautilus",
+      "adc": "kai_sa",
+      "score": 8,
+      "tag": "kill",
+      "note": "CC chain stacks Kai'Sa passive. Ult follow-up guaranteed."
+    },
+    {
+      "support": "nautilus",
+      "adc": "miss_fortune",
+      "score": 8,
+      "tag": "kill",
+      "note": "Hook locks target for full MF ult channel."
+    },
+    {
+      "support": "senna",
+      "adc": "jhin",
+      "score": 8,
+      "tag": "poke",
+      "note": "Double AD poke. Senna Q through Jhin extends range. Both scale."
+    },
+    {
+      "support": "senna",
+      "adc": "ezreal",
+      "score": 7,
+      "tag": "poke",
+      "note": "Safe poke lane. Both scale well and kite back."
+    },
+    {
+      "support": "senna",
+      "adc": "xayah",
+      "score": 7,
+      "tag": "utility",
+      "note": "Senna shroud + Xayah ult = double untargetability."
+    },
+    {
+      "support": "senna",
+      "adc": "ashe",
+      "score": 8,
+      "tag": "utility",
+      "note": "Global ult synergy. Double slow + root chain."
+    },
+    {
+      "support": "seraphine",
+      "adc": "jhin",
+      "score": 9,
+      "tag": "combo",
+      "note": "Seraphine E root + Jhin W root = permanent CC chain."
+    },
+    {
+      "support": "seraphine",
+      "adc": "miss_fortune",
+      "score": 9,
+      "tag": "combo",
+      "note": "Seraphine ult + MF ult = wombo combo. AoE teamfight."
+    },
+    {
+      "support": "seraphine",
+      "adc": "xayah",
+      "score": 8,
+      "tag": "combo",
+      "note": "Double AoE ult. Seraphine charm extends Xayah feather setup."
+    },
+    {
+      "support": "seraphine",
+      "adc": "ashe",
+      "score": 8,
+      "tag": "combo",
+      "note": "Ashe R + Seraphine R = cross-map engage chain."
+    },
+    {
+      "support": "seraphine",
+      "adc": "kai_sa",
+      "score": 8,
+      "tag": "combo",
+      "note": "Seraphine ult groups enemies for Kai'Sa to dive in."
+    },
+    {
+      "support": "soraka",
+      "adc": "jinx",
+      "score": 9,
+      "tag": "sustain",
+      "note": "Jinx's passive + Soraka heals = snowball machine."
+    },
+    {
+      "support": "soraka",
+      "adc": "xayah",
+      "score": 8,
+      "tag": "sustain",
+      "note": "Sustain through trades. Xayah scales into monster DPS."
+    },
+    {
+      "support": "soraka",
+      "adc": "kai_sa",
+      "score": 9,
+      "tag": "sustain",
+      "note": "Keep Kai'Sa alive to evolve. Late-game hypercarry."
+    },
+    {
+      "support": "soraka",
+      "adc": "vayne",
+      "score": 9,
+      "tag": "sustain",
+      "note": "Vayne + Soraka heals = unkillable late-game threat."
+    },
+    {
+      "support": "soraka",
+      "adc": "ashe",
+      "score": 7,
+      "tag": "sustain",
+      "note": "Ashe arrow + Soraka silence zone = area denial."
+    },
+    {
+      "support": "milio",
+      "adc": "jinx",
+      "score": 9,
+      "tag": "hypercarry",
+      "note": "Milio's range buff + Jinx rockets = insane range. Ult cleanses CC."
+    },
+    {
+      "support": "milio",
+      "adc": "xayah",
+      "score": 8,
+      "tag": "hypercarry",
+      "note": "Range buff extends feather setup. Cleanse saves from engage."
+    },
+    {
+      "support": "milio",
+      "adc": "kai_sa",
+      "score": 9,
+      "tag": "hypercarry",
+      "note": "Range buff + attack speed. Ult cleanse saves Kai'Sa's dive."
+    },
+    {
+      "support": "milio",
+      "adc": "caitlyn",
+      "score": 8,
+      "tag": "hypercarry",
+      "note": "Already long range + Milio buff = untouchable poke."
+    },
+    {
+      "support": "milio",
+      "adc": "kog_maw",
+      "score": 10,
+      "tag": "hypercarry",
+      "note": "Kog'Maw + Milio range buff = longest range ADC in game."
+    },
+    {
+      "support": "swain",
+      "adc": "jhin",
+      "score": 9,
+      "tag": "kill",
+      "note": "Swain E pull + Jhin W root = guaranteed kill combo."
+    },
+    {
+      "support": "swain",
+      "adc": "caitlyn",
+      "score": 8,
+      "tag": "kill",
+      "note": "Swain pull into Caitlyn trap. Headshot during CC."
+    },
+    {
+      "support": "swain",
+      "adc": "miss_fortune",
+      "score": 8,
+      "tag": "kill",
+      "note": "Swain ult zoning + MF ult = AoE teamfight damage."
+    },
+    {
+      "support": "swain",
+      "adc": "xayah",
+      "score": 7,
+      "tag": "kill",
+      "note": "Swain pull sets up Xayah feather recall."
+    },
+    {
+      "support": "nami",
+      "adc": "lucian",
+      "score": 10,
+      "tag": "combo",
+      "note": "E buff + Lucian passive = double-empowered auto. Best duo in game."
+    },
+    {
+      "support": "nami",
+      "adc": "jhin",
+      "score": 9,
+      "tag": "combo",
+      "note": "Bubble + 4th shot. E slow enables Jhin W root."
+    },
+    {
+      "support": "nami",
+      "adc": "ezreal",
+      "score": 8,
+      "tag": "poke",
+      "note": "E-empowered Q poke. Sustain + speed buff."
+    },
+    {
+      "support": "nami",
+      "adc": "xayah",
+      "score": 8,
+      "tag": "combo",
+      "note": "Bubble CC + tide enables Xayah feather setup."
+    },
+    {
+      "support": "braum",
+      "adc": "lucian",
+      "score": 10,
+      "tag": "kill",
+      "note": "Lucian passive stacks Braum passive fastest. Instant stun."
+    },
+    {
+      "support": "braum",
+      "adc": "xayah",
+      "score": 8,
+      "tag": "protect",
+      "note": "Shield blocks poke. Passive stun from Xayah's feather autos."
+    },
+    {
+      "support": "braum",
+      "adc": "kai_sa",
+      "score": 8,
+      "tag": "protect",
+      "note": "Passive stacks with Kai'Sa passive. Shield protects dive."
+    },
+    {
+      "support": "braum",
+      "adc": "ashe",
+      "score": 8,
+      "tag": "protect",
+      "note": "Double CC chain. Braum passive + Ashe slow/arrow."
+    },
+    {
+      "support": "lulu",
+      "adc": "jinx",
+      "score": 10,
+      "tag": "hypercarry",
+      "note": "Lulu ult + shield + Jinx passive = unstoppable teamfight."
+    },
+    {
+      "support": "lulu",
+      "adc": "vayne",
+      "score": 9,
+      "tag": "hypercarry",
+      "note": "Pix + Vayne autos. Polymorph peels divers. Classic combo."
+    },
+    {
+      "support": "lulu",
+      "adc": "kog_maw",
+      "score": 10,
+      "tag": "hypercarry",
+      "note": "Lulu + Kog is the original protect-the-carry. Shield + ult + speed."
+    },
+    {
+      "support": "lulu",
+      "adc": "xayah",
+      "score": 8,
+      "tag": "hypercarry",
+      "note": "Speed + shield + polymorph peel for Xayah's feather DPS."
+    },
+    {
+      "support": "zilean",
+      "adc": "jinx",
+      "score": 9,
+      "tag": "scaling",
+      "note": "Zilean ult revive + Jinx passive = double-life hypercarry."
+    },
+    {
+      "support": "zilean",
+      "adc": "vayne",
+      "score": 9,
+      "tag": "scaling",
+      "note": "Revive + speed. Vayne plays aggressive knowing she has ult backup."
+    },
+    {
+      "support": "zilean",
+      "adc": "kai_sa",
+      "score": 9,
+      "tag": "scaling",
+      "note": "Zilean R lets Kai'Sa dive fearlessly. Speed boost enhances chase."
+    },
+    {
+      "support": "thresh",
+      "adc": "lucian",
+      "score": 9,
+      "tag": "combo",
+      "note": "Lore duo. Lantern + Lucian dash = aggressive engage/escape."
+    },
+    {
+      "support": "thresh",
+      "adc": "jhin",
+      "score": 8,
+      "tag": "combo",
+      "note": "Hook + flay into Jhin W root. Lantern saves immobile Jhin."
+    },
+    {
+      "support": "thresh",
+      "adc": "xayah",
+      "score": 8,
+      "tag": "combo",
+      "note": "Hook CC + lantern escape. Flay groups for feather recall."
+    },
+    {
+      "support": "leona",
+      "adc": "lucian",
+      "score": 9,
+      "tag": "kill",
+      "note": "Leona all-in at level 2 + Lucian burst = first blood."
+    },
+    {
+      "support": "leona",
+      "adc": "jhin",
+      "score": 9,
+      "tag": "kill",
+      "note": "CC chain into 4th shot. Root + stun = guaranteed damage."
+    },
+    {
+      "support": "leona",
+      "adc": "miss_fortune",
+      "score": 9,
+      "tag": "kill",
+      "note": "Leona ult + MF ult = wombo combo."
+    },
+    {
+      "support": "leona",
+      "adc": "draven",
+      "score": 9,
+      "tag": "kill",
+      "note": "Leona CC + Draven axes = massive early kill pressure."
+    }
+  ],
+  "team_comps": [
+    {
+      "name": "Dive Comp",
+      "description": "Hard engage from multiple angles. Collapse on carries.",
+      "core": [
+        "leona",
+        "vi",
+        "camille"
+      ],
+      "flex": [
+        "nautilus",
+        "wukong",
+        "hecarim",
+        "jarvan_iv"
+      ],
+      "strength": "Burst + lockdown. Wins teamfights through target access.",
+      "weakness": "Loses to disengage comps (Janna, Braum, Alistar)."
+    },
+    {
+      "name": "Protect the Carry",
+      "description": "Keep one hypercarry alive while they deal all damage.",
+      "core": [
+        "lulu",
+        "jinx",
+        "braum"
+      ],
+      "flex": [
+        "milio",
+        "soraka",
+        "zilean",
+        "kai_sa",
+        "vayne",
+        "kog_maw"
+      ],
+      "strength": "Late-game teamfight. Unstoppable if carry stays alive.",
+      "weakness": "Weak to hard engage + burst before shields go up."
+    },
+    {
+      "name": "Poke Comp",
+      "description": "Whittle enemies before fights start. Never commit.",
+      "core": [
+        "karma",
+        "ezreal",
+        "varus"
+      ],
+      "flex": [
+        "senna",
+        "seraphine",
+        "jhin",
+        "caitlyn"
+      ],
+      "strength": "Wins sieges and objective dances. Safe and consistent.",
+      "weakness": "Hard engage bypasses poke. Flanks collapse the backline."
+    },
+    {
+      "name": "Wombo Combo",
+      "description": "Stack AoE ultimates for devastating teamfight wipes.",
+      "core": [
+        "seraphine",
+        "miss_fortune",
+        "malphite"
+      ],
+      "flex": [
+        "orianna",
+        "amumu",
+        "wukong",
+        "swain"
+      ],
+      "strength": "One good ult combo wins the game. Dragon/Baron fights.",
+      "weakness": "If you miss the combo, you have nothing. Split push beats you."
+    },
+    {
+      "name": "Pick Comp",
+      "description": "Catch isolated enemies. Win through numbers advantage.",
+      "core": [
+        "thresh",
+        "lee_sin",
+        "ahri"
+      ],
+      "flex": [
+        "pyke",
+        "blitzcrank",
+        "nautilus",
+        "twisted_fate"
+      ],
+      "strength": "Vision control + hooks/charms = picks. Snowballs leads.",
+      "weakness": "Falls behind if enemy groups and you can't find picks."
+    },
+    {
+      "name": "Split Push",
+      "description": "1-3-1 or 1-4. Force enemy to choose which threat to answer.",
+      "core": [
+        "fiora",
+        "twisted_fate"
+      ],
+      "flex": [
+        "camille",
+        "jax",
+        "tryndamere",
+        "shen"
+      ],
+      "strength": "Constant map pressure. Takes towers and forces rotations.",
+      "weakness": "Requires coordination. Loses 5v5 if caught grouped."
+    },
+    {
+      "name": "Drain Tank",
+      "description": "Sustain through fights. Outlast the enemy with healing.",
+      "core": [
+        "swain",
+        "aatrox",
+        "soraka"
+      ],
+      "flex": [
+        "milio",
+        "karma",
+        "viego",
+        "mordekaiser"
+      ],
+      "strength": "Extended fights favor you. Hard to kill in teamfights.",
+      "weakness": "Grievous Wounds items reduce healing. Burst kills through sustain."
+    },
+    {
+      "name": "Global Pressure",
+      "description": "Impact the whole map with global/semi-global abilities.",
+      "core": [
+        "twisted_fate",
+        "shen",
+        "ashe"
+      ],
+      "flex": [
+        "senna",
+        "soraka",
+        "pantheon"
+      ],
+      "strength": "Turn any fight into a numbers advantage. Roaming tempo.",
+      "weakness": "Weaker in direct 5v5 if globals are down."
+    }
+  ]
+}

@@ -1,0 +1,1040 @@
+{
+ "_meta": {
+  "game": "Wild Rift",
+  "patch": "7.1e",
+  "chunk": "10",
+  "total": 20,
+  "v": "3"
+ },
+ "comps": [
+  {
+   "id": "wombo",
+   "name": "Classic Wombo Combo",
+   "archetype": "wombo",
+   "tier": "S",
+   "roles": {
+    "baron": [
+     "Malphite",
+     "Kennen",
+     "Wukong"
+    ],
+    "jungle": [
+     "Amumu",
+     "Jarvan IV",
+     "Diana"
+    ],
+    "mid": [
+     "Orianna",
+     "Seraphine",
+     "Viktor"
+    ],
+    "dragon": [
+     "Miss Fortune",
+     "Samira",
+     "Jinx"
+    ],
+    "support": [
+     "Leona",
+     "Rell",
+     "Zyra"
+    ]
+   },
+   "win": "Layer AoE CC + AoE damage at objectives. One combo = teamwipe.",
+   "power": "mid-late",
+   "play": [
+    "Group for objectives after level 5",
+    "Malphite R → Amumu R → Orianna R Shockwave",
+    "MF R Bullet Time on stunned enemies for full channel",
+    "If behind, wait for enemy facecheck — one combo resets the game"
+   ],
+   "counter": [
+    "Spread out to avoid stacked AoE",
+    "Pick split-push comp to avoid 5v5",
+    "Build Banshee's Veil / Edge of Night"
+   ],
+   "synergies": [
+    "Malphite R → Orianna R double knockup",
+    "Amumu R → MF R full channel",
+    "Leona R → Malphite R chain engage"
+   ]
+  },
+  {
+   "id": "protect_kog",
+   "name": "Protect the Kog'Maw",
+   "archetype": "protect",
+   "tier": "S",
+   "roles": {
+    "baron": [
+     "Ornn",
+     "Malphite",
+     "Shen"
+    ],
+    "jungle": [
+     "Sejuani",
+     "Amumu",
+     "Jarvan IV"
+    ],
+    "mid": [
+     "Orianna",
+     "Karma",
+     "Seraphine"
+    ],
+    "dragon": [
+     "Kog'Maw",
+     "Jinx",
+     "Vayne"
+    ],
+    "support": [
+     "Lulu",
+     "Janna",
+     "Milio"
+    ]
+   },
+   "win": "Keep Kog'Maw alive with shields/heals/CC. He shreds everything with W %HP damage.",
+   "power": "late",
+   "play": [
+    "Survive early game. Kog farms and scales",
+    "Lulu stays next to Kog — W polymorph divers, R saves from burst",
+    "Orianna E ball on Kog for shield + R peel",
+    "Front-to-back teamfight: tanks engage, Kog melts from backline"
+   ],
+   "counter": [
+    "Dive Kog with multiple assassins to overwhelm peel",
+    "Win early — Kog is useless behind",
+    "Olaf R ignores all peel CC"
+   ],
+   "synergies": [
+    "Kog'Maw + Lulu (S-tier protect pair)",
+    "Orianna E shield on Kog",
+    "Ornn upgrades Kog items"
+   ]
+  },
+  {
+   "id": "protect_jinx",
+   "name": "Protect the Jinx",
+   "archetype": "protect",
+   "tier": "S",
+   "roles": {
+    "baron": [
+     "Sion",
+     "Ornn",
+     "Malphite"
+    ],
+    "jungle": [
+     "Amumu",
+     "Sejuani",
+     "Jarvan IV"
+    ],
+    "mid": [
+     "Orianna",
+     "Viktor",
+     "Seraphine"
+    ],
+    "dragon": [
+     "Jinx",
+     "Kai'Sa",
+     "Vayne"
+    ],
+    "support": [
+     "Soraka",
+     "Milio",
+     "Lulu"
+    ]
+   },
+   "win": "Jinx gets one kill → passive Get Excited → chain resets = pentakill.",
+   "power": "mid-late",
+   "play": [
+    "Farm to 2 items. Jinx starts hypercarrying",
+    "Soraka R saves globally; Milio R cleanses ALL CC",
+    "Tanks engage front-to-back. Jinx rockets from max range",
+    "One reset = ace"
+   ],
+   "counter": [
+    "Flank with assassin (Jinx has no dash)",
+    "Win lane vs Jinx to deny scaling",
+    "Grievous Wounds to cut Soraka healing"
+   ],
+   "synergies": [
+    "Jinx + Soraka (sustain + global R)",
+    "Jinx + Milio (range extend + cleanse R)",
+    "Amumu R → Jinx R execute"
+   ]
+  },
+  {
+   "id": "yasuo_wombo",
+   "name": "Yasuo Wombo Combo",
+   "archetype": "wombo",
+   "tier": "S",
+   "roles": {
+    "baron": [
+     "Malphite",
+     "Wukong",
+     "Kennen"
+    ],
+    "jungle": [
+     "Diana",
+     "Jarvan IV",
+     "Vi"
+    ],
+    "mid": [
+     "Yasuo",
+     "Yone"
+    ],
+    "dragon": [
+     "Kai'Sa",
+     "Jinx",
+     "Miss Fortune"
+    ],
+    "support": [
+     "Nautilus",
+     "Alistar",
+     "Rakan"
+    ]
+   },
+   "win": "Knockup providers enable Yasuo R Last Breath on entire team.",
+   "power": "mid-late",
+   "play": [
+    "Diana R pulls enemies → Yasuo R on grouped airborne enemies",
+    "Malphite R backup knockup",
+    "Nautilus R point-click knockup for Yasuo R",
+    "Windwall blocks key projectiles before engage"
+   ],
+   "counter": [
+    "Spread out — Yasuo R dangerous only on grouped knockups",
+    "Ban Yasuo or deny knockup providers",
+    "Janna R / Lulu R to peel after knockup"
+   ],
+   "synergies": [
+    "Malphite R → Yasuo R",
+    "Diana R → Yasuo R",
+    "Nautilus R → Yasuo R"
+   ]
+  },
+  {
+   "id": "dive",
+   "name": "Full Dive Comp",
+   "archetype": "dive",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Camille",
+     "Irelia",
+     "Wukong"
+    ],
+    "jungle": [
+     "Vi",
+     "Lee Sin",
+     "Hecarim"
+    ],
+    "mid": [
+     "Akali",
+     "Zed",
+     "Katarina"
+    ],
+    "dragon": [
+     "Kai'Sa",
+     "Tristana",
+     "Samira"
+    ],
+    "support": [
+     "Leona",
+     "Nautilus",
+     "Rakan"
+    ]
+   },
+   "win": "All 5 dive enemy backline simultaneously. Overwhelm peel with numbers.",
+   "power": "mid",
+   "play": [
+    "Leona/Nautilus engage first",
+    "Vi R locks carry → Akali bursts → Camille R traps second carry",
+    "Kai'Sa R follows any CC",
+    "If one diver peeled, others get through"
+   ],
+   "counter": [
+    "Poppy W blocks ALL dashes",
+    "Stack peel enchanters (Lulu + Soraka)",
+    "Exhaust primary diver"
+   ],
+   "synergies": [
+    "Camille R + Vi R double lockdown",
+    "Leona engage → Kai'Sa R follow",
+    "Akali shroud → Zed shadow for multi-flank"
+   ]
+  },
+  {
+   "id": "poke_siege",
+   "name": "Poke & Siege",
+   "archetype": "poke",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Jayce",
+     "Kennen",
+     "Rumble"
+    ],
+    "jungle": [
+     "Graves",
+     "Nidalee",
+     "Lee Sin"
+    ],
+    "mid": [
+     "Ziggs",
+     "Xerath",
+     "Lux"
+    ],
+    "dragon": [
+     "Ezreal",
+     "Varus",
+     "Jhin"
+    ],
+    "support": [
+     "Karma",
+     "Seraphine",
+     "Senna"
+    ]
+   },
+   "win": "Poke enemies low before fights. Siege turrets with range.",
+   "power": "mid",
+   "play": [
+    "Poke before every objective — enemies arrive half HP",
+    "Karma R+E gives team MS to kite",
+    "Ziggs W demolishes turrets",
+    "NEVER engage 5v5. Keep distance"
+   ],
+   "counter": [
+    "Hard engage forces fights before poke matters",
+    "Sustain heals through poke",
+    "Flank from fog of war"
+   ],
+   "synergies": [
+    "Karma R+E team MS for kite",
+    "Jayce + Ezreal double poke",
+    "Ziggs + Ezreal global finishers"
+   ]
+  },
+  {
+   "id": "pick",
+   "name": "Pick & Catch Comp",
+   "archetype": "pick",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Camille",
+     "Fiora",
+     "Renekton"
+    ],
+    "jungle": [
+     "Lee Sin",
+     "Kha'Zix",
+     "Rengar"
+    ],
+    "mid": [
+     "Ahri",
+     "Twisted Fate",
+     "Lissandra"
+    ],
+    "dragon": [
+     "Jhin",
+     "Varus",
+     "Caitlyn"
+    ],
+    "support": [
+     "Thresh",
+     "Nautilus",
+     "Blitzcrank"
+    ]
+   },
+   "win": "Catch isolated enemies. Delete them. Fight 5v4 at objectives.",
+   "power": "mid",
+   "play": [
+    "Vision control is EVERYTHING",
+    "Thresh hook or Ahri charm catches someone → team collapses",
+    "Jhin W root confirms picks from range",
+    "After pick, immediately take objective"
+   ],
+   "counter": [
+    "Group as 5 — picks only work on isolated targets",
+    "Ward defensively",
+    "Morgana E blocks hook/CC"
+   ],
+   "synergies": [
+    "Thresh hook → Jhin W root chain",
+    "Ahri charm → Lee Sin Q follow",
+    "Jhin R slow → Thresh hook"
+   ]
+  },
+  {
+   "id": "split_global",
+   "name": "Split-Push + Global",
+   "archetype": "split",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Fiora",
+     "Tryndamere",
+     "Jax"
+    ],
+    "jungle": [
+     "Graves",
+     "Lee Sin",
+     "Viego"
+    ],
+    "mid": [
+     "Twisted Fate",
+     "Galio",
+     "Shen"
+    ],
+    "dragon": [
+     "Ezreal",
+     "Jinx",
+     "Jhin"
+    ],
+    "support": [
+     "Janna",
+     "Karma",
+     "Soraka"
+    ]
+   },
+   "win": "Fiora splits (nobody can 1v1 her). TF R joins fights. Map pressure.",
+   "power": "mid-late",
+   "play": [
+    "Fiora pushes side lane permanently",
+    "If enemy sends 2+ to stop, team takes objective 4v3",
+    "TF R teleports to join any fight",
+    "Janna/Karma disengage keeps team safe"
+   ],
+   "counter": [
+    "Hard engage 5v4 before Fiora splits",
+    "Send Malphite/Vayne to match Fiora",
+    "Force fights when global ults on CD"
+   ],
+   "synergies": [
+    "Fiora split + TF global R",
+    "Shen R global shield",
+    "Soraka R global heal"
+   ]
+  },
+  {
+   "id": "full_engage",
+   "name": "Full Engage Lockdown",
+   "archetype": "wombo",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Malphite",
+     "Ornn",
+     "Sion"
+    ],
+    "jungle": [
+     "Diana",
+     "Hecarim",
+     "Amumu"
+    ],
+    "mid": [
+     "Galio",
+     "Lissandra",
+     "Diana"
+    ],
+    "dragon": [
+     "Jinx",
+     "Kai'Sa",
+     "Miss Fortune"
+    ],
+    "support": [
+     "Leona",
+     "Nautilus",
+     "Rell"
+    ]
+   },
+   "win": "Triple engage ults force teamfights. Enemy can't dodge 3+ AoE engage tools.",
+   "power": "mid",
+   "play": [
+    "Leona R → Malphite R → Diana R → Galio R layered",
+    "Even if one dodged, 2 more coming",
+    "Jinx rockets from backline",
+    "Force fights at every objective"
+   ],
+   "counter": [
+    "Disengage (Janna R, Lulu polymorph)",
+    "Poke comp whittle before engage",
+    "Split push avoids 5v5"
+   ],
+   "synergies": [
+    "Malphite R → Diana R double knockup",
+    "Leona R + Galio R layered stun",
+    "Galio R on Diana for guaranteed landing"
+   ]
+  },
+  {
+   "id": "drain_tank",
+   "name": "Drain Tank Sustain",
+   "archetype": "skirmish",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Aatrox",
+     "Sett",
+     "Renekton"
+    ],
+    "jungle": [
+     "Olaf",
+     "Hecarim",
+     "Warwick"
+    ],
+    "mid": [
+     "Vladimir",
+     "Swain",
+     "Diana"
+    ],
+    "dragon": [
+     "Samira",
+     "Kai'Sa",
+     "Draven"
+    ],
+    "support": [
+     "Swain",
+     "Soraka",
+     "Seraphine"
+    ]
+   },
+   "win": "Sustain through fights with healing/drain. Enemy can't kill you.",
+   "power": "mid-late",
+   "play": [
+    "Extended fights favor you — draw fights out",
+    "Vlad R + Swain R = massive AoE drain",
+    "Olaf R ignores CC and runs at carries",
+    "If GW built, shift to burst"
+   ],
+   "counter": [
+    "Grievous Wounds on entire team",
+    "Burst kills before healing",
+    "Ignite reduces healing 50%"
+   ],
+   "synergies": [
+    "Swain R + Vladimir R double drain",
+    "Olaf R CC immune + lifesteal",
+    "Samira R AoE lifesteal"
+   ]
+  },
+  {
+   "id": "cc_chain",
+   "name": "CC Chain Lockdown",
+   "archetype": "pick",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Sion",
+     "Maokai",
+     "Ornn"
+    ],
+    "jungle": [
+     "Sejuani",
+     "Amumu",
+     "Vi"
+    ],
+    "mid": [
+     "Lissandra",
+     "Twisted Fate",
+     "Veigar"
+    ],
+    "dragon": [
+     "Jhin",
+     "Varus",
+     "Caitlyn"
+    ],
+    "support": [
+     "Nautilus",
+     "Thresh",
+     "Leona"
+    ]
+   },
+   "win": "Chain CC so enemies are locked down 5+ seconds. Can't play if can't move.",
+   "power": "mid",
+   "play": [
+    "Nautilus hook → root → R knockup → Jhin W root → Lissandra R",
+    "Target doesn't move for 5-7 seconds",
+    "Sion Q + Sejuani R for encore",
+    "Even Olaf R can't save from 7 CC sources"
+   ],
+   "counter": [
+    "Morgana E blocks entire CC chain",
+    "Milio R cleanses all CC",
+    "QSS / Mercurial Scimitar"
+   ],
+   "synergies": [
+    "Nautilus CC → Jhin W root extension",
+    "Lissandra R after chain",
+    "Sejuani passive stun from any CC"
+   ]
+  },
+  {
+   "id": "enchanter_stack",
+   "name": "Enchanter Aura Stack",
+   "archetype": "protect",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Ornn",
+     "Malphite",
+     "Sion"
+    ],
+    "jungle": [
+     "Amumu",
+     "Sejuani",
+     "Jarvan IV"
+    ],
+    "mid": [
+     "Seraphine",
+     "Karma",
+     "Lux"
+    ],
+    "dragon": [
+     "Jinx",
+     "Kai'Sa",
+     "Vayne"
+    ],
+    "support": [
+     "Sona",
+     "Soraka",
+     "Lulu"
+    ]
+   },
+   "win": "Double enchanter auras stack heals/shields. Team is unkillable in extended fights.",
+   "power": "late",
+   "play": [
+    "Seraphine W + Sona W = massive AoE healing",
+    "Seraphine R → Sona R chain CC",
+    "Ardent + Staff on both = team-wide buffs",
+    "Don't fight early. Scale to 3 items"
+   ],
+   "counter": [
+    "Assassins dive the squishy enchanters",
+    "Grievous Wounds halves healing",
+    "Hard engage bursts before shields apply"
+   ],
+   "synergies": [
+    "Seraphine R → Sona R chain",
+    "Double Ardent + Staff auras",
+    "Ornn item upgrades"
+   ]
+  },
+  {
+   "id": "xayah_rakan",
+   "name": "Lovers' Duo",
+   "archetype": "skirmish",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Ornn",
+     "Malphite",
+     "K'Sante"
+    ],
+    "jungle": [
+     "Jarvan IV",
+     "Lee Sin",
+     "Diana"
+    ],
+    "mid": [
+     "Orianna",
+     "Viktor",
+     "Syndra"
+    ],
+    "dragon": [
+     "Xayah"
+    ],
+    "support": [
+     "Rakan"
+    ]
+   },
+   "win": "Xayah + Rakan designed synergy. Rakan engages, Xayah follows with E root.",
+   "power": "mid",
+   "play": [
+    "Rakan W+R → Xayah feathers → E root on charmed enemies",
+    "Rakan E back to Xayah from extended range",
+    "Shared recall for tempo",
+    "Orianna ball on Rakan for combo"
+   ],
+   "counter": [
+    "Ban one of Xayah/Rakan",
+    "Morgana E blocks Rakan engage",
+    "Poke lane denies Xayah farm"
+   ],
+   "synergies": [
+    "Xayah + Rakan (designed duo)",
+    "Rakan carries Orianna ball",
+    "J4 R + Xayah feather field"
+   ]
+  },
+  {
+   "id": "hyperscale",
+   "name": "Triple Hyperscale",
+   "archetype": "protect",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Kayle",
+     "Nasus"
+    ],
+    "jungle": [
+     "Viego",
+     "Master Yi",
+     "Shyvana"
+    ],
+    "mid": [
+     "Kassadin",
+     "Veigar",
+     "Viktor"
+    ],
+    "dragon": [
+     "Vayne",
+     "Jinx",
+     "Kog'Maw"
+    ],
+    "support": [
+     "Lulu",
+     "Soraka",
+     "Milio"
+    ]
+   },
+   "win": "Survive to 3+ items. Kayle 15 + Kassadin 13 + Vayne 3 items = unstoppable.",
+   "power": "late",
+   "play": [
+    "SURVIVE early. Farm farm farm",
+    "Kayle R makes carry invulnerable",
+    "Vayne shreds tanks, Kassadin deletes squishies",
+    "At 25+ min, outscale everything"
+   ],
+   "counter": [
+    "END EARLY. Dive and snowball",
+    "Crush Vayne in lane",
+    "Invade Kassadin pre-6"
+   ],
+   "synergies": [
+    "Lulu R saves whichever carry focused",
+    "Kayle R on fed carry",
+    "Vayne + Lulu protect pair"
+   ]
+  },
+  {
+   "id": "early_aggro",
+   "name": "Early Aggression Snowball",
+   "archetype": "skirmish",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Renekton",
+     "Darius",
+     "Pantheon"
+    ],
+    "jungle": [
+     "Lee Sin",
+     "Xin Zhao",
+     "Rek'Sai"
+    ],
+    "mid": [
+     "Zed",
+     "Fizz",
+     "Akali"
+    ],
+    "dragon": [
+     "Draven",
+     "Lucian",
+     "Tristana"
+    ],
+    "support": [
+     "Leona",
+     "Nautilus",
+     "Thresh"
+    ]
+   },
+   "win": "Win every lane. Snowball kills into gold lead. End before 20 minutes.",
+   "power": "early",
+   "play": [
+    "Leona level 2 all-in with Draven = first blood",
+    "Lee Sin perma-gank from level 3",
+    "Zed roams bot after 5 for triple kill dive",
+    "Take every dragon. End by 18 min"
+   ],
+   "counter": [
+    "Survive to 20 min — early comps fall off",
+    "Scale picks outscale everything",
+    "Play safe under tower"
+   ],
+   "synergies": [
+    "Draven + Leona level 2 kill lane",
+    "Lee Sin ganks for Renekton",
+    "Zed R + Lee Sin R combo"
+   ]
+  },
+  {
+   "id": "aoe_delete",
+   "name": "AoE Zone Delete",
+   "archetype": "wombo",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Kennen",
+     "Rumble",
+     "Wukong"
+    ],
+    "jungle": [
+     "Jarvan IV",
+     "Amumu",
+     "Diana"
+    ],
+    "mid": [
+     "Rumble",
+     "Viktor",
+     "Orianna"
+    ],
+    "dragon": [
+     "Miss Fortune",
+     "Samira",
+     "Jinx"
+    ],
+    "support": [
+     "Rell",
+     "Leona",
+     "Zyra"
+    ]
+   },
+   "win": "J4 R traps → Kennen R + Rumble R + MF R inside arena = instant teamwipe.",
+   "power": "mid",
+   "play": [
+    "J4 E+Q + R Cataclysm traps 3+",
+    "Kennen Flash + R inside Cataclysm",
+    "Rumble R Equalizer through arena",
+    "MF R on trapped enemies"
+   ],
+   "counter": [
+    "Flash out of J4 ult",
+    "Spread out so J4 can't trap multiple",
+    "Zhonya's to survive inside"
+   ],
+   "synergies": [
+    "J4 Cataclysm + Kennen R prison",
+    "J4 Cataclysm + Rumble R fire arena",
+    "Rell R pull groups for J4"
+   ]
+  },
+  {
+   "id": "reset",
+   "name": "Reset Chain Comp",
+   "archetype": "dive",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Irelia",
+     "Riven",
+     "Wukong"
+    ],
+    "jungle": [
+     "Viego",
+     "Master Yi",
+     "Kha'Zix"
+    ],
+    "mid": [
+     "Katarina",
+     "Akali"
+    ],
+    "dragon": [
+     "Jinx",
+     "Samira",
+     "Tristana"
+    ],
+    "support": [
+     "Thresh",
+     "Nautilus",
+     "Leona"
+    ]
+   },
+   "win": "Get ONE kill → chain resets. Viego possess, Katarina E, Jinx passive, Kha'Zix E.",
+   "power": "mid-late",
+   "play": [
+    "Thresh hook starts with a pick",
+    "Katarina kill → E reset → R → chain pentakill",
+    "Viego kill → possess → heal → R → chain",
+    "Jinx kill → passive → runs down rest"
+   ],
+   "counter": [
+    "DON'T die first — no resets trigger",
+    "Exhaust + CC first reset champion",
+    "Group tight so resets can't chain"
+   ],
+   "synergies": [
+    "Viego possession chain",
+    "Katarina E + Jinx passive on same kill",
+    "Thresh pick → first kill → chain"
+   ]
+  },
+  {
+   "id": "anti_dive",
+   "name": "Anti-Dive Peel Fortress",
+   "archetype": "protect",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Poppy",
+     "Shen",
+     "Maokai"
+    ],
+    "jungle": [
+     "Ivern",
+     "Sejuani",
+     "Amumu"
+    ],
+    "mid": [
+     "Orianna",
+     "Viktor",
+     "Seraphine"
+    ],
+    "dragon": [
+     "Vayne",
+     "Jinx",
+     "Kog'Maw"
+    ],
+    "support": [
+     "Janna",
+     "Lulu",
+     "Milio"
+    ]
+   },
+   "win": "Nobody can dive your carry. Poppy W blocks dashes. Janna R pushes away.",
+   "power": "mid-late",
+   "play": [
+    "Poppy W = ALL dashes blocked in zone",
+    "Janna R pushes everyone away + heals",
+    "Orianna E shield + R peel",
+    "Vayne front-to-back, team peels"
+   ],
+   "counter": [
+    "Poke comp — can't dive anyway",
+    "Split push — only works in 5v5",
+    "Olaf R ignores Poppy W and Janna R"
+   ],
+   "synergies": [
+    "Poppy W blocks all dashes",
+    "Janna R pushes divers",
+    "Vayne + Janna keep-alive pair"
+   ]
+  },
+  {
+   "id": "global",
+   "name": "Global Ult Pressure",
+   "archetype": "split",
+   "tier": "A",
+   "roles": {
+    "baron": [
+     "Shen",
+     "Gangplank"
+    ],
+    "jungle": [
+     "Nocturne",
+     "Pantheon",
+     "Lee Sin"
+    ],
+    "mid": [
+     "Twisted Fate",
+     "Galio"
+    ],
+    "dragon": [
+     "Jinx",
+     "Ezreal",
+     "Senna"
+    ],
+    "support": [
+     "Soraka",
+     "Karma",
+     "Thresh"
+    ]
+   },
+   "win": "3+ global ults. Apply pressure everywhere. Enemy never feels safe.",
+   "power": "mid",
+   "play": [
+    "Shen splits → R to team if dove",
+    "TF R reveals map + teleports",
+    "Nocturne R darkness → dive anywhere",
+    "Soraka R global heal, Jinx R cross-map execute"
+   ],
+   "counter": [
+    "Group as 5 — globals less useful",
+    "Deep ward to see TF/Nocturne R",
+    "Force fights when global Rs on CD"
+   ],
+   "synergies": [
+    "TF R + Nocturne R double global dive",
+    "Shen R + Soraka R double global save",
+    "Jinx R cross-map execute"
+   ]
+  },
+  {
+   "id": "support_flex",
+   "name": "Support Flex (User Pool)",
+   "archetype": "flex",
+   "tier": "S",
+   "roles": {
+    "baron": [
+     "Malphite",
+     "Ornn",
+     "Sett"
+    ],
+    "jungle": [
+     "Jarvan IV",
+     "Amumu",
+     "Diana"
+    ],
+    "mid": [
+     "Orianna",
+     "Viktor",
+     "Ahri"
+    ],
+    "dragon": [
+     "Jhin",
+     "Jinx",
+     "Kai'Sa"
+    ],
+    "support": {
+     "primary": "Nautilus",
+     "pool": [
+      "Karma",
+      "Swain",
+      "Senna",
+      "Seraphine",
+      "Soraka",
+      "Milio",
+      "Lulu",
+      "Thresh",
+      "Leona"
+     ],
+     "flex_guide": {
+      "vs_squishies": "Nautilus or Swain",
+      "vs_tanks": "Senna or Karma",
+      "vs_engage": "Milio or Soraka",
+      "vs_poke": "Soraka or Seraphine",
+      "with_hypercarry": "Milio or Soraka",
+      "with_burst_adc": "Nautilus or Swain",
+      "with_poke_adc": "Karma or Senna"
+     }
+    }
+   },
+   "win": "Flex support counter-pick based on team/enemy comp. 7-champion deep pool covers all situations.",
+   "power": "all",
+   "play": [
+    "Draft support LAST — counter-pick",
+    "Nautilus into squishy ADC = kills",
+    "Karma into poke = match poke + shield",
+    "Soraka/Milio into dive = keep carry alive"
+   ],
+   "counter": [
+    "Ban Nautilus vs aggressive bot",
+    "Grievous Wounds vs Soraka/Senna/Seraphine",
+    "Hard engage vs Karma/Senna poke"
+   ],
+   "synergies": [
+    "Nautilus + Kai'Sa (CC → plasma burst)",
+    "Swain + Jhin (root chain)",
+    "Milio + Kog'Maw (range extend)"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3908 @@
+{
+  "version": "0.7.0",
+  "patch_version": "7.1e",
+  "generated_at_utc": "2026-05-21T19:32:10.976908+00:00",
+  "entity_type": "spell",
+  "count": 10,
+  "records": [
+    {
+      "canonical_id": "spell:barrier",
+      "id": "barrier",
+      "canonical_record": {
+        "id": "barrier",
+        "name": "Barrier",
+        "aliases": [
+          "barrier",
+          "barrier"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Shields your champion briefly to absorb incoming damage.",
+        "full_description": "Barrier grants your champion a short-duration shield that scales by level and absorbs damage before health is lost.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "source_verified"
+        },
+        "stats": {
+          "shield_amount": {
+            "value": null,
+            "raw": "110-450 based on level",
+            "unit": "shield_health",
+            "field_type": "shield_amount",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "shield_duration": {
+            "value": null,
+            "raw": "2 seconds",
+            "unit": "seconds",
+            "field_type": "duration",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "cooldowns": {
+          "primary": {
+            "raw": "100 seconds",
+            "seconds": 100,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": "Self",
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": false,
+          "raw": "False",
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active",
+            "description": "Shield your champion for 110-450 based on level for 2 seconds.",
+            "source_status": "source_verified"
+          }
+        ],
+        "passive_effects": [],
+        "damage_types": [],
+        "defense_types": [
+          "shield",
+          "burst_mitigation",
+          "self_defense"
+        ],
+        "crowd_control_types": [],
+        "effect_tags": [
+          "anti_burst",
+          "burst_mitigation",
+          "self_defense",
+          "shield",
+          "survival"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "Against burst lanes, assassin all-ins, and situations where self-survival is more important than ally utility."
+        ],
+        "why_to_choose": [
+          "Creates a direct survivability window without targeting constraints."
+        ],
+        "when_to_avoid": [
+          "If you need team utility, anti-dive damage reduction, or crowd-control cleansing more."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "anti_burst",
+          "self_survival",
+          "shield_synergy"
+        ],
+        "source_status": "source_verified",
+        "source_family": "lol_wiki_wr",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+          ],
+          "retrieved_at": "2026-05-20T00:00:00+08:00",
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "rag": {
+          "text_for_embedding": "Barrier is a Wild Rift summoner spell. Shields your champion briefly to absorb incoming damage. Effects: shield, burst_mitigation, self_defense, anti_burst, survival. Patch 7.1e. Source status: source_verified.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "barrier",
+            "patch_version": "7.1e",
+            "effects": [
+              "anti_burst",
+              "burst_mitigation",
+              "self_defense",
+              "shield",
+              "survival"
+            ],
+            "source_status": "source_verified"
+          }
+        },
+        "graph": {
+          "node_id": "spell.barrier",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "barrier",
+            "record_hash": "66c7ffa1656227ef8bca73382b61ad747cc421cfd6087f59bed8109c7e2eb0bf",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Barrier"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "barrier",
+            "record_hash": "b57a74cd34649f881beaccb05dd41d9c02bc93fbdb64cf152fa2686190fc90bb",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Barrier"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "barrier",
+            "record_hash": "4ac06fee33e631cbf0e0927f82fa22584e8789d7e90321173a3b6275f629ba2d",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Barrier"
+          }
+        ],
+        "stats": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "barrier",
+            "record_hash": "66c7ffa1656227ef8bca73382b61ad747cc421cfd6087f59bed8109c7e2eb0bf",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": {
+              "shield_amount": {
+                "value": null,
+                "raw": "110-450 based on level",
+                "unit": "shield_health",
+                "field_type": "shield_amount",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "shield_duration": {
+                "value": null,
+                "raw": "2 seconds",
+                "unit": "seconds",
+                "field_type": "duration",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              }
+            }
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "barrier",
+            "record_hash": "b57a74cd34649f881beaccb05dd41d9c02bc93fbdb64cf152fa2686190fc90bb",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 120
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "barrier",
+            "record_hash": "4ac06fee33e631cbf0e0927f82fa22584e8789d7e90321173a3b6275f629ba2d",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 100
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "barrier",
+            "record_hash": "b57a74cd34649f881beaccb05dd41d9c02bc93fbdb64cf152fa2686190fc90bb",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Gain a shield that absorbs 100-450 damage (based on level) for 2 seconds."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "barrier",
+            "record_hash": "4ac06fee33e631cbf0e0927f82fa22584e8789d7e90321173a3b6275f629ba2d",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Shield yourself for a short duration."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "barrier",
+            "record_hash": "4ac06fee33e631cbf0e0927f82fa22584e8789d7e90321173a3b6275f629ba2d",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Shield your champion for 120-560 (based on level) for 2.5 seconds."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "barrier",
+          "record_hash": "66c7ffa1656227ef8bca73382b61ad747cc421cfd6087f59bed8109c7e2eb0bf",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "barrier",
+          "record_hash": "b57a74cd34649f881beaccb05dd41d9c02bc93fbdb64cf152fa2686190fc90bb",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "barrier",
+          "record_hash": "4ac06fee33e631cbf0e0927f82fa22584e8789d7e90321173a3b6275f629ba2d",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Barrier",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "stats",
+          "selected_value": {
+            "shield_amount": {
+              "value": null,
+              "raw": "110-450 based on level",
+              "unit": "shield_health",
+              "field_type": "shield_amount",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "shield_duration": {
+              "value": null,
+              "raw": "2 seconds",
+              "unit": "seconds",
+              "field_type": "duration",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            }
+          },
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "conflict_traced"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:clarity",
+      "id": "clarity",
+      "canonical_record": {
+        "id": "clarity",
+        "name": "Clarity",
+        "effect": "Restores 50% maximum mana to you and 25% maximum mana to nearby allies.",
+        "cooldown": 90,
+        "map": "Howling Abyss",
+        "bestOn": [
+          "ARAM"
+        ],
+        "image": "/images/spells/clarity.png",
+        "source": "https://wiki.leagueoflegends.com/en-us/WR:Clarity",
+        "entity_type": "spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e"
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "clarity",
+            "record_hash": "7eed0e1c616d543ee98384338169675c5459d1ec792c213bc174d50d2b35a725",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Clarity"
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "clarity",
+            "record_hash": "7eed0e1c616d543ee98384338169675c5459d1ec792c213bc174d50d2b35a725",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 90
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "clarity",
+            "record_hash": "7eed0e1c616d543ee98384338169675c5459d1ec792c213bc174d50d2b35a725",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Restores 50% maximum mana to you and 25% maximum mana to nearby allies."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "clarity",
+          "record_hash": "7eed0e1c616d543ee98384338169675c5459d1ec792c213bc174d50d2b35a725",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Clarity",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": 90,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": "Restores 50% maximum mana to you and 25% maximum mana to nearby allies.",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:cleanse",
+      "id": "cleanse",
+      "canonical_record": {
+        "id": "cleanse",
+        "name": "Cleanse",
+        "aliases": [
+          "cleanse",
+          "cleanse"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Cleansing/CC-response spell reserved in the final 7.1e spell allowlist.",
+        "full_description": "Cleanse is retained as one of the final allowed spells, but its exact Wild Rift mechanics, cooldown, duration, and restrictions require approved-source refresh before exact recommendation use.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "pending_allowed_source_refresh"
+        },
+        "stats": {},
+        "cooldowns": {
+          "primary": {
+            "raw": null,
+            "seconds": null,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "pending_allowed_source_refresh",
+            "source_family": null,
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Cleanse"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.0,
+            "notes": [
+              "Exact cooldown requires approved-source refresh before production use."
+            ]
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": null,
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "pending_allowed_source_refresh",
+          "source_family": null,
+          "source_urls": [],
+          "patch_version": "7.1e",
+          "confidence": 0.0,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": null,
+          "raw": null,
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "pending_allowed_source_refresh",
+          "source_family": null,
+          "source_urls": [],
+          "patch_version": "7.1e",
+          "confidence": 0.0,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active_pending",
+            "description": "Exact active effect requires approved-source refresh. Do not source-verify until the WR:Cleanse page is accessible.",
+            "source_status": "pending_allowed_source_refresh"
+          }
+        ],
+        "passive_effects": [],
+        "damage_types": [],
+        "defense_types": [
+          "cleanse",
+          "cc_mitigation"
+        ],
+        "crowd_control_types": [],
+        "effect_tags": [
+          "cc_mitigation",
+          "cleanse",
+          "defensive_spell",
+          "pending_exact_values"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "When enemy crowd-control threat is the draft problem; exact recommendations require source refresh."
+        ],
+        "why_to_choose": [
+          "Potentially answers disabling effects; exact mechanics must be verified before production use."
+        ],
+        "when_to_avoid": [
+          "Do not recommend as exact counterplay until the approved source is refreshed."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "cc_response_pending_verification"
+        ],
+        "source_status": "pending_allowed_source_refresh",
+        "source_family": "lol_wiki_wr_pending",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Cleanse"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "pending_allowed_source_refresh",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Cleanse"
+          ],
+          "retrieved_at": null,
+          "patch_version": "7.1e",
+          "confidence": 0.0,
+          "notes": [
+            "Allowed source did not expose details in this run; record preserved for allowlist and queued for refresh."
+          ]
+        },
+        "rag": {
+          "text_for_embedding": "Cleanse is a Wild Rift summoner spell. Cleansing/CC-response spell reserved in the final 7.1e spell allowlist. Effects: cleanse, cc_mitigation, defensive_spell, pending_exact_values. Patch 7.1e. Source status: pending_allowed_source_refresh.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "cleanse",
+            "patch_version": "7.1e",
+            "effects": [
+              "cc_mitigation",
+              "cleanse",
+              "defensive_spell",
+              "pending_exact_values"
+            ],
+            "source_status": "pending_allowed_source_refresh"
+          }
+        },
+        "graph": {
+          "node_id": "spell.cleanse",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "cleanse",
+            "record_hash": "518e87ef82f33cd618a5ed7982fa5c539af6b6a391f37b839556e5b47511b2b4",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Cleanse"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "cleanse",
+            "record_hash": "92a450335076a87bdb8cddcbdd2c5f6f17f891b970a7142bad71b7f66d490d80",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Cleanse"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "cleanse",
+            "record_hash": "46a8d419f7122e37b1ce9069e82174af20a089dd77f9eab8e5911a0b755d89fd",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Cleanse"
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "cleanse",
+            "record_hash": "92a450335076a87bdb8cddcbdd2c5f6f17f891b970a7142bad71b7f66d490d80",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 110
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "cleanse",
+            "record_hash": "46a8d419f7122e37b1ce9069e82174af20a089dd77f9eab8e5911a0b755d89fd",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 110
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "cleanse",
+            "record_hash": "92a450335076a87bdb8cddcbdd2c5f6f17f891b970a7142bad71b7f66d490d80",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Remove all crowd control effects (except suppression and airborne) and gain 65% tenacity for 3 seconds."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "cleanse",
+            "record_hash": "46a8d419f7122e37b1ce9069e82174af20a089dd77f9eab8e5911a0b755d89fd",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Remove all disables and grants brief CC immunity."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "cleanse",
+            "record_hash": "46a8d419f7122e37b1ce9069e82174af20a089dd77f9eab8e5911a0b755d89fd",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Removes all disables (excluding Airborne, Nearsight, and Suppression) and summoner spell debuffs (excluding Mark) affecting your champion, and grants crowd control immunity for 0.25 seconds."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "cleanse",
+          "record_hash": "518e87ef82f33cd618a5ed7982fa5c539af6b6a391f37b839556e5b47511b2b4",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "cleanse",
+          "record_hash": "92a450335076a87bdb8cddcbdd2c5f6f17f891b970a7142bad71b7f66d490d80",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "cleanse",
+          "record_hash": "46a8d419f7122e37b1ce9069e82174af20a089dd77f9eab8e5911a0b755d89fd",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Cleanse",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:exhaust",
+      "id": "exhaust",
+      "canonical_record": {
+        "id": "exhaust",
+        "name": "Exhaust",
+        "aliases": [
+          "exhaust",
+          "exhaust"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Reduces an enemy champion’s damage and slows them for a short duration.",
+        "full_description": "Exhaust targets an enemy champion, reducing their damage output and applying a decaying slow for 2.5 seconds.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "source_verified"
+        },
+        "stats": {
+          "duration": {
+            "value": null,
+            "raw": "2.5 seconds",
+            "unit": "seconds",
+            "field_type": "duration",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "damage_reduction": {
+            "value": null,
+            "raw": "40%",
+            "unit": "percent",
+            "field_type": "damage_reduction",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "slow": {
+            "value": null,
+            "raw": "60% decaying over duration",
+            "unit": "percent",
+            "field_type": "slow",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "cooldowns": {
+          "primary": {
+            "raw": "100 seconds",
+            "seconds": 100,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": "500",
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": true,
+          "raw": "True",
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active",
+            "description": "Exhaust the target enemy champion for 2.5 seconds, reducing damage dealt by 40% and slowing by 60% decaying over the duration.",
+            "source_status": "source_verified"
+          }
+        ],
+        "passive_effects": [],
+        "damage_types": [],
+        "defense_types": [
+          "peel",
+          "damage_reduction"
+        ],
+        "crowd_control_types": [
+          "slow"
+        ],
+        "effect_tags": [
+          "anti_all_in",
+          "anti_assassin",
+          "damage_reduction",
+          "peel",
+          "slow",
+          "targeted_debuff"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "Against assassins, burst divers, short-range all-in champions, and carry-protection lanes."
+        ],
+        "why_to_choose": [
+          "Directly denies enemy damage windows and creates peel value."
+        ],
+        "when_to_avoid": [
+          "If the primary threat is poke, map pressure, or hard CC that Cleanse would answer better."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "anti_assassin",
+          "peel",
+          "all_in_denial"
+        ],
+        "source_status": "source_verified",
+        "source_family": "lol_wiki_wr",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+          ],
+          "retrieved_at": "2026-05-20T00:00:00+08:00",
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "rag": {
+          "text_for_embedding": "Exhaust is a Wild Rift summoner spell. Reduces an enemy champion’s damage and slows them for a short duration. Effects: damage_reduction, slow, anti_assassin, anti_all_in, peel, targeted_debuff. Patch 7.1e. Source status: source_verified.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "exhaust",
+            "patch_version": "7.1e",
+            "effects": [
+              "anti_all_in",
+              "anti_assassin",
+              "damage_reduction",
+              "peel",
+              "slow",
+              "targeted_debuff"
+            ],
+            "source_status": "source_verified"
+          }
+        },
+        "graph": {
+          "node_id": "spell.exhaust",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "exhaust",
+            "record_hash": "de7d920b012a4584b2e86c6d01030b357bef1b7bdfd0232aeea37eb1bcbc9fb5",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Exhaust"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "exhaust",
+            "record_hash": "e3364f2046fa4a97187e2e56360e763e1ffd6bc5ed2270d3954b899a21f320b2",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Exhaust"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "exhaust",
+            "record_hash": "576ab31d9f576f57f5c6e6f93082ec18601927fd24786ce1c01cc92e25094815",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Exhaust"
+          }
+        ],
+        "stats": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "exhaust",
+            "record_hash": "de7d920b012a4584b2e86c6d01030b357bef1b7bdfd0232aeea37eb1bcbc9fb5",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": {
+              "duration": {
+                "value": null,
+                "raw": "2.5 seconds",
+                "unit": "seconds",
+                "field_type": "duration",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "damage_reduction": {
+                "value": null,
+                "raw": "40%",
+                "unit": "percent",
+                "field_type": "damage_reduction",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "slow": {
+                "value": null,
+                "raw": "60% decaying over duration",
+                "unit": "percent",
+                "field_type": "slow",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              }
+            }
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "exhaust",
+            "record_hash": "e3364f2046fa4a97187e2e56360e763e1ffd6bc5ed2270d3954b899a21f320b2",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 105
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "exhaust",
+            "record_hash": "576ab31d9f576f57f5c6e6f93082ec18601927fd24786ce1c01cc92e25094815",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 100
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "exhaust",
+            "record_hash": "e3364f2046fa4a97187e2e56360e763e1ffd6bc5ed2270d3954b899a21f320b2",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Exhaust target enemy champion, reducing their movement speed by 20% and their damage dealt by 40% for 2.5 seconds."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "exhaust",
+            "record_hash": "576ab31d9f576f57f5c6e6f93082ec18601927fd24786ce1c01cc92e25094815",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Reduce a champion's damage and slow them."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "exhaust",
+            "record_hash": "576ab31d9f576f57f5c6e6f93082ec18601927fd24786ce1c01cc92e25094815",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Exhaust the target enemy champion for 2.5 seconds, reducing their damage dealt by 40% and slowing them by 35% decaying over the duration."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "exhaust",
+          "record_hash": "de7d920b012a4584b2e86c6d01030b357bef1b7bdfd0232aeea37eb1bcbc9fb5",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "exhaust",
+          "record_hash": "e3364f2046fa4a97187e2e56360e763e1ffd6bc5ed2270d3954b899a21f320b2",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "exhaust",
+          "record_hash": "576ab31d9f576f57f5c6e6f93082ec18601927fd24786ce1c01cc92e25094815",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Exhaust",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "stats",
+          "selected_value": {
+            "duration": {
+              "value": null,
+              "raw": "2.5 seconds",
+              "unit": "seconds",
+              "field_type": "duration",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "damage_reduction": {
+              "value": null,
+              "raw": "40%",
+              "unit": "percent",
+              "field_type": "damage_reduction",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "slow": {
+              "value": null,
+              "raw": "60% decaying over duration",
+              "unit": "percent",
+              "field_type": "slow",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            }
+          },
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "conflict_traced"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:flash",
+      "id": "flash",
+      "canonical_record": {
+        "id": "flash",
+        "name": "Flash",
+        "aliases": [
+          "flash",
+          "flash"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Blinks your champion a short distance forward or toward the target direction.",
+        "full_description": "Flash is an instant repositioning spell that blinks your champion forward or toward the target direction. It is disabled while you cannot cast abilities.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "source_verified"
+        },
+        "stats": {},
+        "cooldowns": {
+          "primary": {
+            "raw": "150 seconds",
+            "seconds": 150,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Flash"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": "X",
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Flash"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": false,
+          "raw": "False",
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Flash"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active",
+            "description": "Blink your champion a short distance forward or toward the target direction.",
+            "source_status": "source_verified"
+          }
+        ],
+        "passive_effects": [
+          {
+            "label": "cast_restriction",
+            "description": "Flash is disabled while you are unable to cast abilities.",
+            "source_status": "source_verified"
+          }
+        ],
+        "damage_types": [],
+        "defense_types": [
+          "blink",
+          "escape",
+          "reposition"
+        ],
+        "crowd_control_types": [],
+        "effect_tags": [
+          "blink",
+          "engage",
+          "escape",
+          "flash_combo",
+          "mobility",
+          "reposition"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "Nearly universal safety, engage, reposition, and combo-extension value."
+        ],
+        "why_to_choose": [
+          "Instant displacement solves threats that movement speed cannot."
+        ],
+        "when_to_avoid": [
+          "Rarely avoid; only omit in specific role/map/build systems that mandate other spells."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "universal_reposition",
+          "escape_tool",
+          "engage_tool"
+        ],
+        "source_status": "source_verified",
+        "source_family": "lol_wiki_wr",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Flash"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Flash"
+          ],
+          "retrieved_at": "2026-05-20T00:00:00+08:00",
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "rag": {
+          "text_for_embedding": "Flash is a Wild Rift summoner spell. Blinks your champion a short distance forward or toward the target direction. Effects: blink, reposition, escape, engage, mobility, flash_combo. Patch 7.1e. Source status: source_verified.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "flash",
+            "patch_version": "7.1e",
+            "effects": [
+              "blink",
+              "engage",
+              "escape",
+              "flash_combo",
+              "mobility",
+              "reposition"
+            ],
+            "source_status": "source_verified"
+          }
+        },
+        "graph": {
+          "node_id": "spell.flash",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "flash",
+            "record_hash": "486c3df790878fb122f7c48baf3c2c5f627a4e5b7cdeebbe4ea75aeafb957641",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Flash"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "flash",
+            "record_hash": "e4159c73cb0538fd1574e608c427184077bfca1d128fdfcf195afbcbb30eae80",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Flash"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "flash",
+            "record_hash": "a063e39bdbd9ed9bb0109dd47255719387f8c3361d8c48146010ea45f8df34c0",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Flash"
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "flash",
+            "record_hash": "e4159c73cb0538fd1574e608c427184077bfca1d128fdfcf195afbcbb30eae80",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 150
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "flash",
+            "record_hash": "a063e39bdbd9ed9bb0109dd47255719387f8c3361d8c48146010ea45f8df34c0",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 150
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "flash",
+            "record_hash": "e4159c73cb0538fd1574e608c427184077bfca1d128fdfcf195afbcbb30eae80",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Teleport a short distance forward or towards the aimed direction."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "flash",
+            "record_hash": "a063e39bdbd9ed9bb0109dd47255719387f8c3361d8c48146010ea45f8df34c0",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Blink a short distance forward."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "flash",
+            "record_hash": "a063e39bdbd9ed9bb0109dd47255719387f8c3361d8c48146010ea45f8df34c0",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Blink your champion a short distance forward or towards the target direction. Flash is disabled while you are unable to cast abilities."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "flash",
+          "record_hash": "486c3df790878fb122f7c48baf3c2c5f627a4e5b7cdeebbe4ea75aeafb957641",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "flash",
+          "record_hash": "e4159c73cb0538fd1574e608c427184077bfca1d128fdfcf195afbcbb30eae80",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "flash",
+          "record_hash": "a063e39bdbd9ed9bb0109dd47255719387f8c3361d8c48146010ea45f8df34c0",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Flash",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:ghost",
+      "id": "ghost",
+      "canonical_record": {
+        "id": "ghost",
+        "name": "Ghost",
+        "aliases": [
+          "ghost",
+          "ghost"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Gives a burst of movement speed that decays over time and refreshes on champion takedown.",
+        "full_description": "Ghost grants movement speed for 8 seconds, decaying to 25% bonus movement speed. Champion takedowns extend the duration by 6 seconds and refresh the effect up to the original duration.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "source_verified"
+        },
+        "stats": {
+          "duration": {
+            "value": null,
+            "raw": "8 seconds",
+            "unit": "seconds",
+            "field_type": "duration",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "decay_floor": {
+            "value": null,
+            "raw": "decays to 25% bonus movement speed",
+            "unit": "percent",
+            "field_type": "movement_speed_bonus",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "takedown_extension": {
+            "value": null,
+            "raw": "6 seconds",
+            "unit": "seconds",
+            "field_type": "takedown_extension",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "cooldowns": {
+          "primary": {
+            "raw": "90 seconds",
+            "seconds": 90,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": "Self",
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": false,
+          "raw": "False",
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active",
+            "description": "Gain movement speed for 8 seconds; takedowns extend and refresh the movement-speed effect.",
+            "source_status": "source_verified"
+          }
+        ],
+        "passive_effects": [],
+        "damage_types": [],
+        "defense_types": [
+          "movement_speed",
+          "disengage",
+          "kite"
+        ],
+        "crowd_control_types": [],
+        "effect_tags": [
+          "chase",
+          "extended_fight",
+          "kite",
+          "mobility",
+          "movement_speed",
+          "takedown_reset"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "Extended fights, kiting patterns, melee chase, juggernaut access, and jungle/top lane mobility plans."
+        ],
+        "why_to_choose": [
+          "Higher uptime than Flash-style burst mobility and strong reset value after takedowns."
+        ],
+        "when_to_avoid": [
+          "When instant blink safety is required more than long-duration movement speed."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "extended_fight_mobility",
+          "chase_reset",
+          "kite_tool"
+        ],
+        "source_status": "source_verified",
+        "source_family": "lol_wiki_wr",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+          ],
+          "retrieved_at": "2026-05-20T00:00:00+08:00",
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "rag": {
+          "text_for_embedding": "Ghost is a Wild Rift summoner spell. Gives a burst of movement speed that decays over time and refreshes on champion takedown. Effects: movement_speed, chase, kite, takedown_reset, mobility, extended_fight. Patch 7.1e. Source status: source_verified.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "ghost",
+            "patch_version": "7.1e",
+            "effects": [
+              "chase",
+              "extended_fight",
+              "kite",
+              "mobility",
+              "movement_speed",
+              "takedown_reset"
+            ],
+            "source_status": "source_verified"
+          }
+        },
+        "graph": {
+          "node_id": "spell.ghost",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "ghost",
+            "record_hash": "ed6c54e36d4318a91cabcf014ee00681d05ec24ab855c27a818f8128ec7e5a74",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Ghost"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "ghost",
+            "record_hash": "268a3cd3934710cb48e608a338fdd2d728b93eaf14cfdeea60fa7b71874ad0bf",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Ghost"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ghost",
+            "record_hash": "905b2f6fe91f3667fc08d39e8073abc4abd94fd73bd81a49fd4e17ab3acfcf58",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Ghost"
+          }
+        ],
+        "stats": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "ghost",
+            "record_hash": "ed6c54e36d4318a91cabcf014ee00681d05ec24ab855c27a818f8128ec7e5a74",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": {
+              "duration": {
+                "value": null,
+                "raw": "8 seconds",
+                "unit": "seconds",
+                "field_type": "duration",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "decay_floor": {
+                "value": null,
+                "raw": "decays to 25% bonus movement speed",
+                "unit": "percent",
+                "field_type": "movement_speed_bonus",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "takedown_extension": {
+                "value": null,
+                "raw": "6 seconds",
+                "unit": "seconds",
+                "field_type": "takedown_extension",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              }
+            }
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "ghost",
+            "record_hash": "268a3cd3934710cb48e608a338fdd2d728b93eaf14cfdeea60fa7b71874ad0bf",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 90
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ghost",
+            "record_hash": "905b2f6fe91f3667fc08d39e8073abc4abd94fd73bd81a49fd4e17ab3acfcf58",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 90
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "ghost",
+            "record_hash": "268a3cd3934710cb48e608a338fdd2d728b93eaf14cfdeea60fa7b71874ad0bf",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Gain a large burst of movement speed that decays to 25% bonus movement speed for 8 seconds. Each takedown extends Ghost's duration by 6 seconds, refreshing its effects."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ghost",
+            "record_hash": "905b2f6fe91f3667fc08d39e8073abc4abd94fd73bd81a49fd4e17ab3acfcf58",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Burst of movement speed; extended on champion takedowns."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ghost",
+            "record_hash": "905b2f6fe91f3667fc08d39e8073abc4abd94fd73bd81a49fd4e17ab3acfcf58",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Gain a burst of movement speed that decays to 25% bonus movement speed for 8 seconds. Scoring a champion takedown will extend the duration by 6 seconds and refresh the effects, up to the original duration."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "ghost",
+          "record_hash": "ed6c54e36d4318a91cabcf014ee00681d05ec24ab855c27a818f8128ec7e5a74",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "ghost",
+          "record_hash": "268a3cd3934710cb48e608a338fdd2d728b93eaf14cfdeea60fa7b71874ad0bf",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "ghost",
+          "record_hash": "905b2f6fe91f3667fc08d39e8073abc4abd94fd73bd81a49fd4e17ab3acfcf58",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Ghost",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "stats",
+          "selected_value": {
+            "duration": {
+              "value": null,
+              "raw": "8 seconds",
+              "unit": "seconds",
+              "field_type": "duration",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "decay_floor": {
+              "value": null,
+              "raw": "decays to 25% bonus movement speed",
+              "unit": "percent",
+              "field_type": "movement_speed_bonus",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "takedown_extension": {
+              "value": null,
+              "raw": "6 seconds",
+              "unit": "seconds",
+              "field_type": "takedown_extension",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            }
+          },
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:heal",
+      "id": "heal",
+      "canonical_record": {
+        "id": "heal",
+        "name": "Heal",
+        "aliases": [
+          "heal",
+          "heal"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Heals you and the most wounded nearby ally, then grants both a brief movement-speed boost.",
+        "full_description": "Heal restores health to your champion and the most wounded nearby allied champion, grants both champions bonus movement speed for a short duration, and applies reduced restoration to champions recently affected by Heal.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "source_verified"
+        },
+        "stats": {
+          "heal_amount": {
+            "value": null,
+            "raw": "100-390 based on level",
+            "unit": "health",
+            "field_type": "spell_heal",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "movement_speed_bonus": {
+            "value": null,
+            "raw": "30% for 1 second",
+            "unit": "percent",
+            "field_type": "movement_speed_bonus",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "recent_heal_reduction": {
+            "value": null,
+            "raw": "50% less health on recently affected champions",
+            "unit": "percent",
+            "field_type": "healing_reduction_penalty",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "cooldowns": {
+          "primary": {
+            "raw": "110 seconds",
+            "seconds": 110,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": "X",
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": false,
+          "raw": "False",
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active",
+            "description": "Heal for 100-390 based on level to yourself and the most wounded nearby allied champion; both gain 30% bonus movement speed for 1 second.",
+            "source_status": "source_verified"
+          }
+        ],
+        "passive_effects": [
+          {
+            "label": "recent_heal_penalty",
+            "description": "Champions affected by Heal recently cause later Heal casts on them to restore 50% less health.",
+            "source_status": "source_verified"
+          }
+        ],
+        "damage_types": [],
+        "defense_types": [
+          "heal",
+          "ally_heal",
+          "movement_speed"
+        ],
+        "crowd_control_types": [],
+        "effect_tags": [
+          "ally_heal",
+          "defensive_spell",
+          "duo_lane",
+          "heal",
+          "movement_speed",
+          "support_spell"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "Duo/support situations where saving an ally or stabilizing a skirmish matters.",
+          "Compositions that benefit from short movement-speed bursts for kite, chase, or disengage."
+        ],
+        "why_to_choose": [
+          "Adds immediate defensive value without requiring damage timing.",
+          "Pairs naturally with shield/heal synergies and enchanter playstyles."
+        ],
+        "when_to_avoid": [
+          "If the enemy has heavy anti-heal pressure and your team needs Exhaust or Cleanse more.",
+          "If your lane partner already carries Heal and duplication reduces value."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "ally_survival",
+          "duo_lane_defense",
+          "movement_speed_utility"
+        ],
+        "source_status": "source_verified",
+        "source_family": "lol_wiki_wr",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+          ],
+          "retrieved_at": "2026-05-20T00:00:00+08:00",
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "rag": {
+          "text_for_embedding": "Heal is a Wild Rift summoner spell. Heals you and the most wounded nearby ally, then grants both a brief movement-speed boost. Effects: heal, ally_heal, movement_speed, defensive_spell, duo_lane, support_spell. Patch 7.1e. Source status: source_verified.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "heal",
+            "patch_version": "7.1e",
+            "effects": [
+              "ally_heal",
+              "defensive_spell",
+              "duo_lane",
+              "heal",
+              "movement_speed",
+              "support_spell"
+            ],
+            "source_status": "source_verified"
+          }
+        },
+        "graph": {
+          "node_id": "spell.heal",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "heal",
+            "record_hash": "8744ca60a57fb0ff7c0eb32804e4fa706d75ff2c6f3365561d3ca1e2525e955e",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Heal"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "heal",
+            "record_hash": "18c9c52ef1b94b6545cf8817f46b2d1ecca4dd5e8f7564b162f5a9617e6149bf",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Heal"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "heal",
+            "record_hash": "ddea6f66e0e5efadabec9448c3a38a993addbb67eb3c6a536061bc60aef71429",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Heal"
+          }
+        ],
+        "stats": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "heal",
+            "record_hash": "8744ca60a57fb0ff7c0eb32804e4fa706d75ff2c6f3365561d3ca1e2525e955e",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": {
+              "heal_amount": {
+                "value": null,
+                "raw": "100-390 based on level",
+                "unit": "health",
+                "field_type": "spell_heal",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "movement_speed_bonus": {
+                "value": null,
+                "raw": "30% for 1 second",
+                "unit": "percent",
+                "field_type": "movement_speed_bonus",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "recent_heal_reduction": {
+                "value": null,
+                "raw": "50% less health on recently affected champions",
+                "unit": "percent",
+                "field_type": "healing_reduction_penalty",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              }
+            }
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "heal",
+            "record_hash": "18c9c52ef1b94b6545cf8817f46b2d1ecca4dd5e8f7564b162f5a9617e6149bf",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 120
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "heal",
+            "record_hash": "ddea6f66e0e5efadabec9448c3a38a993addbb67eb3c6a536061bc60aef71429",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 100
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "heal",
+            "record_hash": "18c9c52ef1b94b6545cf8817f46b2d1ecca4dd5e8f7564b162f5a9617e6149bf",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Restore 60-242 health (based on level) and grant 20% bonus movement speed for 1 second to you and the most wounded nearby ally champion. Healing is halved for champions recently affected by Heal."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "heal",
+            "record_hash": "ddea6f66e0e5efadabec9448c3a38a993addbb67eb3c6a536061bc60aef71429",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Heal yourself and the most wounded nearby ally; both gain movement speed."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "heal",
+            "record_hash": "ddea6f66e0e5efadabec9448c3a38a993addbb67eb3c6a536061bc60aef71429",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Heal for 110-400 (based on level) to you and the most wounded nearby ally champion, and both of you gain 30% bonus movement speed for 2 seconds. Champions affected by Heal within 35 seconds will receive 50% heal amount."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "heal",
+          "record_hash": "8744ca60a57fb0ff7c0eb32804e4fa706d75ff2c6f3365561d3ca1e2525e955e",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "heal",
+          "record_hash": "18c9c52ef1b94b6545cf8817f46b2d1ecca4dd5e8f7564b162f5a9617e6149bf",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "heal",
+          "record_hash": "ddea6f66e0e5efadabec9448c3a38a993addbb67eb3c6a536061bc60aef71429",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Heal",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "stats",
+          "selected_value": {
+            "heal_amount": {
+              "value": null,
+              "raw": "100-390 based on level",
+              "unit": "health",
+              "field_type": "spell_heal",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "movement_speed_bonus": {
+              "value": null,
+              "raw": "30% for 1 second",
+              "unit": "percent",
+              "field_type": "movement_speed_bonus",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "recent_heal_reduction": {
+              "value": null,
+              "raw": "50% less health on recently affected champions",
+              "unit": "percent",
+              "field_type": "healing_reduction_penalty",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            }
+          },
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "conflict_traced"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:ignite",
+      "id": "ignite",
+      "canonical_record": {
+        "id": "ignite",
+        "name": "Ignite",
+        "aliases": [
+          "ignite",
+          "ignite"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Applies true damage over time, reveals the target, and inflicts Grievous Wounds.",
+        "full_description": "Ignite burns a target enemy champion for 5 seconds, revealing them, applying 60% Grievous Wounds, and dealing true damage over the duration.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "source_verified"
+        },
+        "stats": {
+          "duration": {
+            "value": null,
+            "raw": "5 seconds",
+            "unit": "seconds",
+            "field_type": "duration",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "true_damage": {
+            "value": null,
+            "raw": "72-380 based on level over duration",
+            "unit": "true_damage",
+            "field_type": "damage",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "grievous_wounds": {
+            "value": null,
+            "raw": "60%",
+            "unit": "percent",
+            "field_type": "healing_reduction",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "tick_interval": {
+            "value": null,
+            "raw": "first tick shortly after cast; later ticks every 1.056 seconds",
+            "unit": "seconds",
+            "field_type": "tick_interval",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "cooldowns": {
+          "primary": {
+            "raw": "100 seconds",
+            "seconds": 100,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": "600",
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": true,
+          "raw": "True",
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active",
+            "description": "Ignite an enemy champion for 5 seconds, revealing them, inflicting 60% Grievous Wounds, and dealing 72-380 true damage over the duration.",
+            "source_status": "source_verified"
+          }
+        ],
+        "passive_effects": [],
+        "damage_types": [
+          "true_damage",
+          "damage_over_time"
+        ],
+        "defense_types": [],
+        "crowd_control_types": [
+          "reveal"
+        ],
+        "effect_tags": [
+          "anti_heal",
+          "damage_over_time",
+          "grievous_wounds",
+          "kill_pressure",
+          "reveal",
+          "true_damage"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "When lane kill pressure and anti-heal matter.",
+          "Against champions or comps with meaningful healing/regen."
+        ],
+        "why_to_choose": [
+          "Combines execute-like pressure, true damage over time, reveal, and healing reduction."
+        ],
+        "when_to_avoid": [
+          "If your team needs Exhaust/Cleanse/Heal defensive value more than kill pressure."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "kill_pressure",
+          "anti_heal",
+          "true_damage"
+        ],
+        "source_status": "source_verified",
+        "source_family": "lol_wiki_wr",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+          ],
+          "retrieved_at": "2026-05-20T00:00:00+08:00",
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "rag": {
+          "text_for_embedding": "Ignite is a Wild Rift summoner spell. Applies true damage over time, reveals the target, and inflicts Grievous Wounds. Effects: true_damage, damage_over_time, reveal, grievous_wounds, anti_heal, kill_pressure. Patch 7.1e. Source status: source_verified.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "ignite",
+            "patch_version": "7.1e",
+            "effects": [
+              "anti_heal",
+              "damage_over_time",
+              "grievous_wounds",
+              "kill_pressure",
+              "reveal",
+              "true_damage"
+            ],
+            "source_status": "source_verified"
+          }
+        },
+        "graph": {
+          "node_id": "spell.ignite",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "ignite",
+            "record_hash": "f95df99350803e25c074649ba0ec96ea8dc298c17319a65975fe2f169f64e8dc",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Ignite"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "ignite",
+            "record_hash": "261cffe3a3e3ad352592700c1baca9433c80374f684a0828248b2ddb62b44efa",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Ignite"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ignite",
+            "record_hash": "057fba938be7a7bb8ac82a197f9d326b9c322977878c547c813a393e511633c9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Ignite"
+          }
+        ],
+        "stats": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "ignite",
+            "record_hash": "f95df99350803e25c074649ba0ec96ea8dc298c17319a65975fe2f169f64e8dc",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": {
+              "duration": {
+                "value": null,
+                "raw": "5 seconds",
+                "unit": "seconds",
+                "field_type": "duration",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "true_damage": {
+                "value": null,
+                "raw": "72-380 based on level over duration",
+                "unit": "true_damage",
+                "field_type": "damage",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "grievous_wounds": {
+                "value": null,
+                "raw": "60%",
+                "unit": "percent",
+                "field_type": "healing_reduction",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "tick_interval": {
+                "value": null,
+                "raw": "first tick shortly after cast; later ticks every 1.056 seconds",
+                "unit": "seconds",
+                "field_type": "tick_interval",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              }
+            }
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "ignite",
+            "record_hash": "261cffe3a3e3ad352592700c1baca9433c80374f684a0828248b2ddb62b44efa",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 100
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ignite",
+            "record_hash": "057fba938be7a7bb8ac82a197f9d326b9c322977878c547c813a393e511633c9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 100
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "ignite",
+            "record_hash": "261cffe3a3e3ad352592700c1baca9433c80374f684a0828248b2ddb62b44efa",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Ignites target enemy champion, dealing 72-380 (based on level) true damage over 5 seconds and inflicting Grievous Wounds, reducing healing effects by 50%."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ignite",
+            "record_hash": "057fba938be7a7bb8ac82a197f9d326b9c322977878c547c813a393e511633c9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Burn an enemy champion for true damage; applies Grievous Wounds and reveals."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "ignite",
+            "record_hash": "057fba938be7a7bb8ac82a197f9d326b9c322977878c547c813a393e511633c9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Ignite the target enemy champion for 5 seconds, revealing them, inflicting 60% Grievous Wounds, and dealing 72-380 (based on level) true damage over the duration. The first tick of damage occurs briefly after the cast, then subsequent ticks occur every 1.056 seconds."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "ignite",
+          "record_hash": "f95df99350803e25c074649ba0ec96ea8dc298c17319a65975fe2f169f64e8dc",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "ignite",
+          "record_hash": "261cffe3a3e3ad352592700c1baca9433c80374f684a0828248b2ddb62b44efa",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "ignite",
+          "record_hash": "057fba938be7a7bb8ac82a197f9d326b9c322977878c547c813a393e511633c9",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Ignite",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "stats",
+          "selected_value": {
+            "duration": {
+              "value": null,
+              "raw": "5 seconds",
+              "unit": "seconds",
+              "field_type": "duration",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "true_damage": {
+              "value": null,
+              "raw": "72-380 based on level over duration",
+              "unit": "true_damage",
+              "field_type": "damage",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "grievous_wounds": {
+              "value": null,
+              "raw": "60%",
+              "unit": "percent",
+              "field_type": "healing_reduction",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "tick_interval": {
+              "value": null,
+              "raw": "first tick shortly after cast; later ticks every 1.056 seconds",
+              "unit": "seconds",
+              "field_type": "tick_interval",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            }
+          },
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:smite",
+      "id": "smite",
+      "canonical_record": {
+        "id": "smite",
+        "name": "Smite",
+        "aliases": [
+          "smite",
+          "smite"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Deals true damage to large or epic monsters/minions, heals you, and transforms into Chilling Smite after 3 uses.",
+        "full_description": "Smite is the jungle/objective-control summoner spell. It deals true damage to large or epic monsters or minions, heals the user, includes jungle economy passives, and transforms into Chilling Smite after three uses.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "source_verified"
+        },
+        "stats": {
+          "true_damage_to_monster": {
+            "value": null,
+            "raw": "600 true damage",
+            "unit": "true_damage",
+            "field_type": "monster_damage",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "heal": {
+            "value": null,
+            "raw": "70 + 10% maximum health",
+            "unit": "health",
+            "field_type": "self_heal",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "transform_after_uses": {
+            "value": null,
+            "raw": "3 uses",
+            "unit": "uses",
+            "field_type": "transform_condition",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "recharge_time": {
+            "value": null,
+            "raw": "90 seconds",
+            "unit": "seconds",
+            "field_type": "recharge_time",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          },
+          "charges": {
+            "value": 2,
+            "raw": "2",
+            "unit": "charges",
+            "field_type": "charges",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "cooldowns": {
+          "primary": {
+            "raw": "10 seconds",
+            "seconds": 10,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown_with_recharge",
+            "affected_by_ability_haste": false,
+            "charges": 2,
+            "recharge_time_seconds": 90,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "source_verified",
+            "source_family": "lol_wiki_wr",
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.95,
+            "notes": []
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": "500",
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": true,
+          "raw": "True",
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+          ],
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active",
+            "description": "Deal 600 true damage to a target large or epic monster or minion and heal for 70 + 10% maximum health. Transforms into Chilling Smite after 3 uses.",
+            "source_status": "source_verified"
+          }
+        ],
+        "passive_effects": [
+          {
+            "label": "Jungle Expertise",
+            "description": "Earn bonus experience and gold from monsters, reduced early minion rewards, bonus monster damage and ability damage, monster-hit healing, and jungle/river mana regen.",
+            "source_status": "source_verified"
+          },
+          {
+            "label": "Conservation",
+            "description": "Generate stacks over time that convert into gold on large or epic monster takedown, with catch-up generation conditions.",
+            "source_status": "source_verified"
+          }
+        ],
+        "damage_types": [
+          "true_damage"
+        ],
+        "defense_types": [
+          "healing"
+        ],
+        "crowd_control_types": [],
+        "effect_tags": [
+          "charges",
+          "chilling_smite",
+          "gold_economy",
+          "healing",
+          "jungle",
+          "monster_damage",
+          "movement_speed",
+          "objective_control",
+          "recharge",
+          "slow",
+          "true_damage"
+        ],
+        "special_forms": [
+          {
+            "form_id": "chilling_smite",
+            "name": "Chilling Smite",
+            "condition": "after_3_smite_uses",
+            "active_effects": [
+              {
+                "label": "monster_cast",
+                "description": "Deal 800 true damage to the target large or epic monster or minion and heal for 70 + 10% maximum health.",
+                "source_status": "source_verified"
+              },
+              {
+                "label": "champion_cast",
+                "description": "Can be cast on enemy champions, dealing 38-184 true damage, slowing by 25% for 2 seconds, and granting 25% bonus movement speed for the same duration.",
+                "source_status": "source_verified"
+              }
+            ],
+            "cooldowns": {
+              "primary": {
+                "raw": "15 seconds",
+                "seconds": 15,
+                "unit": "seconds",
+                "cooldown_type": "summoner_spell_cooldown_with_recharge",
+                "recharge_time_seconds": 90,
+                "charges": 2,
+                "range_raw": "500",
+                "source_status": "source_verified",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+                ],
+                "patch_version": "7.1e"
+              }
+            },
+            "effect_tags": [
+              "true_damage",
+              "slow",
+              "movement_speed",
+              "objective_control",
+              "jungle"
+            ],
+            "damage_types": [
+              "true_damage"
+            ],
+            "crowd_control_types": [
+              "slow"
+            ],
+            "defense_types": [
+              "healing",
+              "movement_speed"
+            ]
+          }
+        ],
+        "when_to_choose": [
+          "Jungle role and objective-control contexts."
+        ],
+        "why_to_choose": [
+          "Required for reliable jungle clear, monster economy, and objective secure pressure."
+        ],
+        "when_to_avoid": [
+          "Non-jungle roles unless a specific mode/rule requires it."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "jungle_required",
+          "objective_control",
+          "monster_economy"
+        ],
+        "source_status": "source_verified",
+        "source_family": "lol_wiki_wr",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "source_verified",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+          ],
+          "retrieved_at": "2026-05-20T00:00:00+08:00",
+          "patch_version": "7.1e",
+          "confidence": 0.95,
+          "notes": []
+        },
+        "rag": {
+          "text_for_embedding": "Smite is a Wild Rift summoner spell. Deals true damage to large or epic monsters/minions, heals you, and transforms into Chilling Smite after 3 uses. Effects: jungle, objective_control, true_damage, monster_damage, healing, gold_economy, charges, recharge, chilling_smite, slow, movement_speed. Patch 7.1e. Source status: source_verified.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "smite",
+            "patch_version": "7.1e",
+            "effects": [
+              "charges",
+              "chilling_smite",
+              "gold_economy",
+              "healing",
+              "jungle",
+              "monster_damage",
+              "movement_speed",
+              "objective_control",
+              "recharge",
+              "slow",
+              "true_damage"
+            ],
+            "source_status": "source_verified"
+          }
+        },
+        "graph": {
+          "node_id": "spell.smite",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "smite",
+            "record_hash": "e4535f91bcb5de7f16b73f21744a04a41e7609c9f3a6bd13c2e96a2681d5b86e",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Smite"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "smite",
+            "record_hash": "3cd4a7544d0a4065b7a1d900f7f290b9e190d859665a63c5788b9a93b78f158c",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Smite"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "smite",
+            "record_hash": "7d40197576c54b6a143e1e069cf768c947d1e29a3d492c5b8c29cabba93484e9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Smite"
+          }
+        ],
+        "stats": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "smite",
+            "record_hash": "e4535f91bcb5de7f16b73f21744a04a41e7609c9f3a6bd13c2e96a2681d5b86e",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": {
+              "true_damage_to_monster": {
+                "value": null,
+                "raw": "600 true damage",
+                "unit": "true_damage",
+                "field_type": "monster_damage",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "heal": {
+                "value": null,
+                "raw": "70 + 10% maximum health",
+                "unit": "health",
+                "field_type": "self_heal",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "transform_after_uses": {
+                "value": null,
+                "raw": "3 uses",
+                "unit": "uses",
+                "field_type": "transform_condition",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "recharge_time": {
+                "value": null,
+                "raw": "90 seconds",
+                "unit": "seconds",
+                "field_type": "recharge_time",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              },
+              "charges": {
+                "value": 2,
+                "raw": "2",
+                "unit": "charges",
+                "field_type": "charges",
+                "source_status": "source_verified",
+                "source_family": "lol_wiki_wr",
+                "source_urls": [
+                  "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+                ],
+                "patch_version": "7.1e",
+                "confidence": 0.95,
+                "notes": []
+              }
+            }
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "smite",
+            "record_hash": "3cd4a7544d0a4065b7a1d900f7f290b9e190d859665a63c5788b9a93b78f158c",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 10
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "smite",
+            "record_hash": "7d40197576c54b6a143e1e069cf768c947d1e29a3d492c5b8c29cabba93484e9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 10
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "smite",
+            "record_hash": "3cd4a7544d0a4065b7a1d900f7f290b9e190d859665a63c5788b9a93b78f158c",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Deal 600 true damage to a large or epic monster or minion. Smiting monsters restores health. Using Smite 3 times upgrades it to Chilling Smite (slow + damage to champions) or Challenging Smite (damage + adaptive buff vs champions). Gains one charge every 45 seconds, up to 2 charges."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "smite",
+            "record_hash": "7d40197576c54b6a143e1e069cf768c947d1e29a3d492c5b8c29cabba93484e9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Deal true damage to monsters/minions; heals; upgrades to Chilling Smite after 3 uses."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "smite",
+            "record_hash": "7d40197576c54b6a143e1e069cf768c947d1e29a3d492c5b8c29cabba93484e9",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Deal 600 true damage to the target large or epic monster or minion and heal for 70 + (10% maximum health). Transforms into Chilling Smite after 3 uses."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "smite",
+          "record_hash": "e4535f91bcb5de7f16b73f21744a04a41e7609c9f3a6bd13c2e96a2681d5b86e",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "smite",
+          "record_hash": "3cd4a7544d0a4065b7a1d900f7f290b9e190d859665a63c5788b9a93b78f158c",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "smite",
+          "record_hash": "7d40197576c54b6a143e1e069cf768c947d1e29a3d492c5b8c29cabba93484e9",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Smite",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "stats",
+          "selected_value": {
+            "true_damage_to_monster": {
+              "value": null,
+              "raw": "600 true damage",
+              "unit": "true_damage",
+              "field_type": "monster_damage",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "heal": {
+              "value": null,
+              "raw": "70 + 10% maximum health",
+              "unit": "health",
+              "field_type": "self_heal",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "transform_after_uses": {
+              "value": null,
+              "raw": "3 uses",
+              "unit": "uses",
+              "field_type": "transform_condition",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "recharge_time": {
+              "value": null,
+              "raw": "90 seconds",
+              "unit": "seconds",
+              "field_type": "recharge_time",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            },
+            "charges": {
+              "value": 2,
+              "raw": "2",
+              "unit": "charges",
+              "field_type": "charges",
+              "source_status": "source_verified",
+              "source_family": "lol_wiki_wr",
+              "source_urls": [
+                "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+              ],
+              "patch_version": "7.1e",
+              "confidence": 0.95,
+              "notes": []
+            }
+          },
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    },
+    {
+      "canonical_id": "spell:teleport",
+      "id": "teleport",
+      "canonical_record": {
+        "id": "teleport",
+        "name": "Teleport",
+        "aliases": [
+          "teleport",
+          "teleport"
+        ],
+        "entity_type": "summoner_spell",
+        "game": "wild_rift",
+        "not_lol_pc": true,
+        "patch_version": "7.1e",
+        "valid_from_patch": "7.1e",
+        "valid_to_patch": null,
+        "brief_description": "Teleportation/macro spell reserved in the final 7.1e spell allowlist.",
+        "full_description": "Teleport is retained as one of the final allowed spells, but its exact Wild Rift mechanics, target rules, channel/cast behavior, cooldown, and restrictions require approved-source refresh before exact recommendation use.",
+        "spell_slot_type": "summoner_spell",
+        "availability": {
+          "final_patch_7_1e_allowlist": true,
+          "excluded_from_final_list": false,
+          "maps": [
+            "Wild Rift"
+          ],
+          "source_status": "pending_allowed_source_refresh"
+        },
+        "stats": {},
+        "cooldowns": {
+          "primary": {
+            "raw": null,
+            "seconds": null,
+            "per_level_seconds": [],
+            "per_rank_seconds": [],
+            "unit": "seconds",
+            "cooldown_type": "summoner_spell_cooldown",
+            "affected_by_ability_haste": false,
+            "charges": null,
+            "recharge_time_seconds": null,
+            "per_target_cooldown_seconds": null,
+            "shared_cooldown_group": "summoner_spell",
+            "source_status": "pending_allowed_source_refresh",
+            "source_family": null,
+            "source_urls": [
+              "https://wiki.leagueoflegends.com/en-us/WR:Teleport"
+            ],
+            "patch_version": "7.1e",
+            "confidence": 0.0,
+            "notes": [
+              "Exact cooldown requires approved-source refresh before production use."
+            ]
+          }
+        },
+        "range": {
+          "value": null,
+          "raw": null,
+          "unit": "game_units",
+          "field_type": "range",
+          "source_status": "pending_allowed_source_refresh",
+          "source_family": null,
+          "source_urls": [],
+          "patch_version": "7.1e",
+          "confidence": 0.0,
+          "notes": []
+        },
+        "breaks_stealth": {
+          "value": null,
+          "raw": null,
+          "unit": null,
+          "field_type": "boolean",
+          "source_status": "pending_allowed_source_refresh",
+          "source_family": null,
+          "source_urls": [],
+          "patch_version": "7.1e",
+          "confidence": 0.0,
+          "notes": []
+        },
+        "active_effects": [
+          {
+            "label": "spell_active_pending",
+            "description": "Exact active effect requires approved-source refresh. Do not source-verify until the WR:Teleport page is accessible.",
+            "source_status": "pending_allowed_source_refresh"
+          }
+        ],
+        "passive_effects": [],
+        "damage_types": [],
+        "defense_types": [
+          "map_mobility"
+        ],
+        "crowd_control_types": [],
+        "effect_tags": [
+          "macro",
+          "map_mobility",
+          "pending_exact_values",
+          "teleport"
+        ],
+        "special_forms": [],
+        "when_to_choose": [
+          "Macro/map-movement contexts; exact recommendation logic requires source refresh."
+        ],
+        "why_to_choose": [
+          "Potential map-pressure and rotation value; exact Wild Rift behavior must be verified."
+        ],
+        "when_to_avoid": [
+          "Do not recommend exact timing/channel plays until approved source refresh succeeds."
+        ],
+        "synergy_rules": [],
+        "counterplay_rules": [],
+        "recommendation_reason_codes": [
+          "macro_mobility_pending_verification"
+        ],
+        "source_status": "pending_allowed_source_refresh",
+        "source_family": "lol_wiki_wr_pending",
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Teleport"
+        ],
+        "field_level_provenance_required": true,
+        "provenance": {
+          "source_status": "pending_allowed_source_refresh",
+          "source_family": "lol_wiki_wr",
+          "source_urls": [
+            "https://wiki.leagueoflegends.com/en-us/WR:Teleport"
+          ],
+          "retrieved_at": null,
+          "patch_version": "7.1e",
+          "confidence": 0.0,
+          "notes": [
+            "Allowed source did not expose details in this run; record preserved for allowlist and queued for refresh."
+          ]
+        },
+        "rag": {
+          "text_for_embedding": "Teleport is a Wild Rift summoner spell. Teleportation/macro spell reserved in the final 7.1e spell allowlist. Effects: teleport, map_mobility, macro, pending_exact_values. Patch 7.1e. Source status: pending_allowed_source_refresh.",
+          "metadata_filter_fields": {
+            "entity_type": "summoner_spell",
+            "spell_id": "teleport",
+            "patch_version": "7.1e",
+            "effects": [
+              "macro",
+              "map_mobility",
+              "pending_exact_values",
+              "teleport"
+            ],
+            "source_status": "pending_allowed_source_refresh"
+          }
+        },
+        "graph": {
+          "node_id": "spell.teleport",
+          "node_type": "Spell",
+          "edge_hints": [
+            "HAS_EFFECT",
+            "HAS_COOLDOWN",
+            "HAS_DAMAGE_TYPE",
+            "HAS_DEFENSE_TYPE",
+            "HAS_CC_TYPE",
+            "SOURCE_SUPPORTS"
+          ]
+        }
+      },
+      "source_values": {
+        "name": [
+          {
+            "source_id": "chatgpt_v0_6_0_chunk10_final",
+            "source_file": "database/entities/wr_spells_full.json",
+            "source_record_id": "teleport",
+            "record_hash": "55f561196aea79980cf20e10811ac6e257660e669ebbe26eea6eec024f131f06",
+            "source_status": "v0_6_source_aware_seed",
+            "priority": 80,
+            "raw_value": "Teleport"
+          },
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "teleport",
+            "record_hash": "091821a4e7ddce7b7cacb5e16079bac213bd61564f912e01bdced35d6074ae0b",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Teleport"
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "teleport",
+            "record_hash": "55e6173aabcffaa349c999ffa862164bed7d8323c2e230e8339704cdc57baab8",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Teleport"
+          }
+        ],
+        "cooldown": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "teleport",
+            "record_hash": "091821a4e7ddce7b7cacb5e16079bac213bd61564f912e01bdced35d6074ae0b",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": 150
+          },
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "teleport",
+            "record_hash": "55e6173aabcffaa349c999ffa862164bed7d8323c2e230e8339704cdc57baab8",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": 150
+          }
+        ],
+        "effect": [
+          {
+            "source_id": "local_repo_data_zip",
+            "source_file": "data/spells.json",
+            "source_record_id": "teleport",
+            "record_hash": "091821a4e7ddce7b7cacb5e16079bac213bd61564f912e01bdced35d6074ae0b",
+            "source_status": "legacy_runtime_compatibility",
+            "priority": 30,
+            "raw_value": "Channel for a few seconds, then teleport to a target allied turret, minion, or ward. Can be interrupted by crowd control."
+          }
+        ],
+        "brief": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "teleport",
+            "record_hash": "55e6173aabcffaa349c999ffa862164bed7d8323c2e230e8339704cdc57baab8",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Channel to blink to a target champion, ward, or turret (before 6:00)."
+          }
+        ],
+        "full": [
+          {
+            "source_id": "wr_opus_zip",
+            "source_file": "wr_opus/wr_spells_v3.json",
+            "source_record_id": "teleport",
+            "record_hash": "55e6173aabcffaa349c999ffa862164bed7d8323c2e230e8339704cdc57baab8",
+            "source_status": "opus_observed_unverified",
+            "priority": 40,
+            "raw_value": "Active: After channeling for 3 seconds, remove any homestart or homeguard buff and blink to the target champion or ward. Your destination will be visibly marked. Passive - [0-6:00 elapse]: You can also target allied turrets."
+          }
+        ]
+      },
+      "source_records": [
+        {
+          "source_id": "chatgpt_v0_6_0_chunk10_final",
+          "source_file": "database/entities/wr_spells_full.json",
+          "source_record_id": "teleport",
+          "record_hash": "55f561196aea79980cf20e10811ac6e257660e669ebbe26eea6eec024f131f06",
+          "source_status": "v0_6_source_aware_seed",
+          "priority": 80
+        },
+        {
+          "source_id": "local_repo_data_zip",
+          "source_file": "data/spells.json",
+          "source_record_id": "teleport",
+          "record_hash": "091821a4e7ddce7b7cacb5e16079bac213bd61564f912e01bdced35d6074ae0b",
+          "source_status": "legacy_runtime_compatibility",
+          "priority": 30
+        },
+        {
+          "source_id": "wr_opus_zip",
+          "source_file": "wr_opus/wr_spells_v3.json",
+          "source_record_id": "teleport",
+          "record_hash": "55e6173aabcffaa349c999ffa862164bed7d8323c2e230e8339704cdc57baab8",
+          "source_status": "opus_observed_unverified",
+          "priority": 40
+        }
+      ],
+      "canonical_decisions": [
+        {
+          "field_path": "name",
+          "selected_value": "Teleport",
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "cooldown",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "effect",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "brief",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        },
+        {
+          "field_path": "full",
+          "selected_value": null,
+          "decision_rule": "v0_6_seed_then_highest_priority_fill",
+          "conflict_status": "no_conflict"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "version": "0.7.1",
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "passed": true,
+  "expected": {
+    "passive": "Mantra",
+    "q": "Inner Flame",
+    "w": "Focused Resolve",
+    "e": "Inspire",
+    "r": "Transcendent Embrace"
+  },
+  "details": {
+    "canonical_champions": {
+      "passive": "Mantra",
+      "q": "Inner Flame",
+      "w": "Focused Resolve",
+      "e": "Inspire",
+      "r": "Transcendent Embrace"
+    },
+    "public_data_champions": {
+      "passive": "Mantra",
+      "q": "Inner Flame",
+      "w": "Focused Resolve",
+      "e": "Inspire",
+      "r": "Transcendent Embrace"
+    },
+    "uploaded_m365_opus_abilities_by_key": {
+      "passive": "Mantra",
+      "q": "Inner Flame",
+      "w": "Focused Resolve",
+      "e": "Inspire",
+      "r": "Transcendent Embrace"
+    },
+    "uploaded_m365_opus_legacy_abilities_dict": {
+      "passive": "Gathering Fire",
+      "q": "Inner Flame",
+      "w": "Focused Resolve",
+      "e": "Inspire",
+      "r": "Mantra"
+    }
+  },
+  "notes": [
+    "M365 abilities_by_key passes protected Karma lock.",
+    "M365 legacy top-level abilities dict is quarantined and not used for identity."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "build_legality_rules": [
+    {
+      "rule_id": "build_has_one_keystone",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "build_has_three_primary_runes",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "build_has_one_secondary_rune",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "primary_runes_match_slot_1_2_3",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "standard_build_has_one_boot_max",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "standard_build_has_five_non_boot_max",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "support_build_has_support_item_slot_logic",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "enchant_requires_boots",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "late_support_item_sell_has_reason",
+      "severity": "warning"
+    }
+  ]
+}

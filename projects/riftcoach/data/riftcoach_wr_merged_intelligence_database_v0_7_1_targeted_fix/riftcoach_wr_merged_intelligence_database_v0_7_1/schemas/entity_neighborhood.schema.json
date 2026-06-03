@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/entity_neighborhood.schema.json",
+  "title": "Entity Neighborhood",
+  "description": "Precomputed neighborhood for graph UI and relationship-aware RAG.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "entity_id",
+    "entity_type",
+    "depth_1",
+    "visible_default"
+  ],
+  "properties": {
+    "entity_id": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "center_label": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "depth_1": {
+      "type": "array"
+    },
+    "depth_2": {
+      "type": "array"
+    },
+    "depth_3": {
+      "type": "array"
+    },
+    "visible_default": {
+      "type": "array"
+    },
+    "hidden_by_default": {
+      "type": "array"
+    },
+    "computed_from_edges": {
+      "type": "array"
+    },
+    "notes": {
+      "type": "array"
+    }
+  }
+}

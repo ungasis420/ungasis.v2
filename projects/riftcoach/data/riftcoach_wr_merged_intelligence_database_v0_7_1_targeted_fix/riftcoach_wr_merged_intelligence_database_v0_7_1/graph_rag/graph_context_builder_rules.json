@@ -1,0 +1,11 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "rules": [
+    "Prefer source_verified paths when available.",
+    "Allow generated_rule paths only when labeled and confidence threshold passes.",
+    "Do not include more than 8 graph paths in a single answer context.",
+    "Include at least one reason code per relationship path.",
+    "Include source_status and patch_version in answer metadata.",
+    "When graph and source claims conflict, show source_conflict and ask/flag for refresh."
+  ]
+}

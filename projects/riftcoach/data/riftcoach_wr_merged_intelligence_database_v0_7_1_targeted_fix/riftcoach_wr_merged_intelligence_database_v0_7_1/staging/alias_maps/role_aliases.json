@@ -1,0 +1,21 @@
+{
+  "version": "0.7.0",
+  "aliases": {
+    "top": "Baron",
+    "baron": "Baron",
+    "solo": "Baron",
+    "baron_lane": "Baron",
+    "jungle": "Jungle",
+    "jg": "Jungle",
+    "mid": "Mid",
+    "middle": "Mid",
+    "adc": "Duo",
+    "duo": "Duo",
+    "dragon": "Duo",
+    "dragon_lane": "Duo",
+    "bot": "Duo",
+    "marksman": "Duo",
+    "support": "Support",
+    "supp": "Support"
+  }
+}

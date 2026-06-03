@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "guardrails": [
+    "approved_sources_only",
+    "no_lol_pc_mechanics",
+    "no_silent_null_numeric_values",
+    "no_generated_strategy_marked_official",
+    "karma_regression_blocker",
+    "rune_legality_required",
+    "item_legality_required",
+    "support_slot_logic_required"
+  ]
+}

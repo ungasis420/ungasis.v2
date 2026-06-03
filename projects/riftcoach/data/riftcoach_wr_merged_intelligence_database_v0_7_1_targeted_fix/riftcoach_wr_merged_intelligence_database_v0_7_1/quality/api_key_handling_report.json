@@ -1,0 +1,4 @@
+{
+  "version": "0.7.0",
+  "risk": "Client BYOK localStorage pattern observed in src audit. Acceptable for private local prototype, not production-safe. Production should keep keys server-side in env/secrets only."
+}

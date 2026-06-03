@@ -1,0 +1,659 @@
+{
+  "_meta": {
+    "game": "League of Legends: Wild Rift",
+    "patch": "7.1e",
+    "total_spells": 9,
+    "excluded": [
+      "Mark (ARAM-only)",
+      "Dash (ARAM-only)",
+      "Clarity (ARAM-only)"
+    ],
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/WR:Spell",
+      "https://wiki.leagueoflegends.com/en-us/WR:Heal",
+      "https://wiki.leagueoflegends.com/en-us/WR:Ghost",
+      "https://wiki.leagueoflegends.com/en-us/WR:Barrier",
+      "https://wiki.leagueoflegends.com/en-us/WR:Exhaust",
+      "https://wiki.leagueoflegends.com/en-us/WR:Ignite",
+      "https://wiki.leagueoflegends.com/en-us/WR:Cleanse",
+      "https://wiki.leagueoflegends.com/en-us/WR:Flash",
+      "https://wiki.leagueoflegends.com/en-us/WR:Smite",
+      "https://wiki.leagueoflegends.com/en-us/WR:Teleport"
+    ],
+    "spell_selection": {
+      "per_player": 2,
+      "unique_per_player": true,
+      "cc_interaction": "All spells except Flash, Hexflash, Mark/Dash can be used under cast-inhibiting CC (excl. stasis, suppression). Flash/Hexflash also disabled while grounded or rooted."
+    },
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "spells": [
+    {
+      "id": "flash",
+      "name": "Flash",
+      "cooldown": 150,
+      "range": 400,
+      "breaks_stealth": false,
+      "brief": "Blink a short distance forward.",
+      "full": "Blink your champion a short distance forward or towards the target direction. Flash is disabled while you are unable to cast abilities.",
+      "values": {
+        "blink_range": 400,
+        "cast_restrictions": [
+          "disabled_while_unable_to_cast",
+          "disabled_while_grounded",
+          "disabled_while_rooted"
+        ]
+      },
+      "damage_type": null,
+      "effect_tags": [
+        "blink",
+        "mobility",
+        "escape",
+        "engage",
+        "repositioning"
+      ],
+      "cast_restrictions": "Cannot be used while grounded, rooted, or unable to cast abilities.",
+      "role_defaults": [
+        "all_roles"
+      ],
+      "synergies": {
+        "runes": [
+          "Hexflash",
+          "Nimbus Cloak"
+        ],
+        "items": [
+          "Protobelt Enchant"
+        ],
+        "champions": [
+          "all"
+        ]
+      },
+      "when_to_choose": "Almost every game on every champion; universal spell.",
+      "why_to_choose": "Best repositioning tool in the game; enables both aggressive and defensive plays.",
+      "variants": {
+        "hexflash": {
+          "source": "Hexflash rune (Sorcery Slot 1)",
+          "description": "While Flash CD > 2s, replaced by Hexflash: channel up to 6.5s to blink 150-400 range.",
+          "cooldown": 25
+        }
+      },
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V5.1",
+          "change": "Bugfix: Fixed interaction with Jarvan IV combo airborne indicator."
+        },
+        {
+          "patch": "V2.5",
+          "change": "New: Flashing during a skillshot dash now applies the dash's damage/effects at the flashed location."
+        }
+      ]
+    },
+    {
+      "id": "ignite",
+      "name": "Ignite",
+      "cooldown": 100,
+      "range": 600,
+      "breaks_stealth": true,
+      "brief": "Burn an enemy champion for true damage; applies Grievous Wounds and reveals.",
+      "full": "Ignite the target enemy champion for 5 seconds, revealing them, inflicting 60% Grievous Wounds, and dealing 72-380 (based on level) true damage over the duration. The first tick of damage occurs briefly after the cast, then subsequent ticks occur every 1.056 seconds.",
+      "values": {
+        "damage_total": [
+          72,
+          380
+        ],
+        "damage_type": "true",
+        "duration": 5,
+        "tick_interval": 1.056,
+        "grievous_wounds": 0.6,
+        "reveals_target": true,
+        "scaling": "based on level"
+      },
+      "damage_type": "true",
+      "effect_tags": [
+        "true_damage",
+        "dot",
+        "grievous_wounds",
+        "reveal",
+        "anti_heal",
+        "kill_pressure"
+      ],
+      "cast_restrictions": "Can be used under CC (except stasis/suppression).",
+      "role_defaults": [
+        "mid",
+        "support",
+        "baron"
+      ],
+      "synergies": {
+        "runes": [
+          "Electrocute",
+          "Scorch",
+          "Nimbus Cloak"
+        ],
+        "items": [
+          "Morellonomicon"
+        ],
+        "champions": [
+          "burst_assassins",
+          "aggressive_supports"
+        ]
+      },
+      "when_to_choose": "Need kill pressure in lane; enemy has high healing.",
+      "why_to_choose": "Best offensive summoner spell; 60% GW shuts down healing; true damage secures kills.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V3.1",
+          "change": "Damage changed from 60-410 to 72-380. CD increased from 90s to 100s."
+        },
+        {
+          "patch": "V2.4",
+          "change": "Grievous Wounds increased from 50% to 60%."
+        },
+        {
+          "patch": "V2.3a",
+          "change": "Target range increased from 550 to 600."
+        },
+        {
+          "patch": "V2.2",
+          "change": "Target range reduced from 700 to 550."
+        }
+      ]
+    },
+    {
+      "id": "heal",
+      "name": "Heal",
+      "cooldown": 100,
+      "range": 850,
+      "breaks_stealth": false,
+      "brief": "Heal yourself and the most wounded nearby ally; both gain movement speed.",
+      "full": "Heal for 110-400 (based on level) to you and the most wounded nearby ally champion, and both of you gain 30% bonus movement speed for 2 seconds. Champions affected by Heal within 35 seconds will receive 50% heal amount.",
+      "values": {
+        "heal_base": [
+          110,
+          400
+        ],
+        "scaling": "based on level",
+        "ms_bonus": 0.3,
+        "ms_duration": 2,
+        "reduced_heal_window": 35,
+        "reduced_heal_percent": 0.5,
+        "ally_targeting": "most wounded nearby ally champion"
+      },
+      "damage_type": null,
+      "effect_tags": [
+        "heal",
+        "ally_buff",
+        "movement_speed",
+        "sustain",
+        "duo_lane"
+      ],
+      "cast_restrictions": "Can be used under CC (except stasis/suppression).",
+      "role_defaults": [
+        "duo_adc",
+        "support"
+      ],
+      "synergies": {
+        "runes": [
+          "Aery",
+          "Revitalize",
+          "Nimbus Cloak"
+        ],
+        "items": [
+          "Ardent Censer",
+          "Staff of Flowing Waters"
+        ],
+        "champions": [
+          "adcs",
+          "enchanters"
+        ]
+      },
+      "interactions": [
+        "Outgoing heals trigger Aery, Ardent Censer, Staff of Flowing Waters.",
+        "Reduced effectiveness if target was Healed within 35 seconds."
+      ],
+      "when_to_choose": "Duo lane (ADC or support); need shared sustain + MS escape.",
+      "why_to_choose": "Only spell that heals two champions + grants MS; core duo lane spell.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V6.0",
+          "change": "CD reduced from 110s to 100s. Heal increased from 100-390 to 110-400. MS duration increased from 1s to 2s."
+        },
+        {
+          "patch": "V5.1d",
+          "change": "CD reduced from 130s to 110s. Heal increased from 90-370 to 100-390."
+        },
+        {
+          "patch": "V4.4",
+          "change": "Reworked: Now heals both you and nearest wounded ally equally at 30% MS (was 200% on ally)."
+        },
+        {
+          "patch": "V3.1",
+          "change": "Effect increased to 200% on ally. Heal reduced. MS reduced from 30% to 20%. CD 120→130."
+        }
+      ]
+    },
+    {
+      "id": "barrier",
+      "name": "Barrier",
+      "cooldown": 100,
+      "range": "Self",
+      "breaks_stealth": false,
+      "brief": "Shield yourself for a short duration.",
+      "full": "Shield your champion for 120-560 (based on level) for 2.5 seconds.",
+      "values": {
+        "shield_base": [
+          120,
+          560
+        ],
+        "scaling": "based on level",
+        "duration": 2.5
+      },
+      "damage_type": null,
+      "effect_tags": [
+        "shield",
+        "self_defense",
+        "anti_burst",
+        "survival"
+      ],
+      "cast_restrictions": "Can be used under CC (except stasis/suppression).",
+      "role_defaults": [
+        "mid",
+        "duo_adc"
+      ],
+      "synergies": {
+        "runes": [
+          "Nimbus Cloak",
+          "Bone Plating",
+          "Nullifying Orb"
+        ],
+        "items": [
+          "Crown of the Shattered Queen"
+        ],
+        "champions": [
+          "mid_laners_vs_assassins",
+          "immobile_mages"
+        ]
+      },
+      "interactions": [
+        "Triggers Shield Bash bonus effects.",
+        "Serpent's Fang reduces Barrier shield value.",
+        "Not reduced by Grievous Wounds (unlike Heal)."
+      ],
+      "when_to_choose": "Facing burst assassins; mid lane 1v1 where Heal's ally component is wasted.",
+      "why_to_choose": "Larger effective self-HP than Heal in 1v1; not affected by Grievous Wounds; shorter effective commitment.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V6.0",
+          "change": "Shield increased from 110-450 to 120-560. Duration increased from 2s to 2.5s."
+        },
+        {
+          "patch": "V5.1d",
+          "change": "CD reduced from 120s to 100s. Shield increased from 100-450 to 110-450."
+        },
+        {
+          "patch": "V3.0a",
+          "change": "Shield reduced from 115-465 to 100-450."
+        },
+        {
+          "patch": "V2.2b",
+          "change": "CD increased from 90s to 120s."
+        }
+      ]
+    },
+    {
+      "id": "exhaust",
+      "name": "Exhaust",
+      "cooldown": 100,
+      "range": 600,
+      "breaks_stealth": true,
+      "brief": "Reduce a champion's damage and slow them.",
+      "full": "Exhaust the target enemy champion for 2.5 seconds, reducing their damage dealt by 40% and slowing them by 35% decaying over the duration.",
+      "values": {
+        "damage_reduction": 0.4,
+        "slow": 0.35,
+        "slow_type": "decaying",
+        "duration": 2.5
+      },
+      "damage_type": null,
+      "effect_tags": [
+        "debuff",
+        "damage_reduction",
+        "slow",
+        "anti_assassin",
+        "peel"
+      ],
+      "cast_restrictions": "Can be used under CC (except stasis/suppression).",
+      "role_defaults": [
+        "support"
+      ],
+      "synergies": {
+        "runes": [
+          "Guardian",
+          "Font of Life",
+          "Nimbus Cloak"
+        ],
+        "items": [
+          "Locket Enchant"
+        ],
+        "champions": [
+          "peel_supports",
+          "enchanters"
+        ]
+      },
+      "interactions": [
+        "Does not reduce true damage.",
+        "Slow and damage reduction are separate debuffs.",
+        "Cleanse removes both slow and damage reduction.",
+        "Slow stacks at diminished rate (highest applies fully, subsequent at 30% effectiveness)."
+      ],
+      "when_to_choose": "Enemy has a fed assassin or burst diver; need to protect carry.",
+      "why_to_choose": "40% damage reduction is the strongest single-target debuff in the game; shuts down divers.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V6.0",
+          "change": "Range increased from 500 to 600. Slow reduced from 60% to 35%."
+        },
+        {
+          "patch": "V3.3b",
+          "change": "Range reduced from 700 to 500."
+        },
+        {
+          "patch": "V3.1",
+          "change": "Slow changed from 20% flat to 60% decaying. CD reduced from 105s to 100s."
+        }
+      ]
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "cooldown": 90,
+      "range": "Self",
+      "breaks_stealth": false,
+      "brief": "Burst of movement speed; extended on champion takedowns.",
+      "full": "Gain a burst of movement speed that decays to 25% bonus movement speed for 8 seconds. Scoring a champion takedown will extend the duration by 6 seconds and refresh the effects, up to the original duration.",
+      "values": {
+        "ms_base": "burst decaying to 25%",
+        "duration": 8,
+        "takedown_extension": 6,
+        "takedown_refreshes_burst": true,
+        "max_extended_duration": "up to original 8s"
+      },
+      "damage_type": null,
+      "effect_tags": [
+        "movement_speed",
+        "chase",
+        "kiting",
+        "engage",
+        "sustained_mobility"
+      ],
+      "cast_restrictions": "Can be used under CC (except stasis/suppression).",
+      "role_defaults": [
+        "baron",
+        "mid"
+      ],
+      "synergies": {
+        "runes": [
+          "Phase Rush",
+          "Nimbus Cloak",
+          "Celerity",
+          "Conqueror"
+        ],
+        "items": [
+          "Stridebreaker",
+          "Dead Man's Plate"
+        ],
+        "champions": [
+          "juggernauts",
+          "ms_scaling_champions",
+          "Garen",
+          "Darius",
+          "Nasus",
+          "Hecarim"
+        ]
+      },
+      "when_to_choose": "Need gap-closing on immobile bruisers/juggernauts; kiting with ranged champions.",
+      "why_to_choose": "Lowest CD summoner spell (90s); long sustained MS is better than Flash for some champions.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V2.2",
+          "change": "Duration increased from 6s to 8s. Burst top speed reduced. Burst duration increased from 2s to 3s. New: On takedown, duration extended by 6s and burst reapplied."
+        }
+      ]
+    },
+    {
+      "id": "cleanse",
+      "name": "Cleanse",
+      "cooldown": 110,
+      "range": "Self",
+      "breaks_stealth": false,
+      "brief": "Remove all disables and grants brief CC immunity.",
+      "full": "Removes all disables (excluding Airborne, Nearsight, and Suppression) and summoner spell debuffs (excluding Mark) affecting your champion, and grants crowd control immunity for 0.25 seconds.",
+      "values": {
+        "removes": "all disables (excl. Airborne, Nearsight, Suppression)",
+        "removes_spell_debuffs": "summoner spell debuffs (excl. Mark)",
+        "cc_immunity_duration": 0.25,
+        "does_not_remove": [
+          "Airborne",
+          "Nearsight",
+          "Suppression"
+        ]
+      },
+      "damage_type": null,
+      "effect_tags": [
+        "cleanse",
+        "cc_removal",
+        "cc_immunity",
+        "anti_cc",
+        "self_defense"
+      ],
+      "cast_restrictions": "Can be used under CC (except stasis/suppression). Self-cast only.",
+      "role_defaults": [
+        "mid",
+        "duo_adc"
+      ],
+      "synergies": {
+        "runes": [
+          "Legend: Tenacity",
+          "Nimbus Cloak",
+          "Perseverance"
+        ],
+        "items": [
+          "Mercury's Treads",
+          "Quicksilver Enchant"
+        ],
+        "champions": [
+          "immobile_carries",
+          "adcs_vs_cc"
+        ]
+      },
+      "interactions": [
+        "Removes Exhaust slow AND damage reduction.",
+        "Removes Ignite damage over time.",
+        "Does NOT remove Airborne, Nearsight, or Suppression.",
+        "0.25s CC immunity window prevents immediate re-CC."
+      ],
+      "when_to_choose": "Enemy has critical single-target CC that will kill you (Ashe arrow, Lux binding, Ahri charm).",
+      "why_to_choose": "Only way to break CC without an item; life-saving vs pick compositions.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V6.0d",
+          "change": "CD increased from 100s to 110s. CC immunity duration reduced from 0.75s to 0.25s."
+        },
+        {
+          "patch": "V6.0",
+          "change": "Added to Wild Rift."
+        }
+      ]
+    },
+    {
+      "id": "smite",
+      "name": "Smite",
+      "cooldown": 10,
+      "recharge_time": 90,
+      "max_charges": 2,
+      "range": 500,
+      "breaks_stealth": true,
+      "brief": "Deal true damage to monsters/minions; heals; upgrades to Chilling Smite after 3 uses.",
+      "full": "Deal 600 true damage to the target large or epic monster or minion and heal for 70 + (10% maximum health). Transforms into Chilling Smite after 3 uses.",
+      "values": {
+        "base_damage": 600,
+        "damage_type": "true",
+        "heal_flat": 70,
+        "heal_max_hp_ratio": 0.1,
+        "charges": 2,
+        "cd_per_charge": 10,
+        "recharge_time": 90,
+        "upgrade_threshold": 3,
+        "targets": "large/epic monsters, minions"
+      },
+      "damage_type": "true",
+      "effect_tags": [
+        "jungle",
+        "true_damage",
+        "objective_control",
+        "heal",
+        "pve"
+      ],
+      "cast_restrictions": "Required for jungling. Can be used under CC (except stasis/suppression).",
+      "role_defaults": [
+        "jungle"
+      ],
+      "upgrades": {
+        "chilling_smite": {
+          "name": "Chilling Smite",
+          "unlocked_after": "3 Smite uses",
+          "damage_vs_monsters": 1000,
+          "damage_vs_champions": "28-174 (based on level) true damage",
+          "adaptive_buff": "11-25 bonus AD or 16-30 AP (Adaptive) for 5s",
+          "cooldown": 15,
+          "range_vs_champions": 500
+        }
+      },
+      "passives": {
+        "jungle_expertise": {
+          "bonus_xp_gold_from_monsters": "20%",
+          "bonus_gold_disabled_after": "11:00 game time",
+          "minion_penalty": "60% reduced XP/gold from minions until 6:00",
+          "bonus_physical_damage_vs_monsters": "15%",
+          "bonus_ability_damage_vs_monsters": "30%",
+          "attack_heal_vs_monsters": "40 HP over 5s",
+          "mana_regen_jungle_river": 20
+        },
+        "conservation": {
+          "stack_generation": "6 stacks per 5s",
+          "max_stacks": 180,
+          "on_large_monster_kill": "consume all stacks, gain 1 gold per stack",
+          "catchup_generation": "12 stacks per 5s (if team gold -10% AND personal gold -5% vs allies' avg)"
+        }
+      },
+      "synergies": {
+        "runes": [
+          "Conqueror",
+          "Lethal Tempo",
+          "Sudden Impact",
+          "Botanist"
+        ],
+        "items": [
+          "all_jungle_items"
+        ],
+        "champions": [
+          "all_junglers"
+        ]
+      },
+      "when_to_choose": "Playing jungle role. Required — cannot jungle effectively without Smite.",
+      "why_to_choose": "Only spell that secures objectives (Dragon/Herald/Baron); provides jungle-specific passives.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V6.2f",
+          "change": "Bonus gold duration increased 7:30→11:00. AD decay removed. Conservation max 150→180. Chilling Smite damage 800→1000."
+        },
+        {
+          "patch": "V6.1a",
+          "change": "Bonus AD now decays. Bonus gold disabled after 7:30. Ability damage vs monsters 15%→30%."
+        }
+      ]
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "cooldown": 150,
+      "range": "Global",
+      "breaks_stealth": true,
+      "brief": "Channel to blink to a target champion, ward, or turret (before 6:00).",
+      "full": "Active: After channeling for 3 seconds, remove any homestart or homeguard buff and blink to the target champion or ward. Your destination will be visibly marked. Passive - [0-6:00 elapse]: You can also target allied turrets.",
+      "values": {
+        "channel_time": 3,
+        "targets_base": [
+          "allied champion",
+          "ward"
+        ],
+        "targets_before_6min": [
+          "allied champion",
+          "ward",
+          "allied turret"
+        ],
+        "turret_targeting_window": "0:00 to 6:00 game time",
+        "destination_visible": true,
+        "initial_cd_at_game_start": 35
+      },
+      "damage_type": null,
+      "effect_tags": [
+        "global",
+        "map_pressure",
+        "split_push",
+        "objective_play",
+        "rotation"
+      ],
+      "cast_restrictions": "Can be used under CC (except stasis/suppression).",
+      "role_defaults": [
+        "baron",
+        "mid"
+      ],
+      "synergies": {
+        "runes": [
+          "Conqueror",
+          "Grasp of the Undying",
+          "Demolish",
+          "Nimbus Cloak"
+        ],
+        "items": [
+          "Hullbreaker"
+        ],
+        "champions": [
+          "split_pushers",
+          "Fiora",
+          "Jax",
+          "Camille",
+          "Sion"
+        ]
+      },
+      "interactions": [
+        "Incurs 35s cooldown when the game starts.",
+        "Cannot target turrets after 6:00 game time.",
+        "Destination is visibly marked to all players.",
+        "Removes homestart/homeguard buff on arrival."
+      ],
+      "when_to_choose": "Split-push strategy; baron lane champions needing to join teamfights.",
+      "why_to_choose": "Only global repositioning spell; enables split-push + teamfight participation.",
+      "patch_version": "7.1e",
+      "patch_history": [
+        {
+          "patch": "V6.2b",
+          "change": "CD reduced from 180s to 150s."
+        },
+        {
+          "patch": "V6.2",
+          "change": "Added as summoner spell. Channel 3s. Blink to champion/ward. Passive: target turrets before 6:00. CD 180s. (Teleport Enchant removed same patch.)"
+        }
+      ]
+    }
+  ]
+}

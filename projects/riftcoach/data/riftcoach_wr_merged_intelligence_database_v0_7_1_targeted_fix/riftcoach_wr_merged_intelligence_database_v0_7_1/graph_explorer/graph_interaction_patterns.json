@@ -1,0 +1,55 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "patterns": [
+    {
+      "id": "click_node",
+      "trigger": "node_click",
+      "result": "set center node and open details panel"
+    },
+    {
+      "id": "hover_edge",
+      "trigger": "edge_hover",
+      "result": "show relationship summary, reason codes, confidence, source status"
+    },
+    {
+      "id": "expand_node",
+      "trigger": "expand_button",
+      "result": "load next-hop neighbors respecting active filters"
+    },
+    {
+      "id": "pin_node",
+      "trigger": "pin_button",
+      "result": "keep node visible while exploring"
+    },
+    {
+      "id": "compare_two_nodes",
+      "trigger": "select_two_nodes",
+      "result": "show shortest meaningful relationship paths"
+    },
+    {
+      "id": "explain_path",
+      "trigger": "path_explain_button",
+      "result": "generate path narrative from edge reasons"
+    },
+    {
+      "id": "save_view",
+      "trigger": "save_view_button",
+      "result": "persist graph filters, center node, depth, and layout"
+    },
+    {
+      "id": "copy_rag_context",
+      "trigger": "copy_context_button",
+      "result": "copy selected path context for AI answer generation"
+    },
+    {
+      "id": "hide_generated",
+      "trigger": "toggle_generated",
+      "result": "hide generated_rule and generated_archetype edges"
+    },
+    {
+      "id": "show_only_verified",
+      "trigger": "verified_only_toggle",
+      "result": "show only source_verified or user_corrected_pending_revalidation edges"
+    }
+  ]
+}

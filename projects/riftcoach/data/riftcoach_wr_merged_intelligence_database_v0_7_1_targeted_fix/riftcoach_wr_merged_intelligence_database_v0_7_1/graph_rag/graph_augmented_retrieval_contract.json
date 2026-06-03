@@ -1,0 +1,50 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "pipeline": [
+    {
+      "step": 1,
+      "name": "retrieve_text_chunks",
+      "description": "Run vector/RAG retrieval over entity and strategy chunks."
+    },
+    {
+      "step": 2,
+      "name": "entity_linking",
+      "description": "Detect champion/item/rune/spell/effect/build entities in retrieved text."
+    },
+    {
+      "step": 3,
+      "name": "graph_expansion",
+      "description": "Load top graph neighbors for linked entities."
+    },
+    {
+      "step": 4,
+      "name": "filter",
+      "description": "Apply patch, source status, confidence, role/lane, and build legality filters."
+    },
+    {
+      "step": 5,
+      "name": "context_builder",
+      "description": "Create concise relationship context with path explanations."
+    },
+    {
+      "step": 6,
+      "name": "answer_generation",
+      "description": "Answer with source labels, confidence, and generated-vs-verified boundaries."
+    }
+  ],
+  "minimum_context_fields": [
+    "entity_id",
+    "entity_type",
+    "relationship_type",
+    "summary_brief",
+    "reason_codes",
+    "source_status",
+    "confidence",
+    "patch_version"
+  ],
+  "forbidden": [
+    "using graph paths that violate build legality",
+    "treating generated_rule as official source",
+    "using LoL-PC sources"
+  ]
+}

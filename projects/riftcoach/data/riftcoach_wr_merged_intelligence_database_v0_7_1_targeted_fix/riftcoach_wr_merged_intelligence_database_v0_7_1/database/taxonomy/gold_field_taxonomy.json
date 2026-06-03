@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "gold_fields": [
+    "total_cost",
+    "recipe_cost",
+    "sell_value",
+    "upgrade_cost_from",
+    "support_item_gold_generation",
+    "quest_reward",
+    "refund_value"
+  ],
+  "units": [
+    "gold"
+  ],
+  "missing_policy": "Never use silent null. Use pending_allowed_source_refresh or source_verified_not_applicable."
+}

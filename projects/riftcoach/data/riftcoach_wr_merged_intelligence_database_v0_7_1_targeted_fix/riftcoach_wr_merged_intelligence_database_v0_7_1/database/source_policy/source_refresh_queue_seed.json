@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "database_version": "0.6.0-chunk1",
+  "patch_version": "7.1e",
+  "queue_groups": [
+    {
+      "group_id": "champions",
+      "priority": "high",
+      "source_families": [
+        "riot_wild_rift",
+        "lol_wiki_wr",
+        "wildriftfire"
+      ],
+      "next_chunk": "chunks_3_4_5"
+    },
+    {
+      "group_id": "items_boots_enchants",
+      "priority": "high",
+      "source_families": [
+        "lol_wiki_wr",
+        "wildriftfire"
+      ],
+      "next_chunk": "chunk_6"
+    },
+    {
+      "group_id": "runes",
+      "priority": "high",
+      "source_families": [
+        "lol_wiki_wr",
+        "wildriftfire"
+      ],
+      "next_chunk": "chunk_7"
+    },
+    {
+      "group_id": "spells",
+      "priority": "high",
+      "source_families": [
+        "lol_wiki_wr"
+      ],
+      "next_chunk": "chunk_8"
+    },
+    {
+      "group_id": "patch",
+      "priority": "high",
+      "source_families": [
+        "riot_wild_rift",
+        "wildriftfire"
+      ],
+      "next_chunk": "chunks_2_to_10"
+    }
+  ],
+  "seed_urls": [
+    "https://wildrift.leagueoflegends.com/en-sg/champions/",
+    "https://wildrift.leagueoflegends.com/en-sg/news/",
+    "https://wiki.leagueoflegends.com/en-us/WR:Item",
+    "https://wiki.leagueoflegends.com/en-us/WR:Rune",
+    "https://wiki.leagueoflegends.com/en-us/WR:Spell",
+    "https://www.wildriftfire.com/patch-notes",
+    "https://www.wildriftfire.com/item-list",
+    "https://www.wildriftfire.com/rune-list"
+  ]
+}

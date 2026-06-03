@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "rules": [
+    {
+      "rule_id": "no_lol_pc_mechanics_overwrite",
+      "severity": "blocker",
+      "description": "Never replace Wild Rift champion, item, rune, spell, build, or patch data with League PC data. Shared names are not enough. Data must be verified against approved Wild Rift sources."
+    },
+    {
+      "rule_id": "manual_corrections_are_protected",
+      "severity": "blocker",
+      "description": "User-verified corrections cannot be overwritten by generated scaffolds or lower-priority sources."
+    },
+    {
+      "rule_id": "generated_strategy_not_official",
+      "severity": "blocker",
+      "description": "Generated analyst strategy must be labeled generated_rule or generated_archetype, never source_verified."
+    }
+  ]
+}

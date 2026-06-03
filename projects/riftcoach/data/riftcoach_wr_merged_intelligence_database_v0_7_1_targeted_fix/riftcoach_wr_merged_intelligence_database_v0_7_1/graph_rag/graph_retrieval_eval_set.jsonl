@@ -1,0 +1,2 @@
+{"eval_id": "graph_rag_karma_support_enchanter_001", "question": "Why does Karma support enchanter connect to Aery?", "must_use_paths": ["karma.e -> effect.shield", "karma.e -> aery"], "must_label_generated_rules": true, "must_not_claim_official_if_generated": true}
+{"eval_id": "graph_rag_stasis_antiburst_001", "question": "What can help deny burst damage timing windows?", "must_use_relationship_types": ["DENIES", "MITIGATES"], "must_include_limitations": true, "must_label_item_cooldown_pending_if_not_verified": true}

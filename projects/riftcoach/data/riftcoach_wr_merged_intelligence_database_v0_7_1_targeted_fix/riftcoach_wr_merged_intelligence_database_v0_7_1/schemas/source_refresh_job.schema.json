@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RiftCoach Source Refresh Job",
+  "type": "object",
+  "required": [
+    "refresh_job_id",
+    "job_type",
+    "entity_id",
+    "allowed_source_urls",
+    "required_outputs"
+  ],
+  "properties": {
+    "refresh_job_id": {
+      "type": "string"
+    },
+    "job_type": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "allowed_source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_outputs": {
+      "type": "array"
+    }
+  }
+}

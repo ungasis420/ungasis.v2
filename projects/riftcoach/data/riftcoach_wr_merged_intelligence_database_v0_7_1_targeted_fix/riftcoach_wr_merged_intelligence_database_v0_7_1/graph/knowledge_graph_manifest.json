@@ -1,0 +1,8 @@
+{
+  "version": "0.6.0-final",
+  "patch_version": "7.1e",
+  "node_count": 1006,
+  "edge_count": 16338,
+  "node_file": "graph/nodes_all.jsonl",
+  "edge_file": "graph/edges_all.jsonl"
+}

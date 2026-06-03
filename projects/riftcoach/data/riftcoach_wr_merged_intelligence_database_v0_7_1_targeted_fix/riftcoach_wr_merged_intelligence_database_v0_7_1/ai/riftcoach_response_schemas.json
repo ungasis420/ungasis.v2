@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "schemas": [
+    "build_recommendation_response",
+    "counterplay_response",
+    "source_audit_response",
+    "data_quality_response"
+  ],
+  "build_recommendation_response_required": [
+    "recommendation_id",
+    "patch_version",
+    "legal_build",
+    "reason_codes",
+    "confidence",
+    "source_status",
+    "suppressions"
+  ]
+}

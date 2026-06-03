@@ -1,0 +1,17 @@
+{
+  "node_types": [
+    "champion",
+    "ability",
+    "item",
+    "rune",
+    "spell",
+    "build",
+    "effect",
+    "source_claim"
+  ],
+  "edge_types": [
+    "DENIES_OR_MITIGATES",
+    "HAS_ABILITY",
+    "SYNERGIZES_WITH"
+  ]
+}

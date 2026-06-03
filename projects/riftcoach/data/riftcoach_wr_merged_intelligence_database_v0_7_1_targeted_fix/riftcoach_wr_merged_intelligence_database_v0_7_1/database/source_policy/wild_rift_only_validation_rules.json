@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "database_version": "0.6.0-chunk1",
+  "game_scope_required": "wild_rift",
+  "entity_required_fields": [
+    "game",
+    "not_lol_pc",
+    "patch_version",
+    "source_status",
+    "source_family",
+    "provenance"
+  ],
+  "url_gate": {
+    "allowed_game_url_patterns": [
+      "^https://wildrift\\.leagueoflegends\\.com/en-sg/champions/?$",
+      "^https://wildrift\\.leagueoflegends\\.com/en-sg/champions/[a-z0-9-]+/?$",
+      "^https://wildrift\\.leagueoflegends\\.com/en-sg/news/?$",
+      "^https://wildrift\\.leagueoflegends\\.com/en-sg/news/game-updates/[a-z0-9-]+/?$",
+      "^https://wiki\\.leagueoflegends\\.com/en-us/WR:.+",
+      "^https://wiki\\.leagueoflegends\\.com/en-us/WR%3A.+",
+      "^https://www\\.wildriftfire\\.com/?$",
+      "^https://www\\.wildriftfire\\.com/guide/[a-z0-9-]+/?$",
+      "^https://www\\.wildriftfire\\.com/item-list/?$",
+      "^https://www\\.wildriftfire\\.com/rune-list/?$",
+      "^https://www\\.wildriftfire\\.com/patch-notes/?$",
+      "^https://wr-meta\\.com/.*"
+    ],
+    "technical_non_game_exceptions": [
+      {
+        "pattern": "^https://json-schema\\.org/.*",
+        "allowed_for": [
+          "json_schema_reference"
+        ]
+      },
+      {
+        "pattern": "^https://riftcoach\\.local/.*",
+        "allowed_for": [
+          "local_schema_contracts",
+          "internal_docs"
+        ]
+      }
+    ]
+  },
+  "wiki_wr_prefix_gate": {
+    "applies_to": [
+      "wiki.leagueoflegends.com"
+    ],
+    "required_markers": [
+      "/WR:",
+      "/WR%3A"
+    ],
+    "severity": "blocker"
+  },
+  "reject_on": [
+    "league_pc_url",
+    "non_wr_wiki_page",
+    "unapproved_domain",
+    "missing_source_family_for_source_verified_value"
+  ]
+}

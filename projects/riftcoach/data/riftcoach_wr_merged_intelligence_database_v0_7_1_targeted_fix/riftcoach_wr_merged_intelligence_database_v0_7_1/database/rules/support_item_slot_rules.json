@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "support_item_rules": {
+    "support_item_slots": 1,
+    "boot_slots": 1,
+    "remaining_slots_before_support_sell": 4,
+    "support_item_can_be_sold_late": true,
+    "late_game_replacement_allowed": true,
+    "late_replacement_requires_flag": true,
+    "replacement_contexts": [
+      "full_build_locked",
+      "team_needs_more_defense",
+      "team_needs_more_utility",
+      "player_needs_survivability",
+      "support_item_gold_value_declines_late"
+    ]
+  },
+  "support_build_validations": [
+    "one_support_item_until_late_replacement",
+    "late_replacement_has_reason",
+    "support_item_not_counted_as_standard_carry_core_when_unsold"
+  ]
+}

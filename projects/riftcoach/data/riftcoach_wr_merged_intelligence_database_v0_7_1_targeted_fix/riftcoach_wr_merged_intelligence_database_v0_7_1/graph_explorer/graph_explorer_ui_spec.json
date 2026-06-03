@@ -1,0 +1,67 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "component": "RelationshipExplorer",
+  "purpose": "Visual and searchable connected asset map for RiftCoach.",
+  "routes": [
+    {
+      "path": "/graph",
+      "screen": "Full Graph Explorer"
+    },
+    {
+      "path": "/champions/:id",
+      "embedded_component": "RelationshipPanel"
+    },
+    {
+      "path": "/items/:id",
+      "embedded_component": "RelationshipPanel"
+    },
+    {
+      "path": "/runes/:id",
+      "embedded_component": "RelationshipPanel"
+    },
+    {
+      "path": "/spells/:id",
+      "embedded_component": "RelationshipPanel"
+    },
+    {
+      "path": "/builds/:id",
+      "embedded_component": "BuildReasoningGraph"
+    }
+  ],
+  "panels": [
+    "graph_canvas",
+    "left_filter_panel",
+    "right_detail_panel",
+    "bottom_path_explainer",
+    "legend_overlay"
+  ],
+  "states": [
+    "empty",
+    "loading",
+    "loaded",
+    "filtered_empty",
+    "error",
+    "source_conflict_warning",
+    "large_graph_warning"
+  ],
+  "data_inputs": [
+    "graph/nodes.jsonl",
+    "graph/edges.jsonl",
+    "database/relationships/global_relationship_index.jsonl",
+    "database/relationships/entity_neighborhoods.json",
+    "database/relationships/backlinks.json"
+  ],
+  "implementation_options": [
+    "json_canvas_prototype",
+    "react_flow_future",
+    "cytoscape_js_future",
+    "neo4j_future"
+  ],
+  "accessibility": [
+    "keyboard_node_navigation",
+    "focus_outline",
+    "text_edge_summaries",
+    "high_contrast_mode",
+    "reduced_motion_mode"
+  ]
+}

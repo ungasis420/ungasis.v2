@@ -1,0 +1,1337 @@
+{
+  "meta": {
+    "type": "meta_snapshot",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "rank_floor": "Diamond+",
+    "confidence_source": "theorycraft_meta_inference_wr_meta_com",
+    "note": "Estimated tier list based on champion kits, item synergies, and meta inference. Not live API data. To be refined with wr-meta.com data in future passes."
+  },
+  "tier_list": {
+    "baron": [
+      {
+        "champion_id": "fiora",
+        "tier": "S+",
+        "win_rate": 0.525,
+        "pick_rate": 0.12,
+        "ban_rate": 0.18,
+        "trend": "stable",
+        "note": "Best 1v1 duelist. True damage ignores all tank itemization."
+      },
+      {
+        "champion_id": "camille",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.11,
+        "ban_rate": 0.15,
+        "trend": "stable",
+        "note": "True damage Q2 + Hextech lockdown. High skill ceiling."
+      },
+      {
+        "champion_id": "gwen",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.09,
+        "ban_rate": 0.1,
+        "trend": "rising",
+        "note": "Hallowed Mist is broken vs targeted abilities. True damage center Q."
+      },
+      {
+        "champion_id": "irelia",
+        "tier": "S",
+        "win_rate": 0.51,
+        "pick_rate": 0.1,
+        "ban_rate": 0.12,
+        "trend": "stable",
+        "note": "Q resets dominate lane. BotRK spike is massive."
+      },
+      {
+        "champion_id": "jax",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.09,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Best late-game 1v1. Counter Strike dodges AAs."
+      },
+      {
+        "champion_id": "darius",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.1,
+        "ban_rate": 0.14,
+        "trend": "stable",
+        "note": "Lane bully. Ghost + 5 stacks = pentakill machine."
+      },
+      {
+        "champion_id": "riven",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.07,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "Highest skill ceiling. Fast combo burst."
+      },
+      {
+        "champion_id": "renekton",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.08,
+        "ban_rate": 0.06,
+        "trend": "falling",
+        "note": "Early bully but falls off. Fury management key."
+      },
+      {
+        "champion_id": "sett",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.08,
+        "ban_rate": 0.06,
+        "trend": "stable",
+        "note": "Simple but effective. Haymaker true damage center."
+      },
+      {
+        "champion_id": "k_sante",
+        "tier": "A",
+        "win_rate": 0.5,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Most complex tank. R transform duel mode."
+      },
+      {
+        "champion_id": "aatrox",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.09,
+        "ban_rate": 0.07,
+        "trend": "stable",
+        "note": "Drain tank. Q sweetspot healing. R amplifies healing."
+      },
+      {
+        "champion_id": "gnar",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.06,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Ranged poke mini. Mega R game-winning. Rage management."
+      },
+      {
+        "champion_id": "ornn",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Scaling tank. Item upgrades at 14. R engage."
+      },
+      {
+        "champion_id": "malphite",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.08,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "One R wins teamfights. Anti-AD. Simple and effective."
+      },
+      {
+        "champion_id": "shen",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Global R. Split + teleport. Map control."
+      },
+      {
+        "champion_id": "kennen",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Ranged poke. Flash R teamfight. Niche counter pick."
+      },
+      {
+        "champion_id": "dr_mundo",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Unkillable late. Passive CC immune. HP stacking."
+      },
+      {
+        "champion_id": "nasus",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.07,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Infinite Q scaling. Weak early, monster late. Split push."
+      },
+      {
+        "champion_id": "kayle",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Worst early, best late. Ranged transform. R invulnerability."
+      },
+      {
+        "champion_id": "sion",
+        "tier": "C",
+        "win_rate": 0.49,
+        "pick_rate": 0.04,
+        "ban_rate": 0.01,
+        "trend": "stable",
+        "note": "HP stacking. Titanic scaling. R engage. Passive zombie."
+      },
+      {
+        "champion_id": "singed",
+        "tier": "C",
+        "win_rate": 0.49,
+        "pick_rate": 0.03,
+        "ban_rate": 0.01,
+        "trend": "stable",
+        "note": "Proxy specialist. Niche. Ghost + poison trail."
+      },
+      {
+        "champion_id": "teemo",
+        "tier": "C",
+        "win_rate": 0.49,
+        "pick_rate": 0.05,
+        "ban_rate": 0.04,
+        "trend": "falling",
+        "note": "Lane bully but falls off. Mushroom map control."
+      },
+      {
+        "champion_id": "tryndamere",
+        "tier": "C",
+        "win_rate": 0.49,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Split push only. R undying. Feast or famine."
+      },
+      {
+        "champion_id": "gragas",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Tank with R disengage. E stun engage. Versatile."
+      },
+      {
+        "champion_id": "ambessa",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.06,
+        "trend": "rising",
+        "note": "New champion. Passive dash + AA weaving. R suppress."
+      },
+      {
+        "champion_id": "garen",
+        "tier": "B",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Simple. Q silence E spin R execute. Passive regen."
+      },
+      {
+        "champion_id": "rumble",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Best ult for objectives. Heat management."
+      }
+    ],
+    "jungle": [
+      {
+        "champion_id": "lee_sin",
+        "tier": "S+",
+        "win_rate": 0.52,
+        "pick_rate": 0.15,
+        "ban_rate": 0.12,
+        "trend": "stable",
+        "note": "Early pressure king. Insec combo. Highest skill ceiling jungler."
+      },
+      {
+        "champion_id": "graves",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.11,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Fastest clear. Ranged bruiser. E armor stacking."
+      },
+      {
+        "champion_id": "vi",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.09,
+        "ban_rate": 0.06,
+        "trend": "rising",
+        "note": "Unstoppable R lockdown. Simple and effective."
+      },
+      {
+        "champion_id": "xin_zhao",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.08,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "Early duel king. Q knockup. R isolates."
+      },
+      {
+        "champion_id": "viego",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.1,
+        "ban_rate": 0.1,
+        "trend": "stable",
+        "note": "Possession resets. Chain kills in teamfights."
+      },
+      {
+        "champion_id": "kha_zix",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.08,
+        "ban_rate": 0.07,
+        "trend": "stable",
+        "note": "Isolation burst. Evolved abilities. Stealth."
+      },
+      {
+        "champion_id": "ekko",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.08,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "Safe assassin. R rewind escape. W stun zone."
+      },
+      {
+        "champion_id": "diana",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "Best AoE burst jungle. R pull. Fast clear."
+      },
+      {
+        "champion_id": "evelynn",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Permanent stealth post-5. Charm burst. R escape."
+      },
+      {
+        "champion_id": "jarvan_iv",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.07,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "EQ knockup. R Cataclysm traps. Versatile build."
+      },
+      {
+        "champion_id": "hecarim",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "E charge engage. R fear. Trinity Spellblade."
+      },
+      {
+        "champion_id": "nocturne",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Global R dive. Spell shield. Hexplate spike."
+      },
+      {
+        "champion_id": "wukong",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Double R spin knockup. Clone outplay."
+      },
+      {
+        "champion_id": "rengar",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "Stealth one-shot. Bush leap. High skill ceiling."
+      },
+      {
+        "champion_id": "kayn",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.07,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Two forms. Shadow burst or Rhaast drain. Wall walk."
+      },
+      {
+        "champion_id": "volibear",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Tower dive R. Q stun. Simple bruiser."
+      },
+      {
+        "champion_id": "olaf",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "R CC immune. Early bully. Falls off late."
+      },
+      {
+        "champion_id": "amumu",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Best teamfight R. Simple. Weak early."
+      },
+      {
+        "champion_id": "rammus",
+        "tier": "B",
+        "win_rate": 0.51,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Anti-AD specialist. Taunt + reflect. Niche."
+      },
+      {
+        "champion_id": "nunu_willump",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Snowball ganks. Objective control. Simple."
+      },
+      {
+        "champion_id": "poppy",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Anti-dash W. Wall stun E. Niche counter."
+      },
+      {
+        "champion_id": "kindred",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Ranged carry jungle. Mark scaling. R zone."
+      },
+      {
+        "champion_id": "warwick",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Beginner-friendly. Blood hunt. R suppress."
+      },
+      {
+        "champion_id": "master_yi",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.07,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "Late-game 1v9. On-hit shred. Weak early."
+      },
+      {
+        "champion_id": "shyvana",
+        "tier": "C",
+        "win_rate": 0.49,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Dragon control. AP E burst. Needs dragon form."
+      },
+      {
+        "champion_id": "fiddlesticks",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.04,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Surprise R from fog. Fear. Soulstealer synergy."
+      },
+      {
+        "champion_id": "lillia",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Speed demon. R sleep all. AP kite."
+      }
+    ],
+    "mid": [
+      {
+        "champion_id": "zed",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.12,
+        "ban_rate": 0.15,
+        "trend": "stable",
+        "note": "AD assassin king. Shadow outplay. R death mark."
+      },
+      {
+        "champion_id": "ahri",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.11,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Safe assassin mage. Charm pick. R mobility."
+      },
+      {
+        "champion_id": "akali",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.1,
+        "ban_rate": 0.12,
+        "trend": "stable",
+        "note": "Shroud safety. Burst combo. High skill ceiling."
+      },
+      {
+        "champion_id": "orianna",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.08,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "THE teamfight mage. Ball control. R Shockwave."
+      },
+      {
+        "champion_id": "katarina",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Reset queen. Conqueror R shreds. Roam assassin."
+      },
+      {
+        "champion_id": "fizz",
+        "tier": "A",
+        "win_rate": 0.515,
+        "pick_rate": 0.08,
+        "ban_rate": 0.07,
+        "trend": "stable",
+        "note": "E untargetable. R shark. One-shot at 2 items."
+      },
+      {
+        "champion_id": "yasuo",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.1,
+        "ban_rate": 0.1,
+        "trend": "stable",
+        "note": "Windwall. Double crit passive. R on airborne."
+      },
+      {
+        "champion_id": "yone",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.09,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "E spirit form. R long engage. Double crit passive."
+      },
+      {
+        "champion_id": "diana",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "R AoE pull. Burst + sustained. Flexible role."
+      },
+      {
+        "champion_id": "ekko",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Safe AP assassin. R rewind. W stun."
+      },
+      {
+        "champion_id": "vex",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "rising",
+        "note": "Anti-mobility mage. Passive fear on dash. R engage."
+      },
+      {
+        "champion_id": "syndra",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Burst mage. E stun. R sphere dump."
+      },
+      {
+        "champion_id": "lux",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.08,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Long-range burst. Q root. R laser."
+      },
+      {
+        "champion_id": "galio",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Anti-AP tank mid. W taunt. Global R."
+      },
+      {
+        "champion_id": "lissandra",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Anti-assassin. R self-stasis. E engage."
+      },
+      {
+        "champion_id": "annie",
+        "tier": "B",
+        "win_rate": 0.51,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Flash Tibbers. Point-click stun. Simple but effective."
+      },
+      {
+        "champion_id": "viktor",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Scaling mage. E laser poke. Hex upgrades."
+      },
+      {
+        "champion_id": "vladimir",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Late-game AP carry. W pool untargetable. R AoE bomb."
+      },
+      {
+        "champion_id": "kassadin",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.05,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "THE late-game assassin. R mobility. Weak pre-6."
+      },
+      {
+        "champion_id": "aurelion_sol",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Stardust scaling. AoE R at 75 stacks. Late monster."
+      },
+      {
+        "champion_id": "twisted_fate",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Global R. Gold card. Map control. Squishy."
+      },
+      {
+        "champion_id": "ziggs",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.01,
+        "trend": "stable",
+        "note": "Siege mage. W tower execute. R global AoE."
+      },
+      {
+        "champion_id": "veigar",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Infinite AP scaling. Cage stun. R execute."
+      },
+      {
+        "champion_id": "zoe",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.04,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "E sleep one-shot. Long range. High skill ceiling."
+      },
+      {
+        "champion_id": "heimerdinger",
+        "tier": "C",
+        "win_rate": 0.49,
+        "pick_rate": 0.03,
+        "ban_rate": 0.01,
+        "trend": "stable",
+        "note": "Turret zone control. Niche. Punishes melee."
+      },
+      {
+        "champion_id": "aurora",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "R zone trap. W untargetable. Zone mage."
+      },
+      {
+        "champion_id": "norra",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.03,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Portal mobility. Enchanter hybrid."
+      },
+      {
+        "champion_id": "ryze",
+        "tier": "C",
+        "win_rate": 0.48,
+        "pick_rate": 0.03,
+        "ban_rate": 0.01,
+        "trend": "falling",
+        "note": "Mana scaling. R team teleport. High skill floor."
+      }
+    ],
+    "duo": [
+      {
+        "champion_id": "jinx",
+        "tier": "S+",
+        "win_rate": 0.525,
+        "pick_rate": 0.12,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "THE hypercarry. Passive resets. Rocket AoE. Hurricane synergy."
+      },
+      {
+        "champion_id": "kai_sa",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.12,
+        "ban_rate": 0.1,
+        "trend": "stable",
+        "note": "Evolving abilities. Stealth E. R dive. Versatile builds."
+      },
+      {
+        "champion_id": "vayne",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.1,
+        "ban_rate": 0.12,
+        "trend": "stable",
+        "note": "True damage W. Best tank shredder. Weak early, 1.0 late."
+      },
+      {
+        "champion_id": "lucian",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.1,
+        "ban_rate": 0.06,
+        "trend": "stable",
+        "note": "Passive double-shot. Burst trades. Early lane bully."
+      },
+      {
+        "champion_id": "draven",
+        "tier": "S",
+        "win_rate": 0.515,
+        "pick_rate": 0.07,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Spinning Axe damage. Adoration gold. Lane bully king."
+      },
+      {
+        "champion_id": "caitlyn",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.08,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Longest range. Headshot poke. Trap zone control."
+      },
+      {
+        "champion_id": "jhin",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "4th shot crit. R global snipe. Utility ADC."
+      },
+      {
+        "champion_id": "samira",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.06,
+        "trend": "stable",
+        "note": "Style rank into R Inferno Trigger. W windwall. Needs CC support."
+      },
+      {
+        "champion_id": "xayah",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Feather root. R untargetable. Rakan synergy."
+      },
+      {
+        "champion_id": "ezreal",
+        "tier": "A",
+        "win_rate": 0.5,
+        "pick_rate": 0.09,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Safest ADC. Q poke. E blink. Muramana scaling."
+      },
+      {
+        "champion_id": "miss_fortune",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.08,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "R Bullet Time AoE. Love Tap. Best with CC supports."
+      },
+      {
+        "champion_id": "tristana",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "W jump all-in. E bomb burst. R self-peel. Scaling range."
+      },
+      {
+        "champion_id": "ashe",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.07,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Perma-slow. R global stun. Utility ADC."
+      },
+      {
+        "champion_id": "kalista",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Most mechanical ADC. Rend burst. R launch."
+      },
+      {
+        "champion_id": "varus",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "On-hit or poke. R spreading root. Blight %HP."
+      },
+      {
+        "champion_id": "sivir",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.01,
+        "trend": "stable",
+        "note": "W ricochet waveclear. E spell shield. R team MS."
+      },
+      {
+        "champion_id": "twitch",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Stealth flank. R piercing AAs. Late hypercarry."
+      },
+      {
+        "champion_id": "nilah",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Melee ADC. W dodge zone. R AoE burst. Needs engage."
+      },
+      {
+        "champion_id": "kog_maw",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Highest DPS ADC. W range. Needs peel. Weak early."
+      },
+      {
+        "champion_id": "corki",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.04,
+        "ban_rate": 0.01,
+        "trend": "stable",
+        "note": "Mixed damage. Package engage. Missile poke."
+      },
+      {
+        "champion_id": "smolder",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Q stack scaling. Weak early. Monster at 225 stacks."
+      },
+      {
+        "champion_id": "zeri",
+        "tier": "C",
+        "win_rate": 0.48,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "falling",
+        "note": "Most mobile ADC. Q skillshot AAs. R speed. Inconsistent."
+      }
+    ],
+    "support": [
+      {
+        "champion_id": "thresh",
+        "tier": "S+",
+        "win_rate": 0.525,
+        "pick_rate": 0.12,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Most versatile support. Hook, Flay, Lantern, Box. Souls scaling."
+      },
+      {
+        "champion_id": "nautilus",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.1,
+        "ban_rate": 0.08,
+        "trend": "stable",
+        "note": "Most CC-heavy support. Hook, passive root, R knockup."
+      },
+      {
+        "champion_id": "leona",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.09,
+        "ban_rate": 0.07,
+        "trend": "stable",
+        "note": "Triple CC engage. E+Q+R. Best all-in support."
+      },
+      {
+        "champion_id": "lulu",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.09,
+        "ban_rate": 0.06,
+        "trend": "stable",
+        "note": "Best protect-the-carry. Polymorph. R knockup. Shield."
+      },
+      {
+        "champion_id": "nami",
+        "tier": "S",
+        "win_rate": 0.52,
+        "pick_rate": 0.08,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Best all-around enchanter. W bounce. E empower. Bubble stun."
+      },
+      {
+        "champion_id": "morgana",
+        "tier": "A",
+        "win_rate": 0.515,
+        "pick_rate": 0.07,
+        "ban_rate": 0.06,
+        "trend": "stable",
+        "note": "Black Shield counters all engage. Q 3s root. Anti-engage queen."
+      },
+      {
+        "champion_id": "rakan",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "R+Flash AoE charm. W knockup. Xayah synergy."
+      },
+      {
+        "champion_id": "alistar",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "W+Q instant knockup. R damage reduction. Flash engage."
+      },
+      {
+        "champion_id": "blitzcrank",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.06,
+        "trend": "stable",
+        "note": "One hook wins games. Q pull. E knockup. R silence."
+      },
+      {
+        "champion_id": "karma",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.07,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "R+Q poke. R+E team shield/speed. Strong early."
+      },
+      {
+        "champion_id": "senna",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.07,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "Infinite soul scaling. AD+range. R global shield."
+      },
+      {
+        "champion_id": "pyke",
+        "tier": "A",
+        "win_rate": 0.505,
+        "pick_rate": 0.06,
+        "ban_rate": 0.05,
+        "trend": "stable",
+        "note": "Assassin support. R execute shares gold. Hook stun."
+      },
+      {
+        "champion_id": "braum",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "E blocks projectiles. Passive stun. R knockup. Peel tank."
+      },
+      {
+        "champion_id": "rell",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "W crash engage. R Magnet Storm pull. Heavy engage."
+      },
+      {
+        "champion_id": "janna",
+        "tier": "A",
+        "win_rate": 0.515,
+        "pick_rate": 0.06,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Best disengage. Q tornado. R monsoon heal+pushback."
+      },
+      {
+        "champion_id": "soraka",
+        "tier": "A",
+        "win_rate": 0.515,
+        "pick_rate": 0.06,
+        "ban_rate": 0.04,
+        "trend": "stable",
+        "note": "THE healer. W heal. R global heal. E silence zone."
+      },
+      {
+        "champion_id": "milio",
+        "tier": "A",
+        "win_rate": 0.51,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "R AoE cleanse. E range extension. Anti-CC enchanter."
+      },
+      {
+        "champion_id": "seraphine",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.05,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "R extending charm. W shield/heal. Echo passive."
+      },
+      {
+        "champion_id": "zyra",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Plant zone control. E root. R knockup. Damage support."
+      },
+      {
+        "champion_id": "brand",
+        "tier": "B",
+        "win_rate": 0.505,
+        "pick_rate": 0.05,
+        "ban_rate": 0.03,
+        "trend": "stable",
+        "note": "Highest damage support. %HP passive. R bouncing."
+      },
+      {
+        "champion_id": "swain",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Drain tank support. E root passive pull. R AoE drain."
+      },
+      {
+        "champion_id": "bard",
+        "tier": "B",
+        "win_rate": 0.49,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "Roaming support. Chimes. R stasis. E portal. High skill."
+      },
+      {
+        "champion_id": "maokai",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "R massive root wave. E sapling vision. Tank support."
+      },
+      {
+        "champion_id": "zilean",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.03,
+        "ban_rate": 0.02,
+        "trend": "stable",
+        "note": "R Chronoshift revive. Double bomb stun. E speed."
+      },
+      {
+        "champion_id": "sona",
+        "tier": "B",
+        "win_rate": 0.5,
+        "pick_rate": 0.04,
+        "ban_rate": 0.01,
+        "trend": "stable",
+        "note": "Aura enchanter. R AoE stun. Power Chord. Scale."
+      },
+      {
+        "champion_id": "yuumi",
+        "tier": "C",
+        "win_rate": 0.48,
+        "pick_rate": 0.05,
+        "ban_rate": 0.04,
+        "trend": "falling",
+        "note": "Attached healer. Weak early. R waves CC. Controversial."
+      }
+    ]
+  },
+  "meta_archetypes": [
+    {
+      "name": "dive_comp",
+      "description": "Hard engage into enemy backline. Assassins + tanks dive carries.",
+      "core_champions": [
+        "leona",
+        "nautilus",
+        "diana",
+        "nocturne",
+        "camille"
+      ],
+      "win_condition": "Catch and burst enemy carry before they can DPS.",
+      "counter": "peel_comp",
+      "estimated_win_rate": 0.52,
+      "strength": "high"
+    },
+    {
+      "name": "poke_comp",
+      "description": "Chip enemies down from range before fighting. Siege towers.",
+      "core_champions": [
+        "jayce",
+        "ziggs",
+        "lux",
+        "varus",
+        "karma"
+      ],
+      "win_condition": "Poke enemies to 50% HP then engage or take objectives.",
+      "counter": "engage_comp",
+      "estimated_win_rate": 0.5,
+      "strength": "medium"
+    },
+    {
+      "name": "protect_the_carry",
+      "description": "Funnel resources into one hypercarry. Entire team peels.",
+      "core_champions": [
+        "lulu",
+        "janna",
+        "kog_maw",
+        "jinx",
+        "braum"
+      ],
+      "win_condition": "Keep hypercarry alive. They win the teamfight.",
+      "counter": "dive_comp",
+      "estimated_win_rate": 0.53,
+      "strength": "high"
+    },
+    {
+      "name": "split_push",
+      "description": "1-3-1 or 4-1 split. Pressure multiple lanes simultaneously.",
+      "core_champions": [
+        "fiora",
+        "jax",
+        "tryndamere",
+        "nasus",
+        "shen"
+      ],
+      "win_condition": "Take towers faster than enemy can respond. Force bad rotations.",
+      "counter": "hard_engage_5v5",
+      "estimated_win_rate": 0.5,
+      "strength": "medium"
+    },
+    {
+      "name": "wombo_combo",
+      "description": "Stack AoE ultimates for devastating teamfight wipe.",
+      "core_champions": [
+        "malphite",
+        "orianna",
+        "miss_fortune",
+        "amumu",
+        "yasuo"
+      ],
+      "win_condition": "Land multi-person AoE combo. One fight wins the game.",
+      "counter": "split_push",
+      "estimated_win_rate": 0.52,
+      "strength": "high"
+    },
+    {
+      "name": "pick_comp",
+      "description": "Catch isolated enemies with CC chains. Win through picks.",
+      "core_champions": [
+        "thresh",
+        "ahri",
+        "twisted_fate",
+        "blitzcrank",
+        "lee_sin"
+      ],
+      "win_condition": "Catch one enemy out of position. Fight 5v4.",
+      "counter": "group_as_5",
+      "estimated_win_rate": 0.51,
+      "strength": "medium"
+    },
+    {
+      "name": "global_comp",
+      "description": "Champions with global or semi-global abilities for map pressure.",
+      "core_champions": [
+        "twisted_fate",
+        "nocturne",
+        "shen",
+        "galio",
+        "ashe"
+      ],
+      "win_condition": "Create number advantages anywhere on map with globals.",
+      "counter": "group_as_5",
+      "estimated_win_rate": 0.51,
+      "strength": "medium"
+    },
+    {
+      "name": "scaling_comp",
+      "description": "Survive early game. Outscale enemy team. Win late teamfights.",
+      "core_champions": [
+        "kayle",
+        "kassadin",
+        "jinx",
+        "veigar",
+        "nasus"
+      ],
+      "win_condition": "Don't lose early. Farm to 3+ items. Outscale everything.",
+      "counter": "early_aggression",
+      "estimated_win_rate": 0.5,
+      "strength": "medium"
+    }
+  ],
+  "patch_history": [
+    {
+      "patch": "7.0",
+      "date": "2026-03",
+      "summary": "Season 7 launch. New items, rune rework, champion adjustments."
+    },
+    {
+      "patch": "7.1",
+      "date": "2026-04",
+      "summary": "Mid-season balance. AP item adjustments. Several champion buffs/nerfs."
+    },
+    {
+      "patch": "7.1a",
+      "date": "2026-04",
+      "summary": "Hotfix. Addressed overperforming champions from 7.1."
+    },
+    {
+      "patch": "7.1d",
+      "date": "2026-05",
+      "summary": "Current patch. Fine-tuning balance. Ambessa, Mel, Mordekaiser adjustments."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "database_version": "0.6.0-chunk1",
+  "priority_matrix": {
+    "champion_roster_count": [
+      "riot_wild_rift",
+      "lol_wiki_wr",
+      "wildriftfire",
+      "wr_meta_limited"
+    ],
+    "champion_identity": [
+      "riot_wild_rift",
+      "lol_wiki_wr",
+      "wildriftfire"
+    ],
+    "champion_base_stats": [
+      "lol_wiki_wr"
+    ],
+    "champion_ability_names": [
+      "lol_wiki_wr",
+      "riot_wild_rift"
+    ],
+    "champion_ability_values_and_cooldowns": [
+      "lol_wiki_wr"
+    ],
+    "item_gold_costs": [
+      "lol_wiki_wr",
+      "riot_wild_rift_patch_if_patch_changed"
+    ],
+    "item_stats_effects_cooldowns": [
+      "lol_wiki_wr"
+    ],
+    "rune_slots_effects_cooldowns": [
+      "lol_wiki_wr"
+    ],
+    "spell_effects_cooldowns": [
+      "lol_wiki_wr"
+    ],
+    "patch_changes": [
+      "riot_wild_rift",
+      "wildriftfire_advisory"
+    ],
+    "meta_builds": [
+      "wildriftfire",
+      "lol_wiki_wr_loadouts_if_present",
+      "riftcoach_generated_with_label"
+    ],
+    "strategic_advice": [
+      "riftcoach_generated_from_verified_effects",
+      "wildriftfire_advisory"
+    ]
+  },
+  "conflict_resolution": [
+    "For exact numbers, prefer the source with Wild Rift-specific mechanics and field-level evidence.",
+    "If Riot patch note changes a value but wiki still shows an old value, mark source_conflict and prefer patch-valid value only with a patch claim.",
+    "If community sources update roster faster than Riot page, create roster_conflict and do not silently override canonical count.",
+    "Never use LoL-PC mechanics to fill missing Wild Rift data."
+  ]
+}

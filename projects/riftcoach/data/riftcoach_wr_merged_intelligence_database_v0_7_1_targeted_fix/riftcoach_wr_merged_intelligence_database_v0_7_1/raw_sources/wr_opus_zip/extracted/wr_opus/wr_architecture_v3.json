@@ -1,0 +1,434 @@
+{
+  "_meta": {
+    "game": "Wild Rift",
+    "patch": "7.1e",
+    "chunk": "11a — System Architecture",
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "system_overview": {
+    "app_name": "RiftCoach",
+    "tagline": "Your JARVIS for Wild Rift",
+    "version": "3.0",
+    "description": "A proactive AI-powered Wild Rift coaching system that suggests, recommends, and guides — not passive Q&A.",
+    "tech_stack": {
+      "framework": "Next.js 15 (App Router)",
+      "ui_library": "React 19",
+      "language": "TypeScript 5.8",
+      "styling": "Tailwind CSS 4",
+      "components": "Shadcn/UI",
+      "animations": "Framer Motion 12",
+      "charts": "Recharts",
+      "state": "Zustand 5",
+      "ai_providers": [
+        "Cerebras",
+        "Groq",
+        "Google AI",
+        "OpenRouter",
+        "Mistral",
+        "Together"
+      ],
+      "local_models": [
+        "devstral",
+        "qwen2.5-coder:14b",
+        "qwen3:14b"
+      ],
+      "dev_tools": [
+        "VS Code",
+        "GitHub Copilot (GPT-4.1)",
+        "Cline",
+        "Ollama"
+      ]
+    },
+    "design_system": {
+      "theme": "glassmorphism",
+      "glass_card": "border border-white/10 bg-white/[0.04] backdrop-blur-xl rounded-2xl",
+      "glass_hover": "hover:bg-white/[0.08] transition-all duration-300",
+      "accent_gradient": "bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600",
+      "text_primary": "text-white",
+      "text_secondary": "text-white/60",
+      "text_accent": "text-cyan-400",
+      "font": "Inter (body) + JetBrains Mono (code/stats)",
+      "border_radius": "rounded-2xl (cards), rounded-xl (buttons), rounded-lg (inputs)",
+      "spacing_scale": "4px base (Tailwind default)"
+    }
+  },
+  "database_files": [
+    {
+      "file": "wr_runes.json",
+      "chunk": 1,
+      "desc": "53 runes with id, name, path, slot, description, tier",
+      "records": 53
+    },
+    {
+      "file": "wr_summoner_spells_v3.json",
+      "chunk": 2,
+      "desc": "Summoner spells with cooldowns, stats, usage rules",
+      "records": 10
+    },
+    {
+      "file": "wr_gold_economy_v3.json",
+      "chunk": 3,
+      "desc": "Gold income, CS values, objective bounties, economy formulas",
+      "records": "N/A"
+    },
+    {
+      "file": "wr_items_v3.json",
+      "chunk": 4,
+      "desc": "All items with stats, passives, build paths, gold costs",
+      "records": "130+"
+    },
+    {
+      "file": "wr_items_enchantments_v3.json",
+      "chunk": 4,
+      "desc": "Boot enchantments with stats and cooldowns",
+      "records": 10
+    },
+    {
+      "file": "wr_champions_v3.json",
+      "chunk": 5,
+      "desc": "All champions with base stats, scaling, abilities, roles",
+      "records": "90+"
+    },
+    {
+      "file": "wr_champion_stats_v3.json",
+      "chunk": 5,
+      "desc": "Champion base stats + per-level growth for calculations",
+      "records": "90+"
+    },
+    {
+      "file": "wr_synergy_engine_v3.json",
+      "chunk": 8,
+      "desc": "Synergy tags, 57 champion pair synergies, 6 role patterns",
+      "records": 57
+    },
+    {
+      "file": "wr_counter_engine_v3.json",
+      "chunk": 8,
+      "desc": "12 counter mechanics, 15 universal counters, 83 lane matchups",
+      "records": 83
+    },
+    {
+      "file": "wr_meta_builds_v3.json",
+      "chunk": 9,
+      "desc": "72 meta builds across Baron/Jungle/Mid/Dragon/Support",
+      "records": 72
+    },
+    {
+      "file": "wr_team_comps_v3.json",
+      "chunk": 10,
+      "desc": "20 team composition templates with draft/play/counter guides",
+      "records": 20
+    }
+  ],
+  "data_relationships": {
+    "builds_reference_items": "wr_meta_builds_v3.json core_items/situational → wr_items_v3.json by item name",
+    "builds_reference_runes": "wr_meta_builds_v3.json runes → wr_runes.json by rune name",
+    "builds_reference_spells": "wr_meta_builds_v3.json spells → wr_summoner_spells_v3.json by spell name",
+    "synergy_references_champions": "wr_synergy_engine_v3.json champion pairs → wr_champions_v3.json by champion_id",
+    "counter_references_champions": "wr_counter_engine_v3.json matchups → wr_champions_v3.json by champion name",
+    "comps_reference_all": "wr_team_comps_v3.json roles → builds, synergy, counter engines",
+    "stat_calc_flow": "wr_champion_stats_v3.json base_stats + wr_items_v3.json item_stats + wr_runes.json rune_stats → real-time stat calculator"
+  },
+  "data_flow": {
+    "steps": [
+      "1. User selects champion + role (or asks question)",
+      "2. Context Assembler pulls relevant data from JSON databases",
+      "3. Pre-Build Response fills template with DB data (items, runes, stats)",
+      "4. AI Provider generates rationale/reasoning for [AI: ...] sections",
+      "5. Validator checks for hallucination (missing rune/spell rationale, fake stats)",
+      "6. Response Merger combines DB data + AI reasoning",
+      "7. UI renders structured response with glassmorphism cards"
+    ],
+    "diagram": "User → Query Parser → Context Assembler → [JSON DBs] → Pre-Build → AI Provider → Validator → Response → UI"
+  },
+  "ai_pipeline": {
+    "provider_cascade": {
+      "description": "Try providers in order. Fall back to next on failure/timeout.",
+      "order": [
+        {
+          "provider": "Cerebras",
+          "models": [
+            "llama3.1-8b"
+          ],
+          "speed": "fastest",
+          "reliability": "high"
+        },
+        {
+          "provider": "Groq",
+          "models": [
+            "llama-3.3-70b-versatile",
+            "llama3-70b-8192",
+            "gemma2-9b-it"
+          ],
+          "speed": "fast",
+          "reliability": "high"
+        },
+        {
+          "provider": "Google AI",
+          "models": [
+            "gemini-2.0-flash",
+            "gemini-2.5-flash-preview"
+          ],
+          "speed": "medium",
+          "reliability": "medium"
+        },
+        {
+          "provider": "OpenRouter",
+          "models": [
+            "deepseek/deepseek-chat-v3-0324:free",
+            "meta-llama/llama-4-maverick:free"
+          ],
+          "speed": "medium",
+          "reliability": "medium"
+        },
+        {
+          "provider": "Mistral",
+          "models": [
+            "mistral-small-latest",
+            "open-mistral-nemo"
+          ],
+          "speed": "medium",
+          "reliability": "medium"
+        },
+        {
+          "provider": "Together",
+          "models": [
+            "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
+          ],
+          "speed": "medium",
+          "reliability": "medium"
+        }
+      ],
+      "total_models_available": 114,
+      "timeout": "15 seconds per provider",
+      "max_retries": 2
+    },
+    "reasoning_flow": [
+      "user_query: parse intent (build/synergy/counter/comp/coach)",
+      "context_assembly: load relevant JSON data for the query",
+      "pre_build_response: fill structured template with hard DB data",
+      "ai_rationale: AI fills ONLY the [AI: reasoning] sections",
+      "validation: check for hallucinated stats, missing rationale, confidence",
+      "response: merge DB data + AI reasoning → structured JSON response"
+    ],
+    "confidence_levels": {
+      "high": {
+        "threshold": 0.85,
+        "criteria": "Data fully in DB. AI only adds reasoning on known facts."
+      },
+      "medium": {
+        "threshold": 0.6,
+        "criteria": "Partial DB data. AI infers from patterns. Flag as medium."
+      },
+      "low": {
+        "threshold": 0.4,
+        "criteria": "No DB data. AI speculates. Clearly warn user."
+      }
+    },
+    "hallucination_guards": [
+      "NEVER generate item stats — always pull from wr_items_v3.json",
+      "NEVER generate rune descriptions — always pull from wr_runes.json",
+      "NEVER invent champion abilities — always pull from wr_champions_v3.json",
+      "AI fills ONLY [AI: rationale] sections — never modifies DB data",
+      "Validator checks: if AI mentions stat not in DB → flag and remove",
+      "Confidence: if AI reasoning contradicts DB data → override with DB",
+      "Response includes data_source field: 'db' for hard data, 'ai' for reasoning"
+    ]
+  },
+  "feature_modules": {
+    "build_engine": {
+      "description": "Champion build recommendations with items, runes, spells, skill order",
+      "data_sources": [
+        "wr_meta_builds_v3.json",
+        "wr_items_v3.json",
+        "wr_runes.json"
+      ],
+      "ai_role": "Explain WHY each item/rune is chosen. Provide situational alternatives.",
+      "phase": "Phase 1 (COMPLETE)"
+    },
+    "synergy_engine": {
+      "description": "Analyze team synergies between picked champions",
+      "data_sources": [
+        "wr_synergy_engine_v3.json",
+        "wr_champions_v3.json"
+      ],
+      "ai_role": "Score team synergy. Suggest swaps to improve synergy.",
+      "phase": "Phase 4.3 (COMPLETE)"
+    },
+    "counter_engine": {
+      "description": "Matchup counter picks and strategies",
+      "data_sources": [
+        "wr_counter_engine_v3.json",
+        "wr_champions_v3.json"
+      ],
+      "ai_role": "Recommend counter picks with lane-specific advice.",
+      "phase": "Phase 4.5 (COMPLETE)"
+    },
+    "comp_advisor": {
+      "description": "Team composition suggestions and draft guidance",
+      "data_sources": [
+        "wr_team_comps_v3.json",
+        "wr_synergy_engine_v3.json",
+        "wr_counter_engine_v3.json"
+      ],
+      "ai_role": "Suggest comp templates. Explain win conditions. Adapt to draft state.",
+      "phase": "Phase 5.0 (COMPLETE)"
+    },
+    "macro_coach": {
+      "description": "Game phase advice: early/mid/late game macro strategy",
+      "data_sources": [
+        "wr_gold_economy_v3.json",
+        "wr_team_comps_v3.json"
+      ],
+      "ai_role": "Advise on lane phase, objective priority, teamfight positioning, wave management.",
+      "phase": "Phase 6+ (PLANNED)"
+    },
+    "stat_calculator": {
+      "description": "Real-time stat calculator with items/runes/spells and level slider 1-15",
+      "data_sources": [
+        "wr_champion_stats_v3.json",
+        "wr_items_v3.json",
+        "wr_runes.json"
+      ],
+      "ai_role": "No AI needed — pure math engine with compounding stat formulas.",
+      "phase": "Phase 7+ (PLANNED — Champion Build Lab)"
+    },
+    "learning_paths": {
+      "description": "Champion mastery progression guides, role transitions, autofill guides",
+      "data_sources": [
+        "wr_champions_v3.json",
+        "wr_meta_builds_v3.json",
+        "wr_counter_engine_v3.json"
+      ],
+      "ai_role": "Generate personalized learning milestones based on player champion pool.",
+      "phase": "Phase 8+ (PLANNED)"
+    }
+  },
+  "api_routes": [
+    {
+      "path": "/api/build",
+      "method": "POST",
+      "params": {
+        "champion": "string",
+        "role": "string"
+      },
+      "returns": "Build with items, runes, spells, skill order + AI rationale"
+    },
+    {
+      "path": "/api/synergy",
+      "method": "POST",
+      "params": {
+        "team": "string[]"
+      },
+      "returns": "Synergy score + pair synergies + comp pattern match"
+    },
+    {
+      "path": "/api/counter",
+      "method": "POST",
+      "params": {
+        "champion": "string",
+        "lane": "string"
+      },
+      "returns": "Counter picks + matchup advice + counterplay"
+    },
+    {
+      "path": "/api/comp",
+      "method": "POST",
+      "params": {
+        "allies": "string[]",
+        "enemies": "string[]"
+      },
+      "returns": "Comp suggestions + draft advice + win condition"
+    },
+    {
+      "path": "/api/coach",
+      "method": "POST",
+      "params": {
+        "message": "string",
+        "context": "object"
+      },
+      "returns": "Coaching response with proactive suggestions"
+    },
+    {
+      "path": "/api/providers",
+      "method": "GET",
+      "params": {},
+      "returns": "Health check for all AI providers + latency"
+    },
+    {
+      "path": "/api/stats",
+      "method": "POST",
+      "params": {
+        "champion": "string",
+        "level": "number",
+        "items": "string[]",
+        "runes": "object"
+      },
+      "returns": "Calculated stats at given level with items/runes"
+    }
+  ],
+  "ui_pages": [
+    {
+      "path": "/",
+      "name": "Home / Dashboard",
+      "description": "Overview with quick-access cards for each feature module"
+    },
+    {
+      "path": "/build",
+      "name": "Build Engine",
+      "description": "Champion build page with items/runes/spells selection and AI rationale"
+    },
+    {
+      "path": "/build/[champion]",
+      "name": "Champion Build Detail",
+      "description": "Full build page for specific champion with situational builds"
+    },
+    {
+      "path": "/synergy",
+      "name": "Synergy Analyzer",
+      "description": "Input team → see synergy analysis with pair highlights and comp match"
+    },
+    {
+      "path": "/counter",
+      "name": "Counter Picker",
+      "description": "Input enemy champion + lane → see counter picks with strategies"
+    },
+    {
+      "path": "/comp",
+      "name": "Comp Advisor",
+      "description": "Draft assistant with real-time comp suggestions and win conditions"
+    },
+    {
+      "path": "/coach",
+      "name": "AI Coach Chat",
+      "description": "Free-form chat with JARVIS-like proactive coaching AI"
+    },
+    {
+      "path": "/stats",
+      "name": "Stat Calculator",
+      "description": "Real-time stat calculator with level slider and item/rune selection"
+    },
+    {
+      "path": "/settings",
+      "name": "Settings",
+      "description": "AI provider selection, theme, preferences, champion pool config"
+    }
+  ],
+  "component_library": [
+    "GlassCard — base container with glassmorphism styling",
+    "ChampionIcon — circular champion portrait with role indicator",
+    "ItemIcon — square item icon with tooltip showing stats/passive",
+    "RuneIcon — rune icon with path color coding",
+    "BuildCard — complete build display with items/runes/spells/notes",
+    "SynergyPair — two champion icons connected with synergy strength badge",
+    "CounterMatchup — champion vs counter with severity indicator",
+    "CompTemplate — team comp layout with 5 role slots and alternates",
+    "StatBar — horizontal stat bar with fill animation and value label",
+    "PowerCurveChart — Recharts line graph showing champion/comp power by game phase",
+    "ProviderStatus — AI provider health indicator (green/yellow/red)",
+    "ConfidenceBadge — high/medium/low confidence indicator on AI responses",
+    "ChatMessage — coach chat bubble with AI avatar and formatted response",
+    "DraftBoard — 5v5 draft layout with ban/pick slots"
+  ]
+}

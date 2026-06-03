@@ -1,0 +1,54 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "user_stories": [
+    {
+      "id": "us_graph_001",
+      "role": "player",
+      "story": "As a player, I want to click Karma and see her connected abilities, effects, builds, runes, and items so I understand why a build is recommended.",
+      "acceptance": [
+        "Karma appears as center node",
+        "Abilities and effects appear by group",
+        "Edges show source status and confidence"
+      ]
+    },
+    {
+      "id": "us_graph_002",
+      "role": "coach",
+      "story": "As a coach, I want to compare two assets, such as Inspire and Aery, so I can explain the synergy.",
+      "acceptance": [
+        "User can select two nodes",
+        "System returns meaningful path",
+        "Path includes reason codes"
+      ]
+    },
+    {
+      "id": "us_graph_003",
+      "role": "data_auditor",
+      "story": "As a data auditor, I want to hide generated rules so I only inspect source-verified or corrected relationships.",
+      "acceptance": [
+        "Filter exists",
+        "Generated edges hidden",
+        "Count of hidden edges visible"
+      ]
+    },
+    {
+      "id": "us_graph_004",
+      "role": "builder",
+      "story": "As the app builder, I want saved graph views for common coaching questions so users do not start from a blank canvas.",
+      "acceptance": [
+        "Saved views file exists",
+        "Views include center node, filters, depth, layout"
+      ]
+    },
+    {
+      "id": "us_graph_005",
+      "role": "beginner",
+      "story": "As a beginner, I want relationship labels in plain English so graph lines are not confusing.",
+      "acceptance": [
+        "Edge legend available",
+        "Hover text uses simple language",
+        "No unexplained abbreviations"
+      ]
+    }
+  ]
+}

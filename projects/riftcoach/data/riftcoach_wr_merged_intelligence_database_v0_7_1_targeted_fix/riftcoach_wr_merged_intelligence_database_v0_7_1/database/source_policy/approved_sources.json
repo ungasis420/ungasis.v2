@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "database_version": "0.6.0-chunk1",
+  "created_at": "2026-05-19T00:00:00+08:00",
+  "policy_name": "RiftCoach approved Wild Rift source allowlist",
+  "source_policy": "approved_sources_only",
+  "game_scope": "wild_rift_only",
+  "patch_context": "7.1e",
+  "approved_source_families": [
+    {
+      "source_family": "riot_wild_rift",
+      "allowed_for": [
+        "official_patch_notes",
+        "official_champion_index",
+        "official_champion_identity",
+        "official_champion_detail_when_available"
+      ],
+      "exact_urls": [
+        "https://wildrift.leagueoflegends.com/en-sg/champions/",
+        "https://wildrift.leagueoflegends.com/en-sg/news/"
+      ],
+      "url_patterns": [
+        "^https://wildrift\\.leagueoflegends\\.com/en-sg/champions/?$",
+        "^https://wildrift\\.leagueoflegends\\.com/en-sg/champions/[a-z0-9-]+/?$",
+        "^https://wildrift\\.leagueoflegends\\.com/en-sg/news/?$",
+        "^https://wildrift\\.leagueoflegends\\.com/en-sg/news/game-updates/[a-z0-9-]+/?$"
+      ],
+      "priority": "highest_for_official_roster_and_patch"
+    },
+    {
+      "source_family": "lol_wiki_wr",
+      "allowed_for": [
+        "champion_stats",
+        "ability_names",
+        "ability_values",
+        "ability_cooldowns",
+        "item_gold",
+        "item_stats",
+        "item_effects",
+        "rune_effects",
+        "rune_cooldowns",
+        "spell_effects",
+        "spell_cooldowns",
+        "wild_rift_mechanics"
+      ],
+      "exact_urls": [
+        "https://wiki.leagueoflegends.com/en-us/WR:Wild_Rift",
+        "https://wiki.leagueoflegends.com/en-us/WR:Champion#Champion_Roster",
+        "https://wiki.leagueoflegends.com/en-us/WR:Item",
+        "https://wiki.leagueoflegends.com/en-us/WR:Rune",
+        "https://wiki.leagueoflegends.com/en-us/WR:Spell"
+      ],
+      "url_patterns": [
+        "^https://wiki\\.leagueoflegends\\.com/en-us/WR:.+",
+        "^https://wiki\\.leagueoflegends\\.com/en-us/WR%3A.+"
+      ],
+      "required_path_marker": "WR:",
+      "priority": "highest_for_exact_mechanics_gold_cooldowns"
+    },
+    {
+      "source_family": "wildriftfire",
+      "allowed_for": [
+        "advisory_meta",
+        "champion_guides",
+        "meta_builds",
+        "item_tier_context",
+        "rune_tier_context",
+        "patch_context_cross_check"
+      ],
+      "exact_urls": [
+        "https://www.wildriftfire.com/",
+        "https://www.wildriftfire.com/item-list",
+        "https://www.wildriftfire.com/rune-list",
+        "https://www.wildriftfire.com/patch-notes"
+      ],
+      "url_patterns": [
+        "^https://www\\.wildriftfire\\.com/?$",
+        "^https://www\\.wildriftfire\\.com/guide/[a-z0-9-]+/?$",
+        "^https://www\\.wildriftfire\\.com/item-list/?$",
+        "^https://www\\.wildriftfire\\.com/rune-list/?$",
+        "^https://www\\.wildriftfire\\.com/patch-notes/?$"
+      ],
+      "priority": "advisory_not_primary_for_exact_gold_or_cooldowns"
+    },
+    {
+      "source_family": "wr_meta_limited",
+      "allowed_for": [
+        "roster_cross_check",
+        "meta_cross_check",
+        "tier_context_cross_check"
+      ],
+      "exact_urls": [
+        "https://wr-meta.com/"
+      ],
+      "url_patterns": [
+        "^https://wr-meta\\.com/.*"
+      ],
+      "priority": "cross_check_only_never_exact_mechanics_gold_or_cooldowns",
+      "limitation": "Do not source official item golds, champion ability values, runes, or spell cooldowns from WR-META."
+    }
+  ],
+  "technical_non_game_exceptions": [
+    {
+      "pattern": "^https://json-schema\\.org/.*",
+      "allowed_for": [
+        "json_schema_reference"
+      ]
+    },
+    {
+      "pattern": "^https://riftcoach\\.local/.*",
+      "allowed_for": [
+        "local_schema_contracts",
+        "internal_docs"
+      ]
+    }
+  ]
+}

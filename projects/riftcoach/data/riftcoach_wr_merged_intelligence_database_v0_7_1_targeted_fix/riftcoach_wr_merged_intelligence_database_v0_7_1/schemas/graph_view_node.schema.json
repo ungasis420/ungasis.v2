@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/graph_view_node.schema.json",
+  "title": "Graph View Node",
+  "description": "UI graph node shape.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "node_id",
+    "node_type",
+    "label"
+  ],
+  "properties": {
+    "node_id": {
+      "type": "string"
+    },
+    "node_type": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "entity_ref": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "source_status": {
+      "type": "string"
+    },
+    "degree": {
+      "type": "integer"
+    },
+    "ui": {
+      "type": "object"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  }
+}

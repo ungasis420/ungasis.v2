@@ -1,0 +1,6592 @@
+[
+  {
+    "id": "baron_bruiser_aatrox_camille_fiora",
+    "name": "Bruiser (Aatrox, Camille, Fiora)",
+    "role": "Baron",
+    "summary": "Sustain fighter, team fight presence",
+    "items": [
+      "trinity_force",
+      "steraks_gage",
+      "deaths_dance",
+      "guardian_angel",
+      "spirit_visage"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "legend_alacrity",
+      "last_stand",
+      "overgrowth"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "baron_tank_malphite_ornn_sion",
+    "name": "Tank (Malphite, Ornn, Sion)",
+    "role": "Baron",
+    "summary": "Frontline engage, team utility",
+    "items": [
+      "sunfire_aegis",
+      "thornmail",
+      "randuins_omen",
+      "force_of_nature",
+      "warmogs_armor"
+    ],
+    "runes": [
+      "grasp_of_the_undying",
+      "demolish",
+      "bone_plating",
+      "overgrowth",
+      "second_wind"
+    ],
+    "spells": [
+      "flash",
+      "teleport"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "jungle_assassin_jg_lee_sin_khazix_talon",
+    "name": "Assassin JG (Lee Sin, Kha'Zix, Talon)",
+    "role": "Jungle",
+    "summary": "Early ganks, pick-off carries",
+    "items": [
+      "youmuus_ghostblade",
+      "edge_of_night",
+      "seryldas_grudge",
+      "deaths_dance",
+      "guardian_angel"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "eyeball_collection",
+      "relentless_hunter",
+      "brutal"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "jungle_bruiser_jg_vi_xin_zhao_jarvan",
+    "name": "Bruiser JG (Vi, Xin Zhao, Jarvan)",
+    "role": "Jungle",
+    "summary": "Engage ganker, team fight diver",
+    "items": [
+      "trinity_force",
+      "steraks_gage",
+      "deaths_dance",
+      "randuins_omen",
+      "guardian_angel"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "legend_alacrity",
+      "coup_de_grace",
+      "bone_plating"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "mid_burst_mage_ahri_lissandra_viktor",
+    "name": "Burst Mage (Ahri, Lissandra, Viktor)",
+    "role": "Mid",
+    "summary": "Burst damage, zone control, roaming",
+    "items": [
+      "ludens_echo",
+      "rabadons_deathcap",
+      "void_staff",
+      "zhonyas_hourglass",
+      "morellonomicon"
+    ],
+    "runes": [
+      "electrocute",
+      "brutal",
+      "eyeball_collection",
+      "scorch",
+      "manaflow_band"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "mid_assassin_mid_akali_zed",
+    "name": "Assassin Mid (Akali, Zed)",
+    "role": "Mid",
+    "summary": "Roaming burst, pick-off backline",
+    "items": [
+      "youmuus_ghostblade",
+      "edge_of_night",
+      "seryldas_grudge",
+      "deaths_dance",
+      "guardian_angel"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "eyeball_collection",
+      "relentless_hunter",
+      "brutal"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "duo_crit_adc_kaisa_jhin_xayah_caitlyn",
+    "name": "Crit ADC (Kai'Sa, Jhin, Xayah, Caitlyn)",
+    "role": "Duo",
+    "summary": "Scaling damage carry",
+    "items": [
+      "infinity_edge",
+      "phantom_dancer",
+      "bloodthirster",
+      "mortal_reminder",
+      "guardian_angel"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "triumph",
+      "legend_alacrity",
+      "coup_de_grace",
+      "gathering_storm"
+    ],
+    "spells": [
+      "flash",
+      "barrier"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "duo_poke_adc_ezreal_varus",
+    "name": "Poke ADC (Ezreal, Varus)",
+    "role": "Duo",
+    "summary": "Safe poke, kiting",
+    "items": [
+      "essence_reaver",
+      "muramana",
+      "seryldas_grudge",
+      "guardian_angel",
+      "bloodthirster"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "legend_alacrity",
+      "coup_de_grace",
+      "manaflow_band"
+    ],
+    "spells": [
+      "flash",
+      "barrier"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "support_engage_tank_support_leona_thresh_nautilus",
+    "name": "Engage Tank Support (Leona, Thresh, Nautilus)",
+    "role": "Support",
+    "summary": "Primary engage, CC chain, peel",
+    "items": [
+      "locket_enchant",
+      "zekes_convergence",
+      "thornmail",
+      "randuins_omen",
+      "warmogs_armor"
+    ],
+    "runes": [
+      "guardian",
+      "font_of_life",
+      "bone_plating",
+      "overgrowth",
+      "second_wind"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "support_enchanter_support_lulu_nami_soraka",
+    "name": "Enchanter Support (Lulu, Nami, Soraka)",
+    "role": "Support",
+    "summary": "Shield, heal, buff ADC",
+    "items": [
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "redemption",
+      "harmonic_echo"
+    ],
+    "runes": [
+      "aery",
+      "manaflow_band",
+      "font_of_life",
+      "revitalize",
+      "gathering_storm"
+    ],
+    "spells": [
+      "flash",
+      "exhaust"
+    ],
+    "source_status": "legacy_runtime_compatibility_preserved",
+    "strategy_layer": "legacy_strategy_candidate"
+  },
+  {
+    "id": "aatrox_jungle_jungle_fighter_7_1e",
+    "name": "Aatrox Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "aatrox",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ahri_mid_assassin_burst_7_1e",
+    "name": "Ahri Mid Assassin Burst",
+    "role": "Mid",
+    "summary": "Play as a assassin burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "the_collector",
+      "edge_of_night",
+      "serpents_fang",
+      "mortal_reminder",
+      "guardian_angel",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "hubris",
+      "eyeball_collection",
+      "triumph"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "ahri",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "akali_mid_assassin_burst_7_1e",
+    "name": "Akali Mid Assassin Burst",
+    "role": "Mid",
+    "summary": "Play as a assassin burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "the_collector",
+      "edge_of_night",
+      "serpents_fang",
+      "mortal_reminder",
+      "guardian_angel",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "hubris",
+      "eyeball_collection",
+      "triumph"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "akali",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "akshan_mid_assassin_burst_7_1e",
+    "name": "Akshan Mid Assassin Burst",
+    "role": "Mid",
+    "summary": "Play as a assassin burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "the_collector",
+      "edge_of_night",
+      "serpents_fang",
+      "mortal_reminder",
+      "guardian_angel",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "hubris",
+      "eyeball_collection",
+      "triumph"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "akshan",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "alistar_support_support_enchanter_7_1e",
+    "name": "Alistar Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "alistar",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ambessa_jungle_jungle_fighter_7_1e",
+    "name": "Ambessa Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "ambessa",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "amumu_support_support_mage_7_1e",
+    "name": "Amumu Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "amumu",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "annie_support_support_enchanter_7_1e",
+    "name": "Annie Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "annie",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ashe_duo_marksman_crit_7_1e",
+    "name": "Ashe Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "ashe",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "aurelion_sol_mid_mage_burst_7_1e",
+    "name": "Aurelion Sol Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "aurelion_sol",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "aurora_baron_fighter_bruiser_7_1e",
+    "name": "Aurora Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "aurora",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "bard_support_support_enchanter_7_1e",
+    "name": "Bard Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "bard",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "blitzcrank_support_support_enchanter_7_1e",
+    "name": "Blitzcrank Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "blitzcrank",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "brand_support_support_mage_7_1e",
+    "name": "Brand Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "brand",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "braum_support_support_enchanter_7_1e",
+    "name": "Braum Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "braum",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "caitlyn_duo_marksman_crit_7_1e",
+    "name": "Caitlyn Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "caitlyn",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "camille_jungle_jungle_fighter_7_1e",
+    "name": "Camille Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "camille",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "corki_duo_marksman_crit_7_1e",
+    "name": "Corki Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "corki",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "darius_baron_fighter_bruiser_7_1e",
+    "name": "Darius Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "darius",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "diana_jungle_jungle_assassin_7_1e",
+    "name": "Diana Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "diana",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "dr_mundo_jungle_jungle_fighter_7_1e",
+    "name": "Dr. Mundo Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "dr_mundo",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "draven_duo_marksman_crit_7_1e",
+    "name": "Draven Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "draven",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ekko_jungle_jungle_assassin_7_1e",
+    "name": "Ekko Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "ekko",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "evelynn_jungle_jungle_assassin_7_1e",
+    "name": "Evelynn Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "evelynn",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ezreal_duo_marksman_crit_7_1e",
+    "name": "Ezreal Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "ezreal",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "fiddlesticks_support_support_mage_7_1e",
+    "name": "Fiddlesticks Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "fiddlesticks",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "fiora_baron_fighter_bruiser_7_1e",
+    "name": "Fiora Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "fiora",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "fizz_mid_assassin_burst_7_1e",
+    "name": "Fizz Mid Assassin Burst",
+    "role": "Mid",
+    "summary": "Play as a assassin burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "the_collector",
+      "edge_of_night",
+      "serpents_fang",
+      "mortal_reminder",
+      "guardian_angel",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "hubris",
+      "eyeball_collection",
+      "triumph"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "fizz",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "galio_support_support_enchanter_7_1e",
+    "name": "Galio Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "galio",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "garen_baron_fighter_bruiser_7_1e",
+    "name": "Garen Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "garen",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "gnar_baron_fighter_bruiser_7_1e",
+    "name": "Gnar Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "gnar",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "gragas_support_support_mage_7_1e",
+    "name": "Gragas Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "gragas",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "graves_jungle_jungle_fighter_7_1e",
+    "name": "Graves Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "graves",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "gwen_jungle_jungle_fighter_7_1e",
+    "name": "Gwen Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "gwen",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "hecarim_jungle_jungle_fighter_7_1e",
+    "name": "Hecarim Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "hecarim",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "heimerdinger_support_support_mage_7_1e",
+    "name": "Heimerdinger Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "heimerdinger",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "irelia_baron_fighter_bruiser_7_1e",
+    "name": "Irelia Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "irelia",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "janna_support_support_enchanter_7_1e",
+    "name": "Janna Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "janna",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "jarvan_iv_jungle_jungle_fighter_7_1e",
+    "name": "Jarvan IV Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "jarvan_iv",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "jax_jungle_jungle_fighter_7_1e",
+    "name": "Jax Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "jax",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "jayce_baron_fighter_bruiser_7_1e",
+    "name": "Jayce Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "jayce",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "jhin_duo_marksman_crit_7_1e",
+    "name": "Jhin Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "jhin",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "jinx_duo_marksman_crit_7_1e",
+    "name": "Jinx Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "jinx",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ksante_baron_tank_frontline_7_1e",
+    "name": "K'Sante Baron Tank Frontline",
+    "role": "Baron",
+    "summary": "Play as a tank frontline: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "plated_steelcaps",
+      "stoneplate_enchant",
+      "heartsteel",
+      "amaranths_twinguard",
+      "sunfire_aegis",
+      "randuins_omen",
+      "force_of_nature",
+      "kaenic_rookern",
+      "thornmail",
+      "warmogs_armor",
+      "frozen_heart",
+      "mantle_of_the_twelfth_hour"
+    ],
+    "runes": [
+      "grasp_of_the_undying",
+      "courage_of_the_colossus",
+      "second_wind",
+      "overgrowth",
+      "triumph"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "ksante",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kaisa_duo_marksman_crit_7_1e",
+    "name": "Kai'Sa Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "kaisa",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kalista_duo_marksman_crit_7_1e",
+    "name": "Kalista Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "kalista",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "karma_support_support_enchanter_7_1e",
+    "name": "Karma Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "karma",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kassadin_mid_assassin_burst_7_1e",
+    "name": "Kassadin Mid Assassin Burst",
+    "role": "Mid",
+    "summary": "Play as a assassin burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "the_collector",
+      "edge_of_night",
+      "serpents_fang",
+      "mortal_reminder",
+      "guardian_angel",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "hubris",
+      "eyeball_collection",
+      "triumph"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "kassadin",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "katarina_mid_assassin_burst_7_1e",
+    "name": "Katarina Mid Assassin Burst",
+    "role": "Mid",
+    "summary": "Play as a assassin burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "the_collector",
+      "edge_of_night",
+      "serpents_fang",
+      "mortal_reminder",
+      "guardian_angel",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "hubris",
+      "eyeball_collection",
+      "triumph"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "katarina",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kayle_baron_fighter_bruiser_7_1e",
+    "name": "Kayle Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "kayle",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kayn_jungle_jungle_assassin_7_1e",
+    "name": "Kayn Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "kayn",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kennen_mid_mage_burst_7_1e",
+    "name": "Kennen Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "kennen",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "khazix_jungle_jungle_assassin_7_1e",
+    "name": "Kha'Zix Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "khazix",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kindred_jungle_jungle_fighter_7_1e",
+    "name": "Kindred Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "kindred",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "kogmaw_duo_marksman_crit_7_1e",
+    "name": "Kog'Maw Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "kogmaw",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "lee_sin_jungle_jungle_fighter_7_1e",
+    "name": "Lee Sin Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "lee_sin",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "leona_support_support_mage_7_1e",
+    "name": "Leona Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "leona",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "lillia_jungle_jungle_fighter_7_1e",
+    "name": "Lillia Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "lillia",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "lissandra_mid_mage_burst_7_1e",
+    "name": "Lissandra Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "lissandra",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "lucian_duo_marksman_crit_7_1e",
+    "name": "Lucian Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "lucian",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "lulu_support_support_enchanter_7_1e",
+    "name": "Lulu Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "lulu",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "lux_support_support_enchanter_7_1e",
+    "name": "Lux Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "lux",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "malphite_support_support_enchanter_7_1e",
+    "name": "Malphite Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "malphite",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "maokai_support_support_mage_7_1e",
+    "name": "Maokai Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "maokai",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "master_yi_jungle_jungle_assassin_7_1e",
+    "name": "Master Yi Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "master_yi",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "mel_support_support_mage_7_1e",
+    "name": "Mel Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "mel",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "milio_support_support_enchanter_7_1e",
+    "name": "Milio Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "milio",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "miss_fortune_duo_marksman_crit_7_1e",
+    "name": "Miss Fortune Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "miss_fortune",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "mordekaiser_jungle_jungle_fighter_7_1e",
+    "name": "Mordekaiser Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "mordekaiser",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "morgana_support_support_mage_7_1e",
+    "name": "Morgana Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "morgana",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "nami_support_support_enchanter_7_1e",
+    "name": "Nami Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "nami",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "nasus_jungle_jungle_fighter_7_1e",
+    "name": "Nasus Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "nasus",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "nautilus_support_support_enchanter_7_1e",
+    "name": "Nautilus Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "nautilus",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "nidalee_jungle_jungle_assassin_7_1e",
+    "name": "Nidalee Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "nidalee",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "nilah_duo_marksman_crit_7_1e",
+    "name": "Nilah Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "nilah",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "nocturne_jungle_jungle_assassin_7_1e",
+    "name": "Nocturne Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "nocturne",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "norra_support_support_enchanter_7_1e",
+    "name": "Norra Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "norra",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "nunu_willump_jungle_jungle_fighter_7_1e",
+    "name": "Nunu & Willump Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "nunu_willump",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "olaf_jungle_jungle_fighter_7_1e",
+    "name": "Olaf Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "olaf",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "orianna_support_support_enchanter_7_1e",
+    "name": "Orianna Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "orianna",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ornn_support_support_tank_7_1e",
+    "name": "Ornn Support Support Tank",
+    "role": "Support",
+    "summary": "Play as a support tank: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "plated_steelcaps",
+      "locket_enchant",
+      "yordle_trap",
+      "knights_vow",
+      "zekes_convergence",
+      "dawnshroud",
+      "frozen_heart",
+      "randuins_omen",
+      "force_of_nature",
+      "kaenic_rookern",
+      "thornmail"
+    ],
+    "runes": [
+      "guardian",
+      "courage_of_the_colossus",
+      "bone_plating",
+      "overgrowth",
+      "hexflash"
+    ],
+    "spells": [
+      "exhaust",
+      "flash"
+    ],
+    "champion_id": "ornn",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "pantheon_jungle_jungle_fighter_7_1e",
+    "name": "Pantheon Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "pantheon",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "poppy_support_support_tank_7_1e",
+    "name": "Poppy Support Support Tank",
+    "role": "Support",
+    "summary": "Play as a support tank: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "plated_steelcaps",
+      "locket_enchant",
+      "yordle_trap",
+      "knights_vow",
+      "zekes_convergence",
+      "dawnshroud",
+      "frozen_heart",
+      "randuins_omen",
+      "force_of_nature",
+      "kaenic_rookern",
+      "thornmail"
+    ],
+    "runes": [
+      "guardian",
+      "courage_of_the_colossus",
+      "bone_plating",
+      "overgrowth",
+      "hexflash"
+    ],
+    "spells": [
+      "exhaust",
+      "flash"
+    ],
+    "champion_id": "poppy",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "pyke_support_support_enchanter_7_1e",
+    "name": "Pyke Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "pyke",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "rakan_support_support_enchanter_7_1e",
+    "name": "Rakan Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "rakan",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "rammus_jungle_jungle_fighter_7_1e",
+    "name": "Rammus Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "rammus",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "rell_support_support_tank_7_1e",
+    "name": "Rell Support Support Tank",
+    "role": "Support",
+    "summary": "Play as a support tank: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "plated_steelcaps",
+      "locket_enchant",
+      "yordle_trap",
+      "knights_vow",
+      "zekes_convergence",
+      "dawnshroud",
+      "frozen_heart",
+      "randuins_omen",
+      "force_of_nature",
+      "kaenic_rookern",
+      "thornmail"
+    ],
+    "runes": [
+      "guardian",
+      "courage_of_the_colossus",
+      "bone_plating",
+      "overgrowth",
+      "hexflash"
+    ],
+    "spells": [
+      "exhaust",
+      "flash"
+    ],
+    "champion_id": "rell",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "renekton_baron_fighter_bruiser_7_1e",
+    "name": "Renekton Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "renekton",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "rengar_jungle_jungle_assassin_7_1e",
+    "name": "Rengar Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "rengar",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "riven_baron_fighter_bruiser_7_1e",
+    "name": "Riven Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "riven",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "rumble_baron_fighter_bruiser_7_1e",
+    "name": "Rumble Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "rumble",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ryze_mid_mage_burst_7_1e",
+    "name": "Ryze Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "ryze",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "samira_duo_marksman_crit_7_1e",
+    "name": "Samira Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "samira",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "senna_support_support_enchanter_7_1e",
+    "name": "Senna Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "senna",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "seraphine_support_support_enchanter_7_1e",
+    "name": "Seraphine Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "seraphine",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "sett_support_support_enchanter_7_1e",
+    "name": "Sett Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "sett",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "shen_support_support_enchanter_7_1e",
+    "name": "Shen Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "shen",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "shyvana_jungle_jungle_fighter_7_1e",
+    "name": "Shyvana Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "shyvana",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "singed_baron_tank_frontline_7_1e",
+    "name": "Singed Baron Tank Frontline",
+    "role": "Baron",
+    "summary": "Play as a tank frontline: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "plated_steelcaps",
+      "stoneplate_enchant",
+      "heartsteel",
+      "amaranths_twinguard",
+      "sunfire_aegis",
+      "randuins_omen",
+      "force_of_nature",
+      "kaenic_rookern",
+      "thornmail",
+      "warmogs_armor",
+      "frozen_heart",
+      "mantle_of_the_twelfth_hour"
+    ],
+    "runes": [
+      "grasp_of_the_undying",
+      "courage_of_the_colossus",
+      "second_wind",
+      "overgrowth",
+      "triumph"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "singed",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "sion_baron_tank_frontline_7_1e",
+    "name": "Sion Baron Tank Frontline",
+    "role": "Baron",
+    "summary": "Play as a tank frontline: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "plated_steelcaps",
+      "stoneplate_enchant",
+      "heartsteel",
+      "amaranths_twinguard",
+      "sunfire_aegis",
+      "randuins_omen",
+      "force_of_nature",
+      "kaenic_rookern",
+      "thornmail",
+      "warmogs_armor",
+      "frozen_heart",
+      "mantle_of_the_twelfth_hour"
+    ],
+    "runes": [
+      "grasp_of_the_undying",
+      "courage_of_the_colossus",
+      "second_wind",
+      "overgrowth",
+      "triumph"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "sion",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "sivir_duo_marksman_crit_7_1e",
+    "name": "Sivir Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "sivir",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "smolder_duo_marksman_crit_7_1e",
+    "name": "Smolder Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "smolder",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "sona_support_support_enchanter_7_1e",
+    "name": "Sona Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "sona",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "soraka_support_support_enchanter_7_1e",
+    "name": "Soraka Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "soraka",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "swain_support_support_mage_7_1e",
+    "name": "Swain Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "swain",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "syndra_mid_mage_burst_7_1e",
+    "name": "Syndra Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "syndra",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "taliyah_jungle_jungle_fighter_7_1e",
+    "name": "Taliyah Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "taliyah",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "talon_jungle_jungle_assassin_7_1e",
+    "name": "Talon Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "talon",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "teemo_support_support_mage_7_1e",
+    "name": "Teemo Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "teemo",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "thresh_support_support_enchanter_7_1e",
+    "name": "Thresh Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "thresh",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "tristana_duo_marksman_crit_7_1e",
+    "name": "Tristana Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "tristana",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "tryndamere_jungle_jungle_fighter_7_1e",
+    "name": "Tryndamere Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "tryndamere",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "twisted_fate_mid_mage_burst_7_1e",
+    "name": "Twisted Fate Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "twisted_fate",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "twitch_jungle_jungle_assassin_7_1e",
+    "name": "Twitch Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "twitch",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "urgot_baron_fighter_bruiser_7_1e",
+    "name": "Urgot Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "urgot",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "varus_duo_marksman_crit_7_1e",
+    "name": "Varus Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "varus",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "vayne_duo_marksman_crit_7_1e",
+    "name": "Vayne Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "vayne",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "veigar_support_support_mage_7_1e",
+    "name": "Veigar Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "veigar",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "velkoz_support_support_mage_7_1e",
+    "name": "Vel'Koz Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "velkoz",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "vex_mid_mage_burst_7_1e",
+    "name": "Vex Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "vex",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "vi_jungle_jungle_fighter_7_1e",
+    "name": "Vi Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "vi",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "viego_jungle_jungle_assassin_7_1e",
+    "name": "Viego Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "viego",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "viktor_mid_mage_burst_7_1e",
+    "name": "Viktor Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "viktor",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "vladimir_mid_mage_burst_7_1e",
+    "name": "Vladimir Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "vladimir",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "volibear_jungle_jungle_fighter_7_1e",
+    "name": "Volibear Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "volibear",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "warwick_jungle_jungle_fighter_7_1e",
+    "name": "Warwick Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "warwick",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "wukong_jungle_jungle_fighter_7_1e",
+    "name": "Wukong Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "wukong",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "xayah_duo_marksman_crit_7_1e",
+    "name": "Xayah Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "xayah",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "xin_zhao_jungle_jungle_fighter_7_1e",
+    "name": "Xin Zhao Jungle Jungle Fighter",
+    "role": "Jungle",
+    "summary": "Play as a jungle fighter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "trinity_force",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "black_cleaver",
+      "maw_of_malmortius",
+      "mortal_reminder",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "triumph",
+      "last_stand",
+      "legend_tenacity",
+      "nimbus_cloak"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "xin_zhao",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "yasuo_baron_fighter_bruiser_7_1e",
+    "name": "Yasuo Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "yasuo",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "yone_baron_fighter_bruiser_7_1e",
+    "name": "Yone Baron Fighter Bruiser",
+    "role": "Baron",
+    "summary": "Play as a fighter bruiser: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "gluttonous_greaves",
+      "goredrinker",
+      "black_cleaver",
+      "sundered_sky",
+      "deaths_dance",
+      "steraks_gage",
+      "guardian_angel",
+      "trinity_force",
+      "divine_sunderer",
+      "maw_of_malmortius",
+      "chempunk_chainsword",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror",
+      "brutal",
+      "last_stand",
+      "legend_tenacity",
+      "bone_plating"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "yone",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "yuumi_support_support_enchanter_7_1e",
+    "name": "Yuumi Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "yuumi",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "zed_jungle_jungle_assassin_7_1e",
+    "name": "Zed Jungle Jungle Assassin",
+    "role": "Jungle",
+    "summary": "Play as a jungle assassin: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_dynamism",
+      "stasis_enchant",
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "the_collector",
+      "guardian_angel",
+      "serpents_fang",
+      "mortal_reminder",
+      "eclipse",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "electrocute",
+      "sudden_impact",
+      "chain_assault",
+      "relentless_hunter",
+      "triumph"
+    ],
+    "spells": [
+      "smite",
+      "flash"
+    ],
+    "champion_id": "zed",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "zeri_duo_marksman_crit_7_1e",
+    "name": "Zeri Duo Marksman Crit",
+    "role": "Duo",
+    "summary": "Play as a marksman crit: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "berserkers_greaves",
+      "quicksilver_enchant",
+      "infinity_edge",
+      "bloodthirster",
+      "lord_dominiks_regards",
+      "phantom_dancer",
+      "magnetic_blaster",
+      "mortal_reminder",
+      "guardian_angel",
+      "runaans_hurricane",
+      "terminus"
+    ],
+    "runes": [
+      "lethal_tempo",
+      "brutal",
+      "cut_down",
+      "legend_alacrity",
+      "bone_plating"
+    ],
+    "spells": [
+      "barrier",
+      "flash"
+    ],
+    "champion_id": "zeri",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "ziggs_mid_mage_burst_7_1e",
+    "name": "Ziggs Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "ziggs",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "zilean_support_support_enchanter_7_1e",
+    "name": "Zilean Support Support Enchanter",
+    "role": "Support",
+    "summary": "Play as a support enchanter: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "locket_enchant",
+      "ardent_censer",
+      "staff_of_flowing_waters",
+      "harmonic_echo",
+      "imperial_mandate",
+      "redemption",
+      "oceanids_trident",
+      "yordle_trap",
+      "knights_vow"
+    ],
+    "runes": [
+      "aery",
+      "font_of_life",
+      "bone_plating",
+      "revitalize",
+      "manaflow_band"
+    ],
+    "spells": [
+      "heal",
+      "flash"
+    ],
+    "champion_id": "zilean",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "zoe_mid_mage_burst_7_1e",
+    "name": "Zoe Mid Mage Burst",
+    "role": "Mid",
+    "summary": "Play as a mage burst: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "infinity_orb",
+      "rabadons_deathcap",
+      "crown_of_the_shattered_queen",
+      "morellonomicon",
+      "oceanids_trident",
+      "horizon_focus",
+      "awakened_soulstealer",
+      "psychic_projector"
+    ],
+    "runes": [
+      "electrocute",
+      "cheap_shot",
+      "hubris",
+      "eyeball_collection",
+      "scorch"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "zoe",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "zyra_support_support_mage_7_1e",
+    "name": "Zyra Support Support Mage",
+    "role": "Support",
+    "summary": "Play as a support mage: match items/runes to role job, damage profile, defense need, and enemy threat pattern.",
+    "items": [
+      "boots_of_mana",
+      "stasis_enchant",
+      "ludens_echo",
+      "morellonomicon",
+      "rabadons_deathcap",
+      "oceanids_trident",
+      "crown_of_the_shattered_queen",
+      "cosmic_drive",
+      "imperial_mandate",
+      "horizon_focus"
+    ],
+    "runes": [
+      "arcane_comet",
+      "manaflow_band",
+      "transcendence",
+      "scorch",
+      "cheap_shot"
+    ],
+    "spells": [
+      "ignite",
+      "flash"
+    ],
+    "champion_id": "zyra",
+    "source_status": "generated_meta_candidate",
+    "strategy_layer": "generated_not_official_fact"
+  },
+  {
+    "id": "opus_darius_baron",
+    "name": "Darius Baron Opus Build",
+    "role": "Baron",
+    "summary": "Juggernaut",
+    "items": [
+      "trinity_force",
+      "steraks_gage",
+      "dead_mans_plate",
+      "plated_steelcaps",
+      "spirit_visage",
+      "thornmail",
+      "randuins_omen"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "ghost"
+    ],
+    "champion_id": "darius",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_garen_baron",
+    "name": "Garen Baron Opus Build",
+    "role": "Baron",
+    "summary": "Spin-to-Win",
+    "items": [
+      "trinity_force",
+      "dead_mans_plate",
+      "steraks_gage",
+      "plated_steelcaps",
+      "force_of_nature",
+      "mortal_reminder",
+      "randuins_omen"
+    ],
+    "runes": [
+      "grasp_of_the_undying"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "garen",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_fiora_baron",
+    "name": "Fiora Baron Opus Build",
+    "role": "Baron",
+    "summary": "Grand Duelist",
+    "items": [
+      "divine_sunderer",
+      "ravenous_hydra",
+      "deaths_dance",
+      "plated_steelcaps",
+      "steraks_gage",
+      "guardian_angel",
+      "maw_of_malmortius"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "fiora",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_camille_baron",
+    "name": "Camille Baron Opus Build",
+    "role": "Baron",
+    "summary": "Hookshot Diver",
+    "items": [
+      "trinity_force",
+      "steraks_gage",
+      "deaths_dance",
+      "plated_steelcaps",
+      "guardian_angel",
+      "randuins_omen",
+      "maw_of_malmortius"
+    ],
+    "runes": [
+      "grasp_of_the_undying"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "camille",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_jax_baron",
+    "name": "Jax Baron Opus Build",
+    "role": "Baron",
+    "summary": "Hybrid Duelist",
+    "items": [
+      "trinity_force",
+      "blade_of_the_ruined_king",
+      "steraks_gage",
+      "mercurys_treads",
+      "deaths_dance",
+      "wits_end",
+      "randuins_omen"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "jax",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_irelia_baron",
+    "name": "Irelia Baron Opus Build",
+    "role": "Baron",
+    "summary": "Blade Dancer",
+    "items": [
+      "blade_of_the_ruined_king",
+      "trinity_force",
+      "deaths_dance",
+      "mercurys_treads",
+      "wits_end",
+      "steraks_gage",
+      "guardian_angel"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "irelia",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_riven_baron",
+    "name": "Riven Baron Opus Build",
+    "role": "Baron",
+    "summary": "Fast Combo",
+    "items": [
+      "black_cleaver",
+      "deaths_dance",
+      "guardian_angel",
+      "ionian_boots_of_lucidity",
+      "youmuus_ghostblade",
+      "steraks_gage",
+      "seryldas_grudge"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "riven",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_malphite_tank_baron",
+    "name": "Malphite Baron Opus Build",
+    "role": "Baron",
+    "summary": "Full Tank",
+    "items": [
+      "sunfire_aegis",
+      "frozen_heart",
+      "randuins_omen",
+      "plated_steelcaps",
+      "thornmail",
+      "force_of_nature",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "grasp_of_the_undying"
+    ],
+    "spells": [
+      "flash",
+      "teleport"
+    ],
+    "champion_id": "malphite_tank",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_malphite_ap_baron",
+    "name": "Malphite Baron Opus Build",
+    "role": "Baron",
+    "summary": "AP Burst",
+    "items": [
+      "ludens_echo",
+      "rabadons_deathcap",
+      "void_staff",
+      "ionian_boots_of_lucidity",
+      "infinity_orb",
+      "lich_bane",
+      "zhonyas_hourglass"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "malphite_ap",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_renekton_baron",
+    "name": "Renekton Baron Opus Build",
+    "role": "Baron",
+    "summary": "Lane Bully",
+    "items": [
+      "blade_of_the_ruined_king",
+      "black_cleaver",
+      "steraks_gage",
+      "plated_steelcaps",
+      "deaths_dance",
+      "guardian_angel",
+      "spirit_visage"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "renekton",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_nasus_baron",
+    "name": "Nasus Baron Opus Build",
+    "role": "Baron",
+    "summary": "Stack King",
+    "items": [
+      "divine_sunderer",
+      "spirit_visage",
+      "frozen_heart",
+      "mercurys_treads",
+      "thornmail",
+      "randuins_omen",
+      "dead_mans_plate"
+    ],
+    "runes": [
+      "fleet_footwork"
+    ],
+    "spells": [
+      "flash",
+      "teleport"
+    ],
+    "champion_id": "nasus",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_sett_baron",
+    "name": "Sett Baron Opus Build",
+    "role": "Baron",
+    "summary": "Boss Brawler",
+    "items": [
+      "blade_of_the_ruined_king",
+      "black_cleaver",
+      "steraks_gage",
+      "plated_steelcaps",
+      "dead_mans_plate",
+      "deaths_dance",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "sett",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_k_sante_baron",
+    "name": "K'Sante Baron Opus Build",
+    "role": "Baron",
+    "summary": "All Out Tank",
+    "items": [
+      "sunfire_aegis",
+      "iceborn_gauntlet",
+      "spirit_visage",
+      "plated_steelcaps",
+      "thornmail",
+      "dead_mans_plate",
+      "force_of_nature"
+    ],
+    "runes": [
+      "grasp_of_the_undying"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "ksante",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_ornn_baron",
+    "name": "Ornn Baron Opus Build",
+    "role": "Baron",
+    "summary": "Forge Tank",
+    "items": [
+      "sunfire_aegis",
+      "thornmail",
+      "warmogs_armor",
+      "plated_steelcaps",
+      "force_of_nature",
+      "randuins_omen",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "grasp_of_the_undying"
+    ],
+    "spells": [
+      "flash",
+      "teleport"
+    ],
+    "champion_id": "ornn",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_sion_baron",
+    "name": "Sion Baron Opus Build",
+    "role": "Baron",
+    "summary": "Infinite HP",
+    "items": [
+      "sunfire_aegis",
+      "titanic_hydra",
+      "warmogs_armor",
+      "plated_steelcaps",
+      "thornmail",
+      "dead_mans_plate",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "grasp_of_the_undying"
+    ],
+    "spells": [
+      "flash",
+      "teleport"
+    ],
+    "champion_id": "sion",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_kayle_baron",
+    "name": "Kayle Baron Opus Build",
+    "role": "Baron",
+    "summary": "Late-Game Carry",
+    "items": [
+      "nashors_tooth",
+      "riftmaker",
+      "rabadons_deathcap",
+      "berserkers_greaves",
+      "void_staff",
+      "zhonyas_hourglass",
+      "wits_end"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "teleport"
+    ],
+    "champion_id": "kayle",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_tryndamere_baron",
+    "name": "Tryndamere Baron Opus Build",
+    "role": "Baron",
+    "summary": "Split Pusher",
+    "items": [
+      "kraken_slayer",
+      "navori_quickblades",
+      "infinity_edge",
+      "berserkers_greaves",
+      "blade_of_the_ruined_king",
+      "mortal_reminder",
+      "guardian_angel"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "tryndamere",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_wukong_baron_baron",
+    "name": "Wukong Baron Opus Build",
+    "role": "Baron",
+    "summary": "Cyclone Diver",
+    "items": [
+      "trinity_force",
+      "black_cleaver",
+      "steraks_gage",
+      "mercurys_treads",
+      "deaths_dance",
+      "guardian_angel",
+      "randuins_omen"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "wukong_baron",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_singed_baron",
+    "name": "Singed Baron Opus Build",
+    "role": "Baron",
+    "summary": "Proxy Farmer",
+    "items": [
+      "riftmaker",
+      "rylais_crystal_scepter",
+      "liandrys_torment",
+      "plated_steelcaps",
+      "dead_mans_plate",
+      "force_of_nature",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "ghost"
+    ],
+    "champion_id": "singed",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_teemo_baron",
+    "name": "Teemo Baron Opus Build",
+    "role": "Baron",
+    "summary": "Shroom Control",
+    "items": [
+      "nashors_tooth",
+      "liandrys_torment",
+      "rabadons_deathcap",
+      "ionian_boots_of_lucidity",
+      "void_staff",
+      "morellonomicon",
+      "zhonyas_hourglass"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "teemo",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_lee_sin_jungle",
+    "name": "Lee Sin Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Insec Playmaker",
+    "items": [
+      "eclipse",
+      "black_cleaver",
+      "steraks_gage",
+      "ionian_boots_of_lucidity",
+      "guardian_angel",
+      "deaths_dance",
+      "maw_of_malmortius"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "lee_sin",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_vi_jungle",
+    "name": "Vi Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Lockdown Diver",
+    "items": [
+      "trinity_force",
+      "steraks_gage",
+      "deaths_dance",
+      "mercurys_treads",
+      "guardian_angel",
+      "thornmail",
+      "randuins_omen"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "vi",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_jarvan_iv_jungle",
+    "name": "Jarvan IV Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Flag-and-Drag",
+    "items": [
+      "eclipse",
+      "black_cleaver",
+      "steraks_gage",
+      "mercurys_treads",
+      "guardian_angel",
+      "deaths_dance",
+      "randuins_omen"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "jarvan_iv",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_hecarim_jungle",
+    "name": "Hecarim Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Speed Demon",
+    "items": [
+      "trinity_force",
+      "deaths_dance",
+      "steraks_gage",
+      "mercurys_treads",
+      "dead_mans_plate",
+      "spirit_visage",
+      "randuins_omen"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "hecarim",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_amumu_jungle",
+    "name": "Amumu Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "AoE Tank",
+    "items": [
+      "sunfire_aegis",
+      "thornmail",
+      "abyssal_mask",
+      "plated_steelcaps",
+      "spirit_visage",
+      "randuins_omen",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "aftershock"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "amumu",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_sejuani_jungle",
+    "name": "Sejuani Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Permafrost Tank",
+    "items": [
+      "sunfire_aegis",
+      "thornmail",
+      "spirit_visage",
+      "mercurys_treads",
+      "randuins_omen",
+      "dead_mans_plate",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "aftershock"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "sejuani",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_diana_jg_jungle",
+    "name": "Diana Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Moonfall Diver",
+    "items": [
+      "nashors_tooth",
+      "hextech_protobelt",
+      "rabadons_deathcap",
+      "mercurys_treads",
+      "zhonyas_hourglass",
+      "void_staff",
+      "banshees_veil"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "diana_jg",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_viego_jungle",
+    "name": "Viego Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Reset King",
+    "items": [
+      "blade_of_the_ruined_king",
+      "trinity_force",
+      "steraks_gage",
+      "mercurys_treads",
+      "deaths_dance",
+      "guardian_angel",
+      "wits_end"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "viego",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_kha_zix_jungle",
+    "name": "Kha'Zix Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Isolation Assassin",
+    "items": [
+      "duskblade_of_draktharr",
+      "edge_of_night",
+      "youmuus_ghostblade",
+      "ionian_boots_of_lucidity",
+      "seryldas_grudge",
+      "guardian_angel",
+      "black_cleaver"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "khazix",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_evelynn_jungle",
+    "name": "Evelynn Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Stealth Assassin",
+    "items": [
+      "lich_bane",
+      "rabadons_deathcap",
+      "void_staff",
+      "mercurys_treads",
+      "banshees_veil",
+      "morellonomicon",
+      "infinity_orb"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "evelynn",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_graves_jungle",
+    "name": "Graves Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Bruiser Marksman",
+    "items": [
+      "eclipse",
+      "black_cleaver",
+      "deaths_dance",
+      "mercurys_treads",
+      "steraks_gage",
+      "mortal_reminder",
+      "guardian_angel"
+    ],
+    "runes": [
+      "fleet_footwork"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "graves",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_rengar_jungle",
+    "name": "Rengar Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Bush Assassin",
+    "items": [
+      "duskblade_of_draktharr",
+      "youmuus_ghostblade",
+      "edge_of_night",
+      "ionian_boots_of_lucidity",
+      "seryldas_grudge",
+      "guardian_angel",
+      "deaths_dance"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "rengar",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_wukong_jg_jungle",
+    "name": "Wukong Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Teamfight Diver",
+    "items": [
+      "black_cleaver",
+      "divine_sunderer",
+      "steraks_gage",
+      "mercurys_treads",
+      "deaths_dance",
+      "guardian_angel",
+      "thornmail"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "wukong_jg",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_rammus_jungle",
+    "name": "Rammus Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Anti-AD Ball",
+    "items": [
+      "thornmail",
+      "sunfire_aegis",
+      "dead_mans_plate",
+      "plated_steelcaps",
+      "randuins_omen",
+      "force_of_nature",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "aftershock"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "rammus",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_xin_zhao_jungle",
+    "name": "Xin Zhao Jungle Opus Build",
+    "role": "Jungle",
+    "summary": "Early Duelist",
+    "items": [
+      "trinity_force",
+      "steraks_gage",
+      "deaths_dance",
+      "mercurys_treads",
+      "blade_of_the_ruined_king",
+      "guardian_angel",
+      "randuins_omen"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "smite"
+    ],
+    "champion_id": "xin_zhao",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_ahri_mid",
+    "name": "Ahri Mid Opus Build",
+    "role": "Mid",
+    "summary": "Charm Burst",
+    "items": [
+      "ludens_echo",
+      "rabadons_deathcap",
+      "void_staff",
+      "ionian_boots_of_lucidity",
+      "banshees_veil",
+      "morellonomicon",
+      "lich_bane"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "ahri",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_akali_mid",
+    "name": "Akali Mid Opus Build",
+    "role": "Mid",
+    "summary": "Shroud Assassin",
+    "items": [
+      "hextech_protobelt",
+      "lich_bane",
+      "rabadons_deathcap",
+      "mercurys_treads",
+      "void_staff",
+      "zhonyas_hourglass",
+      "morellonomicon"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "akali",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_zed_mid",
+    "name": "Zed Mid Opus Build",
+    "role": "Mid",
+    "summary": "Shadow Assassin",
+    "items": [
+      "youmuus_ghostblade",
+      "duskblade_of_draktharr",
+      "seryldas_grudge",
+      "ionian_boots_of_lucidity",
+      "edge_of_night",
+      "guardian_angel",
+      "black_cleaver"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "zed",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_fizz_mid",
+    "name": "Fizz Mid Opus Build",
+    "role": "Mid",
+    "summary": "Trickster",
+    "items": [
+      "lich_bane",
+      "rabadons_deathcap",
+      "void_staff",
+      "ionian_boots_of_lucidity",
+      "zhonyas_hourglass",
+      "banshees_veil",
+      "morellonomicon"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "fizz",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_orianna_mid",
+    "name": "Orianna Mid Opus Build",
+    "role": "Mid",
+    "summary": "Ball Control Mage",
+    "items": [
+      "ludens_echo",
+      "rabadons_deathcap",
+      "void_staff",
+      "ionian_boots_of_lucidity",
+      "zhonyas_hourglass",
+      "banshees_veil",
+      "morellonomicon"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "barrier"
+    ],
+    "champion_id": "orianna",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_viktor_mid",
+    "name": "Viktor Mid Opus Build",
+    "role": "Mid",
+    "summary": "Laser Mage",
+    "items": [
+      "ludens_echo",
+      "rabadons_deathcap",
+      "void_staff",
+      "ionian_boots_of_lucidity",
+      "lich_bane",
+      "zhonyas_hourglass",
+      "banshees_veil"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "barrier"
+    ],
+    "champion_id": "viktor",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_kassadin_mid",
+    "name": "Kassadin Mid Opus Build",
+    "role": "Mid",
+    "summary": "Anti-Mage",
+    "items": [
+      "rod_of_ages",
+      "archangels_staff",
+      "rabadons_deathcap",
+      "mercurys_treads",
+      "void_staff",
+      "lich_bane",
+      "zhonyas_hourglass"
+    ],
+    "runes": [
+      "fleet_footwork"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "kassadin",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_katarina_mid",
+    "name": "Katarina Mid Opus Build",
+    "role": "Mid",
+    "summary": "Dagger Reset",
+    "items": [
+      "nashors_tooth",
+      "hextech_protobelt",
+      "rabadons_deathcap",
+      "mercurys_treads",
+      "void_staff",
+      "lich_bane",
+      "morellonomicon"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "katarina",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_veigar_mid",
+    "name": "Veigar Mid Opus Build",
+    "role": "Mid",
+    "summary": "Infinite AP",
+    "items": [
+      "ludens_echo",
+      "rabadons_deathcap",
+      "void_staff",
+      "ionian_boots_of_lucidity",
+      "zhonyas_hourglass",
+      "banshees_veil",
+      "crown_of_the_shattered_queen"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "barrier"
+    ],
+    "champion_id": "veigar",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_lux_mid_mid",
+    "name": "Lux Mid Opus Build",
+    "role": "Mid",
+    "summary": "Burst Artillery",
+    "items": [
+      "ludens_echo",
+      "rabadons_deathcap",
+      "void_staff",
+      "ionian_boots_of_lucidity",
+      "morellonomicon",
+      "zhonyas_hourglass",
+      "infinity_orb"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "barrier"
+    ],
+    "champion_id": "lux_mid",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_diana_mid_mid",
+    "name": "Diana Mid Opus Build",
+    "role": "Mid",
+    "summary": "Moonfall Engage",
+    "items": [
+      "hextech_protobelt",
+      "nashors_tooth",
+      "rabadons_deathcap",
+      "mercurys_treads",
+      "zhonyas_hourglass",
+      "void_staff",
+      "banshees_veil"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "diana_mid",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_galio_mid",
+    "name": "Galio Mid Opus Build",
+    "role": "Mid",
+    "summary": "Anti-Mage Tank",
+    "items": [
+      "sunfire_aegis",
+      "abyssal_mask",
+      "thornmail",
+      "mercurys_treads",
+      "dead_mans_plate",
+      "spirit_visage",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "aftershock"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "galio",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_twisted_fate_mid",
+    "name": "Twisted Fate Mid Opus Build",
+    "role": "Mid",
+    "summary": "Gold Card Roamer",
+    "items": [
+      "rod_of_ages",
+      "lich_bane",
+      "rabadons_deathcap",
+      "ionian_boots_of_lucidity",
+      "rapid_firecannon",
+      "void_staff",
+      "zhonyas_hourglass"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "twisted_fate",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_yasuo_mid",
+    "name": "Yasuo Mid Opus Build",
+    "role": "Mid",
+    "summary": "Wind Wall",
+    "items": [
+      "blade_of_the_ruined_king",
+      "infinity_edge",
+      "mortal_reminder",
+      "berserkers_greaves",
+      "deaths_dance",
+      "guardian_angel",
+      "wits_end"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "yasuo",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_yone_mid",
+    "name": "Yone Mid Opus Build",
+    "role": "Mid",
+    "summary": "Spirit Cleave",
+    "items": [
+      "blade_of_the_ruined_king",
+      "infinity_edge",
+      "mortal_reminder",
+      "berserkers_greaves",
+      "deaths_dance",
+      "guardian_angel",
+      "wits_end"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "yone",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_jinx_duo",
+    "name": "Jinx Duo Opus Build",
+    "role": "Duo",
+    "summary": "Hypercarry",
+    "items": [
+      "infinity_edge",
+      "rapid_firecannon",
+      "mortal_reminder",
+      "berserkers_greaves",
+      "guardian_angel",
+      "phantom_dancer",
+      "bloodthirster"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "jinx",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_kai_sa_duo",
+    "name": "Kai'Sa Duo Opus Build",
+    "role": "Duo",
+    "summary": "Evolving Assassin",
+    "items": [
+      "blade_of_the_ruined_king",
+      "nashors_tooth",
+      "infinity_edge",
+      "berserkers_greaves",
+      "rabadons_deathcap",
+      "zhonyas_hourglass",
+      "guardian_angel"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "kaisa",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_vayne_duo",
+    "name": "Vayne Duo Opus Build",
+    "role": "Duo",
+    "summary": "Tank Shredder",
+    "items": [
+      "blade_of_the_ruined_king",
+      "infinity_edge",
+      "phantom_dancer",
+      "berserkers_greaves",
+      "guardian_angel",
+      "wits_end",
+      "mortal_reminder"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "vayne",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_jhin_duo",
+    "name": "Jhin Duo Opus Build",
+    "role": "Duo",
+    "summary": "4th Shot Artist",
+    "items": [
+      "youmuus_ghostblade",
+      "infinity_edge",
+      "rapid_firecannon",
+      "ionian_boots_of_lucidity",
+      "mortal_reminder",
+      "guardian_angel",
+      "edge_of_night"
+    ],
+    "runes": [
+      "fleet_footwork"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "jhin",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_miss_fortune_duo",
+    "name": "Miss Fortune Duo Opus Build",
+    "role": "Duo",
+    "summary": "Bullet Time",
+    "items": [
+      "youmuus_ghostblade",
+      "seryldas_grudge",
+      "infinity_edge",
+      "ionian_boots_of_lucidity",
+      "mortal_reminder",
+      "guardian_angel",
+      "edge_of_night"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "miss_fortune",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_ezreal_duo",
+    "name": "Ezreal Duo Opus Build",
+    "role": "Duo",
+    "summary": "Poke ADC",
+    "items": [
+      "manamune",
+      "trinity_force",
+      "seryldas_grudge",
+      "ionian_boots_of_lucidity",
+      "blade_of_the_ruined_king",
+      "guardian_angel",
+      "mortal_reminder"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "ezreal",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_draven_duo",
+    "name": "Draven Duo Opus Build",
+    "role": "Duo",
+    "summary": "Cash-In Carry",
+    "items": [
+      "blade_of_the_ruined_king",
+      "infinity_edge",
+      "mortal_reminder",
+      "berserkers_greaves",
+      "bloodthirster",
+      "guardian_angel",
+      "deaths_dance"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "draven",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_xayah_duo",
+    "name": "Xayah Duo Opus Build",
+    "role": "Duo",
+    "summary": "Feather Root",
+    "items": [
+      "infinity_edge",
+      "navori_quickblades",
+      "phantom_dancer",
+      "berserkers_greaves",
+      "guardian_angel",
+      "mortal_reminder",
+      "bloodthirster"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "xayah",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_samira_duo",
+    "name": "Samira Duo Opus Build",
+    "role": "Duo",
+    "summary": "Combo Style",
+    "items": [
+      "infinity_edge",
+      "bloodthirster",
+      "mortal_reminder",
+      "berserkers_greaves",
+      "guardian_angel",
+      "deaths_dance",
+      "phantom_dancer"
+    ],
+    "runes": [
+      "conqueror"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "samira",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_lucian_duo",
+    "name": "Lucian Duo Opus Build",
+    "role": "Duo",
+    "summary": "Burst Trades",
+    "items": [
+      "blade_of_the_ruined_king",
+      "navori_quickblades",
+      "infinity_edge",
+      "berserkers_greaves",
+      "mortal_reminder",
+      "guardian_angel",
+      "deaths_dance"
+    ],
+    "runes": [
+      "kraken_slayer"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "lucian",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_caitlyn_duo",
+    "name": "Caitlyn Duo Opus Build",
+    "role": "Duo",
+    "summary": "Lane Bully Sniper",
+    "items": [
+      "infinity_edge",
+      "rapid_firecannon",
+      "phantom_dancer",
+      "berserkers_greaves",
+      "guardian_angel",
+      "mortal_reminder",
+      "bloodthirster"
+    ],
+    "runes": [
+      "fleet_footwork"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "caitlyn",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_tristana_duo",
+    "name": "Tristana Duo Opus Build",
+    "role": "Duo",
+    "summary": "Reset Jump",
+    "items": [
+      "infinity_edge",
+      "phantom_dancer",
+      "mortal_reminder",
+      "berserkers_greaves",
+      "guardian_angel",
+      "rapid_firecannon",
+      "bloodthirster"
+    ],
+    "runes": [
+      "lethal_tempo"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "tristana",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_karma_sup_support",
+    "name": "Karma Support Opus Build",
+    "role": "Support",
+    "summary": "Poke Enchanter",
+    "items": [
+      "ardent_censer",
+      "staff_of_flowing_water",
+      "echoes_of_helia",
+      "ionian_boots_of_lucidity",
+      "redemption",
+      "mikaels_blessing",
+      "harmonic_echo"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "karma_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_swain_sup_support",
+    "name": "Swain Support Opus Build",
+    "role": "Support",
+    "summary": "Drain Tank Mage",
+    "items": [
+      "liandrys_torment",
+      "riftmaker",
+      "rylais_crystal_scepter",
+      "ionian_boots_of_lucidity",
+      "zhonyas_hourglass",
+      "morellonomicon",
+      "banshees_veil"
+    ],
+    "runes": [
+      "electrocute"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "swain_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_nautilus_sup_support",
+    "name": "Nautilus Support Opus Build",
+    "role": "Support",
+    "summary": "Hook Engage Tank",
+    "items": [
+      "zekes_convergence",
+      "dead_mans_plate",
+      "thornmail",
+      "mercurys_treads",
+      "locket_of_the_iron_solari",
+      "randuins_omen",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "aftershock"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "nautilus_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_senna_sup_support",
+    "name": "Senna Support Opus Build",
+    "role": "Support",
+    "summary": "Scaling Marksman",
+    "items": [
+      "umbral_glaive",
+      "rapid_firecannon",
+      "infinity_edge",
+      "ionian_boots_of_lucidity",
+      "edge_of_night",
+      "mortal_reminder",
+      "guardian_angel"
+    ],
+    "runes": [
+      "grasp_of_the_undying"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "senna_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_seraphine_sup_support",
+    "name": "Seraphine Support Opus Build",
+    "role": "Support",
+    "summary": "AoE Enchanter",
+    "items": [
+      "echoes_of_helia",
+      "staff_of_flowing_water",
+      "ardent_censer",
+      "ionian_boots_of_lucidity",
+      "harmonic_echo",
+      "redemption",
+      "mikaels_blessing"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "exhaust"
+    ],
+    "champion_id": "seraphine_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_soraka_sup_support",
+    "name": "Soraka Support Opus Build",
+    "role": "Support",
+    "summary": "Global Healer",
+    "items": [
+      "warmogs_armor",
+      "ardent_censer",
+      "staff_of_flowing_water",
+      "ionian_boots_of_lucidity",
+      "harmonic_echo",
+      "redemption",
+      "mikaels_blessing"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "heal"
+    ],
+    "champion_id": "soraka_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_milio_sup_support",
+    "name": "Milio Support Opus Build",
+    "role": "Support",
+    "summary": "Cozy Enchanter",
+    "items": [
+      "ardent_censer",
+      "staff_of_flowing_water",
+      "harmonic_echo",
+      "ionian_boots_of_lucidity",
+      "redemption",
+      "mikaels_blessing",
+      "echoes_of_helia"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "exhaust"
+    ],
+    "champion_id": "milio_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_lulu_sup_support",
+    "name": "Lulu Support Opus Build",
+    "role": "Support",
+    "summary": "Polymorph Peel",
+    "items": [
+      "ardent_censer",
+      "staff_of_flowing_water",
+      "harmonic_echo",
+      "ionian_boots_of_lucidity",
+      "redemption",
+      "mikaels_blessing",
+      "locket_of_the_iron_solari"
+    ],
+    "runes": [
+      "summon_aery"
+    ],
+    "spells": [
+      "flash",
+      "exhaust"
+    ],
+    "champion_id": "lulu_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_thresh_sup_support",
+    "name": "Thresh Support Opus Build",
+    "role": "Support",
+    "summary": "Playmaker Catcher",
+    "items": [
+      "zekes_convergence",
+      "dead_mans_plate",
+      "locket_of_the_iron_solari",
+      "mercurys_treads",
+      "thornmail",
+      "randuins_omen",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "aftershock"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "thresh_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  },
+  {
+    "id": "opus_leona_sup_support",
+    "name": "Leona Support Opus Build",
+    "role": "Support",
+    "summary": "All-In Engage",
+    "items": [
+      "zekes_convergence",
+      "locket_of_the_iron_solari",
+      "thornmail",
+      "mercurys_treads",
+      "randuins_omen",
+      "dead_mans_plate",
+      "gargoyle_stoneplate"
+    ],
+    "runes": [
+      "aftershock"
+    ],
+    "spells": [
+      "flash",
+      "ignite"
+    ],
+    "champion_id": "leona_sup",
+    "source_status": "opus_observed_unverified",
+    "strategy_layer": "research_candidate_not_official_fact"
+  }
+]

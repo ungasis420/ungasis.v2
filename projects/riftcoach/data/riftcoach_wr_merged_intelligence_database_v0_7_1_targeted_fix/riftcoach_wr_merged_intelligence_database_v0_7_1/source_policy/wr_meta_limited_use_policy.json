@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "source_family": "wr_meta_limited",
+  "allowed_use": [
+    "roster_cross_check",
+    "meta_tier_cross_check",
+    "high_level_trend_context"
+  ],
+  "forbidden_use": [
+    "exact_champion_ability_values",
+    "exact_item_gold_costs",
+    "exact_item_cooldowns",
+    "exact_rune_cooldowns",
+    "exact_spell_cooldowns",
+    "official_patch_assertions"
+  ],
+  "output_rule": "Any WR-META-derived field must be source_status=cross_check_only unless confirmed by Riot, LoL Wiki WR, or approved WildRiftFire context."
+}

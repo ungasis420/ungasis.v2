@@ -1,0 +1,1055 @@
+[
+  {
+    "id": "electrocute",
+    "name": "Electrocute",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "3 hits in 3s = burst damage.",
+    "tier": "S",
+    "image": "/images/runes/electrocute.png",
+    "brief": "3 hits in 3s = burst damage.",
+    "full_description": "Hitting an enemy champion with 3 separate attacks or abilities within 3 seconds deals 40-194 (+35% bonus AD)(+20% AP) bonus adaptive damage. Cooldown: 20-13s (scales with level).",
+    "cooldown": "20-13s",
+    "best_for": [
+      "Burst assassins",
+      "Burst mages",
+      "Zed",
+      "Akali",
+      "Fizz",
+      "Ahri",
+      "Lux"
+    ]
+  },
+  {
+    "id": "dark_harvest",
+    "name": "Dark Harvest",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Bonus damage to low-HP champions, permanently stacks on takedown.",
+    "tier": "B",
+    "image": "/images/runes/dark_harvest.png",
+    "brief": "Bonus damage to low-HP champions, permanently stacks on takedown.",
+    "full_description": "Damaging a champion below 50% HP deals bonus adaptive damage and permanently increases Dark Harvest damage by 5. Resets on champion takedown. Damage: 20-60 base (+5 per stack)(+25% bonus AD)(+15% AP).",
+    "cooldown": null,
+    "best_for": [
+      "Snowball assassins",
+      "Junglers",
+      "Evelynn",
+      "Kha'Zix",
+      "Rengar"
+    ]
+  },
+  {
+    "id": "empowerment",
+    "name": "Empowerment",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Gain stacking AD/AP from killing minions, monsters, and champions.",
+    "tier": "B",
+    "image": "/images/runes/empowerment.png",
+    "brief": "Gain stacking AD/AP from killing minions, monsters, and champions.",
+    "full_description": "Killing minions grants 0.5 AD or 1 AP (adaptive). Killing monsters grants 2 AD or 4 AP. Killing champions grants 5 AD or 10 AP. Stacks infinitely.",
+    "cooldown": null,
+    "best_for": [
+      "Infinite scaling carries",
+      "Veigar",
+      "Nasus",
+      "Master Yi"
+    ]
+  },
+  {
+    "id": "lethal_tempo",
+    "name": "Lethal Tempo",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Attacking champions grants stacking AS, can exceed the AS cap.",
+    "tier": "S",
+    "image": "/images/runes/lethal_tempo.png",
+    "brief": "Attacking champions grants stacking AS, can exceed the AS cap.",
+    "full_description": "Attacking enemy champions grants 5-13% attack speed per stack (up to 6 stacks) for 6 seconds. At maximum stacks, exceed the normal 2.5 AS cap. Total bonus AS at max: 30-78%.",
+    "cooldown": null,
+    "best_for": [
+      "Auto-attack ADCs",
+      "On-hit builds",
+      "Jinx",
+      "Vayne",
+      "Kog'Maw",
+      "Xayah",
+      "Kalista",
+      "Varus"
+    ]
+  },
+  {
+    "id": "fleet_footwork",
+    "name": "Fleet Footwork",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Moving and attacking generates energy. At 100 stacks, next AA heals and grants MS.",
+    "tier": "A",
+    "image": "/images/runes/fleet_footwork.png",
+    "brief": "Moving and attacking generates energy. At 100 stacks, next AA heals and grants MS.",
+    "full_description": "Moving and attacking generates Energize stacks. At 100 stacks, your next auto-attack heals for 15-85 (+20% AP)(+10% bonus AD) and grants 20% bonus movement speed for 1 second. Healing is 100% effective on champions, 20% on minions.",
+    "cooldown": null,
+    "best_for": [
+      "ADCs needing lane sustain",
+      "Jhin",
+      "Ezreal",
+      "Kai'Sa",
+      "Kassadin"
+    ]
+  },
+  {
+    "id": "conqueror",
+    "name": "Conqueror",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Stacking AD/AP per hit. At max stacks, gain omnivamp.",
+    "tier": "S",
+    "image": "/images/runes/conqueror.png",
+    "brief": "Stacking AD/AP per hit. At max stacks, gain omnivamp.",
+    "full_description": "Each separate attack or ability hit on enemy champions grants a stack for 6 seconds (max 6 stacks). Per stack: 3-7 AD or 4-11 AP (adaptive). At maximum stacks: gain 9% omnivamp (melee) or 5% omnivamp (ranged). Max stats at level 15: 42 AD or 66 AP + omnivamp.",
+    "cooldown": null,
+    "best_for": [
+      "Fighters",
+      "Bruisers",
+      "Extended trades",
+      "Aatrox",
+      "Camille",
+      "Fiora",
+      "Jax",
+      "Riven",
+      "Darius",
+      "Lee Sin"
+    ]
+  },
+  {
+    "id": "grasp_of_the_undying",
+    "name": "Grasp of the Undying",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "In-combat AA deals %HP magic damage, heals, and permanently increases HP.",
+    "tier": "S",
+    "image": "/images/runes/grasp_of_the_undying.png",
+    "brief": "In-combat AA deals %HP magic damage, heals, and permanently increases HP.",
+    "full_description": "After being in combat for 3 seconds, your next auto-attack on a champion deals bonus magic damage equal to 2% of your max HP (0.8% for ranged), heals you for 2.5% of your max HP (1% for ranged), and permanently grants 10 bonus HP (4 for ranged).",
+    "cooldown": "3s in-combat reset",
+    "best_for": [
+      "Tanks",
+      "Bruisers",
+      "Lane trades",
+      "Garen",
+      "Ornn",
+      "Malphite",
+      "Sion",
+      "K'Sante"
+    ]
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "When near an ally and either takes damage, shield both.",
+    "tier": "B",
+    "image": "/images/runes/guardian.png",
+    "brief": "When near an ally and either takes damage, shield both.",
+    "full_description": "When you or a nearby ally take damage, both are shielded for 70-150 (+25% AP) for 2 seconds. Cooldown: 70-40 seconds (scales with level). Auto-triggers without needing to cast.",
+    "cooldown": "70-40s",
+    "best_for": [
+      "Protective supports",
+      "Braum",
+      "Karma tank build"
+    ]
+  },
+  {
+    "id": "aery",
+    "name": "Aery",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Damage sends Aery to hurt enemy; healing/shielding sends Aery to shield ally.",
+    "tier": "A",
+    "image": "/images/runes/aery.png",
+    "brief": "Damage sends Aery to hurt enemy; healing/shielding sends Aery to shield ally.",
+    "full_description": "Damaging an enemy champion sends Aery to deal 15-70 (+20% bonus AD)(+10% AP) bonus adaptive damage. Healing, shielding, or buffing an ally sends Aery to shield them for 30-140 (+40% bonus AD)(+20% AP) for 2 seconds. Can proc multiple times per fight.",
+    "cooldown": null,
+    "best_for": [
+      "Enchanter supports",
+      "Poke mages",
+      "Nami",
+      "Lulu",
+      "Janna",
+      "Karma",
+      "Sona",
+      "Milio"
+    ]
+  },
+  {
+    "id": "arcane_comet",
+    "name": "Arcane Comet",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Damaging ability launches a comet at the enemy. CC reduces comet CD.",
+    "tier": "A",
+    "image": "/images/runes/arcane_comet.png",
+    "brief": "Damaging ability launches a comet at the enemy. CC reduces comet CD.",
+    "full_description": "Damaging an enemy champion with an ability launches a comet at their location, dealing 30-100 (+20% bonus AD)(+10% AP) adaptive damage after a short delay. Cooldown: 12-8 seconds. Immobilizing or slowing an enemy reduces remaining cooldown by 20%.",
+    "cooldown": "12-8s",
+    "best_for": [
+      "Poke mages with CC/slows",
+      "Ziggs",
+      "Vel'Koz",
+      "Lux",
+      "Brand",
+      "Zyra",
+      "Karma"
+    ]
+  },
+  {
+    "id": "phase_rush",
+    "name": "Phase Rush",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "3 hits in 3s grants burst MS + slow resistance.",
+    "tier": "A",
+    "image": "/images/runes/phase_rush.png",
+    "brief": "3 hits in 3s grants burst MS + slow resistance.",
+    "full_description": "Hitting an enemy champion with 3 separate attacks or abilities within 3 seconds grants 40-60% bonus movement speed and 75% slow resistance for 3 seconds. Cooldown: 15 seconds.",
+    "cooldown": "15s",
+    "best_for": [
+      "Kiting mages",
+      "Some bruisers",
+      "Ryze",
+      "Viktor",
+      "Singed",
+      "Aurelion Sol",
+      "Lillia"
+    ]
+  },
+  {
+    "id": "first_strike",
+    "name": "First Strike",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "If you damage an enemy first, deal 9% bonus damage for 3s and earn bonus gold.",
+    "tier": "A",
+    "image": "/images/runes/first_strike.png",
+    "brief": "If you damage an enemy first, deal 9% bonus damage for 3s and earn bonus gold.",
+    "full_description": "If you damage an enemy champion before they damage you, deal 9% bonus damage for 3 seconds and gain 5-25 bonus gold based on damage dealt. If the enemy damages you first, First Strike goes on a 25-second cooldown.",
+    "cooldown": "25s on fail",
+    "best_for": [
+      "Poke champions",
+      "Gold-generating builds",
+      "Twisted Fate",
+      "Ezreal",
+      "Jayce",
+      "Lux"
+    ]
+  },
+  {
+    "id": "ice_overlord",
+    "name": "Ice Overlord",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Immobilizing an enemy creates a freezing zone that slows and damages.",
+    "tier": "S",
+    "image": "/images/runes/ice_overlord.png",
+    "brief": "Immobilizing an enemy creates a freezing zone that slows and damages.",
+    "full_description": "Immobilizing (stun, root, knockup, suppress) an enemy champion creates a freezing zone beneath them that slows enemies inside by 25% and deals magic damage over the duration. Zone persists for a short time after the CC ends.",
+    "cooldown": null,
+    "best_for": [
+      "CC-heavy tanks",
+      "CC-heavy supports",
+      "Leona",
+      "Nautilus",
+      "Amumu",
+      "Alistar",
+      "Rell",
+      "Nunu"
+    ]
+  },
+  {
+    "id": "cheap_shot",
+    "name": "Cheap Shot",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 1,
+    "description": "Bonus true damage to movement-impaired targets.",
+    "tier": "B",
+    "image": "/images/runes/cheap_shot.png",
+    "brief": "Bonus true damage to movement-impaired targets.",
+    "full_description": "Damaging an enemy champion whose movement is impaired (slowed, stunned, rooted, knocked up) deals 10-50 bonus true damage (scales with level). Cooldown: 4 seconds.",
+    "cooldown": "4s",
+    "best_for": [
+      "Champions with built-in CC",
+      "Nami",
+      "Thresh",
+      "Nautilus",
+      "Swain"
+    ]
+  },
+  {
+    "id": "sudden_impact",
+    "name": "Sudden Impact",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 1,
+    "description": "Gain lethality + magic pen after dashing, blinking, or exiting stealth.",
+    "tier": "S",
+    "image": "/images/runes/sudden_impact.png",
+    "brief": "Gain lethality + magic pen after dashing, blinking, or exiting stealth.",
+    "full_description": "After using a dash, blink, or exiting stealth, gain 7 lethality and 6 magic penetration for 5 seconds. Cooldown: 4 seconds.",
+    "cooldown": "4s",
+    "best_for": [
+      "Assassins with dashes",
+      "Zed",
+      "Akali",
+      "Lee Sin",
+      "Fizz",
+      "Ekko",
+      "Evelynn"
+    ]
+  },
+  {
+    "id": "empowered_attack",
+    "name": "Empowered Attack",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 1,
+    "description": "After using an ability, next AA deals bonus adaptive damage.",
+    "tier": "B",
+    "image": "/images/runes/empowered_attack.png",
+    "brief": "After using an ability, next AA deals bonus adaptive damage.",
+    "full_description": "After using an ability, your next auto-attack within 3 seconds deals bonus adaptive damage. Cooldown: 3 seconds.",
+    "cooldown": "3s",
+    "best_for": [
+      "Auto-weaving champions",
+      "Twisted Fate",
+      "Ezreal",
+      "Lucian",
+      "Jax",
+      "Irelia"
+    ]
+  },
+  {
+    "id": "chain_assault",
+    "name": "Chain Assault",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 2,
+    "description": "Abilities that hit a champion bounce to nearby enemy.",
+    "tier": "B",
+    "image": "/images/runes/chain_assault.png",
+    "brief": "Abilities that hit a champion bounce to nearby enemy.",
+    "full_description": "Abilities that hit an enemy champion send a chain bolt to a nearby enemy champion, dealing bonus adaptive damage. More enemies nearby = more chain value.",
+    "cooldown": null,
+    "best_for": [
+      "AoE/team fight damage dealers",
+      "Brand",
+      "Zyra",
+      "Lux"
+    ]
+  },
+  {
+    "id": "tyrant",
+    "name": "Tyrant",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 2,
+    "description": "Deal bonus damage to champions with more max HP than you.",
+    "tier": "B",
+    "image": "/images/runes/tyrant.png",
+    "brief": "Deal bonus damage to champions with more max HP than you.",
+    "full_description": "Deal bonus damage to enemy champions who have more maximum HP than you. Damage scales with the HP difference.",
+    "cooldown": null,
+    "best_for": [
+      "Squishy carries fighting tanks",
+      "ADCs",
+      "Mages"
+    ]
+  },
+  {
+    "id": "hubris",
+    "name": "Hubris",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 2,
+    "description": "Gain bonus AD/AP after champion takedown. Stacks.",
+    "tier": "B",
+    "image": "/images/runes/hubris.png",
+    "brief": "Gain bonus AD/AP after champion takedown. Stacks.",
+    "full_description": "Gain bonus adaptive force for 8 seconds after a champion takedown. Stacks on multiple takedowns. Loses stacks on death.",
+    "cooldown": null,
+    "best_for": [
+      "Snowball assassins",
+      "Katarina",
+      "Viego",
+      "Kha'Zix"
+    ]
+  },
+  {
+    "id": "eyeball_collection",
+    "name": "Eyeball Collection",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Gain permanent AD/AP per champion takedown (max 10 stacks).",
+    "tier": "A",
+    "image": "/images/runes/eyeball_collection.png",
+    "brief": "Gain permanent AD/AP per champion takedown (max 10 stacks).",
+    "full_description": "Collect 1 eyeball per champion takedown, up to 10. Each eyeball grants 1.2 bonus AD or 2 bonus AP (adaptive). At 10 stacks: 12 bonus AD or 20 bonus AP permanently.",
+    "cooldown": null,
+    "best_for": [
+      "Kill-focused champions",
+      "Assassins",
+      "Carries"
+    ]
+  },
+  {
+    "id": "ingenious_hunter",
+    "name": "Ingenious Hunter",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Item active/passive haste per unique champion takedown.",
+    "tier": "A",
+    "image": "/images/runes/ingenious_hunter.png",
+    "brief": "Item active/passive haste per unique champion takedown.",
+    "full_description": "Gain 10 (+10 per unique champion takedown) item haste, up to 50 item haste at 5 unique takedowns. Reduces cooldown of item actives and passives (Stasis, Protobelt, Locket).",
+    "cooldown": null,
+    "best_for": [
+      "Champions relying on active items",
+      "Supports with Locket/Redemption"
+    ]
+  },
+  {
+    "id": "relentless_hunter",
+    "name": "Relentless Hunter",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Out-of-combat MS per unique champion takedown.",
+    "tier": "C",
+    "image": "/images/runes/relentless_hunter.png",
+    "brief": "Out-of-combat MS per unique champion takedown.",
+    "full_description": "Gain 5 (+8 per unique champion takedown) bonus movement speed while out of combat, up to 45 MS at 5 unique takedowns.",
+    "cooldown": null,
+    "best_for": [
+      "Roaming champions",
+      "Twisted Fate",
+      "Pyke",
+      "Roaming supports"
+    ]
+  },
+  {
+    "id": "zombie_ward",
+    "name": "Zombie Ward",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Killing enemy wards spawns friendly zombie wards.",
+    "tier": "A",
+    "image": "/images/runes/zombie_ward.png",
+    "brief": "Killing enemy wards spawns friendly zombie wards.",
+    "full_description": "Destroying an enemy ward spawns a friendly Zombie Ward at its location that provides vision for 60 seconds. Gain 1.2 AD or 2 AP per Zombie Ward spawned (up to 10 stacks).",
+    "cooldown": null,
+    "best_for": [
+      "Vision-focused supports",
+      "Diamond+ ranked",
+      "vs stealth champions"
+    ]
+  },
+  {
+    "id": "brutal",
+    "name": "Brutal",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 1,
+    "description": "Bonus AD/AP + armor/magic penetration early game.",
+    "tier": "A",
+    "image": "/images/runes/brutal.png",
+    "brief": "Bonus AD/AP + armor/magic penetration early game.",
+    "full_description": "Gain +7 AD or +14 AP (adaptive) and +2% armor penetration or +2% magic penetration. Pure stat rune — strongest early-game minor rune. No scaling, no conditions — just raw stats from level 1.",
+    "cooldown": null,
+    "best_for": [
+      "Lane bullies",
+      "Early-game damage",
+      "All roles"
+    ]
+  },
+  {
+    "id": "triumph",
+    "name": "Triumph",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 1,
+    "description": "Takedowns restore HP and grant bonus gold.",
+    "tier": "B",
+    "image": "/images/runes/triumph.png",
+    "brief": "Takedowns restore HP and grant bonus gold.",
+    "full_description": "Champion takedowns restore 10% of your missing HP and grant 25 bonus gold. In a team fight with 3 takedowns: 15% max HP healed.",
+    "cooldown": null,
+    "best_for": [
+      "Team fight champions",
+      "Chain kill/assist champions",
+      "Fighters",
+      "ADCs"
+    ]
+  },
+  {
+    "id": "battle_zeal",
+    "name": "Battle Zeal",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 1,
+    "description": "Gain AS after taking damage from a champion.",
+    "tier": "A",
+    "image": "/images/runes/battle_zeal.png",
+    "brief": "Gain AS after taking damage from a champion.",
+    "full_description": "After taking damage from an enemy champion, gain 8% bonus attack speed for 3 seconds. Cooldown: 2 seconds. Rewards aggressive trading.",
+    "cooldown": "2s",
+    "best_for": [
+      "Dueling ADCs",
+      "Fighters who trade autos",
+      "Vayne",
+      "Jax"
+    ]
+  },
+  {
+    "id": "last_stand",
+    "name": "Last Stand",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 2,
+    "description": "Deal bonus damage when below 60% HP. More damage the lower you are.",
+    "tier": "B",
+    "image": "/images/runes/last_stand.png",
+    "brief": "Deal bonus damage when below 60% HP. More damage the lower you are.",
+    "full_description": "Deal 5-12% bonus damage when below 60% HP. Damage bonus scales linearly — at 30% HP: 12% bonus damage. Synergizes with Death's Dance and lifesteal.",
+    "cooldown": null,
+    "best_for": [
+      "Drain-tank fighters",
+      "Low HP fighters",
+      "Aatrox",
+      "Olaf",
+      "Tryndamere"
+    ]
+  },
+  {
+    "id": "cut_down",
+    "name": "Cut Down",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 2,
+    "description": "Deal bonus damage to champions with more max HP than you.",
+    "tier": "S",
+    "image": "/images/runes/cut_down.png",
+    "brief": "Deal bonus damage to champions with more max HP than you.",
+    "full_description": "Deal 5-12% bonus damage to enemy champions who have more maximum HP than you. At 1000+ HP difference: ~10-12% bonus damage. Equivalent to a free half-item vs tanks.",
+    "cooldown": null,
+    "best_for": [
+      "ADCs vs tank-heavy comps",
+      "Squishy carries",
+      "All ADCs"
+    ]
+  },
+  {
+    "id": "coup_de_grace",
+    "name": "Coup de Grace",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 2,
+    "description": "Deal bonus damage to champions below 35% HP.",
+    "tier": "B",
+    "image": "/images/runes/coup_de_grace.png",
+    "brief": "Deal bonus damage to champions below 35% HP.",
+    "full_description": "Deal 5-10% bonus damage to enemy champions below 35% HP. Synergizes with execute abilities (Garen R, Darius R, Infinity Orb crit).",
+    "cooldown": null,
+    "best_for": [
+      "Execute champions",
+      "Burst champions",
+      "Assassins"
+    ]
+  },
+  {
+    "id": "legend_alacrity",
+    "name": "Legend: Alacrity",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 3,
+    "description": "Gain permanent AS per unique champion takedown.",
+    "tier": "S",
+    "image": "/images/runes/legend_alacrity.png",
+    "brief": "Gain permanent AS per unique champion takedown.",
+    "full_description": "Gain 3% attack speed per unique champion takedown, up to 15% at 5 unique takedowns. Permanent. Core on most ADCs.",
+    "cooldown": null,
+    "best_for": [
+      "Auto-attack champions",
+      "ADCs",
+      "On-hit builds"
+    ]
+  },
+  {
+    "id": "legend_tenacity",
+    "name": "Legend: Tenacity",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 3,
+    "description": "Gain permanent tenacity per unique champion takedown.",
+    "tier": "C",
+    "image": "/images/runes/legend_tenacity.png",
+    "brief": "Gain permanent tenacity per unique champion takedown.",
+    "full_description": "Gain 3% tenacity per unique champion takedown, up to 15% at 5 unique takedowns. Stacks with Mercury's Treads. At 15% + 30% Mercury's = 40.5% total tenacity.",
+    "cooldown": null,
+    "best_for": [
+      "Melee champions vs heavy-CC comps",
+      "Bruisers",
+      "Fighters"
+    ]
+  },
+  {
+    "id": "legend_bloodline",
+    "name": "Legend: Bloodline",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 3,
+    "description": "Gain permanent lifesteal per unique champion takedown.",
+    "tier": "A",
+    "image": "/images/runes/legend_bloodline.png",
+    "brief": "Gain permanent lifesteal per unique champion takedown.",
+    "full_description": "Gain 1.2% lifesteal per unique champion takedown, up to 6% at 5 unique takedowns. Permanent. Frees an item slot.",
+    "cooldown": null,
+    "best_for": [
+      "ADCs wanting sustain",
+      "Lifesteal builds"
+    ]
+  },
+  {
+    "id": "demolish",
+    "name": "Demolish",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "Charge empowered AA vs turrets when near enemy champions.",
+    "tier": "A",
+    "image": "/images/runes/demolish.png",
+    "brief": "Charge empowered AA vs turrets when near enemy champions.",
+    "full_description": "While within range of an enemy turret, charge up over 3 seconds. At full charge, next auto-attack deals 100 (+35% of your max HP) bonus physical damage to the turret. Cooldown: 45 seconds. At 3000 HP: 1150 damage per proc.",
+    "cooldown": "45s",
+    "best_for": [
+      "Split-pushers",
+      "Tower-taking",
+      "Sion",
+      "Nasus",
+      "Fiora",
+      "Tryndamere"
+    ]
+  },
+  {
+    "id": "font_of_life",
+    "name": "Font of Life",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "Impairing enemy movement marks them. Allies heal attacking marked targets.",
+    "tier": "A",
+    "image": "/images/runes/font_of_life.png",
+    "brief": "Impairing enemy movement marks them. Allies heal attacking marked targets.",
+    "full_description": "Impairing the movement of an enemy champion marks them for 4 seconds. Allied champions who auto-attack marked enemies heal for 6 (+1.5% of your max HP). At 3000 HP: 51 HP heal per ally AA.",
+    "cooldown": null,
+    "best_for": [
+      "CC-heavy tank supports",
+      "Braum",
+      "Nautilus",
+      "Thresh",
+      "Alistar",
+      "Leona"
+    ]
+  },
+  {
+    "id": "courage_of_the_colossus",
+    "name": "Courage of the Colossus",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "After immobilizing an enemy, gain a shield scaling with max HP.",
+    "tier": "A",
+    "image": "/images/runes/courage_of_the_colossus.png",
+    "brief": "After immobilizing an enemy, gain a shield scaling with max HP.",
+    "full_description": "After immobilizing an enemy champion, gain a shield for 50 (+3% of your max HP per nearby enemy champion) for 2.5 seconds. Shield scales with number of nearby enemies.",
+    "cooldown": null,
+    "best_for": [
+      "Engage tanks",
+      "Engage supports",
+      "Leona",
+      "Nautilus",
+      "Alistar",
+      "Thresh",
+      "Rell"
+    ]
+  },
+  {
+    "id": "unshakeable",
+    "name": "Unshakeable",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "Gain tenacity and slow resistance.",
+    "tier": "A",
+    "image": "/images/runes/unshakeable.png",
+    "brief": "Gain tenacity and slow resistance.",
+    "full_description": "Gain 10% tenacity and 10% slow resistance. Stacks with Mercury's Treads and Legend: Tenacity for maximum CC reduction.",
+    "cooldown": null,
+    "best_for": [
+      "CC reduction",
+      "Niche pick",
+      "vs heavy CC comps"
+    ]
+  },
+  {
+    "id": "second_wind",
+    "name": "Second Wind",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 2,
+    "description": "After taking champion damage, heal over time.",
+    "tier": "S",
+    "image": "/images/runes/second_wind.png",
+    "brief": "After taking champion damage, heal over time.",
+    "full_description": "After taking damage from an enemy champion, regenerate 6 (+3% of your missing HP) over 10 seconds. Procs on every instance of champion damage — constant healing vs poke.",
+    "cooldown": null,
+    "best_for": [
+      "Surviving poke lanes",
+      "vs Brand",
+      "vs Zyra",
+      "vs Lux",
+      "Tank supports"
+    ]
+  },
+  {
+    "id": "nullifying_orb",
+    "name": "Nullifying Orb",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 2,
+    "description": "Gain magic damage shield when taken below 35% HP by magic damage.",
+    "tier": "B",
+    "image": "/images/runes/nullifying_orb.png",
+    "brief": "Gain magic damage shield when taken below 35% HP by magic damage.",
+    "full_description": "When you take magic damage that would reduce you below 35% HP, gain a shield that absorbs 40-120 (+15% bonus AD)(+10% AP) magic damage for 4 seconds. Cooldown: 60 seconds.",
+    "cooldown": "60s",
+    "best_for": [
+      "vs AP burst",
+      "vs Fizz",
+      "vs Akali",
+      "vs Syndra",
+      "vs LeBlanc"
+    ]
+  },
+  {
+    "id": "bone_plating",
+    "name": "Bone Plating",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 2,
+    "description": "After taking champion damage, next 3 hits within 1.5s are reduced.",
+    "tier": "S",
+    "image": "/images/runes/bone_plating.png",
+    "brief": "After taking champion damage, next 3 hits within 1.5s are reduced.",
+    "full_description": "After taking damage from an enemy champion, the next 3 instances of damage within 1.5 seconds are reduced by 30-60 (scales with level). Cooldown: 35 seconds. Total blocked: 90-180.",
+    "cooldown": "35s",
+    "best_for": [
+      "vs burst combos",
+      "vs all-in",
+      "vs Zed R",
+      "vs Leona combo",
+      "Early game"
+    ]
+  },
+  {
+    "id": "overgrowth",
+    "name": "Overgrowth",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 3,
+    "description": "Permanently gain HP from nearby minion/monster deaths.",
+    "tier": "S",
+    "image": "/images/runes/overgrowth.png",
+    "brief": "Permanently gain HP from nearby minion/monster deaths.",
+    "full_description": "Gain 3 permanent HP for every 8 nearby minions or monsters that die. At 120 minion deaths: gain additional 2.5% bonus HP. Provides ~200-300 bonus HP by late game.",
+    "cooldown": null,
+    "best_for": [
+      "Tanks",
+      "Bruisers",
+      "HP scaling",
+      "Synergizes with Grasp and Heartsteel"
+    ]
+  },
+  {
+    "id": "revitalize",
+    "name": "Revitalize",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 3,
+    "description": "Heals and shields are 5% stronger. 15% stronger on low-HP targets.",
+    "tier": "A",
+    "image": "/images/runes/revitalize.png",
+    "brief": "Heals and shields are 5% stronger. 15% stronger on low-HP targets.",
+    "full_description": "Heals and shields you cast are 5% stronger. When the target is below 40% HP, heals and shields are 15% stronger instead. On a 300 shield: +15 normally, +45 on low allies.",
+    "cooldown": null,
+    "best_for": [
+      "Enchanter supports",
+      "Nami",
+      "Lulu",
+      "Soraka",
+      "Karma",
+      "Milio"
+    ]
+  },
+  {
+    "id": "perseverance",
+    "name": "Perseverance",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 3,
+    "description": "Gain bonus armor and MR that scale with game time.",
+    "tier": "S",
+    "image": "/images/runes/perseverance.png",
+    "brief": "Gain bonus armor and MR that scale with game time.",
+    "full_description": "Gain bonus armor and magic resistance that increase over the course of the game. Approximately +10-30 bonus resists by late game.",
+    "cooldown": null,
+    "best_for": [
+      "Tanks",
+      "Mid-to-late scaling",
+      "Alternative to Overgrowth"
+    ]
+  },
+  {
+    "id": "axiom_arcanist",
+    "name": "Axiom Arcanist",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "Gain ability haste. Takedowns reduce ultimate cooldown.",
+    "tier": "A",
+    "image": "/images/runes/axiom_arcanist.png",
+    "brief": "Gain ability haste. Takedowns reduce ultimate cooldown.",
+    "full_description": "Gain ability haste. Champion takedowns reduce your ultimate ability's remaining cooldown. Pairs with Awakened Soulstealer for double ultimate CD reduction.",
+    "cooldown": null,
+    "best_for": [
+      "Ult-reliant champions",
+      "Karma R",
+      "Malphite R",
+      "Amumu R",
+      "Shen R",
+      "Lux R"
+    ]
+  },
+  {
+    "id": "manaflow_band",
+    "name": "Manaflow Band",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "Hitting champions with abilities permanently increases max mana.",
+    "tier": "B",
+    "image": "/images/runes/manaflow_band.png",
+    "brief": "Hitting champions with abilities permanently increases max mana.",
+    "full_description": "Hitting an enemy champion with an ability permanently increases your maximum mana by 30, up to 300 bonus mana. After reaching maximum stacks, restore 1% of missing mana every 5 seconds.",
+    "cooldown": null,
+    "best_for": [
+      "Mana-hungry mages",
+      "Ryze",
+      "Kassadin",
+      "Orianna",
+      "Aurelion Sol",
+      "Viktor"
+    ]
+  },
+  {
+    "id": "botanist",
+    "name": "Botanist",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "Honeyfruit spawns grant bonus gold and enhanced healing.",
+    "tier": "A",
+    "image": "/images/runes/botanist.png",
+    "brief": "Honeyfruit spawns grant bonus gold and enhanced healing.",
+    "full_description": "Picking up Honeyfruit grants bonus gold and the healing from Honeyfruit is enhanced. Free gold generation from natural map movement.",
+    "cooldown": null,
+    "best_for": [
+      "Junglers",
+      "Supports who path through river"
+    ]
+  },
+  {
+    "id": "hexflash",
+    "name": "Hexflash",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "Channel to blink a short distance from brush or fog of war.",
+    "tier": "S",
+    "image": "/images/runes/hexflash.png",
+    "brief": "Channel to blink a short distance from brush or fog of war.",
+    "full_description": "While out of combat, channel for 2 seconds to blink to a target location (shorter range than Flash). Can only be used from brush or fog of war. Cooldown: ~20 seconds. Doubles engage opportunities.",
+    "cooldown": "20s",
+    "best_for": [
+      "Engage supports",
+      "Leona",
+      "Nautilus",
+      "Alistar",
+      "Thresh"
+    ]
+  },
+  {
+    "id": "transcendence",
+    "name": "Transcendence",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 2,
+    "description": "Gain ability haste at levels. Takedowns reset non-ult CDs by 20%.",
+    "tier": "S",
+    "image": "/images/runes/transcendence.png",
+    "brief": "Gain ability haste at levels. Takedowns reset non-ult CDs by 20%.",
+    "full_description": "Gain bonus ability haste at certain levels (~10-15 total AH). On champion takedown, reduce remaining cooldown of basic abilities (Q/W/E, not R) by 20%.",
+    "cooldown": null,
+    "best_for": [
+      "CDR-reliant mages",
+      "CDR-reliant supports",
+      "Orianna",
+      "Viktor",
+      "Ryze",
+      "Katarina",
+      "Viego"
+    ]
+  },
+  {
+    "id": "celerity",
+    "name": "Celerity",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 2,
+    "description": "Gain bonus MS. Movement speed bonuses are more effective.",
+    "tier": "B",
+    "image": "/images/runes/celerity.png",
+    "brief": "Gain bonus MS. Movement speed bonuses are more effective.",
+    "full_description": "Gain 3% bonus movement speed. All movement speed bonuses are 7% more effective. Hecarim passive converts bonus MS to AD.",
+    "cooldown": null,
+    "best_for": [
+      "MS-reliant champions",
+      "Lillia",
+      "Singed",
+      "Hecarim",
+      "Janna"
+    ]
+  },
+  {
+    "id": "absolute_focus",
+    "name": "Absolute Focus",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 2,
+    "description": "Gain bonus AD/AP when above 70% HP.",
+    "tier": "B",
+    "image": "/images/runes/absolute_focus.png",
+    "brief": "Gain bonus AD/AP when above 70% HP.",
+    "full_description": "When above 70% HP, gain 5-30 bonus AD or 10-60 bonus AP (adaptive, scales with level). Anti-synergy with melee fighters.",
+    "cooldown": null,
+    "best_for": [
+      "Poke champions",
+      "Long-range carries",
+      "Ezreal",
+      "Jayce",
+      "Lux",
+      "Ziggs"
+    ]
+  },
+  {
+    "id": "scorch",
+    "name": "Scorch",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "Damaging ability burns target for bonus magic damage.",
+    "tier": "B",
+    "image": "/images/runes/scorch.png",
+    "brief": "Damaging ability burns target for bonus magic damage.",
+    "full_description": "Damaging an enemy champion with an ability deals 20-40 bonus magic damage over 1 second. Cooldown: 10 seconds. Falls off late game.",
+    "cooldown": "10s",
+    "best_for": [
+      "Early-game poke champions",
+      "Lane bullies",
+      "Supports"
+    ]
+  },
+  {
+    "id": "nimbus_cloak",
+    "name": "Nimbus Cloak",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "After using a summoner spell, gain burst of MS for 2 seconds.",
+    "tier": "A",
+    "image": "/images/runes/nimbus_cloak.png",
+    "brief": "After using a summoner spell, gain burst of MS for 2 seconds.",
+    "full_description": "After casting a summoner spell, gain 15-35% bonus movement speed for 2 seconds. Procs on Flash, Ignite, Exhaust, Heal — any summoner spell.",
+    "cooldown": null,
+    "best_for": [
+      "Flash-dependent engage",
+      "Malphite",
+      "Annie",
+      "Kennen",
+      "All roles"
+    ]
+  },
+  {
+    "id": "gathering_storm",
+    "name": "Gathering Storm",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "Gain scaling AD/AP over game time.",
+    "tier": "B",
+    "image": "/images/runes/gathering_storm.png",
+    "brief": "Gain scaling AD/AP over game time.",
+    "full_description": "Gain increasing AD or AP as the game progresses. 5 min: +5 AD/+10 AP. 10 min: +10 AD/+20 AP. 15 min: +15 AD/+30 AP. 20 min: +20 AD/+40 AP. Strongest late-game minor rune.",
+    "cooldown": null,
+    "best_for": [
+      "Late-game scaling",
+      "Games expected 18+ minutes",
+      "Insurance pick"
+    ]
+  },
+  {
+    "id": "ixtali_seedjar",
+    "name": "Ixtali Seedjar",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "Plant seeds in brush that grow into vision plants.",
+    "tier": "C",
+    "image": "/images/runes/ixtali_seedjar.png",
+    "brief": "Plant seeds in brush that grow into vision plants.",
+    "full_description": "Periodically gain seeds. Place a seed in brush — grows into a vision-granting plant. Very niche — other Slot 3 options usually provide more combat value.",
+    "cooldown": null,
+    "best_for": [
+      "Vision-focused supports",
+      "High-elo vision control",
+      "Niche pick"
+    ]
+  }
+]

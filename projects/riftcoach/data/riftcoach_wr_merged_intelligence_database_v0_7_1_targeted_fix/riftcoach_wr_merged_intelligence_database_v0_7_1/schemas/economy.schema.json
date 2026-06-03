@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/economy.schema.json",
+  "title": "Economy",
+  "type": "object",
+  "required": [
+    "gold"
+  ],
+  "properties": {
+    "gold": {
+      "type": "object",
+      "required": [
+        "total_cost"
+      ],
+      "properties": {
+        "total_cost": {
+          "type": "object"
+        },
+        "recipe_cost": {
+          "type": "object"
+        },
+        "sell_value": {
+          "type": "object"
+        },
+        "upgrade_cost_from": {
+          "type": "array"
+        },
+        "builds_from": {
+          "type": "array"
+        },
+        "builds_into": {
+          "type": "array"
+        },
+        "support_item_gold_behavior": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/build.schema.json",
+  "title": "Build",
+  "type": "object",
+  "required": [
+    "build_id",
+    "champion_id",
+    "patch_version",
+    "items",
+    "runes",
+    "spells",
+    "source_status"
+  ],
+  "properties": {
+    "build_id": {
+      "type": "string"
+    },
+    "champion_id": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "class_mix": {
+      "type": "array"
+    },
+    "archetype": {
+      "type": "string"
+    },
+    "build_legality": {
+      "type": "object"
+    },
+    "items": {
+      "type": "object"
+    },
+    "runes": {
+      "type": "object"
+    },
+    "spells": {
+      "type": "array"
+    },
+    "playstyle": {
+      "type": "object"
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "source_verified",
+        "source_inferred",
+        "generated_rule",
+        "generated_archetype",
+        "hybrid",
+        "source_conflict",
+        "user_corrected_pending_revalidation",
+        "pending_allowed_source_refresh",
+        "source_verified_not_applicable",
+        "not_applicable"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

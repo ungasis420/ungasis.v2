@@ -1,0 +1,28 @@
+{
+  "views": [
+    {
+      "view_id": "global_map",
+      "label": "Global RiftCoach Map",
+      "max_depth": 3
+    },
+    {
+      "view_id": "synergy_view",
+      "label": "Synergy Matrix",
+      "filters": [
+        "SYNERGIZES_WITH"
+      ]
+    },
+    {
+      "view_id": "counter_deny_view",
+      "label": "Counter / Deny Matrix",
+      "filters": [
+        "DENIES_OR_MITIGATES"
+      ]
+    },
+    {
+      "view_id": "karma_support_graph",
+      "label": "Karma Support Archetypes",
+      "center_node": "champion:karma"
+    }
+  ]
+}

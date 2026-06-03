@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Karma Ability Regression Test",
+  "type": "object",
+  "required": [
+    "test_id",
+    "champion_id",
+    "expected",
+    "actual",
+    "result"
+  ],
+  "properties": {
+    "result": {
+      "enum": [
+        "passed",
+        "failed"
+      ]
+    }
+  }
+}

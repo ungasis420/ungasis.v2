@@ -1,0 +1,1951 @@
+{
+  "meta": {
+    "type": "spells",
+    "patch": "7.1d",
+    "total": 10,
+    "schema_version": "9-layer-v1",
+    "generated": "2026-05-13",
+    "layers": [
+      "core_identity",
+      "rag_vector",
+      "knowledge_graph",
+      "gnn",
+      "realtime",
+      "feature_store",
+      "event_stream",
+      "neuro_symbolic",
+      "time_series"
+    ],
+    "note": "SYNTHESIZED: Rich descriptions from v1 + full 9-layer from v2. Teleport confirmed WR spell. Mark/Dash excluded (ARAM-only).",
+    "synthesized": true
+  },
+  "spells": [
+    {
+      "id": "flash",
+      "name": "Flash",
+      "category": "spell",
+      "subcategory": "mobility",
+      "tags": [
+        "blink",
+        "mobility",
+        "engage",
+        "escape",
+        "universal"
+      ],
+      "cooldown": "150s",
+      "best_for": [
+        "all champions"
+      ],
+      "synergy_tags": [
+        "nimbus_cloak",
+        "hexflash"
+      ],
+      "brief": "Blink a short distance in target direction.",
+      "full": "Teleport a short distance in the target direction. THE most important spell \u2014 taken by 99% of champions. Used for engage (Flash+R combos), escape, dodging skillshots, repositioning. 150 second cooldown means tracking enemy Flash is critical.",
+      "embedding_text": "Flash is a summoner spell in Wild Rift. Cooldown: 150s. Blink a short distance in target direction. Teleport a short distance in the target direction. THE most important spell \u2014 taken by 99% of champions. Used for engage (Flash+R combos), escape, dodging skillshots, repositioning. 150 second cooldown means tracking enemy Flash is critical. Best for: all champions. Tags: blink, mobility, engage, escape, universal.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:flash",
+        "properties": {
+          "cooldown": "150s",
+          "subcategory": "mobility",
+          "pick_rate": 0.97
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:nimbus_cloak",
+          "weight": 0.9,
+          "context": "Nimbus Cloak grants MS burst after Flash",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:malphite",
+          "weight": 0.95,
+          "context": "Flash+R unavoidable AoE knockup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:annie",
+          "weight": 0.95,
+          "context": "Flash+Tibbers instant AoE stun",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:kennen",
+          "weight": 0.9,
+          "context": "Flash+R AoE stun in team fights",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          150.0,
+          0.97
+        ],
+        "neighbor_ids": [
+          "rune:nimbus_cloak",
+          "champ:malphite",
+          "champ:annie",
+          "champ:kennen"
+        ],
+        "node_label": "universal_mobility",
+        "edge_weights": {
+          "rune:nimbus_cloak": 0.9,
+          "champ:malphite": 0.95,
+          "champ:annie": 0.95,
+          "champ:kennen": 0.9
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.97,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.96,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.97,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.97,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 1.0,
+          "mid": 1.0,
+          "late": 1.0
+        },
+        "role_fit": {
+          "baron": 1.0,
+          "jungle": 1.0,
+          "mid": 1.0,
+          "duo": 1.0,
+          "support": 1.0
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "available",
+            "type": "spell_ready",
+            "impact": "high",
+            "description": "Flash enables Flash+R combos, escapes, repositioning. Track enemy Flash CD (150s)."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "save",
+            "action": "Save Flash for escaping ganks or securing First Blood."
+          },
+          "mid": {
+            "priority": "engage",
+            "action": "Use Flash for Flash+R engages on grouped enemies."
+          },
+          "late": {
+            "priority": "critical",
+            "action": "Flash is game-deciding. One Flash+R can win a team fight."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "always",
+            "action": "take_flash",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:flash",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.97
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.97
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.97
+          }
+        ]
+      }
+    },
+    {
+      "id": "ignite",
+      "name": "Ignite",
+      "category": "spell",
+      "subcategory": "damage",
+      "tags": [
+        "true_damage",
+        "dot",
+        "grievous_wounds",
+        "anti_heal",
+        "kill_pressure",
+        "aggressive"
+      ],
+      "cooldown": "90s",
+      "best_for": [
+        "assassins",
+        "aggressive supports",
+        "baron lane fighters"
+      ],
+      "synergy_tags": [
+        "electrocute",
+        "cheap_shot",
+        "coup_de_grace"
+      ],
+      "brief": "60 true damage over 5s + 50% Grievous Wounds.",
+      "full": "Deal 60 true damage over 5 seconds to target enemy champion and apply 50% Grievous Wounds (reduces all healing received by 50%). Best for kill lanes, assassins, aggressive supports. Secures kills on low-HP targets and cuts enemy healing.",
+      "embedding_text": "Ignite is a summoner spell in Wild Rift. Cooldown: 90s. 60 true damage over 5s + 50% Grievous Wounds. Deal 60 true damage over 5 seconds to target enemy champion and apply 50% Grievous Wounds (reduces all healing received by 50%). Best for kill lanes, assassins, aggressive supports. Secures kills on low-HP targets and cuts enemy healing. Best for: assassins, aggressive supports, baron lane fighters. Tags: true_damage, dot, grievous_wounds, anti_heal, kill_pressure, aggressive.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:ignite",
+        "properties": {
+          "cooldown": "90s",
+          "subcategory": "damage",
+          "pick_rate": 0.35
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:electrocute",
+          "weight": 0.85,
+          "context": "Ignite + Electrocute burst secures early kills",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "spell:heal",
+          "weight": 0.85,
+          "context": "GW reduces Heal effectiveness by 50%",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:soraka",
+          "weight": 0.8,
+          "context": "GW cuts Soraka healing significantly",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:aatrox",
+          "weight": 0.75,
+          "context": "GW reduces Aatrox drain-tank sustain",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:coup_de_grace",
+          "weight": 0.8,
+          "context": "Ignite DoT + Coup de Grace execute overlap",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          1.0,
+          0.3,
+          1.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          90.0,
+          0.35
+        ],
+        "neighbor_ids": [
+          "rune:electrocute",
+          "spell:heal",
+          "champ:soraka",
+          "champ:aatrox",
+          "rune:coup_de_grace"
+        ],
+        "node_label": "aggressive_damage",
+        "edge_weights": {
+          "rune:electrocute": 0.85,
+          "spell:heal": 0.85,
+          "champ:soraka": 0.8,
+          "champ:aatrox": 0.75,
+          "rune:coup_de_grace": 0.8
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.35,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.34,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.35,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.35,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "true",
+        "scaling": {
+          "early": 0.9,
+          "mid": 0.6,
+          "late": 0.4
+        },
+        "role_fit": {
+          "baron": 0.6,
+          "jungle": 0.1,
+          "mid": 0.8,
+          "duo": 0.3,
+          "support": 0.7
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_1",
+            "type": "kill_pressure",
+            "impact": "high",
+            "description": "Ignite provides kill threat from level 1."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "kill",
+            "action": "Use Ignite during all-ins to secure kills."
+          },
+          "mid": {
+            "priority": "anti_heal",
+            "action": "Save for high-value targets with healing."
+          },
+          "late": {
+            "priority": "execute",
+            "action": "Use on priority target during team fight."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "enemy_has_2+_healers",
+            "action": "take_ignite",
+            "confidence": 0.9
+          },
+          {
+            "condition": "playing_assassin_mid",
+            "action": "take_ignite",
+            "confidence": 0.85
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:ignite",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.34
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.35
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "heal",
+      "name": "Heal",
+      "category": "spell",
+      "subcategory": "sustain",
+      "tags": [
+        "heal",
+        "movement_speed",
+        "duo",
+        "adc",
+        "safety"
+      ],
+      "cooldown": "120s",
+      "best_for": [
+        "ADCs",
+        "Dragon Lane"
+      ],
+      "synergy_tags": [
+        "fleet_footwork",
+        "legend_bloodline"
+      ],
+      "brief": "Restore 80-360 HP + 30% bonus MS for 1s to you and nearest ally.",
+      "full": "Restore 80-360 HP (scales with level) to yourself and the nearest wounded allied champion. Also grants both of you 30% bonus movement speed for 1 second. Standard ADC spell. Note: Heal has reduced effect on allies recently healed by another Heal \u2014 don't stack two Heals in bot lane.",
+      "embedding_text": "Heal is a summoner spell in Wild Rift. Cooldown: 120s. Restore 80-360 HP + 30% bonus MS for 1s to you and nearest ally. Restore 80-360 HP (scales with level) to yourself and the nearest wounded allied champion. Also grants both of you 30% bonus movement speed for 1 second. Standard ADC spell. Note: Heal has reduced effect on allies recently healed by another Heal \u2014 don't stack two Heals in bot lane. Best for: ADCs, Dragon Lane. Tags: heal, movement_speed, duo, adc, safety.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:heal",
+        "properties": {
+          "cooldown": "120s",
+          "subcategory": "sustain",
+          "pick_rate": 0.28
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:fleet_footwork",
+          "weight": 0.7,
+          "context": "Double sustain in lane",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "spell:ignite",
+          "weight": 0.85,
+          "context": "Ignite GW reduces Heal by 50%",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:revitalize",
+          "weight": 0.65,
+          "context": "Revitalize amplifies Heal by 5-15%",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "ANTI_SYNERGY",
+          "target_node_id": "spell:heal",
+          "weight": 1.0,
+          "context": "Two Heals in lane reduces effectiveness",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          0.3,
+          0.0,
+          120.0,
+          0.28
+        ],
+        "neighbor_ids": [
+          "rune:fleet_footwork",
+          "spell:ignite",
+          "rune:revitalize",
+          "spell:heal"
+        ],
+        "node_label": "defensive_sustain",
+        "edge_weights": {
+          "rune:fleet_footwork": 0.7,
+          "spell:ignite": 0.85,
+          "rune:revitalize": 0.65,
+          "spell:heal": 1.0
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.28,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.27,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.28,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.28,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.7,
+          "mid": 0.8,
+          "late": 0.9
+        },
+        "role_fit": {
+          "baron": 0.1,
+          "jungle": 0.0,
+          "mid": 0.2,
+          "duo": 0.95,
+          "support": 0.3
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_scaling",
+            "type": "heal_scaling",
+            "impact": "medium",
+            "description": "Heal scales 80-360 with level."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "survive",
+            "action": "Save Heal for surviving all-ins or ganks."
+          },
+          "mid": {
+            "priority": "skirmish",
+            "action": "Use during Dragon fights or 2v2 skirmishes."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Heal during team fights for emergency HP."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "playing_adc",
+            "action": "take_heal",
+            "confidence": 0.85
+          },
+          {
+            "condition": "support_already_has_heal",
+            "action": "take_barrier_instead",
+            "confidence": 0.9
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:heal",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.3
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.29
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.28
+          }
+        ]
+      }
+    },
+    {
+      "id": "exhaust",
+      "name": "Exhaust",
+      "category": "spell",
+      "subcategory": "defensive",
+      "tags": [
+        "slow",
+        "damage_reduction",
+        "anti_carry",
+        "peel",
+        "support",
+        "defensive"
+      ],
+      "cooldown": "105s",
+      "best_for": [
+        "supports",
+        "vs assassins",
+        "vs divers"
+      ],
+      "synergy_tags": [
+        "guardian",
+        "enchanter_builds",
+        "aery"
+      ],
+      "brief": "Reduce target's MS by 20% + damage dealt by 40% for 2.5s.",
+      "full": "Reduce target enemy champion's movement speed by 20% and damage dealt by 40% for 2.5 seconds. THE anti-carry spell. Shuts down enemy assassins, ADCs, and divers. Best on supports vs dive/assassin comps.",
+      "embedding_text": "Exhaust is a summoner spell in Wild Rift. Cooldown: 105s. Reduce target's MS by 20% + damage dealt by 40% for 2.5s. Reduce target enemy champion's movement speed by 20% and damage dealt by 40% for 2.5 seconds. THE anti-carry spell. Shuts down enemy assassins, ADCs, and divers. Best on supports vs dive/assassin comps. Best for: supports, vs assassins, vs divers. Tags: slow, damage_reduction, anti_carry, peel, support, defensive.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:exhaust",
+        "properties": {
+          "cooldown": "105s",
+          "subcategory": "defensive",
+          "pick_rate": 0.22
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:zed",
+          "weight": 0.9,
+          "context": "40% damage reduction nullifies Zed R burst",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:katarina",
+          "weight": 0.85,
+          "context": "Exhaust during Katarina R reduces damage by 40%",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:guardian",
+          "weight": 0.75,
+          "context": "Guardian shield + Exhaust = double carry protection",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:rengar",
+          "weight": 0.85,
+          "context": "Exhaust on Rengar during leap negates one-shot",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:cheap_shot",
+          "weight": 0.7,
+          "context": "Exhaust slow enables Cheap Shot true damage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.4,
+          0.0,
+          0.2,
+          0.0,
+          1.0,
+          0.0,
+          105.0,
+          0.22
+        ],
+        "neighbor_ids": [
+          "champ:zed",
+          "champ:katarina",
+          "rune:guardian",
+          "champ:rengar",
+          "rune:cheap_shot"
+        ],
+        "node_label": "defensive_peel",
+        "edge_weights": {
+          "champ:zed": 0.9,
+          "champ:katarina": 0.85,
+          "rune:guardian": 0.75,
+          "champ:rengar": 0.85,
+          "rune:cheap_shot": 0.7
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.22,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.21,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.22,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.22,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.6,
+          "mid": 0.8,
+          "late": 1.0
+        },
+        "role_fit": {
+          "baron": 0.1,
+          "jungle": 0.0,
+          "mid": 0.2,
+          "duo": 0.3,
+          "support": 0.95
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "enemy_assassin_ult",
+            "type": "counter_play",
+            "impact": "high",
+            "description": "Exhaust the assassin during their burst combo."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "peel",
+            "action": "Save Exhaust for enemy all-ins or ganks."
+          },
+          "mid": {
+            "priority": "anti_dive",
+            "action": "Exhaust the diver targeting your ADC."
+          },
+          "late": {
+            "priority": "protect_carry",
+            "action": "Exhaust the biggest threat to your carry."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "enemy_has_2+_assassins",
+            "action": "take_exhaust",
+            "confidence": 0.95
+          },
+          {
+            "condition": "playing_enchanter_support",
+            "action": "take_exhaust",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:exhaust",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.21
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.22
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.22
+          }
+        ]
+      }
+    },
+    {
+      "id": "barrier",
+      "name": "Barrier",
+      "category": "spell",
+      "subcategory": "defensive",
+      "tags": [
+        "shield",
+        "anti_burst",
+        "solo",
+        "safety",
+        "mid_lane"
+      ],
+      "cooldown": "90s",
+      "best_for": [
+        "mid laners vs burst",
+        "Orianna",
+        "Syndra",
+        "Lux"
+      ],
+      "synergy_tags": [
+        "bone_plating",
+        "crown",
+        "nullifying_orb"
+      ],
+      "brief": "Gain shield absorbing 115-465 damage for 2s.",
+      "full": "Gain a shield that absorbs 115-465 damage (scales with level) for 2 seconds. Shorter cooldown than Heal (90s vs 120s) and bigger personal shield. Best for mid laners vs burst where you only need to protect yourself.",
+      "embedding_text": "Barrier is a summoner spell in Wild Rift. Cooldown: 90s. Gain shield absorbing 115-465 damage for 2s. Gain a shield that absorbs 115-465 damage (scales with level) for 2 seconds. Shorter cooldown than Heal (90s vs 120s) and bigger personal shield. Best for mid laners vs burst where you only need to protect yourself. Best for: mid laners vs burst, Orianna, Syndra, Lux. Tags: shield, anti_burst, solo, safety, mid_lane.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:barrier",
+        "properties": {
+          "cooldown": "90s",
+          "subcategory": "defensive",
+          "pick_rate": 0.12
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:zed",
+          "weight": 0.8,
+          "context": "Barrier absorbs Zed R pop damage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:fizz",
+          "weight": 0.8,
+          "context": "Barrier absorbs Fizz R shark damage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:bone_plating",
+          "weight": 0.75,
+          "context": "Bone Plating + Barrier = double anti-burst",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "item:crown_of_the_shattered_queen",
+          "weight": 0.7,
+          "context": "Crown + Barrier = triple anti-burst",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.8,
+          1.0,
+          90.0,
+          0.12
+        ],
+        "neighbor_ids": [
+          "champ:zed",
+          "champ:fizz",
+          "rune:bone_plating",
+          "item:crown_of_the_shattered_queen"
+        ],
+        "node_label": "solo_defense",
+        "edge_weights": {
+          "champ:zed": 0.8,
+          "champ:fizz": 0.8,
+          "rune:bone_plating": 0.75,
+          "item:crown_of_the_shattered_queen": 0.7
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.12,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.11,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.12,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.12,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.6,
+          "mid": 0.8,
+          "late": 0.9
+        },
+        "role_fit": {
+          "baron": 0.2,
+          "jungle": 0.0,
+          "mid": 0.85,
+          "duo": 0.4,
+          "support": 0.1
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "vs_burst",
+            "type": "defensive",
+            "impact": "high",
+            "description": "Barrier is strongest vs burst combos."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "survive_burst",
+            "action": "Hold for enemy all-in burst combo."
+          },
+          "mid": {
+            "priority": "survive_roams",
+            "action": "Barrier during skirmishes."
+          },
+          "late": {
+            "priority": "survive_team_fight",
+            "action": "Barrier when focused in team fights."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "playing_mid_vs_assassin",
+            "action": "take_barrier",
+            "confidence": 0.8
+          },
+          {
+            "condition": "support_already_has_heal",
+            "action": "take_barrier_on_adc",
+            "confidence": 0.85
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:barrier",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.13
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.12
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "category": "spell",
+      "subcategory": "mobility",
+      "tags": [
+        "movement_speed",
+        "chase",
+        "kite",
+        "extended",
+        "no_unit_collision"
+      ],
+      "cooldown": "90s",
+      "best_for": [
+        "Darius",
+        "Singed",
+        "Hecarim",
+        "Olaf",
+        "Tryndamere"
+      ],
+      "synergy_tags": [
+        "nimbus_cloak",
+        "celerity",
+        "phase_rush"
+      ],
+      "brief": "Large burst of MS decaying to 25% bonus for 6s.",
+      "full": "Gain a large burst of movement speed that decays to 25% bonus movement speed over 6 seconds. Also grants the ability to pass through units (no creep block). Best for champions who need to stick to targets or kite.",
+      "embedding_text": "Ghost is a summoner spell in Wild Rift. Cooldown: 90s. Large burst of MS decaying to 25% bonus for 6s. Gain a large burst of movement speed that decays to 25% bonus movement speed over 6 seconds. Also grants the ability to pass through units (no creep block). Best for champions who need to stick to targets or kite. Best for: Darius, Singed, Hecarim, Olaf, Tryndamere. Tags: movement_speed, chase, kite, extended, no_unit_collision.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:ghost",
+        "properties": {
+          "cooldown": "90s",
+          "subcategory": "mobility",
+          "pick_rate": 0.08
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:darius",
+          "weight": 0.95,
+          "context": "Ghost lets Darius stick for 5 bleed stacks + dunk",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:hecarim",
+          "weight": 0.9,
+          "context": "Hecarim passive converts MS to AD",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:nimbus_cloak",
+          "weight": 0.85,
+          "context": "Ghost triggers Nimbus for more MS",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:phase_rush",
+          "weight": 0.8,
+          "context": "Ghost + Phase Rush = extreme kiting/chasing MS",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          90.0,
+          0.08
+        ],
+        "neighbor_ids": [
+          "champ:darius",
+          "champ:hecarim",
+          "rune:nimbus_cloak",
+          "rune:phase_rush"
+        ],
+        "node_label": "extended_mobility",
+        "edge_weights": {
+          "champ:darius": 0.95,
+          "champ:hecarim": 0.9,
+          "rune:nimbus_cloak": 0.85,
+          "rune:phase_rush": 0.8
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.08,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.07,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.9
+        },
+        "role_fit": {
+          "baron": 0.7,
+          "jungle": 0.4,
+          "mid": 0.2,
+          "duo": 0.1,
+          "support": 0.05
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "ghost_active",
+            "type": "chase_power",
+            "impact": "high",
+            "description": "Ghost makes juggernauts nearly uncatchable for 6 seconds."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "trade",
+            "action": "Pop Ghost for extended trades in baron lane."
+          },
+          "mid": {
+            "priority": "flank",
+            "action": "Ghost for flanking in team fights."
+          },
+          "late": {
+            "priority": "engage",
+            "action": "Ghost + Flash for unavoidable engage."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "playing_darius_or_garen",
+            "action": "take_ghost",
+            "confidence": 0.9
+          },
+          {
+            "condition": "playing_hecarim",
+            "action": "take_ghost",
+            "confidence": 0.85
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:ghost",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.07
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.08
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.08
+          }
+        ]
+      }
+    },
+    {
+      "id": "smite",
+      "name": "Smite",
+      "category": "spell",
+      "subcategory": "jungle",
+      "tags": [
+        "true_damage",
+        "jungle",
+        "objective",
+        "monster",
+        "mandatory"
+      ],
+      "cooldown": "10s",
+      "best_for": [
+        "junglers only"
+      ],
+      "synergy_tags": [
+        "jungle_items"
+      ],
+      "brief": "440-1000 true damage to monster/minion. Heals 70 HP. Mandatory for junglers.",
+      "full": "Deal 440-1000 true damage (scales with level) to a large or epic monster or minion. Heals 70 HP on cast. Upgrades to Chilling Smite (slow enemy champion) or Challenging Smite (damage reduction) after killing 4 large monsters. MANDATORY for junglers \u2014 required for jungle item upgrades and objective securing.",
+      "embedding_text": "Smite is a summoner spell in Wild Rift. Cooldown: 10s. 440-1000 true damage to monster/minion. Heals 70 HP. Mandatory for junglers. Deal 440-1000 true damage (scales with level) to a large or epic monster or minion. Heals 70 HP on cast. Upgrades to Chilling Smite (slow enemy champion) or Challenging Smite (damage reduction) after killing 4 large monsters. MANDATORY for junglers \u2014 required for jungle item upgrades and objective securing. Best for: junglers only. Tags: true_damage, jungle, objective, monster, mandatory.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:smite",
+        "properties": {
+          "cooldown": "10s",
+          "subcategory": "jungle",
+          "pick_rate": 0.2
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:lee_sin",
+          "weight": 0.95,
+          "context": "Smite mandatory for jungle Lee Sin",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:evelynn",
+          "weight": 0.95,
+          "context": "Smite mandatory for Evelynn jungle",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:conqueror",
+          "weight": 0.6,
+          "context": "Conqueror stacking in jungle fights + Smite for objective",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          10.0,
+          0.2
+        ],
+        "neighbor_ids": [
+          "champ:lee_sin",
+          "champ:evelynn",
+          "rune:conqueror"
+        ],
+        "node_label": "jungle_mandatory",
+        "edge_weights": {
+          "champ:lee_sin": 0.95,
+          "champ:evelynn": 0.95,
+          "rune:conqueror": 0.6
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.2,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.19,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.2,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.2,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "true",
+        "scaling": {
+          "early": 1.0,
+          "mid": 1.0,
+          "late": 1.0
+        },
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 1.0,
+          "mid": 0.0,
+          "duo": 0.0,
+          "support": 0.0
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "smite_upgrade",
+            "type": "jungle_upgrade",
+            "impact": "high",
+            "description": "After 4 large monster kills, Smite upgrades."
+          },
+          {
+            "trigger": "objective_spawn",
+            "type": "objective_secure",
+            "impact": "high",
+            "description": "Smite is primary objective securing tool."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "clear",
+            "action": "Use Smite on large monsters for faster clear + healing."
+          },
+          "mid": {
+            "priority": "objectives",
+            "action": "Save Smite for Dragon/Herald."
+          },
+          "late": {
+            "priority": "baron",
+            "action": "Baron Smite fights are most important."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "playing_jungle",
+            "action": "must_take_smite",
+            "confidence": 1.0
+          },
+          {
+            "condition": "not_jungle",
+            "action": "never_take_smite",
+            "confidence": 1.0
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:smite",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.2
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.2
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "id": "cleanse",
+      "name": "Cleanse",
+      "category": "spell",
+      "subcategory": "defensive",
+      "tags": [
+        "cleanse",
+        "cc_removal",
+        "niche"
+      ],
+      "cooldown": "120s",
+      "best_for": [
+        "vs heavy CC",
+        "alternative to QSS"
+      ],
+      "synergy_tags": [],
+      "brief": "Remove all CC effects.",
+      "full": "Remove all crowd control effects (stuns, roots, slows, suppressions) from yourself. Alternative to Quicksilver Enchant. Niche pick \u2014 most players prefer QSS enchant + different summoner spell.",
+      "embedding_text": "Cleanse is a summoner spell in Wild Rift. Cooldown: 120s. Remove all CC effects. Remove all crowd control effects (stuns, roots, slows, suppressions) from yourself. Alternative to Quicksilver Enchant. Niche pick \u2014 most players prefer QSS enchant + different summoner spell. Best for: vs heavy CC, alternative to QSS. Tags: cleanse, cc_removal, niche.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:cleanse",
+        "properties": {
+          "cooldown": "120s",
+          "subcategory": "defensive",
+          "pick_rate": 0.02
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:leona",
+          "weight": 0.8,
+          "context": "Cleanse removes Leona stun chain",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:ashe",
+          "weight": 0.75,
+          "context": "Cleanse removes Ashe R stun",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "ANTI_SYNERGY",
+          "target_node_id": "enchant:quicksilver_enchant",
+          "weight": 0.9,
+          "context": "Redundant \u2014 both provide CC removal",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          120.0,
+          0.02
+        ],
+        "neighbor_ids": [
+          "champ:leona",
+          "champ:ashe",
+          "enchant:quicksilver_enchant"
+        ],
+        "node_label": "niche_cleanse",
+        "edge_weights": {
+          "champ:leona": 0.8,
+          "champ:ashe": 0.75,
+          "enchant:quicksilver_enchant": 0.9
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.02,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.01,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.02,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.02,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.3,
+          "mid": 0.5,
+          "late": 0.7
+        },
+        "role_fit": {
+          "baron": 0.1,
+          "jungle": 0.0,
+          "mid": 0.3,
+          "duo": 0.3,
+          "support": 0.05
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "vs_cc_comp",
+            "type": "counter_pick",
+            "impact": "medium",
+            "description": "Valuable vs CC-heavy teams."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "survive_cc",
+            "action": "Hold for critical CC."
+          },
+          "mid": {
+            "priority": "cc_removal",
+            "action": "Cleanse the most dangerous CC."
+          },
+          "late": {
+            "priority": "team_fight_survival",
+            "action": "Cleanse first hard CC in team fights."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "enemy_has_3+_hard_cc",
+            "action": "consider_cleanse",
+            "confidence": 0.6
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:cleanse",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.02
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.02
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.02
+          }
+        ]
+      }
+    },
+    {
+      "id": "clarity",
+      "name": "Clarity",
+      "category": "spell",
+      "subcategory": "sustain",
+      "tags": [
+        "mana",
+        "restore",
+        "niche",
+        "aram"
+      ],
+      "cooldown": "120s",
+      "best_for": [
+        "ARAM"
+      ],
+      "synergy_tags": [],
+      "brief": "Restore mana to you and nearby allies.",
+      "full": "Restore a portion of your maximum mana and the mana of nearby allied champions. Niche \u2014 mostly used in ARAM mode. Not recommended for ranked Summoner's Rift.",
+      "embedding_text": "Clarity is a summoner spell in Wild Rift. Cooldown: 120s. Restore mana to you and nearby allies. Restore a portion of your maximum mana and the mana of nearby allied champions. Niche \u2014 mostly used in ARAM mode. Not recommended for ranked Summoner's Rift. Best for: ARAM. Tags: mana, restore, niche, aram.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:clarity",
+        "properties": {
+          "cooldown": "120s",
+          "subcategory": "sustain",
+          "pick_rate": 0.01
+        }
+      },
+      "graph_edges": [],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          120.0,
+          0.01
+        ],
+        "neighbor_ids": [],
+        "node_label": "aram_niche",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.01,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.0,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.01,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.01,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.3,
+          "mid": 0.2,
+          "late": 0.1
+        },
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.05,
+          "duo": 0.0,
+          "support": 0.05
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "aram_only",
+            "type": "mana_sustain",
+            "impact": "low",
+            "description": "Only useful in ARAM."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "aram_mana",
+            "action": "ARAM: use when team low mana before fight."
+          },
+          "mid": {
+            "priority": "aram_mana",
+            "action": "ARAM: coordinate with team fights."
+          },
+          "late": {
+            "priority": "irrelevant",
+            "action": "Not recommended for ranked."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "playing_ranked",
+            "action": "never_take_clarity",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:clarity",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.01
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.01
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.01
+          }
+        ]
+      }
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "category": "spell",
+      "subcategory": "mobility",
+      "tags": [
+        "teleport",
+        "map_pressure",
+        "split_push",
+        "global",
+        "channel"
+      ],
+      "cooldown": "150s",
+      "best_for": [
+        "baron laners",
+        "split-pushers",
+        "macro-focused players"
+      ],
+      "synergy_tags": [
+        "demolish",
+        "hullbreaker"
+      ],
+      "brief": "Channel 3s then blink to target allied champion, ward, or turret (turrets only before 6:00).",
+      "full": "Active: After channeling for 3 seconds, remove any homestart or homeguard buff and blink to the target allied champion or ward. Your destination will be visibly marked to enemies. Passive (0-6:00 elapsed): You can also target allied turrets. Cooldown: 150 seconds. Best for baron laners who split-push then join team fights. Provides global map pressure.",
+      "embedding_text": "Teleport is a summoner spell in Wild Rift. Cooldown: 150s. Channel 3s then blink to target allied champion, ward, or turret (turrets only before 6:00). Active: After channeling for 3 seconds, remove any homestart or homeguard buff and blink to the target allied champion or ward. Your destination will be visibly marked to enemies. Passive (0-6:00 elapsed): You can also target allied turrets. Cooldown: 150 seconds. Best for baron laners who split-push then join team fights. Provides global map pressure. Best for: baron laners, split-pushers, macro-focused players. Tags: teleport, map_pressure, split_push, global, channel.",
+      "graph_node": {
+        "node_type": "spell",
+        "node_id": "spell:teleport",
+        "properties": {
+          "cooldown": "150s",
+          "subcategory": "mobility",
+          "pick_rate": 0.08
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "rune:demolish",
+          "weight": 0.8,
+          "context": "TP + Demolish = split then join fights after tower",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "item:hullbreaker",
+          "weight": 0.85,
+          "context": "Hullbreaker split + TP to join fights",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:fiora",
+          "weight": 0.85,
+          "context": "Fiora split + TP when team needs you",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:nasus",
+          "weight": 0.8,
+          "context": "Nasus farm Q stacks + TP to fights",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "champ:tryndamere",
+          "weight": 0.85,
+          "context": "Tryndamere split + TP = constant pressure",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          150.0,
+          0.08
+        ],
+        "neighbor_ids": [
+          "rune:demolish",
+          "item:hullbreaker",
+          "champ:fiora",
+          "champ:nasus",
+          "champ:tryndamere"
+        ],
+        "node_label": "global_mobility",
+        "edge_weights": {
+          "rune:demolish": 0.8,
+          "item:hullbreaker": 0.85,
+          "champ:fiora": 0.85,
+          "champ:nasus": 0.8,
+          "champ:tryndamere": 0.85
+        }
+      },
+      "realtime": {
+        "pick_rate": 0.08,
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.07,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.9,
+          "mid": 0.7,
+          "late": 0.8
+        },
+        "role_fit": {
+          "baron": 0.9,
+          "jungle": 0.0,
+          "mid": 0.3,
+          "duo": 0.1,
+          "support": 0.1
+        },
+        "complexity": 0.3,
+        "slot_value": "summoner_spell"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "available",
+            "type": "map_pressure",
+            "impact": "high",
+            "description": "TP available means safe split-push \u2014 team knows you join in 3 seconds."
+          },
+          {
+            "trigger": "pre_6_min",
+            "type": "turret_tp",
+            "impact": "medium",
+            "description": "Before 6:00, TP can target allied turrets for fast lane returns."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "lane_return",
+            "action": "TP to lane after first back to not lose CS/XP. Before 6:00, TP to turret."
+          },
+          "mid": {
+            "priority": "split_join",
+            "action": "Split-push a side lane, then TP to team when fight breaks out."
+          },
+          "late": {
+            "priority": "macro",
+            "action": "TP is game-deciding. Split to draw pressure, TP to Baron/Dragon fights."
+          }
+        }
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "playing_split_push_baron",
+            "action": "take_teleport",
+            "confidence": 0.85
+          },
+          {
+            "condition": "playing_nasus_or_kayle",
+            "action": "take_teleport",
+            "confidence": 0.9
+          },
+          {
+            "condition": "team_needs_global_pressure",
+            "action": "take_teleport",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "spell:teleport",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.06
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.07
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.08
+          }
+        ]
+      }
+    }
+  ]
+}

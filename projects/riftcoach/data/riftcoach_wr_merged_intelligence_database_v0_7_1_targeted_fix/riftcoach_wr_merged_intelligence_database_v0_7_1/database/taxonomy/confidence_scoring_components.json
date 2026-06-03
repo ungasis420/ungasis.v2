@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "components": [
+    "source_confidence",
+    "patch_freshness",
+    "mechanic_match",
+    "role_lane_fit",
+    "data_completeness",
+    "meta_support",
+    "generated_logic_risk"
+  ],
+  "scale": "0.0_to_1.0",
+  "recommended_formula": "0.30*source_confidence + 0.20*patch_freshness + 0.20*mechanic_match + 0.15*role_lane_fit + 0.10*data_completeness + 0.05*meta_support"
+}

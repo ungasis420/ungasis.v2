@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 224 71% 4%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 220 8% 46%;
+  --card: 0 0% 100%;
+  --card-foreground: 224 71% 4%;
+  --border: 220 13% 91%;
+  --ring: 224 76% 48%;
+}
+
+.dark {
+  --background: 222 84% 5%;
+  --foreground: 210 40% 98%;
+  --muted: 215 28% 17%;
+  --muted-foreground: 217 10% 65%;
+  --card: 222 84% 6%;
+  --card-foreground: 210 40% 98%;
+  --border: 215 28% 17%;
+  --ring: 239 84% 67%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   PHASE 1.0 — Cinematic Foundation
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+/* Frosted glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 18px 55px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10);
+}
+
+/* Subtle hover lift */
+.glass-hover {
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1),
+              background 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-hover:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Soft glow for active elements */
+.glow {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 14px 45px rgba(99, 102, 241, 0.18);
+}
+
+/* Hex clip-path helpers */
+.hex-frame {
+  clip-path: polygon(25% 6.5%, 75% 6.5%, 100% 50%, 75% 93.5%, 25% 93.5%, 0% 50%);
+  border-radius: 16px;
+}
+
+/* Thin scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+}
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   PHASE 1.2 — Animated Background Orbs
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.5), transparent 70%);
+  top: -10%;
+  left: -5%;
+  animation: drift-1 22s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(217, 70, 239, 0.4), transparent 70%);
+  top: 10%;
+  right: -8%;
+  animation: drift-2 26s ease-in-out infinite alternate;
+}
+
+.orb-3 {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.35), transparent 70%);
+  bottom: -5%;
+  left: 30%;
+  animation: drift-3 30s ease-in-out infinite alternate;
+}
+
+.orb-4 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent 70%);
+  top: 45%;
+  right: 15%;
+  animation: drift-4 24s ease-in-out infinite alternate;
+}
+
+.orb-5 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(30, 64, 175, 0.25), transparent 70%);
+  top: 30%;
+  left: -10%;
+  animation: drift-5 28s ease-in-out infinite alternate;
+}
+
+@keyframes drift-1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(80px, 40px) scale(1.08); }
+  100% { transform: translate(-30px, 70px) scale(0.95); }
+}
+
+@keyframes drift-2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-60px, 50px) scale(1.05); }
+  100% { transform: translate(40px, -30px) scale(0.97); }
+}
+
+@keyframes drift-3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(50px, -40px) scale(1.06); }
+  100% { transform: translate(-40px, 20px) scale(0.96); }
+}
+
+@keyframes drift-4 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-40px, -30px) scale(1.04); }
+  100% { transform: translate(60px, 40px) scale(0.98); }
+}
+
+@keyframes drift-5 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(70px, -50px) scale(1.07); }
+  100% { transform: translate(-50px, 60px) scale(0.94); }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   PHASE 1.2 — Tier Badge Glow Animations
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.tier-pulse {
+  animation: tier-glow 2.4s ease-in-out infinite;
+}
+
+@keyframes tier-glow {
+  0%, 100% { filter: brightness(1); }
+  50%      { filter: brightness(1.25); }
+}
+
+.tier-ring-gold {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), transparent 60%);
+  animation: ring-spin 4s linear infinite;
+}
+
+.tier-ring-orange {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.25), transparent 60%);
+  animation: ring-spin 5s linear infinite;
+}
+
+@keyframes ring-spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════════
+   PHASE 1.2 — Shimmer Skeleton
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 40%,
+    rgba(255, 255, 255, 0.10) 50%,
+    rgba(255, 255, 255, 0.06) 60%,
+    transparent 100%
+  );
+  animation: shimmer-sweep 1.8s ease-in-out infinite;
+}
+
+@keyframes shimmer-sweep {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

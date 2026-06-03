@@ -1,0 +1,17 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "templates": [
+    {
+      "id": "explain_relationship_path",
+      "prompt": "Explain this graph path in beginner-friendly Wild Rift coaching language. Use source_status and confidence. Do not claim generated_rule edges are official data."
+    },
+    {
+      "id": "recommend_from_graph_context",
+      "prompt": "Use the selected champion, role/lane, enemy threat, verified mechanics, and graph relationships to recommend a contextual build. Obey build legality, rune legality, patch version, and source policy."
+    },
+    {
+      "id": "audit_relationship",
+      "prompt": "Audit this relationship edge. Check IDs, relationship_type, reason_codes, source_status, confidence, patch_version, and whether generated strategy is labeled correctly."
+    }
+  ]
+}

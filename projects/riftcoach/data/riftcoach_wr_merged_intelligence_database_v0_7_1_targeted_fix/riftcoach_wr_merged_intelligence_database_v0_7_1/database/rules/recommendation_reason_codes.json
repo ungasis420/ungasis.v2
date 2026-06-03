@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "reason_codes": [
+    {
+      "code": "role_fit",
+      "description": "Role fit"
+    },
+    {
+      "code": "lane_fit",
+      "description": "Lane fit"
+    },
+    {
+      "code": "class_fit",
+      "description": "Class fit"
+    },
+    {
+      "code": "damage_profile_fit",
+      "description": "Damage profile fit"
+    },
+    {
+      "code": "defense_need_fit",
+      "description": "Defense need fit"
+    },
+    {
+      "code": "anti_heal_needed",
+      "description": "Anti heal needed"
+    },
+    {
+      "code": "anti_shield_needed",
+      "description": "Anti shield needed"
+    },
+    {
+      "code": "anti_burst_needed",
+      "description": "Anti burst needed"
+    },
+    {
+      "code": "anti_crit_needed",
+      "description": "Anti crit needed"
+    },
+    {
+      "code": "anti_tank_needed",
+      "description": "Anti tank needed"
+    },
+    {
+      "code": "mobility_needed",
+      "description": "Mobility needed"
+    },
+    {
+      "code": "engage_needed",
+      "description": "Engage needed"
+    },
+    {
+      "code": "peel_needed",
+      "description": "Peel needed"
+    },
+    {
+      "code": "waveclear_needed",
+      "description": "Waveclear needed"
+    },
+    {
+      "code": "scaling_needed",
+      "description": "Scaling needed"
+    },
+    {
+      "code": "early_pressure_needed",
+      "description": "Early pressure needed"
+    },
+    {
+      "code": "objective_control_needed",
+      "description": "Objective control needed"
+    },
+    {
+      "code": "support_item_slot_valid",
+      "description": "Support item slot valid"
+    },
+    {
+      "code": "boots_enchant_valid",
+      "description": "Boots enchant valid"
+    },
+    {
+      "code": "source_verified_build",
+      "description": "Source verified build"
+    },
+    {
+      "code": "generated_archetype_build",
+      "description": "Generated archetype build"
+    },
+    {
+      "code": "patch_changed_entity",
+      "description": "Patch changed entity"
+    },
+    {
+      "code": "low_confidence_warning",
+      "description": "Low confidence warning"
+    },
+    {
+      "code": "gold_affordability_fit",
+      "description": "Gold affordability fit"
+    },
+    {
+      "code": "cooldown_window_fit",
+      "description": "Cooldown window fit"
+    },
+    {
+      "code": "ability_effect_synergy",
+      "description": "Ability effect synergy"
+    },
+    {
+      "code": "enemy_threat_match",
+      "description": "Enemy threat match"
+    },
+    {
+      "code": "team_comp_fit",
+      "description": "Team comp fit"
+    }
+  ]
+}

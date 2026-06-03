@@ -1,0 +1,3050 @@
+{
+  "_meta": {
+    "game": "League of Legends: Wild Rift",
+    "patch": "7.1e",
+    "category": "Defense + Support + Boots + Enchantments + Components",
+    "total_items": 90,
+    "breakdown": {
+      "defense_upgraded": 24,
+      "support_upgraded": 7,
+      "support_starters": 4,
+      "boots": 8,
+      "enchantments": 11,
+      "components": 36
+    },
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/WR:Sunfire_Aegis",
+      "https://wiki.leagueoflegends.com/en-us/WR:Thornmail",
+      "https://www.wildriftfire.com/item-list",
+      "https://wr-meta.com/items/",
+      "https://www.riftgg.app/en/items"
+    ],
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "items": [
+    {
+      "id": "sunfire_aegis",
+      "name": "Sunfire Aegis",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 2900,
+      "sell": 2030,
+      "stats": {
+        "armor": 20,
+        "ability_haste": 15,
+        "health": 425
+      },
+      "gold_value": 2365,
+      "gold_efficiency_percent": 81.6,
+      "passives": [
+        {
+          "name": "Immolate",
+          "desc": "Deal 16-25 (+0.8% bonus HP) magic/s to nearby enemies. 130% vs monsters, 175-250% vs minions. Stacks to 4 (+11%/stack = 44% max)."
+        },
+        {
+          "name": "Flametouch",
+          "desc": "At max Immolate stacks, autos burn enemies for 50% Immolate damage over 3s."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Immolate item"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "immolate",
+        "armor",
+        "hp",
+        "waveclear",
+        "aoe_burn"
+      ],
+      "intended_users": [
+        "tanks",
+        "junglers",
+        "Amumu",
+        "Leona"
+      ],
+      "when_to_build": "Default first item for tanks",
+      "why_to_build": "Immolate clears waves; stacking damage adds up in extended fights",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "thornmail",
+      "name": "Thornmail",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "armor": 75,
+        "health": 200
+      },
+      "gold_value": 2541,
+      "gold_efficiency_percent": 94.1,
+      "passives": [
+        {
+          "name": "Thorns",
+          "desc": "When struck by auto, deal 20 (+6% armor)(+2% HP) magic damage to attacker."
+        },
+        {
+          "name": "Entwine",
+          "desc": "Being struck or dealing damage inflicts 50% Grievous Wounds for 3s."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Thorns item"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "thorns",
+        "grievous_wounds",
+        "anti_heal",
+        "anti_auto"
+      ],
+      "intended_users": [
+        "tanks_vs_auto_attackers"
+      ],
+      "when_to_build": "Enemy has 2+ auto-attack carries",
+      "why_to_build": "Highest armor + anti-heal + reflect damage",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "frozen_heart",
+      "name": "Frozen Heart",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "armor": 60,
+        "ability_haste": 20,
+        "mana": 300
+      },
+      "gold_value": 3150,
+      "gold_efficiency_percent": 116.7,
+      "passives": [
+        {
+          "name": "Winter's Caress",
+          "desc": "Reduce attack speed of nearby enemies by 15%."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "aura",
+        "anti_as",
+        "mana",
+        "ability_haste"
+      ],
+      "intended_users": [
+        "mana_tanks",
+        "Malphite",
+        "Alistar"
+      ],
+      "when_to_build": "Enemy has multiple AS-reliant champs",
+      "why_to_build": "AS reduction aura cripples attack speed carries",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "warmogs_armor",
+      "name": "Warmog's Armor",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "health": 800,
+        "ability_haste": 10
+      },
+      "gold_value": 2964,
+      "gold_efficiency_percent": 105.9,
+      "passives": [
+        {
+          "name": "Warmog's Heart",
+          "desc": "Regen 2.5% max HP/s when out of combat for 6s. Requires 1100 bonus HP to activate."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "health",
+        "regen",
+        "siege",
+        "sustain"
+      ],
+      "intended_users": [
+        "hp_stackers",
+        "siege_tanks"
+      ],
+      "when_to_build": "Extended sieges; need to heal between fights without recalling",
+      "why_to_build": "800 HP is highest single item; out-of-combat regen = infinite sustain",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "force_of_nature",
+      "name": "Force of Nature",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "magic_resist": 55,
+        "health": 350
+      },
+      "gold_value": 2266,
+      "gold_efficiency_percent": 80.9,
+      "passives": [
+        {
+          "name": "Absorb",
+          "desc": "Taking magic damage grants stacks (max 5). At 5 stacks: +15% MS and 20% magic damage reduction."
+        },
+        {
+          "name": "Base",
+          "desc": "+5% movement speed."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "magic_resist",
+        "ms",
+        "anti_ap",
+        "magic_reduction"
+      ],
+      "intended_users": [
+        "tanks_vs_ap",
+        "bruisers_vs_ap"
+      ],
+      "when_to_build": "Enemy has heavy sustained AP damage (Brand, Swain)",
+      "why_to_build": "Highest MR + magic damage reduction at stacks + MS",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "randuins_omen",
+      "name": "Randuin's Omen",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "armor": 55,
+        "health": 400
+      },
+      "gold_value": 2707,
+      "gold_efficiency_percent": 96.7,
+      "passives": [
+        {
+          "name": "Rock Solid",
+          "desc": "Reduce incoming auto-attack damage by up to 20% (scales with bonus HP)."
+        }
+      ],
+      "actives": [
+        {
+          "name": "Humility",
+          "desc": "Slow nearby enemies by 55% for 2s. 60s CD."
+        }
+      ],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "hp",
+        "anti_crit",
+        "slow_active"
+      ],
+      "intended_users": [
+        "tanks_vs_crit"
+      ],
+      "when_to_build": "Enemy has crit marksmen",
+      "why_to_build": "Rock Solid + active slow counters crit carries",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "dead_mans_plate",
+      "name": "Dead Man's Plate",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "armor": 40,
+        "health": 400
+      },
+      "gold_value": 2332,
+      "gold_efficiency_percent": 83.3,
+      "passives": [
+        {
+          "name": "Momentum",
+          "desc": "Moving generates stacks (max 100). At 100, next auto deals 40-100 bonus magic damage + slow 50% for 1s."
+        },
+        {
+          "name": "Base",
+          "desc": "+5% movement speed."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "hp",
+        "ms",
+        "roaming",
+        "engage"
+      ],
+      "intended_users": [
+        "roaming_tanks",
+        "engaging_tanks"
+      ],
+      "when_to_build": "Need mobility to roam/engage",
+      "why_to_build": "Momentum gives burst + slow for catching targets; MS for roaming",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "heartsteel",
+      "name": "Heartsteel",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "health": 800,
+        "ability_haste": 15
+      },
+      "gold_value": 3114,
+      "gold_efficiency_percent": 103.8,
+      "passives": [
+        {
+          "name": "Colossal Consumption",
+          "desc": "Charge for 3s near champions. Charged auto deals 6% max HP bonus magic damage and permanently grants HP based on target's max HP. 30s CD per target."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "health",
+        "infinite_scaling",
+        "stacking",
+        "hp"
+      ],
+      "intended_users": [
+        "hp_scaling_tanks",
+        "Cho'Gath",
+        "Sion"
+      ],
+      "when_to_build": "Game will go late; champion benefits from infinite HP scaling",
+      "why_to_build": "Only infinite HP scaling item; synergizes with HP-scaling abilities",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "amaranths_twinguard",
+      "name": "Amaranth's Twinguard",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "armor": 40,
+        "magic_resist": 40,
+        "health": 400
+      },
+      "gold_value": 3132,
+      "gold_efficiency_percent": 104.4,
+      "passives": [
+        {
+          "name": "Prism",
+          "desc": "In champion combat, gain stacking %armor and %MR (max 20% each) over 4s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "mr",
+        "hp",
+        "dual_resist",
+        "extended_fights"
+      ],
+      "intended_users": [
+        "tanks",
+        "bruisers",
+        "mixed_damage_enemy"
+      ],
+      "when_to_build": "Enemy has heavy mixed damage (AD + AP threats)",
+      "why_to_build": "Only item giving both armor + MR that scales in combat",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "hollow_radiance",
+      "name": "Hollow Radiance",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2900,
+      "sell": 2030,
+      "stats": {
+        "magic_resist": 40,
+        "health": 400,
+        "ability_haste": 15
+      },
+      "gold_value": 2582,
+      "gold_efficiency_percent": 89.0,
+      "passives": [
+        {
+          "name": "Deathfire",
+          "desc": "Immolate variant dealing magic damage to nearby enemies. Ability hits trigger burst of bonus damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Immolate item"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "immolate",
+        "mr",
+        "hp",
+        "ability_haste",
+        "waveclear"
+      ],
+      "intended_users": [
+        "tanks_vs_ap",
+        "ap_junglers"
+      ],
+      "when_to_build": "Need Immolate effect + MR (vs AP heavy)",
+      "why_to_build": "MR version of Sunfire; Immolate + ability burst for AP-heavy games",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kaenic_rookern",
+      "name": "Kaenic Rookern",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2900,
+      "sell": 2030,
+      "stats": {
+        "magic_resist": 60,
+        "health": 350
+      },
+      "gold_value": 2366,
+      "gold_efficiency_percent": 81.6,
+      "passives": [
+        {
+          "name": "Magebane",
+          "desc": "Gain a magic damage shield that regenerates after not taking magic damage for a period."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "magic_resist",
+        "shield",
+        "anti_ap",
+        "regen"
+      ],
+      "intended_users": [
+        "anyone_vs_heavy_ap"
+      ],
+      "when_to_build": "Enemy has burst AP (Annie, Syndra, Veigar)",
+      "why_to_build": "Magic shield blocks first AP rotation; highest MR with shield",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "abyssal_mask",
+      "name": "Abyssal Mask",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "magic_resist": 40,
+        "health": 350,
+        "ability_haste": 15
+      },
+      "gold_value": 2416,
+      "gold_efficiency_percent": 89.5,
+      "passives": [
+        {
+          "name": "Unmake",
+          "desc": "Nearby CC'd enemy champions take 10% increased magic damage from all sources."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "mr",
+        "hp",
+        "damage_amp",
+        "cc_synergy"
+      ],
+      "intended_users": [
+        "cc_tanks",
+        "Amumu",
+        "Leona",
+        "Nautilus"
+      ],
+      "when_to_build": "Team is AP-heavy and you provide CC",
+      "why_to_build": "10% magic damage amp benefits AP teammates; your CC enables it",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "iceborn_gauntlet",
+      "name": "Iceborn Gauntlet",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "armor": 50,
+        "ability_haste": 15,
+        "health": 350
+      },
+      "gold_value": 2866,
+      "gold_efficiency_percent": 106.1,
+      "passives": [
+        {
+          "name": "Spellblade",
+          "desc": "After ability, next auto creates slow zone dealing 100% base AD + 10% bonus HP bonus magic damage. Slow 30% for 2s. 1.5s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Spellblade item"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "spellblade",
+        "armor",
+        "slow_zone",
+        "hp",
+        "anti_kite"
+      ],
+      "intended_users": [
+        "tank_engage",
+        "Nasus",
+        "Zac"
+      ],
+      "when_to_build": "Tank that needs slow + Spellblade damage",
+      "why_to_build": "AoE slow zone prevents enemies from kiting; tankiest Spellblade",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "dawnshroud",
+      "name": "Dawnshroud",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "armor": 40,
+        "magic_resist": 40,
+        "health": 300
+      },
+      "gold_value": 2799,
+      "gold_efficiency_percent": 100.0,
+      "passives": [
+        {
+          "name": "Duskbringer",
+          "desc": "When you become CC'd or CC an enemy champion, deal magic damage to nearby enemies."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "mr",
+        "hp",
+        "cc_trigger",
+        "aoe_damage"
+      ],
+      "intended_users": [
+        "cc_tanks",
+        "engage_supports"
+      ],
+      "when_to_build": "Provide lots of CC; need mixed resistances",
+      "why_to_build": "AoE damage on CC procs adds teamfight damage from tank role",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "mantle_of_the_twelfth_hour",
+      "name": "Mantle of the Twelfth Hour",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "armor": 40,
+        "magic_resist": 40,
+        "health": 350
+      },
+      "gold_value": 2966,
+      "gold_efficiency_percent": 105.9,
+      "passives": [
+        {
+          "name": "Sentinel",
+          "desc": "When you CC an enemy champion, grant a shield to the nearest lowest-HP ally."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "mr",
+        "hp",
+        "ally_shield",
+        "cc_trigger"
+      ],
+      "intended_users": [
+        "protective_tanks",
+        "engage_supports"
+      ],
+      "when_to_build": "Need to protect a carry while engaging",
+      "why_to_build": "CC-triggered ally shield protects carries during your engage",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "radiant_virtue",
+      "name": "Radiant Virtue",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "armor": 40,
+        "magic_resist": 40,
+        "health": 350
+      },
+      "gold_value": 2966,
+      "gold_efficiency_percent": 105.9,
+      "passives": [
+        {
+          "name": "Guiding Light",
+          "desc": "Casting ultimate heals nearby allies over time and increases their damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "mr",
+        "hp",
+        "team_heal",
+        "ult_synergy"
+      ],
+      "intended_users": [
+        "teamfight_tanks",
+        "engage_tanks"
+      ],
+      "when_to_build": "Teamfight-oriented; impactful AoE ultimate",
+      "why_to_build": "Ult-triggered team heal turns your engage into a team sustain tool",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "unending_despair",
+      "name": "Unending Despair",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2900,
+      "sell": 2030,
+      "stats": {
+        "armor": 45,
+        "health": 400,
+        "ability_haste": 15
+      },
+      "gold_value": 2907,
+      "gold_efficiency_percent": 100.2,
+      "passives": [
+        {
+          "name": "Despair",
+          "desc": "In champion combat, periodically drain nearby enemies dealing magic damage and healing yourself."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "hp",
+        "drain",
+        "sustain",
+        "extended_fights"
+      ],
+      "intended_users": [
+        "drain_tanks",
+        "Mundo",
+        "Cho'Gath"
+      ],
+      "when_to_build": "Extended teamfights; need sustain as tank",
+      "why_to_build": "Periodic drain keeps you alive in prolonged fights",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "overlords_bloodmail",
+      "name": "Overlord's Bloodmail",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "health": 800
+      },
+      "gold_value": 2664,
+      "gold_efficiency_percent": 88.8,
+      "passives": [
+        {
+          "name": "Vehemence",
+          "desc": "Below 50% HP, gain HP regen based on max HP."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "health",
+        "regen",
+        "low_hp"
+      ],
+      "intended_users": [
+        "hp_stackers"
+      ],
+      "when_to_build": "Pure HP stacking build",
+      "why_to_build": "800 HP + regen below 50%; pairs with Heartsteel/Warmog's",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "winters_approach",
+      "name": "Winter's Approach",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "C",
+      "cost": 2600,
+      "sell": 1820,
+      "stats": {
+        "health": 400,
+        "mana": 300,
+        "ability_haste": 15
+      },
+      "gold_value": 2832,
+      "gold_efficiency_percent": 108.9,
+      "passives": [
+        {
+          "name": "Awe",
+          "desc": "Gain bonus HP equal to 5% mana."
+        },
+        {
+          "name": "Mana Charge",
+          "desc": "Abilities grant mana, stacking. Transforms into Fimbulwinter at 360 stacks."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "mana",
+        "hp",
+        "stacking",
+        "transform"
+      ],
+      "intended_users": [
+        "mana_tanks"
+      ],
+      "when_to_build": "Tank that uses mana; need scaling survivability",
+      "why_to_build": "Fimbulwinter transform gives immobilize-triggered shield",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "maw_of_malmortius",
+      "name": "Maw of Malmortius",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 45,
+        "magic_resist": 40
+      },
+      "gold_value": 3050,
+      "gold_efficiency_percent": 108.9,
+      "passives": [
+        {
+          "name": "Lifeline",
+          "desc": "Taking magic damage that would reduce below 35% HP grants magic damage shield + 10% omnivamp for 5s. 60s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "mr",
+        "ad",
+        "lifeline",
+        "anti_ap_burst"
+      ],
+      "intended_users": [
+        "ad_champs_vs_ap"
+      ],
+      "when_to_build": "AD carry/fighter facing AP burst",
+      "why_to_build": "Only AD+MR+shield item; Lifeline saves vs AP burst",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "chempunk_chainsword",
+      "name": "Chempunk Chainsword",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "C",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 40,
+        "ability_haste": 15,
+        "health": 300
+      },
+      "gold_value": 3449,
+      "gold_efficiency_percent": 123.2,
+      "passives": [
+        {
+          "name": "Hackshorn",
+          "desc": "Physical damage inflicts 40% Grievous Wounds for 3s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "grievous_wounds",
+        "anti_heal",
+        "ad",
+        "hp"
+      ],
+      "intended_users": [
+        "ad_bruisers_vs_healing"
+      ],
+      "when_to_build": "Need AD anti-heal but not crit (bruiser)",
+      "why_to_build": "AD bruiser anti-heal option; but stats are mediocre",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "immortal_shieldbow",
+      "name": "Immortal Shieldbow",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 50,
+        "critical_rate_percent": 20
+      },
+      "gold_value": 3000,
+      "gold_efficiency_percent": 100.0,
+      "passives": [
+        {
+          "name": "Lifeline",
+          "desc": "Taking damage below 35% HP grants shield + bonus AD + omnivamp for 3s. 60s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "crit",
+        "lifeline",
+        "shield",
+        "ad",
+        "safety"
+      ],
+      "intended_users": [
+        "marksmen",
+        "squishy_carries"
+      ],
+      "when_to_build": "Need crit + anti-burst insurance",
+      "why_to_build": "Lifeline shield saves from assassin burst; crit + AD for DPS",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "protectors_vow",
+      "name": "Protector's Vow",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2400,
+      "sell": 1680,
+      "stats": {
+        "armor": 30,
+        "ability_haste": 15,
+        "health": 350
+      },
+      "gold_value": 2366,
+      "gold_efficiency_percent": 98.6,
+      "passives": [
+        {
+          "name": "Pledge",
+          "desc": "Bind to ally. Redirect damage from bound ally to yourself. Gain MS toward bound ally when they're low HP."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "supportive",
+        "redirect",
+        "armor",
+        "hp"
+      ],
+      "intended_users": [
+        "tank_supports",
+        "Braum",
+        "Thresh"
+      ],
+      "when_to_build": "Need to protect a specific carry",
+      "why_to_build": "Damage redirect keeps carry alive; MS lets you peel faster",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "yordle_trap",
+      "name": "Yordle Trap",
+      "category": "Defense",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2300,
+      "sell": 1610,
+      "stats": {
+        "armor": 30,
+        "ability_haste": 10,
+        "health": 250
+      },
+      "gold_value": 1882,
+      "gold_efficiency_percent": 81.8,
+      "passives": [
+        {
+          "name": "Trap Layer",
+          "desc": "Placing wards also spawns a trap. Enemies stepping on trap are slowed and revealed."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "vision",
+        "trap",
+        "slow",
+        "support",
+        "armor"
+      ],
+      "intended_users": [
+        "tank_supports"
+      ],
+      "when_to_build": "Need vision control + zone denial",
+      "why_to_build": "Free traps from wards add zone control and enemy tracking",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "zekes_convergence",
+      "name": "Zeke's Convergence",
+      "category": "Support",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 2500,
+      "sell": 1750,
+      "stats": {
+        "armor": 30,
+        "ability_haste": 15,
+        "health": 250
+      },
+      "gold_value": 2032,
+      "gold_efficiency_percent": 81.3,
+      "passives": [
+        {
+          "name": "Conduit",
+          "desc": "Bind to ally. When you cast ultimate, empower bound ally's attacks with bonus magic damage burn for 8s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "bind",
+        "ult_synergy",
+        "support",
+        "armor"
+      ],
+      "intended_users": [
+        "engage_supports",
+        "Leona",
+        "Nautilus",
+        "Thresh"
+      ],
+      "when_to_build": "Your ADC benefits from attack speed and on-hit",
+      "why_to_build": "Ult-empowered ally damage is free DPS for carries",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "ardent_censer",
+      "name": "Ardent Censer",
+      "category": "Support",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 2300,
+      "sell": 1610,
+      "stats": {
+        "ability_power": 60,
+        "ability_haste": 10
+      },
+      "gold_value": 1500,
+      "gold_efficiency_percent": 65.2,
+      "passives": [
+        {
+          "name": "Sanctify",
+          "desc": "Shielding or healing an ally grants them 10-30% bonus AS and 10-30 magic damage on-hit for 6s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "heal_shield_buff",
+        "as_buff",
+        "on_hit_buff",
+        "enchanter"
+      ],
+      "intended_users": [
+        "enchanter_supports",
+        "Karma",
+        "Lulu",
+        "Janna",
+        "Soraka",
+        "Sona"
+      ],
+      "when_to_build": "ADC is auto-attack dependent",
+      "why_to_build": "Best enchanter item; amplifies carry's DPS through your shields/heals",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "harmonic_echo",
+      "name": "Harmonic Echo",
+      "category": "Support",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 2300,
+      "sell": 1610,
+      "stats": {
+        "ability_power": 50,
+        "ability_haste": 10
+      },
+      "gold_value": 1300,
+      "gold_efficiency_percent": 56.5,
+      "passives": [
+        {
+          "name": "Harmonics",
+          "desc": "Moving/casting builds charges to 100. At full, next heal/shield on ally also heals nearest wounded ally for bonus amount."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "heal_bounce",
+        "enchanter",
+        "aoe_heal"
+      ],
+      "intended_users": [
+        "enchanter_supports",
+        "Seraphine",
+        "Soraka",
+        "Sona"
+      ],
+      "when_to_build": "Team needs frequent AoE healing in fights",
+      "why_to_build": "Healing bounce is free extra healing; charges fast in teamfights",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "staff_of_flowing_waters",
+      "name": "Staff of Flowing Waters",
+      "category": "Support",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2300,
+      "sell": 1610,
+      "stats": {
+        "ability_power": 60,
+        "ability_haste": 10
+      },
+      "gold_value": 1500,
+      "gold_efficiency_percent": 65.2,
+      "passives": [
+        {
+          "name": "Rapids",
+          "desc": "Shielding or healing an ally grants both of you bonus AP and AH for 4s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "heal_shield_buff",
+        "ap_buff",
+        "ah_buff",
+        "enchanter"
+      ],
+      "intended_users": [
+        "enchanter_supports_with_ap_carries"
+      ],
+      "when_to_build": "ADC is AP (Ziggs/Veigar bot) or team has double AP",
+      "why_to_build": "Double AP buff to you + ally; better than Ardent when carry is AP",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "redemption",
+      "name": "Redemption",
+      "category": "Support",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2100,
+      "sell": 1470,
+      "stats": {
+        "ability_haste": 10,
+        "health": 250
+      },
+      "gold_value": 1132,
+      "gold_efficiency_percent": 53.9,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Redemption",
+          "desc": "Target area after 2.5s delay: heal allies in zone + deal true damage to enemies. Global range. 120s CD."
+        }
+      ],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "aoe_heal",
+        "global",
+        "active",
+        "support"
+      ],
+      "intended_users": [
+        "all_supports"
+      ],
+      "when_to_build": "Teamfight-heavy game; need AoE heal from any range",
+      "why_to_build": "Global range AoE heal; can be used even while dead",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "knights_vow",
+      "name": "Knight's Vow",
+      "category": "Support",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2400,
+      "sell": 1680,
+      "stats": {
+        "armor": 20,
+        "ability_haste": 15,
+        "health": 300
+      },
+      "gold_value": 1949,
+      "gold_efficiency_percent": 81.2,
+      "passives": [
+        {
+          "name": "Pledge",
+          "desc": "Bind to ally. Redirect 12% of damage they take to you. Heal for 8% of bound ally's damage dealt to champions. Gain MS toward bound ally."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "bind",
+        "redirect",
+        "sustain",
+        "armor",
+        "support"
+      ],
+      "intended_users": [
+        "tank_supports",
+        "Braum",
+        "Alistar"
+      ],
+      "when_to_build": "Carry needs protection from consistent damage",
+      "why_to_build": "Damage redirect + heal from ally's damage keeps both alive",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "imperial_mandate",
+      "name": "Imperial Mandate",
+      "category": "Support",
+      "item_type": "upgraded",
+      "tier": "C",
+      "cost": 2500,
+      "sell": 1750,
+      "stats": {
+        "ability_power": 40,
+        "ability_haste": 15,
+        "health": 200
+      },
+      "gold_value": 1916,
+      "gold_efficiency_percent": 76.6,
+      "passives": [
+        {
+          "name": "Coordinate",
+          "desc": "Immobilizing or slowing an enemy marks them. Allies consuming the mark deal 40-100 bonus magic damage + gain 20% MS for 2s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "cc_mark",
+        "damage_amp",
+        "support",
+        "utility"
+      ],
+      "intended_users": [
+        "cc_supports"
+      ],
+      "when_to_build": "Team has follow-up damage for marks",
+      "why_to_build": "Mark system adds team damage but stats are mediocre",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "boots_of_speed",
+      "name": "Boots of Speed",
+      "category": "Boots",
+      "item_type": "basic",
+      "tier": "-",
+      "cost": 400,
+      "sell": 280,
+      "stats": {
+        "movement_speed": 25
+      },
+      "gold_value": 625,
+      "gold_efficiency_percent": 156.2,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "ms",
+        "basic"
+      ],
+      "intended_users": [
+        "all"
+      ],
+      "when_to_build": "First recall buy",
+      "why_to_build": "Cheapest MS; builds into all boots",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "berserkers_greaves",
+      "name": "Berserker's Greaves",
+      "category": "Boots",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "attack_speed_percent": 35
+      },
+      "gold_value": 1458,
+      "gold_efficiency_percent": 145.8,
+      "passives": [
+        {
+          "name": "Enhanced Movement",
+          "desc": "+40 movement speed (flat, not in stats)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "as",
+        "boots",
+        "marksmen"
+      ],
+      "intended_users": [
+        "marksmen",
+        "as_fighters"
+      ],
+      "when_to_build": "Auto-attack champion",
+      "why_to_build": "Highest AS from boots; standard ADC boots",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "boots_of_dynamism",
+      "name": "Boots of Dynamism",
+      "category": "Boots",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0.0,
+      "passives": [
+        {
+          "name": "Enhanced Movement",
+          "desc": "+40 MS."
+        },
+        {
+          "name": "Adaptive Force",
+          "desc": "+10 Adaptive Force (= 5 AD or 10 AP)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "adaptive",
+        "boots",
+        "damage"
+      ],
+      "intended_users": [
+        "damage_dealers"
+      ],
+      "when_to_build": "Want raw damage from boots",
+      "why_to_build": "Free adaptive force; great on snowballing champs",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "boots_of_mana",
+      "name": "Boots of Mana",
+      "category": "Boots",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "ability_power": 15
+      },
+      "gold_value": 300,
+      "gold_efficiency_percent": 30.0,
+      "passives": [
+        {
+          "name": "Enhanced Movement",
+          "desc": "+40 MS."
+        },
+        {
+          "name": "Mana Flow",
+          "desc": "+100% base mana regen. +8% magic penetration."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "ap",
+        "mana_regen",
+        "magic_pen",
+        "boots"
+      ],
+      "intended_users": [
+        "mages",
+        "ap_supports"
+      ],
+      "when_to_build": "AP champion that needs mana sustain + magic pen",
+      "why_to_build": "AP + magic pen + mana regen from boots; best mage boots",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "gluttonous_greaves",
+      "name": "Gluttonous Greaves",
+      "category": "Boots",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0.0,
+      "passives": [
+        {
+          "name": "Enhanced Movement",
+          "desc": "+40 MS."
+        },
+        {
+          "name": "Omnivamp",
+          "desc": "+8% Physical Vamp."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "vamp",
+        "sustain",
+        "boots"
+      ],
+      "intended_users": [
+        "ad_sustain_champs"
+      ],
+      "when_to_build": "Need sustain from boots; AD carry/fighter",
+      "why_to_build": "Vamp from boots frees up item slot for damage",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "ionian_boots_of_lucidity",
+      "name": "Ionian Boots of Lucidity",
+      "category": "Boots",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "ability_haste": 15
+      },
+      "gold_value": 450,
+      "gold_efficiency_percent": 45.0,
+      "passives": [
+        {
+          "name": "Enhanced Movement",
+          "desc": "+40 MS."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "ability_haste",
+        "boots",
+        "cdr"
+      ],
+      "intended_users": [
+        "casters",
+        "supports"
+      ],
+      "when_to_build": "Need maximum AH; not threatened by specific damage type",
+      "why_to_build": "AH from boots + reduced summoner spell CD",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "mercurys_treads",
+      "name": "Mercury's Treads",
+      "category": "Boots",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "magic_resist": 25
+      },
+      "gold_value": 500,
+      "gold_efficiency_percent": 50.0,
+      "passives": [
+        {
+          "name": "Enhanced Movement",
+          "desc": "+40 MS."
+        },
+        {
+          "name": "Tenacity",
+          "desc": "+30% Tenacity."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "mr",
+        "tenacity",
+        "anti_cc",
+        "boots"
+      ],
+      "intended_users": [
+        "anyone_vs_cc_ap"
+      ],
+      "when_to_build": "Enemy has heavy CC + AP damage",
+      "why_to_build": "Tenacity reduces CC duration; MR reduces AP damage",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "plated_steelcaps",
+      "name": "Plated Steelcaps",
+      "category": "Boots",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "armor": 15
+      },
+      "gold_value": 375,
+      "gold_efficiency_percent": 37.5,
+      "passives": [
+        {
+          "name": "Enhanced Movement",
+          "desc": "+40 MS."
+        },
+        {
+          "name": "Block",
+          "desc": "Reduce damage from auto-attacks by 10%."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "armor",
+        "anti_auto",
+        "boots"
+      ],
+      "intended_users": [
+        "anyone_vs_ad_auto"
+      ],
+      "when_to_build": "Enemy has 2+ auto-attack threats",
+      "why_to_build": "10% auto damage reduction stacks with armor",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "stasis_enchant",
+      "name": "Stasis Enchant",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "S",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Stasis Enchant",
+          "desc": "Enter stasis for 2.5s (invulnerable + untargetable). 120s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "stasis",
+        "invulnerable",
+        "safety"
+      ],
+      "intended_users": [],
+      "when_to_build": "Facing burst/dive comps; need a panic button",
+      "why_to_build": "Best defensive enchant; counters burst combos and tower dives",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "quicksilver_enchant",
+      "name": "Quicksilver Enchant",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "S",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Quicksilver Enchant",
+          "desc": "Remove all crowd control effects and gain 50% MS for 1.5s. 90s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "cleanse",
+        "anti_cc",
+        "ms"
+      ],
+      "intended_users": [],
+      "when_to_build": "Enemy has critical CC (Malphite ult, Ashe arrow)",
+      "why_to_build": "Only item-based CC cleanse; essential vs heavy CC",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "veil_enchant",
+      "name": "Veil Enchant",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "S",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Veil Enchant",
+          "desc": "Gain a spell shield that blocks the next enemy ability. 40s CD. Shield lasts until broken."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "spell_shield",
+        "anti_ability"
+      ],
+      "intended_users": [],
+      "when_to_build": "Enemy has single critical CC/ability to block",
+      "why_to_build": "Proactive spell shield prevents picks",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "protobelt_enchant",
+      "name": "Protobelt Enchant",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "A",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Protobelt Enchant",
+          "desc": "Dash forward and fire 7 bolts dealing 75-145 magic damage. 40s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "dash",
+        "burst",
+        "gap_close"
+      ],
+      "intended_users": [],
+      "when_to_build": "Immobile mage needing gap close",
+      "why_to_build": "Dash + damage combo for engage or escape",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "galeforce_enchant",
+      "name": "Galeforce",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "A",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Galeforce",
+          "desc": "Dash in target direction, firing 3 missiles at lowest HP nearby enemy dealing 75-150 magic damage. 60s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "dash",
+        "execute_ish",
+        "reposition"
+      ],
+      "intended_users": [],
+      "when_to_build": "ADC needing dash for repositioning",
+      "why_to_build": "Only ADC dash enchant; missiles add burst",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "goredrinker_enchant",
+      "name": "Goredrinker",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "A",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Goredrinker",
+          "desc": "AoE slash dealing 15% AD physical damage to nearby enemies. Heal 10% missing HP per champion hit. 40s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "heal",
+        "aoe",
+        "bruiser"
+      ],
+      "intended_users": [],
+      "when_to_build": "Melee bruiser/fighter in teamfights",
+      "why_to_build": "AoE damage + missing HP heal in clustered fights",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "stoneplate_enchant",
+      "name": "Stoneplate Enchant",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "A",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Stoneplate Enchant",
+          "desc": "Gain a shield equal to 100 +100% bonus HP for 3s. During shield, deal Immolate damage. 60s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "shield",
+        "tank",
+        "engage"
+      ],
+      "intended_users": [],
+      "when_to_build": "Tank engaging into 3+ enemies",
+      "why_to_build": "Massive shield for frontline engage; Immolate burst",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "locket_enchant",
+      "name": "Locket Enchant",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "A",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Locket Enchant",
+          "desc": "Shield nearby allies for 75-180 + 20% AP for 2.5s. 60s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "ally_shield",
+        "teamfight",
+        "support"
+      ],
+      "intended_users": [],
+      "when_to_build": "Support/tank protecting team from AoE burst",
+      "why_to_build": "Team-wide shield counters AoE damage",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "stridebreaker_enchant",
+      "name": "Stridebreaker",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "A",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Stridebreaker",
+          "desc": "Short dash + AoE slow (60% for 2s) to nearby enemies. 15s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "dash",
+        "slow",
+        "melee_engage"
+      ],
+      "intended_users": [],
+      "when_to_build": "Melee needing to stick to targets",
+      "why_to_build": "Short CD dash + slow for gap closing",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "dream_maker_enchant",
+      "name": "Dream Maker",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "B",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Dream Maker",
+          "desc": "Healing/shielding an ally empowers their next 3 attacks with bonus magic damage + heals you. 6s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "enchanter",
+        "on_hit_buff",
+        "support"
+      ],
+      "intended_users": [],
+      "when_to_build": "Enchanter support buffing auto-attack carry",
+      "why_to_build": "Adds on-hit damage and self-sustain to heal/shield pattern",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "glorious_enchant",
+      "name": "Glorious Enchant",
+      "category": "Enchantment",
+      "item_type": "enchantment",
+      "tier": "B",
+      "cost": 500,
+      "sell": 0,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0,
+      "passives": [],
+      "actives": [
+        {
+          "name": "Glorious Enchant",
+          "desc": "Gain 15% MS bonus for 4s. Approaching enemy champions increases MS to 60% for 2.5s. 60s CD."
+        }
+      ],
+      "limitations": [
+        "Added to Boots"
+      ],
+      "builds_from": [],
+      "effect_tags": [
+        "ms",
+        "engage",
+        "chase"
+      ],
+      "intended_users": [],
+      "when_to_build": "Engage tank needing to reach backline",
+      "why_to_build": "Speed boost for engaging; cheaper alternative to other enchants",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "spectral_sickle",
+      "name": "Spectral Sickle",
+      "category": "Support",
+      "item_type": "starter",
+      "tier": "-",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "attack_damage": 8
+      },
+      "gold_value": 400,
+      "gold_efficiency_percent": 80.0,
+      "passives": [
+        {
+          "name": "Tribute",
+          "desc": "Attacks on champions/turrets grant bonus gold. At 500g earned, upgrades to Black Mist Scythe (+3 wards)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "support_starter",
+        "gold_gen",
+        "ranged"
+      ],
+      "intended_users": [
+        "ranged_supports",
+        "Senna",
+        "Lux support"
+      ],
+      "when_to_build": "Ranged support that pokes",
+      "why_to_build": "Gold generation through poking; evolves into ward item",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "relic_shield",
+      "name": "Relic Shield",
+      "category": "Support",
+      "item_type": "starter",
+      "tier": "-",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "health": 30
+      },
+      "gold_value": 100,
+      "gold_efficiency_percent": 20.0,
+      "passives": [
+        {
+          "name": "Spoils of War",
+          "desc": "Execute low HP minions and share gold with nearby ally. At 500g earned, upgrades to Bulwark of the Mountain (+3 wards)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "support_starter",
+        "gold_gen",
+        "melee"
+      ],
+      "intended_users": [
+        "melee_supports",
+        "Thresh",
+        "Leona",
+        "Nautilus"
+      ],
+      "when_to_build": "Melee support",
+      "why_to_build": "Gold generation through minion execution; evolves into ward item",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "shimmering_spark",
+      "name": "Shimmering Spark",
+      "category": "Support",
+      "item_type": "starter",
+      "tier": "-",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "ability_power": 8
+      },
+      "gold_value": 160,
+      "gold_efficiency_percent": 32.0,
+      "passives": [
+        {
+          "name": "Arcane",
+          "desc": "Nearby minion deaths generate gold. At 500g earned, upgrades (+3 wards)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "support_starter",
+        "gold_gen",
+        "passive"
+      ],
+      "intended_users": [
+        "passive_supports",
+        "Soraka",
+        "Seraphine"
+      ],
+      "when_to_build": "Passive laning support",
+      "why_to_build": "Gold from nearby minion deaths without attacking",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "ring_of_revelation",
+      "name": "Ring of Revelation",
+      "category": "Support",
+      "item_type": "starter",
+      "tier": "-",
+      "cost": 400,
+      "sell": 280,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0.0,
+      "passives": [
+        {
+          "name": "Mana Covenant",
+          "desc": "Nearby ally champion gains bonus mana regen. At 500g quest, upgrades (+3 wards)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "effect_tags": [
+        "support_starter",
+        "gold_gen",
+        "mana_support"
+      ],
+      "intended_users": [
+        "mana_supports"
+      ],
+      "when_to_build": "Supporting mana-hungry ADC",
+      "why_to_build": "Mana support + quest gold generation",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "bf_sword",
+      "name": "B. F. Sword",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1500,
+      "sell": 1050,
+      "stats": {
+        "attack_damage": 30
+      },
+      "gold_value": 1500,
+      "gold_efficiency_percent": 100.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "infinity_edge",
+        "guardian_angel",
+        "kraken_slayer"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "vampiric_scepter",
+      "name": "Vampiric Scepter",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1200,
+      "sell": 840,
+      "stats": {
+        "attack_damage": 10
+      },
+      "gold_value": 500,
+      "gold_efficiency_percent": 41.7,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "bloodthirster",
+        "blade_of_the_ruined_king"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "+8% Physical Vamp passive",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "serrated_dirk",
+      "name": "Serrated Dirk",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "attack_damage": 20,
+        "armor_penetration_flat": 10
+      },
+      "gold_value": 1250,
+      "gold_efficiency_percent": 125.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "youmuus_ghostblade",
+        "duskblade_of_draktharr",
+        "serpents_fang",
+        "the_collector"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "caulfields_warhammer",
+      "name": "Caulfield's Warhammer",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1200,
+      "sell": 840,
+      "stats": {
+        "attack_damage": 20,
+        "ability_haste": 10
+      },
+      "gold_value": 1300,
+      "gold_efficiency_percent": 108.3,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "deaths_dance",
+        "youmuus_ghostblade",
+        "spear_of_shojin"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "sheen",
+      "name": "Sheen",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 900,
+      "sell": 630,
+      "stats": {
+        "ability_haste": 10
+      },
+      "gold_value": 300,
+      "gold_efficiency_percent": 33.3,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "trinity_force",
+        "essence_reaver",
+        "divine_sunderer",
+        "lich_bane",
+        "iceborn_gauntlet"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Spellblade: after ability, next auto deals 100% base AD bonus physical",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "phage",
+      "name": "Phage",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "attack_damage": 15,
+        "health": 200
+      },
+      "gold_value": 1416,
+      "gold_efficiency_percent": 141.6,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "trinity_force",
+        "black_cleaver",
+        "divine_sunderer"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "zeal",
+      "name": "Zeal",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1400,
+      "sell": 980,
+      "stats": {
+        "attack_speed_percent": 15,
+        "critical_rate_percent": 20
+      },
+      "gold_value": 1125,
+      "gold_efficiency_percent": 80.4,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "phantom_dancer",
+        "mortal_reminder",
+        "runaans_hurricane",
+        "magnetic_blaster"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "recurve_bow",
+      "name": "Recurve Bow",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1400,
+      "sell": 980,
+      "stats": {
+        "attack_speed_percent": 20
+      },
+      "gold_value": 833,
+      "gold_efficiency_percent": 59.5,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "blade_of_the_ruined_king",
+        "wits_end",
+        "guinsoos_rageblade",
+        "terminus"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "+15 on-hit physical damage",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "cloak_of_agility",
+      "name": "Cloak of Agility",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "critical_rate_percent": 20
+      },
+      "gold_value": 500,
+      "gold_efficiency_percent": 50.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "infinity_edge",
+        "bloodthirster",
+        "lord_dominiks_regards",
+        "essence_reaver"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "stinger",
+      "name": "Stinger",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1200,
+      "sell": 840,
+      "stats": {
+        "attack_speed_percent": 25,
+        "ability_haste": 10
+      },
+      "gold_value": 1342,
+      "gold_efficiency_percent": 111.8,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "trinity_force",
+        "nashors_tooth"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "executioners_calling",
+      "name": "Executioner's Calling",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 800,
+      "sell": 560,
+      "stats": {
+        "attack_damage": 15
+      },
+      "gold_value": 750,
+      "gold_efficiency_percent": 93.8,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "mortal_reminder"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Physical damage applies 40% GW",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "last_whisper",
+      "name": "Last Whisper",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 500,
+      "sell": 350,
+      "stats": {},
+      "gold_value": 0,
+      "gold_efficiency_percent": 0.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "lord_dominiks_regards",
+        "seryldas_grudge"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Basic item: +10% armor pen",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kircheis_shard",
+      "name": "Kircheis Shard",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 900,
+      "sell": 630,
+      "stats": {
+        "attack_speed_percent": 15
+      },
+      "gold_value": 625,
+      "gold_efficiency_percent": 69.5,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "stormrazor",
+        "magnetic_blaster"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Energized: bonus 60 magic on-hit",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "lost_chapter",
+      "name": "Lost Chapter",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1050,
+      "sell": 735,
+      "stats": {
+        "ability_power": 25,
+        "ability_haste": 10,
+        "mana": 150
+      },
+      "gold_value": 1325,
+      "gold_efficiency_percent": 126.2,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "ludens_echo",
+        "archangels_staff",
+        "bandle_fantasy",
+        "malignance",
+        "oceanids_trident",
+        "crown_of_the_shattered_queen"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "blasting_wand",
+      "name": "Blasting Wand",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 900,
+      "sell": 630,
+      "stats": {
+        "ability_power": 40
+      },
+      "gold_value": 800,
+      "gold_efficiency_percent": 88.9,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "ludens_echo",
+        "rabadons_deathcap",
+        "rod_of_ages",
+        "liandrys_torment",
+        "horizon_focus"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "needlessly_large_rod",
+      "name": "Needlessly Large Rod",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1300,
+      "sell": 910,
+      "stats": {
+        "ability_power": 60
+      },
+      "gold_value": 1200,
+      "gold_efficiency_percent": 92.3,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "rabadons_deathcap"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "fiendish_codex",
+      "name": "Fiendish Codex",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "ability_power": 25,
+        "ability_haste": 10
+      },
+      "gold_value": 800,
+      "gold_efficiency_percent": 80.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "awakened_soulstealer",
+        "cosmic_drive",
+        "riftmaker",
+        "psychic_projector"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "oblivion_orb",
+      "name": "Oblivion Orb",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 800,
+      "sell": 560,
+      "stats": {
+        "ability_power": 20
+      },
+      "gold_value": 400,
+      "gold_efficiency_percent": 50.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "infinity_orb",
+        "morellonomicon"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "+7% magic pen",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "hextech_alternator",
+      "name": "Hextech Alternator",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1400,
+      "sell": 980,
+      "stats": {
+        "ability_power": 25,
+        "health": 150
+      },
+      "gold_value": 1000,
+      "gold_efficiency_percent": 71.4,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "riftmaker",
+        "stormsurge",
+        "searing_crown"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "haunting_guise",
+      "name": "Haunting Guise",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1300,
+      "sell": 910,
+      "stats": {
+        "ability_power": 30,
+        "health": 200
+      },
+      "gold_value": 1266,
+      "gold_efficiency_percent": 97.4,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "liandrys_torment",
+        "riftmaker"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "aether_wisp",
+      "name": "Aether Wisp",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 950,
+      "sell": 665,
+      "stats": {
+        "ability_power": 20
+      },
+      "gold_value": 400,
+      "gold_efficiency_percent": 42.1,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "ardent_censer",
+        "harmonic_echo",
+        "staff_of_flowing_waters"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "+5% MS",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "tear_of_the_goddess",
+      "name": "Tear of the Goddess",
+      "category": "Magic",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 900,
+      "sell": 630,
+      "stats": {
+        "ability_haste": 10,
+        "mana": 200
+      },
+      "gold_value": 1000,
+      "gold_efficiency_percent": 111.1,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "archangels_staff",
+        "manamune",
+        "winters_approach"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "giants_belt",
+      "name": "Giant's Belt",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "health": 350
+      },
+      "gold_value": 1166,
+      "gold_efficiency_percent": 116.5,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "warmogs_armor",
+        "rylais_crystal_scepter",
+        "overlords_bloodmail",
+        "titanic_hydra"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "chain_vest",
+      "name": "Chain Vest",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 900,
+      "sell": 630,
+      "stats": {
+        "armor": 35
+      },
+      "gold_value": 875,
+      "gold_efficiency_percent": 97.2,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "deaths_dance",
+        "guardian_angel",
+        "thornmail"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "bramble_vest",
+      "name": "Bramble Vest",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "armor": 30
+      },
+      "gold_value": 750,
+      "gold_efficiency_percent": 75.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "thornmail"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Thorns: reflect damage + 40% GW when struck",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "wardens_mail",
+      "name": "Warden's Mail",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1050,
+      "sell": 735,
+      "stats": {
+        "armor": 35
+      },
+      "gold_value": 875,
+      "gold_efficiency_percent": 83.3,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "randuins_omen",
+        "frozen_heart"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "bamis_cinder",
+      "name": "Bami's Cinder",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1100,
+      "sell": 770,
+      "stats": {
+        "health": 250
+      },
+      "gold_value": 832,
+      "gold_efficiency_percent": 75.7,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "sunfire_aegis",
+        "hollow_radiance",
+        "searing_crown"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Immolate: 8-16 magic/s to nearby",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kindlegem",
+      "name": "Kindlegem",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "ability_haste": 10,
+        "health": 200
+      },
+      "gold_value": 966,
+      "gold_efficiency_percent": 96.6,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "black_cleaver",
+        "spear_of_shojin",
+        "edge_of_night",
+        "hollow_radiance"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "negatron_cloak",
+      "name": "Negatron Cloak",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 900,
+      "sell": 630,
+      "stats": {
+        "magic_resist": 40
+      },
+      "gold_value": 800,
+      "gold_efficiency_percent": 88.9,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "force_of_nature",
+        "kaenic_rookern"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "spectres_cowl",
+      "name": "Spectre's Cowl",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1100,
+      "sell": 770,
+      "stats": {
+        "magic_resist": 25,
+        "health": 200
+      },
+      "gold_value": 1166,
+      "gold_efficiency_percent": 106.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "force_of_nature",
+        "kaenic_rookern",
+        "abyssal_mask"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "glacial_shroud",
+      "name": "Glacial Shroud",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1000,
+      "sell": 700,
+      "stats": {
+        "armor": 20,
+        "ability_haste": 10,
+        "mana": 200
+      },
+      "gold_value": 1500,
+      "gold_efficiency_percent": 150.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "frozen_heart",
+        "iceborn_gauntlet"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "catalyst_of_aeons",
+      "name": "Catalyst of Aeons",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1100,
+      "sell": 770,
+      "stats": {
+        "health": 200,
+        "mana": 300
+      },
+      "gold_value": 1716,
+      "gold_efficiency_percent": 156.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "rod_of_ages",
+        "abyssal_mask"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "jaurims_fist",
+      "name": "Jaurim's Fist",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1200,
+      "sell": 840,
+      "stats": {
+        "attack_damage": 15,
+        "health": 200
+      },
+      "gold_value": 1416,
+      "gold_efficiency_percent": 118.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "steraks_gage",
+        "hullbreaker",
+        "titanic_hydra"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "hexdrinker",
+      "name": "Hexdrinker",
+      "category": "Physical",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1200,
+      "sell": 840,
+      "stats": {
+        "attack_damage": 20,
+        "magic_resist": 20
+      },
+      "gold_value": 1400,
+      "gold_efficiency_percent": 116.7,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "maw_of_malmortius"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Lifeline: magic shield at low HP",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "seekers_armguard",
+      "name": "Seeker's Armguard",
+      "category": "Defense",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1200,
+      "sell": 840,
+      "stats": {
+        "ability_power": 20,
+        "armor": 30
+      },
+      "gold_value": 1150,
+      "gold_efficiency_percent": 95.8,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "crown_of_the_shattered_queen"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": "Stacking: kills grant +armor/AP stacks",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "prophets_pendant",
+      "name": "Prophet's Pendant",
+      "category": "Support",
+      "item_type": "component",
+      "tier": "-",
+      "cost": 1250,
+      "sell": 875,
+      "stats": {
+        "ability_power": 30,
+        "ability_haste": 10
+      },
+      "gold_value": 900,
+      "gold_efficiency_percent": 72.0,
+      "passives": [],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [],
+      "builds_into": [
+        "harmonic_echo",
+        "ardent_censer",
+        "staff_of_flowing_waters",
+        "redemption"
+      ],
+      "effect_tags": [],
+      "intended_users": [],
+      "notes": null,
+      "patch_version": "7.1e"
+    }
+  ]
+}

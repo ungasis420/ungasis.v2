@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "lanes": [
+    "baron_lane",
+    "jungle",
+    "mid_lane",
+    "duo_lane",
+    "support"
+  ],
+  "aliases": {
+    "adc": "duo_lane",
+    "dragon_lane": "duo_lane",
+    "bot": "duo_lane",
+    "top": "baron_lane"
+  }
+}

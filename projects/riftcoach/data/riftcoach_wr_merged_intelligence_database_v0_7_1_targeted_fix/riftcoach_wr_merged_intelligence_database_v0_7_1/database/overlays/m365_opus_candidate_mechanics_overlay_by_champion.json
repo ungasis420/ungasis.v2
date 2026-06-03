@@ -1,0 +1,2597 @@
+{
+  "version": "0.7.1",
+  "source_id": "m365_opus_postmerge_wr_champions_merged_v070_full",
+  "source_status": "m365_opus_exact_candidate_unverified",
+  "field_level_provenance_required": true,
+  "promotion_policy": "trace only; never promote exact mechanics without approved-source field-level provenance",
+  "records": {
+    "aatrox": [
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp",
+        "candidate_value": "630-2534",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp_regen",
+        "candidate_value": "6-20",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.armor",
+        "candidate_value": "46-109",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mr",
+        "candidate_value": "40-68",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ad",
+        "candidate_value": "62-139",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ms",
+        "candidate_value": 355,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.range",
+        "candidate_value": 175,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.as_ratio",
+        "candidate_value": 0.664,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "3 sequential casts. Each has a sweetspot dealing 60% bonus damage + 0.25s knockup. Damage escalates per cast.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.cooldown",
+        "candidate_value": "12/10/8/6",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.damage",
+        "candidate_value": "15/45/75/105 to 22.5/67.5/112.5/157.5",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.scaling",
+        "candidate_value": "+75-135% AD per cast",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Skillshot that damages and tethers. After 1.5s, pulls target back and deals damage again.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.cooldown",
+        "candidate_value": "20/17/14/11",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.damage",
+        "candidate_value": "40/70/100/130",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.scaling",
+        "candidate_value": "+60% AD",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.cooldown",
+        "candidate_value": "8/7/6/5",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Fear nearby minions. Gain +25% AD, +50% healing amp. During R, revive on death. 12s duration.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.cooldown",
+        "candidate_value": "80/65/50",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Next auto +50 range, deals 4-13% target max HP physical (cap 50 vs monsters). Heals 100%/60%. Champ/large monster hits reduce CD by 3s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "aatrox",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.cooldown",
+        "candidate_value": "24-13s",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ahri": [
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp",
+        "candidate_value": "630-2310",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mana",
+        "candidate_value": "435-1121",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp_regen",
+        "candidate_value": "7.5-17.02",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mana_regen",
+        "candidate_value": "18-33.4",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.armor",
+        "candidate_value": "34-97",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mr",
+        "candidate_value": "36-52.8",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ad",
+        "candidate_value": "52-102.4",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ms",
+        "candidate_value": 355,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.range",
+        "candidate_value": 550,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.as_ratio",
+        "candidate_value": 0.625,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.cooldown",
+        "candidate_value": "7",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.cost",
+        "candidate_value": "65/70/75/80",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.damage",
+        "candidate_value": "40/75/110/145 per pass",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.scaling",
+        "candidate_value": "+45% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Release 3 fox-fires that seek nearby enemies. +45% MS decaying 1.5s. If AA/Charm within 5s, gains +missile speed +200 radius.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.cooldown",
+        "candidate_value": "8/7/6/5",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.cost",
+        "candidate_value": "50",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.damage",
+        "candidate_value": "50/80/110/140",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.scaling",
+        "candidate_value": "+40% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.cooldown",
+        "candidate_value": "12",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.cost",
+        "candidate_value": "70",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.damage",
+        "candidate_value": "60/100/140/180",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.scaling",
+        "candidate_value": "+50% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "3 dashes, each dealing magic damage. Consuming essence extends recast window and grants additional dashes (up to 3 stored).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.cooldown",
+        "candidate_value": "80/65/50",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.damage",
+        "candidate_value": "60/90/120",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.scaling",
+        "candidate_value": "+35% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ahri",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "After 3 ability hits, next ability heals 40-100 (+20% AP). Takedown within 3s heals 80-200 (+35% AP).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "akali": [
+      {
+        "champion_id": "akali",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Throw kunai in arc, dealing magic damage. At 200 energy, heals.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "akali",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "2-part ult: first dash deals physical, second dash deals magic (execute scaling).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "akshan": [
+      {
+        "champion_id": "akshan",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Every 3rd hit deals bonus damage + shield. Cancel AA for double shot.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "alistar": [
+      {
+        "champion_id": "alistar",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "AoE magic damage around self. At 5 stacks, next AA stuns.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "alistar",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Cleanse CC + massive damage reduction for 7s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "annie": [
+      {
+        "champion_id": "annie",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Every 4th ability stuns. Tibbers aura counts.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ashe": [
+      {
+        "champion_id": "ashe",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Stack 4 flurry stacks. Activate for bonus AS + flurry AAs.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "aurelion_sol": [
+      {
+        "champion_id": "aurelion_sol",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "AoE stun. At 75 Stardust, upgrades to massive knockup + shockwave.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "aurora": [
+      {
+        "champion_id": "aurora",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "AAs and abilities apply marks. At 3 marks, heal and deal bonus magic.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "brand": [
+      {
+        "champion_id": "brand",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Abilities apply Blaze stacks. At 3 stacks, target explodes for %max HP magic damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "braum": [
+      {
+        "champion_id": "braum",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "AAs + ally AAs stack marks. At 4 stacks, stun target.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "caitlyn": [
+      {
+        "champion_id": "caitlyn",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.name",
+        "candidate_value": "90 Caliber Net",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "caitlyn",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Every 6th AA is empowered. Enhanced from brush or traps/net.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "camille": [
+      {
+        "champion_id": "camille",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "2-part AA enhance. Second hit deals bonus true damage after delay.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "corki": [
+      {
+        "champion_id": "corki",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Store rockets (ammo). Every 3rd is Big One (larger + more damage).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "darius": [
+      {
+        "champion_id": "darius",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Abilities and AAs apply bleed stacks (5 max). At 5, gain Noxian Might (+AD).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "diana": [
+      {
+        "champion_id": "diana",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "3 orbiting spheres dealing damage on contact. Shield on cast; refreshes if all 3 hit.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "diana",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Every 3rd AA is AoE magic damage + bonus AS after ability casts.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "dr_mundo": [
+      {
+        "champion_id": "dr_mundo",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Heal 20% missing HP instantly + gain bonus HP + MS for 10s. Continuous heal.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ekko": [
+      {
+        "champion_id": "ekko",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Rewind to position 4s ago, dealing AoE magic damage + healing.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ekko",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "3rd hit deals bonus magic damage + MS. Vs champs, slows too.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "evelynn": [
+      {
+        "champion_id": "evelynn",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Line skillshot + 3 follow-up spike attacks.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "evelynn",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "After level 5, enter camouflage when out of combat. Passive mana/HP regen.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ezreal": [
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp",
+        "candidate_value": "600-2280",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mana",
+        "candidate_value": "390-1076",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp_regen",
+        "candidate_value": "6-15.52",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mana_regen",
+        "candidate_value": "9-21.6",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.armor",
+        "candidate_value": "34-104",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mr",
+        "candidate_value": "30-49.6",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ad",
+        "candidate_value": "58-121",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ms",
+        "candidate_value": 340,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.range",
+        "candidate_value": 575,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.as_ratio",
+        "candidate_value": 0.625,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Skillshot physical damage. Applies on-hit. Reduces other ability CDs by 1.5s on hit.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.cooldown",
+        "candidate_value": "4.5/4/3.5/3",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.cost",
+        "candidate_value": "30/35/40/45",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.damage",
+        "candidate_value": "50/85/120/155",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.scaling",
+        "candidate_value": "+135% AD, +30% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.cooldown",
+        "candidate_value": "10",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.cost",
+        "candidate_value": "50",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.damage",
+        "candidate_value": "80/155/230/305",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.scaling",
+        "candidate_value": "+60% bonus AD, +75-90% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.cooldown",
+        "candidate_value": "24/20.5/17/13.5",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.cost",
+        "candidate_value": "70",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.damage",
+        "candidate_value": "80/140/200/260",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.scaling",
+        "candidate_value": "+50% bonus AD, +75% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.cooldown",
+        "candidate_value": "80",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.cost",
+        "candidate_value": "100",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.damage",
+        "candidate_value": "350/500/650",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.scaling",
+        "candidate_value": "+90% bonus AD, +100% AP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ezreal",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Ability hits grant +13% AS per stack, max 4 stacks = 52% bonus AS.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "fiddlesticks": [
+      {
+        "champion_id": "fiddlesticks",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Channel then blink to area dealing massive AoE magic damage for 5s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "fiora": [
+      {
+        "champion_id": "fiora",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Parry all damage/CC for 0.75s. Then stab forward (slow, or stun if you parried CC).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "fiora",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Next 2 AAs: first slows, second crits.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "fiora",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Reveal all 4 vitals on target. Hitting all 4 (or on kill) creates AoE heal zone.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "galio": [
+      {
+        "champion_id": "galio",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "2 windblasts converge into tornado dealing %HP magic damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "garen": [
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp",
+        "candidate_value": "660-2452",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.hp_regen",
+        "candidate_value": "7.5-15.2",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.armor",
+        "candidate_value": "52-133.2",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.mr",
+        "candidate_value": "38-74.4",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ad",
+        "candidate_value": "64-141",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.ms",
+        "candidate_value": 350,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.range",
+        "candidate_value": 175,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "base_stats.as_ratio",
+        "candidate_value": 0.667,
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Cleanse slows, +35% MS for 3s. Next auto deals bonus physical + 1.5s silence.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.cooldown",
+        "candidate_value": "9/8.5/8/7.5",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.damage",
+        "candidate_value": "40/80/120/160",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.scaling",
+        "candidate_value": "+40% AD",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Passive: +10% bonus armor/MR. Active: 30% damage reduction 4s, 60% tenacity 1s, shield.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.cooldown",
+        "candidate_value": "18/16/14/12",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Spin for 3s dealing physical per tick to nearby enemies. Nearest enemy takes +20% damage. 8+1/level ticks.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.cooldown",
+        "candidate_value": "9",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.cooldown",
+        "candidate_value": "80/65/50",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.damage",
+        "candidate_value": "150/300/450",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.scaling",
+        "candidate_value": "+25/30/35% target missing HP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "garen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Regen 1.3-5.5% missing HP/s after not taking champion/epic/turret damage for 5s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "gnar": [
+      {
+        "champion_id": "gnar",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Mini: 3-hit %max HP magic. Mega: AoE stun.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "graves": [
+      {
+        "champion_id": "graves",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Dash + reload 1 shell + gain armor stack per dash.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "graves",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Shotgun AA: fires 4 pellets in cone. Cannot pass through units. 2 ammo reload.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "gwen": [
+      {
+        "champion_id": "gwen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Dash + bonus AS + range + magic on-hit for 4s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "gwen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Fire needles (3 casts). Each cast requires AA/ability between. Damage + slow.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "hecarim": [
+      {
+        "champion_id": "hecarim",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "AoE slam. Stacks reduce CD (min ~1s at 3 stacks).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "heimerdinger": [
+      {
+        "champion_id": "heimerdinger",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.name",
+        "candidate_value": "H-28G Evolution Turret",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "heimerdinger",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Place up to 3 turrets that auto-attack enemies.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "heimerdinger",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Fire 5 converging rockets dealing magic damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "heimerdinger",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.name",
+        "candidate_value": "CH-2 Electron Storm Grenade",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "irelia": [
+      {
+        "champion_id": "irelia",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Place 2 blades → they fly together, stunning + marking enemies between.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "jax": [
+      {
+        "champion_id": "jax",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Dodge all AAs for 2s. Recast: AoE stun + damage (more per dodge).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "jax",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Passive: every 3rd AA deals bonus magic. Active: gain armor + MR for 8s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "jax",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "AAs grant stacking AS (up to 8 stacks).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "jayce": [
+      {
+        "champion_id": "jayce",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Ranged: 3 fast AAs. Melee: AoE magic damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "jayce",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Switch Ranged/Melee form at level 1. No ult level-up needed.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "jhin": [
+      {
+        "champion_id": "jhin",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Bouncing grenade (4 targets). More damage per kill in chain.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "jhin",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Channel: 4 long-range shots. Each damages in a line. 4th shot deals massive bonus damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "jhin",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "4-shot AA. 4th shot always crits + bonus %HP damage. Fixed AS; AD/crit/AS → bonus AD.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "jinx": [
+      {
+        "champion_id": "jinx",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Place 3 traps in line. Root enemies that step on them.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "kaisa": [
+      {
+        "champion_id": "kaisa",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Fire 6 missiles at nearby enemies. Extra damage to isolated.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "kaisa",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Long-range skillshot. Applies 2 plasma stacks. Reveals.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "kaisa",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "AA stacks plasma. At 5 stacks = burst magic damage (scaling AP + %HP). Abilities evolve with stats.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "kassadin": [
+      {
+        "champion_id": "kassadin",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "Cone AoE + slow. Requires 6 nearby ability casts to charge.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "kassadin",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Blink dealing AoE magic. Stacks: more damage + more mana cost per stack. Resets 15s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "katarina": [
+      {
+        "champion_id": "katarina",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Channel: throw daggers at 3 nearest champs dealing massive magic + applying GW.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "kayle": [
+      {
+        "champion_id": "kayle",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "Make ally invulnerable for 2.5s + AoE swords damage around target.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "kayle",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Level 1: melee. Level 5: ranged. Level 10: waves. Level 15: permanent fire AoE.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "kennen": [
+      {
+        "champion_id": "kennen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "Passive: every 5th AA applies mark. Active: damage all marked nearby enemies.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "kennen",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "Abilities apply marks. At 3 marks: stun target.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "khazix": [
+      {
+        "champion_id": "khazix",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "2 casts of stealth (1s each) + MS. Passive: evolve 1 ability per ult rank.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "kogmaw": [
+      {
+        "champion_id": "kogmaw",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "On death, become a bomb. Explode after 4s dealing true damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ksante": [
+      {
+        "champion_id": "ksante",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "Slam → skillshot on 3rd cast. Slow on hit.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "ksante",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "3rd ability/AA deals bonus %max HP damage. Switches damage type.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "lee_sin": [
+      {
+        "champion_id": "lee_sin",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "after ability, next 2 AAs gain AS + restore energy",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "lulu": [
+      {
+        "champion_id": "lulu",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "fire 2 bolts from Lulu+Pix, dealing magic damage + slow",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "lux": [
+      {
+        "champion_id": "lux",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "skillshot root (hits 2 targets, roots both)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "malphite": [
+      {
+        "champion_id": "malphite",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "out of combat, gain shield = 10% max HP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "master_yi": [
+      {
+        "champion_id": "master_yi",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "passive: bonus AD. Active: AAs deal bonus true damage for 5s",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "mordekaiser": [
+      {
+        "champion_id": "mordekaiser",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "after 3 hits, gain AoE damage aura + MS",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "mordekaiser",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "banish target to 1v1 shadow realm. Steal % of their stats. If you kill them, keep stats.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "morgana": [
+      {
+        "champion_id": "morgana",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "long-range root skillshot (2-3 second root!)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "morgana",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "AoE chains to nearby enemies. After 3s, stun + damage if still in range",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "nami": [
+      {
+        "champion_id": "nami",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "bouncing heal/damage between allies and enemies (up to 3 bounces)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "nasus": [
+      {
+        "champion_id": "nasus",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "AA reset. Permanently stacks +3 per minion kill (+12 per champ/large monster). Infinite scaling.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "nautilus": [
+      {
+        "champion_id": "nautilus",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "3 AoE waves of magic damage + slow around self",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "nidalee": [
+      {
+        "champion_id": "nidalee",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "transform between human (ranged, utility) and cougar (melee, burst) at level 1",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "nocturne": [
+      {
+        "champion_id": "nocturne",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "passive AS. Active: spell shield for 1.5s. If blocked, doubled AS.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "nocturne",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "tether fear after 2s. Target feared if in range",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "nunu": [
+      {
+        "champion_id": "nunu",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "throw 3 volleys of snowballs + root at end if 3 volleys hit",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ornn": [
+      {
+        "champion_id": "ornn",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "can buy items from anywhere. Upgrades allies' items to Masterwork at levels 9/12/14.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "pantheon": [
+      {
+        "champion_id": "pantheon",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "every 5 abilities/AAs empowers next ability",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "pantheon",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "block all damage from one direction for 1.5s. Final slam deals damage. Empowered: extended duration.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "rakan": [
+      {
+        "champion_id": "rakan",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "dash to ally champion granting shield. 2 charges if Xayah is ally.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "rell": [
+      {
+        "champion_id": "rell",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "pull all nearby enemies toward you repeatedly for 2s.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "renekton": [
+      {
+        "champion_id": "renekton",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "generate Fury from AAs/abilities. At 50 Fury, abilities are empowered.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "renekton",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "AA reset with 2 hits + stun. Empowered: 3 hits + longer stun + armor shred.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "renekton",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "gain bonus HP + AoE magic damage per second for 15s. Generates Fury.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "rengar": [
+      {
+        "champion_id": "rengar",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "from brush/R, leap to target. Generate Ferocity stacks. At 4, next ability is empowered.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "riven": [
+      {
+        "champion_id": "riven",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "abilities charge AA (up to 3). Each empowered AA deals bonus physical.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "riven",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "3-part dash+slash combo. 3rd cast knocks up.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "riven",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "gain bonus AD + range + enhanced abilities for 15s. Recast: Wind Slash (execute ranged wave).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "rumble": [
+      {
+        "champion_id": "rumble",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "abilities generate Heat. At 50+, abilities are empowered. At 100, silenced but AAs deal bonus magic.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "rumble",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "cone of fire dealing magic damage. Empowered: 50% more damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "rumble",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "shield + MS burst. Empowered: 50% more shield + MS.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "rumble",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "skillshot slow + magic damage. 2 charges. Empowered: 50% more damage + slow.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ryze": [
+      {
+        "champion_id": "ryze",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "line skillshot. If Flux is on target, spreads. If 2 runes are active, gain shield + MS.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "seraphine": [
+      {
+        "champion_id": "seraphine",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "every 3rd ability double-casts. Notes from ally abilities empower next AA.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "sett": [
+      {
+        "champion_id": "sett",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "gain MS toward champs. Next 2 AAs deal bonus damage (+%max HP).",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "sivir": [
+      {
+        "champion_id": "sivir",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "next 3 AAs bounce to additional targets. Each bounce deals less damage.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "smolder": [
+      {
+        "champion_id": "smolder",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "main poke. Fires bolt. Evolves at 25/125/225 stacks.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "sona": [
+      {
+        "champion_id": "sona",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "every 3 abilities, next AA is empowered (effect depends on last ability used)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "talon": [
+      {
+        "champion_id": "talon",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "3 abilities/AAs on same target → bleed for massive damage",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "teemo": [
+      {
+        "champion_id": "teemo",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "camouflage after 1.5s still. Exiting = AS boost",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "tristana": [
+      {
+        "champion_id": "tristana",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "massive AS steroid for 7s",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "tristana",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "place bomb on target. AAs stack it. At 4 stacks = massive explosion",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "tryndamere": [
+      {
+        "champion_id": "tryndamere",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "CANNOT DIE for 5s. Cannot be reduced below 1 HP. No counterplay.",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "twisted_fate": [
+      {
+        "champion_id": "twisted_fate",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "throw 3 cards in cone dealing magic damage",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "twisted_fate",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "every 4th AA deals bonus magic. Passive AS",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "twitch": [
+      {
+        "champion_id": "twitch",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "AAs and abilities apply poison stacks (max 6). Deals true damage/s",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "urgot": [
+      {
+        "champion_id": "urgot",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "6 legs with individual CDs. AAs from each direction fire shotgun blast (%max HP)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "urgot",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "skillshot execute. If target drops below 25% HP → reel in + execute (suppress + kill)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "varus": [
+      {
+        "champion_id": "varus",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "passive: AAs apply blight (3 stacks). Abilities detonate for %max HP magic",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "vayne": [
+      {
+        "champion_id": "vayne",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "every 3rd AA on same target deals %max HP true damage",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "veigar": [
+      {
+        "champion_id": "veigar",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "line skillshot. Killing units grants +1 AP permanently",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "velkoz": [
+      {
+        "champion_id": "velkoz",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "3 ability hits = bonus true damage proc",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "velkoz",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "skillshot that splits at 90° angles at recast/max range",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "velkoz",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "channel massive laser in direction. Applies passive rapidly. True damage with 3 procs",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "vi": [
+      {
+        "champion_id": "vi",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "3 hits on same target = %max HP bonus + AS buff",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "vi",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "next 2 AAs deal bonus damage + 3rd is AoE wave",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "vladimir": [
+      {
+        "champion_id": "vladimir",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "point-click drain. Every 3rd Q is empowered (more damage + heal + MS)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "vladimir",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "AoE mark. After 4s, detonates for magic damage. Marked targets take 10% increased damage from all sources",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "warwick": [
+      {
+        "champion_id": "warwick",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "AAs deal bonus magic + heal. Below 50% HP = 3x healing",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "warwick",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "long-range suppression leap. Applies on-hit effects 3 times. Heals per hit",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "wukong": [
+      {
+        "champion_id": "wukong",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "spin dealing AoE physical + knockup. Can recast for 2nd spin. Double knockup!",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "xayah": [
+      {
+        "champion_id": "xayah",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "after ability, next 3 AAs throw feathers through targets leaving feathers on ground",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "xayah",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "throw 2 daggers in line. Each leaves feather",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "xayah",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "recall ALL feathers. Enemies hit by 3+ feathers are rooted",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "xin_zhao": [
+      {
+        "champion_id": "xin_zhao",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "every 3rd AA heals",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "xin_zhao",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "next 3 AAs deal bonus damage. 3rd AA knocks up",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "xin_zhao",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "AoE sweep + for 3s, block all damage from enemies farther than Xin's AA range",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "yasuo": [
+      {
+        "champion_id": "yasuo",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "line stab. 3rd Q = tornado knockup (ranged skillshot)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "yasuo",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "create wall blocking ALL enemy projectiles for 4s",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "yasuo",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "blink to airborne enemy. Suspend + deal damage + bonus armor pen for 15s after",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "yone": [
+      {
+        "champion_id": "yone",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "double crit chance. Every 2nd AA deals bonus magic damage",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "yone",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "stab. 3rd Q = dash + knockup (like Yasuo Q3)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "yuumi": [
+      {
+        "champion_id": "yuumi",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "channel waves dealing magic damage. Each wave roots enemies hit by 3+ waves",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "zed": [
+      {
+        "champion_id": "zed",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.P.desc",
+        "candidate_value": "AA deals bonus %max HP magic to targets below 50% HP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "zed",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "dash to target (untargetable). Mark stores % of damage dealt → detonates after 3s",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "ziggs": [
+      {
+        "champion_id": "ziggs",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "throw bomb that bounces (3 times). AoE magic on each bounce or on champion hit",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "zilean": [
+      {
+        "champion_id": "zilean",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.Q.desc",
+        "candidate_value": "place bomb on target/ground. Explodes after 3s. 2 bombs on same target = AoE stun",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "zilean",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.E.desc",
+        "candidate_value": "speed up ally or slow down enemy massively (99%)",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      },
+      {
+        "champion_id": "zilean",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "place revive on ally. If they die within 5s, they resurrect with HP",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "zoe": [
+      {
+        "champion_id": "zoe",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.R.desc",
+        "candidate_value": "blink to location then blink back after 1s. Extends Q/E range. Can be interrupted",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ],
+    "zyra": [
+      {
+        "champion_id": "zyra",
+        "source_file": "wr_champions_merged_v070_full.json",
+        "field_path": "abilities.W.desc",
+        "candidate_value": "place seed. Store 2 charges. Plants deal magic damage auto-attacking enemies",
+        "v0_7_current_value": null,
+        "recommended_status": "m365_opus_exact_candidate_unverified",
+        "merge_action": "preserve_in_source_value_trace_not_canonical_fact",
+        "promote_to_canonical": "no_without_approved_source_field_provenance"
+      }
+    ]
+  }
+}

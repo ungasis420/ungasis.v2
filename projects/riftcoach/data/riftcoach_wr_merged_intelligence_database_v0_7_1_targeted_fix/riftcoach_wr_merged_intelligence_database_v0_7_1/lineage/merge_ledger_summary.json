@@ -1,0 +1,9 @@
+{
+  "version": "0.7.1",
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "rows": 4496,
+  "source_record_rows": 2176,
+  "canonical_decision_rows": 1073,
+  "v0_7_0_rows_before_overlay": 3249,
+  "m365_opus_overlay_rows_added": 1247
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "threat_types": [
+    "burst_magic",
+    "burst_physical",
+    "sustained_dps",
+    "poke",
+    "hard_engage",
+    "dive",
+    "pick_catch",
+    "shielding",
+    "healing",
+    "stealth",
+    "critical_strike",
+    "attack_speed",
+    "true_damage",
+    "split_push",
+    "crowd_control_chain",
+    "objective_burst",
+    "front_to_back_teamfight",
+    "assassin_flank",
+    "anti_tank",
+    "anti_heal_needed",
+    "anti_shield_needed"
+  ]
+}

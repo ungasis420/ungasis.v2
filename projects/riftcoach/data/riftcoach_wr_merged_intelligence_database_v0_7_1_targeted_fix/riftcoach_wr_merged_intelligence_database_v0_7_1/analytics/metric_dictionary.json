@@ -1,0 +1,40 @@
+{
+  "metrics": [
+    {
+      "metric_id": "champion_count",
+      "value": 138
+    },
+    {
+      "metric_id": "ability_count",
+      "value": 690
+    },
+    {
+      "metric_id": "item_count",
+      "value": 116
+    },
+    {
+      "metric_id": "rune_count",
+      "value": 53
+    },
+    {
+      "metric_id": "spell_count",
+      "value": 9
+    },
+    {
+      "metric_id": "synergy_edge_count",
+      "value": 12189
+    },
+    {
+      "metric_id": "counter_edge_count",
+      "value": 3459
+    },
+    {
+      "metric_id": "graph_node_count",
+      "value": 1006
+    },
+    {
+      "metric_id": "graph_edge_count",
+      "value": 16338
+    }
+  ]
+}

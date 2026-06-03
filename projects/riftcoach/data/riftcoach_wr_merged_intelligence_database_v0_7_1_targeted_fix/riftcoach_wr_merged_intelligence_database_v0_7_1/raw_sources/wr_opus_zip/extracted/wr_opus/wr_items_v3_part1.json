@@ -1,0 +1,1699 @@
+{
+  "_meta": {
+    "game": "League of Legends: Wild Rift",
+    "patch": "7.1e",
+    "category": "Physical Damage Items (Upgraded)",
+    "total_items": 35,
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/WR:Item",
+      "https://wiki.leagueoflegends.com/en-us/WR:Infinity_Edge",
+      "https://wiki.leagueoflegends.com/en-us/WR:Bloodthirster",
+      "https://wiki.leagueoflegends.com/en-us/WR:Blade_of_the_Ruined_King",
+      "https://wiki.leagueoflegends.com/en-us/WR:Black_Cleaver",
+      "https://www.wildriftfire.com/item-list",
+      "https://wr-meta.com/items/"
+    ],
+    "item_system": {
+      "inventory_slots": 6,
+      "layout": "5 items + 1 boots (+ 1 trinket)",
+      "support_layout": "1 support item + 1 boots + 4 items (+ 1 trinket)",
+      "sell_ratio": 0.7,
+      "purchase_restriction": "Only at spawn/shop",
+      "unique_passives": "Items with Unique tag: only 1 instance of that passive active",
+      "named_uniques": "Items sharing a named unique (e.g., Spellblade, Lifeline) cannot stack across items"
+    },
+    "tier_system": {
+      "S": "Best items in Wild Rift; great value and stats",
+      "A": "Strong items; great in the right situation",
+      "B": "OK items; still good in right scenarios",
+      "C": "Limited benefit; few champions can use effectively",
+      "D": "Worst items; building puts you at a disadvantage"
+    },
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "items": [
+    {
+      "id": "infinity_edge",
+      "name": "Infinity Edge",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3400,
+      "sell": 2380,
+      "stats": {
+        "attack_damage": 60,
+        "critical_rate_percent": 25
+      },
+      "gold_value": 3625,
+      "gold_efficiency_percent": 106.6,
+      "passives": [
+        {
+          "name": "Infinity",
+          "desc": "+30% critical strike damage."
+        },
+        {
+          "name": "Limit Break",
+          "desc": "Every 1% crit exceeding 100% converts to 0.6% bonus crit damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Infinity Edge"
+      ],
+      "builds_from": [
+        "bf_sword",
+        "cloak_of_agility",
+        "+900"
+      ],
+      "effect_tags": [
+        "crit",
+        "crit_damage",
+        "scaling",
+        "dps"
+      ],
+      "intended_users": [
+        "marksmen",
+        "crit_fighters"
+      ],
+      "synergies": {},
+      "when_to_build": "3rd-4th item when you have 75%+ crit from other items",
+      "why_to_build": "Massive crit damage spike; Limit Break ensures no wasted crit",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "bloodthirster",
+      "name": "Bloodthirster",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3100,
+      "sell": 2170,
+      "stats": {
+        "attack_damage": 55,
+        "critical_rate_percent": 25,
+        "health": 250
+      },
+      "gold_value": 4208,
+      "gold_efficiency_percent": 135.7,
+      "passives": [
+        {
+          "name": "Bloody",
+          "desc": "+8% Physical Vamp. Critical strikes gain additional 4% physical vamp."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Bloodthirster"
+      ],
+      "builds_from": [
+        "cloak_of_agility",
+        "ruby_crystal",
+        "vampiric_scepter",
+        "+400"
+      ],
+      "effect_tags": [
+        "sustain",
+        "physical_vamp",
+        "crit",
+        "durability"
+      ],
+      "intended_users": [
+        "marksmen",
+        "ad_fighters"
+      ],
+      "synergies": {},
+      "when_to_build": "Need sustain + damage; vs poke comps",
+      "why_to_build": "Best AD sustain item; crit vamp scales with other crit items",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "blade_of_the_ruined_king",
+      "name": "Blade of the Ruined King",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3200,
+      "sell": 2240,
+      "stats": {
+        "attack_damage": 25,
+        "attack_speed_percent": 35
+      },
+      "gold_value": 2708,
+      "gold_efficiency_percent": 84.6,
+      "passives": [
+        {
+          "name": "Thirst",
+          "desc": "+10% Omnivamp."
+        },
+        {
+          "name": "Ruined Strikes",
+          "desc": "Attacks deal bonus physical damage equal to 8.5% (melee: 10%) of enemy's current HP on-hit. Min 15, max 60 vs monsters."
+        },
+        {
+          "name": "Drain",
+          "desc": "Hitting a champion with 3 attacks/abilities in 2s deals 30-100 bonus magic damage and steals 25% MS for 2s. 60s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Blade of the Ruined King"
+      ],
+      "builds_from": [
+        "vampiric_scepter",
+        "recurve_bow",
+        "+600"
+      ],
+      "effect_tags": [
+        "on_hit",
+        "tank_shred",
+        "current_hp",
+        "sustain",
+        "ms_steal"
+      ],
+      "intended_users": [
+        "marksmen",
+        "fighters",
+        "on_hit_users"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy has 2+ tanky champions",
+      "why_to_build": "Best tank-shredding item; %HP on-hit + MS steal for kiting",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "black_cleaver",
+      "name": "Black Cleaver",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 40,
+        "ability_haste": 20,
+        "health": 400
+      },
+      "gold_value": 3932,
+      "gold_efficiency_percent": 131.1,
+      "passives": [
+        {
+          "name": "Sunder",
+          "desc": "Dealing physical damage applies 6% armor reduction for 6s, stacking 4 times (max 24%)."
+        },
+        {
+          "name": "Chase",
+          "desc": "Dealing physical damage grants (melee 20 / ranged 10) MS for 2s. Increased to (40/20) MS against max-stacked targets."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Anti-armor item"
+      ],
+      "builds_from": [
+        "kindlegem",
+        "long_sword",
+        "phage",
+        "+500"
+      ],
+      "effect_tags": [
+        "armor_reduction",
+        "bruiser",
+        "health",
+        "chase",
+        "anti_tank"
+      ],
+      "intended_users": [
+        "ad_bruisers",
+        "ad_casters"
+      ],
+      "synergies": {},
+      "when_to_build": "Team is mostly AD; enemy stacking armor",
+      "why_to_build": "Team-wide armor reduction benefits all AD allies; HP + AH for bruisers",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "trinity_force",
+      "name": "Trinity Force",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 3333,
+      "sell": 2333,
+      "stats": {
+        "attack_damage": 30,
+        "attack_speed_percent": 30,
+        "ability_haste": 20,
+        "health": 333
+      },
+      "gold_value": 4459,
+      "gold_efficiency_percent": 133.8,
+      "passives": [
+        {
+          "name": "Spellblade",
+          "desc": "After using an ability, next basic attack deals 200% base AD bonus physical damage. 1.5s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Spellblade item"
+      ],
+      "builds_from": [
+        "stinger",
+        "sheen",
+        "phage",
+        "+333"
+      ],
+      "effect_tags": [
+        "spellblade",
+        "hybrid_stats",
+        "auto_weave",
+        "split_push"
+      ],
+      "intended_users": [
+        "auto_weavers",
+        "Camille",
+        "Jax",
+        "Fiora"
+      ],
+      "synergies": {},
+      "when_to_build": "Champion weaves abilities between auto-attacks",
+      "why_to_build": "Most balanced offensive item; Spellblade is massive damage; all 4 stats useful",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "seryldas_grudge",
+      "name": "Serylda's Grudge",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 45,
+        "ability_haste": 15
+      },
+      "gold_value": 2700,
+      "gold_efficiency_percent": 90.0,
+      "passives": [
+        {
+          "name": "Bitter Cold",
+          "desc": "Damaging abilities slow enemies by 30% for 1s."
+        },
+        {
+          "name": "Last Whisper",
+          "desc": "+30% armor penetration."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "last_whisper",
+        "caulfields_warhammer",
+        "+700"
+      ],
+      "effect_tags": [
+        "armor_penetration",
+        "slow",
+        "ability_damage",
+        "anti_tank"
+      ],
+      "intended_users": [
+        "ad_casters",
+        "assassins",
+        "lethality_users"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy has armor stackers; your champion relies on abilities not autos",
+      "why_to_build": "Best AD caster anti-tank item; slow adds utility to damage",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "deaths_dance",
+      "name": "Death's Dance",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3100,
+      "sell": 2170,
+      "stats": {
+        "attack_damage": 40,
+        "ability_haste": 15,
+        "armor": 40
+      },
+      "gold_value": 3450,
+      "gold_efficiency_percent": 111.3,
+      "passives": [
+        {
+          "name": "Ignore Pain",
+          "desc": "Store 27% of all post-mitigation damage taken as a bleed that deals true damage over 3s."
+        },
+        {
+          "name": "Defy",
+          "desc": "Champion takedowns heal 15% max HP over 2s and cleanse all stored Ignore Pain damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "chain_vest",
+        "caulfields_warhammer",
+        "+800"
+      ],
+      "effect_tags": [
+        "anti_burst",
+        "sustain",
+        "armor",
+        "reset",
+        "dueling"
+      ],
+      "intended_users": [
+        "ad_bruisers",
+        "ad_assassins"
+      ],
+      "synergies": {},
+      "when_to_build": "Facing burst AD threats; teamfight reset champions",
+      "why_to_build": "Anti-burst king; Defy resets make multi-kills snowball",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "guardian_angel",
+      "name": "Guardian Angel",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3400,
+      "sell": 2380,
+      "stats": {
+        "attack_damage": 40,
+        "armor": 40
+      },
+      "gold_value": 3000,
+      "gold_efficiency_percent": 88.2,
+      "passives": [
+        {
+          "name": "Resurrect",
+          "desc": "Upon taking lethal damage, enter stasis for 4s then restore 50% HP and 30% mana. 210s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "bf_sword",
+        "chain_vest",
+        "+600"
+      ],
+      "effect_tags": [
+        "revive",
+        "armor",
+        "insurance",
+        "teamfight"
+      ],
+      "intended_users": [
+        "carries",
+        "divers",
+        "assassins"
+      ],
+      "synergies": {},
+      "when_to_build": "You're the win condition and cannot afford to die",
+      "why_to_build": "Only revive item; insurance for high-value targets",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "youmuus_ghostblade",
+      "name": "Youmuu's Ghostblade",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 55,
+        "ability_haste": 10,
+        "armor_penetration_flat": 18
+      },
+      "gold_value": 3500,
+      "gold_efficiency_percent": 116.7,
+      "passives": [
+        {
+          "name": "Wraithstep",
+          "desc": "While out of combat, gain ghosting and +15 MS. On attacking a champion, convert bonus to 30% AS for 4s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "serrated_dirk",
+        "caulfields_warhammer",
+        "+500"
+      ],
+      "effect_tags": [
+        "lethality",
+        "roaming",
+        "assassin",
+        "ms_out_of_combat"
+      ],
+      "intended_users": [
+        "ad_assassins",
+        "roaming_mids"
+      ],
+      "synergies": {},
+      "when_to_build": "Need roaming power + burst; snowballing assassin",
+      "why_to_build": "Best roaming AD item; OOC MS for rotations; lethality for burst",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "mortal_reminder",
+      "name": "Mortal Reminder",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 30,
+        "attack_speed_percent": 30,
+        "critical_rate_percent": 25
+      },
+      "gold_value": 3375,
+      "gold_efficiency_percent": 120.5,
+      "passives": [
+        {
+          "name": "Sepsis",
+          "desc": "Physical damage inflicts 40% Grievous Wounds for 3s."
+        },
+        {
+          "name": "Executioner",
+          "desc": "Attacks against Grievous Wounds-affected targets deal bonus 5-15% AD physical damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "executioners_calling",
+        "zeal",
+        "+600"
+      ],
+      "effect_tags": [
+        "grievous_wounds",
+        "anti_heal",
+        "crit",
+        "attack_speed"
+      ],
+      "intended_users": [
+        "marksmen",
+        "ad_fighters"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy has heavy healing (Soraka, Mundo, BotRK users)",
+      "why_to_build": "Best marksman anti-heal; gives crit + AS unlike pure anti-heal items",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "lord_dominiks_regards",
+      "name": "Lord Dominik's Regards",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 30,
+        "critical_rate_percent": 25
+      },
+      "gold_value": 2125,
+      "gold_efficiency_percent": 75.9,
+      "passives": [
+        {
+          "name": "Giant Slayer",
+          "desc": "Deal 0-20% bonus physical damage based on max HP difference vs target."
+        },
+        {
+          "name": "Last Whisper",
+          "desc": "+30% armor penetration."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "last_whisper",
+        "cloak_of_agility",
+        "+600"
+      ],
+      "effect_tags": [
+        "armor_penetration",
+        "anti_tank",
+        "giant_slayer",
+        "crit"
+      ],
+      "intended_users": [
+        "marksmen"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy has 2+ tanks/bruisers stacking armor",
+      "why_to_build": "Best crit-based anti-tank; %armor pen + HP-scaling bonus damage",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "phantom_dancer",
+      "name": "Phantom Dancer",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2900,
+      "sell": 2030,
+      "stats": {
+        "attack_damage": 20,
+        "attack_speed_percent": 40,
+        "critical_rate_percent": 25
+      },
+      "gold_value": 3292,
+      "gold_efficiency_percent": 113.5,
+      "passives": [
+        {
+          "name": "Shadowwalk",
+          "desc": "+5% movement speed."
+        },
+        {
+          "name": "Spectral Waltz",
+          "desc": "Next attack vs champion grants 25% bonus AS + 7% MS for 3s. 10s CD reduced by 1s per attack."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "dagger",
+        "zeal",
+        "+700"
+      ],
+      "effect_tags": [
+        "attack_speed",
+        "crit",
+        "kiting",
+        "ms",
+        "dps"
+      ],
+      "intended_users": [
+        "marksmen",
+        "on_hit_users"
+      ],
+      "synergies": {},
+      "when_to_build": "Need sustained DPS + kiting mobility",
+      "why_to_build": "Highest AS crit item; Spectral Waltz burst of speed for repositioning",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "essence_reaver",
+      "name": "Essence Reaver",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 45,
+        "critical_rate_percent": 25,
+        "ability_haste": 15
+      },
+      "gold_value": 3325,
+      "gold_efficiency_percent": 118.8,
+      "passives": [
+        {
+          "name": "Spellblade",
+          "desc": "After using ability, next attack deals 100% base AD + 40% bonus AD physical damage and restores 3% max mana. 1.5s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Spellblade item"
+      ],
+      "builds_from": [
+        "sheen",
+        "cloak_of_agility",
+        "+400"
+      ],
+      "effect_tags": [
+        "spellblade",
+        "mana_sustain",
+        "crit",
+        "ability_haste",
+        "ad_caster"
+      ],
+      "intended_users": [
+        "ad_casters",
+        "ability_marksmen",
+        "Ezreal",
+        "Lucian"
+      ],
+      "synergies": {},
+      "when_to_build": "Mana-hungry AD champ that weaves abilities between autos",
+      "why_to_build": "Solves mana issues + Spellblade damage + crit all in one",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "manamune",
+      "name": "Manamune",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "attack_damage": 20,
+        "ability_haste": 15,
+        "mana": 250
+      },
+      "gold_value": 2325,
+      "gold_efficiency_percent": 86.1,
+      "passives": [
+        {
+          "name": "Awe",
+          "desc": "Gain bonus AD equal to 1% max mana."
+        },
+        {
+          "name": "Mana Charge",
+          "desc": "Abilities and attacks grant 6 mana, 3s CD."
+        },
+        {
+          "name": "Transform",
+          "desc": "At 360 stacks, transforms into Muramana (Shock: on-hit deals bonus damage based on mana)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "tear_of_the_goddess",
+        "long_sword",
+        "+700"
+      ],
+      "effect_tags": [
+        "mana",
+        "scaling",
+        "on_hit",
+        "transform"
+      ],
+      "intended_users": [
+        "mana_hungry_ad",
+        "Ezreal",
+        "Jayce"
+      ],
+      "synergies": {},
+      "when_to_build": "Need mana scaling; champion spams abilities frequently",
+      "why_to_build": "Cheap AD + mana; transforms into powerful Muramana for late game",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "navori_quickblades",
+      "name": "Navori Quickblades",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3100,
+      "sell": 2170,
+      "stats": {
+        "attack_damage": 45,
+        "critical_rate_percent": 25,
+        "ability_haste": 15
+      },
+      "gold_value": 3325,
+      "gold_efficiency_percent": 107.3,
+      "passives": [
+        {
+          "name": "Transcendence",
+          "desc": "Crits reduce non-ultimate ability cooldowns."
+        },
+        {
+          "name": "Deft Strikes",
+          "desc": "Crits deal bonus AD damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "bf_sword",
+        "cloak_of_agility",
+        "+600"
+      ],
+      "effect_tags": [
+        "crit",
+        "ability_haste",
+        "cdr_on_crit",
+        "dps"
+      ],
+      "intended_users": [
+        "ability_marksmen",
+        "Xayah",
+        "Sivir"
+      ],
+      "synergies": {},
+      "when_to_build": "Champion relies on abilities that benefit from CD reduction via crits",
+      "why_to_build": "Unique crit-CDR interaction; keeps abilities rotating faster in fights",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "the_collector",
+      "name": "The Collector",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2900,
+      "sell": 2030,
+      "stats": {
+        "attack_damage": 50,
+        "critical_rate_percent": 25,
+        "lethality": 12
+      },
+      "gold_value": 3425,
+      "gold_efficiency_percent": 118.1,
+      "passives": [
+        {
+          "name": "Death and Taxes",
+          "desc": "Dealing damage that would leave enemy champion below 5% HP executes them. Earn 25 bonus gold on kill."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "serrated_dirk",
+        "brawlers_gloves",
+        "+700"
+      ],
+      "effect_tags": [
+        "execute",
+        "lethality",
+        "crit",
+        "snowball",
+        "bonus_gold"
+      ],
+      "intended_users": [
+        "ad_assassins",
+        "lethality_marksmen",
+        "Jhin"
+      ],
+      "synergies": {},
+      "when_to_build": "Snowballing; need execute threshold vs high-HP targets",
+      "why_to_build": "Execute passive secures kills; bonus gold accelerates snowball; hybrid lethality+crit",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "hullbreaker",
+      "name": "Hullbreaker",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 50,
+        "health": 400
+      },
+      "gold_value": 3832,
+      "gold_efficiency_percent": 136.9,
+      "passives": [
+        {
+          "name": "Set Sail",
+          "desc": "+5% movement speed."
+        },
+        {
+          "name": "Skipper",
+          "desc": "Every 4th attack deals 160% base AD + 5% max HP bonus damage."
+        },
+        {
+          "name": "Boarding Party",
+          "desc": "Empowers nearby lane minions with bonus armor/MR and damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "jaurims_fist",
+        "long_sword",
+        "+400"
+      ],
+      "effect_tags": [
+        "split_push",
+        "turret_damage",
+        "minion_buff",
+        "health"
+      ],
+      "intended_users": [
+        "split_pushers",
+        "Fiora",
+        "Jax",
+        "Tryndamere"
+      ],
+      "synergies": {},
+      "when_to_build": "Split-push win condition; enemy cannot match your sidelane",
+      "why_to_build": "Only item that empowers minions; massive turret threat when splitting",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "duskblade_of_draktharr",
+      "name": "Duskblade of Draktharr",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2900,
+      "sell": 2030,
+      "stats": {
+        "attack_damage": 55,
+        "ability_haste": 10,
+        "armor_penetration_flat": 18
+      },
+      "gold_value": 3500,
+      "gold_efficiency_percent": 120.7,
+      "passives": [
+        {
+          "name": "Nightstalker",
+          "desc": "From stealth/unseen, next attack deals 60-160 bonus physical + 99% slow for 0.35s. Resets on takedown within 3s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "serrated_dirk",
+        "caulfields_warhammer",
+        "+400"
+      ],
+      "effect_tags": [
+        "lethality",
+        "stealth_burst",
+        "assassin",
+        "reset"
+      ],
+      "intended_users": [
+        "ad_assassins",
+        "Kha'Zix",
+        "Rengar"
+      ],
+      "synergies": {},
+      "when_to_build": "Champion has stealth access or can proc unseen condition",
+      "why_to_build": "Burst from stealth; reset mechanic for multi-kills",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "eclipse",
+      "name": "Eclipse",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 50,
+        "ability_haste": 10,
+        "omnivamp_percent": 8
+      },
+      "gold_value": 3200,
+      "gold_efficiency_percent": 114.3,
+      "passives": [
+        {
+          "name": "Ever Rising Moon",
+          "desc": "Hitting a champion with 2 attacks/abilities within 1.5s deals 6% max HP bonus physical + 15% MS for 2s + shield 80-280. 12s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "serrated_dirk",
+        "vampiric_scepter",
+        "+200"
+      ],
+      "effect_tags": [
+        "omnivamp",
+        "burst",
+        "shield",
+        "ms",
+        "dueling"
+      ],
+      "intended_users": [
+        "ad_bruisers",
+        "fighters",
+        "ranged_tops"
+      ],
+      "synergies": {},
+      "when_to_build": "Need sustain + burst trade pattern (2-hit combo)",
+      "why_to_build": "Omnivamp + burst passive + shield makes trades favorable",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "spear_of_shojin",
+      "name": "Spear of Shojin",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 45,
+        "ability_haste": 20,
+        "health": 400
+      },
+      "gold_value": 4182,
+      "gold_efficiency_percent": 139.4,
+      "passives": [
+        {
+          "name": "Dragonforce",
+          "desc": "Dealing ability damage grants 10% bonus AS for 6s, stacking 3 times (max 30%). Non-ultimate ability damage reduces ultimate CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "kindlegem",
+        "caulfields_warhammer",
+        "+500"
+      ],
+      "effect_tags": [
+        "ability_haste",
+        "attack_speed",
+        "ult_cdr",
+        "bruiser"
+      ],
+      "intended_users": [
+        "ad_bruisers",
+        "Riven",
+        "Renekton",
+        "Wukong"
+      ],
+      "synergies": {},
+      "when_to_build": "Champion scales with ult uptime and ability spam",
+      "why_to_build": "Only item that reduces ult CD; AS stacking for ability-heavy melee fighters",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "steraks_gage",
+      "name": "Sterak's Gage",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3100,
+      "sell": 2170,
+      "stats": {
+        "attack_damage": 50,
+        "health": 400
+      },
+      "gold_value": 3832,
+      "gold_efficiency_percent": 123.6,
+      "passives": [
+        {
+          "name": "Lifeline",
+          "desc": "Taking damage below 35% HP grants shield (75% bonus HP) + 30% tenacity for 3.75s. 60s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "jaurims_fist",
+        "long_sword",
+        "+600"
+      ],
+      "effect_tags": [
+        "shield",
+        "lifeline",
+        "tenacity",
+        "anti_burst",
+        "health"
+      ],
+      "intended_users": [
+        "bruisers",
+        "fighters",
+        "melee_carries"
+      ],
+      "synergies": {},
+      "when_to_build": "Facing burst damage; need to survive initial combo",
+      "why_to_build": "Shield scales with bonus HP (synergy with other HP items); tenacity anti-CC",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "serpents_fang",
+      "name": "Serpent's Fang",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2600,
+      "sell": 1820,
+      "stats": {
+        "attack_damage": 55,
+        "armor_penetration_flat": 18
+      },
+      "gold_value": 3200,
+      "gold_efficiency_percent": 123.1,
+      "passives": [
+        {
+          "name": "Shield Reaver",
+          "desc": "Dealing damage to shielded champions reduces their shield by 50% (ranged: 35%)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "serrated_dirk",
+        "long_sword",
+        "+600"
+      ],
+      "effect_tags": [
+        "lethality",
+        "anti_shield",
+        "counter"
+      ],
+      "intended_users": [
+        "ad_champs_vs_shields"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy has heavy shielding (Lulu, Karma, Barrier, Sterak's)",
+      "why_to_build": "Only anti-shield item; neutralizes shield-stacking comps",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "edge_of_night",
+      "name": "Edge of Night",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3100,
+      "sell": 2170,
+      "stats": {
+        "attack_damage": 50,
+        "ability_haste": 15,
+        "health": 325
+      },
+      "gold_value": 4032,
+      "gold_efficiency_percent": 130.1,
+      "passives": [
+        {
+          "name": "Annul",
+          "desc": "After not taking champion damage for 15s, gain a spell shield that blocks the next enemy ability."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "serrated_dirk",
+        "kindlegem",
+        "+600"
+      ],
+      "effect_tags": [
+        "spell_shield",
+        "health",
+        "anti_cc",
+        "safety"
+      ],
+      "intended_users": [
+        "ad_assassins",
+        "squishy_ad_carries"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy has critical single-target CC you need to block",
+      "why_to_build": "Spell shield prevents picks; HP + AH for survivability",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "runaans_hurricane",
+      "name": "Runaan's Hurricane",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2600,
+      "sell": 1820,
+      "stats": {
+        "critical_rate_percent": 25,
+        "attack_speed_percent": 35
+      },
+      "gold_value": 2083,
+      "gold_efficiency_percent": 80.1,
+      "passives": [
+        {
+          "name": "Wind's Fury",
+          "desc": "Attacks fire 2 additional bolts at nearby enemies, each dealing 62% AD physical damage. Bolts apply on-hit effects."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "dagger",
+        "zeal",
+        "+400"
+      ],
+      "effect_tags": [
+        "attack_speed",
+        "crit",
+        "aoe",
+        "waveclear",
+        "on_hit_spread"
+      ],
+      "intended_users": [
+        "marksmen",
+        "on_hit_marksmen",
+        "Jinx",
+        "Kai'Sa"
+      ],
+      "synergies": {},
+      "when_to_build": "Need AoE auto-attack damage; teamfight DPS spreading",
+      "why_to_build": "Only multi-bolt item; spreads on-hit effects to multiple targets",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "stormrazor",
+      "name": "Stormrazor",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 40,
+        "attack_speed_percent": 15,
+        "critical_rate_percent": 25
+      },
+      "gold_value": 3250,
+      "gold_efficiency_percent": 116.1,
+      "passives": [
+        {
+          "name": "Energized",
+          "desc": "Moving and attacking generates Energized Attack."
+        },
+        {
+          "name": "Stormshot",
+          "desc": "Energized attacks deal 40-100 bonus magic damage and slow enemy by 75% for 0.5s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "bf_sword",
+        "kircheis_shard",
+        "+400"
+      ],
+      "effect_tags": [
+        "energized",
+        "slow",
+        "burst",
+        "crit",
+        "pick"
+      ],
+      "intended_users": [
+        "marksmen",
+        "Jhin",
+        "Caitlyn"
+      ],
+      "synergies": {},
+      "when_to_build": "Need pick potential with guaranteed slow on first auto",
+      "why_to_build": "Energized slow catches targets; works with other energized items",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "divine_sunderer",
+      "name": "Divine Sunderer",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 30,
+        "ability_haste": 20,
+        "health": 400
+      },
+      "gold_value": 3432,
+      "gold_efficiency_percent": 114.4,
+      "passives": [
+        {
+          "name": "Spellblade",
+          "desc": "After ability, next attack deals 12% (melee) or 9% (ranged) target max HP bonus physical damage, healing for same amount. Max vs monsters. 1.5s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Spellblade item"
+      ],
+      "builds_from": [
+        "sheen",
+        "phage",
+        "+500"
+      ],
+      "effect_tags": [
+        "spellblade",
+        "hp_damage",
+        "sustain",
+        "anti_tank",
+        "bruiser"
+      ],
+      "intended_users": [
+        "bruisers_vs_tanks",
+        "Nasus",
+        "Camille"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy is HP-stacking; need %HP damage + sustain",
+      "why_to_build": "Highest Spellblade %HP damage; heals for damage dealt",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "wits_end",
+      "name": "Wit's End",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 25,
+        "attack_speed_percent": 35,
+        "magic_resist": 25
+      },
+      "gold_value": 3208,
+      "gold_efficiency_percent": 114.6,
+      "passives": [
+        {
+          "name": "Fray",
+          "desc": "Attacks deal 15-80 (based on level) bonus magic damage on-hit."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "recurve_bow",
+        "null_magic_mantle",
+        "+600"
+      ],
+      "effect_tags": [
+        "on_hit",
+        "magic_resist",
+        "attack_speed",
+        "hybrid_damage"
+      ],
+      "intended_users": [
+        "on_hit_users",
+        "fighters_vs_ap"
+      ],
+      "synergies": {},
+      "when_to_build": "Enemy has heavy AP damage; you auto-attack frequently",
+      "why_to_build": "Only offensive MR item; on-hit magic damage diversifies damage types",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "magnetic_blaster",
+      "name": "Magnetic Blaster",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "critical_rate_percent": 25,
+        "attack_speed_percent": 35
+      },
+      "gold_value": 2083,
+      "gold_efficiency_percent": 69.4,
+      "passives": [
+        {
+          "name": "Fervor",
+          "desc": "+5% movement speed."
+        },
+        {
+          "name": "Energized",
+          "desc": "Moving and attacking generates Energized Attack."
+        },
+        {
+          "name": "Power Blitz",
+          "desc": "Energized attacks gain 100 range (50 melee), deal 40-100 bonus magic damage, grant 60 MS for 0.75s. Bounces to 5 nearby enemies. Can crit. 50-80% bonus damage vs minions."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "kircheis_shard",
+        "zeal",
+        "+400"
+      ],
+      "effect_tags": [
+        "energized",
+        "range_extension",
+        "aoe",
+        "crit",
+        "ms"
+      ],
+      "intended_users": [
+        "marksmen",
+        "short_range_adcs"
+      ],
+      "synergies": {},
+      "when_to_build": "Need range extension + waveclear + energized synergy",
+      "why_to_build": "Extends attack range; AoE bounce for teamfights; energized stacks",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "guinsoos_rageblade",
+      "name": "Guinsoo's Rageblade",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 25,
+        "attack_speed_percent": 25,
+        "ability_power": 25
+      },
+      "gold_value": 2792,
+      "gold_efficiency_percent": 93.1,
+      "passives": [
+        {
+          "name": "Wrath",
+          "desc": "Basic attacks grant +6% AS per stack (6 stacks max = 36%). At max stacks, every other attack triggers on-hit effects twice."
+        },
+        {
+          "name": "Seething Strike",
+          "desc": "Deal 30 bonus magic damage on-hit (applies twice at max stacks)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "recurve_bow",
+        "amplifying_tome",
+        "+600"
+      ],
+      "effect_tags": [
+        "on_hit",
+        "attack_speed",
+        "scaling",
+        "hybrid",
+        "double_on_hit"
+      ],
+      "intended_users": [
+        "on_hit_carries",
+        "Kog'Maw",
+        "Vayne",
+        "Kayle"
+      ],
+      "synergies": {},
+      "when_to_build": "On-hit build; need to double on-hit effects at max stacks",
+      "why_to_build": "Double on-hit is extremely powerful on champions with strong on-hit passives",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "terminus",
+      "name": "Terminus",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 30,
+        "attack_speed_percent": 35
+      },
+      "gold_value": 2958,
+      "gold_efficiency_percent": 98.6,
+      "passives": [
+        {
+          "name": "Juxtaposition",
+          "desc": "Alternating attacks grant Light (armor + MR) or Dark (armor pen + magic pen) stacks, 3 stacks each. Light grants defensive stats, Dark grants offensive penetration."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "recurve_bow",
+        "long_sword",
+        "+600"
+      ],
+      "effect_tags": [
+        "hybrid_pen",
+        "attack_speed",
+        "adaptive",
+        "on_hit",
+        "dueling"
+      ],
+      "intended_users": [
+        "hybrid_damage",
+        "on_hit",
+        "Kog'Maw"
+      ],
+      "synergies": {},
+      "when_to_build": "Dealing mixed damage; need both armor and magic pen",
+      "why_to_build": "Only item granting both armor pen AND magic pen; defensive stacks for safety",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kraken_slayer",
+      "name": "Kraken Slayer",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 40,
+        "attack_speed_percent": 25,
+        "critical_rate_percent": 25
+      },
+      "gold_value": 3667,
+      "gold_efficiency_percent": 122.2,
+      "passives": [
+        {
+          "name": "Bring It Down",
+          "desc": "Every 3rd attack deals 30-90 (+35% bonus AD) bonus true damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "bf_sword",
+        "dagger",
+        "+700"
+      ],
+      "effect_tags": [
+        "true_damage",
+        "crit",
+        "attack_speed",
+        "anti_tank",
+        "dps"
+      ],
+      "intended_users": [
+        "marksmen",
+        "true_damage_dps"
+      ],
+      "synergies": {},
+      "when_to_build": "Need true damage to cut through armor stackers",
+      "why_to_build": "True damage on every 3rd hit; bypasses all resistances",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "titanic_hydra",
+      "name": "Titanic Hydra",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3200,
+      "sell": 2240,
+      "stats": {
+        "attack_damage": 30,
+        "health": 500
+      },
+      "gold_value": 3165,
+      "gold_efficiency_percent": 98.9,
+      "passives": [
+        {
+          "name": "Cleave",
+          "desc": "Attacks deal (melee 2% / ranged 1.5%) max HP bonus physical damage as AoE splash."
+        }
+      ],
+      "actives": [
+        {
+          "name": "Crescent",
+          "desc": "Next attack deals (melee 4% / ranged 3%) max HP bonus AoE physical damage. 10s CD."
+        }
+      ],
+      "limitations": [],
+      "builds_from": [
+        "jaurims_fist",
+        "giants_belt",
+        "+600"
+      ],
+      "effect_tags": [
+        "health",
+        "aoe",
+        "waveclear",
+        "hp_scaling",
+        "auto_reset"
+      ],
+      "intended_users": [
+        "hp_stackers",
+        "Sion",
+        "Sett",
+        "Volibear"
+      ],
+      "synergies": {},
+      "when_to_build": "HP-stacking build; need waveclear for split push",
+      "why_to_build": "Damage scales with max HP; AoE splash for clearing + teamfights",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "sundered_sky",
+      "name": "Sundered Sky",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 40,
+        "ability_haste": 15,
+        "health": 350
+      },
+      "gold_value": 3616,
+      "gold_efficiency_percent": 129.1,
+      "passives": [
+        {
+          "name": "Lightshield Strike",
+          "desc": "First attack on each champion crits (150% damage) and heals for 140% base AD + 6% missing HP. 8s CD per target."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "caulfields_warhammer",
+        "ruby_crystal",
+        "+600"
+      ],
+      "effect_tags": [
+        "sustain",
+        "crit",
+        "missing_hp_heal",
+        "bruiser"
+      ],
+      "intended_users": [
+        "bruisers",
+        "divers"
+      ],
+      "synergies": {},
+      "when_to_build": "Need guaranteed crit + healing in extended trades",
+      "why_to_build": "Free crit on first hit per target; missing HP heal rewards low-HP fighting",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "experimental_hexplate",
+      "name": "Experimental Hexplate",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "D",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "attack_damage": 25,
+        "attack_speed_percent": 25,
+        "health": 300
+      },
+      "gold_value": 3291,
+      "gold_efficiency_percent": 109.7,
+      "passives": [
+        {
+          "name": "Hexcharged",
+          "desc": "Casting ultimate grants 30% AS + 15% MS for 5s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "phage",
+        "dagger",
+        "+600"
+      ],
+      "effect_tags": [
+        "ult_synergy",
+        "attack_speed",
+        "ms",
+        "health"
+      ],
+      "intended_users": [
+        "ult_dependent_fighters"
+      ],
+      "synergies": {},
+      "when_to_build": "Champion's ult enables extended auto-attack window",
+      "why_to_build": "Free stats on ult cast; but niche and outclassed by other options",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "soul_transfer",
+      "name": "Soul Transfer",
+      "category": "Physical",
+      "item_type": "upgraded",
+      "tier": "D",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "attack_damage": 40,
+        "health": 350
+      },
+      "gold_value": 3166,
+      "gold_efficiency_percent": 113.1,
+      "passives": [
+        {
+          "name": "Soul Siphon",
+          "desc": "On champion takedown, permanently gain AD stacks. Stats reset on death."
+        },
+        {
+          "name": "Sacrifice",
+          "desc": "On death, grant nearby allies bonus stats."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "long_sword",
+        "ruby_crystal",
+        "+800"
+      ],
+      "effect_tags": [
+        "snowball",
+        "stacking",
+        "death_penalty"
+      ],
+      "intended_users": [
+        "snowball_champions"
+      ],
+      "synergies": {},
+      "when_to_build": "Extremely ahead and confident you won't die",
+      "why_to_build": "High-risk high-reward; lose stacks on death",
+      "notes": null,
+      "patch_version": "7.1e"
+    }
+  ]
+}

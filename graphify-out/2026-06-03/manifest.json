@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780471752.6416166,
-    "ast_hash": "c20b6e29d14b2aa583e23587b159a665",
+    "mtime": 1780484963.7301536,
+    "ast_hash": "585cf81b5996643d116a6b04114df5f6",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -10035,19 +10035,19 @@
     "semantic_hash": "6990b3ea6193a40f9514f8672b1d2daf"
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_champions_part1.json": {
-    "mtime": 1778768914.4998198,
-    "ast_hash": "63dfdf88a5b3b31b514539209b95e0d5",
-    "semantic_hash": "63dfdf88a5b3b31b514539209b95e0d5"
+    "mtime": 1780484884.615462,
+    "ast_hash": "28b4064351b6e2c0222a01b061541b1f",
+    "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_champions_part2.json": {
-    "mtime": 1778768914.5189881,
-    "ast_hash": "0702d7907abb3f5d3f26845ad62cfd7a",
-    "semantic_hash": "0702d7907abb3f5d3f26845ad62cfd7a"
+    "mtime": 1780484884.6494627,
+    "ast_hash": "11b238ea96310a509a6be7f5dadc79a5",
+    "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_champions_part3.json": {
-    "mtime": 1778768914.5390582,
-    "ast_hash": "bf1f1574e6c98ce95aa33a89344b21a2",
-    "semantic_hash": "bf1f1574e6c98ce95aa33a89344b21a2"
+    "mtime": 1780484884.702088,
+    "ast_hash": "372359661af4993313e4e80d7c70587b",
+    "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_counters_items_runes.json": {
     "mtime": 1778768914.5546439,
@@ -10075,19 +10075,19 @@
     "semantic_hash": "c22e37b163604341eb9f72f64197695e"
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_meta.json": {
-    "mtime": 1778768914.6586888,
-    "ast_hash": "9673b1f2383fe8a48d7755ac738856c9",
-    "semantic_hash": "9673b1f2383fe8a48d7755ac738856c9"
+    "mtime": 1780484854.4281118,
+    "ast_hash": "42bc77fcacaf921db5dd95e19daab55b",
+    "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_runes.json": {
-    "mtime": 1778768914.6766956,
-    "ast_hash": "2f77781f2bae90b77cc968422627f4ab",
-    "semantic_hash": "2f77781f2bae90b77cc968422627f4ab"
+    "mtime": 1780484853.7092493,
+    "ast_hash": "befe77e2571262215da8e6a5462855eb",
+    "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_spells.json": {
-    "mtime": 1778768914.6920915,
-    "ast_hash": "b675acdcc69c5a11ec046bd9b332a200",
-    "semantic_hash": "b675acdcc69c5a11ec046bd9b332a200"
+    "mtime": 1780484853.8581352,
+    "ast_hash": "e563bc18166e01d9085c1c7dd07e7dc6",
+    "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_synergies_adc.json": {
     "mtime": 1778768914.7067153,
@@ -17240,8 +17240,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\deploy.py": {
-    "mtime": 1780484739.0190575,
-    "ast_hash": "041d9845cd8962b04da8dfdf8e3e4a58",
+    "mtime": 1780484878.8078825,
+    "ast_hash": "bc4e8dbe19c0e83f3ffbfcb88d39b7ce",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\scraper.py": {
@@ -17267,6 +17267,771 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\utils\\diff.py": {
     "mtime": 1780484731.824042,
     "ast_hash": "367d1f0c41868ae45964c032062316ac",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_champions.json": {
+    "mtime": 1780484854.2672818,
+    "ast_hash": "511703a24142b7e95c7ad09402df580b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_items.json": {
+    "mtime": 1780484853.4974546,
+    "ast_hash": "1b90011a1fd506a95b579dd6ac5a16c8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_meta.json": {
+    "mtime": 1780484854.4281118,
+    "ast_hash": "42bc77fcacaf921db5dd95e19daab55b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_patch.json": {
+    "mtime": 1780484854.4513307,
+    "ast_hash": "6b11946b0145331045a5687fa0880a99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_runes.json": {
+    "mtime": 1780484853.7092493,
+    "ast_hash": "befe77e2571262215da8e6a5462855eb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_spells.json": {
+    "mtime": 1780484853.8581352,
+    "ast_hash": "e563bc18166e01d9085c1c7dd07e7dc6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\01e7ff5c04e414b951a455cc02297cc2.html": {
+    "mtime": 1780484786.298652,
+    "ast_hash": "2b120f5229c59dd8c447950723d81633",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\09d7305071c81de1a24cafc4f35717f6.html": {
+    "mtime": 1780484808.920815,
+    "ast_hash": "989e8a4aff7ca26cf181b3f24353ec4d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\09ff42dea785828996fbe6519fb5d45a.html": {
+    "mtime": 1780484808.4794862,
+    "ast_hash": "f982c3565dfa89c43a640e8b19958b7e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0a6376cdd1e0bffb215dde54853f231a.html": {
+    "mtime": 1780484800.5816734,
+    "ast_hash": "9e4d15727a6152d1f833604936c209b6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0b1f2733ca1ceaba9f557ba178d75cab.html": {
+    "mtime": 1780484829.071075,
+    "ast_hash": "47bb4bc75e3ba92e2dac8c785359a1d1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0b5e2220a4181df64a9beaa20cad237c.html": {
+    "mtime": 1780484795.4715233,
+    "ast_hash": "9d3f2fa8ac2b0288266e452f4bf0164b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0bbf1c7f153c3ec6f69a0776bb5b1a60.html": {
+    "mtime": 1780484810.4065619,
+    "ast_hash": "fe00436970e0e606bd395a6c34386c7f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0dccc3de7d4f88dea98cd1432e054711.html": {
+    "mtime": 1780484784.1836734,
+    "ast_hash": "14a74b93d0ae09bc8202af3b6edfe93b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0e478b5973bc9cac744122bc0ea62c5c.html": {
+    "mtime": 1780484810.820748,
+    "ast_hash": "7cc5c0a3107585f7870ea0c7bd1a8cec",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0ea0be377fbca643e7bef47066bf0321.html": {
+    "mtime": 1780484784.2533498,
+    "ast_hash": "c6fc97299d69f3175d3717cd4b9314ba",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0f6e59c74a1605c1646fbcff11ea1dd9.html": {
+    "mtime": 1780484794.462669,
+    "ast_hash": "f873d2deb766d6047479e12170d6654e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\112b653ba92da4581bf889ee9569bb18.html": {
+    "mtime": 1780484802.6004932,
+    "ast_hash": "1362954e105c7303eeefe0b45682dfad",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1285faefcc05a334fe4d4ac3e6e8cc7a.html": {
+    "mtime": 1780484830.7468123,
+    "ast_hash": "beb6625ca8a3fed081682fd666c9718d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\133cee603ec5bf0ce636ce5c505dbce8.html": {
+    "mtime": 1780484784.100155,
+    "ast_hash": "e3366c1e128ed5accd97e8686dab271a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\182f18026c1cf30aadeea5d9eddf5673.html": {
+    "mtime": 1780484790.4717531,
+    "ast_hash": "62f594647247b04b8eaa930e20619753",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1c8976f95a59115180a5548988276922.html": {
+    "mtime": 1780484804.6486614,
+    "ast_hash": "a5ea2c0d75a73d320c19dbc659ac7b1b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1ca467db05c406556c3b9f83fa88a902.html": {
+    "mtime": 1780484798.3474498,
+    "ast_hash": "8a8d304ca5763ff827bdbcb90ac2ad59",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1ca938187d54690ed7f822263ebde446.html": {
+    "mtime": 1780484798.5476513,
+    "ast_hash": "2dac3549376d84f8ed5c374879659e83",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1da80fc6b721c7fa73e38c1fc3bab353.html": {
+    "mtime": 1780484801.0437028,
+    "ast_hash": "c3466560ba09c73b627c945b43122e74",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1e7dd3f4dd01672e0519b4c907df91da.html": {
+    "mtime": 1780484808.7089853,
+    "ast_hash": "7c7823ae7f1d05ad49b6c92fb80ab262",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1f742450cf29913b9ab074bb730162c9.html": {
+    "mtime": 1780484825.4345312,
+    "ast_hash": "2a173a011386207186e84c3c0658c518",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1f99217e09731cd77ee2a9bf03201323.html": {
+    "mtime": 1780484820.9700682,
+    "ast_hash": "ec4bb4277ef7c14ec3b79f1d1a3cb0e7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\20cc17dd5f948b3f5889944991b091dc.html": {
+    "mtime": 1780484829.691202,
+    "ast_hash": "4b1a9c55e9ae0e1b15b66b366217cc39",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\222b8ad2c9688d6e898f46fb3055da9c.html": {
+    "mtime": 1780484802.8402238,
+    "ast_hash": "1e30f862126f61ac3aaf86ff70e8c7f7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\241367241151e1b285911024b35bba53.html": {
+    "mtime": 1780484826.6908064,
+    "ast_hash": "499fae2c4a8f7f12efc568b8bb6442a5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\25e2c13889e07f725ab375f29746efb2.html": {
+    "mtime": 1780484793.6846673,
+    "ast_hash": "4eb9407cd7ec8cf81f45e3978c539429",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\26e7c558f6a07f793c209023f8e2410f.html": {
+    "mtime": 1780484784.2303398,
+    "ast_hash": "6ce105a8d7a11f58aabd0b4ba567590f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\26f1261a8f7a21b93f725f50098d6188.html": {
+    "mtime": 1780484798.5741603,
+    "ast_hash": "597e3de619ec29c91f73ce042e93c1c7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2905e8f0d997fd323d95e8b11a6194cd.html": {
+    "mtime": 1780484777.9140608,
+    "ast_hash": "dcff85b2886145da1f395c1d5a179454",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2a817d1b8be2d8f9016abc5c6209d21c.html": {
+    "mtime": 1780484792.46393,
+    "ast_hash": "2ba50cb257b558ddec47868fefc70a32",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2b93e6cc18a46ee50f892b05464e02ad.html": {
+    "mtime": 1780484830.0041897,
+    "ast_hash": "73cc3e032d43f29126581a190115926f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2d479e799f21cfb0bf216ea929bf8a3d.html": {
+    "mtime": 1780484789.931274,
+    "ast_hash": "f869830fcb280f35847421c4e2cbeba3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3090a040cd955401ab7c777da27fd0f6.html": {
+    "mtime": 1780484786.2456925,
+    "ast_hash": "c057ca93cbc7ce56f5e248862e891739",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3158cc25ac8e394156b630bda9aa81eb.html": {
+    "mtime": 1780484821.7640126,
+    "ast_hash": "72a2dad65892c7492438bf920fca44ea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\32d63b2effa67d0ff66eb4cdf6ed9f95.html": {
+    "mtime": 1780484800.6044562,
+    "ast_hash": "d2f46ce474f40c61792d9c2f9e6fa65c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\354ad27788afb197f0f167bf1a7485a5.html": {
+    "mtime": 1780484792.4041588,
+    "ast_hash": "aef69e7a092bc27e9102b989a4a7a4a4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\366f2d3d58a42ab1711ef63cd4f8e38c.html": {
+    "mtime": 1780484806.620572,
+    "ast_hash": "18b3396e37dabc5a9e354293d2d72fdb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3856e76efa54b3542521c8cb5c98e30e.html": {
+    "mtime": 1780484788.072148,
+    "ast_hash": "c5c6b7c9f013d2b20d0ea5232ba8cf1f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3d45bfd3e1abaaecb303bd6691de6d00.html": {
+    "mtime": 1780484799.127504,
+    "ast_hash": "843cb26a4a6193c49f2181a16988e289",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3f8de31f86210a81b4af28511ab2607e.html": {
+    "mtime": 1780484814.9582117,
+    "ast_hash": "13b0de99a1c42b70f29948c79a6d6131",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3f9b298bae6bc78ecc67251634c8fcdc.html": {
+    "mtime": 1780484812.264333,
+    "ast_hash": "dc8d7713e30417c19cf06d9f65a752df",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\422497f5764c9b058bfcd9c6e5b8ac17.html": {
+    "mtime": 1780484794.491782,
+    "ast_hash": "570cf3966db9d29681e1d0496a6ef064",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\43993f83efb1be4798470e385bfc485b.html": {
+    "mtime": 1780484790.420209,
+    "ast_hash": "3ef83690dde5dd9fda8d704b9fb5f20e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\43cfddf3766122a739b0d6aac6684d87.html": {
+    "mtime": 1780484782.1647594,
+    "ast_hash": "d00e4028fca29d58d2683568ffd2fd79",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\49e7a460acd7046a546379b169bd66d8.html": {
+    "mtime": 1780484823.608517,
+    "ast_hash": "fbbaef2fe0352b28d36c960fef0170e6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4b17814df9eed442319f7efbbac73835.html": {
+    "mtime": 1780484780.1161208,
+    "ast_hash": "28e6188348bd532fea04405864c69bdb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4b923984ccab361fd1915ed4748bdaa3.html": {
+    "mtime": 1780484825.1015666,
+    "ast_hash": "cc8630ff283c86adace3e4d7cc5bf23b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4c2551a5c006dfad83823c6844770f66.html": {
+    "mtime": 1780484827.3507757,
+    "ast_hash": "78245eb841ee94b9a973b9a808d7e59b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4c76dc4ad8f1bb90a529d318bd1650cb.html": {
+    "mtime": 1780484815.0179734,
+    "ast_hash": "c2b7a60bede2ddd1aa422e27e111b222",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4da0db44ef4fb2cbbd6f34765125fa5a.html": {
+    "mtime": 1780484804.6083722,
+    "ast_hash": "6e88e6b1adeca5e300545259aedf63dc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4ff72488a75a782e37982228ff26d8dc.html": {
+    "mtime": 1780484800.5494938,
+    "ast_hash": "85ef8f9ea6fcb43c02937fafdb458bc8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\5016f988265ab0d3e65226d506a3fb15.html": {
+    "mtime": 1780484779.975754,
+    "ast_hash": "faa556630d951662e16c1d4d26868f9e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\56e7bf44e48bb2283c08800be28b2302.html": {
+    "mtime": 1780484822.213335,
+    "ast_hash": "f3385d1b8c335eda233b03d61c9336e2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\58a8de9d3180d9a6c510b4ef6c692dd4.html": {
+    "mtime": 1780484812.9987247,
+    "ast_hash": "6b941a8f7281390b8a387b01d20515ca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\5e668085b6257748248aa94ab6c51750.html": {
+    "mtime": 1780484818.9472985,
+    "ast_hash": "267a5d1e053b56d30d5111c515937482",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\5fc27d5ff7a5ab7182b0f26d98615ea8.html": {
+    "mtime": 1780484828.9131446,
+    "ast_hash": "b76eb35f8a738084212a49b6307a167f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\622e5b535e7a10ef2bba281e4d3c366e.html": {
+    "mtime": 1780484806.728021,
+    "ast_hash": "ee4ab77a9ffc17be7ad2a2577e958194",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\65a7936450543f8cdef0e9f8012dc633.html": {
+    "mtime": 1780484796.4018228,
+    "ast_hash": "f69dafe9450469076f2e7933ff68e08a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\67bec22b30e315e6c3c6dcaacb7b1048.html": {
+    "mtime": 1780484806.5908754,
+    "ast_hash": "6631fa16fc92a27be1cc38c778c26d01",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\68c157d29044710791cb062432b2fc42.html": {
+    "mtime": 1780484819.1026423,
+    "ast_hash": "ab631f219c6a30ee5de7597cd7c8a627",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\6bc8d696487f5289e201ffa50177a68c.html": {
+    "mtime": 1780484792.3787642,
+    "ast_hash": "37b89659fe9c65c192f26b4328e2a065",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\6d24dd66e4fffc3a1359a71e6195bdb7.html": {
+    "mtime": 1780484769.162915,
+    "ast_hash": "b6f3b1c07574a93b51ac85ebba10b731",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7137022a62dbb67f260064d774e6a862.html": {
+    "mtime": 1780484816.9353995,
+    "ast_hash": "d38bbe5fcc93fa4d1731cd816586bbbf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7152843c61016c9aba0040ad786499d7.html": {
+    "mtime": 1780484816.8833537,
+    "ast_hash": "dfff9ce3424196cb65080584b05c49db",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7261ca2d5cc205fdbb23881eb44ef350.html": {
+    "mtime": 1780484802.5917728,
+    "ast_hash": "c47c28845c41fde9b4c2ac5bb1135151",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\72bc0b51233e142e8d152accaed11996.html": {
+    "mtime": 1780484829.2626538,
+    "ast_hash": "705fad295f61e5f46e3c5ce129f4ccf9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\72e7dc6fc623305c0032523fe4a0187a.html": {
+    "mtime": 1780484828.203119,
+    "ast_hash": "6315dae6b51ac2b55dcbc0a3f4e18dab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\746e90c889715f53c8c9faa31e114eaa.html": {
+    "mtime": 1780484780.0042596,
+    "ast_hash": "584d96bb0bee1ca49b8a39dc0565b95c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\78601fcf6659fe0ab2f5b1980513bbd5.html": {
+    "mtime": 1780484818.0020976,
+    "ast_hash": "60fc09a9c250fa723905cdf0db77e7b6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7bfa67c00c0c427c7edc3bb72972448e.html": {
+    "mtime": 1780484782.0857,
+    "ast_hash": "f5cea9adc1cc8c5e570e9d3978b96d79",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7c3d65d39fc117ab8dca7b7544ebeff3.html": {
+    "mtime": 1780484788.298709,
+    "ast_hash": "4c5cb6f0f6a3d00f36dcdc353df7ba01",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7c7cb5f8c87b20696ff6eb8d3b5e3a65.html": {
+    "mtime": 1780484827.872516,
+    "ast_hash": "4962cc01aa36c045e87611a07cf911b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7fb6babe73ccf5b4504a3592eb6a1726.html": {
+    "mtime": 1780484831.530542,
+    "ast_hash": "381766a6c51ff279b38f17b52a9855e6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8306a282d8bb5df0962a55bab3c217ce.html": {
+    "mtime": 1780484834.3033917,
+    "ast_hash": "dde88270e8d180a49a2d34fb170f91ef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\85a793de6e1784de64975979d0d2aa31.html": {
+    "mtime": 1780484784.1629243,
+    "ast_hash": "c485328d3bbf77e16a7d922d5403bbaf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\874585c1e71bd5815b21e500d2b79037.html": {
+    "mtime": 1780484815.9825897,
+    "ast_hash": "f21c998edbf5ebf4dbe5f6a1287af12f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\883201a4d693773d441dea8398d755ea.html": {
+    "mtime": 1780484788.3565123,
+    "ast_hash": "a939eab94ddac5b77335c748b807bdb1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\88b6ea93e86f9665e422720b3d0a99fb.html": {
+    "mtime": 1780484822.8678253,
+    "ast_hash": "85e3e13cfa2d36d92bdab1523943832a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\89466ae8c201fd5c75f08249926d6755.html": {
+    "mtime": 1780484788.3242896,
+    "ast_hash": "98ce8d7fcecd64e79285a3833daad1cf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\89774b8e56ff79fabc84e8b809b4b9de.html": {
+    "mtime": 1780484790.3532608,
+    "ast_hash": "32ea7b30c819341064ff8c5084cd8bd1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\89d01f517ecaee2a1009fc4da2092ab3.html": {
+    "mtime": 1780484800.4182827,
+    "ast_hash": "31dc4d644b09c3c64004435339d74b3d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8a23792d2255289bf1c1643750190de9.html": {
+    "mtime": 1780484826.397173,
+    "ast_hash": "29c1086e417117df11cfa63b03adb43b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8a9e55a8e72bdab307eca4288a55d0c4.html": {
+    "mtime": 1780484816.905849,
+    "ast_hash": "d9cdf10dcb666ea09577bafc7a0dbf00",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8c16da6796d879112c982b3eb4188925.html": {
+    "mtime": 1780484822.7130911,
+    "ast_hash": "f9ea81697177dab58889cd73fb6eef62",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8dda9a7238a3def91938d33a06d69645.html": {
+    "mtime": 1780484831.0982153,
+    "ast_hash": "1819a077ea7fe5d6d28b1856681a457b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8dde00042fe93e0ec92e8b0ef1938aef.html": {
+    "mtime": 1780484786.1250188,
+    "ast_hash": "44cf9064e7a6eb019191cb494083cbb9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\920578fc755c4579629716f3cc7ec364.html": {
+    "mtime": 1780484788.3525143,
+    "ast_hash": "99a4073cac443ee10de1c82d890f1b23",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\97ba51e75c857dc6925a95805dc797eb.html": {
+    "mtime": 1780484816.6435406,
+    "ast_hash": "893dde47cef88a887e12b40e09944dde",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\98052e3e75410dfce73912fb34400925.html": {
+    "mtime": 1780484812.797598,
+    "ast_hash": "cecdadcde504a23317e2b663f2d7622b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9a0e25b741f9e3677af2980227d288c6.html": {
+    "mtime": 1780484794.4301558,
+    "ast_hash": "ac596e6532d4c39c187e49d4b03766fa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9a1cb4dfb0eed71f215b78a30447141d.html": {
+    "mtime": 1780484820.8649259,
+    "ast_hash": "4508b7dd587316c14ab093195abcd41e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9a9da0ed96513627c99a3ae39e9e18e0.html": {
+    "mtime": 1780484810.9643466,
+    "ast_hash": "9191da7dc510229633d8ebe479bb7eea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9b2703d82e08d3c3857d277b9c037b36.html": {
+    "mtime": 1780484808.8382235,
+    "ast_hash": "02ab64a937c1dd6545540716547511ca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9bf346e6332cabb7cb28bc17e02446d7.html": {
+    "mtime": 1780484812.8474958,
+    "ast_hash": "28c70805be3fae1559e3635b1cc6f216",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\a149a26ed79a517bc6ae5bedadc1afc0.html": {
+    "mtime": 1780484796.4445448,
+    "ast_hash": "ca7fcd60c2774086ba2016c26fd33476",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\a2c39c6d76bb05aab6544138e17bccb3.html": {
+    "mtime": 1780484802.5154083,
+    "ast_hash": "e1f88f9902cfbb33759cb3b7f1e7408a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\a9dca2cb448152735f652fa6fb5dbab5.html": {
+    "mtime": 1780484786.2602007,
+    "ast_hash": "cd74a3c9e790d78f4d5999291edb7142",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\aaabbbaa3cc9ef346dd4d85c05b0bcae.html": {
+    "mtime": 1780484786.2537026,
+    "ast_hash": "96f7a3caabbd7f490d9e2b68bc671a68",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\adeb97974abb70a28c0b9975905c54de.html": {
+    "mtime": 1780484794.4968245,
+    "ast_hash": "3c6f2764e9d275372ac260465aa540b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\aeced0d0af8adc4815e9cacc203b904e.html": {
+    "mtime": 1780484782.074578,
+    "ast_hash": "981d60c87f33c9a65416942a5682e696",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\aed5ae6133f230b1d348eee144b3d8fb.html": {
+    "mtime": 1780484773.7039542,
+    "ast_hash": "ba9b9fde08c1c76c1fab7194cedf1d40",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1165fc23bded227275b03323f17374d.html": {
+    "mtime": 1780484819.8753994,
+    "ast_hash": "8d413d087b73a10ed8e6a6e803db5db7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1529357762c2f893031cbc4a94fdbba.html": {
+    "mtime": 1780484824.053829,
+    "ast_hash": "e9fc86b8488039b2092b54d83a7697aa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1a886a2a0fda926cb787cab1597d7c7.html": {
+    "mtime": 1780484777.9130619,
+    "ast_hash": "f5b27464236a93f5fb856d96fc2d020e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1f35fb9ed29b0a7e7de2a983054a1fe.html": {
+    "mtime": 1780484808.8960857,
+    "ast_hash": "f49885e9fbf0117643af65f4cb46de1b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b833f6b29901ce0d12f7c522d252d8f4.html": {
+    "mtime": 1780484802.4001923,
+    "ast_hash": "3e84c2582630e209e7a172e5c639a497",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b887fca001639565cd09f734136852bd.html": {
+    "mtime": 1780484827.1384254,
+    "ast_hash": "acd63e97cc913e80891dac958f307b3e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b983adad45d1e348f8e844b960e20a35.html": {
+    "mtime": 1780484818.4771483,
+    "ast_hash": "bda3201c5040a26b92343b075e793de4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ba24904ea3200e4e09f916a756707d59.html": {
+    "mtime": 1780484804.519376,
+    "ast_hash": "03e8450f49784212b1bebf3cb938249e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\bae2d8023ff38c657bcf63256495e919.html": {
+    "mtime": 1780484796.577249,
+    "ast_hash": "b419c587e996ef89d2b6913376844308",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\bd9668e46af710803d0b3ea5f937e608.html": {
+    "mtime": 1780484825.9568782,
+    "ast_hash": "7b05a5779c9fd241dba9532243345496",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\bf699db1d0539e70ee07e1b52e03d066.html": {
+    "mtime": 1780484796.5312324,
+    "ast_hash": "2fe6e00ca274a8439e4d0e8746ffaa70",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c01e8901304589b0006aaee2ff42aabf.html": {
+    "mtime": 1780484814.9081674,
+    "ast_hash": "ea4b6a245c8bec003891efc46b19b502",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c1bcc607cd9fc253ac59b79039286ec3.html": {
+    "mtime": 1780484824.5700727,
+    "ast_hash": "5fb08d3a26d525e071bfb4022a87adda",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c2c96e090708551012e8ec6184314ddb.html": {
+    "mtime": 1780484818.8618476,
+    "ast_hash": "cdd8e6baf31067189de0896b2ec6f460",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c527e2666af393faa5c8a49132dfcf56.html": {
+    "mtime": 1780484820.2910953,
+    "ast_hash": "a9b31cd70923ab32d2a2a127aafea6b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c5d5337baf0c25950318f4c983c86788.html": {
+    "mtime": 1780484810.8945017,
+    "ast_hash": "792d4f8af76e06fd77e5204f685a4233",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c6dde5535daec5e32aa8b23d6474c01f.html": {
+    "mtime": 1780484831.2043748,
+    "ast_hash": "258a5e21a53cbf279570080d11254d0b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c6f15b1f94cdd6c555b269db2f077d60.html": {
+    "mtime": 1780484775.7812455,
+    "ast_hash": "19ec64f24623c705a9edf6c7ac859a0d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ca65c269e82b2c7413bd0c1fbaf1199b.html": {
+    "mtime": 1780484798.4769304,
+    "ast_hash": "0510032c51abb5357908416230d59960",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\caa129e68be22cbfea5b79e911c49b5b.html": {
+    "mtime": 1780484782.1647594,
+    "ast_hash": "675c2b39345f4ff601ffcfe744cd2b80",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\cc15cbe9198cf041e0b9a430cb08bd6a.html": {
+    "mtime": 1780484823.05683,
+    "ast_hash": "fd19b397e4191d01feb02a62c7f04d81",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\d6ac6fbc8af52b244554e7afc42457ad.html": {
+    "mtime": 1780484804.7327552,
+    "ast_hash": "66efbd4f4d5807954602ced83d967770",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\da3980848f41056c38f66b7560d3dcb9.html": {
+    "mtime": 1780484792.5493634,
+    "ast_hash": "fb9541211be29804f71ee667e76ec39a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\db6a031f0eb80e6c8d98afb8f4b9868c.html": {
+    "mtime": 1780484806.67773,
+    "ast_hash": "0b9bde5547372211de9a376e26fa2df2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e040d9268e73d756032129a640b21091.html": {
+    "mtime": 1780484777.8979447,
+    "ast_hash": "03cff07cefbfc5351fdf448302d659da",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e197bf8c145a01ee6122c57df179b3dd.html": {
+    "mtime": 1780484797.2779858,
+    "ast_hash": "1569f8b1aac5bae94ce813f29c059090",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e2fc9f9fa90e56a54f826f78684c334f.html": {
+    "mtime": 1780484813.0525076,
+    "ast_hash": "ccefaff73c2edf65e4082d99059ac5c0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e3bcedb79829bcf624f7466fd5406efa.html": {
+    "mtime": 1780484824.8202014,
+    "ast_hash": "74cce3713ae466ec7a918e016d5574a8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e4aa0ef9c8b3915072a609ef4fe69ebf.html": {
+    "mtime": 1780484811.1147475,
+    "ast_hash": "59f59365a0630cde2a660a1a8d42ee2b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e9e803b2fad7287325f8104290ad7578.html": {
+    "mtime": 1780484782.127201,
+    "ast_hash": "a2429e909451d2414ec9232a8fea3321",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\eb5307cf2bed55223c4f60ed6306c1a5.html": {
+    "mtime": 1780484778.0457344,
+    "ast_hash": "5ee48624a2ba060260c9565fc54517e5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ebd75a3e577c5b36a8e13b820e3cf4f2.html": {
+    "mtime": 1780484791.787219,
+    "ast_hash": "2cb271321d5a88adeb38e9e3720a6306",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ed4c65c138d27afe36387559c397cc04.html": {
+    "mtime": 1780484814.1315584,
+    "ast_hash": "ab8fc2efd53857c479f78e90741d7ea5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f150eb6b7b887d66585958506b675287.html": {
+    "mtime": 1780484780.0771735,
+    "ast_hash": "e81b149d4045ed9808894e62cd603304",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f2b19788e4b830813dfea577aec0cae2.html": {
+    "mtime": 1780484780.0268357,
+    "ast_hash": "486d99e4c151ac23c324f735d9d0ecdf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f43807e185f1f21b7a3cc41d0fe5e667.html": {
+    "mtime": 1780484790.3762057,
+    "ast_hash": "42402aca14b0618cd01ec328292be311",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f4c871a5a80c12dd456244fa0fdc29aa.html": {
+    "mtime": 1780484806.5304222,
+    "ast_hash": "c8e73d98cc326377876d88f40e8f1bb8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f5ad9b973a3a5b76428fb9f877c7825c.html": {
+    "mtime": 1780484814.7327335,
+    "ast_hash": "474f02f7cb58b935b9a9ef10928db58e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f8e1a716deb49fb54f41a0fbbeac3b72.html": {
+    "mtime": 1780484821.0854492,
+    "ast_hash": "b5df6fe9e3dd1c9f7bcee85b87b178b7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f90a4666e90e8f64a4b01c6b9ba465c3.html": {
+    "mtime": 1780484771.0182836,
+    "ast_hash": "63f002d52f571c8980aa1a9a4cdd4911",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\fe09fe19daaf1adb0076cb3f62b1ff62.html": {
+    "mtime": 1780484777.9660473,
+    "ast_hash": "28eff0cf5123cf74ced639278a631a93",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\fea4623f846e865e153060341ed845fe.html": {
+    "mtime": 1780484804.5476553,
+    "ast_hash": "c6e61b0d9d99cb0c5b14057f97f71df9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\CHANGELOG.md": {
+    "mtime": 1780484854.461947,
+    "ast_hash": "b7a791cc53d69ca0c29ff3689a652548",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_items.json": {
+    "mtime": 1780484853.4974546,
+    "ast_hash": "1b90011a1fd506a95b579dd6ac5a16c8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_patch.json": {
+    "mtime": 1780484854.4513307,
+    "ast_hash": "6b11946b0145331045a5687fa0880a99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\README.md": {
+    "mtime": 1780484936.3585947,
+    "ast_hash": "fb02c32506bf89ecda1192af63545bc1",
     "semantic_hash": ""
   }
 }

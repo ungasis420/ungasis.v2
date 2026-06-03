@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/rag_chunk.schema.json",
+  "title": "RAG Chunk",
+  "type": "object",
+  "required": [
+    "chunk_id",
+    "entity_type",
+    "entity_id",
+    "patch_version",
+    "text_for_embedding",
+    "metadata"
+  ],
+  "properties": {
+    "chunk_id": {
+      "type": "string"
+    },
+    "entity_type": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "text_for_embedding": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "source_claim_ids": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

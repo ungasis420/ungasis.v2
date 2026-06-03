@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/graph_traversal_response.schema.json",
+  "title": "Graph Traversal Response",
+  "description": "Graph traversal response.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "request_id",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "paths": {
+      "type": "array"
+    },
+    "nodes": {
+      "type": "array"
+    },
+    "edges": {
+      "type": "array"
+    },
+    "explanation": {
+      "type": "object"
+    },
+    "warnings": {
+      "type": "array"
+    }
+  }
+}

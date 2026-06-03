@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "positions": [
+    "Baron",
+    "Jungle",
+    "Mid",
+    "Duo",
+    "Support"
+  ],
+  "normalized": [
+    "baron",
+    "jungle",
+    "mid",
+    "duo",
+    "support"
+  ]
+}

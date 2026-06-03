@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0.0",
+  "templates": {
+    "build_request": "Given match_context, return legal build options with reason_codes, source_status, confidence, and suppressions.",
+    "counter_request": "Given player champion and enemy threats, return deny/counterplay options with timing limitations.",
+    "data_quality_request": "Given entity records, validate source policy, gold/cooldowns, and ability identity gates."
+  }
+}

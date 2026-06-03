@@ -1,0 +1,10 @@
+{
+  "version": "0.7.0",
+  "wr_items_exists": true,
+  "wr_builds_root_keys": [
+    "meta",
+    "builds"
+  ],
+  "wr_matchups_duo_exists": true,
+  "wr_synergies_duo_exists": true
+}

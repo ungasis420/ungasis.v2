@@ -1,0 +1,643 @@
+{
+  "version": "0.7.0",
+  "generated_at_utc": "2026-05-21T19:34:42.713235+00:00",
+  "scan_hit_count": 90,
+  "gameplay_data_blockers": 0,
+  "classification_summary": {
+    "allowed_guardrail_or_policy_reference": 22,
+    "wild_rift_prefixed_url_or_wr_policy_reference": 68
+  },
+  "hits": [
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk9/riftcoach_wr_intelligence_database_v0_6_0_chunk9/lineage/source_refresh_queue_builds.json",
+      "pattern": "non_wr_url",
+      "count": "138",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "guide/aatrox\",       \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\"     ],     \"required_outputs\": [       \"current_source_verified_builds\",       || com/guide/ahri\",       \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\"     ],     \"required_outputs\": [       \"current_source_verified_builds\",       || m/guide/akali\",       \"https://wiki.leagueoflegends.com/en-us/WR:Akali\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\"     ],     \"required_outputs\": [       \"current_source_verified_builds\",       || guide/akshan\",       \"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\"     ],     \"required_outputs\": [       \"current_source_verified_builds\",       || ide/alistar\",       \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\"     ],     \"required_outputs\": [       \"current_source_verified_builds\",      "
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk9/riftcoach_wr_intelligence_database_v0_6_0_chunk9/public/data/karma_builds.json",
+      "pattern": "non_wr_url",
+      "count": "4",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift || source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift || source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift || source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk9/riftcoach_wr_intelligence_database_v0_6_0_chunk9/database/builds/wr_meta_builds.json",
+      "pattern": "non_wr_url",
+      "count": "138",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",         \"https:// || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Akali\",         \"https://w || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",         \"https:// || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",         \"https:/"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk9/riftcoach_wr_intelligence_database_v0_6_0_chunk9/database/builds/wr_archetype_builds.json",
+      "pattern": "non_wr_url",
+      "count": "270",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",         \"https:// || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",         \"https:// || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww || ; not official source meta.\"         ]       },       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Akali\",         \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk9/riftcoach_wr_intelligence_database_v0_6_0_chunk9/database/builds/wr_champion_build_variants.json",
+      "pattern": "non_wr_url",
+      "count": "270",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ficial source meta.\"           ]         },         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || ficial source meta.\"           ]         },         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || ficial source meta.\"           ]         },         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",           \"https: || ficial source meta.\"           ]         },         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",           \"https: || ficial source meta.\"           ]         },         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Akali\",           \"https"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk9/riftcoach_wr_intelligence_database_v0_6_0_chunk9/database/builds/wr_karma_builds.json",
+      "pattern": "non_wr_url",
+      "count": "4",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift || source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift || source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift || source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Karma\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/karma/\",       \"https://www.wildriftfire.com/guide/karma\",       \"https://www.wildrift"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk9/riftcoach_wr_intelligence_database_v0_6_0_chunk9/database/builds/wr_support_build_variants.json",
+      "pattern": "non_wr_url",
+      "count": "81",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ty rules; not official source meta.\"       ]     },     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",       \"https://www || ty rules; not official source meta.\"       ]     },     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",       \"https://www || ty rules; not official source meta.\"       ]     },     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",       \"https://www || ty rules; not official source meta.\"       ]     },     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/amumu/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Amumu\",       \"https://www.w || ty rules; not official source meta.\"       ]     },     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/amumu/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Amumu\",       \"https://www.w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk6/riftcoach_wr_intelligence_database_v0_6_0_chunk6/quality/source_access_report_items.json",
+      "pattern": "non_wr_url",
+      "count": "1",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "s.com/en-us/WR:Yordle_Trap\",     \"https://www.wildriftfire.com/item-list\",     \"https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-1e\"   ],   \"result\": \"direct_fetch_failed_in_chatgpt_web_tool\",   \"conseque"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk6/riftcoach_wr_intelligence_database_v0_6_0_chunk6/public/data/source_coverage_items.json",
+      "pattern": "non_wr_url",
+      "count": "1",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "m/en-us/WR:Yordle_Trap\",       \"https://www.wildriftfire.com/item-list\",       \"https://wildrift.leagueoflegends.com/en-sg/news/game-updates/wild-rift-patch-notes-7-1e\"     ],     \"result\": \"direct_fetch_failed_in_chatgpt_web_tool\",     \"co"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/lineage/field_level_provenance_champions_O_Z.jsonl",
+      "pattern": "non_wr_url",
+      "count": "600",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_wr_candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _wr_candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _wr_candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _wr_candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _wr_candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/lineage/source_claims_champions_O_Z.jsonl",
+      "pattern": "non_wr_url",
+      "count": "300",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_revalidation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _revalidation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _revalidation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _revalidation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || _revalidation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/lineage/source_refresh_queue_champions_O_Z.json",
+      "pattern": "lol_pc_phrase",
+      "count": "60",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/lineage/source_refresh_queue_champions_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "60",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "allowed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",       \"https://www.wildriftfire.com/guide/olaf\",       \"https://www.wildriftf || owed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Orianna\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/orianna/\",       \"https://www.wildriftfire.com/guide/orianna\",       \"https://www.wildri || allowed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Ornn\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/ornn/\",       \"https://www.wildriftfire.com/guide/ornn\",       \"https://www.wildriftf || wed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Pantheon\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/pantheon/\",       \"https://www.wildriftfire.com/guide/pantheon\",       \"https://www.wildr || llowed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Poppy\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/poppy/\",       \"https://www.wildriftfire.com/guide/poppy\",       \"https://www.wildrift"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/quality/champion_ability_cooldown_missing_values_report_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "300",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "\": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/quality/champion_base_stats_missing_values_report_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "780",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/quality/source_access_report_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "1",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ailed_or_unavailable_in_current_environment\",   \"attempted_via_web_run\": [     \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"https://wiki.leagueoflegends.com/en-us/WR:Wild_Rift\",     \"https://wiki."
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/public/data/abilities_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "2700",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/public/data/champions_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "6240",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/public/data/wr_champions_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "6240",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/database/cooldowns/champion_ability_cooldowns_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "300",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/database/entities/wr_abilities_O_Z_full.json",
+      "pattern": "non_wr_url",
+      "count": "2700",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/database/entities/wr_abilities_O_Z_full.jsonl",
+      "pattern": "non_wr_url",
+      "count": "2700",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/database/entities/wr_champions_O_Z_full.json",
+      "pattern": "non_wr_url",
+      "count": "6300",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "rce_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",         \"https://www.wildriftfire.com/guide/olaf\",         \"https://www.wildr || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w || \": [             \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",             \"https://www.wildriftfire.com/guide/olaf\",             \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/database/entities/wr_champions_O_Z_full.jsonl",
+      "pattern": "non_wr_url",
+      "count": "6300",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/ || ource_refresh\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",\"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",\"https://www.wildriftfire.com/guide/olaf\",\"https://www.wildriftfire.com/guide/"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk5/riftcoach_wr_intelligence_database_v0_6_0_chunk5/database/stats/wr_champion_base_stats_O_Z.json",
+      "pattern": "non_wr_url",
+      "count": "780",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "\"source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",       \"https://www.wildriftfire.com/guide/olaf\",       \"https://www.wildriftf || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w || urls\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Olaf\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/olaf/\",           \"https://www.wildriftfire.com/guide/olaf\",           \"https://www.w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/graph/knowledge_graph_H_N.json",
+      "pattern": "lol_pc_phrase",
+      "count": "1",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "  \"id\": \"effect:no_lol_pc_fallback\",       \"type\": \"Effect\",       \"label\": \"no lol pc fallback\",       \"entity_id\": \"no_lol_pc_fallback\",       \"patch_version\": \"7.1"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/graph/nodes_champions_H_N.jsonl",
+      "pattern": "lol_pc_phrase",
+      "count": "1",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": ":\"taxonomy_seed\"} {\"id\":\"effect:no_lol_pc_fallback\",\"type\":\"Effect\",\"label\":\"no lol pc fallback\",\"entity_id\":\"no_lol_pc_fallback\",\"patch_version\":\"7.1e\",\"source_statu"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/lineage/field_level_provenance_champions_H_N.jsonl",
+      "pattern": "non_wr_url",
+      "count": "440",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || _candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || _candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || _candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || _candidate\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/lineage/source_claims_champions_H_N.jsonl",
+      "pattern": "non_wr_url",
+      "count": "220",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "validation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || validation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || validation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || validation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui || validation\",\"source_urls\":[\"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",\"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",\"https://www.wildriftfire.com/guide/hecarim\",\"https://www.wildriftfire.com/gui"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/lineage/source_refresh_queue_champions_H_N.json",
+      "pattern": "lol_pc_phrase",
+      "count": "44",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove || douts\",       \"tips\",       \"strategy\"     ],     \"blocked_fallbacks\": [       \"LoL PC champion pages\",       \"generic wiki pages without WR prefix\",       \"unapprove"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/lineage/source_refresh_queue_champions_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "44",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "owed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",       \"https://www.wildriftfire.com/guide/hecarim\",       \"https://www.wildri || urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Heimerdinger\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/heimerdinger/\",       \"https://www.wildriftfire.com/guide/heimerdinger\",       \"https://www.w || lowed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Irelia\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/irelia/\",       \"https://www.wildriftfire.com/guide/irelia\",       \"https://www.wildrif || llowed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Janna\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/janna/\",       \"https://www.wildriftfire.com/guide/janna\",       \"https://www.wildrift || ed_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Jarvan_IV\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/jarvan-iv/\",       \"https://www.wildriftfire.com/guide/jarvaniv\",       \"https://www.wildr"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/quality/champion_ability_cooldown_missing_values_report_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "220",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "[             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https:"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/quality/champion_base_stats_missing_values_report_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "572",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https:"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/quality/no_lol_pc_contamination_report_H_N.json",
+      "pattern": "blocked_lol_wiki_non_wr",
+      "count": "1",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": ": [     \"leagueoflegends.com/en-us/champions/ without wildrift subdomain\",     \"wiki.leagueoflegends.com/en-us/ pages without WR: prefix\",     \"op.gg\",     \"u.gg\",     \"lolalytics\",    "
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/quality/source_access_report_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "1",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "tatus\": \"attempted_but_failed_for_approved_sources\",   \"attempted_urls\": [     \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"https://wiki.leagueoflegends.com/en-us/WR:Wild_Rift\",     \"https://wiki."
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/quality/source_coverage_report_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "1",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "s\": \"attempted_but_failed_for_approved_sources\",     \"attempted_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Wild_Rift\",       \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/public/data/abilities_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "1980",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || _urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || _urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || _urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/public/data/champions_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "4576",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https:"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/public/data/source_coverage_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "1",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "s\": \"attempted_but_failed_for_approved_sources\",     \"attempted_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Wild_Rift\",       \"https://w"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/public/data/wr_champions_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "4576",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https:"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/database/cooldowns/champion_ability_cooldowns_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "220",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/database/entities/wr_abilities_H_N_full.json",
+      "pattern": "non_wr_url",
+      "count": "1980",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || _urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || _urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || _urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/database/entities/wr_ability_name_lockfile_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "44",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "urce_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",       \"https://www.wildriftfire.com/guide/hecarim\",       \"https://www.wildri || urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Heimerdinger\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/heimerdinger/\",       \"https://www.wildriftfire.com/guide/heimerdinger\",       \"https://www.w || ource_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Irelia\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/irelia/\",       \"https://www.wildriftfire.com/guide/irelia\",       \"https://www.wildrif || source_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Janna\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/janna/\",       \"https://www.wildriftfire.com/guide/janna\",       \"https://www.wildrift || ce_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Jarvan_IV\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/jarvan-iv/\",       \"https://www.wildriftfire.com/guide/jarvaniv\",       \"https://www.wildr"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/database/entities/wr_champions_H_N_full.json",
+      "pattern": "non_wr_url",
+      "count": "4620",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_urls\": [         \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",         \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",         \"https://www.wildriftfire.com/guide/hecarim\",         \"https://www.wi || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https: || [             \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",             \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",             \"https://www.wildriftfire.com/guide/hecarim\",             \"https:"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk4/riftcoach_wr_intelligence_database_v0_6_0_chunk4/database/stats/wr_champion_base_stats_H_N.json",
+      "pattern": "non_wr_url",
+      "count": "572",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "urce_urls\": [       \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",       \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",       \"https://www.wildriftfire.com/guide/hecarim\",       \"https://www.wildri || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww || s\": [           \"https://wiki.leagueoflegends.com/en-us/WR:Hecarim\",           \"https://wildrift.leagueoflegends.com/en-sg/champions/hecarim/\",           \"https://www.wildriftfire.com/guide/hecarim\",           \"https://ww"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/lineage/source_claims_champions_a_g.jsonl",
+      "pattern": "non_wr_url",
+      "count": "170",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_status\": \"identity_seed_pending_allowed_source_revalidation\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || _status\": \"identity_seed_pending_allowed_source_revalidation\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || _status\": \"identity_seed_pending_allowed_source_revalidation\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || _status\": \"identity_seed_pending_allowed_source_revalidation\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || _status\": \"identity_seed_pending_allowed_source_revalidation\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/lineage/field_level_provenance_champions_a_g.jsonl",
+      "pattern": "non_wr_url",
+      "count": "340",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ce_family\": [\"riot_wild_rift\", \"lol_wiki_wr\", \"wildriftfire\"], \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || ing_allowed_source_refresh\", \"source_family\": [\"lol_wiki_wr\"], \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || ce_family\": [\"riot_wild_rift\", \"lol_wiki_wr\", \"wildriftfire\"], \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || ing_allowed_source_refresh\", \"source_family\": [\"lol_wiki_wr\"], \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || ce_family\": [\"riot_wild_rift\", \"lol_wiki_wr\", \"wildriftfire\"], \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/lineage/source_refresh_queue_champions_a_g.json",
+      "pattern": "non_wr_url",
+      "count": "34",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "entity_type\": \"champion\",       \"source_family\": \"riot_champion\",       \"url\": \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",       \"priority\": \"high\",       \"reason\": \"Chunk 3 needs approved-source extr || entity_type\": \"champion\",       \"source_family\": \"riot_champion\",       \"url\": \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",       \"priority\": \"high\",       \"reason\": \"Chunk 3 needs approved-source extr || entity_type\": \"champion\",       \"source_family\": \"riot_champion\",       \"url\": \"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",       \"priority\": \"high\",       \"reason\": \"Chunk 3 needs approved-source extr || entity_type\": \"champion\",       \"source_family\": \"riot_champion\",       \"url\": \"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",       \"priority\": \"high\",       \"reason\": \"Chunk 3 needs approved-source extr || entity_type\": \"champion\",       \"source_family\": \"riot_champion\",       \"url\": \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",       \"priority\": \"high\",       \"reason\": \"Chunk 3 needs approved-source extr"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/rag/chunks_champions_a_g.jsonl",
+      "pattern": "non_wr_url",
+      "count": "34",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\", \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\", \"https://www.wildriftfire.c || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\", \"https://wiki.leagueoflegends.com/en-us/WR:Akali\", \"https://www.wildriftfire. || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\", \"https://wiki.leagueoflegends.com/en-us/WR:Akshan\", \"https://www.wildriftfire || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\", \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\", \"https://www.wildriftfir"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/rag/chunks_abilities_a_g.jsonl",
+      "pattern": "non_wr_url",
+      "count": "170",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || e status: identity_seed_pending_allowed_source_revalidation.\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/quality/live_source_fetch_report.json",
+      "pattern": "non_wr_url",
+      "count": "1",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ox\",       \"status\": \"failed_unexpected_status_code\"     },     {       \"url\": \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",       \"status\": \"failed_unexpected_status_code\"     },     {       \"url\": \"ht"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/public/data/champions_a_g.json",
+      "pattern": "non_wr_url",
+      "count": "3162",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_status\": \"pending_allowed_source_refresh\",         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             || ending_allowed_source_refresh\",               \"source_urls\": [                 \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",                 \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",            "
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/public/data/wr_champions_a_g.json",
+      "pattern": "non_wr_url",
+      "count": "3162",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_status\": \"pending_allowed_source_refresh\",         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             || ending_allowed_source_refresh\",               \"source_urls\": [                 \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",                 \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",            "
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/database/entities/wr_champions_a_g_full.json",
+      "pattern": "non_wr_url",
+      "count": "3162",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_status\": \"pending_allowed_source_refresh\",         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             || ending_allowed_source_refresh\",               \"source_urls\": [                 \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",                 \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             || : \"pending_allowed_source_refresh\",             \"source_urls\": [               \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",               \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",            "
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/database/entities/wr_abilities_a_g_full.json",
+      "pattern": "non_wr_url",
+      "count": "1530",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "_status\": \"pending_allowed_source_refresh\",         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || tus\": \"pending_allowed_source_refresh\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || _status\": \"pending_allowed_source_refresh\",         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || _status\": \"pending_allowed_source_refresh\",         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http || _status\": \"pending_allowed_source_refresh\",         \"source_urls\": [           \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",           \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",           \"http"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/database/entities/wr_champions_a_g_full.jsonl",
+      "pattern": "non_wr_url",
+      "count": "3162",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "available\", \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || raw\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || oup\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || nds\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || lue\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/database/entities/wr_abilities_a_g_full.jsonl",
+      "pattern": "non_wr_url",
+      "count": "1530",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "raw\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || oup\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || nds\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || lue\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || lue\": null, \"source_status\": \"pending_allowed_source_refresh\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/database/entities/wr_ability_lockfile_a_g_flat.jsonl",
+      "pattern": "non_wr_url",
+      "count": "170",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ource_revalidation\", \"patch_version\": \"7.1e\", \"source_urls\": {\"riot_champion\": \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"wiki_champion\": \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"wildrif || ource_revalidation\", \"patch_version\": \"7.1e\", \"source_urls\": {\"riot_champion\": \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"wiki_champion\": \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"wildrif || ource_revalidation\", \"patch_version\": \"7.1e\", \"source_urls\": {\"riot_champion\": \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"wiki_champion\": \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"wildrif || ource_revalidation\", \"patch_version\": \"7.1e\", \"source_urls\": {\"riot_champion\": \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"wiki_champion\": \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"wildrif || ource_revalidation\", \"patch_version\": \"7.1e\", \"source_urls\": {\"riot_champion\": \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"wiki_champion\": \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"wildrif"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk3/riftcoach_wr_intelligence_database_v0_6_0_chunk3/database/cooldowns/champion_ability_cooldowns_a_g.json",
+      "pattern": "non_wr_url",
+      "count": "170",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "tus\": \"pending_allowed_source_refresh\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || tus\": \"pending_allowed_source_refresh\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || tus\": \"pending_allowed_source_refresh\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || tus\": \"pending_allowed_source_refresh\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || tus\": \"pending_allowed_source_refresh\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \""
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/lineage/field_level_provenance_ability_names.jsonl",
+      "pattern": "non_wr_url",
+      "count": "20",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/lineage/source_claims_abilities.jsonl",
+      "pattern": "non_wr_url",
+      "count": "20",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/lineage/source_refresh_queue_abilities.json",
+      "pattern": "non_wr_url",
+      "count": "138",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": " \"required_before_final_champion_data\",       \"allowed_source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",         \"https:// ||  \"required_before_final_champion_data\",       \"allowed_source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww ||  \"required_before_final_champion_data\",       \"allowed_source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Akali\",         \"https://w ||  \"required_before_final_champion_data\",       \"allowed_source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",         \"https:// ||  \"required_before_final_champion_data\",       \"allowed_source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",         \"https:/"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/quality/missing_values_report_abilities.json",
+      "pattern": "non_wr_url",
+      "count": "670",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "reason\": \"pending_allowed_source_refresh\",       \"required_sources\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww || reason\": \"pending_allowed_source_refresh\",       \"required_sources\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww || reason\": \"pending_allowed_source_refresh\",       \"required_sources\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww || reason\": \"pending_allowed_source_refresh\",       \"required_sources\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww || reason\": \"pending_allowed_source_refresh\",       \"required_sources\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",         \"https://ww"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/source_policy/approved_sources_snapshot.json",
+      "pattern": "non_wr_url",
+      "count": "2",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": " \"0.6.0-chunk2\",   \"allowed_source_families\": {     \"riot_wild_rift_champion\": \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"riot_wild_rift_news\": \"https://wildrift.leagueoflegends.com/en-sg/news/\" || s://wildrift.leagueoflegends.com/en-sg/champions/\",     \"riot_wild_rift_news\": \"https://wildrift.leagueoflegends.com/en-sg/news/\",     \"lol_wiki_wr\": \"https://wiki.leagueoflegends.com/en-us/WR:\",     \"wildrif"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/database/entities/wr_ability_lockfile_flat.jsonl",
+      "pattern": "non_wr_url",
+      "count": "690",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire || source_family\": \"lol_wiki_wr_required_for_final_verification\", \"source_urls\": [\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\", \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\", \"https://www.wildriftfire"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/database/entities/wr_ability_name_lockfile.json",
+      "pattern": "non_wr_url",
+      "count": "828",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "ited_seed_pending_allowed_source_revalidation\",       \"source_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",         \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",         \"https:// || ki_wr_required_for_final_verification\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || ki_wr_required_for_final_verification\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || ki_wr_required_for_final_verification\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \" || ki_wr_required_for_final_verification\",           \"source_urls\": [             \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",             \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",             \""
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk2/riftcoach_wr_intelligence_database_v0_6_0_chunk2/database/entities/wr_champion_refresh_roster.json",
+      "pattern": "non_wr_url",
+      "count": "138",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": " \"name\": \"Aatrox\",     \"title\": \"The Darkin Blade\",     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",       \"https://www. ||  \"id\": \"ahri\",     \"name\": \"Ahri\",     \"title\": \"\",     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",       \"https://www.wi || id\": \"akali\",     \"name\": \"Akali\",     \"title\": \"\",     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Akali\",       \"https://www.w || \": \"akshan\",     \"name\": \"Akshan\",     \"title\": \"\",     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",       \"https://www. ||  \"alistar\",     \"name\": \"Alistar\",     \"title\": \"\",     \"source_urls\": [       \"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",       \"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",       \"https://www"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/source_policy/approved_sources.json",
+      "pattern": "non_wr_url",
+      "count": "2",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "fficial_champion_detail_when_available\"       ],       \"exact_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/\",         \"https://wildrift.leagueoflegends.com/en-sg/news/\"       ],       \"ur || s\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/\",         \"https://wildrift.leagueoflegends.com/en-sg/news/\"       ],       \"url_patterns\": [         \"^https://wildrift\\\\.leagueoflegends\\"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/source_policy/source_refresh_queue_seed.json",
+      "pattern": "non_wr_url",
+      "count": "2",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "       ],       \"next_chunk\": \"chunks_2_to_10\"     }   ],   \"seed_urls\": [     \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"https://wildrift.leagueoflegends.com/en-sg/news/\",     \"https://wiki.lea || seed_urls\": [     \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"https://wildrift.leagueoflegends.com/en-sg/news/\",     \"https://wiki.leagueoflegends.com/en-us/WR:Item\",     \"https://wiki.leagu"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/source_policy/approved_sources_snapshot.json",
+      "pattern": "non_wr_url",
+      "count": "2",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": " \"0.6.0-chunk2\",   \"allowed_source_families\": {     \"riot_wild_rift_champion\": \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"riot_wild_rift_news\": \"https://wildrift.leagueoflegends.com/en-sg/news/\" || s://wildrift.leagueoflegends.com/en-sg/champions/\",     \"riot_wild_rift_news\": \"https://wildrift.leagueoflegends.com/en-sg/news/\",     \"lol_wiki_wr\": \"https://wiki.leagueoflegends.com/en-us/WR:\",     \"wildrif"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/rag/all_chunks_integrated.jsonl",
+      "pattern": "non_wr_url",
+      "count": "204",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "rce status: identity_seed_pending_allowed_source_revalidation.\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || rce status: identity_seed_pending_allowed_source_revalidation.\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",\"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",\"https://www.wildriftfire.com || rce status: identity_seed_pending_allowed_source_revalidation.\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akali\",\"https://www.wildriftfire.co || rce status: identity_seed_pending_allowed_source_revalidation.\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",\"https://www.wildriftfire.c || rce status: identity_seed_pending_allowed_source_revalidation.\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",\"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",\"https://www.wildriftfire."
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/lineage/source_claims_all.jsonl",
+      "pattern": "non_wr_url",
+      "count": "710",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "\",\"source_family\":\"lol_wiki_wr_required_for_final_verification\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \",\"source_family\":\"lol_wiki_wr_required_for_final_verification\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \",\"source_family\":\"lol_wiki_wr_required_for_final_verification\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \",\"source_family\":\"lol_wiki_wr_required_for_final_verification\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \",\"source_family\":\"lol_wiki_wr_required_for_final_verification\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/lineage/source_refresh_queue_all.json",
+      "pattern": "lol_pc_phrase",
+      "count": "104",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "e_values\",\"ability_effects\",\"loadouts\",\"tips\",\"strategy\"],\"blocked_fallbacks\":[\"LoL PC champion pages\",\"generic wiki pages without WR prefix\",\"unapproved guide sites\" || e_values\",\"ability_effects\",\"loadouts\",\"tips\",\"strategy\"],\"blocked_fallbacks\":[\"LoL PC champion pages\",\"generic wiki pages without WR prefix\",\"unapproved guide sites\" || e_values\",\"ability_effects\",\"loadouts\",\"tips\",\"strategy\"],\"blocked_fallbacks\":[\"LoL PC champion pages\",\"generic wiki pages without WR prefix\",\"unapproved guide sites\" || e_values\",\"ability_effects\",\"loadouts\",\"tips\",\"strategy\"],\"blocked_fallbacks\":[\"LoL PC champion pages\",\"generic wiki pages without WR prefix\",\"unapproved guide sites\" || e_values\",\"ability_effects\",\"loadouts\",\"tips\",\"strategy\"],\"blocked_fallbacks\":[\"LoL PC champion pages\",\"generic wiki pages without WR prefix\",\"unapproved guide sites\""
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/lineage/source_refresh_queue_all.json",
+      "pattern": "non_wr_url",
+      "count": "414",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "\"7.1e\",\"priority\":\"required_before_final_champion_data\",\"allowed_source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"7.1e\",\"priority\":\"required_before_final_champion_data\",\"allowed_source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",\"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",\"https://www.wildriftfire.com || \"7.1e\",\"priority\":\"required_before_final_champion_data\",\"allowed_source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akali\",\"https://www.wildriftfire.co || \"7.1e\",\"priority\":\"required_before_final_champion_data\",\"allowed_source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",\"https://www.wildriftfire.c || \"7.1e\",\"priority\":\"required_before_final_champion_data\",\"allowed_source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",\"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",\"https://www.wildriftfire."
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/database/entities/wr_champions_full.json",
+      "pattern": "non_wr_url",
+      "count": "14082",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "hen_available\",\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || t\":{\"raw\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || wn_group\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"seconds\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/database/entities/wr_abilities_full.json",
+      "pattern": "non_wr_url",
+      "count": "6210",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "t\":{\"raw\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || wn_group\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"seconds\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/database/entities/wr_champions_full.jsonl",
+      "pattern": "non_wr_url",
+      "count": "14082",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "hen_available\",\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || t\":{\"raw\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || wn_group\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"seconds\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/database/entities/wr_abilities_full.jsonl",
+      "pattern": "non_wr_url",
+      "count": "6210",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "t\":{\"raw\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || wn_group\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"seconds\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/public/data/champions.json",
+      "pattern": "non_wr_url",
+      "count": "14082",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "hen_available\",\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || t\":{\"raw\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || wn_group\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"seconds\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/public/data/abilities.json",
+      "pattern": "non_wr_url",
+      "count": "6210",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "t\":{\"raw\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || wn_group\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"seconds\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/public/data/builds.json",
+      "pattern": "non_wr_url",
+      "count": "408",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",\"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",\"https://www.wildriftfire.com || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akali\",\"https://www.wildriftfire.co || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",\"https://www.wildriftfire.c || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",\"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",\"https://www.wildriftfire."
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/public/data/meta_builds.json",
+      "pattern": "non_wr_url",
+      "count": "138",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",\"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",\"https://www.wildriftfire.com || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akali\",\"https://www.wildriftfire.co || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akshan/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akshan\",\"https://www.wildriftfire.c || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/alistar/\",\"https://wiki.leagueoflegends.com/en-us/WR:Alistar\",\"https://www.wildriftfire."
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/public/data/archetype_builds.json",
+      "pattern": "non_wr_url",
+      "count": "270",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",\"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",\"https://www.wildriftfire.com || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/ahri/\",\"https://wiki.leagueoflegends.com/en-us/WR:Ahri\",\"https://www.wildriftfire.com || gs and prior chunk legality rules; not official source meta.\"]},\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/akali/\",\"https://wiki.leagueoflegends.com/en-us/WR:Akali\",\"https://www.wildriftfire.co"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final/warehouse/gold/dim_champion.json",
+      "pattern": "non_wr_url",
+      "count": "14082",
+      "classification": "wild_rift_prefixed_url_or_wr_policy_reference",
+      "context_sample": "hen_available\",\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || t\":{\"raw\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || wn_group\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || \"seconds\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c || l,\"value\":null,\"source_status\":\"pending_allowed_source_refresh\",\"source_urls\":[\"https://wildrift.leagueoflegends.com/en-sg/champions/aatrox/\",\"https://wiki.leagueoflegends.com/en-us/WR:Aatrox\",\"https://www.wildriftfire.c"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk1/riftcoach_wr_intelligence_database_v0_6_0_chunk1/source_policy/approved_sources.json",
+      "pattern": "non_wr_url",
+      "count": "2",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "fficial_champion_detail_when_available\"       ],       \"exact_urls\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/\",         \"https://wildrift.leagueoflegends.com/en-sg/news/\"       ],       \"ur || s\": [         \"https://wildrift.leagueoflegends.com/en-sg/champions/\",         \"https://wildrift.leagueoflegends.com/en-sg/news/\"       ],       \"url_patterns\": [         \"^https://wildrift\\\\.leagueoflegends\\"
+    },
+    {
+      "relative_path": "chatgpt_chunks_extracted/riftcoach_wr_intelligence_database_v0_6_0_chunk1/riftcoach_wr_intelligence_database_v0_6_0_chunk1/source_policy/source_refresh_queue_seed.json",
+      "pattern": "non_wr_url",
+      "count": "2",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "       ],       \"next_chunk\": \"chunks_2_to_10\"     }   ],   \"seed_urls\": [     \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"https://wildrift.leagueoflegends.com/en-sg/news/\",     \"https://wiki.lea || seed_urls\": [     \"https://wildrift.leagueoflegends.com/en-sg/champions/\",     \"https://wildrift.leagueoflegends.com/en-sg/news/\",     \"https://wiki.leagueoflegends.com/en-us/WR:Item\",     \"https://wiki.leagu"
+    },
+    {
+      "relative_path": "src_zip/src/lib/build-engine.ts",
+      "pattern": "lol_pc_phrase",
+      "count": "1",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "turn `You are the RiftCoach Build Advisor for **Wild Rift (mobile game)** — NOT LoL PC.  Below is a pre-built **${champName}** build guide with 100% accurate data fro"
+    },
+    {
+      "relative_path": "src_zip/src/lib/prompts.ts",
+      "pattern": "lol_pc_phrase",
+      "count": "10",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "======================= // IMPORTANT: This is for Wild Rift (MOBILE) ONLY — NOT League of Legends PC. // The rune system, items, map, and game mechanics are DIFFERENT from LoL PC.  || gends PC. // The rune system, items, map, and game mechanics are DIFFERENT from LoL PC.  // ── Helper: Data Context Injection ────────────────────────────────── expor || DENTITY - You coach **Wild Rift (mobile)** ONLY — this is a DIFFERENT game from League of Legends PC. - Wild Rift has DIFFERENT items, runes, map layout, game length (~15-20 min),  || 5-20 min), 5v5 on a smaller Rift, and levels 1-15 (not 1-18). - NEVER reference LoL PC mechanics, items, or rune systems. If you're unsure whether something exists in || une System Wild Rift uses its OWN rune system that is COMPLETELY DIFFERENT from LoL PC.  ### Current WR Rune Page Structure (Patch 7.x): A complete rune page consists"
+    },
+    {
+      "relative_path": "src_zip/src/lib/relationship-engine.ts",
+      "pattern": "lol_pc_phrase",
+      "count": "1",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": "ERO AI — all data comes from verified JSON files // Wild Rift MOBILE only — NOT LoL PC  import fs from 'fs'; import path from 'path';  // ─── Types ──────────────────"
+    },
+    {
+      "relative_path": "src_zip/src/app/api/reasoning/route.ts",
+      "pattern": "lol_pc_phrase",
+      "count": "3",
+      "classification": "allowed_guardrail_or_policy_reference",
+      "context_sample": " Rift (MOBILE) build analyst.  CRITICAL RULES: - This is Wild Rift MOBILE — NOT League of Legends PC. - Wild Rift has 15 levels (not 18). Games last 15-20 minutes. - Wild Rift has  || 5-20 minutes. - Wild Rift has unique items, runes, and balance — different from LoL PC. - Reference champion abilities by their Wild Rift names. - Keep each rationale || a below, say \"provides utility\" instead of guessing a number. - NEVER reference LoL PC items, stats, or mechanics. Only Wild Rift mobile. - When describing an item pa"
+    }
+  ],
+  "policy": "LoL-PC references used as guardrail text are allowed; WR-prefixed URLs and wildrift.leagueoflegends.com URLs are allowed-source candidates; LoL-PC gameplay data is not promoted to source-verified Wild Rift facts."
+}

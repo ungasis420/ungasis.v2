@@ -1,0 +1,5154 @@
+{
+  "meta": {
+    "version": "0.7.0",
+    "patch_version": "7.1e",
+    "source_status": "source_aware_runtime_compatibility_view"
+  },
+  "items": [
+    {
+      "id": "abyssal_mask",
+      "name": "Abyssal Mask",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Abyssal_Mask",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Abyssal Mask is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Abyssal Mask is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "anti_magic_damage",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "aether_wisp",
+      "name": "Aether Wisp",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 950,
+      "stats": {
+        "ability_power": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "amaranths_twinguard",
+      "name": "Amaranth's Twinguard",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Amaranth%27s_Twinguard",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Amaranth's Twinguard is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Amaranth's Twinguard is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "amplifying_tome",
+      "name": "Amplifying Tome",
+      "category": "Boots",
+      "subcategory": "basic_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Amplifying_Tome",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Amplifying Tome is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Amplifying Tome is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "component",
+        "basic_item",
+        "situational"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "archangels_staff",
+      "name": "Archangel's Staff",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Archangel%27s_Staff",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Archangel's Staff is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Archangel's Staff is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "ardent_censer",
+      "name": "Ardent Censer",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Ardent_Censer",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Ardent Censer is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Ardent Censer is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "support"
+      ],
+      "tags": [
+        "upgraded_item",
+        "utility",
+        "shield_or_heal_synergy",
+        "support"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "atmas_reckoning",
+      "name": "Atma's Reckoning",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 2600,
+      "stats": [
+        "+500 HP",
+        "+25% Crit"
+      ],
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "awakened_soulstealer",
+      "name": "Awakened Soulstealer",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Awakened_Soulstealer",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Awakened Soulstealer is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Awakened Soulstealer is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "axiom_arc",
+      "name": "Axiom Arc",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 3200,
+      "stats": [
+        "+55 AD",
+        "+20 Ability Haste",
+        "+18 Armor Pen"
+      ],
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "bamis_cinder",
+      "name": "Bami's Cinder",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1100,
+      "stats": {
+        "health": 250
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "bandle_fantasy",
+      "name": "Bandle Fantasy",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Bandle_Fantasy",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Bandle Fantasy is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Bandle Fantasy is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "berserkers_greaves",
+      "name": "Berserker's Greaves",
+      "category": "Boots",
+      "subcategory": "tier_2_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Berserker%27s_Greaves",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Berserker's Greaves is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Berserker's Greaves is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "movement",
+        "boots",
+        "situational",
+        "tier_2_boot"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "bf_sword",
+      "name": "B. F. Sword",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1500,
+      "stats": {
+        "attack_damage": 30
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "black_cleaver",
+      "name": "Black Cleaver",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Black_Cleaver",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Black Cleaver is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Black Cleaver is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "black_mist_scythe",
+      "name": "Black Mist Scythe",
+      "category": "Support",
+      "subcategory": "support_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Black_Mist_Scythe",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Black Mist Scythe is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Black Mist Scythe is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "support"
+      ],
+      "tags": [
+        "economy",
+        "team_utility",
+        "utility",
+        "support"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "blade_of_the_ruined_king",
+      "name": "Blade of the Ruined King",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Blade_of_the_Ruined_King",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Blade of the Ruined King is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Blade of the Ruined King is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "blasting_wand",
+      "name": "Blasting Wand",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 900,
+      "stats": {
+        "ability_power": 40
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "bloodthirster",
+      "name": "Bloodthirster",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Bloodthirster",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Bloodthirster is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Bloodthirster is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "boots_of_dynamism",
+      "name": "Boots of Dynamism",
+      "category": "Boots",
+      "subcategory": "tier_2_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Boots_of_Dynamism",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Boots of Dynamism is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Boots of Dynamism is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "movement",
+        "boots",
+        "situational",
+        "tier_2_boot"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "boots_of_mana",
+      "name": "Boots of Mana",
+      "category": "Boots",
+      "subcategory": "tier_2_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Boots_of_Mana",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Boots of Mana is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Boots of Mana is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "movement",
+        "boots",
+        "situational",
+        "tier_2_boot"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "boots_of_speed",
+      "name": "Boots of Speed",
+      "category": "Boots",
+      "subcategory": "basic_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Boots_of_Speed",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Boots of Speed is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Boots of Speed is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "movement",
+        "boots",
+        "basic_boot",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "bramble_vest",
+      "name": "Bramble Vest",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "armor": 30
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "bulwark_of_the_mountain",
+      "name": "Bulwark of the Mountain",
+      "category": "Support",
+      "subcategory": "support_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Bulwark_of_the_Mountain",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Bulwark of the Mountain is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Bulwark of the Mountain is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "support",
+        "tank"
+      ],
+      "tags": [
+        "economy",
+        "team_utility",
+        "defense",
+        "survivability",
+        "tank",
+        "support",
+        "frontline",
+        "utility"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "catalyst_of_aeons",
+      "name": "Catalyst of Aeons",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1100,
+      "stats": {
+        "health": 200,
+        "mana": 300
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "caulfields_warhammer",
+      "name": "Caulfield's Warhammer",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1200,
+      "stats": {
+        "attack_damage": 20,
+        "ability_haste": 10
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "chain_vest",
+      "name": "Chain Vest",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 900,
+      "stats": {
+        "armor": 35
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "chempunk_chainsword",
+      "name": "Chempunk Chainsword",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Chempunk_Chainsword",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Chempunk Chainsword is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Chempunk Chainsword is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "anti_heal",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "cloak_of_agility",
+      "name": "Cloak of Agility",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "critical_rate_percent": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "control_ward",
+      "name": "Control Ward",
+      "category": "Boots",
+      "subcategory": "vision_trinket",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Control_Ward",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Control Ward is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Control Ward is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "map_control",
+        "situational",
+        "vision"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "cosmic_drive",
+      "name": "Cosmic Drive",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Cosmic_Drive",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Cosmic Drive is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Cosmic Drive is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "crown_of_the_shattered_queen",
+      "name": "Crown of the Shattered Queen",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Crown_of_the_Shattered_Queen",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Crown of the Shattered Queen is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Crown of the Shattered Queen is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "dawnshroud",
+      "name": "Dawnshroud",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Dawnshroud",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Dawnshroud is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Dawnshroud is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "dead_mans_plate",
+      "name": "Dead Man's Plate",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Dead_Man%27s_Plate",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Dead Man's Plate is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Dead Man's Plate is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline",
+        "anti_physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "deaths_dance",
+      "name": "Death's Dance",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Death%27s_Dance",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Death's Dance is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Death's Dance is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "divine_sunderer",
+      "name": "Divine Sunderer",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Divine_Sunderer",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Divine Sunderer is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Divine Sunderer is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "upgraded_item",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "dream_maker",
+      "name": "Dream Maker",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Dream_Maker",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Dream Maker is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Dream Maker is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "support"
+      ],
+      "tags": [
+        "enchantment",
+        "support",
+        "boots",
+        "utility",
+        "active_item"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "duskblade_of_draktharr",
+      "name": "Duskblade of Draktharr",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Duskblade_of_Draktharr",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Duskblade of Draktharr is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Duskblade of Draktharr is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "eclipse",
+      "name": "Eclipse",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Eclipse",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Eclipse is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Eclipse is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "edge_of_night",
+      "name": "Edge of Night",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Edge_of_Night",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Edge of Night is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Edge of Night is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "essence_reaver",
+      "name": "Essence Reaver",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Essence_Reaver",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Essence Reaver is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Essence Reaver is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "executioners_calling",
+      "name": "Executioner's Calling",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 800,
+      "stats": {
+        "attack_damage": 15
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "experimental_hexplate",
+      "name": "Experimental Hexplate",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage",
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Experimental_Hexplate",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Experimental Hexplate is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Experimental Hexplate is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "frontline",
+        "marksman",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "defense",
+        "survivability",
+        "tank",
+        "fighter",
+        "physical_damage",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "fiendish_codex",
+      "name": "Fiendish Codex",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "ability_power": 25,
+        "ability_haste": 10
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "fimbulwinter",
+      "name": "Fimbulwinter",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Fimbulwinter",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Fimbulwinter is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Fimbulwinter is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "force_of_nature",
+      "name": "Force of Nature",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Force_of_Nature",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Force of Nature is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Force of Nature is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "anti_magic_damage",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "frozen_heart",
+      "name": "Frozen Heart",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Frozen_Heart",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Frozen Heart is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Frozen Heart is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline",
+        "anti_physical_damage"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "galeforce",
+      "name": "Galeforce",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Galeforce",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Galeforce is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Galeforce is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "gargoyle_enchant",
+      "name": "Gargoyle Enchant",
+      "category": "Boots",
+      "subcategory": null,
+      "cost": 500,
+      "stats": {},
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "giants_belt",
+      "name": "Giant's Belt",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "health": 350
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "glacial_shroud",
+      "name": "Glacial Shroud",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "armor": 20,
+        "ability_haste": 10,
+        "mana": 200
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "glorious_enchant",
+      "name": "Glorious Enchant",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Glorious_Enchant",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Glorious Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Glorious Enchant is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "gluttonous_greaves",
+      "name": "Gluttonous Greaves",
+      "category": "Boots",
+      "subcategory": "tier_2_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Gluttonous_Greaves",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Gluttonous Greaves is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Gluttonous Greaves is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "movement",
+        "boots",
+        "situational",
+        "tier_2_boot"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "goredrinker",
+      "name": "Goredrinker",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Goredrinker",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Goredrinker is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Goredrinker is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "guardian_angel",
+      "name": "Guardian Angel",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Guardian_Angel",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Guardian Angel is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Guardian Angel is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "guinsoos_rageblade",
+      "name": "Guinsoo's Rageblade",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Guinsoo%27s_Rageblade",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Guinsoo's Rageblade is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Guinsoo's Rageblade is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "harmonic_echo",
+      "name": "Harmonic Echo",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Harmonic_Echo",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Harmonic Echo is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Harmonic Echo is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage",
+        "support"
+      ],
+      "tags": [
+        "upgraded_item",
+        "shield_or_heal_synergy",
+        "support",
+        "mage",
+        "utility",
+        "magic_damage",
+        "ability_power"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "haunting_guise",
+      "name": "Haunting Guise",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 1300,
+      "stats": {
+        "ability_power": 30,
+        "health": 200
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "heartsteel",
+      "name": "Heartsteel",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Heartsteel",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Heartsteel is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Heartsteel is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "hexdrinker",
+      "name": "Hexdrinker",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1200,
+      "stats": {
+        "attack_damage": 20,
+        "magic_resist": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "hextech_alternator",
+      "name": "Hextech Alternator",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 1400,
+      "stats": {
+        "ability_power": 25,
+        "health": 150
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "hollow_radiance",
+      "name": "Hollow Radiance",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Hollow_Radiance",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Hollow Radiance is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Hollow Radiance is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "horizon_focus",
+      "name": "Horizon Focus",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Horizon_Focus",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Horizon Focus is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Horizon Focus is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "hullbreaker",
+      "name": "Hullbreaker",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Hullbreaker",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Hullbreaker is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Hullbreaker is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "upgraded_item",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "iceborn_gauntlet",
+      "name": "Iceborn Gauntlet",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Iceborn_Gauntlet",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Iceborn Gauntlet is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Iceborn Gauntlet is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "immortal_shieldbow",
+      "name": "Immortal Shieldbow",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 3000,
+      "stats": {
+        "attack_damage": 50,
+        "critical_rate_percent": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "shield",
+        "ad",
+        "safety",
+        "lifeline",
+        "crit"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "imperial_mandate",
+      "name": "Imperial Mandate",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Imperial_Mandate",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Imperial Mandate is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Imperial Mandate is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage",
+        "support"
+      ],
+      "tags": [
+        "upgraded_item",
+        "support",
+        "mage",
+        "utility",
+        "magic_damage",
+        "ability_power"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "infinity_edge",
+      "name": "Infinity Edge",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Infinity_Edge",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Infinity Edge is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Infinity Edge is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "infinity_orb",
+      "name": "Infinity Orb",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Infinity_Orb",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Infinity Orb is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Infinity Orb is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "ionian_boots_of_lucidity",
+      "name": "Ionian Boots of Lucidity",
+      "category": "Boots",
+      "subcategory": "tier_2_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Ionian_Boots_of_Lucidity",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Ionian Boots of Lucidity is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Ionian Boots of Lucidity is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "movement",
+        "boots",
+        "situational",
+        "tier_2_boot"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "jaurims_fist",
+      "name": "Jaurim's Fist",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1200,
+      "stats": {
+        "attack_damage": 15,
+        "health": 200
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "kaenic_rookern",
+      "name": "Kaenic Rookern",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Kaenic_Rookern",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Kaenic Rookern is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Kaenic Rookern is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "anti_magic_damage",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "kindlegem",
+      "name": "Kindlegem",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "ability_haste": 10,
+        "health": 200
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "kircheis_shard",
+      "name": "Kircheis Shard",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 900,
+      "stats": {
+        "attack_speed_percent": 15
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "knights_vow",
+      "name": "Knight's Vow",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Knight%27s_Vow",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Knight's Vow is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Knight's Vow is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "support",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "support",
+        "frontline",
+        "utility"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "kraken_slayer",
+      "name": "Kraken Slayer",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Kraken_Slayer",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Kraken Slayer is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Kraken Slayer is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "last_whisper",
+      "name": "Last Whisper",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 500,
+      "stats": {},
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "liandrys_torment",
+      "name": "Liandry's Torment",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Liandry%27s_Torment",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Liandry's Torment is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Liandry's Torment is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "lich_bane",
+      "name": "Lich Bane",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Lich_Bane",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Lich Bane is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Lich Bane is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "locket_enchant",
+      "name": "Locket Enchant",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Locket_Enchant",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Locket Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Locket Enchant is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "support"
+      ],
+      "tags": [
+        "shield_or_heal_synergy",
+        "enchantment",
+        "support",
+        "boots",
+        "utility",
+        "active_item"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "long_sword",
+      "name": "Long Sword",
+      "category": "Boots",
+      "subcategory": "basic_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Long_Sword",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Long Sword is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Long Sword is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "component",
+        "basic_item",
+        "situational"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "lord_dominiks_regards",
+      "name": "Lord Dominik's Regards",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Lord_Dominik%27s_Regards",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Lord Dominik's Regards is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Lord Dominik's Regards is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "lost_chapter",
+      "name": "Lost Chapter",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 1050,
+      "stats": {
+        "ability_power": 25,
+        "ability_haste": 10,
+        "mana": 150
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "ludens_echo",
+      "name": "Luden's Echo",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Luden%27s_Echo",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Luden's Echo is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Luden's Echo is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "magnetic_blaster",
+      "name": "Magnetic Blaster",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Magnetic_Blaster",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Magnetic Blaster is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Magnetic Blaster is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "malignance",
+      "name": "Malignance",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Malignance",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Malignance is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Malignance is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "manamune",
+      "name": "Manamune",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Manamune",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Manamune is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Manamune is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "mantle_of_the_twelfth_hour",
+      "name": "Mantle of the Twelfth Hour",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Mantle_of_the_Twelfth_Hour",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Mantle of the Twelfth Hour is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Mantle of the Twelfth Hour is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "maw_of_malmortius",
+      "name": "Maw of Malmortius",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Maw_of_Malmortius",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Maw of Malmortius is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Maw of Malmortius is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "upgraded_item",
+        "anti_magic_damage",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "mejais_soulstealer",
+      "name": "Mejai's Soulstealer",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 1600,
+      "stats": {
+        "ability_power": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "high_risk",
+        "stacking",
+        "ms_at_max",
+        "snowball"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "mercurys_treads",
+      "name": "Mercury's Treads",
+      "category": "Boots",
+      "subcategory": "tier_2_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists",
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Mercury%27s_Treads",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Mercury's Treads is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Mercury's Treads is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "tier_2_boot",
+        "defense",
+        "survivability",
+        "tank",
+        "boots",
+        "anti_magic_damage",
+        "movement",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "morellonomicon",
+      "name": "Morellonomicon",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Morellonomicon",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Morellonomicon is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Morellonomicon is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "anti_heal",
+        "mage",
+        "magic_damage",
+        "ability_power"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "mortal_reminder",
+      "name": "Mortal Reminder",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Mortal_Reminder",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Mortal Reminder is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Mortal Reminder is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "anti_heal",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "muramana",
+      "name": "Muramana",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Muramana",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Muramana is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Muramana is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "nashors_tooth",
+      "name": "Nashor's Tooth",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Nashor%27s_Tooth",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Nashor's Tooth is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Nashor's Tooth is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "navori_quickblades",
+      "name": "Navori Quickblades",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Navori_Quickblades",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Navori Quickblades is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Navori Quickblades is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "needlessly_large_rod",
+      "name": "Needlessly Large Rod",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 1300,
+      "stats": {
+        "ability_power": 60
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "negatron_cloak",
+      "name": "Negatron Cloak",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 900,
+      "stats": {
+        "magic_resist": 40
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "oblivion_orb",
+      "name": "Oblivion Orb",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 800,
+      "stats": {
+        "ability_power": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "oceanids_trident",
+      "name": "Oceanid's Trident",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Oceanid%27s_Trident",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Oceanid's Trident is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Oceanid's Trident is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "anti_heal",
+        "mage",
+        "anti_shield",
+        "magic_damage",
+        "ability_power"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "overlords_bloodmail",
+      "name": "Overlord's Bloodmail",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Overlord%27s_Bloodmail",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Overlord's Bloodmail is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Overlord's Bloodmail is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "phage",
+      "name": "Phage",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "attack_damage": 15,
+        "health": 200
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "phantom_dancer",
+      "name": "Phantom Dancer",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Phantom_Dancer",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Phantom Dancer is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Phantom Dancer is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "plated_steelcaps",
+      "name": "Plated Steelcaps",
+      "category": "Boots",
+      "subcategory": "tier_2_boot",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists",
+          "movement_speed"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Plated_Steelcaps",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Plated Steelcaps is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Plated Steelcaps is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "tier_2_boot",
+        "defense",
+        "survivability",
+        "tank",
+        "boots",
+        "frontline",
+        "anti_physical_damage",
+        "movement"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "prophets_pendant",
+      "name": "Prophet's Pendant",
+      "category": "Support",
+      "subcategory": null,
+      "cost": 1250,
+      "stats": {
+        "ability_power": 30,
+        "ability_haste": 10
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "protectors_vow",
+      "name": "Protector's Vow",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 2400,
+      "stats": {
+        "armor": 30,
+        "ability_haste": 15,
+        "health": 350
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "redirect",
+        "hp",
+        "supportive",
+        "armor"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "protobelt_enchant",
+      "name": "Protobelt Enchant",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Protobelt_Enchant",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Protobelt Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Protobelt Enchant is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "psychic_projector",
+      "name": "Psychic Projector",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Psychic_Projector",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Psychic Projector is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Psychic Projector is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "quicksilver_enchant",
+      "name": "Quicksilver Enchant",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Quicksilver_Enchant",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Quicksilver Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Quicksilver Enchant is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "rabadons_deathcap",
+      "name": "Rabadon's Deathcap",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Rabadon%27s_Deathcap",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Rabadon's Deathcap is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Rabadon's Deathcap is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "radiant_virtue",
+      "name": "Radiant Virtue",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Radiant_Virtue",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Radiant Virtue is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Radiant Virtue is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "randuins_omen",
+      "name": "Randuin's Omen",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Randuin%27s_Omen",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Randuin's Omen is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Randuin's Omen is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "anti_crit",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline",
+        "anti_physical_damage"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "recurve_bow",
+      "name": "Recurve Bow",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1400,
+      "stats": {
+        "attack_speed_percent": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "redemption",
+      "name": "Redemption",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Redemption",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Redemption is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Redemption is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "support"
+      ],
+      "tags": [
+        "upgraded_item",
+        "utility",
+        "shield_or_heal_synergy",
+        "support"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "relic_shield",
+      "name": "Relic Shield",
+      "category": "Support",
+      "subcategory": "support_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Relic_Shield",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Relic Shield is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Relic Shield is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "support"
+      ],
+      "tags": [
+        "economy",
+        "shield_or_heal_synergy",
+        "team_utility",
+        "support",
+        "utility"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "riftmaker",
+      "name": "Riftmaker",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Riftmaker",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Riftmaker is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Riftmaker is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "ring_of_revelation",
+      "name": "Ring of Revelation",
+      "category": "Support",
+      "subcategory": null,
+      "cost": 400,
+      "stats": {},
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "gold_gen",
+        "support_starter",
+        "mana_support"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "rod_of_ages",
+      "name": "Rod of Ages",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Rod_of_Ages",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Rod of Ages is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Rod of Ages is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "ruby_crystal",
+      "name": "Ruby Crystal",
+      "category": "Boots",
+      "subcategory": "basic_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Ruby_Crystal",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Ruby Crystal is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Ruby Crystal is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "component",
+        "basic_item",
+        "situational"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "runaans_hurricane",
+      "name": "Runaan's Hurricane",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Runaan%27s_Hurricane",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Runaan's Hurricane is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Runaan's Hurricane is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "rylais_crystal_scepter",
+      "name": "Rylai's Crystal Scepter",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Rylai%27s_Crystal_Scepter",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Rylai's Crystal Scepter is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Rylai's Crystal Scepter is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "searing_crown",
+      "name": "Searing Crown",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Searing_Crown",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Searing Crown is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Searing Crown is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "seekers_armguard",
+      "name": "Seeker's Armguard",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1200,
+      "stats": {
+        "ability_power": 20,
+        "armor": 30
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "seraphs_embrace",
+      "name": "Seraph's Embrace",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Seraph%27s_Embrace",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Seraph's Embrace is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Seraph's Embrace is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage"
+      ],
+      "tags": [
+        "upgraded_item",
+        "ability_power",
+        "magic_damage",
+        "mage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "serpents_fang",
+      "name": "Serpent's Fang",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Serpent%27s_Fang",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Serpent's Fang is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Serpent's Fang is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "fighter",
+        "marksman",
+        "attack_damage",
+        "anti_shield",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "serrated_dirk",
+      "name": "Serrated Dirk",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1000,
+      "stats": {
+        "attack_damage": 20,
+        "armor_penetration_flat": 10
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "seryldas_grudge",
+      "name": "Serylda's Grudge",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Serylda%27s_Grudge",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Serylda's Grudge is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Serylda's Grudge is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "sheen",
+      "name": "Sheen",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 900,
+      "stats": {
+        "ability_haste": 10
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "shimmering_spark",
+      "name": "Shimmering Spark",
+      "category": "Support",
+      "subcategory": null,
+      "cost": 500,
+      "stats": {
+        "ability_power": 8
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "gold_gen",
+        "support_starter",
+        "passive"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "soul_transfer",
+      "name": "Soul Transfer",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Soul_Transfer",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Soul Transfer is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Soul Transfer is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "upgraded_item",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "spear_of_shojin",
+      "name": "Spear of Shojin",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Spear_of_Shojin",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Spear of Shojin is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Spear of Shojin is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "spectral_sickle",
+      "name": "Spectral Sickle",
+      "category": "Support",
+      "subcategory": "support_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Spectral_Sickle",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Spectral Sickle is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Spectral Sickle is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "support"
+      ],
+      "tags": [
+        "economy",
+        "team_utility",
+        "utility",
+        "support"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "spectres_cowl",
+      "name": "Spectre's Cowl",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1100,
+      "stats": {
+        "magic_resist": 25,
+        "health": 200
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "spirit_visage",
+      "name": "Spirit Visage",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Spirit_Visage",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Spirit Visage is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Spirit Visage is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "anti_magic_damage",
+        "frontline"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "staff_of_flowing_water",
+      "name": "Staff of Flowing Water",
+      "category": "Support",
+      "subcategory": null,
+      "cost": 2600,
+      "stats": [
+        "+45 AP",
+        "+20 Ability Haste",
+        "+5% Heal & Shield Power",
+        "+100 HP",
+        "+50% Base Mana Regen"
+      ],
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "staff_of_flowing_waters",
+      "name": "Staff of Flowing Waters",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "ability_power"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Staff_of_Flowing_Waters",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Staff of Flowing Waters is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Staff of Flowing Waters is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "mage",
+        "support"
+      ],
+      "tags": [
+        "upgraded_item",
+        "shield_or_heal_synergy",
+        "support",
+        "mage",
+        "utility",
+        "magic_damage",
+        "ability_power"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "stasis_enchant",
+      "name": "Stasis Enchant",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Stasis_Enchant",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Stasis Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Stasis Enchant is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "steraks_gage",
+      "name": "Sterak's Gage",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Sterak%27s_Gage",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Sterak's Gage is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Sterak's Gage is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "stinger",
+      "name": "Stinger",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1200,
+      "stats": {
+        "attack_speed_percent": 25,
+        "ability_haste": 10
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "stoneplate_enchant",
+      "name": "Stoneplate Enchant",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Stoneplate_Enchant",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Stoneplate Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Stoneplate Enchant is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "defense",
+        "survivability",
+        "enchantment",
+        "tank",
+        "boots",
+        "frontline",
+        "active_item"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "stormrazor",
+      "name": "Stormrazor",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 2800,
+      "stats": {
+        "attack_damage": 40,
+        "attack_speed_percent": 15,
+        "critical_rate_percent": 25
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "slow",
+        "burst",
+        "pick",
+        "crit",
+        "energized"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "stormsurge",
+      "name": "Stormsurge",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 2700,
+      "stats": {
+        "ability_power": 85
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "ap",
+        "execute_ish",
+        "ms",
+        "burst"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "stridebreaker",
+      "name": "Stridebreaker",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Stridebreaker",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Stridebreaker is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Stridebreaker is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "sundered_sky",
+      "name": "Sundered Sky",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Sundered_Sky",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Sundered Sky is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Sundered Sky is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "sunfire_aegis",
+      "name": "Sunfire Aegis",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Sunfire_Aegis",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Sunfire Aegis is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Sunfire Aegis is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "sweeping_lens",
+      "name": "Sweeping Lens",
+      "category": "Boots",
+      "subcategory": "vision_trinket",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Sweeping_Lens",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Sweeping Lens is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Sweeping Lens is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "map_control",
+        "situational",
+        "vision"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "tear_of_the_goddess",
+      "name": "Tear of the Goddess",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 900,
+      "stats": {
+        "ability_haste": 10,
+        "mana": 200
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "terminus",
+      "name": "Terminus",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Terminus",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Terminus is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Terminus is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "the_collector",
+      "name": "The Collector",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:The_Collector",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "The Collector is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "The Collector is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "thornmail",
+      "name": "Thornmail",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Thornmail",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Thornmail is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Thornmail is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "anti_heal",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline",
+        "anti_physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "titanic_hydra",
+      "name": "Titanic Hydra",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Titanic_Hydra",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Titanic Hydra is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Titanic Hydra is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "trinity_force",
+      "name": "Trinity Force",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Trinity_Force",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Trinity Force is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Trinity Force is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "unending_despair",
+      "name": "Unending Despair",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Unending_Despair",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Unending Despair is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Unending Despair is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "vampiric_scepter",
+      "name": "Vampiric Scepter",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1200,
+      "stats": {
+        "attack_damage": 10
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "veil_enchant",
+      "name": "Veil Enchant",
+      "category": "Boots",
+      "subcategory": "boot_enchantment",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Veil_Enchant",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Veil Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Veil Enchant is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "active_item",
+        "boots",
+        "enchantment",
+        "situational"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "void_staff",
+      "name": "Void Staff",
+      "category": "Magic",
+      "subcategory": null,
+      "cost": 2800,
+      "stats": {
+        "ability_power": 70
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [
+        "scaling",
+        "magic_penetration",
+        "anti_mr"
+      ],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "wardens_mail",
+      "name": "Warden's Mail",
+      "category": "Defense",
+      "subcategory": null,
+      "cost": 1050,
+      "stats": {
+        "armor": 35
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "warding_totem",
+      "name": "Warding Totem",
+      "category": "Boots",
+      "subcategory": "vision_trinket",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Warding_Totem",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Warding Totem is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Warding Totem is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "situational"
+      ],
+      "tags": [
+        "map_control",
+        "situational",
+        "vision"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "warmogs_armor",
+      "name": "Warmog's Armor",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Warmog%27s_Armor",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Warmog's Armor is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Warmog's Armor is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "winters_approach",
+      "name": "Winter's Approach",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Winter%27s_Approach",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Winter's Approach is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Winter's Approach is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "frontline"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "wits_end",
+      "name": "Wit's End",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Wit%27s_End",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Wit's End is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Wit's End is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "yordle_trap",
+      "name": "Yordle Trap",
+      "category": "Boots",
+      "subcategory": "upgraded_support_defense",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Yordle_Trap",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Yordle Trap is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Yordle Trap is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [
+        {
+          "rule_id": "yordle_trap_displacement_support_context",
+          "relationship_type": "RECOMMENDED_WHEN",
+          "reason_codes": [
+            "support_frontline_role_match",
+            "displacement_synergy",
+            "team_follow_up_damage",
+            "defensive_slot_value"
+          ],
+          "source_status": "user_corrected_pending_allowed_source_revalidation"
+        }
+      ],
+      "counter_tags": [
+        {
+          "rule_id": "suppress_yordle_trap_when_no_displacement",
+          "relationship_type": "SUPPRESSED_WHEN",
+          "reason_codes": [
+            "champion_lacks_displacement",
+            "team_lacks_follow_up",
+            "wrong_damage_profile_response"
+          ],
+          "source_status": "generated_rule"
+        }
+      ],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "support",
+        "tank"
+      ],
+      "tags": [
+        "utility",
+        "tank_support",
+        "economy",
+        "gold_acceleration",
+        "mark_amplification",
+        "shield_or_heal_synergy",
+        "health",
+        "team_utility",
+        "ability_haste",
+        "defense",
+        "engage",
+        "peel",
+        "tank",
+        "support",
+        "displacement_synergy",
+        "survivability",
+        "frontline",
+        "armor"
+      ],
+      "source_status": "prior_seed_requires_revalidation"
+    },
+    {
+      "id": "youmuus_ghostblade",
+      "name": "Youmuu's Ghostblade",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "attack_damage"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Youmuu%27s_Ghostblade",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Youmuu's Ghostblade is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Youmuu's Ghostblade is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "assassin",
+        "fighter",
+        "marksman"
+      ],
+      "tags": [
+        "upgraded_item",
+        "assassin",
+        "marksman",
+        "attack_damage",
+        "fighter",
+        "physical_damage"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    },
+    {
+      "id": "zeal",
+      "name": "Zeal",
+      "category": "Physical",
+      "subcategory": null,
+      "cost": 1400,
+      "stats": {
+        "attack_speed_percent": 15,
+        "critical_rate_percent": 20
+      },
+      "passive_name": null,
+      "passive_brief": "",
+      "passive_full": "",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [],
+      "tags": [],
+      "source_status": "source_aware_pending_verification"
+    },
+    {
+      "id": "zekes_convergence",
+      "name": "Zeke's Convergence",
+      "category": "Boots",
+      "subcategory": "upgraded_item",
+      "cost": null,
+      "stats": {
+        "source_status": "pending_allowed_source_refresh",
+        "values": {},
+        "stat_tags": [
+          "health_or_resists"
+        ],
+        "source_urls": [
+          "https://wiki.leagueoflegends.com/en-us/WR:Zeke%27s_Convergence",
+          "https://www.wildriftfire.com/item-list"
+        ]
+      },
+      "passive_name": null,
+      "passive_brief": "Zeke's Convergence is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+      "passive_full": "Zeke's Convergence is included in the RiftCoach item database with source-limited provenance, structured gold fields, cooldown fields, active/passive effect containers, role tags, build legality metadata, and source refresh jobs. Exact gold or cooldown values are not promoted to source_verified unless approved Wild Rift source extraction succeeds.",
+      "synergy_tags": [],
+      "counter_tags": [],
+      "anti_synergy": [],
+      "best_for": [
+        "frontline",
+        "support",
+        "tank"
+      ],
+      "tags": [
+        "upgraded_item",
+        "defense",
+        "survivability",
+        "tank",
+        "support",
+        "frontline",
+        "utility"
+      ],
+      "source_status": "pending_allowed_source_refresh"
+    }
+  ]
+}

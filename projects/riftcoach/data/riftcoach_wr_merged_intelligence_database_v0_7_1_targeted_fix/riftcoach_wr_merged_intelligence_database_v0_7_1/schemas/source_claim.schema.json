@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/source_claim.schema.json",
+  "title": "Source Claim",
+  "type": "object",
+  "required": [
+    "claim_id",
+    "entity_id",
+    "field",
+    "value",
+    "source_status",
+    "source_family",
+    "patch_version"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "field": {
+      "type": "string"
+    },
+    "value": {},
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "source_verified",
+        "source_inferred",
+        "generated_rule",
+        "generated_archetype",
+        "hybrid",
+        "source_conflict",
+        "user_corrected_pending_revalidation",
+        "pending_allowed_source_refresh",
+        "source_verified_not_applicable",
+        "not_applicable"
+      ]
+    },
+    "source_family": {
+      "type": "string",
+      "enum": [
+        "riot_wild_rift",
+        "lol_wiki_wr",
+        "wildriftfire",
+        "wr_meta_limited",
+        "riftcoach_generated",
+        "user_verified_correction"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -10035,17 +10035,17 @@
     "semantic_hash": "6990b3ea6193a40f9514f8672b1d2daf"
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_champions_part1.json": {
-    "mtime": 1780484884.615462,
+    "mtime": 1780512285.9404628,
     "ast_hash": "28b4064351b6e2c0222a01b061541b1f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_champions_part2.json": {
-    "mtime": 1780484884.6494627,
+    "mtime": 1780512285.982396,
     "ast_hash": "11b238ea96310a509a6be7f5dadc79a5",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_champions_part3.json": {
-    "mtime": 1780484884.702088,
+    "mtime": 1780512286.0575173,
     "ast_hash": "372359661af4993313e4e80d7c70587b",
     "semantic_hash": ""
   },
@@ -10075,17 +10075,17 @@
     "semantic_hash": "c22e37b163604341eb9f72f64197695e"
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_meta.json": {
-    "mtime": 1780484854.4281118,
+    "mtime": 1780512236.2754593,
     "ast_hash": "42bc77fcacaf921db5dd95e19daab55b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_runes.json": {
-    "mtime": 1780484853.7092493,
+    "mtime": 1780512176.6685882,
     "ast_hash": "befe77e2571262215da8e6a5462855eb",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_spells.json": {
-    "mtime": 1780484853.8581352,
+    "mtime": 1780512176.8172736,
     "ast_hash": "e563bc18166e01d9085c1c7dd07e7dc6",
     "semantic_hash": ""
   },
@@ -10575,8 +10575,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\.github\\agents\\appforge.agent.md": {
-    "mtime": 1779129490.1325858,
-    "ast_hash": "455babd57fb6ee0f48eebcf7b5dc9f14",
+    "mtime": 1780515578.792475,
+    "ast_hash": "fe732c7ce73861119630fa8e84863ecc",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\.github\\copilot-instructions.md": {
@@ -17270,753 +17270,2913 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_champions.json": {
-    "mtime": 1780484854.2672818,
-    "ast_hash": "511703a24142b7e95c7ad09402df580b",
+    "mtime": 1780512236.099355,
+    "ast_hash": "59d7ade6a7ae490592519eba3abe6921",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_items.json": {
-    "mtime": 1780484853.4974546,
+    "mtime": 1780512173.8505912,
     "ast_hash": "1b90011a1fd506a95b579dd6ac5a16c8",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_meta.json": {
-    "mtime": 1780484854.4281118,
+    "mtime": 1780512236.2754593,
     "ast_hash": "42bc77fcacaf921db5dd95e19daab55b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_patch.json": {
-    "mtime": 1780484854.4513307,
+    "mtime": 1780512238.8692691,
     "ast_hash": "6b11946b0145331045a5687fa0880a99",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_runes.json": {
-    "mtime": 1780484853.7092493,
+    "mtime": 1780512176.6685882,
     "ast_hash": "befe77e2571262215da8e6a5462855eb",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\output\\wr_spells.json": {
-    "mtime": 1780484853.8581352,
+    "mtime": 1780512176.8172736,
     "ast_hash": "e563bc18166e01d9085c1c7dd07e7dc6",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\01e7ff5c04e414b951a455cc02297cc2.html": {
-    "mtime": 1780484786.298652,
+    "mtime": 1780512191.5127213,
     "ast_hash": "2b120f5229c59dd8c447950723d81633",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\09d7305071c81de1a24cafc4f35717f6.html": {
-    "mtime": 1780484808.920815,
+    "mtime": 1780512213.4376445,
     "ast_hash": "989e8a4aff7ca26cf181b3f24353ec4d",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\09ff42dea785828996fbe6519fb5d45a.html": {
-    "mtime": 1780484808.4794862,
+    "mtime": 1780512212.4814496,
     "ast_hash": "f982c3565dfa89c43a640e8b19958b7e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0a6376cdd1e0bffb215dde54853f231a.html": {
-    "mtime": 1780484800.5816734,
+    "mtime": 1780512205.5181937,
     "ast_hash": "9e4d15727a6152d1f833604936c209b6",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0b1f2733ca1ceaba9f557ba178d75cab.html": {
-    "mtime": 1780484829.071075,
+    "mtime": 1780512233.2446237,
     "ast_hash": "47bb4bc75e3ba92e2dac8c785359a1d1",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0b5e2220a4181df64a9beaa20cad237c.html": {
-    "mtime": 1780484795.4715233,
+    "mtime": 1780512200.9652545,
     "ast_hash": "9d3f2fa8ac2b0288266e452f4bf0164b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0bbf1c7f153c3ec6f69a0776bb5b1a60.html": {
-    "mtime": 1780484810.4065619,
+    "mtime": 1780512214.7923355,
     "ast_hash": "fe00436970e0e606bd395a6c34386c7f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0dccc3de7d4f88dea98cd1432e054711.html": {
-    "mtime": 1780484784.1836734,
+    "mtime": 1780512189.5085337,
     "ast_hash": "14a74b93d0ae09bc8202af3b6edfe93b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0e478b5973bc9cac744122bc0ea62c5c.html": {
-    "mtime": 1780484810.820748,
+    "mtime": 1780512214.616961,
     "ast_hash": "7cc5c0a3107585f7870ea0c7bd1a8cec",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0ea0be377fbca643e7bef47066bf0321.html": {
-    "mtime": 1780484784.2533498,
+    "mtime": 1780512189.3223624,
     "ast_hash": "c6fc97299d69f3175d3717cd4b9314ba",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\0f6e59c74a1605c1646fbcff11ea1dd9.html": {
-    "mtime": 1780484794.462669,
+    "mtime": 1780512199.176921,
     "ast_hash": "f873d2deb766d6047479e12170d6654e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\112b653ba92da4581bf889ee9569bb18.html": {
-    "mtime": 1780484802.6004932,
+    "mtime": 1780512207.419939,
     "ast_hash": "1362954e105c7303eeefe0b45682dfad",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1285faefcc05a334fe4d4ac3e6e8cc7a.html": {
-    "mtime": 1780484830.7468123,
+    "mtime": 1780512235.1653194,
     "ast_hash": "beb6625ca8a3fed081682fd666c9718d",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\133cee603ec5bf0ce636ce5c505dbce8.html": {
-    "mtime": 1780484784.100155,
+    "mtime": 1780512189.3879554,
     "ast_hash": "e3366c1e128ed5accd97e8686dab271a",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\182f18026c1cf30aadeea5d9eddf5673.html": {
-    "mtime": 1780484790.4717531,
+    "mtime": 1780512195.4972959,
     "ast_hash": "62f594647247b04b8eaa930e20619753",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1c8976f95a59115180a5548988276922.html": {
-    "mtime": 1780484804.6486614,
+    "mtime": 1780512209.3482664,
     "ast_hash": "a5ea2c0d75a73d320c19dbc659ac7b1b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1ca467db05c406556c3b9f83fa88a902.html": {
-    "mtime": 1780484798.3474498,
+    "mtime": 1780512202.9496999,
     "ast_hash": "8a8d304ca5763ff827bdbcb90ac2ad59",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1ca938187d54690ed7f822263ebde446.html": {
-    "mtime": 1780484798.5476513,
+    "mtime": 1780512203.502299,
     "ast_hash": "2dac3549376d84f8ed5c374879659e83",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1da80fc6b721c7fa73e38c1fc3bab353.html": {
-    "mtime": 1780484801.0437028,
+    "mtime": 1780512206.87365,
     "ast_hash": "c3466560ba09c73b627c945b43122e74",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1e7dd3f4dd01672e0519b4c907df91da.html": {
-    "mtime": 1780484808.7089853,
+    "mtime": 1780512212.7072191,
     "ast_hash": "7c7823ae7f1d05ad49b6c92fb80ab262",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1f742450cf29913b9ab074bb730162c9.html": {
-    "mtime": 1780484825.4345312,
+    "mtime": 1780512229.7606442,
     "ast_hash": "2a173a011386207186e84c3c0658c518",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\1f99217e09731cd77ee2a9bf03201323.html": {
-    "mtime": 1780484820.9700682,
+    "mtime": 1780512224.8303533,
     "ast_hash": "ec4bb4277ef7c14ec3b79f1d1a3cb0e7",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\20cc17dd5f948b3f5889944991b091dc.html": {
-    "mtime": 1780484829.691202,
+    "mtime": 1780512234.058856,
     "ast_hash": "4b1a9c55e9ae0e1b15b66b366217cc39",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\222b8ad2c9688d6e898f46fb3055da9c.html": {
-    "mtime": 1780484802.8402238,
+    "mtime": 1780512208.5928612,
     "ast_hash": "1e30f862126f61ac3aaf86ff70e8c7f7",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\241367241151e1b285911024b35bba53.html": {
-    "mtime": 1780484826.6908064,
+    "mtime": 1780512230.6664915,
     "ast_hash": "499fae2c4a8f7f12efc568b8bb6442a5",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\25e2c13889e07f725ab375f29746efb2.html": {
-    "mtime": 1780484793.6846673,
+    "mtime": 1780512199.0487363,
     "ast_hash": "4eb9407cd7ec8cf81f45e3978c539429",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\26e7c558f6a07f793c209023f8e2410f.html": {
-    "mtime": 1780484784.2303398,
+    "mtime": 1780512189.3614,
     "ast_hash": "6ce105a8d7a11f58aabd0b4ba567590f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\26f1261a8f7a21b93f725f50098d6188.html": {
-    "mtime": 1780484798.5741603,
+    "mtime": 1780512203.666241,
     "ast_hash": "597e3de619ec29c91f73ce042e93c1c7",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2905e8f0d997fd323d95e8b11a6194cd.html": {
-    "mtime": 1780484777.9140608,
+    "mtime": 1780512183.220496,
     "ast_hash": "dcff85b2886145da1f395c1d5a179454",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2a817d1b8be2d8f9016abc5c6209d21c.html": {
-    "mtime": 1780484792.46393,
+    "mtime": 1780512197.5020206,
     "ast_hash": "2ba50cb257b558ddec47868fefc70a32",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2b93e6cc18a46ee50f892b05464e02ad.html": {
-    "mtime": 1780484830.0041897,
+    "mtime": 1780512234.5618584,
     "ast_hash": "73cc3e032d43f29126581a190115926f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\2d479e799f21cfb0bf216ea929bf8a3d.html": {
-    "mtime": 1780484789.931274,
+    "mtime": 1780512195.2751396,
     "ast_hash": "f869830fcb280f35847421c4e2cbeba3",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3090a040cd955401ab7c777da27fd0f6.html": {
-    "mtime": 1780484786.2456925,
+    "mtime": 1780512191.3787746,
     "ast_hash": "c057ca93cbc7ce56f5e248862e891739",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3158cc25ac8e394156b630bda9aa81eb.html": {
-    "mtime": 1780484821.7640126,
+    "mtime": 1780512226.0418124,
     "ast_hash": "72a2dad65892c7492438bf920fca44ea",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\32d63b2effa67d0ff66eb4cdf6ed9f95.html": {
-    "mtime": 1780484800.6044562,
+    "mtime": 1780512205.42857,
     "ast_hash": "d2f46ce474f40c61792d9c2f9e6fa65c",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\354ad27788afb197f0f167bf1a7485a5.html": {
-    "mtime": 1780484792.4041588,
+    "mtime": 1780512197.552111,
     "ast_hash": "aef69e7a092bc27e9102b989a4a7a4a4",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\366f2d3d58a42ab1711ef63cd4f8e38c.html": {
-    "mtime": 1780484806.620572,
+    "mtime": 1780512211.2324002,
     "ast_hash": "18b3396e37dabc5a9e354293d2d72fdb",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3856e76efa54b3542521c8cb5c98e30e.html": {
-    "mtime": 1780484788.072148,
+    "mtime": 1780512193.4018815,
     "ast_hash": "c5c6b7c9f013d2b20d0ea5232ba8cf1f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3d45bfd3e1abaaecb303bd6691de6d00.html": {
-    "mtime": 1780484799.127504,
+    "mtime": 1780512204.8527203,
     "ast_hash": "843cb26a4a6193c49f2181a16988e289",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3f8de31f86210a81b4af28511ab2607e.html": {
-    "mtime": 1780484814.9582117,
+    "mtime": 1780512219.1255593,
     "ast_hash": "13b0de99a1c42b70f29948c79a6d6131",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\3f9b298bae6bc78ecc67251634c8fcdc.html": {
-    "mtime": 1780484812.264333,
+    "mtime": 1780512216.5245824,
     "ast_hash": "dc8d7713e30417c19cf06d9f65a752df",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\422497f5764c9b058bfcd9c6e5b8ac17.html": {
-    "mtime": 1780484794.491782,
+    "mtime": 1780512199.6325462,
     "ast_hash": "570cf3966db9d29681e1d0496a6ef064",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\43993f83efb1be4798470e385bfc485b.html": {
-    "mtime": 1780484790.420209,
+    "mtime": 1780512195.4972959,
     "ast_hash": "3ef83690dde5dd9fda8d704b9fb5f20e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\43cfddf3766122a739b0d6aac6684d87.html": {
-    "mtime": 1780484782.1647594,
+    "mtime": 1780512187.3684933,
     "ast_hash": "d00e4028fca29d58d2683568ffd2fd79",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\49e7a460acd7046a546379b169bd66d8.html": {
-    "mtime": 1780484823.608517,
+    "mtime": 1780512227.873487,
     "ast_hash": "fbbaef2fe0352b28d36c960fef0170e6",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4b17814df9eed442319f7efbbac73835.html": {
-    "mtime": 1780484780.1161208,
+    "mtime": 1780512185.4710867,
     "ast_hash": "28e6188348bd532fea04405864c69bdb",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4b923984ccab361fd1915ed4748bdaa3.html": {
-    "mtime": 1780484825.1015666,
+    "mtime": 1780512229.501542,
     "ast_hash": "cc8630ff283c86adace3e4d7cc5bf23b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4c2551a5c006dfad83823c6844770f66.html": {
-    "mtime": 1780484827.3507757,
+    "mtime": 1780512231.6576056,
     "ast_hash": "78245eb841ee94b9a973b9a808d7e59b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4c76dc4ad8f1bb90a529d318bd1650cb.html": {
-    "mtime": 1780484815.0179734,
+    "mtime": 1780512220.091697,
     "ast_hash": "c2b7a60bede2ddd1aa422e27e111b222",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4da0db44ef4fb2cbbd6f34765125fa5a.html": {
-    "mtime": 1780484804.6083722,
+    "mtime": 1780512209.3933766,
     "ast_hash": "6e88e6b1adeca5e300545259aedf63dc",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\4ff72488a75a782e37982228ff26d8dc.html": {
-    "mtime": 1780484800.5494938,
+    "mtime": 1780512205.3262033,
     "ast_hash": "85ef8f9ea6fcb43c02937fafdb458bc8",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\5016f988265ab0d3e65226d506a3fb15.html": {
-    "mtime": 1780484779.975754,
+    "mtime": 1780512185.2621653,
     "ast_hash": "faa556630d951662e16c1d4d26868f9e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\56e7bf44e48bb2283c08800be28b2302.html": {
-    "mtime": 1780484822.213335,
+    "mtime": 1780512226.5892544,
     "ast_hash": "f3385d1b8c335eda233b03d61c9336e2",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\58a8de9d3180d9a6c510b4ef6c692dd4.html": {
-    "mtime": 1780484812.9987247,
+    "mtime": 1780512217.234758,
     "ast_hash": "6b941a8f7281390b8a387b01d20515ca",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\5e668085b6257748248aa94ab6c51750.html": {
-    "mtime": 1780484818.9472985,
+    "mtime": 1780512222.9098096,
     "ast_hash": "267a5d1e053b56d30d5111c515937482",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\5fc27d5ff7a5ab7182b0f26d98615ea8.html": {
-    "mtime": 1780484828.9131446,
+    "mtime": 1780512233.3139982,
     "ast_hash": "b76eb35f8a738084212a49b6307a167f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\622e5b535e7a10ef2bba281e4d3c366e.html": {
-    "mtime": 1780484806.728021,
+    "mtime": 1780512212.3647661,
     "ast_hash": "ee4ab77a9ffc17be7ad2a2577e958194",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\65a7936450543f8cdef0e9f8012dc633.html": {
-    "mtime": 1780484796.4018228,
+    "mtime": 1780512201.0194523,
     "ast_hash": "f69dafe9450469076f2e7933ff68e08a",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\67bec22b30e315e6c3c6dcaacb7b1048.html": {
-    "mtime": 1780484806.5908754,
+    "mtime": 1780512210.8655083,
     "ast_hash": "6631fa16fc92a27be1cc38c778c26d01",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\68c157d29044710791cb062432b2fc42.html": {
-    "mtime": 1780484819.1026423,
+    "mtime": 1780512223.8805244,
     "ast_hash": "ab631f219c6a30ee5de7597cd7c8a627",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\6bc8d696487f5289e201ffa50177a68c.html": {
-    "mtime": 1780484792.3787642,
+    "mtime": 1780512197.3166084,
     "ast_hash": "37b89659fe9c65c192f26b4328e2a065",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\6d24dd66e4fffc3a1359a71e6195bdb7.html": {
-    "mtime": 1780484769.162915,
-    "ast_hash": "b6f3b1c07574a93b51ac85ebba10b731",
+    "mtime": 1780512173.6265528,
+    "ast_hash": "d64c53d6f38d64fbd11c0ff96d78af84",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7137022a62dbb67f260064d774e6a862.html": {
-    "mtime": 1780484816.9353995,
+    "mtime": 1780512220.998818,
     "ast_hash": "d38bbe5fcc93fa4d1731cd816586bbbf",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7152843c61016c9aba0040ad786499d7.html": {
-    "mtime": 1780484816.8833537,
+    "mtime": 1780512220.810822,
     "ast_hash": "dfff9ce3424196cb65080584b05c49db",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7261ca2d5cc205fdbb23881eb44ef350.html": {
-    "mtime": 1780484802.5917728,
+    "mtime": 1780512207.521211,
     "ast_hash": "c47c28845c41fde9b4c2ac5bb1135151",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\72bc0b51233e142e8d152accaed11996.html": {
-    "mtime": 1780484829.2626538,
+    "mtime": 1780512233.511405,
     "ast_hash": "705fad295f61e5f46e3c5ce129f4ccf9",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\72e7dc6fc623305c0032523fe4a0187a.html": {
-    "mtime": 1780484828.203119,
+    "mtime": 1780512232.6264331,
     "ast_hash": "6315dae6b51ac2b55dcbc0a3f4e18dab",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\746e90c889715f53c8c9faa31e114eaa.html": {
-    "mtime": 1780484780.0042596,
+    "mtime": 1780512185.339715,
     "ast_hash": "584d96bb0bee1ca49b8a39dc0565b95c",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\78601fcf6659fe0ab2f5b1980513bbd5.html": {
-    "mtime": 1780484818.0020976,
+    "mtime": 1780512222.204278,
     "ast_hash": "60fc09a9c250fa723905cdf0db77e7b6",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7bfa67c00c0c427c7edc3bb72972448e.html": {
-    "mtime": 1780484782.0857,
+    "mtime": 1780512187.2598498,
     "ast_hash": "f5cea9adc1cc8c5e570e9d3978b96d79",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7c3d65d39fc117ab8dca7b7544ebeff3.html": {
-    "mtime": 1780484788.298709,
+    "mtime": 1780512193.561164,
     "ast_hash": "4c5cb6f0f6a3d00f36dcdc353df7ba01",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7c7cb5f8c87b20696ff6eb8d3b5e3a65.html": {
-    "mtime": 1780484827.872516,
+    "mtime": 1780512232.2141201,
     "ast_hash": "4962cc01aa36c045e87611a07cf911b4",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\7fb6babe73ccf5b4504a3592eb6a1726.html": {
-    "mtime": 1780484831.530542,
+    "mtime": 1780512236.0900419,
     "ast_hash": "381766a6c51ff279b38f17b52a9855e6",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8306a282d8bb5df0962a55bab3c217ce.html": {
-    "mtime": 1780484834.3033917,
-    "ast_hash": "dde88270e8d180a49a2d34fb170f91ef",
+    "mtime": 1780512238.8418472,
+    "ast_hash": "a9ae8338210b36cac926293a98636ca2",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\85a793de6e1784de64975979d0d2aa31.html": {
-    "mtime": 1780484784.1629243,
+    "mtime": 1780512189.3393617,
     "ast_hash": "c485328d3bbf77e16a7d922d5403bbaf",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\874585c1e71bd5815b21e500d2b79037.html": {
-    "mtime": 1780484815.9825897,
+    "mtime": 1780512220.304111,
     "ast_hash": "f21c998edbf5ebf4dbe5f6a1287af12f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\883201a4d693773d441dea8398d755ea.html": {
-    "mtime": 1780484788.3565123,
+    "mtime": 1780512193.3488433,
     "ast_hash": "a939eab94ddac5b77335c748b807bdb1",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\88b6ea93e86f9665e422720b3d0a99fb.html": {
-    "mtime": 1780484822.8678253,
+    "mtime": 1780512226.7994351,
     "ast_hash": "85e3e13cfa2d36d92bdab1523943832a",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\89466ae8c201fd5c75f08249926d6755.html": {
-    "mtime": 1780484788.3242896,
+    "mtime": 1780512193.521844,
     "ast_hash": "98ce8d7fcecd64e79285a3833daad1cf",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\89774b8e56ff79fabc84e8b809b4b9de.html": {
-    "mtime": 1780484790.3532608,
+    "mtime": 1780512195.3569517,
     "ast_hash": "32ea7b30c819341064ff8c5084cd8bd1",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\89d01f517ecaee2a1009fc4da2092ab3.html": {
-    "mtime": 1780484800.4182827,
+    "mtime": 1780512204.7704706,
     "ast_hash": "31dc4d644b09c3c64004435339d74b3d",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8a23792d2255289bf1c1643750190de9.html": {
-    "mtime": 1780484826.397173,
+    "mtime": 1780512230.7777207,
     "ast_hash": "29c1086e417117df11cfa63b03adb43b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8a9e55a8e72bdab307eca4288a55d0c4.html": {
-    "mtime": 1780484816.905849,
+    "mtime": 1780512221.9791536,
     "ast_hash": "d9cdf10dcb666ea09577bafc7a0dbf00",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8c16da6796d879112c982b3eb4188925.html": {
-    "mtime": 1780484822.7130911,
+    "mtime": 1780512226.7774348,
     "ast_hash": "f9ea81697177dab58889cd73fb6eef62",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8dda9a7238a3def91938d33a06d69645.html": {
-    "mtime": 1780484831.0982153,
+    "mtime": 1780512235.417161,
     "ast_hash": "1819a077ea7fe5d6d28b1856681a457b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\8dde00042fe93e0ec92e8b0ef1938aef.html": {
-    "mtime": 1780484786.1250188,
+    "mtime": 1780512191.4554396,
     "ast_hash": "44cf9064e7a6eb019191cb494083cbb9",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\920578fc755c4579629716f3cc7ec364.html": {
-    "mtime": 1780484788.3525143,
+    "mtime": 1780512193.5417554,
     "ast_hash": "99a4073cac443ee10de1c82d890f1b23",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\97ba51e75c857dc6925a95805dc797eb.html": {
-    "mtime": 1780484816.6435406,
+    "mtime": 1780512220.4821832,
     "ast_hash": "893dde47cef88a887e12b40e09944dde",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\98052e3e75410dfce73912fb34400925.html": {
-    "mtime": 1780484812.797598,
+    "mtime": 1780512216.6644275,
     "ast_hash": "cecdadcde504a23317e2b663f2d7622b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9a0e25b741f9e3677af2980227d288c6.html": {
-    "mtime": 1780484794.4301558,
+    "mtime": 1780512199.5928814,
     "ast_hash": "ac596e6532d4c39c187e49d4b03766fa",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9a1cb4dfb0eed71f215b78a30447141d.html": {
-    "mtime": 1780484820.8649259,
+    "mtime": 1780512224.843495,
     "ast_hash": "4508b7dd587316c14ab093195abcd41e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9a9da0ed96513627c99a3ae39e9e18e0.html": {
-    "mtime": 1780484810.9643466,
+    "mtime": 1780512216.3770068,
     "ast_hash": "9191da7dc510229633d8ebe479bb7eea",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9b2703d82e08d3c3857d277b9c037b36.html": {
-    "mtime": 1780484808.8382235,
+    "mtime": 1780512213.230311,
     "ast_hash": "02ab64a937c1dd6545540716547511ca",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\9bf346e6332cabb7cb28bc17e02446d7.html": {
-    "mtime": 1780484812.8474958,
+    "mtime": 1780512217.0615852,
     "ast_hash": "28c70805be3fae1559e3635b1cc6f216",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\a149a26ed79a517bc6ae5bedadc1afc0.html": {
-    "mtime": 1780484796.4445448,
+    "mtime": 1780512201.5119166,
     "ast_hash": "ca7fcd60c2774086ba2016c26fd33476",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\a2c39c6d76bb05aab6544138e17bccb3.html": {
-    "mtime": 1780484802.5154083,
+    "mtime": 1780512207.2429338,
     "ast_hash": "e1f88f9902cfbb33759cb3b7f1e7408a",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\a9dca2cb448152735f652fa6fb5dbab5.html": {
-    "mtime": 1780484786.2602007,
+    "mtime": 1780512191.3786938,
     "ast_hash": "cd74a3c9e790d78f4d5999291edb7142",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\aaabbbaa3cc9ef346dd4d85c05b0bcae.html": {
-    "mtime": 1780484786.2537026,
+    "mtime": 1780512191.4736881,
     "ast_hash": "96f7a3caabbd7f490d9e2b68bc671a68",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\adeb97974abb70a28c0b9975905c54de.html": {
-    "mtime": 1780484794.4968245,
+    "mtime": 1780512199.5625803,
     "ast_hash": "3c6f2764e9d275372ac260465aa540b4",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\aeced0d0af8adc4815e9cacc203b904e.html": {
-    "mtime": 1780484782.074578,
+    "mtime": 1780512187.29221,
     "ast_hash": "981d60c87f33c9a65416942a5682e696",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\aed5ae6133f230b1d348eee144b3d8fb.html": {
-    "mtime": 1780484773.7039542,
-    "ast_hash": "ba9b9fde08c1c76c1fab7194cedf1d40",
+    "mtime": 1780512179.07276,
+    "ast_hash": "fd3e4f92e4584175ce005d3fbf24ca86",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1165fc23bded227275b03323f17374d.html": {
-    "mtime": 1780484819.8753994,
+    "mtime": 1780512224.190625,
     "ast_hash": "8d413d087b73a10ed8e6a6e803db5db7",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1529357762c2f893031cbc4a94fdbba.html": {
-    "mtime": 1780484824.053829,
+    "mtime": 1780512228.4972432,
     "ast_hash": "e9fc86b8488039b2092b54d83a7697aa",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1a886a2a0fda926cb787cab1597d7c7.html": {
-    "mtime": 1780484777.9130619,
+    "mtime": 1780512183.3115635,
     "ast_hash": "f5b27464236a93f5fb856d96fc2d020e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b1f35fb9ed29b0a7e7de2a983054a1fe.html": {
-    "mtime": 1780484808.8960857,
+    "mtime": 1780512214.4367602,
     "ast_hash": "f49885e9fbf0117643af65f4cb46de1b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b833f6b29901ce0d12f7c522d252d8f4.html": {
-    "mtime": 1780484802.4001923,
+    "mtime": 1780512206.7353451,
     "ast_hash": "3e84c2582630e209e7a172e5c639a497",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b887fca001639565cd09f734136852bd.html": {
-    "mtime": 1780484827.1384254,
+    "mtime": 1780512231.401894,
     "ast_hash": "acd63e97cc913e80891dac958f307b3e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\b983adad45d1e348f8e844b960e20a35.html": {
-    "mtime": 1780484818.4771483,
+    "mtime": 1780512222.6025522,
     "ast_hash": "bda3201c5040a26b92343b075e793de4",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ba24904ea3200e4e09f916a756707d59.html": {
-    "mtime": 1780484804.519376,
+    "mtime": 1780512208.70482,
     "ast_hash": "03e8450f49784212b1bebf3cb938249e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\bae2d8023ff38c657bcf63256495e919.html": {
-    "mtime": 1780484796.577249,
+    "mtime": 1780512201.540514,
     "ast_hash": "b419c587e996ef89d2b6913376844308",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\bd9668e46af710803d0b3ea5f937e608.html": {
-    "mtime": 1780484825.9568782,
+    "mtime": 1780512230.3957741,
     "ast_hash": "7b05a5779c9fd241dba9532243345496",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\bf699db1d0539e70ee07e1b52e03d066.html": {
-    "mtime": 1780484796.5312324,
+    "mtime": 1780512201.794135,
     "ast_hash": "2fe6e00ca274a8439e4d0e8746ffaa70",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c01e8901304589b0006aaee2ff42aabf.html": {
-    "mtime": 1780484814.9081674,
+    "mtime": 1780512218.9160042,
     "ast_hash": "ea4b6a245c8bec003891efc46b19b502",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c1bcc607cd9fc253ac59b79039286ec3.html": {
-    "mtime": 1780484824.5700727,
+    "mtime": 1780512228.702856,
     "ast_hash": "5fb08d3a26d525e071bfb4022a87adda",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c2c96e090708551012e8ec6184314ddb.html": {
-    "mtime": 1780484818.8618476,
+    "mtime": 1780512222.7417157,
     "ast_hash": "cdd8e6baf31067189de0896b2ec6f460",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c527e2666af393faa5c8a49132dfcf56.html": {
-    "mtime": 1780484820.2910953,
+    "mtime": 1780512224.664521,
     "ast_hash": "a9b31cd70923ab32d2a2a127aafea6b4",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c5d5337baf0c25950318f4c983c86788.html": {
-    "mtime": 1780484810.8945017,
+    "mtime": 1780512215.1914344,
     "ast_hash": "792d4f8af76e06fd77e5204f685a4233",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c6dde5535daec5e32aa8b23d6474c01f.html": {
-    "mtime": 1780484831.2043748,
+    "mtime": 1780512235.2775772,
     "ast_hash": "258a5e21a53cbf279570080d11254d0b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\c6f15b1f94cdd6c555b269db2f077d60.html": {
-    "mtime": 1780484775.7812455,
-    "ast_hash": "19ec64f24623c705a9edf6c7ac859a0d",
+    "mtime": 1780512181.141298,
+    "ast_hash": "eea41db65ff0e0b6700a447d7402acab",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ca65c269e82b2c7413bd0c1fbaf1199b.html": {
-    "mtime": 1780484798.4769304,
+    "mtime": 1780512203.4268286,
     "ast_hash": "0510032c51abb5357908416230d59960",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\caa129e68be22cbfea5b79e911c49b5b.html": {
-    "mtime": 1780484782.1647594,
+    "mtime": 1780512187.7218506,
     "ast_hash": "675c2b39345f4ff601ffcfe744cd2b80",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\cc15cbe9198cf041e0b9a430cb08bd6a.html": {
-    "mtime": 1780484823.05683,
+    "mtime": 1780512227.6286817,
     "ast_hash": "fd19b397e4191d01feb02a62c7f04d81",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\d6ac6fbc8af52b244554e7afc42457ad.html": {
-    "mtime": 1780484804.7327552,
+    "mtime": 1780512210.4914358,
     "ast_hash": "66efbd4f4d5807954602ced83d967770",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\da3980848f41056c38f66b7560d3dcb9.html": {
-    "mtime": 1780484792.5493634,
+    "mtime": 1780512197.7576728,
     "ast_hash": "fb9541211be29804f71ee667e76ec39a",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\db6a031f0eb80e6c8d98afb8f4b9868c.html": {
-    "mtime": 1780484806.67773,
+    "mtime": 1780512211.2599728,
     "ast_hash": "0b9bde5547372211de9a376e26fa2df2",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e040d9268e73d756032129a640b21091.html": {
-    "mtime": 1780484777.8979447,
+    "mtime": 1780512183.435681,
     "ast_hash": "03cff07cefbfc5351fdf448302d659da",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e197bf8c145a01ee6122c57df179b3dd.html": {
-    "mtime": 1780484797.2779858,
+    "mtime": 1780512202.837917,
     "ast_hash": "1569f8b1aac5bae94ce813f29c059090",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e2fc9f9fa90e56a54f826f78684c334f.html": {
-    "mtime": 1780484813.0525076,
+    "mtime": 1780512218.2610502,
     "ast_hash": "ccefaff73c2edf65e4082d99059ac5c0",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e3bcedb79829bcf624f7466fd5406efa.html": {
-    "mtime": 1780484824.8202014,
+    "mtime": 1780512228.7654865,
     "ast_hash": "74cce3713ae466ec7a918e016d5574a8",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e4aa0ef9c8b3915072a609ef4fe69ebf.html": {
-    "mtime": 1780484811.1147475,
+    "mtime": 1780512215.3302407,
     "ast_hash": "59f59365a0630cde2a660a1a8d42ee2b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\e9e803b2fad7287325f8104290ad7578.html": {
-    "mtime": 1780484782.127201,
+    "mtime": 1780512187.3639572,
     "ast_hash": "a2429e909451d2414ec9232a8fea3321",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\eb5307cf2bed55223c4f60ed6306c1a5.html": {
-    "mtime": 1780484778.0457344,
+    "mtime": 1780512183.3421974,
     "ast_hash": "5ee48624a2ba060260c9565fc54517e5",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ebd75a3e577c5b36a8e13b820e3cf4f2.html": {
-    "mtime": 1780484791.787219,
+    "mtime": 1780512197.181309,
     "ast_hash": "2cb271321d5a88adeb38e9e3720a6306",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\ed4c65c138d27afe36387559c397cc04.html": {
-    "mtime": 1780484814.1315584,
+    "mtime": 1780512218.4426525,
     "ast_hash": "ab8fc2efd53857c479f78e90741d7ea5",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f150eb6b7b887d66585958506b675287.html": {
-    "mtime": 1780484780.0771735,
+    "mtime": 1780512185.2903762,
     "ast_hash": "e81b149d4045ed9808894e62cd603304",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f2b19788e4b830813dfea577aec0cae2.html": {
-    "mtime": 1780484780.0268357,
+    "mtime": 1780512185.3885717,
     "ast_hash": "486d99e4c151ac23c324f735d9d0ecdf",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f43807e185f1f21b7a3cc41d0fe5e667.html": {
-    "mtime": 1780484790.3762057,
+    "mtime": 1780512195.9050837,
     "ast_hash": "42402aca14b0618cd01ec328292be311",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f4c871a5a80c12dd456244fa0fdc29aa.html": {
-    "mtime": 1780484806.5304222,
+    "mtime": 1780512210.6147025,
     "ast_hash": "c8e73d98cc326377876d88f40e8f1bb8",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f5ad9b973a3a5b76428fb9f877c7825c.html": {
-    "mtime": 1780484814.7327335,
+    "mtime": 1780512218.6090574,
     "ast_hash": "474f02f7cb58b935b9a9ef10928db58e",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f8e1a716deb49fb54f41a0fbbeac3b72.html": {
-    "mtime": 1780484821.0854492,
+    "mtime": 1780512225.7764068,
     "ast_hash": "b5df6fe9e3dd1c9f7bcee85b87b178b7",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\f90a4666e90e8f64a4b01c6b9ba465c3.html": {
-    "mtime": 1780484771.0182836,
-    "ast_hash": "63f002d52f571c8980aa1a9a4cdd4911",
+    "mtime": 1780512176.4880908,
+    "ast_hash": "c8ace2adb561f33db71e7083efe32053",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\fe09fe19daaf1adb0076cb3f62b1ff62.html": {
-    "mtime": 1780484777.9660473,
+    "mtime": 1780512183.2264962,
     "ast_hash": "28eff0cf5123cf74ced639278a631a93",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\.cache_v3\\fea4623f846e865e153060341ed845fe.html": {
-    "mtime": 1780484804.5476553,
+    "mtime": 1780512209.0714624,
     "ast_hash": "c6e61b0d9d99cb0c5b14057f97f71df9",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\CHANGELOG.md": {
-    "mtime": 1780484854.461947,
-    "ast_hash": "b7a791cc53d69ca0c29ff3689a652548",
+    "mtime": 1780512238.8762696,
+    "ast_hash": "34e938f3dc86174636851081a928b389",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_items.json": {
+    "mtime": 1780512173.8505912,
+    "ast_hash": "1b90011a1fd506a95b579dd6ac5a16c8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\public\\data\\wr_patch.json": {
+    "mtime": 1780512238.8692691,
+    "ast_hash": "6b11946b0145331045a5687fa0880a99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\wr_extractor_v3\\README.md": {
+    "mtime": 1780484936.3585947,
+    "ast_hash": "fb02c32506bf89ecda1192af63545bc1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\graph_explorer_ai_prompt_templates.json": {
+    "mtime": 1780479137.8903246,
+    "ast_hash": "285830ba5440e23c8acd928258cb85ea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\graph_explorer_answer_policy.json": {
+    "mtime": 1780479137.906387,
+    "ast_hash": "7ca37ce3418aad75dc6bca0f98e07697",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\graph_explorer_tool_contracts.json": {
+    "mtime": 1780479137.923041,
+    "ast_hash": "cdd6a43ca6a11c88605f51e5b90fcfad",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_goals_objectives.json": {
+    "mtime": 1780479137.9905052,
+    "ast_hash": "2db80c0e0acf9e00a04267dce282dafa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_guardrails.json": {
+    "mtime": 1780479138.0065458,
+    "ast_hash": "b99ff8a05a6e907ec57b76f15852e757",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_personas.json": {
+    "mtime": 1780479138.02317,
+    "ast_hash": "1eee32353e098aa4d1b96cc155385ed7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_prompt_templates.json": {
+    "mtime": 1780479138.0382655,
+    "ast_hash": "57276a39e012976bad7e9bbe65eeb388",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_recommendation_policy.json": {
+    "mtime": 1780479138.0542653,
+    "ast_hash": "4ccc57c97f3d1cd5dfd51ded6eda76f0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_response_schemas.json": {
+    "mtime": 1780479138.0699067,
+    "ast_hash": "d74cc79e1b211ed9e9067ab78a8a6ddc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_skill_cards.json": {
+    "mtime": 1780479138.0849042,
+    "ast_hash": "588daf5e0206943e3011d4bb4de9b3e2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\analytics\\dashboard_specs.json": {
+    "mtime": 1780479138.118528,
+    "ast_hash": "2de41f667468610bd64ac2246527e09e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\analytics\\metric_dictionary.json": {
+    "mtime": 1780479138.132689,
+    "ast_hash": "51944a3a2073c218e3c2bb9612eb63f6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\corrections\\blocked_prior_generated_values.json": {
+    "mtime": 1780479138.5724626,
+    "ast_hash": "ad9554667ad75cfa53199fa5100c35da",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\corrections\\correction_application_rules.json": {
+    "mtime": 1780479138.5876799,
+    "ast_hash": "72cac0b44f9db56ec7f77ad4d370ed66",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\corrections\\karma_correction_seed.json": {
+    "mtime": 1780479138.6031027,
+    "ast_hash": "088d14d9e6fa8abe636668a65e9dd262",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\corrections\\user_verified_corrections.json": {
+    "mtime": 1780479138.6186936,
+    "ast_hash": "9f9501b3ab5cd0311abdec7ce6b4b779",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\champion_ability_to_champion_ability_deny.json": {
+    "mtime": 1780479138.6418831,
+    "ast_hash": "ccf20944f3b05b776f5340e32876823e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\champion_ability_to_item_deny.json": {
+    "mtime": 1780479138.6588473,
+    "ast_hash": "07ec05099dd33885f9096e765bc98e56",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\champion_ability_to_rune_deny.json": {
+    "mtime": 1780479138.677257,
+    "ast_hash": "9ed715a8242f0f1338ee841ff955cdf1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\champion_ability_to_spell_deny.json": {
+    "mtime": 1780479138.693295,
+    "ast_hash": "e4bf076033380c501bdbeae97676583a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\item_to_item_deny.json": {
+    "mtime": 1780479138.7088692,
+    "ast_hash": "879004e927775756d5452906094b80b2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\item_to_rune_deny.json": {
+    "mtime": 1780479138.7244265,
+    "ast_hash": "15ad84860f160d100dd293fb539b32d3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\item_to_spell_deny.json": {
+    "mtime": 1780479138.7395763,
+    "ast_hash": "3af11412321714aefc2c373e0e83a139",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\rune_to_rune_deny.json": {
+    "mtime": 1780479138.7548738,
+    "ast_hash": "d2c02695b76b9446c7781b2fd0a9c930",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\rune_to_spell_deny.json": {
+    "mtime": 1780479138.7699983,
+    "ast_hash": "3b7f697b7bcae0f546da0bc3713f3372",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\counters\\spell_to_spell_deny.json": {
+    "mtime": 1780479138.8014624,
+    "ast_hash": "56c57ee8341e72489af06c5446f419ea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\canonical_abilities.json": {
+    "mtime": 1780479138.8438122,
+    "ast_hash": "4da1b4e2b1637344277c3e9c07afec57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\canonical_builds.json": {
+    "mtime": 1780479138.8598702,
+    "ast_hash": "88bca75c48cd76534ad3ae40e3d75c51",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\canonical_champions.json": {
+    "mtime": 1780479138.929215,
+    "ast_hash": "9023dfa95e975852d694a3b9f3b2f9fd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\canonical_items.json": {
+    "mtime": 1780479138.952152,
+    "ast_hash": "025e607aa890afd2d1c400d9071e17f6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\canonical_runes.json": {
+    "mtime": 1780479138.9697144,
+    "ast_hash": "62dd9b05c185a7f7565e75d82e94123c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\canonical_spells.json": {
+    "mtime": 1780479138.9852922,
+    "ast_hash": "9bc5109780ba4784737d402e5df3f4c4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\wr_abilities_full.json": {
+    "mtime": 1780479139.012755,
+    "ast_hash": "a6a227b4d610dc29ea3e617a1d68de3a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\wr_champions_full.json": {
+    "mtime": 1780479139.0813627,
+    "ast_hash": "2500fb4cf01a18b16623691af322c5f6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\wr_items_full.json": {
+    "mtime": 1780479139.1418445,
+    "ast_hash": "636a65a89051976aef6b2cb4148ed431",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\wr_runes_full.json": {
+    "mtime": 1780479139.1764781,
+    "ast_hash": "a465755aa110c733eaf876b24357ad68",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\entities\\wr_spells_full.json": {
+    "mtime": 1780479139.2078757,
+    "ast_hash": "46b06cbd86fff3a19899528ac79786a2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\overlays\\m365_opus_candidate_mechanics_overlay_by_champion.json": {
+    "mtime": 1780479139.2571025,
+    "ast_hash": "3a734392350e3b3a0a2459d22cd36701",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\overlays\\m365_opus_champion_advisory_overlay.json": {
+    "mtime": 1780479139.2909057,
+    "ast_hash": "bfaea18eadbc635795f754384edb0d1d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\overlays\\m365_opus_source_family_descriptor.json": {
+    "mtime": 1780479139.3069658,
+    "ast_hash": "f149a63dad60d8c04c9ceba7e12ba8cf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\relationships\\global_relationship_index_manifest.json": {
+    "mtime": 1780479139.3931596,
+    "ast_hash": "1764681ed132344b067588de6e13fc7b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\boots_progression_rules.json": {
+    "mtime": 1780479139.4113686,
+    "ast_hash": "be9f77fdda10167d5b7faf903fcf007d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\build_legality_rules.json": {
+    "mtime": 1780479139.4266431,
+    "ast_hash": "6591088dcb73843a32ee6b52d48bb9af",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\champion_ability_identity_rules.json": {
+    "mtime": 1780479139.4425082,
+    "ast_hash": "2d63ef658225db1d5684bc7e4802ae26",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\cooldown_accuracy_rules.json": {
+    "mtime": 1780479139.4583426,
+    "ast_hash": "f8c56577e1f58808fe8b389322fe9d4a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\gold_and_cooldown_claim_rules.json": {
+    "mtime": 1780479139.4754477,
+    "ast_hash": "24fdef5f572e8c7af5c646ee7a9f67e3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\item_gold_accuracy_rules.json": {
+    "mtime": 1780479139.4904466,
+    "ast_hash": "1909c02645c4c6b50d593bc1a1bd4137",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\item_slot_rules.json": {
+    "mtime": 1780479139.50602,
+    "ast_hash": "f9b34836e2e1e2473ac9480201479d26",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\karma_regression_rule.json": {
+    "mtime": 1780479139.5205307,
+    "ast_hash": "18a87474aa997a194bcba37a88d99425",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\recommendation_reason_codes.json": {
+    "mtime": 1780479139.5351126,
+    "ast_hash": "b84f5437d46956c341d1a2a3000446a3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\rune_slot_rules.json": {
+    "mtime": 1780479139.550114,
+    "ast_hash": "2eb9bd0b9c990edcf177bfb0257016bf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\spell_allowlist_rules.json": {
+    "mtime": 1780479139.568113,
+    "ast_hash": "699b18405322686f3c0f89a3b71770cd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\rules\\support_item_slot_rules.json": {
+    "mtime": 1780479139.5826266,
+    "ast_hash": "2199cf8b1d1880165b08a09ca2a69e9e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\approved_sources.json": {
+    "mtime": 1780479139.6011572,
+    "ast_hash": "90ab28553d19c9fb48a686f96df23937",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\approved_sources_snapshot.json": {
+    "mtime": 1780479139.6161554,
+    "ast_hash": "7f9bd9f726a021ed52238914a4744ff9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\blocked_sources.json": {
+    "mtime": 1780479139.631274,
+    "ast_hash": "db1befdc6c66387e745f4fb4fd3c2c40",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\champion_ability_source_priority.json": {
+    "mtime": 1780479139.648297,
+    "ast_hash": "9dc6e5c28635eb63989b48ddb01f26b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\m365_opus_source_family_descriptor.json": {
+    "mtime": 1780479139.663809,
+    "ast_hash": "f149a63dad60d8c04c9ceba7e12ba8cf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\no_lol_pc_overwrite_rules.json": {
+    "mtime": 1780479139.6788087,
+    "ast_hash": "aae04b7319138cde3a6969e39d36c577",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\source_priority_rules.json": {
+    "mtime": 1780479139.6939225,
+    "ast_hash": "56add7530132decb3bd85055f519894c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\source_refresh_queue_seed.json": {
+    "mtime": 1780479139.7088838,
+    "ast_hash": "9eddb03730243eebf394ec3973d09aa9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\source_url_allowlist_regex.json": {
+    "mtime": 1780479139.7235658,
+    "ast_hash": "00dc4d8e22196b45266253cb50e956b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\wild_rift_only_validation_rules.json": {
+    "mtime": 1780479139.7385645,
+    "ast_hash": "028137e3ff9e4ebd76ae0157e26c261c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\source_policy\\wr_meta_limited_use_policy.json": {
+    "mtime": 1780479139.7572687,
+    "ast_hash": "cb0845f64ccf853ba594fd35227dca17",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\champion_ability_to_champion_ability.json": {
+    "mtime": 1780479139.7934856,
+    "ast_hash": "6d964e99ca95273c03a190fba9950714",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\champion_ability_to_item.json": {
+    "mtime": 1780479139.8177795,
+    "ast_hash": "ec43417c24d717b4c0f366183ed041bc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\champion_ability_to_rune.json": {
+    "mtime": 1780479139.837669,
+    "ast_hash": "3c914668f469286566c31904b3e94ba2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\champion_ability_to_spell.json": {
+    "mtime": 1780479139.8550637,
+    "ast_hash": "6cc190b313444ea4dfacbe7f213cd1df",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\item_to_item.json": {
+    "mtime": 1780479139.874209,
+    "ast_hash": "1436cd5bbe2de81d3e492d10d244f099",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\item_to_rune.json": {
+    "mtime": 1780479139.892486,
+    "ast_hash": "6119228d89638259c5d7ad75dd857570",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\item_to_spell.json": {
+    "mtime": 1780479139.907166,
+    "ast_hash": "0e8218d1a2cf31ae0e7ffbe82dbd894c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\rune_to_rune.json": {
+    "mtime": 1780479139.9235377,
+    "ast_hash": "333f18edeb7e9a928b8ea62def9bcb96",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\rune_to_spell.json": {
+    "mtime": 1780479139.939598,
+    "ast_hash": "bc445650c3c6a3dd2afb2129fb8c859e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\synergies\\spell_to_spell.json": {
+    "mtime": 1780479139.954685,
+    "ast_hash": "2e33326cb6f798ed88bfd832323d9f38",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\class_tags.json": {
+    "mtime": 1780479139.9726849,
+    "ast_hash": "cacc3fe5199c4f891a4c321189969d83",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\confidence_scoring_components.json": {
+    "mtime": 1780479139.9886997,
+    "ast_hash": "ac03a01ad53b5261f0a4cad145633dc0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\cooldown_type_taxonomy.json": {
+    "mtime": 1780479140.0032134,
+    "ast_hash": "8b47bddb18db6c76ee2a6a3342336173",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\crowd_control_types.json": {
+    "mtime": 1780479140.0202427,
+    "ast_hash": "4be390a0619feb400cac4293cbe08a92",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\damage_types.json": {
+    "mtime": 1780479140.036421,
+    "ast_hash": "7aaee3977290cc03812d576be199623a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\defense_types.json": {
+    "mtime": 1780479140.051238,
+    "ast_hash": "68defb206add93297c8be79519098d4f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\effects_taxonomy.json": {
+    "mtime": 1780479140.0662372,
+    "ast_hash": "363063b31102eb19c9e01db82708af10",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\gold_field_taxonomy.json": {
+    "mtime": 1780479140.0807495,
+    "ast_hash": "a3f5f993d7f464994138c21f70064122",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\item_categories.json": {
+    "mtime": 1780479140.095849,
+    "ast_hash": "88f185497a50c50c7c70a3da1f4fce51",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\lane_tags.json": {
+    "mtime": 1780479140.1114664,
+    "ast_hash": "c8cb85b28f2b2b691da46f8ef151e087",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\position_tags.json": {
+    "mtime": 1780479140.1259768,
+    "ast_hash": "9f50d86a9b4fee2f8d7739719d3fbab2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\role_tags.json": {
+    "mtime": 1780479140.1416404,
+    "ast_hash": "bbfc60423dbb50dbd64c58b5af7cb571",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\rune_paths_and_slots.json": {
+    "mtime": 1780479140.1568117,
+    "ast_hash": "d84c8ce2a461fea935d6a5ac15fbe327",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\source_statuses.json": {
+    "mtime": 1780479140.1730037,
+    "ast_hash": "4b9a33365ad55a85420030e6baa64ee9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\database\\taxonomy\\threat_types.json": {
+    "mtime": 1780479140.1881003,
+    "ast_hash": "fc09c62f6ff551584b1ce41b9fb59782",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\docs\\source_chunk_index.json": {
+    "mtime": 1780479140.2531056,
+    "ast_hash": "ec8873b1a7fcedfbf9e05e0851d3b732",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\features\\feature_definitions.json": {
+    "mtime": 1780479140.2720745,
+    "ast_hash": "d2c7ea9b2abc233c8a43fda117e29d1d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\gnn\\label_definitions.json": {
+    "mtime": 1780479140.3313136,
+    "ast_hash": "84ce27301a13cd0bb88eea37191bacfe",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\gnn\\node_type_map.json": {
+    "mtime": 1780479140.361825,
+    "ast_hash": "d291dd0b927681729c5b9bdbbb1e763b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\gnn\\relation_type_map.json": {
+    "mtime": 1780479140.376825,
+    "ast_hash": "86ac84d06e5c385cfed7dc22ee284adc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph\\backlinks.json": {
+    "mtime": 1780479140.4003353,
+    "ast_hash": "de8d40aea5d1dd6b16e16a019e887a6c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph\\entity_neighborhoods.json": {
+    "mtime": 1780479140.445358,
+    "ast_hash": "6dd6bd63c950fe8c50c33abd30f728d1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph\\knowledge_graph_manifest.json": {
+    "mtime": 1780479140.4614606,
+    "ast_hash": "ceb21d115cf78496b4bc32ff8acafd34",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph\\ontology.json": {
+    "mtime": 1780479140.4912467,
+    "ast_hash": "f49081e7f7b2969e3e25df2e0e818bdd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph\\saved_graph_views.json": {
+    "mtime": 1780479140.506758,
+    "ast_hash": "4a4c5345e91e6e7a2b2fbedf519684fb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_explorer_ui_spec.json": {
+    "mtime": 1780479140.5242765,
+    "ast_hash": "71268a470304bb5d999f6f096aa3c661",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_explorer_user_stories.json": {
+    "mtime": 1780479140.540046,
+    "ast_hash": "ed0c8c8df2e2dce7aa5780d77d1bec83",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_filter_controls.json": {
+    "mtime": 1780479140.555547,
+    "ast_hash": "789288b7eee59586e1114de3dbf384b8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_interaction_patterns.json": {
+    "mtime": 1780479140.5705569,
+    "ast_hash": "6db85d015941d7d3d354eaf203a742fb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_layout_profiles.json": {
+    "mtime": 1780479140.5861201,
+    "ast_hash": "a06727f5aec80b4927307616743104d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_legend_spec.json": {
+    "mtime": 1780479140.60181,
+    "ast_hash": "aaa0fc00802f160671b6cca9bd800d5b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_query_examples.json": {
+    "mtime": 1780479140.6178436,
+    "ast_hash": "b6250a0525ad3073c37ad93d58fa4224",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_saved_views.json": {
+    "mtime": 1780479140.6338425,
+    "ast_hash": "ea4b30972a8bf5b818f3e72e7730c3cb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_view_edge_styles.json": {
+    "mtime": 1780479140.6645198,
+    "ast_hash": "f40e611ec2c2e63fd40c41a2b7d4c1fb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\graph_view_node_styles.json": {
+    "mtime": 1780479140.6796033,
+    "ast_hash": "4f13ed6408ac0e6a0daa2d49c7b97970",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_explorer\\relationship_panel_spec.json": {
+    "mtime": 1780479140.695114,
+    "ast_hash": "001283b5bc828f536ca804eace9bb73f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_rag\\entity_linking_contract.json": {
+    "mtime": 1780479140.712115,
+    "ast_hash": "ea72a7242b8c55d5400d12b2c0fa456a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_rag\\graph_augmented_retrieval_contract.json": {
+    "mtime": 1780479140.7271137,
+    "ast_hash": "6d13bac2abbe6c31196090cfbef9ca6a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_rag\\graph_context_builder_rules.json": {
+    "mtime": 1780479140.7417464,
+    "ast_hash": "7485e36ead3c89ba003b91f3b2a95bfb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\graph_rag\\relationship_aware_chunk_contract.json": {
+    "mtime": 1780479140.7708273,
+    "ast_hash": "f1b308df45e37e922513386e9f0ce66d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\lineage\\merge_ledger_summary.json": {
+    "mtime": 1780479140.8241563,
+    "ast_hash": "641a002dc127bc3a3e810e549d39f1ef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\manifest.json": {
+    "mtime": 1780479137.8539805,
+    "ast_hash": "b835b73902b8cadd32c417619cf8a21e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\builds.json": {
+    "mtime": 1780479140.8656635,
+    "ast_hash": "c7bab0ccff402a8b17b84653474832c9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\champions.json": {
+    "mtime": 1780479140.8845687,
+    "ast_hash": "a1eb27b7fd19695dcaf900eaa34382f0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\counters.json": {
+    "mtime": 1780479140.8997526,
+    "ast_hash": "5fbcb44d9823001c21171086d8ee047d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\items.json": {
+    "mtime": 1780479140.9148722,
+    "ast_hash": "d7fb23d3cc363c6ba1c6b058c639c332",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\meta.json": {
+    "mtime": 1780479140.9300456,
+    "ast_hash": "837742ea3151e3ee36ac6ebca499abff",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\runes.json": {
+    "mtime": 1780479140.9457016,
+    "ast_hash": "32adb30f4d2bbf66235a9735f7349bf9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\spells.json": {
+    "mtime": 1780479140.961195,
+    "ast_hash": "f838c2007ea75d24cb4bac4f4dc3feb4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\synergies.json": {
+    "mtime": 1780479140.9764783,
+    "ast_hash": "a860f842338ae2f2fa0086d7ad9c38bd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7\\canonical_abilities.json": {
+    "mtime": 1780479141.360641,
+    "ast_hash": "4da1b4e2b1637344277c3e9c07afec57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7\\canonical_builds.json": {
+    "mtime": 1780479141.3866434,
+    "ast_hash": "224a75fb442d591dc462c72b7dc81bd3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7\\canonical_champions.json": {
+    "mtime": 1780479141.4553375,
+    "ast_hash": "9023dfa95e975852d694a3b9f3b2f9fd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7\\canonical_items.json": {
+    "mtime": 1780479141.4774837,
+    "ast_hash": "025e607aa890afd2d1c400d9071e17f6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7\\canonical_relationships.json": {
+    "mtime": 1780479141.492557,
+    "ast_hash": "903d6a97d176d2924a77ce9e35bc3781",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7\\canonical_runes.json": {
+    "mtime": 1780479141.5101879,
+    "ast_hash": "62dd9b05c185a7f7565e75d82e94123c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7\\canonical_spells.json": {
+    "mtime": 1780479141.5253303,
+    "ast_hash": "9bc5109780ba4784737d402e5df3f4c4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\canonical_abilities.json": {
+    "mtime": 1780479141.587988,
+    "ast_hash": "4da1b4e2b1637344277c3e9c07afec57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\canonical_builds.json": {
+    "mtime": 1780479141.612574,
+    "ast_hash": "224a75fb442d591dc462c72b7dc81bd3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\canonical_champions.json": {
+    "mtime": 1780479141.682763,
+    "ast_hash": "9023dfa95e975852d694a3b9f3b2f9fd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\canonical_items.json": {
+    "mtime": 1780479141.7046032,
+    "ast_hash": "025e607aa890afd2d1c400d9071e17f6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\canonical_relationships.json": {
+    "mtime": 1780479141.720968,
+    "ast_hash": "903d6a97d176d2924a77ce9e35bc3781",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\canonical_runes.json": {
+    "mtime": 1780479141.7405295,
+    "ast_hash": "62dd9b05c185a7f7565e75d82e94123c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\canonical_spells.json": {
+    "mtime": 1780479141.7567055,
+    "ast_hash": "9bc5109780ba4784737d402e5df3f4c4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\m365_opus_candidate_mechanics_overlay_by_champion.json": {
+    "mtime": 1780479141.7721634,
+    "ast_hash": "3a734392350e3b3a0a2459d22cd36701",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\v0_7_1\\m365_opus_champion_advisory_overlay.json": {
+    "mtime": 1780479141.8060825,
+    "ast_hash": "bfaea18eadbc635795f754384edb0d1d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_boots_enchants.json": {
+    "mtime": 1780479140.9917638,
+    "ast_hash": "3d6274ab476906524abfbc8e74ed850f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_builds.json": {
+    "mtime": 1780479141.0087867,
+    "ast_hash": "7b32292125f691db2d482e58eb47db6e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_champions_corrections.json": {
+    "mtime": 1780479141.0260296,
+    "ast_hash": "33eeec367fba3e1b37cc36eec25207f6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_champions_part1.json": {
+    "mtime": 1780479141.0430293,
+    "ast_hash": "63dfdf88a5b3b31b514539209b95e0d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_champions_part2.json": {
+    "mtime": 1780479141.0600295,
+    "ast_hash": "2335690a9c12f3705ffa75bc81f6eba2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_champions_part3.json": {
+    "mtime": 1780479141.0785463,
+    "ast_hash": "bf1f1574e6c98ce95aa33a89344b21a2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_counters_items_runes.json": {
+    "mtime": 1780479141.0946028,
+    "ast_hash": "0ca18928ea619adc3a77bb04fbf3fa9a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_items.json": {
+    "mtime": 1780479141.110603,
+    "ast_hash": "001d5782407affbd9d9afc1bd606a56f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_matchups_adc.json": {
+    "mtime": 1780479141.126602,
+    "ast_hash": "6a31140947b9335418979171e3c27cd9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_matchups_baron.json": {
+    "mtime": 1780479141.141683,
+    "ast_hash": "3e01a5613c1382518f7d894ca460025c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_matchups_duo.json": {
+    "mtime": 1780479141.1573699,
+    "ast_hash": "6a31140947b9335418979171e3c27cd9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_matchups_mid.json": {
+    "mtime": 1780479141.1733694,
+    "ast_hash": "a3614048d9d598fa50006f2aef5d9800",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_matchups_support.json": {
+    "mtime": 1780479141.1900094,
+    "ast_hash": "c22e37b163604341eb9f72f64197695e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_meta.json": {
+    "mtime": 1780479141.205011,
+    "ast_hash": "2fb8bd1e27788ed034ab1aec9806e1e7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_runes.json": {
+    "mtime": 1780479141.222576,
+    "ast_hash": "2f77781f2bae90b77cc968422627f4ab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_spells.json": {
+    "mtime": 1780479141.2385764,
+    "ast_hash": "b675acdcc69c5a11ec046bd9b332a200",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_synergies_adc.json": {
+    "mtime": 1780479141.2554278,
+    "ast_hash": "d762516d93a4d2f3783c3637f3c98641",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_synergies_baron.json": {
+    "mtime": 1780479141.2710872,
+    "ast_hash": "aef9a43710a512fa3d50710dcdb0ccab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_synergies_duo.json": {
+    "mtime": 1780479141.287077,
+    "ast_hash": "d762516d93a4d2f3783c3637f3c98641",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_synergies_mid.json": {
+    "mtime": 1780479141.3045478,
+    "ast_hash": "b395697c58f47a3a8c8f0e8fad1001c6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\public\\data\\wr_synergies_support.json": {
+    "mtime": 1780479141.3207023,
+    "ast_hash": "dae11f62ff026e67029f660c41f61a57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\api_key_handling_report.json": {
+    "mtime": 1780479141.8255594,
+    "ast_hash": "3427333230ddd123c287b76756099c84",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\client_runtime_shape_report.json": {
+    "mtime": 1780479141.8403566,
+    "ast_hash": "312ef7c7c579fb7cbaab4fe64e4d8db8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\conflict_report.json": {
+    "mtime": 1780479141.8592255,
+    "ast_hash": "df2850585af7b86b296b3f2c72767ead",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\duplicate_detection_report.json": {
+    "mtime": 1780479141.876224,
+    "ast_hash": "8e6afda0b6971dc012239c8f2af61995",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\final_v0_7_1_validation_report.json": {
+    "mtime": 1780479141.908678,
+    "ast_hash": "15cbb02cd51ce3e63a9b4cd3c735a70f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\final_v0_7_validation_report.json": {
+    "mtime": 1780479141.9238725,
+    "ast_hash": "32632003f9980538c395cb6b85a23cfd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\json_parse_errors.json": {
+    "mtime": 1780479141.9576316,
+    "ast_hash": "d751713988987e9331980363e24189ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\karma_regression_report.json": {
+    "mtime": 1780479142.012495,
+    "ast_hash": "62724593d9643d05a2a2fd0d2ba54715",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\lossless_preservation_report.json": {
+    "mtime": 1780479142.0286174,
+    "ast_hash": "0e14ee0d205d954134e3d30f95459385",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\m365_opus_conflict_addendum.json": {
+    "mtime": 1780479142.0786936,
+    "ast_hash": "5a5208ca10e0d35c2febb6849d8f8d13",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\m365_opus_crosscheck_report.json": {
+    "mtime": 1780479142.0947046,
+    "ast_hash": "77ca1329d4f9b0f81aea01dd989afc73",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\m365_opus_karma_overlay_regression_report.json": {
+    "mtime": 1780479142.1265752,
+    "ast_hash": "62724593d9643d05a2a2fd0d2ba54715",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\m365_opus_overlay_merge_report.json": {
+    "mtime": 1780479142.1600587,
+    "ast_hash": "eda0d42885b0b807ddc1e57c4dc37256",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\m365_opus_source_coverage_addendum.json": {
+    "mtime": 1780479142.1757307,
+    "ast_hash": "b6f553c3d7ef927f3126b6d6482c2473",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\no_lol_pc_contamination_report.json": {
+    "mtime": 1780479142.1915987,
+    "ast_hash": "eada5329dabbdda79b67b94048735cca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\public_data_compatibility_report.json": {
+    "mtime": 1780479142.2631283,
+    "ast_hash": "cba9326be94934f6f3d24039557123dd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\role_alias_report.json": {
+    "mtime": 1780479142.2787056,
+    "ast_hash": "e48477e954d6c5226e85cdbc6346a0cc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\route_a_buildview_contract_report.json": {
+    "mtime": 1780479142.2947688,
+    "ast_hash": "b93b1a348c22a66842fcb117b4ed18f3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\runtime_compatibility_report.json": {
+    "mtime": 1780479142.3113153,
+    "ast_hash": "d7830cda08e27850cd2a08576e25e18c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\server_loader_compatibility_report.json": {
+    "mtime": 1780479142.327316,
+    "ast_hash": "1c750c8ef5922629e68ba003bd7e981a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\source_aware_claim_policy_report.json": {
+    "mtime": 1780479142.3449461,
+    "ast_hash": "40029dbaa8d318d67a81e75fdc509ab6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\source_coverage_report.json": {
+    "mtime": 1780479142.3609462,
+    "ast_hash": "d57a5eba8c77ddf77ce6049de2c45541",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\src_route_contract_report.json": {
+    "mtime": 1780479142.3957474,
+    "ast_hash": "82fdf5e2cdd416f1869f01a7335f78d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\targeted_fix_v0_7_1_report.json": {
+    "mtime": 1780479142.4107468,
+    "ast_hash": "3c500205e2f64aa2e4c57e811e0b8423",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\rag\\embedding_manifest.json": {
+    "mtime": 1780479142.5591984,
+    "ast_hash": "43e03911bbb6a270b05099e7566f7153",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\checksums\\source_archive_checksums.json": {
+    "mtime": 1780479142.5962884,
+    "ast_hash": "e44b76276f7a4f1dd1920e6e4178bdc1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\builds.json": {
+    "mtime": 1780479142.644803,
+    "ast_hash": "00e9a9d049be17faad2870632d053a7d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\champions.json": {
+    "mtime": 1780479142.660843,
+    "ast_hash": "e0b7215ab06f0f9d74667834f35e970d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\counters.json": {
+    "mtime": 1780479142.6757543,
+    "ast_hash": "5fbcb44d9823001c21171086d8ee047d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\items.json": {
+    "mtime": 1780479142.6938825,
+    "ast_hash": "6786b934f47f6321edfe16dff08697e9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\meta.json": {
+    "mtime": 1780479142.7090876,
+    "ast_hash": "837742ea3151e3ee36ac6ebca499abff",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\riftcoach-schema.ts": {
+    "mtime": 1780479142.7257395,
+    "ast_hash": "a9301c127b4ceeddfc5e4f54b45f49d0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\runes.json": {
+    "mtime": 1780479142.7412524,
+    "ast_hash": "f24c903fe46bf815aef8a327a6312e10",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\spells.json": {
+    "mtime": 1780479142.7569957,
+    "ast_hash": "234e69def62ac2ea484d47ee5027ca4f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\synergies.json": {
+    "mtime": 1780479142.7729633,
+    "ast_hash": "a860f842338ae2f2fa0086d7ad9c38bd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_boots_enchants.json": {
+    "mtime": 1780479142.7887511,
+    "ast_hash": "3d6274ab476906524abfbc8e74ed850f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_builds.json": {
+    "mtime": 1780479142.8048663,
+    "ast_hash": "3bedf5dc3ad2a74e5730f23625b807c6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_champions_corrections.json": {
+    "mtime": 1780479142.8210626,
+    "ast_hash": "6990b3ea6193a40f9514f8672b1d2daf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_champions_part1.json": {
+    "mtime": 1780479142.839856,
+    "ast_hash": "63dfdf88a5b3b31b514539209b95e0d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_champions_part2.json": {
+    "mtime": 1780479142.8566031,
+    "ast_hash": "0702d7907abb3f5d3f26845ad62cfd7a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_champions_part3.json": {
+    "mtime": 1780479142.8751438,
+    "ast_hash": "bf1f1574e6c98ce95aa33a89344b21a2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_counters_items_runes.json": {
+    "mtime": 1780479142.8918476,
+    "ast_hash": "0ca18928ea619adc3a77bb04fbf3fa9a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_matchups_adc.json": {
+    "mtime": 1780479142.9079678,
+    "ast_hash": "6a31140947b9335418979171e3c27cd9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_matchups_baron.json": {
+    "mtime": 1780479142.9239678,
+    "ast_hash": "3e01a5613c1382518f7d894ca460025c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_matchups_mid.json": {
+    "mtime": 1780479142.9391842,
+    "ast_hash": "a3614048d9d598fa50006f2aef5d9800",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_matchups_support.json": {
+    "mtime": 1780479142.9557314,
+    "ast_hash": "c22e37b163604341eb9f72f64197695e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_meta.json": {
+    "mtime": 1780479142.9712083,
+    "ast_hash": "9673b1f2383fe8a48d7755ac738856c9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_runes.json": {
+    "mtime": 1780479142.9878113,
+    "ast_hash": "2f77781f2bae90b77cc968422627f4ab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_spells.json": {
+    "mtime": 1780479143.0028293,
+    "ast_hash": "b675acdcc69c5a11ec046bd9b332a200",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_synergies_adc.json": {
+    "mtime": 1780479143.0188313,
+    "ast_hash": "d762516d93a4d2f3783c3637f3c98641",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_synergies_baron.json": {
+    "mtime": 1780479143.0338302,
+    "ast_hash": "aef9a43710a512fa3d50710dcdb0ccab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_synergies_mid.json": {
+    "mtime": 1780479143.049573,
+    "ast_hash": "b395697c58f47a3a8c8f0e8fad1001c6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\data_zip\\extracted\\data\\wr_synergies_support.json": {
+    "mtime": 1780479143.0685744,
+    "ast_hash": "dae11f62ff026e67029f660c41f61a57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\m365_opus_postmerge\\wr_champions_merged_v070_full.json": {
+    "mtime": 1780479143.140494,
+    "ast_hash": "a48dfaee98eb84353a301a133ac4f71b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\api\\chat\\route.ts": {
+    "mtime": 1780479143.3034794,
+    "ast_hash": "407da30cb2fbc324ed38e78058a62f76",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\api\\draft\\route.ts": {
+    "mtime": 1780479143.3254545,
+    "ast_hash": "cce89cc6282cd36c0b0b0ac7f820b859",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\api\\reasoning\\route.ts": {
+    "mtime": 1780479143.3476355,
+    "ast_hash": "e0861af8c3407bb1108ee72b6565737a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\api\\review\\route.ts": {
+    "mtime": 1780479143.3693821,
+    "ast_hash": "c4caf78eb6b2735abe452f750ac392f5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\builds\\loading.tsx": {
+    "mtime": 1780479143.3892426,
+    "ast_hash": "c9cba5e740116872ee866ac2e34554f1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\builds\\page.tsx": {
+    "mtime": 1780479143.4054153,
+    "ast_hash": "3921cf51b8a68e680d6709bf068796e6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\climb\\page.tsx": {
+    "mtime": 1780479143.4249823,
+    "ast_hash": "f5cab09aa4548070648047e8b8eea2b3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\coach\\error.tsx": {
+    "mtime": 1780479143.4447777,
+    "ast_hash": "050fde8d7e8eefb8f37cd39ed9654e78",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\coach\\page.tsx": {
+    "mtime": 1780479143.4609237,
+    "ast_hash": "f8a9ceb0456769c3351e2467db1f5ec5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\draft\\loading.tsx": {
+    "mtime": 1780479143.4799228,
+    "ast_hash": "4469cf8785fadea8ae5bb3d0736e8baa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\draft\\page.tsx": {
+    "mtime": 1780479143.4959228,
+    "ast_hash": "0f447763c716b6ea67f47279cef24421",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\error.tsx": {
+    "mtime": 1780479143.2074277,
+    "ast_hash": "3f0ad2eb1279ca11f97cbfbce7304da3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\items\\loading.tsx": {
+    "mtime": 1780479143.5149226,
+    "ast_hash": "fcd5b37e55f078ab6751668b747f9246",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\items\\page.tsx": {
+    "mtime": 1780479143.5289226,
+    "ast_hash": "6be1a40aff697f4960433fefb3a9e9ed",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\layout.tsx": {
+    "mtime": 1780479143.2396553,
+    "ast_hash": "07219b0a885dd64351d944710be22640",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\page.tsx": {
+    "mtime": 1780479143.2546527,
+    "ast_hash": "e61c33ef3850a3eb9a899fe549db8c1b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\review\\page.tsx": {
+    "mtime": 1780479143.548669,
+    "ast_hash": "09982b46a88c34226732fe8a9dc83b65",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\runes\\loading.tsx": {
+    "mtime": 1780479143.5682726,
+    "ast_hash": "15721c4973a8178614e44c49de306ddf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\runes\\page.tsx": {
+    "mtime": 1780479143.5831854,
+    "ast_hash": "c01d745c6de8e7c72229afc3737b7bbb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\settings\\page.tsx": {
+    "mtime": 1780479143.6017847,
+    "ast_hash": "22bb27af01529102128f52179a6f1df4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\spells\\loading.tsx": {
+    "mtime": 1780479143.6222706,
+    "ast_hash": "c820cf64594d830cbce1ba59633ea2d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\spells\\page.tsx": {
+    "mtime": 1780479143.6375942,
+    "ast_hash": "ebffed421f520599945c4e6a32e5186d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\synergy\\loading.tsx": {
+    "mtime": 1780479143.6584306,
+    "ast_hash": "0399e15e703165429d059d09f36b4931",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\synergy\\page.tsx": {
+    "mtime": 1780479143.67389,
+    "ast_hash": "09a6ed5746e1e1723f3d971ae5804b62",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\tierlist\\loading.tsx": {
+    "mtime": 1780479143.693332,
+    "ast_hash": "9458a129dc7618bb664528508886fe64",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\app\\tierlist\\page.tsx": {
+    "mtime": 1780479143.707858,
+    "ast_hash": "5c1acbab8eef177fe475a9f72cbd82b0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\animated-background.tsx": {
+    "mtime": 1780479143.7306156,
+    "ast_hash": "29e9f03c1fe4f542cb4fca34b30dcc11",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\app-shell.tsx": {
+    "mtime": 1780479143.7454412,
+    "ast_hash": "ba94f0600b60c7de6a9693a13a443537",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\hex-portrait.tsx": {
+    "mtime": 1780479143.760839,
+    "ast_hash": "008cc7db32000118964e11e1538dbfcd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\markdown-message.tsx": {
+    "mtime": 1780479143.7758393,
+    "ast_hash": "6d1c7eb8023cf28aee6ae93a7dc6338f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\motion-card.tsx": {
+    "mtime": 1780479143.7916503,
+    "ast_hash": "b67ba03e7006538d36098b7310828e3b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\page-transition.tsx": {
+    "mtime": 1780479143.8076608,
+    "ast_hash": "f312ee0bb2f2b8b98091caa0c8a58b99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\shimmer.tsx": {
+    "mtime": 1780479143.8228705,
+    "ast_hash": "a4d4b4453f665fa30cbb25928bfa1feb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\sidebar.tsx": {
+    "mtime": 1780479143.8378694,
+    "ast_hash": "5bee32f444aaa4be4938709bc8504652",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\smart-image.tsx": {
+    "mtime": 1780479143.8528707,
+    "ast_hash": "1640bfaee3f7ac04c1b37b717ac79bd0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\stagger-grid.tsx": {
+    "mtime": 1780479143.8678963,
+    "ast_hash": "b0dff7f079e8773f542fed9db11f07b5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\theme-provider.tsx": {
+    "mtime": 1780479143.8844852,
+    "ast_hash": "6b3365716e6197a760d250f846f9ac4f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\theme-toggle.tsx": {
+    "mtime": 1780479143.9005125,
+    "ast_hash": "ad9f5d9e40da917a81dda478aafbd12f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\app\\tier-badge.tsx": {
+    "mtime": 1780479143.915589,
+    "ast_hash": "7e3b23920337bc8e07eddedbb4131dd0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\badge.tsx": {
+    "mtime": 1780479144.2124226,
+    "ast_hash": "e4ec840217040d5630ee6ed7213a1d72",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\button.tsx": {
+    "mtime": 1780479144.2270987,
+    "ast_hash": "705bf3552a39e0c722665ccbecb30654",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\card.tsx": {
+    "mtime": 1780479144.241608,
+    "ast_hash": "f493f1f077059a080b2c475873def5c0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\dialog.tsx": {
+    "mtime": 1780479144.2580163,
+    "ast_hash": "93bea24303201f8da5aca0007b52048a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\input.tsx": {
+    "mtime": 1780479144.2721472,
+    "ast_hash": "0607b02d99a2e92f9509223f36ccc6ec",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\scroll-area.tsx": {
+    "mtime": 1780479144.2880788,
+    "ast_hash": "ac8fc719d0fd13c77c933474827337da",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\sheet.tsx": {
+    "mtime": 1780479144.3043828,
+    "ast_hash": "88780518e1f410c03aa766824b784be7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\skeleton.tsx": {
+    "mtime": 1780479144.3200421,
+    "ast_hash": "0e6e825c43d858d98c9903f4da975382",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\tabs.tsx": {
+    "mtime": 1780479144.3357246,
+    "ast_hash": "429035bc858475cd3bcedbb08a5ba8da",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\components\\ui\\tooltip.tsx": {
+    "mtime": 1780479144.350742,
+    "ast_hash": "6566a444ce6c0a87d6611903430534fa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\data\\build-variants.ts": {
+    "mtime": 1780479144.3721945,
+    "ast_hash": "d13471d537c10043472ecd71d394923a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\hooks\\useReasoning.ts": {
+    "mtime": 1780479144.3935015,
+    "ast_hash": "43e48dd99bcfc1490db5f776ebdcf3ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\build-engine.ts": {
+    "mtime": 1780479144.4155,
+    "ast_hash": "4afb88d7ef80fef07bfc7c3973eae40d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\build-modifier.ts": {
+    "mtime": 1780479144.4325006,
+    "ast_hash": "a1f483d53baa553b99f6f7ef8b883137",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\constants.ts": {
+    "mtime": 1780479144.449643,
+    "ast_hash": "c89678e9ed83c2d0e8fb7fff12d0451e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\context-assembler.ts": {
+    "mtime": 1780479144.4668348,
+    "ast_hash": "9fb1493fece56825d4a6362005262af0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\context-builder.ts": {
+    "mtime": 1780479144.4848301,
+    "ast_hash": "1ee2d6912afe152037aa73678f2e232c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\intent-extractor.ts": {
+    "mtime": 1780479144.5006745,
+    "ast_hash": "75d9d551460700947411c2603b0f6bea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\prompts.ts": {
+    "mtime": 1780479144.5181594,
+    "ast_hash": "a52cb089bb4cf936d0573292083dc361",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\rag-retriever.ts": {
+    "mtime": 1780479144.5346792,
+    "ast_hash": "8851d903c81c361f6f014000a762650b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\reasoning-enricher.ts": {
+    "mtime": 1780479144.5517135,
+    "ast_hash": "7b6de1d67c40ced08363ead84335ae99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\reasoning-validator.ts": {
+    "mtime": 1780479144.5687592,
+    "ast_hash": "0d636184249e04abeb4d24c71f3e2c1c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\relationship-engine.ts": {
+    "mtime": 1780479144.5864997,
+    "ast_hash": "2080893996c7f14f370c154fc119c300",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\slug-normalizer.ts": {
+    "mtime": 1780479144.6033106,
+    "ast_hash": "07e9114227ae49e9cbbb4f757e1bf008",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\smart-router.ts": {
+    "mtime": 1780479144.6203172,
+    "ast_hash": "006394f466d74d6f6c9c3fa016a41cb3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\task-classifier.ts": {
+    "mtime": 1780479144.637344,
+    "ast_hash": "7cd97e2b3d35080bcf218ad3acafaf94",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\use-game-data.ts": {
+    "mtime": 1780479144.653694,
+    "ast_hash": "6c008c3e36d424bb9beef46afd17912d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\lib\\utils.ts": {
+    "mtime": 1780479144.6703956,
+    "ast_hash": "3f927a6ea0e49141117a8a8973e5d45a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\stores\\chat-store.ts": {
+    "mtime": 1780479144.6916625,
+    "ast_hash": "1773df77c8003ee02986b107049def33",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\stores\\settings-store.ts": {
+    "mtime": 1780479144.7093914,
+    "ast_hash": "01a4eb539730722434ab74a0b0f299b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\types\\ai.ts": {
+    "mtime": 1780479144.7301464,
+    "ast_hash": "a1e3f4edaa65e2fb1f57824fb8edaefb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\types\\game.ts": {
+    "mtime": 1780479144.7474394,
+    "ast_hash": "eb8a4b09dd2edb7bd6f13aba341ce320",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\types\\reasoning.ts": {
+    "mtime": 1780479144.7646308,
+    "ast_hash": "a6bb5c3d41a78ffad4202fc3f69613d0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\src_zip\\extracted\\src\\types\\settings.ts": {
+    "mtime": 1780479144.7806153,
+    "ast_hash": "cfe04b023a4b6cd937b88368b4f23b57",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_ai_persona_v3.json": {
+    "mtime": 1780479145.2406867,
+    "ast_hash": "8bdec47d2727a96f0b90721eb54e39cd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_architecture_v3.json": {
+    "mtime": 1780479145.255883,
+    "ast_hash": "14b58d439034bb047a58c9869befdfe8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_champions_v3_part1.json": {
+    "mtime": 1780479145.272293,
+    "ast_hash": "3221816c4414dac731a4e0a79aadfdfb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_champions_v3_part2a.json": {
+    "mtime": 1780479145.2878966,
+    "ast_hash": "63fb5db51a1a706323248614c0f71200",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_champions_v3_part2b.json": {
+    "mtime": 1780479145.3038046,
+    "ast_hash": "5ac7259ffa057b0ad2fe45fbb0bdf5ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_champions_v3_part3a.json": {
+    "mtime": 1780479145.320886,
+    "ast_hash": "255f6c4240940b5a17eaf62007e22b51",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_champions_v3_part3b.json": {
+    "mtime": 1780479145.3366542,
+    "ast_hash": "4f8352497392e24fc6b453a4760af401",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_counter_engine_v3.json": {
+    "mtime": 1780479145.3524244,
+    "ast_hash": "3dc1c1079de51cef013bd84b0806c270",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_gold_formulas_v3.json": {
+    "mtime": 1780479145.3680167,
+    "ast_hash": "593b4e9fdba6fcdcc57b0cdc73749abf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_items_v3_part1.json": {
+    "mtime": 1780479145.3846798,
+    "ast_hash": "fa25238193eea6e0a97333d8fecb2558",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_items_v3_part2.json": {
+    "mtime": 1780479145.4014513,
+    "ast_hash": "e87dc95cddd784a2e545a6c581ce10fd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_items_v3_part3.json": {
+    "mtime": 1780479145.4162874,
+    "ast_hash": "5d2cde547c2f58257600b145d760750d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_meta_builds_v3.json": {
+    "mtime": 1780479145.4320536,
+    "ast_hash": "f07cc31353e3a14ebb7f18501a47a6b7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_runes_v3.json": {
+    "mtime": 1780479145.447847,
+    "ast_hash": "8a7dcc6ed3f775bd820723bd045ee966",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_spells_v3.json": {
+    "mtime": 1780479145.4634097,
+    "ast_hash": "4bca0cc8051329243badfad2057b9e0b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_synergy_engine_v3.json": {
+    "mtime": 1780479145.4800878,
+    "ast_hash": "7b2953aeb17c6cc50f5ad899a2b07eea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_opus_zip\\extracted\\wr_opus\\wr_team_comps_v3.json": {
+    "mtime": 1780479145.4967642,
+    "ast_hash": "e921106b48b31ac1d07bf8fa774c4252",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\ability.schema.json": {
+    "mtime": 1780479145.5153549,
+    "ast_hash": "c97a946b5e635304ff6ddb564f8e2cdc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\ability_correction.schema.json": {
+    "mtime": 1780479145.5302608,
+    "ast_hash": "61940f84a1c76d9b72b230cc8491cfeb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\ability_extraction_audit.schema.json": {
+    "mtime": 1780479145.5455153,
+    "ast_hash": "94b34a89b6d2d3e623d68c413a15afbd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\ability_lockfile.schema.json": {
+    "mtime": 1780479145.560647,
+    "ast_hash": "6d3fde734ed0b8848c120ef9eff10523",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\ai_persona.schema.json": {
+    "mtime": 1780479145.576225,
+    "ast_hash": "5a83fe1197a25eb578c256df496e122b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\architecture_decision_record.schema.json": {
+    "mtime": 1780479145.5909724,
+    "ast_hash": "df43f3bd1564e06ff0ceb97c092cedf9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\backlink.schema.json": {
+    "mtime": 1780479145.607046,
+    "ast_hash": "4d96a1b1095355bfa3a33f374bebaf07",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\build.schema.json": {
+    "mtime": 1780479145.6224544,
+    "ast_hash": "16f81946f7604ba4dca53428b91d6c41",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\champion.schema.json": {
+    "mtime": 1780479145.6380856,
+    "ast_hash": "7606edb12049d535ceb5578b5e68ac9d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\cooldown.schema.json": {
+    "mtime": 1780479145.6540802,
+    "ast_hash": "44c3b745897bc411701a32df5a85cd61",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\counter.schema.json": {
+    "mtime": 1780479145.6697545,
+    "ast_hash": "6933c44addb1dd9e3a0b5fe4416454a7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\economy.schema.json": {
+    "mtime": 1780479145.685019,
+    "ast_hash": "48a16f82192fdcd932be8c593bd0e4dc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\effect.schema.json": {
+    "mtime": 1780479145.700747,
+    "ast_hash": "6cb4c79f6b99aff5fa9711dd74e6c0c7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\entity_neighborhood.schema.json": {
+    "mtime": 1780479145.7163436,
+    "ast_hash": "227e0315d17def7b1dc6a570e9e0fe04",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\event.schema.json": {
+    "mtime": 1780479145.7323442,
+    "ast_hash": "a25fdd58a85c373672f6c035e7ffe306",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\feature.schema.json": {
+    "mtime": 1780479145.7488961,
+    "ast_hash": "ec106dcc251034006529ccea62843cb2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\graph_saved_view.schema.json": {
+    "mtime": 1780479145.7646058,
+    "ast_hash": "7fc9f118e0406336e95084fc73a1cfc5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\graph_traversal_request.schema.json": {
+    "mtime": 1780479145.780295,
+    "ast_hash": "eb4399797fdca933ddbec70f1254d7bd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\graph_traversal_response.schema.json": {
+    "mtime": 1780479145.7948558,
+    "ast_hash": "37308231fccbcc631719341e840da9f4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\graph_view_edge.schema.json": {
+    "mtime": 1780479145.8107443,
+    "ast_hash": "4bf85f61bbc31f626c096a1cf460f135",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\graph_view_layout.schema.json": {
+    "mtime": 1780479145.8263264,
+    "ast_hash": "f1b1016adf7550419cdfbda8a092e0d3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\graph_view_node.schema.json": {
+    "mtime": 1780479145.8416865,
+    "ast_hash": "4cf546338aa24cc283ab99d4ac73c175",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\item.schema.json": {
+    "mtime": 1780479145.8578079,
+    "ast_hash": "160fb2708757ea7b8b24bb43171314ea",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\karma_regression_test.schema.json": {
+    "mtime": 1780479145.8724506,
+    "ast_hash": "61011aae3afe0098db217e3693b27239",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\kg_edge.schema.json": {
+    "mtime": 1780479145.8885095,
+    "ast_hash": "e169435dbd8c8b17733c17b4c5f1b1ed",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\kg_node.schema.json": {
+    "mtime": 1780479145.9042342,
+    "ast_hash": "fae6e6f194b94e5e9cf8b996d2b6ba9b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\provenance.schema.json": {
+    "mtime": 1780479145.9188223,
+    "ast_hash": "332122ef82ab4c71d93200060529be97",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\rag_chunk.schema.json": {
+    "mtime": 1780479145.9345345,
+    "ast_hash": "f16757d64046cc5ac694a213f1254e76",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\relationship_index.schema.json": {
+    "mtime": 1780479145.9497948,
+    "ast_hash": "fec1e4e4d95a4e391732131f18159437",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\relationship_reason.schema.json": {
+    "mtime": 1780479145.963691,
+    "ast_hash": "6538f67cf8023587eb7886a7dadffd61",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\rune.schema.json": {
+    "mtime": 1780479145.978033,
+    "ast_hash": "07918ee53787e6c2edecf7c30962e626",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\source_claim.schema.json": {
+    "mtime": 1780479145.9936407,
+    "ast_hash": "36003ae1ee8b36dd2d7c725748fd1c17",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\source_refresh_job.schema.json": {
+    "mtime": 1780479146.0089464,
+    "ast_hash": "76498493efb387a0b5d314133049b98f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\spell.schema.json": {
+    "mtime": 1780479146.024196,
+    "ast_hash": "b997549523a4318fd567df7fffb79369",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\synergy.schema.json": {
+    "mtime": 1780479146.039418,
+    "ast_hash": "0f02689f1049e24a89865dd68c126248",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\schemas\\validation_report.schema.json": {
+    "mtime": 1780479146.0535755,
+    "ast_hash": "56500f1bb3c0921533cc758a34e643c9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase1_extract_inventory.py": {
+    "mtime": 1780479146.075838,
+    "ast_hash": "bdaaa9d410c86a42a57bead069423784",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase2_profile_sources.py": {
+    "mtime": 1780479146.0926123,
+    "ast_hash": "baf36c9618fd2e4158302911908a8e77",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase3_build_canonical_and_compat.py": {
+    "mtime": 1780479146.1097355,
+    "ast_hash": "cdfe7eb257d6a54815801ecce245e0f7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase3b_policy_patch_exclusions.py": {
+    "mtime": 1780479146.1257353,
+    "ast_hash": "b96da135a915a194aa0ae782a3c1d4eb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase3c_patch_lolpc_classification.py": {
+    "mtime": 1780479146.1418157,
+    "ast_hash": "0f88f0ce0c035d683da48deb9718263d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase4_validate_and_zip.py": {
+    "mtime": 1780479146.1578987,
+    "ast_hash": "e552f2ce42583eeb63f3021324110131",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase4a_slim_duplicate_raws.py": {
+    "mtime": 1780479146.1738985,
+    "ast_hash": "6b85b996334426abe8ba6338fa0a8bc7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7\\phase4b_validate_cli_zip.py": {
+    "mtime": 1780479146.1899886,
+    "ast_hash": "e3cbdb1cbabf167f56b6a3c969a6f873",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\scripts\\build_v0_7_1\\build_clean_v071.py": {
+    "mtime": 1780479146.208987,
+    "ast_hash": "d95f8716011de7a507ecda8cff1584c0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\approved_sources.json": {
+    "mtime": 1780479146.227102,
+    "ast_hash": "90ab28553d19c9fb48a686f96df23937",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\approved_sources_snapshot.json": {
+    "mtime": 1780479146.2417686,
+    "ast_hash": "7f9bd9f726a021ed52238914a4744ff9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\blocked_sources.json": {
+    "mtime": 1780479146.2579455,
+    "ast_hash": "db1befdc6c66387e745f4fb4fd3c2c40",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\champion_ability_source_priority.json": {
+    "mtime": 1780479146.274034,
+    "ast_hash": "9dc6e5c28635eb63989b48ddb01f26b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\no_lol_pc_overwrite_rules.json": {
+    "mtime": 1780479146.28867,
+    "ast_hash": "aae04b7319138cde3a6969e39d36c577",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\source_priority_rules.json": {
+    "mtime": 1780479146.3045857,
+    "ast_hash": "56add7530132decb3bd85055f519894c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\source_refresh_queue_seed.json": {
+    "mtime": 1780479146.3205006,
+    "ast_hash": "9eddb03730243eebf394ec3973d09aa9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\source_url_allowlist_regex.json": {
+    "mtime": 1780479146.3362246,
+    "ast_hash": "00dc4d8e22196b45266253cb50e956b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\wild_rift_only_validation_rules.json": {
+    "mtime": 1780479146.3524358,
+    "ast_hash": "028137e3ff9e4ebd76ae0157e26c261c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\source_policy\\wr_meta_limited_use_policy.json": {
+    "mtime": 1780479146.3680086,
+    "ast_hash": "cb0845f64ccf853ba594fd35227dca17",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\src_runtime_audit\\src_audit_outputs\\src_runtime_audit_summary.json": {
+    "mtime": 1780479146.5258782,
+    "ast_hash": "29e6aa2c3607a6f2141b74e65e68901d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\src_runtime_audit\\src_audit_outputs\\src_runtime_contract_report.json": {
+    "mtime": 1780479146.540479,
+    "ast_hash": "52a7efe4ea631f1dcd20b28bb2584f49",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\alias_maps\\champion_aliases.json": {
+    "mtime": 1780479146.5617666,
+    "ast_hash": "b980d0331a4bd8919ef5a1c1953499e9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\alias_maps\\item_aliases.json": {
+    "mtime": 1780479146.5768971,
+    "ast_hash": "64696bb3f464d383a2f73219f704e007",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\alias_maps\\role_aliases.json": {
+    "mtime": 1780479146.5917287,
+    "ast_hash": "77407bc8d41d9c018d81181537a9cb1d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\candidate_conflicts\\conflict_report_seed.json": {
+    "mtime": 1780479146.6134655,
+    "ast_hash": "b585e3dd1217d83dac57692febf5c76e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\m365_opus_delta\\m365_opus_source_family_descriptor.json": {
+    "mtime": 1780479146.6818347,
+    "ast_hash": "f149a63dad60d8c04c9ceba7e12ba8cf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\normalized_records\\champions_normalized_ids.json": {
+    "mtime": 1780479146.700939,
+    "ast_hash": "83f611e082fb4169da2726570496bcf6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\normalized_records\\items_normalized_ids.json": {
+    "mtime": 1780479146.7170365,
+    "ast_hash": "336d1b007a46b277fddfe7182567e85f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\src_runtime_contracts\\src_audit_outputs\\src_runtime_audit_summary.json": {
+    "mtime": 1780479146.9238882,
+    "ast_hash": "29e6aa2c3607a6f2141b74e65e68901d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\staging\\src_runtime_contracts\\src_audit_outputs\\src_runtime_contract_report.json": {
+    "mtime": 1780479146.9397123,
+    "ast_hash": "52a7efe4ea631f1dcd20b28bb2584f49",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ui\\accessibility_spec.json": {
+    "mtime": 1780479146.9578109,
+    "ast_hash": "35dda3d3d257bad5a418b16f43d7de28",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ui\\graph_canvas_state_machine.json": {
+    "mtime": 1780479146.9868722,
+    "ast_hash": "404259d5159ab40c067481bf63cdd856",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ui\\graph_empty_loading_error_states.json": {
+    "mtime": 1780479147.0013556,
+    "ast_hash": "5daf255b823a9dd706c7e7aa2bb01514",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ui\\relationship_explorer_component_spec.json": {
+    "mtime": 1780479147.0169997,
+    "ast_hash": "71268a470304bb5d999f6f096aa3c661",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ui\\relationship_sidebar_spec.json": {
+    "mtime": 1780479147.0319538,
+    "ast_hash": "742b2b90d534beff9afedcd2c6d2275b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\warehouse\\gold\\dim_champion.json": {
+    "mtime": 1780479147.0800498,
+    "ast_hash": "3b710258938051309725fab9d7f5d3e9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\warehouse\\gold\\dim_item.json": {
+    "mtime": 1780479147.0958655,
+    "ast_hash": "a3fbdd0a578c55f873a472ae8497b775",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\warehouse\\gold\\dim_rune.json": {
+    "mtime": 1780479147.1118598,
+    "ast_hash": "e27d300c14eddec58eca0e99751abb7b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\warehouse\\gold\\dim_spell.json": {
+    "mtime": 1780479147.1265314,
+    "ast_hash": "b3489c36a1b47489a1542226d521abf5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\BUILD_SUMMARY.md": {
+    "mtime": 1780479137.820796,
+    "ast_hash": "20bfd507849abe0a198dad19368defe6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\README.md": {
+    "mtime": 1780479137.837977,
+    "ast_hash": "1828996dd73ba2c6487caf7e3f6576c5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\ability_extraction_instructions.md": {
+    "mtime": 1780479137.873078,
+    "ast_hash": "4ba8a4a37d902730d7b81f2145ef6dcf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_ability_revalidation_prompt.md": {
+    "mtime": 1780479137.9577093,
+    "ast_hash": "1383e8aa4120f18c01a34eeaac35d718",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\ai\\riftcoach_system_prompt.md": {
+    "mtime": 1780479138.1009061,
+    "ast_hash": "f6fae2e92cb97f5821c611232711e80e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\ABILITY_REVALIDATION_PIPELINE_SPEC.md": {
+    "mtime": 1780479138.1502886,
+    "ast_hash": "5ff6f8726dcc5ad32d097e99f02dc636",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\ANALYTICS_BI_ARCHITECTURE.md": {
+    "mtime": 1780479138.1679442,
+    "ast_hash": "18bc899fe38b96cc96932c690e20c278",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\ARCHITECTURE_BLUEPRINT.md": {
+    "mtime": 1780479138.1849294,
+    "ast_hash": "d0aacf9c102f50ad5fef9b551f119dee",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\BUILD_SPECS.md": {
+    "mtime": 1780479138.200312,
+    "ast_hash": "02dc5ace4f6c65af83737b834468b907",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\CHUNK2_INTEGRATION_SPEC.md": {
+    "mtime": 1780479138.215387,
+    "ast_hash": "2ec56c977f980802d79cb87898196b8f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\CONNECTED_ASSET_EXPLORER_SPEC.md": {
+    "mtime": 1780479138.2315433,
+    "ast_hash": "ec4b33f523237903512db4ccda48ffb7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\DATA_ARCHITECTURE.md": {
+    "mtime": 1780479138.2465243,
+    "ast_hash": "5994a88e7f069395476bc53f4e1c7bfd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\DATA_QUALITY_SPEC.md": {
+    "mtime": 1780479138.2627447,
+    "ast_hash": "2711ef78f0990f8f8d29c6dfe70da7ec",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\EVENT_STREAMING_ARCHITECTURE.md": {
+    "mtime": 1780479138.2777338,
+    "ast_hash": "b92a0b3f4d113a2f96b41545c95983e5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\FEATURE_STORE_ARCHITECTURE.md": {
+    "mtime": 1780479138.2946317,
+    "ast_hash": "cc9e7811c191c2b93dd3b7bb1cf9a42c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\FINAL_INTEGRATION_ARCHITECTURE.md": {
+    "mtime": 1780479138.3115351,
+    "ast_hash": "36fd2491f933de123c19a6ab5ee2b863",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\GNN_READINESS_ARCHITECTURE.md": {
+    "mtime": 1780479138.327275,
+    "ast_hash": "3ff67a905a8851abaa62f79d3b8586e5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\GRAPH_BACKLINKS_AND_NEIGHBORHOODS_SPEC.md": {
+    "mtime": 1780479138.3429356,
+    "ast_hash": "ff339d747f6792f25cfe6843be6542c4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\GRAPH_EXPLORER_TECH_STACK_ADR.md": {
+    "mtime": 1780479138.358617,
+    "ast_hash": "ef7f13904eeb67f4314ebb50082c65d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\GRAPH_QUERY_AND_TRAVERSAL_SPEC.md": {
+    "mtime": 1780479138.3741317,
+    "ast_hash": "3c8715aa2e5865cc10fbd93843544197",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\GRAPH_RAG_BRIDGE_SPEC.md": {
+    "mtime": 1780479138.3887193,
+    "ast_hash": "143171517d4800e29ffb98b1505cf0eb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\KNOWLEDGE_GRAPH_ARCHITECTURE.md": {
+    "mtime": 1780479138.4030926,
+    "ast_hash": "783d5ef6e365d9b41eecf9f858383da5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\LOCAL_REPO_DROP_IN_GUIDE.md": {
+    "mtime": 1780479138.4186802,
+    "ast_hash": "e92c5f0de1d70f3d889320eb0d9ad963",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\LOCAL_REPO_UPDATE_PLAN_V0_7.md": {
+    "mtime": 1780479138.4333773,
+    "ast_hash": "880b189f7385aa8109fa9a08009fd197",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\M365_OPUS_OVERLAY_PATCH_PLAN_V0_7_1.md": {
+    "mtime": 1780479138.4478016,
+    "ast_hash": "ae7b5be068e2ed71e4b9541bbaebccc8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\NEURO_SYMBOLIC_REASONING_ARCHITECTURE.md": {
+    "mtime": 1780479138.4633608,
+    "ast_hash": "50afea6142481f4aa1b9d697e8cf76d2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\OBSIDIAN_STYLE_GRAPH_VIEW_SPEC.md": {
+    "mtime": 1780479138.4778337,
+    "ast_hash": "ac39eddc5992167c90ccaa456f4db9c1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\RAG_VECTOR_ARCHITECTURE.md": {
+    "mtime": 1780479138.493614,
+    "ast_hash": "0f966564ead6225b4e006b8c508711df",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\RECOMMENDATION_ENGINE_SPEC.md": {
+    "mtime": 1780479138.5083005,
+    "ast_hash": "cc3e63cb5178c9b511f7d9aca52a2403",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\SOURCE_REFRESH_PIPELINE_SPEC.md": {
+    "mtime": 1780479138.5234284,
+    "ast_hash": "d989024e6a531848ea6dc8f12e595acc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\SRC_COMPATIBILITY_SPEC.md": {
+    "mtime": 1780479138.5378208,
+    "ast_hash": "22f0106a512726287af2439272e8dd3c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\architecture\\TIME_SERIES_ARCHITECTURE.md": {
+    "mtime": 1780479138.5529106,
+    "ast_hash": "e50f07683f090db56262d724e0863184",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\docs\\DATA_LIMITATIONS.md": {
+    "mtime": 1780479140.2061827,
+    "ast_hash": "6883d8c9538ee4745911b2d6a8d41eaf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\docs\\DROP_IN_GUIDE.md": {
+    "mtime": 1780479140.222313,
+    "ast_hash": "9d8003e67f65d65a4bce0e0c04a77cbf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\docs\\LOCAL_REPO_UPDATE_PLAN_V0_7.md": {
+    "mtime": 1780479140.2380729,
+    "ast_hash": "880b189f7385aa8109fa9a08009fd197",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\prototype\\relationship_explorer_static_mock.html": {
+    "mtime": 1780479140.8441553,
+    "ast_hash": "e01c4ce1cdea2c38eacdc09e845a0a70",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\m365_opus_crosscheck_report.md": {
+    "mtime": 1780479142.1110468,
+    "ast_hash": "0f80aef830561cb372fc146d49b26209",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\quality\\targeted_fix_v0_7_1_report.md": {
+    "mtime": 1780479142.4257479,
+    "ast_hash": "cf0171634091b01ca41a2699408bc4e6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\chatgpt_chunks_extracted\\README.md": {
+    "mtime": 1780479142.5782616,
+    "ast_hash": "d2ae02beee73f05c661dadf690fc570a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\m365_opus_postmerge\\README.md": {
+    "mtime": 1780479143.0865743,
+    "ast_hash": "d227191601852f1252cb6c37dd818a1d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\data\\riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix\\riftcoach_wr_merged_intelligence_database_v0_7_1\\raw_sources\\wr_chatgpt_zip\\extracted\\README.md": {
+    "mtime": 1780479144.9117699,
+    "ast_hash": "06ae488ecef3f5e404876f0ffd1dcfed",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\AppForge AI \u2014 Master Skills & Persona v2 (include in every kick-off).md": {
+    "mtime": 1780479434.79891,
+    "ast_hash": "eed1d2ad377e2a9c7d89a9e3dd3a92a8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\AppForge AI_ Skills & Persona Definition_v1.md": {
+    "mtime": 1780479409.9395204,
+    "ast_hash": "0ec0156ecf7aa140eab9a0238c5f5e6b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach \u2014 Current State v14.md": {
+    "mtime": 1780479357.8765864,
+    "ast_hash": "e118fff876453956b3219d13b8d0a06e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach \u2014 Handoff Prompt v17.md": {
+    "mtime": 1780479366.8606565,
+    "ast_hash": "360498940232fc63cce1d54648ab49d3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach_Phase 5.0 Kickoff_(Continuation).md": {
+    "mtime": 1780514406.7075007,
+    "ast_hash": "229da5148326762726102d3173aaf162",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach_Phase 5.0 Kickoff_(Continuation)_addendum_v1.md": {
+    "mtime": 1780514406.725583,
+    "ast_hash": "9525afb18a5dfa1403bb2c419ed1b6b6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach_Phase 5.0_Kickoff.md": {
+    "mtime": 1780514406.7470424,
+    "ast_hash": "69f5ce311b7de36fabca8d4742ffc0ee",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach_Phase 6.0_Kickoff.md": {
+    "mtime": 1780514406.7718475,
+    "ast_hash": "c8f7645be186d41ce3271385bd789734",
     "semantic_hash": ""
   }
 }

@@ -1,0 +1,30 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "chunk_fields": [
+    "chunk_id",
+    "text_for_embedding",
+    "entity_refs",
+    "relationship_refs",
+    "patch_version",
+    "source_status",
+    "confidence",
+    "metadata_filters"
+  ],
+  "relationship_refs_shape": {
+    "edge_id": "string",
+    "relationship_type": "string",
+    "source_entity_id": "string",
+    "target_entity_id": "string",
+    "reason_codes": "array"
+  },
+  "metadata_filters": [
+    "entity_type",
+    "entity_id",
+    "role",
+    "lane",
+    "effect_tags",
+    "source_status",
+    "patch_version",
+    "confidence_min"
+  ]
+}

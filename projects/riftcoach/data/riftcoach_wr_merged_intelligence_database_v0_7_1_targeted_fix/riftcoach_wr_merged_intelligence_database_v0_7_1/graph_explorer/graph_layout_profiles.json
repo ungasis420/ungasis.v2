@@ -1,0 +1,57 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "profiles": [
+    {
+      "id": "focus_neighborhood",
+      "name": "Focus Neighborhood",
+      "description": "Center one asset and show 1-2 hop relationships. Best default for app UI.",
+      "max_nodes": 80,
+      "default_depth": 2,
+      "layout": "force_directed",
+      "use_case": "asset_page"
+    },
+    {
+      "id": "build_reasoning_path",
+      "name": "Build Reasoning Path",
+      "description": "Show champion -> effects -> items/runes/spells -> build.",
+      "max_nodes": 60,
+      "default_depth": 3,
+      "layout": "hierarchical",
+      "use_case": "recommendation_explanation"
+    },
+    {
+      "id": "patch_impact_map",
+      "name": "Patch Impact Map",
+      "description": "Show patch -> changed entities -> affected builds/edges.",
+      "max_nodes": 120,
+      "default_depth": 3,
+      "layout": "radial",
+      "use_case": "patch_analysis"
+    },
+    {
+      "id": "counterplay_map",
+      "name": "Counterplay Map",
+      "description": "Show threat -> denial/mitigation options.",
+      "max_nodes": 100,
+      "default_depth": 3,
+      "layout": "clustered",
+      "use_case": "counter_explorer"
+    },
+    {
+      "id": "source_claim_map",
+      "name": "Source Claim Map",
+      "description": "Show entity fields connected to claims and sources.",
+      "max_nodes": 50,
+      "default_depth": 2,
+      "layout": "tree",
+      "use_case": "trust_audit"
+    }
+  ],
+  "hairball_prevention": {
+    "default_max_nodes": 80,
+    "collapse_effect_nodes_after_degree": 25,
+    "auto_cluster_common_effects": true,
+    "show_top_edges_by_strength": true,
+    "require_user_expand_for_depth_3_plus": true
+  }
+}

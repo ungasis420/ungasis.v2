@@ -1,3 +1,19 @@
+## Scrape Run — 2026-06-03 18:43:58 UTC
+
+### 📈 Champion Stats Changes
+- Added champion: AURELION SOL
+- Added champion: DR. MUNDO
+- Added champion: JARVAN IV
+- Added champion: LEE SIN
+- Added champion: MASTER YI
+- Added champion: MISS FORTUNE
+- Added champion: Nunu & Willump
+- Added champion: TALIYAH
+- Added champion: TWISTED FATE
+- Added champion: XIN ZHAO
+
+
+---
 ## Scrape Run — 2026-06-03 11:07:34 UTC
 
 ### 🗡️ Item Changes

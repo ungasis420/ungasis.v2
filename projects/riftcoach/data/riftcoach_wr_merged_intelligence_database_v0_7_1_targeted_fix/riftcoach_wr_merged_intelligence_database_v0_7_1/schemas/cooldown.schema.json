@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/cooldown.schema.json",
+  "title": "Cooldown",
+  "type": "object",
+  "required": [
+    "primary"
+  ],
+  "properties": {
+    "primary": {
+      "type": "object",
+      "required": [
+        "cooldown_type",
+        "source_status",
+        "patch_version"
+      ],
+      "properties": {
+        "raw": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "seconds": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "per_rank_seconds": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "per_level_seconds": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "unit": {
+          "type": "string"
+        },
+        "cooldown_type": {
+          "type": "string"
+        },
+        "affected_by_ability_haste": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "charges": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "recharge_time_seconds": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "per_target_cooldown_seconds": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "shared_cooldown_group": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_status": {
+          "type": "string",
+          "enum": [
+            "source_verified",
+            "source_inferred",
+            "generated_rule",
+            "generated_archetype",
+            "hybrid",
+            "source_conflict",
+            "user_corrected_pending_revalidation",
+            "pending_allowed_source_refresh",
+            "source_verified_not_applicable",
+            "not_applicable"
+          ]
+        },
+        "source_urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "patch_version": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

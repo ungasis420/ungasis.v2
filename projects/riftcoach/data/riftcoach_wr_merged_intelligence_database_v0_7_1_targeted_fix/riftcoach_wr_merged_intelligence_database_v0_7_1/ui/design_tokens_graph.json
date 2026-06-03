@@ -1,0 +1,14 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "tokens": {
+    "node_source_verified": "semantic-trust",
+    "node_generated_rule": "semantic-generated",
+    "node_pending": "semantic-pending",
+    "node_conflict": "semantic-conflict",
+    "edge_synergy": "edge-positive",
+    "edge_counter": "edge-counterplay",
+    "edge_provenance": "edge-source",
+    "edge_patch": "edge-patch"
+  },
+  "note": "Actual color values should be defined in the app design system. Tokens avoid hard-coding colors in data files."
+}

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/ability.schema.json",
+  "title": "Ability",
+  "type": "object",
+  "required": [
+    "champion_id",
+    "slot",
+    "name",
+    "ability_type",
+    "cooldowns",
+    "patch_version",
+    "source_status"
+  ],
+  "properties": {
+    "champion_id": {
+      "type": "string"
+    },
+    "slot": {
+      "type": "string",
+      "enum": [
+        "passive",
+        "q",
+        "w",
+        "e",
+        "r",
+        "Passive",
+        "Q",
+        "W",
+        "E",
+        "R"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ability_type": {
+      "type": "string"
+    },
+    "brief_description": {
+      "type": "string"
+    },
+    "full_description": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "object"
+    },
+    "cooldowns": {
+      "type": "object"
+    },
+    "cast_time": {
+      "type": "object"
+    },
+    "target_range": {
+      "type": "object"
+    },
+    "effect_radius": {
+      "type": "object"
+    },
+    "width": {
+      "type": "object"
+    },
+    "speed": {
+      "type": "object"
+    },
+    "duration": {
+      "type": "object"
+    },
+    "damage_values": {
+      "type": "object"
+    },
+    "scaling": {
+      "type": "array"
+    },
+    "active_effects": {
+      "type": "array"
+    },
+    "passive_effects": {
+      "type": "array"
+    },
+    "damage_types": {
+      "type": "array"
+    },
+    "defense_types": {
+      "type": "array"
+    },
+    "crowd_control_types": {
+      "type": "array"
+    },
+    "effect_tags": {
+      "type": "array"
+    },
+    "ability_forms": {
+      "type": "array"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "source_verified",
+        "source_inferred",
+        "generated_rule",
+        "generated_archetype",
+        "hybrid",
+        "source_conflict",
+        "user_corrected_pending_revalidation",
+        "pending_allowed_source_refresh",
+        "source_verified_not_applicable",
+        "not_applicable"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

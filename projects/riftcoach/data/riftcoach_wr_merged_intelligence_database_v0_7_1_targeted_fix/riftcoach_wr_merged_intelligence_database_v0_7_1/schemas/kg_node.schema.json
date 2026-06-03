@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/kg_node.schema.json",
+  "title": "KG Node",
+  "type": "object",
+  "required": [
+    "node_id",
+    "node_type",
+    "name",
+    "patch_version"
+  ],
+  "properties": {
+    "node_id": {
+      "type": "string"
+    },
+    "node_type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "properties": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

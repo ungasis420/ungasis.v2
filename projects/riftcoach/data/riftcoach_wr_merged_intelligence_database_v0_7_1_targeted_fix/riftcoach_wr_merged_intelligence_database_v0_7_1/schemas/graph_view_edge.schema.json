@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/graph_view_edge.schema.json",
+  "title": "Graph View Edge",
+  "description": "UI graph edge shape.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "edge_id",
+    "source_node_id",
+    "target_node_id",
+    "relationship_type"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "source_node_id": {
+      "type": "string"
+    },
+    "target_node_id": {
+      "type": "string"
+    },
+    "relationship_type": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "source_status": {
+      "type": "string"
+    },
+    "ui": {
+      "type": "object"
+    }
+  }
+}

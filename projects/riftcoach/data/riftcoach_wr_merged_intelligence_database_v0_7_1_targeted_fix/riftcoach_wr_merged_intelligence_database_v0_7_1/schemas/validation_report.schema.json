@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/validation_report.schema.json",
+  "title": "Validation Report",
+  "type": "object",
+  "required": [
+    "report_id",
+    "database_version",
+    "checks",
+    "status"
+  ],
+  "properties": {
+    "report_id": {
+      "type": "string"
+    },
+    "database_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "array"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

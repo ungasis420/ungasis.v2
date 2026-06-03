@@ -1,0 +1,1458 @@
+{
+  "meta": {
+    "type": "synergies",
+    "scope": "adc_duo_lane",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 22,
+    "total_best_with": 86,
+    "total_anti_synergy": 51,
+    "total_entries": 137,
+    "synergy_types": [
+      "WOMBO",
+      "PEEL",
+      "SETUP",
+      "LANE",
+      "SCALING"
+    ],
+    "score_scale": {
+      "0.8-1.0": "S_tier_synergy",
+      "0.6-0.79": "strong",
+      "0.4-0.59": "situational",
+      "below_0.4": "anti_synergy"
+    },
+    "confidence_source": "theorycraft_meta_inference",
+    "note": "ADC x Support synergies + anti-synergies."
+  },
+  "synergies": [
+    {
+      "champion_id": "ashe",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "karma",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "double_poke_dominance",
+          "combo": [
+            "ashe_w",
+            "karma_r_q"
+          ],
+          "notes": "W slow + R+Q poke chunks. Both have utility scaling."
+        },
+        {
+          "ally": "zyra",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "slow_into_plants",
+          "combo": [
+            "ashe_w_slow",
+            "zyra_e_plants"
+          ],
+          "notes": "Ashe slow guarantees Zyra E root. Perma-slow plant zone."
+        },
+        {
+          "ally": "leona",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "r_stun_into_engage",
+          "combo": [
+            "ashe_r",
+            "leona_e_q"
+          ],
+          "notes": "Ashe R stun from range, Leona follows up for guaranteed kill."
+        },
+        {
+          "ally": "braum",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "perma_slow_plus_stun",
+          "combo": [
+            "ashe_passive_slow",
+            "braum_passive"
+          ],
+          "notes": "Ashe AAs slow + apply Braum stacks. Fast passive proc."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "alistar",
+          "score": 0.4,
+          "reason": "ashe_needs_poke_not_all_in",
+          "issue": "Ashe wants to poke from range. Alistar wants all-in. Mismatch."
+        },
+        {
+          "ally": "pyke",
+          "score": 0.35,
+          "reason": "no_peel_for_immobile",
+          "issue": "Ashe has no mobility. Pyke dives and leaves Ashe alone."
+        }
+      ]
+    },
+    {
+      "champion_id": "caitlyn",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "morgana",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "q_root_into_trap_headshot",
+          "combo": [
+            "morgana_q",
+            "caitlyn_w_headshot"
+          ],
+          "notes": "S-tier lane. Morgana Q root = guaranteed trap + headshot. Unstoppable poke."
+        },
+        {
+          "ally": "lux",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "q_root_into_trap",
+          "combo": [
+            "lux_q",
+            "caitlyn_w"
+          ],
+          "notes": "Lux Q root = Caitlyn trap. Double root chain + headshot."
+        },
+        {
+          "ally": "zyra",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "zone_control_duo",
+          "combo": [
+            "zyra_plants",
+            "caitlyn_traps"
+          ],
+          "notes": "Double zone control. Enemy can't approach CS."
+        },
+        {
+          "ally": "karma",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "poke_duo_range",
+          "combo": [
+            "karma_r_q",
+            "caitlyn_headshot"
+          ],
+          "notes": "Double poke from range. Karma E speed for Caitlyn repositioning."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "alistar",
+          "score": 0.4,
+          "reason": "cait_wants_poke_not_engage",
+          "issue": "Caitlyn wins through range and traps, not all-in."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.35,
+          "reason": "no_early_presence",
+          "issue": "Caitlyn is strongest early. Yuumi provides nothing early."
+        }
+      ]
+    },
+    {
+      "champion_id": "corki",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "nami",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "e_empower_on_mixed_damage",
+          "combo": [
+            "nami_e",
+            "corki_aa"
+          ],
+          "notes": "Nami E on Corki mixed AAs. Bubble sets up combos."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "sustain_to_scale",
+          "combo": [
+            "soraka_w",
+            "corki_r_poke"
+          ],
+          "notes": "Soraka heals Corki through lane. Corki scales to mid-game spike."
+        },
+        {
+          "ally": "karma",
+          "score": 0.75,
+          "type": "LANE",
+          "reason": "poke_duo",
+          "combo": [
+            "karma_r_q",
+            "corki_r"
+          ],
+          "notes": "Double poke lane. Karma shield for trades."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "pyke",
+          "score": 0.35,
+          "reason": "no_peel_corki_immobile",
+          "issue": "Corki has no dash pre-package. Pyke leaves him alone."
+        },
+        {
+          "ally": "blitzcrank",
+          "score": 0.4,
+          "reason": "corki_cant_burst_on_hook",
+          "issue": "Corki damage is sustained/poke, not burst. Hook kills need burst followup."
+        }
+      ]
+    },
+    {
+      "champion_id": "draven",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "pyke",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "double_gold_machine",
+          "combo": [
+            "pyke_r_gold",
+            "draven_passive"
+          ],
+          "notes": "S-tier gold gen. Pyke R shares gold + Draven passive cashes. Richest duo."
+        },
+        {
+          "ally": "leona",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "engage_into_axe_burst",
+          "combo": [
+            "leona_e_q",
+            "draven_aa"
+          ],
+          "notes": "Leona level 2 engage + Draven axes = first blood machine."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "hook_into_axe_burst",
+          "combo": [
+            "nautilus_q_passive",
+            "draven_aa"
+          ],
+          "notes": "Hook + root = guaranteed Draven axes. Lane bully duo."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_flay_into_burst",
+          "combo": [
+            "thresh_q_e",
+            "draven_aa"
+          ],
+          "notes": "Hook + Flay keeps enemy in Draven kill range. Lantern saves aggressive Draven."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.2,
+          "reason": "zero_early_pressure",
+          "issue": "Draven MUST snowball. Yuumi is AFK. Worst possible pairing."
+        },
+        {
+          "ally": "sona",
+          "score": 0.3,
+          "reason": "no_lane_presence",
+          "issue": "Sona too passive. Draven can't cash stacks without aggressive support."
+        },
+        {
+          "ally": "janna",
+          "score": 0.35,
+          "reason": "defensive_not_aggressive",
+          "issue": "Janna peels. Draven needs engage."
+        }
+      ]
+    },
+    {
+      "champion_id": "ezreal",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "senna",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "double_safe_poke",
+          "combo": [
+            "ezreal_q",
+            "senna_aa_q"
+          ],
+          "notes": "Both safe. Both poke. Both scale. Low-risk lane."
+        },
+        {
+          "ally": "karma",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "poke_duo",
+          "combo": [
+            "ezreal_q",
+            "karma_r_q"
+          ],
+          "notes": "Double poke. Karma E shields and speeds Ezreal."
+        },
+        {
+          "ally": "bard",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "safe_farm_while_bard_roams",
+          "combo": [
+            "bard_roam",
+            "ezreal_q_farm"
+          ],
+          "notes": "Ezreal safe-farms alone. Bard roams for chimes + map impact."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.7,
+          "type": "SCALING",
+          "reason": "safe_scaling_duo",
+          "combo": [
+            "yuumi_heal",
+            "ezreal_e_safety"
+          ],
+          "notes": "Both safe. Yuumi heals, Ezreal E escapes. Scale together."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "leona",
+          "score": 0.3,
+          "reason": "no_followup_on_engage",
+          "issue": "Leona goes all-in. Ezreal E's away. Leona dies alone."
+        },
+        {
+          "ally": "alistar",
+          "score": 0.3,
+          "reason": "engage_mismatch",
+          "issue": "Alistar W+Q needs burst followup. Ezreal provides poke, not burst."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.35,
+          "reason": "no_followup_burst",
+          "issue": "Nautilus hooks need burst ADC to kill. Ezreal damage is delayed."
+        }
+      ]
+    },
+    {
+      "champion_id": "jhin",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "bard",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "r_stasis_into_jhin_w_r",
+          "combo": [
+            "bard_r",
+            "jhin_w_r"
+          ],
+          "notes": "Bard R freezes. Jhin W root + R snipe on thaw timing. S-tier."
+        },
+        {
+          "ally": "nami",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "e_empower_4th_shot",
+          "combo": [
+            "nami_e",
+            "jhin_4th"
+          ],
+          "notes": "Nami E on Jhin 4th shot = massive poke burst. Bubble into W chain."
+        },
+        {
+          "ally": "morgana",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "q_root_into_w_chain",
+          "combo": [
+            "morgana_q",
+            "jhin_w"
+          ],
+          "notes": "Morgana Q root → Jhin W root = 4+ seconds CC chain."
+        },
+        {
+          "ally": "zyra",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "root_into_w_chain",
+          "combo": [
+            "zyra_e",
+            "jhin_w"
+          ],
+          "notes": "Zyra E root into Jhin W root. Plant damage + 4th shot."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "alistar",
+          "score": 0.35,
+          "reason": "jhin_cant_followup_engage",
+          "issue": "Jhin has reload mechanic. Can't burst fast enough after W+Q engage."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.4,
+          "reason": "jhin_needs_lane_control",
+          "issue": "Jhin wants trap + W control. Yuumi provides no lane pressure."
+        }
+      ]
+    },
+    {
+      "champion_id": "jinx",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.95,
+          "type": "PEEL",
+          "reason": "best_protect_the_carry",
+          "combo": [
+            "lulu_e_w_r",
+            "jinx_rockets"
+          ],
+          "notes": "S-tier. Lulu W speed + E shield + R knockup. Jinx passive resets are unstoppable."
+        },
+        {
+          "ally": "janna",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "shield_ad_plus_peel",
+          "combo": [
+            "janna_e",
+            "jinx_rockets"
+          ],
+          "notes": "Janna E shield + bonus AD on Jinx rockets. R pushes divers away."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "infinite_healing",
+          "combo": [
+            "soraka_w_r",
+            "jinx_rockets"
+          ],
+          "notes": "Soraka keeps Jinx alive. Jinx passive resets after kills."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "lantern_saves_plus_peel",
+          "combo": [
+            "thresh_q_e_w",
+            "jinx_rockets"
+          ],
+          "notes": "Lantern saves Jinx. Flay peels divers. Hook catches for kills."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "pyke",
+          "score": 0.3,
+          "reason": "no_peel",
+          "issue": "Jinx has zero mobility. Pyke dives and leaves Jinx unprotected."
+        },
+        {
+          "ally": "brand",
+          "score": 0.35,
+          "reason": "no_protection",
+          "issue": "Brand deals damage but can't protect immobile Jinx from divers."
+        }
+      ]
+    },
+    {
+      "champion_id": "kai_sa",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "nautilus",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "cc_chain_applies_passive",
+          "combo": [
+            "nautilus_q_r",
+            "kai_sa_passive_r"
+          ],
+          "notes": "Nautilus CC applies Kai'Sa passive stacks. R follows up on marked targets."
+        },
+        {
+          "ally": "leona",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "engage_marks_for_r",
+          "combo": [
+            "leona_e_q",
+            "kai_sa_r"
+          ],
+          "notes": "Leona engage applies passive stacks. Kai'Sa R follows up."
+        },
+        {
+          "ally": "morgana",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "e_shield_on_r_dive",
+          "combo": [
+            "morgana_e",
+            "kai_sa_r"
+          ],
+          "notes": "Morgana E spell-shields Kai'Sa during R dive. Can't be CC'd."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "lantern_plus_hook_engage",
+          "combo": [
+            "thresh_q",
+            "kai_sa_r"
+          ],
+          "notes": "Thresh hooks. Kai'Sa R follows. Lantern for escape if needed."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.35,
+          "reason": "weak_lane_delays_evolve",
+          "issue": "Kai'Sa needs early gold for evolves. Yuumi provides no lane pressure."
+        },
+        {
+          "ally": "sona",
+          "score": 0.4,
+          "reason": "passive_lane",
+          "issue": "Both weak early. Enemy snowballs before evolves complete."
+        }
+      ]
+    },
+    {
+      "champion_id": "kalista",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "braum",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "oathsworn_plus_passive_synergy",
+          "combo": [
+            "kalista_r",
+            "braum_passive"
+          ],
+          "notes": "S-tier. Kalista R launches Braum for knockup. Braum passive stacks from Kalista AAs."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "oathsworn_engage",
+          "combo": [
+            "kalista_r",
+            "thresh_q_e"
+          ],
+          "notes": "Kalista R launches Thresh for engage. Lantern saves Kalista."
+        },
+        {
+          "ally": "leona",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "oathsworn_double_engage",
+          "combo": [
+            "kalista_r",
+            "leona_e_q"
+          ],
+          "notes": "Kalista R launches Leona for triple CC knockup chain."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "oathsworn_hook_combo",
+          "combo": [
+            "kalista_r",
+            "nautilus_q"
+          ],
+          "notes": "Launch Nautilus for engage, or Nautilus hooks then Kalista R for disengage."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.3,
+          "reason": "cant_launch_attached_yuumi",
+          "issue": "Yuumi is attached. Kalista R requires Oathsworn to be targetable."
+        },
+        {
+          "ally": "senna",
+          "score": 0.35,
+          "reason": "senna_too_squishy_for_oathsworn",
+          "issue": "Senna is ranged. Can't be launched effectively. Low synergy."
+        }
+      ]
+    },
+    {
+      "champion_id": "kog_maw",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.95,
+          "type": "PEEL",
+          "reason": "best_duo_in_game",
+          "combo": [
+            "lulu_w_e_r",
+            "kog_maw_w"
+          ],
+          "notes": "S-tier. Lulu W AS + E Pix + R peel. Kog W range = unkillable artillery."
+        },
+        {
+          "ally": "janna",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "ultimate_peel",
+          "combo": [
+            "janna_r_q",
+            "kog_maw_w"
+          ],
+          "notes": "Janna R pushes ALL divers away. Q interrupts dashes. Kog free-fires."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "infinite_healing",
+          "combo": [
+            "soraka_w_r",
+            "kog_maw_w"
+          ],
+          "notes": "Soraka keeps Kog alive through everything. Warmog refills between fights."
+        },
+        {
+          "ally": "milio",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "range_extension_cleanse",
+          "combo": [
+            "milio_e",
+            "kog_maw_w"
+          ],
+          "notes": "E extends Kog range even further. R cleanses CC that would kill him."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "pyke",
+          "score": 0.2,
+          "reason": "zero_peel",
+          "issue": "Pyke dives. Kog dies alone. Worst possible support for Kog."
+        },
+        {
+          "ally": "brand",
+          "score": 0.3,
+          "reason": "no_protection",
+          "issue": "Brand deals damage but Kog gets dove and dies instantly."
+        },
+        {
+          "ally": "bard",
+          "score": 0.3,
+          "reason": "roams_leave_kog_alone",
+          "issue": "Bard roams for chimes. Kog dies 1v2."
+        }
+      ]
+    },
+    {
+      "champion_id": "lucian",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "nami",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "e_empowers_passive_double_shot",
+          "combo": [
+            "nami_e",
+            "lucian_passive"
+          ],
+          "notes": "S-tier. Nami E on Lucian = each double-shot applies bonus damage + slow."
+        },
+        {
+          "ally": "braum",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "passive_stacks_braum_fast",
+          "combo": [
+            "lucian_passive",
+            "braum_passive"
+          ],
+          "notes": "Lucian double-shot = 2 Braum stacks instantly. Fastest stun proc."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_into_passive_burst",
+          "combo": [
+            "thresh_q_e",
+            "lucian_passive"
+          ],
+          "notes": "Every Thresh ability lets Lucian double-shot. Strong lane."
+        },
+        {
+          "ally": "leona",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "engage_into_burst",
+          "combo": [
+            "leona_e_q",
+            "lucian_passive_combo"
+          ],
+          "notes": "Leona locks down. Lucian unloads full combo with passive weaving."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.3,
+          "reason": "lucian_needs_early_pressure",
+          "issue": "Lucian is strongest early. Yuumi provides nothing early. Wasted lane phase."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.4,
+          "reason": "passive_lane_wastes_lucian",
+          "issue": "Lucian wants aggression. Soraka wants to sustain and scale."
+        }
+      ]
+    },
+    {
+      "champion_id": "miss_fortune",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "nautilus",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "r_into_mf_r",
+          "combo": [
+            "nautilus_r",
+            "miss_fortune_r"
+          ],
+          "notes": "S-tier. Point-click R knockup guarantees full MF Bullet Time channel."
+        },
+        {
+          "ally": "leona",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "triple_cc_into_mf_r",
+          "combo": [
+            "leona_e_q_r",
+            "miss_fortune_r"
+          ],
+          "notes": "S-tier. Leona locks team, MF channels. Team fight auto-win."
+        },
+        {
+          "ally": "rell",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "r_pull_groups_for_mf_r",
+          "combo": [
+            "rell_w_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Rell R pulls enemies together for maximum MF R coverage."
+        },
+        {
+          "ally": "alistar",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "w_q_into_mf_r",
+          "combo": [
+            "alistar_w_q",
+            "miss_fortune_r"
+          ],
+          "notes": "W+Q knockup. MF R channels on CC'd enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.35,
+          "reason": "mf_needs_setup",
+          "issue": "MF R needs CC setup. Yuumi provides no CC before level 6."
+        },
+        {
+          "ally": "janna",
+          "score": 0.4,
+          "reason": "disengage_vs_engage",
+          "issue": "MF wants to engage with R. Janna wants to disengage. Mismatch."
+        }
+      ]
+    },
+    {
+      "champion_id": "nilah",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "leona",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "engage_enables_melee_adc",
+          "combo": [
+            "leona_e_q",
+            "nilah_e_r"
+          ],
+          "notes": "Leona locks targets. Nilah dashes in for burst. Passive XP sharing."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "hook_enables_engage",
+          "combo": [
+            "nautilus_q",
+            "nilah_e_r"
+          ],
+          "notes": "Nautilus hook into Nilah dash + R burst. CC chain keeps targets locked."
+        },
+        {
+          "ally": "alistar",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "w_q_into_nilah_r",
+          "combo": [
+            "alistar_w_q",
+            "nilah_r"
+          ],
+          "notes": "Alistar groups enemies with W+Q. Nilah R hits multiple."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "lantern_in_hook_out",
+          "combo": [
+            "thresh_q_w",
+            "nilah_e"
+          ],
+          "notes": "Thresh hook engage. Nilah follows. Lantern for escape."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.3,
+          "reason": "no_engage",
+          "issue": "Nilah needs engage to gap-close. Janna only disengages."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.3,
+          "reason": "no_engage_for_melee",
+          "issue": "Nilah must get in melee range. Soraka can't help her get there."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.3,
+          "reason": "no_engage_no_pressure",
+          "issue": "Nilah needs aggressive support. Yuumi is passive."
+        }
+      ]
+    },
+    {
+      "champion_id": "samira",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "rell",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "r_pull_plus_samira_r",
+          "combo": [
+            "rell_w_r",
+            "samira_r"
+          ],
+          "notes": "S-tier. Rell groups enemies. Samira R shreds all of them."
+        },
+        {
+          "ally": "alistar",
+          "score": 0.95,
+          "type": "SETUP",
+          "reason": "w_q_knockup_enables_passive",
+          "combo": [
+            "alistar_w_q",
+            "samira_passive"
+          ],
+          "notes": "S-tier. W+Q knockup = instant Samira passive dash + style rank."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "passive_root_triggers_samira",
+          "combo": [
+            "nautilus_passive_q",
+            "samira_passive"
+          ],
+          "notes": "Every Nautilus AA roots. Samira passive triggers on every CC."
+        },
+        {
+          "ally": "leona",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "triple_cc_feeds_passive",
+          "combo": [
+            "leona_e_q_r",
+            "samira_passive_r"
+          ],
+          "notes": "Every Leona CC triggers Samira passive. S-rank in seconds."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.25,
+          "reason": "no_engage",
+          "issue": "Samira NEEDS hard CC to proc passive. Janna provides zero engage."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.25,
+          "reason": "no_cc_no_engage",
+          "issue": "Soraka has no CC for Samira passive. Completely useless pairing."
+        },
+        {
+          "ally": "sona",
+          "score": 0.3,
+          "reason": "no_early_cc",
+          "issue": "Sona R only CC. Before 6, Samira can't proc passive."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.25,
+          "reason": "zero_engage",
+          "issue": "Worst possible support for Samira. No CC, no engage."
+        }
+      ]
+    },
+    {
+      "champion_id": "sivir",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "karma",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "double_team_speed",
+          "combo": [
+            "sivir_r",
+            "karma_r_e"
+          ],
+          "notes": "R + R+E = team moves at light speed. Engage or disengage at will."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "hook_into_w_trades",
+          "combo": [
+            "thresh_q",
+            "sivir_w_q"
+          ],
+          "notes": "Thresh hook. Sivir W ricochet + Q boomerang follow-up."
+        },
+        {
+          "ally": "leona",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "engage_into_waveclear",
+          "combo": [
+            "leona_e_q",
+            "sivir_w"
+          ],
+          "notes": "Leona locks target. Sivir W bounces for AoE damage."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.4,
+          "reason": "sivir_wants_lane_control",
+          "issue": "Sivir pushes waves. Yuumi can't help control wave priority."
+        },
+        {
+          "ally": "brand",
+          "score": 0.4,
+          "reason": "no_peel",
+          "issue": "Sivir has short range. Brand can't peel divers."
+        }
+      ]
+    },
+    {
+      "champion_id": "smolder",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "soraka",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "sustain_to_stack",
+          "combo": [
+            "soraka_w",
+            "smolder_q_stacking"
+          ],
+          "notes": "Soraka sustains Smolder through weak early. Both hyperscale."
+        },
+        {
+          "ally": "lulu",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "protect_while_stacking",
+          "combo": [
+            "lulu_w_e_r",
+            "smolder_q"
+          ],
+          "notes": "Lulu protects Smolder through weak early. R peel on dives."
+        },
+        {
+          "ally": "janna",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "disengage_scaling",
+          "combo": [
+            "janna_r_q",
+            "smolder_q_farm"
+          ],
+          "notes": "Janna keeps enemies away. Smolder farms Q stacks safely."
+        },
+        {
+          "ally": "milio",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "cleanse_plus_range",
+          "combo": [
+            "milio_e_r",
+            "smolder_q"
+          ],
+          "notes": "Milio E extends range. R cleanses CC. Safe stacking."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "pyke",
+          "score": 0.3,
+          "reason": "no_peel_weak_early",
+          "issue": "Smolder needs protection early. Pyke dives and leaves."
+        },
+        {
+          "ally": "brand",
+          "score": 0.35,
+          "reason": "no_protection",
+          "issue": "Both squishy. Enemy dives and kills both."
+        }
+      ]
+    },
+    {
+      "champion_id": "tristana",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "leona",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "double_all_in",
+          "combo": [
+            "leona_e_q",
+            "tristana_w_e"
+          ],
+          "notes": "Leona level 2 engage + Tristana W bomb burst = guaranteed kills."
+        },
+        {
+          "ally": "alistar",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "w_q_into_bomb_burst",
+          "combo": [
+            "alistar_w_q",
+            "tristana_e"
+          ],
+          "notes": "Alistar CC chain + Tristana bomb. Target can't escape detonation."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_into_bomb",
+          "combo": [
+            "nautilus_q",
+            "tristana_e"
+          ],
+          "notes": "Hook + root. Tristana places bomb. Target eats full detonation."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "hook_into_bomb_burst",
+          "combo": [
+            "thresh_q_e",
+            "tristana_e_w"
+          ],
+          "notes": "Thresh hook. Tristana W follows for bomb burst."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.35,
+          "reason": "trist_needs_early_kills",
+          "issue": "Tristana wants level 2 all-in. Yuumi provides nothing."
+        },
+        {
+          "ally": "sona",
+          "score": 0.4,
+          "reason": "passive_lane",
+          "issue": "Tristana wants aggression. Sona is too passive early."
+        }
+      ]
+    },
+    {
+      "champion_id": "twitch",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "w_pix_on_twitch_r",
+          "combo": [
+            "lulu_e_w",
+            "twitch_r"
+          ],
+          "notes": "E Pix bolts on Twitch R piercing AAs. W speed for stealth flanks."
+        },
+        {
+          "ally": "yuumi",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "invisible_healer_on_rat",
+          "combo": [
+            "yuumi_attached",
+            "twitch_q"
+          ],
+          "notes": "Yuumi goes invisible when Twitch stealths. Surprise double gank."
+        },
+        {
+          "ally": "janna",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "shield_plus_peel",
+          "combo": [
+            "janna_e",
+            "twitch_r"
+          ],
+          "notes": "Janna E shield + AD bonus on Twitch R. R pushes divers away."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "heal_sustain_scale",
+          "combo": [
+            "soraka_w_r",
+            "twitch_r"
+          ],
+          "notes": "Soraka keeps Twitch alive to reach late-game R team-wipes."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "blitzcrank",
+          "score": 0.4,
+          "reason": "twitch_wants_stealth_not_hooks",
+          "issue": "Twitch plays around stealth flanks. Blitz plays around hooks. Different gameplans."
+        },
+        {
+          "ally": "brand",
+          "score": 0.35,
+          "reason": "no_peel",
+          "issue": "Brand can't protect Twitch. Both squishy."
+        }
+      ]
+    },
+    {
+      "champion_id": "varus",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "leona",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "cc_chain_into_blight_pop",
+          "combo": [
+            "leona_e_q",
+            "varus_blight_pop"
+          ],
+          "notes": "Leona CC locks target. Varus stacks blight + pops with E/Q."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "hook_into_r_chain",
+          "combo": [
+            "thresh_q",
+            "varus_r"
+          ],
+          "notes": "Thresh hook into Varus R root. Extended CC chain."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_lockdown",
+          "combo": [
+            "nautilus_q_r",
+            "varus_r"
+          ],
+          "notes": "Double CC chain. Target never moves."
+        },
+        {
+          "ally": "karma",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "poke_duo",
+          "combo": [
+            "karma_r_q",
+            "varus_q"
+          ],
+          "notes": "Double poke lane. Both have strong early harass."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.35,
+          "reason": "immobile_duo",
+          "issue": "Varus has no mobility. Yuumi can't peel. Both die to ganks."
+        },
+        {
+          "ally": "pyke",
+          "score": 0.4,
+          "reason": "no_peel",
+          "issue": "Varus needs protection. Pyke provides none."
+        }
+      ]
+    },
+    {
+      "champion_id": "vayne",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.95,
+          "type": "PEEL",
+          "reason": "polymorph_peel_plus_speed",
+          "combo": [
+            "lulu_w_r",
+            "vayne_r_tumble"
+          ],
+          "notes": "S-tier. W polymorph divers. R knockup peel. Vayne R tumble kites freely."
+        },
+        {
+          "ally": "janna",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "ultimate_disengage",
+          "combo": [
+            "janna_r_q",
+            "vayne_kite"
+          ],
+          "notes": "Janna pushes everything away. Vayne kites with tumble. Nothing touches her."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "sustain_through_weak_early",
+          "combo": [
+            "soraka_w",
+            "vayne_scale"
+          ],
+          "notes": "Soraka heals Vayne through weak lane. Both dominate late."
+        },
+        {
+          "ally": "zilean",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "r_revive_plus_speed",
+          "combo": [
+            "zilean_r_e",
+            "vayne_r"
+          ],
+          "notes": "E speed for kiting. R revive if caught. Vayne plays fearless."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "pyke",
+          "score": 0.3,
+          "reason": "double_squishy_no_peel",
+          "issue": "Both squishy. Pyke dives. Vayne has no protection."
+        },
+        {
+          "ally": "brand",
+          "score": 0.3,
+          "reason": "zero_protection",
+          "issue": "Brand deals damage. Vayne needs protection. She dies to any dive."
+        },
+        {
+          "ally": "zyra",
+          "score": 0.35,
+          "reason": "no_peel",
+          "issue": "Zyra zones but can't protect Vayne from divers."
+        }
+      ]
+    },
+    {
+      "champion_id": "xayah",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "rakan",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "lover_duo_passive",
+          "combo": [
+            "rakan_e_extended",
+            "xayah_feathers"
+          ],
+          "notes": "S-tier. E range extended to Xayah. Shared recall. THE duo."
+        },
+        {
+          "ally": "leona",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "cc_into_feather_root",
+          "combo": [
+            "leona_e_q",
+            "xayah_e_feathers"
+          ],
+          "notes": "Leona CC locks target. Xayah places feathers behind + E root."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "hook_into_feather_setup",
+          "combo": [
+            "nautilus_q",
+            "xayah_feathers_e"
+          ],
+          "notes": "Hook + root keeps target in feather recall path."
+        },
+        {
+          "ally": "thresh",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "hook_flay_into_feathers",
+          "combo": [
+            "thresh_q_e",
+            "xayah_e"
+          ],
+          "notes": "Thresh CC sets up feather positioning for root."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.4,
+          "reason": "xayah_needs_lane_pressure",
+          "issue": "Xayah wants to set feathers in lane trades. Yuumi can't help."
+        },
+        {
+          "ally": "sona",
+          "score": 0.4,
+          "reason": "passive_lane",
+          "issue": "Xayah wants trades. Sona is too passive."
+        }
+      ]
+    },
+    {
+      "champion_id": "zeri",
+      "role": "duo",
+      "best_with": [
+        {
+          "ally": "lulu",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "w_speed_plus_peel",
+          "combo": [
+            "lulu_w_e",
+            "zeri_r"
+          ],
+          "notes": "Lulu W speed on Zeri R = fastest champion in game. E shield + R peel."
+        },
+        {
+          "ally": "janna",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "shield_speed_peel",
+          "combo": [
+            "janna_e_w",
+            "zeri_r"
+          ],
+          "notes": "Janna shield + Zeri R speed. R pushes divers. Zeri kites forever."
+        },
+        {
+          "ally": "karma",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "r_e_speed_plus_poke",
+          "combo": [
+            "karma_r_e",
+            "zeri_q_poke"
+          ],
+          "notes": "Karma R+E team speed enables Zeri's mobility. Q poke in lane."
+        },
+        {
+          "ally": "soraka",
+          "score": 0.75,
+          "type": "SCALING",
+          "reason": "sustain_to_scale",
+          "combo": [
+            "soraka_w",
+            "zeri_trinity"
+          ],
+          "notes": "Soraka sustains Zeri through early. Both scale well."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "blitzcrank",
+          "score": 0.4,
+          "reason": "zeri_wants_kite_not_engage",
+          "issue": "Zeri plays around mobility and kiting, not hook engage."
+        },
+        {
+          "ally": "pyke",
+          "score": 0.35,
+          "reason": "no_peel",
+          "issue": "Zeri needs peel. Pyke dives and leaves."
+        }
+      ]
+    }
+  ]
+}

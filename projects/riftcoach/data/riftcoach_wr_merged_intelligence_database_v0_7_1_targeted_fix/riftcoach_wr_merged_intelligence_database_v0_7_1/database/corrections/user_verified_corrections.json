@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "version": "0.6.0-chunk2",
+    "created_at": "2026-05-19T20:54:50Z",
+    "purpose": "Protected manual/user corrections that cannot be overwritten by generated scaffolds or lower-priority sources.",
+    "patch_version": "7.1e"
+  },
+  "corrections": [
+    {
+      "correction_id": "karma_passive_must_be_mantra",
+      "entity_id": "karma.passive",
+      "field": "name",
+      "wrong_or_blocked_values": [
+        "Pending Passive",
+        "Gathering Fire",
+        "Mantra as ultimate-only mapping"
+      ],
+      "correct_value": "Mantra",
+      "source_status": "user_corrected_pending_allowed_source_revalidation",
+      "source_urls_for_revalidation": [
+        "https://wiki.leagueoflegends.com/en-us/WR:Karma"
+      ],
+      "severity": "blocker",
+      "protection": "do_not_overwrite_without_higher_priority_wr_source",
+      "reason": "User provided Wild Rift Karma ability detail sample showing Mantra as innate passive."
+    },
+    {
+      "correction_id": "karma_basic_ability_names_must_match_wr_sample",
+      "entity_id": "karma",
+      "field": "abilities",
+      "correct_value": {
+        "passive": "Mantra",
+        "q": "Inner Flame",
+        "w": "Focused Resolve",
+        "e": "Inspire",
+        "r": "Transcendent Embrace"
+      },
+      "source_status": "user_corrected_pending_allowed_source_revalidation",
+      "source_urls_for_revalidation": [
+        "https://wiki.leagueoflegends.com/en-us/WR:Karma"
+      ],
+      "severity": "blocker",
+      "protection": "do_not_overwrite_without_higher_priority_wr_source"
+    }
+  ]
+}

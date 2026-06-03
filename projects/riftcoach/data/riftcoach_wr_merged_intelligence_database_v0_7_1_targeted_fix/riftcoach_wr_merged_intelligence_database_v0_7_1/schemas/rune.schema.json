@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/rune.schema.json",
+  "title": "Rune",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "game",
+    "not_lol_pc",
+    "patch_version",
+    "rune_type",
+    "cooldowns",
+    "source_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "game": {
+      "const": "wild_rift"
+    },
+    "not_lol_pc": {
+      "const": true
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "rune_type": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "slot": {},
+    "brief_description": {
+      "type": "string"
+    },
+    "full_description": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "object"
+    },
+    "cooldowns": {
+      "type": "object"
+    },
+    "active_effects": {
+      "type": "array"
+    },
+    "passive_effects": {
+      "type": "array"
+    },
+    "damage_types": {
+      "type": "array"
+    },
+    "defense_types": {
+      "type": "array"
+    },
+    "effect_tags": {
+      "type": "array"
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "source_verified",
+        "source_inferred",
+        "generated_rule",
+        "generated_archetype",
+        "hybrid",
+        "source_conflict",
+        "user_corrected_pending_revalidation",
+        "pending_allowed_source_refresh",
+        "source_verified_not_applicable",
+        "not_applicable"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

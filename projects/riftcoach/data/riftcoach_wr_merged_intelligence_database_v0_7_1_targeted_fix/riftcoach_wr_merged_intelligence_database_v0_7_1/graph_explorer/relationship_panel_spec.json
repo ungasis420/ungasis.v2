@@ -1,0 +1,43 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "component": "RelationshipPanel",
+  "purpose": "Compact relationship view on every entity page.",
+  "sections": [
+    {
+      "id": "direct_links",
+      "label": "Direct Links",
+      "description": "Immediate links grouped by type."
+    },
+    {
+      "id": "top_synergies",
+      "label": "Top Synergies",
+      "description": "Strong positive interactions."
+    },
+    {
+      "id": "counterplay",
+      "label": "Counters / Deny",
+      "description": "Threats answered by this asset or threats that answer it."
+    },
+    {
+      "id": "build_usage",
+      "label": "Used In Builds",
+      "description": "Meta/source or generated archetype builds that use this asset."
+    },
+    {
+      "id": "backlinks",
+      "label": "Backlinks",
+      "description": "Other assets that point to this asset."
+    },
+    {
+      "id": "source_claims",
+      "label": "Source Claims",
+      "description": "Claims supporting important values."
+    }
+  ],
+  "display_rules": {
+    "max_rows_per_section": 8,
+    "show_view_all_link": true,
+    "show_confidence_badge": true,
+    "show_source_status_badge": true
+  }
+}

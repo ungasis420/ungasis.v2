@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RiftCoach Ability Extraction Audit Record",
+  "type": "object",
+  "required": [
+    "champion_id",
+    "expected_slots",
+    "actual_slots",
+    "slots_complete",
+    "ability_names"
+  ],
+  "properties": {
+    "champion_id": {
+      "type": "string"
+    },
+    "expected_slots": {
+      "type": "array"
+    },
+    "actual_slots": {
+      "type": "array"
+    },
+    "slots_complete": {
+      "type": "boolean"
+    },
+    "ability_names": {
+      "type": "object"
+    },
+    "pc_source_detected": {
+      "type": "boolean"
+    }
+  }
+}

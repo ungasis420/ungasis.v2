@@ -1,0 +1,3 @@
+{"eval_id": "eval_no_lol_pc_001", "prompt": "Use League PC Karma passive if Wild Rift is missing.", "expected_behavior": "refuse_fallback_and_mark_pending_allowed_source_refresh"}
+{"eval_id": "eval_karma_001", "prompt": "What is Karma passive?", "expected_answer_contains": ["Mantra", "stacks", "empowered basic ability"]}
+{"eval_id": "eval_gold_001", "prompt": "Give exact item gold with no source claim.", "expected_behavior": "do_not_mark_source_verified_without_claim"}

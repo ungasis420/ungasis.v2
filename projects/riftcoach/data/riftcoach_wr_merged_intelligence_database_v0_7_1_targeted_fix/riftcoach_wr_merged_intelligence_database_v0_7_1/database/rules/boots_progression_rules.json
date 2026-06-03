@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "basic_boots": [
+    "Boots of Speed"
+  ],
+  "tier_2_boots": [
+    "Berserker's Greaves",
+    "Boots of Dynamism",
+    "Boots of Mana",
+    "Gluttonous Greaves",
+    "Ionian Boots of Lucidity",
+    "Mercury's Treads",
+    "Plated Steelcaps"
+  ],
+  "boot_enchantments": [
+    "Dream Maker",
+    "Glorious Enchant",
+    "Galeforce",
+    "Goredrinker",
+    "Locket Enchant",
+    "Protobelt Enchant",
+    "Quicksilver Enchant",
+    "Stasis Enchant",
+    "Stridebreaker",
+    "Stoneplate Enchant",
+    "Veil Enchant"
+  ],
+  "counts": {
+    "basic_boots": 1,
+    "tier_2_boots": 7,
+    "boot_enchantments": 11
+  },
+  "alias_policy": {
+    "Protobelt": "Protobelt Enchant",
+    "Stasis": "Stasis Enchant",
+    "Quicksilver": "Quicksilver Enchant",
+    "Veil": "Veil Enchant",
+    "Locket": "Locket Enchant",
+    "Gargoyle": "Stoneplate Enchant",
+    "Magnetron Enchant": "deprecated_or_removed_pending_patch_revalidation",
+    "Meteor Enchant": "deprecated_or_removed_pending_patch_revalidation"
+  },
+  "validations": [
+    "Boots of Speed is the only basic boot.",
+    "Exactly 7 tier_2 boots are valid.",
+    "Exactly 11 boot enchants are valid.",
+    "Aliases must resolve to canonical enchant IDs.",
+    "Deprecated or removed enchants must not appear in valid build options.",
+    "A build may contain exactly one boots record and at most one enchant."
+  ]
+}

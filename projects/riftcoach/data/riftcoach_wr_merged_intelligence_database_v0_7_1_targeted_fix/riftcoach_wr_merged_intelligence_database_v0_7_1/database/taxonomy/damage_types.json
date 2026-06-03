@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "damage_types": [
+    "physical",
+    "magic",
+    "true",
+    "mixed",
+    "adaptive",
+    "none"
+  ],
+  "damage_modifiers": [
+    "percent_health",
+    "missing_health",
+    "max_health",
+    "execute",
+    "damage_over_time",
+    "burst",
+    "sustained_damage",
+    "on_hit",
+    "area_damage",
+    "single_target",
+    "skillshot",
+    "empowered_basic_attack"
+  ]
+}

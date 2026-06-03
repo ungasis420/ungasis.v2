@@ -1,0 +1,6413 @@
+{
+  "meta": {
+    "type": "champion_corrections",
+    "patch": "7.1d",
+    "schema_version": "9-layer-v1",
+    "generated": "2026-05-13",
+    "description": "Patch file to align champion DB with official WR 137 roster",
+    "actions": {
+      "add": [
+        "maokai",
+        "milio",
+        "nilah",
+        "nocturne",
+        "shen",
+        "smolder",
+        "vel_koz",
+        "zeri",
+        "zoe"
+      ],
+      "remove": [
+        "hwei",
+        "tahm_kench",
+        "sejuani"
+      ],
+      "keep_confirmed": [
+        "mordekaiser"
+      ]
+    },
+    "result": "After applying: 131 - 3 + 9 = 137 champions (100% coverage)",
+    "v0_7_runtime_note": "Includes champions and champions_to_add for reasoning-enricher compatibility; Karma lock protected."
+  },
+  "champions_to_add": [
+    {
+      "id": "maokai",
+      "name": "Maokai",
+      "category": "champion",
+      "subcategory": "tank",
+      "title": "The Twisted Treant",
+      "classes": [
+        "tank"
+      ],
+      "roles": [
+        "support",
+        "jungle"
+      ],
+      "resource": "mana",
+      "range_type": "melee",
+      "difficulty": "medium",
+      "tags": [
+        "tank",
+        "support",
+        "jungle",
+        "melee",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Sap Magic: periodically heal on AA based on max HP",
+          "full": "Sap Magic: periodically heal on AA based on max HP",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Nature's Grasp: send massive wave of brambles that root enemies hit",
+          "full": "Nature's Grasp: send massive wave of brambles that root enemies hit",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Maokai, The Twisted Treant. tank playing support/jungle. Tier: A.",
+      "full": "Maokai, The Twisted Treant, is a tank champion in Wild Rift. Plays support/jungle. mana resource. melee. Difficulty: medium. Tier: A. Sap Magic: periodically heal on AA based on max HP Nature's Grasp: send massive wave of brambles that root enemies hit",
+      "embedding_text": "Maokai, The Twisted Treant, is a tank champion in Wild Rift. Plays support/jungle. mana resource. melee. Difficulty: medium. Tier: A. Sap Magic: periodically heal on AA based on max HP Nature's Grasp: send massive wave of brambles that root enemies hit",
+      "power_spikes": [
+        "level_5_ult",
+        "sunfire_aegis",
+        "amaranths_twinguard"
+      ],
+      "best_with": [
+        "jinx"
+      ],
+      "countered_by": [
+        "brand"
+      ],
+      "strong_against": [
+        "nami"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:maokai",
+        "properties": {
+          "classes": [
+            "tank"
+          ],
+          "roles": [
+            "support",
+            "jungle"
+          ],
+          "resource": "mana",
+          "range_type": "melee",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:ice_overlord",
+          "weight": 0.9,
+          "context": "Primary keystone for Maokai",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:sunfire_aegis",
+          "weight": 0.9,
+          "context": "Core first item for Maokai",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:amaranths_twinguard",
+          "weight": 0.85,
+          "context": "Core second item for Maokai",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:nami",
+          "weight": 0.75,
+          "context": "Maokai strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:brand",
+          "weight": 0.8,
+          "context": "Maokai struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:jinx",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.3,
+          0.4,
+          0.3,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.7,
+          0.7,
+          0.4
+        ],
+        "neighbor_ids": [
+          "rune:ice_overlord",
+          "item:sunfire_aegis",
+          "item:amaranths_twinguard",
+          "spell:flash",
+          "champ:nami",
+          "champ:brand",
+          "champ:jinx"
+        ],
+        "node_label": "champion_tank",
+        "edge_weights": {
+          "rune:ice_overlord": 0.9,
+          "item:sunfire_aegis": 0.9,
+          "item:amaranths_twinguard": 0.85,
+          "spell:flash": 0.9,
+          "champ:nami": 0.75,
+          "champ:brand": 0.8,
+          "champ:jinx": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.3,
+          "sustained": 0.4,
+          "poke": 0.3
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.7
+        },
+        "complexity": 0.4,
+        "role_fit": {
+          "baron": 0.2,
+          "jungle": 0.5,
+          "mid": 0.0,
+          "duo": 0.0,
+          "support": 0.8
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Maokai unlocks ultimate. Nature's Grasp: send massive wave of brambles that root enemies hit"
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (sunfire_aegis) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Maokai strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Maokai solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Maokai scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "E_sapling",
+              "Q_knockback",
+              "W_root"
+            ],
+            "name": "Sapling Zone",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_bramble_wave",
+              "W",
+              "Q",
+              "E"
+            ],
+            "name": "R Engage",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_cc_tank_support",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_ice_overlord_sunfire_aegis",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:brand",
+            "then_avoid": "champ:maokai",
+            "reason": "Maokai struggles against brand"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:maokai",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "milio",
+      "name": "Milio",
+      "category": "champion",
+      "subcategory": "enchanter",
+      "title": "The Gentle Flame",
+      "classes": [
+        "enchanter",
+        "support"
+      ],
+      "roles": [
+        "support"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "easy",
+      "tags": [
+        "enchanter",
+        "support",
+        "support",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Fired Up!: allies enchanted by Milio deal bonus damage + burn",
+          "full": "Fired Up!: allies enchanted by Milio deal bonus damage + burn",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+          "full": "Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Milio, The Gentle Flame. enchanter/support playing support. Tier: S.",
+      "full": "Milio, The Gentle Flame, is a enchanter/support champion in Wild Rift. Plays support. mana resource. ranged. Difficulty: easy. Tier: S. Fired Up!: allies enchanted by Milio deal bonus damage + burn Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+      "embedding_text": "Milio, The Gentle Flame, is a enchanter/support champion in Wild Rift. Plays support. mana resource. ranged. Difficulty: easy. Tier: S. Fired Up!: allies enchanted by Milio deal bonus damage + burn Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+      "power_spikes": [
+        "level_5_ult",
+        "ardent_censer",
+        "staff_of_flowing_waters"
+      ],
+      "best_with": [
+        "jinx"
+      ],
+      "countered_by": [
+        "leona"
+      ],
+      "strong_against": [
+        "nami"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:milio",
+        "properties": {
+          "classes": [
+            "enchanter",
+            "support"
+          ],
+          "roles": [
+            "support"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "easy",
+          "tier": "S",
+          "win_rate": 0.53,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:aery",
+          "weight": 0.9,
+          "context": "Primary keystone for Milio",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ardent_censer",
+          "weight": 0.9,
+          "context": "Core first item for Milio",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:staff_of_flowing_waters",
+          "weight": 0.85,
+          "context": "Core second item for Milio",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:nami",
+          "weight": 0.75,
+          "context": "Milio strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:leona",
+          "weight": 0.8,
+          "context": "Milio struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:jinx",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.53,
+          0.09,
+          0.04,
+          0.1,
+          0.2,
+          0.4,
+          0.5,
+          0.3,
+          0.5,
+          0.6,
+          0.8,
+          0.8,
+          0.3
+        ],
+        "neighbor_ids": [
+          "rune:aery",
+          "item:ardent_censer",
+          "item:staff_of_flowing_waters",
+          "spell:flash",
+          "champ:nami",
+          "champ:leona",
+          "champ:jinx"
+        ],
+        "node_label": "champion_enchanter",
+        "edge_weights": {
+          "rune:aery": 0.9,
+          "item:ardent_censer": 0.9,
+          "item:staff_of_flowing_waters": 0.85,
+          "spell:flash": 0.9,
+          "champ:nami": 0.75,
+          "champ:leona": 0.8,
+          "champ:jinx": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.53,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "S",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.52,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.53,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.53,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.1,
+          "sustained": 0.2,
+          "poke": 0.4
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.6,
+          "mid": 0.8,
+          "late": 0.8
+        },
+        "complexity": 0.3,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.0,
+          "duo": 0.0,
+          "support": 0.95
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Milio unlocks ultimate. Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (ardent_censer) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "trade",
+            "action": "Trade aggressively. Milio strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Milio peaks mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Milio scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "E_shield",
+              "Q_fireball",
+              "W_range_buff"
+            ],
+            "name": "Shield Poke",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_cleanse_heal"
+            ],
+            "name": "R Cleanse",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_protective_enchanter",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_aery_ardent_censer",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:leona",
+            "then_avoid": "champ:milio",
+            "reason": "Milio struggles against leona"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:milio",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.52
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.53
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.53
+          }
+        ]
+      }
+    },
+    {
+      "id": "nilah",
+      "name": "Nilah",
+      "category": "champion",
+      "subcategory": "fighter",
+      "title": "The Joy Unbound",
+      "classes": [
+        "fighter",
+        "marksman"
+      ],
+      "roles": [
+        "duo"
+      ],
+      "resource": "mana",
+      "range_type": "melee",
+      "difficulty": "hard",
+      "tags": [
+        "fighter",
+        "marksman",
+        "duo",
+        "melee",
+        "physical"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Joy Unending: bonus XP from nearby minion deaths shared with support",
+          "full": "Joy Unending: bonus XP from nearby minion deaths shared with support",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Apotheosis: AoE burst + heal based on damage dealt",
+          "full": "Apotheosis: AoE burst + heal based on damage dealt",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Nilah, The Joy Unbound. fighter/marksman playing duo. Tier: A.",
+      "full": "Nilah, The Joy Unbound, is a fighter/marksman champion in Wild Rift. Plays duo. mana resource. melee. Difficulty: hard. Tier: A. Joy Unending: bonus XP from nearby minion deaths shared with support Apotheosis: AoE burst + heal based on damage dealt",
+      "embedding_text": "Nilah, The Joy Unbound, is a fighter/marksman champion in Wild Rift. Plays duo. mana resource. melee. Difficulty: hard. Tier: A. Joy Unending: bonus XP from nearby minion deaths shared with support Apotheosis: AoE burst + heal based on damage dealt",
+      "power_spikes": [
+        "level_5_ult",
+        "bloodthirster",
+        "infinity_edge"
+      ],
+      "best_with": [
+        "leona"
+      ],
+      "countered_by": [
+        "lucian"
+      ],
+      "strong_against": [
+        "vayne"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:nilah",
+        "properties": {
+          "classes": [
+            "fighter",
+            "marksman"
+          ],
+          "roles": [
+            "duo"
+          ],
+          "resource": "mana",
+          "range_type": "melee",
+          "difficulty": "hard",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:conqueror",
+          "weight": 0.9,
+          "context": "Primary keystone for Nilah",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:bloodthirster",
+          "weight": 0.9,
+          "context": "Core first item for Nilah",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:infinity_edge",
+          "weight": 0.85,
+          "context": "Core second item for Nilah",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:vayne",
+          "weight": 0.75,
+          "context": "Nilah strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:lucian",
+          "weight": 0.8,
+          "context": "Nilah struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:leona",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.6,
+          0.8,
+          0.1,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.7,
+          0.9,
+          0.7
+        ],
+        "neighbor_ids": [
+          "rune:conqueror",
+          "item:bloodthirster",
+          "item:infinity_edge",
+          "spell:flash",
+          "champ:vayne",
+          "champ:lucian",
+          "champ:leona"
+        ],
+        "node_label": "champion_fighter",
+        "edge_weights": {
+          "rune:conqueror": 0.9,
+          "item:bloodthirster": 0.9,
+          "item:infinity_edge": 0.85,
+          "spell:flash": 0.9,
+          "champ:vayne": 0.75,
+          "champ:lucian": 0.8,
+          "champ:leona": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "physical",
+        "damage_profile": {
+          "burst": 0.6,
+          "sustained": 0.8,
+          "poke": 0.1
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.9
+        },
+        "complexity": 0.7,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.0,
+          "duo": 0.95,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Nilah unlocks ultimate. Apotheosis: AoE burst + heal based on damage dealt"
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (bloodthirster) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Nilah strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Nilah solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Nilah scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "W_dodge_zone",
+              "Q_slash",
+              "AA",
+              "AA"
+            ],
+            "name": "W Dodge + Trade",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_aoe_burst",
+              "Q",
+              "W",
+              "AA"
+            ],
+            "name": "R AoE",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_melee_adc_with_engage_support",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_conqueror_bloodthirster",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:lucian",
+            "then_avoid": "champ:nilah",
+            "reason": "Nilah struggles against lucian"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:nilah",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "nocturne",
+      "name": "Nocturne",
+      "category": "champion",
+      "subcategory": "assassin",
+      "title": "The Eternal Nightmare",
+      "classes": [
+        "assassin"
+      ],
+      "roles": [
+        "jungle"
+      ],
+      "resource": "mana",
+      "range_type": "melee",
+      "difficulty": "medium",
+      "tags": [
+        "assassin",
+        "jungle",
+        "melee",
+        "physical"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Umbra Blades: every few AAs deal AoE damage + heal",
+          "full": "Umbra Blades: every few AAs deal AoE damage + heal",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+          "full": "Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Nocturne, The Eternal Nightmare. assassin playing jungle. Tier: A.",
+      "full": "Nocturne, The Eternal Nightmare, is a assassin champion in Wild Rift. Plays jungle. mana resource. melee. Difficulty: medium. Tier: A. Umbra Blades: every few AAs deal AoE damage + heal Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+      "embedding_text": "Nocturne, The Eternal Nightmare, is a assassin champion in Wild Rift. Plays jungle. mana resource. melee. Difficulty: medium. Tier: A. Umbra Blades: every few AAs deal AoE damage + heal Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+      "power_spikes": [
+        "level_5_ult",
+        "experimental_hexplate",
+        "eclipse"
+      ],
+      "best_with": [
+        "orianna"
+      ],
+      "countered_by": [
+        "rammus"
+      ],
+      "strong_against": [
+        "evelynn"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:nocturne",
+        "properties": {
+          "classes": [
+            "assassin"
+          ],
+          "roles": [
+            "jungle"
+          ],
+          "resource": "mana",
+          "range_type": "melee",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:lethal_tempo",
+          "weight": 0.9,
+          "context": "Primary keystone for Nocturne",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:experimental_hexplate",
+          "weight": 0.9,
+          "context": "Core first item for Nocturne",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:eclipse",
+          "weight": 0.85,
+          "context": "Core second item for Nocturne",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:evelynn",
+          "weight": 0.75,
+          "context": "Nocturne strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:rammus",
+          "weight": 0.8,
+          "context": "Nocturne struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:orianna",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.8,
+          0.5,
+          0.1,
+          0.5,
+          0.3,
+          0.5,
+          0.6,
+          0.9,
+          0.5,
+          0.4
+        ],
+        "neighbor_ids": [
+          "rune:lethal_tempo",
+          "item:experimental_hexplate",
+          "item:eclipse",
+          "spell:flash",
+          "champ:evelynn",
+          "champ:rammus",
+          "champ:orianna"
+        ],
+        "node_label": "champion_assassin",
+        "edge_weights": {
+          "rune:lethal_tempo": 0.9,
+          "item:experimental_hexplate": 0.9,
+          "item:eclipse": 0.85,
+          "spell:flash": 0.9,
+          "champ:evelynn": 0.75,
+          "champ:rammus": 0.8,
+          "champ:orianna": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "physical",
+        "damage_profile": {
+          "burst": 0.8,
+          "sustained": 0.5,
+          "poke": 0.1
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.6,
+          "mid": 0.9,
+          "late": 0.5
+        },
+        "complexity": 0.4,
+        "role_fit": {
+          "baron": 0.1,
+          "jungle": 0.95,
+          "mid": 0.1,
+          "duo": 0.0,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Nocturne unlocks ultimate. Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (experimental_hexplate) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "trade",
+            "action": "Trade aggressively. Nocturne strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Nocturne peaks mid."
+          },
+          "late": {
+            "priority": "split",
+            "action": "Split-push. Nocturne falls off late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_trail",
+              "AA",
+              "E_fear",
+              "AA",
+              "W_shield"
+            ],
+            "name": "Fear Trade",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_darkness",
+              "R_dash",
+              "Q",
+              "E",
+              "AA"
+            ],
+            "name": "R Dive",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_backline_diving_assassin_jungle",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_lethal_tempo_experimental_hexplate",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:rammus",
+            "then_avoid": "champ:nocturne",
+            "reason": "Nocturne struggles against rammus"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:nocturne",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "shen",
+      "name": "Shen",
+      "category": "champion",
+      "subcategory": "tank",
+      "title": "The Eye of Twilight",
+      "classes": [
+        "tank"
+      ],
+      "roles": [
+        "baron",
+        "support"
+      ],
+      "resource": "energy",
+      "range_type": "melee",
+      "difficulty": "medium",
+      "tags": [
+        "tank",
+        "baron",
+        "support",
+        "melee",
+        "mixed"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage.",
+          "full": "Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage.",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Stand United: global shield on ally + teleport to them. THE global tank ult.",
+          "full": "Stand United: global shield on ally + teleport to them. THE global tank ult.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Shen, The Eye of Twilight. tank playing baron/support. Tier: A.",
+      "full": "Shen, The Eye of Twilight, is a tank champion in Wild Rift. Plays baron/support. energy resource. melee. Difficulty: medium. Tier: A. Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage. Stand United: global shield on ally + teleport to them. THE global tank ult.",
+      "embedding_text": "Shen, The Eye of Twilight, is a tank champion in Wild Rift. Plays baron/support. energy resource. melee. Difficulty: medium. Tier: A. Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage. Stand United: global shield on ally + teleport to them. THE global tank ult.",
+      "power_spikes": [
+        "level_5_ult",
+        "sunfire_aegis",
+        "amaranths_twinguard"
+      ],
+      "best_with": [
+        "jinx"
+      ],
+      "countered_by": [
+        "fiora"
+      ],
+      "strong_against": [
+        "garen"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:shen",
+        "properties": {
+          "classes": [
+            "tank"
+          ],
+          "roles": [
+            "baron",
+            "support"
+          ],
+          "resource": "energy",
+          "range_type": "melee",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:grasp_of_the_undying",
+          "weight": 0.9,
+          "context": "Primary keystone for Shen",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:sunfire_aegis",
+          "weight": 0.9,
+          "context": "Core first item for Shen",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:amaranths_twinguard",
+          "weight": 0.85,
+          "context": "Core second item for Shen",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:garen",
+          "weight": 0.75,
+          "context": "Shen strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:fiora",
+          "weight": 0.8,
+          "context": "Shen struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:jinx",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.3,
+          0.5,
+          0.1,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.7,
+          0.7,
+          0.6
+        ],
+        "neighbor_ids": [
+          "rune:grasp_of_the_undying",
+          "item:sunfire_aegis",
+          "item:amaranths_twinguard",
+          "spell:flash",
+          "champ:garen",
+          "champ:fiora",
+          "champ:jinx"
+        ],
+        "node_label": "champion_tank",
+        "edge_weights": {
+          "rune:grasp_of_the_undying": 0.9,
+          "item:sunfire_aegis": 0.9,
+          "item:amaranths_twinguard": 0.85,
+          "spell:flash": 0.9,
+          "champ:garen": 0.75,
+          "champ:fiora": 0.8,
+          "champ:jinx": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "mixed",
+        "damage_profile": {
+          "burst": 0.3,
+          "sustained": 0.5,
+          "poke": 0.1
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.7
+        },
+        "complexity": 0.6,
+        "role_fit": {
+          "baron": 0.8,
+          "jungle": 0.0,
+          "mid": 0.0,
+          "duo": 0.0,
+          "support": 0.4
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Shen unlocks ultimate. Stand United: global shield on ally + teleport to them. THE global tank ult."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (sunfire_aegis) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Shen strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Shen solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Shen scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_spirit_blade",
+              "AA",
+              "AA",
+              "AA",
+              "W_dodge_zone"
+            ],
+            "name": "Spirit Blade Trade",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_stand_united",
+              "E_taunt"
+            ],
+            "name": "R Global Shield",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_global_tank_with_split_push",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_grasp_of_the_undying_sunfire_aegis",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:fiora",
+            "then_avoid": "champ:shen",
+            "reason": "Shen struggles against fiora"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:shen",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "smolder",
+      "name": "Smolder",
+      "category": "champion",
+      "subcategory": "marksman",
+      "title": "The Fiery Fledgling",
+      "classes": [
+        "marksman"
+      ],
+      "roles": [
+        "duo",
+        "mid"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "easy",
+      "tags": [
+        "marksman",
+        "duo",
+        "mid",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects.",
+          "full": "Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects.",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+          "full": "MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Smolder, The Fiery Fledgling. marksman playing duo/mid. Tier: S+.",
+      "full": "Smolder, The Fiery Fledgling, is a marksman champion in Wild Rift. Plays duo/mid. mana resource. ranged. Difficulty: easy. Tier: S+. Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects. MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+      "embedding_text": "Smolder, The Fiery Fledgling, is a marksman champion in Wild Rift. Plays duo/mid. mana resource. ranged. Difficulty: easy. Tier: S+. Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects. MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+      "power_spikes": [
+        "level_5_ult",
+        "ludens_echo",
+        "infinity_edge"
+      ],
+      "best_with": [
+        "lulu"
+      ],
+      "countered_by": [
+        "draven"
+      ],
+      "strong_against": [
+        "jhin"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:smolder",
+        "properties": {
+          "classes": [
+            "marksman"
+          ],
+          "roles": [
+            "duo",
+            "mid"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "easy",
+          "tier": "S+",
+          "win_rate": 0.54,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:fleet_footwork",
+          "weight": 0.9,
+          "context": "Primary keystone for Smolder",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ludens_echo",
+          "weight": 0.9,
+          "context": "Core first item for Smolder",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:infinity_edge",
+          "weight": 0.85,
+          "context": "Core second item for Smolder",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:jhin",
+          "weight": 0.75,
+          "context": "Smolder strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:draven",
+          "weight": 0.8,
+          "context": "Smolder struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:lulu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.54,
+          0.09,
+          0.04,
+          0.5,
+          0.7,
+          0.7,
+          0.5,
+          0.3,
+          0.5,
+          0.4,
+          0.7,
+          1.0,
+          0.3
+        ],
+        "neighbor_ids": [
+          "rune:fleet_footwork",
+          "item:ludens_echo",
+          "item:infinity_edge",
+          "spell:flash",
+          "champ:jhin",
+          "champ:draven",
+          "champ:lulu"
+        ],
+        "node_label": "champion_marksman",
+        "edge_weights": {
+          "rune:fleet_footwork": 0.9,
+          "item:ludens_echo": 0.9,
+          "item:infinity_edge": 0.85,
+          "spell:flash": 0.9,
+          "champ:jhin": 0.75,
+          "champ:draven": 0.8,
+          "champ:lulu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.54,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "S+",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.53,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.54,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.54,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.5,
+          "sustained": 0.7,
+          "poke": 0.7
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.7,
+          "late": 1.0
+        },
+        "complexity": 0.3,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.3,
+          "duo": 0.95,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Smolder unlocks ultimate. MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (ludens_echo) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Smolder weak early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Smolder solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Smolder scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_fireball",
+              "AA",
+              "Q"
+            ],
+            "name": "Q Poke",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_fire_breath",
+              "Q",
+              "W",
+              "AA"
+            ],
+            "name": "R Execute",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_infinite_scaling_adc",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_fleet_footwork_ludens_echo",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:draven",
+            "then_avoid": "champ:smolder",
+            "reason": "Smolder struggles against draven"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:smolder",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.53
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.54
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.54
+          }
+        ]
+      }
+    },
+    {
+      "id": "vel_koz",
+      "name": "Vel'Koz",
+      "category": "champion",
+      "subcategory": "mage",
+      "title": "The Eye of the Void",
+      "classes": [
+        "mage"
+      ],
+      "roles": [
+        "mid",
+        "support"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "medium",
+      "tags": [
+        "mage",
+        "mid",
+        "support",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Organic Deconstruction: 3 ability hits = bonus true damage proc",
+          "full": "Organic Deconstruction: 3 ability hits = bonus true damage proc",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+          "full": "Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Vel'Koz, The Eye of the Void. mage playing mid/support. Tier: A.",
+      "full": "Vel'Koz, The Eye of the Void, is a mage champion in Wild Rift. Plays mid/support. mana resource. ranged. Difficulty: medium. Tier: A. Organic Deconstruction: 3 ability hits = bonus true damage proc Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+      "embedding_text": "Vel'Koz, The Eye of the Void, is a mage champion in Wild Rift. Plays mid/support. mana resource. ranged. Difficulty: medium. Tier: A. Organic Deconstruction: 3 ability hits = bonus true damage proc Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+      "power_spikes": [
+        "level_5_ult",
+        "ludens_echo",
+        "rabadons_deathcap"
+      ],
+      "best_with": [
+        "amumu"
+      ],
+      "countered_by": [
+        "fizz"
+      ],
+      "strong_against": [
+        "veigar"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:vel_koz",
+        "properties": {
+          "classes": [
+            "mage"
+          ],
+          "roles": [
+            "mid",
+            "support"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:arcane_comet",
+          "weight": 0.9,
+          "context": "Primary keystone for Vel'Koz",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ludens_echo",
+          "weight": 0.9,
+          "context": "Core first item for Vel'Koz",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:rabadons_deathcap",
+          "weight": 0.85,
+          "context": "Core second item for Vel'Koz",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:veigar",
+          "weight": 0.75,
+          "context": "Vel'Koz strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:fizz",
+          "weight": 0.8,
+          "context": "Vel'Koz struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:amumu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.7,
+          0.6,
+          0.9,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.8,
+          0.7,
+          0.5
+        ],
+        "neighbor_ids": [
+          "rune:arcane_comet",
+          "item:ludens_echo",
+          "item:rabadons_deathcap",
+          "spell:flash",
+          "champ:veigar",
+          "champ:fizz",
+          "champ:amumu"
+        ],
+        "node_label": "champion_mage",
+        "edge_weights": {
+          "rune:arcane_comet": 0.9,
+          "item:ludens_echo": 0.9,
+          "item:rabadons_deathcap": 0.85,
+          "spell:flash": 0.9,
+          "champ:veigar": 0.75,
+          "champ:fizz": 0.8,
+          "champ:amumu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.7,
+          "sustained": 0.6,
+          "poke": 0.9
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.8,
+          "late": 0.7
+        },
+        "complexity": 0.5,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.7,
+          "duo": 0.0,
+          "support": 0.6
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Vel'Koz unlocks ultimate. Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (ludens_echo) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Vel'Koz strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Vel'Koz peaks mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Vel'Koz scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_split",
+              "W_zone",
+              "E_knockup"
+            ],
+            "name": "Geometry Poke",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "E_knockup",
+              "W",
+              "R_laser",
+              "Q"
+            ],
+            "name": "R Laser",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_long_range_poke_mage",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_arcane_comet_ludens_echo",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:fizz",
+            "then_avoid": "champ:vel_koz",
+            "reason": "Vel'Koz struggles against fizz"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:vel_koz",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "zeri",
+      "name": "Zeri",
+      "category": "champion",
+      "subcategory": "marksman",
+      "title": "The Spark of Zaun",
+      "classes": [
+        "marksman"
+      ],
+      "roles": [
+        "duo"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "hard",
+      "tags": [
+        "marksman",
+        "duo",
+        "ranged",
+        "physical"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot).",
+          "full": "Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot).",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+          "full": "Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Zeri, The Spark of Zaun. marksman playing duo. Tier: A.",
+      "full": "Zeri, The Spark of Zaun, is a marksman champion in Wild Rift. Plays duo. mana resource. ranged. Difficulty: hard. Tier: A. Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot). Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+      "embedding_text": "Zeri, The Spark of Zaun, is a marksman champion in Wild Rift. Plays duo. mana resource. ranged. Difficulty: hard. Tier: A. Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot). Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+      "power_spikes": [
+        "level_5_ult",
+        "trinity_force",
+        "runaans_hurricane"
+      ],
+      "best_with": [
+        "lulu"
+      ],
+      "countered_by": [
+        "draven"
+      ],
+      "strong_against": [
+        "jhin"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:zeri",
+        "properties": {
+          "classes": [
+            "marksman"
+          ],
+          "roles": [
+            "duo"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "hard",
+          "tier": "A",
+          "win_rate": 0.5,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:lethal_tempo",
+          "weight": 0.9,
+          "context": "Primary keystone for Zeri",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:trinity_force",
+          "weight": 0.9,
+          "context": "Core first item for Zeri",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:runaans_hurricane",
+          "weight": 0.85,
+          "context": "Core second item for Zeri",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:jhin",
+          "weight": 0.75,
+          "context": "Zeri strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:draven",
+          "weight": 0.8,
+          "context": "Zeri struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:lulu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.09,
+          0.04,
+          0.4,
+          0.8,
+          0.4,
+          0.5,
+          0.3,
+          0.5,
+          0.4,
+          0.7,
+          0.8,
+          0.7
+        ],
+        "neighbor_ids": [
+          "rune:lethal_tempo",
+          "item:trinity_force",
+          "item:runaans_hurricane",
+          "spell:flash",
+          "champ:jhin",
+          "champ:draven",
+          "champ:lulu"
+        ],
+        "node_label": "champion_marksman",
+        "edge_weights": {
+          "rune:lethal_tempo": 0.9,
+          "item:trinity_force": 0.9,
+          "item:runaans_hurricane": 0.85,
+          "spell:flash": 0.9,
+          "champ:jhin": 0.75,
+          "champ:draven": 0.8,
+          "champ:lulu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.5,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.49,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "physical",
+        "damage_profile": {
+          "burst": 0.4,
+          "sustained": 0.8,
+          "poke": 0.4
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.7,
+          "late": 0.8
+        },
+        "complexity": 0.7,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.1,
+          "duo": 0.95,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Zeri unlocks ultimate. Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (trinity_force) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Zeri weak early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Zeri solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Zeri scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_burst",
+              "AA",
+              "E_dash",
+              "Q"
+            ],
+            "name": "Q Burst",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_overcharge",
+              "Q",
+              "Q",
+              "Q",
+              "E"
+            ],
+            "name": "R Speed",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_mobile_kiting_adc",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_lethal_tempo_trinity_force",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:draven",
+            "then_avoid": "champ:zeri",
+            "reason": "Zeri struggles against draven"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:zeri",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.49
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "zoe",
+      "name": "Zoe",
+      "category": "champion",
+      "subcategory": "mage",
+      "title": "The Aspect of Twilight",
+      "classes": [
+        "mage"
+      ],
+      "roles": [
+        "mid"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "very_hard",
+      "tags": [
+        "mage",
+        "mid",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "More Sparkles!: after ability cast, next AA deals bonus magic damage",
+          "full": "More Sparkles!: after ability cast, next AA deals bonus magic damage",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+          "full": "Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Zoe, The Aspect of Twilight. mage playing mid. Tier: A.",
+      "full": "Zoe, The Aspect of Twilight, is a mage champion in Wild Rift. Plays mid. mana resource. ranged. Difficulty: very_hard. Tier: A. More Sparkles!: after ability cast, next AA deals bonus magic damage Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+      "embedding_text": "Zoe, The Aspect of Twilight, is a mage champion in Wild Rift. Plays mid. mana resource. ranged. Difficulty: very_hard. Tier: A. More Sparkles!: after ability cast, next AA deals bonus magic damage Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+      "power_spikes": [
+        "level_5_ult",
+        "ludens_echo",
+        "rabadons_deathcap"
+      ],
+      "best_with": [
+        "amumu"
+      ],
+      "countered_by": [
+        "fizz"
+      ],
+      "strong_against": [
+        "lux"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:zoe",
+        "properties": {
+          "classes": [
+            "mage"
+          ],
+          "roles": [
+            "mid"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "very_hard",
+          "tier": "A",
+          "win_rate": 0.5,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:electrocute",
+          "weight": 0.9,
+          "context": "Primary keystone for Zoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ludens_echo",
+          "weight": 0.9,
+          "context": "Core first item for Zoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:rabadons_deathcap",
+          "weight": 0.85,
+          "context": "Core second item for Zoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:lux",
+          "weight": 0.75,
+          "context": "Zoe strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:fizz",
+          "weight": 0.8,
+          "context": "Zoe struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:amumu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.09,
+          0.04,
+          0.9,
+          0.3,
+          0.9,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.8,
+          0.7,
+          0.9
+        ],
+        "neighbor_ids": [
+          "rune:electrocute",
+          "item:ludens_echo",
+          "item:rabadons_deathcap",
+          "spell:flash",
+          "champ:lux",
+          "champ:fizz",
+          "champ:amumu"
+        ],
+        "node_label": "champion_mage",
+        "edge_weights": {
+          "rune:electrocute": 0.9,
+          "item:ludens_echo": 0.9,
+          "item:rabadons_deathcap": 0.85,
+          "spell:flash": 0.9,
+          "champ:lux": 0.75,
+          "champ:fizz": 0.8,
+          "champ:amumu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.5,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.49,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.9,
+          "sustained": 0.3,
+          "poke": 0.9
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.8,
+          "late": 0.7
+        },
+        "complexity": 0.9,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.95,
+          "duo": 0.0,
+          "support": 0.1
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Zoe unlocks ultimate. Portal Jump: blink to target location then blink back after 1s. Extends ability range."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (ludens_echo) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Zoe strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Zoe peaks mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Zoe scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "E_sleep",
+              "Q_paddle",
+              "Q_redirect"
+            ],
+            "name": "E Sleep Combo",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_portal",
+              "E_long",
+              "Q_redirect_max"
+            ],
+            "name": "Max Range Snipe",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_long_range_one_shot_poke",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_electrocute_ludens_echo",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:fizz",
+            "then_avoid": "champ:zoe",
+            "reason": "Zoe struggles against fizz"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:zoe",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.49
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.5
+          }
+        ]
+      }
+    }
+  ],
+  "champions_to_remove": [
+    {
+      "id": "hwei",
+      "reason": "Not yet released in Wild Rift as of Patch 7.1d. Coming 2026 but not in game."
+    },
+    {
+      "id": "tahm_kench",
+      "reason": "Not in Wild Rift. PC League of Legends only."
+    },
+    {
+      "id": "sejuani",
+      "reason": "Not in Wild Rift 137 champion roster."
+    }
+  ],
+  "champions": [
+    {
+      "id": "maokai",
+      "name": "Maokai",
+      "category": "champion",
+      "subcategory": "tank",
+      "title": "The Twisted Treant",
+      "classes": [
+        "tank"
+      ],
+      "roles": [
+        "support",
+        "jungle"
+      ],
+      "resource": "mana",
+      "range_type": "melee",
+      "difficulty": "medium",
+      "tags": [
+        "tank",
+        "support",
+        "jungle",
+        "melee",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Sap Magic: periodically heal on AA based on max HP",
+          "full": "Sap Magic: periodically heal on AA based on max HP",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Nature's Grasp: send massive wave of brambles that root enemies hit",
+          "full": "Nature's Grasp: send massive wave of brambles that root enemies hit",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Maokai, The Twisted Treant. tank playing support/jungle. Tier: A.",
+      "full": "Maokai, The Twisted Treant, is a tank champion in Wild Rift. Plays support/jungle. mana resource. melee. Difficulty: medium. Tier: A. Sap Magic: periodically heal on AA based on max HP Nature's Grasp: send massive wave of brambles that root enemies hit",
+      "embedding_text": "Maokai, The Twisted Treant, is a tank champion in Wild Rift. Plays support/jungle. mana resource. melee. Difficulty: medium. Tier: A. Sap Magic: periodically heal on AA based on max HP Nature's Grasp: send massive wave of brambles that root enemies hit",
+      "power_spikes": [
+        "level_5_ult",
+        "sunfire_aegis",
+        "amaranths_twinguard"
+      ],
+      "best_with": [
+        "jinx"
+      ],
+      "countered_by": [
+        "brand"
+      ],
+      "strong_against": [
+        "nami"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:maokai",
+        "properties": {
+          "classes": [
+            "tank"
+          ],
+          "roles": [
+            "support",
+            "jungle"
+          ],
+          "resource": "mana",
+          "range_type": "melee",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:ice_overlord",
+          "weight": 0.9,
+          "context": "Primary keystone for Maokai",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:sunfire_aegis",
+          "weight": 0.9,
+          "context": "Core first item for Maokai",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:amaranths_twinguard",
+          "weight": 0.85,
+          "context": "Core second item for Maokai",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:nami",
+          "weight": 0.75,
+          "context": "Maokai strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:brand",
+          "weight": 0.8,
+          "context": "Maokai struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:jinx",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.3,
+          0.4,
+          0.3,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.7,
+          0.7,
+          0.4
+        ],
+        "neighbor_ids": [
+          "rune:ice_overlord",
+          "item:sunfire_aegis",
+          "item:amaranths_twinguard",
+          "spell:flash",
+          "champ:nami",
+          "champ:brand",
+          "champ:jinx"
+        ],
+        "node_label": "champion_tank",
+        "edge_weights": {
+          "rune:ice_overlord": 0.9,
+          "item:sunfire_aegis": 0.9,
+          "item:amaranths_twinguard": 0.85,
+          "spell:flash": 0.9,
+          "champ:nami": 0.75,
+          "champ:brand": 0.8,
+          "champ:jinx": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.3,
+          "sustained": 0.4,
+          "poke": 0.3
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.7
+        },
+        "complexity": 0.4,
+        "role_fit": {
+          "baron": 0.2,
+          "jungle": 0.5,
+          "mid": 0.0,
+          "duo": 0.0,
+          "support": 0.8
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Maokai unlocks ultimate. Nature's Grasp: send massive wave of brambles that root enemies hit"
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (sunfire_aegis) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Maokai strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Maokai solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Maokai scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "E_sapling",
+              "Q_knockback",
+              "W_root"
+            ],
+            "name": "Sapling Zone",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_bramble_wave",
+              "W",
+              "Q",
+              "E"
+            ],
+            "name": "R Engage",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_cc_tank_support",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_ice_overlord_sunfire_aegis",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:brand",
+            "then_avoid": "champ:maokai",
+            "reason": "Maokai struggles against brand"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:maokai",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "milio",
+      "name": "Milio",
+      "category": "champion",
+      "subcategory": "enchanter",
+      "title": "The Gentle Flame",
+      "classes": [
+        "enchanter",
+        "support"
+      ],
+      "roles": [
+        "support"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "easy",
+      "tags": [
+        "enchanter",
+        "support",
+        "support",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Fired Up!: allies enchanted by Milio deal bonus damage + burn",
+          "full": "Fired Up!: allies enchanted by Milio deal bonus damage + burn",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+          "full": "Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Milio, The Gentle Flame. enchanter/support playing support. Tier: S.",
+      "full": "Milio, The Gentle Flame, is a enchanter/support champion in Wild Rift. Plays support. mana resource. ranged. Difficulty: easy. Tier: S. Fired Up!: allies enchanted by Milio deal bonus damage + burn Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+      "embedding_text": "Milio, The Gentle Flame, is a enchanter/support champion in Wild Rift. Plays support. mana resource. ranged. Difficulty: easy. Tier: S. Fired Up!: allies enchanted by Milio deal bonus damage + burn Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's.",
+      "power_spikes": [
+        "level_5_ult",
+        "ardent_censer",
+        "staff_of_flowing_waters"
+      ],
+      "best_with": [
+        "jinx"
+      ],
+      "countered_by": [
+        "leona"
+      ],
+      "strong_against": [
+        "nami"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:milio",
+        "properties": {
+          "classes": [
+            "enchanter",
+            "support"
+          ],
+          "roles": [
+            "support"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "easy",
+          "tier": "S",
+          "win_rate": 0.53,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:aery",
+          "weight": 0.9,
+          "context": "Primary keystone for Milio",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ardent_censer",
+          "weight": 0.9,
+          "context": "Core first item for Milio",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:staff_of_flowing_waters",
+          "weight": 0.85,
+          "context": "Core second item for Milio",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:nami",
+          "weight": 0.75,
+          "context": "Milio strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:leona",
+          "weight": 0.8,
+          "context": "Milio struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:jinx",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.53,
+          0.09,
+          0.04,
+          0.1,
+          0.2,
+          0.4,
+          0.5,
+          0.3,
+          0.5,
+          0.6,
+          0.8,
+          0.8,
+          0.3
+        ],
+        "neighbor_ids": [
+          "rune:aery",
+          "item:ardent_censer",
+          "item:staff_of_flowing_waters",
+          "spell:flash",
+          "champ:nami",
+          "champ:leona",
+          "champ:jinx"
+        ],
+        "node_label": "champion_enchanter",
+        "edge_weights": {
+          "rune:aery": 0.9,
+          "item:ardent_censer": 0.9,
+          "item:staff_of_flowing_waters": 0.85,
+          "spell:flash": 0.9,
+          "champ:nami": 0.75,
+          "champ:leona": 0.8,
+          "champ:jinx": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.53,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "S",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.52,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.53,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.53,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.1,
+          "sustained": 0.2,
+          "poke": 0.4
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.6,
+          "mid": 0.8,
+          "late": 0.8
+        },
+        "complexity": 0.3,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.0,
+          "duo": 0.0,
+          "support": 0.95
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Milio unlocks ultimate. Breath of Life: cleanse ALL allies of CC + heal. AoE Mikael's."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (ardent_censer) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "trade",
+            "action": "Trade aggressively. Milio strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Milio peaks mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Milio scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "E_shield",
+              "Q_fireball",
+              "W_range_buff"
+            ],
+            "name": "Shield Poke",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_cleanse_heal"
+            ],
+            "name": "R Cleanse",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_protective_enchanter",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_aery_ardent_censer",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:leona",
+            "then_avoid": "champ:milio",
+            "reason": "Milio struggles against leona"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:milio",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.52
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.53
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.53
+          }
+        ]
+      }
+    },
+    {
+      "id": "nilah",
+      "name": "Nilah",
+      "category": "champion",
+      "subcategory": "fighter",
+      "title": "The Joy Unbound",
+      "classes": [
+        "fighter",
+        "marksman"
+      ],
+      "roles": [
+        "duo"
+      ],
+      "resource": "mana",
+      "range_type": "melee",
+      "difficulty": "hard",
+      "tags": [
+        "fighter",
+        "marksman",
+        "duo",
+        "melee",
+        "physical"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Joy Unending: bonus XP from nearby minion deaths shared with support",
+          "full": "Joy Unending: bonus XP from nearby minion deaths shared with support",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Apotheosis: AoE burst + heal based on damage dealt",
+          "full": "Apotheosis: AoE burst + heal based on damage dealt",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Nilah, The Joy Unbound. fighter/marksman playing duo. Tier: A.",
+      "full": "Nilah, The Joy Unbound, is a fighter/marksman champion in Wild Rift. Plays duo. mana resource. melee. Difficulty: hard. Tier: A. Joy Unending: bonus XP from nearby minion deaths shared with support Apotheosis: AoE burst + heal based on damage dealt",
+      "embedding_text": "Nilah, The Joy Unbound, is a fighter/marksman champion in Wild Rift. Plays duo. mana resource. melee. Difficulty: hard. Tier: A. Joy Unending: bonus XP from nearby minion deaths shared with support Apotheosis: AoE burst + heal based on damage dealt",
+      "power_spikes": [
+        "level_5_ult",
+        "bloodthirster",
+        "infinity_edge"
+      ],
+      "best_with": [
+        "leona"
+      ],
+      "countered_by": [
+        "lucian"
+      ],
+      "strong_against": [
+        "vayne"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:nilah",
+        "properties": {
+          "classes": [
+            "fighter",
+            "marksman"
+          ],
+          "roles": [
+            "duo"
+          ],
+          "resource": "mana",
+          "range_type": "melee",
+          "difficulty": "hard",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:conqueror",
+          "weight": 0.9,
+          "context": "Primary keystone for Nilah",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:bloodthirster",
+          "weight": 0.9,
+          "context": "Core first item for Nilah",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:infinity_edge",
+          "weight": 0.85,
+          "context": "Core second item for Nilah",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:vayne",
+          "weight": 0.75,
+          "context": "Nilah strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:lucian",
+          "weight": 0.8,
+          "context": "Nilah struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:leona",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.6,
+          0.8,
+          0.1,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.7,
+          0.9,
+          0.7
+        ],
+        "neighbor_ids": [
+          "rune:conqueror",
+          "item:bloodthirster",
+          "item:infinity_edge",
+          "spell:flash",
+          "champ:vayne",
+          "champ:lucian",
+          "champ:leona"
+        ],
+        "node_label": "champion_fighter",
+        "edge_weights": {
+          "rune:conqueror": 0.9,
+          "item:bloodthirster": 0.9,
+          "item:infinity_edge": 0.85,
+          "spell:flash": 0.9,
+          "champ:vayne": 0.75,
+          "champ:lucian": 0.8,
+          "champ:leona": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "physical",
+        "damage_profile": {
+          "burst": 0.6,
+          "sustained": 0.8,
+          "poke": 0.1
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.9
+        },
+        "complexity": 0.7,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.0,
+          "duo": 0.95,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Nilah unlocks ultimate. Apotheosis: AoE burst + heal based on damage dealt"
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (bloodthirster) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Nilah strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Nilah solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Nilah scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "W_dodge_zone",
+              "Q_slash",
+              "AA",
+              "AA"
+            ],
+            "name": "W Dodge + Trade",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_aoe_burst",
+              "Q",
+              "W",
+              "AA"
+            ],
+            "name": "R AoE",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_melee_adc_with_engage_support",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_conqueror_bloodthirster",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:lucian",
+            "then_avoid": "champ:nilah",
+            "reason": "Nilah struggles against lucian"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:nilah",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "nocturne",
+      "name": "Nocturne",
+      "category": "champion",
+      "subcategory": "assassin",
+      "title": "The Eternal Nightmare",
+      "classes": [
+        "assassin"
+      ],
+      "roles": [
+        "jungle"
+      ],
+      "resource": "mana",
+      "range_type": "melee",
+      "difficulty": "medium",
+      "tags": [
+        "assassin",
+        "jungle",
+        "melee",
+        "physical"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Umbra Blades: every few AAs deal AoE damage + heal",
+          "full": "Umbra Blades: every few AAs deal AoE damage + heal",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+          "full": "Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Nocturne, The Eternal Nightmare. assassin playing jungle. Tier: A.",
+      "full": "Nocturne, The Eternal Nightmare, is a assassin champion in Wild Rift. Plays jungle. mana resource. melee. Difficulty: medium. Tier: A. Umbra Blades: every few AAs deal AoE damage + heal Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+      "embedding_text": "Nocturne, The Eternal Nightmare, is a assassin champion in Wild Rift. Plays jungle. mana resource. melee. Difficulty: medium. Tier: A. Umbra Blades: every few AAs deal AoE damage + heal Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion.",
+      "power_spikes": [
+        "level_5_ult",
+        "experimental_hexplate",
+        "eclipse"
+      ],
+      "best_with": [
+        "orianna"
+      ],
+      "countered_by": [
+        "rammus"
+      ],
+      "strong_against": [
+        "evelynn"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:nocturne",
+        "properties": {
+          "classes": [
+            "assassin"
+          ],
+          "roles": [
+            "jungle"
+          ],
+          "resource": "mana",
+          "range_type": "melee",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:lethal_tempo",
+          "weight": 0.9,
+          "context": "Primary keystone for Nocturne",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:experimental_hexplate",
+          "weight": 0.9,
+          "context": "Core first item for Nocturne",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:eclipse",
+          "weight": 0.85,
+          "context": "Core second item for Nocturne",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:evelynn",
+          "weight": 0.75,
+          "context": "Nocturne strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:rammus",
+          "weight": 0.8,
+          "context": "Nocturne struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:orianna",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.8,
+          0.5,
+          0.1,
+          0.5,
+          0.3,
+          0.5,
+          0.6,
+          0.9,
+          0.5,
+          0.4
+        ],
+        "neighbor_ids": [
+          "rune:lethal_tempo",
+          "item:experimental_hexplate",
+          "item:eclipse",
+          "spell:flash",
+          "champ:evelynn",
+          "champ:rammus",
+          "champ:orianna"
+        ],
+        "node_label": "champion_assassin",
+        "edge_weights": {
+          "rune:lethal_tempo": 0.9,
+          "item:experimental_hexplate": 0.9,
+          "item:eclipse": 0.85,
+          "spell:flash": 0.9,
+          "champ:evelynn": 0.75,
+          "champ:rammus": 0.8,
+          "champ:orianna": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "physical",
+        "damage_profile": {
+          "burst": 0.8,
+          "sustained": 0.5,
+          "poke": 0.1
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.6,
+          "mid": 0.9,
+          "late": 0.5
+        },
+        "complexity": 0.4,
+        "role_fit": {
+          "baron": 0.1,
+          "jungle": 0.95,
+          "mid": 0.1,
+          "duo": 0.0,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Nocturne unlocks ultimate. Paranoia: global darkness — all enemies lose allied vision. Recast: long-range dash to enemy champion."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (experimental_hexplate) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "trade",
+            "action": "Trade aggressively. Nocturne strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Nocturne peaks mid."
+          },
+          "late": {
+            "priority": "split",
+            "action": "Split-push. Nocturne falls off late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_trail",
+              "AA",
+              "E_fear",
+              "AA",
+              "W_shield"
+            ],
+            "name": "Fear Trade",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_darkness",
+              "R_dash",
+              "Q",
+              "E",
+              "AA"
+            ],
+            "name": "R Dive",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_backline_diving_assassin_jungle",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_lethal_tempo_experimental_hexplate",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:rammus",
+            "then_avoid": "champ:nocturne",
+            "reason": "Nocturne struggles against rammus"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:nocturne",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "shen",
+      "name": "Shen",
+      "category": "champion",
+      "subcategory": "tank",
+      "title": "The Eye of Twilight",
+      "classes": [
+        "tank"
+      ],
+      "roles": [
+        "baron",
+        "support"
+      ],
+      "resource": "energy",
+      "range_type": "melee",
+      "difficulty": "medium",
+      "tags": [
+        "tank",
+        "baron",
+        "support",
+        "melee",
+        "mixed"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage.",
+          "full": "Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage.",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Stand United: global shield on ally + teleport to them. THE global tank ult.",
+          "full": "Stand United: global shield on ally + teleport to them. THE global tank ult.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Shen, The Eye of Twilight. tank playing baron/support. Tier: A.",
+      "full": "Shen, The Eye of Twilight, is a tank champion in Wild Rift. Plays baron/support. energy resource. melee. Difficulty: medium. Tier: A. Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage. Stand United: global shield on ally + teleport to them. THE global tank ult.",
+      "embedding_text": "Shen, The Eye of Twilight, is a tank champion in Wild Rift. Plays baron/support. energy resource. melee. Difficulty: medium. Tier: A. Ki Barrier: abilities grant shield. Spirit Blade empowers AAs with %HP damage. Stand United: global shield on ally + teleport to them. THE global tank ult.",
+      "power_spikes": [
+        "level_5_ult",
+        "sunfire_aegis",
+        "amaranths_twinguard"
+      ],
+      "best_with": [
+        "jinx"
+      ],
+      "countered_by": [
+        "fiora"
+      ],
+      "strong_against": [
+        "garen"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:shen",
+        "properties": {
+          "classes": [
+            "tank"
+          ],
+          "roles": [
+            "baron",
+            "support"
+          ],
+          "resource": "energy",
+          "range_type": "melee",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:grasp_of_the_undying",
+          "weight": 0.9,
+          "context": "Primary keystone for Shen",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:sunfire_aegis",
+          "weight": 0.9,
+          "context": "Core first item for Shen",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:amaranths_twinguard",
+          "weight": 0.85,
+          "context": "Core second item for Shen",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:garen",
+          "weight": 0.75,
+          "context": "Shen strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:fiora",
+          "weight": 0.8,
+          "context": "Shen struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:jinx",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.3,
+          0.5,
+          0.1,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.7,
+          0.7,
+          0.6
+        ],
+        "neighbor_ids": [
+          "rune:grasp_of_the_undying",
+          "item:sunfire_aegis",
+          "item:amaranths_twinguard",
+          "spell:flash",
+          "champ:garen",
+          "champ:fiora",
+          "champ:jinx"
+        ],
+        "node_label": "champion_tank",
+        "edge_weights": {
+          "rune:grasp_of_the_undying": 0.9,
+          "item:sunfire_aegis": 0.9,
+          "item:amaranths_twinguard": 0.85,
+          "spell:flash": 0.9,
+          "champ:garen": 0.75,
+          "champ:fiora": 0.8,
+          "champ:jinx": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "mixed",
+        "damage_profile": {
+          "burst": 0.3,
+          "sustained": 0.5,
+          "poke": 0.1
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.7
+        },
+        "complexity": 0.6,
+        "role_fit": {
+          "baron": 0.8,
+          "jungle": 0.0,
+          "mid": 0.0,
+          "duo": 0.0,
+          "support": 0.4
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Shen unlocks ultimate. Stand United: global shield on ally + teleport to them. THE global tank ult."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (sunfire_aegis) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Shen strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Shen solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Shen scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_spirit_blade",
+              "AA",
+              "AA",
+              "AA",
+              "W_dodge_zone"
+            ],
+            "name": "Spirit Blade Trade",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_stand_united",
+              "E_taunt"
+            ],
+            "name": "R Global Shield",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_global_tank_with_split_push",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_grasp_of_the_undying_sunfire_aegis",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:fiora",
+            "then_avoid": "champ:shen",
+            "reason": "Shen struggles against fiora"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:shen",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "smolder",
+      "name": "Smolder",
+      "category": "champion",
+      "subcategory": "marksman",
+      "title": "The Fiery Fledgling",
+      "classes": [
+        "marksman"
+      ],
+      "roles": [
+        "duo",
+        "mid"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "easy",
+      "tags": [
+        "marksman",
+        "duo",
+        "mid",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects.",
+          "full": "Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects.",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+          "full": "MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Smolder, The Fiery Fledgling. marksman playing duo/mid. Tier: S+.",
+      "full": "Smolder, The Fiery Fledgling, is a marksman champion in Wild Rift. Plays duo/mid. mana resource. ranged. Difficulty: easy. Tier: S+. Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects. MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+      "embedding_text": "Smolder, The Fiery Fledgling, is a marksman champion in Wild Rift. Plays duo/mid. mana resource. ranged. Difficulty: easy. Tier: S+. Dragon Practice: Q kills grant permanent stacks. At 25/125/225 stacks, Q upgrades with bonus effects. MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets.",
+      "power_spikes": [
+        "level_5_ult",
+        "ludens_echo",
+        "infinity_edge"
+      ],
+      "best_with": [
+        "lulu"
+      ],
+      "countered_by": [
+        "draven"
+      ],
+      "strong_against": [
+        "jhin"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:smolder",
+        "properties": {
+          "classes": [
+            "marksman"
+          ],
+          "roles": [
+            "duo",
+            "mid"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "easy",
+          "tier": "S+",
+          "win_rate": 0.54,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:fleet_footwork",
+          "weight": 0.9,
+          "context": "Primary keystone for Smolder",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ludens_echo",
+          "weight": 0.9,
+          "context": "Core first item for Smolder",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:infinity_edge",
+          "weight": 0.85,
+          "context": "Core second item for Smolder",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:jhin",
+          "weight": 0.75,
+          "context": "Smolder strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:draven",
+          "weight": 0.8,
+          "context": "Smolder struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:lulu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.54,
+          0.09,
+          0.04,
+          0.5,
+          0.7,
+          0.7,
+          0.5,
+          0.3,
+          0.5,
+          0.4,
+          0.7,
+          1.0,
+          0.3
+        ],
+        "neighbor_ids": [
+          "rune:fleet_footwork",
+          "item:ludens_echo",
+          "item:infinity_edge",
+          "spell:flash",
+          "champ:jhin",
+          "champ:draven",
+          "champ:lulu"
+        ],
+        "node_label": "champion_marksman",
+        "edge_weights": {
+          "rune:fleet_footwork": 0.9,
+          "item:ludens_echo": 0.9,
+          "item:infinity_edge": 0.85,
+          "spell:flash": 0.9,
+          "champ:jhin": 0.75,
+          "champ:draven": 0.8,
+          "champ:lulu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.54,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "S+",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.53,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.54,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.54,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.5,
+          "sustained": 0.7,
+          "poke": 0.7
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.7,
+          "late": 1.0
+        },
+        "complexity": 0.3,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.3,
+          "duo": 0.95,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Smolder unlocks ultimate. MMOOOMMMM!: Call mom dragon for massive AoE fire breath. Execute on low targets."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (ludens_echo) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Smolder weak early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Smolder solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Smolder scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_fireball",
+              "AA",
+              "Q"
+            ],
+            "name": "Q Poke",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_fire_breath",
+              "Q",
+              "W",
+              "AA"
+            ],
+            "name": "R Execute",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_infinite_scaling_adc",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_fleet_footwork_ludens_echo",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:draven",
+            "then_avoid": "champ:smolder",
+            "reason": "Smolder struggles against draven"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:smolder",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.53
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.54
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.54
+          }
+        ]
+      }
+    },
+    {
+      "id": "vel_koz",
+      "name": "Vel'Koz",
+      "category": "champion",
+      "subcategory": "mage",
+      "title": "The Eye of the Void",
+      "classes": [
+        "mage"
+      ],
+      "roles": [
+        "mid",
+        "support"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "medium",
+      "tags": [
+        "mage",
+        "mid",
+        "support",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Organic Deconstruction: 3 ability hits = bonus true damage proc",
+          "full": "Organic Deconstruction: 3 ability hits = bonus true damage proc",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+          "full": "Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Vel'Koz, The Eye of the Void. mage playing mid/support. Tier: A.",
+      "full": "Vel'Koz, The Eye of the Void, is a mage champion in Wild Rift. Plays mid/support. mana resource. ranged. Difficulty: medium. Tier: A. Organic Deconstruction: 3 ability hits = bonus true damage proc Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+      "embedding_text": "Vel'Koz, The Eye of the Void, is a mage champion in Wild Rift. Plays mid/support. mana resource. ranged. Difficulty: medium. Tier: A. Organic Deconstruction: 3 ability hits = bonus true damage proc Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive.",
+      "power_spikes": [
+        "level_5_ult",
+        "ludens_echo",
+        "rabadons_deathcap"
+      ],
+      "best_with": [
+        "amumu"
+      ],
+      "countered_by": [
+        "fizz"
+      ],
+      "strong_against": [
+        "veigar"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:vel_koz",
+        "properties": {
+          "classes": [
+            "mage"
+          ],
+          "roles": [
+            "mid",
+            "support"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "medium",
+          "tier": "A",
+          "win_rate": 0.51,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:arcane_comet",
+          "weight": 0.9,
+          "context": "Primary keystone for Vel'Koz",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ludens_echo",
+          "weight": 0.9,
+          "context": "Core first item for Vel'Koz",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:rabadons_deathcap",
+          "weight": 0.85,
+          "context": "Core second item for Vel'Koz",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:veigar",
+          "weight": 0.75,
+          "context": "Vel'Koz strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:fizz",
+          "weight": 0.8,
+          "context": "Vel'Koz struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:amumu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.51,
+          0.09,
+          0.04,
+          0.7,
+          0.6,
+          0.9,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.8,
+          0.7,
+          0.5
+        ],
+        "neighbor_ids": [
+          "rune:arcane_comet",
+          "item:ludens_echo",
+          "item:rabadons_deathcap",
+          "spell:flash",
+          "champ:veigar",
+          "champ:fizz",
+          "champ:amumu"
+        ],
+        "node_label": "champion_mage",
+        "edge_weights": {
+          "rune:arcane_comet": 0.9,
+          "item:ludens_echo": 0.9,
+          "item:rabadons_deathcap": 0.85,
+          "spell:flash": 0.9,
+          "champ:veigar": 0.75,
+          "champ:fizz": 0.8,
+          "champ:amumu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.51,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.51,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.7,
+          "sustained": 0.6,
+          "poke": 0.9
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.8,
+          "late": 0.7
+        },
+        "complexity": 0.5,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.7,
+          "duo": 0.0,
+          "support": 0.6
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Vel'Koz unlocks ultimate. Lifeform Disintegration Ray: channel massive laser beam dealing continuous damage. Procs passive."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (ludens_echo) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Vel'Koz strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Vel'Koz peaks mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Vel'Koz scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_split",
+              "W_zone",
+              "E_knockup"
+            ],
+            "name": "Geometry Poke",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "E_knockup",
+              "W",
+              "R_laser",
+              "Q"
+            ],
+            "name": "R Laser",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_long_range_poke_mage",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_arcane_comet_ludens_echo",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:fizz",
+            "then_avoid": "champ:vel_koz",
+            "reason": "Vel'Koz struggles against fizz"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:vel_koz",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.51
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.51
+          }
+        ]
+      }
+    },
+    {
+      "id": "zeri",
+      "name": "Zeri",
+      "category": "champion",
+      "subcategory": "marksman",
+      "title": "The Spark of Zaun",
+      "classes": [
+        "marksman"
+      ],
+      "roles": [
+        "duo"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "hard",
+      "tags": [
+        "marksman",
+        "duo",
+        "ranged",
+        "physical"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot).",
+          "full": "Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot).",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+          "full": "Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Zeri, The Spark of Zaun. marksman playing duo. Tier: A.",
+      "full": "Zeri, The Spark of Zaun, is a marksman champion in Wild Rift. Plays duo. mana resource. ranged. Difficulty: hard. Tier: A. Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot). Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+      "embedding_text": "Zeri, The Spark of Zaun, is a marksman champion in Wild Rift. Plays duo. mana resource. ranged. Difficulty: hard. Tier: A. Living Battery: shield from picking up enemy shields. Q is Zeri's basic attack (skillshot). Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration.",
+      "power_spikes": [
+        "level_5_ult",
+        "trinity_force",
+        "runaans_hurricane"
+      ],
+      "best_with": [
+        "lulu"
+      ],
+      "countered_by": [
+        "draven"
+      ],
+      "strong_against": [
+        "jhin"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:zeri",
+        "properties": {
+          "classes": [
+            "marksman"
+          ],
+          "roles": [
+            "duo"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "hard",
+          "tier": "A",
+          "win_rate": 0.5,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:lethal_tempo",
+          "weight": 0.9,
+          "context": "Primary keystone for Zeri",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:trinity_force",
+          "weight": 0.9,
+          "context": "Core first item for Zeri",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:runaans_hurricane",
+          "weight": 0.85,
+          "context": "Core second item for Zeri",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:jhin",
+          "weight": 0.75,
+          "context": "Zeri strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:draven",
+          "weight": 0.8,
+          "context": "Zeri struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:lulu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.09,
+          0.04,
+          0.4,
+          0.8,
+          0.4,
+          0.5,
+          0.3,
+          0.5,
+          0.4,
+          0.7,
+          0.8,
+          0.7
+        ],
+        "neighbor_ids": [
+          "rune:lethal_tempo",
+          "item:trinity_force",
+          "item:runaans_hurricane",
+          "spell:flash",
+          "champ:jhin",
+          "champ:draven",
+          "champ:lulu"
+        ],
+        "node_label": "champion_marksman",
+        "edge_weights": {
+          "rune:lethal_tempo": 0.9,
+          "item:trinity_force": 0.9,
+          "item:runaans_hurricane": 0.85,
+          "spell:flash": 0.9,
+          "champ:jhin": 0.75,
+          "champ:draven": 0.8,
+          "champ:lulu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.5,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.49,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "physical",
+        "damage_profile": {
+          "burst": 0.4,
+          "sustained": 0.8,
+          "poke": 0.4
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.7,
+          "late": 0.8
+        },
+        "complexity": 0.7,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.1,
+          "duo": 0.95,
+          "support": 0.0
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Zeri unlocks ultimate. Lightning Crash: AoE burst + massive MS. Q becomes piercing for duration."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "medium",
+            "description": "First core item (trinity_force) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Zeri weak early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Zeri solid mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Zeri scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "Q_burst",
+              "AA",
+              "E_dash",
+              "Q"
+            ],
+            "name": "Q Burst",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_overcharge",
+              "Q",
+              "Q",
+              "Q",
+              "E"
+            ],
+            "name": "R Speed",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_mobile_kiting_adc",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_lethal_tempo_trinity_force",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:draven",
+            "then_avoid": "champ:zeri",
+            "reason": "Zeri struggles against draven"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:zeri",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.49
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "zoe",
+      "name": "Zoe",
+      "category": "champion",
+      "subcategory": "mage",
+      "title": "The Aspect of Twilight",
+      "classes": [
+        "mage"
+      ],
+      "roles": [
+        "mid"
+      ],
+      "resource": "mana",
+      "range_type": "ranged",
+      "difficulty": "very_hard",
+      "tags": [
+        "mage",
+        "mid",
+        "ranged",
+        "magic"
+      ],
+      "abilities": {
+        "passive": {
+          "name": "",
+          "brief": "More Sparkles!: after ability cast, next AA deals bonus magic damage",
+          "full": "More Sparkles!: after ability cast, next AA deals bonus magic damage",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "q": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "w": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "e": {
+          "name": "",
+          "brief": "",
+          "full": "",
+          "cooldown": "",
+          "scaling": ""
+        },
+        "r": {
+          "name": "",
+          "brief": "Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+          "full": "Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+          "cooldown": "",
+          "scaling": ""
+        }
+      },
+      "brief": "Zoe, The Aspect of Twilight. mage playing mid. Tier: A.",
+      "full": "Zoe, The Aspect of Twilight, is a mage champion in Wild Rift. Plays mid. mana resource. ranged. Difficulty: very_hard. Tier: A. More Sparkles!: after ability cast, next AA deals bonus magic damage Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+      "embedding_text": "Zoe, The Aspect of Twilight, is a mage champion in Wild Rift. Plays mid. mana resource. ranged. Difficulty: very_hard. Tier: A. More Sparkles!: after ability cast, next AA deals bonus magic damage Portal Jump: blink to target location then blink back after 1s. Extends ability range.",
+      "power_spikes": [
+        "level_5_ult",
+        "ludens_echo",
+        "rabadons_deathcap"
+      ],
+      "best_with": [
+        "amumu"
+      ],
+      "countered_by": [
+        "fizz"
+      ],
+      "strong_against": [
+        "lux"
+      ],
+      "graph_node": {
+        "node_type": "champion",
+        "node_id": "champ:zoe",
+        "properties": {
+          "classes": [
+            "mage"
+          ],
+          "roles": [
+            "mid"
+          ],
+          "resource": "mana",
+          "range_type": "ranged",
+          "difficulty": "very_hard",
+          "tier": "A",
+          "win_rate": 0.5,
+          "pick_rate": 0.09,
+          "ban_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "USES_RUNE",
+          "target_node_id": "rune:electrocute",
+          "weight": 0.9,
+          "context": "Primary keystone for Zoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:ludens_echo",
+          "weight": 0.9,
+          "context": "Core first item for Zoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_ITEM",
+          "target_node_id": "item:rabadons_deathcap",
+          "weight": 0.85,
+          "context": "Core second item for Zoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "USES_SPELL",
+          "target_node_id": "spell:flash",
+          "weight": 0.9,
+          "context": "Flash for engage/escape",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERS",
+          "target_node_id": "champ:lux",
+          "weight": 0.75,
+          "context": "Zoe strong against this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "COUNTERED_BY",
+          "target_node_id": "champ:fizz",
+          "weight": 0.8,
+          "context": "Zoe struggles in this matchup",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "BEST_WITH",
+          "target_node_id": "champ:amumu",
+          "weight": 0.8,
+          "context": "Strong synergy pairing",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.09,
+          0.04,
+          0.9,
+          0.3,
+          0.9,
+          0.5,
+          0.3,
+          0.5,
+          0.5,
+          0.8,
+          0.7,
+          0.9
+        ],
+        "neighbor_ids": [
+          "rune:electrocute",
+          "item:ludens_echo",
+          "item:rabadons_deathcap",
+          "spell:flash",
+          "champ:lux",
+          "champ:fizz",
+          "champ:amumu"
+        ],
+        "node_label": "champion_mage",
+        "edge_weights": {
+          "rune:electrocute": 0.9,
+          "item:ludens_echo": 0.9,
+          "item:rabadons_deathcap": 0.85,
+          "spell:flash": 0.9,
+          "champ:lux": 0.75,
+          "champ:fizz": 0.8,
+          "champ:amumu": 0.8
+        }
+      },
+      "realtime": {
+        "win_rate": 0.5,
+        "pick_rate": 0.09,
+        "ban_rate": 0.04,
+        "win_rate_trend": "stable",
+        "tier": "A",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "win_rate": 0.49,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "win_rate": 0.5,
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "magic",
+        "damage_profile": {
+          "burst": 0.9,
+          "sustained": 0.3,
+          "poke": 0.9
+        },
+        "survivability": {
+          "hp_base": 550,
+          "armor_base": 30,
+          "mr_base": 30,
+          "mobility": 0.5
+        },
+        "utility": {
+          "cc_score": 0.5,
+          "heal_shield_score": 0.3,
+          "vision_score": 0.1
+        },
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.8,
+          "late": 0.7
+        },
+        "complexity": 0.9,
+        "role_fit": {
+          "baron": 0.0,
+          "jungle": 0.0,
+          "mid": 0.95,
+          "duo": 0.0,
+          "support": 0.1
+        }
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "level_5",
+            "type": "ult_unlock",
+            "impact": "high",
+            "description": "Zoe unlocks ultimate. Portal Jump: blink to target location then blink back after 1s. Extends ability range."
+          },
+          {
+            "trigger": "item_1",
+            "type": "first_item_spike",
+            "impact": "high",
+            "description": "First core item (ludens_echo) completed."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "farm",
+            "action": "Farm safely. Zoe strong early."
+          },
+          "mid": {
+            "priority": "fight",
+            "action": "Fight for objectives. Zoe peaks mid."
+          },
+          "late": {
+            "priority": "team_fight",
+            "action": "Group for fights. Zoe scales well late."
+          }
+        },
+        "combo_sequences": [
+          {
+            "sequence": [
+              "E_sleep",
+              "Q_paddle",
+              "Q_redirect"
+            ],
+            "name": "E Sleep Combo",
+            "damage_estimate": "Standard rotation"
+          },
+          {
+            "sequence": [
+              "R_portal",
+              "E_long",
+              "Q_redirect_max"
+            ],
+            "name": "Max Range Snipe",
+            "damage_estimate": "Advanced/ult combo"
+          }
+        ]
+      },
+      "rules": {
+        "pick_rules": [
+          {
+            "condition": "default",
+            "action": "pick_for_long_range_one_shot_poke",
+            "confidence": 0.8
+          }
+        ],
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "build_electrocute_ludens_echo",
+            "confidence": 0.85
+          }
+        ],
+        "counter_rules": [
+          {
+            "if_enemy": "champ:fizz",
+            "then_avoid": "champ:zoe",
+            "reason": "Zoe struggles against fizz"
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "champ:zoe",
+        "metric": "win_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.49
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "karma",
+      "name": "Karma",
+      "abilities": {
+        "passive": {
+          "name": "Mantra"
+        },
+        "q": {
+          "name": "Inner Flame"
+        },
+        "w": {
+          "name": "Focused Resolve"
+        },
+        "e": {
+          "name": "Inspire"
+        },
+        "r": {
+          "name": "Transcendent Embrace"
+        }
+      },
+      "source_status": "protected_user_corrected_pending_allowed_source_revalidation",
+      "protection": "karma_ability_lock"
+    }
+  ]
+}

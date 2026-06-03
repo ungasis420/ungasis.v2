@@ -1,0 +1,8 @@
+{
+  "source_id": "m365_opus_postmerge_wr_champions_merged_v070_full",
+  "source_file": "wr_champions_merged_v070_full.json",
+  "source_sha256": "0402e35d3067a00af462a3d1982340aa7c5e81ef5c39a909d33c1c6baab0599e",
+  "source_status": "m365_opus_candidate_unverified",
+  "field_level_provenance_required": true,
+  "merge_policy": "lossless_preserve_raw_add_trace_do_not_overwrite_canonical_exact_values"
+}

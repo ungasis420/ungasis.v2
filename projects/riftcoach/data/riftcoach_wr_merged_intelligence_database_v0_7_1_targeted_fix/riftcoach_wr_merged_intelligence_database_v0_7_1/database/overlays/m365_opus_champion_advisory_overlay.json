@@ -1,0 +1,3075 @@
+{
+  "version": "0.7.1",
+  "source_id": "m365_opus_postmerge_wr_champions_merged_v070_full",
+  "source_status": "m365_opus_candidate_unverified",
+  "field_level_provenance_required": true,
+  "promotion_policy": "candidate/advisory only; not official fact without review",
+  "records": {
+    "aatrox": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Lane bully with teamfight drain-tanking. Land Q sweetspots for knockups and healing.",
+      "power_spikes": [
+        "Level 5 (Q3 sweetspot)",
+        "Black Cleaver",
+        "Level 13 (max Q)"
+      ],
+      "synergies": [
+        "Orianna",
+        "Lulu",
+        "Yuumi"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Garen",
+          "Malphite",
+          "Nasus"
+        ],
+        "weak_vs": [
+          "Fiora",
+          "Vayne",
+          "Camille"
+        ]
+      },
+      "full_data": true,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Aatrox"
+    },
+    "ahri": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Safe burst mage with high mobility. Charm to pick targets, Spirit Rush for repositioning.",
+      "power_spikes": [
+        "Level 5 (all abilities)",
+        "Luden's Echo",
+        "Rabadon's Deathcap"
+      ],
+      "synergies": [
+        "Amumu",
+        "Jarvan IV",
+        "Jinx"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Veigar",
+          "Ziggs",
+          "Lux"
+        ],
+        "weak_vs": [
+          "Yasuo",
+          "Kassadin",
+          "Fizz"
+        ]
+      },
+      "full_data": true,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Ahri"
+    },
+    "akali": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "High-skill AP assassin. Stealth zone allows extended trading. Double-dash R for kill pressure.",
+      "power_spikes": [
+        "Level 5",
+        "Riftmaker/Crown",
+        "Level 13"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Veigar",
+          "Ziggs",
+          "Lux"
+        ],
+        "weak_vs": [
+          "Galio",
+          "Renekton",
+          "Pantheon"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Akali"
+    },
+    "akshan": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Roaming mid marksman. Unique revive passive rewards tracking kills.",
+      "power_spikes": [
+        "Level 5",
+        "Blade of the Ruined King",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Orianna",
+          "Twisted Fate"
+        ],
+        "weak_vs": [
+          "Yasuo",
+          "Zed"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Akshan"
+    },
+    "alistar": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Engage tank support. W+Q combo for reliable knockup. R makes you near-unkillable.",
+      "power_spikes": [
+        "Level 2 (W+Q combo)",
+        "Zeke's/Locket",
+        "Level 5 R"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Lulu",
+          "Janna",
+          "Sona"
+        ],
+        "weak_vs": [
+          "Morgana",
+          "Braum",
+          "Thresh"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Alistar"
+    },
+    "ambessa": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "Aggressive fighter with energy management. Passive dashes enable relentless aggression.",
+      "power_spikes": [
+        "Level 5",
+        "Trinity Force/Sunderer",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Garen",
+          "Nasus",
+          "Malphite"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Fiora",
+          "Kennen"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Ambessa"
+    },
+    "amumu": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Teamfight jungle tank. Double Q engages. R is game-winning AoE stun.",
+      "power_spikes": [
+        "Level 5 (R)",
+        "Sunfire Aegis",
+        "Level 9 (double Q)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Master Yi",
+          "Jax",
+          "Katarina"
+        ],
+        "weak_vs": [
+          "Lee Sin",
+          "Olaf",
+          "Morgana"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Amumu"
+    },
+    "annie": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Simple burst mage. Stack passive to 4, Flash+R for AoE stun combo.",
+      "power_spikes": [
+        "Level 5 (Tibbers)",
+        "Luden's Echo",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Katarina",
+          "Yasuo",
+          "Fizz"
+        ],
+        "weak_vs": [
+          "Lux",
+          "Ziggs",
+          "Xerath"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Annie"
+    },
+    "ashe": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Utility ADC. Global R for picks. Perma-slow with autos. Hawkshot for vision.",
+      "power_spikes": [
+        "Level 1 (W poke)",
+        "Kraken/Magnetic Blaster",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Vayne",
+          "Jinx",
+          "Miss Fortune"
+        ],
+        "weak_vs": [
+          "Draven",
+          "Lucian",
+          "Samira"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Ashe"
+    },
+    "aurelion_sol": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Infinite-scaling mage. Farm Stardust stacks. E for roaming. Upgraded R is fight-winning.",
+      "power_spikes": [
+        "Level 5",
+        "Rod of Ages stacked",
+        "75+ Stardust"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Yasuo",
+          "melee assassins"
+        ],
+        "weak_vs": [
+          "Fizz",
+          "Zed",
+          "Akali"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Aurelion_Sol"
+    },
+    "aurora": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Zone control battlemage. W hop for safety. R traps enemies in AoE.",
+      "power_spikes": [
+        "Level 5",
+        "Riftmaker/Crown",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile mages"
+        ],
+        "weak_vs": [
+          "Mobile assassins",
+          "Kassadin"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Aurora"
+    },
+    "bard": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Roaming support. Collect chimes for scaling. Q stun, E portals for creative plays. R for game-changing stasis.",
+      "power_spikes": [
+        "Level 2 (Q+AA)",
+        "Chime scaling",
+        "Level 5 R"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Sona",
+          "Soraka",
+          "Lulu"
+        ],
+        "weak_vs": [
+          "Leona",
+          "Nautilus",
+          "Blitzcrank"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Bard"
+    },
+    "blitzcrank": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Pick support. Land Q hook to win fights. Q→E→R combo deletes squishies.",
+      "power_spikes": [
+        "Level 1 (Q)",
+        "Level 5 (R)",
+        "Zeke's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Sona",
+          "Soraka",
+          "Jinx"
+        ],
+        "weak_vs": [
+          "Morgana",
+          "Sivir",
+          "Ezreal"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Blitzcrank"
+    },
+    "brand": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AoE damage mage. Stack Blaze for %HP explosion. R bounces in teamfights.",
+      "power_spikes": [
+        "Level 3 (full combo)",
+        "Liandry's Torment",
+        "Level 5 R"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Tanks",
+          "grouped teams"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "long-range poke"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Brand"
+    },
+    "braum": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Defensive tank support. E blocks projectiles. Passive team stuns. R for engage.",
+      "power_spikes": [
+        "Level 1 (passive)",
+        "Level 5 R",
+        "Zeke's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Ashe",
+          "Jinx",
+          "Caitlyn"
+        ],
+        "weak_vs": [
+          "Karma",
+          "Lulu",
+          "poke supports"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Braum"
+    },
+    "caitlyn": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Lane bully ADC with longest base range. Trap control zones. Net for self-peel.",
+      "power_spikes": [
+        "Level 1 (range)",
+        "Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Vayne",
+          "Kai'Sa",
+          "short-range ADCs"
+        ],
+        "weak_vs": [
+          "Draven",
+          "Samira",
+          "Sivir"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Caitlyn"
+    },
+    "camille": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Precision diver. E wall-jump engage. Q true damage. R locks target in 1v1.",
+      "power_spikes": [
+        "Level 5",
+        "Trinity Force",
+        "Level 9 (Q max)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Nasus",
+          "Kayle",
+          "ranged tops"
+        ],
+        "weak_vs": [
+          "Jax",
+          "Renekton",
+          "Darius"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Camille"
+    },
+    "corki": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Hybrid damage poke/burst. Package roams. Mixed damage hard to itemize against.",
+      "power_spikes": [
+        "Level 5",
+        "Trinity Force",
+        "Package spawn"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AD-heavy comps",
+          "tanks"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Zed",
+          "Fizz"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Corki"
+    },
+    "darius": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Lane bully. Stack Hemorrhage to 5 then R execute. Resets in teamfights.",
+      "power_spikes": [
+        "Level 1 (passive)",
+        "Level 5 R",
+        "Trinity Force"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Garen",
+          "Nasus",
+          "tanks"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Quinn",
+          "Kennen"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Darius"
+    },
+    "diana": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AP dive assassin/bruiser. Q+E dash combo. R for teamfight AoE grouping.",
+      "power_spikes": [
+        "Level 5",
+        "Nashor's/Riftmaker",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy comps",
+          "immobile carries"
+        ],
+        "weak_vs": [
+          "Galio",
+          "tanky comps"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Diana"
+    },
+    "dr_mundo": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Unkillable regen tank. Q poke in lane. R makes you impossible to burst down.",
+      "power_spikes": [
+        "Level 5 R",
+        "Heartsteel/Warmog's",
+        "Spirit Visage"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Burst comps",
+          "AP comps"
+        ],
+        "weak_vs": [
+          "Grievous Wounds",
+          "Vayne",
+          "Fiora"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Dr._Mundo"
+    },
+    "draven": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Snowball ADC. Catch axes for massive damage. Cash stacks on kills for gold lead.",
+      "power_spikes": [
+        "Level 1 (Q damage)",
+        "BT/BotRK",
+        "First kill (gold spike)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Ezreal",
+          "Vayne",
+          "Kai'Sa"
+        ],
+        "weak_vs": [
+          "Caitlyn",
+          "Samira",
+          "Tristana"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Draven"
+    },
+    "ekko": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AP assassin with safety net. E+Q burst. W zoning. R for escape/damage/heal.",
+      "power_spikes": [
+        "Level 5",
+        "Lich Bane/Protobelt",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile mages",
+          "squishy teams"
+        ],
+        "weak_vs": [
+          "Galio",
+          "Diana",
+          "tanky teams"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Ekko"
+    },
+    "evelynn": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Jungle AP assassin. Invisible after 5. Charm into burst combo. R execute + escape.",
+      "power_spikes": [
+        "Level 5 (stealth)",
+        "Riftmaker/Protobelt",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy carries",
+          "no-vision teams"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Lee Sin",
+          "control wards"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Evelynn"
+    },
+    "ezreal": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Poke ADC with safety blink. Q spam + on-hit build. Global R for assists.",
+      "power_spikes": [
+        "Trinity Force/Essence Reaver",
+        "Manamune stacked",
+        "3 items"
+      ],
+      "synergies": [
+        "Karma",
+        "Lulu",
+        "Braum"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Jinx",
+          "Varus",
+          "Ashe"
+        ],
+        "weak_vs": [
+          "Draven",
+          "Lucian",
+          "Tristana"
+        ]
+      },
+      "full_data": true,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Ezreal"
+    },
+    "fiddlesticks": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Jungle teamfight mage. R from fog for AoE fear + massive damage.",
+      "power_spikes": [
+        "Level 5 (R)",
+        "Riftmaker/Liandry's",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "immobile comps"
+        ],
+        "weak_vs": [
+          "Spread comps",
+          "Olaf",
+          "QSS"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Fiddlesticks"
+    },
+    "fiora": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "Ultimate 1v1 duelist. Proc vitals for %HP true damage. W parries any ability.",
+      "power_spikes": [
+        "Level 1 (vitals)",
+        "Divine Sunderer/Trinity",
+        "Level 5 R"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Tanks",
+          "Garen",
+          "Malphite"
+        ],
+        "weak_vs": [
+          "Renekton",
+          "Pantheon",
+          "Kennen"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Fiora"
+    },
+    "fizz": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AP assassin. E untargetable dodge. R fish for pick. All-in burst combo.",
+      "power_spikes": [
+        "Level 3 (all-in)",
+        "Level 5 R",
+        "Lich Bane"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile mages",
+          "Lux",
+          "Veigar"
+        ],
+        "weak_vs": [
+          "Galio",
+          "Diana",
+          "AD matchups"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Fizz"
+    },
+    "galio": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Anti-AP tank mage. W taunt for teamfights. R global follow-up for allies.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire/Hollow Radiance",
+        "ROA"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AP assassins",
+          "Fizz",
+          "Akali"
+        ],
+        "weak_vs": [
+          "AD matchups",
+          "Yasuo",
+          "Irelia"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Galio"
+    },
+    "garen": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Simple lane-dominant juggernaut. Q silence, E spin damage, R true damage execute.",
+      "power_spikes": [
+        "Level 5 (R execute)",
+        "Trinity Force/Stridebreaker",
+        "Level 9 (max E)"
+      ],
+      "synergies": [
+        "Yuumi",
+        "Lulu",
+        "Karma"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Nasus",
+          "Kayle",
+          "Teemo"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Quinn",
+          "Darius"
+        ]
+      },
+      "full_data": true,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Garen"
+    },
+    "gnar": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Transform champion. Kite in Mini; engage in Mega. Manage rage for teamfight R.",
+      "power_spikes": [
+        "Level 5 (Mega R)",
+        "Black Cleaver/Trinity",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee tanks",
+          "immobile tops"
+        ],
+        "weak_vs": [
+          "Irelia",
+          "Camille",
+          "gap closers"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Gnar"
+    },
+    "gragas": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Versatile AP bruiser. E engage. R for displacement/isolation. W sustain.",
+      "power_spikes": [
+        "Level 3 (E engage)",
+        "Level 5 R",
+        "Riftmaker/ROA"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Assassins",
+          "melee matchups"
+        ],
+        "weak_vs": [
+          "Range poke",
+          "Jayce",
+          "Kayle"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Gragas"
+    },
+    "graves": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Jungle bruiser ADC. Short-range shotgun bursts. E stacking armor for tankiness.",
+      "power_spikes": [
+        "Level 3 (clear)",
+        "Eclipse/Serylda's",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy junglers",
+          "Evelynn"
+        ],
+        "weak_vs": [
+          "Tank junglers",
+          "Rammus",
+          "Malphite"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Graves"
+    },
+    "gwen": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AP bruiser duelist. W mist grants immunity to outside damage. Q for DPS.",
+      "power_spikes": [
+        "Level 5",
+        "Riftmaker/Nashor's",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Tanks",
+          "Garen",
+          "Malphite"
+        ],
+        "weak_vs": [
+          "Ranged tops",
+          "Vayne",
+          "Quinn"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Gwen"
+    },
+    "hecarim": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Dive jungler. E charge into R teamfight fear. W sustain in fights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Trinity Force",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy backlines",
+          "immobile teams"
+        ],
+        "weak_vs": [
+          "Lee Sin",
+          "Olaf",
+          "Amumu"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Hecarim"
+    },
+    "heimerdinger": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Zone control mage. Turrets control lane. R+Q mega turret for fights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Liandry's",
+        "3 turrets up"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee laners",
+          "siege comps"
+        ],
+        "weak_vs": [
+          "Syndra",
+          "long-range poke",
+          "Xerath"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Heimerdinger"
+    },
+    "irelia": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Mobile duelist. Q reset chains through minions. E stun setup. R for teamfight marks.",
+      "power_spikes": [
+        "Level 5",
+        "BotRK",
+        "Level 9 (Q max)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "squishy teams"
+        ],
+        "weak_vs": [
+          "Renekton",
+          "Fiora",
+          "Volibear"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Irelia"
+    },
+    "janna": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Peel enchanter. E shield + AD for carry. R disengage/heal in teamfights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Ardent Censer",
+        "Staff of Flowing Waters"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Dive comps",
+          "assassins"
+        ],
+        "weak_vs": [
+          "Hard engage",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Janna"
+    },
+    "jarvan_iv": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Jungle diver. E+Q combo for knockup engage. R traps key targets.",
+      "power_spikes": [
+        "Level 2 (E+Q)",
+        "Level 5 R",
+        "Eclipse/Goredrinker"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile ADCs",
+          "clumped teams"
+        ],
+        "weak_vs": [
+          "Ezreal",
+          "Tristana",
+          "dashes"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jarvan_IV"
+    },
+    "jax": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Late-game duelist. E dodge for outplays. R gives tankiness + 3-hit passive.",
+      "power_spikes": [
+        "Level 5",
+        "Trinity Force/Divine Sunderer",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AA-reliant champs",
+          "Tryndamere"
+        ],
+        "weak_vs": [
+          "Malphite",
+          "Gragas",
+          "Kennen"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jax"
+    },
+    "jayce": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Form-swap poke/bruiser. Ranged E+Q for poke. Melee for all-in burst.",
+      "power_spikes": [
+        "Level 1 (both forms)",
+        "Manamune/Eclipse",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Short-range champs",
+          "melees"
+        ],
+        "weak_vs": [
+          "Gap closers",
+          "Irelia",
+          "Camille"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jayce"
+    },
+    "jhin": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Utility ADC. Fixed 4-shot with massive 4th shot crit. R for long-range picks.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile targets",
+          "utility comps"
+        ],
+        "weak_vs": [
+          "Engage supports",
+          "Samira",
+          "Sivir"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jhin"
+    },
+    "jinx": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Hypercarry ADC. Get Excited passive enables resets in teamfights. Global R execute.",
+      "power_spikes": [
+        "Level 5",
+        "Infinity Edge",
+        "3 items (hyperscale)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight resets",
+          "late-game"
+        ],
+        "weak_vs": [
+          "Draven",
+          "Caitlyn",
+          "hard engage"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jinx"
+    },
+    "kaisa": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Hybrid ADC. Evolve abilities through items. R dash for assassination or repositioning.",
+      "power_spikes": [
+        "Q evolve (~BotRK+Pickaxe)",
+        "E evolve (AS threshold)",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Isolated targets",
+          "burst comps"
+        ],
+        "weak_vs": [
+          "Draven",
+          "Caitlyn",
+          "poke lanes"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kai%27Sa"
+    },
+    "kalista": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Kiting ADC. Constant dashing AAs. E rend for burst. R to save/engage with support.",
+      "power_spikes": [
+        "Level 5",
+        "BotRK",
+        "Runaan's Hurricane"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee teams",
+          "immobile targets"
+        ],
+        "weak_vs": [
+          "Point-click CC",
+          "AS slows",
+          "Frozen Heart"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kalista"
+    },
+    "karma": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Flex enchanter. R+E AoE shield/MS. R+Q for poke. R available at level 1.",
+      "power_spikes": [
+        "Level 1 (R available)",
+        "Ardent Censer",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Poke comps",
+          "kiting"
+        ],
+        "weak_vs": [
+          "All-in engage",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Karma"
+    },
+    "kassadin": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Scaling assassin. Weak early; godlike after level 13. R blink = infinite mobility.",
+      "power_spikes": [
+        "Level 5 (R unlock)",
+        "Rod of Ages",
+        "Level 13 (R3)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AP mids",
+          "late-game"
+        ],
+        "weak_vs": [
+          "AD assassins",
+          "Zed",
+          "Talon",
+          "early aggression"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kassadin"
+    },
+    "katarina": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Reset assassin. E to daggers for AoE. Get kill → all CDs reset → chain kills.",
+      "power_spikes": [
+        "Level 5 R",
+        "1 item",
+        "First reset in teamfight"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy clumped teams"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "Galio",
+          "Lissandra"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Katarina"
+    },
+    "kayle": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Scaling hypercarry. Weak early (melee). Level 5 = ranged. Level 15 = godlike AoE.",
+      "power_spikes": [
+        "Level 5 (ranged)",
+        "Level 10 (waves)",
+        "Level 15 (ascended)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late-game",
+          "outscaling"
+        ],
+        "weak_vs": [
+          "Early aggression",
+          "Renekton",
+          "Darius",
+          "ganks"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kayle"
+    },
+    "kayn": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Form-evolving jungler. SA: squishy assassin. Rhaast: drain-tank bruiser. E wall-walk for ganks.",
+      "power_spikes": [
+        "Form transform",
+        "Level 5",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Form-dependent"
+        ],
+        "weak_vs": [
+          "Crowd control",
+          "invades"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kayn"
+    },
+    "kennen": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Teamfight engage mage. Flash+R into enemy team for multi-stun AoE.",
+      "power_spikes": [
+        "Level 5 R",
+        "Protobelt",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee tops",
+          "teamfights"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "MR stacking",
+          "split pushers"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kennen"
+    },
+    "khazix": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Isolation assassin. Q deals massive single-target damage to isolated. R stealth resets passive.",
+      "power_spikes": [
+        "Level 5 R+evolve",
+        "Youmuu's/Eclipse",
+        "Isolation pick"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Isolated targets",
+          "squishy junglers"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "grouped teams",
+          "Rammus"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kha%27Zix"
+    },
+    "kogmaw": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Hyperscaling ADC. W gives massive range + %HP on-hit. Needs peel to survive.",
+      "power_spikes": [
+        "Level 5",
+        "BotRK/Runaan's",
+        "3 items (hyperscale)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Tanks",
+          "late-game teamfights"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "dive comps",
+          "no peel"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kog%27Maw"
+    },
+    "ksante": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Technical tank. Tanky in base form; R transforms into squishy damage dealer. High skill ceiling.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "Iceborn Gauntlet"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile tops",
+          "tanks"
+        ],
+        "weak_vs": [
+          "Ranged abusers",
+          "Vayne",
+          "Kennen"
+        ]
+      },
+      "full_data": false,
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:K%27Sante"
+    },
+    "lee_sin": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "Early game aggressor. Wardhop mobility. Insec kick (R enemy into team) is signature play.",
+      "power_spikes": [
+        "Level 3",
+        "Eclipse/Youmuu's",
+        "Early-mid game"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy junglers",
+          "Evelynn"
+        ],
+        "weak_vs": [
+          "Rammus",
+          "Amumu",
+          "scaling comps"
+        ]
+      },
+      "full_data": false
+    },
+    "leona": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "All-in engage support. E engage → Q stun → R for AoE. Tanky with W.",
+      "power_spikes": [
+        "Level 2 E+Q",
+        "Level 5 R",
+        "Zeke's Convergence"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy enchanters",
+          "Sona",
+          "Soraka"
+        ],
+        "weak_vs": [
+          "Morgana",
+          "Braum",
+          "Alistar"
+        ]
+      },
+      "full_data": false
+    },
+    "lillia": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Speed-ramping AP jungler. Q stacks MS. R puts entire team to sleep for wombo.",
+      "power_spikes": [
+        "Level 5 R",
+        "Liandry's",
+        "Riftmaker"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "immobile comps"
+        ],
+        "weak_vs": [
+          "Lee Sin",
+          "Olaf",
+          "early invaders"
+        ]
+      },
+      "full_data": false
+    },
+    "lissandra": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Engage/lockdown mage. E to dive in, W root, R stasis for AoE. Anti-assassin with self-R.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's/Crown",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Assassins (self-R)",
+          "melee mids"
+        ],
+        "weak_vs": [
+          "Long-range mages",
+          "Syndra",
+          "Orianna"
+        ]
+      },
+      "full_data": false
+    },
+    "lucian": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Combo ADC. Weave abilities + passive double-shots for burst DPS. Short range but high damage.",
+      "power_spikes": [
+        "Level 2 (Q+AA)",
+        "BotRK/Essence Reaver",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Short trades",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Caitlyn",
+          "outranged lanes",
+          "tanks"
+        ]
+      },
+      "full_data": false
+    },
+    "lulu": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Top-tier enchanter. W polymorph shuts down assassins. R saves carries with HP+knockup.",
+      "power_spikes": [
+        "Level 2 (W+E)",
+        "Level 5 R",
+        "Ardent Censer"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Hypercarries (Jinx,Vayne)",
+          "divers"
+        ],
+        "weak_vs": [
+          "Hard engage",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false
+    },
+    "lux": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Long-range burst mage. Q root → E → R combo for kills. W shields team. Safe poke.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's Echo",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile targets",
+          "squishy teams"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "Zed"
+        ]
+      },
+      "full_data": false
+    },
+    "malphite": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Tank with game-winning R engage. Stacks armor. R into enemy team = instant teamfight win.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AD-heavy comps",
+          "auto-attackers"
+        ],
+        "weak_vs": [
+          "AP comps",
+          "Vayne",
+          "Fiora"
+        ]
+      },
+      "full_data": false
+    },
+    "maokai": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "CC tank support/jungle. W point-click root. R massive engage tool. E for vision.",
+      "power_spikes": [
+        "Level 2 W+Q",
+        "Level 5 R",
+        "Sunfire/Radiant Virtue"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy comps",
+          "melee teams"
+        ],
+        "weak_vs": [
+          "Poke comps",
+          "Morgana",
+          "disengage"
+        ]
+      },
+      "full_data": false
+    },
+    "master_yi": {
+      "meta_tier": "B",
+      "difficulty": "Beginner",
+      "playstyle": "Hypercarry melee. R = unstoppable. Q dodges abilities. Resets on kills = pentakill potential.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK/Kraken",
+        "Guinsoo's Rageblade"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy teams",
+          "low-CC comps"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "Rammus",
+          "Jax"
+        ]
+      },
+      "full_data": false
+    },
+    "mel": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Burst mage with execution R. W shield for safety. Combo-oriented.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's Echo",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Low-HP targets",
+          "squishy teams"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "dive comps"
+        ]
+      },
+      "full_data": false
+    },
+    "milio": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Protective enchanter. W zone heals and extends range. R is AoE Mikael's (team cleanse).",
+      "power_spikes": [
+        "Level 2 W+E",
+        "Level 5 R",
+        "Ardent Censer/Harmonic Echo"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Hypercarries",
+          "auto-attack ADCs"
+        ],
+        "weak_vs": [
+          "Hard engage",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false
+    },
+    "miss_fortune": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Lane bully ADC. Q bounce poke. R is devastating in narrow fights/objectives.",
+      "power_spikes": [
+        "Level 1 Q poke",
+        "Infinity Edge",
+        "Level 5 R"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped enemies",
+          "immobile teams"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "hard engage",
+          "Samira"
+        ]
+      },
+      "full_data": false
+    },
+    "mordekaiser": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AP juggernaut. R forces 1v1 anyone. Passive aura melts in extended fights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Riftmaker",
+        "Rylai's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy targets",
+          "immobile carries"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Fiora",
+          "QSS"
+        ]
+      },
+      "full_data": false
+    },
+    "morgana": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Anti-engage support. E spell shield blocks all CC. Q has longest root in game.",
+      "power_spikes": [
+        "Level 1 Q",
+        "Level 2 Q+E",
+        "Zhonya's/Zeke's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Engage supports",
+          "Leona",
+          "Thresh"
+        ],
+        "weak_vs": [
+          "Poke supports",
+          "Lux",
+          "range"
+        ]
+      },
+      "full_data": false
+    },
+    "nami": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Complete enchanter. Q bubble is strong CC. W heals+damages. E empowers carry. R engage/disengage.",
+      "power_spikes": [
+        "Level 2 Q+W",
+        "Level 5 R",
+        "Ardent Censer"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Auto-attack ADCs",
+          "Jinx",
+          "Vayne"
+        ],
+        "weak_vs": [
+          "Hard engage",
+          "all-in lanes"
+        ]
+      },
+      "full_data": false
+    },
+    "nasus": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Infinite scaling juggernaut. Farm Q stacks. Late game 1v9 with 500+ stacks.",
+      "power_spikes": [
+        "Q 100+ stacks",
+        "Trinity Force",
+        "Level 9 + 300 stacks"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups late",
+          "tanks"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Darius early",
+          "ranged tops"
+        ]
+      },
+      "full_data": false
+    },
+    "nautilus": {
+      "meta_tier": "S",
+      "difficulty": "Beginner",
+      "playstyle": "CC machine support. Every ability has CC. R is point-click knockup. Q hook engage.",
+      "power_spikes": [
+        "Level 1 Q",
+        "Level 2 Q+AA",
+        "Level 5 R"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy carries",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Morgana",
+          "Braum",
+          "disengage"
+        ]
+      },
+      "full_data": false
+    },
+    "nidalee": {
+      "meta_tier": "B",
+      "difficulty": "Hard",
+      "playstyle": "High-skill form-swap jungler. Spear poke → cougar burst. Early game power. Heals allies.",
+      "power_spikes": [
+        "Level 1 (form swap)",
+        "Lich Bane",
+        "Early game"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy junglers",
+          "low-vision teams"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Rammus",
+          "outscaled late"
+        ]
+      },
+      "full_data": false
+    },
+    "nilah": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Melee ADC with dodge. W blocks all AAs. R pull + heal in teamfights. Needs specific support.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Auto-attack carries",
+          "melee comps"
+        ],
+        "weak_vs": [
+          "Poke lanes",
+          "Caitlyn",
+          "Lux"
+        ]
+      },
+      "full_data": false
+    },
+    "nocturne": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Dive assassin jungler. R darkness = terror. Dive carries with no counterplay vision.",
+      "power_spikes": [
+        "Level 5 R",
+        "Eclipse/Youmuu's",
+        "Edge of Night"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Isolated carries",
+          "squishy teams"
+        ],
+        "weak_vs": [
+          "Grouped teams",
+          "tanks",
+          "Lulu"
+        ]
+      },
+      "full_data": false
+    },
+    "norra": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Portal mage. Unique map control with portals. Abilities interact with portal system.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's Echo",
+        "Rod of Ages"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile teams",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "mobile champs"
+        ]
+      },
+      "full_data": false
+    },
+    "nunu": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Engage/objective jungle tank. W snowball for engage. Q smite for objectives. R for zone control.",
+      "power_spikes": [
+        "Level 3 (fast clear)",
+        "Level 5 R",
+        "Sunfire/Heartsteel"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Objective control",
+          "team comps"
+        ],
+        "weak_vs": [
+          "Invade junglers",
+          "Lee Sin",
+          "counter-jungle"
+        ]
+      },
+      "full_data": false
+    },
+    "olaf": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Unkillable berserker. R = CC immune. Low HP = more AS. E true damage ignores armor.",
+      "power_spikes": [
+        "Level 5 R",
+        "Goredrinker/Eclipse",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "CC-reliant teams",
+          "squishies"
+        ],
+        "weak_vs": [
+          "Kiting",
+          "Vayne",
+          "ranged tops"
+        ]
+      },
+      "full_data": false
+    },
+    "orianna": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "Ball-control mage. Attach ball to diver → R Shockwave for game-winning 5-man CC combo.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's Echo",
+        "Rabadon's + R combo"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight comps",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "Zed"
+        ]
+      },
+      "full_data": false
+    },
+    "ornn": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Team-scaling tank. Upgrades allies' items. R massive long-range engage. Brittle = bonus damage.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "Level 9 (item upgrades)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late game (item upgrades)",
+          "teamfights"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Fiora",
+          "true damage"
+        ]
+      },
+      "full_data": false
+    },
+    "pantheon": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Early-game bully. W stun → empowered Q for burst. E blocks all frontal damage. R to roam.",
+      "power_spikes": [
+        "Level 3 (combo)",
+        "Level 5 R roams",
+        "Eclipse"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "squishies"
+        ],
+        "weak_vs": [
+          "Outscaled late",
+          "tanks",
+          "Malphite"
+        ]
+      },
+      "full_data": false
+    },
+    "poppy": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Anti-dash tank. W stops all dashes. E wall stun. R removes threats from fights.",
+      "power_spikes": [
+        "Level 2 E+Q",
+        "Level 5 R",
+        "Sunfire Aegis"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Dash-reliant champs",
+          "Irelia",
+          "Lee Sin"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "Teemo"
+        ]
+      },
+      "full_data": false
+    },
+    "pyke": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Assassin support. Hook → stun → R execute = gold for both you and ADC. Snowball machine.",
+      "power_spikes": [
+        "Level 2 Q+E",
+        "Level 5 R",
+        "Duskblade"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy lanes",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Nautilus",
+          "Leona"
+        ]
+      },
+      "full_data": false
+    },
+    "rakan": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Engage enchanter. R+W dive for AoE charm+knockup. E to dash back to carry for safety.",
+      "power_spikes": [
+        "Level 2 W+E",
+        "Level 5 R",
+        "Zeke's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "immobile carries"
+        ],
+        "weak_vs": [
+          "Poke supports",
+          "Morgana",
+          "disengage"
+        ]
+      },
+      "full_data": false
+    },
+    "rammus": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Anti-AD tank. Taunt carries into you → they kill themselves on reflected damage. Powerball for engage.",
+      "power_spikes": [
+        "Level 5 R",
+        "Thornmail",
+        "Sunfire Aegis"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AD-heavy comps",
+          "auto-attackers",
+          "Master Yi"
+        ],
+        "weak_vs": [
+          "AP comps",
+          "magic damage",
+          "Vayne"
+        ]
+      },
+      "full_data": false
+    },
+    "rell": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AoE CC tank. W knockup engage → R pulls enemies together → E stun with ally.",
+      "power_spikes": [
+        "Level 2 W+E",
+        "Level 5 R",
+        "Zeke's/Locket"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "engage comps"
+        ],
+        "weak_vs": [
+          "Poke",
+          "disengage",
+          "Janna"
+        ]
+      },
+      "full_data": false
+    },
+    "renekton": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Lane bully. E in → W stun → Q heal → E out. Dominates early game. Falls off late.",
+      "power_spikes": [
+        "Level 3 (full combo)",
+        "Level 5 R",
+        "BotRK/Eclipse"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups early",
+          "Irelia",
+          "Fiora early"
+        ],
+        "weak_vs": [
+          "Late game",
+          "Vayne",
+          "ranged poke"
+        ]
+      },
+      "full_data": false
+    },
+    "rengar": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Brush assassin. R stealth → leap → one-shot. Ferocity stacking for empowered abilities.",
+      "power_spikes": [
+        "Level 5 R",
+        "Youmuu's/Edge of Night",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Isolated squishies",
+          "ADCs"
+        ],
+        "weak_vs": [
+          "Grouped teams",
+          "Zhonya's",
+          "Lulu"
+        ]
+      },
+      "full_data": false
+    },
+    "riven": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "Animation-cancel combo fighter. High mobility + high burst. All AD scaling including shield.",
+      "power_spikes": [
+        "Level 3 (full combo)",
+        "Level 5 R",
+        "Youmuu's/Eclipse"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishies",
+          "short trades"
+        ],
+        "weak_vs": [
+          "Renekton",
+          "Malphite",
+          "armor stackers"
+        ]
+      },
+      "full_data": false
+    },
+    "rumble": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Heat management mage. R Equalizer is one of the best zone ults in game. Stay 50-100 Heat.",
+      "power_spikes": [
+        "Level 5 R",
+        "Liandry's/Riftmaker",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfights (R zone)",
+          "grouped teams"
+        ],
+        "weak_vs": [
+          "Long-range poke",
+          "Jayce",
+          "Kennen"
+        ]
+      },
+      "full_data": false
+    },
+    "ryze": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Scaling battlemage. Mana scaling = unique builds. EQ combos for spread damage. R for team teleport.",
+      "power_spikes": [
+        "Tear of the Goddess",
+        "Seraph's Embrace",
+        "3 items (mana scaling)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "late game"
+        ],
+        "weak_vs": [
+          "Early aggression",
+          "assassins",
+          "Zed"
+        ]
+      },
+      "full_data": false
+    },
+    "samira": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Combo ADC. Build S rank through unique ability casts → R for massive AoE. W blocks projectiles.",
+      "power_spikes": [
+        "S rank (R ready)",
+        "Infinity Edge",
+        "Lifesteal items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee range fights",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "Nautilus",
+          "Leona"
+        ]
+      },
+      "full_data": false
+    },
+    "senna": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Scaling support ADC. Infinite range scaling from mist. Q heals+damages. R global shield/damage.",
+      "power_spikes": [
+        "20 mist stacks",
+        "Level 5 R",
+        "Umbral Glaive"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Poke lanes",
+          "scaling"
+        ],
+        "weak_vs": [
+          "Hard engage",
+          "all-in",
+          "Leona"
+        ]
+      },
+      "full_data": false
+    },
+    "seraphine": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Teamfight enchanter/mage. R charm chains through enemies. W team shield/heal. Q poke.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's/Ardent",
+        "R chain on 5"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "front-to-back"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Zed",
+          "dive comps"
+        ]
+      },
+      "full_data": false
+    },
+    "sett": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Wrestler juggernaut. W Haymaker true damage based on damage absorbed. R suplex carry into enemy team.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK/Goredrinker",
+        "Sterak's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "teamfight CC"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "kiting"
+        ]
+      },
+      "full_data": false
+    },
+    "shen": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Global protector tank. R teleport to save ally anywhere. E taunt for engage. W blocks AAs.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Auto-attackers",
+          "split control"
+        ],
+        "weak_vs": [
+          "Magic damage",
+          "AP tops",
+          "Mordekaiser"
+        ]
+      },
+      "full_data": false
+    },
+    "shyvana": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "AP bruiser jungler. Dragon form = massive AoE. E mark → AA for %max HP. Farm Fury for R.",
+      "power_spikes": [
+        "Level 5 R",
+        "Nashor's Tooth/Riftmaker",
+        "Dragon form"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy teams",
+          "objectives"
+        ],
+        "weak_vs": [
+          "Kiting",
+          "CC chains",
+          "Vayne"
+        ]
+      },
+      "full_data": false
+    },
+    "singed": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Proxy farming madman. Run behind enemies, poison trail, flip into team. W grounds dashers.",
+      "power_spikes": [
+        "Level 5 R",
+        "Rylai's Crystal Scepter",
+        "Liandry's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "chasing comps"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "kiting"
+        ]
+      },
+      "full_data": false
+    },
+    "sion": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Infinite HP scaling tank. W passive stacks HP. R cross-map engage. Q charged knockup.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "W HP stacking (200+)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight engage",
+          "late-game scaling"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Fiora",
+          "true damage"
+        ]
+      },
+      "full_data": false
+    },
+    "sivir": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Waveclear ADC with team utility. E spell shield for safety. R team MS for engage.",
+      "power_spikes": [
+        "Level 1 (W push)",
+        "Kraken/Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Waveclear",
+          "team engage comps"
+        ],
+        "weak_vs": [
+          "Single-target burst",
+          "Draven",
+          "lane bullies"
+        ]
+      },
+      "full_data": false
+    },
+    "smolder": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Infinite-scaling ADC. Farm Q stacks. At 225 = massive AoE explosions. R calls mom for teamfight.",
+      "power_spikes": [
+        "25 Q stacks",
+        "125 stacks (AoE)",
+        "225 stacks (explosion)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late game",
+          "scaling"
+        ],
+        "weak_vs": [
+          "Early aggression",
+          "Draven",
+          "lane bullies"
+        ]
+      },
+      "full_data": false
+    },
+    "sona": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Scaling enchanter. Auras buff team. R AoE stun. Late game team power is massive.",
+      "power_spikes": [
+        "Level 5 R",
+        "Ardent Censer",
+        "3 items (aura scaling)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late-game teamfights",
+          "protect-carry comps"
+        ],
+        "weak_vs": [
+          "All-in lanes",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false
+    },
+    "soraka": {
+      "meta_tier": "S",
+      "difficulty": "Beginner",
+      "playstyle": "Global healer support. W spam heals carry. R heals entire team from anywhere. E silence zone.",
+      "power_spikes": [
+        "Level 2 Q+W",
+        "Level 5 R",
+        "Warmog's Armor"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Sustained fights",
+          "poke comps"
+        ],
+        "weak_vs": [
+          "Grievous Wounds",
+          "all-in",
+          "Ignite"
+        ]
+      },
+      "full_data": false
+    },
+    "swain": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Drain-tank battlemage. Pull CC'd enemies. R drain form = massive AoE sustained damage in teamfights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Liandry's/Riftmaker",
+        "Rod of Ages"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfights",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Burst mages",
+          "long-range poke",
+          "Xerath"
+        ]
+      },
+      "full_data": false
+    },
+    "talon": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Roaming assassin. E parkour over walls = fastest roamer. Passive bleed for burst.",
+      "power_spikes": [
+        "Level 2 (W+Q)",
+        "Level 5 R",
+        "Youmuu's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy mids",
+          "side lanes"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Malphite",
+          "armor stackers"
+        ]
+      },
+      "full_data": false
+    },
+    "teemo": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Lane bully. Blind shuts down auto-attackers. Shrooms for map control + damage.",
+      "power_spikes": [
+        "Level 1 (AA harass)",
+        "Liandry's",
+        "Nashor's Tooth"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Auto-attackers",
+          "Tryndamere",
+          "Jax"
+        ],
+        "weak_vs": [
+          "Gap closers",
+          "Irelia",
+          "all-in lanes"
+        ]
+      },
+      "full_data": false
+    },
+    "thresh": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Playmaker support. Hook engage. Lantern saves allies. Flay peels. R zones.",
+      "power_spikes": [
+        "Level 2 (Q+E)",
+        "Level 5 R",
+        "Zeke's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy targets",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Morgana",
+          "Braum",
+          "tanky lanes"
+        ]
+      },
+      "full_data": false
+    },
+    "tristana": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "All-in ADC. W jump reset on kills = snowball. E bomb burst. R self-peel.",
+      "power_spikes": [
+        "Level 2 (W+E)",
+        "Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Towers",
+          "burst trades"
+        ],
+        "weak_vs": [
+          "Caitlyn",
+          "poke lanes",
+          "Draven"
+        ]
+      },
+      "full_data": false
+    },
+    "tryndamere": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Split-push king. R = unkillable for 5s. Crit-based scaling. Forces 2+ to answer.",
+      "power_spikes": [
+        "Level 5 R",
+        "Kraken/Navori",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "1v1 split push",
+          "towers"
+        ],
+        "weak_vs": [
+          "Malphite",
+          "Nasus",
+          "Tabis + armor"
+        ]
+      },
+      "full_data": false
+    },
+    "twisted_fate": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Map-control mage. R teleport ganks with Gold Card stun. Global pressure.",
+      "power_spikes": [
+        "Level 5 R",
+        "Rod of Ages",
+        "Lich Bane"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Side lanes",
+          "roaming"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "Zed"
+        ]
+      },
+      "full_data": false
+    },
+    "twitch": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Stealth ADC. Q invisible for flanks. R for teamfight AoE piercing autos.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK/Kraken",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Flanks",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Control wards",
+          "Lee Sin",
+          "early aggression"
+        ]
+      },
+      "full_data": false
+    },
+    "urgot": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Ranged juggernaut. Rotate legs for %HP damage. R execute is terrifying finisher.",
+      "power_spikes": [
+        "Level 5 R",
+        "Black Cleaver",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee tops",
+          "tanks"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "Fiora"
+        ]
+      },
+      "full_data": false
+    },
+    "varus": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Hybrid poke ADC. Q poke. W blight stacks for %HP burst. R AoE root engage.",
+      "power_spikes": [
+        "Level 1 Q poke",
+        "Lethality or On-hit build",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "poke comps"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "dive",
+          "Zed"
+        ]
+      },
+      "full_data": false
+    },
+    "vayne": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "Tank-shredding hypercarry. W true damage melts anyone. Short range demands skill.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Tanks",
+          "HP-stackers",
+          "1v1"
+        ],
+        "weak_vs": [
+          "Caitlyn",
+          "Draven",
+          "hard engage",
+          "burst"
+        ]
+      },
+      "full_data": false
+    },
+    "veigar": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Infinite AP scaling mage. E cage is zone control. R point-click deletes squishies late.",
+      "power_spikes": [
+        "200+ AP stacks",
+        "Rabadon's",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy targets",
+          "late game"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "Zed",
+          "early aggression"
+        ]
+      },
+      "full_data": false
+    },
+    "velkoz": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Artillery mage. Geometry Q angles. R laser melts grouped enemies. Passive = true damage.",
+      "power_spikes": [
+        "Level 3 (full combo)",
+        "Level 5 R",
+        "Luden's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "tanks (true dmg)"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "gap closers",
+          "Fizz"
+        ]
+      },
+      "full_data": false
+    },
+    "vex": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Anti-mobility burst mage. Fear dashing enemies. R dashes to target for burst.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Mobile champs",
+          "Yasuo",
+          "Irelia"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "long-range poke"
+        ]
+      },
+      "full_data": false
+    },
+    "vi": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Lockdown jungler. Q charge engage. R point-click suppress on priority target.",
+      "power_spikes": [
+        "Level 3",
+        "Level 5 R",
+        "Trinity Force"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy carries",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Morgana",
+          "QSS"
+        ]
+      },
+      "full_data": false
+    },
+    "viego": {
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "playstyle": "Reset assassin/bruiser. Kill → possess → heal → R reset. Snowball monster in teamfights.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK/Trinity",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight resets",
+          "kills"
+        ],
+        "weak_vs": [
+          "Burst",
+          "CC chains",
+          "Rammus"
+        ]
+      },
+      "full_data": false
+    },
+    "viktor": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Scaling control mage. Evolved E = massive waveclear + poke. R zone control.",
+      "power_spikes": [
+        "First upgrade (E)",
+        "Level 5 R",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "sieging"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "gap closers"
+        ]
+      },
+      "full_data": false
+    },
+    "vladimir": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Scaling AP drain tank. W untargetable pool. R amplifies team damage. No mana = infinite sustain.",
+      "power_spikes": [
+        "Level 9 (empowered Q)",
+        "Rabadon's",
+        "4 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late game",
+          "sustained fights"
+        ],
+        "weak_vs": [
+          "Grievous wounds",
+          "early aggression",
+          "Malzahar"
+        ]
+      },
+      "full_data": false
+    },
+    "volibear": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Frontline bruiser. R disables turrets for dives. W sustain in extended fights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Nashor's/Trinity",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "turret dives"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "ranged poke",
+          "Fiora"
+        ]
+      },
+      "full_data": false
+    },
+    "warwick": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Sustain jungler. W tracks low HP enemies. R long-range lockdown. Great for beginners.",
+      "power_spikes": [
+        "Level 3",
+        "Level 5 R",
+        "BotRK/Sunfire"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Low HP targets",
+          "skirmishes"
+        ],
+        "weak_vs": [
+          "Burst",
+          "Olaf",
+          "QSS"
+        ]
+      },
+      "full_data": false
+    },
+    "wukong": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Teamfight diver. R double-knockup = game-winning CC. W clone for outplays.",
+      "power_spikes": [
+        "Level 5 R",
+        "Black Cleaver/Trinity",
+        "Level 9 (R2)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "teamfights"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "Darius"
+        ]
+      },
+      "full_data": false
+    },
+    "xayah": {
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "playstyle": "Feather-root ADC. Setup feathers behind enemies then E root for lockdown. R = untargetable.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge",
+        "3 items (crit)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Clumped teams",
+          "dive protection with R"
+        ],
+        "weak_vs": [
+          "Long range poke",
+          "Caitlyn",
+          "Ezreal"
+        ]
+      },
+      "full_data": false
+    },
+    "xin_zhao": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Early game ganker. E dash + Q knockup for ganks. R blocks ranged damage.",
+      "power_spikes": [
+        "Level 3",
+        "Level 5 R",
+        "Trinity/BotRK"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy junglers",
+          "early game"
+        ],
+        "weak_vs": [
+          "Late game",
+          "scaling comps",
+          "Jax"
+        ]
+      },
+      "full_data": false
+    },
+    "yasuo": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "High-skill melee carry. Dash through minions. Windwall blocks projectiles. R on knockups.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge (100% crit)",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Projectile-heavy teams",
+          "knockup comps"
+        ],
+        "weak_vs": [
+          "Point-click CC",
+          "Malphite",
+          "Renekton"
+        ]
+      },
+      "full_data": false
+    },
+    "yone": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Dual-damage skirmisher. E engages allow risk-free trades. R is massive engage tool.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge",
+        "2 items (crit)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy teams",
+          "skirmishes"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "burst",
+          "Renekton"
+        ]
+      },
+      "full_data": false
+    },
+    "yuumi": {
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "playstyle": "Attach enchanter. Sit on carry, buff them. Untargetable while attached. R for AoE roots.",
+      "power_spikes": [
+        "Level 2 W+E",
+        "Level 5 R",
+        "Ardent/Harmonic Echo"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Hypercarries",
+          "late game"
+        ],
+        "weak_vs": [
+          "Hard engage early",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false
+    },
+    "zed": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "AD assassin. W shadow combos for poke. R all-in for kill. QSS/Stasis counter R.",
+      "power_spikes": [
+        "Level 3 (W+Q poke)",
+        "Level 5 R",
+        "Youmuu's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy mids",
+          "ADCs"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Stasis",
+          "armor stackers"
+        ]
+      },
+      "full_data": false
+    },
+    "zeri": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "Mobile ADC with skillshot AAs. E dashes through walls. R grants ramping MS+damage.",
+      "power_spikes": [
+        "Level 5 R",
+        "Trinity Force/BotRK",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Kiting",
+          "grouped teams"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "point-click",
+          "burst"
+        ]
+      },
+      "full_data": false
+    },
+    "ziggs": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Siege/poke mage. Q spam for poke. W satchel for mobility. R global AoE nuke.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Sieging",
+          "turrets",
+          "poke"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "gap closers"
+        ]
+      },
+      "full_data": false
+    },
+    "zilean": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Utility support. Double Q stun. E massive speed/slow. R is free Guardian Angel for carry.",
+      "power_spikes": [
+        "Level 2 (Q+W double bomb)",
+        "Level 5 R",
+        "CDR items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Dive comps (R saves)",
+          "single-target comps"
+        ],
+        "weak_vs": [
+          "AoE damage",
+          "Grievous Wounds"
+        ]
+      },
+      "full_data": false
+    },
+    "zoe": {
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "playstyle": "One-shot poke mage. E sleep into long-range Q for massive burst. W steals spells.",
+      "power_spikes": [
+        "Level 3 (E+Q combo)",
+        "Level 5",
+        "Luden's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy targets",
+          "picks"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "sustain",
+          "Cleanse/QSS"
+        ]
+      },
+      "full_data": false
+    },
+    "zyra": {
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "playstyle": "Zone control support. Plants deal constant damage. E root for CC. R AoE knockup in teamfights.",
+      "power_spikes": [
+        "Level 2 (E+Q plants)",
+        "Level 5 R",
+        "Liandry's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "immobile comps"
+        ],
+        "weak_vs": [
+          "Engage supports",
+          "Leona",
+          "Blitzcrank"
+        ]
+      },
+      "full_data": false
+    }
+  }
+}

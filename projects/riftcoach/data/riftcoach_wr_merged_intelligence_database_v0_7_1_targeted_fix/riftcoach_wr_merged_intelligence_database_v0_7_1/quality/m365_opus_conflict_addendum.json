@@ -1,0 +1,7 @@
+{
+  "version": "0.7.1",
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "legacy_abilities_dict_mismatches": "see quality/m365_opus_legacy_abilities_dict_mismatches.csv",
+  "karma_legacy_dict_quarantined": true,
+  "exact_values_not_promoted": true
+}

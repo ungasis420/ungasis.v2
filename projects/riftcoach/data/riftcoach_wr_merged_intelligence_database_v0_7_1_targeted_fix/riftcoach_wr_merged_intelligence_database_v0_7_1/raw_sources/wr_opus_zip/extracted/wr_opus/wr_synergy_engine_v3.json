@@ -1,0 +1,574 @@
+{
+ "_meta": {
+  "game": "Wild Rift",
+  "patch": "7.1e",
+  "chunk": "8a",
+  "version": "v3",
+  "generated": "2026-05-18"
+ },
+ "synergy_tags": {
+  "cc_chain": {
+   "desc": "Champions that chain CC together",
+   "examples": [
+    "Nautilus",
+    "Leona",
+    "Amumu",
+    "Jhin",
+    "Lissandra"
+   ]
+  },
+  "aoe_wombo": {
+   "desc": "AoE damage/CC layering",
+   "examples": [
+    "Malphite",
+    "Orianna",
+    "Miss Fortune",
+    "Diana",
+    "Kennen"
+   ]
+  },
+  "protect_carry": {
+   "desc": "Shield/heal/peel for hypercarry",
+   "examples": [
+    "Lulu",
+    "Janna",
+    "Soraka",
+    "Milio",
+    "Orianna"
+   ]
+  },
+  "dive_backline": {
+   "desc": "Mobile champions that dive enemy carries",
+   "examples": [
+    "Camille",
+    "Vi",
+    "Akali",
+    "Diana",
+    "Hecarim"
+   ]
+  },
+  "poke_siege": {
+   "desc": "Long-range poke and turret siege",
+   "examples": [
+    "Ezreal",
+    "Karma",
+    "Ziggs",
+    "Jayce",
+    "Xerath"
+   ]
+  },
+  "split_push": {
+   "desc": "1v1 duelists that pressure side lanes",
+   "examples": [
+    "Fiora",
+    "Tryndamere",
+    "Jax",
+    "Camille",
+    "Nasus"
+   ]
+  },
+  "reset_chain": {
+   "desc": "Kill resets cascade through team",
+   "examples": [
+    "Viego",
+    "Katarina",
+    "Jinx",
+    "Kha'Zix",
+    "Tristana"
+   ]
+  },
+  "engage_frontline": {
+   "desc": "Tanky initiators that start fights",
+   "examples": [
+    "Malphite",
+    "Leona",
+    "Nautilus",
+    "Amumu",
+    "Ornn"
+   ]
+  },
+  "disengage_peel": {
+   "desc": "Anti-engage and peeling tools",
+   "examples": [
+    "Janna",
+    "Lulu",
+    "Poppy",
+    "Braum",
+    "Thresh"
+   ]
+  },
+  "sustain_drain": {
+   "desc": "Healing/drain in extended fights",
+   "examples": [
+    "Swain",
+    "Soraka",
+    "Vladimir",
+    "Aatrox",
+    "Olaf"
+   ]
+  }
+ },
+ "champion_pair_synergies": [
+  {
+   "a": "Malphite",
+   "b": "Yasuo",
+   "tier": "S",
+   "type": "knockup_chain",
+   "why": "Malphite R knockup enables Yasuo R Last Breath on entire team"
+  },
+  {
+   "a": "Malphite",
+   "b": "Orianna",
+   "tier": "S",
+   "type": "aoe_wombo",
+   "why": "Orianna ball on Malphite \u2192 R Shockwave after  Malphite R knockup"
+  },
+  {
+   "a": "Amumu",
+   "b": "Miss Fortune",
+   "tier": "S",
+   "type": "aoe_wombo",
+   "why": "Amumu R roots \u2192 MF R Bullet Time full channel on rooted targets"
+  },
+  {
+   "a": "Nautilus",
+   "b": "Kai'Sa",
+   "tier": "S",
+   "type": "cc_chain",
+   "why": "Nautilus CC chain stacks Kai'Sa plasma for isolated Q burst"
+  },
+  {
+   "a": "Nautilus",
+   "b": "Samira",
+   "tier": "S",
+   "type": "cc_chain",
+   "why": "Nautilus CC feeds Samira Style grade rapidly for R Inferno Trigger"
+  },
+  {
+   "a": "Nautilus",
+   "b": "Jhin",
+   "tier": "S",
+   "type": "cc_chain",
+   "why": "Nautilus hook/R + Jhin W root = 5+ second CC lock"
+  },
+  {
+   "a": "Lulu",
+   "b": "Kog'Maw",
+   "tier": "S",
+   "type": "protect_carry",
+   "why": "Lulu W/E/R keeps Kog alive; W polymorph stops divers"
+  },
+  {
+   "a": "Lulu",
+   "b": "Vayne",
+   "tier": "S",
+   "type": "protect_carry",
+   "why": "Lulu peels perfectly for Vayne's short range; R saves from burst"
+  },
+  {
+   "a": "Lulu",
+   "b": "Jinx",
+   "tier": "A",
+   "type": "protect_carry",
+   "why": "Lulu shields + polymorph divers; Jinx passive chains after first kill"
+  },
+  {
+   "a": "Soraka",
+   "b": "Jinx",
+   "tier": "A",
+   "type": "protect_carry",
+   "why": "Soraka sustain keeps immobile Jinx alive; R global save"
+  },
+  {
+   "a": "Soraka",
+   "b": "Vayne",
+   "tier": "A",
+   "type": "protect_carry",
+   "why": "Soraka heals through Vayne's risky short-range trades"
+  },
+  {
+   "a": "Milio",
+   "b": "Kog'Maw",
+   "tier": "S",
+   "type": "protect_carry",
+   "why": "Milio W extends Kog'Maw attack range; R cleanses CC from Kog"
+  },
+  {
+   "a": "Milio",
+   "b": "Jinx",
+   "tier": "A",
+   "type": "protect_carry",
+   "why": "Milio range extend on rockets is absurd; R team cleanse saves from engage"
+  },
+  {
+   "a": "Karma",
+   "b": "Jhin",
+   "tier": "A",
+   "type": "poke_siege",
+   "why": "Karma R+E MS lets Jhin reposition; R+Q poke combos in lane"
+  },
+  {
+   "a": "Karma",
+   "b": "Ezreal",
+   "tier": "A",
+   "type": "poke_siege",
+   "why": "Double poke lane; Karma R+E disengage if caught"
+  },
+  {
+   "a": "Swain",
+   "b": "Jhin",
+   "tier": "S",
+   "type": "cc_chain",
+   "why": "Swain E root + passive pull \u2192 Jhin W root = death sentence"
+  },
+  {
+   "a": "Swain",
+   "b": "Nautilus",
+   "tier": "A",
+   "type": "cc_chain",
+   "why": "Nautilus CC \u2192 Swain passive pull \u2192 Swain W snipe = permastun"
+  },
+  {
+   "a": "Seraphine",
+   "b": "Sona",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "Double enchanter aura stacking; Seraphine R \u2192 Sona R chain"
+  },
+  {
+   "a": "Seraphine",
+   "b": "Orianna",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "Seraphine R charm chains + Orianna R Shockwave layered"
+  },
+  {
+   "a": "Senna",
+   "b": "Tahm Kench",
+   "tier": "S",
+   "type": "protect_carry",
+   "why": "TK devour saves Senna; Senna scales infinite AD from mist"
+  },
+  {
+   "a": "Xayah",
+   "b": "Rakan",
+   "tier": "S",
+   "type": "designed_duo",
+   "why": "Designed pair: shared recall, extended E range, R engage+root combo"
+  },
+  {
+   "a": "Yasuo",
+   "b": "Diana",
+   "tier": "S",
+   "type": "knockup_chain",
+   "why": "Diana R pulls grouped \u2192 Yasuo R on grouped airborne targets"
+  },
+  {
+   "a": "Yasuo",
+   "b": "Nautilus",
+   "tier": "A",
+   "type": "knockup_chain",
+   "why": "Nautilus R point-click knockup guarantees Yasuo R"
+  },
+  {
+   "a": "Jarvan IV",
+   "b": "Kennen",
+   "tier": "S",
+   "type": "aoe_wombo",
+   "why": "J4 Cataclysm traps enemies \u2192 Kennen R stuns inside arena"
+  },
+  {
+   "a": "Jarvan IV",
+   "b": "Rumble",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "J4 R arena + Rumble R Equalizer = fire prison"
+  },
+  {
+   "a": "Jarvan IV",
+   "b": "Miss Fortune",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "J4 R traps \u2192 MF R channels on trapped enemies"
+  },
+  {
+   "a": "Leona",
+   "b": "Draven",
+   "tier": "S",
+   "type": "cc_chain",
+   "why": "Leona level 2 all-in + Draven axes = guaranteed first blood"
+  },
+  {
+   "a": "Leona",
+   "b": "Samira",
+   "tier": "S",
+   "type": "cc_chain",
+   "why": "Leona chain CC feeds Samira Style grade for level 2 kills"
+  },
+  {
+   "a": "Leona",
+   "b": "Lucian",
+   "tier": "A",
+   "type": "cc_chain",
+   "why": "Leona stun \u2192 Lucian passive double-shot burst trades"
+  },
+  {
+   "a": "Thresh",
+   "b": "Jhin",
+   "tier": "A",
+   "type": "cc_chain",
+   "why": "Thresh hook \u2192 Jhin W root \u2192 Thresh flay = perma-CC"
+  },
+  {
+   "a": "Thresh",
+   "b": "Lucian",
+   "tier": "S",
+   "type": "designed_duo",
+   "why": "Lore pair. Thresh lantern saves Lucian aggression; hook+flay \u2192 passive burst"
+  },
+  {
+   "a": "Camille",
+   "b": "Galio",
+   "tier": "S",
+   "type": "dive_backline",
+   "why": "Camille R lockdown target \u2192 Galio R on Camille for guaranteed landing"
+  },
+  {
+   "a": "Vi",
+   "b": "Akali",
+   "tier": "A",
+   "type": "dive_backline",
+   "why": "Vi R suppress carry \u2192 Akali bursts from shroud"
+  },
+  {
+   "a": "Lee Sin",
+   "b": "Yasuo",
+   "tier": "A",
+   "type": "knockup_chain",
+   "why": "Lee Sin R kick knocks up \u2192 Yasuo R follow-up"
+  },
+  {
+   "a": "Orianna",
+   "b": "Wukong",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "Orianna ball on Wukong \u2192 W clone for bait \u2192 R double knockup + Shockwave"
+  },
+  {
+   "a": "Diana",
+   "b": "Leona",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "Leona R stun groups \u2192 Diana R Moonfall + burst on stunned targets"
+  },
+  {
+   "a": "Viego",
+   "b": "Katarina",
+   "tier": "A",
+   "type": "reset_chain",
+   "why": "Both chain resets. First kill cascades into team wipe"
+  },
+  {
+   "a": "Jinx",
+   "b": "Viego",
+   "tier": "A",
+   "type": "reset_chain",
+   "why": "One kill triggers both Jinx passive and Viego possession chain"
+  },
+  {
+   "a": "Galio",
+   "b": "Shen",
+   "tier": "A",
+   "type": "engage_frontline",
+   "why": "Both have semi-global Rs. Double global presence"
+  },
+  {
+   "a": "Twisted Fate",
+   "b": "Nocturne",
+   "tier": "S",
+   "type": "dive_backline",
+   "why": "Nocturne R darkness \u2192 TF R reveals \u2192 coordinated global assassination"
+  },
+  {
+   "a": "Shen",
+   "b": "Fiora",
+   "tier": "A",
+   "type": "split_push",
+   "why": "Fiora splits unstoppable; Shen R joins team if they get dove"
+  },
+  {
+   "a": "Poppy",
+   "b": "Vayne",
+   "tier": "A",
+   "type": "disengage_peel",
+   "why": "Poppy W blocks all dashes \u2192 Vayne freely kites in safety"
+  },
+  {
+   "a": "Janna",
+   "b": "Kog'Maw",
+   "tier": "A",
+   "type": "disengage_peel",
+   "why": "Janna R pushes divers away from Kog; shield + MS for kiting"
+  },
+  {
+   "a": "Vladimir",
+   "b": "Swain",
+   "tier": "A",
+   "type": "sustain_drain",
+   "why": "Both AoE drain in teamfights; unkillable if enemy lacks Grievous Wounds"
+  },
+  {
+   "a": "Olaf",
+   "b": "Lulu",
+   "tier": "A",
+   "type": "protect_carry",
+   "why": "Olaf R CC-immune + Lulu W/R buffs = unkillable juggernaut"
+  },
+  {
+   "a": "Malphite",
+   "b": "Leona",
+   "tier": "A",
+   "type": "engage_frontline",
+   "why": "Double engage ultimates; Leona R \u2192 Malphite R layered"
+  },
+  {
+   "a": "Amumu",
+   "b": "Orianna",
+   "tier": "S",
+   "type": "aoe_wombo",
+   "why": "Amumu Q bandage \u2192 R stun \u2192 Orianna R Shockwave on rooted targets"
+  },
+  {
+   "a": "Sejuani",
+   "b": "Braum",
+   "tier": "A",
+   "type": "cc_chain",
+   "why": "Both apply frost/stun stacks; Sejuani E procs on Braum passive targets"
+  },
+  {
+   "a": "Hecarim",
+   "b": "Orianna",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "Orianna ball on Hecarim \u2192 E charge into team \u2192 Shockwave"
+  },
+  {
+   "a": "Kennen",
+   "b": "Wukong",
+   "tier": "A",
+   "type": "aoe_wombo",
+   "why": "Both Flash+R into team for double AoE stun/knockup"
+  },
+  {
+   "a": "Lissandra",
+   "b": "Zed",
+   "tier": "B",
+   "type": "counter_synergy",
+   "why": "Lissandra self-R negates Zed R \u2192 ice zone damages Zed"
+  },
+  {
+   "a": "Morgana",
+   "b": "Caitlyn",
+   "tier": "A",
+   "type": "cc_chain",
+   "why": "Morgana Q root \u2192 Caitlyn trap + headshot guaranteed"
+  },
+  {
+   "a": "Nami",
+   "b": "Lucian",
+   "tier": "S",
+   "type": "designed_duo",
+   "why": "Nami E on Lucian passive double-shot procs buff twice"
+  },
+  {
+   "a": "Senna",
+   "b": "Nautilus",
+   "tier": "A",
+   "type": "cc_chain",
+   "why": "Nautilus CC \u2192 Senna Q/W through ally \u2192 Senna snipes with R"
+  },
+  {
+   "a": "Milio",
+   "b": "Vayne",
+   "tier": "A",
+   "type": "protect_carry",
+   "why": "Milio range extend on Vayne + R cleanse = safe hypercarry"
+  },
+  {
+   "a": "Seraphine",
+   "b": "Jinx",
+   "tier": "A",
+   "type": "protect_carry",
+   "why": "Seraphine W heal+shield; R charm chains set up Jinx rockets"
+  },
+  {
+   "a": "Karma",
+   "b": "Sivir",
+   "tier": "A",
+   "type": "poke_siege",
+   "why": "Both R for team MS; Sivir E blocks poke; Karma R+Q poke"
+  }
+ ],
+ "role_synergy_patterns": {
+  "wombo": {
+   "roles": [
+    "engage_baron",
+    "aoe_jungle",
+    "control_mid",
+    "aoe_dragon",
+    "engage_support"
+   ],
+   "example": "Malphite+Amumu+Orianna+MF+Leona"
+  },
+  "protect": {
+   "roles": [
+    "tank_baron",
+    "peel_jungle",
+    "shield_mid",
+    "hypercarry_dragon",
+    "enchanter_support"
+   ],
+   "example": "Ornn+Sejuani+Orianna+Kog'Maw+Lulu"
+  },
+  "dive": {
+   "roles": [
+    "diver_baron",
+    "assassin_jungle",
+    "assassin_mid",
+    "burst_dragon",
+    "engage_support"
+   ],
+   "example": "Camille+Vi+Akali+Kai'Sa+Leona"
+  },
+  "poke": {
+   "roles": [
+    "poke_baron",
+    "farm_jungle",
+    "artillery_mid",
+    "poke_dragon",
+    "enchanter_support"
+   ],
+   "example": "Jayce+Graves+Ziggs+Ezreal+Karma"
+  },
+  "split": {
+   "roles": [
+    "duelist_baron",
+    "skirmish_jungle",
+    "global_mid",
+    "safe_dragon",
+    "disengage_support"
+   ],
+   "example": "Fiora+Graves+TF+Ezreal+Janna"
+  },
+  "pick": {
+   "roles": [
+    "diver_baron",
+    "assassin_jungle",
+    "catch_mid",
+    "utility_dragon",
+    "hook_support"
+   ],
+   "example": "Camille+Lee Sin+Ahri+Jhin+Thresh"
+  }
+ }
+}

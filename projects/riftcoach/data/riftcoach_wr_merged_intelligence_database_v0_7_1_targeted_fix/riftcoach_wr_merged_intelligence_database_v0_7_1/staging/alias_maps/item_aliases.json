@@ -1,0 +1,22 @@
+{
+  "version": "0.7.0",
+  "aliases": {
+    "serylda_s_grudge": "seryldas_grudge",
+    "serylda_grudge": "seryldas_grudge",
+    "seryldas_grudge": "seryldas_grudge",
+    "runaaans_hurricane": "runaans_hurricane",
+    "runaans_hurricane": "runaans_hurricane",
+    "dream_maker_enchant": "dream_maker",
+    "dream_maker": "dream_maker",
+    "galeforce_enchant": "galeforce",
+    "galeforce": "galeforce",
+    "goredrinker_enchant": "goredrinker",
+    "goredrinker": "goredrinker",
+    "stridebreaker_enchant": "stridebreaker",
+    "stridebreaker": "stridebreaker",
+    "stasis": "stasis_enchant",
+    "stasis_enchant": "stasis_enchant",
+    "locket": "locket_enchant",
+    "locket_enchant": "locket_enchant"
+  }
+}

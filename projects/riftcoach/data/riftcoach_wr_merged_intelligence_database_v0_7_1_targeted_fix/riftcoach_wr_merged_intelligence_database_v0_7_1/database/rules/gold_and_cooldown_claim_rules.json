@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "numeric_claim_policy": "Every official numeric gold, cooldown, stat, damage, duration, range, width, speed, cost, and scaling value requires field-level provenance and a source_claim record before source_status can be source_verified.",
+  "applies_to": [
+    "champions",
+    "abilities",
+    "items",
+    "runes",
+    "spells",
+    "patch_changes",
+    "builds_when_source_verified"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "0.6.0-chunk2",
+  "ability_identity_priority": [
+    "lol_wiki_wr_champion_page",
+    "riot_wild_rift_champion_page"
+  ],
+  "ability_numeric_mechanics_priority": [
+    "lol_wiki_wr_champion_page"
+  ],
+  "strategy_build_priority": [
+    "wildriftfire_guide",
+    "lol_wiki_wr_loadout_when_available"
+  ],
+  "strict_rule": "Never use League PC as replacement source for Wild Rift mechanics."
+}

@@ -1,0 +1,37 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "tools": [
+    {
+      "tool_name": "get_entity_neighborhood",
+      "input": {
+        "entity_id": "string",
+        "max_depth": "number",
+        "filters": "object"
+      },
+      "output": "GraphTraversalResponse"
+    },
+    {
+      "tool_name": "explain_relationship_edge",
+      "input": {
+        "edge_id": "string"
+      },
+      "output": "relationship explanation with source_status and confidence"
+    },
+    {
+      "tool_name": "find_shortest_meaningful_paths",
+      "input": {
+        "source_entity_id": "string",
+        "target_entity_id": "string",
+        "filters": "object"
+      },
+      "output": "ranked graph paths"
+    },
+    {
+      "tool_name": "get_backlinks",
+      "input": {
+        "entity_id": "string"
+      },
+      "output": "BacklinkSet"
+    }
+  ]
+}

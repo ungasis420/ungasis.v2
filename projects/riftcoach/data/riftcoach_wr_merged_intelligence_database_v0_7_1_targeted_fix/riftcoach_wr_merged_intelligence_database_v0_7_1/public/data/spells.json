@@ -1,0 +1,117 @@
+[
+  {
+    "id": "barrier",
+    "name": "Barrier",
+    "effect": "Gain a shield that absorbs 100-450 damage (based on level) for 2 seconds.",
+    "cooldown": 120,
+    "bestOn": [
+      "Mid",
+      "Dragon"
+    ],
+    "image": "/images/spells/barrier.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "clarity",
+    "name": "Clarity",
+    "effect": "Restores 50% maximum mana to you and 25% maximum mana to nearby allies.",
+    "cooldown": 90,
+    "bestOn": [
+      "ARAM"
+    ],
+    "image": "/images/spells/clarity.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "cleanse",
+    "name": "Cleanse",
+    "effect": "Remove all crowd control effects (except suppression and airborne) and gain 65% tenacity for 3 seconds.",
+    "cooldown": 110,
+    "bestOn": [
+      "Dragon",
+      "Mid"
+    ],
+    "image": "/images/spells/cleanse.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "exhaust",
+    "name": "Exhaust",
+    "effect": "Exhaust target enemy champion, reducing their movement speed by 20% and their damage dealt by 40% for 2.5 seconds.",
+    "cooldown": 105,
+    "bestOn": [
+      "Support"
+    ],
+    "image": "/images/spells/exhaust.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "flash",
+    "name": "Flash",
+    "effect": "Teleport a short distance forward or towards the aimed direction.",
+    "cooldown": 150,
+    "bestOn": [
+      "All roles"
+    ],
+    "image": "/images/spells/flash.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "effect": "Gain a large burst of movement speed that decays to 25% bonus movement speed for 8 seconds. Each takedown extends Ghost's duration by 6 seconds, refreshing its effects.",
+    "cooldown": 90,
+    "bestOn": [
+      "Baron",
+      "Mid"
+    ],
+    "image": "/images/spells/ghost.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "heal",
+    "name": "Heal",
+    "effect": "Restore 60-242 health (based on level) and grant 20% bonus movement speed for 1 second to you and the most wounded nearby ally champion. Healing is halved for champions recently affected by Heal.",
+    "cooldown": 120,
+    "bestOn": [
+      "Dragon",
+      "Support"
+    ],
+    "image": "/images/spells/heal.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "ignite",
+    "name": "Ignite",
+    "effect": "Ignites target enemy champion, dealing 72-380 (based on level) true damage over 5 seconds and inflicting Grievous Wounds, reducing healing effects by 50%.",
+    "cooldown": 100,
+    "bestOn": [
+      "Mid",
+      "Support"
+    ],
+    "image": "/images/spells/ignite.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "smite",
+    "name": "Smite",
+    "effect": "Deal 600 true damage to a large or epic monster or minion. Smiting monsters restores health. Using Smite 3 times upgrades it to Chilling Smite (slow + damage to champions) or Challenging Smite (damage + adaptive buff vs champions). Gains one charge every 45 seconds, up to 2 charges.",
+    "cooldown": 10,
+    "bestOn": [
+      "Jungle"
+    ],
+    "image": "/images/spells/smite.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "teleport",
+    "name": "Teleport",
+    "effect": "Channel for a few seconds, then teleport to a target allied turret, minion, or ward. Can be interrupted by crowd control.",
+    "cooldown": 150,
+    "bestOn": [
+      "Baron"
+    ],
+    "image": "/images/spells/teleport.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "version": "0.7.0",
+  "role_aliases": {
+    "top": "Baron",
+    "baron": "Baron",
+    "solo": "Baron",
+    "baron_lane": "Baron",
+    "jungle": "Jungle",
+    "jg": "Jungle",
+    "mid": "Mid",
+    "middle": "Mid",
+    "adc": "Duo",
+    "duo": "Duo",
+    "dragon": "Duo",
+    "dragon_lane": "Duo",
+    "bot": "Duo",
+    "marksman": "Duo",
+    "support": "Support",
+    "supp": "Support"
+  },
+  "generated_files": [
+    "wr_matchups_duo.json",
+    "wr_synergies_duo.json"
+  ],
+  "recommendation": "Add shared role normalizer in src to map Duo/Dragon/Bot -> adc and Baron/Top -> baron."
+}

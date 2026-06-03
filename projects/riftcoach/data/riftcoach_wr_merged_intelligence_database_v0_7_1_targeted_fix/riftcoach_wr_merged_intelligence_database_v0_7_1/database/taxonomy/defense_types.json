@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "defense_types": [
+    "health",
+    "armor",
+    "magic_resist",
+    "shield",
+    "heal",
+    "self_heal",
+    "ally_heal",
+    "damage_reduction",
+    "tenacity",
+    "cleanse",
+    "stasis",
+    "untargetable",
+    "invulnerability",
+    "spell_shield",
+    "movement_speed",
+    "dash",
+    "blink",
+    "peel",
+    "disengage",
+    "frontline_durability",
+    "anti_crit",
+    "anti_burst",
+    "anti_heal",
+    "anti_shield"
+  ]
+}

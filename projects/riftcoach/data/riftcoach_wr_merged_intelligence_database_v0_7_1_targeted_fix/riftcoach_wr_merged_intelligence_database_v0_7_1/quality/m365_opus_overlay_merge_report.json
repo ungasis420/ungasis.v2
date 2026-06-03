@@ -1,0 +1,97 @@
+{
+  "version": "0.7.1",
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "status": "pass",
+  "source_id": "m365_opus_postmerge_wr_champions_merged_v070_full",
+  "source_file_preserved": "raw_sources/m365_opus_postmerge/wr_champions_merged_v070_full.json",
+  "source_sha256": "0402e35d3067a00af462a3d1982340aa7c5e81ef5c39a909d33c1c6baab0599e",
+  "uploaded_file_metadata": {
+    "version": "0.7.0",
+    "patch_version": "7.1e",
+    "champion_count": 138,
+    "source": "merged_opus_chatgpt",
+    "merge_rules": "opus_values_win_for_shared_fields",
+    "id_normalization": "opus_format_preserved",
+    "new_champions": [
+      "kindred",
+      "syndra",
+      "taliyah"
+    ]
+  },
+  "merge_policy": {
+    "raw_preserved_losslessly": true,
+    "canonical_official_fields_overwritten": 0,
+    "root_public_runtime_data_modified": false,
+    "strategy_overlay_added": true,
+    "exact_mechanics_promoted": false,
+    "exact_mechanics_preserved_in_trace_only": true,
+    "approved_source_verification_required_for_exact_values": true,
+    "legacy_top_level_abilities_used_for_identity": false,
+    "abilities_by_key_used_for_identity_comparison": true,
+    "karma_lock_enforced": {
+      "passive": "Mantra",
+      "q": "Inner Flame",
+      "w": "Focused Resolve",
+      "e": "Inspire",
+      "r": "Transcendent Embrace"
+    }
+  },
+  "counts": {
+    "m365_opus_postmerge_champion_records": 138,
+    "candidate_strategy_claims": 868,
+    "candidate_exact_mechanic_claims": 240,
+    "source_value_trace_rows_added": 1108,
+    "overlay_ledger_rows_added": 1247,
+    "merge_ledger_rows_total": 4496
+  },
+  "strategy_claim_counts_by_field": {
+    "meta_tier": 135,
+    "difficulty": 135,
+    "playstyle": 135,
+    "power_spikes": 135,
+    "synergies": 4,
+    "counters": 135,
+    "full_data": 135,
+    "wiki_url": 54
+  },
+  "mechanic_claim_counts_by_top_area": {
+    "base_stats": 36,
+    "abilities": 204
+  },
+  "alias_normalization": [
+    {
+      "raw_id": "k_sante",
+      "normalized_id": "ksante",
+      "status": "alias_normalization_required"
+    },
+    {
+      "raw_id": "kai_sa",
+      "normalized_id": "kaisa",
+      "status": "alias_normalization_required"
+    },
+    {
+      "raw_id": "kha_zix",
+      "normalized_id": "khazix",
+      "status": "alias_normalization_required"
+    },
+    {
+      "raw_id": "kog_maw",
+      "normalized_id": "kogmaw",
+      "status": "alias_normalization_required"
+    },
+    {
+      "raw_id": "nunu_willump",
+      "normalized_id": "nunu",
+      "status": "alias_normalization_required"
+    }
+  ],
+  "hard_gates": {
+    "raw_source_preserved": true,
+    "no_official_exact_value_promotion": true,
+    "public_runtime_data_unchanged": true,
+    "karma_lock_pass": true,
+    "json_parse_pass": "validated_in_final_report",
+    "jsonl_parse_pass": "validated_in_final_report"
+  },
+  "policy": "M365/Opus material is preserved and queryable as candidate/advisory overlay. It is not official/source-verified Wild Rift data unless later promoted through approved-source field-level provenance."
+}

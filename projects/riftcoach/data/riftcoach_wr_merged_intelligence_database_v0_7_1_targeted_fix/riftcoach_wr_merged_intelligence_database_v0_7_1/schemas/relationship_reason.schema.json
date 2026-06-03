@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/relationship_reason.schema.json",
+  "title": "Relationship Reason",
+  "description": "Controlled reason-code dictionary for graph edge explanations.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "reason_code",
+    "label"
+  ],
+  "properties": {
+    "reason_code": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "applies_to_relationship_types": {
+      "type": "array"
+    },
+    "confidence_weight": {
+      "type": "number"
+    }
+  }
+}

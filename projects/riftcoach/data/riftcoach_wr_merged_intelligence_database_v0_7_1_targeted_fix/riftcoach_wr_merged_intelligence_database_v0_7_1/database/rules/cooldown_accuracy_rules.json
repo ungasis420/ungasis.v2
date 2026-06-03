@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "rule_id": "cooldown_accuracy_gate",
+  "severity": "blocker",
+  "requirements": [
+    "Every champion ability must include cooldowns.primary.",
+    "Every active item and boot enchant must include cooldowns.primary.",
+    "Every item passive with trigger timing must include passive cooldown or internal cooldown when source-visible.",
+    "Every rune must include cooldowns.primary or explicit source_verified_not_applicable.",
+    "Every spell must include cooldowns.primary.",
+    "Per-rank cooldowns must be arrays, not prose-only text.",
+    "Per-level cooldowns must be arrays or raw range plus source_status.",
+    "Per-target cooldowns must be separated from global cooldowns.",
+    "Recharge systems must include charges and recharge_time_seconds.",
+    "If no cooldown exists, use source_verified_not_applicable only when the approved source confirms no cooldown or no active/trigger timer."
+  ],
+  "cooldown_types": [
+    "ability",
+    "active_item",
+    "passive_trigger",
+    "rune_trigger",
+    "spell",
+    "recharge",
+    "per_target",
+    "internal",
+    "not_applicable"
+  ]
+}

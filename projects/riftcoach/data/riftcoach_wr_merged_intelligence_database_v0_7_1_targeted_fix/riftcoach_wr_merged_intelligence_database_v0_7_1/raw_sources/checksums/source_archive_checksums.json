@@ -1,0 +1,93 @@
+{
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "source_archives": {
+    "data_zip": {
+      "path": "/mnt/data/data.zip",
+      "filename": "data.zip",
+      "bytes": 332950,
+      "sha256": "bb93c3396a1de3f8b18bdf25568d28844635af18c00142d5c168dd687cea1a4f"
+    },
+    "wr_opus_zip": {
+      "path": "/mnt/data/wr_opus.zip",
+      "filename": "wr_opus.zip",
+      "bytes": 583777,
+      "sha256": "a1e0c966c4ac9a7bd4b29351eeb92b3fb7504340cbb25e84958df950f3eaf2e0"
+    },
+    "wr_chatgpt_zip": {
+      "path": "/mnt/data/wr_chatgpt.zip",
+      "filename": "wr_chatgpt.zip",
+      "bytes": 8749702,
+      "sha256": "e32bafa33fa30fe09e2094b8f04597ab0d5c3c6bc507ed3e24e6842d4e55a9f8"
+    },
+    "src_zip": {
+      "path": "/mnt/data/src.zip",
+      "filename": "src.zip",
+      "bytes": 639190,
+      "sha256": "52ee1e373a6b3fa5911de3208c5c5e79e304d361c53db3d51bdbd14eee85b31c"
+    },
+    "m365_opus_postmerge_wr_champions_merged_v070_full": {
+      "filename": "wr_champions_merged_v070_full.json",
+      "bytes": 10926306,
+      "sha256": "0402e35d3067a00af462a3d1982340aa7c5e81ef5c39a909d33c1c6baab0599e",
+      "raw_preserved_path": "raw_sources/m365_opus_postmerge/wr_champions_merged_v070_full.json",
+      "source_status": "m365_opus_candidate_unverified"
+    }
+  },
+  "nested_chatgpt_archives": {
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk1.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk1.zip",
+      "bytes": 99974,
+      "sha256": "e07546d30ba3850962666c8e63779d1b80d48c755151d097ece3ccaf03a40e69"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk1_1.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk1_1.zip",
+      "bytes": 73105,
+      "sha256": "f404004fe5adb4f9b647acc8c14aa2caca2862ad803e69055f8c663ac9247342"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk10_final.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk10_final.zip",
+      "bytes": 4977601,
+      "sha256": "764f56a9388e353c838b64aa7d646cc547765b7f1653079291b9ca66e7fc0bd3"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk2.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk2.zip",
+      "bytes": 71817,
+      "sha256": "a1d2624b2353a920dc7c300aa99db76e4dd6cd198b438dba671dacc45b436002"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk3.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk3.zip",
+      "bytes": 607618,
+      "sha256": "36bfa21d4c4bade7c1922b78a6e71ee2b951386ab7466843a39d86247edf502e"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk4.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk4.zip",
+      "bytes": 735193,
+      "sha256": "c2c9f4c3d075bd699a12d5da8798e441d31743985db985f7bc840ef5ef95d95b"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk5.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk5.zip",
+      "bytes": 1084996,
+      "sha256": "30ec1f9bc7df653fbefeb42eef23edc2c31f88b1e76a1f36f8120eac26aaa5c6"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk6.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk6.zip",
+      "bytes": 282018,
+      "sha256": "7caf4fd3e6477706722d5b703156e433e5f96e8435c9025eb199c6b0d53060f1"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk7.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk7.zip",
+      "bytes": 171026,
+      "sha256": "ea3b7b60d86ccc3ff908d40274292e12304ced78728fb7afe30cc9db3ad12254"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk8.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk8.zip",
+      "bytes": 83252,
+      "sha256": "2651f91cfe38555c2b0949317b710b19c1e76edb2c989c83529c579f19f252f2"
+    },
+    "riftcoach_wr_intelligence_database_v0_6_0_chunk9.zip": {
+      "outer_member": "wr_chatgpt/riftcoach_wr_intelligence_database_v0_6_0_chunk9.zip",
+      "bytes": 560664,
+      "sha256": "17805984aa89f77981024fd27add16b88f84ab1971cf56c9940150c4178f9b49"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "version": "0.7.0",
+  "generated_at_utc": "2026-05-21T19:38:40.562068+00:00",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "required directories present",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "required reports present",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "all JSON parse",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "all JSONL parse",
+      "passed": true,
+      "details": []
+    },
+    {
+      "check": "items.json root array",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "runes.json UI slots",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "builds.json stable ids and refs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "wr_items.json exists",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "duo aliases exist",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "karma lock passed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "no LoL-PC gameplay blockers",
+      "passed": true,
+      "details": {
+        "allowed_guardrail_or_policy_reference": 22,
+        "wild_rift_prefixed_url_or_wr_policy_reference": 68
+      }
+    },
+    {
+      "check": "excluded legacy non-current champions absent from public runtime",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "raw archive copies present",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "json_files_checked": 276,
+  "jsonl_files_checked": 22,
+  "limitations": [
+    "No live Wild Rift source refresh was performed; uploaded sources only.",
+    "src.zip lacked package.json/lockfile, so validation is static contract validation rather than npm build/typecheck.",
+    "Decompressed duplicate ChatGPT chunks were not duplicated in final ZIP; raw outer and nested ZIPs are preserved with checksums."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "classes": [
+    "assassin",
+    "burst",
+    "catcher",
+    "diver",
+    "enchanter",
+    "fighter",
+    "juggernaut",
+    "mage",
+    "marksman",
+    "skirmisher",
+    "specialist",
+    "tank",
+    "vanguard",
+    "warden",
+    "support",
+    "artillery",
+    "battle_mage",
+    "control_mage",
+    "poke_mage",
+    "bruiser"
+  ]
+}

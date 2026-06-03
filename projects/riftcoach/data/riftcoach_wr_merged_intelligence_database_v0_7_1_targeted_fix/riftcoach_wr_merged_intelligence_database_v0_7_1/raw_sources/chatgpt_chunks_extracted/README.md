@@ -1,0 +1,1 @@
+Decompressed ChatGPT chunk folders were inspected during build but not duplicated here to keep the final ZIP stable. Lossless raw preservation is provided by raw_sources/wr_chatgpt_zip/archive/wr_chatgpt.zip and raw_sources/wr_chatgpt_zip/nested_zips/*.zip, with SHA-256 checksums in raw_sources/checksums/source_archive_checksums.json.

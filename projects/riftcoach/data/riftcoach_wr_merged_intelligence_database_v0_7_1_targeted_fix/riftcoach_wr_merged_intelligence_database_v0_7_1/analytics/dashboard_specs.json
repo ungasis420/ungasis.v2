@@ -1,0 +1,9 @@
+{
+  "dashboards": [
+    "source_coverage",
+    "relationship_quality",
+    "build_legality",
+    "graph_explorer",
+    "patch_impact"
+  ]
+}

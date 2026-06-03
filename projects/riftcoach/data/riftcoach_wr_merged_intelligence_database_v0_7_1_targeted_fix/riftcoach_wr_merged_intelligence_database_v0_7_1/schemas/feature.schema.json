@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/feature.schema.json",
+  "title": "Feature",
+  "type": "object",
+  "required": [
+    "feature_id",
+    "entity_keys",
+    "feature_type",
+    "source"
+  ],
+  "properties": {
+    "feature_id": {
+      "type": "string"
+    },
+    "entity_keys": {
+      "type": "array"
+    },
+    "feature_type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "freshness": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

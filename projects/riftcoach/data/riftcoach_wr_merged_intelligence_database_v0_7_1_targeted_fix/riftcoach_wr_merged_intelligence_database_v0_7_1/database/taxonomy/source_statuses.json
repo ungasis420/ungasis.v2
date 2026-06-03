@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "source_statuses": [
+    "source_verified",
+    "source_inferred",
+    "generated_rule",
+    "generated_archetype",
+    "hybrid",
+    "source_conflict",
+    "user_corrected_pending_revalidation",
+    "pending_allowed_source_refresh",
+    "source_verified_not_applicable",
+    "not_applicable"
+  ],
+  "source_families": [
+    "riot_wild_rift",
+    "lol_wiki_wr",
+    "wildriftfire",
+    "wr_meta_limited",
+    "riftcoach_generated",
+    "user_verified_correction"
+  ]
+}

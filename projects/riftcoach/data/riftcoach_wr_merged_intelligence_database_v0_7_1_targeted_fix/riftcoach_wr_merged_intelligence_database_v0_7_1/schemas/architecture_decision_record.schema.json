@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/architecture_decision_record.schema.json",
+  "title": "Architecture Decision Record",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "decision",
+    "context",
+    "chosen_option",
+    "status"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    },
+    "options_considered": {
+      "type": "array"
+    },
+    "chosen_option": {
+      "type": "string"
+    },
+    "tradeoffs": {
+      "type": "array"
+    },
+    "reversal_path": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

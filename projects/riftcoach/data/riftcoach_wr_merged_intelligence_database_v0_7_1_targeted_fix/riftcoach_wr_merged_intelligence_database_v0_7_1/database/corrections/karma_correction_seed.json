@@ -1,0 +1,425 @@
+{
+  "correction_id": "karma_ability_identity_and_mechanics_user_seed_7_1e",
+  "champion_id": "karma",
+  "champion_name": "Karma",
+  "patch_version": "7.1e",
+  "source_status": "user_corrected_pending_allowed_source_revalidation",
+  "source_family": "user_provided_sample_with_lol_wiki_wr_url_for_revalidation",
+  "source_urls": [
+    "https://wiki.leagueoflegends.com/en-us/WR:Karma"
+  ],
+  "protected": true,
+  "no_lol_pc_overwrite": true,
+  "abilities": {
+    "passive": {
+      "slot": "Passive",
+      "name": "Mantra",
+      "ability_type": "innate_passive",
+      "brief_description": "Karma gains stacks from ability casts; at 3 stacks, her next basic ability is enhanced.",
+      "full_description": "Ability casts generate Mantra stacks. At 3 stacks, Karma consumes the stacks to empower her next basic ability with an extra effect.",
+      "passive_effects": [
+        "ability_cast_stack_generation",
+        "three_stack_empower_next_basic_ability"
+      ],
+      "active_effects": [],
+      "effect_tags": [
+        "mantra_stacks",
+        "empowered_basic_ability",
+        "enhanced_forms"
+      ],
+      "damage_types": [],
+      "defense_types": [],
+      "crowd_control_types": [],
+      "cooldowns": {
+        "primary": {
+          "cooldown_type": "not_applicable",
+          "source_status": "user_corrected_pending_allowed_source_revalidation"
+        }
+      },
+      "costs": {
+        "raw": null,
+        "source_status": "not_applicable"
+      },
+      "special_mechanics": [
+        "basic_ability_enhancement_gate"
+      ]
+    },
+    "q": {
+      "slot": "Q",
+      "name": "Inner Flame",
+      "ability_type": "active",
+      "brief_description": "Karma fires a magic bolt that explodes on contact, damaging and slowing enemies. Mantra improves the projectile and adds a delayed detonation field.",
+      "full_description": "Karma launches a bolt that detonates on the first enemy hit for magic damage and a slow. When empowered by Mantra, the bolt is larger, deals increased damage, can explode at maximum range, and leaves a field that later ruptures for additional magic damage.",
+      "costs": {
+        "mana": {
+          "values": [
+            60
+          ],
+          "unit": "mana"
+        }
+      },
+      "cooldowns": {
+        "primary": {
+          "per_rank_seconds": [
+            9,
+            8,
+            7,
+            6
+          ],
+          "unit": "seconds",
+          "cooldown_type": "ability_rank_cooldown",
+          "source_status": "user_corrected_pending_allowed_source_revalidation"
+        }
+      },
+      "cast_time": {
+        "value": 0.25,
+        "unit": "seconds"
+      },
+      "target_range": {
+        "value": 950
+      },
+      "effect_radius": {
+        "value": 280
+      },
+      "width": {
+        "base": 120,
+        "mantra": 160
+      },
+      "speed": {
+        "value": 1700
+      },
+      "damage_values": {
+        "base_magic_damage": {
+          "values": [
+            60,
+            100,
+            140,
+            180
+          ],
+          "ap_ratio": "40%"
+        },
+        "mantra_increased_magic_damage": {
+          "values": [
+            65,
+            140,
+            215,
+            290
+          ],
+          "ap_ratio": "50%"
+        },
+        "mantra_detonation_magic_damage": {
+          "values": [
+            40,
+            80,
+            120,
+            160
+          ],
+          "ap_ratio": "50%"
+        }
+      },
+      "effect_values": {
+        "base_slow": "35% for 1.5 seconds",
+        "mantra_slow_percent_by_rank": [
+          42.5,
+          45,
+          47.5,
+          50
+        ]
+      },
+      "active_effects": [
+        "skillshot_bolt",
+        "explosion_on_first_enemy_hit",
+        "area_magic_damage",
+        "slow",
+        "mantra_larger_bolt",
+        "mantra_field_detonation"
+      ],
+      "passive_effects": [],
+      "effect_tags": [
+        "skillshot",
+        "magic_damage",
+        "slow",
+        "area_damage",
+        "mantra_enhanced",
+        "delayed_detonation"
+      ],
+      "damage_types": [
+        "magic"
+      ],
+      "defense_types": [],
+      "crowd_control_types": [
+        "slow"
+      ],
+      "special_mechanics": [
+        "mantra_enhanced_form",
+        "maximum_range_explosion",
+        "field_rupture"
+      ]
+    },
+    "w": {
+      "slot": "W",
+      "name": "Focused Resolve",
+      "ability_type": "active",
+      "brief_description": "Karma tethers nearby enemy champions, damaging and revealing them; if the tether holds, they take more damage and are rooted. Mantra improves root duration and adds tether spread logic.",
+      "full_description": "Karma damages and tethers the two nearest enemy champions, revealing them during the tether. If the tether is not broken, the target takes additional magic damage and is rooted. Mantra increases the root duration and can create an extra tether between targets or spread to another nearby enemy champion.",
+      "costs": {
+        "mana": {
+          "values": [
+            55,
+            60,
+            65,
+            70
+          ],
+          "unit": "mana"
+        }
+      },
+      "cooldowns": {
+        "primary": {
+          "seconds": 15,
+          "unit": "seconds",
+          "cooldown_type": "ability_rank_cooldown",
+          "source_status": "user_corrected_pending_allowed_source_revalidation"
+        }
+      },
+      "cast_time": {
+        "value": 0.25,
+        "unit": "seconds"
+      },
+      "target_range": {
+        "value": 675
+      },
+      "tether_radius": {
+        "value": 825
+      },
+      "damage_values": {
+        "initial_magic_damage": {
+          "values": [
+            35,
+            60,
+            85,
+            110
+          ],
+          "ap_ratio": "40%"
+        },
+        "tethered_magic_damage": {
+          "values": [
+            40,
+            70,
+            100,
+            130
+          ],
+          "ap_ratio": "45%"
+        }
+      },
+      "effect_values": {
+        "root_duration_by_rank": [
+          1,
+          1.25,
+          1.5,
+          1.75
+        ],
+        "mantra_root_duration_by_rank": [
+          1.5,
+          1.75,
+          2,
+          2.25
+        ]
+      },
+      "active_effects": [
+        "two_nearest_enemy_champion_targeting",
+        "tether",
+        "true_sight_reveal",
+        "delayed_damage",
+        "root",
+        "mantra_extra_tether"
+      ],
+      "passive_effects": [],
+      "effect_tags": [
+        "magic_damage",
+        "tether",
+        "true_sight",
+        "root",
+        "multi_target",
+        "mantra_enhanced"
+      ],
+      "damage_types": [
+        "magic"
+      ],
+      "defense_types": [],
+      "crowd_control_types": [
+        "tether",
+        "true_sight",
+        "root",
+        "reveal"
+      ],
+      "special_mechanics": [
+        "cannot_cast_without_nearby_enemy_champion",
+        "mantra_tether_spread"
+      ]
+    },
+    "e": {
+      "slot": "E",
+      "name": "Inspire",
+      "ability_type": "active",
+      "brief_description": "Karma shields herself or an allied champion and grants movement speed. Mantra increases the shield and movement speed and can share the effect with a nearby ally through a ring.",
+      "full_description": "Karma shields herself or a target allied champion for a short duration and grants bonus movement speed. Mantra grants a larger shield and higher movement speed that decays over time, while creating a ring that can apply the same effect to a nearby allied champion.",
+      "costs": {
+        "mana": {
+          "values": [
+            70
+          ],
+          "unit": "mana"
+        }
+      },
+      "cooldowns": {
+        "primary": {
+          "per_rank_seconds": [
+            10,
+            9,
+            8,
+            7
+          ],
+          "unit": "seconds",
+          "cooldown_type": "ability_rank_cooldown",
+          "source_status": "user_corrected_pending_allowed_source_revalidation"
+        }
+      },
+      "cast_time": {
+        "raw": "none"
+      },
+      "target_range": {
+        "value": 800
+      },
+      "shield_values": {
+        "base_shield": {
+          "values": [
+            60,
+            90,
+            120,
+            150
+          ],
+          "ap_ratio": "65%"
+        },
+        "mantra_increased_shield": {
+          "values": [
+            120,
+            180,
+            240,
+            300
+          ],
+          "ap_ratio": "65%"
+        }
+      },
+      "effect_values": {
+        "base_movement_speed": "30% for 1.5 seconds",
+        "mantra_movement_speed": "60%, decays to 20% over 4 seconds"
+      },
+      "active_effects": [
+        "self_or_ally_shield",
+        "bonus_movement_speed",
+        "mantra_larger_shield",
+        "mantra_ally_ring"
+      ],
+      "passive_effects": [],
+      "effect_tags": [
+        "shield",
+        "movement_speed",
+        "ally_protection",
+        "enchanter",
+        "mantra_enhanced"
+      ],
+      "damage_types": [],
+      "defense_types": [
+        "shield",
+        "movement_speed",
+        "ally_protection",
+        "peel"
+      ],
+      "crowd_control_types": [],
+      "special_mechanics": [
+        "mantra_ring_shares_effect_to_nearby_ally"
+      ]
+    },
+    "r": {
+      "slot": "R",
+      "name": "Transcendent Embrace",
+      "ability_type": "active_ultimate",
+      "brief_description": "Karma creates a delayed spirit-energy ring that damages and slows enemies, pulling outer-ring enemies inward. Casting it grants maximum Mantra stacks.",
+      "full_description": "Karma forms a spirit-energy ring at a target location. After a delay, it detonates for magic damage and a slow. Enemies caught in the outer ring are knocked inward. Casting the ultimate immediately fills Karma’s Mantra stacks.",
+      "costs": {
+        "mana": {
+          "values": [
+            100
+          ],
+          "unit": "mana"
+        }
+      },
+      "cooldowns": {
+        "primary": {
+          "per_rank_seconds": [
+            70,
+            65,
+            60
+          ],
+          "unit": "seconds",
+          "cooldown_type": "ability_rank_cooldown",
+          "source_status": "user_corrected_pending_allowed_source_revalidation"
+        }
+      },
+      "cast_time": {
+        "value": 0.25,
+        "unit": "seconds"
+      },
+      "detonation_delay": {
+        "value": 1,
+        "unit": "seconds"
+      },
+      "damage_values": {
+        "magic_damage": {
+          "values": [
+            170,
+            280,
+            390
+          ],
+          "ap_ratio": "80%"
+        }
+      },
+      "effect_values": {
+        "slow": "35% for 1 second"
+      },
+      "active_effects": [
+        "delayed_area_detonation",
+        "magic_damage",
+        "slow",
+        "outer_ring_knock_in",
+        "mantra_stack_refill"
+      ],
+      "passive_effects": [],
+      "effect_tags": [
+        "magic_damage",
+        "slow",
+        "knock_in",
+        "area_control",
+        "ultimate",
+        "mantra_stack_refill"
+      ],
+      "damage_types": [
+        "magic"
+      ],
+      "defense_types": [],
+      "crowd_control_types": [
+        "slow",
+        "knock_in",
+        "airborne"
+      ],
+      "special_mechanics": [
+        "immediately_generates_maximum_mantra_stacks"
+      ]
+    }
+  },
+  "audit_notes": [
+    "Descriptions are paraphrased from the user-provided Wild Rift Karma sample to avoid long verbatim reproduction.",
+    "Numeric mechanics are preserved as data points but remain pending approved-source revalidation before source_verified status.",
+    "This correction blocks reuse of prior generated placeholder values such as Pending Passive."
+  ]
+}

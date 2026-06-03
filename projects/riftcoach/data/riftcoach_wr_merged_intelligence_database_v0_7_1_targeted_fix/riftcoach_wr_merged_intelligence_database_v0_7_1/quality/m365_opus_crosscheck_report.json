@@ -1,0 +1,108 @@
+{
+  "generated_at_utc": "2026-05-22T03:10:49.987601+00:00",
+  "task": "cross_check_uploaded_m365_opus_merged_champions_against_riftcoach_v0_7_0_zip",
+  "input_files": {
+    "uploaded_opus_merged_file": "/mnt/data/wr_champions_merged_v070_full.json",
+    "uploaded_opus_sha256": "0402e35d3067a00af462a3d1982340aa7c5e81ef5c39a909d33c1c6baab0599e",
+    "v0_7_zip": "/mnt/data/riftcoach_wr_merged_intelligence_database_v0_7_0.zip",
+    "v0_7_zip_sha256": "e7014b1ad70c1cb499f2a194d0c191c2b9587d3b12da9461b72d6c2a87fc9840"
+  },
+  "uploaded_file_metadata": {
+    "version": "0.7.0",
+    "patch_version": "7.1e",
+    "champion_count": 138,
+    "source": "merged_opus_chatgpt",
+    "merge_rules": "opus_values_win_for_shared_fields",
+    "id_normalization": "opus_format_preserved",
+    "new_champions": [
+      "kindred",
+      "syndra",
+      "taliyah"
+    ]
+  },
+  "v0_7_metadata": {
+    "version": "0.7.0",
+    "patch_version": "7.1e",
+    "package_name": "riftcoach_wr_merged_intelligence_database_v0_7_0",
+    "generated_at_utc": "2026-05-21T19:32:10.976908+00:00"
+  },
+  "id_counts": {
+    "uploaded_raw_champions": 138,
+    "uploaded_normalized_ids": 138,
+    "v0_7_canonical_records_all": 141,
+    "v0_7_public_runtime_records": 138,
+    "uploaded_only_after_normalization": [],
+    "public_only_after_normalization": [],
+    "canonical_only_after_normalization": [
+      "hwei",
+      "sejuani",
+      "tahm_kench"
+    ],
+    "raw_aliases_requiring_normalization": [
+      {
+        "raw_id": "k_sante",
+        "normalized_id": "ksante",
+        "status": "alias_normalization_required"
+      },
+      {
+        "raw_id": "kai_sa",
+        "normalized_id": "kaisa",
+        "status": "alias_normalization_required"
+      },
+      {
+        "raw_id": "kha_zix",
+        "normalized_id": "khazix",
+        "status": "alias_normalization_required"
+      },
+      {
+        "raw_id": "kog_maw",
+        "normalized_id": "kogmaw",
+        "status": "alias_normalization_required"
+      },
+      {
+        "raw_id": "nunu_willump",
+        "normalized_id": "nunu",
+        "status": "alias_normalization_required"
+      }
+    ]
+  },
+  "identity_check": {
+    "full_record_hash_equal_count": 0,
+    "full_record_hash_compared_count": 138,
+    "conclusion": "not_identical"
+  },
+  "candidate_merge_summary": {
+    "strategy_claim_count": 868,
+    "strategy_claim_counts_by_field": {
+      "meta_tier": 135,
+      "difficulty": 135,
+      "playstyle": 135,
+      "power_spikes": 135,
+      "synergies": 4,
+      "counters": 135,
+      "full_data": 135,
+      "wiki_url": 54
+    },
+    "mechanic_claim_count": 240,
+    "mechanic_claim_counts_by_top_area": {
+      "base_stats": 36,
+      "abilities": 204
+    },
+    "champions_with_mechanic_candidates": 94,
+    "ability_by_key_name_mismatch_count": 0,
+    "legacy_abilities_dict_name_mismatch_count": 49,
+    "risk_flag_counts": {
+      "contains_exact_unverified_mechanics": 94,
+      "contains_strategy_or_meta_overlay_candidates": 135,
+      "legacy_abilities_dict_identity_mismatch": 22,
+      "karma_legacy_abilities_dict_conflicts_with_protected_lock": 1,
+      "karma_abilities_by_key_matches_protected_lock": 1
+    }
+  },
+  "merge_recommendation": {
+    "can_merge": true,
+    "should_overwrite_existing_canonical": false,
+    "recommended_version": "0.7.1 candidate overlay or 0.7.0-postmerge patch, not overwrite 0.7.0 in place",
+    "recommended_policy": "preserve_uploaded_file_as_raw_source; add source_value_traces; promote only non-exact/strategy metadata after review; exact numeric mechanics remain pending approved-source verification"
+  }
+}

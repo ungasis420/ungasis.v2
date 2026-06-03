@@ -1,0 +1,48 @@
+{
+  "allowed_game_url_patterns": [
+    "^https://wildrift\\.leagueoflegends\\.com/en-sg/champions/?$",
+    "^https://wildrift\\.leagueoflegends\\.com/en-sg/champions/[a-z0-9-]+/?$",
+    "^https://wildrift\\.leagueoflegends\\.com/en-sg/news/?$",
+    "^https://wildrift\\.leagueoflegends\\.com/en-sg/news/game-updates/[a-z0-9-]+/?$",
+    "^https://wiki\\.leagueoflegends\\.com/en-us/WR:.+",
+    "^https://wiki\\.leagueoflegends\\.com/en-us/WR%3A.+",
+    "^https://www\\.wildriftfire\\.com/?$",
+    "^https://www\\.wildriftfire\\.com/guide/[a-z0-9-]+/?$",
+    "^https://www\\.wildriftfire\\.com/item-list/?$",
+    "^https://www\\.wildriftfire\\.com/rune-list/?$",
+    "^https://www\\.wildriftfire\\.com/patch-notes/?$",
+    "^https://wr-meta\\.com/.*"
+  ],
+  "technical_non_game_exceptions": [
+    {
+      "pattern": "^https://json-schema\\.org/.*",
+      "allowed_for": [
+        "json_schema_reference"
+      ]
+    },
+    {
+      "pattern": "^https://riftcoach\\.local/.*",
+      "allowed_for": [
+        "local_schema_contracts",
+        "internal_docs"
+      ]
+    }
+  ],
+  "blocked_source_patterns": [
+    "^https://www\\.leagueoflegends\\.com/.*/champions/.*",
+    "^https://www\\.leagueoflegends\\.com/.*/news/game-updates/patch-.*",
+    "^https://wiki\\.leagueoflegends\\.com/en-us/(?!WR:|WR%3A).*",
+    "^https://www\\.mobafire\\.com/league-of-legends/.*",
+    "^https://u\\.gg/.*",
+    "^https://op\\.gg/.*",
+    "^https://lolalytics\\.com/.*",
+    "^https://mobalytics\\.gg/lol/.*",
+    "^https://leagueofgraphs\\.com/.*",
+    "^https://reddit\\.com/.*",
+    "^https://www\\.reddit\\.com/.*",
+    "^https://youtube\\.com/.*",
+    "^https://www\\.youtube\\.com/.*",
+    "^https://tiktok\\.com/.*",
+    "^https://www\\.tiktok\\.com/.*"
+  ]
+}

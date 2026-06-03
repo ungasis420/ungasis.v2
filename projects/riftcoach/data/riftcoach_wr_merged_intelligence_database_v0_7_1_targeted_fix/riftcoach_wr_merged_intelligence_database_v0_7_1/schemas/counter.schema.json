@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/counter_deny_edge.schema.json",
+  "title": "Counter Deny Edge",
+  "type": "object",
+  "required": [
+    "edge_id",
+    "relationship_type",
+    "source",
+    "target",
+    "patch_version",
+    "source_status"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "relationship_type": {
+      "enum": [
+        "denies",
+        "mitigates",
+        "interrupts",
+        "punishes",
+        "outscales",
+        "disengages_from",
+        "survives"
+      ]
+    },
+    "source": {
+      "type": "object"
+    },
+    "target": {
+      "type": "object"
+    },
+    "interaction": {
+      "type": "object"
+    },
+    "score": {
+      "type": "object"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "source_status": {
+      "type": "string",
+      "enum": [
+        "source_verified",
+        "source_inferred",
+        "generated_rule",
+        "generated_archetype",
+        "hybrid",
+        "source_conflict",
+        "user_corrected_pending_revalidation",
+        "pending_allowed_source_refresh",
+        "source_verified_not_applicable",
+        "not_applicable"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

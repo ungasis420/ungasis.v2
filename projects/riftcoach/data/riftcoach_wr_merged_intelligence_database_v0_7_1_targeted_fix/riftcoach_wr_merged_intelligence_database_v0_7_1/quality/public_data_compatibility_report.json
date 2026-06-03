@@ -1,0 +1,219 @@
+{
+  "version": "0.7.0",
+  "generated_at_utc": "2026-05-21T19:32:10.976908+00:00",
+  "compatibility_gates": [
+    {
+      "gate": "items.json root array",
+      "passed": true
+    },
+    {
+      "gate": "runes.json UI slot strings",
+      "passed": true
+    },
+    {
+      "gate": "builds.json stable ids",
+      "passed": true
+    },
+    {
+      "gate": "wr_items.json exists",
+      "passed": true
+    },
+    {
+      "gate": "duo alias files exist",
+      "passed": true
+    }
+  ],
+  "file_checks": [
+    {
+      "file": "champions.json",
+      "exists": true,
+      "root_type": "list",
+      "top_len": 138
+    },
+    {
+      "file": "items.json",
+      "exists": true,
+      "root_type": "list",
+      "top_len": 164
+    },
+    {
+      "file": "runes.json",
+      "exists": true,
+      "root_type": "list",
+      "top_len": 53
+    },
+    {
+      "file": "spells.json",
+      "exists": true,
+      "root_type": "list",
+      "top_len": 10
+    },
+    {
+      "file": "builds.json",
+      "exists": true,
+      "root_type": "list",
+      "top_len": 220
+    },
+    {
+      "file": "counters.json",
+      "exists": true,
+      "root_type": "list",
+      "top_len": 50
+    },
+    {
+      "file": "synergies.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 4
+    },
+    {
+      "file": "meta.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 6
+    },
+    {
+      "file": "wr_items.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_boots_enchants.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 4
+    },
+    {
+      "file": "wr_builds.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_champions_part1.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_champions_part2.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_champions_part3.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_champions_corrections.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 4
+    },
+    {
+      "file": "wr_counters_items_runes.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 3
+    },
+    {
+      "file": "wr_matchups_adc.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_matchups_baron.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_matchups_mid.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_matchups_support.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_matchups_duo.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_synergies_adc.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_synergies_baron.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_synergies_mid.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_synergies_support.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_synergies_duo.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    },
+    {
+      "file": "wr_meta.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 4
+    },
+    {
+      "file": "wr_runes.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 3
+    },
+    {
+      "file": "wr_spells.json",
+      "exists": true,
+      "root_type": "dict",
+      "top_len": 2
+    }
+  ],
+  "runtime_exclusions": [
+    {
+      "id": "hwei",
+      "name": "Hwei",
+      "reason": "Not yet released in Wild Rift as of Patch 7.1d. Coming 2026 but not in game."
+    },
+    {
+      "id": "sejuani",
+      "name": "Sejuani",
+      "reason": "Not in Wild Rift 137 champion roster."
+    },
+    {
+      "id": "tahm_kench",
+      "name": "Tahm Kench",
+      "reason": "Not in Wild Rift. PC League of Legends only."
+    }
+  ]
+}

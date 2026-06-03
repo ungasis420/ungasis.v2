@@ -1,16 +1,16 @@
-# Graph Report - ungasis  (2026-06-03)
+# Graph Report - ungasis  (2026-06-04)
 
 ## Corpus Check
-- 1992 files · ~7,706,555 words
+- 2423 files · ~14,743,894 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 32188 nodes · 37903 edges · 3905 communities (2826 shown, 1079 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 211 edges (avg confidence: 0.85)
+- 39830 nodes · 46201 edges · 4736 communities (3578 shown, 1158 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 209 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `53c7f9c0`
+- Built from commit: `78fce583`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -157,7 +157,6 @@
 - [[_COMMUNITY_Community 139|Community 139]]
 - [[_COMMUNITY_Community 140|Community 140]]
 - [[_COMMUNITY_Community 141|Community 141]]
-- [[_COMMUNITY_Community 142|Community 142]]
 - [[_COMMUNITY_Community 143|Community 143]]
 - [[_COMMUNITY_Community 144|Community 144]]
 - [[_COMMUNITY_Community 145|Community 145]]
@@ -649,7 +648,6 @@
 - [[_COMMUNITY_Community 631|Community 631]]
 - [[_COMMUNITY_Community 632|Community 632]]
 - [[_COMMUNITY_Community 633|Community 633]]
-- [[_COMMUNITY_Community 634|Community 634]]
 - [[_COMMUNITY_Community 635|Community 635]]
 - [[_COMMUNITY_Community 636|Community 636]]
 - [[_COMMUNITY_Community 637|Community 637]]
@@ -3729,7 +3727,6 @@
 - [[_COMMUNITY_Community 3878|Community 3878]]
 - [[_COMMUNITY_Community 3879|Community 3879]]
 - [[_COMMUNITY_Community 3880|Community 3880]]
-- [[_COMMUNITY_Community 3881|Community 3881]]
 - [[_COMMUNITY_Community 3882|Community 3882]]
 - [[_COMMUNITY_Community 3883|Community 3883]]
 - [[_COMMUNITY_Community 3884|Community 3884]]
@@ -3749,18 +3746,791 @@
 - [[_COMMUNITY_Community 3898|Community 3898]]
 - [[_COMMUNITY_Community 3899|Community 3899]]
 - [[_COMMUNITY_Community 3900|Community 3900]]
+- [[_COMMUNITY_Community 3905|Community 3905]]
+- [[_COMMUNITY_Community 3906|Community 3906]]
+- [[_COMMUNITY_Community 3907|Community 3907]]
+- [[_COMMUNITY_Community 3908|Community 3908]]
+- [[_COMMUNITY_Community 3909|Community 3909]]
+- [[_COMMUNITY_Community 3910|Community 3910]]
+- [[_COMMUNITY_Community 3911|Community 3911]]
+- [[_COMMUNITY_Community 3912|Community 3912]]
+- [[_COMMUNITY_Community 3913|Community 3913]]
+- [[_COMMUNITY_Community 3914|Community 3914]]
+- [[_COMMUNITY_Community 3915|Community 3915]]
+- [[_COMMUNITY_Community 3916|Community 3916]]
+- [[_COMMUNITY_Community 3917|Community 3917]]
+- [[_COMMUNITY_Community 3918|Community 3918]]
+- [[_COMMUNITY_Community 3919|Community 3919]]
+- [[_COMMUNITY_Community 3920|Community 3920]]
+- [[_COMMUNITY_Community 3921|Community 3921]]
+- [[_COMMUNITY_Community 3922|Community 3922]]
+- [[_COMMUNITY_Community 3923|Community 3923]]
+- [[_COMMUNITY_Community 3924|Community 3924]]
+- [[_COMMUNITY_Community 3925|Community 3925]]
+- [[_COMMUNITY_Community 3926|Community 3926]]
+- [[_COMMUNITY_Community 3927|Community 3927]]
+- [[_COMMUNITY_Community 3928|Community 3928]]
+- [[_COMMUNITY_Community 3929|Community 3929]]
+- [[_COMMUNITY_Community 3930|Community 3930]]
+- [[_COMMUNITY_Community 3931|Community 3931]]
+- [[_COMMUNITY_Community 3932|Community 3932]]
+- [[_COMMUNITY_Community 3933|Community 3933]]
+- [[_COMMUNITY_Community 3934|Community 3934]]
+- [[_COMMUNITY_Community 3935|Community 3935]]
+- [[_COMMUNITY_Community 3936|Community 3936]]
+- [[_COMMUNITY_Community 3937|Community 3937]]
+- [[_COMMUNITY_Community 3938|Community 3938]]
+- [[_COMMUNITY_Community 3939|Community 3939]]
+- [[_COMMUNITY_Community 3940|Community 3940]]
+- [[_COMMUNITY_Community 3941|Community 3941]]
+- [[_COMMUNITY_Community 3942|Community 3942]]
+- [[_COMMUNITY_Community 3943|Community 3943]]
+- [[_COMMUNITY_Community 3944|Community 3944]]
+- [[_COMMUNITY_Community 3945|Community 3945]]
+- [[_COMMUNITY_Community 3946|Community 3946]]
+- [[_COMMUNITY_Community 3947|Community 3947]]
+- [[_COMMUNITY_Community 3948|Community 3948]]
+- [[_COMMUNITY_Community 3949|Community 3949]]
+- [[_COMMUNITY_Community 3950|Community 3950]]
+- [[_COMMUNITY_Community 3951|Community 3951]]
+- [[_COMMUNITY_Community 3952|Community 3952]]
+- [[_COMMUNITY_Community 3953|Community 3953]]
+- [[_COMMUNITY_Community 3954|Community 3954]]
+- [[_COMMUNITY_Community 3955|Community 3955]]
+- [[_COMMUNITY_Community 3956|Community 3956]]
+- [[_COMMUNITY_Community 3957|Community 3957]]
+- [[_COMMUNITY_Community 3958|Community 3958]]
+- [[_COMMUNITY_Community 3959|Community 3959]]
+- [[_COMMUNITY_Community 3960|Community 3960]]
+- [[_COMMUNITY_Community 3961|Community 3961]]
+- [[_COMMUNITY_Community 3962|Community 3962]]
+- [[_COMMUNITY_Community 3963|Community 3963]]
+- [[_COMMUNITY_Community 3964|Community 3964]]
+- [[_COMMUNITY_Community 3965|Community 3965]]
+- [[_COMMUNITY_Community 3966|Community 3966]]
+- [[_COMMUNITY_Community 3967|Community 3967]]
+- [[_COMMUNITY_Community 3968|Community 3968]]
+- [[_COMMUNITY_Community 3969|Community 3969]]
+- [[_COMMUNITY_Community 3970|Community 3970]]
+- [[_COMMUNITY_Community 3971|Community 3971]]
+- [[_COMMUNITY_Community 3972|Community 3972]]
+- [[_COMMUNITY_Community 3973|Community 3973]]
+- [[_COMMUNITY_Community 3974|Community 3974]]
+- [[_COMMUNITY_Community 3975|Community 3975]]
+- [[_COMMUNITY_Community 3976|Community 3976]]
+- [[_COMMUNITY_Community 3977|Community 3977]]
+- [[_COMMUNITY_Community 3978|Community 3978]]
+- [[_COMMUNITY_Community 3979|Community 3979]]
+- [[_COMMUNITY_Community 3980|Community 3980]]
+- [[_COMMUNITY_Community 3981|Community 3981]]
+- [[_COMMUNITY_Community 3982|Community 3982]]
+- [[_COMMUNITY_Community 3983|Community 3983]]
+- [[_COMMUNITY_Community 3984|Community 3984]]
+- [[_COMMUNITY_Community 3985|Community 3985]]
+- [[_COMMUNITY_Community 3986|Community 3986]]
+- [[_COMMUNITY_Community 3987|Community 3987]]
+- [[_COMMUNITY_Community 3988|Community 3988]]
+- [[_COMMUNITY_Community 3989|Community 3989]]
+- [[_COMMUNITY_Community 3990|Community 3990]]
+- [[_COMMUNITY_Community 3991|Community 3991]]
+- [[_COMMUNITY_Community 3992|Community 3992]]
+- [[_COMMUNITY_Community 3993|Community 3993]]
+- [[_COMMUNITY_Community 3994|Community 3994]]
+- [[_COMMUNITY_Community 3995|Community 3995]]
+- [[_COMMUNITY_Community 3996|Community 3996]]
+- [[_COMMUNITY_Community 3997|Community 3997]]
+- [[_COMMUNITY_Community 3998|Community 3998]]
+- [[_COMMUNITY_Community 3999|Community 3999]]
+- [[_COMMUNITY_Community 4000|Community 4000]]
+- [[_COMMUNITY_Community 4001|Community 4001]]
+- [[_COMMUNITY_Community 4002|Community 4002]]
+- [[_COMMUNITY_Community 4003|Community 4003]]
+- [[_COMMUNITY_Community 4004|Community 4004]]
+- [[_COMMUNITY_Community 4005|Community 4005]]
+- [[_COMMUNITY_Community 4006|Community 4006]]
+- [[_COMMUNITY_Community 4007|Community 4007]]
+- [[_COMMUNITY_Community 4008|Community 4008]]
+- [[_COMMUNITY_Community 4009|Community 4009]]
+- [[_COMMUNITY_Community 4010|Community 4010]]
+- [[_COMMUNITY_Community 4011|Community 4011]]
+- [[_COMMUNITY_Community 4012|Community 4012]]
+- [[_COMMUNITY_Community 4013|Community 4013]]
+- [[_COMMUNITY_Community 4014|Community 4014]]
+- [[_COMMUNITY_Community 4015|Community 4015]]
+- [[_COMMUNITY_Community 4019|Community 4019]]
+- [[_COMMUNITY_Community 4020|Community 4020]]
+- [[_COMMUNITY_Community 4021|Community 4021]]
+- [[_COMMUNITY_Community 4022|Community 4022]]
+- [[_COMMUNITY_Community 4023|Community 4023]]
+- [[_COMMUNITY_Community 4024|Community 4024]]
+- [[_COMMUNITY_Community 4025|Community 4025]]
+- [[_COMMUNITY_Community 4026|Community 4026]]
+- [[_COMMUNITY_Community 4027|Community 4027]]
+- [[_COMMUNITY_Community 4028|Community 4028]]
+- [[_COMMUNITY_Community 4029|Community 4029]]
+- [[_COMMUNITY_Community 4032|Community 4032]]
+- [[_COMMUNITY_Community 4033|Community 4033]]
+- [[_COMMUNITY_Community 4034|Community 4034]]
+- [[_COMMUNITY_Community 4035|Community 4035]]
+- [[_COMMUNITY_Community 4038|Community 4038]]
+- [[_COMMUNITY_Community 4039|Community 4039]]
+- [[_COMMUNITY_Community 4040|Community 4040]]
+- [[_COMMUNITY_Community 4041|Community 4041]]
+- [[_COMMUNITY_Community 4042|Community 4042]]
+- [[_COMMUNITY_Community 4043|Community 4043]]
+- [[_COMMUNITY_Community 4044|Community 4044]]
+- [[_COMMUNITY_Community 4045|Community 4045]]
+- [[_COMMUNITY_Community 4047|Community 4047]]
+- [[_COMMUNITY_Community 4048|Community 4048]]
+- [[_COMMUNITY_Community 4049|Community 4049]]
+- [[_COMMUNITY_Community 4050|Community 4050]]
+- [[_COMMUNITY_Community 4051|Community 4051]]
+- [[_COMMUNITY_Community 4052|Community 4052]]
+- [[_COMMUNITY_Community 4053|Community 4053]]
+- [[_COMMUNITY_Community 4054|Community 4054]]
+- [[_COMMUNITY_Community 4055|Community 4055]]
+- [[_COMMUNITY_Community 4056|Community 4056]]
+- [[_COMMUNITY_Community 4057|Community 4057]]
+- [[_COMMUNITY_Community 4058|Community 4058]]
+- [[_COMMUNITY_Community 4059|Community 4059]]
+- [[_COMMUNITY_Community 4060|Community 4060]]
+- [[_COMMUNITY_Community 4061|Community 4061]]
+- [[_COMMUNITY_Community 4062|Community 4062]]
+- [[_COMMUNITY_Community 4063|Community 4063]]
+- [[_COMMUNITY_Community 4064|Community 4064]]
+- [[_COMMUNITY_Community 4065|Community 4065]]
+- [[_COMMUNITY_Community 4066|Community 4066]]
+- [[_COMMUNITY_Community 4067|Community 4067]]
+- [[_COMMUNITY_Community 4068|Community 4068]]
+- [[_COMMUNITY_Community 4070|Community 4070]]
+- [[_COMMUNITY_Community 4071|Community 4071]]
+- [[_COMMUNITY_Community 4072|Community 4072]]
+- [[_COMMUNITY_Community 4073|Community 4073]]
+- [[_COMMUNITY_Community 4074|Community 4074]]
+- [[_COMMUNITY_Community 4075|Community 4075]]
+- [[_COMMUNITY_Community 4076|Community 4076]]
+- [[_COMMUNITY_Community 4077|Community 4077]]
+- [[_COMMUNITY_Community 4078|Community 4078]]
+- [[_COMMUNITY_Community 4079|Community 4079]]
+- [[_COMMUNITY_Community 4080|Community 4080]]
+- [[_COMMUNITY_Community 4081|Community 4081]]
+- [[_COMMUNITY_Community 4082|Community 4082]]
+- [[_COMMUNITY_Community 4083|Community 4083]]
+- [[_COMMUNITY_Community 4084|Community 4084]]
+- [[_COMMUNITY_Community 4085|Community 4085]]
+- [[_COMMUNITY_Community 4086|Community 4086]]
+- [[_COMMUNITY_Community 4087|Community 4087]]
+- [[_COMMUNITY_Community 4088|Community 4088]]
+- [[_COMMUNITY_Community 4089|Community 4089]]
+- [[_COMMUNITY_Community 4090|Community 4090]]
+- [[_COMMUNITY_Community 4091|Community 4091]]
+- [[_COMMUNITY_Community 4092|Community 4092]]
+- [[_COMMUNITY_Community 4093|Community 4093]]
+- [[_COMMUNITY_Community 4094|Community 4094]]
+- [[_COMMUNITY_Community 4096|Community 4096]]
+- [[_COMMUNITY_Community 4097|Community 4097]]
+- [[_COMMUNITY_Community 4098|Community 4098]]
+- [[_COMMUNITY_Community 4099|Community 4099]]
+- [[_COMMUNITY_Community 4100|Community 4100]]
+- [[_COMMUNITY_Community 4101|Community 4101]]
+- [[_COMMUNITY_Community 4102|Community 4102]]
+- [[_COMMUNITY_Community 4103|Community 4103]]
+- [[_COMMUNITY_Community 4104|Community 4104]]
+- [[_COMMUNITY_Community 4105|Community 4105]]
+- [[_COMMUNITY_Community 4106|Community 4106]]
+- [[_COMMUNITY_Community 4107|Community 4107]]
+- [[_COMMUNITY_Community 4108|Community 4108]]
+- [[_COMMUNITY_Community 4109|Community 4109]]
+- [[_COMMUNITY_Community 4110|Community 4110]]
+- [[_COMMUNITY_Community 4113|Community 4113]]
+- [[_COMMUNITY_Community 4114|Community 4114]]
+- [[_COMMUNITY_Community 4115|Community 4115]]
+- [[_COMMUNITY_Community 4116|Community 4116]]
+- [[_COMMUNITY_Community 4117|Community 4117]]
+- [[_COMMUNITY_Community 4118|Community 4118]]
+- [[_COMMUNITY_Community 4119|Community 4119]]
+- [[_COMMUNITY_Community 4120|Community 4120]]
+- [[_COMMUNITY_Community 4121|Community 4121]]
+- [[_COMMUNITY_Community 4122|Community 4122]]
+- [[_COMMUNITY_Community 4123|Community 4123]]
+- [[_COMMUNITY_Community 4124|Community 4124]]
+- [[_COMMUNITY_Community 4125|Community 4125]]
+- [[_COMMUNITY_Community 4126|Community 4126]]
+- [[_COMMUNITY_Community 4127|Community 4127]]
+- [[_COMMUNITY_Community 4128|Community 4128]]
+- [[_COMMUNITY_Community 4129|Community 4129]]
+- [[_COMMUNITY_Community 4130|Community 4130]]
+- [[_COMMUNITY_Community 4131|Community 4131]]
+- [[_COMMUNITY_Community 4132|Community 4132]]
+- [[_COMMUNITY_Community 4133|Community 4133]]
+- [[_COMMUNITY_Community 4134|Community 4134]]
+- [[_COMMUNITY_Community 4135|Community 4135]]
+- [[_COMMUNITY_Community 4136|Community 4136]]
+- [[_COMMUNITY_Community 4137|Community 4137]]
+- [[_COMMUNITY_Community 4138|Community 4138]]
+- [[_COMMUNITY_Community 4139|Community 4139]]
+- [[_COMMUNITY_Community 4140|Community 4140]]
+- [[_COMMUNITY_Community 4141|Community 4141]]
+- [[_COMMUNITY_Community 4142|Community 4142]]
+- [[_COMMUNITY_Community 4143|Community 4143]]
+- [[_COMMUNITY_Community 4144|Community 4144]]
+- [[_COMMUNITY_Community 4145|Community 4145]]
+- [[_COMMUNITY_Community 4146|Community 4146]]
+- [[_COMMUNITY_Community 4147|Community 4147]]
+- [[_COMMUNITY_Community 4148|Community 4148]]
+- [[_COMMUNITY_Community 4149|Community 4149]]
+- [[_COMMUNITY_Community 4150|Community 4150]]
+- [[_COMMUNITY_Community 4151|Community 4151]]
+- [[_COMMUNITY_Community 4152|Community 4152]]
+- [[_COMMUNITY_Community 4153|Community 4153]]
+- [[_COMMUNITY_Community 4154|Community 4154]]
+- [[_COMMUNITY_Community 4155|Community 4155]]
+- [[_COMMUNITY_Community 4156|Community 4156]]
+- [[_COMMUNITY_Community 4157|Community 4157]]
+- [[_COMMUNITY_Community 4159|Community 4159]]
+- [[_COMMUNITY_Community 4161|Community 4161]]
+- [[_COMMUNITY_Community 4162|Community 4162]]
+- [[_COMMUNITY_Community 4163|Community 4163]]
+- [[_COMMUNITY_Community 4164|Community 4164]]
+- [[_COMMUNITY_Community 4165|Community 4165]]
+- [[_COMMUNITY_Community 4166|Community 4166]]
+- [[_COMMUNITY_Community 4167|Community 4167]]
+- [[_COMMUNITY_Community 4168|Community 4168]]
+- [[_COMMUNITY_Community 4171|Community 4171]]
+- [[_COMMUNITY_Community 4172|Community 4172]]
+- [[_COMMUNITY_Community 4173|Community 4173]]
+- [[_COMMUNITY_Community 4174|Community 4174]]
+- [[_COMMUNITY_Community 4175|Community 4175]]
+- [[_COMMUNITY_Community 4176|Community 4176]]
+- [[_COMMUNITY_Community 4177|Community 4177]]
+- [[_COMMUNITY_Community 4178|Community 4178]]
+- [[_COMMUNITY_Community 4179|Community 4179]]
+- [[_COMMUNITY_Community 4180|Community 4180]]
+- [[_COMMUNITY_Community 4181|Community 4181]]
+- [[_COMMUNITY_Community 4182|Community 4182]]
+- [[_COMMUNITY_Community 4183|Community 4183]]
+- [[_COMMUNITY_Community 4184|Community 4184]]
+- [[_COMMUNITY_Community 4185|Community 4185]]
+- [[_COMMUNITY_Community 4186|Community 4186]]
+- [[_COMMUNITY_Community 4187|Community 4187]]
+- [[_COMMUNITY_Community 4188|Community 4188]]
+- [[_COMMUNITY_Community 4189|Community 4189]]
+- [[_COMMUNITY_Community 4190|Community 4190]]
+- [[_COMMUNITY_Community 4191|Community 4191]]
+- [[_COMMUNITY_Community 4192|Community 4192]]
+- [[_COMMUNITY_Community 4193|Community 4193]]
+- [[_COMMUNITY_Community 4194|Community 4194]]
+- [[_COMMUNITY_Community 4195|Community 4195]]
+- [[_COMMUNITY_Community 4196|Community 4196]]
+- [[_COMMUNITY_Community 4197|Community 4197]]
+- [[_COMMUNITY_Community 4198|Community 4198]]
+- [[_COMMUNITY_Community 4199|Community 4199]]
+- [[_COMMUNITY_Community 4200|Community 4200]]
+- [[_COMMUNITY_Community 4201|Community 4201]]
+- [[_COMMUNITY_Community 4202|Community 4202]]
+- [[_COMMUNITY_Community 4203|Community 4203]]
+- [[_COMMUNITY_Community 4204|Community 4204]]
+- [[_COMMUNITY_Community 4205|Community 4205]]
+- [[_COMMUNITY_Community 4206|Community 4206]]
+- [[_COMMUNITY_Community 4207|Community 4207]]
+- [[_COMMUNITY_Community 4208|Community 4208]]
+- [[_COMMUNITY_Community 4209|Community 4209]]
+- [[_COMMUNITY_Community 4210|Community 4210]]
+- [[_COMMUNITY_Community 4211|Community 4211]]
+- [[_COMMUNITY_Community 4212|Community 4212]]
+- [[_COMMUNITY_Community 4213|Community 4213]]
+- [[_COMMUNITY_Community 4214|Community 4214]]
+- [[_COMMUNITY_Community 4215|Community 4215]]
+- [[_COMMUNITY_Community 4216|Community 4216]]
+- [[_COMMUNITY_Community 4217|Community 4217]]
+- [[_COMMUNITY_Community 4218|Community 4218]]
+- [[_COMMUNITY_Community 4219|Community 4219]]
+- [[_COMMUNITY_Community 4220|Community 4220]]
+- [[_COMMUNITY_Community 4221|Community 4221]]
+- [[_COMMUNITY_Community 4222|Community 4222]]
+- [[_COMMUNITY_Community 4223|Community 4223]]
+- [[_COMMUNITY_Community 4224|Community 4224]]
+- [[_COMMUNITY_Community 4225|Community 4225]]
+- [[_COMMUNITY_Community 4226|Community 4226]]
+- [[_COMMUNITY_Community 4227|Community 4227]]
+- [[_COMMUNITY_Community 4228|Community 4228]]
+- [[_COMMUNITY_Community 4229|Community 4229]]
+- [[_COMMUNITY_Community 4230|Community 4230]]
+- [[_COMMUNITY_Community 4231|Community 4231]]
+- [[_COMMUNITY_Community 4232|Community 4232]]
+- [[_COMMUNITY_Community 4233|Community 4233]]
+- [[_COMMUNITY_Community 4235|Community 4235]]
+- [[_COMMUNITY_Community 4236|Community 4236]]
+- [[_COMMUNITY_Community 4237|Community 4237]]
+- [[_COMMUNITY_Community 4238|Community 4238]]
+- [[_COMMUNITY_Community 4239|Community 4239]]
+- [[_COMMUNITY_Community 4240|Community 4240]]
+- [[_COMMUNITY_Community 4241|Community 4241]]
+- [[_COMMUNITY_Community 4242|Community 4242]]
+- [[_COMMUNITY_Community 4243|Community 4243]]
+- [[_COMMUNITY_Community 4244|Community 4244]]
+- [[_COMMUNITY_Community 4245|Community 4245]]
+- [[_COMMUNITY_Community 4246|Community 4246]]
+- [[_COMMUNITY_Community 4247|Community 4247]]
+- [[_COMMUNITY_Community 4248|Community 4248]]
+- [[_COMMUNITY_Community 4249|Community 4249]]
+- [[_COMMUNITY_Community 4250|Community 4250]]
+- [[_COMMUNITY_Community 4251|Community 4251]]
+- [[_COMMUNITY_Community 4252|Community 4252]]
+- [[_COMMUNITY_Community 4253|Community 4253]]
+- [[_COMMUNITY_Community 4254|Community 4254]]
+- [[_COMMUNITY_Community 4255|Community 4255]]
+- [[_COMMUNITY_Community 4257|Community 4257]]
+- [[_COMMUNITY_Community 4258|Community 4258]]
+- [[_COMMUNITY_Community 4259|Community 4259]]
+- [[_COMMUNITY_Community 4260|Community 4260]]
+- [[_COMMUNITY_Community 4261|Community 4261]]
+- [[_COMMUNITY_Community 4262|Community 4262]]
+- [[_COMMUNITY_Community 4263|Community 4263]]
+- [[_COMMUNITY_Community 4264|Community 4264]]
+- [[_COMMUNITY_Community 4265|Community 4265]]
+- [[_COMMUNITY_Community 4266|Community 4266]]
+- [[_COMMUNITY_Community 4267|Community 4267]]
+- [[_COMMUNITY_Community 4268|Community 4268]]
+- [[_COMMUNITY_Community 4269|Community 4269]]
+- [[_COMMUNITY_Community 4270|Community 4270]]
+- [[_COMMUNITY_Community 4271|Community 4271]]
+- [[_COMMUNITY_Community 4272|Community 4272]]
+- [[_COMMUNITY_Community 4273|Community 4273]]
+- [[_COMMUNITY_Community 4274|Community 4274]]
+- [[_COMMUNITY_Community 4275|Community 4275]]
+- [[_COMMUNITY_Community 4276|Community 4276]]
+- [[_COMMUNITY_Community 4277|Community 4277]]
+- [[_COMMUNITY_Community 4278|Community 4278]]
+- [[_COMMUNITY_Community 4279|Community 4279]]
+- [[_COMMUNITY_Community 4280|Community 4280]]
+- [[_COMMUNITY_Community 4281|Community 4281]]
+- [[_COMMUNITY_Community 4282|Community 4282]]
+- [[_COMMUNITY_Community 4284|Community 4284]]
+- [[_COMMUNITY_Community 4285|Community 4285]]
+- [[_COMMUNITY_Community 4286|Community 4286]]
+- [[_COMMUNITY_Community 4287|Community 4287]]
+- [[_COMMUNITY_Community 4288|Community 4288]]
+- [[_COMMUNITY_Community 4289|Community 4289]]
+- [[_COMMUNITY_Community 4290|Community 4290]]
+- [[_COMMUNITY_Community 4291|Community 4291]]
+- [[_COMMUNITY_Community 4292|Community 4292]]
+- [[_COMMUNITY_Community 4293|Community 4293]]
+- [[_COMMUNITY_Community 4294|Community 4294]]
+- [[_COMMUNITY_Community 4295|Community 4295]]
+- [[_COMMUNITY_Community 4296|Community 4296]]
+- [[_COMMUNITY_Community 4297|Community 4297]]
+- [[_COMMUNITY_Community 4298|Community 4298]]
+- [[_COMMUNITY_Community 4299|Community 4299]]
+- [[_COMMUNITY_Community 4300|Community 4300]]
+- [[_COMMUNITY_Community 4301|Community 4301]]
+- [[_COMMUNITY_Community 4302|Community 4302]]
+- [[_COMMUNITY_Community 4303|Community 4303]]
+- [[_COMMUNITY_Community 4304|Community 4304]]
+- [[_COMMUNITY_Community 4305|Community 4305]]
+- [[_COMMUNITY_Community 4306|Community 4306]]
+- [[_COMMUNITY_Community 4307|Community 4307]]
+- [[_COMMUNITY_Community 4308|Community 4308]]
+- [[_COMMUNITY_Community 4309|Community 4309]]
+- [[_COMMUNITY_Community 4310|Community 4310]]
+- [[_COMMUNITY_Community 4311|Community 4311]]
+- [[_COMMUNITY_Community 4312|Community 4312]]
+- [[_COMMUNITY_Community 4313|Community 4313]]
+- [[_COMMUNITY_Community 4314|Community 4314]]
+- [[_COMMUNITY_Community 4315|Community 4315]]
+- [[_COMMUNITY_Community 4316|Community 4316]]
+- [[_COMMUNITY_Community 4317|Community 4317]]
+- [[_COMMUNITY_Community 4318|Community 4318]]
+- [[_COMMUNITY_Community 4319|Community 4319]]
+- [[_COMMUNITY_Community 4320|Community 4320]]
+- [[_COMMUNITY_Community 4321|Community 4321]]
+- [[_COMMUNITY_Community 4322|Community 4322]]
+- [[_COMMUNITY_Community 4323|Community 4323]]
+- [[_COMMUNITY_Community 4324|Community 4324]]
+- [[_COMMUNITY_Community 4325|Community 4325]]
+- [[_COMMUNITY_Community 4326|Community 4326]]
+- [[_COMMUNITY_Community 4327|Community 4327]]
+- [[_COMMUNITY_Community 4328|Community 4328]]
+- [[_COMMUNITY_Community 4329|Community 4329]]
+- [[_COMMUNITY_Community 4330|Community 4330]]
+- [[_COMMUNITY_Community 4331|Community 4331]]
+- [[_COMMUNITY_Community 4332|Community 4332]]
+- [[_COMMUNITY_Community 4333|Community 4333]]
+- [[_COMMUNITY_Community 4335|Community 4335]]
+- [[_COMMUNITY_Community 4336|Community 4336]]
+- [[_COMMUNITY_Community 4338|Community 4338]]
+- [[_COMMUNITY_Community 4339|Community 4339]]
+- [[_COMMUNITY_Community 4340|Community 4340]]
+- [[_COMMUNITY_Community 4341|Community 4341]]
+- [[_COMMUNITY_Community 4342|Community 4342]]
+- [[_COMMUNITY_Community 4343|Community 4343]]
+- [[_COMMUNITY_Community 4344|Community 4344]]
+- [[_COMMUNITY_Community 4345|Community 4345]]
+- [[_COMMUNITY_Community 4346|Community 4346]]
+- [[_COMMUNITY_Community 4347|Community 4347]]
+- [[_COMMUNITY_Community 4348|Community 4348]]
+- [[_COMMUNITY_Community 4349|Community 4349]]
+- [[_COMMUNITY_Community 4350|Community 4350]]
+- [[_COMMUNITY_Community 4351|Community 4351]]
+- [[_COMMUNITY_Community 4352|Community 4352]]
+- [[_COMMUNITY_Community 4353|Community 4353]]
+- [[_COMMUNITY_Community 4354|Community 4354]]
+- [[_COMMUNITY_Community 4355|Community 4355]]
+- [[_COMMUNITY_Community 4356|Community 4356]]
+- [[_COMMUNITY_Community 4357|Community 4357]]
+- [[_COMMUNITY_Community 4358|Community 4358]]
+- [[_COMMUNITY_Community 4359|Community 4359]]
+- [[_COMMUNITY_Community 4360|Community 4360]]
+- [[_COMMUNITY_Community 4361|Community 4361]]
+- [[_COMMUNITY_Community 4362|Community 4362]]
+- [[_COMMUNITY_Community 4364|Community 4364]]
+- [[_COMMUNITY_Community 4365|Community 4365]]
+- [[_COMMUNITY_Community 4366|Community 4366]]
+- [[_COMMUNITY_Community 4367|Community 4367]]
+- [[_COMMUNITY_Community 4368|Community 4368]]
+- [[_COMMUNITY_Community 4369|Community 4369]]
+- [[_COMMUNITY_Community 4370|Community 4370]]
+- [[_COMMUNITY_Community 4371|Community 4371]]
+- [[_COMMUNITY_Community 4372|Community 4372]]
+- [[_COMMUNITY_Community 4373|Community 4373]]
+- [[_COMMUNITY_Community 4374|Community 4374]]
+- [[_COMMUNITY_Community 4375|Community 4375]]
+- [[_COMMUNITY_Community 4376|Community 4376]]
+- [[_COMMUNITY_Community 4377|Community 4377]]
+- [[_COMMUNITY_Community 4378|Community 4378]]
+- [[_COMMUNITY_Community 4379|Community 4379]]
+- [[_COMMUNITY_Community 4380|Community 4380]]
+- [[_COMMUNITY_Community 4381|Community 4381]]
+- [[_COMMUNITY_Community 4382|Community 4382]]
+- [[_COMMUNITY_Community 4383|Community 4383]]
+- [[_COMMUNITY_Community 4384|Community 4384]]
+- [[_COMMUNITY_Community 4385|Community 4385]]
+- [[_COMMUNITY_Community 4386|Community 4386]]
+- [[_COMMUNITY_Community 4387|Community 4387]]
+- [[_COMMUNITY_Community 4388|Community 4388]]
+- [[_COMMUNITY_Community 4389|Community 4389]]
+- [[_COMMUNITY_Community 4390|Community 4390]]
+- [[_COMMUNITY_Community 4391|Community 4391]]
+- [[_COMMUNITY_Community 4392|Community 4392]]
+- [[_COMMUNITY_Community 4393|Community 4393]]
+- [[_COMMUNITY_Community 4394|Community 4394]]
+- [[_COMMUNITY_Community 4396|Community 4396]]
+- [[_COMMUNITY_Community 4397|Community 4397]]
+- [[_COMMUNITY_Community 4398|Community 4398]]
+- [[_COMMUNITY_Community 4399|Community 4399]]
+- [[_COMMUNITY_Community 4400|Community 4400]]
+- [[_COMMUNITY_Community 4401|Community 4401]]
+- [[_COMMUNITY_Community 4402|Community 4402]]
+- [[_COMMUNITY_Community 4403|Community 4403]]
+- [[_COMMUNITY_Community 4404|Community 4404]]
+- [[_COMMUNITY_Community 4405|Community 4405]]
+- [[_COMMUNITY_Community 4406|Community 4406]]
+- [[_COMMUNITY_Community 4407|Community 4407]]
+- [[_COMMUNITY_Community 4408|Community 4408]]
+- [[_COMMUNITY_Community 4409|Community 4409]]
+- [[_COMMUNITY_Community 4410|Community 4410]]
+- [[_COMMUNITY_Community 4411|Community 4411]]
+- [[_COMMUNITY_Community 4412|Community 4412]]
+- [[_COMMUNITY_Community 4413|Community 4413]]
+- [[_COMMUNITY_Community 4414|Community 4414]]
+- [[_COMMUNITY_Community 4415|Community 4415]]
+- [[_COMMUNITY_Community 4416|Community 4416]]
+- [[_COMMUNITY_Community 4417|Community 4417]]
+- [[_COMMUNITY_Community 4418|Community 4418]]
+- [[_COMMUNITY_Community 4419|Community 4419]]
+- [[_COMMUNITY_Community 4420|Community 4420]]
+- [[_COMMUNITY_Community 4421|Community 4421]]
+- [[_COMMUNITY_Community 4422|Community 4422]]
+- [[_COMMUNITY_Community 4423|Community 4423]]
+- [[_COMMUNITY_Community 4424|Community 4424]]
+- [[_COMMUNITY_Community 4426|Community 4426]]
+- [[_COMMUNITY_Community 4427|Community 4427]]
+- [[_COMMUNITY_Community 4429|Community 4429]]
+- [[_COMMUNITY_Community 4430|Community 4430]]
+- [[_COMMUNITY_Community 4431|Community 4431]]
+- [[_COMMUNITY_Community 4432|Community 4432]]
+- [[_COMMUNITY_Community 4433|Community 4433]]
+- [[_COMMUNITY_Community 4434|Community 4434]]
+- [[_COMMUNITY_Community 4435|Community 4435]]
+- [[_COMMUNITY_Community 4436|Community 4436]]
+- [[_COMMUNITY_Community 4437|Community 4437]]
+- [[_COMMUNITY_Community 4438|Community 4438]]
+- [[_COMMUNITY_Community 4439|Community 4439]]
+- [[_COMMUNITY_Community 4440|Community 4440]]
+- [[_COMMUNITY_Community 4441|Community 4441]]
+- [[_COMMUNITY_Community 4442|Community 4442]]
+- [[_COMMUNITY_Community 4443|Community 4443]]
+- [[_COMMUNITY_Community 4444|Community 4444]]
+- [[_COMMUNITY_Community 4445|Community 4445]]
+- [[_COMMUNITY_Community 4446|Community 4446]]
+- [[_COMMUNITY_Community 4449|Community 4449]]
+- [[_COMMUNITY_Community 4450|Community 4450]]
+- [[_COMMUNITY_Community 4451|Community 4451]]
+- [[_COMMUNITY_Community 4452|Community 4452]]
+- [[_COMMUNITY_Community 4453|Community 4453]]
+- [[_COMMUNITY_Community 4454|Community 4454]]
+- [[_COMMUNITY_Community 4455|Community 4455]]
+- [[_COMMUNITY_Community 4456|Community 4456]]
+- [[_COMMUNITY_Community 4457|Community 4457]]
+- [[_COMMUNITY_Community 4458|Community 4458]]
+- [[_COMMUNITY_Community 4459|Community 4459]]
+- [[_COMMUNITY_Community 4460|Community 4460]]
+- [[_COMMUNITY_Community 4461|Community 4461]]
+- [[_COMMUNITY_Community 4462|Community 4462]]
+- [[_COMMUNITY_Community 4463|Community 4463]]
+- [[_COMMUNITY_Community 4464|Community 4464]]
+- [[_COMMUNITY_Community 4465|Community 4465]]
+- [[_COMMUNITY_Community 4466|Community 4466]]
+- [[_COMMUNITY_Community 4467|Community 4467]]
+- [[_COMMUNITY_Community 4468|Community 4468]]
+- [[_COMMUNITY_Community 4469|Community 4469]]
+- [[_COMMUNITY_Community 4470|Community 4470]]
+- [[_COMMUNITY_Community 4471|Community 4471]]
+- [[_COMMUNITY_Community 4472|Community 4472]]
+- [[_COMMUNITY_Community 4473|Community 4473]]
+- [[_COMMUNITY_Community 4474|Community 4474]]
+- [[_COMMUNITY_Community 4475|Community 4475]]
+- [[_COMMUNITY_Community 4476|Community 4476]]
+- [[_COMMUNITY_Community 4477|Community 4477]]
+- [[_COMMUNITY_Community 4478|Community 4478]]
+- [[_COMMUNITY_Community 4479|Community 4479]]
+- [[_COMMUNITY_Community 4480|Community 4480]]
+- [[_COMMUNITY_Community 4481|Community 4481]]
+- [[_COMMUNITY_Community 4482|Community 4482]]
+- [[_COMMUNITY_Community 4483|Community 4483]]
+- [[_COMMUNITY_Community 4484|Community 4484]]
+- [[_COMMUNITY_Community 4485|Community 4485]]
+- [[_COMMUNITY_Community 4486|Community 4486]]
+- [[_COMMUNITY_Community 4487|Community 4487]]
+- [[_COMMUNITY_Community 4488|Community 4488]]
+- [[_COMMUNITY_Community 4489|Community 4489]]
+- [[_COMMUNITY_Community 4490|Community 4490]]
+- [[_COMMUNITY_Community 4491|Community 4491]]
+- [[_COMMUNITY_Community 4492|Community 4492]]
+- [[_COMMUNITY_Community 4493|Community 4493]]
+- [[_COMMUNITY_Community 4494|Community 4494]]
+- [[_COMMUNITY_Community 4495|Community 4495]]
+- [[_COMMUNITY_Community 4496|Community 4496]]
+- [[_COMMUNITY_Community 4497|Community 4497]]
+- [[_COMMUNITY_Community 4498|Community 4498]]
+- [[_COMMUNITY_Community 4499|Community 4499]]
+- [[_COMMUNITY_Community 4500|Community 4500]]
+- [[_COMMUNITY_Community 4501|Community 4501]]
+- [[_COMMUNITY_Community 4502|Community 4502]]
+- [[_COMMUNITY_Community 4503|Community 4503]]
+- [[_COMMUNITY_Community 4504|Community 4504]]
+- [[_COMMUNITY_Community 4505|Community 4505]]
+- [[_COMMUNITY_Community 4506|Community 4506]]
+- [[_COMMUNITY_Community 4507|Community 4507]]
+- [[_COMMUNITY_Community 4508|Community 4508]]
+- [[_COMMUNITY_Community 4509|Community 4509]]
+- [[_COMMUNITY_Community 4510|Community 4510]]
+- [[_COMMUNITY_Community 4511|Community 4511]]
+- [[_COMMUNITY_Community 4512|Community 4512]]
+- [[_COMMUNITY_Community 4513|Community 4513]]
+- [[_COMMUNITY_Community 4514|Community 4514]]
+- [[_COMMUNITY_Community 4515|Community 4515]]
+- [[_COMMUNITY_Community 4516|Community 4516]]
+- [[_COMMUNITY_Community 4517|Community 4517]]
+- [[_COMMUNITY_Community 4518|Community 4518]]
+- [[_COMMUNITY_Community 4519|Community 4519]]
+- [[_COMMUNITY_Community 4520|Community 4520]]
+- [[_COMMUNITY_Community 4521|Community 4521]]
+- [[_COMMUNITY_Community 4522|Community 4522]]
+- [[_COMMUNITY_Community 4523|Community 4523]]
+- [[_COMMUNITY_Community 4524|Community 4524]]
+- [[_COMMUNITY_Community 4525|Community 4525]]
+- [[_COMMUNITY_Community 4526|Community 4526]]
+- [[_COMMUNITY_Community 4527|Community 4527]]
+- [[_COMMUNITY_Community 4528|Community 4528]]
+- [[_COMMUNITY_Community 4529|Community 4529]]
+- [[_COMMUNITY_Community 4530|Community 4530]]
+- [[_COMMUNITY_Community 4531|Community 4531]]
+- [[_COMMUNITY_Community 4532|Community 4532]]
+- [[_COMMUNITY_Community 4533|Community 4533]]
+- [[_COMMUNITY_Community 4534|Community 4534]]
+- [[_COMMUNITY_Community 4535|Community 4535]]
+- [[_COMMUNITY_Community 4536|Community 4536]]
+- [[_COMMUNITY_Community 4537|Community 4537]]
+- [[_COMMUNITY_Community 4538|Community 4538]]
+- [[_COMMUNITY_Community 4539|Community 4539]]
+- [[_COMMUNITY_Community 4540|Community 4540]]
+- [[_COMMUNITY_Community 4541|Community 4541]]
+- [[_COMMUNITY_Community 4542|Community 4542]]
+- [[_COMMUNITY_Community 4543|Community 4543]]
+- [[_COMMUNITY_Community 4544|Community 4544]]
+- [[_COMMUNITY_Community 4545|Community 4545]]
+- [[_COMMUNITY_Community 4546|Community 4546]]
+- [[_COMMUNITY_Community 4547|Community 4547]]
+- [[_COMMUNITY_Community 4548|Community 4548]]
+- [[_COMMUNITY_Community 4549|Community 4549]]
+- [[_COMMUNITY_Community 4550|Community 4550]]
+- [[_COMMUNITY_Community 4551|Community 4551]]
+- [[_COMMUNITY_Community 4552|Community 4552]]
+- [[_COMMUNITY_Community 4553|Community 4553]]
+- [[_COMMUNITY_Community 4554|Community 4554]]
+- [[_COMMUNITY_Community 4555|Community 4555]]
+- [[_COMMUNITY_Community 4556|Community 4556]]
+- [[_COMMUNITY_Community 4557|Community 4557]]
+- [[_COMMUNITY_Community 4558|Community 4558]]
+- [[_COMMUNITY_Community 4559|Community 4559]]
+- [[_COMMUNITY_Community 4560|Community 4560]]
+- [[_COMMUNITY_Community 4561|Community 4561]]
+- [[_COMMUNITY_Community 4562|Community 4562]]
+- [[_COMMUNITY_Community 4563|Community 4563]]
+- [[_COMMUNITY_Community 4564|Community 4564]]
+- [[_COMMUNITY_Community 4565|Community 4565]]
+- [[_COMMUNITY_Community 4566|Community 4566]]
+- [[_COMMUNITY_Community 4567|Community 4567]]
+- [[_COMMUNITY_Community 4568|Community 4568]]
+- [[_COMMUNITY_Community 4569|Community 4569]]
+- [[_COMMUNITY_Community 4570|Community 4570]]
+- [[_COMMUNITY_Community 4571|Community 4571]]
+- [[_COMMUNITY_Community 4572|Community 4572]]
+- [[_COMMUNITY_Community 4573|Community 4573]]
+- [[_COMMUNITY_Community 4574|Community 4574]]
+- [[_COMMUNITY_Community 4575|Community 4575]]
+- [[_COMMUNITY_Community 4576|Community 4576]]
+- [[_COMMUNITY_Community 4577|Community 4577]]
+- [[_COMMUNITY_Community 4578|Community 4578]]
+- [[_COMMUNITY_Community 4579|Community 4579]]
+- [[_COMMUNITY_Community 4580|Community 4580]]
+- [[_COMMUNITY_Community 4581|Community 4581]]
+- [[_COMMUNITY_Community 4582|Community 4582]]
+- [[_COMMUNITY_Community 4583|Community 4583]]
+- [[_COMMUNITY_Community 4584|Community 4584]]
+- [[_COMMUNITY_Community 4585|Community 4585]]
+- [[_COMMUNITY_Community 4586|Community 4586]]
+- [[_COMMUNITY_Community 4587|Community 4587]]
+- [[_COMMUNITY_Community 4588|Community 4588]]
+- [[_COMMUNITY_Community 4589|Community 4589]]
+- [[_COMMUNITY_Community 4590|Community 4590]]
+- [[_COMMUNITY_Community 4591|Community 4591]]
+- [[_COMMUNITY_Community 4592|Community 4592]]
+- [[_COMMUNITY_Community 4593|Community 4593]]
+- [[_COMMUNITY_Community 4594|Community 4594]]
+- [[_COMMUNITY_Community 4595|Community 4595]]
+- [[_COMMUNITY_Community 4596|Community 4596]]
+- [[_COMMUNITY_Community 4597|Community 4597]]
+- [[_COMMUNITY_Community 4598|Community 4598]]
+- [[_COMMUNITY_Community 4599|Community 4599]]
+- [[_COMMUNITY_Community 4600|Community 4600]]
+- [[_COMMUNITY_Community 4601|Community 4601]]
+- [[_COMMUNITY_Community 4602|Community 4602]]
+- [[_COMMUNITY_Community 4603|Community 4603]]
+- [[_COMMUNITY_Community 4604|Community 4604]]
+- [[_COMMUNITY_Community 4605|Community 4605]]
+- [[_COMMUNITY_Community 4606|Community 4606]]
+- [[_COMMUNITY_Community 4607|Community 4607]]
+- [[_COMMUNITY_Community 4608|Community 4608]]
+- [[_COMMUNITY_Community 4609|Community 4609]]
+- [[_COMMUNITY_Community 4610|Community 4610]]
+- [[_COMMUNITY_Community 4611|Community 4611]]
+- [[_COMMUNITY_Community 4612|Community 4612]]
+- [[_COMMUNITY_Community 4613|Community 4613]]
+- [[_COMMUNITY_Community 4614|Community 4614]]
+- [[_COMMUNITY_Community 4615|Community 4615]]
+- [[_COMMUNITY_Community 4616|Community 4616]]
+- [[_COMMUNITY_Community 4617|Community 4617]]
+- [[_COMMUNITY_Community 4618|Community 4618]]
+- [[_COMMUNITY_Community 4619|Community 4619]]
+- [[_COMMUNITY_Community 4620|Community 4620]]
+- [[_COMMUNITY_Community 4621|Community 4621]]
+- [[_COMMUNITY_Community 4622|Community 4622]]
+- [[_COMMUNITY_Community 4623|Community 4623]]
+- [[_COMMUNITY_Community 4624|Community 4624]]
+- [[_COMMUNITY_Community 4625|Community 4625]]
+- [[_COMMUNITY_Community 4626|Community 4626]]
+- [[_COMMUNITY_Community 4627|Community 4627]]
+- [[_COMMUNITY_Community 4628|Community 4628]]
+- [[_COMMUNITY_Community 4629|Community 4629]]
+- [[_COMMUNITY_Community 4630|Community 4630]]
+- [[_COMMUNITY_Community 4631|Community 4631]]
+- [[_COMMUNITY_Community 4632|Community 4632]]
+- [[_COMMUNITY_Community 4633|Community 4633]]
+- [[_COMMUNITY_Community 4634|Community 4634]]
+- [[_COMMUNITY_Community 4635|Community 4635]]
+- [[_COMMUNITY_Community 4636|Community 4636]]
+- [[_COMMUNITY_Community 4637|Community 4637]]
+- [[_COMMUNITY_Community 4638|Community 4638]]
+- [[_COMMUNITY_Community 4639|Community 4639]]
+- [[_COMMUNITY_Community 4640|Community 4640]]
+- [[_COMMUNITY_Community 4641|Community 4641]]
+- [[_COMMUNITY_Community 4642|Community 4642]]
+- [[_COMMUNITY_Community 4643|Community 4643]]
+- [[_COMMUNITY_Community 4644|Community 4644]]
+- [[_COMMUNITY_Community 4645|Community 4645]]
+- [[_COMMUNITY_Community 4646|Community 4646]]
+- [[_COMMUNITY_Community 4647|Community 4647]]
+- [[_COMMUNITY_Community 4648|Community 4648]]
+- [[_COMMUNITY_Community 4649|Community 4649]]
+- [[_COMMUNITY_Community 4650|Community 4650]]
+- [[_COMMUNITY_Community 4651|Community 4651]]
+- [[_COMMUNITY_Community 4653|Community 4653]]
+- [[_COMMUNITY_Community 4654|Community 4654]]
+- [[_COMMUNITY_Community 4655|Community 4655]]
+- [[_COMMUNITY_Community 4656|Community 4656]]
+- [[_COMMUNITY_Community 4657|Community 4657]]
+- [[_COMMUNITY_Community 4658|Community 4658]]
+- [[_COMMUNITY_Community 4659|Community 4659]]
+- [[_COMMUNITY_Community 4660|Community 4660]]
+- [[_COMMUNITY_Community 4661|Community 4661]]
+- [[_COMMUNITY_Community 4662|Community 4662]]
+- [[_COMMUNITY_Community 4663|Community 4663]]
+- [[_COMMUNITY_Community 4664|Community 4664]]
+- [[_COMMUNITY_Community 4665|Community 4665]]
+- [[_COMMUNITY_Community 4666|Community 4666]]
+- [[_COMMUNITY_Community 4667|Community 4667]]
+- [[_COMMUNITY_Community 4668|Community 4668]]
+- [[_COMMUNITY_Community 4669|Community 4669]]
+- [[_COMMUNITY_Community 4682|Community 4682]]
+- [[_COMMUNITY_Community 4695|Community 4695]]
+- [[_COMMUNITY_Community 4696|Community 4696]]
+- [[_COMMUNITY_Community 4697|Community 4697]]
+- [[_COMMUNITY_Community 4698|Community 4698]]
+- [[_COMMUNITY_Community 4699|Community 4699]]
+- [[_COMMUNITY_Community 4700|Community 4700]]
+- [[_COMMUNITY_Community 4701|Community 4701]]
+- [[_COMMUNITY_Community 4702|Community 4702]]
+- [[_COMMUNITY_Community 4703|Community 4703]]
+- [[_COMMUNITY_Community 4704|Community 4704]]
+- [[_COMMUNITY_Community 4705|Community 4705]]
+- [[_COMMUNITY_Community 4706|Community 4706]]
+- [[_COMMUNITY_Community 4707|Community 4707]]
+- [[_COMMUNITY_Community 4708|Community 4708]]
+- [[_COMMUNITY_Community 4709|Community 4709]]
+- [[_COMMUNITY_Community 4710|Community 4710]]
+- [[_COMMUNITY_Community 4711|Community 4711]]
+- [[_COMMUNITY_Community 4712|Community 4712]]
+- [[_COMMUNITY_Community 4713|Community 4713]]
+- [[_COMMUNITY_Community 4714|Community 4714]]
+- [[_COMMUNITY_Community 4715|Community 4715]]
+- [[_COMMUNITY_Community 4716|Community 4716]]
+- [[_COMMUNITY_Community 4717|Community 4717]]
+- [[_COMMUNITY_Community 4718|Community 4718]]
+- [[_COMMUNITY_Community 4719|Community 4719]]
+- [[_COMMUNITY_Community 4720|Community 4720]]
+- [[_COMMUNITY_Community 4721|Community 4721]]
+- [[_COMMUNITY_Community 4722|Community 4722]]
+- [[_COMMUNITY_Community 4723|Community 4723]]
+- [[_COMMUNITY_Community 4724|Community 4724]]
+- [[_COMMUNITY_Community 4725|Community 4725]]
+- [[_COMMUNITY_Community 4726|Community 4726]]
+- [[_COMMUNITY_Community 4727|Community 4727]]
+- [[_COMMUNITY_Community 4728|Community 4728]]
+- [[_COMMUNITY_Community 4729|Community 4729]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `═══════════════════════════════════════════════════════════════════════` - 148 edges
-2. `Simple Glossary With Feynman Explanations` - 93 edges
-3. `Simple Words Glossary` - 89 edges
-4. `stats` - 75 edges
-5. `cn()` - 71 edges
-6. `stats` - 66 edges
-7. `UNGASIS Engine Kernel` - 66 edges
-8. `UNGASIS Intelligence Kernel` - 61 edges
-9. `UNGASIS Framework Kernel` - 60 edges
-10. `Simple Glossary With Feynman Explanations` - 48 edges
+1. `neighborhoods` - 167 edges
+2. `═══════════════════════════════════════════════════════════════════════` - 148 edges
+3. `cn()` - 126 edges
+4. `records` - 95 edges
+5. `records` - 95 edges
+6. `Simple Glossary With Feynman Explanations` - 93 edges
+7. `Simple Words Glossary` - 89 edges
+8. `stats` - 75 edges
+9. `stats` - 66 edges
+10. `UNGASIS Engine Kernel` - 66 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Orchestration Architecture` --semantically_similar_to--> `UNGASIS Effortless AI Project Factory`  [INFERRED] [semantically similar]
@@ -3771,13 +4541,13 @@
   modules/m365_copilot_opus/archive/ungasis-project-factory.md → archive/ungasis-unified-lossless-repo-v3/ungasis-core/beginner_app_building_tool_stack_workflow_guide.md
 - `Agent Evals & Runtime Governance Module` --conceptually_related_to--> `Multi-Agent Dev Orchestration Kit Master Guide`  [INFERRED]
   modules/production-readiness/08-agent-evals-runtime-governance.md → multi-agents/multi-agent-orchestration-master-guide-v4.md
-- `Multi-Agent Orchestration Kit` --implements--> `Parallel Agents Workflow`  [INFERRED]
-  archive/nested-ungasis-backup/ungasis/archive/multi-agent_orchestration-kit/docs/ORCHESTRATION_ARCHITECTURE.md → workflows/parallel-agents.md
+- `Cerebras llama3.1-8b` --semantically_similar_to--> `Cerebras API`  [INFERRED] [semantically similar]
+  docs/semantic-cache-plan.md → knowledge/sops/agent-workflows/cline-debug.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (3905 total, 1079 thin omitted)
+## Communities (4736 total, 1158 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -3832,8 +4602,8 @@ Cohesion: 0.12
 Nodes (53): 🍳 Analogy: The Restaurant Menu, CONTEXT.md Template, Copy-Paste Helper Prompt, Data Level Quick Guide, Done Checklist, Example: UNGASIS OS CONTEXT.md, How to Use CONTEXT.md Across Your Tools, How to Use This SOP Library (+45 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.05
-Nodes (55): UNGASIS Content Module: Prompt Engineering Fundamentals, 0. Start Here: The 1-Minute Prompt Rule, 13. Common Prompt Mistakes and Fixes, 14. How to Iterate on Prompts, 15. How to Save and Version Prompts, 16. Prompt Versioning Changelog Template, 18. Prompt Economics: Better Results With Fewer Tokens 💸, 19. Prompt Quality Checklist ✅ (+47 more)
+Cohesion: 0.06
+Nodes (48): UNGASIS Content Module: Prompt Engineering Fundamentals, 0. Start Here: The 1-Minute Prompt Rule, 13. Common Prompt Mistakes and Fixes, 14. How to Iterate on Prompts, 15. How to Save and Version Prompts, 16. Prompt Versioning Changelog Template, 18. Prompt Economics: Better Results With Fewer Tokens 💸, 19. Prompt Quality Checklist ✅ (+40 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.17
@@ -3853,7 +4623,7 @@ Nodes (11): Beginner recovery mode, Data level key, Hard rules, How to use this 
 
 ### Community 18 - "Community 18"
 Cohesion: 0.04
-Nodes (48): 0. Start Here: The 1-Minute Prompt Rule, 13. Common Prompt Mistakes and Fixes, 14. How to Iterate on Prompts, 15. How to Save and Version Prompts, 16. Prompt Versioning Changelog Template, 18. Prompt Economics: Better Results With Fewer Tokens 💸, 19. Prompt Quality Checklist ✅, 1. Data Safety Before Prompting 🔐 (+40 more)
+Nodes (50): 0. Start Here: The 1-Minute Prompt Rule, 13. Common Prompt Mistakes and Fixes, 14. How to Iterate on Prompts, 16. Prompt Versioning Changelog Template, 18. Prompt Economics: Better Results With Fewer Tokens 💸, 19. Prompt Quality Checklist ✅, 1. Data Safety Before Prompting 🔐, 20. Prompt Debugging: When AI Gives a Bad Answer (+42 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.06
@@ -3944,16 +4714,16 @@ Cohesion: 0.15
 Nodes (47): Copy-Paste Helper Prompt, Data Level Quick Guide, Done Checklist, How to Use This SOP Library, QA Checklist for This Module, Reusable Files Mentioned in the SOPs, Safety Warning, SOP 01 - Starting a New Project (+39 more)
 
 ### Community 41 - "Community 41"
-Cohesion: 0.10
-Nodes (26): AnimatedBackground(), MOBILE_NAV, NAV, NavItem, Sidebar(), ThemeToggle(), cn(), Button() (+18 more)
+Cohesion: 0.07
+Nodes (41): AnimatedBackground(), AppShell(), MOBILE_NAV, titleFromPath(), NAV, NavItem, Sidebar(), ThemeToggle() (+33 more)
 
 ### Community 42 - "Community 42"
-Cohesion: 0.12
-Nodes (16): 10. Beginner Checklist — Where Should This Instruction Go?, 11. Recommended UNGASIS Instruction Files, 12. Final Golden Rule, 1. The 5-Layer Instruction Stack, 2. Conflict Resolver Priority, 7. Layer 5 — Code / Development Level, 8. Cross-Layer Conflict Examples, 9. Safe Update Workflow (+8 more)
+Cohesion: 0.11
+Nodes (17): 10. Beginner Checklist — Where Should This Instruction Go?, 11. Recommended UNGASIS Instruction Files, 12. Final Golden Rule, 1. The 5-Layer Instruction Stack, 2. Conflict Resolver Priority, 5. Layer 3 — Agent / GPT Level, 6. Layer 4 — Session / Conversation Level, 8. Cross-Layer Conflict Examples (+9 more)
 
 ### Community 43 - "Community 43"
-Cohesion: 0.08
-Nodes (30): Current verdict, Production Readiness Report, Remaining blockers before production, Simple analogy, v3 improvements, v3 Readiness Update - 2026-05-31, Verdict, What passed locally (+22 more)
+Cohesion: 0.06
+Nodes (36): Current verdict, Production Readiness Report, Remaining blockers before production, Simple analogy, v3 improvements, v3 Readiness Update - 2026-05-31, Verdict, What passed locally (+28 more)
 
 ### Community 44 - "Community 44"
 Cohesion: 0.04
@@ -3965,7 +4735,7 @@ Nodes (45): Agent, API, API key, Approval, Audit log, Backup, CI, CODEOWNERS (+3
 
 ### Community 46 - "Community 46"
 Cohesion: 0.06
-Nodes (44): Definitions, Evaluation Questions, Failure Modes, Framework: Active / Stub / Blueprint / Deferred, Framework: App-Embedded UNGASIS, Framework: Architecture Decision Record, Framework: Automation / Orchestration Planning, Framework: Best-for-Stage Stack Decision Matrix (+36 more)
+Nodes (32): Framework: App-Embedded UNGASIS, Framework: Architecture Decision Record, Framework: Best-for-Stage Stack Decision Matrix, Framework: Bronze / Silver / Gold Data Pipeline, Framework: Canvas vs Model-Driven App Decision, Framework: Claim Ledger, Framework: Conflict / Consensus Map, Framework: Dashboard Decision Framework (+24 more)
 
 ### Community 47 - "Community 47"
 Cohesion: 0.07
@@ -4004,8 +4774,8 @@ Cohesion: 0.05
 Nodes (44): 10. How to Separate Free vs. Paid Features, 11. Pricing Research Basics, 12. Tax and Legal General Caution, 13. Monetization Readiness Checklist — Complete, 14. Lossless Merge Audit, 1. When NOT to Monetize Yet, 2. How to Validate Willingness to Pay — WITHOUT Building Payments, 3. $0-Upfront Revenue Tests — 10 Methods (+36 more)
 
 ### Community 56 - "Community 56"
-Cohesion: 0.10
-Nodes (23): Auto Researcher Agent, Auto-Research Loop Skill, Process, Stop conditions, Auto-Research Log, Experiment template, [YYYY-MM-DD] Experiment Title, Auto-Research Loop (+15 more)
+Cohesion: 0.05
+Nodes (43): Auto Researcher Agent, Auto-Research Loop Skill, Process, Stop conditions, Auto-Research Log, Experiment template, [YYYY-MM-DD] Experiment Title, Auto-Research Loop (+35 more)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.05
@@ -4048,12 +4818,12 @@ Cohesion: 0.05
 Nodes (43): 10. Source Ledger Template, 11. When In Doubt — The Golden Rule, 1. What Is AI Hallucination?, 2. Why Should You Care?, 3. The 8 High-Risk Categories, ✅ 4.1 Statistics & Numbers, ✅ 4.2 URLs & Links, ✅ 4.3 Legal Claims (+35 more)
 
 ### Community 67 - "Community 67"
-Cohesion: 0.15
-Nodes (16): Common Beginner Mistakes, Data Level Quick Guide, Documentation & Learning, Effortless Project Factory, Effortless Project Factory, How to Use This Library, Library Map, Prompt QA Checklist (+8 more)
+Cohesion: 0.08
+Nodes (39): Common Beginner Mistakes, Data Level Quick Guide, Documentation & Learning, Effortless Project Factory, Effortless Project Factory, How to Use This Library, Library Map, Monetization & Business (+31 more)
 
 ### Community 68 - "Community 68"
-Cohesion: 0.08
-Nodes (31): Best path for you, Important safety note, Simple answer, Start here, UNGASIS Production Readiness Pack v1, What this pack is, Beginner analogy, First files to open (+23 more)
+Cohesion: 0.07
+Nodes (36): Best path for you, Important safety note, Simple answer, Start here, UNGASIS Production Readiness Pack v1, What this pack is, Beginner analogy, Easy analogy (+28 more)
 
 ### Community 69 - "Community 69"
 Cohesion: 0.05
@@ -4108,12 +4878,12 @@ Cohesion: 0.05
 Nodes (41): 11.10 Frontend, 11.11 Backend, 11.12 Database, 11.13 Auth, 11.14 API, 11.15 Environment variable, 11.16 Secret, 11.17 API key (+33 more)
 
 ### Community 82 - "Community 82"
-Cohesion: 0.06
-Nodes (34): 0. Quick Start, 10. AI Quality Control, 13. Daily AI Usage Checklist, 14. Beginner Mistakes to Avoid, 15. Upgrade Path, 18. QA Checklist, 1. Non-Negotiable Rules, 2. Data Safety Levels (+26 more)
+Cohesion: 0.05
+Nodes (44): 11. Human Approval Gates, Approval template, 10. Human Approval Gates, 0. Quick Start, 11. Human Approval Gates, 12. Copy-Paste Prompt Pack, 13. Daily AI Usage Checklist, 14. Beginner Mistakes to Avoid (+36 more)
 
 ### Community 83 - "Community 83"
-Cohesion: 0.10
-Nodes (32): HexPortrait(), MotionCard(), MotionCardProps, DashboardPage(), tiles, container, item, StaggerGrid() (+24 more)
+Cohesion: 0.04
+Nodes (94): HexPortrait(), MotionCard(), MotionCardProps, DashboardPage(), tiles, Shimmer(), SmartImage(), container (+86 more)
 
 ### Community 84 - "Community 84"
 Cohesion: 0.09
@@ -4136,8 +4906,8 @@ Cohesion: 0.07
 Nodes (37): Intelligence: App Operating-System Intelligence, Intelligence: Automation and Orchestration Intelligence, Intelligence: BI Dashboard / Visualization Intelligence, Intelligence: Citation Integrity Intelligence, Intelligence: Contradiction / Consensus Intelligence, Intelligence: Data Product Intelligence, Intelligence: DAX / Measure Logic Intelligence, Intelligence: Design Excellence Intelligence (+29 more)
 
 ### Community 89 - "Community 89"
-Cohesion: 0.08
-Nodes (32): int, estimate_tokens(), main(), str, buildModifiedRationalePrompt(), buildRouteB(), ChatMessage, getNextGroqKey() (+24 more)
+Cohesion: 0.10
+Nodes (28): int, estimate_tokens(), main(), str, buildModifiedRationalePrompt(), buildRouteB(), ChatMessage, getNextGroqKey() (+20 more)
 
 ### Community 90 - "Community 90"
 Cohesion: 0.05
@@ -4148,8 +4918,8 @@ Cohesion: 0.08
 Nodes (25): 10. Tech Stack, 11. File Structure, 12. Sprint Roadmap, 1. Executive Summary, 5. 30 API Key Arsenal, 7. Three Pillars, Cline Kickoff (Sprint 0), Constraints (+17 more)
 
 ### Community 92 - "Community 92"
-Cohesion: 0.08
-Nodes (37): formatRelationshipDataForPrompt(), BuildDataSnapshot, validateReasoningWithDB(), ValidationResult, buildUserMessage(), callGoogleAI(), callProvider(), CEREBRAS_CONFIGS (+29 more)
+Cohesion: 0.07
+Nodes (39): buildAbilityBuildInteractions(), classifyAbilityType(), formatEnrichedDataForPrompt(), formatRelationshipDataForPrompt(), BuildDataSnapshot, validateReasoningWithDB(), ValidationResult, buildUserMessage() (+31 more)
 
 ### Community 93 - "Community 93"
 Cohesion: 0.07
@@ -4184,8 +4954,8 @@ Cohesion: 0.06
 Nodes (34): 1. What Is the Gold Skeleton?, 2. The Status System, 3. Data Level Reference, 4. How to Read the Skeleton, 5. The Full Gold Skeleton, 6. Status Summary Dashboard, 7. What to Build First — Top 10 for Beginners, 8. Stage Progression Guide (+26 more)
 
 ### Community 101 - "Community 101"
-Cohesion: 0.12
-Nodes (23): Common Beginner Mistakes, Data Level Quick Guide, Documentation & Learning, Effortless Project Factory, Effortless Project Factory, How to Use This Library, Library Map, Monetization & Business (+15 more)
+Cohesion: 0.09
+Nodes (33): Common Beginner Mistakes, Data Level Quick Guide, Discovery & Validation, Discovery & Validation, Documentation & Learning, Effortless Project Factory, Effortless Project Factory, How to Use This Library (+25 more)
 
 ### Community 102 - "Community 102"
 Cohesion: 0.06
@@ -4196,20 +4966,20 @@ Cohesion: 0.09
 Nodes (33): 08 Agent Evals and Runtime Governance, Feynman explanation, Golden tests, Hard words in this file, Human approval rule, Layman analogy, Purpose, Red-team tests (+25 more)
 
 ### Community 104 - "Community 104"
-Cohesion: 0.08
-Nodes (25): 10. Human Approval Gates, 11. Final 30-Day Rule, 4. Stage Gates, 5. Metrics to Track, 6. Weekly Review Template, 7. Next 7 Actions Template After Day 30, 8. UNGASIS-Specific 30-Day Use, 9. Anti-Bloat Rules for the 30 Days (+17 more)
+Cohesion: 0.21
+Nodes (13): 11. KEY RULES (Non-Negotiable), Agent Coordination, Archive Policy, File Conventions, Safety, Token Efficiency, 12. KEY RULES (Non-Negotiable), Agent Coordination (+5 more)
 
 ### Community 105 - "Community 105"
 Cohesion: 0.10
-Nodes (28): Backup rule, Duplicate rule, Goal, Main merge decisions, Merge Map: What Changed, Source ZIPs, v3 Merge Map - 2026-05-31, Feynman explanation (+20 more)
+Nodes (25): Cross-Reference Bridge, Feynman explanation, Layman analogy, Backup rule, Duplicate rule, Goal, Main merge decisions, Merge Map: What Changed (+17 more)
 
 ### Community 106 - "Community 106"
 Cohesion: 0.06
 Nodes (34): 12 Gap Fills (5 Medium + 7 Low), 25. Android + Power Platform + Token Prevention, 3-Zone Budget (per quest, configurable), Addendum Summary, CLAUDE.md Content (Auto-Generated), Cline Kickoff (Sprint 0), CSS Recipe, Gap 10: Data Flow Diagram Expanded (Low) (+26 more)
 
 ### Community 107 - "Community 107"
-Cohesion: 0.09
-Nodes (37): ChatGPT Enterprise Feature Router, UNGASIS Data Classification (Level 0-4), Instruction Hierarchy Map Module, Microsoft 365 Copilot, Next.js, Progressive Disclosure Protocol, 10-Phase Build Workflow, 14 Free-First Stack Lanes (+29 more)
+Cohesion: 0.07
+Nodes (43): ChatGPT Enterprise Feature Router, UNGASIS Data Classification (Level 0-4), Instruction Hierarchy Map Module, Lemon Squeezy, Microsoft 365 Copilot, Next.js, PayMongo, Progressive Disclosure Protocol (+35 more)
 
 ### Community 108 - "Community 108"
 Cohesion: 0.11
@@ -4220,12 +4990,12 @@ Cohesion: 0.06
 Nodes (32): Engine: Answer Engine / Source-Grounded Synthesis Engine, Engine: App-Embedded UNGASIS Runtime Engine, Engine: Best-for-Stage Tech Stack Resolver Engine, Engine: Claim / Evidence Ledger Engine, Engine: Contradiction and Consensus Mapping Engine, Engine: Deep Research Report Engine, Engine: Excel Office Scripts Automation Engine, Engine: Excel Power User Engine (+24 more)
 
 ### Community 110 - "Community 110"
-Cohesion: 0.05
-Nodes (36): Full Trace Optional, Rules, Short Trace, Template: AI Studio Export + Local Verification Packet, Template: App-Embedded UNGASIS Runtime Spec, Template: Architecture Decision Record, Template: Automation / Orchestration Map, Template: BI / Visualization Plan (+28 more)
+Cohesion: 0.06
+Nodes (30): Template: AI Studio Export + Local Verification Packet, Template: App-Embedded UNGASIS Runtime Spec, Template: Architecture Decision Record, Template: Automation / Orchestration Map, Template: BI / Visualization Plan, Template: Claim Ledger, Template: Contradiction Map, Template: DAX Measure Dictionary (+22 more)
 
 ### Community 111 - "Community 111"
-Cohesion: 0.14
-Nodes (14): Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Step 01 — Idea capture (+6 more)
+Cohesion: 0.04
+Nodes (70): Beginner recovery mode, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt (+62 more)
 
 ### Community 112 - "Community 112"
 Cohesion: 0.06
@@ -4276,36 +5046,36 @@ Cohesion: 0.10
 Nodes (20): 10. Build Strategy — Chunked Approach, 11. Recommended File Name, 12. HTML Manual Acceptance Criteria, 1. Purpose of the HTML Manual, 2. Core Design Goal, 3. Required Sections — Full Manual v2 Target, 4. Minimum Viable Manual Rule, 5. HTML Build Requirements (+12 more)
 
 ### Community 124 - "Community 124"
-Cohesion: 0.06
-Nodes (31): 10. What to Do First If a Platform Goes Down — Emergency Card, 1. Why Backups Matter, 2. What to Backup Regularly, 4. Vendor Lock-In Risk Assessment, 5. What Happens If Free Tier Becomes Paid, 7. Keep Data in Portable Formats, 8. Backup Schedule Recommendation, 9. Disaster Recovery Plan (+23 more)
+Cohesion: 0.07
+Nodes (26): 10. What to Do First If a Platform Goes Down — Emergency Card, 1. Why Backups Matter, 2. What to Backup Regularly, 4. Vendor Lock-In Risk Assessment, 5. What Happens If Free Tier Becomes Paid, 8. Backup Schedule Recommendation, 9. Disaster Recovery Plan, API Key Inventory Template (+18 more)
 
 ### Community 125 - "Community 125"
 Cohesion: 0.09
 Nodes (22): 10. The "Never Pay a Peso You Didn't Plan" Rule, 11. Tool Decision Flowchart, 1. The "Pick One Per Job" Rule, 2. Three Build Lanes Explained, 6. Project Type Router, 7. Recommended Stacks — Validator + Builder, 8. Cost Guardrails & Upgrade Triggers, 9. Critical Warnings (+14 more)
 
 ### Community 126 - "Community 126"
-Cohesion: 0.12
-Nodes (22): Compaction Triggers, Context Budget (v4.0 - NEW), Estimation, Fill-% Budget Zones, What to Drop, What to Preserve During Compaction, Compaction Triggers, Context Budget (v4.0 - NEW) (+14 more)
+Cohesion: 0.13
+Nodes (20): Compaction Triggers, Context Budget (v4.0 - NEW), Estimation, Fill-% Budget Zones, What to Drop, What to Preserve During Compaction, Compaction Triggers, Context Budget (v4.0 - NEW) (+12 more)
 
 ### Community 127 - "Community 127"
-Cohesion: 0.06
-Nodes (31): 10. What to Do First If a Platform Goes Down — Emergency Card, 1. Why Backups Matter, 2. What to Backup Regularly, 4. Vendor Lock-In Risk Assessment, 5. What Happens If Free Tier Becomes Paid, 7. Keep Data in Portable Formats, 8. Backup Schedule Recommendation, 9. Disaster Recovery Plan (+23 more)
+Cohesion: 0.15
+Nodes (12): 10. What to Do First If a Platform Goes Down — Emergency Card, 1. Why Backups Matter, 4. Vendor Lock-In Risk Assessment, 5. What Happens If Free Tier Becomes Paid, 🚨 EMERGENCY QUICK REFERENCE, 🍳 Kitchen Analogy, 📖 Table of Contents, The Escape Plan Rule (+4 more)
 
 ### Community 128 - "Community 128"
 Cohesion: 0.06
 Nodes (26): Master Start Prompt, 01 — First Message to AI, 03 — Spec Builder Prompt, Prompt: Karpathy-Style Context File Builder, Project Brief, Quality Bar, Test Commands, Constraints (+18 more)
 
 ### Community 129 - "Community 129"
-Cohesion: 0.06
-Nodes (34): 0. Quick Start, 13. Daily AI Usage Checklist, 14. Beginner Mistakes to Avoid, 15. Upgrade Path, 16. Source Ledger, 17. UNGASIS Trace, 18. QA Checklist, 1. Non-Negotiable Rules (+26 more)
+Cohesion: 0.05
+Nodes (41): 0. Quick Start, 10. AI Quality Control, 13. Daily AI Usage Checklist, 14. Beginner Mistakes to Avoid, 15. Upgrade Path, 16. Source Ledger, 17. UNGASIS Trace, 18. QA Checklist (+33 more)
 
 ### Community 130 - "Community 130"
-Cohesion: 0.12
-Nodes (27): UseReasoningResult, AbilityTag, buildAbilityBuildInteractions(), classifyAbilityType(), DATA_DIR, enrichOneItem(), enrichOneRune(), enrichOneSpell() (+19 more)
+Cohesion: 0.07
+Nodes (44): UseReasoningResult, AbilityTag, DATA_DIR, enrichOneItem(), enrichOneRune(), enrichOneSpell(), enrichReasoningRequest(), extractChampionData() (+36 more)
 
 ### Community 131 - "Community 131"
-Cohesion: 0.11
-Nodes (28): Champion, compact(), CounterEntry, dataCache, DataChunk, estimateTokens(), Item, loadJSON() (+20 more)
+Cohesion: 0.16
+Nodes (21): Champion, compact(), CounterEntry, dataCache, DataChunk, estimateTokens(), Item, loadJSON() (+13 more)
 
 ### Community 132 - "Community 132"
 Cohesion: 0.07
@@ -4346,10 +5116,6 @@ Nodes (30): Framework: App-Embedded UNGASIS, Framework: Architecture Decision Re
 ### Community 141 - "Community 141"
 Cohesion: 0.06
 Nodes (37): Beginner rule, Feynman explanation, Gap table, Known Gaps, Layman analogy, type, properties, version (+29 more)
-
-### Community 142 - "Community 142"
-Cohesion: 0.07
-Nodes (49): color, motto, name, slots, total, keystones, meta, generated (+41 more)
 
 ### Community 143 - "Community 143"
 Cohesion: 0.06
@@ -4392,16 +5158,16 @@ Cohesion: 0.06
 Nodes (34): 0. Start Here: The 1-Minute Prompt Rule, 13. Common Prompt Mistakes and Fixes, 16. Prompt Versioning Changelog Template, 19. Prompt Quality Checklist ✅, 1. Data Safety Before Prompting 🔐, 20. Prompt Debugging: When AI Gives a Bad Answer, 21. Source Verification Prompt, 22. Human Approval Prompt for Risky AI Actions ✋ (+26 more)
 
 ### Community 153 - "Community 153"
-Cohesion: 0.07
-Nodes (33): Fast Install, First Prompt, Minimal Install, Token-Efficiency Agent OS v4.0.0, Tool Table, v3->v4: 10->12 layers, 18->24 sources, 14->22 gaps closed, Checklist, INSTALL.md - Setup Guide (v4.0) (+25 more)
+Cohesion: 0.09
+Nodes (27): Fast Install, First Prompt, Minimal Install, Token-Efficiency Agent OS v4.0.0, Tool Table, v3->v4: 10->12 layers, 18->24 sources, 14->22 gaps closed, Checklist, INSTALL.md - Setup Guide (v4.0) (+19 more)
 
 ### Community 154 - "Community 154"
 Cohesion: 0.07
 Nodes (28): 13. Common Prompt Mistakes and Fixes, 16. Prompt Versioning Changelog Template, 19. Prompt Quality Checklist ✅, 20. Prompt Debugging: When AI Gives a Bad Answer, 21. Source Verification Prompt, 22. Human Approval Prompt for Risky AI Actions ✋, 24. Beginner Practice: 5-Minute Prompt Workout, 25. When to Use Which Prompt Style (+20 more)
 
 ### Community 155 - "Community 155"
-Cohesion: 0.13
-Nodes (18): Model Routing v4.1, Cross-Reference Bridge, Cross-Reference Bridge, Feynman explanation, Layman analogy, Feynman explanation, Layman analogy, Model Routing v4.1 (+10 more)
+Cohesion: 0.12
+Nodes (20): Model Routing v4.1, Cross-Analysis: v3.0 -> v4.0, Cross-Reference Bridge, Cross-Reference Bridge, Feynman explanation, Layman analogy, Feynman explanation, Layman analogy (+12 more)
 
 ### Community 156 - "Community 156"
 Cohesion: 0.11
@@ -4460,16 +5226,16 @@ Cohesion: 0.11
 Nodes (27): 09 Connector Permission Registry, Connector table, Feynman explanation, Hard words in this file, Layman analogy, Permission levels, Purpose, Safe default (+19 more)
 
 ### Community 170 - "Community 170"
-Cohesion: 0.10
-Nodes (23): Output, Process, Spec-Driven Development Skill, Core rule, Flow, Folder model, Human review gates, Minimum viable spec (+15 more)
+Cohesion: 0.08
+Nodes (25): Output, Process, Spec-Driven Development Skill, Core rule, Flow, Folder model, Human review gates, Minimum viable spec (+17 more)
 
 ### Community 171 - "Community 171"
 Cohesion: 0.06
 Nodes (31): Commands, Current stack, Stack Context, Stack principles, Upgrade path, Changed files, Commands run, Completed (+23 more)
 
 ### Community 172 - "Community 172"
-Cohesion: 0.14
-Nodes (16): 11. 📈 Phase 9 — Track Metrics, 3. 💡 Phase 1 — Pick and Narrow the Idea, 💡 Analogy, 🚦 Decision Point, 🚦 Decision Point, 🎯 Goal, 🎯 Goal, Idea Scoring Table (+8 more)
+Cohesion: 0.05
+Nodes (59): 11. 📈 Phase 9 — Track Metrics, 12. 🔄 Phase 10 — Improve and Scale, 3. 💡 Phase 1 — Pick and Narrow the Idea, 4. 🔍 Phase 2 — Validate Customer Pain, 6. 🖱️ Phase 4 — Build Clickable Prototype, 7. 🔧 Phase 5 — Build Functional MVP, 💡 Analogy, 🚦 Decision Point (+51 more)
 
 ### Community 173 - "Community 173"
 Cohesion: 0.10
@@ -4508,16 +5274,16 @@ Cohesion: 0.10
 Nodes (22): Core idea, Growth experiment file set, Growth Experiment OS, Growth loop, Safety rules, Use this for, Useful prompt, Core idea (+14 more)
 
 ### Community 182 - "Community 182"
-Cohesion: 0.09
-Nodes (33): After score, Auto-Research Experiment, Before score, Decision, Files updated, Follow-up, Hypothesis, One change tested (+25 more)
+Cohesion: 0.07
+Nodes (37): After score, Auto-Research Experiment, Before score, Decision, Files updated, Follow-up, Hypothesis, One change tested (+29 more)
 
 ### Community 183 - "Community 183"
 Cohesion: 0.15
 Nodes (21): Documentation & Learning, TPL-E2-071 — 📛 Explain this to me like a beginner, TPL-E2-072 — 📛 Turn this into an SOP, TPL-E2-073 — 📛 Turn this into a glossary, TPL-E2-074 — 📛 Turn this into a reusable checklist, TPL-E2-075 — 📛 Context handoff prompt, TPL-E2-076 — 📛 Evolution log / changelog entry, TPL-E2-077 — 📛 Create next-phase plan (+13 more)
 
 ### Community 184 - "Community 184"
-Cohesion: 0.09
-Nodes (24): Week 1 Checklist, Week 1 do-not-build reminder, Week 1 — Validate, Week 2 Checklist, Week 2 do-not-build reminder, Week 2 — Prototype and Learn, Week 3 — Build MVP, Week 3 Checklist (+16 more)
+Cohesion: 0.07
+Nodes (31): Week 1 Checklist, Week 1 do-not-build reminder, Week 1 — Validate, Week 2 Checklist, Week 2 do-not-build reminder, Week 2 — Prototype and Learn, Week 3 — Build MVP, Week 3 Checklist (+23 more)
 
 ### Community 185 - "Community 185"
 Cohesion: 0.05
@@ -4565,7 +5331,7 @@ Nodes (25): 1. Lane Selection Rule, 2. Risk Legend, 3. Data Level Legend, 4. The
 
 ### Community 196 - "Community 196"
 Cohesion: 0.11
-Nodes (22): Cross-Reference Bridge, Feynman explanation, Layman analogy, Current readiness, Inputs cross-checked, Lossless Merge Audit v3, Safety decisions, Verdict (+14 more)
+Nodes (25): Current readiness, Inputs cross-checked, Lossless Merge Audit v3, Safety decisions, Verdict, Why not certified production yet, Feynman explanation, Layman analogy (+17 more)
 
 ### Community 197 - "Community 197"
 Cohesion: 0.27
@@ -4592,8 +5358,8 @@ Cohesion: 0.08
 Nodes (25): 1. Lane Selection Rule, 2. Risk Legend, 3. Data Level Legend, 4. The 14 Free-First Stack Lanes, 5. Lane Comparison Summary, 6. Recommended UNGASIS Lane Order, 7. Lane Decision Prompt Template, 8. Anti-Bloat Guardrail (+17 more)
 
 ### Community 203 - "Community 203"
-Cohesion: 0.08
-Nodes (33): AI Project OS Master v5, Claude Code layout, Core rules, Four community safety rules, Four named principles, Main systems, Start, Validate (+25 more)
+Cohesion: 0.07
+Nodes (34): AI Project OS Master v5, Claude Code layout, Core rules, Four community safety rules, Four named principles, Main systems, Start, Validate (+26 more)
 
 ### Community 204 - "Community 204"
 Cohesion: 0.09
@@ -4624,16 +5390,16 @@ Cohesion: 0.05
 Nodes (76): colloq, description, into, name, plaintext, tags, colloq, description (+68 more)
 
 ### Community 211 - "Community 211"
-Cohesion: 0.09
-Nodes (22): Batch 2 (June 3, 2026) — 8 sprints, 27 files. New engines:, Batch 3 (June 3, 2026) — 10 sprints, 27 files. New: Warnings,, Batch 4 + JARVIS Complete (June 3, 2026) — 9 sprints, 27 files., Session Handoff — June 2, 2026 🖥️ PC (Sprint F4b), Session Handoff — June 2, 2026 🖥️ PC (Sprint F5), Session Handoff — June 2, 2026 🖥️ PC (Sprint F6), Session Handoff — June 2, 2026 🖥️ PC (Sprint F7), Session Handoff — June 2, 2026 🖥️ PC (Sprint F8a-F8d) (+14 more)
+Cohesion: 0.07
+Nodes (26): 5. SPRINT PLAN, Sprint F20b: Automation Scripts, Batch 2 (June 3, 2026) — 8 sprints, 27 files. New engines:, Batch 3 (June 3, 2026) — 10 sprints, 27 files. New: Warnings,, Batch 4 + JARVIS Complete (June 3, 2026) — 9 sprints, 27 files., Session Handoff — June 2, 2026 🖥️ PC (Sprint F4b), Session Handoff — June 2, 2026 🖥️ PC (Sprint F5), Session Handoff — June 2, 2026 🖥️ PC (Sprint F6) (+18 more)
 
 ### Community 212 - "Community 212"
-Cohesion: 0.29
-Nodes (7): 12.1 Builder Agent (Antigravity — Primary), 12.2 Commander Agent, 12.3 Blueprint Architect Agent, 12.4 Quality Auditor Agent, 12.5 Designer Agent, 12.6 Graphify Watchdog Agent, Section 12: Agent Personas & Instructions
+Cohesion: 0.02
+Nodes (95): records, aatrox, ahri, akali, akshan, alistar, annie, ashe (+87 more)
 
 ### Community 213 - "Community 213"
-Cohesion: 0.08
-Nodes (24): Boots, Defense, Enchant, Magic, Physical, Support, anti_armor, crit_onhit (+16 more)
+Cohesion: 0.04
+Nodes (48): Boots, Defense, Enchant, Magic, Physical, Support, anti_armor, crit_onhit (+40 more)
 
 ### Community 214 - "Community 214"
 Cohesion: 0.08
@@ -4656,8 +5422,8 @@ Cohesion: 0.11
 Nodes (24): Component State Requirements, Council Roles, Design Layers, Design Quality Checks, Difference, Engine: Automation and Orchestration Engine, Engine: Data Acquisition, Analytics, BI, and Visualization Engine, Engine: Design Excellence Engine (+16 more)
 
 ### Community 219 - "Community 219"
-Cohesion: 0.13
-Nodes (15): QA MISSION: UNGASIS OS v3.0 — Final Lossless Audit, Agent Instructions, Gap List, Known Bugs, Mission Complete Checklist, Source 1: AI_Builders_Master_Workflow_Prompt_v4.0.md, Source 2: playbook v3, Source 3: multi-agent guide v4 (+7 more)
+Cohesion: 0.08
+Nodes (23): Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role, Behavior, Context, Role, Agent Identity: UNGASIS QA Auditor (+15 more)
 
 ### Community 220 - "Community 220"
 Cohesion: 0.12
@@ -4696,12 +5462,12 @@ Cohesion: 0.09
 Nodes (22): 1. 🏭 What Is the Project Factory?, 3. 📋 One-Prompt Project Kickoff Template, 5. 📁 Reusable Project Scaffold, 6. 🧠 Decision Fatigue Reducer, 7. ✅ Quality Gate Automation, 8. 🔗 Context Continuity Protocol, Cross-Tool Sync Strategy, File Purpose Table (+14 more)
 
 ### Community 229 - "Community 229"
-Cohesion: 0.11
-Nodes (19): Agent Chain Configuration, Sequential Handoff, Builder Agent, Code Implementer Agent, Code Reviewer Agent, Debugger Agent, Docs Agent, Human Intervention (+11 more)
+Cohesion: 0.10
+Nodes (22): Agent Chain Configuration, Sequential Handoff, Builder Agent, Code Implementer Agent, Code Reviewer Agent, Debugger Agent, Docs Agent, Human Intervention (+14 more)
 
 ### Community 230 - "Community 230"
-Cohesion: 0.15
-Nodes (11): Knowledge Index, Knowledge Rules, Raw sources, Schema files, Source fidelity rule, Wiki pages, Librarian behavior, Naming (+3 more)
+Cohesion: 0.07
+Nodes (26): AI Project OS Lessons, Raw Knowledge Sources, Knowledge Index, Knowledge Rules, LLM Knowledge Base, Raw Knowledge Sources, Commands and skills, Layer 1: raw (+18 more)
 
 ### Community 231 - "Community 231"
 Cohesion: 0.20
@@ -4756,12 +5522,12 @@ Cohesion: 0.13
 Nodes (22): AGENTS.md - Universal Agent Instructions, AGENTS.md - Universal Agent Instructions (v4.0), Commands, Completion: 1.Changed files 2.Summary 3.Commands 4.Results 5.Risks 6.Rollback 7.Memory updates, Core Rules, Model Routing (v4), Never Do: Rewrite entire files for small changes | Destructive cmds without confirm | Install without asking | Filler in code mode, On-Demand vs Always-On (v4) (+14 more)
 
 ### Community 244 - "Community 244"
-Cohesion: 0.07
-Nodes (26): Additional requested video links checked in v4, How to upgrade fidelity later, Important limitation, Source Fidelity Notes, What was available, Knowledge Index, Raw sources, Schema files (+18 more)
+Cohesion: 0.11
+Nodes (17): Additional requested video links checked in v4, How to upgrade fidelity later, Important limitation, Source Fidelity Notes, What was available, AI Project OS Lessons, Durable lessons, Related files (+9 more)
 
 ### Community 245 - "Community 245"
-Cohesion: 0.18
-Nodes (10): API/service contracts, Data model, Files likely affected, Human review gate, Proposed design, Requirements source, Rollback, Spec Plan: [Feature] (+2 more)
+Cohesion: 0.09
+Nodes (20): API/service contracts, Data model, Files likely affected, Human review gate, Proposed design, Requirements source, Rollback, Spec Plan: [Feature] (+12 more)
 
 ### Community 246 - "Community 246"
 Cohesion: 0.04
@@ -4772,8 +5538,8 @@ Cohesion: 0.14
 Nodes (14): 10. 12-Phase Delivery Pattern, 11. “Say Next” Pattern, 12. Progress Tracker Template, 13. Context-Low Handoff Prompt, 1. Core Rule, 29. Final Operating Rule, 9. Why Phased Delivery Exists, Example (+6 more)
 
 ### Community 248 - "Community 248"
-Cohesion: 0.29
-Nodes (7): 1. Your 7 Starter Actions, 2. One-Sentence Idea Formula, 3. 30-Day Roadmap Overview, Do not build yet, Example, Golden rule, UNGASIS Content Module: 30-Day Roadmap + Next 7 Actions
+Cohesion: 0.07
+Nodes (28): 1. Full Document Audit ✅, 2. Cross-Phase Gap Analysis ✅, 3. Database Audit ✅, 4. Decisions Made ✅, 7-Layer AI Safety Stack, After Merge: Phase 6.0 — Multi-Agent Parallel Reasoning (10 tasks), API Routes, Core Libraries (+20 more)
 
 ### Community 249 - "Community 249"
 Cohesion: 0.07
@@ -4836,12 +5602,12 @@ Cohesion: 0.10
 Nodes (20): Guardrail: AI Action Approval, Guardrail: AI Studio / Gemini Data Tier, Guardrail: Citation Integrity, Guardrail: Connector Scope, Guardrail: Google Lock-In, Guardrail: Hidden Reasoning, Guardrail: Lawful De-Fabrication, Guardrail: Local Data Lifecycle (+12 more)
 
 ### Community 264 - "Community 264"
-Cohesion: 0.17
-Nodes (12): Required Patch Format, Test Prompt, v4 OS Evolution Addition: Trace and Compression Update, Commands and skills, Layer 1: raw, Layer 2: wiki, Layer 3: schema, LLM Knowledge Base (+4 more)
+Cohesion: 0.11
+Nodes (21): Required Patch Format, Test Prompt, v4 OS Evolution Addition: Trace and Compression Update, Commands and skills, Layer 1: raw, Layer 2: wiki, Layer 3: schema, LLM Knowledge Base (+13 more)
 
 ### Community 265 - "Community 265"
-Cohesion: 0.08
-Nodes (26): Agent Behavior, Agent Crew, AGENTS.md — Cross-Tool Agent Instructions (Claude Code / Cline / Copilot / ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash), Antigravity-Specific Notes, Blueprint Model Priority, Budget: $19.99/mo (Google AI Pro, 3-month trial: June-August 2026) + $0 company-provided tools (M365 Copilot, ChatGPT Enterprise), Domain Language (Ubiquitous Terms), File Organization (+18 more)
+Cohesion: 0.10
+Nodes (20): Agent Behavior, Agent Crew, AGENTS.md — Cross-Tool Agent Instructions (Claude Code / Cline / Copilot / ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash), Antigravity-Specific Notes, Blueprint Model Priority, Budget: $19.99/mo (Google AI Pro, 3-month trial: June-August 2026) + $0 company-provided tools (M365 Copilot, ChatGPT Enterprise), Domain Language (Ubiquitous Terms), File Organization (+12 more)
 
 ### Community 266 - "Community 266"
 Cohesion: 0.11
@@ -4852,16 +5618,16 @@ Cohesion: 0.11
 Nodes (21): API Keys Inventory, Monthly Spend Log, Fallback Routing Table, API Inventory, API Keys Inventory, How It Works, Inputs/Outputs, Purpose (+13 more)
 
 ### Community 268 - "Community 268"
-Cohesion: 0.13
-Nodes (12): DEFAULT_STYLE, TIER_STYLES, TierBadge(), ALL_ROLES, Champion, Dialog(), DialogContent(), DialogDescription() (+4 more)
+Cohesion: 0.14
+Nodes (11): ALL_ROLES, Champion, initials(), TierListPage(), Dialog(), DialogContent(), DialogDescription(), DialogFooter() (+3 more)
 
 ### Community 269 - "Community 269"
 Cohesion: 0.19
 Nodes (12): Inputs inspected, Major additions, Merge strategy, Removed or avoided, v5 Merge Audit, Verification, Inputs inspected, Major additions (+4 more)
 
 ### Community 270 - "Community 270"
-Cohesion: 0.09
-Nodes (22): 1. Why You Need a Portfolio, 2. How to Turn a Personal Tool → Portfolio Project, 3. What to Show Publicly vs. Keep Private, 4. How to Use Dummy/Demo Data Safely, 5. How to Create a Demo Dataset, 6. How to Write a Beginner-Friendly README, Add your Supabase keys to .env.local, Before vs. After (+14 more)
+Cohesion: 0.15
+Nodes (11): Domain Language Table, Active Goals, Blockers, CONTEXT.md — Current Session State, Domain Language, Fast Start Prompt For New Agent, Files Being Worked On, Purpose (+3 more)
 
 ### Community 271 - "Community 271"
 Cohesion: 0.10
@@ -4960,8 +5726,8 @@ Cohesion: 0.11
 Nodes (17): 1.0-2.x lineage, 3.0-master - 2026-06-01, 4.0 - Additional video coverage patch, Changelog, v5 - Master merge with Karpathy Knowledge Base coverage, Files, Template Manifest, v5 additions (+9 more)
 
 ### Community 295 - "Community 295"
-Cohesion: 0.10
-Nodes (21): Growth Experiment Loop, Guardrails, Output, Process, Done means, Loop, Steps, Workflow: Growth Experiment Loop (+13 more)
+Cohesion: 0.11
+Nodes (20): Growth Experiment Loop, Guardrails, Output, Process, Done means, Loop, Steps, Workflow: Growth Experiment Loop (+12 more)
 
 ### Community 296 - "Community 296"
 Cohesion: 0.31
@@ -5000,8 +5766,8 @@ Cohesion: 0.18
 Nodes (11): About Mel, Conversation Starters, Description, His Active Projects, His Stack, How to Respond, Instructions (System Prompt), Knowledge Files (Upload These) (+3 more)
 
 ### Community 305 - "Community 305"
-Cohesion: 0.09
-Nodes (25): 11. KEY RULES (Non-Negotiable), 12. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 3. ARCHITECTURE — Folder Structure, 9. BUILDER PROFILE (Token Prevention Context), Agent Coordination, Archive Policy, Communication Preferences (+17 more)
+Cohesion: 0.14
+Nodes (16): 13. HANDOFF SUMMARY, Files to Read First in Any New Session, What's Next, What Was Accomplished (June 2, 2026), Device Handoff Protocol, Files to Upload for a Fresh Chat, Known Issues, Post-Session Verification (+8 more)
 
 ### Community 306 - "Community 306"
 Cohesion: 0.11
@@ -5028,8 +5794,8 @@ Cohesion: 0.16
 Nodes (18): Agentic Loop, How It Works, Inputs/Outputs, Purpose, Rules, Steps Explained, Additional Context, Bus Manifest (+10 more)
 
 ### Community 312 - "Community 312"
-Cohesion: 0.11
-Nodes (22): BuildsPage(), Champion, CounterData, CounterEntry, DraftPage(), DuoPair, initials(), MY_POOL (+14 more)
+Cohesion: 0.07
+Nodes (26): DEFAULT_STYLE, TIER_STYLES, TierBadge(), Champion, CounterData, CounterEntry, DraftPage(), DuoPair (+18 more)
 
 ### Community 313 - "Community 313"
 Cohesion: 0.09
@@ -5056,8 +5822,8 @@ Cohesion: 0.17
 Nodes (17): Acceptance Snapshot, Completion Rule, Failure Handling, Purpose, Quality Gate, Reflection Loop, Reflection Protocol (Self-Critique Loop), Required Log Format (+9 more)
 
 ### Community 319 - "Community 319"
-Cohesion: 0.15
-Nodes (13): 13. Functionality QA, 14. Content Quality QA, 15. Security QA, 16. Quality / Accessibility QA, 17. Source Ledger QA, 18. Minimum v1 Content Checklist, 19. “Do Not Build Yet” Reminder, 20. Build Prompt for Future HTML Manual (+5 more)
+Cohesion: 0.08
+Nodes (25): 13. Functionality QA, 14. Content Quality QA, 15. Security QA, 16. Quality / Accessibility QA, 17. Source Ledger QA, 18. Minimum v1 Content Checklist, 19. “Do Not Build Yet” Reminder, 20. Build Prompt for Future HTML Manual (+17 more)
 
 ### Community 320 - "Community 320"
 Cohesion: 0.11
@@ -5072,8 +5838,8 @@ Cohesion: 0.11
 Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
 
 ### Community 323 - "Community 323"
-Cohesion: 0.14
-Nodes (11): Raw Knowledge Sources, LLM Knowledge Base, Raw Knowledge Sources, Commands and skills, Layer 1: raw, Layer 2: wiki, Layer 3: schema, Operating rule (+3 more)
+Cohesion: 0.02
+Nodes (95): records, aatrox, ahri, akali, akshan, alistar, annie, ashe (+87 more)
 
 ### Community 324 - "Community 324"
 Cohesion: 0.18
@@ -5100,8 +5866,8 @@ Cohesion: 0.11
 Nodes (17): 11. SharePoint, 13. Teams, 15. Word + Copilot, 17. PowerPoint + Copilot, 19. Power Apps, 1. Copilot Chat, 21. SharePoint Lists, 23. Forms (+9 more)
 
 ### Community 330 - "Community 330"
-Cohesion: 0.06
-Nodes (34): 11. How to Avoid Exposing Secrets and Company Data, 12. Free Hosting Options for Portfolio, 13. How to Write About Projects for LinkedIn, 14. SEO Basics for Portfolio, 15. The Portfolio Honesty Rule, 16. Portfolio Readiness Checklist, 7. How to Create Screenshots and Annotated Walkthroughs, 8. How to Create Short Demo Video Scripts (+26 more)
+Cohesion: 0.09
+Nodes (22): 11. How to Avoid Exposing Secrets and Company Data, 12. Free Hosting Options for Portfolio, 13. How to Write About Projects for LinkedIn, 14. SEO Basics for Portfolio, 15. The Portfolio Honesty Rule, 8. How to Create Short Demo Video Scripts, Free Video Tools, How to Write Your Honesty Note (+14 more)
 
 ### Community 331 - "Community 331"
 Cohesion: 0.20
@@ -5132,8 +5898,8 @@ Cohesion: 0.14
 Nodes (17): 1. Set project identity, 2. Start with the four project rules, 3. Build the context pack, 4. Create a spec before non-trivial coding, 5. Use the knowledge base, 6. Verify the template, 7. Recommended first prompt, Project Start Here (+9 more)
 
 ### Community 338 - "Community 338"
-Cohesion: 0.11
-Nodes (17): CI Workflow, Agent Crew, Agent Manager Integration, Auto-Routing Rules (Always Active), File Edit Rules, GEMINI.md — Antigravity Agent Configuration, Project Identity, Projects Directory (+9 more)
+Cohesion: 0.17
+Nodes (12): Agent Crew, Agent Manager Integration, Auto-Routing Rules (Always Active), File Edit Rules, GEMINI.md — Antigravity Agent Configuration, Project Identity, Projects Directory, Read Order (+4 more)
 
 ### Community 339 - "Community 339"
 Cohesion: 0.12
@@ -5156,8 +5922,8 @@ Cohesion: 0.08
 Nodes (20): File References, Output Rules, Report Header Template, Status Markers, Table Rules, Target File, Autonomous Loop, Completion Criteria (ALL must be true) (+12 more)
 
 ### Community 344 - "Community 344"
-Cohesion: 0.15
-Nodes (12): Maintenance Module: Gold Skeleton Regression Tests, Maintenance Module: v5 Manifest Patch, Test 1: Personal App, Test 2: Public SaaS, Test 3: Data App, Test 4: Design Audit, UNGASIS v4 Update Note, UNGASIS v5 Update — Universal Gold Skeleton + Design Excellence (+4 more)
+Cohesion: 0.10
+Nodes (20): Maintenance Module: Gold Skeleton Regression Tests, Maintenance Module: v5 Manifest Patch, Required Patch Format, Test 1: Personal App, Test 2: Public SaaS, Test 3: Data App, Test 4: Design Audit, Test Prompt (+12 more)
 
 ### Community 345 - "Community 345"
 Cohesion: 0.14
@@ -5196,8 +5962,8 @@ Cohesion: 0.12
 Nodes (16): Goal, Option A: Easiest way, no code, Option B: Copy into your project folder, Option C: Optional technical check, Step 1, Step 1: Unzip this file, Step 2, Step 2: Open the folder (+8 more)
 
 ### Community 354 - "Community 354"
-Cohesion: 0.15
-Nodes (9): MarkdownMessage(), MarkdownMessageProps, CoachPage(), EMPTY_MESSAGES, SUGGESTIONS, ChatMessage, ChatState, Conversation (+1 more)
+Cohesion: 0.10
+Nodes (13): MarkdownMessage(), MarkdownMessageProps, CoachPage(), EMPTY_MESSAGES, SUGGESTIONS, EMPTY_MESSAGES, SUGGESTIONS, EMPTY_MESSAGES (+5 more)
 
 ### Community 355 - "Community 355"
 Cohesion: 0.18
@@ -5224,20 +5990,20 @@ Cohesion: 0.12
 Nodes (16): major_layers, merge_inputs, name, prepared, purpose, source_of_truth, claude_code_entrypoint, context (+8 more)
 
 ### Community 361 - "Community 361"
-Cohesion: 0.20
-Nodes (13): Beginner recovery mode, Data level key, Hard rules, How to use this module, QA checklist for this module, Quick approval checklist ✋, Source basis, Step index (+5 more)
+Cohesion: 0.08
+Nodes (24): AppForge AI — Master Skills & Persona v2, Backend, Business Intelligence, Communication Principles (Always Active), Data Analytics, Data Engineering, Data Governance, Data Modeling and Architecture (+16 more)
 
 ### Community 362 - "Community 362"
-Cohesion: 0.11
-Nodes (18): AI and Prompting, App and Product Basics, Automation, Microsoft, and BI, Business and Monetization, Data Safety Reminder, Git and Project Files, Glossary Index, QA Checklist (+10 more)
+Cohesion: 0.09
+Nodes (22): AI and Prompting, App and Product Basics, Automation, Microsoft, and BI, Beginner Usage Prompts, Business and Monetization, Data Safety Reminder, Git and Project Files, Glossary Index (+14 more)
 
 ### Community 363 - "Community 363"
 Cohesion: 0.11
 Nodes (25): 2. Output Modes, 3. Quick Mode, 4. Standard Mode, 6. Build Mode, 7. Audit Mode, 8. Default Mode Rules, Beginner note, Beginner note (+17 more)
 
 ### Community 364 - "Community 364"
-Cohesion: 0.06
-Nodes (34): 11. How to Avoid Exposing Secrets and Company Data, 12. Free Hosting Options for Portfolio, 13. How to Write About Projects for LinkedIn, 14. SEO Basics for Portfolio, 15. The Portfolio Honesty Rule, 16. Portfolio Readiness Checklist, 7. How to Create Screenshots and Annotated Walkthroughs, 8. How to Create Short Demo Video Scripts (+26 more)
+Cohesion: 0.07
+Nodes (30): 12. Free Hosting Options for Portfolio, 13. How to Write About Projects for LinkedIn, 14. SEO Basics for Portfolio, 1. Why You Need a Portfolio, 2. How to Turn a Personal Tool → Portfolio Project, 3. What to Show Publicly vs. Keep Private, 5. How to Create a Demo Dataset, 6. How to Write a Beginner-Friendly README (+22 more)
 
 ### Community 365 - "Community 365"
 Cohesion: 0.21
@@ -5256,24 +6022,24 @@ Cohesion: 0.12
 Nodes (27): type, items, type, type, type, type, type, type (+19 more)
 
 ### Community 369 - "Community 369"
-Cohesion: 0.12
-Nodes (16): 1. EXECUTIVE SUMMARY, 2. RESEARCH FINDINGS, 3. ARCHITECTURE, 4. TASK BREAKDOWN, 5. SPRINT PLAN, 6. ACCEPTANCE CRITERIA, 7. RISK ASSESSMENT, 8. KICKOFF PROMPT FOR BUILDER (+8 more)
+Cohesion: 0.14
+Nodes (13): 1. EXECUTIVE SUMMARY, 2. RESEARCH FINDINGS, 3. ARCHITECTURE, 4. TASK BREAKDOWN, 6. ACCEPTANCE CRITERIA, 7. RISK ASSESSMENT, 8. KICKOFF PROMPT FOR BUILDER, BLUEPRINT-automation-scripts.md — Sprint F20b Blueprint (+5 more)
 
 ### Community 370 - "Community 370"
-Cohesion: 0.11
-Nodes (23): Definitions, Evaluation Questions, Failure Modes, Framework: Active / Stub / Blueprint / Deferred, Framework: Automation / Orchestration Planning, Framework: Design Benchmark Adaptation, Framework: Design Excellence Framework, Framework ID (+15 more)
+Cohesion: 0.04
+Nodes (54): AbilityDetail, Boots, BuildArchetype, BuildMath, BuildRule, Champion, ChampionAbilities, ChampionBuild (+46 more)
 
 ### Community 371 - "Community 371"
 Cohesion: 0.08
 Nodes (24): basic, colloq, consumed, consumeOnFull, depth, description, from, group (+16 more)
 
 ### Community 372 - "Community 372"
-Cohesion: 0.12
-Nodes (15): Agent Instructions, Gap List, Known Bugs, Mission Complete Checklist, 🎯 QA MISSION: UNGASIS OS v3.0 — Final Lossless Audit, Source 1: AI_Builders_Master_Workflow_Prompt_v4.0.md, Source 2: playbook v3, Source 3: multi-agent guide v4 (+7 more)
+Cohesion: 0.08
+Nodes (26): Cline, Matt Pocock Skills Absorption, Agent Learning Log (MEMORY.md), QA Status Markers, Agent Instructions, Gap List, Known Bugs, Mission Complete Checklist (+18 more)
 
 ### Community 373 - "Community 373"
-Cohesion: 0.12
-Nodes (15): AI and Prompting, App and Product Basics, Automation, Microsoft, and BI, Business and Monetization, Data Safety Reminder, Git and Project Files, Glossary Index, Quality, Launch, and Operations (+7 more)
+Cohesion: 0.08
+Nodes (23): SOURCE_NOTES.md - 24 Verified Sources (v4.0), SOURCE_NOTES.md - 24 Verified Sources (v4.0), AI and Prompting, App and Product Basics, Automation, Microsoft, and BI, Beginner Usage Prompts, Business and Monetization, Data Safety Reminder (+15 more)
 
 ### Community 374 - "Community 374"
 Cohesion: 0.48
@@ -5288,8 +6054,8 @@ Cohesion: 0.14
 Nodes (16): Component State Requirements, Council Roles, Design Layers, Design Quality Checks, Engine: Design Excellence Engine, Engine: Universal Gold Skeleton App Engine, Goal, Output Requirements (+8 more)
 
 ### Community 377 - "Community 377"
-Cohesion: 0.08
-Nodes (20): Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role, Output Rules, File References, Report Header Template, Status Markers (+12 more)
+Cohesion: 0.12
+Nodes (13): Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role, Output Rules, File References, Report Header Template, Status Markers (+5 more)
 
 ### Community 378 - "Community 378"
 Cohesion: 0.17
@@ -5308,12 +6074,12 @@ Cohesion: 0.08
 Nodes (23): Compression-by-Reference Rule, Purpose, Router Module: De-Fabrication, Router Module: Evidence Risk / Source Quality, Router Module: Excel/Office-First, Router Module: Fabric / Power BI, Router Module: Google AI Studio App Factory, Router Module: Lossless Evolution (+15 more)
 
 ### Community 382 - "Community 382"
-Cohesion: 0.15
-Nodes (12): Communication, Core Expertise, Data & Analytics, Design & UX, Development, Antigravity CLI Configuration, Antigravity CLI Configuration, Communication (+4 more)
+Cohesion: 0.20
+Nodes (10): Communication, Core Expertise, Data & Analytics, Design & UX, Development, Communication, Conventions, Project (+2 more)
 
 ### Community 383 - "Community 383"
-Cohesion: 0.11
-Nodes (21): AUDIT VERDICT: [PASS/FAIL], Files Reviewed: [count], Fix Prompt (if FAIL):, Missing Files (if any):, Results:, Sprint: [sprint name], Summary:, AUDIT VERDICT: PASS (+13 more)
+Cohesion: 0.07
+Nodes (32): AUDIT VERDICT: [PASS/FAIL], Files Reviewed: [count], Fix Prompt (if FAIL):, Missing Files (if any):, Results:, Sprint: [sprint name], Summary:, AUDIT VERDICT: PASS (+24 more)
 
 ### Community 384 - "Community 384"
 Cohesion: 0.25
@@ -5388,8 +6154,8 @@ Cohesion: 0.13
 Nodes (14): Cross-Analysis: v3.0 -> v4.0, .claudeignore, Context Rot Detection, Doctrine, Files Changed from v3, Key Additions, Layer 11: Model Routing, Layer 12: Context Budget (+6 more)
 
 ### Community 402 - "Community 402"
-Cohesion: 0.12
-Nodes (18): Enchantment, boots, enchantments, enchantment, stasis_default, meta, game_rules, generated (+10 more)
+Cohesion: 0.24
+Nodes (9): Enchantment, boots, enchantments, totals, boots, enchantments, total, trinkets (+1 more)
 
 ### Community 403 - "Community 403"
 Cohesion: 0.13
@@ -5404,7 +6170,7 @@ Cohesion: 0.19
 Nodes (14): assembleContext(), AssembledContext, buildContextString(), detectTaskType(), escapeRegex(), estimateTokens(), extractRole(), loadAllData() (+6 more)
 
 ### Community 406 - "Community 406"
-Cohesion: 0.18
+Cohesion: 0.12
 Nodes (8): Ability, BuildTemplate, Champion, CounterMatchup, Item, Rune, SummonerSpell, TeamComp
 
 ### Community 407 - "Community 407"
@@ -5432,8 +6198,8 @@ Cohesion: 0.13
 Nodes (15): 2. 🔄 The 6-Step Effortless Project Loop, Build Rules, Copy-Paste BUILD Prompt (for Cline), Copy-Paste CAPTURE Prompt, Copy-Paste LEARN Prompt, Copy-Paste SCAFFOLD Prompt, 🔥 Grilling Gate (Mandatory Before SCAFFOLD), Ship Checklist (+7 more)
 
 ### Community 413 - "Community 413"
-Cohesion: 0.14
-Nodes (13): 10. Beginner Checklist — Where Should This Instruction Go?, 11. Recommended UNGASIS Instruction Files, 12. Final Golden Rule, 1. The 5-Layer Instruction Stack, 2. Conflict Resolver Priority, 8. Cross-Layer Conflict Examples, 9. Safe Update Workflow, Beginner Example (+5 more)
+Cohesion: 0.12
+Nodes (16): 10. Beginner Checklist — Where Should This Instruction Go?, 11. Recommended UNGASIS Instruction Files, 12. Final Golden Rule, 1. The 5-Layer Instruction Stack, 2. Conflict Resolver Priority, 7. Layer 5 — Code / Development Level, 8. Cross-Layer Conflict Examples, 9. Safe Update Workflow (+8 more)
 
 ### Community 414 - "Community 414"
 Cohesion: 0.19
@@ -5492,8 +6258,8 @@ Cohesion: 0.13
 Nodes (15): 2. 🔄 The 6-Step Effortless Project Loop, Build Rules, Copy-Paste BUILD Prompt (for Cline), Copy-Paste CAPTURE Prompt, Copy-Paste LEARN Prompt, Copy-Paste SCAFFOLD Prompt, 🔥 Grilling Gate (Mandatory Before SCAFFOLD), Ship Checklist (+7 more)
 
 ### Community 428 - "Community 428"
-Cohesion: 0.13
-Nodes (15): Router Module: De-Fabrication, Router Module: Evidence Risk / Source Quality, Router Module: Excel/Office-First, Router Module: Fabric / Power BI, Router Module: Google AI Studio App Factory, Router Module: Lossless Evolution, Router Module: Me-as-MVP Default, Router Module: Microsoft Power Suite (+7 more)
+Cohesion: 0.04
+Nodes (52): gold_per_point, reference_item, gold_per_point, reference_item, gold_per_point, gold_per_point, reference_item, reference_item (+44 more)
 
 ### Community 429 - "Community 429"
 Cohesion: 0.13
@@ -5501,7 +6267,7 @@ Nodes (14): .claudeignore, Context Rot Detection, Cross-Analysis: v3.0 -> v4.0, 
 
 ### Community 430 - "Community 430"
 Cohesion: 0.12
-Nodes (13): Context Decay Protocol (Layer 16), Key Commands, Read First, Rules, UNGASIS OS — Claude Code Instructions, Cline Claude Config, UNGASIS OS v4.0, Last Session Summary (+5 more)
+Nodes (15): Active Projects, Builder Profile — Mel John Dimat, Communication Preferences, Design Preferences, Identity, Learning Style, Tech Context, What NOT To Do (+7 more)
 
 ### Community 431 - "Community 431"
 Cohesion: 0.13
@@ -5528,12 +6294,12 @@ Cohesion: 0.21
 Nodes (12): Implementation Loop, Procedure, Stop conditions, Output, Procedure, Verify and Test, Implementation Loop, Procedure (+4 more)
 
 ### Community 437 - "Community 437"
-Cohesion: 0.13
-Nodes (15): AI reliability, Approval required before, Automation safety, Risk and Safety, Safety posture, Secrets handling, Workflow: Automation Safety, Automation Safety Checklist (+7 more)
+Cohesion: 0.14
+Nodes (14): AI reliability, Approval required before, Automation safety, Risk and Safety, Safety posture, Secrets handling, Workflow: Automation Safety, Automation Safety Checklist (+6 more)
 
 ### Community 438 - "Community 438"
-Cohesion: 0.11
-Nodes (26): 10. Pattern 6 — Output Format Pattern, 12. Pattern 8 — Decomposition Pattern, 5. Pattern 1 — Role Pattern, 6. Pattern 2 — Context Pattern, 9. Pattern 5 — Step-by-Step Pattern, Beginner example, Beginner example, Beginner example (+18 more)
+Cohesion: 0.10
+Nodes (31): 10. Pattern 6 — Output Format Pattern, 12. Pattern 8 — Decomposition Pattern, 5. Pattern 1 — Role Pattern, 6. Pattern 2 — Context Pattern, 7. Pattern 3 — Constraint Pattern, 9. Pattern 5 — Step-by-Step Pattern, Beginner example, Beginner example (+23 more)
 
 ### Community 439 - "Community 439"
 Cohesion: 0.25
@@ -5576,8 +6342,8 @@ Cohesion: 0.13
 Nodes (15): Code Conventions, Copilot reads this automatically for every autocomplete suggestion, Current Status, Design Tokens, Do NOT, File Structure (Key Files), Key Decisions Made (Last 5), Known Issues / Risks (+7 more)
 
 ### Community 449 - "Community 449"
-Cohesion: 0.14
-Nodes (16): 13. HANDOFF SUMMARY, Files to Read First in Any New Session, What's Next, What Was Accomplished (June 2, 2026), Device Handoff Protocol, Files to Upload for a Fresh Chat, Known Issues, Post-Session Verification (+8 more)
+Cohesion: 0.05
+Nodes (49): color, motto, name, slots, total, keystones, meta, generated (+41 more)
 
 ### Community 450 - "Community 450"
 Cohesion: 0.14
@@ -5608,8 +6374,8 @@ Cohesion: 0.14
 Nodes (13): add, keep_confirmed, remove, champions_to_add, champions_to_remove, meta, actions, description (+5 more)
 
 ### Community 457 - "Community 457"
-Cohesion: 0.15
-Nodes (20): float, Any, str, bool, float, str, Normalize rune name into a safe snake_case ID., Parse wr-meta.com/items/ for rune descriptions. (+12 more)
+Cohesion: 0.26
+Nodes (11): bool, float, str, ensure_cache_dir(), fetch_content(), get_cache_path(), is_cache_valid(), Create cache directory if it doesn't exist. (+3 more)
 
 ### Community 458 - "Community 458"
 Cohesion: 0.13
@@ -5620,8 +6386,8 @@ Cohesion: 0.17
 Nodes (15): 20-Layer Token Efficiency System, Adaptation Approval Levels, Feedback Loop Scripts (5 closed loops), Memory Injection Rules, Research Scripts Pipeline, Research Sources, Section 8: Research & Learning System, Self-Evolution Rules (+7 more)
 
 ### Community 460 - "Community 460"
-Cohesion: 0.14
-Nodes (13): Karpathy Principles and Community Safety Rules, 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Checkpoint Rule, Fail-Loud Rule, Four community safety rules (+5 more)
+Cohesion: 0.10
+Nodes (19): Karpathy Principles and Community Safety Rules, 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, Checkpoint Rule, Fail-Loud Rule, Four community safety rules (+11 more)
 
 ### Community 461 - "Community 461"
 Cohesion: 0.14
@@ -5704,16 +6470,16 @@ Cohesion: 0.14
 Nodes (13): CLAUDE.md - Claude Code Instructions (v4.0), .claudeignore (v4): Skip files/folders from context. Configure during setup., Commands: Install:[INSTALL_COMMAND] Test:[TEST_COMMAND] Lint:[LINT_COMMAND] Build:[BUILD_COMMAND], Compacting: Preserve task goal, files changed, decisions, test results, failures, risks, next action. Drop: logs, exploration, abandoned ideas., Completion: 1.Changed files 2.Summary 3.Commands 4.Results 5.Risks 6.Rollback 7.Memory updates, Context Budget Zones, Context Management, MAX_THINKING_TOKENS (v4): .claude/settings.json: 10K normal, 30K+ complex architecture. (+5 more)
 
 ### Community 481 - "Community 481"
-Cohesion: 0.20
-Nodes (11): Fields, Guardrail Module: Design and Accessibility Guardrails, Guardrail Module: Ethical Data Acquisition, Memory / Knowledge Module: Gold Skeleton Decision Log, Purpose, Quality Warning, Rules, UNGASIS v4 Update Note (+3 more)
+Cohesion: 0.13
+Nodes (16): Fields, Guardrail Module: Design and Accessibility Guardrails, Guardrail Module: Ethical Data Acquisition, Memory / Knowledge Module: Gold Skeleton Decision Log, Memory Module: App-Embedded UNGASIS Decision Log, Memory Module: Microsoft Solution Decision Log, Memory Module: Research Memory Card, Purpose (+8 more)
 
 ### Community 482 - "Community 482"
 Cohesion: 0.52
 Nodes (6): Agentic Framework, How It Works, Inputs/Outputs, Purpose, Rules, The 7 Disciplines of Agentic Engineering
 
 ### Community 483 - "Community 483"
-Cohesion: 0.15
-Nodes (12): 6-Layer AI Safety Stack, AI Infrastructure (25 keys, 114 attempts), AI Reasoning Types (Phase 5.7+), AppForge AI — RiftCoach Development Agent, Critical Rules, Deep WHY Gate Rules, Dev Tools, Intent Layer (+4 more)
+Cohesion: 0.12
+Nodes (15): 6-Layer AI Safety Stack, 8 Skill Sets (Master v2), AI Infrastructure (25 keys, 114 attempts), AI Reasoning Types (Phase 5.7+), AppForge AI — RiftCoach Development Agent, Communication Principles, Critical Rules, Deep WHY Gate Rules (+7 more)
 
 ### Community 484 - "Community 484"
 Cohesion: 0.13
@@ -5724,8 +6490,8 @@ Cohesion: 0.04
 Nodes (47): Agent, API key, Artifact, Branch, CI, CODEOWNERS, Commit, Config (+39 more)
 
 ### Community 486 - "Community 486"
-Cohesion: 0.14
-Nodes (13): Token Efficiency (Summary), About Mel, Conversation Starters, Custom GPT Blueprint: "UNGASIS Builder", Description, His Active Projects, His Stack, How to Respond (+5 more)
+Cohesion: 0.29
+Nodes (7): Token Efficiency (Summary), About Mel, His Active Projects, His Stack, How to Respond, Instructions (System Prompt), Token Efficiency
 
 ### Community 487 - "Community 487"
 Cohesion: 0.15
@@ -5788,8 +6554,8 @@ Cohesion: 0.16
 Nodes (19): type, properties, required, type, type, type, properties, expected_safe_behavior (+11 more)
 
 ### Community 502 - "Community 502"
-Cohesion: 0.13
-Nodes (17): Cline, Lemon Squeezy, Matt Pocock Skills Absorption, Agent Learning Log (MEMORY.md), QA Status Markers, PayMongo, Self-Iteration Protocol, Supabase (+9 more)
+Cohesion: 0.05
+Nodes (49): color, motto, name, slots, total, keystones, meta, generated (+41 more)
 
 ### Community 503 - "Community 503"
 Cohesion: 0.19
@@ -5800,8 +6566,8 @@ Cohesion: 0.14
 Nodes (13): claude-code-setup.md — Claude Code CLI Setup, How It Works, Inputs and Outputs, Installation and Authentication, Operational Rules, Purpose, Troubleshooting Table, Active Tasks (+5 more)
 
 ### Community 505 - "Community 505"
-Cohesion: 0.19
-Nodes (9): Shimmer(), SmartImage(), CATS, Item, formatNumber(), PATHS, Rune, SLOT_ORDER (+1 more)
+Cohesion: 0.04
+Nodes (47): additionalProperties, type, type, items, type, type, $id, type (+39 more)
 
 ### Community 506 - "Community 506"
 Cohesion: 0.15
@@ -5812,8 +6578,8 @@ Cohesion: 0.43
 Nodes (6): Domain assumptions, Domain Context, Domain risks, Source of truth, Users / audience, What this project is about
 
 ### Community 508 - "Community 508"
-Cohesion: 0.15
-Nodes (18): 60-Second Scaffold SOP, Additional Context, Combination Rules, DNA Rules, Example, Genome Matrix Table, Inputs/Outputs, Jargon Explanations (+10 more)
+Cohesion: 0.20
+Nodes (14): 60-Second Scaffold SOP, Combination Rules, DNA Rules, Genome Matrix Table, Inputs/Outputs, Jargon Explanations, Purpose, Rules (+6 more)
 
 ### Community 509 - "Community 509"
 Cohesion: 0.15
@@ -5836,16 +6602,16 @@ Cohesion: 0.22
 Nodes (8): 3. 📋 The Tracker Table, 5. ⚠️ Warning Signs — When to Worry, General Warning Signs (From Playbook §21), How to Read This Table, Per-Tool Warning Indicators, 🏁 Summary: Your Cost Monitoring Survival Kit, 📖 Table of Contents, UNGASIS Content Module: Cost & Usage Monitoring
 
 ### Community 514 - "Community 514"
-Cohesion: 0.14
-Nodes (14): 3. How to Export from Each Platform, 6. Exit Plan for Each Critical Tool, 🤖 ChatGPT, 🤖 ChatGPT → Claude / Gemini / Local, ⚡ Cloudflare Pages / Netlify, ⚡ Cloudflare Pages → Netlify, 🎨 Figma, 💻 GitHub (+6 more)
+Cohesion: 0.25
+Nodes (8): 3. How to Export from Each Platform, 🤖 ChatGPT, 🎨 Figma, 💻 GitHub, ☁️ M365 / OneDrive / SharePoint, 📝 Notion, 🗄️ Supabase, 📊 Tally (Forms)
 
 ### Community 515 - "Community 515"
 Cohesion: 0.22
 Nodes (8): 3. 📋 The Tracker Table, 5. ⚠️ Warning Signs — When to Worry, General Warning Signs (From Playbook §21), How to Read This Table, Per-Tool Warning Indicators, 🏁 Summary: Your Cost Monitoring Survival Kit, 📖 Table of Contents, UNGASIS Content Module: Cost & Usage Monitoring
 
 ### Community 516 - "Community 516"
-Cohesion: 0.12
-Nodes (15): 11. Human Approval Gates, Approval template, 10. Human Approval Gates, 11. Human Approval Gates, Approval template, 1. How to Read This Matrix, 3. UNGASIS Decision Matrix, 4. Best Default Choice by Situation (+7 more)
+Cohesion: 0.04
+Nodes (46): type, additionalProperties, type, type, type, type, type, type (+38 more)
 
 ### Community 517 - "Community 517"
 Cohesion: 0.23
@@ -5908,8 +6674,8 @@ Cohesion: 0.17
 Nodes (12): 1. Dimension Map, 2. Mode Router, 3. Rigor Dial, 4. Adaptive Lens Budget, 5. Systems Dimension, 6. Prompt Review Behavior, 7. Anti-Overbuilding Check, 8. Knowledge Routing (+4 more)
 
 ### Community 532 - "Community 532"
-Cohesion: 0.17
-Nodes (11): Anti-Overbuild Test, Before Upload, Microsoft Power Suite Test, Pass Criteria, Portable App Test, Prompt Review Test, RESET_CHECKLIST — UNGASIS v7.0, Rollback (+3 more)
+Cohesion: 0.09
+Nodes (21): App Building v7, De-Fabrication / Reverse Engineering, Google AI Studio / Gemini App Factory, Lossless Evolution Rule, Microsoft Power Suite Mode, Reasoning Quality Layer, UNGASIS Baseline Lock, UNGASIS — Project Instructions You are UNGASIS: Unified Neural Guidance and Strategic Intelligence System. Subtitle: Prompt Architect OS — Adaptive Intelligence Kernel. Purpose: help the user navigate ideas, build systems, decide better, learn slowly, and turn rough thoughts into usable outputs. ## Prime Rule Default mode is PROMPT REVIEW: review, score, and rebuild the user’s request. Do NOT answer the underlying task unless the user clearly says: run it, answer it now, execute, do it, build it, create the file/artifact, use the upgraded prompt, or similar. Use simple English, short steps, patient teaching, analogies, and diagrams when useful. ## Required Prompt Review Format Every normal prompt review starts with: # Prompt Diagnostic ## Verdict - Status: PASS / ACCEPTABLE or FAIL / NEEDS REVISION - Simple reason: - Can be used as-is?: Yes / No ## What this means Beginner-friendly explanation. ## Easy analogy One simple analogy. ## UNGASIS Trace Mode: Rigor: Domain: Dimensions: Lenses: Intelligences: Frameworks: Engines: Tools/Files: Guardrails: Template: ## Classification Task type, complexity, risk, missing info, likely failure mode. ## Scorecard Score /10 with one simple fix for: Clarity, Context, Boundaries, Output format, Expert framing, Checking, Model fit. ## Top Fixes 1. 2. 3. # Rebuilt Prompt Give one clean copy-paste prompt with: expert stance, objective, context, inputs, limits, process, output format, quality bar, question policy, assumption policy, verification checklist. # Why this rebuilt prompt is better Explain simply. # Suggested Learning Aids Suggest one only when useful: image, canvas, prototype, worksheet, quiz, checklist, slide, PDF, sheet, or HTML. # Model + Effort Recommendation Best: Fallback: Upgrade trigger: Why: # Mini Check Tiny understanding check when useful. # Final Check End every prompt review with exactly: Do you want me to run this upgraded prompt now? ## Trace Rule Include the short UNGASIS Trace above for every review or executed task. List only relevant items. If none, say “None.” If asked “show full trace,” expand with modules/components and why selected. Never claim a tool/file/skill was used if only recommended. ## 16-Dimension Map Router; Rigor Dial; Lenses/Personas; Systems; Intelligences; Frameworks; Engines/Skills; Knowledge; Memory; Tools/Integrations; Templates; Guardrails; Evaluation; Artifacts; Maintenance; OS Evolution/Self-Update. ## Rigor Dial Before large/strict answers, classify stage: personal, private, prototype, private beta, public MVP, commercial, or high-risk/regulated. Use Minimum Viable Rigor: enough structure to be safe/useful, not so much it slows the user down. For personal/private/prototype: fast usable output, simple steps, next 3–7 actions, local-first/manual/no-code/simple prototype paths, light safety checks, no enterprise architecture/heavy compliance/long citations/big risk registers unless asked. For public/commercial/high-risk: increase safety, legal, privacy, security, QA, testing, monitoring, citations, and expert review. If unclear, assume personal/prototype and state it. ## Adaptive Lens Budget Use the fewest lenses needed. Start with: personal/prototype = 1–3; serious build/strategy = 3–5; public/commercial/high-risk = expand as needed. Add a lens only if it materially improves safety, completeness, or usefulness. Do not activate every archetype. ## Student / Master Teacher Mode Use: Simple idea → Easy example → Step-by-step → Why → Check. Good Prompt = Clear Job + Background + Rules + Output Shape + Check. Never shame the user. Never say “this is easy.” Define hard words in parentheses. ## Research / Current Facts For research, current facts, scientific claims, AI/tools, software, regulations, pricing, markets, competitors, game patches, current events, or niche facts: use web when available, prefer primary sources, cite sources, separate facts/assumptions/hypotheses/opinions/uncertainty, and do not present old knowledge as current. ## Core Engines Use the uploaded Engine Kernel for all engines. Activate only relevant engines. Never activate every engine by default. ## Guardrails Be careful with legal, tax, medical, nutrition, finance, security, employment, and safety. Do not act as a lawyer, doctor, CPA, dietitian, or guaranteed advisor. Recommend qualified review for high-stakes decisions. Never help deception, fraud, bribery, obstruction, witness tampering, tax evasion, credential theft, unsafe autonomy, coercive manipulation, scams, or unethical loopholes. ## Culinary / Vibe-Cooker For cooking, recipes, ingredients, food science, nutrition education, culinary apps, or food-tech, classify personal/private/prototype vs public/commercial. Personal/private: keep lightweight. Use flow: available ingredients → goal/taste → essential safety check → recipe idea → cooking steps → taste improvement → save notes. Essential guardrails: allergies, raw meat/seafood/eggs, spoilage, cross-contamination, storage/reheating, heat/fire, “AI may be wrong.” Public/commercial: add food safety, nutrition education, culture/source/provenance, copyright/licensing, QA, review workflow, legal risk. Never claim food cures disease, encourage unsafe handling, or copy copyrighted recipes. Cite current food safety/nutrition/legal/source claims when used. ## App-Building / Gold Skeleton For app prompts, use the Universal Gold Skeleton Key from uploaded files. Every app should include research/data acquisition, database, backend/services, API/action bridge, AI/RAG, automation/orchestration, connectors, analytics/BI/visualizations, Design Excellence, QA/security, deployment, docs, and evolution as Active/Stub/Blueprint/Deferred by Rigor Dial. Design toward UI-ready, API-ready, agent-ready, prototype-first, secure-by-default, local-first, provider-agnostic, integration-ready. Personal prototypes stay light; public/commercial/high-risk apps get full rigor. ## Design Excellence Every app needs creative direction, UX architecture, UI design system, frontend component plan, responsive/accessibility basics, component states, motion/microinteractions, and visual QA. Gold Skeletons must feel polished, modern, usable, and globally competitive, not like rough demos. ## Tools / Artifacts Recommend tools only when useful: Project files, file upload, web/deep research, canvas, agent mode, image creation, data/sheets, docs/slides, prototype/HTML/React, Google AI Studio, Claude Code. Never claim a tool was used if only recommended. ## Knowledge / Memory Use uploaded files as reference. Apply only relevant modules. Do not dump file content or mention irrelevant files. Prefer latest manifest when files conflict. ## OS Evolution Notice repeated gaps, missing modules, bad rigor, user corrections, failed tests, or recurring needs. Recommend exact update patch, target file, manifest update, and test prompt. Do not claim UNGASIS updated itself until user approves and uploads/pastes. ## Execution Mode When user clearly asks to run/execute/do it: follow upgraded prompt, state assumptions, use sources for current facts, give useful result, ask few questions, proceed safely. ## Quality Bar Every answer must be clear, practical, structured, safe, honest, beginner-friendly, testable, specific, and not overconfident. (+13 more)
 
 ### Community 533 - "Community 533"
 Cohesion: 0.19
@@ -5960,8 +6726,8 @@ Cohesion: 0.15
 Nodes (19): 1. Dimension Map, 2. Mode Router, 3. Rigor Dial, 4. Adaptive Lens Budget, 5. Systems Dimension, 6. Prompt Review Behavior, 7. Anti-Overbuilding Check, 8. Knowledge Routing (+11 more)
 
 ### Community 545 - "Community 545"
-Cohesion: 0.15
-Nodes (12): App Building v7, De-Fabrication / Reverse Engineering, Google AI Studio / Gemini App Factory, Lossless Evolution Rule, Microsoft Power Suite Mode, Reasoning Quality Layer, Research OS, UNGASIS Baseline Lock (+4 more)
+Cohesion: 0.08
+Nodes (24): App Building v7, De-Fabrication / Reverse Engineering, Google AI Studio / Gemini App Factory, Lossless Evolution Rule, Microsoft Power Suite Mode, Reasoning Quality Layer, Research OS, UNGASIS Baseline Lock (+16 more)
 
 ### Community 546 - "Community 546"
 Cohesion: 0.17
@@ -6036,12 +6802,12 @@ Cohesion: 0.20
 Nodes (13): Task Dispatch & Routing Rules, Additional Context, Example, How It Works, Inputs and Outputs, Jargon Explanations, Orchestrator Rules, Purpose (+5 more)
 
 ### Community 564 - "Community 564"
-Cohesion: 0.12
-Nodes (13): 1. The operating system mindset, 2. Core mental models, 3. Project layers, 5. The default project flywheel, AI Project OS Master Guide, Compound the system, Context is the bottleneck, Minimal instructions, maximum signal (+5 more)
+Cohesion: 0.17
+Nodes (12): 1. The operating system mindset, 2. Core mental models, 3. Project layers, 5. The default project flywheel, AI Project OS Master Guide, Compound the system, Context is the bottleneck, Minimal instructions, maximum signal (+4 more)
 
 ### Community 565 - "Community 565"
-Cohesion: 0.18
-Nodes (11): Domain Language Table, Active Goals, Blockers, CONTEXT.md — Current Session State, Domain Language, Fast Start Prompt For New Agent, Files Being Worked On, Purpose (+3 more)
+Cohesion: 0.12
+Nodes (15): Context Engineering Loop, Output, Steps, Context Engineering Loop, Output, Steps, Context Engineering Loop, 3. Workflow 2: Context Engineering Loop (+7 more)
 
 ### Community 566 - "Community 566"
 Cohesion: 0.21
@@ -6064,8 +6830,8 @@ Cohesion: 0.21
 Nodes (13): Additional Context, Example, How It Works, Inputs/Outputs, Jargon Explanations, Memory Rules, Purpose, Rules (+5 more)
 
 ### Community 571 - "Community 571"
-Cohesion: 0.22
-Nodes (7): Source Fidelity Notes, Additional requested video links checked in v4, How to upgrade fidelity later, Important limitation, What was available, Known remaining gap, v5 Gap Coverage Matrix
+Cohesion: 0.09
+Nodes (18): Merge Audit, Risk and Safety, Source Fidelity Notes, Deduplication decisions, Gaps found and patched, Inputs inspected, v5 note, AI reliability (+10 more)
 
 ### Community 572 - "Community 572"
 Cohesion: 0.18
@@ -6189,7 +6955,7 @@ Nodes (20): Rigor Calibration, Router Module: Design Excellence Gate, Router Mod
 
 ### Community 602 - "Community 602"
 Cohesion: 0.18
-Nodes (11): 12. 🔄 Phase 10 — Improve and Scale, 🚦 Decision Point (Weekly), Feature Addition Rules (from Playbook §11), 🎯 Goal, 📋 Key Actions, 📦 Output, The Weekly Loop (from Playbook §11), ⏱️ Time Estimate (+3 more)
+Nodes (10): Anti-Overbuild Test, Before Upload, Microsoft Power Suite Test, Pass Criteria, Portable App Test, Prompt Review Test, RESET_CHECKLIST — UNGASIS v7.0, Rollback (+2 more)
 
 ### Community 603 - "Community 603"
 Cohesion: 0.18
@@ -6236,8 +7002,8 @@ Cohesion: 0.18
 Nodes (10): Acceptance Snapshot, Completion Rule, Failure Handling, Purpose, Quality Gate, Reflection Loop, Reflection Protocol (Self-Critique Loop), Required Log Format (+2 more)
 
 ### Community 614 - "Community 614"
-Cohesion: 0.10
-Nodes (16): Active Context, Active Context — Current Focus, Active Patterns and Preferences, Current Focus, Current Phase, Current Work, Next Steps, Open Questions / Checks (+8 more)
+Cohesion: 0.25
+Nodes (7): Current Status, Evolution of Decisions, Known Issues, Next Validation Step, Progress — Status and Milestones, What's Left To Build, What Works
 
 ### Community 615 - "Community 615"
 Cohesion: 0.18
@@ -6248,8 +7014,8 @@ Cohesion: 0.18
 Nodes (10): Blockers / Risks, Current Task, Decisions Made, Files Changed, Next Action, Status: [not started | in progress | blocked | done], Task Handoff, Tests Run (+2 more)
 
 ### Community 617 - "Community 617"
-Cohesion: 0.26
-Nodes (8): Current Tasks, File Locks, Simple rule, Beginner rule, File lock words, Status words, Task Board Guide, Simple rule
+Cohesion: 0.24
+Nodes (9): Current Tasks, File Locks, Simple rule, Beginner rule, File lock words, Status words, Task Board Guide, Current Task (+1 more)
 
 ### Community 618 - "Community 618"
 Cohesion: 0.17
@@ -6315,10 +7081,6 @@ Nodes (10): champions, meta, champions_included, generated, layers, part, patch,
 Cohesion: 0.18
 Nodes (10): matchups, meta, confidence_source, generated, patch, schema_version, scope, total_champions (+2 more)
 
-### Community 634 - "Community 634"
-Cohesion: 0.18
-Nodes (10): meta, generated, layers, note, patch, schema_version, synthesized, total (+2 more)
-
 ### Community 635 - "Community 635"
 Cohesion: 0.18
 Nodes (10): meta, confidence_source, generated, patch, schema_version, scope, total_champions, total_entries (+2 more)
@@ -6352,8 +7114,8 @@ Cohesion: 0.18
 Nodes (10): 1. The Kitchen Analogy, 2. Product Comparison, 3. Rate Limits & Subscription Tiers, 4. Model Selection Guide, 5. Key Configuration Files, 6. Key Slash Commands & Shortcuts, 7. Setup Guide for Personal PC, 8. Setup Guide for GitHub Codespaces (+2 more)
 
 ### Community 643 - "Community 643"
-Cohesion: 0.09
-Nodes (24): Agent Evals & Runtime Governance Module, UNGASIS Quick Reference Wiki Guide, Skill: Code Review, Steps, When to Use, UNGASIS Unified Builder's Wiki, UNGASIS Instruction Hierarchy, Agent Scoring Configuration (+16 more)
+Cohesion: 0.12
+Nodes (18): Agent Evals & Runtime Governance Module, UNGASIS Quick Reference Wiki Guide, Claude Code Instructions (CLAUDE.md), UNGASIS Unified Builder's Wiki, Agent Scoring Configuration, Agent State Machine Workflow, Chain, Multi-Agent Dev Orchestration Kit v4.0 (+10 more)
 
 ### Community 644 - "Community 644"
 Cohesion: 0.18
@@ -6444,12 +7206,12 @@ Cohesion: 0.06
 Nodes (46): 10. Pattern 6 — Output Format Pattern, 11. Pattern 7 — Iteration Pattern, 12. Pattern 8 — Decomposition Pattern, 5. Pattern 1 — Role Pattern, 6. Pattern 2 — Context Pattern, 7. Pattern 3 — Constraint Pattern, 8. Pattern 4 — Example Pattern, 9. Pattern 5 — Step-by-Step Pattern (+38 more)
 
 ### Community 666 - "Community 666"
-Cohesion: 0.18
-Nodes (10): Anti-Overbuild Test, Before Upload, Microsoft Power Suite Test, Pass Criteria, Portable App Test, Prompt Review Test, RESET_CHECKLIST — UNGASIS v7.0, Rollback (+2 more)
+Cohesion: 0.04
+Nodes (46): additionalProperties, type, description, type, type, $id, type, type (+38 more)
 
 ### Community 667 - "Community 667"
-Cohesion: 0.18
-Nodes (10): AGENTS.md - Universal Agent Instructions (v4.0), Commands, Completion: 1.Changed files 2.Summary 3.Commands 4.Results 5.Risks 6.Rollback 7.Memory updates, Core Rules, Model Routing (v4), Never Do: Rewrite entire files for small changes | Destructive cmds without confirm | Install without asking | Filler in code mode, Project, Read First: AGENTS.md, docs/PROJECT_BRIEF.md, docs/TASK_HANDOFF.md, docs/TEST_COMMANDS.md (+2 more)
+Cohesion: 0.10
+Nodes (20): .claudeignore, Context Rot Detection, Key Additions, Layer 11: Model Routing, Layer 12: Context Budget, MAX_THINKING_TOKENS, Message Cap, On-Demand vs Always-On (+12 more)
 
 ### Community 668 - "Community 668"
 Cohesion: 0.33
@@ -6488,8 +7250,8 @@ Cohesion: 0.26
 Nodes (7): Dashboard(), ParsedMarkdown, parseMarkdownFile(), DashboardData, ParsedMarkdown, getDashboardData(), WORKSPACE_ROOT
 
 ### Community 677 - "Community 677"
-Cohesion: 0.12
-Nodes (14): AI Cascade Architecture, AppForge Development Skill, Component Creation Pattern, Data Rules, Error Fixing Pattern, Known Gotchas, Production Pipeline Awareness, Resources (+6 more)
+Cohesion: 0.20
+Nodes (9): AI Cascade Architecture, AppForge Development Skill, Component Creation Pattern, Data Rules, Error Fixing Pattern, Known Gotchas, Production Pipeline Awareness, Resources (+1 more)
 
 ### Community 678 - "Community 678"
 Cohesion: 0.31
@@ -6512,8 +7274,8 @@ Cohesion: 0.33
 Nodes (9): Current focus, Do not do, Important rules, Key files, Latest handoff, North star, Project, Success criteria (+1 more)
 
 ### Community 683 - "Community 683"
-Cohesion: 0.14
-Nodes (14): 10. Before/After Story Template, 9. Case Studies: Problem → Process → Solution → Result, Copy-Paste Template, Filled Example, Filled Example 1, Filled Example 2, The Case Study Template, 10. Before/After Story Template (+6 more)
+Cohesion: 0.08
+Nodes (24): 7-LAYER AI SAFETY STACK, API Routes, BUILD MODIFIER PIPELINE, COMPLETED PHASES, Core Libraries, Data, DATABASE — CURRENT (Public Data — /public/data/), DATABASE MERGE PLAN (+16 more)
 
 ### Community 684 - "Community 684"
 Cohesion: 0.20
@@ -6548,7 +7310,7 @@ Cohesion: 0.05
 Nodes (43): 0. Beginner Promise, 10. Tasks, 11. File Uploads, 12. Canvas, 13. Data Analysis, 14. Web Search, 15. Image Gen, 16. Artifacts / Generated Files / Library (+35 more)
 
 ### Community 692 - "Community 692"
-Cohesion: 0.20
+Cohesion: 0.18
 Nodes (9): Agent Workflow Pattern, Architecture Summary, Critical Implementation Paths, File Hierarchy, Generation Pattern, Memory Pattern, Self-Iteration Pattern, System Patterns — Architecture and Agent Design (+1 more)
 
 ### Community 693 - "Community 693"
@@ -6612,8 +7374,8 @@ Cohesion: 0.20
 Nodes (8): Auto-Accept and Self-Verification, Auto-accept is not blind trust, Default limits, Evidence report, Purpose, Related files, Required stop conditions, Safe loop
 
 ### Community 708 - "Community 708"
-Cohesion: 0.12
-Nodes (15): key_files, llm_context, llms_txt, new_video_audit, 10. Scope Boundaries, 1. Identity, 2. Read Order (MANDATORY), 3. Architecture (+7 more)
+Cohesion: 0.08
+Nodes (21): key_files, llm_context, llms_txt, new_video_audit, Context Decay Protocol (Layer 16), Key Commands, Read First, Rules (+13 more)
 
 ### Community 709 - "Community 709"
 Cohesion: 0.15
@@ -6628,8 +7390,8 @@ Cohesion: 0.20
 Nodes (9): 1. The Recipe Analogy, 2. The Memory Stack, 3. Context Window Optimization, 4. Persistent Memory Patterns, 5. The Graphify Concept, 6. Session Continuity Protocol, 7. Token Budget Awareness, Cross-Reference Map (+1 more)
 
 ### Community 712 - "Community 712"
-Cohesion: 0.17
-Nodes (12): 18B. Caveman Mode — Emergency Token Saver 🦴, 🍳 Analogy: When to Talk Normal vs Caveman, Before/After Example, Caveman Mode Quick Reference Card, Combining Caveman Mode with Other Token Savers, 🦴 Copy-Paste Activation Prompt, 🗣️ Copy-Paste Deactivation Prompt, More Before/After Examples for Your Work (+4 more)
+Cohesion: 0.04
+Nodes (45): type, additionalProperties, type, type, type, type, type, type (+37 more)
 
 ### Community 713 - "Community 713"
 Cohesion: 0.20
@@ -6644,8 +7406,8 @@ Cohesion: 0.20
 Nodes (9): Stop Coding, Spec First, Feature folder pattern, Flow, Rules, Specs, Acceptance Template, Design Template, Requirements Template (+1 more)
 
 ### Community 716 - "Community 716"
-Cohesion: 0.18
-Nodes (11): 4. 🔍 Phase 2 — Validate Customer Pain, 🚦 Decision Point — STOP GATE, 🎯 Goal, Interview Questions (from Playbook §11), 📋 Key Actions, Minimum Validation Criteria, 📦 Output, 📦 Output (+3 more)
+Cohesion: 0.22
+Nodes (9): blurb, id, key, name, partype, tags, title, version (+1 more)
 
 ### Community 717 - "Community 717"
 Cohesion: 0.17
@@ -6752,8 +7514,8 @@ Cohesion: 0.36
 Nodes (9): 13 Supply Chain Security, 13 Supply Chain Security, Check these, Feynman explanation, Hard words in this file, Layman analogy, Purpose, Safe beginner rules (+1 more)
 
 ### Community 743 - "Community 743"
-Cohesion: 0.15
-Nodes (13): Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Detailed workflow, Step 02 — Problem selection (+5 more)
+Cohesion: 0.11
+Nodes (23): Definitions, Evaluation Questions, Failure Modes, Framework: Active / Stub / Blueprint / Deferred, Framework: Automation / Orchestration Planning, Framework: Design Benchmark Adaptation, Framework: Design Excellence Framework, Framework ID (+15 more)
 
 ### Community 744 - "Community 744"
 Cohesion: 0.05
@@ -6768,8 +7530,8 @@ Cohesion: 0.22
 Nodes (8): Context Engineering Discipline, Universal Agent Instructions (v4.0), Context lifecycle, Context pack structure, Definition, Files in this template, Goal, Why this matters
 
 ### Community 747 - "Community 747"
-Cohesion: 0.39
-Nodes (6): assetCandidates(), candidateNames(), OVERRIDES, portraitCandidates(), splashCandidates(), toPascal()
+Cohesion: 0.03
+Nodes (22): assetCandidates(), candidateNames(), OVERRIDES, portraitCandidates(), splashCandidates(), toPascal(), MarkdownMessageProps, MotionCardProps (+14 more)
 
 ### Community 748 - "Community 748"
 Cohesion: 0.05
@@ -6848,7 +7610,7 @@ Cohesion: 0.22
 Nodes (9): 17.1 ChatGPT / ChatGPT Enterprise, 17.2 Microsoft 365 Copilot, 17.3 VS Code + Cline, 17. Platform-Specific Prompt Tips, ChatGPT copy-paste project prompt, Cline Act Mode prompt, Cline debugging prompt, Cline Plan Mode prompt (+1 more)
 
 ### Community 771 - "Community 771"
-Cohesion: 0.20
+Cohesion: 0.18
 Nodes (9): Current Product Stage, How It Should Work, Problems Solved, Product Context — Why UNGASIS Exists, Product Promise, Simple Analogy, Target User, User Experience Goals (+1 more)
 
 ### Community 772 - "Community 772"
@@ -6956,8 +7718,8 @@ Cohesion: 0.22
 Nodes (9): Boots, Champion, CoreIdentity, Item, RAGLayer, RiftCoachEntity, Rune, Spell (+1 more)
 
 ### Community 800 - "Community 800"
-Cohesion: 0.22
-Nodes (8): meta_archetypes, patch_history, tier_list, baron, duo, jungle, mid, support
+Cohesion: 0.14
+Nodes (13): meta, confidence_source, generated, patch, rank_floor, schema_version, type, tier_list (+5 more)
 
 ### Community 801 - "Community 801"
 Cohesion: 0.22
@@ -6965,7 +7727,7 @@ Nodes (8): Evidence, Inputs, Outputs, Skill: Designer, Status, Steps, Token Savi
 
 ### Community 802 - "Community 802"
 Cohesion: 0.05
-Nodes (42): Context Budget Policy, 13.0 Universal Launcher, 13.1 Fresh Chat Kickoff (Generic UNGASIS Session), 13.2 RiftCoach Phase 5.7 Kickoff (Deep WHY Layer), 13.3 Dashboard Enhancement Kickoff, 13.4 Maintenance/Cleanup Kickoff, 20+ JARVIS Subsystems (in .ungasis/), 3 Automation Systems (+34 more)
+Nodes (50): Context Budget Policy, 13.0 Universal Launcher, 13.1 Fresh Chat Kickoff (Generic UNGASIS Session), 13.2 RiftCoach Phase 5.7 Kickoff (Deep WHY Layer), 13.3 Dashboard Enhancement Kickoff, 13.4 Maintenance/Cleanup Kickoff, 20+ JARVIS Subsystems (in .ungasis/), 3 Automation Systems (+42 more)
 
 ### Community 803 - "Community 803"
 Cohesion: 0.24
@@ -7008,8 +7770,8 @@ Cohesion: 0.22
 Nodes (9): 17.1 ChatGPT / ChatGPT Enterprise, 17.2 Microsoft 365 Copilot, 17.3 VS Code + Cline, 17. Platform-Specific Prompt Tips, ChatGPT copy-paste project prompt, Cline Act Mode prompt, Cline debugging prompt, Cline Plan Mode prompt (+1 more)
 
 ### Community 813 - "Community 813"
-Cohesion: 0.36
-Nodes (10): Discovery & Validation, Discovery & Validation, TPL-E2-001 — 📛 Idea brain dump & discovery, TPL-E2-002 — 📛 Problem validation & sizing, TPL-E2-003 — 📛 Competitive/alternative analysis, TPL-E2-004 — 📛 Lifecycle stage classifier, TPL-E2-005 — 📛 Willingness-to-pay validation, TPL-E2-006 — 📛 Target user persona creation (+2 more)
+Cohesion: 0.04
+Nodes (44): AbilityDetail, BuildArchetype, BuildMath, BuildRule, ChampionAbilities, ChampionBuild, ComboSequence, CounterRelationship (+36 more)
 
 ### Community 814 - "Community 814"
 Cohesion: 0.36
@@ -7020,8 +7782,8 @@ Cohesion: 0.29
 Nodes (9): 1. Metadata, 2. Sprints & Activities, 3. Financials & Time, 4. References & Links, Inputs/Outputs, Project Card Template, Purpose, Rules (+1 more)
 
 ### Community 816 - "Community 816"
-Cohesion: 0.20
-Nodes (9): Success Rate Metric, Quality History Tracker, Test Priority Matrix, How It Works, Inputs/Outputs, Purpose, Rules, Test Priority Matrix (+1 more)
+Cohesion: 0.25
+Nodes (7): Test Priority Matrix, How It Works, Inputs/Outputs, Purpose, Rules, Test Priority Matrix, Test Strategy Engine
 
 ### Community 817 - "Community 817"
 Cohesion: 0.31
@@ -7056,12 +7818,12 @@ Cohesion: 0.22
 Nodes (9): 27. Prompt pack, Prompt 1 - Idea validation, Prompt 2 - UX design, Prompt 3 - AI app builder, Prompt 4 - Cline / AI coding safe task, Prompt 5 - Debugging, Prompt 6 - Launch checklist, Prompt 7 - Source verification (+1 more)
 
 ### Community 825 - "Community 825"
-Cohesion: 0.22
-Nodes (8): Acceptance Template, Design Template, Requirements Template, Specs, Tasks Template, Feature folder pattern, Flow, Rules
+Cohesion: 0.09
+Nodes (20): Acceptance Template, Design Template, Requirements Template, Researcher Notes Coverage Audit, Spec-Driven Development OS, Specs, Tasks Template, Coverage table (+12 more)
 
 ### Community 826 - "Community 826"
-Cohesion: 0.30
-Nodes (11): Task Handoff, Blockers / Risks, Current Task, Decisions Made, Files Changed, Next Action, Status: [not started | in progress | blocked | done], Task Handoff (+3 more)
+Cohesion: 0.18
+Nodes (15): Cross-Analysis: v3.0 -> v4.0, Doctrine, Files Changed from v3, New Files in v4, Summary, Task Handoff, Blockers / Risks, Decisions Made (+7 more)
 
 ### Community 827 - "Community 827"
 Cohesion: 0.22
@@ -7265,7 +8027,7 @@ Nodes (8): 10. 🎬 Putting It All Together — Factory in Action, Step 1: 🎯 
 
 ### Community 877 - "Community 877"
 Cohesion: 0.18
-Nodes (10): API/service contracts, Data model, Files likely affected, Human review gate, Proposed design, Requirements source, Rollback, Spec Plan: [Feature] (+2 more)
+Nodes (9): Knowledge Index, Raw sources, Schema files, Source fidelity rule, Wiki pages, Knowledge Index, Raw sources, Schema files (+1 more)
 
 ### Community 878 - "Community 878"
 Cohesion: 0.24
@@ -7372,8 +8134,8 @@ Cohesion: 0.25
 Nodes (7): comps, avgGameLength, banPriorities, metaIdentity, patch, patchChanges, season
 
 ### Community 904 - "Community 904"
-Cohesion: 0.25
-Nodes (8): meta, confidence_source, generated, note, patch, rank_floor, schema_version, type
+Cohesion: 0.11
+Nodes (18): 2. CURRENT STATE — What Was Accomplished, All 9 Sprints Completed (June 2, 2026 — Single Day), Key Metrics, 5 Subagent Definitions (.gemini/agents/), 9 Slash Commands, Agent Roster (6 Agents), Auto-Routing Rules (Always Active), Intent Parser — Natural Language Shortcuts (+10 more)
 
 ### Community 905 - "Community 905"
 Cohesion: 0.25
@@ -7424,8 +8186,8 @@ Cohesion: 0.25
 Nodes (8): Core rule, Flow, Folder model, Human review gates, Minimum viable spec, Related files, Spec-Driven Development OS, Why specs matter
 
 ### Community 917 - "Community 917"
-Cohesion: 0.29
-Nodes (9): Commands and skills, Layer 1: raw, Layer 2: wiki, Layer 3: schema, LLM Knowledge Base, Operating rule, Purpose, Three-layer model (+1 more)
+Cohesion: 0.09
+Nodes (19): QA Checklist, 1. Kitchen Analogy, 2. Readiness Levels Comparison, 3. Security Checklist, 4. QA Checklist, 5. Cross-References, Production Readiness & Security QA — Is Your Kitchen Safe to Open?, 1. Kitchen Analogy (+11 more)
 
 ### Community 918 - "Community 918"
 Cohesion: 0.29
@@ -7712,12 +8474,12 @@ Cohesion: 0.20
 Nodes (9): Acceptance criteria, Goals, Non-goals, Open questions, Problem, Requirements: [Feature], Risks, User stories (+1 more)
 
 ### Community 989 - "Community 989"
-Cohesion: 0.20
-Nodes (10): 6. 🖱️ Phase 4 — Build Clickable Prototype, 🚦 Decision Point, 🎯 Goal, 📋 Key Actions, 📋 Key Actions, 📦 Output, Prototype Checklist (from Playbook §11), ⏱️ Time Estimate (+2 more)
+Cohesion: 0.05
+Nodes (42): alias_import_roots, components, data, hooks, lib, stores, types, api_routes (+34 more)
 
 ### Community 990 - "Community 990"
-Cohesion: 0.29
-Nodes (7): 12. Copy-Paste Prompt Pack, Prompt 1 — Planner AI, Prompt 2 — Builder AI, Prompt 3 — Reviewer AI, Prompt 4 — Owner decision memo, Prompt 5 — Session handoff, Prompt 6 — AI confusion recovery
+Cohesion: 0.05
+Nodes (42): alias_import_roots, components, data, hooks, lib, stores, types, api_routes (+34 more)
 
 ### Community 991 - "Community 991"
 Cohesion: 0.29
@@ -7828,16 +8590,16 @@ Cohesion: 0.06
 Nodes (30): Framework: App-Embedded UNGASIS, Framework: Architecture Decision Record, Framework: Best-for-Stage Stack Decision Matrix, Framework: Bronze / Silver / Gold Data Pipeline, Framework: Canvas vs Model-Driven App Decision, Framework: Claim Ledger, Framework: Conflict / Consensus Map, Framework: Dashboard Decision Framework (+22 more)
 
 ### Community 1018 - "Community 1018"
-Cohesion: 0.20
-Nodes (10): 8. 🧪 Phase 6 — Test with Real Users, 🚦 Decision Point, 🎯 Goal, How to Test (from Playbook §11), 📋 Key Actions, 📦 Output, Testing Metrics to Track (from Playbook §11), ⏱️ Time Estimate (+2 more)
+Cohesion: 0.11
+Nodes (18): 13. 📊 Summary: 10 Phases at a Glance, 14. ⚠️ Common Mistakes by Phase, 1. 🗺️ The Big Picture — Phase Flow Diagram, 2. 📅 Week-by-Week Progress Visual, 8. 🧪 Phase 6 — Test with Real Users, 🚦 Decision Point, 🎯 Goal, How to Test (from Playbook §11) (+10 more)
 
 ### Community 1019 - "Community 1019"
 Cohesion: 0.47
 Nodes (31): stats, stats, stats, stats, stats, stats, stats, stats (+23 more)
 
 ### Community 1020 - "Community 1020"
-Cohesion: 0.20
-Nodes (8): Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role, Behavior, Context, Role, Agent Identity: UNGASIS QA Auditor
+Cohesion: 0.10
+Nodes (20): 10. KICKOFF PROMPTS, 12. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 3. ARCHITECTURE — Folder Structure, 9. BUILDER PROFILE (Token Prevention Context), Communication Preferences, Complete Handoff Document for Fresh Chat Continuation, Design DNA (+12 more)
 
 ### Community 1021 - "Community 1021"
 Cohesion: 0.29
@@ -8120,7 +8882,7 @@ Cohesion: 0.29
 Nodes (6): How It Works, Inputs/Outputs, Purpose, Reading Log, Reading Log Tracker, Rules
 
 ### Community 1092 - "Community 1092"
-Cohesion: 0.33
+Cohesion: 0.24
 Nodes (3): FREE_MODELS, FreeModel, ModelTier
 
 ### Community 1093 - "Community 1093"
@@ -8216,8 +8978,8 @@ Cohesion: 0.29
 Nodes (6): 1. Kitchen Analogy, 2. Principle of Least Privilege, 3. Tool Permission Matrix, 4. Permission Levels Explanation, 5. Cross-References, Connector & Permission Registry — Who Has Keys to What?
 
 ### Community 1116 - "Community 1116"
-Cohesion: 0.25
-Nodes (7): 1. Kitchen Analogy, 2. Release & Rollback Checklists, 3. Git Commands Reference, 4. Cross-References, Release Checklist, Release & Rollback — Opening Night and the Emergency Exit, Rollback Checklist
+Cohesion: 0.05
+Nodes (42): added_in_v0_7_1, m365_opus_postmerge_wr_champions_merged_v070_full, bytes, filename, path, sha256, extracted_raw_sources_present, chatgpt_chunks_extracted (+34 more)
 
 ### Community 1117 - "Community 1117"
 Cohesion: 0.29
@@ -8452,8 +9214,8 @@ Cohesion: 0.07
 Nodes (28): Template: AI Studio Export + Local Verification Packet, Template: App-Embedded UNGASIS Runtime Spec, Template: Architecture Decision Record, Template: Automation / Orchestration Map, Template: BI / Visualization Plan, Template: Claim Ledger, Template: Contradiction Map, Template: DAX Measure Dictionary (+20 more)
 
 ### Community 1175 - "Community 1175"
-Cohesion: 0.11
-Nodes (18): 2. CURRENT STATE — What Was Accomplished, All 9 Sprints Completed (June 2, 2026 — Single Day), Key Metrics, 5 Subagent Definitions (.gemini/agents/), 9 Slash Commands, Agent Roster (6 Agents), Auto-Routing Rules (Always Active), Intent Parser — Natural Language Shortcuts (+10 more)
+Cohesion: 0.05
+Nodes (40): type, additionalProperties, type, type, type, type, type, type (+32 more)
 
 ### Community 1176 - "Community 1176"
 Cohesion: 0.29
@@ -8509,7 +9271,7 @@ Nodes (5): Design DNA (ALWAYS follow), Designer Agent Instructions, Identity, Ou
 
 ### Community 1189 - "Community 1189"
 Cohesion: 0.24
-Nodes (6): AppShell(), titleFromPath(), metadata, PageTransition(), ThemeProvider(), metadata
+Nodes (5): metadata, PageTransition(), ThemeProvider(), metadata, metadata
 
 ### Community 1190 - "Community 1190"
 Cohesion: 0.33
@@ -8668,8 +9430,8 @@ Cohesion: 0.33
 Nodes (6): 8. 🔗 Context Continuity Protocol, Cross-Tool Sync Strategy, PROJECT_WORKFLOW.md Template, Session End Template, Session Start Template, Single Source of Truth
 
 ### Community 1229 - "Community 1229"
-Cohesion: 0.40
-Nodes (5): pruningRules, architecture, bugfix, coding, research
+Cohesion: 0.05
+Nodes (38): aliases, aurelion_sol, aurelionsol, dr_mundo, jarvan, jarvan_4, jarvaniv, k_sante (+30 more)
 
 ### Community 1230 - "Community 1230"
 Cohesion: 0.33
@@ -8940,8 +9702,8 @@ Cohesion: 0.33
 Nodes (6): 8. 🔗 Context Continuity Protocol, Cross-Tool Sync Strategy, PROJECT_WORKFLOW.md Template, Session End Template, Session Start Template, Single Source of Truth
 
 ### Community 1297 - "Community 1297"
-Cohesion: 0.40
-Nodes (5): pruningRules, architecture, bugfix, coding, research
+Cohesion: 0.06
+Nodes (35): e, passive, q, r, w, details, canonical_champions, public_data_champions (+27 more)
 
 ### Community 1298 - "Community 1298"
 Cohesion: 0.52
@@ -8972,8 +9734,8 @@ Cohesion: 0.33
 Nodes (6): 8. 🔗 Context Continuity Protocol, Cross-Tool Sync Strategy, PROJECT_WORKFLOW.md Template, Session End Template, Session Start Template, Single Source of Truth
 
 ### Community 1305 - "Community 1305"
-Cohesion: 0.25
-Nodes (7): QA Checklist, 1. Kitchen Analogy, 2. Readiness Levels Comparison, 3. Security Checklist, 4. QA Checklist, 5. Cross-References, Production Readiness & Security QA — Is Your Kitchen Safe to Open?
+Cohesion: 0.11
+Nodes (17): Architecture, Architecture principle, Chosen stack, Current stage, Data model, Layers, Reversal path, Service boundaries (+9 more)
 
 ### Community 1306 - "Community 1306"
 Cohesion: 0.08
@@ -9320,8 +10082,8 @@ Cohesion: 0.40
 Nodes (4): Reflection Protocol, Bug Fix Skill, Purpose, Steps
 
 ### Community 1392 - "Community 1392"
-Cohesion: 0.40
-Nodes (4): pruningRules, bugfix, coding, research
+Cohesion: 0.06
+Nodes (35): e, passive, q, r, w, details, canonical_champions, public_data_champions (+27 more)
 
 ### Community 1393 - "Community 1393"
 Cohesion: 0.40
@@ -9404,12 +10166,12 @@ Cohesion: 0.40
 Nodes (5): 15. How to Save and Version Prompts, Beginner rule, Prompt file template, Recommended folder structure, Version naming rule
 
 ### Community 1413 - "Community 1413"
-Cohesion: 0.12
-Nodes (15): .claudeignore, Context Rot Detection, Cross-Analysis: v3.0 -> v4.0, Doctrine, Files Changed from v3, Key Additions, Layer 11: Model Routing, Layer 12: Context Budget (+7 more)
+Cohesion: 0.20
+Nodes (9): Additional Context, Example, See also:, Tags:, When to Use:, /commander — Orchestration Mode, Steps, Token Budget (+1 more)
 
 ### Community 1414 - "Community 1414"
-Cohesion: 0.12
-Nodes (23): $schema, title, type, items, type, items, type, items (+15 more)
+Cohesion: 0.13
+Nodes (25): $schema, title, type, Approval required before, items, type, items, type (+17 more)
 
 ### Community 1415 - "Community 1415"
 Cohesion: 0.40
@@ -9592,8 +10354,8 @@ Cohesion: 0.40
 Nodes (4): Auto-Verify Loop Skill, Limits, Output, Process
 
 ### Community 1460 - "Community 1460"
-Cohesion: 0.25
-Nodes (8): File Conventions, Git Conventions, Output Rules, Read-Only Directories, Section 11: Workflow & Conventions, Security Rules, Sprint Workflow, Token Efficiency Rules (Compressed)
+Cohesion: 0.22
+Nodes (8): Active Context — Current Focus, Active Patterns and Preferences, Current Focus, Current Phase, Current Work, Next Steps, Open Questions / Checks, Recent Decisions
 
 ### Community 1461 - "Community 1461"
 Cohesion: 0.40
@@ -9820,8 +10582,8 @@ Cohesion: 0.60
 Nodes (5): How It Works, Inputs/Outputs, Portfolio Rules, Purpose, Rules
 
 ### Community 1517 - "Community 1517"
-Cohesion: 0.33
-Nodes (5): 1. Kitchen Analogy, 2. Evaluation Metrics, 3. Runtime Governance Rules, 4. Cross-References, Agent Evals & Runtime Governance — Grading Your Kitchen Staff
+Cohesion: 0.28
+Nodes (7): Skill: Code Review, Steps, When to Use, Subagent: Reviewer, Skill: Code Review, Behaviour, Purpose
 
 ### Community 1518 - "Community 1518"
 Cohesion: 0.40
@@ -10148,8 +10910,8 @@ Cohesion: 0.09
 Nodes (23): SummonerHeal, name, cooldown, cooldownBurn, cost, costBurn, costType, datavalues (+15 more)
 
 ### Community 1599 - "Community 1599"
-Cohesion: 0.13
-Nodes (15): 24.5C: MASTER TOOL MAP (14 Categories — Verified May 2026), 🤖 AI App Builders (Prompt-to-App), 📊 Analytics & User Feedback, ⚡ Automation / Workflows, 🗄️ Backend / Database / Auth, 🛡️ Customer Support, 🚀 Deployment / Hosting, 📖 Documentation & Learning (+7 more)
+Cohesion: 0.25
+Nodes (7): 1. Install Dependencies, 2. Run the Scrapers, 3. Deploy Assets, 🏗️ Architecture Overview, ⚡ Setup & Execution, 🛡️ Validation Quality Gates, Wild Rift Data Pipeline — wr_extractor v3
 
 ### Community 1600 - "Community 1600"
 Cohesion: 0.50
@@ -10208,8 +10970,8 @@ Cohesion: 0.09
 Nodes (23): SummonerMana, datavalues, cooldown, cooldownBurn, cost, costBurn, costType, datavalues (+15 more)
 
 ### Community 1625 - "Community 1625"
-Cohesion: 0.50
-Nodes (4): Beginner Usage Prompts, Prompt 1: Explain one term, Prompt 2: Compare two confusing terms, Prompt 3: Turn jargon into beginner English
+Cohesion: 0.10
+Nodes (24): add_embedded_abilities(), add_ledger(), add_source_values(), as_list(), build_canonical_simple(), convert_v06_build(), display_stat_list(), extract_simple_fields() (+16 more)
 
 ### Community 1626 - "Community 1626"
 Cohesion: 0.50
@@ -10224,8 +10986,8 @@ Cohesion: 0.18
 Nodes (11): 5. 🎨 Phase 3 — Design Simple MVP, 🚦 Decision Point, 🎯 Goal, 📋 Key Actions, 📦 Output, Screen States to Define, 💡 The MVP Rule, The "NOT Building" List Template (+3 more)
 
 ### Community 1629 - "Community 1629"
-Cohesion: 0.18
-Nodes (11): 7. 🔧 Phase 5 — Build Functional MVP, 🚦 Decision Point, Evidence-Based Route Selection (from Playbook §11), Functional MVP Checklist (from Playbook §11), 🎯 Goal, 📋 Key Actions, 📦 Output, 🔒 Security Checkpoint (+3 more)
+Cohesion: 0.06
+Nodes (34): aliases, eyeball_collector, hextech_flashtraption, ixtal_seedjar, ixtali_seedjar, tryrant, blocker_validations, slot_1 (+26 more)
 
 ### Community 1630 - "Community 1630"
 Cohesion: 0.50
@@ -10332,8 +11094,8 @@ Cohesion: 0.50
 Nodes (3): Files, Guide, How to Use
 
 ### Community 1656 - "Community 1656"
-Cohesion: 0.33
-Nodes (4): SOURCE_NOTES.md - 24 Verified Sources (v4.0), SOURCE_NOTES.md - 24 Verified Sources (v4.0), Source Notes, SOURCE_NOTES.md - 24 Verified Sources (v4.0)
+Cohesion: 0.52
+Nodes (6): Analogy, Approval record, Feynman, Human Approval Gates, Must ask before, Rule
 
 ### Community 1657 - "Community 1657"
 Cohesion: 0.50
@@ -10472,8 +11234,8 @@ Cohesion: 0.50
 Nodes (4): Fields, Memory / Knowledge Module: Gold Skeleton Decision Log, Purpose, Use
 
 ### Community 1691 - "Community 1691"
-Cohesion: 0.14
-Nodes (13): Auto-Research Loop, Loop, Purpose, Quality signals, Related files, Rules, Session-start option, Loop (+5 more)
+Cohesion: 0.06
+Nodes (34): additionalProperties, type, type, type, type, type, $id, type (+26 more)
 
 ### Community 1692 - "Community 1692"
 Cohesion: 0.50
@@ -10604,8 +11366,8 @@ Cohesion: 0.50
 Nodes (3): Check: scope, secrets, logic, tests, Output, Reviewer
 
 ### Community 1724 - "Community 1724"
-Cohesion: 0.15
-Nodes (13): $schema, title, type, minProperties, type, properties, mcpServers, pruningRules (+5 more)
+Cohesion: 0.22
+Nodes (8): type, mcpServers, pruningRules, type, required, $schema, title, type
 
 ### Community 1725 - "Community 1725"
 Cohesion: 0.50
@@ -10860,8 +11622,8 @@ Cohesion: 0.50
 Nodes (4): 4. 🔍 How to Track — Three Methods, Method 1: Built-In Dashboards (Free, Easiest), Method 2: Simple Spreadsheet Tracker (Free, Recommended), Method 3: Automated Alerts (If Safe and Allowed)
 
 ### Community 1791 - "Community 1791"
-Cohesion: 0.50
-Nodes (4): Beginner Usage Prompts, Prompt 1: Explain one term, Prompt 2: Compare two confusing terms, Prompt 3: Turn jargon into beginner English
+Cohesion: 0.11
+Nodes (15): Active Context, Conventions Established, Decisions Made, MEMORY.md — Agent Learning Log, Mistakes & Corrections, Patterns Discovered, Things That Worked Well, Things To Avoid (+7 more)
 
 ### Community 1792 - "Community 1792"
 Cohesion: 0.09
@@ -11264,8 +12026,8 @@ Cohesion: 0.50
 Nodes (4): Fields, Memory / Knowledge Module: Gold Skeleton Decision Log, Purpose, Use
 
 ### Community 1892 - "Community 1892"
-Cohesion: 0.22
-Nodes (9): 5. The Master Tool Map — Pick One Per Job, 💰 Business & Monetization, 🚀 Deployment & Hosting, 🗄️ Development — Backend, 💻 Development — Frontend, 📝 Documentation & Support, 📊 Monitoring & Analytics, 📋 Planning & Validation (+1 more)
+Cohesion: 0.29
+Nodes (7): 9. Disaster Recovery Plan, Restore Test: Do This Quarterly, 🔴 Scenario 1: Platform Goes Down (Temporary Outage), 🔴 Scenario 2: You Lose Account Access, 🔴 Scenario 3: Data Corruption / Accidental Deletion, 🔴 Scenario 4: AI Overwrites Your Code, 🔴 Scenario 5: Laptop Lost / Stolen / Crashed
 
 ### Community 1893 - "Community 1893"
 Cohesion: 0.10
@@ -11408,8 +12170,8 @@ Cohesion: 0.83
 Nodes (3): Final rule, Production Gate Checklist, Required gates
 
 ### Community 2018 - "Community 2018"
-Cohesion: 0.67
-Nodes (3): CI Workflow, CI, GitHub Actions
+Cohesion: 0.12
+Nodes (16): AI Reasoning Accuracy Sprint, ATTACHED FILES, BEGIN, CONTEXT, PHASE 5.0 TASKS, RiftCoach — Phase 5.0 Kickoff, RULES, Task 1: Enrich Reasoning Prompt with Actual Stats (+8 more)
 
 ### Community 2019 - "Community 2019"
 Cohesion: 0.67
@@ -11468,8 +12230,8 @@ Cohesion: 0.11
 Nodes (19): Summoner_UltBookPlaceholder, cooldown, cooldownBurn, cost, costBurn, datavalues, description, effect (+11 more)
 
 ### Community 2034 - "Community 2034"
-Cohesion: 0.11
-Nodes (17): Architecture, Architecture principle, Chosen stack, Current stage, Data model, Layers, Reversal path, Service boundaries (+9 more)
+Cohesion: 0.06
+Nodes (34): additionalProperties, type, type, type, type, $id, type, items (+26 more)
 
 ### Community 2035 - "Community 2035"
 Cohesion: 0.67
@@ -11616,8 +12378,8 @@ Cohesion: 0.37
 Nodes (18): gold, gold, gold, gold, gold, gold, gold, gold (+10 more)
 
 ### Community 2882 - "Community 2882"
-Cohesion: 0.12
-Nodes (15): Context Engineering Loop, Output, Steps, Context Engineering Loop, Output, Steps, Context Engineering Loop, 3. Workflow 2: Context Engineering Loop (+7 more)
+Cohesion: 0.22
+Nodes (9): enchantment, stasis_default, meta, game_rules, generated, layers, patch, schema_version (+1 more)
 
 ### Community 2883 - "Community 2883"
 Cohesion: 0.12
@@ -11656,7 +12418,7 @@ Cohesion: 0.13
 Nodes (15): 2. 🔄 The 6-Step Effortless Project Loop, Build Rules, Copy-Paste BUILD Prompt (for Cline), Copy-Paste CAPTURE Prompt, Copy-Paste LEARN Prompt, Copy-Paste SCAFFOLD Prompt, 🔥 Grilling Gate (Mandatory Before SCAFFOLD), Ship Checklist (+7 more)
 
 ### Community 2892 - "Community 2892"
-Cohesion: 0.12
+Cohesion: 0.13
 Nodes (15): Agent Instructions, Gap List, Known Bugs, Mission Complete Checklist, 🎯 QA MISSION: UNGASIS OS v3.0 — Final Lossless Audit, Source 1: AI_Builders_Master_Workflow_Prompt_v4.0.md, Source 2: playbook v3, Source 3: multi-agent guide v4 (+7 more)
 
 ### Community 2893 - "Community 2893"
@@ -11684,8 +12446,8 @@ Cohesion: 0.14
 Nodes (13): 1. The operating system mindset, 2. Core mental models, 3. Project layers, 4. Anti-patterns, 5. The default project flywheel, AI Project OS Master Guide, Compound the system, Context is the bottleneck (+5 more)
 
 ### Community 2899 - "Community 2899"
-Cohesion: 0.22
-Nodes (8): 13. 📊 Summary: 10 Phases at a Glance, 14. ⚠️ Common Mistakes by Phase, 1. 🗺️ The Big Picture — Phase Flow Diagram, 2. 📅 Week-by-Week Progress Visual, Key Decision Points in the Flow, 📖 Table of Contents, 🏁 The Golden Rule of This Workflow, UNGASIS Content Module: 10-Phase Build Workflow
+Cohesion: 0.33
+Nodes (6): 11. Pattern 7 — Iteration Pattern, Beginner example, Copy-paste template, Simple loop, What it is, Why it works
 
 ### Community 2900 - "Community 2900"
 Cohesion: 0.21
@@ -11736,8 +12498,8 @@ Cohesion: 0.27
 Nodes (12): Architecture boundaries, Commands, Current risks and stop rules, Data / AI / provider boundaries, Key files, LLM Context Template, Non-goals, Plain-English summary (+4 more)
 
 ### Community 2912 - "Community 2912"
-Cohesion: 0.31
-Nodes (12): Any, Any, bool, str, Validate rune data against the required schema constraints., Validate champion data against required constraints., Validate item data against the required schema constraints., Validate spell data against constraints. (+4 more)
+Cohesion: 0.30
+Nodes (11): Any, bool, str, Validate rune data against the required schema constraints., Validate champion data against required constraints., Validate item data against the required schema constraints., Validate spell data against constraints., validate_champion() (+3 more)
 
 ### Community 2913 - "Community 2913"
 Cohesion: 0.15
@@ -11784,8 +12546,8 @@ Cohesion: 0.15
 Nodes (13): Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Copy-paste prompt, Detailed workflow, Step 07 — Persona (+5 more)
 
 ### Community 2924 - "Community 2924"
-Cohesion: 0.22
-Nodes (8): Spec-Driven Development OS, Core rule, Flow, Folder model, Human review gates, Minimum viable spec, Related files, Why specs matter
+Cohesion: 0.36
+Nodes (8): Any, str, Normalize rune name into a safe snake_case ID., Parse wr-meta.com/items/ for rune descriptions., Scrape runes from wildriftfire and enrich them with descriptions., scrape_descriptions_from_wrmeta(), scrape_runes(), slugify()
 
 ### Community 2925 - "Community 2925"
 Cohesion: 0.09
@@ -11860,8 +12622,8 @@ Cohesion: 0.17
 Nodes (11): Data Level Quick Guide, How to Use This SOP Library, QA Checklist for This Module, Reusable Files Mentioned in the SOPs, SOP Index, Source Ledger, The 5-step beginner loop, UNGASIS Content Module: Full SOP Library (+3 more)
 
 ### Community 2943 - "Community 2943"
-Cohesion: 0.11
-Nodes (20): 10. KICKOFF PROMPTS, KICKOFF A: Continue UNGASIS Engines (Sprint F8a-d), KICKOFF B: Start RiftCoach Development, 10. BUILDER PROFILE, 11. KICKOFF PROMPTS, 13. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 3. ARCHITECTURE — Folder Structure (+12 more)
+Cohesion: 0.17
+Nodes (12): 10. BUILDER PROFILE, 13. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 3. ARCHITECTURE — Folder Structure, Communication Preferences, Complete Handoff Document for Fresh Chat Continuation, Current JARVIS Score: 98%, Design DNA (+4 more)
 
 ### Community 2944 - "Community 2944"
 Cohesion: 0.24
@@ -11904,8 +12666,8 @@ Cohesion: 0.18
 Nodes (11): Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Safety Warning, Safety Warning, Safety Warning, SOP 05 - Setting Up an M365 Copilot Notebook (+3 more)
 
 ### Community 2954 - "Community 2954"
-Cohesion: 0.11
-Nodes (18): 1. How to Read This Matrix, 2. Scoring Legend, 3. UNGASIS Decision Matrix, 4. Best Default Choice by Situation, 5. Recommended Beginner Routing Flow, 6. Anti-Bloat Decision Test, 7. Human Approval Gates, 8. UNGASIS Recommendation (+10 more)
+Cohesion: 0.10
+Nodes (20): Data level key, Hard rules, How to use this module, Step index, UNGASIS Content Module: Me as MVP Workflow, Workflow map, 1. How to Read This Matrix, 2. Scoring Legend (+12 more)
 
 ### Community 2955 - "Community 2955"
 Cohesion: 0.18
@@ -12064,8 +12826,8 @@ Cohesion: 0.24
 Nodes (8): Coverage table, Deduplication decisions, Researcher Notes Coverage Audit, Source fidelity, Coverage table, Deduplication decisions, Researcher Notes Coverage Audit, Source fidelity
 
 ### Community 2994 - "Community 2994"
-Cohesion: 0.17
-Nodes (12): 13. Functionality QA, 14. Content Quality QA, 15. Security QA, 16. Quality / Accessibility QA, 17. Source Ledger QA, 18. Minimum v1 Content Checklist, 19. “Do Not Build Yet” Reminder, 20. Build Prompt for Future HTML Manual (+4 more)
+Cohesion: 0.11
+Nodes (24): buildRationalePrompt(), buildTemplate(), dedup(), EnrichedBuild, EnrichedRune, EnrichedSpell, enrichRunes(), findBestBuild() (+16 more)
 
 ### Community 2995 - "Community 2995"
 Cohesion: 0.20
@@ -12156,8 +12918,8 @@ Cohesion: 0.20
 Nodes (9): 12 Release and Rollback, Before release, Feynman explanation, Hard words in this file, Layman analogy, Purpose, Release checklist, Rollback checklist (+1 more)
 
 ### Community 3017 - "Community 3017"
-Cohesion: 0.20
-Nodes (9): Current Product Stage, How It Should Work, Problems Solved, Product Context — Why UNGASIS Exists, Product Promise, Simple Analogy, Target User, User Experience Goals (+1 more)
+Cohesion: 0.11
+Nodes (24): buildRationalePrompt(), buildTemplate(), dedup(), EnrichedBuild, EnrichedRune, EnrichedSpell, enrichRunes(), findBestBuild() (+16 more)
 
 ### Community 3018 - "Community 3018"
 Cohesion: 0.20
@@ -12300,8 +13062,8 @@ Cohesion: 0.22
 Nodes (9): 4. Tool Registry, Zone A: 🧠 THINK (Unlimited), Zone B: 🎨 PROTOTYPE (Free), Zone C: 🤖 AI Agents (Inside Codespace), Zone C: 🤖 AI Agents (Web-Only), Zone C: ⚡ API Providers (×5 Keys Each), Zone C: 🔧 BUILD — Cloud IDEs, Zone D: 🏗️ FRAMEWORKS (Open Source) (+1 more)
 
 ### Community 3053 - "Community 3053"
-Cohesion: 0.22
-Nodes (9): blurb, id, key, name, partype, tags, title, version (+1 more)
+Cohesion: 0.08
+Nodes (32): buildUserMessage(), callGoogleAI(), callProvider(), CEREBRAS_CONFIGS, CEREBRAS_KEYS, CEREBRAS_MODELS, containsAny(), DeepWhyExpectations (+24 more)
 
 ### Community 3054 - "Community 3054"
 Cohesion: 0.22
@@ -12316,12 +13078,12 @@ Cohesion: 0.22
 Nodes (9): Commands / checks run, Current goal, Current state, Decisions made, Do not repeat, Files changed recently, Handoff, Next smallest step (+1 more)
 
 ### Community 3057 - "Community 3057"
-Cohesion: 0.22
-Nodes (9): 30 API Keys — 6 Providers, AI Tools, Automation Scripts (18 total), CLI Quick Reference, Dashboard Dependencies (Installed), Hardware — 4 Devices, Python Config (pyproject.toml), Section 3: Build Specs & Tech Stack (+1 more)
+Cohesion: 0.08
+Nodes (32): buildUserMessage(), callGoogleAI(), callProvider(), CEREBRAS_CONFIGS, CEREBRAS_KEYS, CEREBRAS_MODELS, containsAny(), DeepWhyExpectations (+24 more)
 
 ### Community 3058 - "Community 3058"
-Cohesion: 0.25
-Nodes (7): Current Status, Evolution of Decisions, Known Issues, Next Validation Step, Progress — Status and Milestones, What's Left To Build, What Works
+Cohesion: 0.10
+Nodes (31): buildVariantRunes(), cachedItems, cachedRunes, cachedSpells, EnrichedBuildInput, enrichItemFromRaw(), enrichRuneFromRaw(), enrichSpellFromRaw() (+23 more)
 
 ### Community 3059 - "Community 3059"
 Cohesion: 0.22
@@ -12332,20 +13094,20 @@ Cohesion: 0.22
 Nodes (9): 2. Output Modes, 7. Audit Mode, 8. Default Mode Rules, Beginner note, Example output, Output format, Part A — Output Depth Control, Special rule for Mel (+1 more)
 
 ### Community 3061 - "Community 3061"
-Cohesion: 0.17
-Nodes (12): 1. Dimension Map, 2. Mode Router, 3. Rigor Dial, 4. Adaptive Lens Budget, 5. Systems Dimension, 6. Prompt Review Behavior, 7. Anti-Overbuilding Check, 8. Knowledge Routing (+4 more)
+Cohesion: 0.33
+Nodes (6): UNGASIS Readiness Check Workflow, Deployment, Production, Production Candidate, Production Ready, Staging
 
 ### Community 3062 - "Community 3062"
-Cohesion: 0.29
-Nodes (7): 10. AI Quality Control, A. Hallucination spotting, B. Code verification, C. Cross-verification technique, Cross-check prompt, Hallucination check prompt, Safe code task prompt for Cline / Claude Code
+Cohesion: 0.06
+Nodes (32): type, type, type, properties, required, type, $defs, championAbilityLock (+24 more)
 
 ### Community 3063 - "Community 3063"
-Cohesion: 0.43
-Nodes (8): Portfolio & Presentation, Portfolio & Presentation, TPL-E2-060 — 📛 Portfolio project planner & packager, TPL-E2-061 — 📛 README writing, TPL-E2-062 — 📛 Case study writing, TPL-E2-063 — 📛 Public demo preparation checklist, TPL-E2-064 — 📛 LinkedIn project post writing, TPL-E2-065 — 📛 Before/after story template
+Cohesion: 0.10
+Nodes (30): buildVariantRunes(), cachedItems, cachedRunes, cachedSpells, EnrichedBuildInput, enrichItemFromRaw(), enrichRuneFromRaw(), enrichSpellFromRaw() (+22 more)
 
 ### Community 3064 - "Community 3064"
-Cohesion: 0.43
-Nodes (8): Safety & Quality, Safety & Quality, TPL-E2-080 — 📛 Security/privacy review, TPL-E2-081 — 📛 Deployment-readiness checklist, TPL-E2-082 — 📛 AI output fact-check / hallucination detection, TPL-E2-083 — 📛 Dependency/vendor risk assessment, TPL-E2-084 — 📛 Data classification review, TPL-E2-085 — 📛 Human approval gate check
+Cohesion: 0.06
+Nodes (30): additionalProperties, type, type, type, type, type, description, type (+22 more)
 
 ### Community 3065 - "Community 3065"
 Cohesion: 0.32
@@ -12460,8 +13222,8 @@ Cohesion: 0.25
 Nodes (8): Engine: Universal Gold Skeleton App Engine, Goal, Output Requirements, Safety Notes, Status System, Tool Pairing, Universal Gold Skeleton Layers, Use When
 
 ### Community 3093 - "Community 3093"
-Cohesion: 0.29
-Nodes (7): 23. Mini Prompt Library for Daily Use, A. Explain like a beginner, B. Turn notes into an SOP, C. Turn an idea into a project brief, D. Ask for a beginner checklist, E. Ask for a safe code task, F. Create a session handoff
+Cohesion: 0.13
+Nodes (14): 1. How to Read This Matrix, 2. Scoring Legend, 3. UNGASIS Decision Matrix, 4. Best Default Choice by Situation, 5. Recommended Beginner Routing Flow, 6. Anti-Bloat Decision Test, 7. Human Approval Gates, 8. UNGASIS Recommendation (+6 more)
 
 ### Community 3094 - "Community 3094"
 Cohesion: 0.29
@@ -12472,8 +13234,8 @@ Cohesion: 0.29
 Nodes (7): Data Level Quick Guide, How to Use This SOP Library, SOP Index, The 5-step beginner loop, UNGASIS Content Module: Full SOP Library, Universal Safety Rules, Universal SOP Helper Prompt
 
 ### Community 3096 - "Community 3096"
-Cohesion: 0.48
-Nodes (7): Monetization & Business, Monetization & Business, TPL-E2-066 — 📛 Monetization readiness assessment, TPL-E2-067 — 📛 Offer design & pricing research, TPL-E2-068 — 📛 Landing page copy, TPL-E2-069 — 📛 Beta tester feedback collection, TPL-E2-070 — 📛 Waitlist / interest form setup
+Cohesion: 0.13
+Nodes (15): 24.5C: MASTER TOOL MAP (14 Categories — Verified May 2026), 🤖 AI App Builders (Prompt-to-App), 📊 Analytics & User Feedback, ⚡ Automation / Workflows, 🗄️ Backend / Database / Auth, 🛡️ Customer Support, 🚀 Deployment / Hosting, 📖 Documentation & Learning (+7 more)
 
 ### Community 3097 - "Community 3097"
 Cohesion: 0.29
@@ -12492,8 +13254,8 @@ Cohesion: 0.29
 Nodes (6): aiProjectOsNotes, permissions, allow, ask, deny, $schema
 
 ### Community 3101 - "Community 3101"
-Cohesion: 0.29
-Nodes (5): Auto-Research Loop Skill, Process, Stop conditions, Process, Stop conditions
+Cohesion: 0.15
+Nodes (12): AI Reasoning Accuracy Sprint — Remaining Tasks, BEGIN, CONTEXT, REMAINING TASKS (in order), RiftCoach — Phase 5.0 Kickoff (Continuation), RULES, Task 2: Fix Cascade Validation (CRITICAL — do this FIRST), Task 3: Database Cross-Check (+4 more)
 
 ### Community 3102 - "Community 3102"
 Cohesion: 0.29
@@ -12608,20 +13370,20 @@ Cohesion: 0.29
 Nodes (7): 3-Zone Budget (per quest, configurable), API Key Health Check Procedure, API Key Health Check Procedure, Gap 3: Token Efficiency Protocol (Medium), Quick Status Table (maintain monthly), Session Flow, Token-Saving Rules
 
 ### Community 3130 - "Community 3130"
-Cohesion: 0.18
-Nodes (10): App Building v7, De-Fabrication / Reverse Engineering, Google AI Studio / Gemini App Factory, Lossless Evolution Rule, Microsoft Power Suite Mode, Reasoning Quality Layer, UNGASIS Baseline Lock, UNGASIS — Project Instructions You are UNGASIS: Unified Neural Guidance and Strategic Intelligence System. Subtitle: Prompt Architect OS — Adaptive Intelligence Kernel. Purpose: help the user navigate ideas, build systems, decide better, learn slowly, and turn rough thoughts into usable outputs. ## Prime Rule Default mode is PROMPT REVIEW: review, score, and rebuild the user’s request. Do NOT answer the underlying task unless the user clearly says: run it, answer it now, execute, do it, build it, create the file/artifact, use the upgraded prompt, or similar. Use simple English, short steps, patient teaching, analogies, and diagrams when useful. ## Required Prompt Review Format Every normal prompt review starts with: # Prompt Diagnostic ## Verdict - Status: PASS / ACCEPTABLE or FAIL / NEEDS REVISION - Simple reason: - Can be used as-is?: Yes / No ## What this means Beginner-friendly explanation. ## Easy analogy One simple analogy. ## UNGASIS Trace Mode: Rigor: Domain: Dimensions: Lenses: Intelligences: Frameworks: Engines: Tools/Files: Guardrails: Template: ## Classification Task type, complexity, risk, missing info, likely failure mode. ## Scorecard Score /10 with one simple fix for: Clarity, Context, Boundaries, Output format, Expert framing, Checking, Model fit. ## Top Fixes 1. 2. 3. # Rebuilt Prompt Give one clean copy-paste prompt with: expert stance, objective, context, inputs, limits, process, output format, quality bar, question policy, assumption policy, verification checklist. # Why this rebuilt prompt is better Explain simply. # Suggested Learning Aids Suggest one only when useful: image, canvas, prototype, worksheet, quiz, checklist, slide, PDF, sheet, or HTML. # Model + Effort Recommendation Best: Fallback: Upgrade trigger: Why: # Mini Check Tiny understanding check when useful. # Final Check End every prompt review with exactly: Do you want me to run this upgraded prompt now? ## Trace Rule Include the short UNGASIS Trace above for every review or executed task. List only relevant items. If none, say “None.” If asked “show full trace,” expand with modules/components and why selected. Never claim a tool/file/skill was used if only recommended. ## 16-Dimension Map Router; Rigor Dial; Lenses/Personas; Systems; Intelligences; Frameworks; Engines/Skills; Knowledge; Memory; Tools/Integrations; Templates; Guardrails; Evaluation; Artifacts; Maintenance; OS Evolution/Self-Update. ## Rigor Dial Before large/strict answers, classify stage: personal, private, prototype, private beta, public MVP, commercial, or high-risk/regulated. Use Minimum Viable Rigor: enough structure to be safe/useful, not so much it slows the user down. For personal/private/prototype: fast usable output, simple steps, next 3–7 actions, local-first/manual/no-code/simple prototype paths, light safety checks, no enterprise architecture/heavy compliance/long citations/big risk registers unless asked. For public/commercial/high-risk: increase safety, legal, privacy, security, QA, testing, monitoring, citations, and expert review. If unclear, assume personal/prototype and state it. ## Adaptive Lens Budget Use the fewest lenses needed. Start with: personal/prototype = 1–3; serious build/strategy = 3–5; public/commercial/high-risk = expand as needed. Add a lens only if it materially improves safety, completeness, or usefulness. Do not activate every archetype. ## Student / Master Teacher Mode Use: Simple idea → Easy example → Step-by-step → Why → Check. Good Prompt = Clear Job + Background + Rules + Output Shape + Check. Never shame the user. Never say “this is easy.” Define hard words in parentheses. ## Research / Current Facts For research, current facts, scientific claims, AI/tools, software, regulations, pricing, markets, competitors, game patches, current events, or niche facts: use web when available, prefer primary sources, cite sources, separate facts/assumptions/hypotheses/opinions/uncertainty, and do not present old knowledge as current. ## Core Engines Use the uploaded Engine Kernel for all engines. Activate only relevant engines. Never activate every engine by default. ## Guardrails Be careful with legal, tax, medical, nutrition, finance, security, employment, and safety. Do not act as a lawyer, doctor, CPA, dietitian, or guaranteed advisor. Recommend qualified review for high-stakes decisions. Never help deception, fraud, bribery, obstruction, witness tampering, tax evasion, credential theft, unsafe autonomy, coercive manipulation, scams, or unethical loopholes. ## Culinary / Vibe-Cooker For cooking, recipes, ingredients, food science, nutrition education, culinary apps, or food-tech, classify personal/private/prototype vs public/commercial. Personal/private: keep lightweight. Use flow: available ingredients → goal/taste → essential safety check → recipe idea → cooking steps → taste improvement → save notes. Essential guardrails: allergies, raw meat/seafood/eggs, spoilage, cross-contamination, storage/reheating, heat/fire, “AI may be wrong.” Public/commercial: add food safety, nutrition education, culture/source/provenance, copyright/licensing, QA, review workflow, legal risk. Never claim food cures disease, encourage unsafe handling, or copy copyrighted recipes. Cite current food safety/nutrition/legal/source claims when used. ## App-Building / Gold Skeleton For app prompts, use the Universal Gold Skeleton Key from uploaded files. Every app should include research/data acquisition, database, backend/services, API/action bridge, AI/RAG, automation/orchestration, connectors, analytics/BI/visualizations, Design Excellence, QA/security, deployment, docs, and evolution as Active/Stub/Blueprint/Deferred by Rigor Dial. Design toward UI-ready, API-ready, agent-ready, prototype-first, secure-by-default, local-first, provider-agnostic, integration-ready. Personal prototypes stay light; public/commercial/high-risk apps get full rigor. ## Design Excellence Every app needs creative direction, UX architecture, UI design system, frontend component plan, responsive/accessibility basics, component states, motion/microinteractions, and visual QA. Gold Skeletons must feel polished, modern, usable, and globally competitive, not like rough demos. ## Tools / Artifacts Recommend tools only when useful: Project files, file upload, web/deep research, canvas, agent mode, image creation, data/sheets, docs/slides, prototype/HTML/React, Google AI Studio, Claude Code. Never claim a tool was used if only recommended. ## Knowledge / Memory Use uploaded files as reference. Apply only relevant modules. Do not dump file content or mention irrelevant files. Prefer latest manifest when files conflict. ## OS Evolution Notice repeated gaps, missing modules, bad rigor, user corrections, failed tests, or recurring needs. Recommend exact update patch, target file, manifest update, and test prompt. Do not claim UNGASIS updated itself until user approves and uploads/pastes. ## Execution Mode When user clearly asks to run/execute/do it: follow upgraded prompt, state assumptions, use sources for current facts, give useful result, ask few questions, proceed safely. ## Quality Bar Every answer must be clear, practical, structured, safe, honest, beginner-friendly, testable, specific, and not overconfident. (+2 more)
+Cohesion: 0.40
+Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 09 - Creating a UX Flow, Steps
 
 ### Community 3131 - "Community 3131"
-Cohesion: 0.22
-Nodes (8): Conventions Established, Decisions Made, MEMORY.md — Agent Learning Log, Mistakes & Corrections, Patterns Discovered, Things That Worked Well, Things To Avoid, Tools & Models Performance
+Cohesion: 0.07
+Nodes (30): determination, formula, notes, base_crit_damage, ie_bonus, notes, formulas, adaptive_force (+22 more)
 
 ### Community 3132 - "Community 3132"
-Cohesion: 0.52
-Nodes (6): Analogy, Approval record, Feynman, Human Approval Gates, Must ask before, Rule
+Cohesion: 0.40
+Nodes (5): Memory Module: App-Embedded UNGASIS Decision Log, Memory Module: Microsoft Solution Decision Log, Memory Module: Research Memory Card, UNGASIS v7.0 Update — Research OS + Microsoft Power Suite Expansion, v7 Memory / Knowledge Additions
 
 ### Community 3133 - "Community 3133"
-Cohesion: 0.25
-Nodes (8): Active Projects, Builder Profile — Mel John Dimat, Communication Preferences, Design Preferences, Identity, Learning Style, Tech Context, What NOT To Do
+Cohesion: 0.07
+Nodes (26): v0_7_note, builds, meta, archetypes, coverage, generated, patch, schema_version (+18 more)
 
 ### Community 3134 - "Community 3134"
 Cohesion: 0.29
@@ -12648,8 +13410,8 @@ Cohesion: 0.29
 Nodes (9): Any, float, str, parse_stat(), Normalize item name into a safe snake_case ID., Parse stat text like '+55 Attack Damage' into standardized key and numeric value, Scrape all items from wr-meta.com/items/ and normalize the output., scrape_items() (+1 more)
 
 ### Community 3140 - "Community 3140"
-Cohesion: 0.25
-Nodes (8): Required Patch Format, Test Prompt, Update Trigger, v4 OS Evolution Addition: Trace and Compression Update, Required Patch Format, Test Prompt, Update Trigger, v4 OS Evolution Addition: Trace and Compression Update
+Cohesion: 0.07
+Nodes (26): additionalProperties, type, description, type, $id, type, properties, confidence (+18 more)
 
 ### Community 3141 - "Community 3141"
 Cohesion: 0.29
@@ -12676,8 +13438,8 @@ Cohesion: 0.48
 Nodes (6): Task Prompt Template, Acceptance Criteria, Approach, Constraints, Task, Task Prompt Template
 
 ### Community 3147 - "Community 3147"
-Cohesion: 0.29
-Nodes (7): Rigor Calibration, Router Module: Design Excellence Gate, Router Module: Universal Gold Skeleton Activation, Routing Rule, UNGASIS v5 Update — Universal Gold Skeleton + Design Excellence, Universal Gold Skeleton Status Levels, Use When
+Cohesion: 0.07
+Nodes (26): additionalProperties, type, description, type, $id, type, type, type (+18 more)
 
 ### Community 3148 - "Community 3148"
 Cohesion: 0.29
@@ -12700,8 +13462,8 @@ Cohesion: 0.33
 Nodes (6): 🍳 Analogy: The Grilling Phase, Before/After Comparison, Copy-Paste Grill Me Prompt, Grilling Done Checklist, Step 01-B — Grilling Phase (Mandatory Before Step 02), When to Grill vs When to Skip
 
 ### Community 3153 - "Community 3153"
-Cohesion: 0.33
-Nodes (6): 11. Pattern 7 — Iteration Pattern, Beginner example, Copy-paste template, Simple loop, What it is, Why it works
+Cohesion: 0.08
+Nodes (26): additionalProperties, items, type, type, $id, type, type, properties (+18 more)
 
 ### Community 3154 - "Community 3154"
 Cohesion: 0.33
@@ -12716,8 +13478,8 @@ Cohesion: 0.33
 Nodes (5): Guardrails, Process, Spec-First Builder, Spec must include, v5 spec-as-artifact rule
 
 ### Community 3157 - "Community 3157"
-Cohesion: 0.29
-Nodes (7): 1. Your 7 Starter Actions, 2. One-Sentence Idea Formula, 3. 30-Day Roadmap Overview, Do not build yet, Example, Golden rule, UNGASIS Content Module: 30-Day Roadmap + Next 7 Actions
+Cohesion: 0.08
+Nodes (25): builds, meta, archetypes, coverage, generated, patch, schema_version, source (+17 more)
 
 ### Community 3158 - "Community 3158"
 Cohesion: 0.33
@@ -12848,12 +13610,12 @@ Cohesion: 0.33
 Nodes (5): Feynman explanation, Layman analogy, Original compact protocol, Revised active protocol, Shared State Protocol
 
 ### Community 3190 - "Community 3190"
-Cohesion: 0.47
-Nodes (5): Behaviour, Purpose, Subagent: Reviewer, Subagent: Reviewer, Subagent Protocol
+Cohesion: 0.40
+Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 08 - Creating a Lightweight PRD, Steps
 
 ### Community 3191 - "Community 3191"
-Cohesion: 0.33
-Nodes (6): UNGASIS Readiness Check Workflow, Deployment, Production, Production Candidate, Production Ready, Staging
+Cohesion: 0.50
+Nodes (4): Full Trace Optional, Rules, Short Trace, Template: UNGASIS Trace
 
 ### Community 3192 - "Community 3192"
 Cohesion: 0.33
@@ -12896,8 +13658,8 @@ Cohesion: 0.15
 Nodes (13): Before Writing Any Blueprint, READ These Files:, Blueprint Generation Process, Handoff Rules, Personality, Safety Rules, Step 1: UNDERSTAND, Step 2: RESEARCH, Step 3: DECOMPOSE (+5 more)
 
 ### Community 3202 - "Community 3202"
-Cohesion: 0.33
-Nodes (6): Do not repeat, Owner, User Profile, Working style, Constraint History, Constraint Log
+Cohesion: 0.08
+Nodes (25): builds, meta, archetypes, coverage, generated, patch, schema_version, source (+17 more)
 
 ### Community 3203 - "Community 3203"
 Cohesion: 0.40
@@ -12964,8 +13726,8 @@ Cohesion: 0.40
 Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 14 - Debugging Blank Page Errors, Steps
 
 ### Community 3219 - "Community 3219"
-Cohesion: 0.40
-Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 16 - Checking Accessibility, Steps
+Cohesion: 0.50
+Nodes (4): 7. 🔄 Beginner Git Workflow, 7A. Daily Workflow (The 4-Command Routine), 7B. Before Big Changes (From Playbook §17), 7C. Workflow Checklist
 
 ### Community 3220 - "Community 3220"
 Cohesion: 0.40
@@ -13029,7 +13791,7 @@ Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 08 - Cr
 
 ### Community 3235 - "Community 3235"
 Cohesion: 0.40
-Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 09 - Creating a UX Flow, Steps
+Nodes (5): 15. How to Save and Version Prompts, Beginner rule, Prompt file template, Recommended folder structure, Version naming rule
 
 ### Community 3236 - "Community 3236"
 Cohesion: 0.40
@@ -13112,8 +13874,8 @@ Cohesion: 0.40
 Nodes (4): Blockers, Implementation notes, Task list, Tasks: [Feature Name]
 
 ### Community 3256 - "Community 3256"
-Cohesion: 0.40
-Nodes (4): Auto-Research Loop, Steps, Auto-Research Loop Purpose, Steps
+Cohesion: 0.27
+Nodes (12): Definitions, Evaluation Questions, Failure Modes, Framework: Active / Stub / Blueprint / Deferred, Framework: Automation / Orchestration Planning, Framework: Design Benchmark Adaptation, Framework: Design Excellence Framework, Framework ID (+4 more)
 
 ### Community 3257 - "Community 3257"
 Cohesion: 0.40
@@ -13484,8 +14246,8 @@ Cohesion: 0.40
 Nodes (5): Failure Modes, Framework ID, Framework: Universal Gold Skeleton Key, Main Idea, Process
 
 ### Community 3349 - "Community 3349"
-Cohesion: 0.40
-Nodes (5): Memory Module: App-Embedded UNGASIS Decision Log, Memory Module: Microsoft Solution Decision Log, Memory Module: Research Memory Card, UNGASIS v7.0 Update — Research OS + Microsoft Power Suite Expansion, v7 Memory / Knowledge Additions
+Cohesion: 0.50
+Nodes (4): Security Notes Workflow, API Key, Secret, Token
 
 ### Community 3350 - "Community 3350"
 Cohesion: 0.40
@@ -13652,8 +14414,8 @@ Cohesion: 0.40
 Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 21 - Preparing Private Beta, Steps
 
 ### Community 3391 - "Community 3391"
-Cohesion: 0.40
-Nodes (5): 12. Pattern 8 — Decomposition Pattern, Beginner example, Copy-paste template, What it is, Why it works
+Cohesion: 0.08
+Nodes (25): additionalProperties, type, type, properties, required, type, $id, properties (+17 more)
 
 ### Community 3392 - "Community 3392"
 Cohesion: 0.40
@@ -13664,8 +14426,8 @@ Cohesion: 0.40
 Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 23 - Reviewing Automation Safety, Steps
 
 ### Community 3394 - "Community 3394"
-Cohesion: 0.40
-Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 24 - Preparing a Monetization Test, Steps
+Cohesion: 0.08
+Nodes (24): Boots, Defense, Enchant, Magic, Physical, Support, anti_armor, crit_onhit (+16 more)
 
 ### Community 3395 - "Community 3395"
 Cohesion: 0.40
@@ -13852,8 +14614,8 @@ Cohesion: 0.40
 Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 21 - Preparing Private Beta, Steps
 
 ### Community 3441 - "Community 3441"
-Cohesion: 0.29
-Nodes (7): 12. Copy-Paste Prompt Pack, Prompt 1 — Planner AI, Prompt 2 — Builder AI, Prompt 3 — Reviewer AI, Prompt 4 — Owner decision memo, Prompt 5 — Session handoff, Prompt 6 — AI confusion recovery
+Cohesion: 0.08
+Nodes (24): additionalProperties, type, $id, type, type, properties, edge_id, interaction (+16 more)
 
 ### Community 3442 - "Community 3442"
 Cohesion: 0.40
@@ -13896,8 +14658,8 @@ Cohesion: 0.40
 Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 30 - Deploying to Cloudflare Pages from GitHub, Steps
 
 ### Community 3452 - "Community 3452"
-Cohesion: 0.40
-Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 02 - Naming Files and Folders, Steps
+Cohesion: 0.67
+Nodes (3): CI Workflow, CI, GitHub Actions
 
 ### Community 3453 - "Community 3453"
 Cohesion: 0.40
@@ -13908,8 +14670,8 @@ Cohesion: 0.40
 Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 06 - Saving and Organizing Sources, Steps
 
 ### Community 3455 - "Community 3455"
-Cohesion: 0.40
-Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 08 - Creating a Lightweight PRD, Steps
+Cohesion: 0.67
+Nodes (3): UNGASIS Instruction Hierarchy, UNGASIS Index, UNGASIS Master Guide v3
 
 ### Community 3456 - "Community 3456"
 Cohesion: 0.40
@@ -13952,8 +14714,8 @@ Cohesion: 0.50
 Nodes (4): 11. Pricing Research Basics, Beginner Pricing Tips, How to Figure Out What to Charge, Pricing Mental Models
 
 ### Community 3466 - "Community 3466"
-Cohesion: 0.50
-Nodes (4): 7. 🔄 Beginner Git Workflow, 7A. Daily Workflow (The 4-Command Routine), 7B. Before Big Changes (From Playbook §17), 7C. Workflow Checklist
+Cohesion: 0.67
+Nodes (3): 5. 📁 Reusable Project Scaffold, File Purpose Table, Standard Folder Structure
 
 ### Community 3467 - "Community 3467"
 Cohesion: 0.50
@@ -14184,8 +14946,8 @@ Cohesion: 0.50
 Nodes (4): Intelligence ID, Intelligence: Research and Data Acquisition Intelligence, Purpose, Questions
 
 ### Community 3524 - "Community 3524"
-Cohesion: 0.50
-Nodes (4): Guardrail Module: Design and Accessibility Guardrails, Quality Warning, Rules, Use When
+Cohesion: 0.40
+Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 16 - Checking Accessibility, Steps
 
 ### Community 3525 - "Community 3525"
 Cohesion: 0.50
@@ -14216,36 +14978,36 @@ Cohesion: 0.50
 Nodes (3): Beginner explanation, Layman analogy, VERSION_MANIFEST Patch
 
 ### Community 3532 - "Community 3532"
-Cohesion: 0.22
-Nodes (8): Compression-by-Reference Rule, Purpose, Short Trace Fields, Trace Rules, UNGASIS v4 Update Note, UNGASIS v7.0 Update — Research OS + Microsoft Power Suite Expansion, v4 Module: UNGASIS Trace Routing, v7 Current vs Final State
+Cohesion: 0.06
+Nodes (30): Compression-by-Reference Rule, Purpose, Rigor Calibration, Router Module: De-Fabrication, Router Module: Design Excellence Gate, Router Module: Evidence Risk / Source Quality, Router Module: Excel/Office-First, Router Module: Fabric / Power BI (+22 more)
 
 ### Community 3533 - "Community 3533"
-Cohesion: 0.25
-Nodes (8): 11. The UNGASIS Backup Checklist, 🤖 AI & Prompts, ☁️ Cloud & Hosting, 💻 Code & Version Control, 🗄️ Data, 📝 Documentation, 🔄 Restore Readiness, 🔑 Secrets & Keys
+Cohesion: 0.67
+Nodes (3): Build Rules, Copy-Paste BUILD Prompt (for Cline), Step 3: 🔨 BUILD — AI Builds While I Review
 
 ### Community 3534 - "Community 3534"
 Cohesion: 0.50
 Nodes (3): data, type, version
 
 ### Community 3535 - "Community 3535"
-Cohesion: 0.50
-Nodes (4): Security Notes Workflow, API Key, Secret, Token
+Cohesion: 0.67
+Nodes (3): 7. Layer 5 — Code / Development Level, Layer 5 `.clinerules` Starter, Layer 5 Recommended Repo Files
 
 ### Community 3536 - "Community 3536"
 Cohesion: 0.50
 Nodes (4): 8. Backup Schedule Recommendation, For Active Projects (Currently Building), For Inactive Projects (Completed/Paused), Simple Backup Calendar
 
-### Community 3537 - "Community 3537"
-Cohesion: 0.50
-Nodes (4): 8. 🔙 How to Recover from Mistakes, Decision Table: Which Recovery Command?, 🚨 Emergency: I Committed a Secret!, Recovery Commands (Copy-Paste Ready)
-
 ### Community 3538 - "Community 3538"
 Cohesion: 0.33
 Nodes (5): Constraints, Do not repeat, Owner, User Profile, Working style
 
+### Community 3539 - "Community 3539"
+Cohesion: 0.08
+Nodes (24): additionalProperties, type, description, type, type, $id, type, type (+16 more)
+
 ### Community 3540 - "Community 3540"
-Cohesion: 0.33
-Nodes (6): Blueprint-First Rule (Added June 2026), Commander Integration (Added Sprint F19), Purpose, Rules, Self-Healing Build Loop, The Loop
+Cohesion: 0.08
+Nodes (24): additionalProperties, type, $id, type, type, properties, edge_id, interaction (+16 more)
 
 ### Community 3554 - "Community 3554"
 Cohesion: 0.67
@@ -14280,8 +15042,8 @@ Cohesion: 0.67
 Nodes (3): 7. ✅ Quality Gate Automation, Quick Reference Card, The Quality Gate Checklist
 
 ### Community 3562 - "Community 3562"
-Cohesion: 0.67
-Nodes (3): 2. What to Backup Regularly, API Key Inventory Template, Complete Backup Inventory
+Cohesion: 0.40
+Nodes (5): 12. Pattern 8 — Decomposition Pattern, Beginner example, Copy-paste template, What it is, Why it works
 
 ### Community 3563 - "Community 3563"
 Cohesion: 0.67
@@ -14312,16 +15074,12 @@ Cohesion: 0.67
 Nodes (3): 5. 🚫 What to NEVER Commit, 🔑 The Golden Rule, ⛔ The NEVER List
 
 ### Community 3572 - "Community 3572"
-Cohesion: 0.25
-Nodes (8): 11. The UNGASIS Backup Checklist, 🤖 AI & Prompts, ☁️ Cloud & Hosting, 💻 Code & Version Control, 🗄️ Data, 📝 Documentation, 🔄 Restore Readiness, 🔑 Secrets & Keys
+Cohesion: 0.50
+Nodes (3): changes, patch, scraped_at
 
 ### Community 3573 - "Community 3573"
-Cohesion: 0.67
-Nodes (3): 5. 📁 Reusable Project Scaffold, File Purpose Table, Standard Folder Structure
-
-### Community 3574 - "Community 3574"
-Cohesion: 0.67
-Nodes (3): Build Rules, Copy-Paste BUILD Prompt (for Cline), Step 3: 🔨 BUILD — AI Builds While I Review
+Cohesion: 0.40
+Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 24 - Preparing a Monetization Test, Steps
 
 ### Community 3575 - "Community 3575"
 Cohesion: 0.39
@@ -14332,95 +15090,2871 @@ Cohesion: 0.38
 Nodes (6): Any, str, classify_change(), Classify the change type as buff, nerf, or adjust based on notes and details tex, Scrape and structure champion balance updates from wildriftfire.com/patch-notes., scrape_patch()
 
 ### Community 3607 - "Community 3607"
-Cohesion: 0.29
-Nodes (7): Rigor Calibration, Router Module: Design Excellence Gate, Router Module: Universal Gold Skeleton Activation, Routing Rule, UNGASIS v5 Update — Universal Gold Skeleton + Design Excellence, Universal Gold Skeleton Status Levels, Use When
+Cohesion: 0.40
+Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 02 - Naming Files and Folders, Steps
 
 ### Community 3608 - "Community 3608"
-Cohesion: 0.40
-Nodes (5): Compression-by-Reference Rule, Purpose, Short Trace Fields, Trace Rules, v4 Module: UNGASIS Trace Routing
+Cohesion: 0.08
+Nodes (25): feature_modules, data_sources, desc, output, data_sources, desc, output, data_sources (+17 more)
 
-### Community 3610 - "Community 3610"
-Cohesion: 0.67
-Nodes (3): 7. Layer 5 — Code / Development Level, Layer 5 `.clinerules` Starter, Layer 5 Recommended Repo Files
+### Community 3612 - "Community 3612"
+Cohesion: 0.08
+Nodes (25): burn_damage, elder_immolation, execute_threshold, buff_effects, notes, respawn_timer, spawn_condition, objectives (+17 more)
 
 ### Community 3613 - "Community 3613"
-Cohesion: 0.33
-Nodes (5): Output Format, /quality-auditor — Quality Audit Workflow, Safety, Steps, When to Use
+Cohesion: 0.08
+Nodes (23): additionalProperties, type, type, type, type, $id, type, properties (+15 more)
 
 ### Community 3614 - "Community 3614"
-Cohesion: 0.33
-Nodes (5): 📈 Champion Stats Changes, 🗡️ Item Changes, 🔮 Rune Changes, Scrape Run — 2026-06-03 11:07:34 UTC, ⚡ Summoner Spell Changes
+Cohesion: 0.29
+Nodes (7): 📈 Champion Stats Changes, 📈 Champion Stats Changes, 🗡️ Item Changes, 🔮 Rune Changes, Scrape Run — 2026-06-03 11:07:34 UTC, Scrape Run — 2026-06-03 18:43:58 UTC, ⚡ Summoner Spell Changes
 
 ### Community 3615 - "Community 3615"
-Cohesion: 0.40
-Nodes (5): Memory Module: App-Embedded UNGASIS Decision Log, Memory Module: Microsoft Solution Decision Log, Memory Module: Research Memory Card, UNGASIS v7.0 Update — Research OS + Microsoft Power Suite Expansion, v7 Memory / Knowledge Additions
+Cohesion: 0.50
+Nodes (4): Guardrail Module: Design and Accessibility Guardrails, Quality Warning, Rules, Use When
 
 ### Community 3616 - "Community 3616"
-Cohesion: 0.40
-Nodes (5): 7. Pattern 3 — Constraint Pattern, Beginner example, Copy-paste template, What it is, Why it works
+Cohesion: 0.08
+Nodes (23): slot_1, slot_2, slot_3, keystones, slot_1, slot_2, slot_3, primary_paths (+15 more)
 
 ### Community 3617 - "Community 3617"
-Cohesion: 0.40
-Nodes (5): 9. AI Operating Models by Work Type, A. App building, B. Research, C. Coding, D. Microsoft 365 work
+Cohesion: 0.08
+Nodes (23): inventory_slots, layout, named_uniques, purchase_restriction, sell_ratio, support_layout, unique_passives, items (+15 more)
 
 ### Community 3618 - "Community 3618"
 Cohesion: 0.50
 Nodes (3): changes, patch, scraped_at
 
+### Community 3619 - "Community 3619"
+Cohesion: 0.17
+Nodes (11): AI Integration, AppForge AI — Skills & Persona Definition v1, Architecture Patterns, COMMUNICATION STYLE, Core Stack, CRITICAL RULES, Data Engineering, DevOps & Tooling (+3 more)
+
+### Community 3620 - "Community 3620"
+Cohesion: 0.17
+Nodes (11): BEGIN, Phase 5.5: Provider Expansion, PRODUCTION PIPELINE, REMAINING TASKS, RiftCoach — Phase 5.0 Kickoff (Continuation), Task 2: Cascade Validation (5-line fix), Task 3: Database Cross-Check, Task 4: Test 5 Champions (+3 more)
+
+### Community 3621 - "Community 3621"
+Cohesion: 0.17
+Nodes (12): 18B. Caveman Mode — Emergency Token Saver 🦴, 🍳 Analogy: When to Talk Normal vs Caveman, Before/After Example, Caveman Mode Quick Reference Card, Combining Caveman Mode with Other Token Savers, 🦴 Copy-Paste Activation Prompt, 🗣️ Copy-Paste Deactivation Prompt, More Before/After Examples for Your Work (+4 more)
+
+### Community 3622 - "Community 3622"
+Cohesion: 0.18
+Nodes (10): Current Product Stage, How It Should Work, Problems Solved, Product Context — Why UNGASIS Exists, Product Promise, Simple Analogy, Target User, User Experience Goals (+2 more)
+
+### Community 3623 - "Community 3623"
+Cohesion: 0.20
+Nodes (7): Antigravity CLI Configuration, CI Workflow, UNGASIS Readiness CI, T-005: Run real GitHub Actions after upload, Antigravity CLI Configuration, Cline Agents Config, UNGASIS Copilot Instructions
+
+### Community 3714 - "Community 3714"
+Cohesion: 0.09
+Nodes (23): q, value, base_slow, mantra_slow_percent_by_rank, ability_type, active_effects, brief_description, crowd_control_types (+15 more)
+
+### Community 3719 - "Community 3719"
+Cohesion: 0.50
+Nodes (4): 8. 🔙 How to Recover from Mistakes, Decision Table: Which Recovery Command?, 🚨 Emergency: I Committed a Secret!, Recovery Commands (Copy-Paste Ready)
+
+### Community 3721 - "Community 3721"
+Cohesion: 0.15
+Nodes (22): Champion, compact(), CounterEntry, dataCache, DataChunk, estimateTokens(), Item, loadJSON() (+14 more)
+
+### Community 3732 - "Community 3732"
+Cohesion: 0.67
+Nodes (3): 2. What to Backup Regularly, API Key Inventory Template, Complete Backup Inventory
+
 ### Community 3780 - "Community 3780"
-Cohesion: 0.40
-Nodes (5): Easy analogy, Start Here, What it is not, What this is, What to do first
+Cohesion: 0.09
+Nodes (22): exact_claim_policy, generated_at_utc, runtime_exclusions, source_counts, canonical_abilities, canonical_champions, canonical_champions_active_runtime, canonical_champions_total_including_excluded_source_records (+14 more)
+
+### Community 3781 - "Community 3781"
+Cohesion: 0.20
+Nodes (9): ATTACHED FILES (read ALL before responding), CONTEXT — WHERE WE ARE, Multi-Agent Parallel Reasoning + Champion Build Lab, PHASE 6.0 TASK LIST (in order), RiftCoach — Phase 6.0 Kickoff, Task 6.0-1: Split Reasoning Into 5 Micro-Agent Functions, Task 6.0-2: Promise.all() Orchestrator, WHO I AM (+1 more)
+
+### Community 3787 - "Community 3787"
+Cohesion: 0.09
+Nodes (23): counts, canonical_abilities, canonical_champions, canonical_champions_active_runtime, canonical_champions_total_including_excluded_source_records, canonical_items, canonical_runes, canonical_spells (+15 more)
 
 ### Community 3876 - "Community 3876"
-Cohesion: 0.29
-Nodes (6): OS Update Recommendation, Approval needed, Observed gap, Proposed change, Test prompt, Trigger
+Cohesion: 0.09
+Nodes (22): additionalProperties, items, type, type, description, type, type, $id (+14 more)
 
 ### Community 3877 - "Community 3877"
-Cohesion: 0.40
+Cohesion: 0.53
 Nodes (4): AbilitiesData, AbilityData, ChampionData, ChampionStats
 
+### Community 3878 - "Community 3878"
+Cohesion: 0.22
+Nodes (9): 30 API Keys — 6 Providers, AI Tools, Automation Scripts (18 total), CLI Quick Reference, Dashboard Dependencies (Installed), Hardware — 4 Devices, Python Config (pyproject.toml), Section 3: Build Specs & Tech Stack (+1 more)
+
 ### Community 3879 - "Community 3879"
+Cohesion: 0.09
+Nodes (22): additionalProperties, description, type, type, $id, type, properties, explain (+14 more)
+
+### Community 3880 - "Community 3880"
 Cohesion: 0.29
-Nodes (6): Risk and Safety, AI reliability, Approval required before, Automation safety, Safety posture, Secrets handling
+Nodes (7): 23. Mini Prompt Library for Daily Use, A. Explain like a beginner, B. Turn notes into an SOP, C. Turn an idea into a project brief, D. Ask for a beginner checklist, E. Ask for a safe code task, F. Create a session handoff
 
-### Community 3881 - "Community 3881"
+### Community 3887 - "Community 3887"
 Cohesion: 0.29
-Nodes (6): Inputs inspected, Major additions, Merge strategy, Removed or avoided, Verification, v5 Merge Audit
+Nodes (7): 12. Copy-Paste Prompt Pack, Prompt 1 — Planner AI, Prompt 2 — Builder AI, Prompt 3 — Reviewer AI, Prompt 4 — Owner decision memo, Prompt 5 — Session handoff, Prompt 6 — AI confusion recovery
 
-### Community 3889 - "Community 3889"
-Cohesion: 0.33
-Nodes (5): Merge Audit, Deduplication decisions, Gaps found and patched, Inputs inspected, v5 note
+### Community 3888 - "Community 3888"
+Cohesion: 0.29
+Nodes (7): 1. Your 7 Starter Actions, 2. One-Sentence Idea Formula, 3. 30-Day Roadmap Overview, Do not build yet, Example, Golden rule, UNGASIS Content Module: 30-Day Roadmap + Next 7 Actions
 
-### Community 3893 - "Community 3893"
-Cohesion: 0.40
-Nodes (4): AI Project OS Lessons, Durable lessons, Related files, Source fidelity
+### Community 3890 - "Community 3890"
+Cohesion: 0.29
+Nodes (7): Autonomous Loop, Completion Criteria (ALL must be true), Mission Objective, Rules, Self-Iteration Protocol: Don't Stop Until Done, Speed Optimizations, Stop Conditions (ONLY stop if)
+
+### Community 3891 - "Community 3891"
+Cohesion: 0.29
+Nodes (7): 12.1 Builder Agent (Antigravity — Primary), 12.2 Commander Agent, 12.3 Blueprint Architect Agent, 12.4 Quality Auditor Agent, 12.5 Designer Agent, 12.6 Graphify Watchdog Agent, Section 12: Agent Personas & Instructions
+
+### Community 3892 - "Community 3892"
+Cohesion: 0.29
+Nodes (7): 10. AI Quality Control, A. Hallucination spotting, B. Code verification, C. Cross-verification technique, Cross-check prompt, Hallucination check prompt, Safe code task prompt for Cline / Claude Code
+
+### Community 3894 - "Community 3894"
+Cohesion: 0.29
+Nodes (6): Conversation Starters, Custom GPT Blueprint: "UNGASIS Builder", Description, Knowledge Files (Upload These), Name, WHERE TO CREATE: ChatGPT > Explore GPTs > Create a GPT
+
+### Community 3895 - "Community 3895"
+Cohesion: 0.29
+Nodes (7): Rigor Calibration, Router Module: Design Excellence Gate, Router Module: Universal Gold Skeleton Activation, Routing Rule, UNGASIS v5 Update — Universal Gold Skeleton + Design Excellence, Universal Gold Skeleton Status Levels, Use When
 
 ### Community 3896 - "Community 3896"
+Cohesion: 0.09
+Nodes (22): r, magic_damage, unit, value, slow, ap_ratio, values, ability_type (+14 more)
+
+### Community 3897 - "Community 3897"
+Cohesion: 0.33
+Nodes (6): Layer 13: Retrieval-Based Memory, Layer 14: Tool Schema Pruning, Layer 15: Compact Encoding (TOON Protocol), Layer 16: Context Decay / Stale Eviction, Layer 17: Prompt Prefix Caching (Provider-Level), Token Efficiency Layers 13-17 (Upgrade from 12-Layer System)
+
+### Community 3898 - "Community 3898"
+Cohesion: 0.16
+Nodes (21): Champion, compact(), CounterEntry, dataCache, DataChunk, estimateTokens(), Item, loadJSON() (+13 more)
+
+### Community 3899 - "Community 3899"
 Cohesion: 0.40
-Nodes (4): Researcher Notes Coverage Audit, Coverage table, Deduplication decisions, Source fidelity
+Nodes (4): pruningRules, bugfix, coding, research
+
+### Community 3900 - "Community 3900"
+Cohesion: 0.40
+Nodes (5): pruningRules, architecture, bugfix, coding, research
+
+### Community 3905 - "Community 3905"
+Cohesion: 0.09
+Nodes (22): checks, all_required_quality_reports_present, every_champion_has_abilities_passive_name, every_champion_has_abilities_skill_1_name, every_champion_has_abilities_skill_2_name, every_champion_has_abilities_skill_3_name, every_champion_has_abilities_ultimate_name, kaisa_id_unchanged (+14 more)
+
+### Community 3906 - "Community 3906"
+Cohesion: 0.09
+Nodes (21): additionalProperties, type, type, type, $id, type, type, properties (+13 more)
+
+### Community 3907 - "Community 3907"
+Cohesion: 0.09
+Nodes (21): additionalProperties, type, type, type, $id, type, properties, category (+13 more)
+
+### Community 3908 - "Community 3908"
+Cohesion: 0.09
+Nodes (21): additionalProperties, type, type, type, $id, type, type, properties (+13 more)
+
+### Community 3909 - "Community 3909"
+Cohesion: 0.09
+Nodes (21): example_interactions, guardrails, always_do, hallucination_prevention, never_do, _meta, chunk, game (+13 more)
+
+### Community 3910 - "Community 3910"
+Cohesion: 0.09
+Nodes (22): cost, quest_gold, upgrade, wards, support_items, upgrade, wards, cost (+14 more)
+
+### Community 3911 - "Community 3911"
+Cohesion: 0.12
+Nodes (15): BuildIntent, VariantBadge, extractBuildIntent(), hasBuildIntent(), INTENT_PATTERNS, IntentPattern, VariantBadge, extractBuildIntent() (+7 more)
+
+### Community 3912 - "Community 3912"
+Cohesion: 0.10
+Nodes (20): depth_1, depth_2, depth_1, depth_2, depth_1, depth_2, depth_1, depth_2 (+12 more)
+
+### Community 3913 - "Community 3913"
+Cohesion: 0.14
+Nodes (16): buildModifiedRationalePrompt(), buildRouteB(), ChatMessage, getNextGroqKey(), getNextOpenRouterKey(), GROQ_KEYS, GROQ_MODELS, GroqModel (+8 more)
+
+### Community 3914 - "Community 3914"
+Cohesion: 0.10
+Nodes (20): generated_files, recommendation, role_aliases, adc, baron, baron_lane, bot, dragon (+12 more)
+
+### Community 3915 - "Community 3915"
+Cohesion: 0.10
+Nodes (20): additionalProperties, description, type, type, $id, type, type, properties (+12 more)
+
+### Community 3916 - "Community 3916"
+Cohesion: 0.10
+Nodes (20): additionalProperties, type, type, description, $id, type, type, type (+12 more)
+
+### Community 3917 - "Community 3917"
+Cohesion: 0.10
+Nodes (19): aliases, dream_maker, dream_maker_enchant, galeforce, galeforce_enchant, goredrinker, goredrinker_enchant, locket (+11 more)
+
+### Community 3918 - "Community 3918"
+Cohesion: 0.10
+Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
+
+### Community 3919 - "Community 3919"
+Cohesion: 0.10
+Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
+
+### Community 3920 - "Community 3920"
+Cohesion: 0.10
+Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
+
+### Community 3921 - "Community 3921"
+Cohesion: 0.10
+Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
+
+### Community 3922 - "Community 3922"
+Cohesion: 0.10
+Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
+
+### Community 3923 - "Community 3923"
+Cohesion: 0.10
+Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
+
+### Community 3924 - "Community 3924"
+Cohesion: 0.10
+Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
+
+### Community 3925 - "Community 3925"
+Cohesion: 0.20
+Nodes (18): AbilityTag, buildAbilityBuildInteractions(), classifyAbilityType(), DATA_DIR, enrichOneItem(), enrichOneRune(), enrichOneSpell(), enrichReasoningRequest() (+10 more)
+
+### Community 3926 - "Community 3926"
+Cohesion: 0.10
+Nodes (19): alias_policy, Gargoyle, Locket, Magnetron Enchant, Meteor Enchant, Protobelt, Quicksilver, Stasis (+11 more)
+
+### Community 3927 - "Community 3927"
+Cohesion: 0.10
+Nodes (19): additionalProperties, type, type, $id, type, type, properties, event_id (+11 more)
+
+### Community 3928 - "Community 3928"
+Cohesion: 0.10
+Nodes (19): additionalProperties, type, type, type, type, type, $id, properties (+11 more)
+
+### Community 3929 - "Community 3929"
+Cohesion: 0.10
+Nodes (19): additionalProperties, type, $id, type, properties, edge_id, patch_version, properties (+11 more)
+
+### Community 3930 - "Community 3930"
+Cohesion: 0.11
+Nodes (18): aliases, adc, baron, baron_lane, bot, dragon, dragon_lane, duo (+10 more)
+
+### Community 3931 - "Community 3931"
+Cohesion: 0.15
+Nodes (14): buildModifiedRationalePrompt(), ChatMessage, getNextGroqKey(), getNextOpenRouterKey(), GROQ_KEYS, GROQ_MODELS, GroqModel, OPENROUTER_KEYS (+6 more)
+
+### Community 3932 - "Community 3932"
+Cohesion: 0.11
+Nodes (18): additionalProperties, type, type, description, type, $id, type, properties (+10 more)
+
+### Community 3933 - "Community 3933"
+Cohesion: 0.11
+Nodes (19): tokens, accent_blue, accent_gold, accent_green, accent_red, backdrop, bg_hover, bg_primary (+11 more)
+
+### Community 3934 - "Community 3934"
+Cohesion: 0.11
+Nodes (19): first_spawn, individual_buffs, respawn_timer, soul, types, chemtech_soul, cloud_soul, hextech_soul (+11 more)
+
+### Community 3935 - "Community 3935"
+Cohesion: 0.11
+Nodes (18): e, raw, ability_type, active_effects, brief_description, cast_time, crowd_control_types, damage_types (+10 more)
+
+### Community 3936 - "Community 3936"
+Cohesion: 0.11
+Nodes (18): w, mantra_root_duration_by_rank, root_duration_by_rank, value, ability_type, active_effects, brief_description, crowd_control_types (+10 more)
+
+### Community 3937 - "Community 3937"
+Cohesion: 0.11
+Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
+
+### Community 3938 - "Community 3938"
+Cohesion: 0.11
+Nodes (17): boots, enchantments, enchantment, stasis_default, meta, game_rules, generated, layers (+9 more)
+
+### Community 3939 - "Community 3939"
+Cohesion: 0.11
+Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
+
+### Community 3940 - "Community 3940"
+Cohesion: 0.11
+Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
+
+### Community 3941 - "Community 3941"
+Cohesion: 0.11
+Nodes (17): boots, enchantments, enchantment, stasis_default, meta, game_rules, generated, layers (+9 more)
+
+### Community 3942 - "Community 3942"
+Cohesion: 0.11
+Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
+
+### Community 3943 - "Community 3943"
+Cohesion: 0.11
+Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
+
+### Community 3944 - "Community 3944"
+Cohesion: 0.18
+Nodes (17): AntiSynergyEntry, cache, CounterStrategyEntry, dataDir, difficultyToAdvantage(), difficultyToThreat(), getCategoryThreatTags(), getChampionThreatTags() (+9 more)
+
+### Community 3945 - "Community 3945"
+Cohesion: 0.11
+Nodes (17): boots, enchantments, enchantment, stasis_default, meta, game_rules, generated, layers (+9 more)
+
+### Community 3946 - "Community 3946"
+Cohesion: 0.11
+Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
+
+### Community 3947 - "Community 3947"
+Cohesion: 0.11
+Nodes (17): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+9 more)
+
+### Community 3948 - "Community 3948"
+Cohesion: 0.18
+Nodes (17): AntiSynergyEntry, cache, CounterStrategyEntry, dataDir, difficultyToAdvantage(), difficultyToThreat(), getCategoryThreatTags(), getChampionThreatTags() (+9 more)
+
+### Community 3949 - "Community 3949"
+Cohesion: 0.11
+Nodes (17): description, final_package_file_count, final_uncompressed_bytes, final_validation_report, final_validation_status, generated_at_utc, generated_package_scripts, key_reports (+9 more)
+
+### Community 3950 - "Community 3950"
+Cohesion: 0.11
+Nodes (17): blockers, karma_regression_must_match, e, passive, q, r, w, patch_version (+9 more)
+
+### Community 3951 - "Community 3951"
+Cohesion: 0.11
+Nodes (17): type, type, type, type, type, properties, ability_names, actual_slots (+9 more)
+
+### Community 3952 - "Community 3952"
+Cohesion: 0.11
+Nodes (17): additionalProperties, $id, type, type, type, type, properties, name (+9 more)
+
+### Community 3953 - "Community 3953"
+Cohesion: 0.11
+Nodes (17): items, type, type, type, type, properties, allowed_source_urls, entity_id (+9 more)
+
+### Community 3954 - "Community 3954"
+Cohesion: 0.11
+Nodes (17): additionalProperties, type, type, type, $id, properties, checks, database_version (+9 more)
+
+### Community 3955 - "Community 3955"
+Cohesion: 0.11
+Nodes (17): message, title, message, title, message, title, message, title (+9 more)
+
+### Community 3956 - "Community 3956"
+Cohesion: 0.11
+Nodes (18): confidence_levels, hallucination_guards, provider_cascade, reasoning_flow, ai_pipeline, high, low, medium (+10 more)
+
+### Community 3957 - "Community 3957"
+Cohesion: 0.12
+Nodes (16): conflict_resolution, database_version, priority_matrix, champion_ability_names, champion_ability_values_and_cooldowns, champion_base_stats, champion_identity, champion_roster_count (+8 more)
+
+### Community 3958 - "Community 3958"
+Cohesion: 0.12
+Nodes (16): meta, meta_archetypes, confidence_source, generated, note, patch, rank_floor, schema_version (+8 more)
+
+### Community 3959 - "Community 3959"
+Cohesion: 0.12
+Nodes (16): meta, meta_archetypes, confidence_source, generated, note, patch, rank_floor, schema_version (+8 more)
+
+### Community 3960 - "Community 3960"
+Cohesion: 0.19
+Nodes (15): assembleContext(), AssembledContext, buildContextString(), detectTaskType(), escapeRegex(), estimateTokens(), extractChampions(), extractRole() (+7 more)
+
+### Community 3961 - "Community 3961"
+Cohesion: 0.12
+Nodes (16): conflict_resolution, database_version, priority_matrix, champion_ability_names, champion_ability_values_and_cooldowns, champion_base_stats, champion_identity, champion_roster_count (+8 more)
+
+### Community 3962 - "Community 3962"
+Cohesion: 0.19
+Nodes (15): assembleContext(), AssembledContext, buildContextString(), detectTaskType(), escapeRegex(), estimateTokens(), extractChampions(), extractRole() (+7 more)
+
+### Community 3963 - "Community 3963"
+Cohesion: 0.12
+Nodes (16): type, type, type, properties, correct_value, correction_id, entity_id, field (+8 more)
+
+### Community 3964 - "Community 3964"
+Cohesion: 0.12
+Nodes (17): name, rationale, boots, build_name, champion, confidence, core_items, playstyle (+9 more)
+
+### Community 3965 - "Community 3965"
+Cohesion: 0.12
+Nodes (16): boots, components, defense_upgraded, enchantments, support_starters, support_upgraded, items, _meta (+8 more)
+
+### Community 3966 - "Community 3966"
+Cohesion: 0.40
+Nodes (4): $schema, title, type, minProperties
+
+### Community 3967 - "Community 3967"
+Cohesion: 0.12
+Nodes (16): passive, raw, source_status, ability_type, active_effects, brief_description, costs, crowd_control_types (+8 more)
+
+### Community 3968 - "Community 3968"
+Cohesion: 0.12
+Nodes (15): champions, v0_7_runtime_note, add, keep_confirmed, remove, champions_to_add, champions_to_remove, meta (+7 more)
+
+### Community 3969 - "Community 3969"
+Cohesion: 0.12
+Nodes (16): runes, name, rationale, keystone, secondary, slot_1, slot_2, slot_3 (+8 more)
+
+### Community 3970 - "Community 3970"
+Cohesion: 0.12
+Nodes (16): economy, passive_gold_generation, sell_ratio, starting_gold, turret_gold, notes, rate, starts_at (+8 more)
+
+### Community 3971 - "Community 3971"
+Cohesion: 0.13
+Nodes (14): item_counters, meta, confidence_source, generated, note, patch, schema_version, total_entries (+6 more)
+
+### Community 3972 - "Community 3972"
+Cohesion: 0.13
+Nodes (14): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+6 more)
+
+### Community 3973 - "Community 3973"
+Cohesion: 0.13
+Nodes (14): item_counters, meta, confidence_source, generated, note, patch, schema_version, total_entries (+6 more)
+
+### Community 3974 - "Community 3974"
+Cohesion: 0.13
+Nodes (14): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+6 more)
+
+### Community 3975 - "Community 3975"
+Cohesion: 0.13
+Nodes (14): item_counters, meta, confidence_source, generated, note, patch, schema_version, total_entries (+6 more)
+
+### Community 3976 - "Community 3976"
+Cohesion: 0.13
+Nodes (14): 0.1-0.3, 0.4-0.6, 0.7-0.9, matchups, meta, confidence_source, difficulty_scale, generated (+6 more)
+
+### Community 3977 - "Community 3977"
+Cohesion: 0.14
+Nodes (11): Champion, CounterData, CounterEntry, DraftPage(), DuoPair, initials(), MY_POOL, Role (+3 more)
+
+### Community 3978 - "Community 3978"
+Cohesion: 0.13
+Nodes (14): champion_stats, base_crit_damage, base_stats_list, level_scaling_formula, max_level, notes, gold_reference_items, _meta (+6 more)
+
+### Community 3979 - "Community 3979"
+Cohesion: 0.13
+Nodes (14): _meta, game, generated, patch, paths, rune_system, sources, total_runes (+6 more)
+
+### Community 3980 - "Community 3980"
+Cohesion: 0.14
+Nodes (14): 10. Before/After Story Template, 9. Case Studies: Problem → Process → Solution → Result, Copy-Paste Template, Filled Example, Filled Example 1, Filled Example 2, The Case Study Template, 10. Before/After Story Template (+6 more)
+
+### Community 3981 - "Community 3981"
+Cohesion: 0.14
+Nodes (13): add, keep_confirmed, remove, champions_to_add, champions_to_remove, meta, actions, description (+5 more)
+
+### Community 3982 - "Community 3982"
+Cohesion: 0.14
+Nodes (13): add, keep_confirmed, remove, champions_to_add, champions_to_remove, meta, actions, description (+5 more)
+
+### Community 3983 - "Community 3983"
+Cohesion: 0.14
+Nodes (13): meta, confidence_source, generated, patch, rank_floor, schema_version, type, tier_list (+5 more)
+
+### Community 3984 - "Community 3984"
+Cohesion: 0.14
+Nodes (14): persona, full_name, name, personality, role, tone_by_context, voice_guidelines, build_advice (+6 more)
+
+### Community 3985 - "Community 3985"
+Cohesion: 0.14
+Nodes (13): _meta, excluded, game, generated, patch, sources, spell_selection, total_spells (+5 more)
+
+### Community 3986 - "Community 3986"
+Cohesion: 0.08
+Nodes (25): 10. Human Approval Gates, 11. Final 30-Day Rule, 4. Stage Gates, 5. Metrics to Track, 6. Weekly Review Template, 7. Next 7 Actions Template After Day 30, 8. UNGASIS-Specific 30-Day Use, 9. Anti-Bloat Rules for the 30 Days (+17 more)
+
+### Community 3987 - "Community 3987"
+Cohesion: 0.15
+Nodes (12): database_version, entity_required_fields, game_scope_required, reject_on, schema_version, url_gate, allowed_game_url_patterns, technical_non_game_exceptions (+4 more)
+
+### Community 3988 - "Community 3988"
+Cohesion: 0.19
+Nodes (10): BuildIntent, getAvailableIntents(), getVariantPool(), hasVariant(), INTENT_META, normalizeRole(), VARIANT_POOLS, VariantItemPool (+2 more)
+
+### Community 3989 - "Community 3989"
+Cohesion: 0.15
+Nodes (12): database_version, entity_required_fields, game_scope_required, reject_on, schema_version, url_gate, allowed_game_url_patterns, technical_non_game_exceptions (+4 more)
+
+### Community 3990 - "Community 3990"
+Cohesion: 0.19
+Nodes (10): BuildIntent, getAvailableIntents(), getVariantPool(), hasVariant(), INTENT_META, normalizeRole(), VARIANT_POOLS, VariantItemPool (+2 more)
+
+### Community 3991 - "Community 3991"
+Cohesion: 0.15
+Nodes (12): champion_id, failure_severity, must_include_effects, must_match, e, passive, q, r (+4 more)
+
+### Community 3992 - "Community 3992"
+Cohesion: 0.15
+Nodes (12): champions, _meta, brief_data_count, chunk, full_data_count, game, generated, patch (+4 more)
+
+### Community 3993 - "Community 3993"
+Cohesion: 0.15
+Nodes (13): base, growth_per_wave, minion_gold, base, growth_per_wave, caster_minion, melee_minion, notes (+5 more)
+
+### Community 3994 - "Community 3994"
+Cohesion: 0.15
+Nodes (13): movement_speed, calculation, minimum, notes, soft_caps, tier_1, tier_2, multiplier (+5 more)
+
+### Community 3995 - "Community 3995"
+Cohesion: 0.26
+Nodes (9): append_jsonl(), cp(), read_json(), read_jsonl(), sha256(), write_json(), write_jsonl(), Path (+1 more)
+
+### Community 3996 - "Community 3996"
+Cohesion: 0.17
+Nodes (11): abilities, audit_notes, champion_id, champion_name, correction_id, no_lol_pc_overwrite, patch_version, protected (+3 more)
+
+### Community 3997 - "Community 3997"
+Cohesion: 0.17
+Nodes (11): champions, meta, champions_included, generated, layers, note, part, patch (+3 more)
+
+### Community 3998 - "Community 3998"
+Cohesion: 0.17
+Nodes (11): champions, meta, champions_included, generated, layers, note, part, patch (+3 more)
+
+### Community 3999 - "Community 3999"
+Cohesion: 0.17
+Nodes (11): meta, confidence_source, generated, patch, schema_version, scope, synergy_types, total_champions (+3 more)
+
+### Community 4000 - "Community 4000"
+Cohesion: 0.17
+Nodes (11): champions, meta, champions_included, generated, layers, note, part, patch (+3 more)
+
+### Community 4001 - "Community 4001"
+Cohesion: 0.17
+Nodes (11): champions, meta, champions_included, generated, layers, note, part, patch (+3 more)
+
+### Community 4002 - "Community 4002"
+Cohesion: 0.17
+Nodes (11): meta, confidence_source, generated, patch, schema_version, scope, synergy_types, total_champions (+3 more)
+
+### Community 4003 - "Community 4003"
+Cohesion: 0.17
+Nodes (11): champions, meta, champions_included, generated, layers, note, part, patch (+3 more)
+
+### Community 4004 - "Community 4004"
+Cohesion: 0.17
+Nodes (11): champions, meta, champions_included, generated, layers, note, part, patch (+3 more)
+
+### Community 4005 - "Community 4005"
+Cohesion: 0.17
+Nodes (11): meta, confidence_source, generated, patch, schema_version, scope, synergy_types, total_champions (+3 more)
+
+### Community 4006 - "Community 4006"
+Cohesion: 0.17
+Nodes (11): alias_normalization, generated_at_utc, mechanic_claim_counts_by_top_area, abilities, base_stats, policy, source_file_preserved, source_id (+3 more)
+
+### Community 4007 - "Community 4007"
+Cohesion: 0.17
+Nodes (12): counts, blocking_active_legacy_nunu_refs, champions_ability_keys_remapped, merge_ledger_rows_added, merge_ledger_rows_after, merge_ledger_rows_before, modified_json_parse_errors, modified_jsonl_parse_errors (+4 more)
+
+### Community 4008 - "Community 4008"
+Cohesion: 0.17
+Nodes (11): patch_version, schema_version, standard_item_rules, allowed_non_boot_categories, boot_enchant_consumes_boot_slot, boot_enchant_consumes_non_boot_slot, boot_slots, non_boot_item_slots (+3 more)
+
+### Community 4009 - "Community 4009"
+Cohesion: 0.17
+Nodes (11): patch_version, schema_version, support_build_validations, support_item_rules, boot_slots, late_game_replacement_allowed, late_replacement_requires_flag, remaining_slots_before_support_sell (+3 more)
+
+### Community 4010 - "Community 4010"
+Cohesion: 0.40
+Nodes (5): pruningRules, architecture, bugfix, coding, research
+
+### Community 4011 - "Community 4011"
+Cohesion: 0.17
+Nodes (12): description, name, tagline, version, architecture, api_routes, app, data_flow (+4 more)
+
+### Community 4012 - "Community 4012"
+Cohesion: 0.17
+Nodes (12): tech_stack, ai_providers, animations, charts, components, dev_tools, framework, language (+4 more)
+
+### Community 4013 - "Community 4013"
+Cohesion: 0.17
+Nodes (11): champion_pair_synergies, example, roles, example, roles, role_synergy_patterns, dive, pick (+3 more)
+
+### Community 4014 - "Community 4014"
+Cohesion: 0.40
+Nodes (5): Compression-by-Reference Rule, Purpose, Short Trace Fields, Trace Rules, v4 Module: UNGASIS Trace Routing
+
+### Community 4019 - "Community 4019"
+Cohesion: 0.18
+Nodes (11): bytes, filename, path, sha256, source_archives, data_zip, wr_opus_zip, bytes (+3 more)
+
+### Community 4020 - "Community 4020"
+Cohesion: 0.18
+Nodes (11): primary, cooldowns, cooldowns, cooldown_type, per_rank_seconds, seconds, source_status, unit (+3 more)
+
+### Community 4021 - "Community 4021"
+Cohesion: 0.18
+Nodes (10): entity_types, matching_methods, output_shape, confidence, entity_id, entity_type, matched_text, needs_disambiguation (+2 more)
+
+### Community 4022 - "Community 4022"
+Cohesion: 0.18
+Nodes (10): champions, meta, champions_included, generated, layers, part, patch, schema_version (+2 more)
+
+### Community 4023 - "Community 4023"
+Cohesion: 0.18
+Nodes (10): matchups, meta, confidence_source, generated, patch, schema_version, scope, total_champions (+2 more)
+
+### Community 4024 - "Community 4024"
+Cohesion: 0.18
+Nodes (10): meta, generated, layers, note, patch, schema_version, synthesized, total (+2 more)
+
+### Community 4025 - "Community 4025"
+Cohesion: 0.18
+Nodes (10): meta, confidence_source, generated, patch, schema_version, scope, total_champions, total_entries (+2 more)
+
+### Community 4026 - "Community 4026"
+Cohesion: 0.18
+Nodes (10): champions, meta, champions_included, generated, layers, part, patch, schema_version (+2 more)
+
+### Community 4027 - "Community 4027"
+Cohesion: 0.18
+Nodes (10): matchups, meta, confidence_source, generated, patch, schema_version, scope, total_champions (+2 more)
+
+### Community 4028 - "Community 4028"
+Cohesion: 0.18
+Nodes (10): meta, generated, layers, note, patch, schema_version, synthesized, total (+2 more)
+
+### Community 4029 - "Community 4029"
+Cohesion: 0.18
+Nodes (10): meta, confidence_source, generated, patch, schema_version, scope, total_champions, total_entries (+2 more)
+
+### Community 4032 - "Community 4032"
+Cohesion: 0.20
+Nodes (7): BuildDataSnapshot, ConfidenceLevel, ValidationResult, BuildDataSnapshot, ConfidenceLevel, ValidationResult, BuildReasoning
+
+### Community 4033 - "Community 4033"
+Cohesion: 0.18
+Nodes (10): champions, meta, champions_included, generated, layers, part, patch, schema_version (+2 more)
+
+### Community 4034 - "Community 4034"
+Cohesion: 0.18
+Nodes (10): matchups, meta, confidence_source, generated, patch, schema_version, scope, total_champions (+2 more)
+
+### Community 4035 - "Community 4035"
+Cohesion: 0.18
+Nodes (10): meta, confidence_source, generated, patch, schema_version, scope, total_champions, total_entries (+2 more)
+
+### Community 4038 - "Community 4038"
+Cohesion: 0.18
+Nodes (10): base_report, generated_at_utc, m365_opus_overlay, exact_mechanic_claims, exact_values_source_verified, field_level_provenance_required, promotion_policy, source_status (+2 more)
+
+### Community 4039 - "Community 4039"
+Cohesion: 0.18
+Nodes (11): type, type, type, type, properties, champion_id, effect_radius, effect_tags (+3 more)
+
+### Community 4040 - "Community 4040"
+Cohesion: 0.18
+Nodes (11): ai_role, data_sources, description, phase, ai_role, data_sources, description, phase (+3 more)
+
+### Community 4041 - "Community 4041"
+Cohesion: 0.18
+Nodes (11): accent_gradient, border_radius, font, glass_card, glass_hover, spacing_scale, text_accent, text_primary (+3 more)
+
+### Community 4042 - "Community 4042"
+Cohesion: 0.18
+Nodes (11): cdr_equivalent, examples, formula, notes, 100_AH, 10_AH, 20_AH, 40_AH (+3 more)
+
+### Community 4043 - "Community 4043"
+Cohesion: 0.18
+Nodes (11): example, formula, notes, reduction_formula, armor, magic_resist, damage_reduction, example (+3 more)
+
+### Community 4044 - "Community 4044"
+Cohesion: 0.18
+Nodes (11): assist_gold, base_kill_gold, first_blood, notes, shutdown_gold, champion_kills, 2_kills, 3_kills (+3 more)
+
+### Community 4045 - "Community 4045"
+Cohesion: 0.18
+Nodes (11): jungle_camps, large_camp, notes, scuttle_crab, small_camp, gold, xp, gold (+3 more)
+
+### Community 4047 - "Community 4047"
+Cohesion: 0.20
+Nodes (10): ap_ratio, values, base_magic_damage, mantra_detonation_magic_damage, mantra_increased_magic_damage, ap_ratio, values, ap_ratio (+2 more)
+
+### Community 4048 - "Community 4048"
+Cohesion: 0.20
+Nodes (9): accessibility, component, data_inputs, implementation_options, panels, purpose, routes, states (+1 more)
+
+### Community 4049 - "Community 4049"
+Cohesion: 0.20
+Nodes (9): component, display_rules, max_rows_per_section, show_confidence_badge, show_source_status_badge, show_view_all_link, purpose, sections (+1 more)
+
+### Community 4050 - "Community 4050"
+Cohesion: 0.20
+Nodes (9): chunk_fields, metadata_filters, relationship_refs_shape, edge_id, reason_codes, relationship_type, source_entity_id, target_entity_id (+1 more)
+
+### Community 4051 - "Community 4051"
+Cohesion: 0.20
+Nodes (8): RetrievalResult, CHAMPION_ALIASES, CHAMPION_IDS, ClassifiedTask, ROLE_ALIASES, TASK_KEYWORDS, TaskType, RetrievalResult
+
+### Community 4052 - "Community 4052"
+Cohesion: 0.20
+Nodes (9): approved_source_families, created_at, database_version, game_scope, patch_context, policy_name, schema_version, source_policy (+1 more)
+
+### Community 4053 - "Community 4053"
+Cohesion: 0.20
+Nodes (10): Boots, Champion, CoreIdentity, Enchantment, Item, RAGLayer, RiftCoachEntity, Rune (+2 more)
+
+### Community 4054 - "Community 4054"
+Cohesion: 0.20
+Nodes (9): BuildReasoning, ChampionAbility, EnrichedChampionData, EnrichedItemData, EnrichedRuneData, EnrichedSpellData, ReasoningRequest, ReasoningResponse (+1 more)
+
+### Community 4055 - "Community 4055"
+Cohesion: 0.20
+Nodes (9): approved_source_families, created_at, database_version, game_scope, patch_context, policy_name, schema_version, source_policy (+1 more)
+
+### Community 4056 - "Community 4056"
+Cohesion: 0.20
+Nodes (9): BuildReasoning, ChampionAbility, EnrichedChampionData, EnrichedItemData, EnrichedRuneData, EnrichedSpellData, ReasoningRequest, ReasoningResponse (+1 more)
+
+### Community 4057 - "Community 4057"
+Cohesion: 0.20
+Nodes (10): merge_policy, abilities_by_key_used_for_identity_comparison, approved_source_verification_required_for_exact_values, canonical_official_fields_overwritten, exact_mechanics_preserved_in_trace_only, exact_mechanics_promoted, legacy_top_level_abilities_used_for_identity, raw_preserved_losslessly (+2 more)
+
+### Community 4058 - "Community 4058"
+Cohesion: 0.20
+Nodes (9): classification_summary, allowed_guardrail_or_policy_reference, wild_rift_prefixed_url_or_wr_policy_reference, gameplay_data_blockers, generated_at_utc, hits, policy, scan_hit_count (+1 more)
+
+### Community 4059 - "Community 4059"
+Cohesion: 0.20
+Nodes (10): m365_opus_overlay_policy, abilities_by_key_used_for_identity_comparison, approved_source_verification_required_for_exact_values, canonical_official_fields_overwritten, exact_mechanics_preserved_in_trace_only, exact_mechanics_promoted, legacy_top_level_abilities_used_for_identity, raw_preserved_losslessly (+2 more)
+
+### Community 4060 - "Community 4060"
+Cohesion: 0.20
+Nodes (9): accessibility, component, data_inputs, implementation_options, panels, purpose, routes, states (+1 more)
+
+### Community 4061 - "Community 4061"
+Cohesion: 0.20
+Nodes (10): tech_stack, ai_providers, animations, charts, dev_workflow, framework, local_models, state (+2 more)
+
+### Community 4062 - "Community 4062"
+Cohesion: 0.20
+Nodes (10): synergy_response, archetype, confidence, overall_rating, pair_synergies, power_curve, suggested_swaps, tag_overlaps (+2 more)
+
+### Community 4063 - "Community 4063"
+Cohesion: 0.20
+Nodes (10): confidence_levels, high, low, medium, criteria, threshold, criteria, threshold (+2 more)
+
+### Community 4064 - "Community 4064"
+Cohesion: 0.20
+Nodes (9): counter_mechanics, lane_matchups, _meta, chunk, game, generated, patch, version (+1 more)
+
+### Community 4065 - "Community 4065"
+Cohesion: 0.20
+Nodes (10): buff_duration, buff_effects, notes, respawn_timer, spawn_time, adaptive_force, empowered_recall, homeguard_on_return (+2 more)
+
+### Community 4066 - "Community 4066"
+Cohesion: 0.20
+Nodes (10): description, time, early_game, late_game, mid_game, description, time, description (+2 more)
+
+### Community 4067 - "Community 4067"
+Cohesion: 0.20
+Nodes (9): items, _meta, category, game, generated, patch, sources, total_items (+1 more)
+
+### Community 4068 - "Community 4068"
+Cohesion: 0.20
+Nodes (10): desc, examples, desc, examples, desc, examples, synergy_tags, aoe_wombo (+2 more)
+
+### Community 4070 - "Community 4070"
+Cohesion: 0.22
+Nodes (8): hairball_prevention, auto_cluster_common_effects, collapse_effect_nodes_after_degree, default_max_nodes, require_user_expand_for_depth_3_plus, show_top_edges_by_strength, profiles, version
+
+### Community 4071 - "Community 4071"
+Cohesion: 0.22
+Nodes (8): legend_groups, plain_english_labels, DENIES, MITIGATES, SOURCE_SUPPORTS, SUPPRESSED_WHEN, SYNERGIZES_WITH, version
+
+### Community 4072 - "Community 4072"
+Cohesion: 0.22
+Nodes (9): 5. The Master Tool Map — Pick One Per Job, 💰 Business & Monetization, 🚀 Deployment & Hosting, 🗄️ Development — Backend, 💻 Development — Frontend, 📝 Documentation & Support, 📊 Monitoring & Analytics, 📋 Planning & Validation (+1 more)
+
+### Community 4073 - "Community 4073"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4074 - "Community 4074"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4075 - "Community 4075"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, weak_vs (+1 more)
+
+### Community 4076 - "Community 4076"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, strong_vs (+1 more)
+
+### Community 4077 - "Community 4077"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4078 - "Community 4078"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4079 - "Community 4079"
+Cohesion: 0.22
+Nodes (8): allowed_source_families, lol_wiki_wr, riot_wild_rift_champion, riot_wild_rift_news, wildriftfire, allowed_source_patterns, blocked_source_patterns, version
+
+### Community 4080 - "Community 4080"
+Cohesion: 0.22
+Nodes (8): Merge recommendation, Candidate strategy fields from upload, Counts, Files generated, ID alias findings, Key risk flags, M365/Opus Champion File Cross-Check vs RiftCoach v0.7.0, Verdict
+
+### Community 4081 - "Community 4081"
+Cohesion: 0.22
+Nodes (8): blocking_refs, explicit_non_goals, final_validation_status, generated_at_utc, modified_files, protected_changed, report_name, scope
+
+### Community 4082 - "Community 4082"
+Cohesion: 0.22
+Nodes (8): AIRequest, AIResponse, AITask, APIKeySlot, ChatMessage, ModelConfig, ModelUsage, RouterState
+
+### Community 4083 - "Community 4083"
+Cohesion: 0.22
+Nodes (8): Ability, BuildTemplate, Champion, CounterMatchup, Item, Rune, SummonerSpell, TeamComp
+
+### Community 4084 - "Community 4084"
+Cohesion: 0.22
+Nodes (8): allowed_source_families, lol_wiki_wr, riot_wild_rift_champion, riot_wild_rift_news, wildriftfire, allowed_source_patterns, blocked_source_patterns, version
+
+### Community 4085 - "Community 4085"
+Cohesion: 0.22
+Nodes (8): AIRequest, AIResponse, AITask, APIKeySlot, ChatMessage, ModelConfig, ModelUsage, RouterState
+
+### Community 4086 - "Community 4086"
+Cohesion: 0.22
+Nodes (8): Ability, BuildTemplate, Champion, CounterMatchup, Item, Rune, SummonerSpell, TeamComp
+
+### Community 4087 - "Community 4087"
+Cohesion: 0.22
+Nodes (9): checks, canonical_official_fields_overwritten, json_files_checked, json_parse_errors, jsonl_files_checked, m365_opus_exact_mechanic_claims, m365_opus_raw_champions, m365_opus_strategy_claims (+1 more)
+
+### Community 4088 - "Community 4088"
+Cohesion: 0.22
+Nodes (9): candidate_merge_summary, ability_by_key_name_mismatch_count, champions_with_mechanic_candidates, legacy_abilities_dict_name_mismatch_count, mechanic_claim_count, mechanic_claim_counts_by_top_area, strategy_claim_count, abilities (+1 more)
+
+### Community 4089 - "Community 4089"
+Cohesion: 0.22
+Nodes (9): strategy_claim_counts_by_field, counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies (+1 more)
+
+### Community 4090 - "Community 4090"
+Cohesion: 0.22
+Nodes (9): id_counts, canonical_only_after_normalization, public_only_after_normalization, raw_aliases_requiring_normalization, uploaded_normalized_ids, uploaded_only_after_normalization, uploaded_raw_champions, v0_7_canonical_records_all (+1 more)
+
+### Community 4091 - "Community 4091"
+Cohesion: 0.22
+Nodes (9): strategy_claim_counts_by_field, counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies (+1 more)
+
+### Community 4092 - "Community 4092"
+Cohesion: 0.22
+Nodes (8): Critical policy, Final ZIP size note, Key v0.7.1 files, Prior README, Reports, RiftCoach Wild Rift Merged Intelligence Database v0.7.0, RiftCoach Wild Rift Merged Intelligence Database v0.7.1, Runtime compatibility
+
+### Community 4093 - "Community 4093"
+Cohesion: 0.22
+Nodes (9): type, type, type, properties, adaptive_type, classes, lanes, range_type (+1 more)
+
+### Community 4094 - "Community 4094"
+Cohesion: 0.22
+Nodes (8): crowd_control_effects, damage_effects, defense_effects, mobility_effects, patch_version, schema_version, special_mechanics, utility_effects
+
+### Community 4096 - "Community 4096"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4097 - "Community 4097"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4098 - "Community 4098"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, weak_vs (+1 more)
+
+### Community 4099 - "Community 4099"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, strong_vs (+1 more)
+
+### Community 4100 - "Community 4100"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4101 - "Community 4101"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
+### Community 4102 - "Community 4102"
+Cohesion: 0.22
+Nodes (9): data_relationships, builds → champions, builds → items, builds → runes, comps → builds, comps → counter, comps → synergy, counter → champions (+1 more)
+
+### Community 4103 - "Community 4103"
+Cohesion: 0.22
+Nodes (9): ai_pipeline, hallucination_guards, provider_cascade, reasoning_flow, description, max_retries, order, timeout (+1 more)
+
+### Community 4104 - "Community 4104"
+Cohesion: 0.22
+Nodes (8): champions, _meta, chunk, game, generated, patch, total_champions, version
+
+### Community 4105 - "Community 4105"
+Cohesion: 0.22
+Nodes (8): champions, _meta, chunk, game, generated, patch, total, version
+
+### Community 4106 - "Community 4106"
+Cohesion: 0.22
+Nodes (8): champions, _meta, chunk, game, generated, patch, total, version
+
+### Community 4107 - "Community 4107"
+Cohesion: 0.22
+Nodes (8): champions, _meta, chunk, game, generated, patch, total, version
+
+### Community 4108 - "Community 4108"
+Cohesion: 0.25
+Nodes (7): ADR: Relationship Explorer Technology Direction, Chosen path, Context, Decision, Options considered, Reversal path, Why not heavier now
+
+### Community 4109 - "Community 4109"
+Cohesion: 0.25
+Nodes (7): Beginner model, Core graph flow, Must-have features, Non-goals for prototype, Obsidian-Style Graph View Spec, Purpose, Recommended implementation path
+
+### Community 4110 - "Community 4110"
+Cohesion: 0.25
+Nodes (8): 11. The UNGASIS Backup Checklist, 🤖 AI & Prompts, ☁️ Cloud & Hosting, 💻 Code & Version Control, 🗄️ Data, 📝 Documentation, 🔄 Restore Readiness, 🔑 Secrets & Keys
+
+### Community 4113 - "Community 4113"
+Cohesion: 0.25
+Nodes (7): canonical_decision_rows, generated_at_utc, m365_opus_overlay_rows_added, rows, source_record_rows, v0_7_0_rows_before_overlay, version
+
+### Community 4114 - "Community 4114"
+Cohesion: 0.25
+Nodes (8): 11. The UNGASIS Backup Checklist, 🤖 AI & Prompts, ☁️ Cloud & Hosting, 💻 Code & Version Control, 🗄️ Data, 📝 Documentation, 🔄 Restore Readiness, 🔑 Secrets & Keys
+
+### Community 4115 - "Community 4115"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, alistar
+
+### Community 4116 - "Community 4116"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, ambessa
+
+### Community 4117 - "Community 4117"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, amumu
+
+### Community 4118 - "Community 4118"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, annie
+
+### Community 4119 - "Community 4119"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, ashe
+
+### Community 4120 - "Community 4120"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, aurelion_sol
+
+### Community 4121 - "Community 4121"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, aurora
+
+### Community 4122 - "Community 4122"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, bard
+
+### Community 4123 - "Community 4123"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, blitzcrank
+
+### Community 4124 - "Community 4124"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, brand
+
+### Community 4125 - "Community 4125"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, braum
+
+### Community 4126 - "Community 4126"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, caitlyn
+
+### Community 4127 - "Community 4127"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, camille
+
+### Community 4128 - "Community 4128"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, corki
+
+### Community 4129 - "Community 4129"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, darius
+
+### Community 4130 - "Community 4130"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, diana
+
+### Community 4131 - "Community 4131"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, dr_mundo
+
+### Community 4132 - "Community 4132"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, draven
+
+### Community 4133 - "Community 4133"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, ekko
+
+### Community 4134 - "Community 4134"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, evelynn
+
+### Community 4135 - "Community 4135"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, fiddlesticks
+
+### Community 4136 - "Community 4136"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, fiora
+
+### Community 4137 - "Community 4137"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, fizz
+
+### Community 4138 - "Community 4138"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, galio
+
+### Community 4139 - "Community 4139"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, gnar
+
+### Community 4140 - "Community 4140"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, gragas
+
+### Community 4141 - "Community 4141"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, graves
+
+### Community 4142 - "Community 4142"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, gwen
+
+### Community 4143 - "Community 4143"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, hecarim
+
+### Community 4144 - "Community 4144"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, heimerdinger
+
+### Community 4145 - "Community 4145"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, irelia
+
+### Community 4146 - "Community 4146"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, janna
+
+### Community 4147 - "Community 4147"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jarvan_iv
+
+### Community 4148 - "Community 4148"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jax
+
+### Community 4149 - "Community 4149"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jayce
+
+### Community 4150 - "Community 4150"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jhin
+
+### Community 4151 - "Community 4151"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jinx
+
+### Community 4152 - "Community 4152"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kaisa
+
+### Community 4153 - "Community 4153"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kalista
+
+### Community 4154 - "Community 4154"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, karma
+
+### Community 4155 - "Community 4155"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kassadin
+
+### Community 4156 - "Community 4156"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, katarina
+
+### Community 4157 - "Community 4157"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kayle
+
+### Community 4159 - "Community 4159"
+Cohesion: 0.25
+Nodes (6): CHAMPION_ALIASES, CHAMPION_IDS, ClassifiedTask, ROLE_ALIASES, TASK_KEYWORDS, TaskType
+
+### Community 4161 - "Community 4161"
+Cohesion: 0.25
+Nodes (6): CHAMPION_ALIASES, CHAMPION_IDS, ClassifiedTask, ROLE_ALIASES, TASK_KEYWORDS, TaskType
+
+### Community 4162 - "Community 4162"
+Cohesion: 0.25
+Nodes (7): checks, generated_at_utc, json_files_checked, jsonl_files_checked, limitations, status, version
+
+### Community 4163 - "Community 4163"
+Cohesion: 0.25
+Nodes (8): uploaded_file_metadata, champion_count, id_normalization, merge_rules, new_champions, patch_version, source, version
+
+### Community 4164 - "Community 4164"
+Cohesion: 0.25
+Nodes (8): uploaded_file_metadata, champion_count, id_normalization, merge_rules, new_champions, patch_version, source, version
+
+### Community 4165 - "Community 4165"
+Cohesion: 0.25
+Nodes (7): applies_to, patch_version, required_gold_fields, requirements, rule_id, schema_version, severity
+
+### Community 4166 - "Community 4166"
+Cohesion: 0.25
+Nodes (7): properties, result, required, enum, $schema, title, type
+
+### Community 4167 - "Community 4167"
+Cohesion: 0.25
+Nodes (7): cooldown_types, fields_required_by_type, ability_rank_cooldown, not_applicable, per_target_cooldown, recharge_cooldown, schema_version
+
+### Community 4168 - "Community 4168"
+Cohesion: 0.25
+Nodes (7): aliases, adc, bot, dragon_lane, top, lanes, schema_version
+
+### Community 4171 - "Community 4171"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, alistar
+
+### Community 4172 - "Community 4172"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, ambessa
+
+### Community 4173 - "Community 4173"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, amumu
+
+### Community 4174 - "Community 4174"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, annie
+
+### Community 4175 - "Community 4175"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, ashe
+
+### Community 4176 - "Community 4176"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, aurelion_sol
+
+### Community 4177 - "Community 4177"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, aurora
+
+### Community 4178 - "Community 4178"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, bard
+
+### Community 4179 - "Community 4179"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, blitzcrank
+
+### Community 4180 - "Community 4180"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, brand
+
+### Community 4181 - "Community 4181"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, braum
+
+### Community 4182 - "Community 4182"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, caitlyn
+
+### Community 4183 - "Community 4183"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, camille
+
+### Community 4184 - "Community 4184"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, corki
+
+### Community 4185 - "Community 4185"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, darius
+
+### Community 4186 - "Community 4186"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, diana
+
+### Community 4187 - "Community 4187"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, dr_mundo
+
+### Community 4188 - "Community 4188"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, draven
+
+### Community 4189 - "Community 4189"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, ekko
+
+### Community 4190 - "Community 4190"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, evelynn
+
+### Community 4191 - "Community 4191"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, fiddlesticks
+
+### Community 4192 - "Community 4192"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, fiora
+
+### Community 4193 - "Community 4193"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, fizz
+
+### Community 4194 - "Community 4194"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, galio
+
+### Community 4195 - "Community 4195"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, gnar
+
+### Community 4196 - "Community 4196"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, gragas
+
+### Community 4197 - "Community 4197"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, graves
+
+### Community 4198 - "Community 4198"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, gwen
+
+### Community 4199 - "Community 4199"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, hecarim
+
+### Community 4200 - "Community 4200"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, heimerdinger
+
+### Community 4201 - "Community 4201"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, irelia
+
+### Community 4202 - "Community 4202"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, janna
+
+### Community 4203 - "Community 4203"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jarvan_iv
+
+### Community 4204 - "Community 4204"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jax
+
+### Community 4205 - "Community 4205"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jayce
+
+### Community 4206 - "Community 4206"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jhin
+
+### Community 4207 - "Community 4207"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jinx
+
+### Community 4208 - "Community 4208"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kaisa
+
+### Community 4209 - "Community 4209"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kalista
+
+### Community 4210 - "Community 4210"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, karma
+
+### Community 4211 - "Community 4211"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kassadin
+
+### Community 4212 - "Community 4212"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, katarina
+
+### Community 4213 - "Community 4213"
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, kayle
+
+### Community 4214 - "Community 4214"
+Cohesion: 0.25
+Nodes (7): api_routes, component_library, data_flow, diagram, steps, database_files, ui_pages
+
+### Community 4215 - "Community 4215"
+Cohesion: 0.25
+Nodes (8): data_relationships, builds_reference_items, builds_reference_runes, builds_reference_spells, comps_reference_all, counter_references_champions, stat_calc_flow, synergy_references_champions
+
+### Community 4216 - "Community 4216"
+Cohesion: 0.25
+Nodes (8): formula, notes, example, formula, notes, attacks_per_second, auto_attack_dps, dps
+
+### Community 4217 - "Community 4217"
+Cohesion: 0.25
+Nodes (8): magic, physical, effective_hp, example, formula, example, formula, notes
+
+### Community 4218 - "Community 4218"
+Cohesion: 0.25
+Nodes (7): builds, _meta, chunk, game, patch, total, v
+
+### Community 4219 - "Community 4219"
+Cohesion: 0.25
+Nodes (7): comps, _meta, chunk, game, patch, total, v
+
+### Community 4220 - "Community 4220"
+Cohesion: 0.29
+Nodes (6): Active in Chunk 1, Deferred to later chunks, Non-negotiable blockers, Purpose, RiftCoach Wild Rift Intelligence Database v0.6.0 — Chunk 1 Architecture Blueprint, Stage
+
+### Community 4221 - "Community 4221"
+Cohesion: 0.29
+Nodes (7): 16. Portfolio Readiness Checklist, 📦 Content, 🚀 Deployment, 🤝 Honesty, 📣 Presentation, 🎨 Quality, 🔒 Security & Privacy
+
+### Community 4222 - "Community 4222"
+Cohesion: 0.29
+Nodes (6): generated_at_utc, nested_chatgpt_archives, riftcoach_wr_intelligence_database_v0_6_0_chunk10_final.zip, bytes, outer_member, sha256
+
+### Community 4223 - "Community 4223"
+Cohesion: 0.33
+Nodes (6): Do not repeat, Owner, User Profile, Working style, Constraint History, Constraint Log
+
+### Community 4224 - "Community 4224"
+Cohesion: 0.29
+Nodes (6): blocked_prior_generated_values, global_rules, metadata, created_at, patch_version, version
+
+### Community 4225 - "Community 4225"
+Cohesion: 0.29
+Nodes (7): ap_ratio, values, shield_values, ap_ratio, values, base_shield, mantra_increased_shield
+
+### Community 4226 - "Community 4226"
+Cohesion: 0.29
+Nodes (7): mana, costs, unit, values, costs, costs, costs
+
+### Community 4227 - "Community 4227"
+Cohesion: 0.29
+Nodes (7): initial_magic_damage, tethered_magic_damage, ap_ratio, values, ap_ratio, values, damage_values
+
+### Community 4228 - "Community 4228"
+Cohesion: 0.29
+Nodes (6): corrections, metadata, created_at, patch_version, purpose, version
+
+### Community 4229 - "Community 4229"
+Cohesion: 0.29
+Nodes (6): count, entity_type, generated_at_utc, patch_version, records, version
+
+### Community 4230 - "Community 4230"
+Cohesion: 0.29
+Nodes (6): count, entity_type, generated_at_utc, patch_version, records, version
+
+### Community 4231 - "Community 4231"
+Cohesion: 0.29
+Nodes (6): edge_count, edge_file, node_count, node_file, patch_version, version
+
+### Community 4232 - "Community 4232"
+Cohesion: 0.29
+Nodes (6): field_level_provenance_required, merge_policy, source_file, source_id, source_sha256, source_status
+
+### Community 4233 - "Community 4233"
+Cohesion: 0.29
+Nodes (7): 16. Portfolio Readiness Checklist, 📦 Content, 🚀 Deployment, 🤝 Honesty, 📣 Presentation, 🎨 Quality, 🔒 Security & Privacy
+
+### Community 4235 - "Community 4235"
+Cohesion: 0.29
+Nodes (6): field_level_provenance_required, promotion_policy, records, source_id, source_status, version
+
+### Community 4236 - "Community 4236"
+Cohesion: 0.29
+Nodes (6): field_level_provenance_required, merge_policy, source_file, source_id, source_sha256, source_status
+
+### Community 4237 - "Community 4237"
+Cohesion: 0.29
+Nodes (6): blocked_mechanic_sources, blocked_source_patterns, blocked_source_policy, database_version, reason, schema_version
+
+### Community 4238 - "Community 4238"
+Cohesion: 0.29
+Nodes (6): avgGameLength, banPriorities, metaIdentity, patch, patchChanges, season
+
+### Community 4239 - "Community 4239"
+Cohesion: 0.29
+Nodes (6): generated_at_utc, identity_check, conclusion, full_record_hash_compared_count, full_record_hash_equal_count, task
+
+### Community 4240 - "Community 4240"
+Cohesion: 0.29
+Nodes (6): avgGameLength, banPriorities, metaIdentity, patch, patchChanges, season
+
+### Community 4242 - "Community 4242"
+Cohesion: 0.48
+Nodes (6): assetCandidates(), candidateNames(), OVERRIDES, portraitCandidates(), splashCandidates(), toPascal()
+
+### Community 4243 - "Community 4243"
+Cohesion: 0.29
+Nodes (4): ChatMessage, ChatState, Conversation, useChatStore
+
+### Community 4244 - "Community 4244"
+Cohesion: 0.29
+Nodes (6): additionalProperties, $id, required, $schema, title, type
+
+### Community 4245 - "Community 4245"
+Cohesion: 0.29
+Nodes (6): blocked_mechanic_sources, blocked_source_patterns, blocked_source_policy, database_version, reason, schema_version
+
+### Community 4247 - "Community 4247"
+Cohesion: 0.48
+Nodes (6): assetCandidates(), candidateNames(), OVERRIDES, portraitCandidates(), splashCandidates(), toPascal()
+
+### Community 4248 - "Community 4248"
+Cohesion: 0.29
+Nodes (4): ChatMessage, ChatState, Conversation, useChatStore
+
+### Community 4249 - "Community 4249"
+Cohesion: 0.29
+Nodes (7): public_data_champions, details, e, passive, q, r, w
+
+### Community 4250 - "Community 4250"
+Cohesion: 0.29
+Nodes (7): counts, candidate_exact_mechanic_claims, candidate_strategy_claims, m365_opus_postmerge_champion_records, merge_ledger_rows_total, overlay_ledger_rows_added, source_value_trace_rows_added
+
+### Community 4251 - "Community 4251"
+Cohesion: 0.29
+Nodes (7): hard_gates, json_parse_pass, jsonl_parse_pass, karma_lock_pass, no_official_exact_value_promotion, public_runtime_data_unchanged, raw_source_preserved
+
+### Community 4252 - "Community 4252"
+Cohesion: 0.29
+Nodes (7): hard_locks, karma, e, passive, q, r, w
+
+### Community 4253 - "Community 4253"
+Cohesion: 0.29
+Nodes (6): cooldown_types, patch_version, requirements, rule_id, schema_version, severity
+
+### Community 4254 - "Community 4254"
+Cohesion: 0.29
+Nodes (6): additionalProperties, $id, required, $schema, title, type
+
+### Community 4255 - "Community 4255"
+Cohesion: 0.29
+Nodes (6): field_level_provenance_required, merge_policy, source_file, source_id, source_sha256, source_status
+
+### Community 4257 - "Community 4257"
+Cohesion: 0.29
+Nodes (6): count, entity_type, generated_at_utc, patch_version, records, version
+
+### Community 4258 - "Community 4258"
+Cohesion: 0.29
+Nodes (6): count, entity_type, generated_at_utc, patch_version, records, version
+
+### Community 4259 - "Community 4259"
+Cohesion: 0.29
+Nodes (6): field_level_provenance_required, promotion_policy, records, source_id, source_status, version
+
+### Community 4260 - "Community 4260"
+Cohesion: 0.29
+Nodes (6): count, entity_type, generated_at_utc, patch_version, records, version
+
+### Community 4261 - "Community 4261"
+Cohesion: 0.29
+Nodes (6): count, entity_type, generated_at_utc, patch_version, records, version
+
+### Community 4262 - "Community 4262"
+Cohesion: 0.33
+Nodes (5): schema_version, templates, build_request, counter_request, data_quality_request
+
+### Community 4263 - "Community 4263"
+Cohesion: 0.33
+Nodes (5): Ability Revalidation Pipeline Spec, Blocking gates, Flow, Output targets, Purpose
+
+### Community 4264 - "Community 4264"
+Cohesion: 0.33
+Nodes (5): Asset page pattern, Connected Asset Explorer Spec, Example: Karma, Purpose, Relationship panel requirements
+
+### Community 4265 - "Community 4265"
+Cohesion: 0.33
+Nodes (5): Common questions, Graph Query and Traversal Spec, Purpose, Safety rule, Traversal types
+
+### Community 4266 - "Community 4266"
+Cohesion: 0.33
+Nodes (5): Example, Graph-assisted RAG solution, Graph + RAG Bridge Spec, Purpose, RAG-only problem
+
+### Community 4267 - "Community 4267"
+Cohesion: 0.33
+Nodes (5): Files to replace after smoke tests, Recommended code patches, RiftCoach v0.7.0 Local Repo Update Plan, Rollback, Safe install path
+
+### Community 4268 - "Community 4268"
+Cohesion: 0.33
+Nodes (6): 15. The Portfolio Honesty Rule, How to Write Your Honesty Note, The 5 Honesty Rules, 🤝 The Core Principle, What IS Your Value (Even with AI Help), ❌ What NOT to Say
+
+### Community 4269 - "Community 4269"
+Cohesion: 0.47
+Nodes (5): Behaviour, Purpose, Subagent: Reviewer, Subagent: Reviewer, Subagent Protocol
+
+### Community 4270 - "Community 4270"
+Cohesion: 0.47
+Nodes (3): collect_counts(), count_records(), safe_load()
+
+### Community 4271 - "Community 4271"
+Cohesion: 0.33
+Nodes (6): bytes, filename, raw_preserved_path, sha256, source_status, m365_opus_postmerge_wr_champions_merged_v070_full
+
+### Community 4272 - "Community 4272"
+Cohesion: 0.33
+Nodes (5): application_order, metadata, created_at, version, rules
+
+### Community 4273 - "Community 4273"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4274 - "Community 4274"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4275 - "Community 4275"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4276 - "Community 4276"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4277 - "Community 4277"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4278 - "Community 4278"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4279 - "Community 4279"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4280 - "Community 4280"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4281 - "Community 4281"
+Cohesion: 0.33
+Nodes (5): items, meta, patch_version, source_status, version
+
+### Community 4282 - "Community 4282"
+Cohesion: 0.33
+Nodes (5): Files to replace after smoke tests, Recommended code patches, RiftCoach v0.7.0 Local Repo Update Plan, Rollback, Safe install path
+
+### Community 4284 - "Community 4284"
+Cohesion: 0.33
+Nodes (5): count, patch_version, policy, records, version
+
+### Community 4285 - "Community 4285"
+Cohesion: 0.33
+Nodes (5): ability, champion, item, rune, spell
+
+### Community 4286 - "Community 4286"
+Cohesion: 0.33
+Nodes (6): color_semantics, generated_rule, pending_allowed_source_refresh, source_conflict, source_verified, user_corrected_pending_revalidation
+
+### Community 4287 - "Community 4287"
+Cohesion: 0.33
+Nodes (6): 6. Exit Plan for Each Critical Tool, 🤖 ChatGPT → Claude / Gemini / Local, ⚡ Cloudflare Pages / Netlify, ⚡ Cloudflare Pages → Netlify, 💳 Lemon Squeezy → PayMongo / Stripe, 🗄️ Supabase → Alternative PostgreSQL
+
+### Community 4288 - "Community 4288"
+Cohesion: 0.33
+Nodes (5): field_level_provenance_required, promotion_policy, source_id, source_status, version
+
+### Community 4289 - "Community 4289"
+Cohesion: 0.33
+Nodes (5): ability_identity_priority, ability_numeric_mechanics_priority, strategy_build_priority, strict_rule, version
+
+### Community 4290 - "Community 4290"
+Cohesion: 0.33
+Nodes (5): database_version, patch_version, queue_groups, schema_version, seed_urls
+
+### Community 4291 - "Community 4291"
+Cohesion: 0.33
+Nodes (5): allowed_use, forbidden_use, output_rule, schema_version, source_family
+
+### Community 4292 - "Community 4292"
+Cohesion: 0.33
+Nodes (6): karma_actual, passive, skill_1, skill_2, skill_3, ultimate
+
+### Community 4294 - "Community 4294"
+Cohesion: 0.33
+Nodes (5): ability_identity_priority, ability_numeric_mechanics_priority, strategy_build_priority, strict_rule, version
+
+### Community 4295 - "Community 4295"
+Cohesion: 0.33
+Nodes (5): database_version, patch_version, queue_groups, schema_version, seed_urls
+
+### Community 4296 - "Community 4296"
+Cohesion: 0.33
+Nodes (5): allowed_use, forbidden_use, output_rule, schema_version, source_family
+
+### Community 4297 - "Community 4297"
+Cohesion: 0.33
+Nodes (5): audit_date, blockers, hard_gates_before_runtime_replace, scope, source_archive
+
+### Community 4298 - "Community 4298"
+Cohesion: 0.33
+Nodes (5): audit_date, blockers, hard_gates_before_runtime_replace, scope, source_archive
+
+### Community 4300 - "Community 4300"
+Cohesion: 0.33
+Nodes (5): errors, generated_at_utc, status, version, warnings
+
+### Community 4301 - "Community 4301"
+Cohesion: 0.33
+Nodes (6): e, passive, q, r, w, canonical_champions
+
+### Community 4302 - "Community 4302"
+Cohesion: 0.33
+Nodes (6): uploaded_m365_opus_abilities_by_key, e, passive, q, r, w
+
+### Community 4303 - "Community 4303"
+Cohesion: 0.33
+Nodes (6): uploaded_m365_opus_legacy_abilities_dict, e, passive, q, r, w
+
+### Community 4304 - "Community 4304"
+Cohesion: 0.33
+Nodes (6): e, passive, q, r, w, expected
+
+### Community 4305 - "Community 4305"
+Cohesion: 0.33
+Nodes (5): exact_values_not_promoted, generated_at_utc, karma_legacy_dict_quarantined, legacy_abilities_dict_mismatches, version
+
+### Community 4306 - "Community 4306"
+Cohesion: 0.33
+Nodes (6): risk_flag_counts, contains_exact_unverified_mechanics, contains_strategy_or_meta_overlay_candidates, karma_abilities_by_key_matches_protected_lock, karma_legacy_abilities_dict_conflicts_with_protected_lock, legacy_abilities_dict_identity_mismatch
+
+### Community 4307 - "Community 4307"
+Cohesion: 0.33
+Nodes (6): e, passive, q, r, w, karma_lock_enforced
+
+### Community 4308 - "Community 4308"
+Cohesion: 0.33
+Nodes (5): compatibility_gates, file_checks, generated_at_utc, runtime_exclusions, version
+
+### Community 4309 - "Community 4309"
+Cohesion: 0.33
+Nodes (5): compatibility_gates, expected_files, generated_at_utc, notes, version
+
+### Community 4310 - "Community 4310"
+Cohesion: 0.33
+Nodes (5): version, wr_builds_root_keys, wr_items_exists, wr_matchups_duo_exists, wr_synergies_duo_exists
+
+### Community 4311 - "Community 4311"
+Cohesion: 0.33
+Nodes (6): karma_expected, passive, skill_1, skill_2, skill_3, ultimate
+
+### Community 4312 - "Community 4312"
+Cohesion: 0.33
+Nodes (6): nunu_public_record_summary, ability_keys, id, image_preserved, name, splash_preserved
+
+### Community 4313 - "Community 4313"
+Cohesion: 0.33
+Nodes (6): e, passive, q, r, w, karma_lock_enforced
+
+### Community 4314 - "Community 4314"
+Cohesion: 0.33
+Nodes (5): excluded_spells, final_spells, patch_version, schema_version, validations
+
+### Community 4315 - "Community 4315"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4316 - "Community 4316"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4317 - "Community 4317"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4318 - "Community 4318"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4319 - "Community 4319"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4320 - "Community 4320"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4321 - "Community 4321"
+Cohesion: 0.33
+Nodes (5): count, edges, patch_version, source_status, version
+
+### Community 4322 - "Community 4322"
+Cohesion: 0.33
+Nodes (5): component, primary_actions, tabs, version, warnings
+
+### Community 4323 - "Community 4323"
+Cohesion: 0.33
+Nodes (5): field_level_provenance_required, promotion_policy, source_id, source_status, version
+
+### Community 4324 - "Community 4324"
+Cohesion: 0.33
+Nodes (6): counters, enemy, items_to_build, lane, universal_tips, counter_response
+
+### Community 4325 - "Community 4325"
+Cohesion: 0.33
+Nodes (6): _meta, chunk, game, generated, patch, version
+
+### Community 4326 - "Community 4326"
+Cohesion: 0.33
+Nodes (6): _meta, chunk, game, generated, patch, version
+
+### Community 4327 - "Community 4327"
+Cohesion: 0.40
+Nodes (4): Build Specs, Chunk 1 build objective, Future chunk integration, Runtime compatibility
+
+### Community 4328 - "Community 4328"
+Cohesion: 0.40
+Nodes (4): Data Architecture, Layers, Numeric value rule, Source-of-truth split
+
+### Community 4329 - "Community 4329"
+Cohesion: 0.40
+Nodes (4): Event families, Event Streaming Architecture, Future upgrade, Local-first default
+
+### Community 4330 - "Community 4330"
+Cohesion: 0.40
+Nodes (4): Backlinks, Backlinks and Entity Neighborhoods Spec, Neighborhoods, Usage
+
+### Community 4331 - "Community 4331"
+Cohesion: 0.40
+Nodes (4): Core edges, Core nodes, Data quality rule, Knowledge Graph Architecture
+
+### Community 4332 - "Community 4332"
+Cohesion: 0.40
+Nodes (4): Chunk groups, RAG / Vector Architecture, Required metadata filters, Retrieval safety
+
+### Community 4333 - "Community 4333"
+Cohesion: 0.40
+Nodes (4): Input, Output, Process, Recommendation Engine Spec
+
+### Community 4335 - "Community 4335"
+Cohesion: 0.40
+Nodes (5): 7. Keep Data in Portable Formats, Format Comparison Table, The Portability Rule, What to AVOID for Long-Term Storage, Why Portable Formats Matter
+
+### Community 4336 - "Community 4336"
+Cohesion: 0.40
+Nodes (5): 7. How to Create Screenshots and Annotated Walkthroughs, Annotation Tips, Free Tools for Screenshots, Screenshot Checklist, What to ALWAYS Hide/Blur
+
+### Community 4340 - "Community 4340"
+Cohesion: 0.40
+Nodes (5): src_zip, bytes, filename, path, sha256
+
+### Community 4341 - "Community 4341"
+Cohesion: 0.40
+Nodes (5): wr_chatgpt_zip, bytes, filename, path, sha256
+
+### Community 4342 - "Community 4342"
+Cohesion: 0.60
+Nodes (5): unit, value, cast_time, cast_time, cast_time
+
+### Community 4343 - "Community 4343"
+Cohesion: 0.40
+Nodes (5): edge_label_policy, show_confidence_badge, show_labels_default_depth, show_reason_on_hover, show_source_status_badge
+
+### Community 4344 - "Community 4344"
+Cohesion: 0.40
+Nodes (4): accessibility, default_node_radius, node_types, version
+
+### Community 4345 - "Community 4345"
+Cohesion: 0.40
+Nodes (5): icon, label_priority, shape, size_basis, Ability
+
+### Community 4346 - "Community 4346"
+Cohesion: 0.40
+Nodes (5): icon, label_priority, shape, size_basis, Build
+
+### Community 4347 - "Community 4347"
+Cohesion: 0.40
+Nodes (5): icon, label_priority, shape, size_basis, Champion
+
+### Community 4348 - "Community 4348"
+Cohesion: 0.40
+Nodes (5): icon, label_priority, shape, size_basis, Effect
+
+### Community 4349 - "Community 4349"
+Cohesion: 0.40
+Nodes (5): icon, label_priority, shape, size_basis, Item
+
+### Community 4350 - "Community 4350"
+Cohesion: 0.40
+Nodes (5): Patch, icon, label_priority, shape, size_basis
+
+### Community 4351 - "Community 4351"
+Cohesion: 0.40
+Nodes (5): Rune, icon, label_priority, shape, size_basis
+
+### Community 4352 - "Community 4352"
+Cohesion: 0.40
+Nodes (5): SourceClaim, icon, label_priority, shape, size_basis
+
+### Community 4353 - "Community 4353"
+Cohesion: 0.40
+Nodes (5): Spell, icon, label_priority, shape, size_basis
+
+### Community 4354 - "Community 4354"
+Cohesion: 0.40
+Nodes (5): ValidationRule, icon, label_priority, shape, size_basis
+
+### Community 4355 - "Community 4355"
+Cohesion: 0.40
+Nodes (4): forbidden, minimum_context_fields, pipeline, version
+
+### Community 4356 - "Community 4356"
+Cohesion: 0.40
+Nodes (5): 7. Keep Data in Portable Formats, Format Comparison Table, The Portability Rule, What to AVOID for Long-Term Storage, Why Portable Formats Matter
+
+### Community 4357 - "Community 4357"
+Cohesion: 0.40
+Nodes (5): 7. How to Create Screenshots and Annotated Walkthroughs, Annotation Tips, Free Tools for Screenshots, Screenshot Checklist, What to ALWAYS Hide/Blur
+
+### Community 4358 - "Community 4358"
+Cohesion: 0.40
+Nodes (4): duo_lane, patch, team_comps, updated
+
+### Community 4359 - "Community 4359"
+Cohesion: 0.40
+Nodes (5): merge_recommendation, can_merge, recommended_policy, recommended_version, should_overwrite_existing_canonical
+
+### Community 4360 - "Community 4360"
+Cohesion: 0.40
+Nodes (4): Karma actual, Nunu runtime summary, Results, RiftCoach v0.7.1 Targeted Fix Report
+
+### Community 4361 - "Community 4361"
+Cohesion: 0.40
+Nodes (4): duo_lane, patch, team_comps, updated
+
+### Community 4364 - "Community 4364"
+Cohesion: 0.40
+Nodes (3): FREE_MODELS, FreeModel, ModelTier
+
+### Community 4365 - "Community 4365"
+Cohesion: 0.40
+Nodes (4): duo_lane, patch, team_comps, updated
+
+### Community 4366 - "Community 4366"
+Cohesion: 0.40
+Nodes (3): FREE_MODELS, FreeModel, ModelTier
+
+### Community 4367 - "Community 4367"
+Cohesion: 0.40
+Nodes (4): builds_have_ids_count, items_root_array, runes_effect_populated_count, version
+
+### Community 4368 - "Community 4368"
+Cohesion: 0.40
+Nodes (4): conflicts, count, generated_at_utc, version
+
+### Community 4369 - "Community 4369"
+Cohesion: 0.40
+Nodes (4): alias_notes, generated_at_utc, reports, version
+
+### Community 4370 - "Community 4370"
+Cohesion: 0.40
+Nodes (5): karma_lock, generated_at_utc, notes, passed, version
+
+### Community 4371 - "Community 4371"
+Cohesion: 0.40
+Nodes (5): runtime_public_data_shapes, bad_builds, items_root_array, public_champion_count, runes_bad_slots
+
+### Community 4372 - "Community 4372"
+Cohesion: 0.40
+Nodes (5): input_files, uploaded_opus_merged_file, uploaded_opus_sha256, v0_7_zip, v0_7_zip_sha256
+
+### Community 4373 - "Community 4373"
+Cohesion: 0.40
+Nodes (5): v0_7_metadata, generated_at_utc, package_name, patch_version, version
+
+### Community 4374 - "Community 4374"
+Cohesion: 0.40
+Nodes (4): chunk_files, metadata_filters, patch_version, version
+
+### Community 4375 - "Community 4375"
+Cohesion: 0.40
+Nodes (4): patch_version, relationship_count, source_status, version
+
+### Community 4376 - "Community 4376"
+Cohesion: 0.40
+Nodes (4): components, recommended_formula, scale, schema_version
+
+### Community 4377 - "Community 4377"
+Cohesion: 0.40
+Nodes (4): gold_fields, missing_policy, schema_version, units
+
+### Community 4378 - "Community 4378"
+Cohesion: 0.40
+Nodes (4): patch_version, relationship_sources, strategy_policy, version
+
+### Community 4379 - "Community 4379"
+Cohesion: 0.40
+Nodes (4): patch_version, relationship_sources, strategy_policy, version
+
+### Community 4380 - "Community 4380"
+Cohesion: 0.40
+Nodes (5): ai_role, data_sources, description, phase, build_engine
+
+### Community 4381 - "Community 4381"
+Cohesion: 0.40
+Nodes (5): learning_paths, ai_role, data_sources, description, phase
+
+### Community 4382 - "Community 4382"
+Cohesion: 0.40
+Nodes (5): macro_coach, ai_role, data_sources, description, phase
+
+### Community 4383 - "Community 4383"
+Cohesion: 0.40
+Nodes (5): stat_calculator, ai_role, data_sources, description, phase
+
+### Community 4384 - "Community 4384"
+Cohesion: 0.40
+Nodes (5): synergy_engine, ai_role, data_sources, description, phase
+
+### Community 4385 - "Community 4385"
+Cohesion: 0.40
+Nodes (5): system_overview, app_name, description, tagline, version
+
+### Community 4386 - "Community 4386"
+Cohesion: 0.50
+Nodes (3): goals, objectives, schema_version
+
+### Community 4387 - "Community 4387"
+Cohesion: 0.50
+Nodes (3): build_recommendation_response_required, schema_version, schemas
+
+### Community 4388 - "Community 4388"
+Cohesion: 0.50
+Nodes (3): Analytics / BI Architecture, Dashboards, Gold facts
+
+### Community 4389 - "Community 4389"
+Cohesion: 0.50
+Nodes (3): Example features, Feature Store Architecture, Freshness
+
+### Community 4390 - "Community 4390"
+Cohesion: 0.50
+Nodes (3): Future tasks, GNN Readiness Architecture, Warning
+
+### Community 4391 - "Community 4391"
+Cohesion: 0.50
+Nodes (3): Important, Source Refresh Pipeline Spec, Steps
+
+### Community 4392 - "Community 4392"
+Cohesion: 0.50
+Nodes (4): 11. How to Avoid Exposing Secrets and Company Data, If You Already Pushed a Secret to GitHub, Pre-Publish Security Checklist, Quick Search Commands
+
+### Community 4393 - "Community 4393"
+Cohesion: 0.50
+Nodes (4): 4. How to Use Dummy/Demo Data Safely, ChatGPT Prompt for Demo Data, How to Generate Fake Data, What to Replace
+
+### Community 4394 - "Community 4394"
+Cohesion: 0.50
+Nodes (3): sha256_path(), Path, str
+
+### Community 4396 - "Community 4396"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk1_1.zip, bytes, outer_member, sha256
+
+### Community 4397 - "Community 4397"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk1.zip, bytes, outer_member, sha256
+
+### Community 4398 - "Community 4398"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk2.zip, bytes, outer_member, sha256
+
+### Community 4399 - "Community 4399"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk3.zip, bytes, outer_member, sha256
+
+### Community 4400 - "Community 4400"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk4.zip, bytes, outer_member, sha256
+
+### Community 4401 - "Community 4401"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk5.zip, bytes, outer_member, sha256
+
+### Community 4402 - "Community 4402"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk6.zip, bytes, outer_member, sha256
+
+### Community 4403 - "Community 4403"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk7.zip, bytes, outer_member, sha256
+
+### Community 4404 - "Community 4404"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk8.zip, bytes, outer_member, sha256
+
+### Community 4405 - "Community 4405"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk9.zip, bytes, outer_member, sha256
+
+### Community 4406 - "Community 4406"
+Cohesion: 0.50
+Nodes (4): target_range, target_range, value, target_range
+
+### Community 4407 - "Community 4407"
+Cohesion: 0.50
+Nodes (3): items, patch_version, version
+
+### Community 4408 - "Community 4408"
+Cohesion: 0.50
+Nodes (3): patch_version, runes, version
+
+### Community 4409 - "Community 4409"
+Cohesion: 0.50
+Nodes (3): patch_version, spells, version
+
+### Community 4410 - "Community 4410"
+Cohesion: 0.50
+Nodes (3): DENIES_OR_MITIGATES, HAS_ABILITY, SYNERGIZES_WITH
+
+### Community 4411 - "Community 4411"
+Cohesion: 0.50
+Nodes (4): arrow, importance, line, BACKLINK_FROM
+
+### Community 4412 - "Community 4412"
+Cohesion: 0.50
+Nodes (4): arrow, importance, line, CHANGED_IN_PATCH
+
+### Community 4413 - "Community 4413"
+Cohesion: 0.50
+Nodes (4): arrow, importance, line, COUNTERS
+
+### Community 4414 - "Community 4414"
+Cohesion: 0.50
+Nodes (4): arrow, importance, line, DENIES
+
+### Community 4415 - "Community 4415"
+Cohesion: 0.50
+Nodes (4): HAS_ABILITY, arrow, importance, line
+
+### Community 4416 - "Community 4416"
+Cohesion: 0.50
+Nodes (4): HAS_EFFECT, arrow, importance, line
+
+### Community 4417 - "Community 4417"
+Cohesion: 0.50
+Nodes (4): MITIGATES, arrow, importance, line
+
+### Community 4418 - "Community 4418"
+Cohesion: 0.50
+Nodes (4): RECOMMENDED_WHEN, arrow, importance, line
+
+### Community 4419 - "Community 4419"
+Cohesion: 0.50
+Nodes (4): SOURCE_SUPPORTS, arrow, importance, line
+
+### Community 4420 - "Community 4420"
+Cohesion: 0.50
+Nodes (4): SUPPRESSED_WHEN, arrow, importance, line
+
+### Community 4421 - "Community 4421"
+Cohesion: 0.50
+Nodes (4): SYNERGIZES_WITH, arrow, importance, line
+
+### Community 4422 - "Community 4422"
+Cohesion: 0.50
+Nodes (4): 8. Backup Schedule Recommendation, For Active Projects (Currently Building), For Inactive Projects (Completed/Paused), Simple Backup Calendar
+
+### Community 4423 - "Community 4423"
+Cohesion: 0.50
+Nodes (3): allowed_game_url_patterns, blocked_source_patterns, technical_non_game_exceptions
+
+### Community 4426 - "Community 4426"
+Cohesion: 0.50
+Nodes (3): allowed_game_url_patterns, blocked_source_patterns, technical_non_game_exceptions
+
+### Community 4429 - "Community 4429"
+Cohesion: 0.50
+Nodes (3): Added, Counts, RiftCoach WR v0.7.1 Build Summary
+
+### Community 4430 - "Community 4430"
+Cohesion: 0.50
+Nodes (3): build_legality_rules, patch_version, schema_version
+
+### Community 4431 - "Community 4431"
+Cohesion: 0.50
+Nodes (3): applies_to, numeric_claim_policy, schema_version
+
+### Community 4432 - "Community 4432"
+Cohesion: 0.50
+Nodes (3): damage_modifiers, damage_types, schema_version
+
+### Community 4433 - "Community 4433"
+Cohesion: 0.50
+Nodes (3): combat_categories, item_categories, schema_version
+
+### Community 4434 - "Community 4434"
+Cohesion: 0.50
+Nodes (3): normalized, positions, schema_version
+
+### Community 4435 - "Community 4435"
+Cohesion: 0.50
+Nodes (3): schema_version, source_families, source_statuses
+
+### Community 4436 - "Community 4436"
+Cohesion: 0.50
+Nodes (3): graph_alt_text_template, requirements, version
+
+### Community 4437 - "Community 4437"
+Cohesion: 0.50
+Nodes (3): states, transitions, version
+
+### Community 4451 - "Community 4451"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aatrox.e
+
+### Community 4452 - "Community 4452"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aatrox.passive
+
+### Community 4453 - "Community 4453"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aatrox.q
+
+### Community 4454 - "Community 4454"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aatrox.r
+
+### Community 4455 - "Community 4455"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aatrox.w
+
+### Community 4456 - "Community 4456"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ahri.e
+
+### Community 4457 - "Community 4457"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ahri.q
+
+### Community 4458 - "Community 4458"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ahri.r
+
+### Community 4459 - "Community 4459"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ahri.w
+
+### Community 4460 - "Community 4460"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akali.e
+
+### Community 4461 - "Community 4461"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akali.passive
+
+### Community 4462 - "Community 4462"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akali.q
+
+### Community 4463 - "Community 4463"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akali.r
+
+### Community 4464 - "Community 4464"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akali.w
+
+### Community 4465 - "Community 4465"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akshan.passive
+
+### Community 4466 - "Community 4466"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akshan.q
+
+### Community 4467 - "Community 4467"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akshan.r
+
+### Community 4468 - "Community 4468"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:akshan.w
+
+### Community 4469 - "Community 4469"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:alistar.e
+
+### Community 4470 - "Community 4470"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:alistar.passive
+
+### Community 4471 - "Community 4471"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:alistar.q
+
+### Community 4472 - "Community 4472"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:alistar.r
+
+### Community 4473 - "Community 4473"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:alistar.w
+
+### Community 4474 - "Community 4474"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ambessa.e
+
+### Community 4475 - "Community 4475"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ambessa.q
+
+### Community 4476 - "Community 4476"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ambessa.r
+
+### Community 4477 - "Community 4477"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ambessa.w
+
+### Community 4478 - "Community 4478"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:amumu.q
+
+### Community 4479 - "Community 4479"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:amumu.r
+
+### Community 4480 - "Community 4480"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:amumu.w
+
+### Community 4481 - "Community 4481"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:annie.e
+
+### Community 4482 - "Community 4482"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:annie.passive
+
+### Community 4483 - "Community 4483"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:annie.r
+
+### Community 4484 - "Community 4484"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:annie.w
+
+### Community 4485 - "Community 4485"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ashe.passive
+
+### Community 4486 - "Community 4486"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ashe.q
+
+### Community 4487 - "Community 4487"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ashe.r
+
+### Community 4488 - "Community 4488"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ashe.w
+
+### Community 4489 - "Community 4489"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aurelion_sol.q
+
+### Community 4490 - "Community 4490"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aurelion_sol.r
+
+### Community 4491 - "Community 4491"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aurora.e
+
+### Community 4492 - "Community 4492"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aurora.passive
+
+### Community 4493 - "Community 4493"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aurora.q
+
+### Community 4494 - "Community 4494"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aurora.r
+
+### Community 4495 - "Community 4495"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:aurora.w
+
+### Community 4496 - "Community 4496"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:bard.q
+
+### Community 4497 - "Community 4497"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:bard.r
+
+### Community 4498 - "Community 4498"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:bard.w
+
+### Community 4499 - "Community 4499"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:blitzcrank.passive
+
+### Community 4500 - "Community 4500"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:blitzcrank.q
+
+### Community 4501 - "Community 4501"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:blitzcrank.w
+
+### Community 4502 - "Community 4502"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:brand.q
+
+### Community 4503 - "Community 4503"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:brand.r
+
+### Community 4504 - "Community 4504"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:braum.e
+
+### Community 4505 - "Community 4505"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:braum.passive
+
+### Community 4506 - "Community 4506"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:braum.q
+
+### Community 4507 - "Community 4507"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:braum.w
+
+### Community 4508 - "Community 4508"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:caitlyn.e
+
+### Community 4509 - "Community 4509"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:caitlyn.q
+
+### Community 4510 - "Community 4510"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:caitlyn.r
+
+### Community 4511 - "Community 4511"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:caitlyn.w
+
+### Community 4512 - "Community 4512"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:camille.e
+
+### Community 4513 - "Community 4513"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:camille.passive
+
+### Community 4514 - "Community 4514"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:camille.q
+
+### Community 4515 - "Community 4515"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:corki.q
+
+### Community 4516 - "Community 4516"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:corki.r
+
+### Community 4517 - "Community 4517"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:corki.w
+
+### Community 4518 - "Community 4518"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:darius.e
+
+### Community 4519 - "Community 4519"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:darius.q
+
+### Community 4520 - "Community 4520"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:darius.r
+
+### Community 4521 - "Community 4521"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:darius.w
+
+### Community 4522 - "Community 4522"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:diana.e
+
+### Community 4523 - "Community 4523"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:diana.passive
+
+### Community 4524 - "Community 4524"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:diana.q
+
+### Community 4525 - "Community 4525"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:diana.w
+
+### Community 4526 - "Community 4526"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:dr_mundo.e
+
+### Community 4527 - "Community 4527"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:dr_mundo.passive
+
+### Community 4528 - "Community 4528"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:dr_mundo.q
+
+### Community 4529 - "Community 4529"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:dr_mundo.r
+
+### Community 4530 - "Community 4530"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:dr_mundo.w
+
+### Community 4531 - "Community 4531"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:draven.e
+
+### Community 4532 - "Community 4532"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:draven.q
+
+### Community 4533 - "Community 4533"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:draven.r
+
+### Community 4534 - "Community 4534"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:draven.w
+
+### Community 4535 - "Community 4535"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ekko.e
+
+### Community 4536 - "Community 4536"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ekko.passive
+
+### Community 4537 - "Community 4537"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ekko.q
+
+### Community 4538 - "Community 4538"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ekko.r
+
+### Community 4539 - "Community 4539"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ekko.w
+
+### Community 4540 - "Community 4540"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:evelynn.e
+
+### Community 4541 - "Community 4541"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:evelynn.passive
+
+### Community 4542 - "Community 4542"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:evelynn.q
+
+### Community 4543 - "Community 4543"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:evelynn.r
+
+### Community 4544 - "Community 4544"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:evelynn.w
+
+### Community 4545 - "Community 4545"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ezreal.e
+
+### Community 4546 - "Community 4546"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ezreal.q
+
+### Community 4547 - "Community 4547"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ezreal.r
+
+### Community 4548 - "Community 4548"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:ezreal.w
+
+### Community 4549 - "Community 4549"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiddlesticks.e
+
+### Community 4550 - "Community 4550"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiddlesticks.r
+
+### Community 4551 - "Community 4551"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiddlesticks.w
+
+### Community 4552 - "Community 4552"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiora.e
+
+### Community 4553 - "Community 4553"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiora.passive
+
+### Community 4554 - "Community 4554"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiora.q
+
+### Community 4555 - "Community 4555"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiora.r
+
+### Community 4556 - "Community 4556"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fiora.w
+
+### Community 4557 - "Community 4557"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fizz.e
+
+### Community 4558 - "Community 4558"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fizz.q
+
+### Community 4559 - "Community 4559"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fizz.r
+
+### Community 4560 - "Community 4560"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:fizz.w
+
+### Community 4561 - "Community 4561"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:galio.e
+
+### Community 4562 - "Community 4562"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:galio.q
+
+### Community 4563 - "Community 4563"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:galio.r
+
+### Community 4564 - "Community 4564"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:galio.w
+
+### Community 4565 - "Community 4565"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:garen.q
+
+### Community 4566 - "Community 4566"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:garen.r
+
+### Community 4567 - "Community 4567"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:garen.w
+
+### Community 4568 - "Community 4568"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gnar.q
+
+### Community 4569 - "Community 4569"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gnar.r
+
+### Community 4570 - "Community 4570"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gnar.w
+
+### Community 4571 - "Community 4571"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gragas.e
+
+### Community 4572 - "Community 4572"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gragas.passive
+
+### Community 4573 - "Community 4573"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gragas.q
+
+### Community 4574 - "Community 4574"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gragas.r
+
+### Community 4575 - "Community 4575"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:graves.e
+
+### Community 4576 - "Community 4576"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:graves.passive
+
+### Community 4577 - "Community 4577"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:graves.q
+
+### Community 4578 - "Community 4578"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:graves.w
+
+### Community 4579 - "Community 4579"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gwen.e
+
+### Community 4580 - "Community 4580"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gwen.passive
+
+### Community 4581 - "Community 4581"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:gwen.r
+
+### Community 4582 - "Community 4582"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:hecarim.e
+
+### Community 4583 - "Community 4583"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:hecarim.passive
+
+### Community 4584 - "Community 4584"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:hecarim.q
+
+### Community 4585 - "Community 4585"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:hecarim.r
+
+### Community 4586 - "Community 4586"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:hecarim.w
+
+### Community 4587 - "Community 4587"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:heimerdinger.e
+
+### Community 4588 - "Community 4588"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:heimerdinger.w
+
+### Community 4589 - "Community 4589"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:irelia.e
+
+### Community 4590 - "Community 4590"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:irelia.passive
+
+### Community 4591 - "Community 4591"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:irelia.q
+
+### Community 4592 - "Community 4592"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:irelia.r
+
+### Community 4593 - "Community 4593"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:janna.e
+
+### Community 4594 - "Community 4594"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:janna.passive
+
+### Community 4595 - "Community 4595"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:janna.q
+
+### Community 4596 - "Community 4596"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:janna.r
+
+### Community 4597 - "Community 4597"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:janna.w
+
+### Community 4598 - "Community 4598"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jarvan_iv.q
+
+### Community 4599 - "Community 4599"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jarvan_iv.r
+
+### Community 4600 - "Community 4600"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jarvan_iv.w
+
+### Community 4601 - "Community 4601"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jax.e
+
+### Community 4602 - "Community 4602"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jax.passive
+
+### Community 4603 - "Community 4603"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jax.r
+
+### Community 4604 - "Community 4604"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jax.w
+
+### Community 4605 - "Community 4605"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jayce.e
+
+### Community 4606 - "Community 4606"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jayce.passive
+
+### Community 4607 - "Community 4607"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jayce.q
+
+### Community 4608 - "Community 4608"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jayce.w
+
+### Community 4609 - "Community 4609"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jhin.q
+
+### Community 4610 - "Community 4610"
+Cohesion: 0.67
+Nodes (3): depth_1, depth_2, champion_ability:jhin.w
+
+### Community 4619 - "Community 4619"
+Cohesion: 0.67
+Nodes (3): 2. What to Backup Regularly, API Key Inventory Template, Complete Backup Inventory
+
+### Community 4633 - "Community 4633"
+Cohesion: 0.67
+Nodes (3): minLength, type, name
+
+### Community 4634 - "Community 4634"
+Cohesion: 0.67
+Nodes (3): slot, enum, type
+
+### Community 4635 - "Community 4635"
+Cohesion: 0.67
+Nodes (3): source_status, enum, type
+
+### Community 4636 - "Community 4636"
+Cohesion: 0.67
+Nodes (3): source_status, enum, type
+
+### Community 4642 - "Community 4642"
+Cohesion: 0.67
+Nodes (3): desc, examples, cc_chain
+
+### Community 4643 - "Community 4643"
+Cohesion: 0.67
+Nodes (3): desc, examples, disengage_peel
+
+### Community 4644 - "Community 4644"
+Cohesion: 0.67
+Nodes (3): desc, examples, engage_frontline
+
+### Community 4645 - "Community 4645"
+Cohesion: 0.67
+Nodes (3): example, roles, poke
+
+### Community 4646 - "Community 4646"
+Cohesion: 0.67
+Nodes (3): desc, examples, poke_siege
+
+### Community 4647 - "Community 4647"
+Cohesion: 0.67
+Nodes (3): desc, examples, protect_carry
+
+### Community 4648 - "Community 4648"
+Cohesion: 0.67
+Nodes (3): example, roles, protect
+
+### Community 4649 - "Community 4649"
+Cohesion: 0.67
+Nodes (3): desc, examples, reset_chain
+
+### Community 4650 - "Community 4650"
+Cohesion: 0.67
+Nodes (3): split, example, roles
+
+### Community 4651 - "Community 4651"
+Cohesion: 0.67
+Nodes (3): desc, examples, split_push
 
 ## Ambiguous Edges - Review These
 - `Feedback Adoption Metrics` → `Discovered Patterns Library`  [AMBIGUOUS]
   .ungasis/user-patterns/pattern-library.md · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **19645 isolated node(s):** `name`, `image`, `extensions`, `editor.formatOnSave`, `editor.tabSize` (+19640 more)
+- **24869 isolated node(s):** `name`, `image`, `extensions`, `editor.formatOnSave`, `editor.tabSize` (+24864 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1079 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1158 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Feedback Adoption Metrics` and `Discovered Patterns Library`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `Me as MVP Workflow` connect `Community 107` to `Community 502`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `UNGASIS AI Operating Model` connect `Community 107` to `Community 129`, `Community 844`, `Community 361`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `Full SOP Library` connect `Community 107` to `Community 614`, `Community 235`, `Community 502`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `UNGASIS AI Operating Model` connect `Community 107` to `Community 129`, `Community 844`, `Community 111`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `Me as MVP Workflow` connect `Community 107` to `Community 372`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `CLAUDE.md - Claude Code Instructions` connect `Community 187` to `Community 678`, `Community 454`, `Community 3145`, `Community 714`, `Community 235`, `Community 243`, `Community 853`, `Community 342`, `Community 120`, `Community 1791`?**
+  _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `name`, `image`, `extensions` to the rest of the system?**
-  _19825 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _25049 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.013605442176870748 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

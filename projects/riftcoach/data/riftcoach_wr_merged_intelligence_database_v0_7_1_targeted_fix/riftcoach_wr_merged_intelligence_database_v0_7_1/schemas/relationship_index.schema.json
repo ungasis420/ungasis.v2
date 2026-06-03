@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/relationship_index.schema.json",
+  "title": "Relationship Index",
+  "description": "Canonical relationship edge for graph UI, RAG, KG, analytics, and validation.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "edge_id",
+    "source",
+    "target",
+    "relationship_type",
+    "summary_brief",
+    "reason_codes",
+    "source_status",
+    "patch_version"
+  ],
+  "properties": {
+    "edge_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "target": {
+      "type": "object"
+    },
+    "relationship_type": {
+      "type": "string"
+    },
+    "direction": {
+      "type": "string"
+    },
+    "summary_brief": {
+      "type": "string"
+    },
+    "summary_full": {
+      "type": "string"
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_effects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_effects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "object"
+    },
+    "source_status": {
+      "type": "string"
+    },
+    "patch_version": {
+      "type": "string"
+    },
+    "valid_from_patch": {
+      "type": "string"
+    },
+    "valid_to_patch": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "ui": {
+      "type": "object"
+    }
+  }
+}

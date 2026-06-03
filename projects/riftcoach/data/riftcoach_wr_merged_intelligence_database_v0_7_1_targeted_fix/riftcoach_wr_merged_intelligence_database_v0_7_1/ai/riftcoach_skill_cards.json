@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "skill_cards": [
+    {
+      "skill_id": "skill_build_recommendation",
+      "objective": "Produce legal, patch-aware builds with source labels and reason codes."
+    },
+    {
+      "skill_id": "skill_counterplay_matrix",
+      "objective": "Map deny/mitigation relationships across champion abilities, items, runes, and spells."
+    },
+    {
+      "skill_id": "skill_source_audit",
+      "objective": "Reject unapproved sources and prevent LoL-PC contamination."
+    },
+    {
+      "skill_id": "skill_gold_cooldown_validation",
+      "objective": "Ensure item golds and cooldowns are structured and claim-backed before source_verified."
+    }
+  ]
+}

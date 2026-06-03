@@ -1,0 +1,2910 @@
+{
+  "meta": {
+    "type": "matchups",
+    "scope": "mid",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 28,
+    "total_entries": 172,
+    "difficulty_scale": {
+      "0.1-0.3": "hard_counter",
+      "0.4-0.6": "skill_matchup",
+      "0.7-0.9": "hard_losing"
+    },
+    "confidence_source": "theorycraft_meta_inference"
+  },
+  "matchups": [
+    {
+      "champion_id": "ahri",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "r_dashes_escape_cage",
+          "win_condition": [
+            "r_out_of_cage",
+            "e_charm_before_cage"
+          ],
+          "threats": [
+            "cage_if_no_r"
+          ],
+          "counterplay": [
+            "hold_r_for_cage_then_burst"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "e_interrupts_r_channel",
+          "win_condition": [
+            "e_charm_on_r_channel",
+            "burst_squishy"
+          ],
+          "threats": [
+            "gold_card_point_click"
+          ],
+          "counterplay": [
+            "all_in_when_r_on_cd"
+          ]
+        },
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "mobility_dodges_skillshots",
+          "win_condition": [
+            "dodge_q_with_r",
+            "charm_in_burst"
+          ],
+          "threats": [
+            "q_root_full_combo"
+          ],
+          "counterplay": [
+            "sidestep_q_then_e_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "windwall_blocks_e_and_q",
+          "win_condition": [
+            "bait_windwall",
+            "trade_when_down"
+          ],
+          "threats": [
+            "w_blocks_charm",
+            "all_in_with_knockup"
+          ],
+          "counterplay": [
+            "bait_windwall_then_e_engage"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shadow_dodges_charm",
+          "win_condition": [
+            "e_predict_shadow_swap",
+            "r_dodge_ult"
+          ],
+          "threats": [
+            "r_death_mark_burst"
+          ],
+          "counterplay": [
+            "r_away_when_zed_r_lands"
+          ]
+        },
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outscales_massively",
+          "win_condition": [
+            "punish_pre_6",
+            "roam_advantage"
+          ],
+          "threats": [
+            "late_game_burst"
+          ],
+          "counterplay": [
+            "roam_and_snowball_before_16"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "akali",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "gap_close_kills_immobile",
+          "win_condition": [
+            "e_onto_lux_post_5",
+            "shroud_safety"
+          ],
+          "threats": [
+            "q_root_pre_5"
+          ],
+          "counterplay": [
+            "play_safe_pre_5_then_all_in"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "shroud_in_cage_r_escape",
+          "win_condition": [
+            "w_shroud_in_cage",
+            "burst_before_scaling"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "w_inside_cage_then_r_out"
+          ]
+        },
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "gap_close_vs_control_mage",
+          "win_condition": [
+            "e_engage_dodge_ball",
+            "shroud_zone"
+          ],
+          "threats": [
+            "ball_zoning",
+            "r_shockwave"
+          ],
+          "counterplay": [
+            "e_from_angle_avoid_ball"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "galio",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "tank_survives_burst_taunts",
+          "win_condition": [
+            "roam_instead_of_lane"
+          ],
+          "threats": [
+            "w_taunt_aftershock",
+            "too_tanky_to_burst"
+          ],
+          "counterplay": [
+            "roam_to_other_lanes"
+          ]
+        },
+        {
+          "target": "annie",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "point_click_stun_counters_shroud",
+          "win_condition": [
+            "shroud_tibbers",
+            "trade_when_stun_down"
+          ],
+          "threats": [
+            "q_stun_tibbers_burst"
+          ],
+          "counterplay": [
+            "track_stun_stacks_engage_when_low"
+          ]
+        },
+        {
+          "target": "lissandra",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "r_self_cast_survives_burst",
+          "win_condition": [
+            "bait_r_then_reengage"
+          ],
+          "threats": [
+            "r_stasis_negates_combo",
+            "w_root"
+          ],
+          "counterplay": [
+            "force_r_then_back_off_reengage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "fizz",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.2,
+          "reason": "e_dodges_everything",
+          "win_condition": [
+            "e_dodge_q_then_all_in",
+            "r_shark_engage"
+          ],
+          "threats": [
+            "q_root_pre_3"
+          ],
+          "counterplay": [
+            "e_through_q_then_burst"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.2,
+          "reason": "e_hops_cage_r_kills",
+          "win_condition": [
+            "e_over_cage",
+            "burst_before_scaling"
+          ],
+          "threats": [
+            "cage_if_e_down"
+          ],
+          "counterplay": [
+            "e_over_cage_burst_inside"
+          ]
+        },
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "e_untargetable_dodges_r",
+          "win_condition": [
+            "e_dodge_shockwave",
+            "r_engage"
+          ],
+          "threats": [
+            "ball_zone_control"
+          ],
+          "counterplay": [
+            "e_when_r_animation_starts"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "galio",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "mr_shield_survives_burst",
+          "win_condition": [
+            "roam_to_avoid_lane"
+          ],
+          "threats": [
+            "w_taunt_passive_shield",
+            "too_tanky"
+          ],
+          "counterplay": [
+            "roam_dont_fight_galio"
+          ]
+        },
+        {
+          "target": "lissandra",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "r_self_cast_negates_burst",
+          "win_condition": [
+            "bait_r_then_reengage"
+          ],
+          "threats": [
+            "r_stasis_w_root"
+          ],
+          "counterplay": [
+            "force_r_back_off"
+          ]
+        },
+        {
+          "target": "diana",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shield_trades_back_hard",
+          "win_condition": [
+            "short_trade_with_e"
+          ],
+          "threats": [
+            "w_shield_q_mark_burst"
+          ],
+          "counterplay": [
+            "short_e_trade_then_disengage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "katarina",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "shunpo_escapes_cage",
+          "win_condition": [
+            "e_out_of_cage",
+            "burst_before_scaling"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "e_to_dagger_outside_cage"
+          ]
+        },
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "gap_close_kills_immobile",
+          "win_condition": [
+            "e_onto_lux_dodge_q",
+            "r_burst"
+          ],
+          "threats": [
+            "q_root"
+          ],
+          "counterplay": [
+            "e_to_dagger_behind_lux"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "burst_kills_squishy",
+          "win_condition": [
+            "e_onto_tf_burst",
+            "match_roam"
+          ],
+          "threats": [
+            "gold_card_stun"
+          ],
+          "counterplay": [
+            "e_when_gold_card_used"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "galio",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "taunt_interrupts_r",
+          "win_condition": [
+            "roam_avoid_lane"
+          ],
+          "threats": [
+            "w_taunt_cancels_death_lotus"
+          ],
+          "counterplay": [
+            "roam_to_side_lanes"
+          ]
+        },
+        {
+          "target": "annie",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "point_click_stun_cancels_r",
+          "win_condition": [
+            "bait_stun_then_engage"
+          ],
+          "threats": [
+            "q_stun_stops_r"
+          ],
+          "counterplay": [
+            "track_stun_stacks"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_q_daggers",
+          "win_condition": [
+            "bait_windwall",
+            "e_behind_him"
+          ],
+          "threats": [
+            "w_blocks_daggers"
+          ],
+          "counterplay": [
+            "play_around_windwall_cd"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ekko",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "burst_kills_squishy_mage",
+          "win_condition": [
+            "e_blink_burst",
+            "r_safety"
+          ],
+          "threats": [
+            "gold_card_stun"
+          ],
+          "counterplay": [
+            "e_onto_tf_after_gold_card"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "r_escapes_cage_burst",
+          "win_condition": [
+            "r_rewind_out_of_cage",
+            "burst_pre_scaling"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "r_if_caught_in_cage"
+          ]
+        },
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "e_gap_close_r_safety",
+          "win_condition": [
+            "e_dodge_q_burst",
+            "r_escape"
+          ],
+          "threats": [
+            "q_root_combo"
+          ],
+          "counterplay": [
+            "e_sidestep_q_then_burst"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "windwall_blocks_q",
+          "win_condition": [
+            "bait_windwall"
+          ],
+          "threats": [
+            "w_blocks_timewinder"
+          ],
+          "counterplay": [
+            "trade_when_windwall_down"
+          ]
+        },
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outscaled_hard",
+          "win_condition": [
+            "punish_pre_6_hard"
+          ],
+          "threats": [
+            "late_game_burst"
+          ],
+          "counterplay": [
+            "roam_and_snowball"
+          ]
+        },
+        {
+          "target": "galio",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "too_tanky_to_burst",
+          "win_condition": [
+            "roam"
+          ],
+          "threats": [
+            "w_taunt_mr_shield"
+          ],
+          "counterplay": [
+            "roam_dont_fight"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "diana",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "gap_close_burst",
+          "win_condition": [
+            "q_mark_e_dash_burst",
+            "w_shield"
+          ],
+          "threats": [
+            "q_root_pre_6"
+          ],
+          "counterplay": [
+            "q_e_all_in_post_5"
+          ]
+        },
+        {
+          "target": "ziggs",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "gap_close_vs_poke",
+          "win_condition": [
+            "e_dash_onto_ziggs",
+            "r_pull_burst"
+          ],
+          "threats": [
+            "poke_pre_6"
+          ],
+          "counterplay": [
+            "survive_poke_then_all_in_post_5"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "burst_kills_squishy",
+          "win_condition": [
+            "q_e_all_in",
+            "r_in_teamfight"
+          ],
+          "threats": [
+            "gold_card_stun"
+          ],
+          "counterplay": [
+            "all_in_after_gold_card_used"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "outscaled_hard",
+          "win_condition": [
+            "punish_pre_6"
+          ],
+          "threats": [
+            "r_mobility_late"
+          ],
+          "counterplay": [
+            "snowball_early"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_q",
+          "win_condition": [
+            "w_shield_trade"
+          ],
+          "threats": [
+            "w_blocks_crescent_strike"
+          ],
+          "counterplay": [
+            "short_trades_with_w_shield"
+          ]
+        },
+        {
+          "target": "galio",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "mr_tank_survives",
+          "win_condition": [
+            "roam"
+          ],
+          "threats": [
+            "w_taunt_mr_shield"
+          ],
+          "counterplay": [
+            "roam_to_side_lanes"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "zed",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.2,
+          "reason": "shadow_gap_close_burst",
+          "win_condition": [
+            "w_e_q_poke",
+            "r_all_in_post_5"
+          ],
+          "threats": [
+            "q_root_if_predictable"
+          ],
+          "counterplay": [
+            "w_shadow_poke_then_r_all_in"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "r_untargetable_dodges_r",
+          "win_condition": [
+            "r_dodges_primordial_burst",
+            "shadow_escapes_cage"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "r_to_dodge_veigar_r_then_burst"
+          ]
+        },
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "shadow_outplays_ball",
+          "win_condition": [
+            "w_shadow_dodge_ball",
+            "r_all_in"
+          ],
+          "threats": [
+            "ball_zone_r_shockwave"
+          ],
+          "counterplay": [
+            "w_shadow_from_angle_avoid_ball"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "burst_kills_squishy",
+          "win_condition": [
+            "r_death_mark_on_tf",
+            "shadow_dodge_gold_card"
+          ],
+          "threats": [
+            "gold_card_stun"
+          ],
+          "counterplay": [
+            "w_shadow_bait_gold_card_then_r"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "galio",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "tank_survives_full_combo",
+          "win_condition": [
+            "roam_dont_fight"
+          ],
+          "threats": [
+            "w_taunt_too_tanky"
+          ],
+          "counterplay": [
+            "roam_to_side_lanes"
+          ]
+        },
+        {
+          "target": "lissandra",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "r_stasis_negates_death_mark",
+          "win_condition": [
+            "bait_r_then_reengage"
+          ],
+          "threats": [
+            "r_self_removes_death_mark"
+          ],
+          "counterplay": [
+            "force_r_with_w_poke_then_all_in"
+          ]
+        },
+        {
+          "target": "annie",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "point_click_stun_burst",
+          "win_condition": [
+            "r_dodge_tibbers",
+            "w_shadow_escape"
+          ],
+          "threats": [
+            "q_stun_instant"
+          ],
+          "counterplay": [
+            "poke_with_w_shadow_dont_r_into_stun"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "yasuo",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "ahri",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "windwall_blocks_e_and_q",
+          "win_condition": [
+            "w_blocks_charm",
+            "all_in_melee"
+          ],
+          "threats": [
+            "r_kiting"
+          ],
+          "counterplay": [
+            "windwall_charm_then_all_in"
+          ]
+        },
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.2,
+          "reason": "windwall_blocks_everything",
+          "win_condition": [
+            "w_blocks_q_e_r",
+            "e_dash_through_minions"
+          ],
+          "threats": [
+            "nothing_significant"
+          ],
+          "counterplay": [
+            "windwall_then_e_onto_lux"
+          ]
+        },
+        {
+          "target": "ziggs",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "windwall_blocks_all_poke",
+          "win_condition": [
+            "w_blocks_bombs",
+            "e_dash_engage"
+          ],
+          "threats": [
+            "poke_when_w_down"
+          ],
+          "counterplay": [
+            "windwall_then_e_engage"
+          ]
+        },
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "windwall_blocks_spheres_and_r",
+          "win_condition": [
+            "w_blocks_r_burst",
+            "e_all_in"
+          ],
+          "threats": [
+            "e_push_stun"
+          ],
+          "counterplay": [
+            "windwall_r_then_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "annie",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "point_click_stun_cant_windwall",
+          "win_condition": [
+            "windwall_w_only",
+            "e_dodge_tibbers"
+          ],
+          "threats": [
+            "q_stun_through_windwall"
+          ],
+          "counterplay": [
+            "trade_when_stun_down"
+          ]
+        },
+        {
+          "target": "renekton",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "empowered_w_burst",
+          "win_condition": [
+            "short_trades"
+          ],
+          "threats": [
+            "w_stun_burst"
+          ],
+          "counterplay": [
+            "short_q_trades_disengage"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shroud_negates_autos",
+          "win_condition": [
+            "q_tornado_in_shroud"
+          ],
+          "threats": [
+            "w_shroud_cant_auto"
+          ],
+          "counterplay": [
+            "q_tornado_to_find_akali"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "yone",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "e_engage_from_range",
+          "win_condition": [
+            "e_spirit_form_engage",
+            "q3_knockup"
+          ],
+          "threats": [
+            "q_root"
+          ],
+          "counterplay": [
+            "e_spirit_dodge_q_then_trade"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "e_snaps_back_out_of_cage",
+          "win_condition": [
+            "e_trade_then_snap_back",
+            "burst_pre_scaling"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "e_trade_snap_back_before_cage"
+          ]
+        },
+        {
+          "target": "ziggs",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "gap_close_vs_poke",
+          "win_condition": [
+            "e_engage_past_bombs",
+            "q3_knockup"
+          ],
+          "threats": [
+            "poke_pre_engage"
+          ],
+          "counterplay": [
+            "e_from_range_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "annie",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "point_click_stun_on_e_engage",
+          "win_condition": [
+            "bait_stun_then_e"
+          ],
+          "threats": [
+            "q_stun_when_e_forward"
+          ],
+          "counterplay": [
+            "track_stun_stacks"
+          ]
+        },
+        {
+          "target": "renekton",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "outtrades_in_melee",
+          "win_condition": [
+            "e_poke_snap_back"
+          ],
+          "threats": [
+            "w_stun_burst"
+          ],
+          "counterplay": [
+            "e_poke_never_stay_melee"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shroud_negates_autos",
+          "win_condition": [
+            "r_through_shroud"
+          ],
+          "threats": [
+            "w_shroud"
+          ],
+          "counterplay": [
+            "r_to_hit_through_shroud"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "annie",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "q_stun_goes_through_windwall",
+          "win_condition": [
+            "q_stun_point_click",
+            "flash_tibbers"
+          ],
+          "threats": [
+            "windwall_w_only"
+          ],
+          "counterplay": [
+            "q_stun_ignores_windwall"
+          ]
+        },
+        {
+          "target": "katarina",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "q_stun_cancels_r",
+          "win_condition": [
+            "save_stun_for_r",
+            "tibbers_burst"
+          ],
+          "threats": [
+            "e_shunpo_dodges"
+          ],
+          "counterplay": [
+            "hold_stun_for_death_lotus"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "point_click_stun_in_shroud",
+          "win_condition": [
+            "q_stun_targets_in_shroud",
+            "tibbers_aoe"
+          ],
+          "threats": [
+            "shroud_zone"
+          ],
+          "counterplay": [
+            "q_targets_akali_even_in_shroud"
+          ]
+        },
+        {
+          "target": "yone",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "stun_on_e_engage",
+          "win_condition": [
+            "q_stun_when_e_forward",
+            "tibbers_burst"
+          ],
+          "threats": [
+            "e_poke_snap_back"
+          ],
+          "counterplay": [
+            "hold_stun_for_e_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranged_poke",
+          "win_condition": [
+            "flash_tibbers"
+          ],
+          "threats": [
+            "q_e_r_from_range"
+          ],
+          "counterplay": [
+            "flash_r_for_surprise"
+          ]
+        },
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "ball_zones_from_range",
+          "win_condition": [
+            "flash_tibbers_onto_ball"
+          ],
+          "threats": [
+            "ball_poke_outranges"
+          ],
+          "counterplay": [
+            "wait_for_flash_tibbers_timing"
+          ]
+        },
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranged_and_outburst",
+          "win_condition": [
+            "flash_r_before_syndra_r"
+          ],
+          "threats": [
+            "e_stun_from_range"
+          ],
+          "counterplay": [
+            "flash_r_engage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "orianna",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "ball_zones_squishy",
+          "win_condition": [
+            "q_w_poke",
+            "r_shockwave_teamfight"
+          ],
+          "threats": [
+            "gold_card_roam"
+          ],
+          "counterplay": [
+            "push_wave_deny_roam"
+          ]
+        },
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "ball_poke_pre_6",
+          "win_condition": [
+            "q_w_harass_early",
+            "deny_farm"
+          ],
+          "threats": [
+            "late_game_scaling"
+          ],
+          "counterplay": [
+            "aggressive_poke_pre_6"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outranges_cage",
+          "win_condition": [
+            "ball_poke_from_range",
+            "r_shockwave_outside_cage"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "poke_from_outside_cage_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "shadow_outplays_ball",
+          "win_condition": [
+            "r_shockwave_on_shadow_swap"
+          ],
+          "threats": [
+            "r_death_mark_burst"
+          ],
+          "counterplay": [
+            "r_predict_shadow_swap"
+          ]
+        },
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "e_dodges_shockwave",
+          "win_condition": [
+            "r_before_e_used"
+          ],
+          "threats": [
+            "e_untargetable_dodges_r"
+          ],
+          "counterplay": [
+            "bait_e_then_r"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_ball",
+          "win_condition": [
+            "ball_from_angle"
+          ],
+          "threats": [
+            "w_blocks_q_ball"
+          ],
+          "counterplay": [
+            "place_ball_behind_with_e_ally"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "syndra",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "burst_kills_squishy",
+          "win_condition": [
+            "e_stun_r_burst",
+            "deny_roam"
+          ],
+          "threats": [
+            "gold_card_stun"
+          ],
+          "counterplay": [
+            "e_stun_then_r_burst"
+          ]
+        },
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "bully_pre_6",
+          "win_condition": [
+            "q_w_poke_deny_farm",
+            "e_stun_burst"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "aggressive_poke_deny_cs"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outranges_and_outbursts_early",
+          "win_condition": [
+            "q_poke_deny_stacks",
+            "r_burst_before_scaling"
+          ],
+          "threats": [
+            "cage_stun_late"
+          ],
+          "counterplay": [
+            "deny_q_stacks_early"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "windwall_blocks_spheres_and_r",
+          "win_condition": [
+            "e_from_angle"
+          ],
+          "threats": [
+            "w_blocks_everything"
+          ],
+          "counterplay": [
+            "e_stun_from_side_angle"
+          ]
+        },
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "e_dodges_r",
+          "win_condition": [
+            "e_stun_before_e_used"
+          ],
+          "threats": [
+            "e_untargetable_dodges_r"
+          ],
+          "counterplay": [
+            "hold_r_until_fizz_e_down"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shadow_dodges_stun",
+          "win_condition": [
+            "e_predict_shadow"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "e_stun_when_zed_r_lands"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "lux",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "outranges_and_bursts",
+          "win_condition": [
+            "q_root_e_r_combo",
+            "deny_roam_with_push"
+          ],
+          "threats": [
+            "gold_card_gank_setup"
+          ],
+          "counterplay": [
+            "push_wave_deny_roam"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outranges_cage",
+          "win_condition": [
+            "q_root_from_range",
+            "r_snipe"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "q_e_r_from_outside_cage_range"
+          ]
+        },
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "poke_bully_pre_6",
+          "win_condition": [
+            "q_e_poke_deny_farm"
+          ],
+          "threats": [
+            "late_scaling_burst"
+          ],
+          "counterplay": [
+            "punish_hard_pre_6"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "e_dodges_q_and_r",
+          "win_condition": [
+            "q_root_before_e"
+          ],
+          "threats": [
+            "e_gap_close_burst"
+          ],
+          "counterplay": [
+            "q_root_prediction_on_approach"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "shadow_gap_close",
+          "win_condition": [
+            "q_root_on_shadow_dash"
+          ],
+          "threats": [
+            "r_death_mark_burst"
+          ],
+          "counterplay": [
+            "q_when_zed_r_lands"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "gap_close_kills",
+          "win_condition": [
+            "q_root_on_e_dash"
+          ],
+          "threats": [
+            "e_gap_close_shroud"
+          ],
+          "counterplay": [
+            "q_predict_e_dash"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "windwall_blocks_everything",
+          "win_condition": [
+            "nothing_significant"
+          ],
+          "threats": [
+            "w_blocks_q_e_r"
+          ],
+          "counterplay": [
+            "avoid_lane_roam"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "veigar",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.5,
+          "reason": "cage_traps_r_dash",
+          "win_condition": [
+            "cage_prediction_on_r",
+            "r_scales_equally"
+          ],
+          "threats": [
+            "late_burst"
+          ],
+          "counterplay": [
+            "cage_where_kassadin_r_lands"
+          ]
+        },
+        {
+          "target": "corki",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "cage_traps_immobile_poke",
+          "win_condition": [
+            "cage_on_approach",
+            "r_execute"
+          ],
+          "threats": [
+            "missile_poke"
+          ],
+          "counterplay": [
+            "cage_then_burst_combo"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.9,
+          "reason": "e_hops_over_cage",
+          "win_condition": [
+            "cage_predict_e_landing"
+          ],
+          "threats": [
+            "e_ignores_cage"
+          ],
+          "counterplay": [
+            "place_cage_on_e_landing_spot"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "shadow_escapes_cage",
+          "win_condition": [
+            "cage_on_r_landing"
+          ],
+          "threats": [
+            "r_dodges_r_shadow_escapes_cage"
+          ],
+          "counterplay": [
+            "cage_where_zed_r_lands"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "shroud_in_cage_r_escape",
+          "win_condition": [
+            "cage_shroud_timing"
+          ],
+          "threats": [
+            "w_shroud_e_escape"
+          ],
+          "counterplay": [
+            "cage_then_w_around_shroud"
+          ]
+        },
+        {
+          "target": "katarina",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "e_shunpo_escapes_cage",
+          "win_condition": [
+            "cage_on_dagger"
+          ],
+          "threats": [
+            "e_to_dagger_outside"
+          ],
+          "counterplay": [
+            "cage_on_dagger_location"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "viktor",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "outpokes_and_outscales",
+          "win_condition": [
+            "e_laser_waveclear",
+            "w_gravity_field"
+          ],
+          "threats": [
+            "gold_card_roam"
+          ],
+          "counterplay": [
+            "push_wave_deny_roam"
+          ]
+        },
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "poke_bully_pre_6",
+          "win_condition": [
+            "e_laser_poke",
+            "q_shield_trades"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "bully_with_e_laser_pre_6"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outranges_with_e",
+          "win_condition": [
+            "e_poke_from_range",
+            "w_zone_cage"
+          ],
+          "threats": [
+            "cage_stun_late"
+          ],
+          "counterplay": [
+            "e_poke_deny_stacks"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "e_dodges_e_laser",
+          "win_condition": [
+            "w_gravity_on_approach"
+          ],
+          "threats": [
+            "e_gap_close_burst"
+          ],
+          "counterplay": [
+            "w_gravity_field_self_peel"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "shadow_gap_close",
+          "win_condition": [
+            "w_on_shadow_location"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "w_gravity_field_on_r_landing"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shroud_dodges_abilities",
+          "win_condition": [
+            "e_through_shroud"
+          ],
+          "threats": [
+            "shroud_engage"
+          ],
+          "counterplay": [
+            "e_laser_through_shroud_area"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "vex",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "passive_fears_on_dash",
+          "win_condition": [
+            "passive_fear_on_e_dash",
+            "w_shield_fear"
+          ],
+          "threats": [
+            "windwall"
+          ],
+          "counterplay": [
+            "let_him_dash_into_fear"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "passive_fears_on_e_dash",
+          "win_condition": [
+            "fear_on_e_engage",
+            "w_shield"
+          ],
+          "threats": [
+            "shroud"
+          ],
+          "counterplay": [
+            "passive_fear_on_akali_e"
+          ]
+        },
+        {
+          "target": "katarina",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "passive_fears_on_shunpo",
+          "win_condition": [
+            "fear_every_e",
+            "r_engage"
+          ],
+          "threats": [
+            "dagger_placement"
+          ],
+          "counterplay": [
+            "passive_fears_every_shunpo"
+          ]
+        },
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "fear_on_e_approach",
+          "win_condition": [
+            "passive_fear_on_q_dash"
+          ],
+          "threats": [
+            "e_untargetable"
+          ],
+          "counterplay": [
+            "hold_passive_for_q_dash"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranges_and_outbursts",
+          "win_condition": [
+            "r_engage_from_range"
+          ],
+          "threats": [
+            "e_stun_r_burst_from_range"
+          ],
+          "counterplay": [
+            "r_engage_from_fog"
+          ]
+        },
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranged_poke",
+          "win_condition": [
+            "r_engage_gap_close"
+          ],
+          "threats": [
+            "q_root_from_range"
+          ],
+          "counterplay": [
+            "r_from_fog_of_war"
+          ]
+        },
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "ball_outranges",
+          "win_condition": [
+            "r_engage"
+          ],
+          "threats": [
+            "ball_zone_poke"
+          ],
+          "counterplay": [
+            "r_engage_from_angle"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "lissandra",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "r_self_removes_death_mark",
+          "win_condition": [
+            "r_self_when_zed_r_lands",
+            "w_root"
+          ],
+          "threats": [
+            "shadow_poke"
+          ],
+          "counterplay": [
+            "r_self_to_negate_death_mark"
+          ]
+        },
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "r_self_negates_burst",
+          "win_condition": [
+            "r_self_on_burst",
+            "w_root_engage"
+          ],
+          "threats": [
+            "e_dodges_w"
+          ],
+          "counterplay": [
+            "r_self_to_survive_then_burst"
+          ]
+        },
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "r_self_survives_burst",
+          "win_condition": [
+            "w_root_in_shroud",
+            "r_self_safety"
+          ],
+          "threats": [
+            "shroud_dodge"
+          ],
+          "counterplay": [
+            "w_root_then_r_self_if_burst"
+          ]
+        },
+        {
+          "target": "katarina",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "w_root_stops_r",
+          "win_condition": [
+            "w_root_during_r",
+            "r_stun_target"
+          ],
+          "threats": [
+            "e_escape_root"
+          ],
+          "counterplay": [
+            "w_root_on_r_channel"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranged_in_lane",
+          "win_condition": [
+            "e_engage_from_range"
+          ],
+          "threats": [
+            "ball_poke"
+          ],
+          "counterplay": [
+            "e_claw_engage_from_range"
+          ]
+        },
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranged_burst",
+          "win_condition": [
+            "e_engage_dodge_e"
+          ],
+          "threats": [
+            "e_stun_r_burst"
+          ],
+          "counterplay": [
+            "e_engage_from_angle"
+          ]
+        },
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outscaled_late",
+          "win_condition": [
+            "punish_pre_6"
+          ],
+          "threats": [
+            "late_game_burst"
+          ],
+          "counterplay": [
+            "aggressive_early_roam"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "kassadin",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outscales_massively",
+          "win_condition": [
+            "survive_to_16",
+            "r_burst_late"
+          ],
+          "threats": [
+            "ball_poke_early"
+          ],
+          "counterplay": [
+            "farm_safely_scale"
+          ]
+        },
+        {
+          "target": "ahri",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outscales_with_passive_mr",
+          "win_condition": [
+            "survive_early_scale",
+            "r_mobility_late"
+          ],
+          "threats": [
+            "charm_burst_early"
+          ],
+          "counterplay": [
+            "q_magic_shield_on_trades"
+          ]
+        },
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outscales_immobile_mage",
+          "win_condition": [
+            "survive_poke_scale",
+            "r_gap_close_late"
+          ],
+          "threats": [
+            "q_root_poke"
+          ],
+          "counterplay": [
+            "farm_with_q_scale_to_items"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "ad_burst_ignores_passive",
+          "win_condition": [
+            "survive_with_bone_plating"
+          ],
+          "threats": [
+            "ad_damage_bypasses_magic_shield"
+          ],
+          "counterplay": [
+            "bone_plating_fleet_survive"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "ad_burst_bully",
+          "win_condition": [
+            "survive_to_roa"
+          ],
+          "threats": [
+            "burst_trades_early"
+          ],
+          "counterplay": [
+            "hug_tower_farm"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "melee_bully_windwall",
+          "win_condition": [
+            "survive_scale"
+          ],
+          "threats": [
+            "all_in_melee"
+          ],
+          "counterplay": [
+            "q_poke_from_range"
+          ]
+        },
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "bullied_out_pre_6",
+          "win_condition": [
+            "survive_to_items"
+          ],
+          "threats": [
+            "q_poke_denies_farm"
+          ],
+          "counterplay": [
+            "fleet_footwork_sustain"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "aurelion_sol",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "both_scale_but_asol_pushes",
+          "win_condition": [
+            "push_wave_roam",
+            "stardust_scaling"
+          ],
+          "threats": [
+            "r_burst_late"
+          ],
+          "counterplay": [
+            "push_wave_roam_for_stardust"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outpushes_and_outscales",
+          "win_condition": [
+            "push_wave_deny_roam"
+          ],
+          "threats": [
+            "gold_card_gank"
+          ],
+          "counterplay": [
+            "w_push_wave_faster"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "gap_close_burst_kills",
+          "win_condition": [
+            "r_knockback"
+          ],
+          "threats": [
+            "e_gap_close_burst"
+          ],
+          "counterplay": [
+            "save_r_for_peel"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "shadow_gap_close",
+          "win_condition": [
+            "r_peel"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "r_knockback_on_approach"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "melee_all_in",
+          "win_condition": [
+            "r_peel"
+          ],
+          "threats": [
+            "e_dash_all_in"
+          ],
+          "counterplay": [
+            "keep_distance_poke"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "vladimir",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "sustain_matchup_vlad_wins",
+          "win_condition": [
+            "q_sustain_outsustains",
+            "scale_equally"
+          ],
+          "threats": [
+            "r_burst_late"
+          ],
+          "counterplay": [
+            "q_poke_sustain_farm"
+          ]
+        },
+        {
+          "target": "orianna",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "w_pool_dodges_shockwave",
+          "win_condition": [
+            "w_dodge_r",
+            "scale_to_late"
+          ],
+          "threats": [
+            "ball_poke_early"
+          ],
+          "counterplay": [
+            "w_pool_on_r_animation"
+          ]
+        },
+        {
+          "target": "lux",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "w_pool_dodges_combo",
+          "win_condition": [
+            "w_dodge_q",
+            "sustain_with_q"
+          ],
+          "threats": [
+            "q_root_combo"
+          ],
+          "counterplay": [
+            "w_pool_through_q"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "burst_before_w_pool",
+          "win_condition": [
+            "w_pool_e_stun"
+          ],
+          "threats": [
+            "e_stun_r_burst_instant"
+          ],
+          "counterplay": [
+            "w_pool_preemptively"
+          ]
+        },
+        {
+          "target": "annie",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "point_click_stun_burst",
+          "win_condition": [
+            "w_pool_tibbers"
+          ],
+          "threats": [
+            "q_stun_instant"
+          ],
+          "counterplay": [
+            "w_pool_when_stun_ready"
+          ]
+        },
+        {
+          "target": "vex",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "fear_interrupts_e_charge",
+          "win_condition": [
+            "w_pool_fear"
+          ],
+          "threats": [
+            "passive_fear_on_e"
+          ],
+          "counterplay": [
+            "w_pool_through_fear"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "twisted_fate",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "gold_card_punishes_pre_6",
+          "win_condition": [
+            "gold_card_harass",
+            "roam_before_kass_scales"
+          ],
+          "threats": [
+            "late_game_outscales"
+          ],
+          "counterplay": [
+            "gold_card_poke_then_roam"
+          ]
+        },
+        {
+          "target": "corki",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "roam_advantage",
+          "win_condition": [
+            "push_then_r_roam",
+            "gold_card_setup"
+          ],
+          "threats": [
+            "package_engage"
+          ],
+          "counterplay": [
+            "push_wave_then_r_to_sidelane"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "burst_kills_squishy",
+          "win_condition": [
+            "gold_card_on_r_landing"
+          ],
+          "threats": [
+            "r_death_mark_burst"
+          ],
+          "counterplay": [
+            "gold_card_when_zed_r_lands"
+          ]
+        },
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "e_dodges_gold_card",
+          "win_condition": [
+            "gold_card_before_e"
+          ],
+          "threats": [
+            "e_dodges_stun_card"
+          ],
+          "counterplay": [
+            "throw_card_before_fizz_e"
+          ]
+        },
+        {
+          "target": "ahri",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "charm_interrupts_r",
+          "win_condition": [
+            "r_from_fog"
+          ],
+          "threats": [
+            "e_charm_on_r_channel"
+          ],
+          "counterplay": [
+            "r_from_fog_of_war"
+          ]
+        },
+        {
+          "target": "diana",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "burst_kills_post_5",
+          "win_condition": [
+            "gold_card_pre_dash"
+          ],
+          "threats": [
+            "q_e_burst"
+          ],
+          "counterplay": [
+            "gold_card_before_diana_e"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "galio",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "akali",
+          "lane": "mid",
+          "difficulty": 0.2,
+          "reason": "tank_survives_burst_taunts",
+          "win_condition": [
+            "w_taunt_aftershock",
+            "passive_shield"
+          ],
+          "threats": [
+            "nothing_significant"
+          ],
+          "counterplay": [
+            "w_taunt_on_approach"
+          ]
+        },
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.2,
+          "reason": "mr_shield_survives_everything",
+          "win_condition": [
+            "w_taunt_passive_shield"
+          ],
+          "threats": [
+            "nothing_significant"
+          ],
+          "counterplay": [
+            "w_taunt_when_fizz_engages"
+          ]
+        },
+        {
+          "target": "katarina",
+          "lane": "mid",
+          "difficulty": 0.2,
+          "reason": "w_taunt_cancels_r",
+          "win_condition": [
+            "w_taunt_during_r",
+            "too_tanky"
+          ],
+          "threats": [
+            "roam_avoids_lane"
+          ],
+          "counterplay": [
+            "w_taunt_on_death_lotus"
+          ]
+        },
+        {
+          "target": "ekko",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "too_tanky_for_burst",
+          "win_condition": [
+            "w_taunt_passive_shield"
+          ],
+          "threats": [
+            "r_escape"
+          ],
+          "counterplay": [
+            "w_taunt_on_approach"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "vayne",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "true_damage_ignores_mr",
+          "win_condition": [
+            "w_taunt_e_combo"
+          ],
+          "threats": [
+            "silver_bolts_true_damage"
+          ],
+          "counterplay": [
+            "flash_w_taunt"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "true_damage_vitals",
+          "win_condition": [
+            "w_taunt"
+          ],
+          "threats": [
+            "w_parry_taunt"
+          ],
+          "counterplay": [
+            "bait_parry"
+          ]
+        },
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranged_poke",
+          "win_condition": [
+            "e_engage_from_range"
+          ],
+          "threats": [
+            "q_poke_outranges"
+          ],
+          "counterplay": [
+            "e_dash_into_w_taunt"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ziggs",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "poke_bully_pre_6",
+          "win_condition": [
+            "q_bomb_poke_deny_farm",
+            "w_satchel_tower"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "poke_hard_take_tower_early"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outpushes_denies_roam",
+          "win_condition": [
+            "push_wave_fast",
+            "r_cross_map"
+          ],
+          "threats": [
+            "gold_card_gank"
+          ],
+          "counterplay": [
+            "push_wave_deny_roam"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outranges_cage",
+          "win_condition": [
+            "q_poke_from_range",
+            "r_execute"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "poke_from_outside_cage_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.8,
+          "reason": "windwall_blocks_everything",
+          "win_condition": [
+            "poke_when_w_down"
+          ],
+          "threats": [
+            "w_blocks_all_bombs"
+          ],
+          "counterplay": [
+            "poke_from_angle_past_windwall"
+          ]
+        },
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "e_gap_close_burst",
+          "win_condition": [
+            "w_satchel_escape"
+          ],
+          "threats": [
+            "e_gap_close_kills"
+          ],
+          "counterplay": [
+            "w_satchel_away_on_approach"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "shadow_gap_close",
+          "win_condition": [
+            "w_satchel_escape"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "w_satchel_self_peel"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "zoe",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "e_sleep_q_burst_pre_6",
+          "win_condition": [
+            "e_sleep_max_q_one_shot",
+            "deny_farm"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "e_sleep_then_max_range_q"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outpokes_and_picks",
+          "win_condition": [
+            "e_sleep_from_fog",
+            "q_one_shot"
+          ],
+          "threats": [
+            "gold_card_setup"
+          ],
+          "counterplay": [
+            "e_from_fog_then_q"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "poke_from_outside_cage",
+          "win_condition": [
+            "e_sleep_q_from_range"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "e_q_from_outside_cage_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "e_dodges_sleep",
+          "win_condition": [
+            "e_sleep_prediction"
+          ],
+          "threats": [
+            "e_gap_close_untargetable"
+          ],
+          "counterplay": [
+            "hold_e_for_fizz_q_dash"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "windwall_blocks_e_and_q",
+          "win_condition": [
+            "poke_from_angle"
+          ],
+          "threats": [
+            "w_blocks_key_abilities"
+          ],
+          "counterplay": [
+            "e_from_side_angle"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shadow_gap_close",
+          "win_condition": [
+            "e_sleep_on_r"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "e_sleep_when_zed_r_lands"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "aurora",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "bully_pre_6_zone_control",
+          "win_condition": [
+            "q_poke_deny_farm",
+            "r_zone_trap"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "poke_early_deny_cs"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "r_traps_in_zone",
+          "win_condition": [
+            "r_zone_on_tf",
+            "w_untargetable"
+          ],
+          "threats": [
+            "gold_card"
+          ],
+          "counterplay": [
+            "r_zone_when_tf_approaches"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "windwall_blocks_q",
+          "win_condition": [
+            "w_hop_dodge"
+          ],
+          "threats": [
+            "w_blocks_q"
+          ],
+          "counterplay": [
+            "trade_when_windwall_down"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shadow_outplays",
+          "win_condition": [
+            "r_zone_trap"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "r_zone_when_zed_r_lands"
+          ]
+        },
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranges",
+          "win_condition": [
+            "w_dodge_e"
+          ],
+          "threats": [
+            "e_stun_r_burst"
+          ],
+          "counterplay": [
+            "w_untargetable_on_e"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "norra",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "portal_mobility_poke",
+          "win_condition": [
+            "poke_pre_6",
+            "portal_roam"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "poke_and_roam"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "portal_matches_roam",
+          "win_condition": [
+            "portal_map_control",
+            "match_roam_tempo"
+          ],
+          "threats": [
+            "gold_card"
+          ],
+          "counterplay": [
+            "portal_to_match_tf_roam"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "gap_close_burst",
+          "win_condition": [
+            "portal_escape"
+          ],
+          "threats": [
+            "e_gap_close"
+          ],
+          "counterplay": [
+            "portal_away_on_approach"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "shadow_gap_close",
+          "win_condition": [
+            "portal_escape"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "portal_away_when_zed_r"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_abilities",
+          "win_condition": [
+            "poke_past_windwall"
+          ],
+          "threats": [
+            "w_blocks_abilities"
+          ],
+          "counterplay": [
+            "abilities_from_angle"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "heimerdinger",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.3,
+          "reason": "turret_zone_denies_farm",
+          "win_condition": [
+            "turret_zone_control",
+            "deny_cs"
+          ],
+          "threats": [
+            "late_r_burst"
+          ],
+          "counterplay": [
+            "place_turrets_deny_approach"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "turrets_push_deny_roam",
+          "win_condition": [
+            "perma_push_with_turrets"
+          ],
+          "threats": [
+            "gold_card_gank_setup"
+          ],
+          "counterplay": [
+            "push_wave_with_turrets"
+          ]
+        },
+        {
+          "target": "veigar",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "turrets_outside_cage",
+          "win_condition": [
+            "turret_zone_from_range"
+          ],
+          "threats": [
+            "cage_stun"
+          ],
+          "counterplay": [
+            "turrets_poke_outside_cage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "w_grabs_turrets",
+          "win_condition": [
+            "place_turrets_spread"
+          ],
+          "threats": [
+            "w_picks_up_turrets"
+          ],
+          "counterplay": [
+            "spread_turrets_wide"
+          ]
+        },
+        {
+          "target": "ziggs",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "bombs_destroy_turrets",
+          "win_condition": [
+            "r_mega_turret"
+          ],
+          "threats": [
+            "aoe_clears_turrets"
+          ],
+          "counterplay": [
+            "r_mega_turret_to_force"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_turret_shots",
+          "win_condition": [
+            "place_turrets_around_windwall"
+          ],
+          "threats": [
+            "w_blocks_turret_beams"
+          ],
+          "counterplay": [
+            "turrets_from_multiple_angles"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ryze",
+      "role": "mid",
+      "strong_against": [
+        {
+          "target": "kassadin",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "machine_gun_poke_pre_6",
+          "win_condition": [
+            "eq_combo_poke",
+            "phase_rush_kite"
+          ],
+          "threats": [
+            "late_burst"
+          ],
+          "counterplay": [
+            "eq_poke_deny_farm"
+          ]
+        },
+        {
+          "target": "twisted_fate",
+          "lane": "mid",
+          "difficulty": 0.4,
+          "reason": "outpushes_and_outscales",
+          "win_condition": [
+            "eq_push_deny_roam"
+          ],
+          "threats": [
+            "gold_card"
+          ],
+          "counterplay": [
+            "push_wave_match_roam_with_r"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fizz",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "gap_close_burst",
+          "win_condition": [
+            "w_root_self_peel"
+          ],
+          "threats": [
+            "e_gap_close"
+          ],
+          "counterplay": [
+            "w_root_on_approach"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "mid",
+          "difficulty": 0.7,
+          "reason": "shadow_burst",
+          "win_condition": [
+            "w_root_phase_rush"
+          ],
+          "threats": [
+            "r_death_mark"
+          ],
+          "counterplay": [
+            "w_root_when_zed_r_lands"
+          ]
+        },
+        {
+          "target": "syndra",
+          "lane": "mid",
+          "difficulty": 0.6,
+          "reason": "outranged_burst",
+          "win_condition": [
+            "phase_rush_escape"
+          ],
+          "threats": [
+            "e_stun_r_burst"
+          ],
+          "counterplay": [
+            "eq_trade_phase_rush_out"
+          ]
+        }
+      ]
+    }
+  ]
+}

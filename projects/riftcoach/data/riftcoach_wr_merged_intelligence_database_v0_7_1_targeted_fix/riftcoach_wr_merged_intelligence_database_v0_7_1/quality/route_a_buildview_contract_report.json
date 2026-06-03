@@ -1,0 +1,4 @@
+{
+  "version": "0.7.0",
+  "known_issue": "BuildView structured rendering requires /api/chat JSON {type:\"build\",data:{}} but current route streams markdown. v0.7 data supports both markdown and future structured views."
+}

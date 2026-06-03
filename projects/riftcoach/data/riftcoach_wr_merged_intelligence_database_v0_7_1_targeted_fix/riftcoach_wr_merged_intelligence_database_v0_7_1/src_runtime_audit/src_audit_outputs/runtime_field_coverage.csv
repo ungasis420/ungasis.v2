@@ -1,0 +1,9 @@
+file,status,record_count,missing_required,coverage
+champions.json,ok,137,,"{""id"": 137, ""name"": 137, ""tier"": 137, ""roles"": 137, ""classes"": 137, ""style"": 137, ""adaptiveType"": 137, ""rangeType"": 137, ""resource"": 137, ""image"": 137, ""splash"": 137, ""abilities"": 0, ""title"": 0}"
+items.json,ok,114,,"{""id"": 114, ""name"": 114, ""category"": 114, ""tier"": 114, ""cost"": 114, ""stats"": 114, ""passive"": 114, ""image"": 114}"
+runes.json,ok,53,,"{""id"": 53, ""name"": 53, ""type"": 53, ""slot"": 53, ""path"": 53, ""effect"": 0, ""cooldown"": 15, ""image"": 53, ""description"": 53, ""tier"": 53}"
+spells.json,ok,10,,"{""id"": 10, ""name"": 10, ""effect"": 10, ""cooldown"": 10, ""bestOn"": 10, ""image"": 10}"
+builds.json,missing_fields,10,id,"{""id"": 0, ""name"": 10, ""role"": 10, ""summary"": 0, ""items"": 10, ""runes"": 10, ""spells"": 10}"
+counters.json,ok,50,,"{""champion"": 50, ""role"": 50, ""counters"": 50, ""note"": 1}"
+synergies.json,ok,1,,"{""duo_lane"": true, ""team_comps"": true, ""patch"": true, ""updated"": true}"
+meta.json,ok,6,,{}

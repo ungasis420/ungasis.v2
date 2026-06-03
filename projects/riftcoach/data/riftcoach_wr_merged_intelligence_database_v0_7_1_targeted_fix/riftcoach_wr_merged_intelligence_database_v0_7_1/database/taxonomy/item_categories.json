@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "item_categories": [
+    "basic",
+    "mid_tier",
+    "upgraded",
+    "boots_basic",
+    "boots_tier_2",
+    "boot_enchant",
+    "support",
+    "ward",
+    "trinket",
+    "transformed"
+  ],
+  "combat_categories": [
+    "physical",
+    "magic",
+    "defense",
+    "support",
+    "hybrid",
+    "utility",
+    "boots",
+    "enchant"
+  ]
+}

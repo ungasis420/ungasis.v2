@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "keystones": [
+    "Electrocute",
+    "Dark Harvest",
+    "Empowerment",
+    "Lethal Tempo",
+    "Fleet Footwork",
+    "Conqueror",
+    "Grasp of the Undying",
+    "Guardian",
+    "Aery",
+    "Arcane Comet",
+    "Phase Rush",
+    "First Strike",
+    "Ice Overlord"
+  ],
+  "primary_paths": {
+    "Domination": {
+      "slot_1": [
+        "Cheap Shot",
+        "Sudden Impact",
+        "Empowered Attack"
+      ],
+      "slot_2": [
+        "Chain Assault",
+        "Tyrant",
+        "Hubris"
+      ],
+      "slot_3": [
+        "Eyeball Collection",
+        "Ingenious Hunter",
+        "Relentless Hunter",
+        "Zombie Ward"
+      ]
+    },
+    "Precision": {
+      "slot_1": [
+        "Brutal",
+        "Triumph",
+        "Battle Zeal"
+      ],
+      "slot_2": [
+        "Last Stand",
+        "Cut Down",
+        "Coup de Grace"
+      ],
+      "slot_3": [
+        "Legend: Alacrity",
+        "Legend: Tenacity",
+        "Legend: Bloodline"
+      ]
+    },
+    "Resolve": {
+      "slot_1": [
+        "Demolish",
+        "Font of Life",
+        "Courage of the Colossus",
+        "Unshakeable"
+      ],
+      "slot_2": [
+        "Second Wind",
+        "Nullifying Orb",
+        "Bone Plating"
+      ],
+      "slot_3": [
+        "Overgrowth",
+        "Revitalize",
+        "Perseverance"
+      ]
+    },
+    "Sorcery": {
+      "slot_1": [
+        "Axiom Arcanist",
+        "Manaflow Band",
+        "Botanist",
+        "Hexflash"
+      ],
+      "slot_2": [
+        "Transcendence",
+        "Celerity",
+        "Absolute Focus"
+      ],
+      "slot_3": [
+        "Scorch",
+        "Nimbus Cloak",
+        "Gathering Storm",
+        "Ixtali Seedjar"
+      ]
+    }
+  },
+  "slot_counts": {
+    "keystone": 1,
+    "primary": 3,
+    "secondary": 1
+  }
+}

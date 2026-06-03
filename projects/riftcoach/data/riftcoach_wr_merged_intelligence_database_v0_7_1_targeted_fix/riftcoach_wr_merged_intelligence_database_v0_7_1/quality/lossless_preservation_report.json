@@ -1,0 +1,69 @@
+{
+  "version": "0.7.1",
+  "generated_at_utc": "2026-05-22T03:46:36.807407+00:00",
+  "raw_archive_copies_present": true,
+  "source_archives": {
+    "data_zip": {
+      "path": "/mnt/data/data.zip",
+      "filename": "data.zip",
+      "bytes": 332950,
+      "sha256": "bb93c3396a1de3f8b18bdf25568d28844635af18c00142d5c168dd687cea1a4f"
+    },
+    "wr_opus_zip": {
+      "path": "/mnt/data/wr_opus.zip",
+      "filename": "wr_opus.zip",
+      "bytes": 583777,
+      "sha256": "a1e0c966c4ac9a7bd4b29351eeb92b3fb7504340cbb25e84958df950f3eaf2e0"
+    },
+    "wr_chatgpt_zip": {
+      "path": "/mnt/data/wr_chatgpt.zip",
+      "filename": "wr_chatgpt.zip",
+      "bytes": 8749702,
+      "sha256": "e32bafa33fa30fe09e2094b8f04597ab0d5c3c6bc507ed3e24e6842d4e55a9f8"
+    },
+    "src_zip": {
+      "path": "/mnt/data/src.zip",
+      "filename": "src.zip",
+      "bytes": 639190,
+      "sha256": "52ee1e373a6b3fa5911de3208c5c5e79e304d361c53db3d51bdbd14eee85b31c"
+    }
+  },
+  "nested_chatgpt_archive_count": 11,
+  "extracted_raw_sources_present": {
+    "data_zip": true,
+    "wr_opus_zip": true,
+    "wr_chatgpt_zip": true,
+    "src_zip": true,
+    "chatgpt_chunks_extracted": "not_duplicated_in_final_zip_raw_nested_zips_preserved",
+    "wr_chatgpt_zip_extracted": "not_duplicated_in_final_zip_raw_archive_and_nested_zips_preserved"
+  },
+  "merge_policy": "No raw source file or archive was overwritten or discarded; canonical records are generated separately from raw_sources.",
+  "slim_packaging_note": "Decompressed duplicate ChatGPT chunks and duplicate previous audit raw snapshots were removed from final package to avoid artifact breakage. Lossless preservation remains through raw ZIP copies, nested ZIP copies, and checksums.",
+  "removed_duplicate_dirs": [
+    {
+      "path": "staging/src_runtime_contracts/riftcoach_src_audit",
+      "bytes_removed": 147837548
+    },
+    {
+      "path": "src_runtime_audit/riftcoach_src_audit",
+      "bytes_removed": 147837548
+    },
+    {
+      "path": "raw_sources/chatgpt_chunks_extracted",
+      "bytes_removed": 217412417
+    },
+    {
+      "path": "raw_sources/wr_chatgpt_zip/extracted",
+      "bytes_removed": 8747264
+    }
+  ],
+  "raw_nested_chatgpt_zips_present": true,
+  "added_in_v0_7_1": {
+    "m365_opus_postmerge_wr_champions_merged_v070_full": {
+      "preserved": true,
+      "bytes": 10926306,
+      "sha256": "0402e35d3067a00af462a3d1982340aa7c5e81ef5c39a909d33c1c6baab0599e",
+      "raw_preserved_path": "raw_sources/m365_opus_postmerge/wr_champions_merged_v070_full.json"
+    }
+  }
+}

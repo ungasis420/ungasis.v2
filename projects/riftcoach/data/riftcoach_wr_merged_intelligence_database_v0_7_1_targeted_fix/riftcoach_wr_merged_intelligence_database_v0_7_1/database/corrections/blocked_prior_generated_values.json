@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "version": "0.6.0-chunk2",
+    "created_at": "2026-05-19T20:54:50Z",
+    "patch_version": "7.1e"
+  },
+  "blocked_prior_generated_values": [
+    {
+      "entity_id": "karma.passive",
+      "field": "name",
+      "blocked_value": "Pending Passive",
+      "reason": "Placeholder from older generated pack; cannot appear in final champion chunk.",
+      "severity": "blocker"
+    },
+    {
+      "entity_id": "karma.q",
+      "field": "name",
+      "blocked_value": "Pending Q",
+      "reason": "Placeholder from older generated pack; cannot appear in final champion chunk.",
+      "severity": "blocker"
+    },
+    {
+      "entity_id": "karma.w",
+      "field": "name",
+      "blocked_value": "Pending W",
+      "reason": "Placeholder from older generated pack; cannot appear in final champion chunk.",
+      "severity": "blocker"
+    },
+    {
+      "entity_id": "karma.e",
+      "field": "name",
+      "blocked_value": "Pending E",
+      "reason": "Placeholder from older generated pack; cannot appear in final champion chunk.",
+      "severity": "blocker"
+    },
+    {
+      "entity_id": "karma.r",
+      "field": "name",
+      "blocked_value": "Pending R",
+      "reason": "Placeholder from older generated pack; cannot appear in final champion chunk.",
+      "severity": "blocker"
+    },
+    {
+      "entity_id": "karma.passive",
+      "field": "name",
+      "blocked_value": "Gathering Fire",
+      "reason": "League PC-style overwrite risk; Wild Rift sample identifies Mantra as passive.",
+      "severity": "blocker"
+    },
+    {
+      "entity_id": "karma.r",
+      "field": "name",
+      "blocked_value": "Mantra",
+      "reason": "League PC-style overwrite risk for WR context; Wild Rift sample identifies Transcendent Embrace as ultimate.",
+      "severity": "blocker"
+    }
+  ],
+  "global_rules": [
+    {
+      "rule_id": "no_pending_ability_names_in_final_chunks",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "no_lol_pc_ability_overwrite",
+      "severity": "blocker"
+    },
+    {
+      "rule_id": "manual_corrections_are_protected",
+      "severity": "blocker"
+    }
+  ]
+}

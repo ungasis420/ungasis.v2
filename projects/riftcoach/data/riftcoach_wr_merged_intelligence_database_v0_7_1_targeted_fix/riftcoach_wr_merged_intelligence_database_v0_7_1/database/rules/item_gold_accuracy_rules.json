@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "rule_id": "item_gold_accuracy_gate",
+  "severity": "blocker",
+  "applies_to": [
+    "basic_items",
+    "mid_tier_items",
+    "upgraded_items",
+    "boots",
+    "boot_enchants",
+    "support_items",
+    "transformed_items",
+    "ward_or_trinket_records"
+  ],
+  "requirements": [
+    "Every item must expose economy.gold.total_cost.",
+    "Every source-verified cost must include source URL, source family, retrieved_at, patch_version, and claim_id.",
+    "Every missing cost must use pending_allowed_source_refresh, not silent null.",
+    "Patch-changed costs override stale wiki values only when supported by Riot patch source.",
+    "WildRiftFire can support advisory meta existence but exact gold values must be source_verified only when extracted from approved source text.",
+    "Cost conflicts must produce a source_conflict record."
+  ],
+  "required_gold_fields": [
+    "total_cost",
+    "recipe_cost",
+    "sell_value",
+    "upgrade_cost_from",
+    "builds_from",
+    "builds_into"
+  ]
+}

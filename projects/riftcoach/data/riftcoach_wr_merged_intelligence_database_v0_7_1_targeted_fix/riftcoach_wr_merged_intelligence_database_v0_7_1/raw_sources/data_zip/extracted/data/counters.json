@@ -1,0 +1,1275 @@
+[
+  {
+    "champion": "ambessa",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "malphite",
+        "name": "Malphite",
+        "threat": "major",
+        "tip": "Armor stacking nullifies her physical burst. Poke with Q, survive to 5."
+      },
+      {
+        "id": "ornn",
+        "name": "Ornn",
+        "threat": "major",
+        "tip": "Ornn outscales and his Brittle proc punishes her dashes."
+      },
+      {
+        "id": "garen",
+        "name": "Garen",
+        "threat": "even",
+        "tip": "Silence stops her combo. Trade short, disengage with Q speed."
+      },
+      {
+        "id": "fiora",
+        "name": "Fiora",
+        "threat": "minor",
+        "tip": "Riposte her CC window. Ambessa wins extended trades early."
+      }
+    ]
+  },
+  {
+    "champion": "ornn",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "fiora",
+        "name": "Fiora",
+        "threat": "major",
+        "tip": "Riposte Ornn's Brittle. True damage shreds his tank stats."
+      },
+      {
+        "id": "gwen",
+        "name": "Gwen",
+        "threat": "major",
+        "tip": "Hallowed Mist blocks Ornn R. True damage cuts through armor."
+      },
+      {
+        "id": "camille",
+        "name": "Camille",
+        "threat": "even",
+        "tip": "True damage on Q2 is strong vs tanks. Respect his all-in at 5."
+      }
+    ]
+  },
+  {
+    "champion": "malphite",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "gwen",
+        "name": "Gwen",
+        "threat": "major",
+        "tip": "AP + true damage bypasses his armor. Hallowed Mist blocks R."
+      },
+      {
+        "id": "mordekaiser",
+        "name": "Mordekaiser",
+        "threat": "major",
+        "tip": "Death Realm isolates Malphite. Shield + sustain wins extended fights."
+      },
+      {
+        "id": "darius",
+        "name": "Darius",
+        "threat": "even",
+        "tip": "Darius wins lane but Malphite outscales in teamfights."
+      }
+    ]
+  },
+  {
+    "champion": "sion",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "fiora",
+        "name": "Fiora",
+        "threat": "major",
+        "tip": "Riposte his Q for free stun. True damage ignores his HP stacking."
+      },
+      {
+        "id": "gwen",
+        "name": "Gwen",
+        "threat": "major",
+        "tip": "True damage + Hallowed Mist makes Sion's CC useless."
+      },
+      {
+        "id": "mordekaiser",
+        "name": "Mordekaiser",
+        "threat": "even",
+        "tip": "Death Realm removes Sion from team. Passive doesn't work in Realm."
+      }
+    ]
+  },
+  {
+    "champion": "garen",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "camille",
+        "name": "Camille",
+        "threat": "major",
+        "tip": "Hookshot dodges Q. True damage on Q2 bypasses his W."
+      },
+      {
+        "id": "riven",
+        "name": "Riven",
+        "threat": "even",
+        "tip": "Riven can kite and combo around his silence window."
+      },
+      {
+        "id": "fiora",
+        "name": "Fiora",
+        "threat": "major",
+        "tip": "Riposte his R for a free stun. Outscales hard."
+      }
+    ]
+  },
+  {
+    "champion": "aatrox",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "fiora",
+        "name": "Fiora",
+        "threat": "major",
+        "tip": "Riposte his W pull. Parry his Q sweet spots."
+      },
+      {
+        "id": "riven",
+        "name": "Riven",
+        "threat": "even",
+        "tip": "Riven can dash between Q sweet spots. Skill matchup."
+      },
+      {
+        "id": "renekton",
+        "name": "Renekton",
+        "threat": "even",
+        "tip": "Early burst + stun beats Aatrox. Falls off later."
+      }
+    ]
+  },
+  {
+    "champion": "fiora",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "malphite",
+        "name": "Malphite",
+        "threat": "even",
+        "tip": "Armor stacking + poke is annoying. She outscales post-2 items."
+      },
+      {
+        "id": "renekton",
+        "name": "Renekton",
+        "threat": "major",
+        "tip": "Double dash + stun wins short trades. Bully pre-6."
+      },
+      {
+        "id": "sett",
+        "name": "Sett",
+        "threat": "even",
+        "tip": "Sett's W true damage center is hard to Riposte. Respect it."
+      }
+    ]
+  },
+  {
+    "champion": "riven",
+    "role": "Baron",
+    "counters": [
+      {
+        "id": "renekton",
+        "name": "Renekton",
+        "threat": "major",
+        "tip": "Point-and-click stun + sustain counters Riven's combos."
+      },
+      {
+        "id": "malphite",
+        "name": "Malphite",
+        "threat": "major",
+        "tip": "Armor + AS slow makes Riven useless. Q poke is free."
+      },
+      {
+        "id": "sett",
+        "name": "Sett",
+        "threat": "even",
+        "tip": "Sett's W punishes aggressive trades. Don't get grabbed."
+      }
+    ]
+  },
+  {
+    "champion": "lee_sin",
+    "role": "Jungle",
+    "counters": [
+      {
+        "id": "rammus",
+        "name": "Rammus",
+        "threat": "major",
+        "tip": "Thornmail + taunt destroys Lee. Can't kick away from Rammus."
+      },
+      {
+        "id": "vi",
+        "name": "Vi",
+        "threat": "even",
+        "tip": "Vi's R locks Lee down. Armor shred hurts him."
+      },
+      {
+        "id": "amumu",
+        "name": "Amumu",
+        "threat": "major",
+        "tip": "Tantrum reduces Lee's damage. Double stun in teamfights."
+      },
+      {
+        "id": "wukong",
+        "name": "Wukong",
+        "threat": "even",
+        "tip": "Clone dodges Q. Double knock-up in teamfights outscales."
+      }
+    ]
+  },
+  {
+    "champion": "viego",
+    "role": "Jungle",
+    "counters": [
+      {
+        "id": "lee_sin",
+        "name": "Lee Sin",
+        "threat": "even",
+        "tip": "Lee can invade early. Kick disrupts Viego's resets."
+      },
+      {
+        "id": "rammus",
+        "name": "Rammus",
+        "threat": "major",
+        "tip": "Taunt + thornmail stops Viego's auto-based kit."
+      },
+      {
+        "id": "amumu",
+        "name": "Amumu",
+        "threat": "major",
+        "tip": "AoE CC stops Viego from getting resets in fights."
+      }
+    ]
+  },
+  {
+    "champion": "vi",
+    "role": "Jungle",
+    "counters": [
+      {
+        "id": "lee_sin",
+        "name": "Lee Sin",
+        "threat": "even",
+        "tip": "Lee's mobility makes Vi R harder to use effectively."
+      },
+      {
+        "id": "shyvana",
+        "name": "Shyvana",
+        "threat": "even",
+        "tip": "Shyvana outfarms Vi. Dragon form outscales."
+      },
+      {
+        "id": "hecarim",
+        "name": "Hecarim",
+        "threat": "even",
+        "tip": "Hecarim matches Vi's engage range. Sustain wins extended fights."
+      }
+    ]
+  },
+  {
+    "champion": "wukong",
+    "role": "Jungle",
+    "counters": [
+      {
+        "id": "lee_sin",
+        "name": "Lee Sin",
+        "threat": "even",
+        "tip": "Lee can reveal clone with Q. Early dueling is close."
+      },
+      {
+        "id": "vi",
+        "name": "Vi",
+        "threat": "even",
+        "tip": "Vi armor shred hurts Wukong. Both want to dive backline."
+      },
+      {
+        "id": "rammus",
+        "name": "Rammus",
+        "threat": "major",
+        "tip": "Taunt + thornmail counters Wukong's physical damage."
+      }
+    ]
+  },
+  {
+    "champion": "hecarim",
+    "role": "Jungle",
+    "counters": [
+      {
+        "id": "amumu",
+        "name": "Amumu",
+        "threat": "major",
+        "tip": "Double stun stops Hecarim's charge. Tankier in teamfights."
+      },
+      {
+        "id": "rammus",
+        "name": "Rammus",
+        "threat": "major",
+        "tip": "Taunt interrupts Hecarim's engage. Thornmail reflects damage."
+      },
+      {
+        "id": "nunu_willump",
+        "name": "Nunu & Willump",
+        "threat": "even",
+        "tip": "Nunu matches Hecarim's roaming. Snowball contests objectives."
+      }
+    ]
+  },
+  {
+    "champion": "shyvana",
+    "role": "Jungle",
+    "counters": [
+      {
+        "id": "lee_sin",
+        "name": "Lee Sin",
+        "threat": "major",
+        "tip": "Lee invades early before Shyvana scales. Kick disrupts dragon form."
+      },
+      {
+        "id": "xin_zhao",
+        "name": "Xin Zhao",
+        "threat": "major",
+        "tip": "Xin wins every early duel. Invade her camps."
+      },
+      {
+        "id": "viego",
+        "name": "Viego",
+        "threat": "even",
+        "tip": "Viego can match her farm speed. Possessing Shyvana is strong."
+      }
+    ]
+  },
+  {
+    "champion": "amumu",
+    "role": "Jungle",
+    "counters": [
+      {
+        "id": "lee_sin",
+        "name": "Lee Sin",
+        "threat": "major",
+        "tip": "Lee invades and kills Amumu early. Kick separates him from team."
+      },
+      {
+        "id": "xin_zhao",
+        "name": "Xin Zhao",
+        "threat": "major",
+        "tip": "Xin duels Amumu at every stage. Invade constantly."
+      },
+      {
+        "id": "shyvana",
+        "name": "Shyvana",
+        "threat": "even",
+        "tip": "Shyvana outfarms. Dragon form damage is hard to tank."
+      }
+    ]
+  },
+  {
+    "champion": "orianna",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "kassadin",
+        "name": "Kassadin",
+        "threat": "major",
+        "tip": "Post-5 Kassadin jumps on Orianna. Magic shield reduces poke."
+      },
+      {
+        "id": "fizz",
+        "name": "Fizz",
+        "threat": "major",
+        "tip": "Playful/Trickster dodges Shockwave. All-in at 5 kills Orianna."
+      },
+      {
+        "id": "yasuo",
+        "name": "Yasuo",
+        "threat": "even",
+        "tip": "Windwall blocks ball. Dash through minions to dodge Q."
+      },
+      {
+        "id": "ahri",
+        "name": "Ahri",
+        "threat": "even",
+        "tip": "Charm interrupts Orianna's positioning. Mobility dodges Shockwave."
+      }
+    ]
+  },
+  {
+    "champion": "syndra",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "kassadin",
+        "name": "Kassadin",
+        "threat": "major",
+        "tip": "Magic shield + gap close. Post-5 Kassadin destroys Syndra."
+      },
+      {
+        "id": "fizz",
+        "name": "Fizz",
+        "threat": "major",
+        "tip": "Trickster dodges stun + ult. All-in at 5 is lethal."
+      },
+      {
+        "id": "yasuo",
+        "name": "Yasuo",
+        "threat": "even",
+        "tip": "Windwall blocks orbs. Dash through minions dodges E stun."
+      },
+      {
+        "id": "zed",
+        "name": "Zed",
+        "threat": "even",
+        "tip": "Zed R dodges Syndra R. Skill matchup, respect shadows."
+      }
+    ]
+  },
+  {
+    "champion": "kassadin",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "zed",
+        "name": "Zed",
+        "threat": "major",
+        "tip": "AD assassin ignores Kassadin's magic shield. Bully pre-5."
+      },
+      {
+        "id": "talon",
+        "name": "Talon",
+        "threat": "major",
+        "tip": "AD burst + roaming pressure. Kill Kassadin before he scales."
+      },
+      {
+        "id": "twisted_fate",
+        "name": "Twisted Fate",
+        "threat": "even",
+        "tip": "Gold card locks Kassadin. Global pressure punishes his weak early."
+      }
+    ]
+  },
+  {
+    "champion": "viktor",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "kassadin",
+        "name": "Kassadin",
+        "threat": "major",
+        "tip": "Post-5 gap close kills Viktor. Magic shield reduces poke."
+      },
+      {
+        "id": "fizz",
+        "name": "Fizz",
+        "threat": "major",
+        "tip": "Trickster dodges Viktor's combo. All-in at 5."
+      },
+      {
+        "id": "ahri",
+        "name": "Ahri",
+        "threat": "even",
+        "tip": "Charm + mobility dodges laser. Both scale well."
+      }
+    ]
+  },
+  {
+    "champion": "ahri",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "kassadin",
+        "name": "Kassadin",
+        "threat": "major",
+        "tip": "Kassadin's shield blocks Ahri's poke. Outscales hard."
+      },
+      {
+        "id": "vex",
+        "name": "Vex",
+        "threat": "even",
+        "tip": "Vex passive procs on Ahri's dashes. Anti-mobility matchup."
+      },
+      {
+        "id": "galio",
+        "name": "Galio",
+        "threat": "even",
+        "tip": "Magic damage reduction + taunt. Roam matches Ahri's."
+      }
+    ]
+  },
+  {
+    "champion": "galio",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "fiora",
+        "name": "Fiora",
+        "threat": "major",
+        "tip": "AD + true damage. Riposte taunt."
+      },
+      {
+        "id": "camille",
+        "name": "Camille",
+        "threat": "major",
+        "tip": "True damage bypasses Galio's MR. Hookshot escapes taunt."
+      },
+      {
+        "id": "twisted_fate",
+        "name": "Twisted Fate",
+        "threat": "even",
+        "tip": "Both roam. TF's AD builds can bypass Galio's MR stacking."
+      }
+    ]
+  },
+  {
+    "champion": "twisted_fate",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "fizz",
+        "name": "Fizz",
+        "threat": "major",
+        "tip": "Trickster dodges gold card. All-in kills TF at 5."
+      },
+      {
+        "id": "zed",
+        "name": "Zed",
+        "threat": "major",
+        "tip": "Zed's shadows dodge gold card. R burst kills TF."
+      },
+      {
+        "id": "ahri",
+        "name": "Ahri",
+        "threat": "even",
+        "tip": "Charm stops TF. Mobility matches his roam speed."
+      }
+    ]
+  },
+  {
+    "champion": "swain",
+    "role": "Mid",
+    "counters": [
+      {
+        "id": "kassadin",
+        "name": "Kassadin",
+        "threat": "major",
+        "tip": "Kassadin jumps past Swain's range. Magic shield helps."
+      },
+      {
+        "id": "aatrox",
+        "name": "Aatrox",
+        "threat": "even",
+        "tip": "Both drain-tank. Aatrox has grievous wounds advantage."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "even",
+        "tip": "Brand's %HP damage hurts Swain's drain-tank playstyle."
+      }
+    ]
+  },
+  {
+    "champion": "xayah",
+    "role": "Duo",
+    "counters": [
+      {
+        "id": "caitlyn",
+        "name": "Caitlyn",
+        "threat": "major",
+        "tip": "Caitlyn outranges Xayah. Poke and trap zone deny feather setup."
+      },
+      {
+        "id": "ezreal",
+        "name": "Ezreal",
+        "threat": "even",
+        "tip": "Ezreal's E dodges feather recall. Safe laning phase."
+      },
+      {
+        "id": "jhin",
+        "name": "Jhin",
+        "threat": "even",
+        "tip": "Jhin's W root catches Xayah during feather setup."
+      }
+    ]
+  },
+  {
+    "champion": "jhin",
+    "role": "Duo",
+    "counters": [
+      {
+        "id": "ezreal",
+        "name": "Ezreal",
+        "threat": "even",
+        "tip": "Ezreal pokes safely. E dodges 4th shot and W."
+      },
+      {
+        "id": "kai_sa",
+        "name": "Kai'Sa",
+        "threat": "major",
+        "tip": "Kai'Sa dives Jhin. He can't kite her evolved E."
+      },
+      {
+        "id": "xayah",
+        "name": "Xayah",
+        "threat": "even",
+        "tip": "Xayah R dodges Jhin R. Feathers zone him out."
+      }
+    ]
+  },
+  {
+    "champion": "ezreal",
+    "role": "Duo",
+    "counters": [
+      {
+        "id": "caitlyn",
+        "name": "Caitlyn",
+        "threat": "major",
+        "tip": "Caitlyn pushes tower fast. Traps punish Ezreal's short range."
+      },
+      {
+        "id": "draven",
+        "name": "Draven",
+        "threat": "major",
+        "tip": "Draven wins every early trade. Snowballs if he catches axes."
+      },
+      {
+        "id": "miss_fortune",
+        "name": "Miss Fortune",
+        "threat": "even",
+        "tip": "MF Q bounce + ult zone control punishes Ezreal."
+      }
+    ]
+  },
+  {
+    "champion": "caitlyn",
+    "role": "Duo",
+    "counters": [
+      {
+        "id": "xayah",
+        "name": "Xayah",
+        "threat": "even",
+        "tip": "Xayah R dodges Cait R. Feathers zone in lane."
+      },
+      {
+        "id": "kai_sa",
+        "name": "Kai'Sa",
+        "threat": "major",
+        "tip": "Kai'Sa's evolved E closes range gap. Kills Cait in all-ins."
+      },
+      {
+        "id": "ashe",
+        "name": "Ashe",
+        "threat": "even",
+        "tip": "Ashe matches Caitlyn's range. Slow + ult sets up ganks."
+      }
+    ]
+  },
+  {
+    "champion": "kai_sa",
+    "role": "Duo",
+    "counters": [
+      {
+        "id": "caitlyn",
+        "name": "Caitlyn",
+        "threat": "major",
+        "tip": "Caitlyn bullies Kai'Sa's weak early game. Trap zoning."
+      },
+      {
+        "id": "draven",
+        "name": "Draven",
+        "threat": "major",
+        "tip": "Draven's early damage destroys Kai'Sa before she evolves."
+      },
+      {
+        "id": "miss_fortune",
+        "name": "Miss Fortune",
+        "threat": "even",
+        "tip": "MF's Q poke and R zone punish Kai'Sa's short range."
+      }
+    ]
+  },
+  {
+    "champion": "ashe",
+    "role": "Duo",
+    "counters": [
+      {
+        "id": "draven",
+        "name": "Draven",
+        "threat": "major",
+        "tip": "Draven wins every early trade. Ashe can't match his damage."
+      },
+      {
+        "id": "kai_sa",
+        "name": "Kai'Sa",
+        "threat": "major",
+        "tip": "Kai'Sa dives Ashe. Evolved E closes the gap easily."
+      },
+      {
+        "id": "lucian",
+        "name": "Lucian",
+        "threat": "even",
+        "tip": "Lucian's burst + dash dodges Ashe's ult."
+      }
+    ]
+  },
+  {
+    "champion": "miss_fortune",
+    "role": "Duo",
+    "counters": [
+      {
+        "id": "ezreal",
+        "name": "Ezreal",
+        "threat": "even",
+        "tip": "Ezreal's E dodges MF ult. Pokes safely."
+      },
+      {
+        "id": "caitlyn",
+        "name": "Caitlyn",
+        "threat": "even",
+        "tip": "Caitlyn outranges MF. Traps block ult positioning."
+      },
+      {
+        "id": "xayah",
+        "name": "Xayah",
+        "threat": "even",
+        "tip": "Xayah R dodges MF ult. Feathers zone MF out."
+      }
+    ]
+  },
+  {
+    "champion": "nami",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook catches Nami easily. She's squishy with no escape."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Hook + passive root locks Nami down. All-in kills her."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "even",
+        "tip": "Leona all-in is strong vs Nami. Bubble timing is key."
+      }
+    ]
+  },
+  {
+    "champion": "braum",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "threat": "major",
+        "tip": "Plants poke through shield. Braum can't block plant damage."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "major",
+        "tip": "AoE damage bypasses Braum's shield. %HP burn hurts."
+      },
+      {
+        "id": "karma",
+        "name": "Karma",
+        "threat": "even",
+        "tip": "Karma's poke outranges Braum. Shield + speed kites him."
+      }
+    ]
+  },
+  {
+    "champion": "zilean",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook punishes Zilean's immobility. He dies before ulting himself."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Point-and-click CC locks Zilean. Hard to ult when chain-CC'd."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "even",
+        "tip": "Leona's engage can burst through Zilean ult with chain CC."
+      }
+    ]
+  },
+  {
+    "champion": "nautilus",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "morgana",
+        "name": "Morgana",
+        "threat": "major",
+        "tip": "Black Shield blocks hook and passive root. Complete counter."
+      },
+      {
+        "id": "janna",
+        "name": "Janna",
+        "threat": "major",
+        "tip": "Tornado interrupts Nautilus engage. Ult pushes him away."
+      },
+      {
+        "id": "thresh",
+        "name": "Thresh",
+        "threat": "even",
+        "tip": "Flay interrupts Nautilus Q. Lantern saves hooked allies."
+      },
+      {
+        "id": "karma",
+        "name": "Karma",
+        "threat": "even",
+        "tip": "Mantra Q poke + shield speed kites Nautilus engage."
+      }
+    ]
+  },
+  {
+    "champion": "leona",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "morgana",
+        "name": "Morgana",
+        "threat": "major",
+        "tip": "Black Shield blocks all Leona CC. Complete shutdown."
+      },
+      {
+        "id": "janna",
+        "name": "Janna",
+        "threat": "major",
+        "tip": "Tornado + ult peels Leona's engage completely."
+      },
+      {
+        "id": "thresh",
+        "name": "Thresh",
+        "threat": "even",
+        "tip": "Flay interrupts Zenith Blade. Lantern rescues caught allies."
+      },
+      {
+        "id": "alistar",
+        "name": "Alistar",
+        "threat": "even",
+        "tip": "Alistar headbutts Leona away from carry. R tanks her burst."
+      }
+    ]
+  },
+  {
+    "champion": "karma",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Hook catches Karma. She's squishy in all-ins."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "major",
+        "tip": "Leona's hard engage overwhelms Karma's poke + shield."
+      },
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook pulls Karma into death. She has no escape."
+      },
+      {
+        "id": "soraka",
+        "name": "Soraka",
+        "threat": "even",
+        "tip": "Soraka's sustain outheals Karma's poke over time."
+      }
+    ]
+  },
+  {
+    "champion": "swain",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "morgana",
+        "name": "Morgana",
+        "threat": "major",
+        "tip": "Black Shield blocks Swain's E pull. Negates his combo."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "even",
+        "tip": "Brand's %HP burn counters Swain's drain-tank style."
+      },
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "threat": "even",
+        "tip": "Plants outrange Swain. Root zones him out of drain range."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "even",
+        "tip": "Hook + CC chain can burst Swain before drain heals enough."
+      }
+    ],
+    "note": "Support role Swain counters"
+  },
+  {
+    "champion": "senna",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Hook catches Senna easily. She's squishy despite range."
+      },
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook pull is lethal. Senna has no mobility."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "major",
+        "tip": "Leona's gap close + burst kills Senna fast."
+      },
+      {
+        "id": "thresh",
+        "name": "Thresh",
+        "threat": "even",
+        "tip": "Thresh hook is skillshot vs skillshot. Flay stops Senna E."
+      }
+    ]
+  },
+  {
+    "champion": "seraphine",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook catches Seraphine. She's immobile and squishy."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Point-and-click CC chain kills Seraphine before she can ult."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "even",
+        "tip": "Leona engage overwhelms Seraphine. Respect E range."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "even",
+        "tip": "Brand's burst + %HP burn outpaces Seraphine's healing."
+      }
+    ]
+  },
+  {
+    "champion": "soraka",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook pulls Soraka into instant death. No escape."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Lock down Soraka so she can't heal. Chain CC."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "major",
+        "tip": "Leona's engage kills Soraka before she heals."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "even",
+        "tip": "%HP burn + grievous reduces Soraka's healing impact."
+      }
+    ]
+  },
+  {
+    "champion": "milio",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Hard engage overwhelms Milio's peel. Hook catches him."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "major",
+        "tip": "Leona's CC chain bursts through Milio's shield + cleanse."
+      },
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook pulls Milio or carry. Milio's cleanse has delay."
+      },
+      {
+        "id": "thresh",
+        "name": "Thresh",
+        "threat": "even",
+        "tip": "Thresh's hook + flay outranges Milio's abilities."
+      }
+    ]
+  },
+  {
+    "champion": "lulu",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "threat": "major",
+        "tip": "Plant poke outranges Lulu. Root zones her out."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "major",
+        "tip": "AoE burst overwhelms Lulu's single-target peel."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "even",
+        "tip": "Hook catches Lulu. But Polymorph stops his follow-up."
+      }
+    ]
+  },
+  {
+    "champion": "thresh",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "morgana",
+        "name": "Morgana",
+        "threat": "major",
+        "tip": "Black Shield blocks hook and flay. Complete counter."
+      },
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "threat": "even",
+        "tip": "Plant poke + root zones Thresh out. Outranges him."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "even",
+        "tip": "AoE damage bypasses Thresh's single-target peel."
+      }
+    ]
+  },
+  {
+    "champion": "blitzcrank",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "morgana",
+        "name": "Morgana",
+        "threat": "major",
+        "tip": "Black Shield blocks hook. Completely negates Blitzcrank."
+      },
+      {
+        "id": "alistar",
+        "name": "Alistar",
+        "threat": "major",
+        "tip": "Alistar headbutts carry away after hook. R tanks burst."
+      },
+      {
+        "id": "braum",
+        "name": "Braum",
+        "threat": "even",
+        "tip": "Shield blocks hook for carry. Stand in front."
+      }
+    ]
+  },
+  {
+    "champion": "rakan",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "janna",
+        "name": "Janna",
+        "threat": "major",
+        "tip": "Tornado + ult interrupts Rakan's engage completely."
+      },
+      {
+        "id": "alistar",
+        "name": "Alistar",
+        "threat": "even",
+        "tip": "Headbutt stops Rakan's W engage. R tanks charm."
+      },
+      {
+        "id": "thresh",
+        "name": "Thresh",
+        "threat": "even",
+        "tip": "Flay interrupts Rakan's dash. Lantern saves charmed allies."
+      }
+    ]
+  },
+  {
+    "champion": "pyke",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "Nautilus point-and-click ult stops Pyke's mobility."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "even",
+        "tip": "Leona's chain CC locks Pyke. He's squishy."
+      },
+      {
+        "id": "alistar",
+        "name": "Alistar",
+        "threat": "even",
+        "tip": "Headbutt stops Pyke's hook follow-up. R survives execute."
+      }
+    ]
+  },
+  {
+    "champion": "morgana",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "threat": "even",
+        "tip": "Plants outrange Morgana. Root zones her."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "major",
+        "tip": "AoE burst + %HP burn. Black Shield only blocks one ability."
+      },
+      {
+        "id": "karma",
+        "name": "Karma",
+        "threat": "even",
+        "tip": "Mantra Q poke outranges Morgana's binding."
+      }
+    ]
+  },
+  {
+    "champion": "alistar",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "threat": "major",
+        "tip": "Plant poke harasses Alistar. Root stops his engage."
+      },
+      {
+        "id": "karma",
+        "name": "Karma",
+        "threat": "even",
+        "tip": "Karma pokes Alistar. Speed boost helps carry dodge combo."
+      },
+      {
+        "id": "janna",
+        "name": "Janna",
+        "threat": "even",
+        "tip": "Tornado + ult peel stops Alistar combo."
+      }
+    ]
+  },
+  {
+    "champion": "janna",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "zyra",
+        "name": "Zyra",
+        "threat": "major",
+        "tip": "Plant poke outranges Janna's shield. Root catches her."
+      },
+      {
+        "id": "brand",
+        "name": "Brand",
+        "threat": "major",
+        "tip": "AoE burn damage bypasses Janna's peel entirely."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "even",
+        "tip": "Point-and-click ult bypasses tornado interrupt timing."
+      }
+    ]
+  },
+  {
+    "champion": "zyra",
+    "role": "Support",
+    "counters": [
+      {
+        "id": "blitzcrank",
+        "name": "Blitzcrank",
+        "threat": "major",
+        "tip": "Hook catches Zyra. She's squishy with no escape."
+      },
+      {
+        "id": "nautilus",
+        "name": "Nautilus",
+        "threat": "major",
+        "tip": "All-in engage kills Zyra before plants deal damage."
+      },
+      {
+        "id": "leona",
+        "name": "Leona",
+        "threat": "even",
+        "tip": "Leona gap close + CC chain overwhelms Zyra."
+      }
+    ]
+  }
+]

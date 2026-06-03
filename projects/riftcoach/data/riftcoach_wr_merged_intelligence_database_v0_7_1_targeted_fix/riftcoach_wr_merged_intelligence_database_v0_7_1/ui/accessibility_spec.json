@@ -1,0 +1,13 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "requirements": [
+    "keyboard_navigation",
+    "visible_focus",
+    "screen_reader_text_for_nodes_and_edges",
+    "high_contrast_mode",
+    "reduced_motion_mode",
+    "do_not_rely_only_on_color",
+    "edge_explanations_available_as_text"
+  ],
+  "graph_alt_text_template": "Graph centered on {center_label}; showing {node_count} nodes and {edge_count} relationships filtered by {filters}."
+}

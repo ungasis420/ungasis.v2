@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/effect.schema.json",
+  "title": "Effect",
+  "type": "object",
+  "required": [
+    "effect_id",
+    "name",
+    "category"
+  ],
+  "properties": {
+    "effect_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "related_damage_types": {
+      "type": "array"
+    },
+    "related_defense_types": {
+      "type": "array"
+    },
+    "related_cc_types": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

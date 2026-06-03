@@ -1,0 +1,26 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "component": "RelationshipSidebar",
+  "tabs": [
+    "Details",
+    "Why connected?",
+    "Backlinks",
+    "Source claims",
+    "Patch impact",
+    "QA"
+  ],
+  "primary_actions": [
+    "expand",
+    "pin",
+    "hide",
+    "copy_context",
+    "open_entity",
+    "save_view"
+  ],
+  "warnings": [
+    "source_conflict",
+    "pending_refresh",
+    "generated_rule",
+    "low_confidence"
+  ]
+}

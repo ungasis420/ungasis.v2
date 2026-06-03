@@ -1,0 +1,4145 @@
+{
+  "meta": {
+    "type": "boots_enchantments_vision",
+    "patch": "7.1d",
+    "schema_version": "9-layer-v1",
+    "generated": "2026-05-13",
+    "totals": {
+      "boots": 8,
+      "enchantments": 13,
+      "trinkets": 3,
+      "total": 24
+    },
+    "layers": [
+      "core_identity",
+      "rag_vector",
+      "knowledge_graph",
+      "gnn",
+      "realtime",
+      "feature_store",
+      "event_stream",
+      "neuro_symbolic",
+      "time_series"
+    ],
+    "game_rules": {
+      "enchantment": "Boot enchantments apply ON TOP of tier 2 boots (not separate slot)",
+      "stasis_default": "Stasis Enchant is the default safe choice for most champions"
+    }
+  },
+  "boots": [
+    {
+      "id": "boots_of_speed",
+      "name": "Boots of Speed",
+      "category": "boots",
+      "subcategory": "base",
+      "tags": [
+        "movement_speed",
+        "base",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {
+        "ms": 25
+      },
+      "passive_name": "",
+      "brief": "Base boots. +25 MS. Upgrade into tier 2 boots.",
+      "full": "Basic movement speed boots. Build into any tier 2 boots option.",
+      "embedding_text": "Boots of Speed is a boots in Wild Rift. Base boots. +25 MS. Upgrade into tier 2 boots. Basic movement speed boots. Build into any tier 2 boots option. Tags: movement_speed, base, boots.",
+      "best_for": [
+        "everyone"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:boots_of_speed",
+        "properties": {
+          "cost": 500,
+          "stats": {
+            "ms": 25
+          },
+          "tier": "C",
+          "pick_rate": 0.05
+        }
+      },
+      "graph_edges": [],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05,
+          0.3333
+        ],
+        "neighbor_ids": [
+          "tag:movement_speed",
+          "tag:base",
+          "tag:boots"
+        ],
+        "node_label": "boots_base",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.05,
+        "tier": "C",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.04,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 1.0,
+          "mid": 0.3,
+          "late": 0.0
+        },
+        "complexity": 0.0,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Base boots. Upgrade ASAP."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Boots of Speed."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Boots of Speed provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Boots of Speed maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Buy early, upgrade to tier 2 immediately",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:boots_of_speed",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.04
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.05
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.05
+          }
+        ]
+      }
+    },
+    {
+      "id": "berserkers_greaves",
+      "name": "Berserker's Greaves",
+      "category": "boots",
+      "subcategory": "attack_speed",
+      "tags": [
+        "attack_speed",
+        "movement_speed",
+        "adc",
+        "on_hit",
+        "boots"
+      ],
+      "cost": 1000,
+      "stats": {
+        "as_percent": 25,
+        "ms": 40
+      },
+      "passive_name": "",
+      "brief": "+25% AS. Best for ADCs and on-hit champions.",
+      "full": "Tier 2 boots providing 25% bonus attack speed and 40 movement speed. Core for auto-attack focused champions.",
+      "embedding_text": "Berserker's Greaves is a boots in Wild Rift. +25% AS. Best for ADCs and on-hit champions. Tier 2 boots providing 25% bonus attack speed and 40 movement speed. Core for auto-attack focused champions. Tags: attack_speed, movement_speed, adc, on_hit, boots.",
+      "best_for": [
+        "Jinx",
+        "Vayne",
+        "Kog'Maw",
+        "Kindred",
+        "all ADCs"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:berserkers_greaves",
+        "properties": {
+          "cost": 1000,
+          "stats": {
+            "as_percent": 25,
+            "ms": 40
+          },
+          "tier": "S",
+          "pick_rate": 0.25
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:lethal_tempo",
+          "weight": 0.6,
+          "context": "Synergy with lethal_tempo",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:botrk",
+          "weight": 0.6,
+          "context": "Synergy with botrk",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          1.0,
+          0.8,
+          0.0,
+          0.0,
+          0.0,
+          0.8333,
+          0.0,
+          0.0,
+          0.25,
+          0.8333
+        ],
+        "neighbor_ids": [
+          "tag:attack_speed",
+          "tag:movement_speed",
+          "tag:adc",
+          "tag:on_hit",
+          "tag:boots"
+        ],
+        "node_label": "boots_attack_speed",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.25,
+        "tier": "S",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.24,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.25,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.25,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.8,
+          "mid": 0.7,
+          "late": 0.6
+        },
+        "complexity": 0.1,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "25% AS boots. Core for all ADCs."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Berserker's Greaves."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Berserker's Greaves provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Berserker's Greaves maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on all auto-attack ADCs",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:berserkers_greaves",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.24
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.25
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "id": "boots_of_dynamism",
+      "name": "Boots of Dynamism",
+      "category": "boots",
+      "subcategory": "penetration",
+      "tags": [
+        "ad",
+        "ap",
+        "penetration",
+        "assassin",
+        "burst",
+        "boots"
+      ],
+      "cost": 1000,
+      "stats": {
+        "ms": 40
+      },
+      "passive_name": "Dynamism",
+      "brief": "Bonus AD/AP that converts to penetration.",
+      "full": "Grants adaptive force (AD or AP) that partially converts into armor penetration or magic penetration. Best for assassins and burst champions.",
+      "embedding_text": "Boots of Dynamism is a boots in Wild Rift. Bonus AD/AP that converts to penetration. Grants adaptive force (AD or AP) that partially converts into armor penetration or magic penetration. Best for assassins and burst champions. Tags: ad, ap, penetration, assassin, burst, boots.",
+      "best_for": [
+        "Zed",
+        "Akali",
+        "assassins"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:boots_of_dynamism",
+        "properties": {
+          "cost": 1000,
+          "stats": {
+            "ms": 40
+          },
+          "tier": "A",
+          "pick_rate": 0.08
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:electrocute",
+          "weight": 0.6,
+          "context": "Synergy with electrocute",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:sudden_impact",
+          "weight": 0.6,
+          "context": "Synergy with sudden_impact",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          1.0,
+          0.8,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.08,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:ad",
+          "tag:ap",
+          "tag:penetration",
+          "tag:assassin",
+          "tag:burst"
+        ],
+        "node_label": "boots_penetration",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.08,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.07,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.8,
+          "mid": 0.7,
+          "late": 0.5
+        },
+        "complexity": 0.2,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Adaptive force + pen. Assassin boots."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Boots of Dynamism."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Boots of Dynamism provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Boots of Dynamism maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on assassins for burst damage",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:boots_of_dynamism",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.07
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.08
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.08
+          }
+        ]
+      }
+    },
+    {
+      "id": "boots_of_mana",
+      "name": "Boots of Mana",
+      "category": "boots",
+      "subcategory": "mana",
+      "tags": [
+        "mana",
+        "mana_regen",
+        "movement_speed",
+        "mage",
+        "boots"
+      ],
+      "cost": 1000,
+      "stats": {
+        "mana": 250,
+        "mana_regen": 10,
+        "ms": 40
+      },
+      "passive_name": "",
+      "brief": "+Mana + Mana regen. Best for mana-hungry mages.",
+      "full": "Tier 2 boots providing bonus mana, mana regeneration, and 40 movement speed. Best for champions who frequently run out of mana.",
+      "embedding_text": "Boots of Mana is a boots in Wild Rift. +Mana + Mana regen. Best for mana-hungry mages. Tier 2 boots providing bonus mana, mana regeneration, and 40 movement speed. Best for champions who frequently run out of mana. Tags: mana, mana_regen, movement_speed, mage, boots.",
+      "best_for": [
+        "Ryze",
+        "Kassadin",
+        "Mel",
+        "Aurelion Sol"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:boots_of_mana",
+        "properties": {
+          "cost": 1000,
+          "stats": {
+            "mana": 250,
+            "mana_regen": 10,
+            "ms": 40
+          },
+          "tier": "B",
+          "pick_rate": 0.05
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:manaflow_band",
+          "weight": 0.6,
+          "context": "Synergy with manaflow_band",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:archangels",
+          "weight": 0.6,
+          "context": "Synergy with archangels",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:rod_of_ages",
+          "weight": 0.6,
+          "context": "Synergy with rod_of_ages",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          1.0,
+          0.8,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.8333,
+          0.05,
+          0.5
+        ],
+        "neighbor_ids": [
+          "tag:mana",
+          "tag:mana_regen",
+          "tag:movement_speed",
+          "tag:mage",
+          "tag:boots"
+        ],
+        "node_label": "boots_mana",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.05,
+        "tier": "B",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.04,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.7,
+          "mid": 0.6,
+          "late": 0.5
+        },
+        "complexity": 0.1,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Mana + mana regen boots. For mana-hungry mages."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Boots of Mana."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Boots of Mana provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Boots of Mana maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on Ryze, Kassadin, mana-hungry mages",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:boots_of_mana",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.04
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.05
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.05
+          }
+        ]
+      }
+    },
+    {
+      "id": "gluttonous_greaves",
+      "name": "Gluttonous Greaves",
+      "category": "boots",
+      "subcategory": "sustain",
+      "tags": [
+        "omnivamp",
+        "sustain",
+        "movement_speed",
+        "fighter",
+        "boots"
+      ],
+      "cost": 1000,
+      "stats": {
+        "omnivamp_percent": 8,
+        "ms": 40
+      },
+      "passive_name": "",
+      "brief": "+8% Omnivamp. Best for sustain fighters/assassins.",
+      "full": "Tier 2 boots providing 8% omnivamp (heal from all damage dealt) and 40 movement speed.",
+      "embedding_text": "Gluttonous Greaves is a boots in Wild Rift. +8% Omnivamp. Best for sustain fighters/assassins. Tier 2 boots providing 8% omnivamp (heal from all damage dealt) and 40 movement speed. Tags: omnivamp, sustain, movement_speed, fighter, boots.",
+      "best_for": [
+        "Aatrox",
+        "Riven",
+        "sustain fighters"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:gluttonous_greaves",
+        "properties": {
+          "cost": 1000,
+          "stats": {
+            "omnivamp_percent": 8,
+            "ms": 40
+          },
+          "tier": "A",
+          "pick_rate": 0.1
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:conqueror",
+          "weight": 0.6,
+          "context": "Synergy with conqueror",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:deaths_dance",
+          "weight": 0.6,
+          "context": "Synergy with deaths_dance",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:riftmaker",
+          "weight": 0.6,
+          "context": "Synergy with riftmaker",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          1.0,
+          0.8,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.8,
+          0.0,
+          0.1,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:omnivamp",
+          "tag:sustain",
+          "tag:movement_speed",
+          "tag:fighter",
+          "tag:boots"
+        ],
+        "node_label": "boots_sustain",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.1,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.1,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.1,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.7,
+          "mid": 0.7,
+          "late": 0.6
+        },
+        "complexity": 0.1,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "8% omnivamp boots. Sustain fighters."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Gluttonous Greaves."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Gluttonous Greaves provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Gluttonous Greaves maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on sustain fighters (Aatrox, Riven)",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:gluttonous_greaves",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.09
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.1
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "ionian_boots_of_lucidity",
+      "name": "Ionian Boots of Lucidity",
+      "category": "boots",
+      "subcategory": "cdr",
+      "tags": [
+        "ability_haste",
+        "cdr",
+        "movement_speed",
+        "mage",
+        "support",
+        "boots"
+      ],
+      "cost": 950,
+      "stats": {
+        "ah": 15,
+        "ms": 40
+      },
+      "passive_name": "",
+      "brief": "+15 Ability Haste. Best for mages, supports, CDR builds.",
+      "full": "Tier 2 boots providing 15 ability haste and 40 movement speed. Core for CDR-reliant champions and supports.",
+      "embedding_text": "Ionian Boots of Lucidity is a boots in Wild Rift. +15 Ability Haste. Best for mages, supports, CDR builds. Tier 2 boots providing 15 ability haste and 40 movement speed. Core for CDR-reliant champions and supports. Tags: ability_haste, cdr, movement_speed, mage, support, boots.",
+      "best_for": [
+        "Karma",
+        "Lux",
+        "Nami",
+        "all supports",
+        "CDR mages"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:ionian_boots_of_lucidity",
+        "properties": {
+          "cost": 950,
+          "stats": {
+            "ah": 15,
+            "ms": 40
+          },
+          "tier": "S",
+          "pick_rate": 0.22
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:transcendence",
+          "weight": 0.6,
+          "context": "Synergy with transcendence",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:soulstealer",
+          "weight": 0.6,
+          "context": "Synergy with soulstealer",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:cosmic_drive",
+          "weight": 0.6,
+          "context": "Synergy with cosmic_drive",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.95,
+          0.8,
+          0.0,
+          0.0,
+          0.75,
+          0.0,
+          0.0,
+          0.0,
+          0.22,
+          0.8333
+        ],
+        "neighbor_ids": [
+          "tag:ability_haste",
+          "tag:cdr",
+          "tag:movement_speed",
+          "tag:mage",
+          "tag:support"
+        ],
+        "node_label": "boots_cdr",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.22,
+        "tier": "S",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.21,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.22,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.22,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.8,
+          "mid": 0.8,
+          "late": 0.7
+        },
+        "complexity": 0.1,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "15 AH boots. Core for mages and supports."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Ionian Boots of Lucidity."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Ionian Boots of Lucidity provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Ionian Boots of Lucidity scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on all CDR-reliant champions (mages, supports)",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:ionian_boots_of_lucidity",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.21
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.22
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.22
+          }
+        ]
+      }
+    },
+    {
+      "id": "mercurys_treads",
+      "name": "Mercury's Treads",
+      "category": "boots",
+      "subcategory": "tenacity",
+      "tags": [
+        "mr",
+        "tenacity",
+        "cc_reduction",
+        "anti_mage",
+        "movement_speed",
+        "boots"
+      ],
+      "cost": 1000,
+      "stats": {
+        "mr": 40,
+        "ms": 40
+      },
+      "passive_name": "Tenacity",
+      "brief": "+40 MR + Tenacity. Best vs heavy CC/AP comps.",
+      "full": "Tier 2 boots providing 40 magic resistance, tenacity (reduces CC duration), and 40 movement speed. Core vs AP-heavy or CC-heavy enemy teams.",
+      "embedding_text": "Mercury's Treads is a boots in Wild Rift. +40 MR + Tenacity. Best vs heavy CC/AP comps. Tier 2 boots providing 40 magic resistance, tenacity (reduces CC duration), and 40 movement speed. Core vs AP-heavy or CC-heavy enemy teams. Tags: mr, tenacity, cc_reduction, anti_mage, movement_speed, boots.",
+      "best_for": [
+        "vs AP comps",
+        "vs CC comps",
+        "all roles"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:mercurys_treads",
+        "properties": {
+          "cost": 1000,
+          "stats": {
+            "mr": 40,
+            "ms": 40
+          },
+          "tier": "S",
+          "pick_rate": 0.15
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:legend_tenacity",
+          "weight": 0.6,
+          "context": "Synergy with legend_tenacity",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:unshakeable",
+          "weight": 0.6,
+          "context": "Synergy with unshakeable",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          1.0,
+          0.8,
+          0.0,
+          0.8,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.15,
+          0.8333
+        ],
+        "neighbor_ids": [
+          "tag:mr",
+          "tag:tenacity",
+          "tag:cc_reduction",
+          "tag:anti_mage",
+          "tag:movement_speed"
+        ],
+        "node_label": "boots_tenacity",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.15,
+        "tier": "S",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.14,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.15,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.15,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.7,
+          "mid": 0.8,
+          "late": 0.8
+        },
+        "complexity": 0.1,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "40 MR + tenacity. Anti-CC/AP boots."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Mercury's Treads."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Mercury's Treads provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Mercury's Treads scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build vs 2+ AP threats or 3+ hard CC",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:mercurys_treads",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.14
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.15
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "id": "plated_steelcaps",
+      "name": "Plated Steelcaps",
+      "category": "boots",
+      "subcategory": "armor",
+      "tags": [
+        "armor",
+        "aa_reduction",
+        "anti_adc",
+        "anti_ad",
+        "movement_speed",
+        "boots"
+      ],
+      "cost": 1000,
+      "stats": {
+        "armor": 35,
+        "ms": 40
+      },
+      "passive_name": "Block",
+      "brief": "+35 Armor + reduce AA damage. Best vs heavy AD/AA comps.",
+      "full": "Tier 2 boots providing 35 armor, reduced damage from auto-attacks, and 40 movement speed. Core vs AD-heavy or auto-attack-heavy enemy teams.",
+      "embedding_text": "Plated Steelcaps is a boots in Wild Rift. +35 Armor + reduce AA damage. Best vs heavy AD/AA comps. Tier 2 boots providing 35 armor, reduced damage from auto-attacks, and 40 movement speed. Core vs AD-heavy or auto-attack-heavy enemy teams. Tags: armor, aa_reduction, anti_adc, anti_ad, movement_speed, boots.",
+      "best_for": [
+        "vs AD comps",
+        "vs auto-attackers",
+        "all roles"
+      ],
+      "graph_node": {
+        "node_type": "boots",
+        "node_id": "boots:plated_steelcaps",
+        "properties": {
+          "cost": 1000,
+          "stats": {
+            "armor": 35,
+            "ms": 40
+          },
+          "tier": "S",
+          "pick_rate": 0.15
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:thornmail",
+          "weight": 0.6,
+          "context": "Synergy with thornmail",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:frozen_heart",
+          "weight": 0.6,
+          "context": "Synergy with frozen_heart",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:randuins",
+          "weight": 0.6,
+          "context": "Synergy with randuins",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          1.0,
+          0.8,
+          0.7,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.15,
+          0.8333
+        ],
+        "neighbor_ids": [
+          "tag:armor",
+          "tag:aa_reduction",
+          "tag:anti_adc",
+          "tag:anti_ad",
+          "tag:movement_speed"
+        ],
+        "node_label": "boots_armor",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.15,
+        "tier": "S",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.14,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.15,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.15,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.8,
+          "mid": 0.7,
+          "late": 0.7
+        },
+        "complexity": 0.1,
+        "slot_value": "boots"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "35 armor + AA reduction. Anti-AD boots."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Plated Steelcaps."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Plated Steelcaps provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Plated Steelcaps scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build vs 2+ AD threats or auto-attack heavy teams",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "boots:plated_steelcaps",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.14
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.15
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.15
+          }
+        ]
+      }
+    }
+  ],
+  "enchantments": [
+    {
+      "id": "dream_maker_enchant",
+      "name": "Dream Maker",
+      "category": "enchantment",
+      "subcategory": "enchanter",
+      "tags": [
+        "enchanter",
+        "support",
+        "damage_buff",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Grant ally Dream Bubbles for bonus damage + MS.",
+      "full": "Enchantment applied to boots. Healing or shielding an ally grants Dream Bubbles that pop on attack for bonus damage and MS.",
+      "embedding_text": "Dream Maker is a enchantment in Wild Rift. Grant ally Dream Bubbles for bonus damage + MS. Enchantment applied to boots. Healing or shielding an ally grants Dream Bubbles that pop on attack for bonus damage and MS. Tags: enchanter, support, damage_buff, boots.",
+      "best_for": [
+        "enchanter supports"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:dream_maker_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.06
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:enchanter",
+          "weight": 0.6,
+          "context": "Synergy with enchanter",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:support",
+          "weight": 0.6,
+          "context": "Synergy with support",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:damage_buff",
+          "weight": 0.6,
+          "context": "Synergy with damage_buff",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.06,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:enchanter",
+          "tag:support",
+          "tag:damage_buff",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_enchanter",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.06,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.06,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.06,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.7,
+          "late": 0.6
+        },
+        "complexity": 0.2,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Enchanter boot enchant. Shields grant ally damage bubbles."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Dream Maker."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Dream Maker provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Dream Maker maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on enchanters for ally DPS amplification",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:dream_maker_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.05
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.06
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.06
+          }
+        ]
+      }
+    },
+    {
+      "id": "galeforce",
+      "name": "Galeforce",
+      "category": "enchantment",
+      "subcategory": "mobility",
+      "tags": [
+        "dash",
+        "mobility",
+        "execute",
+        "adc",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Dash + fire missiles at lowest-HP nearby enemy.",
+      "full": "Active: Dash in target direction and fire 3 missiles at the lowest-HP nearby enemy champion. Provides mobility for immobile ADCs.",
+      "embedding_text": "Galeforce is a enchantment in Wild Rift. Dash + fire missiles at lowest-HP nearby enemy. Active: Dash in target direction and fire 3 missiles at the lowest-HP nearby enemy champion. Provides mobility for immobile ADCs. Tags: dash, mobility, execute, adc, boots.",
+      "best_for": [
+        "immobile ADCs",
+        "Jhin",
+        "Jinx",
+        "Ashe"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:galeforce",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.08
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:dash",
+          "weight": 0.6,
+          "context": "Synergy with dash",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:mobility",
+          "weight": 0.6,
+          "context": "Synergy with mobility",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:execute",
+          "weight": 0.6,
+          "context": "Synergy with execute",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.08,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:dash",
+          "tag:mobility",
+          "tag:execute",
+          "tag:adc",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_mobility",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.08,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.07,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.7,
+          "late": 0.7
+        },
+        "complexity": 0.3,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Dash + missiles. Mobility for immobile ADCs."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Galeforce."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Galeforce provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Galeforce scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on immobile ADCs (Jhin, Jinx, Ashe) for safety",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:galeforce",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.07
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.08
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.08
+          }
+        ]
+      }
+    },
+    {
+      "id": "glorious_enchant",
+      "name": "Glorious Enchant",
+      "category": "enchantment",
+      "subcategory": "engage",
+      "tags": [
+        "movement_speed",
+        "engage",
+        "tank",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Gain MS burst toward enemy champions.",
+      "full": "Active: Gain a large burst of movement speed when moving toward enemy champions. Best for engage tanks.",
+      "embedding_text": "Glorious Enchant is a enchantment in Wild Rift. Gain MS burst toward enemy champions. Active: Gain a large burst of movement speed when moving toward enemy champions. Best for engage tanks. Tags: movement_speed, engage, tank, boots.",
+      "best_for": [
+        "engage tanks",
+        "Darius"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:glorious_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "B",
+          "pick_rate": 0.05
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:movement_speed",
+          "weight": 0.6,
+          "context": "Synergy with movement_speed",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:engage",
+          "weight": 0.6,
+          "context": "Synergy with engage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:tank",
+          "weight": 0.6,
+          "context": "Synergy with tank",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05,
+          0.5
+        ],
+        "neighbor_ids": [
+          "tag:movement_speed",
+          "tag:engage",
+          "tag:tank",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_engage",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.05,
+        "tier": "B",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.04,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.7,
+          "late": 0.6
+        },
+        "complexity": 0.2,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "MS burst toward enemies. Engage tank enchant."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Glorious Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Glorious Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Glorious Enchant maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on engage tanks for gap closing",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:glorious_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.04
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.05
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.05
+          }
+        ]
+      }
+    },
+    {
+      "id": "goredrinker",
+      "name": "Goredrinker",
+      "category": "enchantment",
+      "subcategory": "fighter",
+      "tags": [
+        "aoe",
+        "heal",
+        "missing_hp",
+        "fighter",
+        "bruiser",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Active: AoE damage + heal based on missing HP.",
+      "full": "Active: Deal physical damage in an AoE around you and heal based on your missing HP. More missing HP = bigger heal. Best for bruisers/fighters.",
+      "embedding_text": "Goredrinker is a enchantment in Wild Rift. Active: AoE damage + heal based on missing HP. Active: Deal physical damage in an AoE around you and heal based on your missing HP. More missing HP = bigger heal. Best for bruisers/fighters. Tags: aoe, heal, missing_hp, fighter, bruiser, boots.",
+      "best_for": [
+        "Aatrox",
+        "Riven",
+        "Lee Sin",
+        "fighters"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:goredrinker",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.08
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:aoe",
+          "weight": 0.6,
+          "context": "Synergy with aoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:heal",
+          "weight": 0.6,
+          "context": "Synergy with heal",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:missing_hp",
+          "weight": 0.6,
+          "context": "Synergy with missing_hp",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.08,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:aoe",
+          "tag:heal",
+          "tag:missing_hp",
+          "tag:fighter",
+          "tag:bruiser"
+        ],
+        "node_label": "enchantment_fighter",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.08,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.07,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.8,
+          "late": 0.7
+        },
+        "complexity": 0.3,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "AoE damage + missing HP heal. Fighter sustain enchant."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Goredrinker."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Goredrinker provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Goredrinker scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on bruisers/fighters for team fight sustain",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:goredrinker",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.07
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.08
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.08
+          }
+        ]
+      }
+    },
+    {
+      "id": "locket_enchant",
+      "name": "Locket Enchant",
+      "category": "enchantment",
+      "subcategory": "support",
+      "tags": [
+        "shield",
+        "team",
+        "support",
+        "tank",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Shield nearby allies.",
+      "full": "Active: Grant a shield to all nearby allied champions for 2.5 seconds. Shield scales with level. Best for supports and tank junglers in team fights.",
+      "embedding_text": "Locket Enchant is a enchantment in Wild Rift. Shield nearby allies. Active: Grant a shield to all nearby allied champions for 2.5 seconds. Shield scales with level. Best for supports and tank junglers in team fights. Tags: shield, team, support, tank, boots.",
+      "best_for": [
+        "supports",
+        "Nautilus",
+        "Leona",
+        "Amumu"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:locket_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "S",
+          "pick_rate": 0.12
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:shield",
+          "weight": 0.6,
+          "context": "Synergy with shield",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:team",
+          "weight": 0.6,
+          "context": "Synergy with team",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:support",
+          "weight": 0.6,
+          "context": "Synergy with support",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.12,
+          0.8333
+        ],
+        "neighbor_ids": [
+          "tag:shield",
+          "tag:team",
+          "tag:support",
+          "tag:tank",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_support",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.12,
+        "tier": "S",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.11,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.12,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.12,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.8,
+          "late": 0.8
+        },
+        "complexity": 0.2,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Team-wide shield. Best support enchant."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Locket Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Locket Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Locket Enchant scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on supports and tank junglers for team protection",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:locket_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.11
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.12
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "id": "magnetron_enchant",
+      "name": "Magnetron Enchant",
+      "category": "enchantment",
+      "subcategory": "engage",
+      "tags": [
+        "pull",
+        "engage",
+        "disruption",
+        "tank",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Pull nearby enemies toward you.",
+      "full": "Active: Pull all nearby enemy champions slightly toward you. Provides engage disruption for tanks.",
+      "embedding_text": "Magnetron Enchant is a enchantment in Wild Rift. Pull nearby enemies toward you. Active: Pull all nearby enemy champions slightly toward you. Provides engage disruption for tanks. Tags: pull, engage, disruption, tank, boots.",
+      "best_for": [
+        "engage tanks"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:magnetron_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "B",
+          "pick_rate": 0.03
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:pull",
+          "weight": 0.6,
+          "context": "Synergy with pull",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:engage",
+          "weight": 0.6,
+          "context": "Synergy with engage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:disruption",
+          "weight": 0.6,
+          "context": "Synergy with disruption",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.03,
+          0.5
+        ],
+        "neighbor_ids": [
+          "tag:pull",
+          "tag:engage",
+          "tag:disruption",
+          "tag:tank",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_engage",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.03,
+        "tier": "B",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.02,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.03,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.03,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.3,
+          "mid": 0.6,
+          "late": 0.6
+        },
+        "complexity": 0.3,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Pull enemies toward you. Niche engage enchant."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Magnetron Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Magnetron Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Magnetron Enchant maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on engage tanks for disruption",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:magnetron_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.02
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.03
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.03
+          }
+        ]
+      }
+    },
+    {
+      "id": "meteor_enchant",
+      "name": "Meteor Enchant",
+      "category": "enchantment",
+      "subcategory": "engage",
+      "tags": [
+        "aoe",
+        "damage",
+        "long_range",
+        "engage",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Launch a meteor at target location.",
+      "full": "Active: Launch a meteor at target location dealing AoE damage. Long-range engage tool.",
+      "embedding_text": "Meteor Enchant is a enchantment in Wild Rift. Launch a meteor at target location. Active: Launch a meteor at target location dealing AoE damage. Long-range engage tool. Tags: aoe, damage, long_range, engage, boots.",
+      "best_for": [
+        "engage",
+        "long-range initiation"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:meteor_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "B",
+          "pick_rate": 0.03
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:aoe",
+          "weight": 0.6,
+          "context": "Synergy with aoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:damage",
+          "weight": 0.6,
+          "context": "Synergy with damage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:long_range",
+          "weight": 0.6,
+          "context": "Synergy with long_range",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.03,
+          0.5
+        ],
+        "neighbor_ids": [
+          "tag:aoe",
+          "tag:damage",
+          "tag:long_range",
+          "tag:engage",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_engage",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.03,
+        "tier": "B",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.02,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.03,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.03,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.3,
+          "mid": 0.6,
+          "late": 0.5
+        },
+        "complexity": 0.3,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Long-range AoE meteor. Engage tool."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Meteor Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Meteor Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Meteor Enchant maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Niche. Build for long-range initiation",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:meteor_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.02
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.03
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.03
+          }
+        ]
+      }
+    },
+    {
+      "id": "protobelt_enchant",
+      "name": "Protobelt Enchant",
+      "category": "enchantment",
+      "subcategory": "mobility",
+      "tags": [
+        "dash",
+        "rockets",
+        "magic_damage",
+        "gap_close",
+        "ap",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Dash forward + fire rockets.",
+      "full": "Active: Dash forward and fire a cone of rockets dealing magic damage. Provides gap-close for AP champions.",
+      "embedding_text": "Protobelt Enchant is a enchantment in Wild Rift. Dash forward + fire rockets. Active: Dash forward and fire a cone of rockets dealing magic damage. Provides gap-close for AP champions. Tags: dash, rockets, magic_damage, gap_close, ap, boots.",
+      "best_for": [
+        "Ahri",
+        "Fizz",
+        "Galio",
+        "Kennen",
+        "AP engage"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:protobelt_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.1
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:dash",
+          "weight": 0.6,
+          "context": "Synergy with dash",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:rockets",
+          "weight": 0.6,
+          "context": "Synergy with rockets",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:magic_damage",
+          "weight": 0.6,
+          "context": "Synergy with magic_damage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:dash",
+          "tag:rockets",
+          "tag:magic_damage",
+          "tag:gap_close",
+          "tag:ap"
+        ],
+        "node_label": "enchantment_mobility",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.1,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.1,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.1,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.8,
+          "late": 0.6
+        },
+        "complexity": 0.3,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Dash + rockets. AP gap-close enchant."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Protobelt Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Protobelt Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Protobelt Enchant maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on AP engage champions (Ahri, Fizz, Galio, Kennen)",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:protobelt_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.09
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.1
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "quicksilver_enchant",
+      "name": "Quicksilver Enchant",
+      "category": "enchantment",
+      "subcategory": "cleanse",
+      "tags": [
+        "cleanse",
+        "cc_removal",
+        "anti_cc",
+        "adc",
+        "safety",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Cleanse all CC.",
+      "full": "Active: Remove all crowd control effects (stuns, roots, slows, suppressions, etc.) from yourself. Essential for ADCs vs heavy CC teams.",
+      "embedding_text": "Quicksilver Enchant is a enchantment in Wild Rift. Cleanse all CC. Active: Remove all crowd control effects (stuns, roots, slows, suppressions, etc.) from yourself. Essential for ADCs vs heavy CC teams. Tags: cleanse, cc_removal, anti_cc, adc, safety, boots.",
+      "best_for": [
+        "ADCs vs CC",
+        "immobile carries"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:quicksilver_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "S",
+          "pick_rate": 0.1
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:cleanse",
+          "weight": 0.6,
+          "context": "Synergy with cleanse",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:cc_removal",
+          "weight": 0.6,
+          "context": "Synergy with cc_removal",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:anti_cc",
+          "weight": 0.6,
+          "context": "Synergy with anti_cc",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1,
+          0.8333
+        ],
+        "neighbor_ids": [
+          "tag:cleanse",
+          "tag:cc_removal",
+          "tag:anti_cc",
+          "tag:adc",
+          "tag:safety"
+        ],
+        "node_label": "enchantment_cleanse",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.1,
+        "tier": "S",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.09,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.1,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.1,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.3,
+          "mid": 0.7,
+          "late": 0.9
+        },
+        "complexity": 0.3,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Cleanse all CC. Essential vs heavy CC."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Quicksilver Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Quicksilver Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Quicksilver Enchant scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on ADCs vs CC-heavy teams. THE safety enchant.",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:quicksilver_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.09
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.1
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "stasis_enchant",
+      "name": "Stasis Enchant",
+      "category": "enchantment",
+      "subcategory": "safety",
+      "tags": [
+        "invulnerability",
+        "untargetable",
+        "safety",
+        "anti_burst",
+        "universal",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "2.5s invulnerability + untargetability.",
+      "full": "Active: Become invulnerable and untargetable for 2.5 seconds. Cannot move, attack, or use abilities during Stasis. THE universal defensive enchantment.",
+      "embedding_text": "Stasis Enchant is a enchantment in Wild Rift. 2.5s invulnerability + untargetability. Active: Become invulnerable and untargetable for 2.5 seconds. Cannot move, attack, or use abilities during Stasis. THE universal defensive enchantment. Tags: invulnerability, untargetable, safety, anti_burst, universal, boots.",
+      "best_for": [
+        "almost everyone",
+        "vs burst",
+        "vs dive"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:stasis_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "S+",
+          "pick_rate": 0.25
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:invulnerability",
+          "weight": 0.6,
+          "context": "Synergy with invulnerability",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:untargetable",
+          "weight": 0.6,
+          "context": "Synergy with untargetable",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:safety",
+          "weight": 0.6,
+          "context": "Synergy with safety",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          1.0
+        ],
+        "neighbor_ids": [
+          "tag:invulnerability",
+          "tag:untargetable",
+          "tag:safety",
+          "tag:anti_burst",
+          "tag:universal"
+        ],
+        "node_label": "enchantment_safety",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.25,
+        "tier": "S+",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.24,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.25,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.25,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.9,
+          "late": 0.9
+        },
+        "complexity": 0.3,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "2.5s invulnerable. THE universal defensive enchant."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Stasis Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Stasis Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Stasis Enchant scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on almost everyone. Default enchant choice.",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:stasis_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.24
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.25
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "id": "stoneplate_enchant",
+      "name": "Stoneplate Enchant",
+      "category": "enchantment",
+      "subcategory": "tank",
+      "tags": [
+        "shield",
+        "tank",
+        "team_fight",
+        "scaling",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Gain massive shield based on nearby enemies.",
+      "full": "Active: Gain a large shield that scales with the number of nearby enemy champions. More enemies = bigger shield. Best for tanks engaging into multiple enemies.",
+      "embedding_text": "Stoneplate Enchant is a enchantment in Wild Rift. Gain massive shield based on nearby enemies. Active: Gain a large shield that scales with the number of nearby enemy champions. More enemies = bigger shield. Best for tanks engaging into multiple enemies. Tags: shield, tank, team_fight, scaling, boots.",
+      "best_for": [
+        "engage tanks in team fights"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:stoneplate_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.08
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:shield",
+          "weight": 0.6,
+          "context": "Synergy with shield",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:tank",
+          "weight": 0.6,
+          "context": "Synergy with tank",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:team_fight",
+          "weight": 0.6,
+          "context": "Synergy with team_fight",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.08,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:shield",
+          "tag:tank",
+          "tag:team_fight",
+          "tag:scaling",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_tank",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.08,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.07,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.08,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.3,
+          "mid": 0.7,
+          "late": 0.8
+        },
+        "complexity": 0.2,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Massive shield scaling with nearby enemies. Tank engage."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Stoneplate Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Stoneplate Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Stoneplate Enchant scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on engage tanks diving into 3+ enemies",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:stoneplate_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.07
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.08
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.08
+          }
+        ]
+      }
+    },
+    {
+      "id": "stridebreaker",
+      "name": "Stridebreaker",
+      "category": "enchantment",
+      "subcategory": "fighter",
+      "tags": [
+        "dash",
+        "slow",
+        "aoe",
+        "gap_close",
+        "fighter",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Dash + AoE slow nearby enemies.",
+      "full": "Active: Dash a short distance and slow all nearby enemies. Provides gap-close and slow for bruisers.",
+      "embedding_text": "Stridebreaker is a enchantment in Wild Rift. Dash + AoE slow nearby enemies. Active: Dash a short distance and slow all nearby enemies. Provides gap-close and slow for bruisers. Tags: dash, slow, aoe, gap_close, fighter, boots.",
+      "best_for": [
+        "Darius",
+        "Garen",
+        "bruisers needing gap-close"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:stridebreaker",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "B",
+          "pick_rate": 0.05
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:dash",
+          "weight": 0.6,
+          "context": "Synergy with dash",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:slow",
+          "weight": 0.6,
+          "context": "Synergy with slow",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:aoe",
+          "weight": 0.6,
+          "context": "Synergy with aoe",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05,
+          0.5
+        ],
+        "neighbor_ids": [
+          "tag:dash",
+          "tag:slow",
+          "tag:aoe",
+          "tag:gap_close",
+          "tag:fighter"
+        ],
+        "node_label": "enchantment_fighter",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.05,
+        "tier": "B",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.04,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.05,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.4,
+          "mid": 0.7,
+          "late": 0.5
+        },
+        "complexity": 0.2,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Dash + AoE slow. Gap-close for bruisers."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Stridebreaker."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Stridebreaker provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Stridebreaker maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on Darius, Garen for gap-closing",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:stridebreaker",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.04
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.05
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.05
+          }
+        ]
+      }
+    },
+    {
+      "id": "veil_enchant",
+      "name": "Veil Enchant",
+      "category": "enchantment",
+      "subcategory": "anti_mage",
+      "tags": [
+        "spell_shield",
+        "anti_mage",
+        "anti_assassin",
+        "safety",
+        "boots"
+      ],
+      "cost": 500,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Spell shield blocks 1 enemy ability.",
+      "full": "Active: Gain a spell shield that blocks the next enemy ability. Shield lasts until broken. Best for mages vs assassins who need to block one key ability.",
+      "embedding_text": "Veil Enchant is a enchantment in Wild Rift. Spell shield blocks 1 enemy ability. Active: Gain a spell shield that blocks the next enemy ability. Shield lasts until broken. Best for mages vs assassins who need to block one key ability. Tags: spell_shield, anti_mage, anti_assassin, safety, boots.",
+      "best_for": [
+        "mages vs assassins",
+        "immobile mages"
+      ],
+      "graph_node": {
+        "node_type": "enchantment",
+        "node_id": "enchantment:veil_enchant",
+        "properties": {
+          "cost": 500,
+          "stats": {},
+          "tier": "B",
+          "pick_rate": 0.04
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:spell_shield",
+          "weight": 0.6,
+          "context": "Synergy with spell_shield",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:anti_mage",
+          "weight": 0.6,
+          "context": "Synergy with anti_mage",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:anti_assassin",
+          "weight": 0.6,
+          "context": "Synergy with anti_assassin",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.04,
+          0.5
+        ],
+        "neighbor_ids": [
+          "tag:spell_shield",
+          "tag:anti_mage",
+          "tag:anti_assassin",
+          "tag:safety",
+          "tag:boots"
+        ],
+        "node_label": "enchantment_anti_mage",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.04,
+        "tier": "B",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.03,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.04,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.04,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.3,
+          "mid": 0.6,
+          "late": 0.6
+        },
+        "complexity": 0.2,
+        "slot_value": "enchantment"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Spell shield blocks one ability. Anti-mage."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Veil Enchant."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Veil Enchant provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Veil Enchant maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Build on mages vs assassins who need to block one key spell",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "enchantment:veil_enchant",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.03
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.04
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.04
+          }
+        ]
+      }
+    }
+  ],
+  "trinkets": [
+    {
+      "id": "control_ward",
+      "name": "Control Ward",
+      "category": "vision",
+      "subcategory": "consumable",
+      "tags": [
+        "vision",
+        "ward",
+        "reveal",
+        "consumable"
+      ],
+      "cost": 75,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Place a visible ward that reveals and disables nearby enemy wards.",
+      "full": "Consumable: Place a Control Ward that reveals and disables nearby enemy wards and traps. Visible to enemies (can be destroyed). Only 1 Control Ward can be placed at a time.",
+      "embedding_text": "Control Ward is a vision in Wild Rift. Place a visible ward that reveals and disables nearby enemy wards. Consumable: Place a Control Ward that reveals and disables nearby enemy wards and traps. Visible to enemies (can be destroyed). Only 1 Control Ward can be placed at a time. Tags: vision, ward, reveal, consumable.",
+      "best_for": [
+        "all roles",
+        "supports"
+      ],
+      "graph_node": {
+        "node_type": "vision",
+        "node_id": "vision:control_ward",
+        "properties": {
+          "cost": 75,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.3
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:vision",
+          "weight": 0.6,
+          "context": "Synergy with vision",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:ward",
+          "weight": 0.6,
+          "context": "Synergy with ward",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:reveal",
+          "weight": 0.6,
+          "context": "Synergy with reveal",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.075,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.3,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:vision",
+          "tag:ward",
+          "tag:reveal",
+          "tag:consumable"
+        ],
+        "node_label": "vision_consumable",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.3,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.29,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.3,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.3,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.7,
+          "mid": 0.8,
+          "late": 0.9
+        },
+        "complexity": 0.1,
+        "slot_value": "vision"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Reveals + disables enemy wards. Vision control."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Control Ward."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Control Ward provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Control Ward scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Buy on every back. All roles, all game.",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "vision:control_ward",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.29
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.3
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "id": "sweeping_lens",
+      "name": "Sweeping Lens",
+      "category": "vision",
+      "subcategory": "trinket",
+      "tags": [
+        "vision",
+        "sweep",
+        "reveal",
+        "disable",
+        "trinket"
+      ],
+      "cost": 0,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Reveal and disable nearby invisible traps and wards.",
+      "full": "Active: Sweep an area to reveal and disable nearby invisible wards and traps for a short duration. Free trinket option.",
+      "embedding_text": "Sweeping Lens is a vision in Wild Rift. Reveal and disable nearby invisible traps and wards. Active: Sweep an area to reveal and disable nearby invisible wards and traps for a short duration. Free trinket option. Tags: vision, sweep, reveal, disable, trinket.",
+      "best_for": [
+        "all roles post-laning"
+      ],
+      "graph_node": {
+        "node_type": "vision",
+        "node_id": "vision:sweeping_lens",
+        "properties": {
+          "cost": 0,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.4
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:vision",
+          "weight": 0.6,
+          "context": "Synergy with vision",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:sweep",
+          "weight": 0.6,
+          "context": "Synergy with sweep",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:reveal",
+          "weight": 0.6,
+          "context": "Synergy with reveal",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:vision",
+          "tag:sweep",
+          "tag:reveal",
+          "tag:disable",
+          "tag:trinket"
+        ],
+        "node_label": "vision_trinket",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.4,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.39,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.4,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.4,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.5,
+          "mid": 0.8,
+          "late": 0.9
+        },
+        "complexity": 0.1,
+        "slot_value": "vision"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Reveal and disable invisible wards/traps."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "delay",
+            "action": "Delay Sweeping Lens."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Sweeping Lens provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Sweeping Lens scales well late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Switch to Sweeper after laning phase. Core on supports/junglers.",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "vision:sweeping_lens",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.39
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.4
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.4
+          }
+        ]
+      }
+    },
+    {
+      "id": "warding_totem",
+      "name": "Warding Totem",
+      "category": "vision",
+      "subcategory": "trinket",
+      "tags": [
+        "vision",
+        "ward",
+        "stealth",
+        "trinket"
+      ],
+      "cost": 0,
+      "stats": {},
+      "passive_name": "",
+      "brief": "Place a stealth ward that grants vision.",
+      "full": "Active: Place a stealth ward at target location that grants vision of the surrounding area for 90-120 seconds. Free trinket. Starting trinket for all players.",
+      "embedding_text": "Warding Totem is a vision in Wild Rift. Place a stealth ward that grants vision. Active: Place a stealth ward at target location that grants vision of the surrounding area for 90-120 seconds. Free trinket. Starting trinket for all players. Tags: vision, ward, stealth, trinket.",
+      "best_for": [
+        "all roles",
+        "laning phase"
+      ],
+      "graph_node": {
+        "node_type": "vision",
+        "node_id": "vision:warding_totem",
+        "properties": {
+          "cost": 0,
+          "stats": {},
+          "tier": "A",
+          "pick_rate": 0.5
+        }
+      },
+      "graph_edges": [
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:vision",
+          "weight": 0.6,
+          "context": "Synergy with vision",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:ward",
+          "weight": 0.6,
+          "context": "Synergy with ward",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        },
+        {
+          "edge_type": "SYNERGIZES_WITH",
+          "target_node_id": "tag:stealth",
+          "weight": 0.6,
+          "context": "Synergy with stealth",
+          "metadata": {
+            "patch": "7.1d"
+          }
+        }
+      ],
+      "gnn_features": {
+        "feature_vector": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.6667
+        ],
+        "neighbor_ids": [
+          "tag:vision",
+          "tag:ward",
+          "tag:stealth",
+          "tag:trinket"
+        ],
+        "node_label": "vision_trinket",
+        "edge_weights": {}
+      },
+      "realtime": {
+        "pick_rate": 0.5,
+        "tier": "A",
+        "win_rate_trend": "stable",
+        "patch_history": [
+          {
+            "patch": "7.0",
+            "pick_rate": 0.49,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1a",
+            "pick_rate": 0.5,
+            "change": "unchanged"
+          },
+          {
+            "patch": "7.1d",
+            "pick_rate": 0.5,
+            "change": "unchanged"
+          }
+        ]
+      },
+      "features": {
+        "damage_type": "none",
+        "scaling": {
+          "early": 0.9,
+          "mid": 0.6,
+          "late": 0.4
+        },
+        "complexity": 0.0,
+        "slot_value": "vision"
+      },
+      "events": {
+        "power_spikes": [
+          {
+            "trigger": "item_completed",
+            "type": "boot_spike",
+            "impact": "medium",
+            "description": "Stealth ward. Starting trinket for all."
+          }
+        ],
+        "game_phase_actions": {
+          "early": {
+            "priority": "rush",
+            "action": "Rush Warding Totem."
+          },
+          "mid": {
+            "priority": "utilize",
+            "action": "Warding Totem provides consistent value mid-game."
+          },
+          "late": {
+            "priority": "maintain",
+            "action": "Warding Totem maintains value late."
+          }
+        }
+      },
+      "rules": {
+        "build_rules": [
+          {
+            "condition": "default",
+            "action": "Start with this. Switch to Sweeper mid-game.",
+            "confidence": 0.8
+          }
+        ]
+      },
+      "time_series": {
+        "entity_id": "vision:warding_totem",
+        "metric": "pick_rate",
+        "data_points": [
+          {
+            "patch": "7.0",
+            "timestamp": "2026-03-01",
+            "value": 0.49
+          },
+          {
+            "patch": "7.1a",
+            "timestamp": "2026-04-01",
+            "value": 0.5
+          },
+          {
+            "patch": "7.1d",
+            "timestamp": "2026-05-01",
+            "value": 0.5
+          }
+        ]
+      }
+    }
+  ]
+}

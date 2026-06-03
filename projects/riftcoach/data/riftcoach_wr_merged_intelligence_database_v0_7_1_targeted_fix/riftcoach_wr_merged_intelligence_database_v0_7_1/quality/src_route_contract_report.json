@@ -1,0 +1,4 @@
+{
+  "version": "0.7.0",
+  "known_issue": "Draft page sends messages[] while /api/draft expects role/enemyPick/allies/apiKey/model/context. Data package includes support files but code patch is recommended."
+}

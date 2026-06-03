@@ -1,0 +1,29 @@
+{
+  "version": "0.6.0-chunk2",
+  "allowed_source_families": {
+    "riot_wild_rift_champion": "https://wildrift.leagueoflegends.com/en-sg/champions/",
+    "riot_wild_rift_news": "https://wildrift.leagueoflegends.com/en-sg/news/",
+    "lol_wiki_wr": "https://wiki.leagueoflegends.com/en-us/WR:",
+    "wildriftfire": "https://www.wildriftfire.com/"
+  },
+  "allowed_source_patterns": [
+    "^https://wildrift\\.leagueoflegends\\.com/en-sg/champions/",
+    "^https://wildrift\\.leagueoflegends\\.com/en-sg/news/",
+    "^https://wiki\\.leagueoflegends\\.com/en-us/WR:",
+    "^https://wiki\\.leagueoflegends\\.com/en-us/WR%3A",
+    "^https://www\\.wildriftfire\\.com/"
+  ],
+  "blocked_source_patterns": [
+    "leagueoflegends\\.com/en-us/champions/",
+    "leagueoflegends\\.com/en-gb/champions/",
+    "wiki\\.leagueofgraphs\\.com",
+    "u\\.gg",
+    "mobalytics\\.gg",
+    "op\\.gg",
+    "lolalytics\\.com",
+    "mobafire\\.com/league-of-legends",
+    "reddit\\.com",
+    "youtube\\.com",
+    "tiktok\\.com"
+  ]
+}

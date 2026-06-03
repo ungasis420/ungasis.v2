@@ -1,0 +1,1166 @@
+{
+  "_meta": {
+    "game": "Wild Rift",
+    "patch": "7.1e",
+    "chunk": "7a — Champions O-S",
+    "total": 27,
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "champions": [
+    {
+      "id": "olaf",
+      "name": "Olaf",
+      "title": "the Berserker",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Baron",
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Berserker Rage: gain AS as HP decreases",
+        "Q": "Undertow: throw axe skillshot. Pick up reduces CD. Slow on hit.",
+        "W": "Vicious Strikes: bonus AS + lifesteal. More healing at low HP.",
+        "E": "Reckless Swing: point-click true damage (costs HP to cast)",
+        "R": "Ragnarok: passive bonus armor/MR. Active: immune to CC + bonus AD. Lose passive resists during."
+      },
+      "playstyle": "Unkillable berserker. R = CC immune. Low HP = more AS. E true damage ignores armor.",
+      "power_spikes": [
+        "Level 5 R",
+        "Goredrinker/Eclipse",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "CC-reliant teams",
+          "squishies"
+        ],
+        "weak_vs": [
+          "Kiting",
+          "Vayne",
+          "ranged tops"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "orianna",
+      "name": "Orianna",
+      "title": "the Lady of Clockwork",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Clockwork Windup: AAs deal stacking bonus magic damage on same target",
+        "Q": "Command: Attack: move ball to location dealing magic damage in path",
+        "W": "Command: Dissonance: AoE on ball dealing magic + speed zone (ally MS / enemy slow)",
+        "E": "Command: Protect: ball attaches to ally, shielding + dealing magic damage in path. Passive armor/MR.",
+        "R": "Command: Shockwave: AoE pull toward ball center + massive magic damage. THE teamfight ult."
+      },
+      "playstyle": "Ball-control mage. Attach ball to diver → R Shockwave for game-winning 5-man CC combo.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's Echo",
+        "Rabadon's + R combo"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight comps",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "Zed"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "ornn",
+      "name": "Ornn",
+      "title": "the Fire Below the Mountain",
+      "classes": [
+        "Vanguard"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Living Forge: can buy items from anywhere. Upgrades allies' items to Masterwork at levels 9/12/14.",
+        "Q": "Volcanic Rupture: ground fissure dealing damage + slow. Creates pillar at end.",
+        "W": "Bellows Breath: breathe fire in cone. Last tick applies Brittle (bonus CC duration + %max HP magic on next CC).",
+        "E": "Searing Charge: dash. If hits terrain/pillar = AoE knockup.",
+        "R": "Call of the Forge God: summon massive ram. Recast: headbutt ram back → AoE knockup + Brittle."
+      },
+      "playstyle": "Team-scaling tank. Upgrades allies' items. R massive long-range engage. Brittle = bonus damage.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "Level 9 (item upgrades)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late game (item upgrades)",
+          "teamfights"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Fiora",
+          "true damage"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "pantheon",
+      "name": "Pantheon",
+      "title": "the Unbreakable Spear",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Baron",
+        "Mid",
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Mortal Will: every 5 abilities/AAs empowers next ability",
+        "Q": "Comet Spear: tap for thrust, hold for throw. Empowered: bonus damage + slow.",
+        "W": "Shield Vault: point-click dash + stun on arrival",
+        "E": "Aegis Assault: block all damage from one direction for 1.5s. Final slam deals damage. Empowered: extended duration.",
+        "R": "Grand Starfall: semi-global: leap into the sky and crash down at target location. AoE damage on landing."
+      },
+      "playstyle": "Early-game bully. W stun → empowered Q for burst. E blocks all frontal damage. R to roam.",
+      "power_spikes": [
+        "Level 3 (combo)",
+        "Level 5 R roams",
+        "Eclipse"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "squishies"
+        ],
+        "weak_vs": [
+          "Outscaled late",
+          "tanks",
+          "Malphite"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "poppy",
+      "name": "Poppy",
+      "title": "Keeper of the Hammer",
+      "classes": [
+        "Warden"
+      ],
+      "positions": [
+        "Baron",
+        "Jungle",
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Iron Ambassador: AA throws buckler shield. Picking it up grants shield.",
+        "Q": "Hammer Shock: AoE ground slam + delayed pop for %max HP damage",
+        "W": "Steadfast Presence: passive bonus armor/MR at low HP. Active: create anti-dash zone (grounds enemies).",
+        "E": "Heroic Charge: dash to enemy, pin to wall = stun",
+        "R": "Keeper's Verdict: charge hammer → knockup (tap) or mega knockback sending enemies to base (hold)"
+      },
+      "playstyle": "Anti-dash tank. W stops all dashes. E wall stun. R removes threats from fights.",
+      "power_spikes": [
+        "Level 2 E+Q",
+        "Level 5 R",
+        "Sunfire Aegis"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Dash-reliant champs",
+          "Irelia",
+          "Lee Sin"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "Teemo"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "pyke",
+      "name": "Pyke",
+      "title": "the Bloodharbor Ripper",
+      "classes": [
+        "Assassin"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Gift of the Drowned Ones: bonus HP converts to AD. Regen: recover damage taken while hidden.",
+        "Q": "Bone Skewer: charge → hook enemy toward you. Tap to stab.",
+        "W": "Ghostwater Dive: stealth + massive MS boost. Reveal at close range.",
+        "E": "Phantom Undertow: dash leaving phantom. Phantom returns to Pyke, stunning enemies in path.",
+        "R": "Death from Below: blink to X-mark dealing execute damage. Resets on kill. Shares full gold to assisting ally."
+      },
+      "playstyle": "Assassin support. Hook → stun → R execute = gold for both you and ADC. Snowball machine.",
+      "power_spikes": [
+        "Level 2 Q+E",
+        "Level 5 R",
+        "Duskblade"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy lanes",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Nautilus",
+          "Leona"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "rakan",
+      "name": "Rakan",
+      "title": "the Charmer",
+      "classes": [
+        "Catcher",
+        "Enchanter"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Fey Feathers: occasionally gain shield from passive. AA heals if near ally.",
+        "Q": "Gleaming Quill: skillshot damage. If it hits, get heal aura after delay (near ally = instant heal).",
+        "W": "Grand Entrance: dash to location → AoE knockup after brief delay",
+        "E": "Battle Dance: dash to ally champion granting shield. 2 charges if Xayah is ally.",
+        "R": "The Quickness: gain MS + charm enemies you touch. Combos with W for engage."
+      },
+      "playstyle": "Engage enchanter. R+W dive for AoE charm+knockup. E to dash back to carry for safety.",
+      "power_spikes": [
+        "Level 2 W+E",
+        "Level 5 R",
+        "Zeke's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "immobile carries"
+        ],
+        "weak_vs": [
+          "Poke supports",
+          "Morgana",
+          "disengage"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "rammus",
+      "name": "Rammus",
+      "title": "the Armordillo",
+      "classes": [
+        "Vanguard"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "abilities": {
+        "P": "Spiked Shell: AAs deal bonus magic damage scaling with armor",
+        "Q": "Powerball: roll into a ball gaining MS. Collide with enemy = AoE knockback + slow.",
+        "W": "Defensive Ball Curl: gain bonus armor/MR. AAs against you deal magic damage back.",
+        "E": "Frenzying Taunt: point-click taunt forcing enemy to AA you. Gain AS during.",
+        "R": "Soaring Slam: leap to location dealing AoE magic damage + aftershock. Creates tremors slowing."
+      },
+      "playstyle": "Anti-AD tank. Taunt carries into you → they kill themselves on reflected damage. Powerball for engage.",
+      "power_spikes": [
+        "Level 5 R",
+        "Thornmail",
+        "Sunfire Aegis"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AD-heavy comps",
+          "auto-attackers",
+          "Master Yi"
+        ],
+        "weak_vs": [
+          "AP comps",
+          "magic damage",
+          "Vayne"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "rell",
+      "name": "Rell",
+      "title": "the Iron Maiden",
+      "classes": [
+        "Vanguard"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Break the Mold: steal armor/MR from enemies hit by AAs/abilities",
+        "Q": "Shattering Strike: stab forward. Break shields. Heal if hits champion.",
+        "W": "W1: Ferromancy - Crash Down: dismount → leap + AoE knockup + gain shield. Slow after. W2: mount → gain MS.",
+        "E": "Attract and Repel: tether to ally. Recast: stun enemies between you and ally.",
+        "R": "Magnet Storm: pull all nearby enemies toward you repeatedly for 2s."
+      },
+      "playstyle": "AoE CC tank. W knockup engage → R pulls enemies together → E stun with ally.",
+      "power_spikes": [
+        "Level 2 W+E",
+        "Level 5 R",
+        "Zeke's/Locket"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "engage comps"
+        ],
+        "weak_vs": [
+          "Poke",
+          "disengage",
+          "Janna"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "renekton",
+      "name": "Renekton",
+      "title": "the Butcher of the Sands",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Fury",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Reign of Anger: generate Fury from AAs/abilities. At 50 Fury, abilities are empowered.",
+        "Q": "Cull the Meek: AoE slash + heal. Empowered: more damage + more healing.",
+        "W": "Ruthless Predator: AA reset with 2 hits + stun. Empowered: 3 hits + longer stun + armor shred.",
+        "E": "Slice and Dice: dash through enemies. Can recast for second dash. Empowered: armor shred.",
+        "R": "Dominus: gain bonus HP + AoE magic damage per second for 15s. Generates Fury."
+      },
+      "playstyle": "Lane bully. E in → W stun → Q heal → E out. Dominates early game. Falls off late.",
+      "power_spikes": [
+        "Level 3 (full combo)",
+        "Level 5 R",
+        "BotRK/Eclipse"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups early",
+          "Irelia",
+          "Fiora early"
+        ],
+        "weak_vs": [
+          "Late game",
+          "Vayne",
+          "ranged poke"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "rengar",
+      "name": "Rengar",
+      "title": "the Pridestalker",
+      "classes": [
+        "Assassin",
+        "Diver"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Ferocity",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Unseen Predator: from brush/R, leap to target. Generate Ferocity stacks. At 4, next ability is empowered.",
+        "Q": "Savagery: AA reset + slash. Empowered: massive damage + AS.",
+        "W": "Battle Roar: AoE magic damage. Empowered: heal based on damage taken (cleanse CC).",
+        "E": "Bola Strike: skillshot root on empowered. Normal: slow.",
+        "R": "Thrill of the Hunt: stealth + reveal nearest enemy. Leap from stealth = guaranteed crit."
+      },
+      "playstyle": "Brush assassin. R stealth → leap → one-shot. Ferocity stacking for empowered abilities.",
+      "power_spikes": [
+        "Level 5 R",
+        "Youmuu's/Edge of Night",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Isolated squishies",
+          "ADCs"
+        ],
+        "weak_vs": [
+          "Grouped teams",
+          "Zhonya's",
+          "Lulu"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "riven",
+      "name": "Riven",
+      "title": "the Exile",
+      "classes": [
+        "Skirmisher"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Manaless",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Runic Blade: abilities charge AA (up to 3). Each empowered AA deals bonus physical.",
+        "Q": "Broken Wings: 3-part dash+slash combo. 3rd cast knocks up.",
+        "W": "Ki Burst: AoE stun around self + damage",
+        "E": "Valor: dash + shield. Scales with AD.",
+        "R": "Blade of the Exile: gain bonus AD + range + enhanced abilities for 15s. Recast: Wind Slash (execute ranged wave)."
+      },
+      "playstyle": "Animation-cancel combo fighter. High mobility + high burst. All AD scaling including shield.",
+      "power_spikes": [
+        "Level 3 (full combo)",
+        "Level 5 R",
+        "Youmuu's/Eclipse"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishies",
+          "short trades"
+        ],
+        "weak_vs": [
+          "Renekton",
+          "Malphite",
+          "armor stackers"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "rumble",
+      "name": "Rumble",
+      "title": "the Mechanized Menace",
+      "classes": [
+        "Battlemage"
+      ],
+      "positions": [
+        "Baron",
+        "Mid"
+      ],
+      "resource": "Heat",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Junkyard Titan: abilities generate Heat. At 50+, abilities are empowered. At 100, silenced but AAs deal bonus magic.",
+        "Q": "Flamespitter: cone of fire dealing magic damage. Empowered: 50% more damage.",
+        "W": "Scrap Shield: shield + MS burst. Empowered: 50% more shield + MS.",
+        "E": "Electro Harpoon: skillshot slow + magic damage. 2 charges. Empowered: 50% more damage + slow.",
+        "R": "The Equalizer: place line of fire (massive zone). Deals magic damage + slow. Incredibly strong zone control."
+      },
+      "playstyle": "Heat management mage. R Equalizer is one of the best zone ults in game. Stay 50-100 Heat.",
+      "power_spikes": [
+        "Level 5 R",
+        "Liandry's/Riftmaker",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfights (R zone)",
+          "grouped teams"
+        ],
+        "weak_vs": [
+          "Long-range poke",
+          "Jayce",
+          "Kennen"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "ryze",
+      "name": "Ryze",
+      "title": "the Rune Mage",
+      "classes": [
+        "Battlemage"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Arcane Mastery: abilities deal bonus damage based on bonus mana",
+        "Q": "Overload: line skillshot. If Flux is on target, spreads. If 2 runes are active, gain shield + MS.",
+        "W": "Rune Prison: point-click root. If target is Fluxed, root is longer.",
+        "E": "Spell Flux: targeted bounce damage. Spreads Flux to nearby enemies.",
+        "R": "Realm Warp: teleport self + nearby allies to target location after channel."
+      },
+      "playstyle": "Scaling battlemage. Mana scaling = unique builds. EQ combos for spread damage. R for team teleport.",
+      "power_spikes": [
+        "Tear of the Goddess",
+        "Seraph's Embrace",
+        "3 items (mana scaling)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "late game"
+        ],
+        "weak_vs": [
+          "Early aggression",
+          "assassins",
+          "Zed"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "samira",
+      "name": "Samira",
+      "title": "the Desert Rose",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged/Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Daredevil Impulse: build Style (S rank) from unique ability casts. Melee AAs deal bonus magic.",
+        "Q": "Flair: ranged skillshot or melee slash depending on range. Fires in direction.",
+        "W": "Blade Whirl: spin blades destroying all projectiles (Yasuo windwall but on self). Deals damage.",
+        "E": "Wild Rush: dash through enemy/ally. AS boost. Reset on kill.",
+        "R": "Inferno Trigger: at S rank only. Spin firing shots at all nearby enemies. Massive AoE DPS. Applies lifesteal."
+      },
+      "playstyle": "Combo ADC. Build S rank through unique ability casts → R for massive AoE. W blocks projectiles.",
+      "power_spikes": [
+        "S rank (R ready)",
+        "Infinity Edge",
+        "Lifesteal items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee range fights",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "Nautilus",
+          "Leona"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "senna",
+      "name": "Senna",
+      "title": "the Redeemer",
+      "classes": [
+        "Marksman",
+        "Enchanter"
+      ],
+      "positions": [
+        "Support",
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Absolution: collect mist from minions/champions. Gain AD + range + crit infinitely.",
+        "Q": "Piercing Darkness: long line skillshot. Damages enemies + heals allies in line.",
+        "W": "Last Embrace: skillshot root after delay. Root spreads to nearby enemies on death.",
+        "E": "Curse of the Black Mist: stealth zone around self. Allies inside become wraiths (camouflage + MS).",
+        "R": "Dawning Shadow: global beam dealing damage to enemies + shielding allies hit."
+      },
+      "playstyle": "Scaling support ADC. Infinite range scaling from mist. Q heals+damages. R global shield/damage.",
+      "power_spikes": [
+        "20 mist stacks",
+        "Level 5 R",
+        "Umbral Glaive"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Poke lanes",
+          "scaling"
+        ],
+        "weak_vs": [
+          "Hard engage",
+          "all-in",
+          "Leona"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "seraphine",
+      "name": "Seraphine",
+      "title": "the Starry-Eyed Songstress",
+      "classes": [
+        "Burst",
+        "Enchanter"
+      ],
+      "positions": [
+        "Mid",
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Stage Presence: every 3rd ability double-casts. Notes from ally abilities empower next AA.",
+        "Q": "High Note: AoE skillshot dealing magic damage. More damage to low HP.",
+        "W": "Surround Sound: shield + MS to self and nearby allies. If already shielded, heal instead.",
+        "E": "Beat Drop: skillshot slow. If target is already slowed, roots. If moving toward, stuns.",
+        "R": "Encore: skillshot that extends range through champions hit. Charm + damage. Can chain through team."
+      },
+      "playstyle": "Teamfight enchanter/mage. R charm chains through enemies. W team shield/heal. Q poke.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's/Ardent",
+        "R chain on 5"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "front-to-back"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Zed",
+          "dive comps"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "sett",
+      "name": "Sett",
+      "title": "the Boss",
+      "classes": [
+        "Juggernaut"
+      ],
+      "positions": [
+        "Baron",
+        "Support",
+        "Jungle"
+      ],
+      "resource": "Grit",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Pit Grit: left punch AA is normal, right punch is faster + bonus damage. Regen between punches.",
+        "Q": "Knuckle Down: gain MS toward champs. Next 2 AAs deal bonus damage (+%max HP).",
+        "W": "Haymaker: store damage taken as Grit. Recast: AoE punch. Center = true damage based on Grit stored.",
+        "E": "Facebreaker: grab enemies on both sides → slam together for stun if grabbed from both sides. Otherwise slow.",
+        "R": "The Show Stopper: grab target, suplex them into ground. AoE damage to enemies where you land (based on target's HP)."
+      },
+      "playstyle": "Wrestler juggernaut. W Haymaker true damage based on damage absorbed. R suplex carry into enemy team.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK/Goredrinker",
+        "Sterak's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "teamfight CC"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "kiting"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "shen",
+      "name": "Shen",
+      "title": "the Eye of Twilight",
+      "classes": [
+        "Warden"
+      ],
+      "positions": [
+        "Baron",
+        "Support"
+      ],
+      "resource": "Energy",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Ki Barrier: after casting ability, gain shield",
+        "Q": "Spirit Blade: call spirit blade. AAs through it deal %max HP bonus magic + slow after",
+        "W": "Spirit's Refuge: create zone blocking all AAs within. Allies inside can't be auto'd.",
+        "E": "Shadow Dash: taunt dash. Enemies hit are taunted + take damage. Restores energy.",
+        "R": "Stand United: channel → teleport to ally champion anywhere on map, granting massive shield."
+      },
+      "playstyle": "Global protector tank. R teleport to save ally anywhere. E taunt for engage. W blocks AAs.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Auto-attackers",
+          "split control"
+        ],
+        "weak_vs": [
+          "Magic damage",
+          "AP tops",
+          "Mordekaiser"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "shyvana",
+      "name": "Shyvana",
+      "title": "the Half-Dragon",
+      "classes": [
+        "Juggernaut"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Fury",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Fury of the Dragonborn: bonus damage to dragons. AAs generate Fury. AAs on marked targets deal bonus damage.",
+        "Q": "Twin Bite: AA reset dealing bonus physical. Dragon: cleave in front.",
+        "W": "Burnout: AoE fire trail + bonus MS + on-hit fire. Dragon: larger AoE.",
+        "E": "Flame Breath: skillshot fireball marking enemies. AAs on marked deal %max HP magic. Dragon: AoE explosion.",
+        "R": "Dragon's Descent: consume Fury to dash and transform into dragon for duration. Gain bonus HP. All abilities enhanced."
+      },
+      "playstyle": "AP bruiser jungler. Dragon form = massive AoE. E mark → AA for %max HP. Farm Fury for R.",
+      "power_spikes": [
+        "Level 5 R",
+        "Nashor's Tooth/Riftmaker",
+        "Dragon form"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy teams",
+          "objectives"
+        ],
+        "weak_vs": [
+          "Kiting",
+          "CC chains",
+          "Vayne"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "singed",
+      "name": "Singed",
+      "title": "the Mad Chemist",
+      "classes": [
+        "Specialist"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Noxious Slipstream: gain MS when near champions",
+        "Q": "Poison Trail: toggle: leave poison trail behind dealing magic damage per second",
+        "W": "Mega Adhesive: AoE grounding zone + slow. Enemies inside can't dash.",
+        "E": "Fling: flip enemy over your shoulder behind you. If thrown into W, root.",
+        "R": "Insanity Potion: gain bonus AP, armor, MR, MS, HP regen, mana regen for duration."
+      },
+      "playstyle": "Proxy farming madman. Run behind enemies, poison trail, flip into team. W grounds dashers.",
+      "power_spikes": [
+        "Level 5 R",
+        "Rylai's Crystal Scepter",
+        "Liandry's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "chasing comps"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "kiting"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "sion",
+      "name": "Sion",
+      "title": "the Undead Juggernaut",
+      "classes": [
+        "Vanguard"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Glory in Death: on death, reanimate as zombie with rapid decaying HP. AAs deal %max HP.",
+        "Q": "Decimating Smash: charge AoE slam. Longer charge = more damage + knockup (from slow → stun).",
+        "W": "Soul Furnace: passive: gain permanent HP from minion kills. Active: shield, recast for AoE damage.",
+        "E": "Roar of the Slayer: AoE slow + armor shred. First target knocked back.",
+        "R": "Unstoppable Onslaught: charge in direction (unstoppable). Steer slightly. Hit = massive AoE knockup + damage."
+      },
+      "playstyle": "Infinite HP scaling tank. W passive stacks HP. R cross-map engage. Q charged knockup.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "W HP stacking (200+)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight engage",
+          "late-game scaling"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "Fiora",
+          "true damage"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "sivir",
+      "name": "Sivir",
+      "title": "the Battle Mistress",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Fleet of Foot: AAs on champions grant MS burst",
+        "Q": "Boomerang Blade: throw boomerang dealing physical out + back",
+        "W": "Ricochet: next 3 AAs bounce to additional targets. Each bounce deals less damage.",
+        "E": "Spell Shield: block next enemy ability. If successful, restore mana.",
+        "R": "On the Hunt: grant massive MS to self + nearby allies. Great for engaging/disengaging."
+      },
+      "playstyle": "Waveclear ADC with team utility. E spell shield for safety. R team MS for engage.",
+      "power_spikes": [
+        "Level 1 (W push)",
+        "Kraken/Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Waveclear",
+          "team engage comps"
+        ],
+        "weak_vs": [
+          "Single-target burst",
+          "Draven",
+          "lane bullies"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "smolder",
+      "name": "Smolder",
+      "title": "the Fiery Fledgling",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon",
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Dragon Practice: Q on champions/last hits grants stacks. At thresholds, Q upgrades (AoE, burn, explosion).",
+        "Q": "Super Scorcher Breath: main poke. Fires bolt. Evolves at 25/125/225 stacks.",
+        "W": "Achooo!: sneeze AoE dealing magic damage + slow",
+        "E": "Flap Flap Flap: dash/fly over terrain. Gain MS.",
+        "R": "MOOOOM!: call mom for massive AoE fire breath dealing %max HP damage + slow."
+      },
+      "playstyle": "Infinite-scaling ADC. Farm Q stacks. At 225 = massive AoE explosions. R calls mom for teamfight.",
+      "power_spikes": [
+        "25 Q stacks",
+        "125 stacks (AoE)",
+        "225 stacks (explosion)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late game",
+          "scaling"
+        ],
+        "weak_vs": [
+          "Early aggression",
+          "Draven",
+          "lane bullies"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "sona",
+      "name": "Sona",
+      "title": "Maven of the Strings",
+      "classes": [
+        "Enchanter"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "abilities": {
+        "P": "Power Chord: every 3 abilities, next AA is empowered (effect depends on last ability used)",
+        "Q": "Hymn of Valor: AoE magic damage around nearest enemies. Aura: ally bonus magic damage on next AA.",
+        "W": "Aria of Perseverance: heal self + nearby injured ally. Aura: bonus shield.",
+        "E": "Song of Celerity: MS boost to self + nearby allies. Aura: bonus MS.",
+        "R": "Crescendo: long line AoE stun + magic damage. Forced dance."
+      },
+      "playstyle": "Scaling enchanter. Auras buff team. R AoE stun. Late game team power is massive.",
+      "power_spikes": [
+        "Level 5 R",
+        "Ardent Censer",
+        "3 items (aura scaling)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late-game teamfights",
+          "protect-carry comps"
+        ],
+        "weak_vs": [
+          "All-in lanes",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "soraka",
+      "name": "Soraka",
+      "title": "the Starchild",
+      "classes": [
+        "Enchanter"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "S",
+      "difficulty": "Beginner",
+      "abilities": {
+        "P": "Salvation: gain MS moving toward low-HP allies",
+        "Q": "Starcall: AoE skillshot dealing magic + slow. If hits, Soraka gains Rejuvenation (heal over time).",
+        "W": "Astral Infusion: heal ally (costs own HP). If Rejuvenation is active, heals more.",
+        "E": "Equinox: AoE silence zone. After delay, roots enemies still inside.",
+        "R": "Wish: GLOBAL heal to all allied champions. Increased healing on low-HP targets."
+      },
+      "playstyle": "Global healer support. W spam heals carry. R heals entire team from anywhere. E silence zone.",
+      "power_spikes": [
+        "Level 2 Q+W",
+        "Level 5 R",
+        "Warmog's Armor"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Sustained fights",
+          "poke comps"
+        ],
+        "weak_vs": [
+          "Grievous Wounds",
+          "all-in",
+          "Ignite"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "swain",
+      "name": "Swain",
+      "title": "the Noxian Grand General",
+      "classes": [
+        "Battlemage"
+      ],
+      "positions": [
+        "Support",
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Ravenous Flock: pull CC'd enemies toward you + heal. Store soul fragments for bonus HP.",
+        "Q": "Death's Hand: AoE bolts in cone. Each bolt through enemy = bonus damage.",
+        "W": "Vision of Empire: AoE delayed explosion + slow + reveal. Collect soul fragments.",
+        "E": "Nevermove: skillshot root. Recast: pull rooted enemies toward you.",
+        "R": "Demonic Ascension: transform into demon form. AoE drain around you. At full charge, recast for AoE burst."
+      },
+      "playstyle": "Drain-tank battlemage. Pull CC'd enemies. R drain form = massive AoE sustained damage in teamfights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Liandry's/Riftmaker",
+        "Rod of Ages"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfights",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Burst mages",
+          "long-range poke",
+          "Xerath"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    }
+  ]
+}

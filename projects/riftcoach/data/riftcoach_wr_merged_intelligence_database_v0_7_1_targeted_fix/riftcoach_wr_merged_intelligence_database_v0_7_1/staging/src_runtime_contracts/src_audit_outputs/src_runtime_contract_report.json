@@ -1,0 +1,73 @@
+{
+  "audit_date": "2026-05-21",
+  "source_archive": "src.zip",
+  "scope": "Next.js src runtime compatibility with RiftCoach v0.7 data package",
+  "blockers": [
+    {
+      "id": "SRC-BLOCKER-001",
+      "title": "items.json root shape mismatch",
+      "evidence": ["src/app/items/page.tsx uses useGameData<Item[]>('/data/items.json')", "data.zip items.json is object wrapper with meta/items"],
+      "impact": "Items page may throw list.filter is not a function.",
+      "required_fix": "Generate public/data/items.json as root array compatibility view. Store wrapped canonical data elsewhere."
+    },
+    {
+      "id": "SRC-BLOCKER-002",
+      "title": "runes.json slot/effect mismatch",
+      "evidence": ["src/app/runes/page.tsx groups by string slots keystone/primary_1/...", "data.zip runes.json slot is numeric and effect is absent"],
+      "impact": "Runes page can render no rune groups or omit descriptions.",
+      "required_fix": "Generate UI slot strings and effect aliases in public/data/runes.json."
+    },
+    {
+      "id": "SRC-BLOCKER-003",
+      "title": "builds.json missing id and uses display names instead of IDs",
+      "evidence": ["src/app/builds/page.tsx key uses b.id and lookup maps by item/rune/spell id", "data.zip builds.json has no id and uses names in item/rune/spell arrays"],
+      "impact": "Build filtering/icon resolution can degrade or fail.",
+      "required_fix": "Generate stable build IDs and normalized reference IDs."
+    },
+    {
+      "id": "SRC-BLOCKER-004",
+      "title": "wr_items.json referenced but absent",
+      "evidence": ["src/lib/build-engine.ts loads wr_items.json", "data.zip does not include wr_items.json"],
+      "impact": "Build engine loses richer item metadata.",
+      "required_fix": "Generate public/data/wr_items.json from canonical items."
+    },
+    {
+      "id": "SRC-BLOCKER-005",
+      "title": "Karma correction compatibility issue",
+      "evidence": ["src/lib/reasoning-enricher.ts reads corrections?.champions", "data.zip wr_champions_corrections.json exposes champions_to_add, not champions"],
+      "impact": "Corrections can be ignored; protected Karma ability lock can regress.",
+      "required_fix": "Emit compatible corrections.champions or patch loader to read both champions and champions_to_add."
+    },
+    {
+      "id": "SRC-BLOCKER-006",
+      "title": "/api/draft route contract mismatch",
+      "evidence": ["src/app/draft/page.tsx sends messages", "src/app/api/draft/route.ts expects role/enemyPick/allies/apiKey/context"],
+      "impact": "Draft AI advice can fail regardless of data quality.",
+      "required_fix": "Patch frontend payload or route input contract."
+    },
+    {
+      "id": "SRC-BLOCKER-007",
+      "title": "BuildView structured path unreachable",
+      "evidence": ["src/app/coach/page.tsx renders BuildView only if API response JSON has type build", "src/app/api/chat/route.ts streams markdown and does not return type build JSON"],
+      "impact": "Structured build UI and /api/reasoning may not activate.",
+      "required_fix": "Choose markdown-only or structured JSON Route A and align code."
+    },
+    {
+      "id": "SRC-BLOCKER-008",
+      "title": "Role alias drift",
+      "evidence": ["UI uses Duo", "relationship-engine loads wr_matchups_${roleId}.json and current files use adc"],
+      "impact": "Duo/Dragon role lookups can miss relationship files.",
+      "required_fix": "Add role aliases and/or duplicate duo compatibility files."
+    }
+  ],
+  "hard_gates_before_runtime_replace": [
+    "public/data/items.json root array",
+    "public/data/runes.json UI slot strings and effect aliases",
+    "public/data/builds.json stable IDs and normalized references",
+    "public/data/wr_items.json exists",
+    "Karma ability lock passes across canonical and public views",
+    "No gameplay-data LoL-PC contamination",
+    "Source-verified exact fields have field-level provenance",
+    "All raw source archives preserved"
+  ]
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RiftCoach Relationship Explorer Mock</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;background:#10131a;color:#eef2ff;}
+header{padding:18px 24px;border-bottom:1px solid #2a3142;background:#151a24;}
+main{display:grid;grid-template-columns:280px 1fr 340px;min-height:calc(100vh - 72px);}
+aside{padding:18px;border-right:1px solid #2a3142;background:#121722;}
+section{padding:18px;}
+.graph{position:relative;min-height:640px;background:radial-gradient(circle at center,#1c2433,#10131a 70%);overflow:hidden;border-radius:20px;}
+.node{position:absolute;border:1px solid #64748b;border-radius:999px;padding:10px 14px;background:#1f2937;box-shadow:0 8px 28px rgba(0,0,0,.25);font-size:14px;}
+.node.center{font-weight:700;background:#293548;transform:scale(1.1);}
+.node.effect{background:#263a2f}.node.rune{background:#2f2948}.node.item{background:#453524}.node.build{background:#243d45}
+.edge{position:absolute;height:2px;background:#64748b;transform-origin:left center;opacity:.75}.edge.synergy{background:#9fb3ff}.edge.deny{background:#ffb86b}
+.card{background:#151a24;border:1px solid #2a3142;border-radius:16px;padding:14px;margin-bottom:12px}.badge{display:inline-block;padding:3px 8px;border-radius:999px;background:#263142;font-size:12px;margin:2px}.muted{color:#a8b3c7}.button{border:1px solid #475569;border-radius:10px;padding:8px 10px;margin:4px 0;background:#1f2937;color:#eef2ff;width:100%;text-align:left}
+</style>
+</head>
+<body>
+<header><strong>RiftCoach Relationship Explorer Mock</strong> <span class="muted">Chunk 1.1 standalone UI concept</span></header>
+<main>
+<aside>
+  <div class="card"><strong>Saved Views</strong><button class="button">Karma Support Enchanter</button><button class="button">Anti-Burst Defense</button><button class="button">Patch Impact</button></div>
+  <div class="card"><strong>Filters</strong><p class="muted">Source status</p><span class="badge">verified</span><span class="badge">generated</span><span class="badge">pending</span><p class="muted">Depth</p><span class="badge">1</span><span class="badge">2</span><span class="badge">3</span></div>
+</aside>
+<section>
+  <div class="graph" aria-label="Graph centered on Karma showing connected abilities, effects, runes, and builds.">
+    <div class="node center" style="left:45%;top:45%">Karma</div>
+    <div class="node" style="left:45%;top:18%">Inspire</div>
+    <div class="node effect" style="left:23%;top:28%">Shield</div>
+    <div class="node effect" style="left:64%;top:29%">Move Speed</div>
+    <div class="node rune" style="left:18%;top:58%">Aery</div>
+    <div class="node item" style="left:68%;top:58%">Ardent Censer</div>
+    <div class="node build" style="left:39%;top:73%">Support Enchanter</div>
+  </div>
+</section>
+<aside>
+  <div class="card"><strong>Selected path</strong><p>Karma → Inspire → Shield → Aery</p><p class="muted">Generated strategic rule. Needs rune/source revalidation later.</p></div>
+  <div class="card"><strong>Why connected?</strong><p>Inspire provides shield and movement speed. Aery-style enchanter logic can pair with shielding/poke patterns.</p><span class="badge">generated_rule</span><span class="badge">confidence 0.72</span></div>
+  <div class="card"><strong>Guardrail</strong><p class="muted">Do not treat generated links as official source data.</p></div>
+</aside>
+</main>
+</body>
+</html>

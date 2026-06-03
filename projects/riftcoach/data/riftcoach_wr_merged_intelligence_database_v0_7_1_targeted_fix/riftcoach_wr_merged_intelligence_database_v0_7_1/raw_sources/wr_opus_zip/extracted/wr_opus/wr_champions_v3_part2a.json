@@ -1,0 +1,1261 @@
+{
+  "_meta": {
+    "game": "League of Legends: Wild Rift",
+    "patch": "7.1e",
+    "chunk": "6a — Champions H-K",
+    "total_champions": 20,
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "champions": [
+    {
+      "id": "hecarim",
+      "name": "Hecarim",
+      "title": "the Shadow of War",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Medium",
+      "meta_tier": "S",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Warpath",
+          "desc": "Bonus AD from bonus MS."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Rampage",
+          "desc": "AoE slam. Stacks reduce CD (min ~1s at 3 stacks)."
+        },
+        "W": {
+          "key": "W",
+          "name": "Spirit of Dread",
+          "desc": "AoE zone dealing magic per second. Heals from all nearby damage."
+        },
+        "E": {
+          "key": "E",
+          "name": "Devastating Charge",
+          "desc": "Charge: increasing MS → empowered AA knockback + damage scaling distance."
+        },
+        "R": {
+          "key": "R",
+          "name": "Onslaught of Shadows",
+          "desc": "Dash forward with spectral riders. AoE fear on arrival."
+        }
+      },
+      "playstyle": "Dive jungler. E charge into R teamfight fear. W sustain in fights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Trinity Force",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy backlines",
+          "immobile teams"
+        ],
+        "weak_vs": [
+          "Lee Sin",
+          "Olaf",
+          "Amumu"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Hecarim",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "heimerdinger",
+      "name": "Heimerdinger",
+      "title": "the Revered Inventor",
+      "classes": [
+        "Specialist"
+      ],
+      "positions": [
+        "Mid",
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Hextech Affinity",
+          "desc": "Gain MS near allied turrets and own turrets."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "H-28G Evolution Turret",
+          "desc": "Place up to 3 turrets that auto-attack enemies."
+        },
+        "W": {
+          "key": "W",
+          "name": "Hextech Micro-Rockets",
+          "desc": "Fire 5 converging rockets dealing magic damage."
+        },
+        "E": {
+          "key": "E",
+          "name": "CH-2 Electron Storm Grenade",
+          "desc": "AoE stun grenade (center stun, outer slow)."
+        },
+        "R": {
+          "key": "R",
+          "name": "UPGRADE!!!",
+          "desc": "Empower next Q/W/E. Q = mega turret, W = rocket barrage, E = mega stun."
+        }
+      },
+      "playstyle": "Zone control mage. Turrets control lane. R+Q mega turret for fights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Liandry's",
+        "3 turrets up"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee laners",
+          "siege comps"
+        ],
+        "weak_vs": [
+          "Syndra",
+          "long-range poke",
+          "Xerath"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Heimerdinger",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "irelia",
+      "name": "Irelia",
+      "title": "the Blade Dancer",
+      "classes": [
+        "Skirmisher"
+      ],
+      "positions": [
+        "Baron",
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Ionian Fervor",
+          "desc": "Stacking AS on ability/AA hits. At max stacks, AAs deal bonus magic."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Bladesurge",
+          "desc": "Dash to target. Kills/marked targets reset CD. Heals on hit."
+        },
+        "W": {
+          "key": "W",
+          "name": "Defiant Dance",
+          "desc": "Charge: damage reduction + channel. Release: AoE physical damage."
+        },
+        "E": {
+          "key": "E",
+          "name": "Flawless Duet",
+          "desc": "Place 2 blades → they fly together, stunning + marking enemies between."
+        },
+        "R": {
+          "key": "R",
+          "name": "Vanguard's Edge",
+          "desc": "Throw blades in cage around target area. Champions hit are marked + damaged."
+        }
+      },
+      "playstyle": "Mobile duelist. Q reset chains through minions. E stun setup. R for teamfight marks.",
+      "power_spikes": [
+        "Level 5",
+        "BotRK",
+        "Level 9 (Q max)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "squishy teams"
+        ],
+        "weak_vs": [
+          "Renekton",
+          "Fiora",
+          "Volibear"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Irelia",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "janna",
+      "name": "Janna",
+      "title": "the Storm's Fury",
+      "classes": [
+        "Enchanter"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "difficulty": "Medium",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Tailwind",
+          "desc": "Allies moving toward Janna gain bonus MS."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Howling Gale",
+          "desc": "Charge tornado. Longer charge = more range + damage + knockup duration."
+        },
+        "W": {
+          "key": "W",
+          "name": "Zephyr",
+          "desc": "Passive: bonus MS + ghosting. Active: target slow + magic damage. Lose passive during CD."
+        },
+        "E": {
+          "key": "E",
+          "name": "Eye of the Storm",
+          "desc": "Shield ally/turret + bonus AD while shield holds."
+        },
+        "R": {
+          "key": "R",
+          "name": "Monsoon",
+          "desc": "AoE heal channel + knockback all enemies away from you."
+        }
+      },
+      "playstyle": "Peel enchanter. E shield + AD for carry. R disengage/heal in teamfights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Ardent Censer",
+        "Staff of Flowing Waters"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Dive comps",
+          "assassins"
+        ],
+        "weak_vs": [
+          "Hard engage",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Janna",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "jarvan_iv",
+      "name": "Jarvan IV",
+      "title": "the Exemplar of Demacia",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Medium",
+      "meta_tier": "S",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Martial Cadence",
+          "desc": "First AA per target deals %current HP bonus physical. CD per target."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Dragon Strike",
+          "desc": "Thrust lance dealing physical + shred armor. Combos with E for dash."
+        },
+        "W": {
+          "key": "W",
+          "name": "Golden Aegis",
+          "desc": "Shield (scales with nearby enemies) + AoE slow."
+        },
+        "E": {
+          "key": "E",
+          "name": "Demacian Standard",
+          "desc": "Place flag (grants AS aura). Q toward flag = dash + knockup."
+        },
+        "R": {
+          "key": "R",
+          "name": "Cataclysm",
+          "desc": "Leap to target creating impassable terrain ring. Damages enemies inside."
+        }
+      },
+      "playstyle": "Jungle diver. E+Q combo for knockup engage. R traps key targets.",
+      "power_spikes": [
+        "Level 2 (E+Q)",
+        "Level 5 R",
+        "Eclipse/Goredrinker"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile ADCs",
+          "clumped teams"
+        ],
+        "weak_vs": [
+          "Ezreal",
+          "Tristana",
+          "dashes"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jarvan_IV",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "jax",
+      "name": "Jax",
+      "title": "Grandmaster at Arms",
+      "classes": [
+        "Skirmisher"
+      ],
+      "positions": [
+        "Baron",
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Medium",
+      "meta_tier": "S",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Relentless Assault",
+          "desc": "AAs grant stacking AS (up to 8 stacks)."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Leap Strike",
+          "desc": "Dash to target (ally or enemy). Deals physical damage to enemies."
+        },
+        "W": {
+          "key": "W",
+          "name": "Empower",
+          "desc": "Next AA deals bonus magic damage. AA reset."
+        },
+        "E": {
+          "key": "E",
+          "name": "Counter Strike",
+          "desc": "Dodge all AAs for 2s. Recast: AoE stun + damage (more per dodge)."
+        },
+        "R": {
+          "key": "R",
+          "name": "Grandmaster's Might",
+          "desc": "Passive: every 3rd AA deals bonus magic. Active: gain armor + MR for 8s."
+        }
+      },
+      "playstyle": "Late-game duelist. E dodge for outplays. R gives tankiness + 3-hit passive.",
+      "power_spikes": [
+        "Level 5",
+        "Trinity Force/Divine Sunderer",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AA-reliant champs",
+          "Tryndamere"
+        ],
+        "weak_vs": [
+          "Malphite",
+          "Gragas",
+          "Kennen"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jax",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "jayce",
+      "name": "Jayce",
+      "title": "the Defender of Tomorrow",
+      "classes": [
+        "Specialist"
+      ],
+      "positions": [
+        "Baron",
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged/Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Hextech Capacitor",
+          "desc": "Gain MS when switching forms."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Shock Blast / To The Skies!",
+          "desc": "Ranged: skillshot. Melee: leap + AoE slam."
+        },
+        "W": {
+          "key": "W",
+          "name": "Hyper Charge / Lightning Field",
+          "desc": "Ranged: 3 fast AAs. Melee: AoE magic damage."
+        },
+        "E": {
+          "key": "E",
+          "name": "Acceleration Gate / Thundering Blow",
+          "desc": "Ranged: deploy speed gate (empowers Q). Melee: knockback + %HP."
+        },
+        "R": {
+          "key": "R",
+          "name": "Mercury Cannon / Mercury Hammer",
+          "desc": "Switch Ranged/Melee form at level 1. No ult level-up needed."
+        }
+      },
+      "playstyle": "Form-swap poke/bruiser. Ranged E+Q for poke. Melee for all-in burst.",
+      "power_spikes": [
+        "Level 1 (both forms)",
+        "Manamune/Eclipse",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Short-range champs",
+          "melees"
+        ],
+        "weak_vs": [
+          "Gap closers",
+          "Irelia",
+          "Camille"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jayce",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "jhin",
+      "name": "Jhin",
+      "title": "the Virtuoso",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "difficulty": "Medium",
+      "meta_tier": "S",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Whisper",
+          "desc": "4-shot AA. 4th shot always crits + bonus %HP damage. Fixed AS; AD/crit/AS → bonus AD."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Dancing Grenade",
+          "desc": "Bouncing grenade (4 targets). More damage per kill in chain."
+        },
+        "W": {
+          "key": "W",
+          "name": "Deadly Flourish",
+          "desc": "Long-range skillshot. Roots recently-damaged/movement-impaired champions."
+        },
+        "E": {
+          "key": "E",
+          "name": "Captive Audience",
+          "desc": "Place invisible trap. Triggered: slow → AoE damage. Also placed on kills."
+        },
+        "R": {
+          "key": "R",
+          "name": "Curtain Call",
+          "desc": "Channel: 4 long-range shots. Each damages in a line. 4th shot deals massive bonus damage."
+        }
+      },
+      "playstyle": "Utility ADC. Fixed 4-shot with massive 4th shot crit. R for long-range picks.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile targets",
+          "utility comps"
+        ],
+        "weak_vs": [
+          "Engage supports",
+          "Samira",
+          "Sivir"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jhin",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "jinx",
+      "name": "Jinx",
+      "title": "the Loose Cannon",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "difficulty": "Medium",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Get Excited!",
+          "desc": "On kill/assist, gain huge MS + AS boost."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Switcheroo!",
+          "desc": "Toggle: Pow-Pow (minigun, stacking AS) / Fishbones (rocket, AoE + range + mana)."
+        },
+        "W": {
+          "key": "W",
+          "name": "Zap!",
+          "desc": "Long-range skillshot dealing physical + slow."
+        },
+        "E": {
+          "key": "E",
+          "name": "Flame Chompers!",
+          "desc": "Place 3 traps in line. Root enemies that step on them."
+        },
+        "R": {
+          "key": "R",
+          "name": "Super Mega Death Rocket!",
+          "desc": "Global rocket. Damage scales with target's missing HP. AoE splash."
+        }
+      },
+      "playstyle": "Hypercarry ADC. Get Excited passive enables resets in teamfights. Global R execute.",
+      "power_spikes": [
+        "Level 5",
+        "Infinity Edge",
+        "3 items (hyperscale)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight resets",
+          "late-game"
+        ],
+        "weak_vs": [
+          "Draven",
+          "Caitlyn",
+          "hard engage"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Jinx",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "k_sante",
+      "name": "K'Sante",
+      "title": "the Pride of Nazumah",
+      "classes": [
+        "Specialist",
+        "Vanguard"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Dauntless Instinct",
+          "desc": "3rd ability/AA deals bonus %max HP damage. Switches damage type."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Ntofo Strikes",
+          "desc": "Slam → skillshot on 3rd cast. Slow on hit."
+        },
+        "W": {
+          "key": "W",
+          "name": "Path Maker",
+          "desc": "Charge: damage reduction + unstoppable. Release: dash + stun."
+        },
+        "E": {
+          "key": "E",
+          "name": "Footwork",
+          "desc": "Dash. If hits champion, dash again."
+        },
+        "R": {
+          "key": "R",
+          "name": "All Out",
+          "desc": "Grab enemy, dash through wall. Transform: trade defenses for AD + omnivamp. Abilities change."
+        }
+      },
+      "playstyle": "Technical tank. Tanky in base form; R transforms into squishy damage dealer. High skill ceiling.",
+      "power_spikes": [
+        "Level 5 R",
+        "Sunfire Aegis",
+        "Iceborn Gauntlet"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Immobile tops",
+          "tanks"
+        ],
+        "weak_vs": [
+          "Ranged abusers",
+          "Vayne",
+          "Kennen"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:K%27Sante",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kai_sa",
+      "name": "Kai'Sa",
+      "title": "Daughter of the Void",
+      "classes": [
+        "Marksman",
+        "Assassin"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "difficulty": "Medium",
+      "meta_tier": "S",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Second Skin",
+          "desc": "AA stacks plasma. At 5 stacks = burst magic damage (scaling AP + %HP). Abilities evolve with stats."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Icathian Rain",
+          "desc": "Fire 6 missiles at nearby enemies. Extra damage to isolated."
+        },
+        "W": {
+          "key": "W",
+          "name": "Void Seeker",
+          "desc": "Long-range skillshot. Applies 2 plasma stacks. Reveals."
+        },
+        "E": {
+          "key": "E",
+          "name": "Supercharger",
+          "desc": "Gain MS + AS burst. Become invisible briefly during."
+        },
+        "R": {
+          "key": "R",
+          "name": "Killer Instinct",
+          "desc": "Dash with shield to location near enemy with plasma stacks."
+        }
+      },
+      "playstyle": "Hybrid ADC. Evolve abilities through items. R dash for assassination or repositioning.",
+      "power_spikes": [
+        "Q evolve (~BotRK+Pickaxe)",
+        "E evolve (AS threshold)",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Isolated targets",
+          "burst comps"
+        ],
+        "weak_vs": [
+          "Draven",
+          "Caitlyn",
+          "poke lanes"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kai%27Sa",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kalista",
+      "name": "Kalista",
+      "title": "the Spear of Vengeance",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Martial Poise",
+          "desc": "AAs and Q cause Kalista to dash (cannot cancel). Oathsworn ally bond."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Pierce",
+          "desc": "Skillshot that carries rend stacks through killed targets."
+        },
+        "W": {
+          "key": "W",
+          "name": "Sentinel",
+          "desc": "Passive: oathsworn nearby → bonus magic on same target. Active: send soul to scout."
+        },
+        "E": {
+          "key": "E",
+          "name": "Rend",
+          "desc": "Pull out all spears lodged in enemies, dealing massive damage scaling with stacks."
+        },
+        "R": {
+          "key": "R",
+          "name": "Fate's Call",
+          "desc": "Pull oathsworn ally to you → they can relaunch for knockup."
+        }
+      },
+      "playstyle": "Kiting ADC. Constant dashing AAs. E rend for burst. R to save/engage with support.",
+      "power_spikes": [
+        "Level 5",
+        "BotRK",
+        "Runaan's Hurricane"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee teams",
+          "immobile targets"
+        ],
+        "weak_vs": [
+          "Point-click CC",
+          "AS slows",
+          "Frozen Heart"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kalista",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "karma",
+      "name": "Karma",
+      "title": "the Enlightened One",
+      "classes": [
+        "Enchanter",
+        "Burst"
+      ],
+      "positions": [
+        "Support",
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "difficulty": "Medium",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Gathering Fire",
+          "desc": "AA and abilities on champions reduce R cooldown."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Inner Flame",
+          "desc": "Skillshot AoE explosion on hit."
+        },
+        "W": {
+          "key": "W",
+          "name": "Focused Resolve",
+          "desc": "Tether to target. If maintained, root + damage."
+        },
+        "E": {
+          "key": "E",
+          "name": "Inspire",
+          "desc": "Shield ally + MS boost."
+        },
+        "R": {
+          "key": "R",
+          "name": "Mantra",
+          "desc": "Empower next Q/W/E. Q = larger AoE + DoT zone. W = bonus heal. E = AoE shield + MS to all nearby allies."
+        }
+      },
+      "playstyle": "Flex enchanter. R+E AoE shield/MS. R+Q for poke. R available at level 1.",
+      "power_spikes": [
+        "Level 1 (R available)",
+        "Ardent Censer",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Poke comps",
+          "kiting"
+        ],
+        "weak_vs": [
+          "All-in engage",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Karma",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kassadin",
+      "name": "Kassadin",
+      "title": "the Void Walker",
+      "classes": [
+        "Assassin"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "difficulty": "Medium",
+      "meta_tier": "S",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Void Stone",
+          "desc": "Reduced magic damage taken. AAs deal bonus magic + restore mana."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Null Sphere",
+          "desc": "Targeted magic damage + silence/interrupt."
+        },
+        "W": {
+          "key": "W",
+          "name": "Nether Blade",
+          "desc": "Passive: AAs deal bonus magic. Active: empower next AA for more + mana restore."
+        },
+        "E": {
+          "key": "E",
+          "name": "Force Pulse",
+          "desc": "Cone AoE + slow. Requires 6 nearby ability casts to charge."
+        },
+        "R": {
+          "key": "R",
+          "name": "Riftwalk",
+          "desc": "Blink dealing AoE magic. Stacks: more damage + more mana cost per stack. Resets 15s."
+        }
+      },
+      "playstyle": "Scaling assassin. Weak early; godlike after level 13. R blink = infinite mobility.",
+      "power_spikes": [
+        "Level 5 (R unlock)",
+        "Rod of Ages",
+        "Level 13 (R3)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "AP mids",
+          "late-game"
+        ],
+        "weak_vs": [
+          "AD assassins",
+          "Zed",
+          "Talon",
+          "early aggression"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kassadin",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "katarina",
+      "name": "Katarina",
+      "title": "the Sinister Blade",
+      "classes": [
+        "Assassin"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Manaless",
+      "range_type": "Melee",
+      "adaptive_type": "Magic",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Voracity",
+          "desc": "Champion kills/assists reset all basic ability CDs. Picking up daggers deals AoE magic."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Bouncing Blades",
+          "desc": "Throw dagger (bounces). Lands behind first target."
+        },
+        "W": {
+          "key": "W",
+          "name": "Preparation",
+          "desc": "Place dagger at feet + gain MS."
+        },
+        "E": {
+          "key": "E",
+          "name": "Shunpo",
+          "desc": "Blink to target (ally/enemy/dagger). Picking up nearby dagger = AoE."
+        },
+        "R": {
+          "key": "R",
+          "name": "Death Lotus",
+          "desc": "Channel: throw daggers at 3 nearest champs dealing massive magic + applying GW."
+        }
+      },
+      "playstyle": "Reset assassin. E to daggers for AoE. Get kill → all CDs reset → chain kills.",
+      "power_spikes": [
+        "Level 5 R",
+        "1 item",
+        "First reset in teamfight"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy clumped teams"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "Galio",
+          "Lissandra"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Katarina",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kayle",
+      "name": "Kayle",
+      "title": "the Righteous",
+      "classes": [
+        "Specialist"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee/Ranged",
+      "adaptive_type": "Magic",
+      "difficulty": "Medium",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Divine Ascent",
+          "desc": "Level 1: melee. Level 5: ranged. Level 10: waves. Level 15: permanent fire AoE."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Radiant Blast",
+          "desc": "Skillshot slow + shred armor/MR."
+        },
+        "W": {
+          "key": "W",
+          "name": "Celestial Blessing",
+          "desc": "Heal self/ally + MS."
+        },
+        "E": {
+          "key": "E",
+          "name": "Starfire Spellblade",
+          "desc": "Passive: AAs deal bonus magic. Active: empower next AA for execute."
+        },
+        "R": {
+          "key": "R",
+          "name": "Divine Judgment",
+          "desc": "Make ally invulnerable for 2.5s + AoE swords damage around target."
+        }
+      },
+      "playstyle": "Scaling hypercarry. Weak early (melee). Level 5 = ranged. Level 15 = godlike AoE.",
+      "power_spikes": [
+        "Level 5 (ranged)",
+        "Level 10 (waves)",
+        "Level 15 (ascended)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late-game",
+          "outscaling"
+        ],
+        "weak_vs": [
+          "Early aggression",
+          "Renekton",
+          "Darius",
+          "ganks"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kayle",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kayn",
+      "name": "Kayn",
+      "title": "the Shadow Reaper",
+      "classes": [
+        "Assassin",
+        "Skirmisher"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "The Darkin Scythe",
+          "desc": "Orbs from combat transform Kayn → Shadow Assassin (ranged hits) or Rhaast/Darkin (melee hits)."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Reaping Slash",
+          "desc": "Dash + circle slash. Rhaast: %max HP. SA: bonus damage."
+        },
+        "W": {
+          "key": "W",
+          "name": "Blade's Reach",
+          "desc": "Line slash dealing physical. Rhaast: knockup. SA: longer range + slow."
+        },
+        "E": {
+          "key": "E",
+          "name": "Shadow Step",
+          "desc": "Walk through walls (stealth + MS + heal). SA: longer duration."
+        },
+        "R": {
+          "key": "R",
+          "name": "Umbral Trespass",
+          "desc": "Enter enemy body → emerge dealing damage. Rhaast: %max HP heal. SA: bonus burst."
+        }
+      },
+      "playstyle": "Form-evolving jungler. SA: squishy assassin. Rhaast: drain-tank bruiser. E wall-walk for ganks.",
+      "power_spikes": [
+        "Form transform",
+        "Level 5",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Form-dependent"
+        ],
+        "weak_vs": [
+          "Crowd control",
+          "invades"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kayn",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kennen",
+      "name": "Kennen",
+      "title": "the Heart of the Tempest",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Baron",
+        "Mid"
+      ],
+      "resource": "Energy",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "difficulty": "Medium",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Mark of the Storm",
+          "desc": "Abilities apply marks. At 3 marks: stun target."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Thundering Shuriken",
+          "desc": "Skillshot dealing magic damage + applying mark."
+        },
+        "W": {
+          "key": "W",
+          "name": "Electrical Surge",
+          "desc": "Passive: every 5th AA applies mark. Active: damage all marked nearby enemies."
+        },
+        "E": {
+          "key": "E",
+          "name": "Lightning Rush",
+          "desc": "Transform into lightning ball: MS + ghosting + AoE damage + mark. Can't AA during."
+        },
+        "R": {
+          "key": "R",
+          "name": "Slicing Maelstrom",
+          "desc": "AoE storm around Kennen dealing magic damage + applying marks to nearby enemies."
+        }
+      },
+      "playstyle": "Teamfight engage mage. Flash+R into enemy team for multi-stun AoE.",
+      "power_spikes": [
+        "Level 5 R",
+        "Protobelt",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee tops",
+          "teamfights"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "MR stacking",
+          "split pushers"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kennen",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kha_zix",
+      "name": "Kha'Zix",
+      "title": "the Voidreaver",
+      "classes": [
+        "Assassin"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "difficulty": "Hard",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Unseen Threat",
+          "desc": "When unseen, next AA deals bonus magic + slow."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Taste Their Fear",
+          "desc": "Slash target. ISOLATED targets take massive bonus damage."
+        },
+        "W": {
+          "key": "W",
+          "name": "Void Spike",
+          "desc": "Fire spike dealing physical + heal if hit at close range."
+        },
+        "E": {
+          "key": "E",
+          "name": "Leap",
+          "desc": "Jump to location dealing AoE physical on landing."
+        },
+        "R": {
+          "key": "R",
+          "name": "Void Assault",
+          "desc": "2 casts of stealth (1s each) + MS. Passive: evolve 1 ability per ult rank."
+        }
+      },
+      "playstyle": "Isolation assassin. Q deals massive single-target damage to isolated. R stealth resets passive.",
+      "power_spikes": [
+        "Level 5 R+evolve",
+        "Youmuu's/Eclipse",
+        "Isolation pick"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Isolated targets",
+          "squishy junglers"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "grouped teams",
+          "Rammus"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kha%27Zix",
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "kog_maw",
+      "name": "Kog'Maw",
+      "title": "the Mouth of the Abyss",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "difficulty": "Medium",
+      "meta_tier": "A",
+      "abilities": {
+        "passive": {
+          "key": "P",
+          "name": "Icathian Surprise",
+          "desc": "On death, become a bomb. Explode after 4s dealing true damage."
+        },
+        "Q": {
+          "key": "Q",
+          "name": "Caustic Spittle",
+          "desc": "Skillshot dealing magic + shredding armor/MR. Passive: bonus AS."
+        },
+        "W": {
+          "key": "W",
+          "name": "Bio-Arcane Barrage",
+          "desc": "Activate: AAs gain bonus range + deal %max HP magic on-hit."
+        },
+        "E": {
+          "key": "E",
+          "name": "Void Ooze",
+          "desc": "AoE line slow + magic damage."
+        },
+        "R": {
+          "key": "R",
+          "name": "Living Artillery",
+          "desc": "Long-range AoE poke. Stacking mana cost. Bonus damage to low HP."
+        }
+      },
+      "playstyle": "Hyperscaling ADC. W gives massive range + %HP on-hit. Needs peel to survive.",
+      "power_spikes": [
+        "Level 5",
+        "BotRK/Runaan's",
+        "3 items (hyperscale)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Tanks",
+          "late-game teamfights"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "dive comps",
+          "no peel"
+        ]
+      },
+      "wiki_url": "https://wiki.leagueoflegends.com/en-us/WR:Kog%27Maw",
+      "patch_version": "7.1e"
+    }
+  ]
+}

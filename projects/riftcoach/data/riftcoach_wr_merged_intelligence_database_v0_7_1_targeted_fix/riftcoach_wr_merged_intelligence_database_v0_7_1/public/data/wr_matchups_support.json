@@ -1,0 +1,2929 @@
+{
+  "meta": {
+    "type": "matchups",
+    "scope": "support",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 26,
+    "total_strong_matchups": 91,
+    "total_weak_matchups": 81,
+    "total_entries": 172,
+    "difficulty_scale": {
+      "0.1-0.3": "hard_counter_easy_win",
+      "0.4-0.6": "skill_matchup",
+      "0.7-0.9": "hard_losing_matchup"
+    },
+    "confidence_source": "theorycraft_meta_inference",
+    "note": "Support role only. Other roles (ADC/Mid/Jungle/Baron) in future chunks."
+  },
+  "matchups": [
+    {
+      "champion_id": "alistar",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "squishy_immobile_enchanter",
+          "win_condition": [
+            "w_q_combo_level_2",
+            "all_in_early"
+          ],
+          "threats": [
+            "poke_sustain_pre_2"
+          ],
+          "counterplay": [
+            "force_level_2_engage",
+            "zone_off_minions"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "punish_detach",
+          "win_condition": [
+            "catch_detached",
+            "burst_adc_pre_attach"
+          ],
+          "threats": [
+            "late_game_scaling"
+          ],
+          "counterplay": [
+            "flash_w_q_when_yuumi_detaches"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "outsustained_but_outengaged",
+          "win_condition": [
+            "hard_engage_ignite",
+            "kill_before_heal"
+          ],
+          "threats": [
+            "silence_zone_e"
+          ],
+          "counterplay": [
+            "bait_e_then_engage",
+            "ignite_reduces_healing"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "disengage_but_fragile",
+          "win_condition": [
+            "flash_combo_bypasses_tornado",
+            "hexflash_angle"
+          ],
+          "threats": [
+            "tornado_interrupt_w",
+            "monsoon_disengage"
+          ],
+          "counterplay": [
+            "flash_w_q_before_reaction",
+            "hexflash_from_brush"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "black_shield_negates_combo",
+          "win_condition": [
+            "bait_e_first",
+            "engage_when_e_on_cd"
+          ],
+          "threats": [
+            "spell_shield_blocks_w_q"
+          ],
+          "counterplay": [
+            "fake_engage_to_bait_shield",
+            "roam_instead"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "e_blocks_combo_followup",
+          "win_condition": [
+            "short_trade_only"
+          ],
+          "threats": [
+            "unbreakable_blocks_adc_damage",
+            "passive_stun_counter"
+          ],
+          "counterplay": [
+            "engage_when_e_down"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "flay_interrupts_w",
+          "win_condition": [
+            "engage_when_flay_down"
+          ],
+          "threats": [
+            "e_cancels_headbutt"
+          ],
+          "counterplay": [
+            "bait_flay_with_movement",
+            "use_hexflash_angles"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "blitzcrank",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "hook_kills_immobile_squishy",
+          "win_condition": [
+            "land_q_level_1",
+            "all_in_on_hook"
+          ],
+          "threats": [
+            "poke_if_hook_missed"
+          ],
+          "counterplay": [
+            "hexflash_for_angle",
+            "bush_control"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "pull_into_kill_range",
+          "win_condition": [
+            "hook_through_minions_angle",
+            "flash_hook"
+          ],
+          "threats": [
+            "silence_after_pull"
+          ],
+          "counterplay": [
+            "flash_q_for_guaranteed_catch"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "hook_adc_forces_2v1",
+          "win_condition": [
+            "target_adc_not_yuumi",
+            "burst_before_heal"
+          ],
+          "threats": [
+            "heal_sustain_through_poke"
+          ],
+          "counterplay": [
+            "hook_adc_when_yuumi_attached"
+          ]
+        },
+        {
+          "target": "karma",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "squishy_if_caught",
+          "win_condition": [
+            "hook_bypasses_shield",
+            "all_in_on_grab"
+          ],
+          "threats": [
+            "r_q_poke",
+            "e_ms_dodge"
+          ],
+          "counterplay": [
+            "predict_movement_with_q",
+            "hexflash_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.9,
+          "reason": "black_shield_negates_hook",
+          "win_condition": [
+            "bait_shield_then_rehook",
+            "roam_mid"
+          ],
+          "threats": [
+            "e_blocks_entire_combo"
+          ],
+          "counterplay": [
+            "fake_hook_to_burn_shield",
+            "focus_unshielded_target"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "tankier_engage_wins_2v2",
+          "win_condition": [
+            "hook_first_to_gain_initiative"
+          ],
+          "threats": [
+            "aftershock_tanking",
+            "triple_cc"
+          ],
+          "counterplay": [
+            "hook_adc_not_leona"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "too_tanky_to_burst",
+          "win_condition": [
+            "hook_adc_instead"
+          ],
+          "threats": [
+            "r_damage_reduction",
+            "w_q_counterengage"
+          ],
+          "counterplay": [
+            "ignore_alistar_focus_carry"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "braum",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "e_blocks_adc_followup",
+          "win_condition": [
+            "shield_after_engage",
+            "passive_stun_trade"
+          ],
+          "threats": [
+            "w_q_burst_window"
+          ],
+          "counterplay": [
+            "e_immediately_after_w_q"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "e_blocks_hook_and_adc",
+          "win_condition": [
+            "stand_in_front_block_hooks",
+            "passive_stun_trade"
+          ],
+          "threats": [
+            "flay_disengage"
+          ],
+          "counterplay": [
+            "body_block_all_skillshots"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "e_blocks_hook",
+          "win_condition": [
+            "stand_front_absorb_hook",
+            "counter_engage"
+          ],
+          "threats": [
+            "flash_hook_angle"
+          ],
+          "counterplay": [
+            "keep_e_ready_for_hook_direction"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "plant_poke_through_shield",
+          "win_condition": [
+            "engage_when_plants_down"
+          ],
+          "threats": [
+            "perma_poke_around_shield"
+          ],
+          "counterplay": [
+            "engage_pre_plant_spawn"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "percent_hp_burn_vs_tank",
+          "win_condition": [
+            "short_trade_disengage"
+          ],
+          "threats": [
+            "passive_percent_hp",
+            "aoe_in_teamfight"
+          ],
+          "counterplay": [
+            "engage_when_w_missed"
+          ]
+        },
+        {
+          "target": "senna",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "outranged_poke",
+          "win_condition": [
+            "all_in_with_adc"
+          ],
+          "threats": [
+            "auto_q_poke_from_range"
+          ],
+          "counterplay": [
+            "bush_control_deny_vision"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "leona",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "triple_cc_kills_squishy",
+          "win_condition": [
+            "e_q_level_2_all_in",
+            "flash_r_teamfight"
+          ],
+          "threats": [
+            "poke_pre_engage"
+          ],
+          "counterplay": [
+            "rush_level_2_engage"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "burst_through_heals",
+          "win_condition": [
+            "focus_adc_with_full_combo"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "e_onto_adc_ignore_yuumi"
+          ]
+        },
+        {
+          "target": "seraphine",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "outengages_squishy_mage",
+          "win_condition": [
+            "dodge_e_then_engage",
+            "flash_r"
+          ],
+          "threats": [
+            "e_root_at_range"
+          ],
+          "counterplay": [
+            "sidestep_e_then_e_q_all_in"
+          ]
+        },
+        {
+          "target": "nami",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "burst_through_sustain",
+          "win_condition": [
+            "hard_commit_all_in",
+            "ignite_timing"
+          ],
+          "threats": [
+            "bubble_disengage"
+          ],
+          "counterplay": [
+            "e_through_bubble_timing"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.9,
+          "reason": "black_shield_negates_all_cc",
+          "win_condition": [
+            "roam_to_avoid_lane",
+            "bait_shield"
+          ],
+          "threats": [
+            "e_blocks_e_q_r"
+          ],
+          "counterplay": [
+            "fake_engage_burn_shield_then_reengage"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "tornado_interrupts_e",
+          "win_condition": [
+            "flash_past_tornado",
+            "hexflash_angle"
+          ],
+          "threats": [
+            "q_interrupts_zenith_blade",
+            "r_disengage"
+          ],
+          "counterplay": [
+            "bait_q_then_engage"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "e_blocks_adc_followup",
+          "win_condition": [
+            "engage_when_e_down"
+          ],
+          "threats": [
+            "unbreakable_absorbs_damage"
+          ],
+          "counterplay": [
+            "wait_for_shield_expire"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "maokai",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "bush_saplings_zone",
+          "win_condition": [
+            "sapling_brush_control",
+            "w_root_engage"
+          ],
+          "threats": [
+            "poke_in_open"
+          ],
+          "counterplay": [
+            "control_brush_with_e"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_forces_disengage",
+          "win_condition": [
+            "r_engage_teamfight",
+            "sapling_vision"
+          ],
+          "threats": [
+            "heal_sustain"
+          ],
+          "counterplay": [
+            "bush_saplings_deny_approach"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "r_too_wide_to_dodge",
+          "win_condition": [
+            "r_engage_from_fog",
+            "w_root_followup"
+          ],
+          "threats": [
+            "tornado_q_disengage"
+          ],
+          "counterplay": [
+            "r_from_river_angle"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "plant_poke_outranges",
+          "win_condition": [
+            "engage_when_seeds_down"
+          ],
+          "threats": [
+            "plant_zone_control",
+            "r_disengage"
+          ],
+          "counterplay": [
+            "all_in_after_e_missed"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "percent_hp_burn",
+          "win_condition": [
+            "short_trades"
+          ],
+          "threats": [
+            "passive_burn_stacks"
+          ],
+          "counterplay": [
+            "avoid_clumping_in_fights"
+          ]
+        },
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "shield_blocks_w_root",
+          "win_condition": [
+            "bait_shield"
+          ],
+          "threats": [
+            "e_negates_engage"
+          ],
+          "counterplay": [
+            "sapling_poke_doesnt_need_cc"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "nautilus",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "hook_kills_immobile",
+          "win_condition": [
+            "q_hook_level_1",
+            "passive_root_chain"
+          ],
+          "threats": [
+            "poke_pre_engage"
+          ],
+          "counterplay": [
+            "bush_control_hook_angles"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "burst_through_heals",
+          "win_condition": [
+            "q_passive_r_cc_chain",
+            "ignite_anti_heal"
+          ],
+          "threats": [
+            "e_silence_zone"
+          ],
+          "counterplay": [
+            "engage_outside_silence"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_unstoppable_on_adc",
+          "win_condition": [
+            "r_onto_adc",
+            "force_flash_early"
+          ],
+          "threats": [
+            "late_heal_scaling"
+          ],
+          "counterplay": [
+            "chain_cc_adc_before_yuumi_heals"
+          ]
+        },
+        {
+          "target": "seraphine",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "outengages_immobile_mage",
+          "win_condition": [
+            "hook_on_step_forward",
+            "flash_r"
+          ],
+          "threats": [
+            "e_root_at_range"
+          ],
+          "counterplay": [
+            "dodge_e_then_hook"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.9,
+          "reason": "black_shield_blocks_everything",
+          "win_condition": [
+            "bait_shield_then_reengage",
+            "roam_mid"
+          ],
+          "threats": [
+            "e_negates_q_passive_r"
+          ],
+          "counterplay": [
+            "fake_q_to_burn_shield",
+            "roam_to_other_lanes"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "e_blocks_adc_followup",
+          "win_condition": [
+            "hook_when_shield_down"
+          ],
+          "threats": [
+            "unbreakable_negates_burst"
+          ],
+          "counterplay": [
+            "engage_from_flank_angle"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.5,
+          "reason": "skill_matchup_hook_vs_hook",
+          "win_condition": [
+            "hook_first_wins"
+          ],
+          "threats": [
+            "flay_disengage",
+            "lantern_save"
+          ],
+          "counterplay": [
+            "bait_flay_then_hook"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "rell",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "w_crash_kills_squishy",
+          "win_condition": [
+            "w_flash_engage",
+            "r_pull_teamfight"
+          ],
+          "threats": [
+            "poke_pre_engage"
+          ],
+          "counterplay": [
+            "flash_w_for_guaranteed_engage"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_pulls_both_targets",
+          "win_condition": [
+            "r_magnet_storm_teamfight"
+          ],
+          "threats": [
+            "heal_sustain"
+          ],
+          "counterplay": [
+            "w_into_r_combo"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "passive_steals_resists",
+          "win_condition": [
+            "hard_engage_burst",
+            "ignite_timing"
+          ],
+          "threats": [
+            "silence_e_zone"
+          ],
+          "counterplay": [
+            "engage_from_outside_silence"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "shield_blocks_engage",
+          "win_condition": [
+            "bait_shield_then_w"
+          ],
+          "threats": [
+            "e_blocks_w_stun_and_r"
+          ],
+          "counterplay": [
+            "fake_engage_burn_shield"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "dismount_punished_by_disengage",
+          "win_condition": [
+            "flash_w_bypasses_tornado"
+          ],
+          "threats": [
+            "slow_dismounted_form_kited",
+            "r_pushback"
+          ],
+          "counterplay": [
+            "only_engage_when_tornado_down"
+          ]
+        },
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "plant_poke_in_slow_form",
+          "win_condition": [
+            "all_in_before_poked_out"
+          ],
+          "threats": [
+            "r_knockup_counterengage"
+          ],
+          "counterplay": [
+            "flash_w_immediate_commit"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "thresh",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "hook_flay_burst",
+          "win_condition": [
+            "hook_level_2",
+            "flay_into_hook"
+          ],
+          "threats": [
+            "poke_sustain"
+          ],
+          "counterplay": [
+            "bush_control_vision"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "hook_burst_ignite",
+          "win_condition": [
+            "hook_q_flay_ignite",
+            "deny_positioning"
+          ],
+          "threats": [
+            "e_silence_zone"
+          ],
+          "counterplay": [
+            "hook_from_outside_e_range"
+          ]
+        },
+        {
+          "target": "lulu",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "hook_outranges_polymorph",
+          "win_condition": [
+            "hook_first_then_commit"
+          ],
+          "threats": [
+            "polymorph_on_adc",
+            "r_knockup"
+          ],
+          "counterplay": [
+            "hook_lulu_before_she_buffs"
+          ]
+        },
+        {
+          "target": "rakan",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "flay_interrupts_w",
+          "win_condition": [
+            "flay_w_dash",
+            "hook_after_engage"
+          ],
+          "threats": [
+            "r_charm_flash"
+          ],
+          "counterplay": [
+            "save_flay_for_w_interrupt"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "shield_blocks_hook_cc",
+          "win_condition": [
+            "bait_shield",
+            "lantern_save_carry"
+          ],
+          "threats": [
+            "e_negates_hook_and_flay"
+          ],
+          "counterplay": [
+            "hook_unshielded_target",
+            "roam"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "e_blocks_hook_damage",
+          "win_condition": [
+            "hook_when_shield_down"
+          ],
+          "threats": [
+            "unbreakable_absorbs_adc_damage"
+          ],
+          "counterplay": [
+            "hook_adc_not_braum"
+          ]
+        },
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "plant_poke_outranges",
+          "win_condition": [
+            "hook_when_steps_forward"
+          ],
+          "threats": [
+            "plant_zone_denies_approach"
+          ],
+          "counterplay": [
+            "hook_on_e_animation"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "janna",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "q_interrupts_e_engage",
+          "win_condition": [
+            "tornado_on_zenith_blade",
+            "r_disengage"
+          ],
+          "threats": [
+            "flash_engage_bypasses"
+          ],
+          "counterplay": [
+            "save_q_for_e_interrupt"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "tornado_stops_w",
+          "win_condition": [
+            "q_interrupt_headbutt",
+            "kite_back"
+          ],
+          "threats": [
+            "flash_w_q_too_fast"
+          ],
+          "counterplay": [
+            "preemptive_tornado_on_approach"
+          ]
+        },
+        {
+          "target": "rell",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "disengage_dismount",
+          "win_condition": [
+            "tornado_dismount_punish",
+            "r_pushback"
+          ],
+          "threats": [
+            "flash_w_bypass"
+          ],
+          "counterplay": [
+            "r_after_rell_w_crash"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "kite_slow_tank",
+          "win_condition": [
+            "w_slow_kite",
+            "q_interrupt_approach"
+          ],
+          "threats": [
+            "r_unstoppable"
+          ],
+          "counterplay": [
+            "save_r_for_after_nautilus_r"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "plant_poke_outsustains",
+          "win_condition": [
+            "shield_and_survive"
+          ],
+          "threats": [
+            "perma_plant_poke"
+          ],
+          "counterplay": [
+            "stay_max_range_shield_adc"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "burn_through_shields",
+          "win_condition": [
+            "dodge_w_combo"
+          ],
+          "threats": [
+            "passive_percent_hp_burn"
+          ],
+          "counterplay": [
+            "dodge_pillar_of_flame"
+          ]
+        },
+        {
+          "target": "senna",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "outranged_poke",
+          "win_condition": [
+            "w_slow_to_help_adc_trade"
+          ],
+          "threats": [
+            "auto_q_poke_range"
+          ],
+          "counterplay": [
+            "shield_adc_on_poke"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "karma",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_outranges_hook",
+          "win_condition": [
+            "r_q_poke_level_1",
+            "e_ms_dodge_hooks"
+          ],
+          "threats": [
+            "hook_catch"
+          ],
+          "counterplay": [
+            "poke_from_max_range"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "r_q_poke_before_engage",
+          "win_condition": [
+            "poke_to_50_percent_then_all_in_denied"
+          ],
+          "threats": [
+            "hook_catch"
+          ],
+          "counterplay": [
+            "e_shield_ms_to_dodge"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_around_shield",
+          "win_condition": [
+            "r_q_splash_poke",
+            "kite_passive"
+          ],
+          "threats": [
+            "passive_stun_if_caught"
+          ],
+          "counterplay": [
+            "q_aoe_hits_around_shield"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hook_punishes_poke_stance",
+          "win_condition": [
+            "stay_behind_minions"
+          ],
+          "threats": [
+            "q_hook_one_shot"
+          ],
+          "counterplay": [
+            "never_step_past_minion_line"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hard_engage_bursts_through_shield",
+          "win_condition": [
+            "r_e_shield_kite_back"
+          ],
+          "threats": [
+            "e_q_r_burst"
+          ],
+          "counterplay": [
+            "shield_immediately_on_engage"
+          ]
+        },
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "plant_poke_trades_even",
+          "win_condition": [
+            "r_q_poke_from_range"
+          ],
+          "threats": [
+            "plant_zone_control"
+          ],
+          "counterplay": [
+            "trade_q_for_q_then_sustain_with_shield"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "lulu",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "polymorph_stops_engage",
+          "win_condition": [
+            "w_polymorph_on_engage",
+            "r_knockup_counter"
+          ],
+          "threats": [
+            "flash_r_aoe"
+          ],
+          "counterplay": [
+            "w_leona_after_e_lands"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "polymorph_after_combo",
+          "win_condition": [
+            "w_after_w_q_to_stop_followup"
+          ],
+          "threats": [
+            "flash_combo"
+          ],
+          "counterplay": [
+            "polymorph_alistar_post_engage"
+          ]
+        },
+        {
+          "target": "rengar",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "polymorph_stops_leap",
+          "win_condition": [
+            "w_on_leap",
+            "r_knockup_peel"
+          ],
+          "threats": [
+            "bush_leap_burst"
+          ],
+          "counterplay": [
+            "polymorph_immediately_on_leap"
+          ]
+        },
+        {
+          "target": "zed",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_saves_ult_target",
+          "win_condition": [
+            "r_on_zed_ult_target",
+            "e_shield_burst"
+          ],
+          "threats": [
+            "shadow_clone_confusion"
+          ],
+          "counterplay": [
+            "r_adc_when_zed_r_lands"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "plant_poke_outranges",
+          "win_condition": [
+            "shield_through_poke"
+          ],
+          "threats": [
+            "perma_plant_harass"
+          ],
+          "counterplay": [
+            "e_shield_adc_constantly"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "burn_ignores_shields",
+          "win_condition": [
+            "dodge_w_combo"
+          ],
+          "threats": [
+            "passive_percent_hp"
+          ],
+          "counterplay": [
+            "dodge_pillar_prioritize_survival"
+          ]
+        },
+        {
+          "target": "senna",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "outranged",
+          "win_condition": [
+            "trade_with_e_q_combo"
+          ],
+          "threats": [
+            "aa_q_poke_range"
+          ],
+          "counterplay": [
+            "shield_adc_and_trade_back"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "milio",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_cleanses_all_cc",
+          "win_condition": [
+            "r_after_leona_engage",
+            "q_poke_in_lane"
+          ],
+          "threats": [
+            "flash_engage_before_r_ready"
+          ],
+          "counterplay": [
+            "hold_r_for_engage"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_cleanses_w_q",
+          "win_condition": [
+            "r_cleanses_combo",
+            "e_range_extension"
+          ],
+          "threats": [
+            "flash_combo_too_fast"
+          ],
+          "counterplay": [
+            "r_immediately_after_knockup"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "r_cleanses_cc_chain",
+          "win_condition": [
+            "r_after_r_knockup"
+          ],
+          "threats": [
+            "cc_chain_too_fast_for_r"
+          ],
+          "counterplay": [
+            "anticipate_engage_pre_r"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hook_kills_before_r",
+          "win_condition": [
+            "position_behind_minions"
+          ],
+          "threats": [
+            "q_one_shot_combo"
+          ],
+          "counterplay": [
+            "never_get_hooked"
+          ]
+        },
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "plant_poke_outsustains",
+          "win_condition": [
+            "q_poke_back",
+            "e_shield"
+          ],
+          "threats": [
+            "perma_plant_harass"
+          ],
+          "counterplay": [
+            "trade_q_for_q"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "burn_through_shields",
+          "win_condition": [
+            "dodge_w"
+          ],
+          "threats": [
+            "passive_percent_hp_burn"
+          ],
+          "counterplay": [
+            "avoid_clumping"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "nami",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "sustain_and_poke",
+          "win_condition": [
+            "w_bounce_trade",
+            "bubble_on_hook_approach"
+          ],
+          "threats": [
+            "hook_catch"
+          ],
+          "counterplay": [
+            "w_poke_then_bubble_on_approach"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_around_shield",
+          "win_condition": [
+            "w_bounce_poke",
+            "e_empower_adc"
+          ],
+          "threats": [
+            "passive_stun"
+          ],
+          "counterplay": [
+            "w_bounce_hits_behind_shield"
+          ]
+        },
+        {
+          "target": "maokai",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "sustain_outsustains_saplings",
+          "win_condition": [
+            "heal_through_sapling_poke",
+            "bubble_disengage"
+          ],
+          "threats": [
+            "w_root_engage"
+          ],
+          "counterplay": [
+            "bubble_on_w_animation"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hook_kills_squishy",
+          "win_condition": [
+            "bubble_self_peel"
+          ],
+          "threats": [
+            "q_hook_burst"
+          ],
+          "counterplay": [
+            "stay_behind_minions_always"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hard_engage_bursts",
+          "win_condition": [
+            "bubble_on_e",
+            "r_disengage"
+          ],
+          "threats": [
+            "e_q_r_all_in"
+          ],
+          "counterplay": [
+            "bubble_preemptively_on_engage"
+          ]
+        },
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "plant_poke_outranges",
+          "win_condition": [
+            "sustain_through_poke"
+          ],
+          "threats": [
+            "perma_plant_zone"
+          ],
+          "counterplay": [
+            "w_heal_sustain_lane"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "seraphine",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "outranges_with_q_poke",
+          "win_condition": [
+            "q_poke_from_range",
+            "e_root_disengage"
+          ],
+          "threats": [
+            "hook_catch"
+          ],
+          "counterplay": [
+            "stay_at_max_range"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_around_shield",
+          "win_condition": [
+            "q_poke",
+            "e_through_allies_for_root"
+          ],
+          "threats": [
+            "passive_stun"
+          ],
+          "counterplay": [
+            "poke_from_range"
+          ]
+        },
+        {
+          "target": "maokai",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "outranges_engage",
+          "win_condition": [
+            "e_root_on_approach",
+            "r_extends_through_allies"
+          ],
+          "threats": [
+            "r_wide_engage"
+          ],
+          "counterplay": [
+            "e_on_approach_then_r_if_needed"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "immobile_hook_target",
+          "win_condition": [
+            "stay_behind_minions"
+          ],
+          "threats": [
+            "q_hook_burst"
+          ],
+          "counterplay": [
+            "position_carefully"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hard_engage_punishes",
+          "win_condition": [
+            "e_root_on_engage"
+          ],
+          "threats": [
+            "e_q_gap_close"
+          ],
+          "counterplay": [
+            "e_immediately_on_leona_e"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hook_punishes_immobility",
+          "win_condition": [
+            "e_root_disengage"
+          ],
+          "threats": [
+            "q_hook_from_angle"
+          ],
+          "counterplay": [
+            "stay_at_max_range"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "sona",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_around_shield",
+          "win_condition": [
+            "q_power_chord_poke",
+            "sustain_lane"
+          ],
+          "threats": [
+            "passive_stun_if_caught"
+          ],
+          "counterplay": [
+            "poke_from_max_range"
+          ]
+        },
+        {
+          "target": "maokai",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "sustain_through_saplings",
+          "win_condition": [
+            "w_heal_sustain",
+            "scale_to_late"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "heal_through_poke_scale"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.5,
+          "reason": "sustain_through_poke",
+          "win_condition": [
+            "poke_and_heal_sustain"
+          ],
+          "threats": [
+            "hook_catch"
+          ],
+          "counterplay": [
+            "stay_behind_minions_poke_safely"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "burst_kills_before_scaling",
+          "win_condition": [
+            "survive_to_level_6"
+          ],
+          "threats": [
+            "e_q_r_100_to_0"
+          ],
+          "counterplay": [
+            "flash_e_away",
+            "hug_tower"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "hook_cc_chain_kills",
+          "win_condition": [
+            "dodge_hook"
+          ],
+          "threats": [
+            "q_passive_r_chain"
+          ],
+          "counterplay": [
+            "stay_max_range_behind_minions"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "hook_one_shots",
+          "win_condition": [
+            "never_get_hooked"
+          ],
+          "threats": [
+            "q_pull_instant_death"
+          ],
+          "counterplay": [
+            "perma_behind_minions"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "engage_burst_kills",
+          "win_condition": [
+            "survive_early"
+          ],
+          "threats": [
+            "w_q_combo_burst"
+          ],
+          "counterplay": [
+            "hug_tower_pre_6"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "soraka",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "sustain_through_trades",
+          "win_condition": [
+            "q_poke_sustain",
+            "heal_through_damage"
+          ],
+          "threats": [
+            "passive_stun"
+          ],
+          "counterplay": [
+            "poke_from_range_heal_adc"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "heal_through_hook_damage",
+          "win_condition": [
+            "heal_after_trade",
+            "e_silence_on_engage"
+          ],
+          "threats": [
+            "hook_catch_burst"
+          ],
+          "counterplay": [
+            "e_on_thresh_approach"
+          ]
+        },
+        {
+          "target": "maokai",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "outheal_sapling_poke",
+          "win_condition": [
+            "q_sustain_lane",
+            "scale_to_late"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "e_silence_on_engage_path"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "hook_kills_instantly",
+          "win_condition": [
+            "never_get_hooked"
+          ],
+          "threats": [
+            "q_pull_death"
+          ],
+          "counterplay": [
+            "perma_behind_minions"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "cc_chain_kills",
+          "win_condition": [
+            "e_silence_on_approach"
+          ],
+          "threats": [
+            "q_passive_r_chain"
+          ],
+          "counterplay": [
+            "e_on_approach_path"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hard_engage_burst",
+          "win_condition": [
+            "e_silence_on_e_dash"
+          ],
+          "threats": [
+            "e_q_all_in"
+          ],
+          "counterplay": [
+            "silence_zone_on_engage_path"
+          ]
+        },
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "poke_through_heals",
+          "win_condition": [
+            "sustain_and_scale"
+          ],
+          "threats": [
+            "plant_poke_drains_hp"
+          ],
+          "counterplay": [
+            "focus_on_q_self_sustain"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "yuumi",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "untargetable_ignores_engage",
+          "win_condition": [
+            "attach_and_scale",
+            "poke_with_q"
+          ],
+          "threats": [
+            "early_passive_stun"
+          ],
+          "counterplay": [
+            "stay_attached_avoid_trades"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "cant_hook_attached_yuumi",
+          "win_condition": [
+            "attach_and_poke",
+            "scale_to_late"
+          ],
+          "threats": [
+            "hook_adc"
+          ],
+          "counterplay": [
+            "adc_dodges_hooks"
+          ]
+        },
+        {
+          "target": "maokai",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "sustain_through_saplings",
+          "win_condition": [
+            "heal_through_poke",
+            "late_scaling"
+          ],
+          "threats": [
+            "r_engage_on_adc"
+          ],
+          "counterplay": [
+            "e_heal_through_poke"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "hard_engage_kills_adc",
+          "win_condition": [
+            "survive_lane_scale"
+          ],
+          "threats": [
+            "focus_adc_yuumi_useless"
+          ],
+          "counterplay": [
+            "e_heal_on_engage"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "cc_chain_on_adc",
+          "win_condition": [
+            "survive_early"
+          ],
+          "threats": [
+            "adc_dies_too_fast"
+          ],
+          "counterplay": [
+            "e_heal_timing"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "hook_adc_yuumi_falls_off",
+          "win_condition": [
+            "adc_dodges_hooks"
+          ],
+          "threats": [
+            "one_hook_kills_adc"
+          ],
+          "counterplay": [
+            "adc_positioning"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "engage_burst_on_adc",
+          "win_condition": [
+            "survive_lane"
+          ],
+          "threats": [
+            "w_q_on_adc"
+          ],
+          "counterplay": [
+            "e_heal_and_pray"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "zilean",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_negates_engage_kills",
+          "win_condition": [
+            "r_adc_on_engage",
+            "double_bomb_stun"
+          ],
+          "threats": [
+            "engage_before_6"
+          ],
+          "counterplay": [
+            "play_safe_pre_6_then_r_counters"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "r_revive_negates_picks",
+          "win_condition": [
+            "r_hooked_ally",
+            "e_slow_kite"
+          ],
+          "threats": [
+            "cc_chain_kills_fast"
+          ],
+          "counterplay": [
+            "r_immediately_on_hook"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "r_revive_after_combo",
+          "win_condition": [
+            "r_combo_target",
+            "double_bomb_stun"
+          ],
+          "threats": [
+            "flash_combo_burst"
+          ],
+          "counterplay": [
+            "r_adc_after_w_q"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "plant_poke_pressure",
+          "win_condition": [
+            "double_bomb_stun"
+          ],
+          "threats": [
+            "perma_plant_poke"
+          ],
+          "counterplay": [
+            "bomb_on_plants_to_clear"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "burn_through_revive",
+          "win_condition": [
+            "r_before_lethal"
+          ],
+          "threats": [
+            "passive_kills_after_revive"
+          ],
+          "counterplay": [
+            "r_early_before_burn_kills"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hook_punishes_immobility",
+          "win_condition": [
+            "e_self_ms_dodge",
+            "r_if_caught"
+          ],
+          "threats": [
+            "hook_burst"
+          ],
+          "counterplay": [
+            "e_self_for_ms"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "brand",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "percent_hp_burn_melts_tanks",
+          "win_condition": [
+            "w_e_q_combo",
+            "passive_stacking"
+          ],
+          "threats": [
+            "passive_stun_if_caught"
+          ],
+          "counterplay": [
+            "poke_from_range"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "burn_through_tankiness",
+          "win_condition": [
+            "poke_pre_engage",
+            "passive_burn"
+          ],
+          "threats": [
+            "flash_combo"
+          ],
+          "counterplay": [
+            "stay_at_max_range"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "burn_through_shields",
+          "win_condition": [
+            "w_e_poke",
+            "passive_ignores_shield"
+          ],
+          "threats": [
+            "tornado_interrupt"
+          ],
+          "counterplay": [
+            "poke_from_range"
+          ]
+        },
+        {
+          "target": "lulu",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "burn_ignores_shields",
+          "win_condition": [
+            "percent_hp_damage",
+            "r_teamfight"
+          ],
+          "threats": [
+            "polymorph"
+          ],
+          "counterplay": [
+            "poke_before_polymorph_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "shield_blocks_stun",
+          "win_condition": [
+            "poke_without_stun",
+            "r_teamfight"
+          ],
+          "threats": [
+            "e_blocks_q_stun"
+          ],
+          "counterplay": [
+            "w_e_poke_doesnt_need_q"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hook_kills_squishy_mage",
+          "win_condition": [
+            "stay_behind_minions"
+          ],
+          "threats": [
+            "q_hook_burst"
+          ],
+          "counterplay": [
+            "never_step_forward"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "engage_burst_kills",
+          "win_condition": [
+            "poke_before_engage"
+          ],
+          "threats": [
+            "e_q_all_in"
+          ],
+          "counterplay": [
+            "w_e_on_approach_then_q_stun"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "morgana",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.1,
+          "reason": "shield_blocks_all_cc",
+          "win_condition": [
+            "e_adc_on_hook",
+            "q_binding"
+          ],
+          "threats": [
+            "nothing_significant"
+          ],
+          "counterplay": [
+            "e_reactively_on_hook"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.1,
+          "reason": "shield_negates_engage",
+          "win_condition": [
+            "e_blocks_e_q_r",
+            "q_root_in_lane"
+          ],
+          "threats": [
+            "flash_engage_before_shield"
+          ],
+          "counterplay": [
+            "e_on_leona_e_animation"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.1,
+          "reason": "shield_blocks_hook_cc",
+          "win_condition": [
+            "e_adc_preemptively",
+            "q_root"
+          ],
+          "threats": [
+            "flash_hook_no_time_to_shield"
+          ],
+          "counterplay": [
+            "preemptive_shield"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "shield_blocks_hook_flay",
+          "win_condition": [
+            "e_blocks_all_cc",
+            "q_root"
+          ],
+          "threats": [
+            "lantern_save"
+          ],
+          "counterplay": [
+            "e_on_hook_target"
+          ]
+        },
+        {
+          "target": "alistar",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "shield_blocks_w_q",
+          "win_condition": [
+            "e_on_w_target",
+            "q_root"
+          ],
+          "threats": [
+            "flash_combo"
+          ],
+          "counterplay": [
+            "e_preemptively_on_approach"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "plant_poke_outranges",
+          "win_condition": [
+            "q_root_then_w_pool"
+          ],
+          "threats": [
+            "plant_zone_control"
+          ],
+          "counterplay": [
+            "land_q_to_win_trade"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "burn_damage_through_shield",
+          "win_condition": [
+            "shield_self_from_stun"
+          ],
+          "threats": [
+            "passive_percent_hp_burn"
+          ],
+          "counterplay": [
+            "e_self_to_block_stun"
+          ]
+        },
+        {
+          "target": "senna",
+          "lane": "support",
+          "difficulty": 0.5,
+          "reason": "outranged_and_outscaled",
+          "win_condition": [
+            "q_root_at_range"
+          ],
+          "threats": [
+            "auto_q_poke"
+          ],
+          "counterplay": [
+            "land_q_to_win_trades"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "pyke",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.2,
+          "reason": "hook_burst_kills",
+          "win_condition": [
+            "q_hook_e_stun",
+            "r_execute"
+          ],
+          "threats": [
+            "poke_pre_engage"
+          ],
+          "counterplay": [
+            "all_in_at_level_3"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "execute_ignores_heal",
+          "win_condition": [
+            "r_execute_threshold",
+            "ignite_anti_heal"
+          ],
+          "threats": [
+            "silence_zone"
+          ],
+          "counterplay": [
+            "r_execute_bypasses_healing"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "burst_adc_before_heals",
+          "win_condition": [
+            "hook_adc_burst",
+            "r_execute"
+          ],
+          "threats": [
+            "heal_sustain"
+          ],
+          "counterplay": [
+            "focus_adc_with_full_combo"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "w_stealth_bypasses_disengage",
+          "win_condition": [
+            "w_flank_hook",
+            "r_execute"
+          ],
+          "threats": [
+            "tornado_interrupt"
+          ],
+          "counterplay": [
+            "w_stealth_from_river_angle"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "tankier_wins_2v2",
+          "win_condition": [
+            "roam_instead"
+          ],
+          "threats": [
+            "aftershock_tanking",
+            "cc_chain"
+          ],
+          "counterplay": [
+            "avoid_2v2_roam_mid"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "tankier_cc_chain_wins",
+          "win_condition": [
+            "hook_adc_not_nautilus"
+          ],
+          "threats": [
+            "passive_root_chain"
+          ],
+          "counterplay": [
+            "target_adc"
+          ]
+        },
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "shield_blocks_hook_cc",
+          "win_condition": [
+            "bait_shield"
+          ],
+          "threats": [
+            "e_blocks_q_and_e"
+          ],
+          "counterplay": [
+            "fake_engage_then_reengage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "senna",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "outranges_from_safety",
+          "win_condition": [
+            "auto_q_poke",
+            "soul_scaling"
+          ],
+          "threats": [
+            "passive_stun_if_caught"
+          ],
+          "counterplay": [
+            "poke_from_max_range"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "outranges_disengage",
+          "win_condition": [
+            "auto_q_poke_range",
+            "scale_infinitely"
+          ],
+          "threats": [
+            "tornado_if_too_close"
+          ],
+          "counterplay": [
+            "poke_from_safe_range"
+          ]
+        },
+        {
+          "target": "lulu",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "outranges_polymorph",
+          "win_condition": [
+            "auto_q_from_range",
+            "w_root_followup"
+          ],
+          "threats": [
+            "polymorph_if_close"
+          ],
+          "counterplay": [
+            "maintain_range_advantage"
+          ]
+        },
+        {
+          "target": "maokai",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_outranges_engage",
+          "win_condition": [
+            "auto_q_poke",
+            "soul_stacking"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "poke_pre_6_hard"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hook_kills_squishy",
+          "win_condition": [
+            "stay_behind_minions"
+          ],
+          "threats": [
+            "q_hook_burst"
+          ],
+          "counterplay": [
+            "position_carefully"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hard_engage_burst",
+          "win_condition": [
+            "e_dodge",
+            "w_root_self_peel"
+          ],
+          "threats": [
+            "e_q_gap_close"
+          ],
+          "counterplay": [
+            "w_root_on_approach"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hook_cc_chain",
+          "win_condition": [
+            "w_root_self_peel"
+          ],
+          "threats": [
+            "q_hook_from_angle"
+          ],
+          "counterplay": [
+            "stay_max_range"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "swain",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "poke_around_shield_drain",
+          "win_condition": [
+            "e_root_passive_pull",
+            "r_drain_teamfight"
+          ],
+          "threats": [
+            "passive_stun"
+          ],
+          "counterplay": [
+            "e_root_from_range"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "e_root_outranges_hook",
+          "win_condition": [
+            "e_passive_pull_combo",
+            "r_drain_sustain"
+          ],
+          "threats": [
+            "hook_catch"
+          ],
+          "counterplay": [
+            "e_on_approach"
+          ]
+        },
+        {
+          "target": "maokai",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "drain_outsustains",
+          "win_condition": [
+            "r_drain_in_fights",
+            "passive_pull_on_cc"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "e_root_on_approach"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "zyra",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "plant_poke_outranges",
+          "win_condition": [
+            "e_root_engage"
+          ],
+          "threats": [
+            "plant_zone_control"
+          ],
+          "counterplay": [
+            "land_e_to_win_trade"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hook_punishes_immobility",
+          "win_condition": [
+            "stay_behind_minions"
+          ],
+          "threats": [
+            "q_hook_burst"
+          ],
+          "counterplay": [
+            "position_carefully"
+          ]
+        },
+        {
+          "target": "brand",
+          "lane": "support",
+          "difficulty": 0.5,
+          "reason": "percent_hp_burn_vs_drain",
+          "win_condition": [
+            "r_drain_outsustains"
+          ],
+          "threats": [
+            "passive_burn"
+          ],
+          "counterplay": [
+            "all_in_with_r_active"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "zyra",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "plants_poke_around_shield",
+          "win_condition": [
+            "plant_zone_control",
+            "e_root_engage"
+          ],
+          "threats": [
+            "passive_stun"
+          ],
+          "counterplay": [
+            "place_seeds_behind_braum"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "plant_poke_outsustains_shield",
+          "win_condition": [
+            "perma_plant_poke",
+            "zone_denial"
+          ],
+          "threats": [
+            "tornado_on_ult"
+          ],
+          "counterplay": [
+            "poke_with_plants_from_range"
+          ]
+        },
+        {
+          "target": "lulu",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "plant_damage_ignores_shield",
+          "win_condition": [
+            "plant_poke_pressure",
+            "zone_denial"
+          ],
+          "threats": [
+            "polymorph"
+          ],
+          "counterplay": [
+            "stay_at_max_range"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_through_heals",
+          "win_condition": [
+            "plant_poke_outsustains_w",
+            "anti_heal"
+          ],
+          "threats": [
+            "silence_zone"
+          ],
+          "counterplay": [
+            "poke_from_outside_silence"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hook_kills_immobile_mage",
+          "win_condition": [
+            "e_root_self_peel"
+          ],
+          "threats": [
+            "q_hook_burst"
+          ],
+          "counterplay": [
+            "stay_behind_minions"
+          ]
+        },
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hard_engage_burst",
+          "win_condition": [
+            "e_root_on_engage",
+            "r_knockup_counter"
+          ],
+          "threats": [
+            "e_q_gap_close"
+          ],
+          "counterplay": [
+            "e_on_leona_e_animation"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hook_punishes_positioning",
+          "win_condition": [
+            "e_root_self_peel"
+          ],
+          "threats": [
+            "q_hook_from_angle"
+          ],
+          "counterplay": [
+            "stay_at_max_range"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "bard",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "roam_advantage_plus_burst",
+          "win_condition": [
+            "q_stun_electrocute_trade",
+            "roam_for_chimes"
+          ],
+          "threats": [
+            "poke_sustain_in_lane"
+          ],
+          "counterplay": [
+            "trade_q_auto_electrocute"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "roam_advantage",
+          "win_condition": [
+            "roam_and_impact_map",
+            "r_catch_adc"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "roam_and_gain_map_advantage"
+          ]
+        },
+        {
+          "target": "braum",
+          "lane": "support",
+          "difficulty": 0.4,
+          "reason": "poke_and_roam",
+          "win_condition": [
+            "q_stun_poke",
+            "roam_tempo"
+          ],
+          "threats": [
+            "passive_stun"
+          ],
+          "counterplay": [
+            "poke_from_range_then_roam"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "leona",
+          "lane": "support",
+          "difficulty": 0.7,
+          "reason": "hard_engage_when_roaming",
+          "win_condition": [
+            "q_stun_disengage"
+          ],
+          "threats": [
+            "punishes_roam_timing"
+          ],
+          "counterplay": [
+            "only_roam_when_adc_safe"
+          ]
+        },
+        {
+          "target": "nautilus",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hook_punishes_poke_stance",
+          "win_condition": [
+            "q_stun_self_peel"
+          ],
+          "threats": [
+            "hook_catch"
+          ],
+          "counterplay": [
+            "portal_escape"
+          ]
+        },
+        {
+          "target": "blitzcrank",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "hook_punishes_chime_collection",
+          "win_condition": [
+            "dodge_hooks"
+          ],
+          "threats": [
+            "q_while_roaming_for_chimes"
+          ],
+          "counterplay": [
+            "safe_chime_pathing"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "rakan",
+      "role": "support",
+      "strong_against": [
+        {
+          "target": "sona",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "w_engage_kills_squishy",
+          "win_condition": [
+            "r_w_flash_charm_engage",
+            "w_knockup"
+          ],
+          "threats": [
+            "poke_pre_engage"
+          ],
+          "counterplay": [
+            "r_flash_w_combo"
+          ]
+        },
+        {
+          "target": "soraka",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "engage_burst_ignite",
+          "win_condition": [
+            "r_w_engage",
+            "ignite_anti_heal"
+          ],
+          "threats": [
+            "e_silence_zone"
+          ],
+          "counterplay": [
+            "engage_from_outside_silence"
+          ]
+        },
+        {
+          "target": "yuumi",
+          "lane": "support",
+          "difficulty": 0.3,
+          "reason": "aoe_engage_on_grouped",
+          "win_condition": [
+            "r_w_on_adc_plus_yuumi"
+          ],
+          "threats": [
+            "heal_sustain"
+          ],
+          "counterplay": [
+            "r_w_engage_hard_commit"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "morgana",
+          "lane": "support",
+          "difficulty": 0.8,
+          "reason": "shield_blocks_r_and_w",
+          "win_condition": [
+            "bait_shield_then_reengage"
+          ],
+          "threats": [
+            "e_blocks_charm_and_knockup"
+          ],
+          "counterplay": [
+            "fake_engage_burn_shield"
+          ]
+        },
+        {
+          "target": "janna",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "tornado_interrupts_w",
+          "win_condition": [
+            "r_flash_bypasses_tornado"
+          ],
+          "threats": [
+            "q_interrupts_w_dash",
+            "r_disengage"
+          ],
+          "counterplay": [
+            "flash_r_w_speed"
+          ]
+        },
+        {
+          "target": "thresh",
+          "lane": "support",
+          "difficulty": 0.6,
+          "reason": "flay_interrupts_w",
+          "win_condition": [
+            "bait_flay_then_w"
+          ],
+          "threats": [
+            "e_cancels_w_dash"
+          ],
+          "counterplay": [
+            "r_first_for_charm_before_w"
+          ]
+        }
+      ]
+    }
+  ]
+}

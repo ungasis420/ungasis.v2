@@ -1,0 +1,874 @@
+{
+ "_meta": {
+  "game": "Wild Rift",
+  "patch": "7.1e",
+  "chunk": "8b",
+  "version": "v3",
+  "generated": "2026-05-18"
+ },
+ "counter_mechanics": [
+  {
+   "id": "anti_heal",
+   "beats": "healing",
+   "items": [
+    "Morellonomicon",
+    "Thornmail",
+    "Mortal Reminder"
+   ],
+   "desc": "60% healing reduction shuts down drain tanks"
+  },
+  {
+   "id": "armor_stack",
+   "beats": "physical_damage",
+   "items": [
+    "Thornmail",
+    "Randuin's Omen",
+    "Frozen Heart"
+   ],
+   "desc": "Stack armor vs full AD comps"
+  },
+  {
+   "id": "magic_resist",
+   "beats": "magic_damage",
+   "items": [
+    "Force of Nature",
+    "Spirit Visage",
+    "Wit's End"
+   ],
+   "desc": "Stack MR vs full AP comps"
+  },
+  {
+   "id": "true_damage",
+   "beats": "tanks",
+   "champions": [
+    "Vayne",
+    "Fiora",
+    "Camille"
+   ],
+   "desc": "% HP true damage ignores all resistances"
+  },
+  {
+   "id": "hard_cc",
+   "beats": "mobility",
+   "champions": [
+    "Nautilus",
+    "Leona",
+    "Lissandra"
+   ],
+   "desc": "Point-click CC stops mobile assassins"
+  },
+  {
+   "id": "mobility",
+   "beats": "skillshots",
+   "champions": [
+    "Yasuo",
+    "Fizz",
+    "Zed"
+   ],
+   "desc": "Dashes dodge linear skillshots"
+  },
+  {
+   "id": "range",
+   "beats": "melee",
+   "champions": [
+    "Caitlyn",
+    "Jayce",
+    "Teemo"
+   ],
+   "desc": "Kite melee champions who can't close gap"
+  },
+  {
+   "id": "engage",
+   "beats": "poke",
+   "champions": [
+    "Malphite",
+    "Leona",
+    "Diana"
+   ],
+   "desc": "Hard engage forces fights before poke matters"
+  },
+  {
+   "id": "disengage",
+   "beats": "engage",
+   "champions": [
+    "Janna",
+    "Lulu",
+    "Poppy"
+   ],
+   "desc": "Peel and knockback stops dive/engage"
+  },
+  {
+   "id": "burst",
+   "beats": "sustain",
+   "champions": [
+    "Zed",
+    "Fizz",
+    "Rengar"
+   ],
+   "desc": "One-shot before healing kicks in"
+  },
+  {
+   "id": "sustain",
+   "beats": "poke",
+   "champions": [
+    "Soraka",
+    "Vladimir",
+    "Aatrox"
+   ],
+   "desc": "Heal back poke damage over time"
+  },
+  {
+   "id": "split_push",
+   "beats": "teamfight",
+   "champions": [
+    "Fiora",
+    "Tryndamere",
+    "Jax"
+   ],
+   "desc": "Avoid 5v5 by forcing side lane pressure"
+  }
+ ],
+ "universal_counters": [
+  {
+   "champion": "Rammus",
+   "counters": "full AD comps",
+   "why": "W reflects AA damage. Thornmail passive. Taunt forces AAs."
+  },
+  {
+   "champion": "Malphite",
+   "counters": "AA-reliant carries",
+   "why": "E reduces AS by 50%. R engage. Armor scaling."
+  },
+  {
+   "champion": "Vayne",
+   "counters": "tanks",
+   "why": "W Silver Bolts %HP true damage every 3 AAs."
+  },
+  {
+   "champion": "Fiora",
+   "counters": "tanks",
+   "why": "Vital procs %HP true damage. W parries any CC."
+  },
+  {
+   "champion": "Morgana",
+   "counters": "CC chains",
+   "why": "E Black Shield blocks ALL CC on one target."
+  },
+  {
+   "champion": "Poppy",
+   "counters": "dash champions",
+   "why": "W Steadfast Presence blocks ALL dashes in zone."
+  },
+  {
+   "champion": "Lulu",
+   "counters": "assassins",
+   "why": "W Polymorph disables assassin for 1.5s. R knockup saves carry."
+  },
+  {
+   "champion": "Olaf",
+   "counters": "CC-heavy comps",
+   "why": "R Ragnarok = CC immune. Run at carries freely."
+  },
+  {
+   "champion": "Kassadin",
+   "counters": "AP mids",
+   "why": "Passive reduces magic damage by 15%. Q interrupts channels."
+  },
+  {
+   "champion": "Janna",
+   "counters": "dive comps",
+   "why": "R Monsoon pushes ALL divers away + heals team."
+  },
+  {
+   "champion": "Tryndamere",
+   "counters": "burst comps",
+   "why": "R Undying Rage = can't die for 5s. Ignores burst."
+  },
+  {
+   "champion": "Vex",
+   "counters": "dash champions",
+   "why": "Passive fears champions who dash near her. Anti-mobility mage."
+  },
+  {
+   "champion": "Galio",
+   "counters": "AP assassins",
+   "why": "MR shield passive. W taunt interrupts combos. R protects allies."
+  },
+  {
+   "champion": "Dr. Mundo",
+   "counters": "poke comps",
+   "why": "Passive blocks CC. R massive HP regen. Unkillable."
+  },
+  {
+   "champion": "Shen",
+   "counters": "split push",
+   "why": "R Spirit Refuge teleports to any ally. Global counter-split."
+  }
+ ],
+ "lane_matchups": [
+  {
+   "lane": "baron",
+   "champion": "Darius",
+   "counter": "Vayne",
+   "severity": "hard",
+   "why": "Vayne kites with Q tumble. W true damage shreds. Darius can't reach.",
+   "counterplay": "Run Ghost. Flash+E pull. All-in at level 1 before she scales."
+  },
+  {
+   "lane": "baron",
+   "champion": "Darius",
+   "counter": "Quinn",
+   "severity": "hard",
+   "why": "Quinn E knockback denies Darius pull. Range poke. Blind AAs.",
+   "counterplay": "Survive to 6. Flash+E engage. She's squishy if caught."
+  },
+  {
+   "lane": "baron",
+   "champion": "Garen",
+   "counter": "Teemo",
+   "severity": "hard",
+   "why": "Teemo blind negates Garen E. Range poke. Shroom control.",
+   "counterplay": "Q removes slow. Run through shrooms. All-in with R execute."
+  },
+  {
+   "lane": "baron",
+   "champion": "Fiora",
+   "counter": "Malphite",
+   "severity": "soft",
+   "why": "Malphite armor stacking reduces Fiora damage. Safe and unkillable.",
+   "counterplay": "W parry his R. Vital procs still do %HP true damage."
+  },
+  {
+   "lane": "baron",
+   "champion": "Jax",
+   "counter": "Malphite",
+   "severity": "hard",
+   "why": "Malphite E reduces Jax AS. Armor stacking. Jax can't trade.",
+   "counterplay": "Farm to 3 items. Outscale. BotRK %HP helps."
+  },
+  {
+   "lane": "baron",
+   "champion": "Camille",
+   "counter": "Jax",
+   "severity": "hard",
+   "why": "Jax E dodges Camille AA-reliant Q2. Counter Strike wins trades.",
+   "counterplay": "W poke. E disengage. Don't trade during his E."
+  },
+  {
+   "lane": "baron",
+   "champion": "Renekton",
+   "counter": "Fiora",
+   "severity": "soft",
+   "why": "Fiora W parries Renekton W stun. Out-duels after level 5.",
+   "counterplay": "Fury W through her parry timing. Bait it then engage."
+  },
+  {
+   "lane": "baron",
+   "champion": "Irelia",
+   "counter": "Renekton",
+   "severity": "hard",
+   "why": "Renekton W stun breaks Irelia Q chain. Early bully wins.",
+   "counterplay": "Farm stacks. Don't fight until BotRK + Passive stacked."
+  },
+  {
+   "lane": "baron",
+   "champion": "Nasus",
+   "counter": "Darius",
+   "severity": "hard",
+   "why": "Darius bullies Nasus early. Can't stack freely. Ghost chase.",
+   "counterplay": "W wither Darius. Farm under tower. Outscale after 200 stacks."
+  },
+  {
+   "lane": "baron",
+   "champion": "Riven",
+   "counter": "Garen",
+   "severity": "soft",
+   "why": "Garen silence stops Riven combos. W reduces burst. Passive heals.",
+   "counterplay": "Bait Q silence. E shield Garen Q. Short trade and disengage."
+  },
+  {
+   "lane": "baron",
+   "champion": "Kayle",
+   "counter": "Irelia",
+   "severity": "hard",
+   "why": "Irelia can dive Kayle before level 5. Gap close ignores range.",
+   "counterplay": "Farm safe. W speed away. After level 10, outscale completely."
+  },
+  {
+   "lane": "baron",
+   "champion": "Sett",
+   "counter": "Fiora",
+   "severity": "hard",
+   "why": "Fiora parries Sett W true damage center. Out-duels with vitals.",
+   "counterplay": "Don't W predictably. E pull for short trades. Build armor."
+  },
+  {
+   "lane": "baron",
+   "champion": "K'Sante",
+   "counter": "Sett",
+   "severity": "soft",
+   "why": "Sett can trade back with Haymaker. Sustain through K'Sante poke.",
+   "counterplay": "Short Q trades. W to dodge Sett W center. E away."
+  },
+  {
+   "lane": "baron",
+   "champion": "Tryndamere",
+   "counter": "Malphite",
+   "severity": "hard",
+   "why": "Malphite armor + E AS slow. Tryndamere can't crit effectively.",
+   "counterplay": "Force extended trades during R. Split other lanes instead."
+  },
+  {
+   "lane": "baron",
+   "champion": "Wukong",
+   "counter": "Darius",
+   "severity": "soft",
+   "why": "Darius can pull Wukong out of W clone. Passive stacking.",
+   "counterplay": "W clone to dodge E pull. E+Q short trade then disengage."
+  },
+  {
+   "lane": "baron",
+   "champion": "Singed",
+   "counter": "Teemo",
+   "severity": "soft",
+   "why": "Teemo range poke. Shrooms block proxy paths. Blind AAs.",
+   "counterplay": "Proxy behind tower. Ignore Teemo completely. Outscale."
+  },
+  {
+   "lane": "baron",
+   "champion": "Ornn",
+   "counter": "Fiora",
+   "severity": "hard",
+   "why": "Fiora vital procs ignore Ornn armor. W parries R knockup.",
+   "counterplay": "Play safe. Upgrade ally items. Teamfight > 1v1 her."
+  },
+  {
+   "lane": "mid",
+   "champion": "Zed",
+   "counter": "Lissandra",
+   "severity": "hard",
+   "why": "Self-R during Zed R negates ALL burst. W root stops shadows.",
+   "counterplay": "Roam to side lanes. Avoid fighting Lissandra directly."
+  },
+  {
+   "lane": "mid",
+   "champion": "Zed",
+   "counter": "Malphite",
+   "severity": "soft",
+   "why": "Armor stacking. AS slow E. Zed can't kill.",
+   "counterplay": "Roam. Ignore Malphite. Kill side lanes."
+  },
+  {
+   "lane": "mid",
+   "champion": "Yasuo",
+   "counter": "Akali",
+   "severity": "hard",
+   "why": "Akali shroud beats Yasuo. Can't windwall shroud. Out-bursts.",
+   "counterplay": "Windwall her E. Aggressive early before she has Protobelt."
+  },
+  {
+   "lane": "mid",
+   "champion": "Ahri",
+   "counter": "Kassadin",
+   "severity": "hard",
+   "why": "Kassadin passive reduces Ahri magic damage. Q shield. Outscales.",
+   "counterplay": "Win before level 13. Roam and snowball side lanes."
+  },
+  {
+   "lane": "mid",
+   "champion": "Katarina",
+   "counter": "Galio",
+   "severity": "hard",
+   "why": "Galio W taunt interrupts Katarina R. Magic shield. Out-trades.",
+   "counterplay": "Roam bot when Galio uses R elsewhere. Avoid direct fights."
+  },
+  {
+   "lane": "mid",
+   "champion": "Fizz",
+   "counter": "Lissandra",
+   "severity": "hard",
+   "why": "Lissandra R counters Fizz all-in. Self-R = invulnerable.",
+   "counterplay": "Wait for her R CD. Bait with E troll pole then re-engage."
+  },
+  {
+   "lane": "mid",
+   "champion": "Orianna",
+   "counter": "Zed",
+   "severity": "hard",
+   "why": "Zed shadow dives Orianna. R Death Mark pops her.",
+   "counterplay": "Zhonya's rush. Keep ball on yourself for R peel."
+  },
+  {
+   "lane": "mid",
+   "champion": "Viktor",
+   "counter": "Fizz",
+   "severity": "hard",
+   "why": "Fizz E dodges Viktor E laser. Gap close ignores Viktor range.",
+   "counterplay": "W gravity field on yourself when Fizz dashes in. Stand back."
+  },
+  {
+   "lane": "mid",
+   "champion": "Veigar",
+   "counter": "Kassadin",
+   "severity": "hard",
+   "why": "Kassadin R dashes over Veigar E cage. Q interrupts. MR passive.",
+   "counterplay": "Farm Q stacks. Cage defensively. Outscale if game goes late enough."
+  },
+  {
+   "lane": "mid",
+   "champion": "Akali",
+   "counter": "Annie",
+   "severity": "soft",
+   "why": "Annie point-click W stun can't be dodged by shroud position.",
+   "counterplay": "Shroud to dodge Tibbers R. Wait for stun CD then engage."
+  },
+  {
+   "lane": "mid",
+   "champion": "Twisted Fate",
+   "counter": "Zed",
+   "severity": "hard",
+   "why": "Zed W+Q poke wins. R death mark kills TF.",
+   "counterplay": "Gold card + Zhonya's timing. Roam to bot, avoid 1v1."
+  },
+  {
+   "lane": "mid",
+   "champion": "Diana",
+   "counter": "Kassadin",
+   "severity": "soft",
+   "why": "Kassadin eventually outscales. R dashes dodge Diana Q.",
+   "counterplay": "Win pre-6. Force trades with W shield + passive."
+  },
+  {
+   "lane": "mid",
+   "champion": "Yone",
+   "counter": "Renekton",
+   "severity": "hard",
+   "why": "Renekton W stun. Early bully. Yone can't trade back.",
+   "counterplay": "E spirit form poke. Disengage. Scale to 2 items."
+  },
+  {
+   "lane": "mid",
+   "champion": "Galio",
+   "counter": "Fiora",
+   "severity": "hard",
+   "why": "Fiora W parries Galio W taunt. True damage ignores MR.",
+   "counterplay": "Team fights > 1v1. R allies instead of dueling Fiora."
+  },
+  {
+   "lane": "mid",
+   "champion": "Lux",
+   "counter": "Fizz",
+   "severity": "hard",
+   "why": "Fizz E dodges Lux Q root. R gap close one-shots Lux.",
+   "counterplay": "Q root preemptively when Fizz walks up. Keep max range."
+  },
+  {
+   "lane": "mid",
+   "champion": "Kassadin",
+   "counter": "Zed",
+   "severity": "hard",
+   "why": "Zed is AD. Kassadin MR passive useless. Shadow combo kills.",
+   "counterplay": "Survive to 6. Seekers Armguard rush. Ask jungle for help."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Lee Sin",
+   "counter": "Rammus",
+   "severity": "hard",
+   "why": "Rammus W reflects Lee Sin damage. Taunt forces AA into thorns.",
+   "counterplay": "Don't fight Rammus. Gank other lanes. Invade early before lvl 5."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Kha'Zix",
+   "counter": "Rammus",
+   "severity": "hard",
+   "why": "Rammus armor. W thorns. Kha'Zix can't burst through.",
+   "counterplay": "Avoid Rammus. Kill isolated non-tank targets."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Evelynn",
+   "counter": "Lee Sin",
+   "severity": "hard",
+   "why": "Lee Sin E reveals stealth. Q to Evelynn in stealth. Early invade.",
+   "counterplay": "Avoid Lee Sin. Farm to 5 for stealth. Counter-gank don't invade."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Viego",
+   "counter": "Olaf",
+   "severity": "hard",
+   "why": "Olaf R ignores Viego W stun. Runs him down with Q spam.",
+   "counterplay": "Don't duel Olaf. Wait for his R to expire then fight."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Diana",
+   "counter": "Graves",
+   "severity": "soft",
+   "why": "Graves E grit stacks armor. Wins early skirmishes.",
+   "counterplay": "Farm to Protobelt. Outscale in teamfights with R."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Amumu",
+   "counter": "Shyvana",
+   "severity": "soft",
+   "why": "Shyvana invades Amumu early. Outduels in 1v1.",
+   "counterplay": "Avoid 1v1. Group early. Your teamfight >> hers."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Hecarim",
+   "counter": "Kindred",
+   "severity": "soft",
+   "why": "Kindred marks + kiting beats Hecarim. R negates Hecarim burst.",
+   "counterplay": "E charge. Force fights in jungle. Don't let her kite in open."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Graves",
+   "counter": "Rengar",
+   "severity": "hard",
+   "why": "Rengar bush leap one-shots Graves. Can't react.",
+   "counterplay": "Clear wards. Track Rengar. Never facecheck bushes."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Jarvan IV",
+   "counter": "Olaf",
+   "severity": "hard",
+   "why": "Olaf R walks out of J4 R cataclysm. CC immune.",
+   "counterplay": "Don't R Olaf. Engage on his team instead. Peel for carry."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Sejuani",
+   "counter": "Dr. Mundo",
+   "severity": "hard",
+   "why": "Mundo passive blocks Sejuani CC. Out-sustains in extended fights.",
+   "counterplay": "Gank lanes, not Mundo. Team CC him down in teamfights."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Vi",
+   "counter": "Morgana",
+   "severity": "soft",
+   "why": "Morgana E Black Shield blocks Vi R lock-on stun.",
+   "counterplay": "Bait shield first. Or R someone else."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Xin Zhao",
+   "counter": "Olaf",
+   "severity": "hard",
+   "why": "Olaf R ignores Xin knockup. Lifesteal outsustains.",
+   "counterplay": "Don't 1v1 Olaf. Use R to block ranged damage in teamfights."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Wukong",
+   "counter": "Lee Sin",
+   "severity": "soft",
+   "why": "Lee Sin early invade pressure. Sees through W clone with E.",
+   "counterplay": "Farm safely. Outscale in teamfights with double R knockup."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Rengar",
+   "counter": "Olaf",
+   "severity": "hard",
+   "why": "Olaf R CC immune. Can't be one-shot. Runs Rengar down.",
+   "counterplay": "Avoid Olaf. Kill his carries instead. One-shot ADC."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Shyvana",
+   "counter": "Lee Sin",
+   "severity": "hard",
+   "why": "Lee Sin invades Shyvana pre-6. Stronger early. Kicks away.",
+   "counterplay": "Ward defensively. Give camps if he invades. Scale to dragon form."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Master Yi",
+   "counter": "Rammus",
+   "severity": "hard",
+   "why": "Rammus taunt forces Yi to AA into W thornmail. Melts himself.",
+   "counterplay": "Build Wit's End for MR. Or just dodge Rammus taunt with Q alpha."
+  },
+  {
+   "lane": "jungle",
+   "champion": "Evelynn",
+   "counter": "Rengar",
+   "severity": "soft",
+   "why": "Rengar R reveals area. Can find Evelynn post-stealth.",
+   "counterplay": "Don't invade Rengar. Farm opposite side. Counter-gank."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Jinx",
+   "counter": "Draven",
+   "severity": "hard",
+   "why": "Draven wins early trades. Spinning Axes out-damage Jinx.",
+   "counterplay": "Farm with rockets from range. Don't trade. Outscale at 2 items."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Vayne",
+   "counter": "Caitlyn",
+   "severity": "hard",
+   "why": "Caitlyn 650 range vs Vayne 550. Constantly poked out.",
+   "counterplay": "Q tumble dodges W traps. Survive to BotRK. All-in at 6."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Kai'Sa",
+   "counter": "Draven",
+   "severity": "hard",
+   "why": "Draven early damage too high. Snowballs lane.",
+   "counterplay": "E stealth to dodge. Farm safely. R follow-up only on support CC."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Ezreal",
+   "counter": "Lucian",
+   "severity": "hard",
+   "why": "Lucian aggressive dash+passive double-shot out-trades Ezreal.",
+   "counterplay": "E blink away. Q poke from max range. Scale with Manamune."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Jhin",
+   "counter": "Samira",
+   "severity": "hard",
+   "why": "Samira W blocks Jhin W root. Dash in for melee combo.",
+   "counterplay": "W root before she dashes. Keep max range. Never let her build S rank."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Miss Fortune",
+   "counter": "Draven",
+   "severity": "soft",
+   "why": "Draven all-in wins if he catches axes.",
+   "counterplay": "Q bounce poke. R from fog of war. Don't trade AA vs AA."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Tristana",
+   "counter": "Vayne",
+   "severity": "soft",
+   "why": "Vayne condemn + kite beats Tristana in extended trades.",
+   "counterplay": "W jump on Vayne when condemn is CD. Burst with E bomb."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Xayah",
+   "counter": "Lucian",
+   "severity": "hard",
+   "why": "Lucian dash+passive burst wins short trades. Aggressive.",
+   "counterplay": "Place feathers behind. E root if he dashes in. R to dodge burst."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Samira",
+   "counter": "Nautilus",
+   "severity": "hard",
+   "why": "Nautilus CC feeds Samira style. But if she's CC'd she dies.",
+   "counterplay": "W Nautilus R knockup. E dash to reset position. Need support peel."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Lucian",
+   "counter": "Jinx",
+   "severity": "soft",
+   "why": "Jinx outscales. Rockets out-range Lucian late game.",
+   "counterplay": "Win lane hard. End before Jinx gets 3 items."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Caitlyn",
+   "counter": "Kai'Sa",
+   "severity": "soft",
+   "why": "Caitlyn range zones Kai'Sa early. Trap control.",
+   "counterplay": "Farm to evolve Q. All-in at 6 with R past Caitlyn traps."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Draven",
+   "counter": "Exhaust support",
+   "severity": "hard",
+   "why": "Exhaust reduces Draven damage by 40%. Can't cash in.",
+   "counterplay": "Bait exhaust. All-in when it's on CD (210s)."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Jinx",
+   "counter": "Tristana",
+   "severity": "soft",
+   "why": "Tristana W jump + E bomb burst catches Jinx (no dash).",
+   "counterplay": "Chompers E under yourself when Trist W's. Rockets from max range."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Vayne",
+   "counter": "Jinx",
+   "severity": "soft",
+   "why": "Jinx outranges with rockets. AoE damage in teamfights.",
+   "counterplay": "Flank in teamfights. Don't frontline vs Jinx rockets."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Ezreal",
+   "counter": "Miss Fortune",
+   "severity": "soft",
+   "why": "MF R punishes Ezreal standing still for Q poke.",
+   "counterplay": "E blink sideways out of MF R. Q poke to win lane."
+  },
+  {
+   "lane": "dragon",
+   "champion": "Kai'Sa",
+   "counter": "Ziggs",
+   "severity": "hard",
+   "why": "Ziggs poke + tower damage denies Kai'Sa farm.",
+   "counterplay": "E stealth past bombs. Farm under tower. Evolve Q ASAP."
+  },
+  {
+   "lane": "support",
+   "champion": "Nautilus",
+   "counter": "Morgana",
+   "severity": "hard",
+   "why": "E Black Shield blocks Nautilus hook + passive root entirely.",
+   "counterplay": "Wait for shield to expire (26s CD early). Engage after."
+  },
+  {
+   "lane": "support",
+   "champion": "Leona",
+   "counter": "Morgana",
+   "severity": "hard",
+   "why": "Black Shield on ADC negates Leona all-in.",
+   "counterplay": "Bait shield. Or engage on Morgana herself (she's squishy)."
+  },
+  {
+   "lane": "support",
+   "champion": "Thresh",
+   "counter": "Braum",
+   "severity": "hard",
+   "why": "Braum E shield blocks Thresh hook. Stand in front of ADC.",
+   "counterplay": "Hook Braum. Flay ADC behind Braum. Lantern ally out."
+  },
+  {
+   "lane": "support",
+   "champion": "Lulu",
+   "counter": "Zed",
+   "severity": "soft",
+   "why": "Lulu W polymorph when Zed R appears. R knockup saves carry.",
+   "counterplay": "Don't R into Lulu. Roam and kill other lanes."
+  },
+  {
+   "lane": "support",
+   "champion": "Soraka",
+   "counter": "Assassins",
+   "severity": "hard",
+   "why": "Assassins one-shot Soraka before she can heal team.",
+   "counterplay": "Position behind ADC. E silence zone where assassin will land."
+  },
+  {
+   "lane": "support",
+   "champion": "Karma",
+   "counter": "Nautilus",
+   "severity": "hard",
+   "why": "Nautilus all-in wins through Karma poke. CC too heavy.",
+   "counterplay": "W root Nautilus when he hooks. R+E speed to kite back."
+  },
+  {
+   "lane": "support",
+   "champion": "Senna",
+   "counter": "Blitzcrank",
+   "severity": "hard",
+   "why": "Blitz hook punishes Senna's long AA animation. One hook = death.",
+   "counterplay": "Stand behind minions. W mist for safety when farming souls."
+  },
+  {
+   "lane": "support",
+   "champion": "Seraphine",
+   "counter": "Leona",
+   "severity": "hard",
+   "why": "Leona all-in at 2 kills Seraphine. Too squishy.",
+   "counterplay": "E slow when Leona E's in. R chain stun if she overcommits."
+  },
+  {
+   "lane": "support",
+   "champion": "Milio",
+   "counter": "Thresh",
+   "severity": "soft",
+   "why": "Thresh all-in pressure. But Milio R cleanses hook CC.",
+   "counterplay": "Save R for hook catch on ADC. Q poke from safe range."
+  },
+  {
+   "lane": "support",
+   "champion": "Swain",
+   "counter": "Lulu",
+   "severity": "soft",
+   "why": "Lulu polymorph cancels Swain R drain. W blocks engage.",
+   "counterplay": "E root Lulu first. W poke from long range. Ignite cuts her shields."
+  },
+  {
+   "lane": "support",
+   "champion": "Nautilus",
+   "counter": "Ezreal",
+   "severity": "soft",
+   "why": "Ezreal E blinks Nautilus hook. Safe positioning.",
+   "counterplay": "Walk up for passive root instead of hooking. R point-click."
+  },
+  {
+   "lane": "support",
+   "champion": "Leona",
+   "counter": "Janna",
+   "severity": "hard",
+   "why": "Janna R pushes Leona away after engage. Q tornado interrupts E.",
+   "counterplay": "Flash R to engage past Janna. Bait tornado first."
+  },
+  {
+   "lane": "support",
+   "champion": "Thresh",
+   "counter": "Sivir",
+   "severity": "hard",
+   "why": "Sivir E spellshield blocks Thresh hook.",
+   "counterplay": "Flay first to pop spellshield. Then hook."
+  },
+  {
+   "lane": "support",
+   "champion": "Lulu",
+   "counter": "Olaf",
+   "severity": "hard",
+   "why": "Olaf R ignores Lulu W polymorph and R knockup.",
+   "counterplay": "Kite back. Shield ADC. W polymorph after Olaf R expires."
+  },
+  {
+   "lane": "support",
+   "champion": "Soraka",
+   "counter": "Leona",
+   "severity": "hard",
+   "why": "Leona all-in kills Soraka. Can't heal through burst.",
+   "counterplay": "E silence on Leona E path. Stay behind ADC."
+  },
+  {
+   "lane": "support",
+   "champion": "Karma",
+   "counter": "Sona",
+   "severity": "soft",
+   "why": "Sona outscales Karma's poke with sustain + double auras.",
+   "counterplay": "Win lane before Sona scales. R+Q poke aggressively early."
+  },
+  {
+   "lane": "support",
+   "champion": "Senna",
+   "counter": "Nautilus",
+   "severity": "hard",
+   "why": "Nautilus CC chain kills Senna. She has no escape.",
+   "counterplay": "E mist to dodge Q hook. Position far back. W for stealth."
+  }
+ ]
+}

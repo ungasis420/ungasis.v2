@@ -1,0 +1,12 @@
+{
+  "version": "0.7.0",
+  "patch_version": "7.1e",
+  "relationship_sources": [
+    "public/data/counters.json",
+    "public/data/synergies.json",
+    "public/data/wr_matchups_*.json",
+    "public/data/wr_synergies_*.json",
+    "graph/edges_all.jsonl"
+  ],
+  "strategy_policy": "generated strategy and relationship edges are not official facts unless source_status says source_verified"
+}

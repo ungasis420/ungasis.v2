@@ -1,0 +1,50 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "legend_groups": [
+    {
+      "group": "Entity types",
+      "items": [
+        "Champion",
+        "Ability",
+        "Item",
+        "Rune",
+        "Spell",
+        "Effect",
+        "Build",
+        "Patch",
+        "SourceClaim"
+      ]
+    },
+    {
+      "group": "Relationship types",
+      "items": [
+        "Has ability",
+        "Has effect",
+        "Synergizes with",
+        "Counters",
+        "Denies",
+        "Mitigates",
+        "Recommended when",
+        "Suppressed when",
+        "Source supports"
+      ]
+    },
+    {
+      "group": "Source status",
+      "items": [
+        "Source verified",
+        "Generated rule",
+        "Pending refresh",
+        "Source conflict",
+        "User corrected pending revalidation"
+      ]
+    }
+  ],
+  "plain_english_labels": {
+    "SYNERGIZES_WITH": "Works well with",
+    "DENIES": "Can shut down or avoid value from",
+    "MITIGATES": "Reduces the impact of",
+    "SOURCE_SUPPORTS": "Evidence for",
+    "SUPPRESSED_WHEN": "Avoid or delay when"
+  }
+}

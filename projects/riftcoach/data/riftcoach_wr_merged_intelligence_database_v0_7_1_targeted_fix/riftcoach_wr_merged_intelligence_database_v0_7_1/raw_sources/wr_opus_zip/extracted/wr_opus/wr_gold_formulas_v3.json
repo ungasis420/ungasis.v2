@@ -1,0 +1,551 @@
+{
+  "_meta": {
+    "game": "League of Legends: Wild Rift",
+    "patch": "7.1e",
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/WR:Boots_of_Speed",
+      "https://wiki.leagueoflegends.com/en-us/WR:Gold",
+      "https://wiki.leagueoflegends.com/en-us/WR:Smite",
+      "https://wiki.leagueoflegends.com/en-us/WR:Rune",
+      "User screenshot: Boots of Speed (400g, +25 MS, sell 280g, ID 2601)"
+    ],
+    "generated": "2026-05-18",
+    "version": "v3",
+    "notes": [
+      "All gold-per-stat values derived from WR basic items (all cost 500g except Boots 400g).",
+      "WR basic items differ from PC LoL - always verify from WR wiki.",
+      "Adaptive Force in WR: 1 pt = 0.5 bonus AD or 1 AP."
+    ]
+  },
+  "gold_reference_items": [
+    {
+      "id": "long_sword",
+      "name": "Long Sword",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "attack_damage": 10
+      },
+      "gold_per_stat": {
+        "attack_damage": 50.0
+      },
+      "notes": "Reference item for AD gold value"
+    },
+    {
+      "id": "amplifying_tome",
+      "name": "Amplifying Tome",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "ability_power": 25
+      },
+      "gold_per_stat": {
+        "ability_power": 20.0
+      },
+      "notes": "Reference item for AP gold value"
+    },
+    {
+      "id": "ruby_crystal",
+      "name": "Ruby Crystal",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "health": 150
+      },
+      "gold_per_stat": {
+        "health": 3.33
+      },
+      "notes": "Reference item for HP gold value"
+    },
+    {
+      "id": "cloth_armor",
+      "name": "Cloth Armor",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "armor": 20
+      },
+      "gold_per_stat": {
+        "armor": 25.0
+      },
+      "notes": "Reference item for armor gold value"
+    },
+    {
+      "id": "null_magic_mantle",
+      "name": "Null-Magic Mantle",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "magic_resist": 25
+      },
+      "gold_per_stat": {
+        "magic_resist": 20.0
+      },
+      "notes": "Reference item for MR gold value"
+    },
+    {
+      "id": "dagger",
+      "name": "Dagger",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "attack_speed_percent": 12
+      },
+      "gold_per_stat": {
+        "attack_speed_percent": 41.67
+      },
+      "notes": "Reference item for AS% gold value"
+    },
+    {
+      "id": "brawlers_gloves",
+      "name": "Brawler's Gloves",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "critical_rate_percent": 20
+      },
+      "gold_per_stat": {
+        "critical_rate_percent": 25.0
+      },
+      "notes": "Reference item for Crit% gold value"
+    },
+    {
+      "id": "sapphire_crystal",
+      "name": "Sapphire Crystal",
+      "cost": 500,
+      "sell": 350,
+      "stats": {
+        "mana": 100,
+        "ability_haste": 5
+      },
+      "gold_per_stat": {
+        "mana": 3.5,
+        "ability_haste": 30.0
+      },
+      "notes": "Reference item for mana + AH gold value. AH value approximate."
+    },
+    {
+      "id": "boots_of_speed",
+      "name": "Boots of Speed",
+      "cost": 400,
+      "sell": 280,
+      "item_id": 2601,
+      "stats": {
+        "movement_speed": 25
+      },
+      "gold_per_stat": {
+        "movement_speed": 16.0
+      },
+      "gold_value": 625,
+      "gold_efficiency_percent": 156.25,
+      "limitations": [
+        "Limited to 1 Boots item"
+      ],
+      "builds_into": [
+        "berserkers_greaves",
+        "boots_of_dynamism",
+        "boots_of_mana",
+        "gluttonous_greaves",
+        "ionian_boots_of_lucidity",
+        "mercurys_treads",
+        "plated_steelcaps"
+      ],
+      "notes": "Wiki confirmed: 400g cost, 280g sell, +25 MS. Gold value of MS derived from Boots (≈25g per MS point using gold_value/stats, but cost-basis = 16g). Cost analysis on wiki states gold value = 625g (using 25g per MS point)."
+    }
+  ],
+  "gold_per_stat": {
+    "attack_damage": {
+      "gold_per_point": 50.0,
+      "reference_item": "Long Sword (500g / 10 AD)"
+    },
+    "ability_power": {
+      "gold_per_point": 20.0,
+      "reference_item": "Amplifying Tome (500g / 25 AP)"
+    },
+    "health": {
+      "gold_per_point": 3.33,
+      "reference_item": "Ruby Crystal (500g / 150 HP)"
+    },
+    "armor": {
+      "gold_per_point": 25.0,
+      "reference_item": "Cloth Armor (500g / 20 armor)"
+    },
+    "magic_resist": {
+      "gold_per_point": 20.0,
+      "reference_item": "Null-Magic Mantle (500g / 25 MR)"
+    },
+    "attack_speed_percent": {
+      "gold_per_point": 41.67,
+      "reference_item": "Dagger (500g / 12% AS)"
+    },
+    "critical_rate_percent": {
+      "gold_per_point": 25.0,
+      "reference_item": "Brawler's Gloves (500g / 20% crit)"
+    },
+    "mana": {
+      "gold_per_point": 3.5,
+      "reference_item": "Sapphire Crystal (~350g for 100 mana portion)"
+    },
+    "ability_haste": {
+      "gold_per_point": 30.0,
+      "reference_item": "Sapphire Crystal (~150g for 5 AH portion, estimated)"
+    },
+    "movement_speed": {
+      "gold_per_point": 25.0,
+      "reference_item": "Boots of Speed (gold value 625g / 25 MS)"
+    },
+    "health_regen_per_5": {
+      "gold_per_point": 36.0,
+      "reference_item": "Rejuvenation Bead equivalent"
+    },
+    "mana_regen_per_5": {
+      "gold_per_point": 50.0,
+      "reference_item": "Faerie Charm equivalent"
+    },
+    "physical_vamp_percent": {
+      "gold_per_point": 37.5,
+      "reference_item": "Vampiric Scepter equivalent"
+    },
+    "omnivamp_percent": {
+      "gold_per_point": 50.0,
+      "reference_item": "estimated from item passives"
+    },
+    "armor_penetration_percent": {
+      "gold_per_point": "N/A (no basic item)",
+      "reference_item": "derived from completed items"
+    },
+    "magic_penetration_flat": {
+      "gold_per_point": "N/A (no basic item)",
+      "reference_item": "derived from completed items"
+    },
+    "tenacity_percent": {
+      "gold_per_point": "N/A (no basic item)",
+      "reference_item": "Mercury's Treads component"
+    }
+  },
+  "formulas": {
+    "damage_reduction": {
+      "armor": {
+        "formula": "damage_multiplier = 100 / (100 + armor)",
+        "reduction_formula": "reduction% = armor / (100 + armor)",
+        "example": "100 armor → 50% physical damage reduction",
+        "notes": "Works identically for negative armor (damage amplification)."
+      },
+      "magic_resist": {
+        "formula": "damage_multiplier = 100 / (100 + MR)",
+        "reduction_formula": "reduction% = MR / (100 + MR)",
+        "example": "100 MR → 50% magic damage reduction",
+        "notes": "Works identically for negative MR (damage amplification)."
+      }
+    },
+    "effective_hp": {
+      "physical": {
+        "formula": "effective_HP = HP × (1 + armor / 100)",
+        "example": "2000 HP + 100 armor = 4000 effective HP vs physical",
+        "notes": "Each point of armor = 1% more effective HP vs physical."
+      },
+      "magic": {
+        "formula": "effective_HP = HP × (1 + MR / 100)",
+        "example": "2000 HP + 100 MR = 4000 effective HP vs magic"
+      }
+    },
+    "penetration": {
+      "order_of_operations": [
+        "1. Flat armor/MR reduction (e.g., Corki passive)",
+        "2. Percentage armor/MR reduction (e.g., Black Cleaver stacks)",
+        "3. Percentage armor/MR penetration (e.g., Lord Dominik's Regards, Void Staff)",
+        "4. Flat armor/MR penetration (e.g., Serrated Dirk, Sorcerer's Shoes equivalent)"
+      ],
+      "formula": "effective_resist = (base_resist - flat_reduction) × (1 - %_reduction) × (1 - %_penetration) - flat_penetration",
+      "notes": "Penetration cannot reduce below 0 (floor at 0). Reduction CAN go below 0 (amplifies damage)."
+    },
+    "dps": {
+      "auto_attack_dps": {
+        "formula": "DPS = AD × attacks_per_second × (1 + crit_chance × (crit_damage_multiplier - 1))",
+        "example": "100 AD × 1.0 AS × (1 + 0.25 × 0.75) = 118.75 DPS",
+        "notes": "WR base crit damage = 175% (+75% bonus). IE increases crit damage."
+      },
+      "attacks_per_second": {
+        "formula": "AS = base_AS_ratio × (1 + bonus_AS%)",
+        "notes": "WR attack speed cap = 2.5 (can be exceeded with Lethal Tempo at max stacks)."
+      }
+    },
+    "ability_haste": {
+      "formula": "cooldown = base_cooldown × (100 / (100 + AH))",
+      "cdr_equivalent": "effective_CDR% = AH / (100 + AH)",
+      "examples": {
+        "10_AH": "9.09% CDR",
+        "20_AH": "16.67% CDR",
+        "40_AH": "28.57% CDR",
+        "60_AH": "37.50% CDR",
+        "80_AH": "44.44% CDR",
+        "100_AH": "50.00% CDR"
+      },
+      "notes": "AH stacks linearly (each point gives equal value). CDR has diminishing returns."
+    },
+    "gold_efficiency": {
+      "formula": "gold_efficiency% = (sum_of_stat_gold_values / total_item_cost) × 100",
+      "example": "Boots of Speed: (25 MS × 25g) / 400g = 625 / 400 = 156.25% gold efficient",
+      "notes": "Passives and actives are NOT included in gold efficiency calculation. Items with strong passives may appear gold-inefficient but are still powerful."
+    },
+    "tenacity": {
+      "formula": "total_tenacity = 1 - ((1 - source_1) × (1 - source_2) × ...)",
+      "example": "Mercury's Treads (30%) + Legend: Tenacity (30%) = 1 - (0.7 × 0.7) = 51%",
+      "notes": "Multiplicative stacking means diminishing returns. Does NOT reduce Airborne or Suppression duration."
+    },
+    "movement_speed": {
+      "calculation": [
+        "1. Start with base MS",
+        "2. Add all flat bonuses (boots, items, abilities)",
+        "3. Multiply by (1 + sum of all % bonuses)",
+        "4. Apply soft caps"
+      ],
+      "soft_caps": {
+        "tier_1": {
+          "threshold": 415,
+          "multiplier": 0.8,
+          "note": "Above 415, bonus MS is 80% effective"
+        },
+        "tier_2": {
+          "threshold": 490,
+          "multiplier": 0.5,
+          "note": "Above 490, bonus MS is 50% effective"
+        }
+      },
+      "minimum": 110,
+      "notes": "Slows reduce the final MS value. Multiple slows: strongest applies fully, rest at 30% effectiveness."
+    },
+    "adaptive_force": {
+      "formula": "1 Adaptive Force = 0.5 bonus AD OR 1 AP",
+      "determination": "Based on champion's adaptive type (most scaling ratios determine this)",
+      "notes": "WR-specific: differs from PC LoL values."
+    },
+    "level_scaling": {
+      "formula": "stat_at_level = base_stat + growth × (level - 1)",
+      "notes": "WR has 15 levels (not 18 like PC LoL). Growth is linear per level.",
+      "max_level": 15
+    },
+    "critical_strike": {
+      "base_crit_damage": "175%",
+      "ie_bonus": "+40% crit damage → 215% total",
+      "notes": "WR crit damage is 175% base (PC LoL is also 175%). Infinity Edge adds +40%."
+    },
+    "healing_reduction": {
+      "grievous_wounds": {
+        "standard": "40% healing reduction (most sources)",
+        "enhanced": "60% healing reduction (Ignite, certain item conditions)",
+        "notes": "Does not stack — highest value applies."
+      }
+    }
+  },
+  "economy": {
+    "starting_gold": 500,
+    "passive_gold_generation": {
+      "rate": "approximately 4.1 gold per second",
+      "starts_at": "0:00",
+      "notes": "WR has accelerated gold income compared to PC LoL."
+    },
+    "minion_gold": {
+      "melee_minion": {
+        "base": 65,
+        "growth_per_wave": "+1.5g"
+      },
+      "caster_minion": {
+        "base": 40,
+        "growth_per_wave": "+1.0g"
+      },
+      "siege_minion": {
+        "base": 95,
+        "growth_per_wave": "+3.0g"
+      },
+      "super_minion": {
+        "base": 80
+      },
+      "notes": "Approximate values — WR minion gold differs from PC LoL. Last-hitting grants full gold; nearby grants partial."
+    },
+    "champion_kills": {
+      "base_kill_gold": 300,
+      "first_blood": 400,
+      "assist_gold": "variable (50% of kill gold for 1 assist, split among multiple)",
+      "shutdown_gold": {
+        "2_kills": 150,
+        "3_kills": 250,
+        "4_kills": 350,
+        "5_kills": 450,
+        "6_plus_kills": 500
+      },
+      "notes": "Bounty increases with consecutive kills without dying."
+    },
+    "turret_gold": {
+      "outer_turret": 500,
+      "inner_turret": 600,
+      "inhibitor_turret": 750,
+      "first_turret_bonus": 200,
+      "local_gold": "split among nearby champions",
+      "notes": "WR turret gold values differ from PC LoL."
+    },
+    "jungle_camps": {
+      "small_camp": {
+        "gold": "40-60",
+        "xp": "varies"
+      },
+      "large_camp": {
+        "gold": "80-100",
+        "xp": "varies"
+      },
+      "scuttle_crab": {
+        "gold": 70,
+        "vision_duration": 30
+      },
+      "notes": "Smite passive (Conservation) adds additional gold. Exact values vary by camp type."
+    },
+    "sell_ratio": {
+      "formula": "sell_price = cost × 0.70",
+      "notes": "All items sell for 70% of their total cost (confirmed from Boots: 400 × 0.70 = 280)."
+    },
+    "support_items": {
+      "starting": {
+        "spectral_sickle": {
+          "cost": 500,
+          "quest_gold": "500g to complete"
+        },
+        "relic_shield": {
+          "cost": 500,
+          "quest_gold": "500g to complete"
+        },
+        "ancient_coin": {
+          "cost": 500,
+          "quest_gold": "500g to complete"
+        }
+      },
+      "upgraded": {
+        "harrowing_crescent": {
+          "upgrade": "Spectral Sickle @ 500g quest",
+          "wards": 3
+        },
+        "bulwark_of_the_mountain": {
+          "upgrade": "Relic Shield @ 500g quest",
+          "wards": 3
+        },
+        "sages_relic": {
+          "upgrade": "Ancient Coin @ 500g quest",
+          "wards": 3
+        }
+      },
+      "notes": "Support items generate bonus gold through their passives and upgrade to ward-providing items."
+    }
+  },
+  "objectives": {
+    "game_phases": {
+      "early_game": {
+        "time": "0:00 - 5:00",
+        "description": "Laning phase, first turrets, early ganks"
+      },
+      "mid_game": {
+        "time": "5:00 - 12:00",
+        "description": "Objective fights, rotations, teamfight skirmishes"
+      },
+      "late_game": {
+        "time": "12:00+",
+        "description": "Baron fights, elder dragon, full builds, game-deciding plays"
+      }
+    },
+    "dragon": {
+      "first_spawn": "4:00",
+      "respawn_timer": "4:00 after killed",
+      "types": [
+        "Infernal",
+        "Mountain",
+        "Ocean",
+        "Cloud",
+        "Chemtech",
+        "Hextech"
+      ],
+      "soul": {
+        "requirement": "4th dragon kill (by either team)",
+        "effects": {
+          "infernal_soul": "+8% AD and AP",
+          "mountain_soul": "+6% armor and MR",
+          "ocean_soul": "+4% missing HP regen per 5s",
+          "cloud_soul": "+6% movement speed",
+          "chemtech_soul": "Damage amp while low HP + brief revive",
+          "hextech_soul": "Chain lightning on-hit and abilities"
+        },
+        "notes": "Only one team can get soul. After soul, Elder Dragon spawns."
+      },
+      "individual_buffs": {
+        "infernal": "+4% AD and AP per drake",
+        "mountain": "+3% armor and MR per drake",
+        "ocean": "+2% missing HP regen per 5s per drake",
+        "cloud": "+3% movement speed per drake"
+      }
+    },
+    "rift_herald": {
+      "spawn_time": "6:00",
+      "despawn_time": "10:00 (replaced by Baron)",
+      "respawn": "4:00 after killed (if before 10:00)",
+      "reward": "Eye of the Herald — summon to charge turrets",
+      "eye_duration": "90 seconds to use",
+      "notes": "Only spawns twice maximum (at 6:00 and if killed early enough before 10:00)."
+    },
+    "baron_nashor": {
+      "spawn_time": "10:00",
+      "respawn_timer": "4:00 after killed",
+      "buff_duration": "90 seconds",
+      "buff_effects": {
+        "empowered_recall": "4 seconds → 1 second recall",
+        "homeguard_on_return": "Bonus MS from base",
+        "minion_empowerment": "Nearby minions gain increased stats (HP, damage, resistance)",
+        "adaptive_force": "+20 AD or +40 AP"
+      },
+      "notes": "Baron buff is the most powerful neutral objective buff. Enables siege and base push."
+    },
+    "elder_dragon": {
+      "spawn_condition": "After a team claims Dragon Soul (4th dragon)",
+      "respawn_timer": "5:00 after killed",
+      "buff_effects": {
+        "elder_immolation": "Damaging an enemy champion at low HP executes them",
+        "burn_damage": "Attacks and abilities deal bonus true damage as a burn",
+        "execute_threshold": "~20% HP"
+      },
+      "notes": "Elder Dragon buff is extremely powerful — team with it should force a fight."
+    },
+    "turrets": {
+      "types": [
+        "Outer",
+        "Inner",
+        "Inhibitor",
+        "Nexus Turret (WR: Nexus attacks directly)"
+      ],
+      "plate_gold": {
+        "gold_per_plate": 120,
+        "total_plates": 5,
+        "max_plate_gold": 600,
+        "plates_fall_at": "5:00 game time"
+      },
+      "turret_stats": {
+        "notes": "Turrets gain resistances over time. Nexus in WR can attack champions directly (no Nexus turrets)."
+      }
+    }
+  },
+  "champion_stats": {
+    "max_level": 15,
+    "base_crit_damage": 1.75,
+    "base_stats_list": [
+      "health",
+      "mana",
+      "health_regen_per_5",
+      "mana_regen_per_5",
+      "armor",
+      "magic_resist",
+      "attack_damage",
+      "ability_power",
+      "attack_speed",
+      "critical_damage",
+      "movement_speed",
+      "attack_range"
+    ],
+    "level_scaling_formula": "stat = base + growth × (level - 1)",
+    "notes": "WR has 15 levels. Stats scale linearly per level. Some champions have different growth rates."
+  }
+}

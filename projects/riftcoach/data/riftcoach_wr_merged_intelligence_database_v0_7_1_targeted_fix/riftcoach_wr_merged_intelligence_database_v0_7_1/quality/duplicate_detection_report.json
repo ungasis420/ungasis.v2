@@ -1,0 +1,40 @@
+{
+  "version": "0.7.0",
+  "generated_at_utc": "2026-05-21T19:32:10.976908+00:00",
+  "reports": [
+    {
+      "entity_type": "champion",
+      "record_count": 141,
+      "duplicate_ids": []
+    },
+    {
+      "entity_type": "ability",
+      "record_count": 705,
+      "duplicate_ids": []
+    },
+    {
+      "entity_type": "item",
+      "record_count": 164,
+      "duplicate_ids": []
+    },
+    {
+      "entity_type": "rune",
+      "record_count": 53,
+      "duplicate_ids": []
+    },
+    {
+      "entity_type": "spell",
+      "record_count": 10,
+      "duplicate_ids": []
+    }
+  ],
+  "alias_notes": [
+    "jarvan -> jarvan_iv",
+    "kai_sa -> kaisa",
+    "kha_zix -> khazix",
+    "k_sante -> ksante",
+    "kog_maw -> kogmaw",
+    "nunu_willump -> nunu",
+    "serylda_grudge/serylda_s_grudge -> seryldas_grudge"
+  ]
+}

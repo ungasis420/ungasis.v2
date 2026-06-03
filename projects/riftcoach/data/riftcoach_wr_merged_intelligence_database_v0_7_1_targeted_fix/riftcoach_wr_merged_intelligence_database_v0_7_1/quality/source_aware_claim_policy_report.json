@@ -1,0 +1,4 @@
+{
+  "version": "0.7.0",
+  "rule": "Generated strategy is not official fact. Exact numeric stats/gold/cooldowns are preserved but must remain pending/unverified unless field-level source_status supports source_verified."
+}

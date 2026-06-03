@@ -1,0 +1,1065 @@
+{
+  "_meta": {
+    "game": "League of Legends: Wild Rift",
+    "patch": "7.1e",
+    "category": "Magic Items (Upgraded)",
+    "total_items": 23,
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/WR:Item",
+      "https://wiki.leagueoflegends.com/en-us/WR:Rabadon%27s_Deathcap",
+      "https://wiki.leagueoflegends.com/en-us/WR:Luden%27s_Echo",
+      "https://wiki.leagueoflegends.com/en-us/WR:Riftmaker",
+      "https://wiki.leagueoflegends.com/en-us/WR:Rod_of_Ages",
+      "https://www.wildriftfire.com/item-list",
+      "https://wr-meta.com/items/",
+      "https://www.riftgg.app/en/items"
+    ],
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "items": [
+    {
+      "id": "rabadons_deathcap",
+      "name": "Rabadon's Deathcap",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "S",
+      "cost": 3600,
+      "sell": 2520,
+      "stats": {
+        "ability_power": 120
+      },
+      "gold_value": 2400,
+      "gold_efficiency_percent": 66.7,
+      "passives": [
+        {
+          "name": "Overkill",
+          "desc": "+40% total ability power."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Rabadon's Deathcap"
+      ],
+      "builds_from": [
+        "needlessly_large_rod",
+        "blasting_wand",
+        "+500"
+      ],
+      "effect_tags": [
+        "ap_multiplier",
+        "scaling",
+        "raw_ap",
+        "late_game"
+      ],
+      "intended_users": [
+        "mages",
+        "ap_assassins",
+        "ap_supports"
+      ],
+      "when_to_build": "2nd-3rd item when you need maximum AP scaling",
+      "why_to_build": "40% AP multiplier is unmatched; mandatory on almost all AP champions",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "ludens_echo",
+      "name": "Luden's Echo",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 85,
+        "ability_haste": 20,
+        "mana": 300
+      },
+      "gold_value": 3350,
+      "gold_efficiency_percent": 111.7,
+      "passives": [
+        {
+          "name": "Discordic Echo",
+          "desc": "Moving/casting builds Discord to 100 stacks. At max, next ability deals 110 (+10% AP) bonus magic damage to target + up to 3 nearby enemies."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Luden's Echo"
+      ],
+      "builds_from": [
+        "lost_chapter",
+        "blasting_wand",
+        "+350"
+      ],
+      "effect_tags": [
+        "burst",
+        "mana",
+        "ability_haste",
+        "aoe_proc",
+        "waveclear"
+      ],
+      "intended_users": [
+        "burst_mages",
+        "poke_mages"
+      ],
+      "when_to_build": "Need burst + mana; poke/waveclear playstyle",
+      "why_to_build": "Best burst mage item; Discord proc adds AoE damage; mana + AH solve sustain",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "crown_of_the_shattered_queen",
+      "name": "Crown of the Shattered Queen",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 80,
+        "ability_haste": 15,
+        "health": 300
+      },
+      "gold_value": 3049,
+      "gold_efficiency_percent": 101.6,
+      "passives": [
+        {
+          "name": "Safeguard",
+          "desc": "If not damaged by champions for 5s, gain damage reduction shield. Taking champion damage consumes shield and grants 10-40% bonus AP for 4s."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Crown of the Shattered Queen"
+      ],
+      "builds_from": [
+        "lost_chapter",
+        "ruby_crystal",
+        "+350"
+      ],
+      "effect_tags": [
+        "anti_burst",
+        "ap",
+        "health",
+        "safety",
+        "ap_boost"
+      ],
+      "intended_users": [
+        "immobile_mages",
+        "mages_vs_assassins"
+      ],
+      "when_to_build": "Facing burst assassins; need survivability + damage",
+      "why_to_build": "Anti-burst shield + conditional AP boost; best defensive mage item",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "infinity_orb",
+      "name": "Infinity Orb",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "ability_power": 60
+      },
+      "gold_value": 1200,
+      "gold_efficiency_percent": 44.4,
+      "passives": [
+        {
+          "name": "Destiny",
+          "desc": "Gain 5-25% bonus magic penetration based on target's missing HP. Below 35% HP, abilities can crit for 20% bonus magic damage."
+        },
+        {
+          "name": "Base",
+          "desc": "+7% magic penetration."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "oblivion_orb",
+        "blasting_wand",
+        "+300"
+      ],
+      "effect_tags": [
+        "magic_pen",
+        "execute",
+        "crit",
+        "missing_hp_scaling"
+      ],
+      "intended_users": [
+        "burst_mages",
+        "ap_assassins"
+      ],
+      "when_to_build": "Need magic pen + execute; enemy below 35% HP often",
+      "why_to_build": "Only AP crit item; magic pen scales with missing HP; great for bursting low targets",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "awakened_soulstealer",
+      "name": "Awakened Soulstealer",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2500,
+      "sell": 1750,
+      "stats": {
+        "ability_power": 65,
+        "ability_haste": 25
+      },
+      "gold_value": 2050,
+      "gold_efficiency_percent": 82.0,
+      "passives": [
+        {
+          "name": "Soulflare",
+          "desc": "Champion takedowns reduce ultimate cooldown by 3%."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Soulstealer item"
+      ],
+      "builds_from": [
+        "fiendish_codex",
+        "amplifying_tome",
+        "+400"
+      ],
+      "effect_tags": [
+        "ult_cdr",
+        "ability_haste",
+        "cheap",
+        "snowball"
+      ],
+      "intended_users": [
+        "ult_reliant_mages",
+        "Lux",
+        "Seraphine",
+        "Ahri"
+      ],
+      "when_to_build": "Champion relies heavily on ultimate; cost-efficient early buy",
+      "why_to_build": "Cheapest completed AP item; ult CDR is massive on impactful ultimates",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "riftmaker",
+      "name": "Riftmaker",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3200,
+      "sell": 2240,
+      "stats": {
+        "ability_power": 80,
+        "ability_haste": 15,
+        "health": 150
+      },
+      "gold_value": 2550,
+      "gold_efficiency_percent": 79.7,
+      "passives": [
+        {
+          "name": "Assimilation",
+          "desc": "+13% omnivamp."
+        },
+        {
+          "name": "Void Corruption",
+          "desc": "In champion combat, gain 1 stack/s (max 3). Each stack = +2.5% bonus damage (max 9%). At max stacks, bonus damage becomes true damage."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Riftmaker"
+      ],
+      "builds_from": [
+        "haunting_guise",
+        "blasting_wand",
+        "+400"
+      ],
+      "effect_tags": [
+        "omnivamp",
+        "sustained_damage",
+        "true_damage",
+        "dps_mage"
+      ],
+      "intended_users": [
+        "dps_mages",
+        "ap_bruisers",
+        "Swain",
+        "Mordekaiser",
+        "Kayle"
+      ],
+      "when_to_build": "Need sustained AP damage + healing in extended fights",
+      "why_to_build": "13% omnivamp is highest in-game; true damage at 3 stacks shreds tanks",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "rod_of_ages",
+      "name": "Rod of Ages",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "ability_power": 60,
+        "health": 250,
+        "mana": 300
+      },
+      "gold_value": 3082,
+      "gold_efficiency_percent": 110.1,
+      "passives": [
+        {
+          "name": "Eternity",
+          "desc": "Restore mana = 15% damage taken from champions. Heal = 20% mana spent (max 25 per cast)."
+        },
+        {
+          "name": "Veteran",
+          "desc": "Gain 25 HP + 10 mana + 6 AP every 35s, 10 stacks max (+250 HP, +100 mana, +60 AP)."
+        },
+        {
+          "name": "Base",
+          "desc": "+7% magic penetration."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Eternity item"
+      ],
+      "builds_from": [
+        "catalyst_of_aeons",
+        "blasting_wand",
+        "+400"
+      ],
+      "effect_tags": [
+        "scaling",
+        "health",
+        "mana",
+        "sustain",
+        "stacking"
+      ],
+      "intended_users": [
+        "scaling_mages",
+        "Kassadin",
+        "Ryze",
+        "Swain"
+      ],
+      "when_to_build": "Rush first item; game will go long enough to fully stack",
+      "why_to_build": "Extremely gold-efficient when stacked; free 120 AP + 500 HP + 400 mana total",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "liandrys_torment",
+      "name": "Liandry's Torment",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3200,
+      "sell": 2240,
+      "stats": {
+        "ability_power": 80,
+        "ability_haste": 15,
+        "health": 350
+      },
+      "gold_value": 3216,
+      "gold_efficiency_percent": 100.5,
+      "passives": [
+        {
+          "name": "Torment",
+          "desc": "Abilities deal 1% target's max HP as magic damage per second for 3s. Deal 6% bonus damage to slowed/immobilized targets."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "haunting_guise",
+        "kindlegem",
+        "+500"
+      ],
+      "effect_tags": [
+        "dot",
+        "max_hp_damage",
+        "anti_tank",
+        "burnx",
+        "cc_synergy"
+      ],
+      "intended_users": [
+        "dps_mages",
+        "dot_mages",
+        "Brand",
+        "Singed",
+        "Lillia"
+      ],
+      "when_to_build": "Enemy has multiple HP-stacking tanks/bruisers",
+      "why_to_build": "%HP burn shreds tanks; amp vs CC targets synergizes with CC-heavy teams",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "morellonomicon",
+      "name": "Morellonomicon",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "C",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 70,
+        "health": 300
+      },
+      "gold_value": 2399,
+      "gold_efficiency_percent": 80.0,
+      "passives": [
+        {
+          "name": "Affliction",
+          "desc": "Magic damage inflicts 40% Grievous Wounds for 3s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "oblivion_orb",
+        "ruby_crystal",
+        "+400"
+      ],
+      "effect_tags": [
+        "grievous_wounds",
+        "anti_heal",
+        "health"
+      ],
+      "intended_users": [
+        "ap_champs_vs_healing"
+      ],
+      "when_to_build": "Enemy has heavy healing AND you deal magic damage",
+      "why_to_build": "AP anti-heal option; but weaker stats than alternatives — buy only when needed",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "lich_bane",
+      "name": "Lich Bane",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "ability_power": 80,
+        "ability_haste": 10
+      },
+      "gold_value": 1900,
+      "gold_efficiency_percent": 67.9,
+      "passives": [
+        {
+          "name": "Spellblade",
+          "desc": "After using ability, next basic attack deals 75% base AD + 50% AP bonus magic damage. 1.5s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Spellblade item"
+      ],
+      "builds_from": [
+        "sheen",
+        "amplifying_tome",
+        "+500"
+      ],
+      "effect_tags": [
+        "spellblade",
+        "burst",
+        "auto_weave",
+        "split_push"
+      ],
+      "intended_users": [
+        "auto_weaving_mages",
+        "Fizz",
+        "Twisted Fate",
+        "Ekko",
+        "Diana"
+      ],
+      "when_to_build": "Champion weaves autos between abilities; need tower damage",
+      "why_to_build": "Highest burst Spellblade for AP; adds physical-like tower threat to mages",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "archangels_staff",
+      "name": "Archangel's Staff",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2600,
+      "sell": 1820,
+      "stats": {
+        "ability_power": 35,
+        "ability_haste": 25,
+        "mana": 250
+      },
+      "gold_value": 2325,
+      "gold_efficiency_percent": 89.4,
+      "passives": [
+        {
+          "name": "Awe",
+          "desc": "Gain bonus AP equal to 1% max mana."
+        },
+        {
+          "name": "Mana Charge",
+          "desc": "Abilities grant 8 mana, 3s CD."
+        },
+        {
+          "name": "Transform",
+          "desc": "At 360 stacks, transforms into Seraph's Embrace (+HP shield active)."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "tear_of_the_goddess",
+        "amplifying_tome",
+        "+400"
+      ],
+      "effect_tags": [
+        "mana",
+        "scaling",
+        "transform",
+        "ability_haste"
+      ],
+      "intended_users": [
+        "mana_hungry_mages",
+        "Ryze",
+        "Kassadin",
+        "Orianna"
+      ],
+      "when_to_build": "Champion spams abilities constantly; needs infinite mana",
+      "why_to_build": "Seraph's transform gives huge AP from mana + shield for survival",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "cosmic_drive",
+      "name": "Cosmic Drive",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 75,
+        "ability_haste": 30,
+        "health": 200
+      },
+      "gold_value": 3066,
+      "gold_efficiency_percent": 102.2,
+      "passives": [
+        {
+          "name": "Spelldance",
+          "desc": "Dealing ability damage to champion grants 15% MS decaying over 2s. On 3-hit, gain 20% MS for 2s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "fiendish_codex",
+        "ruby_crystal",
+        "+700"
+      ],
+      "effect_tags": [
+        "ability_haste",
+        "ms",
+        "kiting",
+        "sustained_casting"
+      ],
+      "intended_users": [
+        "kiting_mages",
+        "sustained_casters"
+      ],
+      "when_to_build": "Need maximum AH + mobility; kiting playstyle",
+      "why_to_build": "Highest AH on single AP item (30); MS passive aids repositioning",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "horizon_focus",
+      "name": "Horizon Focus",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 85,
+        "health": 150
+      },
+      "gold_value": 2200,
+      "gold_efficiency_percent": 73.3,
+      "passives": [
+        {
+          "name": "Hypershot",
+          "desc": "Damaging an enemy from >800 range reveals them and marks them. Marked targets take 10% increased damage for 6s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "needlessly_large_rod",
+        "ruby_crystal",
+        "+400"
+      ],
+      "effect_tags": [
+        "damage_amp",
+        "long_range",
+        "reveal",
+        "artillery"
+      ],
+      "intended_users": [
+        "artillery_mages",
+        "Lux",
+        "Ziggs",
+        "Xerath",
+        "Vel'Koz"
+      ],
+      "when_to_build": "Champion consistently hits abilities from 800+ range",
+      "why_to_build": "10% damage amp is huge multiplier; reveal prevents escapes",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "rylais_crystal_scepter",
+      "name": "Rylai's Crystal Scepter",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2600,
+      "sell": 1820,
+      "stats": {
+        "ability_power": 60,
+        "health": 400
+      },
+      "gold_value": 2532,
+      "gold_efficiency_percent": 97.4,
+      "passives": [
+        {
+          "name": "Rimefrost",
+          "desc": "Abilities slow enemies by 30% for 1s."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "blasting_wand",
+        "giants_belt",
+        "+300"
+      ],
+      "effect_tags": [
+        "slow",
+        "health",
+        "utility",
+        "cc_add",
+        "peel"
+      ],
+      "intended_users": [
+        "dps_mages",
+        "Singed",
+        "Aurelion Sol",
+        "Brand"
+      ],
+      "when_to_build": "Champion has persistent AoE abilities; need self-peel",
+      "why_to_build": "Adds CC to every ability hit; 400 HP for survivability; synergy with Liandry's",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "oceanids_trident",
+      "name": "Oceanid's Trident",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 80,
+        "health": 300,
+        "mana": 300
+      },
+      "gold_value": 3649,
+      "gold_efficiency_percent": 121.6,
+      "passives": [
+        {
+          "name": "Brine",
+          "desc": "Abilities apply Drowning (3% current HP magic damage over 3s). Champion takedowns in river grant bonus gold."
+        }
+      ],
+      "actives": [],
+      "limitations": [
+        "Limited to 1 Oceanid's Trident"
+      ],
+      "builds_from": [
+        "lost_chapter",
+        "ruby_crystal",
+        "+350"
+      ],
+      "effect_tags": [
+        "dot",
+        "current_hp",
+        "mana",
+        "health",
+        "river_bonus"
+      ],
+      "intended_users": [
+        "mages",
+        "support_mages"
+      ],
+      "when_to_build": "Need mana + HP + damage; river objective fights",
+      "why_to_build": "Well-rounded stats (AP+HP+mana) + %HP DoT; river gold is bonus",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "bandle_fantasy",
+      "name": "Bandle Fantasy",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 70,
+        "ability_haste": 25,
+        "mana": 300
+      },
+      "gold_value": 3200,
+      "gold_efficiency_percent": 106.7,
+      "passives": [
+        {
+          "name": "Bandle Blast",
+          "desc": "At 100 stacks (from moving/casting), next ability fires bonus projectile dealing 50 (+10% AP) magic damage. Can hit same target."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "lost_chapter",
+        "fiendish_codex",
+        "+300"
+      ],
+      "effect_tags": [
+        "burst_proc",
+        "mana",
+        "ability_haste",
+        "poke"
+      ],
+      "intended_users": [
+        "poke_mages",
+        "ability_spammers"
+      ],
+      "when_to_build": "Spam abilities frequently; need mana + AH",
+      "why_to_build": "Passive proc adds burst to every combo; mana + AH for sustained casting",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "psychic_projector",
+      "name": "Psychic Projector",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 80,
+        "ability_haste": 15,
+        "health": 350
+      },
+      "gold_value": 3216,
+      "gold_efficiency_percent": 107.2,
+      "passives": [
+        {
+          "name": "Mind Surge",
+          "desc": "Dealing ability damage to champion grants shield (150 + 15% AP) for 3s. 20s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "fiendish_codex",
+        "ruby_crystal",
+        "+700"
+      ],
+      "effect_tags": [
+        "shield",
+        "health",
+        "safety",
+        "anti_burst"
+      ],
+      "intended_users": [
+        "immobile_mages",
+        "battle_mages"
+      ],
+      "when_to_build": "Need AP + survivability; no Crown needed",
+      "why_to_build": "Shield on damage dealt gives proactive defense; good HP + AH",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "malignance",
+      "name": "Malignance",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "ability_power": 80,
+        "ability_haste": 25,
+        "mana": 300
+      },
+      "gold_value": 3400,
+      "gold_efficiency_percent": 125.9,
+      "passives": [
+        {
+          "name": "Hatefog",
+          "desc": "Casting ultimate creates a zone dealing 10 (+1.5% AP) magic damage per 0.5s for 3.5s. 60s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "lost_chapter",
+        "amplifying_tome",
+        "+200"
+      ],
+      "effect_tags": [
+        "ult_synergy",
+        "zone_damage",
+        "mana",
+        "ability_haste"
+      ],
+      "intended_users": [
+        "ult_combo_mages",
+        "Fiddlesticks",
+        "Lissandra",
+        "Seraphine"
+      ],
+      "when_to_build": "Champion's ult groups enemies in a zone",
+      "why_to_build": "Cheap AP + mana; Hatefog zone adds AoE burn to ult teamfights",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "nashors_tooth",
+      "name": "Nashor's Tooth",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "D",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 50,
+        "attack_speed_percent": 50
+      },
+      "gold_value": 3084,
+      "gold_efficiency_percent": 102.8,
+      "passives": [
+        {
+          "name": "Icathian Bite",
+          "desc": "Basic attacks deal 15 (+20% AP) bonus magic damage on-hit."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "stinger",
+        "blasting_wand",
+        "+200"
+      ],
+      "effect_tags": [
+        "on_hit",
+        "attack_speed",
+        "ap",
+        "auto_attack_mage"
+      ],
+      "intended_users": [
+        "ap_auto_attackers",
+        "Kayle",
+        "Diana",
+        "Teemo"
+      ],
+      "when_to_build": "Champion auto-attacks frequently and scales with AP",
+      "why_to_build": "Only AP + AS item; on-hit scales with AP; but niche use cases",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "mejais_soulstealer",
+      "name": "Mejai's Soulstealer",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "C",
+      "cost": 1600,
+      "sell": 1120,
+      "stats": {
+        "ability_power": 20
+      },
+      "gold_value": 400,
+      "gold_efficiency_percent": 25.0,
+      "passives": [
+        {
+          "name": "Glory",
+          "desc": "Gain stacks on champion takedowns (max 25). Each stack = 4 AP. At 25 stacks = 120 AP total + 10% MS. Lose 10 stacks on death."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "amplifying_tome",
+        "+1100"
+      ],
+      "effect_tags": [
+        "snowball",
+        "stacking",
+        "high_risk",
+        "ms_at_max"
+      ],
+      "intended_users": [
+        "snowball_mages"
+      ],
+      "when_to_build": "Extremely ahead; confident you won't die repeatedly",
+      "why_to_build": "Potentially most gold-efficient AP item (120 AP for 1600g); but high risk",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "void_staff",
+      "name": "Void Staff",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2800,
+      "sell": 1960,
+      "stats": {
+        "ability_power": 70
+      },
+      "gold_value": 1400,
+      "gold_efficiency_percent": 50.0,
+      "passives": [
+        {
+          "name": "Dissolve",
+          "desc": "+40% magic penetration."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "blasting_wand",
+        "amplifying_tome",
+        "+600"
+      ],
+      "effect_tags": [
+        "magic_penetration",
+        "anti_mr",
+        "scaling"
+      ],
+      "intended_users": [
+        "all_mages_vs_mr"
+      ],
+      "when_to_build": "Enemy building MR items (Force of Nature, Spirit Visage)",
+      "why_to_build": "40% magic pen is the only way to cut through heavy MR stacking",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "stormsurge",
+      "name": "Stormsurge",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "A",
+      "cost": 2700,
+      "sell": 1890,
+      "stats": {
+        "ability_power": 85
+      },
+      "gold_value": 1700,
+      "gold_efficiency_percent": 63.0,
+      "passives": [
+        {
+          "name": "Squall",
+          "desc": "+5% movement speed."
+        },
+        {
+          "name": "Stormraider",
+          "desc": "Dealing 30% of champion's HP within 2.5s creates a lightning zone after 2s dealing 100-200 bonus magic damage. 15s CD."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "hextech_alternator",
+        "+600"
+      ],
+      "effect_tags": [
+        "burst",
+        "ms",
+        "execute_ish",
+        "ap"
+      ],
+      "intended_users": [
+        "burst_mages",
+        "ap_assassins"
+      ],
+      "when_to_build": "Need burst follow-up damage; mobile playstyle",
+      "why_to_build": "MS + delayed burst zone combo is great for assassin mages",
+      "notes": null,
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "searing_crown",
+      "name": "Searing Crown",
+      "category": "Magic",
+      "item_type": "upgraded",
+      "tier": "B",
+      "cost": 3000,
+      "sell": 2100,
+      "stats": {
+        "ability_power": 70,
+        "health": 350,
+        "ability_haste": 15
+      },
+      "gold_value": 3016,
+      "gold_efficiency_percent": 100.5,
+      "passives": [
+        {
+          "name": "Immolate",
+          "desc": "Deal magic damage per second to nearby enemies based on bonus HP. Increased damage vs monsters/minions."
+        }
+      ],
+      "actives": [],
+      "limitations": [],
+      "builds_from": [
+        "bamis_cinder",
+        "blasting_wand",
+        "+400"
+      ],
+      "effect_tags": [
+        "immolate",
+        "health",
+        "waveclear",
+        "ap_tank"
+      ],
+      "intended_users": [
+        "ap_bruisers",
+        "ap_junglers",
+        "Amumu",
+        "Diana jungle"
+      ],
+      "when_to_build": "AP champion needs tanky waveclear item",
+      "why_to_build": "AP version of Sunfire; Immolate passive for clearing + proximity damage",
+      "notes": null,
+      "patch_version": "7.1e"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/graph_view_layout.schema.json",
+  "title": "Graph View Layout",
+  "description": "Graph layout settings.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "layout_id",
+    "layout_type"
+  ],
+  "properties": {
+    "layout_id": {
+      "type": "string"
+    },
+    "layout_type": {
+      "type": "string"
+    },
+    "max_nodes": {
+      "type": "integer"
+    },
+    "depth": {
+      "type": "integer"
+    },
+    "physics": {
+      "type": "object"
+    },
+    "clusters": {
+      "type": "array"
+    }
+  }
+}

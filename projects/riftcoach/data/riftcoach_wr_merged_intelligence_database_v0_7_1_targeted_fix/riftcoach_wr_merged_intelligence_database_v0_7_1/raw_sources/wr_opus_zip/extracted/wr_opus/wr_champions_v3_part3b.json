@@ -1,0 +1,1333 @@
+{
+  "_meta": {
+    "game": "Wild Rift",
+    "patch": "7.1e",
+    "chunk": "7b — Champions T-Z",
+    "total": 31,
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "champions": [
+    {
+      "id": "talon",
+      "name": "Talon",
+      "title": "the Blade's Shadow",
+      "classes": [
+        "Assassin"
+      ],
+      "positions": [
+        "Mid",
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Blade's End: 3 abilities/AAs on same target → bleed for massive damage",
+        "Q": "Noxian Diplomacy: stab in melee (crit if in range) or ranged poke",
+        "W": "Rake: throw+return blades in cone. Return slows",
+        "E": "Assassin's Path: vault over any terrain (per-wall CD). Unique roaming tool",
+        "R": "Shadow Assault: become invisible + ring of blades. Converge for AoE when breaking stealth"
+      },
+      "playstyle": "Roaming assassin. E parkour over walls = fastest roamer. Passive bleed for burst.",
+      "power_spikes": [
+        "Level 2 (W+Q)",
+        "Level 5 R",
+        "Youmuu's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy mids",
+          "side lanes"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Malphite",
+          "armor stackers"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "teemo",
+      "name": "Teemo",
+      "title": "the Swift Scout",
+      "classes": [
+        "Specialist"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Guerrilla Warfare: camouflage after 1.5s still. Exiting = AS boost",
+        "Q": "Blinding Dart: targeted blind + magic damage. Blocks AAs",
+        "W": "Move Quick: passive MS. Active: doubled MS (breaks on damage)",
+        "E": "Toxic Shot: AAs poison dealing magic DoT",
+        "R": "Noxious Trap: place invisible mushroom traps. Step on = AoE slow + poison damage"
+      },
+      "playstyle": "Lane bully. Blind shuts down auto-attackers. Shrooms for map control + damage.",
+      "power_spikes": [
+        "Level 1 (AA harass)",
+        "Liandry's",
+        "Nashor's Tooth"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Auto-attackers",
+          "Tryndamere",
+          "Jax"
+        ],
+        "weak_vs": [
+          "Gap closers",
+          "Irelia",
+          "all-in lanes"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "thresh",
+      "name": "Thresh",
+      "title": "the Chain Warden",
+      "classes": [
+        "Catcher"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Damnation: collect souls from minion/champ deaths for permanent armor + AP",
+        "Q": "Death Sentence: hook skillshot → pull toward you. Recast: dash to hooked target",
+        "W": "Dark Passage: throw lantern to location. Ally can click to dash to Thresh + shield",
+        "E": "Flay: sweep enemies in direction (push or pull) + passive AA empowerment",
+        "R": "The Box: create pentagon of walls. First wall hit = massive slow + damage"
+      },
+      "playstyle": "Playmaker support. Hook engage. Lantern saves allies. Flay peels. R zones.",
+      "power_spikes": [
+        "Level 2 (Q+E)",
+        "Level 5 R",
+        "Zeke's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy targets",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Morgana",
+          "Braum",
+          "tanky lanes"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "tristana",
+      "name": "Tristana",
+      "title": "the Yordle Gunner",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon",
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Draw a Bead: attack range increases per level (longest range late game)",
+        "Q": "Rapid Fire: massive AS steroid for 7s",
+        "W": "Rocket Jump: leap to location dealing AoE + slow. Resets on kill/assist or E detonation",
+        "E": "Explosive Charge: place bomb on target. AAs stack it. At 4 stacks = massive explosion",
+        "R": "Buster Shot: knock target back + massive damage. Self-peel execute"
+      },
+      "playstyle": "All-in ADC. W jump reset on kills = snowball. E bomb burst. R self-peel.",
+      "power_spikes": [
+        "Level 2 (W+E)",
+        "Infinity Edge",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Towers",
+          "burst trades"
+        ],
+        "weak_vs": [
+          "Caitlyn",
+          "poke lanes",
+          "Draven"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "tryndamere",
+      "name": "Tryndamere",
+      "title": "the Barbarian King",
+      "classes": [
+        "Skirmisher"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Fury",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Battle Fury: crits generate fury. More fury = more crit chance",
+        "Q": "Bloodlust: passive AD scaling missing HP. Active: heal (scales with fury consumed)",
+        "W": "Mocking Shout: AoE AD reduction. Slow enemies facing away",
+        "E": "Spinning Slash: dash through enemies dealing damage. CD reduced by crits",
+        "R": "Undying Rage: CANNOT DIE for 5s. Cannot be reduced below 1 HP. No counterplay."
+      },
+      "playstyle": "Split-push king. R = unkillable for 5s. Crit-based scaling. Forces 2+ to answer.",
+      "power_spikes": [
+        "Level 5 R",
+        "Kraken/Navori",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "1v1 split push",
+          "towers"
+        ],
+        "weak_vs": [
+          "Malphite",
+          "Nasus",
+          "Tabis + armor"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "twisted_fate",
+      "name": "Twisted Fate",
+      "title": "the Card Master",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Loaded Dice: bonus gold on unit kills",
+        "Q": "Wild Cards: throw 3 cards in cone dealing magic damage",
+        "W": "Pick a Card: cycle through Blue (mana restore), Red (AoE slow), Gold (stun). Gold is key",
+        "E": "Stacked Deck: every 4th AA deals bonus magic. Passive AS",
+        "R": "Destiny: reveal all enemies globally. Recast: teleport to target location (semi-global)"
+      },
+      "playstyle": "Map-control mage. R teleport ganks with Gold Card stun. Global pressure.",
+      "power_spikes": [
+        "Level 5 R",
+        "Rod of Ages",
+        "Lich Bane"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Side lanes",
+          "roaming"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "Zed"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch",
+      "title": "the Plague Rat",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Deadly Venom: AAs and abilities apply poison stacks (max 6). Deals true damage/s",
+        "Q": "Ambush: enter camouflage + AS boost when revealing. Resets on takedown",
+        "W": "Venom Cask: AoE slow zone + apply poison stacks",
+        "E": "Contaminate: deal physical damage to all poisoned enemies (scales with stacks)",
+        "R": "Spray and Pray: gain bonus range + AD. AAs pierce through targets in a line"
+      },
+      "playstyle": "Stealth ADC. Q invisible for flanks. R for teamfight AoE piercing autos.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK/Kraken",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Flanks",
+          "grouped enemies"
+        ],
+        "weak_vs": [
+          "Control wards",
+          "Lee Sin",
+          "early aggression"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "urgot",
+      "name": "Urgot",
+      "title": "the Dreadnought",
+      "classes": [
+        "Juggernaut"
+      ],
+      "positions": [
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Echoing Flames: 6 legs with individual CDs. AAs from each direction fire shotgun blast (%max HP)",
+        "Q": "Corrosive Charge: skillshot AoE slow + damage",
+        "W": "Purge: toggle rapid-fire AAs at nearest enemy. Reduced MS during. Triggers legs",
+        "E": "Disdain: dash + flip enemy over you (behind). Shield on cast",
+        "R": "Fear Beyond Death: skillshot execute. If target drops below 25% HP → reel in + execute (suppress + kill)"
+      },
+      "playstyle": "Ranged juggernaut. Rotate legs for %HP damage. R execute is terrifying finisher.",
+      "power_spikes": [
+        "Level 5 R",
+        "Black Cleaver",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee tops",
+          "tanks"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "Fiora"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "varus",
+      "name": "Varus",
+      "title": "the Arrow of Retribution",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon",
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Living Vengeance: kills grant AS boost",
+        "Q": "Piercing Arrow: charge Q for increased range + damage. Long-range poke",
+        "W": "Blighted Quiver: passive: AAs apply blight (3 stacks). Abilities detonate for %max HP magic",
+        "E": "Hail of Arrows: AoE + grievous wounds zone + slow",
+        "R": "Chain of Corruption: root skillshot that spreads to nearby enemies after delay"
+      },
+      "playstyle": "Hybrid poke ADC. Q poke. W blight stacks for %HP burst. R AoE root engage.",
+      "power_spikes": [
+        "Level 1 Q poke",
+        "Lethality or On-hit build",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "poke comps"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "dive",
+          "Zed"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "vayne",
+      "name": "Vayne",
+      "title": "the Night Hunter",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon",
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Night Hunter: bonus MS moving toward enemy champions",
+        "Q": "Tumble: short dash + next AA deals bonus damage. R = invisible during Tumble",
+        "W": "Silver Bolts: every 3rd AA on same target deals %max HP true damage",
+        "E": "Condemn: knock target back. If target hits wall = stun + bonus damage",
+        "R": "Final Hour: bonus AD + enhanced passive MS + Tumble grants invisibility. Duration extends on kills"
+      },
+      "playstyle": "Tank-shredding hypercarry. W true damage melts anyone. Short range demands skill.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Tanks",
+          "HP-stackers",
+          "1v1"
+        ],
+        "weak_vs": [
+          "Caitlyn",
+          "Draven",
+          "hard engage",
+          "burst"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "veigar",
+      "name": "Veigar",
+      "title": "the Tiny Master of Evil",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "abilities": {
+        "P": "Phenomenal Evil Power: ability hits on champs + Q last-hits grant permanent AP stacks",
+        "Q": "Baleful Strike: line skillshot. Killing units grants +1 AP permanently",
+        "W": "Dark Matter: delayed AoE nuke from sky",
+        "E": "Event Horizon: create cage (pentagon). Enemies touching walls are STUNNED",
+        "R": "Primordial Burst: point-click nuke. Deals bonus damage based on target's missing HP"
+      },
+      "playstyle": "Infinite AP scaling mage. E cage is zone control. R point-click deletes squishies late.",
+      "power_spikes": [
+        "200+ AP stacks",
+        "Rabadon's",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy targets",
+          "late game"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "Zed",
+          "early aggression"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "velkoz",
+      "name": "Vel'Koz",
+      "title": "the Eye of the Void",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Mid",
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Organic Deconstruction: 3 ability hits = bonus true damage proc",
+        "Q": "Plasma Fission: skillshot that splits at 90° angles at recast/max range",
+        "W": "Void Rift: line AoE that opens after delay for second hit",
+        "E": "Tectonic Disruption: AoE knockup (small) in line",
+        "R": "Lifeform Disintegration Ray: channel massive laser in direction. Applies passive rapidly. True damage with 3 procs"
+      },
+      "playstyle": "Artillery mage. Geometry Q angles. R laser melts grouped enemies. Passive = true damage.",
+      "power_spikes": [
+        "Level 3 (full combo)",
+        "Level 5 R",
+        "Luden's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "tanks (true dmg)"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "gap closers",
+          "Fizz"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "vex",
+      "name": "Vex",
+      "title": "the Gloomist",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Doom 'n Gloom: abilities apply Gloom. Dashing/blinking enemies near Vex get feared (limited CD)",
+        "Q": "Mistral Bolt: line skillshot + accelerating wave",
+        "W": "Personal Space: AoE burst around self + shield",
+        "E": "Looming Darkness: AoE shadow that slows + deals damage + applies Gloom",
+        "R": "Shadow Surge: fire shadow in line. On hit, dash to enemy + AoE damage. Resets on kill"
+      },
+      "playstyle": "Anti-mobility burst mage. Fear dashing enemies. R dashes to target for burst.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Mobile champs",
+          "Yasuo",
+          "Irelia"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "long-range poke"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "vi",
+      "name": "Vi",
+      "title": "the Piltover Enforcer",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Blast Shield: ability use grants shield based on max HP",
+        "Q": "Vault Breaker: charge dash. Longer charge = more range + damage. Knocks back on hit",
+        "W": "Denting Blows: 3 hits on same target = %max HP bonus + AS buff",
+        "E": "Relentless Force: next 2 AAs deal bonus damage + 3rd is AoE wave",
+        "R": "Cease and Desist: dash to target champion (unstoppable). Suppress + knockup on arrival + AoE knockup"
+      },
+      "playstyle": "Lockdown jungler. Q charge engage. R point-click suppress on priority target.",
+      "power_spikes": [
+        "Level 3",
+        "Level 5 R",
+        "Trinity Force"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy carries",
+          "immobile ADCs"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Morgana",
+          "QSS"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "viego",
+      "name": "Viego",
+      "title": "the Ruined King",
+      "classes": [
+        "Skirmisher"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "S",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Sovereign's Domination: killing champs lets you possess their body (use their abilities)",
+        "Q": "Blade of the Ruined King: AA deals %current HP bonus. Q stab heals",
+        "W": "Spectral Maw: charge → dash + stun on hit (longer charge = longer stun)",
+        "E": "Harrowed Path: send wraith through terrain. Inside: camouflage + AS + MS",
+        "R": "Heartbreaker: blink to target, dealing %missing HP damage. Execute resets on possession"
+      },
+      "playstyle": "Reset assassin/bruiser. Kill → possess → heal → R reset. Snowball monster in teamfights.",
+      "power_spikes": [
+        "Level 5 R",
+        "BotRK/Trinity",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Teamfight resets",
+          "kills"
+        ],
+        "weak_vs": [
+          "Burst",
+          "CC chains",
+          "Rammus"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "viktor",
+      "name": "Viktor",
+      "title": "the Machine Herald",
+      "classes": [
+        "Burst",
+        "Battlemage"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Glorious Evolution: hex core upgrades abilities. Evolve with gold spent on unique item",
+        "Q": "Siphon Power: shield + empowered next AA (bonus magic). Evolve: MS",
+        "W": "Gravity Field: zone that stacks slow → stun at max stacks",
+        "E": "Death Ray: line laser. Evolve: aftershock explosion along same path",
+        "R": "Chaos Storm: AoE DoT storm that follows cursor. Interrupts on initial cast"
+      },
+      "playstyle": "Scaling control mage. Evolved E = massive waveclear + poke. R zone control.",
+      "power_spikes": [
+        "First upgrade (E)",
+        "Level 5 R",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "sieging"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "gap closers"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "vladimir",
+      "name": "Vladimir",
+      "title": "the Crimson Reaper",
+      "classes": [
+        "Battlemage"
+      ],
+      "positions": [
+        "Mid",
+        "Baron"
+      ],
+      "resource": "Manaless",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Crimson Pact: bonus HP from AP, bonus AP from HP",
+        "Q": "Transfusion: point-click drain. Every 3rd Q is empowered (more damage + heal + MS)",
+        "W": "Sanguine Pool: become untargetable (puddle). AoE slow + damage. Costs HP",
+        "E": "Tides of Blood: charge AoE. More charge = more damage + slow (costs HP)",
+        "R": "Hemoplague: AoE mark. After 4s, detonates for magic damage. Marked targets take 10% increased damage from all sources"
+      },
+      "playstyle": "Scaling AP drain tank. W untargetable pool. R amplifies team damage. No mana = infinite sustain.",
+      "power_spikes": [
+        "Level 9 (empowered Q)",
+        "Rabadon's",
+        "4 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Late game",
+          "sustained fights"
+        ],
+        "weak_vs": [
+          "Grievous wounds",
+          "early aggression",
+          "Malzahar"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "volibear",
+      "name": "Volibear",
+      "title": "the Relentless Storm",
+      "classes": [
+        "Juggernaut"
+      ],
+      "positions": [
+        "Baron",
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "The Relentless Storm: AAs grant stacking AS. At max stacks, chain lightning on-hit",
+        "Q": "Thundering Smash: gain MS toward champs. Next AA stuns + bonus damage",
+        "W": "Frenzied Maul: bite dealing %HP damage. Heals if target was recently bitten (wound mechanic)",
+        "E": "Sky Splitter: call lightning at location. Shield + %max HP magic damage. Scales with HP",
+        "R": "Stormbringer: leap to location. Disable turret. Gain bonus HP + size. AoE slow on landing"
+      },
+      "playstyle": "Frontline bruiser. R disables turrets for dives. W sustain in extended fights.",
+      "power_spikes": [
+        "Level 5 R",
+        "Nashor's/Trinity",
+        "Level 9"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Melee matchups",
+          "turret dives"
+        ],
+        "weak_vs": [
+          "Vayne",
+          "ranged poke",
+          "Fiora"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "warwick",
+      "name": "Warwick",
+      "title": "the Uncaged Wrath of Zaun",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Jungle",
+        "Baron"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "abilities": {
+        "P": "Eternal Hunger: AAs deal bonus magic + heal. Below 50% HP = 3x healing",
+        "Q": "Jaws of the Beast: lunge to target dealing %max HP magic. Hold to dash behind target",
+        "W": "Blood Hunt: passive: sense low-HP enemies globally (MS + AS toward them). Active: enhanced for all enemies",
+        "E": "Primal Howl: gain damage reduction. Recast: fear nearby enemies",
+        "R": "Infinite Duress: long-range suppression leap. Applies on-hit effects 3 times. Heals per hit"
+      },
+      "playstyle": "Sustain jungler. W tracks low HP enemies. R long-range lockdown. Great for beginners.",
+      "power_spikes": [
+        "Level 3",
+        "Level 5 R",
+        "BotRK/Sunfire"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Low HP targets",
+          "skirmishes"
+        ],
+        "weak_vs": [
+          "Burst",
+          "Olaf",
+          "QSS"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "wukong",
+      "name": "Wukong",
+      "title": "the Monkey King",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Baron",
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Stone Skin: gain bonus armor/MR near enemy champions (stacks per champion)",
+        "Q": "Crushing Blow: AA reset + bonus damage + armor shred",
+        "W": "Warrior Trickster: become invisible briefly + leave clone. Clone attacks + explodes",
+        "E": "Nimbus Strike: dash to target + clone attacks nearby enemies. Bonus AS after",
+        "R": "Cyclone: spin dealing AoE physical + knockup. Can recast for 2nd spin. Double knockup!"
+      },
+      "playstyle": "Teamfight diver. R double-knockup = game-winning CC. W clone for outplays.",
+      "power_spikes": [
+        "Level 5 R",
+        "Black Cleaver/Trinity",
+        "Level 9 (R2)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "teamfights"
+        ],
+        "weak_vs": [
+          "Ranged poke",
+          "Vayne",
+          "Darius"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "xayah",
+      "name": "Xayah",
+      "title": "the Rebel",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "S",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Clean Cuts: after ability, next 3 AAs throw feathers through targets leaving feathers on ground",
+        "Q": "Double Daggers: throw 2 daggers in line. Each leaves feather",
+        "W": "Deadly Plumage: gain AS + MS. If Rakan is nearby, he also gains it",
+        "E": "Bladecaller: recall ALL feathers. Enemies hit by 3+ feathers are rooted",
+        "R": "Featherstorm: leap up (untargetable) + throw feathers in cone. Safety + damage + feather setup"
+      },
+      "playstyle": "Feather-root ADC. Setup feathers behind enemies then E root for lockdown. R = untargetable.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge",
+        "3 items (crit)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Clumped teams",
+          "dive protection with R"
+        ],
+        "weak_vs": [
+          "Long range poke",
+          "Caitlyn",
+          "Ezreal"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "xin_zhao",
+      "name": "Xin Zhao",
+      "title": "the Seneschal of Demacia",
+      "classes": [
+        "Diver"
+      ],
+      "positions": [
+        "Jungle"
+      ],
+      "resource": "Mana",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Determination: every 3rd AA heals",
+        "Q": "Three Talon Strike: next 3 AAs deal bonus damage. 3rd AA knocks up",
+        "W": "Wind Becomes Lightning: slash + thrust dealing AoE damage + slow",
+        "E": "Audacious Charge: dash to target + AoE slow + AS buff",
+        "R": "Crescent Guard: AoE sweep + for 3s, block all damage from enemies farther than Xin's AA range"
+      },
+      "playstyle": "Early game ganker. E dash + Q knockup for ganks. R blocks ranged damage.",
+      "power_spikes": [
+        "Level 3",
+        "Level 5 R",
+        "Trinity/BotRK"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy junglers",
+          "early game"
+        ],
+        "weak_vs": [
+          "Late game",
+          "scaling comps",
+          "Jax"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "yasuo",
+      "name": "Yasuo",
+      "title": "the Unforgiven",
+      "classes": [
+        "Skirmisher"
+      ],
+      "positions": [
+        "Mid",
+        "Baron"
+      ],
+      "resource": "Flow",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Way of the Wanderer: shield from Flow (charge by moving). Double crit chance (halved crit damage)",
+        "Q": "Steel Tempest: line stab. 3rd Q = tornado knockup (ranged skillshot)",
+        "W": "Wind Wall: create wall blocking ALL enemy projectiles for 4s",
+        "E": "Sweeping Blade: dash through enemy. Can't dash same target twice quickly",
+        "R": "Last Breath: blink to airborne enemy. Suspend + deal damage + bonus armor pen for 15s after"
+      },
+      "playstyle": "High-skill melee carry. Dash through minions. Windwall blocks projectiles. R on knockups.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge (100% crit)",
+        "2 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Projectile-heavy teams",
+          "knockup comps"
+        ],
+        "weak_vs": [
+          "Point-click CC",
+          "Malphite",
+          "Renekton"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "yone",
+      "name": "Yone",
+      "title": "the Unforgotten",
+      "classes": [
+        "Skirmisher",
+        "Assassin"
+      ],
+      "positions": [
+        "Mid",
+        "Baron"
+      ],
+      "resource": "Flow",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Way of the Hunter: double crit chance. Every 2nd AA deals bonus magic damage",
+        "Q": "Mortal Steel: stab. 3rd Q = dash + knockup (like Yasuo Q3)",
+        "W": "Spirit Cleave: AoE sweep dealing %max HP mixed damage + shield",
+        "E": "Soul Unbound: leave body → become spirit (bonus MS). Recast: snap back to body + deal stored damage",
+        "R": "Fate Sealed: long-range dash + pull all enemies along path to endpoint + knockup"
+      },
+      "playstyle": "Dual-damage skirmisher. E engages allow risk-free trades. R is massive engage tool.",
+      "power_spikes": [
+        "Level 5 R",
+        "Infinity Edge",
+        "2 items (crit)"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy teams",
+          "skirmishes"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "burst",
+          "Renekton"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "yuumi",
+      "name": "Yuumi",
+      "title": "the Magical Cat",
+      "classes": [
+        "Enchanter"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Beginner",
+      "abilities": {
+        "P": "Bop 'n' Block: periodically, AA grants shield + restores mana. Need to detach to proc",
+        "Q": "Prowling Projectile: guided skillshot. Deals more damage at range. Slow on hit",
+        "W": "You and Me!: attach to ally. While attached, share adaptive stats. Can detach/reattach freely",
+        "E": "Zoomies: heal + AS + MS to attached ally (or self)",
+        "R": "Final Chapter: channel waves dealing magic damage. Each wave roots enemies hit by 3+ waves"
+      },
+      "playstyle": "Attach enchanter. Sit on carry, buff them. Untargetable while attached. R for AoE roots.",
+      "power_spikes": [
+        "Level 2 W+E",
+        "Level 5 R",
+        "Ardent/Harmonic Echo"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Hypercarries",
+          "late game"
+        ],
+        "weak_vs": [
+          "Hard engage early",
+          "Leona",
+          "Nautilus"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "title": "the Master of Shadows",
+      "classes": [
+        "Assassin"
+      ],
+      "positions": [
+        "Mid",
+        "Jungle"
+      ],
+      "resource": "Energy",
+      "range_type": "Melee",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Contempt for the Weak: AA deals bonus %max HP magic to targets below 50% HP",
+        "Q": "Razor Shuriken: throw shuriken in line. Shadow also throws. Overlap = bonus damage",
+        "W": "Living Shadow: place shadow clone. Can swap positions. Shadow mimics Q and E",
+        "E": "Shadow Slash: AoE around self + shadow. Slow if both hit. Reduces W CD",
+        "R": "Death Mark: dash to target (untargetable). Mark stores % of damage dealt → detonates after 3s"
+      },
+      "playstyle": "AD assassin. W shadow combos for poke. R all-in for kill. QSS/Stasis counter R.",
+      "power_spikes": [
+        "Level 3 (W+Q poke)",
+        "Level 5 R",
+        "Youmuu's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy mids",
+          "ADCs"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "Stasis",
+          "armor stackers"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "zeri",
+      "name": "Zeri",
+      "title": "the Spark of Zaun",
+      "classes": [
+        "Marksman"
+      ],
+      "positions": [
+        "Dragon"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Physical",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "Living Battery: gain MS from shields. Absorb enemy shields on AA",
+        "Q": "Burst Fire: AA = skillshot. Q = rapid electric pulse (main DPS)",
+        "W": "Ultrashock Laser: line skillshot. Through terrain = longer + wider",
+        "E": "Spark Surge: dash. Through terrain = extended range. Energizes next few Q casts",
+        "R": "Lightning Crash: AoE discharge. Gain MS + stacking zap damage on hits for duration. Extends on hit"
+      },
+      "playstyle": "Mobile ADC with skillshot AAs. E dashes through walls. R grants ramping MS+damage.",
+      "power_spikes": [
+        "Level 5 R",
+        "Trinity Force/BotRK",
+        "3 items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Kiting",
+          "grouped teams"
+        ],
+        "weak_vs": [
+          "Hard CC",
+          "point-click",
+          "burst"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "ziggs",
+      "name": "Ziggs",
+      "title": "the Hexplosives Expert",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Short Fuse: periodically, next AA deals bonus magic damage. CD reduced by abilities",
+        "Q": "Bouncing Bomb: throw bomb that bounces (3 times). AoE magic on each bounce or on champion hit",
+        "W": "Satchel Charge: place bomb. Detonates: knockback self/enemies + damage. Executes turrets below threshold",
+        "E": "Hexplosive Minefield: scatter mines. Each deals magic + slow. More mines = less damage per mine",
+        "R": "Mega Inferno Bomb: massive global AoE bomb. Huge damage in center"
+      },
+      "playstyle": "Siege/poke mage. Q spam for poke. W satchel for mobility. R global AoE nuke.",
+      "power_spikes": [
+        "Level 5 R",
+        "Luden's",
+        "Rabadon's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Sieging",
+          "turrets",
+          "poke"
+        ],
+        "weak_vs": [
+          "Assassins",
+          "Fizz",
+          "gap closers"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "zilean",
+      "name": "Zilean",
+      "title": "the Chronokeeper",
+      "classes": [
+        "Enchanter",
+        "Specialist"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Time in a Bottle: store XP to level up allies faster",
+        "Q": "Time Bomb: place bomb on target/ground. Explodes after 3s. 2 bombs on same target = AoE stun",
+        "W": "Rewind: reduce Q and E cooldowns by a large amount",
+        "E": "Time Warp: speed up ally or slow down enemy massively (99%)",
+        "R": "Chronoshift: place revive on ally. If they die within 5s, they resurrect with HP"
+      },
+      "playstyle": "Utility support. Double Q stun. E massive speed/slow. R is free Guardian Angel for carry.",
+      "power_spikes": [
+        "Level 2 (Q+W double bomb)",
+        "Level 5 R",
+        "CDR items"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Dive comps (R saves)",
+          "single-target comps"
+        ],
+        "weak_vs": [
+          "AoE damage",
+          "Grievous Wounds"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "zoe",
+      "name": "Zoe",
+      "title": "the Aspect of Twilight",
+      "classes": [
+        "Burst"
+      ],
+      "positions": [
+        "Mid"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Hard",
+      "abilities": {
+        "P": "More Sparkles: after ability, next AA deals bonus magic damage",
+        "Q": "Paddle Star: throw star that redirects toward cursor on recast. Damage scales with distance traveled",
+        "W": "Spell Thief: pick up summoner spells/item actives dropped by enemies. Use them once",
+        "E": "Sleepy Trouble Bubble: skillshot that puts target to sleep. First hit after sleep deals bonus true damage. Passes through walls",
+        "R": "Portal Jump: blink to location then blink back after 1s. Extends Q/E range. Can be interrupted"
+      },
+      "playstyle": "One-shot poke mage. E sleep into long-range Q for massive burst. W steals spells.",
+      "power_spikes": [
+        "Level 3 (E+Q combo)",
+        "Level 5",
+        "Luden's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Squishy targets",
+          "picks"
+        ],
+        "weak_vs": [
+          "Tanks",
+          "sustain",
+          "Cleanse/QSS"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    },
+    {
+      "id": "zyra",
+      "name": "Zyra",
+      "title": "Rise of the Thorns",
+      "classes": [
+        "Catcher"
+      ],
+      "positions": [
+        "Support"
+      ],
+      "resource": "Mana",
+      "range_type": "Ranged",
+      "adaptive_type": "Magic",
+      "meta_tier": "A",
+      "difficulty": "Medium",
+      "abilities": {
+        "P": "Garden of Thorns: periodically spawn seeds. Seeds become plants when hit by abilities",
+        "Q": "Deadly Spines: line AoE. Seeds in area become ranged thorn plants",
+        "W": "Rampant Growth: place seed. Store 2 charges. Plants deal magic damage auto-attacking enemies",
+        "E": "Grasping Roots: line root. Seeds in area become short-range plants that slow",
+        "R": "Stranglethorns: AoE damage + after delay, knockup all enemies in zone. Enrages plants"
+      },
+      "playstyle": "Zone control support. Plants deal constant damage. E root for CC. R AoE knockup in teamfights.",
+      "power_spikes": [
+        "Level 2 (E+Q plants)",
+        "Level 5 R",
+        "Liandry's"
+      ],
+      "counters": {
+        "strong_vs": [
+          "Grouped teams",
+          "immobile comps"
+        ],
+        "weak_vs": [
+          "Engage supports",
+          "Leona",
+          "Blitzcrank"
+        ]
+      },
+      "full_data": false,
+      "patch": "7.1e"
+    }
+  ]
+}

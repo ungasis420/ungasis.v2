@@ -1,0 +1,86 @@
+{
+  "patch": "7.1d",
+  "season": 21,
+  "metaIdentity": "Dive-heavy, aggressive, early-skirmish focused",
+  "avgGameLength": "14-16 minutes",
+  "banPriorities": [
+    {
+      "rank": 1,
+      "name": "Mel",
+      "rate": "78.6%",
+      "reason": "New champion, overtuned on release"
+    },
+    {
+      "rank": 2,
+      "name": "Norra",
+      "rate": "60.9%",
+      "reason": "Portal roaming, impossible to track"
+    },
+    {
+      "rank": 3,
+      "name": "Smolder",
+      "rate": "29.7%",
+      "reason": "Scaling dragon ADC, strong late game"
+    },
+    {
+      "rank": 4,
+      "name": "Morgana",
+      "rate": "23.8%",
+      "reason": "Black Shield counters all engage"
+    },
+    {
+      "rank": 5,
+      "name": "Zyra",
+      "rate": "21.6%",
+      "reason": "Zone control, poke, plant blocking"
+    },
+    {
+      "rank": 6,
+      "name": "Teemo",
+      "rate": "18.3%",
+      "reason": "Shroom mine fields, lane bully"
+    }
+  ],
+  "patchChanges": [
+    {
+      "champion": "Vayne",
+      "direction": "nerf",
+      "detail": "On-hit and ult AS reduced"
+    },
+    {
+      "champion": "Urgot",
+      "direction": "buff",
+      "detail": "Early lane pressure restored"
+    },
+    {
+      "champion": "Twitch",
+      "direction": "buff",
+      "detail": "Scaling buffs, rising ADC priority"
+    },
+    {
+      "champion": "Varus",
+      "direction": "buff",
+      "detail": "Scaling improvements"
+    },
+    {
+      "champion": "K'Sante",
+      "direction": "new",
+      "detail": "New frontline tank for Baron Lane"
+    },
+    {
+      "champion": "Boot upgrades",
+      "direction": "nerf",
+      "detail": "Heavily nerfed in price and stats"
+    },
+    {
+      "champion": "Irelia",
+      "direction": "nerf",
+      "detail": "Healing reduced, more punishable"
+    },
+    {
+      "champion": "Fiora",
+      "direction": "nerf",
+      "detail": "Max-HP true damage reduced"
+    }
+  ]
+}

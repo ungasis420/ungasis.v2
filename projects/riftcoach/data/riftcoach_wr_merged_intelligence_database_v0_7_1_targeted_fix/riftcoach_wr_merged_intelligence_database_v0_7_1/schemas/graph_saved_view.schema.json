@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://riftcoach.local/schemas/graph_saved_view.schema.json",
+  "title": "Graph Saved View",
+  "description": "Saved graph view.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "view_id",
+    "name",
+    "center_node_id",
+    "filters"
+  ],
+  "properties": {
+    "view_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "center_node_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "filters": {
+      "type": "object"
+    },
+    "layout_profile": {
+      "type": "string"
+    },
+    "max_depth": {
+      "type": "integer"
+    },
+    "use_cases": {
+      "type": "array"
+    }
+  }
+}

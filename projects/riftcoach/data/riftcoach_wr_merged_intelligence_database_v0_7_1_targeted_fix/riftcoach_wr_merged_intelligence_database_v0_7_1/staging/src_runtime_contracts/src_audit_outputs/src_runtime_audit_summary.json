@@ -1,0 +1,184 @@
+{
+  "source_files": 93,
+  "by_ext": {
+    ".ts": 29,
+    ".tsx": 63,
+    ".css": 1
+  },
+  "api_routes": [
+    "app/api/build/route.ts",
+    "app/api/chat/route.ts",
+    "app/api/draft/route.ts",
+    "app/api/reasoning/route.ts",
+    "app/api/review/route.ts"
+  ],
+  "direct_client_data_files": [
+    "builds.json",
+    "champions.json",
+    "counters.json",
+    "items.json",
+    "runes.json",
+    "spells.json",
+    "synergies.json"
+  ],
+  "expected_data_files": [
+    "builds.json",
+    "champions.json",
+    "counters.json",
+    "items.json",
+    "items_unified_v2.json",
+    "matchups.json",
+    "meta.json",
+    "runes.json",
+    "spells.json",
+    "synergies.json",
+    "wr_boots_enchants.json",
+    "wr_builds.json",
+    "wr_champions_corrections.json",
+    "wr_champions_part1.json",
+    "wr_champions_part2.json",
+    "wr_champions_part3.json",
+    "wr_counters_items_runes.json",
+    "wr_items.json",
+    "wr_matchups_adc.json",
+    "wr_matchups_baron.json",
+    "wr_matchups_mid.json",
+    "wr_matchups_support.json",
+    "wr_meta.json",
+    "wr_runes.json",
+    "wr_spells.json",
+    "wr_synergies_adc.json",
+    "wr_synergies_baron.json",
+    "wr_synergies_mid.json",
+    "wr_synergies_support.json"
+  ],
+  "missing_expected_data_files_in_data_zip": [
+    "items_unified_v2.json",
+    "matchups.json",
+    "wr_items.json"
+  ],
+  "env_vars": [
+    "CEREBRAS_API_KEY_1",
+    "CEREBRAS_API_KEY_2",
+    "CEREBRAS_API_KEY_3",
+    "CEREBRAS_API_KEY_4",
+    "CEREBRAS_API_KEY_5",
+    "GOOGLE_AI_KEY_1",
+    "GOOGLE_AI_KEY_2",
+    "GOOGLE_AI_KEY_3",
+    "GOOGLE_AI_KEY_4",
+    "GOOGLE_AI_KEY_5",
+    "GROQ_API_KEY_1",
+    "GROQ_API_KEY_2",
+    "GROQ_API_KEY_3",
+    "GROQ_API_KEY_4",
+    "GROQ_API_KEY_5",
+    "MISTRAL_API_KEY_1",
+    "MISTRAL_API_KEY_2",
+    "MISTRAL_API_KEY_3",
+    "MISTRAL_API_KEY_4",
+    "NODE_ENV",
+    "OPENROUTER_API_KEY",
+    "OPENROUTER_API_KEY_1",
+    "OPENROUTER_API_KEY_2",
+    "OPENROUTER_API_KEY_3",
+    "OPENROUTER_API_KEY_4",
+    "TOGETHER_API_KEY_1",
+    "TOGETHER_API_KEY_2",
+    "TOGETHER_API_KEY_3",
+    "TOGETHER_API_KEY_4",
+    "TOGETHER_API_KEY_5"
+  ],
+  "external_packages": {
+    "react": 31,
+    "framer-motion": 21,
+    "next": 14,
+    "@base-ui/react": 9,
+    "lucide-react": 6,
+    "fs": 6,
+    "path": 6,
+    "zustand": 4,
+    "class-variance-authority": 3,
+    "next-themes": 2,
+    "ai": 1,
+    "@ai-sdk/groq": 1,
+    "@ai-sdk/openai": 1,
+    "react-markdown": 1,
+    "remark-gfm": 1,
+    "clsx": 1,
+    "tailwind-merge": 1
+  },
+  "alias_import_roots": {
+    "components": 67,
+    "lib": 46,
+    "types": 3,
+    "data": 1,
+    "stores": 1,
+    "hooks": 1
+  },
+  "guardrail_hit_counts": {
+    "api_key_in_request_body": 21,
+    "wild_rift_guardrail": 66,
+    "exact_stats_language": 19,
+    "lol_pc_strings": 15,
+    "client_localstorage_api_keys": 3
+  },
+  "runtime_field_coverage": [
+    {
+      "file": "champions.json",
+      "status": "ok",
+      "record_count": 137,
+      "missing_required": "",
+      "coverage": "{\"id\": 137, \"name\": 137, \"tier\": 137, \"roles\": 137, \"classes\": 137, \"style\": 137, \"adaptiveType\": 137, \"rangeType\": 137, \"resource\": 137, \"image\": 137, \"splash\": 137, \"abilities\": 0, \"title\": 0}"
+    },
+    {
+      "file": "items.json",
+      "status": "ok",
+      "record_count": 114,
+      "missing_required": "",
+      "coverage": "{\"id\": 114, \"name\": 114, \"category\": 114, \"tier\": 114, \"cost\": 114, \"stats\": 114, \"passive\": 114, \"image\": 114}"
+    },
+    {
+      "file": "runes.json",
+      "status": "ok",
+      "record_count": 53,
+      "missing_required": "",
+      "coverage": "{\"id\": 53, \"name\": 53, \"type\": 53, \"slot\": 53, \"path\": 53, \"effect\": 0, \"cooldown\": 15, \"image\": 53, \"description\": 53, \"tier\": 53}"
+    },
+    {
+      "file": "spells.json",
+      "status": "ok",
+      "record_count": 10,
+      "missing_required": "",
+      "coverage": "{\"id\": 10, \"name\": 10, \"effect\": 10, \"cooldown\": 10, \"bestOn\": 10, \"image\": 10}"
+    },
+    {
+      "file": "builds.json",
+      "status": "missing_fields",
+      "record_count": 10,
+      "missing_required": "id",
+      "coverage": "{\"id\": 0, \"name\": 10, \"role\": 10, \"summary\": 0, \"items\": 10, \"runes\": 10, \"spells\": 10}"
+    },
+    {
+      "file": "counters.json",
+      "status": "ok",
+      "record_count": 50,
+      "missing_required": "",
+      "coverage": "{\"champion\": 50, \"role\": 50, \"counters\": 50, \"note\": 1}"
+    },
+    {
+      "file": "synergies.json",
+      "status": "ok",
+      "record_count": 1,
+      "missing_required": "",
+      "coverage": "{\"duo_lane\": true, \"team_comps\": true, \"patch\": true, \"updated\": true}"
+    },
+    {
+      "file": "meta.json",
+      "status": "ok",
+      "record_count": 6,
+      "missing_required": "",
+      "coverage": "{}"
+    }
+  ]
+}

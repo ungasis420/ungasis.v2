@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "required_slots": [
+    "passive",
+    "q",
+    "w",
+    "e",
+    "r"
+  ],
+  "slot_labels": {
+    "passive": "Passive",
+    "q": "Q",
+    "w": "W",
+    "e": "E",
+    "r": "R"
+  },
+  "blockers": [
+    "no_null_ability_names",
+    "no_pending_ability_names",
+    "wild_rift_source_only",
+    "no_lol_pc_overwrite"
+  ],
+  "karma_regression_must_match": {
+    "passive": "Mantra",
+    "q": "Inner Flame",
+    "w": "Focused Resolve",
+    "e": "Inspire",
+    "r": "Transcendent Embrace"
+  },
+  "required_ability_fields": [
+    "name",
+    "slot",
+    "ability_type",
+    "brief_description",
+    "full_description",
+    "cost",
+    "cooldowns",
+    "cast_time",
+    "target_range",
+    "effect_radius",
+    "width",
+    "speed",
+    "duration",
+    "damage_values",
+    "scaling",
+    "active_effects",
+    "passive_effects",
+    "damage_types",
+    "defense_types",
+    "crowd_control_types",
+    "effect_tags",
+    "ability_forms",
+    "combo_notes",
+    "counterplay_notes",
+    "source_status",
+    "source_urls",
+    "patch_version",
+    "provenance"
+  ]
+}

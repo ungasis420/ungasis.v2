@@ -1,0 +1,18 @@
+{
+  "features": [
+    {
+      "feature_id": "entity_tag_count",
+      "entity_keys": [
+        "entity_id"
+      ],
+      "feature_type": "int"
+    },
+    {
+      "feature_id": "relationship_strength",
+      "entity_keys": [
+        "edge_id"
+      ],
+      "feature_type": "float"
+    }
+  ]
+}

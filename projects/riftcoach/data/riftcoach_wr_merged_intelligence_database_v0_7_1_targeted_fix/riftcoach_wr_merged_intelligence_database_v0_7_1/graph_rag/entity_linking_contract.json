@@ -1,0 +1,33 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "entity_types": [
+    "Champion",
+    "Ability",
+    "Item",
+    "Rune",
+    "Spell",
+    "Effect",
+    "Build",
+    "Patch",
+    "SourceClaim"
+  ],
+  "matching_methods": [
+    "exact_id",
+    "alias",
+    "normalized_name",
+    "slug",
+    "effect_tag"
+  ],
+  "required_disambiguation": [
+    "champion_vs_item_same_word",
+    "ability_vs_effect",
+    "wild_rift_vs_lol_pc_source_policy"
+  ],
+  "output_shape": {
+    "entity_id": "string",
+    "entity_type": "string",
+    "matched_text": "string",
+    "confidence": "number",
+    "needs_disambiguation": "boolean"
+  }
+}

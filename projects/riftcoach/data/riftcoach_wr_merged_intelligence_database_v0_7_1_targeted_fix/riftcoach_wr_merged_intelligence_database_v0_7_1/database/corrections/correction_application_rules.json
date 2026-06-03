@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "version": "0.6.0-chunk2",
+    "created_at": "2026-05-19T20:54:50Z"
+  },
+  "application_order": [
+    "block_unapproved_sources",
+    "apply_user_verified_corrections",
+    "apply_high_priority_lol_wiki_wr_source_verified_values",
+    "apply_riot_wr_identity_values",
+    "apply_wildriftfire_strategy_values_only",
+    "apply_generated_strategy_only_to_strategy_fields"
+  ],
+  "rules": [
+    {
+      "rule_id": "manual_corrections_are_protected",
+      "severity": "blocker",
+      "description": "User corrections cannot be overwritten by generated placeholders or League PC mechanics."
+    },
+    {
+      "rule_id": "source_verified_can_upgrade_user_correction_status",
+      "severity": "normal",
+      "description": "Approved WR source extraction may upgrade user_corrected_pending_allowed_source_revalidation to source_verified."
+    },
+    {
+      "rule_id": "source_conflict_must_not_silently_overwrite",
+      "severity": "blocker",
+      "description": "If approved sources conflict, create source_conflict record rather than overwriting."
+    }
+  ]
+}

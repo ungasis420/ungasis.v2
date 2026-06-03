@@ -1,0 +1,108 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "filters": [
+    {
+      "id": "entity_type",
+      "label": "Entity Type",
+      "type": "multi_select",
+      "values": [
+        "Champion",
+        "Ability",
+        "Item",
+        "Rune",
+        "Spell",
+        "Effect",
+        "Build",
+        "Patch",
+        "SourceClaim",
+        "ValidationRule"
+      ]
+    },
+    {
+      "id": "relationship_type",
+      "label": "Relationship Type",
+      "type": "multi_select",
+      "values": [
+        "HAS_ABILITY",
+        "HAS_EFFECT",
+        "HAS_DAMAGE_TYPE",
+        "HAS_DEFENSE_TYPE",
+        "HAS_CC_TYPE",
+        "SYNERGIZES_WITH",
+        "COUNTERS",
+        "DENIES",
+        "MITIGATES",
+        "RECOMMENDED_WHEN",
+        "SUPPRESSED_WHEN",
+        "USES_ITEM",
+        "USES_RUNE",
+        "USES_SPELL",
+        "CHANGED_IN_PATCH",
+        "SOURCE_SUPPORTS",
+        "VALIDATED_BY",
+        "BACKLINK_FROM",
+        "NEIGHBOR_OF"
+      ]
+    },
+    {
+      "id": "source_status",
+      "label": "Source Status",
+      "type": "multi_select",
+      "values": [
+        "source_verified",
+        "source_inferred",
+        "generated_rule",
+        "generated_archetype",
+        "hybrid",
+        "source_conflict",
+        "pending_allowed_source_refresh",
+        "user_corrected_pending_revalidation"
+      ]
+    },
+    {
+      "id": "confidence_min",
+      "label": "Minimum Confidence",
+      "type": "range",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.55
+    },
+    {
+      "id": "patch_version",
+      "label": "Patch Version",
+      "type": "select",
+      "default": "7.1e"
+    },
+    {
+      "id": "role_lane",
+      "label": "Role/Lane",
+      "type": "multi_select",
+      "values": [
+        "baron",
+        "jungle",
+        "mid",
+        "duo",
+        "support"
+      ]
+    },
+    {
+      "id": "effect_tag",
+      "label": "Effect Tag",
+      "type": "search_multi_select",
+      "values_source": "database/taxonomy/effects_taxonomy.json"
+    },
+    {
+      "id": "hide_low_confidence_generated",
+      "label": "Hide low-confidence generated rules",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "wild_rift_only",
+      "label": "Wild Rift only",
+      "type": "locked_boolean",
+      "default": true
+    }
+  ]
+}

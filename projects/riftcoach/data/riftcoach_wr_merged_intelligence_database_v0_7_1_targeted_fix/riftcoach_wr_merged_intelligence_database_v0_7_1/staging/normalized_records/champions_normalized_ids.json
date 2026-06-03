@@ -1,0 +1,581 @@
+[
+  {
+    "canonical_id": "aatrox",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ahri",
+    "aliases": []
+  },
+  {
+    "canonical_id": "akali",
+    "aliases": []
+  },
+  {
+    "canonical_id": "akshan",
+    "aliases": []
+  },
+  {
+    "canonical_id": "alistar",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ambessa",
+    "aliases": []
+  },
+  {
+    "canonical_id": "amumu",
+    "aliases": []
+  },
+  {
+    "canonical_id": "annie",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ashe",
+    "aliases": []
+  },
+  {
+    "canonical_id": "aurelion_sol",
+    "aliases": []
+  },
+  {
+    "canonical_id": "aurora",
+    "aliases": []
+  },
+  {
+    "canonical_id": "bard",
+    "aliases": []
+  },
+  {
+    "canonical_id": "blitzcrank",
+    "aliases": []
+  },
+  {
+    "canonical_id": "brand",
+    "aliases": []
+  },
+  {
+    "canonical_id": "braum",
+    "aliases": []
+  },
+  {
+    "canonical_id": "caitlyn",
+    "aliases": []
+  },
+  {
+    "canonical_id": "camille",
+    "aliases": []
+  },
+  {
+    "canonical_id": "corki",
+    "aliases": []
+  },
+  {
+    "canonical_id": "darius",
+    "aliases": []
+  },
+  {
+    "canonical_id": "diana",
+    "aliases": []
+  },
+  {
+    "canonical_id": "dr_mundo",
+    "aliases": []
+  },
+  {
+    "canonical_id": "draven",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ekko",
+    "aliases": []
+  },
+  {
+    "canonical_id": "evelynn",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ezreal",
+    "aliases": []
+  },
+  {
+    "canonical_id": "fiddlesticks",
+    "aliases": []
+  },
+  {
+    "canonical_id": "fiora",
+    "aliases": []
+  },
+  {
+    "canonical_id": "fizz",
+    "aliases": []
+  },
+  {
+    "canonical_id": "galio",
+    "aliases": []
+  },
+  {
+    "canonical_id": "garen",
+    "aliases": []
+  },
+  {
+    "canonical_id": "gnar",
+    "aliases": []
+  },
+  {
+    "canonical_id": "gragas",
+    "aliases": []
+  },
+  {
+    "canonical_id": "graves",
+    "aliases": []
+  },
+  {
+    "canonical_id": "gwen",
+    "aliases": []
+  },
+  {
+    "canonical_id": "hecarim",
+    "aliases": []
+  },
+  {
+    "canonical_id": "heimerdinger",
+    "aliases": []
+  },
+  {
+    "canonical_id": "hwei",
+    "aliases": []
+  },
+  {
+    "canonical_id": "irelia",
+    "aliases": []
+  },
+  {
+    "canonical_id": "janna",
+    "aliases": []
+  },
+  {
+    "canonical_id": "jarvan_iv",
+    "aliases": [
+      "jarvan"
+    ]
+  },
+  {
+    "canonical_id": "jax",
+    "aliases": []
+  },
+  {
+    "canonical_id": "jayce",
+    "aliases": []
+  },
+  {
+    "canonical_id": "jhin",
+    "aliases": []
+  },
+  {
+    "canonical_id": "jinx",
+    "aliases": []
+  },
+  {
+    "canonical_id": "kaisa",
+    "aliases": [
+      "kai_sa"
+    ]
+  },
+  {
+    "canonical_id": "kalista",
+    "aliases": []
+  },
+  {
+    "canonical_id": "karma",
+    "aliases": []
+  },
+  {
+    "canonical_id": "kassadin",
+    "aliases": []
+  },
+  {
+    "canonical_id": "katarina",
+    "aliases": []
+  },
+  {
+    "canonical_id": "kayle",
+    "aliases": []
+  },
+  {
+    "canonical_id": "kayn",
+    "aliases": []
+  },
+  {
+    "canonical_id": "kennen",
+    "aliases": []
+  },
+  {
+    "canonical_id": "khazix",
+    "aliases": [
+      "kha_zix"
+    ]
+  },
+  {
+    "canonical_id": "kindred",
+    "aliases": []
+  },
+  {
+    "canonical_id": "kogmaw",
+    "aliases": [
+      "kog_maw"
+    ]
+  },
+  {
+    "canonical_id": "ksante",
+    "aliases": [
+      "k_sante"
+    ]
+  },
+  {
+    "canonical_id": "lee_sin",
+    "aliases": []
+  },
+  {
+    "canonical_id": "leona",
+    "aliases": []
+  },
+  {
+    "canonical_id": "lillia",
+    "aliases": []
+  },
+  {
+    "canonical_id": "lissandra",
+    "aliases": []
+  },
+  {
+    "canonical_id": "lucian",
+    "aliases": []
+  },
+  {
+    "canonical_id": "lulu",
+    "aliases": []
+  },
+  {
+    "canonical_id": "lux",
+    "aliases": []
+  },
+  {
+    "canonical_id": "malphite",
+    "aliases": []
+  },
+  {
+    "canonical_id": "maokai",
+    "aliases": []
+  },
+  {
+    "canonical_id": "master_yi",
+    "aliases": []
+  },
+  {
+    "canonical_id": "mel",
+    "aliases": []
+  },
+  {
+    "canonical_id": "milio",
+    "aliases": []
+  },
+  {
+    "canonical_id": "miss_fortune",
+    "aliases": []
+  },
+  {
+    "canonical_id": "mordekaiser",
+    "aliases": []
+  },
+  {
+    "canonical_id": "morgana",
+    "aliases": []
+  },
+  {
+    "canonical_id": "nami",
+    "aliases": []
+  },
+  {
+    "canonical_id": "nasus",
+    "aliases": []
+  },
+  {
+    "canonical_id": "nautilus",
+    "aliases": []
+  },
+  {
+    "canonical_id": "nidalee",
+    "aliases": []
+  },
+  {
+    "canonical_id": "nilah",
+    "aliases": []
+  },
+  {
+    "canonical_id": "nocturne",
+    "aliases": []
+  },
+  {
+    "canonical_id": "norra",
+    "aliases": []
+  },
+  {
+    "canonical_id": "nunu_willump",
+    "aliases": [
+      "nunu",
+      "nunu_and_willump"
+    ]
+  },
+  {
+    "canonical_id": "olaf",
+    "aliases": []
+  },
+  {
+    "canonical_id": "orianna",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ornn",
+    "aliases": []
+  },
+  {
+    "canonical_id": "pantheon",
+    "aliases": []
+  },
+  {
+    "canonical_id": "poppy",
+    "aliases": []
+  },
+  {
+    "canonical_id": "pyke",
+    "aliases": []
+  },
+  {
+    "canonical_id": "rakan",
+    "aliases": []
+  },
+  {
+    "canonical_id": "rammus",
+    "aliases": []
+  },
+  {
+    "canonical_id": "rell",
+    "aliases": []
+  },
+  {
+    "canonical_id": "renekton",
+    "aliases": []
+  },
+  {
+    "canonical_id": "rengar",
+    "aliases": []
+  },
+  {
+    "canonical_id": "riven",
+    "aliases": []
+  },
+  {
+    "canonical_id": "rumble",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ryze",
+    "aliases": []
+  },
+  {
+    "canonical_id": "samira",
+    "aliases": []
+  },
+  {
+    "canonical_id": "sejuani",
+    "aliases": []
+  },
+  {
+    "canonical_id": "senna",
+    "aliases": []
+  },
+  {
+    "canonical_id": "seraphine",
+    "aliases": []
+  },
+  {
+    "canonical_id": "sett",
+    "aliases": []
+  },
+  {
+    "canonical_id": "shen",
+    "aliases": []
+  },
+  {
+    "canonical_id": "shyvana",
+    "aliases": []
+  },
+  {
+    "canonical_id": "singed",
+    "aliases": []
+  },
+  {
+    "canonical_id": "sion",
+    "aliases": []
+  },
+  {
+    "canonical_id": "sivir",
+    "aliases": []
+  },
+  {
+    "canonical_id": "smolder",
+    "aliases": []
+  },
+  {
+    "canonical_id": "sona",
+    "aliases": []
+  },
+  {
+    "canonical_id": "soraka",
+    "aliases": []
+  },
+  {
+    "canonical_id": "swain",
+    "aliases": []
+  },
+  {
+    "canonical_id": "syndra",
+    "aliases": []
+  },
+  {
+    "canonical_id": "tahm_kench",
+    "aliases": []
+  },
+  {
+    "canonical_id": "taliyah",
+    "aliases": []
+  },
+  {
+    "canonical_id": "talon",
+    "aliases": []
+  },
+  {
+    "canonical_id": "teemo",
+    "aliases": []
+  },
+  {
+    "canonical_id": "thresh",
+    "aliases": []
+  },
+  {
+    "canonical_id": "tristana",
+    "aliases": []
+  },
+  {
+    "canonical_id": "tryndamere",
+    "aliases": []
+  },
+  {
+    "canonical_id": "twisted_fate",
+    "aliases": []
+  },
+  {
+    "canonical_id": "twitch",
+    "aliases": []
+  },
+  {
+    "canonical_id": "urgot",
+    "aliases": []
+  },
+  {
+    "canonical_id": "varus",
+    "aliases": []
+  },
+  {
+    "canonical_id": "vayne",
+    "aliases": []
+  },
+  {
+    "canonical_id": "veigar",
+    "aliases": []
+  },
+  {
+    "canonical_id": "velkoz",
+    "aliases": [
+      "vel_koz"
+    ]
+  },
+  {
+    "canonical_id": "vex",
+    "aliases": []
+  },
+  {
+    "canonical_id": "vi",
+    "aliases": []
+  },
+  {
+    "canonical_id": "viego",
+    "aliases": []
+  },
+  {
+    "canonical_id": "viktor",
+    "aliases": []
+  },
+  {
+    "canonical_id": "vladimir",
+    "aliases": []
+  },
+  {
+    "canonical_id": "volibear",
+    "aliases": []
+  },
+  {
+    "canonical_id": "warwick",
+    "aliases": []
+  },
+  {
+    "canonical_id": "wukong",
+    "aliases": []
+  },
+  {
+    "canonical_id": "xayah",
+    "aliases": []
+  },
+  {
+    "canonical_id": "xin_zhao",
+    "aliases": []
+  },
+  {
+    "canonical_id": "yasuo",
+    "aliases": []
+  },
+  {
+    "canonical_id": "yone",
+    "aliases": []
+  },
+  {
+    "canonical_id": "yuumi",
+    "aliases": []
+  },
+  {
+    "canonical_id": "zed",
+    "aliases": []
+  },
+  {
+    "canonical_id": "zeri",
+    "aliases": []
+  },
+  {
+    "canonical_id": "ziggs",
+    "aliases": []
+  },
+  {
+    "canonical_id": "zilean",
+    "aliases": []
+  },
+  {
+    "canonical_id": "zoe",
+    "aliases": []
+  },
+  {
+    "canonical_id": "zyra",
+    "aliases": []
+  }
+]

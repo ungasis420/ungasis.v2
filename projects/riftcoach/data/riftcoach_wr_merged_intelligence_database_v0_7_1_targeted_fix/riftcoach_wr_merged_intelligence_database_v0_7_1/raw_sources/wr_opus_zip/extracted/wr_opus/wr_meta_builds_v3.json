@@ -1,0 +1,2027 @@
+{
+ "_meta": {
+  "game": "Wild Rift",
+  "patch": "7.1e",
+  "chunk": "9",
+  "total": 72,
+  "v": "3"
+ },
+ "builds": [
+  {
+   "id": "darius",
+   "name": "Darius",
+   "role": "Baron",
+   "build": "Juggernaut",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Ghost"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Trinity Force",
+    "Sterak's Gage",
+    "Dead Man's Plate"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Spirit Visage",
+    "Thornmail",
+    "Randuin's Omen"
+   ],
+   "note": "Stack passive to 5\u2192R execute. Ghost to chase."
+  },
+  {
+   "id": "garen",
+   "name": "Garen",
+   "role": "Baron",
+   "build": "Spin-to-Win",
+   "keystone": "Grasp of the Undying",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Trinity Force",
+    "Dead Man's Plate",
+    "Sterak's Gage"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Force of Nature",
+    "Mortal Reminder",
+    "Randuin's Omen"
+   ],
+   "note": "Q silence\u2192E spin\u2192R execute. W for burst reduction."
+  },
+  {
+   "id": "fiora",
+   "name": "Fiora",
+   "role": "Baron",
+   "build": "Grand Duelist",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Divine Sunderer",
+    "Ravenous Hydra",
+    "Death's Dance"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Sterak's Gage",
+    "Guardian Angel",
+    "Maw of Malmortius"
+   ],
+   "note": "Proc vitals with Q. W parry key abilities. R for all-in."
+  },
+  {
+   "id": "camille",
+   "name": "Camille",
+   "role": "Baron",
+   "build": "Hookshot Diver",
+   "keystone": "Grasp of the Undying",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Trinity Force",
+    "Sterak's Gage",
+    "Death's Dance"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Guardian Angel",
+    "Randuin's Omen",
+    "Maw of Malmortius"
+   ],
+   "note": "E hookshot engage\u2192R lockdown\u2192Q2 true damage burst."
+  },
+  {
+   "id": "jax",
+   "name": "Jax",
+   "role": "Baron",
+   "build": "Hybrid Duelist",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Trinity Force",
+    "Blade of the Ruined King",
+    "Sterak's Gage"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Death's Dance",
+    "Wit's End",
+    "Randuin's Omen"
+   ],
+   "note": "E dodge autos\u2192Q leap\u2192W empower. Scale into split-push."
+  },
+  {
+   "id": "irelia",
+   "name": "Irelia",
+   "role": "Baron",
+   "build": "Blade Dancer",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Trinity Force",
+    "Death's Dance"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Wit's End",
+    "Sterak's Gage",
+    "Guardian Angel"
+   ],
+   "note": "Stack passive with Q resets on minions\u2192all-in at 4 stacks."
+  },
+  {
+   "id": "riven",
+   "name": "Riven",
+   "role": "Baron",
+   "build": "Fast Combo",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Black Cleaver",
+    "Death's Dance",
+    "Guardian Angel"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Youmuu's Ghostblade",
+    "Sterak's Gage",
+    "Serylda's Grudge"
+   ],
+   "note": "Animation-cancel Q+AA weave. E shield. R Wind Slash execute."
+  },
+  {
+   "id": "malphite_tank",
+   "name": "Malphite",
+   "role": "Baron",
+   "build": "Full Tank",
+   "keystone": "Grasp of the Undying",
+   "spells": [
+    "Flash",
+    "Teleport"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Sunfire Aegis",
+    "Frozen Heart",
+    "Randuin's Omen"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Thornmail",
+    "Force of Nature",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "Farm safe. R into 3+ enemies for AoE knockup engage."
+  },
+  {
+   "id": "malphite_ap",
+   "name": "Malphite",
+   "role": "Baron",
+   "build": "AP Burst",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Luden's Echo",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Infinity Orb",
+    "Lich Bane",
+    "Zhonya's Hourglass"
+   ],
+   "note": "One-shot combo: R\u2192Q\u2192E\u2192AA. Massive burst from AP ratios."
+  },
+  {
+   "id": "renekton",
+   "name": "Renekton",
+   "role": "Baron",
+   "build": "Lane Bully",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Black Cleaver",
+    "Sterak's Gage"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Death's Dance",
+    "Guardian Angel",
+    "Spirit Visage"
+   ],
+   "note": "Fury W stun\u2192Q heal\u2192E out. Dominate early."
+  },
+  {
+   "id": "nasus",
+   "name": "Nasus",
+   "role": "Baron",
+   "build": "Stack King",
+   "keystone": "Fleet Footwork",
+   "spells": [
+    "Flash",
+    "Teleport"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Divine Sunderer",
+    "Spirit Visage",
+    "Frozen Heart"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Thornmail",
+    "Randuin's Omen",
+    "Dead Man's Plate"
+   ],
+   "note": "Stack Q on minions. Survive early. W wither=death sentence."
+  },
+  {
+   "id": "sett",
+   "name": "Sett",
+   "role": "Baron",
+   "build": "Boss Brawler",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Black Cleaver",
+    "Sterak's Gage"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Dead Man's Plate",
+    "Death's Dance",
+    "Thornmail"
+   ],
+   "note": "Take damage\u2192W Haymaker true damage center. R suplex into team."
+  },
+  {
+   "id": "k_sante",
+   "name": "K'Sante",
+   "role": "Baron",
+   "build": "All Out Tank",
+   "keystone": "Grasp of the Undying",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Sunfire Aegis",
+    "Iceborn Gauntlet",
+    "Spirit Visage"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Thornmail",
+    "Dead Man's Plate",
+    "Force of Nature"
+   ],
+   "note": "Tank form for CC. R All Out carries target for assassination."
+  },
+  {
+   "id": "ornn",
+   "name": "Ornn",
+   "role": "Baron",
+   "build": "Forge Tank",
+   "keystone": "Grasp of the Undying",
+   "spells": [
+    "Flash",
+    "Teleport"
+   ],
+   "skill": [
+    "W",
+    "Q",
+    "E"
+   ],
+   "core": [
+    "Sunfire Aegis",
+    "Thornmail",
+    "Warmog's Armor"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Force of Nature",
+    "Randuin's Omen",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "Upgrade ally items at 13+. R for massive engage. W Brittle procs."
+  },
+  {
+   "id": "sion",
+   "name": "Sion",
+   "role": "Baron",
+   "build": "Infinite HP",
+   "keystone": "Grasp of the Undying",
+   "spells": [
+    "Flash",
+    "Teleport"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Sunfire Aegis",
+    "Titanic Hydra",
+    "Warmog's Armor"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Thornmail",
+    "Dead Man's Plate",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "W passive stacks HP permanently. R cross-map engage."
+  },
+  {
+   "id": "kayle",
+   "name": "Kayle",
+   "role": "Baron",
+   "build": "Late-Game Carry",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Teleport"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Nashor's Tooth",
+    "Riftmaker",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Void Staff",
+    "Zhonya's Hourglass",
+    "Wit's End"
+   ],
+   "note": "Survive to level 15. Permanent fire AoE waves. Scale=win."
+  },
+  {
+   "id": "tryndamere",
+   "name": "Tryndamere",
+   "role": "Baron",
+   "build": "Split Pusher",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Kraken Slayer",
+    "Navori Quickblades",
+    "Infinity Edge"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Blade of the Ruined King",
+    "Mortal Reminder",
+    "Guardian Angel"
+   ],
+   "note": "Split push all game. R=can't die for 5s. Crit scaling."
+  },
+  {
+   "id": "wukong_baron",
+   "name": "Wukong",
+   "role": "Baron",
+   "build": "Cyclone Diver",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Trinity Force",
+    "Black Cleaver",
+    "Sterak's Gage"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Death's Dance",
+    "Guardian Angel",
+    "Randuin's Omen"
+   ],
+   "note": "W clone outplay. R double knockup=game-winning teamfight."
+  },
+  {
+   "id": "singed",
+   "name": "Singed",
+   "role": "Baron",
+   "build": "Proxy Farmer",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Ghost"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Riftmaker",
+    "Rylai's Crystal Scepter",
+    "Liandry's Torment"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Dead Man's Plate",
+    "Force of Nature",
+    "Thornmail"
+   ],
+   "note": "Proxy farm behind tower. Fling enemies into team. W grounds dashes."
+  },
+  {
+   "id": "teemo",
+   "name": "Teemo",
+   "role": "Baron",
+   "build": "Shroom Control",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Nashor's Tooth",
+    "Liandry's Torment",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Void Staff",
+    "Morellonomicon",
+    "Zhonya's Hourglass"
+   ],
+   "note": "Q blind AA champs. R shrooms for vision+damage traps."
+  },
+  {
+   "id": "lee_sin",
+   "name": "Lee Sin",
+   "role": "Jungle",
+   "build": "Insec Playmaker",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Eclipse",
+    "Black Cleaver",
+    "Sterak's Gage"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Guardian Angel",
+    "Death's Dance",
+    "Maw of Malmortius"
+   ],
+   "note": "Q to target\u2192ward hop behind\u2192R kick into team (Insec)."
+  },
+  {
+   "id": "vi",
+   "name": "Vi",
+   "role": "Jungle",
+   "build": "Lockdown Diver",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Trinity Force",
+    "Sterak's Gage",
+    "Death's Dance"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Guardian Angel",
+    "Thornmail",
+    "Randuin's Omen"
+   ],
+   "note": "R point-click suppress carry. Q charge for follow-up CC."
+  },
+  {
+   "id": "jarvan_iv",
+   "name": "Jarvan IV",
+   "role": "Jungle",
+   "build": "Flag-and-Drag",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Eclipse",
+    "Black Cleaver",
+    "Sterak's Gage"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Guardian Angel",
+    "Death's Dance",
+    "Randuin's Omen"
+   ],
+   "note": "E+Q dash knockup\u2192R Cataclysm traps enemies."
+  },
+  {
+   "id": "hecarim",
+   "name": "Hecarim",
+   "role": "Jungle",
+   "build": "Speed Demon",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Trinity Force",
+    "Death's Dance",
+    "Sterak's Gage"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Dead Man's Plate",
+    "Spirit Visage",
+    "Randuin's Omen"
+   ],
+   "note": "E charge in. R fear behind team. Q spam AoE. MS=AD."
+  },
+  {
+   "id": "amumu",
+   "name": "Amumu",
+   "role": "Jungle",
+   "build": "AoE Tank",
+   "keystone": "Aftershock",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Sunfire Aegis",
+    "Thornmail",
+    "Abyssal Mask"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Spirit Visage",
+    "Randuin's Omen",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "Q bandage toss\u2192R AoE stun for wombo combos."
+  },
+  {
+   "id": "sejuani",
+   "name": "Sejuani",
+   "role": "Jungle",
+   "build": "Permafrost Tank",
+   "keystone": "Aftershock",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "W",
+    "E",
+    "Q"
+   ],
+   "core": [
+    "Sunfire Aegis",
+    "Thornmail",
+    "Spirit Visage"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Randuin's Omen",
+    "Dead Man's Plate",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "Q dash engage\u2192W AoE\u2192E freeze stun. R long-range AoE stun."
+  },
+  {
+   "id": "diana_jg",
+   "name": "Diana",
+   "role": "Jungle",
+   "build": "Moonfall Diver",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Nashor's Tooth",
+    "Hextech Protobelt",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Zhonya's Hourglass",
+    "Void Staff",
+    "Banshee's Veil"
+   ],
+   "note": "Q+E dash\u2192W shield\u2192R Moonfall pulls everyone for AoE burst."
+  },
+  {
+   "id": "viego",
+   "name": "Viego",
+   "role": "Jungle",
+   "build": "Reset King",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Trinity Force",
+    "Sterak's Gage"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Death's Dance",
+    "Guardian Angel",
+    "Wit's End"
+   ],
+   "note": "Kill\u2192possess body\u2192heal\u2192R execute next\u2192chain kills."
+  },
+  {
+   "id": "kha_zix",
+   "name": "Kha'Zix",
+   "role": "Jungle",
+   "build": "Isolation Assassin",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Duskblade of Draktharr",
+    "Edge of Night",
+    "Youmuu's Ghostblade"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Serylda's Grudge",
+    "Guardian Angel",
+    "Black Cleaver"
+   ],
+   "note": "Find isolated targets. Q bonus dmg when alone. E reset on kill."
+  },
+  {
+   "id": "evelynn",
+   "name": "Evelynn",
+   "role": "Jungle",
+   "build": "Stealth Assassin",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Lich Bane",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Banshee's Veil",
+    "Morellonomicon",
+    "Infinity Orb"
+   ],
+   "note": "Post-5 perma-stealth. W charm\u2192Q burst\u2192E execute\u2192R escape."
+  },
+  {
+   "id": "graves",
+   "name": "Graves",
+   "role": "Jungle",
+   "build": "Bruiser Marksman",
+   "keystone": "Fleet Footwork",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Eclipse",
+    "Black Cleaver",
+    "Death's Dance"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Sterak's Gage",
+    "Mortal Reminder",
+    "Guardian Angel"
+   ],
+   "note": "E dash for grit stacks (armor). Q+AA burst. W smoke zone."
+  },
+  {
+   "id": "rengar",
+   "name": "Rengar",
+   "role": "Jungle",
+   "build": "Bush Assassin",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Duskblade of Draktharr",
+    "Youmuu's Ghostblade",
+    "Edge of Night"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Serylda's Grudge",
+    "Guardian Angel",
+    "Death's Dance"
+   ],
+   "note": "R stealth\u2192leap onto ADC\u2192empowered Q one-shot."
+  },
+  {
+   "id": "wukong_jg",
+   "name": "Wukong",
+   "role": "Jungle",
+   "build": "Teamfight Diver",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Black Cleaver",
+    "Divine Sunderer",
+    "Sterak's Gage"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Death's Dance",
+    "Guardian Angel",
+    "Thornmail"
+   ],
+   "note": "E+Q ganks. R double knockup=teamfight king."
+  },
+  {
+   "id": "rammus",
+   "name": "Rammus",
+   "role": "Jungle",
+   "build": "Anti-AD Ball",
+   "keystone": "Aftershock",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "W",
+    "E",
+    "Q"
+   ],
+   "core": [
+    "Thornmail",
+    "Sunfire Aegis",
+    "Dead Man's Plate"
+   ],
+   "boots": "Plated Steelcaps",
+   "sit": [
+    "Randuin's Omen",
+    "Force of Nature",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "Q roll into lane\u2192E taunt carry\u2192W reflects all AAs back."
+  },
+  {
+   "id": "xin_zhao",
+   "name": "Xin Zhao",
+   "role": "Jungle",
+   "build": "Early Duelist",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Smite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Trinity Force",
+    "Sterak's Gage",
+    "Death's Dance"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Blade of the Ruined King",
+    "Guardian Angel",
+    "Randuin's Omen"
+   ],
+   "note": "E dash+Q knockup=guaranteed gank CC. R blocks ranged dmg."
+  },
+  {
+   "id": "ahri",
+   "name": "Ahri",
+   "role": "Mid",
+   "build": "Charm Burst",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Luden's Echo",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Banshee's Veil",
+    "Morellonomicon",
+    "Lich Bane"
+   ],
+   "note": "E charm\u2192Q true dmg\u2192W fox-fires. R triple dash for safety."
+  },
+  {
+   "id": "akali",
+   "name": "Akali",
+   "role": "Mid",
+   "build": "Shroud Assassin",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Hextech Protobelt",
+    "Lich Bane",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Void Staff",
+    "Zhonya's Hourglass",
+    "Morellonomicon"
+   ],
+   "note": "Q poke\u2192W shroud\u2192E shuriken engage\u2192R dash execute."
+  },
+  {
+   "id": "zed",
+   "name": "Zed",
+   "role": "Mid",
+   "build": "Shadow Assassin",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Youmuu's Ghostblade",
+    "Duskblade of Draktharr",
+    "Serylda's Grudge"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Edge of Night",
+    "Guardian Angel",
+    "Black Cleaver"
+   ],
+   "note": "W+Q poke. R on ADC\u2192combo\u2192pop Death Mark for kill."
+  },
+  {
+   "id": "fizz",
+   "name": "Fizz",
+   "role": "Mid",
+   "build": "Trickster",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Lich Bane",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Zhonya's Hourglass",
+    "Banshee's Veil",
+    "Morellonomicon"
+   ],
+   "note": "E troll pole dodges everything. R fish\u2192Q dash\u2192W burst."
+  },
+  {
+   "id": "orianna",
+   "name": "Orianna",
+   "role": "Mid",
+   "build": "Ball Control Mage",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Barrier"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Luden's Echo",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Zhonya's Hourglass",
+    "Banshee's Veil",
+    "Morellonomicon"
+   ],
+   "note": "Q ball position\u2192W zone\u2192E shield carry\u2192R Shockwave 5-man."
+  },
+  {
+   "id": "viktor",
+   "name": "Viktor",
+   "role": "Mid",
+   "build": "Laser Mage",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Barrier"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Luden's Echo",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Lich Bane",
+    "Zhonya's Hourglass",
+    "Banshee's Veil"
+   ],
+   "note": "Upgrade E first=waveclear+poke. W gravity zones. R AoE."
+  },
+  {
+   "id": "kassadin",
+   "name": "Kassadin",
+   "role": "Mid",
+   "build": "Anti-Mage",
+   "keystone": "Fleet Footwork",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Rod of Ages",
+    "Archangel's Staff",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Void Staff",
+    "Lich Bane",
+    "Zhonya's Hourglass"
+   ],
+   "note": "Survive to level 13. Stack R\u2192burst anyone. Infinite dashes."
+  },
+  {
+   "id": "katarina",
+   "name": "Katarina",
+   "role": "Mid",
+   "build": "Dagger Reset",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Nashor's Tooth",
+    "Hextech Protobelt",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Void Staff",
+    "Lich Bane",
+    "Morellonomicon"
+   ],
+   "note": "Q dagger\u2192E to dagger\u2192W\u2192R. Chain resets on kills."
+  },
+  {
+   "id": "veigar",
+   "name": "Veigar",
+   "role": "Mid",
+   "build": "Infinite AP",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Barrier"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Luden's Echo",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Zhonya's Hourglass",
+    "Banshee's Veil",
+    "Crown of the Shattered Queen"
+   ],
+   "note": "Stack AP with Q kills. E cage zoning. R point-click nuke."
+  },
+  {
+   "id": "lux_mid",
+   "name": "Lux",
+   "role": "Mid",
+   "build": "Burst Artillery",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Barrier"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Luden's Echo",
+    "Rabadon's Deathcap",
+    "Void Staff"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Morellonomicon",
+    "Zhonya's Hourglass",
+    "Infinity Orb"
+   ],
+   "note": "Q root\u2192E slow\u2192R laser for long-range burst combo."
+  },
+  {
+   "id": "diana_mid",
+   "name": "Diana",
+   "role": "Mid",
+   "build": "Moonfall Engage",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Hextech Protobelt",
+    "Nashor's Tooth",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Zhonya's Hourglass",
+    "Void Staff",
+    "Banshee's Veil"
+   ],
+   "note": "Proto+Flash into team\u2192R Moonfall pulls all\u2192Zhonya's."
+  },
+  {
+   "id": "galio",
+   "name": "Galio",
+   "role": "Mid",
+   "build": "Anti-Mage Tank",
+   "keystone": "Aftershock",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Sunfire Aegis",
+    "Abyssal Mask",
+    "Thornmail"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Dead Man's Plate",
+    "Spirit Visage",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "W taunt trades. R global follow-up. E+W AoE taunt combo."
+  },
+  {
+   "id": "twisted_fate",
+   "name": "Twisted Fate",
+   "role": "Mid",
+   "build": "Gold Card Roamer",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Rod of Ages",
+    "Lich Bane",
+    "Rabadon's Deathcap"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Rapid Firecannon",
+    "Void Staff",
+    "Zhonya's Hourglass"
+   ],
+   "note": "Shove wave\u2192R teleport with Gold Card stun. Map control."
+  },
+  {
+   "id": "yasuo",
+   "name": "Yasuo",
+   "role": "Mid",
+   "build": "Wind Wall",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Infinity Edge",
+    "Mortal Reminder"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Death's Dance",
+    "Guardian Angel",
+    "Wit's End"
+   ],
+   "note": "E dash through minions. Q3 tornado\u2192R. W blocks projectiles."
+  },
+  {
+   "id": "yone",
+   "name": "Yone",
+   "role": "Mid",
+   "build": "Spirit Cleave",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Infinity Edge",
+    "Mortal Reminder"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Death's Dance",
+    "Guardian Angel",
+    "Wit's End"
+   ],
+   "note": "E spirit form\u2192engage\u2192Q3 knockup\u2192R pull. Snap back to body."
+  },
+  {
+   "id": "jinx",
+   "name": "Jinx",
+   "role": "Dragon",
+   "build": "Hypercarry",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Infinity Edge",
+    "Rapid Firecannon",
+    "Mortal Reminder"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Guardian Angel",
+    "Phantom Dancer",
+    "Bloodthirster"
+   ],
+   "note": "Minigun DPS, rockets AoE. Get one kill\u2192passive\u2192chain resets."
+  },
+  {
+   "id": "kai_sa",
+   "name": "Kai'Sa",
+   "role": "Dragon",
+   "build": "Evolving Assassin",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Nashor's Tooth",
+    "Infinity Edge"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Rabadon's Deathcap",
+    "Zhonya's Hourglass",
+    "Guardian Angel"
+   ],
+   "note": "Stack plasma\u2192Q isolated burst. R dash in after CC."
+  },
+  {
+   "id": "vayne",
+   "name": "Vayne",
+   "role": "Dragon",
+   "build": "Tank Shredder",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "W",
+    "Q",
+    "E"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Infinity Edge",
+    "Phantom Dancer"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Guardian Angel",
+    "Wit's End",
+    "Mortal Reminder"
+   ],
+   "note": "Q tumble+R stealth. W %HP true dmg every 3 AAs. E condemn."
+  },
+  {
+   "id": "jhin",
+   "name": "Jhin",
+   "role": "Dragon",
+   "build": "4th Shot Artist",
+   "keystone": "Fleet Footwork",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Youmuu's Ghostblade",
+    "Infinity Edge",
+    "Rapid Firecannon"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Mortal Reminder",
+    "Guardian Angel",
+    "Edge of Night"
+   ],
+   "note": "4th shot crit burst. W root long-range. R cross-map snipes."
+  },
+  {
+   "id": "miss_fortune",
+   "name": "Miss Fortune",
+   "role": "Dragon",
+   "build": "Bullet Time",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Youmuu's Ghostblade",
+    "Serylda's Grudge",
+    "Infinity Edge"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Mortal Reminder",
+    "Guardian Angel",
+    "Edge of Night"
+   ],
+   "note": "Q bounce poke. R Bullet Time channels massive AoE damage."
+  },
+  {
+   "id": "ezreal",
+   "name": "Ezreal",
+   "role": "Dragon",
+   "build": "Poke ADC",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Manamune",
+    "Trinity Force",
+    "Serylda's Grudge"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Blade of the Ruined King",
+    "Guardian Angel",
+    "Mortal Reminder"
+   ],
+   "note": "Q poke from safe range. E blink safety. W+Q burst. Scale."
+  },
+  {
+   "id": "draven",
+   "name": "Draven",
+   "role": "Dragon",
+   "build": "Cash-In Carry",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Infinity Edge",
+    "Mortal Reminder"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Bloodthirster",
+    "Guardian Angel",
+    "Death's Dance"
+   ],
+   "note": "Catch axes for bonus dmg. Kill early=cash in stacks for gold."
+  },
+  {
+   "id": "xayah",
+   "name": "Xayah",
+   "role": "Dragon",
+   "build": "Feather Root",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Infinity Edge",
+    "Navori Quickblades",
+    "Phantom Dancer"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Guardian Angel",
+    "Mortal Reminder",
+    "Bloodthirster"
+   ],
+   "note": "AA through enemies to place feathers\u2192E recall for AoE root."
+  },
+  {
+   "id": "samira",
+   "name": "Samira",
+   "role": "Dragon",
+   "build": "Combo Style",
+   "keystone": "Conqueror",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Infinity Edge",
+    "Bloodthirster",
+    "Mortal Reminder"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Guardian Angel",
+    "Death's Dance",
+    "Phantom Dancer"
+   ],
+   "note": "Build Style grade\u2192S rank\u2192R Inferno Trigger AoE spin."
+  },
+  {
+   "id": "lucian",
+   "name": "Lucian",
+   "role": "Dragon",
+   "build": "Burst Trades",
+   "keystone": "Kraken Slayer",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Blade of the Ruined King",
+    "Navori Quickblades",
+    "Infinity Edge"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Mortal Reminder",
+    "Guardian Angel",
+    "Death's Dance"
+   ],
+   "note": "Ability\u2192passive double-shot for burst trades. E dash reset."
+  },
+  {
+   "id": "caitlyn",
+   "name": "Caitlyn",
+   "role": "Dragon",
+   "build": "Lane Bully Sniper",
+   "keystone": "Fleet Footwork",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Infinity Edge",
+    "Rapid Firecannon",
+    "Phantom Dancer"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Guardian Angel",
+    "Mortal Reminder",
+    "Bloodthirster"
+   ],
+   "note": "Trap+Headshot combos. Longest base AA range. Q poke waves."
+  },
+  {
+   "id": "tristana",
+   "name": "Tristana",
+   "role": "Dragon",
+   "build": "Reset Jump",
+   "keystone": "Lethal Tempo",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Infinity Edge",
+    "Phantom Dancer",
+    "Mortal Reminder"
+   ],
+   "boots": "Berserker's Greaves",
+   "sit": [
+    "Guardian Angel",
+    "Rapid Firecannon",
+    "Bloodthirster"
+   ],
+   "note": "W jump\u2192E bomb stack\u2192full detonation. W resets on E/kill."
+  },
+  {
+   "id": "karma_sup",
+   "name": "Karma",
+   "role": "Support",
+   "build": "Poke Enchanter",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Ardent Censer",
+    "Staff of Flowing Water",
+    "Echoes of Helia"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Redemption",
+    "Mikael's Blessing",
+    "Harmonic Echo"
+   ],
+   "note": "Mantra Q poke. R+E team MS for engage/disengage. W root."
+  },
+  {
+   "id": "swain_sup",
+   "name": "Swain",
+   "role": "Support",
+   "build": "Drain Tank Mage",
+   "keystone": "Electrocute",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Liandry's Torment",
+    "Riftmaker",
+    "Rylai's Crystal Scepter"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Zhonya's Hourglass",
+    "Morellonomicon",
+    "Banshee's Veil"
+   ],
+   "note": "E root\u2192passive pull\u2192W poke. R drain form for teamfight AoE."
+  },
+  {
+   "id": "nautilus_sup",
+   "name": "Nautilus",
+   "role": "Support",
+   "build": "Hook Engage Tank",
+   "keystone": "Aftershock",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Zeke's Convergence",
+    "Dead Man's Plate",
+    "Thornmail"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Locket of the Iron Solari",
+    "Randuin's Omen",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "Q hook\u2192passive root\u2192E slow\u2192R knockup. CC on EVERY ability."
+  },
+  {
+   "id": "senna_sup",
+   "name": "Senna",
+   "role": "Support",
+   "build": "Scaling Marksman",
+   "keystone": "Grasp of the Undying",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Umbral Glaive",
+    "Rapid Firecannon",
+    "Infinity Edge"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Edge of Night",
+    "Mortal Reminder",
+    "Guardian Angel"
+   ],
+   "note": "Collect mist for infinite scaling. Q heal+dmg. R global shield."
+  },
+  {
+   "id": "seraphine_sup",
+   "name": "Seraphine",
+   "role": "Support",
+   "build": "AoE Enchanter",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Exhaust"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Echoes of Helia",
+    "Staff of Flowing Water",
+    "Ardent Censer"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Harmonic Echo",
+    "Redemption",
+    "Mikael's Blessing"
+   ],
+   "note": "R charm chains. W heals if shielded. Echo passive double-casts."
+  },
+  {
+   "id": "soraka_sup",
+   "name": "Soraka",
+   "role": "Support",
+   "build": "Global Healer",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Heal"
+   ],
+   "skill": [
+    "Q",
+    "W",
+    "E"
+   ],
+   "core": [
+    "Warmog's Armor",
+    "Ardent Censer",
+    "Staff of Flowing Water"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Harmonic Echo",
+    "Redemption",
+    "Mikael's Blessing"
+   ],
+   "note": "Q poke\u2192W heal spam on carry. E silence zone. R global heal."
+  },
+  {
+   "id": "milio_sup",
+   "name": "Milio",
+   "role": "Support",
+   "build": "Cozy Enchanter",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Exhaust"
+   ],
+   "skill": [
+    "W",
+    "Q",
+    "E"
+   ],
+   "core": [
+    "Ardent Censer",
+    "Staff of Flowing Water",
+    "Harmonic Echo"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Redemption",
+    "Mikael's Blessing",
+    "Echoes of Helia"
+   ],
+   "note": "W bonus range+heal. R cleanses ALL CC from team. Q poke zone."
+  },
+  {
+   "id": "lulu_sup",
+   "name": "Lulu",
+   "role": "Support",
+   "build": "Polymorph Peel",
+   "keystone": "Summon Aery",
+   "spells": [
+    "Flash",
+    "Exhaust"
+   ],
+   "skill": [
+    "E",
+    "W",
+    "Q"
+   ],
+   "core": [
+    "Ardent Censer",
+    "Staff of Flowing Water",
+    "Harmonic Echo"
+   ],
+   "boots": "Ionian Boots of Lucidity",
+   "sit": [
+    "Redemption",
+    "Mikael's Blessing",
+    "Locket of the Iron Solari"
+   ],
+   "note": "W polymorph assassins. E shield ADC. R knockup+HP save."
+  },
+  {
+   "id": "thresh_sup",
+   "name": "Thresh",
+   "role": "Support",
+   "build": "Playmaker Catcher",
+   "keystone": "Aftershock",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "Q",
+    "E",
+    "W"
+   ],
+   "core": [
+    "Zeke's Convergence",
+    "Dead Man's Plate",
+    "Locket of the Iron Solari"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Thornmail",
+    "Randuin's Omen",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "Q hook\u2192Q2 dash\u2192E flay\u2192R box. W lantern saves allies."
+  },
+  {
+   "id": "leona_sup",
+   "name": "Leona",
+   "role": "Support",
+   "build": "All-In Engage",
+   "keystone": "Aftershock",
+   "spells": [
+    "Flash",
+    "Ignite"
+   ],
+   "skill": [
+    "E",
+    "Q",
+    "W"
+   ],
+   "core": [
+    "Zeke's Convergence",
+    "Locket of the Iron Solari",
+    "Thornmail"
+   ],
+   "boots": "Mercury's Treads",
+   "sit": [
+    "Randuin's Omen",
+    "Dead Man's Plate",
+    "Gargoyle Stoneplate"
+   ],
+   "note": "E zenith\u2192Q stun\u2192W shield\u2192R Solar Flare AoE stun. Lvl2 all-in."
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+file,pattern,line,snippet
+app/api/build/route.ts,api_key_in_request_body,8,"    const { champion, role, enemies, apiKey, model, context } = await req.json();"
+app/api/build/route.ts,api_key_in_request_body,27,"        ""Authorization"": `Bearer ${apiKey}`,"
+app/api/chat/route.ts,api_key_in_request_body,368,        const groq = createGroq({ apiKey })
+app/api/chat/route.ts,api_key_in_request_body,439,"          apiKey,"
+app/api/chat/route.ts,wild_rift_guardrail,282,  return `You are the RiftCoach Build Advisor for Wild Rift (mobile).
+app/api/chat/route.ts,wild_rift_guardrail,282,  return `You are the RiftCoach Build Advisor for Wild Rift (mobile).
+app/api/chat/route.ts,wild_rift_guardrail,291,"7. This is Wild Rift mobile — levels 1-15, 15-20 min games"
+app/api/chat/route.ts,wild_rift_guardrail,291,"7. This is Wild Rift mobile — levels 1-15, 15-20 min games"
+app/api/draft/route.ts,api_key_in_request_body,8,"    const { role, enemyPick, allies, apiKey, model, context } = await req.json();"
+app/api/draft/route.ts,api_key_in_request_body,33,"        ""Authorization"": `Bearer ${apiKey}`,"
+app/api/draft/route.ts,wild_rift_guardrail,14,"    const systemPrompt = `You are RiftCoach, a Sovereign-tier Wild Rift draft coach. Respond FAST and CONCISELY."
+app/api/draft/route.ts,exact_stats_language,21,- Recommend exactly 3 champions ranked by confidence (HIGH/MEDIUM/LOW)
+app/api/reasoning/route.ts,api_key_in_request_body,44,"  CEREBRAS_MODELS.map((model) => ({ apiKey, model }))"
+app/api/reasoning/route.ts,api_key_in_request_body,67,"  GROQ_MODELS.map((model) => ({ apiKey, model }))"
+app/api/reasoning/route.ts,api_key_in_request_body,82,"  GOOGLE_AI_MODELS.map((model) => ({ apiKey, model }))"
+app/api/reasoning/route.ts,api_key_in_request_body,106,"  OPENROUTER_MODELS.map((model) => ({ apiKey, model }))"
+app/api/reasoning/route.ts,api_key_in_request_body,124,"  MISTRAL_MODELS.map((model) => ({ apiKey, model }))"
+app/api/reasoning/route.ts,api_key_in_request_body,145,"  TOGETHER_MODELS.map((model) => ({ apiKey, model }))"
+app/api/reasoning/route.ts,api_key_in_request_body,550,"      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,"
+app/api/reasoning/route.ts,api_key_in_request_body,605,"        Authorization: `Bearer ${config.apiKey}`,"
+app/api/reasoning/route.ts,api_key_in_request_body,621,"        Authorization: `Bearer ${config.apiKey}`,"
+app/api/reasoning/route.ts,api_key_in_request_body,634,"    const raw = await callGoogleAI(config.apiKey, config.model, messages);"
+app/api/reasoning/route.ts,api_key_in_request_body,645,"        Authorization: `Bearer ${config.apiKey}`,"
+app/api/reasoning/route.ts,api_key_in_request_body,663,"        Authorization: `Bearer ${config.apiKey}`,"
+app/api/reasoning/route.ts,api_key_in_request_body,679,"        Authorization: `Bearer ${config.apiKey}`,"
+app/api/reasoning/route.ts,lol_pc_strings,152,- This is Wild Rift MOBILE — NOT League of Legends PC.
+app/api/reasoning/route.ts,lol_pc_strings,154,"- Wild Rift has unique items, runes, and balance — different from LoL PC."
+app/api/reasoning/route.ts,lol_pc_strings,161,"- NEVER reference LoL PC items, stats, or mechanics. Only Wild Rift mobile."
+app/api/reasoning/route.ts,wild_rift_guardrail,149,const REASONING_SYSTEM_PROMPT = `You are RiftCoach AI — an expert Wild Rift (MOBILE) build analyst.
+app/api/reasoning/route.ts,wild_rift_guardrail,149,const REASONING_SYSTEM_PROMPT = `You are RiftCoach AI — an expert Wild Rift (MOBILE) build analyst.
+app/api/reasoning/route.ts,wild_rift_guardrail,152,- This is Wild Rift MOBILE — NOT League of Legends PC.
+app/api/reasoning/route.ts,wild_rift_guardrail,152,- This is Wild Rift MOBILE — NOT League of Legends PC.
+app/api/reasoning/route.ts,wild_rift_guardrail,152,- This is Wild Rift MOBILE — NOT League of Legends PC.
+app/api/reasoning/route.ts,wild_rift_guardrail,153,- Wild Rift has 15 levels (not 18). Games last 15-20 minutes.
+app/api/reasoning/route.ts,wild_rift_guardrail,154,"- Wild Rift has unique items, runes, and balance — different from LoL PC."
+app/api/reasoning/route.ts,wild_rift_guardrail,155,- Reference champion abilities by their Wild Rift names.
+app/api/reasoning/route.ts,wild_rift_guardrail,161,"- NEVER reference LoL PC items, stats, or mechanics. Only Wild Rift mobile."
+app/api/reasoning/route.ts,wild_rift_guardrail,161,"- NEVER reference LoL PC items, stats, or mechanics. Only Wild Rift mobile."
+app/api/reasoning/route.ts,wild_rift_guardrail,244,  return `Analyze this Wild Rift build and provide structured reasoning as JSON:
+app/api/reasoning/route.ts,exact_stats_language,158,- You will receive EXACT item/rune/spell stats below. Reference ONLY these numbers.
+app/api/reasoning/route.ts,exact_stats_language,160,"- If a stat is not provided in the verified data below, say ""provides utility"" instead of guessing a number."
+app/api/reasoning/route.ts,exact_stats_language,162,"- When describing an item passive or effect, quote ONLY what is provided in the VERIFIED DATABASE STATS section."
+app/api/reasoning/route.ts,exact_stats_language,233,=== VERIFIED DATABASE STATS (reference ONLY these numbers — do NOT guess) ===
+app/api/review/route.ts,api_key_in_request_body,8,"    const { stats, apiKey, model } = await req.json();"
+app/api/review/route.ts,api_key_in_request_body,38,"        ""Authorization"": `Bearer ${apiKey}`,"
+app/coach/page.tsx,wild_rift_guardrail,348,"              Ask me anything about Wild Rift — builds, counters, drafting,"
+app/coach/page.tsx,wild_rift_guardrail,457,                Your personal Wild Rift coaching assistant. Ask me anything.
+app/layout.tsx,wild_rift_guardrail,9,"  description: 'Wild Rift AI Coach — draft, builds, tier list, and climbing tools.',"
+app/review/page.tsx,client_localstorage_api_keys,13,"      const s=localStorage.getItem(""riftcoach-settings""); const keys=s?JSON.parse(s).state?.keys||[]:[];"
+app/settings/page.tsx,client_localstorage_api_keys,14,"      const stored = localStorage.getItem(""riftcoach-settings"");"
+app/settings/page.tsx,client_localstorage_api_keys,26,"      localStorage.setItem(""riftcoach-settings"", JSON.stringify(data));"
+components/app/app-shell.tsx,wild_rift_guardrail,13,const MOBILE_NAV = [
+components/app/app-shell.tsx,wild_rift_guardrail,39,          {/* Mobile topbar */}
+components/app/app-shell.tsx,wild_rift_guardrail,61,                    {MOBILE_NAV.map((item) => {
+components/build/BuildView.tsx,exact_stats_language,80,  // ── Debug log — shows EXACT reasoning shape in browser console ──
+components/build/StatsBlock.tsx,wild_rift_guardrail,58, * in Wild Rift. They normalize each stat to 0–1 so the
+lib/build-engine.ts,lol_pc_strings,679,  return `You are the RiftCoach Build Advisor for **Wild Rift (mobile game)** — NOT LoL PC.
+lib/build-engine.ts,wild_rift_guardrail,679,  return `You are the RiftCoach Build Advisor for **Wild Rift (mobile game)** — NOT LoL PC.
+lib/build-engine.ts,wild_rift_guardrail,679,  return `You are the RiftCoach Build Advisor for **Wild Rift (mobile game)** — NOT LoL PC.
+lib/build-engine.ts,wild_rift_guardrail,679,  return `You are the RiftCoach Build Advisor for **Wild Rift (mobile game)** — NOT LoL PC.
+lib/build-engine.ts,wild_rift_guardrail,699,"13. This is **Wild Rift (mobile)** — levels 1-15, 15-20 min games."
+lib/build-engine.ts,wild_rift_guardrail,699,"13. This is **Wild Rift (mobile)** — levels 1-15, 15-20 min games."
+lib/build-engine.ts,exact_stats_language,627,"    `[AI: Format exactly like this:]`,"
+lib/build-engine.ts,exact_stats_language,681,Below is a pre-built **${champName}** build guide with 100% accurate data from the RiftCoach database.
+lib/build-modifier.ts,wild_rift_guardrail,347, * Known support gold-generation item IDs in Wild Rift.
+lib/prompts.ts,lol_pc_strings,4,// IMPORTANT: This is for Wild Rift (MOBILE) ONLY — NOT League of Legends PC.
+lib/prompts.ts,lol_pc_strings,5,"// The rune system, items, map, and game mechanics are DIFFERENT from LoL PC."
+lib/prompts.ts,lol_pc_strings,23,- You coach **Wild Rift (mobile)** ONLY — this is a DIFFERENT game from League of Legends PC.
+lib/prompts.ts,lol_pc_strings,25,"- NEVER reference LoL PC mechanics, items, or rune systems. If you're unsure whether something exists in Wild Rift, say so."
+lib/prompts.ts,lol_pc_strings,45,Wild Rift uses its OWN rune system that is COMPLETELY DIFFERENT from LoL PC.
+lib/prompts.ts,lol_pc_strings,73,"- Do NOT reference ""Sorcery path"" or ""Domination path"" as LoL PC rune trees — in WR these are minor rune categories"
+lib/prompts.ts,lol_pc_strings,74,"- Do NOT recommend runes that only exist in LoL PC (e.g., ""Cheap Shot"" may exist in WR but ""Taste of Blood"" does not)"
+lib/prompts.ts,lol_pc_strings,92,- Wild Rift has levels 1-15 (NOT 1-18 like LoL PC).
+lib/prompts.ts,lol_pc_strings,154,- You coach **Wild Rift (mobile)** ONLY — NEVER League of Legends PC.
+lib/prompts.ts,lol_pc_strings,350,"Wild Rift games are ~15-20 minutes, levels 1-15, smaller map than LoL PC."
+lib/prompts.ts,wild_rift_guardrail,2,// RiftCoach v3 — Wild Rift Coach AI System Prompts
+lib/prompts.ts,wild_rift_guardrail,4,// IMPORTANT: This is for Wild Rift (MOBILE) ONLY — NOT League of Legends PC.
+lib/prompts.ts,wild_rift_guardrail,4,// IMPORTANT: This is for Wild Rift (MOBILE) ONLY — NOT League of Legends PC.
+lib/prompts.ts,wild_rift_guardrail,4,// IMPORTANT: This is for Wild Rift (MOBILE) ONLY — NOT League of Legends PC.
+lib/prompts.ts,wild_rift_guardrail,20,  const basePrompt = `You are RiftCoach — a JARVIS-level proactive AI coach for **League of Legends: Wild Rift** (the MOBILE game).
+lib/prompts.ts,wild_rift_guardrail,20,  const basePrompt = `You are RiftCoach — a JARVIS-level proactive AI coach for **League of Legends: Wild Rift** (the MOBILE game).
+lib/prompts.ts,wild_rift_guardrail,23,- You coach **Wild Rift (mobile)** ONLY — this is a DIFFERENT game from League of Legends PC.
+lib/prompts.ts,wild_rift_guardrail,23,- You coach **Wild Rift (mobile)** ONLY — this is a DIFFERENT game from League of Legends PC.
+lib/prompts.ts,wild_rift_guardrail,24,"- Wild Rift has DIFFERENT items, runes, map layout, game length (~15-20 min), 5v5 on a smaller Rift, and levels 1-15 (not 1-18)."
+lib/prompts.ts,wild_rift_guardrail,25,"- NEVER reference LoL PC mechanics, items, or rune systems. If you're unsure whether something exists in Wild Rift, say so."
+lib/prompts.ts,wild_rift_guardrail,29,- You are NOT a passive Q&A bot. You are a personal Wild Rift intelligence system.
+lib/prompts.ts,wild_rift_guardrail,44,## ⚠️ CRITICAL: Wild Rift Rune System
+lib/prompts.ts,wild_rift_guardrail,45,Wild Rift uses its OWN rune system that is COMPLETELY DIFFERENT from LoL PC.
+lib/prompts.ts,wild_rift_guardrail,61,"- If a rune is NOT in the database, it does NOT exist in Wild Rift — do NOT recommend it."
+lib/prompts.ts,wild_rift_guardrail,92,- Wild Rift has levels 1-15 (NOT 1-18 like LoL PC).
+lib/prompts.ts,wild_rift_guardrail,139,"- **Champions Database** — All Wild Rift champions with stats, abilities, roles, difficulty, and classes."
+lib/prompts.ts,wild_rift_guardrail,140,"- **Items Database** — All Wild Rift items with stats, passives, build paths, and gold costs."
+lib/prompts.ts,wild_rift_guardrail,141,- **Runes Database** — All Wild Rift runes organized by path and slot. THIS IS YOUR SOURCE OF TRUTH for rune recommendations.
+lib/prompts.ts,wild_rift_guardrail,142,- **Spells Database** — Wild Rift summoner spells with cooldowns and tactical use cases.
+lib/prompts.ts,wild_rift_guardrail,154,- You coach **Wild Rift (mobile)** ONLY — NEVER League of Legends PC.
+lib/prompts.ts,wild_rift_guardrail,154,- You coach **Wild Rift (mobile)** ONLY — NEVER League of Legends PC.
+lib/prompts.ts,wild_rift_guardrail,155,"- Wild Rift differences: smaller map, 15-20 min games, levels 1-15, different items/runes, no Mythic items, boot enchantments instead of boot upgrades."
+lib/prompts.ts,wild_rift_guardrail,189,export const BUILD_ADVISOR_PROMPT = `You are the RiftCoach Build Advisor module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,189,export const BUILD_ADVISOR_PROMPT = `You are the RiftCoach Build Advisor module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,258,export const MATCHUP_ANALYST_PROMPT = `You are the RiftCoach Matchup Analyst module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,258,export const MATCHUP_ANALYST_PROMPT = `You are the RiftCoach Matchup Analyst module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,259,Use ONLY data from the provided databases. Wild Rift games are 15-20 min with levels 1-15.
+lib/prompts.ts,wild_rift_guardrail,309,export const SYNERGY_ADVISOR_PROMPT = `You are the RiftCoach Synergy Advisor module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,309,export const SYNERGY_ADVISOR_PROMPT = `You are the RiftCoach Synergy Advisor module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,349,export const MACRO_COACH_PROMPT = `You are the RiftCoach Macro Strategy Coach module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,349,export const MACRO_COACH_PROMPT = `You are the RiftCoach Macro Strategy Coach module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,350,"Wild Rift games are ~15-20 minutes, levels 1-15, smaller map than LoL PC."
+lib/prompts.ts,wild_rift_guardrail,386,export const LEARNING_PATH_PROMPT = `You are the RiftCoach Champion Learning Path module for Wild Rift (mobile).
+lib/prompts.ts,wild_rift_guardrail,386,export const LEARNING_PATH_PROMPT = `You are the RiftCoach Champion Learning Path module for Wild Rift (mobile).
+lib/prompts.ts,exact_stats_language,192,"For every build recommendation, follow this EXACT structure:"
+lib/prompts.ts,exact_stats_language,221,"If the Runes Database shows a different structure (e.g., 4 slots), follow the database structure exactly."
+lib/reasoning-enricher.ts,exact_stats_language,201, * Tries: exact name → normalized name → normalized ID.
+lib/reasoning-enricher.ts,exact_stats_language,1009,"  lines.push(""═══ CORE ITEMS (VERIFIED DATABASE VALUES) ═══"");"
+lib/reasoning-enricher.ts,exact_stats_language,1032,"    lines.push(""═══ SITUATIONAL ITEMS (VERIFIED DATABASE VALUES) ═══"");"
+lib/reasoning-enricher.ts,exact_stats_language,1056,"  lines.push(""═══ RUNES (VERIFIED DATABASE VALUES) ═══"");"
+lib/reasoning-enricher.ts,exact_stats_language,1074,"  lines.push(""═══ SUMMONER SPELLS (VERIFIED DATABASE VALUES) ═══"");"
+lib/relationship-engine.ts,lol_pc_strings,4,// Wild Rift MOBILE only — NOT LoL PC
+lib/relationship-engine.ts,wild_rift_guardrail,4,// Wild Rift MOBILE only — NOT LoL PC
+lib/relationship-engine.ts,wild_rift_guardrail,4,// Wild Rift MOBILE only — NOT LoL PC
+lib/relationship-engine.ts,wild_rift_guardrail,4,// Wild Rift MOBILE only — NOT LoL PC
+lib/slug-normalizer.ts,exact_stats_language,6, *   1. Exact slug           → dr_mundo.png
+lib/slug-normalizer.ts,exact_stats_language,64,  // Priority 2 — exact slug as-is
+lib/task-classifier.ts,exact_stats_language,152,// Full champion ID list (137 champions) — used for exact matching
+lib/task-classifier.ts,exact_stats_language,258,  // Check exact champion IDs

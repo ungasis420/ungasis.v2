@@ -1,0 +1,2026 @@
+{
+  "_meta": {
+    "game": "League of Legends: Wild Rift",
+    "patch": "7.1e",
+    "total_runes": 53,
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/WR:Rune",
+      "https://www.wildriftfire.com/rune-list",
+      "https://wr-meta.com/items/"
+    ],
+    "rune_system": {
+      "keystone_slot": "1 keystone (any path)",
+      "primary_path": "3 slots (slot_1, slot_2, slot_3) from one path",
+      "secondary_path": "1 slot (any rune from a different path)",
+      "adaptive_force_note": "1 pt Adaptive Force = 0.5 bonus AD or 1 AP"
+    },
+    "paths": [
+      "Keystone",
+      "Domination",
+      "Precision",
+      "Resolve",
+      "Sorcery"
+    ],
+    "generated": "2026-05-18",
+    "version": "v3"
+  },
+  "runes": [
+    {
+      "id": "electrocute",
+      "name": "Electrocute",
+      "type": "Keystone",
+      "path": "Domination",
+      "slot": 0,
+      "tier": "A",
+      "brief": "Burst damage after 3 unique hits within 3s.",
+      "full": "Hitting a champion with 3 separate attacks or abilities within 3 seconds deals 40-194 (based on level) (+35% bonus AD)(+20% AP) bonus Adaptive damage.",
+      "cooldown": "20-13s (based on level)",
+      "values": {
+        "base_damage": [
+          40,
+          194
+        ],
+        "bonus_ad_ratio": 0.35,
+        "ap_ratio": 0.2,
+        "stacks_required": 3,
+        "stack_window": 3,
+        "cd_range": [
+          20,
+          13
+        ],
+        "damage_type": "Adaptive"
+      },
+      "effect_tags": [
+        "burst",
+        "adaptive_damage",
+        "combo"
+      ],
+      "typical_users": [
+        "assassins",
+        "burst_mages",
+        "combo_supports"
+      ],
+      "synergies": [
+        "Sudden Impact",
+        "Cheap Shot",
+        "Eyeball Collection"
+      ],
+      "when_to_pick": "Champion can reliably land 3 separate hits in quick succession",
+      "why_to_pick": "Best single-target burst keystone; ideal for all-in assassin trades",
+      "patch_history": [
+        {
+          "patch": "V7.1",
+          "change": "Moved from Domination keystone to universal Keystone pool."
+        }
+      ],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "dark_harvest",
+      "name": "Dark Harvest",
+      "type": "Keystone",
+      "path": "Domination",
+      "slot": 0,
+      "tier": "B",
+      "brief": "Bonus damage on low-HP champions; stacks souls on takedown.",
+      "full": "Damaging a champion below 50% HP deals bonus Adaptive damage and harvests a soul. Souls permanently increase Dark Harvest damage. Champion takedowns within 3s reset the cooldown.",
+      "cooldown": "40s (resets on takedown)",
+      "values": {
+        "hp_threshold": "50%",
+        "base_damage": [
+          20,
+          60
+        ],
+        "damage_per_soul": 5,
+        "bonus_ad_ratio": 0.15,
+        "ap_ratio": 0.1,
+        "cd_base": 40,
+        "cd_resets_on_takedown": true,
+        "damage_type": "Adaptive"
+      },
+      "effect_tags": [
+        "execute_range",
+        "scaling",
+        "snowball",
+        "adaptive_damage"
+      ],
+      "typical_users": [
+        "scaling_assassins",
+        "poke_mages",
+        "junglers"
+      ],
+      "synergies": [
+        "Cheap Shot",
+        "Eyeball Collection",
+        "Gathering Storm"
+      ],
+      "when_to_pick": "Games expected to go late; team has reliable poke/finish",
+      "why_to_pick": "Infinite scaling damage with soul stacking; punishes low-HP targets",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "empowerment",
+      "name": "Empowerment",
+      "type": "Keystone",
+      "path": "Domination",
+      "slot": 0,
+      "tier": "B",
+      "brief": "Gain adaptive force after being out of champion combat.",
+      "full": "After being out of champion combat for a duration, gain bonus Adaptive Force for the next ability or attack against an enemy champion.",
+      "cooldown": null,
+      "values": {
+        "adaptive_force_bonus": [
+          10,
+          40
+        ],
+        "combat_exit_timer": 4,
+        "damage_type": "Adaptive"
+      },
+      "effect_tags": [
+        "adaptive_force",
+        "roaming",
+        "ambush"
+      ],
+      "typical_users": [
+        "roaming_assassins",
+        "flanking_fighters"
+      ],
+      "synergies": [
+        "Sudden Impact",
+        "Relentless Hunter",
+        "Celerity"
+      ],
+      "when_to_pick": "Roaming playstyle with frequent flank engages",
+      "why_to_pick": "Extra burst from fog/roam; rewards patient ambush plays",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "lethal_tempo",
+      "name": "Lethal Tempo",
+      "type": "Keystone",
+      "path": "Precision",
+      "slot": 0,
+      "tier": "A",
+      "brief": "Stacking attack speed on hit; at max stacks grants bonus range and exceeds AS cap.",
+      "full": "Attacking a champion generates a stack for 6 seconds, stacking up to 6 times. Each stack grants (Melee: 8%-16% / Ranged: 3%-10%) bonus attack speed (based on level). At max stacks: gain (Melee: 50 / Ranged: 75) bonus attack range and can exceed the attack speed cap. Stacks expire 1 per 0.5s.",
+      "cooldown": null,
+      "values": {
+        "max_stacks": 6,
+        "stack_duration": 6,
+        "as_per_stack_melee": [
+          0.08,
+          0.16
+        ],
+        "as_per_stack_ranged": [
+          0.03,
+          0.1
+        ],
+        "max_as_melee": [
+          0.48,
+          0.96
+        ],
+        "max_as_ranged": [
+          0.18,
+          0.6
+        ],
+        "bonus_range_melee": 50,
+        "bonus_range_ranged": 75,
+        "exceeds_as_cap": true,
+        "decay_rate": "1 stack per 0.5s"
+      },
+      "effect_tags": [
+        "attack_speed",
+        "sustained_dps",
+        "range_extension",
+        "on_hit"
+      ],
+      "typical_users": [
+        "auto_attack_adcs",
+        "on_hit_fighters",
+        "duelists"
+      ],
+      "synergies": [
+        "Legend: Alacrity",
+        "Cut Down",
+        "Blade of the Ruined King"
+      ],
+      "when_to_pick": "Extended auto-attack trades; on-hit or AS-heavy champions",
+      "why_to_pick": "Best sustained DPS keystone; exceeding AS cap is unique and powerful",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "fleet_footwork",
+      "name": "Fleet Footwork",
+      "type": "Keystone",
+      "path": "Precision",
+      "slot": 0,
+      "tier": "A",
+      "brief": "Energized attack heals and grants movement speed.",
+      "full": "Moving and attacking generates Energize stacks. At 100 stacks, your next attack is Energized, healing you and granting 20% bonus movement speed for 1 second.",
+      "cooldown": null,
+      "values": {
+        "energize_threshold": 100,
+        "heal_base": [
+          15,
+          90
+        ],
+        "heal_ad_ratio": 0.2,
+        "heal_ap_ratio": 0.1,
+        "ms_bonus": "20%",
+        "ms_duration": 1,
+        "minion_heal_modifier": "33%"
+      },
+      "effect_tags": [
+        "sustain",
+        "movement_speed",
+        "energize",
+        "healing"
+      ],
+      "typical_users": [
+        "safe_laners",
+        "scaling_adcs",
+        "kiting_champions"
+      ],
+      "synergies": [
+        "Legend: Bloodline",
+        "Overgrowth",
+        "Second Wind"
+      ],
+      "when_to_pick": "Need lane sustain and kiting ability in trades",
+      "why_to_pick": "Reliable sustain + MS in lane; scales decently into teamfights",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "conqueror",
+      "name": "Conqueror",
+      "type": "Keystone",
+      "path": "Precision",
+      "slot": 0,
+      "tier": "S",
+      "brief": "Stacking adaptive force on hit; at max stacks grants omnivamp.",
+      "full": "Attacking or dealing ability damage to a champion generates a stack for 6 seconds, stacking up to 6 times. Each stack grants 3-7 bonus AD or 4-11 AP (Adaptive) (based on level). At max stacks: gain (Melee: 9% / Ranged: 5%) omnivamp. Stacks expire 1 per 0.5s.",
+      "cooldown": null,
+      "values": {
+        "max_stacks": 6,
+        "stack_duration": 6,
+        "ad_per_stack": [
+          3,
+          7
+        ],
+        "ap_per_stack": [
+          4,
+          11
+        ],
+        "max_ad": [
+          18,
+          42
+        ],
+        "max_ap": [
+          24,
+          66
+        ],
+        "omnivamp_melee": 0.09,
+        "omnivamp_ranged": 0.05,
+        "decay_rate": "1 stack per 0.5s"
+      },
+      "effect_tags": [
+        "sustained_damage",
+        "adaptive_force",
+        "omnivamp",
+        "stacking"
+      ],
+      "typical_users": [
+        "bruisers",
+        "fighters",
+        "sustained_damage_adcs"
+      ],
+      "synergies": [
+        "Triumph",
+        "Legend: Alacrity",
+        "Last Stand",
+        "Goredrinker"
+      ],
+      "when_to_pick": "Extended trades and teamfights; melee fighters especially",
+      "why_to_pick": "Best sustained combat keystone; free AD/AP + omnivamp at max stacks",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "grasp_of_the_undying",
+      "name": "Grasp of the Undying",
+      "type": "Keystone",
+      "path": "Resolve",
+      "slot": 0,
+      "tier": "S",
+      "brief": "After stacking in combat, next attack deals bonus magic damage, heals, and grants permanent HP.",
+      "full": "Entering champion combat generates a stack every second, up to 3. At 3 stacks: your next attack deals (Melee: 2% / Ranged: 0.8%) max HP magic damage, heals you for (Melee: 2.5% / Ranged: 1%) max HP, and permanently grants (Melee: 10 / Ranged: 4) bonus HP.",
+      "cooldown": null,
+      "values": {
+        "max_stacks": 3,
+        "stack_rate": "1 per second in champion combat",
+        "damage_melee": "2% max HP",
+        "damage_ranged": "0.8% max HP",
+        "damage_type": "magic",
+        "heal_melee": "2.5% max HP",
+        "heal_ranged": "1% max HP",
+        "permanent_hp_melee": 10,
+        "permanent_hp_ranged": 4
+      },
+      "effect_tags": [
+        "tank",
+        "sustain",
+        "scaling_hp",
+        "short_trade"
+      ],
+      "typical_users": [
+        "tanks",
+        "bruisers",
+        "melee_supports"
+      ],
+      "synergies": [
+        "Demolish",
+        "Second Wind",
+        "Overgrowth",
+        "Bone Plating"
+      ],
+      "when_to_pick": "Short trades in lane; tank/bruiser scaling builds",
+      "why_to_pick": "Permanent HP stacking + lane sustain; best tank keystone",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "type": "Keystone",
+      "path": "Resolve",
+      "slot": 0,
+      "tier": "B",
+      "brief": "Shield nearby ally when either takes damage.",
+      "full": "Guard allies within range. When you or a guarded ally takes damage, both of you gain a shield and bonus movement speed for a short duration.",
+      "cooldown": "70-40s (based on level)",
+      "values": {
+        "shield_base": [
+          60,
+          300
+        ],
+        "shield_ap_ratio": 0.15,
+        "ms_bonus": "15%",
+        "ms_duration": 1.5,
+        "guard_range": 300,
+        "cd_range": [
+          70,
+          40
+        ]
+      },
+      "effect_tags": [
+        "shield",
+        "ally_protection",
+        "support"
+      ],
+      "typical_users": [
+        "enchanters",
+        "tank_supports"
+      ],
+      "synergies": [
+        "Font of Life",
+        "Revitalize",
+        "Bone Plating"
+      ],
+      "when_to_pick": "Protecting fragile carry in duo lane; reactive shielding",
+      "why_to_pick": "Only keystone that passively protects allies; good for peel supports",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "aery",
+      "name": "Aery",
+      "type": "Keystone",
+      "path": "Sorcery",
+      "slot": 0,
+      "tier": "A",
+      "brief": "Aery damages enemies or shields allies on ability hit.",
+      "full": "Damaging an enemy champion sends Aery to them, dealing 15-70 (based on level) (+20% bonus AD)(+10% AP) Adaptive damage. Shielding or healing an ally sends Aery to them, granting a 30-140 (based on level) (+40% bonus AD)(+20% AP) shield for 2 seconds.",
+      "cooldown": "Aery travel time (returns after reaching target)",
+      "values": {
+        "damage_base": [
+          15,
+          70
+        ],
+        "damage_ad_ratio": 0.2,
+        "damage_ap_ratio": 0.1,
+        "shield_base": [
+          30,
+          140
+        ],
+        "shield_ad_ratio": 0.4,
+        "shield_ap_ratio": 0.2,
+        "shield_duration": 2,
+        "damage_type": "Adaptive"
+      },
+      "effect_tags": [
+        "poke",
+        "shield",
+        "ally_buff",
+        "adaptive_damage"
+      ],
+      "typical_users": [
+        "enchanters",
+        "poke_mages",
+        "shield_supports"
+      ],
+      "synergies": [
+        "Manaflow Band",
+        "Scorch",
+        "Revitalize",
+        "Ardent Censer"
+      ],
+      "when_to_pick": "Frequent ability poke or frequent shielding/healing",
+      "why_to_pick": "Most versatile Sorcery keystone; works offense and defense",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "arcane_comet",
+      "name": "Arcane Comet",
+      "type": "Keystone",
+      "path": "Sorcery",
+      "slot": 0,
+      "tier": "A",
+      "brief": "Ability damage hurls a comet at target location.",
+      "full": "Damaging an enemy champion with an ability hurls a comet at their current location, dealing Adaptive damage in an area after a short delay. CD is reduced by ability hits on champions.",
+      "cooldown": "12-8s (based on level), reduced by ability hits",
+      "values": {
+        "damage_base": [
+          30,
+          130
+        ],
+        "bonus_ad_ratio": 0.2,
+        "ap_ratio": 0.15,
+        "cd_range": [
+          12,
+          8
+        ],
+        "cd_reduction_per_hit": "20%",
+        "damage_type": "Adaptive",
+        "aoe": true
+      },
+      "effect_tags": [
+        "poke",
+        "aoe_damage",
+        "cooldown_reduction"
+      ],
+      "typical_users": [
+        "poke_mages",
+        "cc_mages",
+        "artillery_mages"
+      ],
+      "synergies": [
+        "Manaflow Band",
+        "Scorch",
+        "Transcendence"
+      ],
+      "when_to_pick": "Champion has slows/CC to guarantee comet landing",
+      "why_to_pick": "Higher poke damage than Aery for mages with CC to land it",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "phase_rush",
+      "name": "Phase Rush",
+      "type": "Keystone",
+      "path": "Sorcery",
+      "slot": 0,
+      "tier": "A",
+      "brief": "3 hits on a champion grants large movement speed burst and reduces basic ability CDs.",
+      "full": "Hitting a champion with 3 attacks or abilities within 4s grants bonus Movement Speed and reduces remaining basic ability cooldowns by 20%. Melee: 40%-60% MS. Ranged: 30%-50% MS. Duration: 3s. Ability Haste: 25.",
+      "cooldown": "12s",
+      "values": {
+        "stacks_required": 3,
+        "stack_window": 4,
+        "ms_melee": [
+          "40%",
+          "60%"
+        ],
+        "ms_ranged": [
+          "30%",
+          "50%"
+        ],
+        "duration": 3,
+        "basic_ability_cd_reduction": "20%",
+        "ability_haste": 25,
+        "cd": 12
+      },
+      "effect_tags": [
+        "movement_speed",
+        "kiting",
+        "ability_haste",
+        "chase"
+      ],
+      "typical_users": [
+        "battlemages",
+        "kiting_mages",
+        "bruisers"
+      ],
+      "synergies": [
+        "Nimbus Cloak",
+        "Celerity",
+        "Transcendence"
+      ],
+      "when_to_pick": "Need to kite or stick to targets after combo",
+      "why_to_pick": "Best anti-kite/kiting keystone; CD reduction is a hidden strength",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "first_strike",
+      "name": "First Strike",
+      "type": "Keystone",
+      "path": "Inspiration",
+      "slot": 0,
+      "tier": "A",
+      "brief": "Dealing damage first in combat grants bonus gold and a damage amp window.",
+      "full": "If you deal damage to a champion before they damage you, gain gold and deal bonus true damage for the next 3 seconds. Gold generation scales with damage dealt.",
+      "cooldown": "15s",
+      "values": {
+        "bonus_true_damage": "9%",
+        "gold_generation": "100% of bonus damage dealt as gold",
+        "window_duration": 3,
+        "cd": 15
+      },
+      "effect_tags": [
+        "gold_generation",
+        "true_damage",
+        "poke",
+        "first_hit"
+      ],
+      "typical_users": [
+        "poke_champions",
+        "long_range_mages",
+        "assassins"
+      ],
+      "synergies": [
+        "Cheap Shot",
+        "Ingenious Hunter",
+        "Magical Footwear"
+      ],
+      "when_to_pick": "Can reliably poke/initiate before enemy responds",
+      "why_to_pick": "Only keystone that generates gold; snowball advantage",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "ice_overlord",
+      "name": "Ice Overlord",
+      "type": "Keystone",
+      "path": "Inspiration",
+      "slot": 0,
+      "tier": "S",
+      "brief": "Abilities and attacks apply Frost stacks; at max stacks, freezes the target.",
+      "full": "Attacks and abilities apply Frost stacks to enemy champions. At max stacks, the target is frozen (rooted) for a short duration and takes bonus magic damage.",
+      "cooldown": "Per target",
+      "values": {
+        "max_stacks": 4,
+        "freeze_duration": 1,
+        "bonus_magic_damage_base": [
+          30,
+          120
+        ],
+        "ap_ratio": 0.2,
+        "per_target_cd": "8-6s"
+      },
+      "effect_tags": [
+        "cc",
+        "root",
+        "frost",
+        "stacking",
+        "magic_damage"
+      ],
+      "typical_users": [
+        "control_mages",
+        "tank_supports",
+        "cc_heavy_champions"
+      ],
+      "synergies": [
+        "Font of Life",
+        "Cheap Shot",
+        "Rylai's Crystal Scepter"
+      ],
+      "when_to_pick": "Champion applies many rapid hits (abilities or attacks)",
+      "why_to_pick": "Free CC on any champion; devastating with rapid multi-hit abilities",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "cheap_shot",
+      "name": "Cheap Shot",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 1,
+      "tier": "B",
+      "brief": "Bonus true damage to CC'd targets.",
+      "full": "Damaging a champion with impaired movement or actions deals 12-45 (based on level) bonus true damage.",
+      "cooldown": "4s",
+      "values": {
+        "damage": [
+          12,
+          45
+        ],
+        "damage_type": "true",
+        "cd": 4
+      },
+      "effect_tags": [
+        "true_damage",
+        "cc_synergy"
+      ],
+      "typical_users": [
+        "cc_champions",
+        "supports"
+      ],
+      "synergies": [
+        "Ice Overlord",
+        "any CC keystone"
+      ],
+      "when_to_pick": "Kit has built-in CC",
+      "why_to_pick": "Free true damage on every CC; low CD",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "sudden_impact",
+      "name": "Sudden Impact",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 1,
+      "tier": "S",
+      "brief": "Gain armor pen and magic pen after using a dash, blink, or stealth.",
+      "full": "After using a dash, blink, or exiting stealth, gain 7 armor penetration and 8 magic penetration for 5 seconds.",
+      "cooldown": "4s",
+      "values": {
+        "armor_pen": 7,
+        "magic_pen": 8,
+        "duration": 5,
+        "cd": 4
+      },
+      "effect_tags": [
+        "penetration",
+        "mobility_synergy",
+        "burst"
+      ],
+      "typical_users": [
+        "assassins",
+        "dash_champions",
+        "stealth_champions"
+      ],
+      "synergies": [
+        "Electrocute",
+        "Eyeball Collection"
+      ],
+      "when_to_pick": "Kit has dash/blink/stealth",
+      "why_to_pick": "Best slot 1 Domination rune; free dual penetration",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "empowered_attack",
+      "name": "Empowered Attack",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 1,
+      "tier": "B",
+      "brief": "Gain bonus on-hit damage periodically.",
+      "full": "Periodically empower your next basic attack to deal bonus Adaptive damage.",
+      "cooldown": "10s",
+      "values": {
+        "damage": [
+          15,
+          60
+        ],
+        "damage_type": "Adaptive",
+        "cd": 10
+      },
+      "effect_tags": [
+        "on_hit",
+        "auto_attack",
+        "adaptive_damage"
+      ],
+      "typical_users": [
+        "auto_attackers",
+        "fighters"
+      ],
+      "synergies": [
+        "Lethal Tempo",
+        "Conqueror"
+      ],
+      "when_to_pick": "Rely on auto attacks for trades",
+      "why_to_pick": "Simple free damage for auto-attack playstyles",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "chain_assault",
+      "name": "Chain Assault",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Bonus damage on repeated hits to same target.",
+      "full": "Hitting the same enemy champion with attacks or abilities grants stacking bonus damage.",
+      "cooldown": null,
+      "values": {
+        "damage_per_stack": [
+          3,
+          12
+        ],
+        "max_stacks": 5,
+        "damage_type": "Adaptive"
+      },
+      "effect_tags": [
+        "stacking",
+        "sustained_damage",
+        "focus_target"
+      ],
+      "typical_users": [
+        "duelists",
+        "assassins",
+        "adcs"
+      ],
+      "synergies": [
+        "Conqueror",
+        "Lethal Tempo"
+      ],
+      "when_to_pick": "Extended focus on single targets",
+      "why_to_pick": "Rewards committing to one target",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "tyrant",
+      "name": "Tyrant",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Bonus damage to low-HP champions.",
+      "full": "Deal bonus Adaptive damage to champions below 50% HP.",
+      "cooldown": null,
+      "values": {
+        "damage_amp": "5%",
+        "hp_threshold": "50%",
+        "damage_type": "Adaptive"
+      },
+      "effect_tags": [
+        "execute_range",
+        "damage_amp",
+        "finishing"
+      ],
+      "typical_users": [
+        "assassins",
+        "burst_mages",
+        "adcs"
+      ],
+      "synergies": [
+        "Dark Harvest",
+        "Coup de Grace"
+      ],
+      "when_to_pick": "Need help finishing kills",
+      "why_to_pick": "Consistent execute-range damage amp",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "hubris",
+      "name": "Hubris",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Gain adaptive force on champion takedowns.",
+      "full": "Champion takedowns grant stacking Adaptive Force for a duration.",
+      "cooldown": null,
+      "values": {
+        "af_per_stack": [
+          3,
+          8
+        ],
+        "duration": 10,
+        "max_stacks": 5
+      },
+      "effect_tags": [
+        "snowball",
+        "adaptive_force",
+        "takedown"
+      ],
+      "typical_users": [
+        "assassins",
+        "snowball_champions"
+      ],
+      "synergies": [
+        "Electrocute",
+        "Dark Harvest"
+      ],
+      "when_to_pick": "Expect to get early kills",
+      "why_to_pick": "Snowball rune; rewards aggressive kills",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "eyeball_collection",
+      "name": "Eyeball Collection",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 3,
+      "tier": "A",
+      "brief": "Collect eyeballs on takedowns for permanent adaptive force.",
+      "full": "Champion takedowns grant eyeballs. Each eyeball grants bonus Adaptive Force. At max stacks, gain a bonus Adaptive Force reward.",
+      "cooldown": null,
+      "values": {
+        "af_per_eyeball": 2,
+        "max_eyeballs": 10,
+        "completion_bonus": 10
+      },
+      "effect_tags": [
+        "scaling",
+        "adaptive_force",
+        "permanent"
+      ],
+      "typical_users": [
+        "all_damage_dealers"
+      ],
+      "synergies": [
+        "Electrocute",
+        "Sudden Impact"
+      ],
+      "when_to_pick": "Default scaling option in Domination Slot 3",
+      "why_to_pick": "Permanent damage scaling; simple and reliable",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "ingenious_hunter",
+      "name": "Ingenious Hunter",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 3,
+      "tier": "A",
+      "brief": "Item active and passive cooldown reduction, stacking on unique takedowns.",
+      "full": "Gain item haste per unique champion takedown. Starts with base item haste.",
+      "cooldown": null,
+      "values": {
+        "base_item_haste": 10,
+        "item_haste_per_stack": 5,
+        "max_stacks": 5,
+        "max_item_haste": 35
+      },
+      "effect_tags": [
+        "item_haste",
+        "scaling",
+        "unique_takedown"
+      ],
+      "typical_users": [
+        "item_active_users",
+        "enchantment_reliant_champions"
+      ],
+      "synergies": [
+        "Stasis Enchant",
+        "Quicksilver",
+        "Crown of the Shattered Queen"
+      ],
+      "when_to_pick": "Build relies on item actives/passives with cooldowns",
+      "why_to_pick": "Reduces key item CDs significantly at full stacks",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "relentless_hunter",
+      "name": "Relentless Hunter",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 3,
+      "tier": "C",
+      "brief": "Out-of-combat movement speed, stacking on unique takedowns.",
+      "full": "Gain bonus out-of-combat movement speed per unique champion takedown.",
+      "cooldown": null,
+      "values": {
+        "base_ms": 5,
+        "ms_per_stack": 4,
+        "max_stacks": 5,
+        "max_ms": 25
+      },
+      "effect_tags": [
+        "movement_speed",
+        "roaming",
+        "unique_takedown"
+      ],
+      "typical_users": [
+        "roamers",
+        "junglers",
+        "supports"
+      ],
+      "synergies": [
+        "Celerity",
+        "Phase Rush"
+      ],
+      "when_to_pick": "Roam-heavy playstyle",
+      "why_to_pick": "Speeds up rotations; weaker than alternatives in fights",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "zombie_ward",
+      "name": "Zombie Ward",
+      "type": "Minor",
+      "path": "Domination",
+      "slot": 3,
+      "tier": "A",
+      "brief": "Destroying wards spawns friendly zombie wards; gain adaptive force.",
+      "full": "Destroying an enemy ward spawns a friendly Zombie Ward. Zombie Wards grant adaptive force stacks.",
+      "cooldown": null,
+      "values": {
+        "ward_duration": 120,
+        "af_per_ward": 2,
+        "max_stacks": 10,
+        "completion_bonus": 10
+      },
+      "effect_tags": [
+        "vision",
+        "adaptive_force",
+        "ward_control"
+      ],
+      "typical_users": [
+        "supports",
+        "junglers"
+      ],
+      "synergies": [
+        "Ingenious Hunter",
+        "Oracle Lens"
+      ],
+      "when_to_pick": "Vision-focused support/jungle",
+      "why_to_pick": "Free vision + free stats; strong in organized play",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "brutal",
+      "name": "Brutal",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 1,
+      "tier": "A",
+      "brief": "Flat adaptive force and penetration.",
+      "full": "Gain bonus Adaptive Force (AD or AP) and bonus penetration (armor or magic).",
+      "cooldown": null,
+      "values": {
+        "adaptive_force": 7,
+        "penetration": "2% armor pen or magic pen"
+      },
+      "effect_tags": [
+        "stats",
+        "adaptive_force",
+        "penetration",
+        "early_game"
+      ],
+      "typical_users": [
+        "all_damage_dealers"
+      ],
+      "synergies": [
+        "any offensive keystone"
+      ],
+      "when_to_pick": "Default early-game damage option",
+      "why_to_pick": "Simple stat rune; strong early trades",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "triumph",
+      "name": "Triumph",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 1,
+      "tier": "B",
+      "brief": "Heal on champion takedowns.",
+      "full": "Champion takedowns restore a percentage of your missing HP and grant bonus gold.",
+      "cooldown": null,
+      "values": {
+        "missing_hp_heal": "10%",
+        "bonus_gold": 25
+      },
+      "effect_tags": [
+        "sustain",
+        "takedown",
+        "gold",
+        "teamfight"
+      ],
+      "typical_users": [
+        "teamfight_champions",
+        "assassins",
+        "adcs"
+      ],
+      "synergies": [
+        "Conqueror",
+        "Last Stand"
+      ],
+      "when_to_pick": "Teamfight-heavy compositions",
+      "why_to_pick": "Clutch heal to survive chain fights; bonus gold",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "battle_zeal",
+      "name": "Battle Zeal",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 1,
+      "tier": "A",
+      "brief": "Gain attack speed after dealing damage to a champion.",
+      "full": "Dealing damage to an enemy champion grants bonus attack speed for a short duration.",
+      "cooldown": null,
+      "values": {
+        "as_bonus": "10%",
+        "duration": 3
+      },
+      "effect_tags": [
+        "attack_speed",
+        "combat",
+        "trading"
+      ],
+      "typical_users": [
+        "auto_attackers",
+        "adcs",
+        "fighters"
+      ],
+      "synergies": [
+        "Lethal Tempo",
+        "Conqueror",
+        "Kraken Slayer"
+      ],
+      "when_to_pick": "Auto-attack-reliant champion wanting combat AS",
+      "why_to_pick": "Reliable AS boost for trading and extended fights",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "last_stand",
+      "name": "Last Stand",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Increased damage when low HP.",
+      "full": "Deal increased damage when below 50% HP. Maximum bonus at 35% HP or below.",
+      "cooldown": null,
+      "values": {
+        "damage_amp_range": [
+          "5%",
+          "12%"
+        ],
+        "threshold_start": "50%",
+        "threshold_max": "35%"
+      },
+      "effect_tags": [
+        "damage_amp",
+        "low_hp",
+        "clutch"
+      ],
+      "typical_users": [
+        "bruisers",
+        "fighters",
+        "duelists"
+      ],
+      "synergies": [
+        "Conqueror",
+        "Triumph",
+        "Sterak's Gage"
+      ],
+      "when_to_pick": "Champion fights at low HP regularly (drain tanks, bruisers)",
+      "why_to_pick": "Highest total damage amp of the slot 2 trio for sustained fighters",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "cut_down",
+      "name": "Cut Down",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 2,
+      "tier": "S",
+      "brief": "Bonus damage to champions with more max HP than you.",
+      "full": "Deal bonus damage to champions with more maximum HP than you. Scales with HP difference.",
+      "cooldown": null,
+      "values": {
+        "damage_amp_range": [
+          "4%",
+          "12%"
+        ],
+        "hp_diff_scaling": "per 100 HP difference"
+      },
+      "effect_tags": [
+        "anti_tank",
+        "damage_amp",
+        "hp_scaling"
+      ],
+      "typical_users": [
+        "adcs",
+        "squishies_vs_tanks"
+      ],
+      "synergies": [
+        "Lethal Tempo",
+        "Lord Dominik's Regard"
+      ],
+      "when_to_pick": "Enemy team has tanks/high-HP champions",
+      "why_to_pick": "Best anti-tank damage amp rune; scales with enemy HP",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "coup_de_grace",
+      "name": "Coup de Grace",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Bonus damage to low-HP champions.",
+      "full": "Deal bonus damage to champions below 35% HP.",
+      "cooldown": null,
+      "values": {
+        "damage_amp": "6%",
+        "hp_threshold": "35%"
+      },
+      "effect_tags": [
+        "execute_range",
+        "damage_amp",
+        "finishing"
+      ],
+      "typical_users": [
+        "burst_champions",
+        "assassins"
+      ],
+      "synergies": [
+        "Electrocute",
+        "Dark Harvest"
+      ],
+      "when_to_pick": "Need to secure kills on low-HP targets",
+      "why_to_pick": "Consistent execute-range amp; pairs with burst combos",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "legend_alacrity",
+      "name": "Legend: Alacrity",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 3,
+      "tier": "S",
+      "brief": "Permanent attack speed stacking on takedowns.",
+      "full": "Gain permanent attack speed per Legend stack. Legend stacks are earned from champion takedowns and large monster kills.",
+      "cooldown": null,
+      "values": {
+        "as_per_stack": "3%",
+        "max_stacks": 10,
+        "max_as": "30%",
+        "base_as": "3%"
+      },
+      "effect_tags": [
+        "attack_speed",
+        "scaling",
+        "permanent"
+      ],
+      "typical_users": [
+        "auto_attack_adcs",
+        "on_hit_champions",
+        "junglers"
+      ],
+      "synergies": [
+        "Lethal Tempo",
+        "Conqueror",
+        "Blade of the Ruined King"
+      ],
+      "when_to_pick": "Default for AS-reliant champions",
+      "why_to_pick": "Best permanent scaling AS rune",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "legend_tenacity",
+      "name": "Legend: Tenacity",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 3,
+      "tier": "C",
+      "brief": "Permanent tenacity stacking on takedowns.",
+      "full": "Gain permanent tenacity per Legend stack.",
+      "cooldown": null,
+      "values": {
+        "tenacity_per_stack": "3%",
+        "max_stacks": 10,
+        "max_tenacity": "30%",
+        "base_tenacity": "3%"
+      },
+      "effect_tags": [
+        "tenacity",
+        "scaling",
+        "permanent",
+        "anti_cc"
+      ],
+      "typical_users": [
+        "bruisers",
+        "fighters",
+        "melee_champions"
+      ],
+      "synergies": [
+        "Conqueror",
+        "Mercury's Treads"
+      ],
+      "when_to_pick": "Enemy has heavy CC and you need tenacity stacking",
+      "why_to_pick": "Only rune that gives scaling tenacity; niche but powerful vs CC",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "legend_bloodline",
+      "name": "Legend: Bloodline",
+      "type": "Minor",
+      "path": "Precision",
+      "slot": 3,
+      "tier": "A",
+      "brief": "Permanent physical vamp stacking on takedowns.",
+      "full": "Gain permanent physical vamp per Legend stack.",
+      "cooldown": null,
+      "values": {
+        "vamp_per_stack": "0.6%",
+        "max_stacks": 10,
+        "max_vamp": "6%",
+        "base_vamp": "0.6%"
+      },
+      "effect_tags": [
+        "physical_vamp",
+        "sustain",
+        "scaling",
+        "permanent"
+      ],
+      "typical_users": [
+        "adcs",
+        "fighters",
+        "auto_attack_champions"
+      ],
+      "synergies": [
+        "Fleet Footwork",
+        "Conqueror",
+        "Bloodthirster"
+      ],
+      "when_to_pick": "Need sustain through auto attacks without buying early lifesteal",
+      "why_to_pick": "Free lifesteal scaling; delays need for sustain items",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "demolish",
+      "name": "Demolish",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 1,
+      "tier": "A",
+      "brief": "Charged attack deals bonus damage to turrets based on max HP.",
+      "full": "While near an enemy turret, charge up a powerful attack over 3 seconds. The charged attack deals bonus physical damage to the turret based on your max HP.",
+      "cooldown": "30s",
+      "values": {
+        "charge_time": 3,
+        "damage_base": 100,
+        "max_hp_ratio": "25%",
+        "cd": 30
+      },
+      "effect_tags": [
+        "turret_damage",
+        "split_push",
+        "max_hp"
+      ],
+      "typical_users": [
+        "split_pushers",
+        "tanks",
+        "bruisers"
+      ],
+      "synergies": [
+        "Grasp of the Undying",
+        "Hullbreaker"
+      ],
+      "when_to_pick": "Plan to push turrets aggressively",
+      "why_to_pick": "Huge turret chunk damage; accelerates split pushing",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "font_of_life",
+      "name": "Font of Life",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 1,
+      "tier": "A",
+      "brief": "CC'ing a champion marks them; allies attacking marked targets heal.",
+      "full": "Impairing the movement of an enemy champion marks them. Allied champions who attack marked targets heal over 2 seconds.",
+      "cooldown": null,
+      "values": {
+        "heal": "3% + 40% bonus HP over 2s",
+        "mark_duration": 4
+      },
+      "effect_tags": [
+        "ally_heal",
+        "cc_synergy",
+        "support"
+      ],
+      "typical_users": [
+        "tank_supports",
+        "cc_heavy_champions"
+      ],
+      "synergies": [
+        "Guardian",
+        "Ice Overlord",
+        "Ardent Censer"
+      ],
+      "when_to_pick": "Tank support with frequent CC application",
+      "why_to_pick": "Team-wide healing through CC; triggers Ardent Censer",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "courage_of_the_colossus",
+      "name": "Courage of the Colossus",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 1,
+      "tier": "A",
+      "brief": "Gain a shield after hard CC'ing an enemy champion.",
+      "full": "Immobilizing an enemy champion grants you a shield based on your max HP plus bonus per nearby enemy champion.",
+      "cooldown": "15s",
+      "values": {
+        "shield_base": "3% max HP",
+        "shield_per_nearby_enemy": "3% max HP",
+        "duration": 3,
+        "cd": 15
+      },
+      "effect_tags": [
+        "shield",
+        "cc_synergy",
+        "tank",
+        "engagement"
+      ],
+      "typical_users": [
+        "engage_tanks",
+        "engage_supports"
+      ],
+      "synergies": [
+        "Grasp of the Undying",
+        "Aftershock keystone"
+      ],
+      "when_to_pick": "Champion has hard CC and engages into multiple enemies",
+      "why_to_pick": "Shields scale with number of enemies; rewards engage plays",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "unshakeable",
+      "name": "Unshakeable",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 1,
+      "tier": "A",
+      "brief": "Gain tenacity and slow resistance.",
+      "full": "Gain bonus tenacity and slow resistance.",
+      "cooldown": null,
+      "values": {
+        "tenacity": "8%",
+        "slow_resist": "8%"
+      },
+      "effect_tags": [
+        "tenacity",
+        "slow_resistance",
+        "anti_cc"
+      ],
+      "typical_users": [
+        "bruisers",
+        "tanks",
+        "melee_champions"
+      ],
+      "synergies": [
+        "Mercury's Treads",
+        "Legend: Tenacity"
+      ],
+      "when_to_pick": "Facing heavy CC/slow compositions",
+      "why_to_pick": "Stacks with other tenacity sources; always-on anti-CC",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "second_wind",
+      "name": "Second Wind",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 2,
+      "tier": "S",
+      "brief": "Regenerate HP after taking damage from a champion.",
+      "full": "After taking damage from an enemy champion, regenerate a percentage of your missing HP over a few seconds.",
+      "cooldown": null,
+      "values": {
+        "missing_hp_regen": "3%",
+        "duration": 4
+      },
+      "effect_tags": [
+        "sustain",
+        "regeneration",
+        "lane_safety"
+      ],
+      "typical_users": [
+        "all_laners",
+        "tanks",
+        "bruisers"
+      ],
+      "synergies": [
+        "Grasp of the Undying",
+        "Overgrowth"
+      ],
+      "when_to_pick": "Against poke lanes or frequent trading",
+      "why_to_pick": "Best generic sustain rune; stronger the more you're poked",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "nullifying_orb",
+      "name": "Nullifying Orb",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Magic damage shield when taken to low HP.",
+      "full": "When you take magic damage that would reduce you below 35% HP, gain a shield that absorbs magic damage.",
+      "cooldown": "60s",
+      "values": {
+        "shield_base": [
+          40,
+          160
+        ],
+        "ap_ratio": 0.1,
+        "hp_threshold": "35%",
+        "cd": 60
+      },
+      "effect_tags": [
+        "shield",
+        "anti_magic",
+        "survival"
+      ],
+      "typical_users": [
+        "mid_laners",
+        "squishies_vs_ap"
+      ],
+      "synergies": [
+        "any keystone"
+      ],
+      "when_to_pick": "Facing heavy AP burst (Syndra, Fizz, etc.)",
+      "why_to_pick": "Anti-magic survival shield; niche but life-saving vs AP burst",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "bone_plating",
+      "name": "Bone Plating",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 2,
+      "tier": "S",
+      "brief": "After being hit, next 3 instances of damage are reduced.",
+      "full": "After taking damage from an enemy champion, the next 3 instances of damage from champions are reduced.",
+      "cooldown": "30s",
+      "values": {
+        "damage_reduction": [
+          20,
+          60
+        ],
+        "instances": 3,
+        "cd": 30,
+        "duration": 1.5
+      },
+      "effect_tags": [
+        "damage_reduction",
+        "burst_protection",
+        "short_trade"
+      ],
+      "typical_users": [
+        "all_laners",
+        "melee_champions"
+      ],
+      "synergies": [
+        "Grasp of the Undying",
+        "Guardian"
+      ],
+      "when_to_pick": "Facing burst trades or all-in combos",
+      "why_to_pick": "Strongest short-trade defense; negates burst combos",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "overgrowth",
+      "name": "Overgrowth",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 3,
+      "tier": "S",
+      "brief": "Gain permanent max HP from nearby minion deaths.",
+      "full": "Absorb life force from nearby minion deaths, permanently gaining bonus max HP. After absorbing enough, gain additional bonus HP.",
+      "cooldown": null,
+      "values": {
+        "hp_per_minion": 2,
+        "threshold": 120,
+        "bonus_at_threshold": "3.5% max HP"
+      },
+      "effect_tags": [
+        "max_hp",
+        "scaling",
+        "permanent",
+        "tank"
+      ],
+      "typical_users": [
+        "tanks",
+        "supports",
+        "bruisers"
+      ],
+      "synergies": [
+        "Grasp of the Undying",
+        "Warmog's Armor"
+      ],
+      "when_to_pick": "Default Resolve slot 3 for HP scaling",
+      "why_to_pick": "Free permanent HP; strongest generic Resolve slot 3",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "revitalize",
+      "name": "Revitalize",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 3,
+      "tier": "A",
+      "brief": "Bonus healing and shielding power; stronger on low-HP targets.",
+      "full": "Outgoing and incoming heals and shields are increased. This bonus is increased on targets below 50% HP.",
+      "cooldown": null,
+      "values": {
+        "heal_shield_bonus": "5%",
+        "low_hp_bonus": "10%",
+        "hp_threshold": "50%"
+      },
+      "effect_tags": [
+        "heal_power",
+        "shield_power",
+        "support",
+        "sustain"
+      ],
+      "typical_users": [
+        "enchanters",
+        "healers",
+        "shielding_supports"
+      ],
+      "synergies": [
+        "Aery",
+        "Guardian",
+        "Ardent Censer",
+        "Harmonic Echo"
+      ],
+      "when_to_pick": "Champion has heals or shields in kit",
+      "why_to_pick": "Amplifies all healing/shielding; strongest on enchanter supports",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "perseverance",
+      "name": "Perseverance",
+      "type": "Minor",
+      "path": "Resolve",
+      "slot": 3,
+      "tier": "S",
+      "brief": "Bonus tenacity and slow resistance scaling with missing HP.",
+      "full": "Gain bonus tenacity and slow resistance that increases based on your missing HP.",
+      "cooldown": null,
+      "values": {
+        "base_tenacity": "5%",
+        "max_tenacity": "20%",
+        "scaling": "missing HP"
+      },
+      "effect_tags": [
+        "tenacity",
+        "slow_resistance",
+        "low_hp",
+        "tank"
+      ],
+      "typical_users": [
+        "tanks",
+        "bruisers",
+        "frontline"
+      ],
+      "synergies": [
+        "Conqueror",
+        "Last Stand",
+        "Mercury's Treads"
+      ],
+      "when_to_pick": "Facing heavy CC; expect to be low HP in teamfights",
+      "why_to_pick": "Scaling tenacity is massive in teamfights when low",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "axiom_arcanist",
+      "name": "Axiom Arcanist",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 1,
+      "tier": "A",
+      "brief": "Gain adaptive force; bonus increases at certain levels.",
+      "full": "Gain bonus Adaptive Force that increases at level thresholds.",
+      "cooldown": null,
+      "values": {
+        "af_base": 5,
+        "af_scaling": "increases at level 5, 10, 15"
+      },
+      "effect_tags": [
+        "adaptive_force",
+        "scaling",
+        "stats"
+      ],
+      "typical_users": [
+        "all_damage_dealers"
+      ],
+      "synergies": [
+        "any offensive keystone"
+      ],
+      "when_to_pick": "Default stat rune for Sorcery slot 1",
+      "why_to_pick": "Simple adaptive force scaling; reliable",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "manaflow_band",
+      "name": "Manaflow Band",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 1,
+      "tier": "B",
+      "brief": "Hitting champions with abilities grants permanent max mana; at max stacks gain mana regen.",
+      "full": "Hitting an enemy champion with an ability permanently increases your max mana. At max stacks, gain bonus mana regeneration.",
+      "cooldown": "15s",
+      "values": {
+        "mana_per_hit": 25,
+        "max_stacks": 10,
+        "max_bonus_mana": 250,
+        "bonus_mana_regen": "1% missing mana per 5s",
+        "cd": 15
+      },
+      "effect_tags": [
+        "mana",
+        "mana_regen",
+        "scaling",
+        "ability_spam"
+      ],
+      "typical_users": [
+        "mana_hungry_mages",
+        "poke_mages"
+      ],
+      "synergies": [
+        "Arcane Comet",
+        "Aery",
+        "Rod of Ages"
+      ],
+      "when_to_pick": "Champion runs out of mana frequently",
+      "why_to_pick": "Solves mana issues; bonus regen at full stacks",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "botanist",
+      "name": "Botanist",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 1,
+      "tier": "A",
+      "brief": "Enhance fruit and plant interactions.",
+      "full": "Honeyfruit and other plants grant enhanced effects. Gain bonus movement speed after interacting with plants.",
+      "cooldown": null,
+      "values": {
+        "fruit_heal_bonus": "50%",
+        "ms_bonus": "15%",
+        "ms_duration": 3
+      },
+      "effect_tags": [
+        "sustain",
+        "plants",
+        "movement_speed",
+        "jungle"
+      ],
+      "typical_users": [
+        "junglers",
+        "river_roamers"
+      ],
+      "synergies": [
+        "Smite",
+        "Fleet Footwork"
+      ],
+      "when_to_pick": "Jungler or champion that frequently uses river plants",
+      "why_to_pick": "Free sustain and MS from plants; especially strong for junglers",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "hexflash",
+      "name": "Hexflash",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 1,
+      "tier": "S",
+      "brief": "While Flash is on CD, gain Hexflash: a channeled short-range blink.",
+      "full": "While Flash has a remaining cooldown greater than 2 seconds, it is replaced by Hexflash. Channel for up to 6.5s to blink 150-400 range. Entering combat cancels and incurs 10s CD.",
+      "cooldown": "25s",
+      "values": {
+        "channel_time": 6.5,
+        "range": [
+          150,
+          400
+        ],
+        "cd": 25,
+        "combat_cd": 10
+      },
+      "effect_tags": [
+        "mobility",
+        "blink",
+        "engage",
+        "flash_synergy"
+      ],
+      "typical_users": [
+        "engage_supports",
+        "engage_tanks",
+        "ganking_junglers"
+      ],
+      "synergies": [
+        "Flash",
+        "any engage keystone"
+      ],
+      "when_to_pick": "Need Flash-like engages more frequently than Flash CD allows",
+      "why_to_pick": "Extra blink while Flash is down; game-changing engages from fog",
+      "patch_history": [
+        {
+          "patch": "V7.1",
+          "change": "Moved from Inspiration Slot 1 to Sorcery Slot 1."
+        },
+        {
+          "patch": "V5.2",
+          "change": "CD 20s→25s. Min range reduced."
+        }
+      ],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "transcendence",
+      "name": "Transcendence",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 2,
+      "tier": "S",
+      "brief": "Bonus ability haste; champion takedowns reduce basic ability CDs.",
+      "full": "Gain bonus ability haste. Champion takedowns reduce remaining basic ability cooldowns by a percentage.",
+      "cooldown": null,
+      "values": {
+        "ability_haste": 7,
+        "takedown_cd_reduction": "20%"
+      },
+      "effect_tags": [
+        "ability_haste",
+        "cooldown_reduction",
+        "takedown"
+      ],
+      "typical_users": [
+        "ability_spammers",
+        "mages",
+        "fighters"
+      ],
+      "synergies": [
+        "Phase Rush",
+        "Arcane Comet"
+      ],
+      "when_to_pick": "Value ability haste and frequent ability usage",
+      "why_to_pick": "Free AH + CD refund on kills; core on most mages",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "celerity",
+      "name": "Celerity",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Bonus movement speed.",
+      "full": "Gain bonus movement speed. Bonus movement speed from all sources is increased by a percentage.",
+      "cooldown": null,
+      "values": {
+        "flat_ms": "2%",
+        "ms_amp": "7%"
+      },
+      "effect_tags": [
+        "movement_speed",
+        "roaming",
+        "kiting"
+      ],
+      "typical_users": [
+        "roamers",
+        "ms_scaling_champions"
+      ],
+      "synergies": [
+        "Phase Rush",
+        "Ghost",
+        "Nimbus Cloak"
+      ],
+      "when_to_pick": "MS-stacking build or champion that scales with MS",
+      "why_to_pick": "Amplifies all MS sources; niche but synergistic",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "absolute_focus",
+      "name": "Absolute Focus",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 2,
+      "tier": "B",
+      "brief": "Bonus adaptive force when above 70% HP.",
+      "full": "Gain bonus Adaptive Force when above 70% HP.",
+      "cooldown": null,
+      "values": {
+        "adaptive_force": [
+          5,
+          20
+        ],
+        "hp_threshold": "70%"
+      },
+      "effect_tags": [
+        "adaptive_force",
+        "high_hp",
+        "stats"
+      ],
+      "typical_users": [
+        "poke_mages",
+        "safe_laners",
+        "long_range_champions"
+      ],
+      "synergies": [
+        "Aery",
+        "Arcane Comet",
+        "Gathering Storm"
+      ],
+      "when_to_pick": "Can maintain high HP in lane (safe playstyle)",
+      "why_to_pick": "Free AF while healthy; good for poke/siege",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "scorch",
+      "name": "Scorch",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 3,
+      "tier": "B",
+      "brief": "Ability damage burns enemies for bonus magic damage.",
+      "full": "Your next ability hit sets an enemy champion on fire, dealing bonus magic damage over time.",
+      "cooldown": "10s",
+      "values": {
+        "damage": [
+          15,
+          50
+        ],
+        "damage_type": "magic",
+        "duration": 3,
+        "cd": 10
+      },
+      "effect_tags": [
+        "dot",
+        "magic_damage",
+        "poke",
+        "early_game"
+      ],
+      "typical_users": [
+        "poke_mages",
+        "aggressive_supports"
+      ],
+      "synergies": [
+        "Aery",
+        "Arcane Comet",
+        "Manaflow Band"
+      ],
+      "when_to_pick": "Want early lane poke pressure",
+      "why_to_pick": "Best early-game Sorcery slot 3 rune; falls off late",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "nimbus_cloak",
+      "name": "Nimbus Cloak",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 3,
+      "tier": "A",
+      "brief": "Gain movement speed after casting a summoner spell.",
+      "full": "After casting a summoner spell, gain a burst of movement speed decaying over a short duration.",
+      "cooldown": null,
+      "values": {
+        "ms_bonus": "15-35%",
+        "duration": 2,
+        "scaling": "summoner spell CD"
+      },
+      "effect_tags": [
+        "movement_speed",
+        "summoner_spell_synergy",
+        "kiting"
+      ],
+      "typical_users": [
+        "all_champions",
+        "flash_users",
+        "ignite_users"
+      ],
+      "synergies": [
+        "Flash",
+        "Ignite",
+        "Exhaust",
+        "Ghost"
+      ],
+      "when_to_pick": "Want MS burst on Flash/Ignite/Exhaust usage",
+      "why_to_pick": "Universal utility; MS on every summoner spell use",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "gathering_storm",
+      "name": "Gathering Storm",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 3,
+      "tier": "B",
+      "brief": "Gain adaptive force that increases over game time.",
+      "full": "Every few minutes, gain increasing amounts of Adaptive Force.",
+      "cooldown": null,
+      "values": {
+        "af_schedule": "every 3 minutes",
+        "af_scaling": "2/5/9/14/20/27+ AD or 4/10/18/28/40/54+ AP"
+      },
+      "effect_tags": [
+        "scaling",
+        "adaptive_force",
+        "late_game"
+      ],
+      "typical_users": [
+        "scaling_champions",
+        "late_game_carries"
+      ],
+      "synergies": [
+        "Conqueror",
+        "Lethal Tempo",
+        "any scaling keystone"
+      ],
+      "when_to_pick": "Expect long games; champion scales well",
+      "why_to_pick": "Infinite scaling damage; best late-game Sorcery slot 3",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    },
+    {
+      "id": "ixtali_seedjar",
+      "name": "Ixtali Seedjar",
+      "type": "Minor",
+      "path": "Sorcery",
+      "slot": 3,
+      "tier": "C",
+      "brief": "Gain seeds near plants; seeds grant small heals or buffs.",
+      "full": "Periodically gain a seed. Walking near a plant or brush consumes a seed to grant a small heal or combat buff.",
+      "cooldown": null,
+      "values": {
+        "seed_generation": "every 90s",
+        "max_seeds": 2,
+        "heal_per_seed": [
+          20,
+          80
+        ]
+      },
+      "effect_tags": [
+        "sustain",
+        "plants",
+        "jungle",
+        "niche"
+      ],
+      "typical_users": [
+        "junglers"
+      ],
+      "synergies": [
+        "Botanist",
+        "Smite"
+      ],
+      "when_to_pick": "Jungler wanting additional sustain from seeds",
+      "why_to_pick": "Very niche; generally weaker than alternatives",
+      "patch_history": [],
+      "patch_version": "7.1e"
+    }
+  ]
+}

@@ -1,0 +1,1677 @@
+{
+  "meta": {
+    "type": "synergies",
+    "scope": "support",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 26,
+    "total_best_with": 103,
+    "total_anti_synergy": 51,
+    "total_entries": 154,
+    "synergy_types": [
+      "WOMBO",
+      "PEEL",
+      "SETUP",
+      "LANE",
+      "SCALING"
+    ],
+    "score_scale": {
+      "0.8-1.0": "S_tier_synergy",
+      "0.6-0.79": "strong",
+      "0.4-0.59": "situational",
+      "below_0.4": "anti_synergy"
+    },
+    "confidence_source": "theorycraft_meta_inference",
+    "note": "Support x ADC/Team synergies. Other role synergies in future chunks."
+  },
+  "synergies": [
+    {
+      "champion_id": "alistar",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "samira",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "w_q_knockup_enables_samira_r",
+          "combo": [
+            "alistar_w_q",
+            "samira_r_inferno"
+          ],
+          "notes": "Knockup triggers Samira passive. She goes S-rank instantly."
+        },
+        {
+          "ally": "yasuo",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "w_q_knockup_enables_yasuo_r",
+          "combo": [
+            "alistar_w_q",
+            "yasuo_r"
+          ],
+          "notes": "Guaranteed Last Breath on W+Q knockup."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cc_lockdown_for_mf_r",
+          "combo": [
+            "alistar_w_q",
+            "miss_fortune_r"
+          ],
+          "notes": "Enemies can't escape MF ult during CC chain."
+        },
+        {
+          "ally": "kai_sa",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_enables_kaisa_dive",
+          "combo": [
+            "alistar_w_q",
+            "kai_sa_r"
+          ],
+          "notes": "Kai'Sa R follows up on marked targets after engage."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.35,
+          "reason": "poke_adc_no_followup",
+          "issue": "Ezreal wants to poke from range, Alistar wants to all-in. Mismatch in lane tempo."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.4,
+          "reason": "weak_early_lane",
+          "issue": "Both weak early. No poke to soften before engage. Enemy punishes level 1-3."
+        }
+      ]
+    },
+    {
+      "champion_id": "blitzcrank",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "draven",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "hook_into_draven_burst",
+          "combo": [
+            "blitz_q",
+            "draven_spinning_axe"
+          ],
+          "notes": "One hook = guaranteed Draven kill with Spinning Axe damage."
+        },
+        {
+          "ally": "lucian",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_into_lucian_burst",
+          "combo": [
+            "blitz_q_e",
+            "lucian_passive_combo"
+          ],
+          "notes": "Lucian passive double-shots after every Blitz ability."
+        },
+        {
+          "ally": "samira",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "hook_enables_samira_passive",
+          "combo": [
+            "blitz_q_e",
+            "samira_r"
+          ],
+          "notes": "Knockup on E triggers Samira passive dash."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "hook_into_mf_r",
+          "combo": [
+            "blitz_q_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Silence from R prevents escape during MF ult."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.3,
+          "reason": "poke_adc_no_burst_followup",
+          "issue": "Ezreal can't capitalize on hooks as well as burst ADCs. Damage is delayed."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "weak_early_duo",
+          "issue": "Vayne needs time to scale. Hook lane is about early kills. Tempo mismatch."
+        }
+      ]
+    },
+    {
+      "champion_id": "braum",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "lucian",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "passive_double_shot_stacks_braum",
+          "combo": [
+            "braum_passive",
+            "lucian_passive"
+          ],
+          "notes": "Lucian double-shot applies 2 Braum stacks instantly. Fastest proc in game."
+        },
+        {
+          "ally": "kalista",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "oathsworn_synergy",
+          "combo": [
+            "kalista_r",
+            "braum_engage"
+          ],
+          "notes": "Kalista R pulls Braum for knockup engage."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "e_blocks_everything",
+          "combo": [
+            "braum_e_shield",
+            "kog_maw_w_dps"
+          ],
+          "notes": "Unbreakable protects Kog'Maw during W rampage."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "peel_for_hypercarry",
+          "combo": [
+            "braum_r_q",
+            "jinx_passive"
+          ],
+          "notes": "Braum CC peels for Jinx. Jinx passive procs on kills for cleanup."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.35,
+          "reason": "no_consistent_aa_for_passive",
+          "issue": "Ezreal relies on Q poke, not AA. Braum passive stacks slowly."
+        },
+        {
+          "ally": "ziggs",
+          "score": 0.3,
+          "reason": "no_aa_interaction",
+          "issue": "Ziggs never AAs. Zero Braum passive value."
+        }
+      ]
+    },
+    {
+      "champion_id": "leona",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "miss_fortune",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "triple_cc_into_mf_r",
+          "combo": [
+            "leona_e_q_r",
+            "miss_fortune_r"
+          ],
+          "notes": "S-tier wombo. Leona locks down entire team, MF channels full ult."
+        },
+        {
+          "ally": "samira",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "cc_enables_samira_passive",
+          "combo": [
+            "leona_e_q",
+            "samira_r"
+          ],
+          "notes": "Every Leona CC triggers Samira passive. She reaches S-rank fast."
+        },
+        {
+          "ally": "draven",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "early_kill_pressure",
+          "combo": [
+            "leona_e_q",
+            "draven_spinning_axe"
+          ],
+          "notes": "Leona level 2 all-in + Draven damage = first blood machine."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_into_4th_shot",
+          "combo": [
+            "leona_e_q_r",
+            "jhin_w_4th"
+          ],
+          "notes": "Leona CC into Jhin W root chain. 4th shot crit execute."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.3,
+          "reason": "no_followup_burst",
+          "issue": "Ezreal blinks away from fights. Leona goes in, Ez stays back. Mismatched playstyle."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.35,
+          "reason": "weak_early_2v2",
+          "issue": "Both need level 6+ to be effective together. Enemy abuses early."
+        }
+      ]
+    },
+    {
+      "champion_id": "nautilus",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "miss_fortune",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "r_knockup_into_mf_r",
+          "combo": [
+            "nautilus_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Nautilus R is point-click, guarantees MF full channel. S-tier duo."
+        },
+        {
+          "ally": "samira",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "passive_root_triggers_samira",
+          "combo": [
+            "nautilus_passive_q",
+            "samira_passive_r"
+          ],
+          "notes": "Every Nautilus AA roots. Samira passive triggers constantly."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "cc_chain_lockdown",
+          "combo": [
+            "nautilus_q_passive_r",
+            "jhin_w_r"
+          ],
+          "notes": "CC chain never lets target move. Jhin follows up with W and R."
+        },
+        {
+          "ally": "draven",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_enables_burst",
+          "combo": [
+            "nautilus_q_passive",
+            "draven_aa"
+          ],
+          "notes": "Hook + root = guaranteed Draven axes. Lane bully duo."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.3,
+          "reason": "poke_vs_engage_mismatch",
+          "issue": "Nautilus wants to all-in. Ezreal wants to poke. Engage is wasted when Ez doesn't follow."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "weak_early_2v2",
+          "issue": "Vayne too weak early to follow Nautilus aggression. Gets punished pre-6."
+        }
+      ]
+    },
+    {
+      "champion_id": "thresh",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "samira",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "flay_knockup_triggers_passive",
+          "combo": [
+            "thresh_q_e",
+            "samira_passive_r"
+          ],
+          "notes": "Flay knockup triggers Samira passive. Lantern enables aggressive dives."
+        },
+        {
+          "ally": "lucian",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_into_lucian_burst",
+          "combo": [
+            "thresh_q_e",
+            "lucian_passive"
+          ],
+          "notes": "Every Thresh ability lets Lucian double-shot. Strong trades."
+        },
+        {
+          "ally": "draven",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_into_draven_burst",
+          "combo": [
+            "thresh_q",
+            "draven_aa"
+          ],
+          "notes": "Hook + Flay keeps enemy in Draven kill range."
+        },
+        {
+          "ally": "kalista",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "oathsworn_lantern_combo",
+          "combo": [
+            "kalista_r",
+            "thresh_lantern"
+          ],
+          "notes": "Kalista R launches Thresh for engage, or Thresh lanterns Kalista out."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.35,
+          "reason": "blink_away_from_engage",
+          "issue": "Ezreal E's away when Thresh goes in. Poor synergy with all-in patterns."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.4,
+          "reason": "no_early_pressure",
+          "issue": "Kog too weak early for Thresh's aggressive lane style."
+        }
+      ]
+    },
+    {
+      "champion_id": "rell",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "samira",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "r_pull_into_samira_r",
+          "combo": [
+            "rell_w_r",
+            "samira_r"
+          ],
+          "notes": "Rell R pulls enemies together, Samira R shreds all of them. S-tier wombo."
+        },
+        {
+          "ally": "yasuo",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "w_knockup_enables_yasuo_r",
+          "combo": [
+            "rell_w",
+            "yasuo_r"
+          ],
+          "notes": "W crash knockup guarantees Yasuo Last Breath."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "r_groups_for_mf_r",
+          "combo": [
+            "rell_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Magnet Storm pulls enemies together for MF ult."
+        },
+        {
+          "ally": "kai_sa",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "engage_marks_for_kaisa",
+          "combo": [
+            "rell_w_r",
+            "kai_sa_r"
+          ],
+          "notes": "Rell engage marks targets for Kai'Sa R follow-up."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.3,
+          "reason": "no_followup",
+          "issue": "Rell commits hard. Ezreal doesn't. Rell dies alone."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "weak_early",
+          "issue": "Both scale but lane is unplayable vs aggro duos."
+        }
+      ]
+    },
+    {
+      "champion_id": "maokai",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "miss_fortune",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "r_root_into_mf_r",
+          "combo": [
+            "maokai_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Nature's Grasp roots entire team for full MF channel."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "zone_control_for_hypercarry",
+          "combo": [
+            "maokai_e_saplings",
+            "jinx_rockets"
+          ],
+          "notes": "Saplings zone enemies, Jinx free-fires from range."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "root_enables_jhin_w",
+          "combo": [
+            "maokai_w_r",
+            "jhin_w"
+          ],
+          "notes": "Maokai root into Jhin W root chain."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.4,
+          "reason": "no_early_kill_pressure",
+          "issue": "Draven wants early kills. Maokai is passive early. Tempo mismatch."
+        }
+      ]
+    },
+    {
+      "champion_id": "janna",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "kog_maw",
+          "score": 0.95,
+          "type": "PEEL",
+          "reason": "ultimate_peel_for_hypercarry",
+          "combo": [
+            "janna_r_q",
+            "kog_maw_w"
+          ],
+          "notes": "Janna R pushes divers away. Q interrupts dashes. Kog free-fires with W."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "peel_shield_for_hypercarry",
+          "combo": [
+            "janna_e_shield",
+            "jinx_rockets"
+          ],
+          "notes": "E shield + AD bonus on Jinx rockets. R disengage protects Jinx."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "peel_enables_kiting",
+          "combo": [
+            "janna_w_slow",
+            "vayne_kite"
+          ],
+          "notes": "W slow + Q knockup keeps enemies off Vayne while she procs Silver Bolts."
+        },
+        {
+          "ally": "tristana",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "double_disengage",
+          "combo": [
+            "janna_r",
+            "tristana_r"
+          ],
+          "notes": "Both have knockback ults. Nothing gets close to this duo."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.35,
+          "reason": "draven_needs_aggression",
+          "issue": "Draven wants to fight early. Janna is defensive. Draven can't cash stacks."
+        },
+        {
+          "ally": "samira",
+          "score": 0.3,
+          "reason": "no_engage_for_samira",
+          "issue": "Samira needs hard CC to proc passive. Janna provides disengage, not engage."
+        }
+      ]
+    },
+    {
+      "champion_id": "karma",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "ashe",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "poke_duo_dominance",
+          "combo": [
+            "karma_r_q",
+            "ashe_w_aa"
+          ],
+          "notes": "Double poke lane. R+Q + Ashe W chunks enemies. E shield for trades."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "poke_into_burst",
+          "combo": [
+            "karma_r_q",
+            "jhin_4th_shot"
+          ],
+          "notes": "Karma poke softens, Jhin 4th shot executes. R+E speed enables Jhin positioning."
+        },
+        {
+          "ally": "ezreal",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "poke_synergy",
+          "combo": [
+            "karma_r_q",
+            "ezreal_q"
+          ],
+          "notes": "Double poke lane. Both safe with dashes/shields. Scale well together."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "r_e_team_shield_ms",
+          "combo": [
+            "karma_r_e",
+            "jinx_rockets"
+          ],
+          "notes": "R+E team MS enables Jinx positioning. Late-game scaling duo."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "samira",
+          "score": 0.35,
+          "reason": "no_hard_cc",
+          "issue": "Samira needs knockup/stun for passive. Karma only has slow and root (R+W)."
+        },
+        {
+          "ally": "nilah",
+          "score": 0.35,
+          "reason": "no_engage_for_melee_adc",
+          "issue": "Nilah needs engage support to go in. Karma can't provide that."
+        }
+      ]
+    },
+    {
+      "champion_id": "lulu",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "kog_maw",
+          "score": 0.95,
+          "type": "PEEL",
+          "reason": "best_hypercarry_enchanter",
+          "combo": [
+            "lulu_e_w",
+            "kog_maw_w"
+          ],
+          "notes": "W attack speed + E Pix on-hit + R knockup peel. THE protect-the-carry duo."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "shield_peel_hypercarry",
+          "combo": [
+            "lulu_e_r",
+            "jinx_rockets"
+          ],
+          "notes": "E shield + R knockup peel. Jinx passive cleanup after kills."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "polymorph_plus_peel",
+          "combo": [
+            "lulu_w_r",
+            "vayne_r_tumble"
+          ],
+          "notes": "W polymorph divers. R knockup peel. Vayne free-fires with R stealth."
+        },
+        {
+          "ally": "twitch",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "w_pix_on_twitch_r",
+          "combo": [
+            "lulu_e_w",
+            "twitch_r"
+          ],
+          "notes": "E Pix bolts on Twitch R piercing AAs. W speed for flanks."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.4,
+          "reason": "draven_needs_aggression",
+          "issue": "Draven wants early kills. Lulu is better at peeling than engaging."
+        },
+        {
+          "ally": "samira",
+          "score": 0.35,
+          "reason": "no_hard_engage",
+          "issue": "Samira needs knockup for passive. Lulu R knockup is defensive, not offensive."
+        }
+      ]
+    },
+    {
+      "champion_id": "milio",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "kog_maw",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "e_range_extension_on_kog",
+          "combo": [
+            "milio_e",
+            "kog_maw_w"
+          ],
+          "notes": "E extends Kog'Maw AA range even further. Passive Fired Up empowers AAs."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "r_cleanse_saves_carry",
+          "combo": [
+            "milio_r",
+            "jinx_passive"
+          ],
+          "notes": "R cleanses all CC on Jinx. She survives to get passive resets."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "range_extension_plus_cleanse",
+          "combo": [
+            "milio_e",
+            "vayne_aa"
+          ],
+          "notes": "E extends Vayne's short range. R cleanses CC that would kill her."
+        },
+        {
+          "ally": "twitch",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "e_empowers_twitch_r",
+          "combo": [
+            "milio_e",
+            "twitch_r"
+          ],
+          "notes": "Fired Up passive on Twitch R piercing AAs."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "samira",
+          "score": 0.35,
+          "reason": "no_engage",
+          "issue": "Samira needs hard CC for passive. Milio provides no engage."
+        },
+        {
+          "ally": "draven",
+          "score": 0.4,
+          "reason": "passive_lane",
+          "issue": "Draven wants aggression. Milio is defensive enchanter."
+        }
+      ]
+    },
+    {
+      "champion_id": "nami",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "lucian",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "e_empowers_lucian_passive",
+          "combo": [
+            "nami_e",
+            "lucian_passive"
+          ],
+          "notes": "Nami E on Lucian = each double-shot applies E slow+damage. S-tier lane."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "e_on_4th_shot_burst",
+          "combo": [
+            "nami_e",
+            "jhin_4th_shot"
+          ],
+          "notes": "E empower on Jhin 4th shot = massive poke. Bubble into W root chain."
+        },
+        {
+          "ally": "draven",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "e_on_spinning_axes",
+          "combo": [
+            "nami_e",
+            "draven_aa"
+          ],
+          "notes": "E on Draven AAs = extra damage + slow. Bubble into Draven burst."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "heal_sustain_scaling",
+          "combo": [
+            "nami_w_e",
+            "jinx_rockets"
+          ],
+          "notes": "W bounce heal sustain. E empower on rockets. R engage for teamfights."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.4,
+          "reason": "e_wasted_on_q_poke",
+          "issue": "Nami E is best on AA-heavy ADCs. Ezreal mostly uses Q. Less value."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.4,
+          "reason": "no_peel",
+          "issue": "Nami has bubble but no consistent peel. Kog needs more protection."
+        }
+      ]
+    },
+    {
+      "champion_id": "seraphine",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "miss_fortune",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "r_extends_through_allies_into_mf_r",
+          "combo": [
+            "seraphine_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Seraphine R extends through allies for massive range charm. MF R follows."
+        },
+        {
+          "ally": "samira",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "e_root_triggers_samira_passive",
+          "combo": [
+            "seraphine_e",
+            "samira_passive"
+          ],
+          "notes": "Double-cast E roots. Triggers Samira passive for combo."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "shield_heal_scaling_duo",
+          "combo": [
+            "seraphine_w",
+            "jinx_rockets"
+          ],
+          "notes": "W shield+heal sustain. Both scale well. Team fight monsters late."
+        },
+        {
+          "ally": "ashe",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "double_cc_chain",
+          "combo": [
+            "seraphine_r",
+            "ashe_r"
+          ],
+          "notes": "Double AoE CC ultimates. Team fight lockdown."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.4,
+          "reason": "passive_lane",
+          "issue": "Draven wants early kills. Seraphine scales. Tempo mismatch."
+        },
+        {
+          "ally": "nilah",
+          "score": 0.4,
+          "reason": "no_engage",
+          "issue": "Nilah needs engage. Seraphine is more poke/scale."
+        }
+      ]
+    },
+    {
+      "champion_id": "sona",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "jinx",
+          "score": 0.9,
+          "type": "SCALING",
+          "reason": "hyperscaling_duo",
+          "combo": [
+            "sona_w_e",
+            "jinx_rockets"
+          ],
+          "notes": "Both scale infinitely. Sona auras + Jinx AoE = late-game monsters."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "aura_buffs_hypercarry",
+          "combo": [
+            "sona_w_e_r",
+            "kog_maw_w"
+          ],
+          "notes": "E MS + W heal + R stun peel. Kog free-fires with full aura buffs."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "scale_together",
+          "combo": [
+            "sona_e_ms",
+            "vayne_kite"
+          ],
+          "notes": "E MS helps Vayne kite. Both scale hard. Survive lane, dominate late."
+        },
+        {
+          "ally": "twitch",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "stealth_roam_duo",
+          "combo": [
+            "sona_e",
+            "twitch_q"
+          ],
+          "notes": "E MS + Twitch Q stealth for surprise ganks. Late-game AoE combo."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.3,
+          "reason": "zero_early_pressure",
+          "issue": "Draven needs to snowball. Sona provides nothing early. Draven loses stacks."
+        },
+        {
+          "ally": "samira",
+          "score": 0.3,
+          "reason": "no_engage_no_cc",
+          "issue": "Samira needs hard CC for passive. Sona R is only CC and it's ult-gated."
+        }
+      ]
+    },
+    {
+      "champion_id": "soraka",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "kog_maw",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "infinite_healing_hypercarry",
+          "combo": [
+            "soraka_w_r",
+            "kog_maw_w"
+          ],
+          "notes": "Kog stands still and DPSes. Soraka keeps him alive. Warmog refills between fights."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "heal_sustain_hypercarry",
+          "combo": [
+            "soraka_w_r",
+            "jinx_rockets"
+          ],
+          "notes": "Keep Jinx alive to get passive resets. Global R saves from anywhere."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "sustain_through_weak_early",
+          "combo": [
+            "soraka_w_q",
+            "vayne_kite"
+          ],
+          "notes": "Soraka sustains Vayne through weak early. Both dominate late."
+        },
+        {
+          "ally": "draven",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "sustain_enables_trades",
+          "combo": [
+            "soraka_w",
+            "draven_aa"
+          ],
+          "notes": "Heal Draven after trades. He wins every extended trade with sustain advantage."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "samira",
+          "score": 0.35,
+          "reason": "no_engage",
+          "issue": "Samira needs engage. Soraka is pure sustain."
+        },
+        {
+          "ally": "nilah",
+          "score": 0.35,
+          "reason": "no_engage_for_melee",
+          "issue": "Nilah needs gap-close help. Soraka can't provide it."
+        }
+      ]
+    },
+    {
+      "champion_id": "yuumi",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "kog_maw",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "attached_heal_on_hypercarry",
+          "combo": [
+            "yuumi_e_q",
+            "kog_maw_w"
+          ],
+          "notes": "Yuumi attached to Kog = untargetable healer on DPS monster."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "attached_stealth_combo",
+          "combo": [
+            "yuumi_attached",
+            "vayne_r_tumble"
+          ],
+          "notes": "Yuumi goes invisible when Vayne R tumbles. Both untargetable."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "heal_speed_on_hypercarry",
+          "combo": [
+            "yuumi_e",
+            "jinx_passive"
+          ],
+          "notes": "E heal+MS on Jinx. After first kill, passive MS + Yuumi E = uncatchable."
+        },
+        {
+          "ally": "garen",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "unkillable_juggernaut",
+          "combo": [
+            "yuumi_attached",
+            "garen_q_r"
+          ],
+          "notes": "Yuumi on Garen = unkillable. Garen runs at carries with Q silence + Yuumi heals."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.3,
+          "reason": "zero_lane_presence",
+          "issue": "Draven needs aggression. Yuumi is AFK attached. Draven can't cash stacks."
+        },
+        {
+          "ally": "lucian",
+          "score": 0.35,
+          "reason": "early_game_adc_needs_pressure",
+          "issue": "Lucian is strongest early. Yuumi provides nothing early. Wasted lane phase."
+        }
+      ]
+    },
+    {
+      "champion_id": "zilean",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "kog_maw",
+          "score": 0.9,
+          "type": "PEEL",
+          "reason": "r_revive_on_hypercarry",
+          "combo": [
+            "zilean_r",
+            "kog_maw_passive"
+          ],
+          "notes": "R revives Kog. Even if Kog dies, passive explosion then revive. Double death."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.85,
+          "type": "PEEL",
+          "reason": "r_revive_plus_e_speed",
+          "combo": [
+            "zilean_e_r",
+            "vayne_kite"
+          ],
+          "notes": "E MS for kiting. R revive if caught. Vayne plays fearless."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.85,
+          "type": "SCALING",
+          "reason": "r_revive_hypercarry",
+          "combo": [
+            "zilean_r",
+            "jinx_passive"
+          ],
+          "notes": "R revive on Jinx. She gets second life to proc passive resets."
+        },
+        {
+          "ally": "master_yi",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "r_revive_on_melee_carry",
+          "combo": [
+            "zilean_r_e",
+            "master_yi_r"
+          ],
+          "notes": "E speed on Yi R = uncatchable. R revive if he gets caught. Nightmare combo."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.4,
+          "reason": "safe_adc_doesnt_need_revive",
+          "issue": "Ezreal is already safe with E blink. Zilean R value is wasted."
+        },
+        {
+          "ally": "sivir",
+          "score": 0.4,
+          "reason": "spell_shield_overlap",
+          "issue": "Sivir already has spell shield. Less value from Zilean's protection."
+        }
+      ]
+    },
+    {
+      "champion_id": "brand",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "ashe",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "slow_enables_brand_combo",
+          "combo": [
+            "ashe_w_slow",
+            "brand_w_e_q"
+          ],
+          "notes": "Ashe slow makes Brand W easy to land. Both have AoE for teamfights."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_ults",
+          "combo": [
+            "brand_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Brand R bouncing + MF R channeling = AoE apocalypse."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "brand_poke_enables_jinx_scaling",
+          "combo": [
+            "brand_w_poke",
+            "jinx_rockets"
+          ],
+          "notes": "Brand poke wins lane. Jinx scales. Both have AoE late."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "poke_into_execute",
+          "combo": [
+            "brand_w",
+            "jhin_4th_shot"
+          ],
+          "notes": "Brand poke softens. Jhin 4th shot executes. W root into Brand Q stun chain."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "no_peel",
+          "issue": "Brand has zero peel. Vayne gets dove and dies. Brand busy dealing damage."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.3,
+          "reason": "zero_protection",
+          "issue": "Kog needs peel. Brand provides only damage. Kog dies to any dive."
+        }
+      ]
+    },
+    {
+      "champion_id": "morgana",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "caitlyn",
+          "score": 0.9,
+          "type": "LANE",
+          "reason": "q_root_into_trap",
+          "combo": [
+            "morgana_q",
+            "caitlyn_w_trap"
+          ],
+          "notes": "Morgana Q root = guaranteed Caitlyn trap placement. Headshot + Q poke."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "q_root_into_w_root",
+          "combo": [
+            "morgana_q",
+            "jhin_w"
+          ],
+          "notes": "Morgana Q root into Jhin W root. 4+ seconds of CC chain."
+        },
+        {
+          "ally": "kai_sa",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "e_shield_enables_dive",
+          "combo": [
+            "morgana_e",
+            "kai_sa_r"
+          ],
+          "notes": "E spell shield on Kai'Sa R dive. She can't be CC'd during engage."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "PEEL",
+          "reason": "e_shield_peel",
+          "combo": [
+            "morgana_e_q",
+            "jinx_rockets"
+          ],
+          "notes": "E blocks CC on Jinx. Q root peels divers. Jinx free-fires."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "samira",
+          "score": 0.4,
+          "reason": "q_root_not_knockup",
+          "issue": "Samira passive needs knockup/stun. Morgana Q is root (Samira can't dash to rooted targets)."
+        },
+        {
+          "ally": "draven",
+          "score": 0.4,
+          "reason": "passive_lane",
+          "issue": "Morgana is reactive, not aggressive. Draven wants constant fights."
+        }
+      ]
+    },
+    {
+      "champion_id": "pyke",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "draven",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "double_gold_generation",
+          "combo": [
+            "pyke_r_gold",
+            "draven_passive_gold"
+          ],
+          "notes": "Pyke R shares kill gold + Draven passive gold. Richest duo in the game."
+        },
+        {
+          "ally": "lucian",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "hook_into_burst",
+          "combo": [
+            "pyke_q_e",
+            "lucian_passive"
+          ],
+          "notes": "Pyke hook + stun into Lucian passive burst. Early lane dominance."
+        },
+        {
+          "ally": "samira",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "e_stun_triggers_passive",
+          "combo": [
+            "pyke_e_stun",
+            "samira_passive"
+          ],
+          "notes": "Pyke E stun triggers Samira passive dash."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_execute",
+          "combo": [
+            "pyke_q_e",
+            "jhin_w_4th"
+          ],
+          "notes": "Pyke CC into Jhin root. Both have execute (Pyke R, Jhin 4th shot)."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kog_maw",
+          "score": 0.3,
+          "reason": "no_peel",
+          "issue": "Pyke is assassin. Kog needs protection. Pyke dives in, Kog dies alone."
+        },
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "weak_early_no_peel",
+          "issue": "Both weak early. Neither can peel. Double squishy."
+        }
+      ]
+    },
+    {
+      "champion_id": "senna",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "jhin",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "double_poke_utility",
+          "combo": [
+            "senna_q_aa",
+            "jhin_q_w"
+          ],
+          "notes": "Double poke lane. Both scale well. W root into Jhin W root chain."
+        },
+        {
+          "ally": "ezreal",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "double_safe_poke",
+          "combo": [
+            "senna_aa_q",
+            "ezreal_q"
+          ],
+          "notes": "Both safe. Both poke. Both scale. Low-risk, high-reward lane."
+        },
+        {
+          "ally": "ashe",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "double_utility_scaling",
+          "combo": [
+            "senna_w_r",
+            "ashe_r"
+          ],
+          "notes": "Double global ults. Double slow/root. Utility monsters."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "SCALING",
+          "reason": "dual_hyperscaling",
+          "combo": [
+            "senna_passive_scaling",
+            "jinx_rockets"
+          ],
+          "notes": "Senna infinite scaling + Jinx scaling. Late-game nightmare."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.35,
+          "reason": "draven_needs_engage_support",
+          "issue": "Draven wants to all-in. Senna pokes. Lane tempo mismatch."
+        },
+        {
+          "ally": "samira",
+          "score": 0.35,
+          "reason": "no_hard_cc_for_passive",
+          "issue": "Samira needs knockup/stun. Senna W root doesn't trigger passive."
+        }
+      ]
+    },
+    {
+      "champion_id": "swain",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "samira",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "e_root_passive_pull_triggers_samira",
+          "combo": [
+            "swain_e_passive",
+            "samira_passive"
+          ],
+          "notes": "Swain E root + passive pull = displacement that triggers Samira passive."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "root_into_w_chain",
+          "combo": [
+            "swain_e",
+            "jhin_w"
+          ],
+          "notes": "Swain E root into Jhin W root. Extended CC chain."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_drain_plus_mf_r",
+          "combo": [
+            "swain_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Swain R zones/drains. MF R channels freely behind Swain frontline."
+        },
+        {
+          "ally": "ashe",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "slow_enables_e_hit",
+          "combo": [
+            "ashe_w_slow",
+            "swain_e"
+          ],
+          "notes": "Ashe W slow makes Swain E easier to land. Both have strong CC."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "no_peel",
+          "issue": "Swain is damage-focused. Vayne gets dove. No protection."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.3,
+          "reason": "zero_protection",
+          "issue": "Swain provides damage, not peel. Kog dies to any dive."
+        }
+      ]
+    },
+    {
+      "champion_id": "zyra",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "ashe",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "slow_into_plant_zone",
+          "combo": [
+            "zyra_e_plants",
+            "ashe_w"
+          ],
+          "notes": "Ashe slow + Zyra plants = perma-slow zone. Strong poke lane."
+        },
+        {
+          "ally": "jhin",
+          "score": 0.85,
+          "type": "LANE",
+          "reason": "root_into_w_chain",
+          "combo": [
+            "zyra_e",
+            "jhin_w"
+          ],
+          "notes": "Zyra E root into Jhin W root. Extended CC. Plant damage + 4th shot."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_knockup_into_mf_r",
+          "combo": [
+            "zyra_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Zyra R knockup zones enemies into MF R channel."
+        },
+        {
+          "ally": "jinx",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "plant_zone_enables_farm",
+          "combo": [
+            "zyra_plants",
+            "jinx_rockets"
+          ],
+          "notes": "Plants zone enemies. Jinx farms safely. Both scale."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "no_peel",
+          "issue": "Zyra has zero peel. Vayne gets dove and dies."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.3,
+          "reason": "no_protection",
+          "issue": "Kog needs peel. Zyra provides only damage and zone control."
+        }
+      ]
+    },
+    {
+      "champion_id": "bard",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "jhin",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "r_stasis_into_jhin_w_r",
+          "combo": [
+            "bard_r",
+            "jhin_w_r"
+          ],
+          "notes": "Bard R freezes enemies. Jhin W root + R snipe on frozen targets. S-tier combo."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "r_stasis_into_mf_r",
+          "combo": [
+            "bard_r",
+            "miss_fortune_r"
+          ],
+          "notes": "Bard R freezes group. MF R as stasis ends = full channel guaranteed."
+        },
+        {
+          "ally": "ezreal",
+          "score": 0.8,
+          "type": "LANE",
+          "reason": "safe_lane_roam_duo",
+          "combo": [
+            "bard_roam",
+            "ezreal_safe_farm"
+          ],
+          "notes": "Ezreal safe-farms alone. Bard roams for chimes + map impact."
+        },
+        {
+          "ally": "caitlyn",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "r_into_trap_setup",
+          "combo": [
+            "bard_r",
+            "caitlyn_w"
+          ],
+          "notes": "Bard R stasis. Caitlyn places traps under frozen enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "draven",
+          "score": 0.35,
+          "reason": "roaming_abandons_draven",
+          "issue": "Draven needs lane partner. Bard roams constantly. Draven dies 1v2."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.3,
+          "reason": "no_peel_roaming",
+          "issue": "Kog needs peel. Bard roams. Kog dies alone."
+        }
+      ]
+    },
+    {
+      "champion_id": "rakan",
+      "role": "support",
+      "best_with": [
+        {
+          "ally": "xayah",
+          "score": 0.95,
+          "type": "LANE",
+          "reason": "lover_duo_passive_synergy",
+          "combo": [
+            "rakan_e_extended",
+            "xayah_feathers"
+          ],
+          "notes": "E range extended to Xayah. W recall to Xayah. Passive shared recall. THE duo."
+        },
+        {
+          "ally": "samira",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "r_charm_w_knockup_triggers_passive",
+          "combo": [
+            "rakan_r_w",
+            "samira_passive_r"
+          ],
+          "notes": "R charm + W knockup = double CC triggers. Samira goes S-rank instantly."
+        },
+        {
+          "ally": "yasuo",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "w_knockup_enables_yasuo_r",
+          "combo": [
+            "rakan_w",
+            "yasuo_r"
+          ],
+          "notes": "W knockup guarantees Yasuo Last Breath."
+        },
+        {
+          "ally": "miss_fortune",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "r_charm_into_mf_r",
+          "combo": [
+            "rakan_r_flash",
+            "miss_fortune_r"
+          ],
+          "notes": "R Flash charm entire team. MF R channels on charmed enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "ezreal",
+          "score": 0.35,
+          "reason": "no_followup",
+          "issue": "Rakan goes in hard. Ezreal stays back. Mismatch."
+        },
+        {
+          "ally": "kog_maw",
+          "score": 0.4,
+          "reason": "weak_early_lane",
+          "issue": "Kog too weak early for Rakan's aggressive engage style."
+        }
+      ]
+    }
+  ]
+}

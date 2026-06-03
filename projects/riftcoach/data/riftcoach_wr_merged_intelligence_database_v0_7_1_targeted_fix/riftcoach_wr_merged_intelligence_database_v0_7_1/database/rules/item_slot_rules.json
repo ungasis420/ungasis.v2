@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "patch_version": "7.1e",
+  "standard_item_rules": {
+    "total_inventory_slots_modeled": 6,
+    "boot_slots": 1,
+    "non_boot_item_slots": 5,
+    "trinket_slot_modeled_separately": true,
+    "boot_enchant_consumes_boot_slot": true,
+    "boot_enchant_consumes_non_boot_slot": false,
+    "allowed_non_boot_categories": [
+      "physical",
+      "magic",
+      "defense",
+      "support",
+      "hybrid",
+      "situational",
+      "transformed"
+    ]
+  },
+  "validations": [
+    "exactly_one_boot_max",
+    "max_five_non_boot_items",
+    "enchant_requires_boots",
+    "no_removed_or_deprecated_items_as_valid_build_options"
+  ]
+}

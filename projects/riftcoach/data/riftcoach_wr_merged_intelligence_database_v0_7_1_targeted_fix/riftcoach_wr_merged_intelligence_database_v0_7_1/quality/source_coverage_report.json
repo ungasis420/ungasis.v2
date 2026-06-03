@@ -1,0 +1,41 @@
+{
+  "version": "0.7.0",
+  "generated_at_utc": "2026-05-21T19:32:10.976908+00:00",
+  "source_counts": {
+    "local_champions_simple": 137,
+    "local_wr_champion_records": 140,
+    "opus_champions": 135,
+    "v06_champions": 138,
+    "canonical_champions": 141,
+    "canonical_abilities": 705,
+    "canonical_items": 164,
+    "canonical_runes": 53,
+    "canonical_spells": 10,
+    "public_data_champions": 138,
+    "public_data_items": 164,
+    "public_data_runes": 53,
+    "public_data_spells": 10,
+    "public_data_builds": 220,
+    "canonical_champions_total_including_excluded_source_records": 141,
+    "canonical_champions_active_runtime": 138
+  },
+  "exact_claim_policy": "Exact Wild Rift stats, gold costs, cooldowns, damage, ranges, and source-verified claims are not promoted unless source_status and field-level provenance support that claim.",
+  "strategy_policy": "Generated strategy/build/counter/synergy records are separate from official/source-verified facts.",
+  "runtime_exclusions": [
+    {
+      "id": "hwei",
+      "name": "Hwei",
+      "reason": "Not yet released in Wild Rift as of Patch 7.1d. Coming 2026 but not in game."
+    },
+    {
+      "id": "sejuani",
+      "name": "Sejuani",
+      "reason": "Not in Wild Rift 137 champion roster."
+    },
+    {
+      "id": "tahm_kench",
+      "name": "Tahm Kench",
+      "reason": "Not in Wild Rift. PC League of Legends only."
+    }
+  ]
+}

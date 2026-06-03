@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "crowd_control_types": [
+    "slow",
+    "root",
+    "stun",
+    "knockup",
+    "knockback",
+    "knock_in",
+    "airborne",
+    "silence",
+    "charm",
+    "fear",
+    "taunt",
+    "suppression",
+    "sleep",
+    "pull",
+    "tether",
+    "cripple",
+    "grounded",
+    "true_sight",
+    "reveal"
+  ]
+}

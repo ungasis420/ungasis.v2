@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "roles": [
+    "baron",
+    "jungle",
+    "mid",
+    "duo",
+    "support",
+    "frontline",
+    "carry",
+    "utility",
+    "engage",
+    "peel",
+    "poke",
+    "split_push",
+    "roam",
+    "scaling",
+    "early_pressure"
+  ]
+}

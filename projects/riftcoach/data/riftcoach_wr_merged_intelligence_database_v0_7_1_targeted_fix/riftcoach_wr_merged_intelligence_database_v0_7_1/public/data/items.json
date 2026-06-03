@@ -1,0 +1,2302 @@
+[
+  {
+    "id": "abyssal_mask",
+    "name": "Abyssal Mask",
+    "category": "Defense",
+    "tier": "C",
+    "cost": 3000,
+    "stats": [
+      "+400 HP",
+      "+55 MR",
+      "+10 Ability Haste"
+    ],
+    "passive": "Unmake: Reduce nearby enemies' MR. Gain MR per cursed enemy.",
+    "image": "/images/items/abyssal_mask.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "aether_wisp",
+    "name": "Aether Wisp",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 950,
+    "stats": [
+      "+20 Ability Power"
+    ],
+    "passive": "",
+    "image": "/images/items/aether_wisp.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "amaranths_twinguard",
+    "name": "Amaranth's Twinguard",
+    "category": "Defense",
+    "tier": "A",
+    "cost": 3100,
+    "stats": [
+      "+60 Armor",
+      "+60 MR"
+    ],
+    "passive": "Endurance: Max combat stacks grant +30% armor/MR + 20% tenacity + size.",
+    "image": "/images/items/amaranths_twinguard.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "amplifying_tome",
+    "name": "Amplifying Tome",
+    "category": "Boots",
+    "tier": "basic_item",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Amplifying_Tome', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Amplifying Tome passive/stat effects require approved-source refresh before source_verified release.",
+    "image": "/images/items/amplifying_tome.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "archangels_staff",
+    "name": "Archangel's Staff",
+    "category": "Magic",
+    "tier": "C",
+    "cost": 2950,
+    "stats": [
+      "+35 AP",
+      "+500 Mana",
+      "+20 Ability Haste"
+    ],
+    "passive": "Awe: Gain AP from max mana. Mana Charge: Stacks mana. Transforms into Seraph's Embrace.",
+    "image": "/images/items/archangels_staff.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "ardent_censer",
+    "name": "Ardent Censer",
+    "category": "Support",
+    "tier": "S",
+    "cost": 2700,
+    "stats": [
+      "+35 AP",
+      "+20 Ability Haste",
+      "+5% Heal & Shield Power",
+      "+250 HP",
+      "+50% Base Mana Regen"
+    ],
+    "passive": "Censer: Healing/shielding ally grants 15-40% AS + 16-30 magic damage on-hit for 6s.",
+    "image": "/images/items/ardent_censer.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "atmas_reckoning",
+    "name": "Atma's Reckoning",
+    "category": "Defense",
+    "tier": "Upgraded",
+    "cost": 2600,
+    "stats": [
+      "+500 HP",
+      "+25% Crit"
+    ],
+    "passive": "Big Hands: Gain crit rate per bonus HP.",
+    "image": "/images/items/atmas_reckoning.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "awakened_soulstealer",
+    "name": "Awakened Soulstealer",
+    "category": "Magic",
+    "tier": "A",
+    "cost": 3000,
+    "stats": [
+      "+65 AP",
+      "+150 HP",
+      "+20 Ability Haste"
+    ],
+    "passive": "Soul Hunt: Takedowns reduce all CDs by 25% + steal MS and AH.",
+    "image": "/images/items/awakened_soulstealer.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "axiom_arc",
+    "name": "Axiom Arc",
+    "category": "Physical",
+    "tier": "Upgraded",
+    "cost": 3200,
+    "stats": [
+      "+55 AD",
+      "+20 Ability Haste",
+      "+18 Armor Pen"
+    ],
+    "passive": "Flux: Champion takedowns within 3s refund 15% (+2% per 10 Armor Pen) of ultimate total CD. ARAM exclusive.",
+    "image": "/images/items/axiom_arc.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "bf_sword",
+    "name": "B. F. Sword",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1500,
+    "stats": [
+      "+30 Attack Damage"
+    ],
+    "passive": "",
+    "image": "/images/items/bf_sword.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "bamis_cinder",
+    "name": "Bami's Cinder",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1100,
+    "stats": [
+      "+250 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/bamis_cinder.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "bandle_fantasy",
+    "name": "Bandle Fantasy",
+    "category": "Magic",
+    "tier": "C",
+    "cost": 3000,
+    "stats": [
+      "+85 AP",
+      "+300 Mana",
+      "+20 Ability Haste"
+    ],
+    "passive": "Flameblossom: Damaging abilities spawn traps dealing magic damage.",
+    "image": "/images/items/bandle_fantasy.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "berserkers_greaves",
+    "name": "Berserker's Greaves",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 1000,
+    "stats": [
+      "+25% As",
+      "+40 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/berserkers_greaves.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "black_cleaver",
+    "name": "Black Cleaver",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3000,
+    "stats": [
+      "+40 AD",
+      "+20 Ability Haste",
+      "+400 HP"
+    ],
+    "passive": "Sunder: Physical damage reduces target armor by 6% per stack (max 4 = 24%). Chase: AAs grant MS; bonus MS toward max-stacked targets.",
+    "image": "/images/items/black_cleaver.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "black_mist_scythe",
+    "name": "Black Mist Scythe",
+    "category": "Support",
+    "tier": "Unknown",
+    "cost": 400,
+    "stats": [
+      "+5 AD",
+      "+10 AP"
+    ],
+    "passive": "Poke gold gen. Attacks on champions generate gold.",
+    "image": "/images/items/black_mist_scythe.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "blade_of_the_ruined_king",
+    "name": "Blade of the Ruined King",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 3200,
+    "stats": [
+      "+25 AD",
+      "+35% Attack Speed"
+    ],
+    "passive": "Thirst: +10% Omnivamp. Ruined Strikes: AAs deal 10%/8.5% current HP on-hit (min 15, max 60 vs monsters). Drain: 3 hits steal 25% MS (60s CD).",
+    "image": "/images/items/blade_of_the_ruined_king.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "blasting_wand",
+    "name": "Blasting Wand",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 900,
+    "stats": [
+      "+40 Ability Power"
+    ],
+    "passive": "",
+    "image": "/images/items/blasting_wand.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "bloodthirster",
+    "name": "Bloodthirster",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+55 AD",
+      "+250 HP",
+      "+25% Crit"
+    ],
+    "passive": "Bloody: +8% Physical Vamp (crit attacks +4%). Ichorshield: Overhealing creates shield.",
+    "image": "/images/items/bloodthirster.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "boots_of_dynamism",
+    "name": "Boots of Dynamism",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 1000,
+    "stats": [
+      "+40 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/boots_of_dynamism.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "boots_of_mana",
+    "name": "Boots of Mana",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 1000,
+    "stats": [
+      "+250 Mana",
+      "+10 Mana Regen",
+      "+40 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/boots_of_mana.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "boots_of_speed",
+    "name": "Boots of Speed",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 500,
+    "stats": [
+      "+25 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/boots_of_speed.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "bramble_vest",
+    "name": "Bramble Vest",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+30 Armor"
+    ],
+    "passive": "",
+    "image": "/images/items/bramble_vest.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "bulwark_of_the_mountain",
+    "name": "Bulwark of the Mountain",
+    "category": "Support",
+    "tier": "Unknown",
+    "cost": 400,
+    "stats": [
+      "+50 HP"
+    ],
+    "passive": "Tank support gold gen. Proximity to dying minions generates gold.",
+    "image": "/images/items/bulwark_of_the_mountain.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "catalyst_of_aeons",
+    "name": "Catalyst of Aeons",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1100,
+    "stats": [
+      "+200 Health",
+      "+300 Mana"
+    ],
+    "passive": "",
+    "image": "/images/items/catalyst_of_aeons.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "caulfields_warhammer",
+    "name": "Caulfield's Warhammer",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1200,
+    "stats": [
+      "+20 Attack Damage",
+      "+10 Ability Haste"
+    ],
+    "passive": "",
+    "image": "/images/items/caulfields_warhammer.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "chain_vest",
+    "name": "Chain Vest",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 900,
+    "stats": [
+      "+35 Armor"
+    ],
+    "passive": "",
+    "image": "/images/items/chain_vest.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "chempunk_chainsword",
+    "name": "Chempunk Chainsword",
+    "category": "Physical",
+    "tier": "Upgraded",
+    "cost": 2800,
+    "stats": [
+      "+45 AD",
+      "+15 Ability Haste",
+      "+250 HP"
+    ],
+    "passive": "Punishment: Physical damage applies 50% Grievous Wounds for 3s.",
+    "image": "/images/items/chempunk_chainsword.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "cloak_of_agility",
+    "name": "Cloak of Agility",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+20% Critical Rate"
+    ],
+    "passive": "",
+    "image": "/images/items/cloak_of_agility.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "control_ward",
+    "name": "Control Ward",
+    "category": "Boots",
+    "tier": "vision_or_trinket",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Control_Ward', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Control Ward passive/stat effects require approved-source refresh before source_verified release.",
+    "image": "/images/items/control_ward.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "cosmic_drive",
+    "name": "Cosmic Drive",
+    "category": "Magic",
+    "tier": "C",
+    "cost": 3000,
+    "stats": [
+      "+70 AP",
+      "+250 HP",
+      "+25 Ability Haste"
+    ],
+    "passive": "Spelldance: 3 ability hits on champions within 3s grant bonus MS and AP for 4s.",
+    "image": "/images/items/cosmic_drive.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "crown_of_the_shattered_queen",
+    "name": "Crown of the Shattered Queen",
+    "category": "Magic",
+    "tier": "A",
+    "cost": 3000,
+    "stats": [
+      "+70 AP",
+      "+300 HP",
+      "+300 Mana",
+      "+15 Ability Haste"
+    ],
+    "passive": "Safeguard: First champion damage instance is significantly reduced (40s CD).",
+    "image": "/images/items/crown_of_the_shattered_queen.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "dawnshroud",
+    "name": "Dawnshroud",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 2700,
+    "stats": [
+      "+300 HP",
+      "+30 Armor",
+      "+30 MR",
+      "+15 Ability Haste"
+    ],
+    "passive": "Immobilizing reveals and damages nearby enemies.",
+    "image": "/images/items/dawnshroud.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "dead_mans_plate",
+    "name": "Dead Man's Plate",
+    "category": "Defense",
+    "tier": "C",
+    "cost": 2900,
+    "stats": [
+      "+250 HP",
+      "+50 Armor"
+    ],
+    "passive": "Momentum: Moving generates stacks. At 100, next AA deals bonus damage + slow.",
+    "image": "/images/items/dead_mans_plate.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "deaths_dance",
+    "name": "Death's Dance",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 3100,
+    "stats": [
+      "+35 AD",
+      "+15 Ability Haste",
+      "+40 Armor"
+    ],
+    "passive": "Cauterize: 27%/12% damage taken becomes bleed over 4s. Defy: Takedowns cleanse bleed and heal 8% max HP over 2s.",
+    "image": "/images/items/deaths_dance.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "divine_sunderer",
+    "name": "Divine Sunderer",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3400,
+    "stats": [
+      "+25 AD",
+      "+25 Ability Haste",
+      "+425 HP"
+    ],
+    "passive": "Spellblade: After ability, next AA deals 10%/7% target max HP bonus damage (min 125% base AD). Heals for 6%/2.5% target max HP. Limited to 1 Spellblade.",
+    "image": "/images/items/divine_sunderer.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "dream_maker",
+    "name": "Dream Maker",
+    "category": "Boots",
+    "tier": "B",
+    "cost": 500,
+    "stats": [],
+    "passive": "Dream Bubbles empower ally heals/shields.",
+    "image": "/images/items/dream_maker_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "duskblade_of_draktharr",
+    "name": "Duskblade of Draktharr",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3000,
+    "stats": [
+      "+55 AD",
+      "+10 Ability Haste"
+    ],
+    "passive": "Razor: +18 Armor Pen. Nightstalker: Next AA on champion deals 60-160 bonus damage and slows 99% for 0.35s (10s CD, reset on takedown).",
+    "image": "/images/items/duskblade_of_draktharr.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "eclipse",
+    "name": "Eclipse",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+65 AD",
+      "+20 Ability Haste"
+    ],
+    "passive": "Ever Rising Moon: 2 hits on champion within 1.8s deals 7%/3.5% max HP bonus damage, grants shield (140/70 + 35%/18% bonus AD) for 2s (6s CD).",
+    "image": "/images/items/eclipse.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "edge_of_night",
+    "name": "Edge of Night",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3150,
+    "stats": [
+      "+50 AD",
+      "+250 HP"
+    ],
+    "passive": "Gouge: +8 Armor Pen. Annul: Grants spell shield blocking next enemy ability.",
+    "image": "/images/items/edge_of_night.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "essence_reaver",
+    "name": "Essence Reaver",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+35 AD",
+      "+20 Ability Haste",
+      "+25% Crit"
+    ],
+    "passive": "Spellblade: Ability casts stack (max 3). AAs consume stack for 90% AD bonus damage + 40 MS. Mana Siphon: AAs restore 3% missing mana. Limited to 1 Spellblade.",
+    "image": "/images/items/essence_reaver.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "executioners_calling",
+    "name": "Executioner's Calling",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 800,
+    "stats": [
+      "+15 Attack Damage"
+    ],
+    "passive": "",
+    "image": "/images/items/executioners_calling.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "experimental_hexplate",
+    "name": "Experimental Hexplate",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3000,
+    "stats": [
+      "+40 AD",
+      "+15 Ability Haste",
+      "+300 HP"
+    ],
+    "passive": "Hexcharged: After casting ultimate, gain bonus AS and MS.",
+    "image": "/images/items/experimental_hexplate.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "fiendish_codex",
+    "name": "Fiendish Codex",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+25 Ability Power",
+      "+10 Ability Haste"
+    ],
+    "passive": "",
+    "image": "/images/items/fiendish_codex.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "fimbulwinter",
+    "name": "Fimbulwinter",
+    "category": "Defense",
+    "tier": "Upgraded",
+    "cost": 2600,
+    "stats": [
+      "+400 HP",
+      "+500 Mana",
+      "+15 Ability Haste"
+    ],
+    "passive": "Everlasting: Immobilizing grants shield based on max mana.",
+    "image": "/images/items/fimbulwinter.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "force_of_nature",
+    "name": "Force of Nature",
+    "category": "Defense",
+    "tier": "A",
+    "cost": 2850,
+    "stats": [
+      "+350 HP",
+      "+60 MR",
+      "+5% Move Speed"
+    ],
+    "passive": "Absorb: Taking magic damage grants stacking MR + MS.",
+    "image": "/images/items/force_of_nature.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "frozen_heart",
+    "name": "Frozen Heart",
+    "category": "Defense",
+    "tier": "A",
+    "cost": 2700,
+    "stats": [
+      "+70 Armor",
+      "+300 Mana",
+      "+20 Ability Haste"
+    ],
+    "passive": "Winter's Caress: Reduce nearby enemies' AS by 20%.",
+    "image": "/images/items/frozen_heart.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "galeforce",
+    "name": "Galeforce",
+    "category": "Boots",
+    "tier": "B",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Dash and fire missiles at lowest-HP nearby enemy.",
+    "image": "/images/items/galeforce_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "gargoyle_enchant",
+    "name": "Gargoyle Enchant",
+    "category": "Boots",
+    "tier": "A",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Gain shield based on bonus HP. Increased by nearby enemies.",
+    "image": "/images/items/gargoyle_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "giants_belt",
+    "name": "Giant's Belt",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+350 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/giants_belt.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "glacial_shroud",
+    "name": "Glacial Shroud",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+20 Armor",
+      "+10 Ability Haste",
+      "+200 Mana"
+    ],
+    "passive": "",
+    "image": "/images/items/glacial_shroud.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "glorious_enchant",
+    "name": "Glorious Enchant",
+    "category": "Boots",
+    "tier": "B",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Gain movement speed toward enemies.",
+    "image": "/images/items/glorious_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "gluttonous_greaves",
+    "name": "Gluttonous Greaves",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 1000,
+    "stats": [
+      "+8% Omnivamp",
+      "+40 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/gluttonous_greaves.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "goredrinker",
+    "name": "Goredrinker",
+    "category": "Boots",
+    "tier": "B",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Deal damage to nearby enemies and heal based on missing HP.",
+    "image": "/images/items/goredrinker_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "guardian_angel",
+    "name": "Guardian Angel",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 3400,
+    "stats": [
+      "+40 AD",
+      "+40 Armor"
+    ],
+    "passive": "Resurrect: Upon death, revive with 50% HP and 30% mana after 4s stasis (210s CD).",
+    "image": "/images/items/guardian_angel.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "guinsoos_rageblade",
+    "name": "Guinsoo's Rageblade",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+25 AD",
+      "+25 AP",
+      "+25% Attack Speed"
+    ],
+    "passive": "Wrath: Every 3rd AA triggers on-hit effects twice. Converts crit to on-hit damage. Anti-synergy with Infinity Edge.",
+    "image": "/images/items/guinsoos_rageblade.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "harmonic_echo",
+    "name": "Harmonic Echo",
+    "category": "Support",
+    "tier": "S",
+    "cost": 2500,
+    "stats": [
+      "+70 AP",
+      "+250 HP",
+      "+50% Base Mana Regen"
+    ],
+    "passive": "Echo: At 100 charges, next heal/shield also heals nearby allies.",
+    "image": "/images/items/harmonic_echo.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "haunting_guise",
+    "name": "Haunting Guise",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 1300,
+    "stats": [
+      "+30 Ability Power",
+      "+200 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/haunting_guise.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "heartsteel",
+    "name": "Heartsteel",
+    "category": "Defense",
+    "tier": "A",
+    "cost": 3200,
+    "stats": [
+      "+800 HP",
+      "+15 Ability Haste"
+    ],
+    "passive": "Colossal Consumption: Every 30s, charged AA deals %HP damage + permanently gains HP.",
+    "image": "/images/items/heartsteel.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "hexdrinker",
+    "name": "Hexdrinker",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1200,
+    "stats": [
+      "+20 Attack Damage",
+      "+20 Magic Resist"
+    ],
+    "passive": "",
+    "image": "/images/items/hexdrinker.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "hextech_alternator",
+    "name": "Hextech Alternator",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 1400,
+    "stats": [
+      "+25 Ability Power",
+      "+150 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/hextech_alternator.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "hollow_radiance",
+    "name": "Hollow Radiance",
+    "category": "Defense",
+    "tier": "A",
+    "cost": 2800,
+    "stats": [
+      "+350 HP",
+      "+50 Armor",
+      "+15 Ability Haste"
+    ],
+    "passive": "Deathfire Aura: Magic damage/s to nearby enemies. Enhanced after immobilizing.",
+    "image": "/images/items/hollow_radiance.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "horizon_focus",
+    "name": "Horizon Focus",
+    "category": "Magic",
+    "tier": "C",
+    "cost": 3000,
+    "stats": [
+      "+85 AP",
+      "+150 HP"
+    ],
+    "passive": "Hypershot: Long-range abilities reveal and deal bonus damage.",
+    "image": "/images/items/horizon_focus.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "hullbreaker",
+    "name": "Hullbreaker",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3100,
+    "stats": [
+      "+50 AD",
+      "+400 HP"
+    ],
+    "passive": "Set Sail: +5% MS. Skipper: Every 4th attack on champs/epic monsters deals 160% base AD (+5% max HP) bonus damage (240%+9% vs turrets). Boarding Party: Nearby siege/super minions gain bonus resists.",
+    "image": "/images/items/hullbreaker.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "iceborn_gauntlet",
+    "name": "Iceborn Gauntlet",
+    "category": "Defense",
+    "tier": "C",
+    "cost": 3100,
+    "stats": [
+      "+400 HP",
+      "+40 Armor",
+      "+20 Ability Haste"
+    ],
+    "passive": "Spellblade: After ability, next AA creates frost field slowing 30% for 2s. Limited to 1 Spellblade.",
+    "image": "/images/items/iceborn_gauntlet.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "immortal_shieldbow",
+    "name": "Immortal Shieldbow",
+    "category": "Defense",
+    "tier": "A",
+    "cost": 3000,
+    "stats": [
+      "+50 Attack Damage",
+      "+20% Critical Rate"
+    ],
+    "passive": "",
+    "image": "/images/items/immortal_shieldbow.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "imperial_mandate",
+    "name": "Imperial Mandate",
+    "category": "Support",
+    "tier": "Upgraded",
+    "cost": 2500,
+    "stats": [
+      "+60 AP",
+      "+20 Ability Haste",
+      "+200 HP"
+    ],
+    "passive": "Coordinate: CC marks enemies. Allies consume mark for bonus magic damage + MS.",
+    "image": "/images/items/imperial_mandate.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "infinity_edge",
+    "name": "Infinity Edge",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 3400,
+    "stats": [
+      "+60 AD",
+      "+25% Crit"
+    ],
+    "passive": "Infinity: +30% crit damage. Limit Break: Every 1% crit exceeding 100% converts to 0.6% crit damage.",
+    "image": "/images/items/infinity_edge.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "infinity_orb",
+    "name": "Infinity Orb",
+    "category": "Magic",
+    "tier": "A",
+    "cost": 3150,
+    "stats": [
+      "+60 AP",
+      "+200 HP",
+      "+15 Magic Pen"
+    ],
+    "passive": "Destiny: Abilities crit against targets below 35% HP.",
+    "image": "/images/items/infinity_orb.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "ionian_boots_of_lucidity",
+    "name": "Ionian Boots of Lucidity",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 950,
+    "stats": [
+      "+15 Ah",
+      "+40 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/ionian_boots_of_lucidity.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "jaurims_fist",
+    "name": "Jaurim's Fist",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1200,
+    "stats": [
+      "+15 Attack Damage",
+      "+200 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/jaurims_fist.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "kaenic_rookern",
+    "name": "Kaenic Rookern",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 2900,
+    "stats": [
+      "+350 HP",
+      "+60 MR"
+    ],
+    "passive": "Magebane: Regenerating magic damage shield. Regenerates out of combat.",
+    "image": "/images/items/kaenic_rookern.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "kindlegem",
+    "name": "Kindlegem",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+10 Ability Haste",
+      "+200 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/kindlegem.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "kircheis_shard",
+    "name": "Kircheis Shard",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 900,
+    "stats": [
+      "+15% Attack Speed"
+    ],
+    "passive": "",
+    "image": "/images/items/kircheis_shard.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "knights_vow",
+    "name": "Knight's Vow",
+    "category": "Support",
+    "tier": "B",
+    "cost": 2400,
+    "stats": [
+      "+300 HP",
+      "+30 Armor",
+      "+15 Ability Haste"
+    ],
+    "passive": "Pledge: Bond to ally. Redirect damage to you. Heal when they deal damage.",
+    "image": "/images/items/knights_vow.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "kraken_slayer",
+    "name": "Kraken Slayer",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3200,
+    "stats": [
+      "+40 AD",
+      "+30% Attack Speed"
+    ],
+    "passive": "Bring It Down: Every 3rd AA deals bonus true damage.",
+    "image": "/images/items/kraken_slayer.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "last_whisper",
+    "name": "Last Whisper",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 500,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/last_whisper.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "liandrys_torment",
+    "name": "Liandry's Torment",
+    "category": "Magic",
+    "tier": "B",
+    "cost": 3150,
+    "stats": [
+      "+75 AP",
+      "+300 HP"
+    ],
+    "passive": "Torment: Abilities burn for max HP% magic damage over time.",
+    "image": "/images/items/liandrys_torment.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "lich_bane",
+    "name": "Lich Bane",
+    "category": "Magic",
+    "tier": "B",
+    "cost": 2950,
+    "stats": [
+      "+80 AP",
+      "+10 Ability Haste"
+    ],
+    "passive": "Spellblade: After ability, next AA deals 75% base AD (+50% AP) magic damage (1.5s CD). Limited to 1 Spellblade.",
+    "image": "/images/items/lich_bane.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "locket_enchant",
+    "name": "Locket Enchant",
+    "category": "Boots",
+    "tier": "A",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Shield nearby allies.",
+    "image": "/images/items/locket_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "long_sword",
+    "name": "Long Sword",
+    "category": "Boots",
+    "tier": "basic_item",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Long_Sword', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Long Sword passive/stat effects require approved-source refresh before source_verified release.",
+    "image": "/images/items/long_sword.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "lord_dominiks_regards",
+    "name": "Lord Dominik's Regards",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 3000,
+    "stats": [
+      "+30 AD",
+      "+25% Crit",
+      "+30% Armor Pen"
+    ],
+    "passive": "Giant Slayer: Deal 0-20% bonus damage vs higher-HP targets.",
+    "image": "/images/items/lord_dominiks_regards.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "lost_chapter",
+    "name": "Lost Chapter",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 1050,
+    "stats": [
+      "+25 Ability Power",
+      "+10 Ability Haste",
+      "+150 Mana"
+    ],
+    "passive": "",
+    "image": "/images/items/lost_chapter.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "ludens_echo",
+    "name": "Luden's Echo",
+    "category": "Magic",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+80 AP",
+      "+300 Mana",
+      "+15 Ability Haste"
+    ],
+    "passive": "Echo: At 100 stacks, next ability deals bonus splash magic damage.",
+    "image": "/images/items/ludens_echo.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "magnetic_blaster",
+    "name": "Magnetic Blaster",
+    "category": "Physical",
+    "tier": "S",
+    "cost": 3000,
+    "stats": [
+      "+25% Crit",
+      "+35% Attack Speed"
+    ],
+    "passive": "Fervor: +5% MS. Power Blitz: Energized attacks gain 100 range, deal 40-100 bonus magic damage, grant 60 MS. Bounces to 5 nearby enemies, can crit.",
+    "image": "/images/items/magnetic_blaster.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "malignance",
+    "name": "Malignance",
+    "category": "Magic",
+    "tier": "C",
+    "cost": 2900,
+    "stats": [
+      "+70 AP",
+      "+300 Mana",
+      "+20 Ability Haste"
+    ],
+    "passive": "Hatefog: Ultimate creates damage zone under nearby enemies.",
+    "image": "/images/items/malignance.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "manamune",
+    "name": "Manamune",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 2700,
+    "stats": [
+      "+35 AD",
+      "+500 Mana",
+      "+15 Ability Haste"
+    ],
+    "passive": "Awe: Gain AD from max mana. Mana Charge: Stacks mana. Transforms into Muramana.",
+    "image": "/images/items/manamune.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "mantle_of_the_twelfth_hour",
+    "name": "Mantle of the Twelfth Hour",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+60 Armor",
+      "+60 MR",
+      "+10 Ability Haste"
+    ],
+    "passive": "Final Stand: At low HP, gain bonus armor, MR, and tenacity.",
+    "image": "/images/items/mantle_of_the_twelfth_hour.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "maw_of_malmortius",
+    "name": "Maw of Malmortius",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 2800,
+    "stats": [
+      "+45 AD",
+      "+40 MR",
+      "+15 Ability Haste"
+    ],
+    "passive": "Lifeline: At 30% HP from magic damage, gain magic shield + omnivamp (90s CD). Limited to 1 Lifeline.",
+    "image": "/images/items/maw_of_malmortius.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "mejais_soulstealer",
+    "name": "Mejai's Soulstealer",
+    "category": "Magic",
+    "tier": "Upgraded",
+    "cost": 1600,
+    "stats": [
+      "+20 AP"
+    ],
+    "passive": "Glory: Gain stacks on takedowns (lose on death). Stacks grant AP and MS. Max 25 stacks.",
+    "image": "/images/items/mejais_soulstealer.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "mercurys_treads",
+    "name": "Mercury's Treads",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 1000,
+    "stats": [
+      "+40 Mr",
+      "+40 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/mercurys_treads.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "morellonomicon",
+    "name": "Morellonomicon",
+    "category": "Magic",
+    "tier": "Upgraded",
+    "cost": 3000,
+    "stats": [
+      "+70 AP",
+      "+300 HP"
+    ],
+    "passive": "Affliction: Magic damage applies 40% Grievous Wounds for 3s.",
+    "image": "/images/items/morellonomicon.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "mortal_reminder",
+    "name": "Mortal Reminder",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 3100,
+    "stats": [
+      "+40 AD",
+      "+25% Crit",
+      "+15% Armor Pen"
+    ],
+    "passive": "Sepsis: Physical damage applies Grievous Wounds.",
+    "image": "/images/items/mortal_reminder.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "muramana",
+    "name": "Muramana",
+    "category": "Physical",
+    "tier": "Unknown",
+    "cost": 2950,
+    "stats": [
+      "+35 AD",
+      "+500 Mana",
+      "+15 Ability Haste"
+    ],
+    "passive": "Abilities and AAs spend mana to deal bonus damage.",
+    "image": "/images/items/muramana.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "nashors_tooth",
+    "name": "Nashor's Tooth",
+    "category": "Magic",
+    "tier": "Upgraded",
+    "cost": 2800,
+    "stats": [
+      "+75 AP",
+      "+40% Attack Speed"
+    ],
+    "passive": "Icathian Bite: AAs deal 15 (+20% AP) bonus magic damage on-hit.",
+    "image": "/images/items/nashors_tooth.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "navori_quickblades",
+    "name": "Navori Quickblades",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3100,
+    "stats": [
+      "+45 AD",
+      "+25% Crit",
+      "+15 Ability Haste"
+    ],
+    "passive": "Transcendence: Crit strikes reduce non-ult ability CDs.",
+    "image": "/images/items/navori_quickblades.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "needlessly_large_rod",
+    "name": "Needlessly Large Rod",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 1300,
+    "stats": [
+      "+60 Ability Power"
+    ],
+    "passive": "",
+    "image": "/images/items/needlessly_large_rod.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "negatron_cloak",
+    "name": "Negatron Cloak",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 900,
+    "stats": [
+      "+40 Magic Resist"
+    ],
+    "passive": "",
+    "image": "/images/items/negatron_cloak.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "oblivion_orb",
+    "name": "Oblivion Orb",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 800,
+    "stats": [
+      "+20 Ability Power"
+    ],
+    "passive": "",
+    "image": "/images/items/oblivion_orb.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "oceanids_trident",
+    "name": "Oceanid's Trident",
+    "category": "Magic",
+    "tier": "A",
+    "cost": 3000,
+    "stats": [
+      "+65 AP",
+      "+300 HP",
+      "+300 Mana"
+    ],
+    "passive": "Surge: Abilities in combat deal bonus damage and grant heal/shield power.",
+    "image": "/images/items/oceanids_trident.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "overlords_bloodmail",
+    "name": "Overlord's Bloodmail",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3200,
+    "stats": [
+      "+500 HP",
+      "+40 AD",
+      "+25% Crit"
+    ],
+    "passive": "Tyranny: Gain AD based on bonus HP.",
+    "image": "/images/items/overlords_bloodmail.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "phage",
+    "name": "Phage",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+15 Attack Damage",
+      "+200 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/phage.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "phantom_dancer",
+    "name": "Phantom Dancer",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 2800,
+    "stats": [
+      "+30 AD",
+      "+30% Attack Speed",
+      "+20% Crit"
+    ],
+    "passive": "Spectral Waltz: Attacking grants ghosting + bonus AS. Lifeline: Shield at low HP (90s CD). Limited to 1 Lifeline.",
+    "image": "/images/items/phantom_dancer.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "plated_steelcaps",
+    "name": "Plated Steelcaps",
+    "category": "Boots",
+    "tier": "Boots",
+    "cost": 1000,
+    "stats": [
+      "+35 Armor",
+      "+40 Ms"
+    ],
+    "passive": "",
+    "image": "/images/items/plated_steelcaps.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "prophets_pendant",
+    "name": "Prophet's Pendant",
+    "category": "Support",
+    "tier": "-",
+    "cost": 1250,
+    "stats": [
+      "+30 Ability Power",
+      "+10 Ability Haste"
+    ],
+    "passive": "",
+    "image": "/images/items/prophets_pendant.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "protectors_vow",
+    "name": "Protector's Vow",
+    "category": "Defense",
+    "tier": "Upgraded",
+    "cost": 2700,
+    "stats": [
+      "+350 HP",
+      "+30 Armor",
+      "+15 Ability Haste"
+    ],
+    "passive": "Pledge: Bind to ally. Redirect damage to you, grant them shield.",
+    "image": "/images/items/protectors_vow.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "protobelt_enchant",
+    "name": "Protobelt Enchant",
+    "category": "Boots",
+    "tier": "S",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Dash forward and fire bolts dealing magic damage.",
+    "image": "/images/items/protobelt_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "psychic_projector",
+    "name": "Psychic Projector",
+    "category": "Magic",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+70 AP",
+      "+350 HP",
+      "+15 Ability Haste"
+    ],
+    "passive": "Active: Dash to target location (~40s CD). Provides mobility for immobile mages.",
+    "image": "/images/items/psychic_projector.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "quicksilver_enchant",
+    "name": "Quicksilver Enchant",
+    "category": "Boots",
+    "tier": "S",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Remove all CC effects.",
+    "image": "/images/items/quicksilver_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "rabadons_deathcap",
+    "name": "Rabadon's Deathcap",
+    "category": "Magic",
+    "tier": "S",
+    "cost": 3600,
+    "stats": [
+      "+120 AP"
+    ],
+    "passive": "Unique: Increases total AP by 40%.",
+    "image": "/images/items/rabadons_deathcap.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "radiant_virtue",
+    "name": "Radiant Virtue",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 2800,
+    "stats": [
+      "+400 HP",
+      "+30 Armor",
+      "+30 MR",
+      "+15 Ability Haste"
+    ],
+    "passive": "Guiding Light: After casting ult, heal nearby allies over time.",
+    "image": "/images/items/radiant_virtue.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "randuins_omen",
+    "name": "Randuin's Omen",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 2800,
+    "stats": [
+      "+400 HP",
+      "+50 Armor"
+    ],
+    "passive": "Humility: Active AoE slow. Rock Solid: Reduces incoming crit damage.",
+    "image": "/images/items/randuins_omen.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "recurve_bow",
+    "name": "Recurve Bow",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1400,
+    "stats": [
+      "+20% Attack Speed"
+    ],
+    "passive": "",
+    "image": "/images/items/recurve_bow.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "redemption",
+    "name": "Redemption",
+    "category": "Support",
+    "tier": "A",
+    "cost": 2600,
+    "stats": [
+      "+20 Ability Haste",
+      "+400 HP",
+      "+300 Mana"
+    ],
+    "passive": "Eternity: Restore mana from damage taken, HP from mana spent. Salvation: Near allies below 50% HP, heal them every 8s.",
+    "image": "/images/items/redemption.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "relic_shield",
+    "name": "Relic Shield",
+    "category": "Support",
+    "tier": "Component",
+    "cost": 400,
+    "stats": [
+      "+50 HP"
+    ],
+    "passive": "Spoils of War: Periodically, melee attacks execute low-HP minions and share gold.",
+    "image": "/images/items/relic_shield.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "riftmaker",
+    "name": "Riftmaker",
+    "category": "Magic",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+70 AP",
+      "+300 HP",
+      "+10 Ability Haste"
+    ],
+    "passive": "Void Corruption: Damage stacks. At max stacks, deal bonus true damage. Grants omnivamp.",
+    "image": "/images/items/riftmaker.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "ring_of_revelation",
+    "name": "Ring of Revelation",
+    "category": "Support",
+    "tier": "-",
+    "cost": 400,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/ring_of_revelation.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "rod_of_ages",
+    "name": "Rod of Ages",
+    "category": "Magic",
+    "tier": "B",
+    "cost": 2800,
+    "stats": [
+      "+30 AP",
+      "+300 HP",
+      "+300 Mana"
+    ],
+    "passive": "Eternity: Stacks HP/Mana/AP per minute (max 10 stacks). Spending mana heals.",
+    "image": "/images/items/rod_of_ages.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "ruby_crystal",
+    "name": "Ruby Crystal",
+    "category": "Boots",
+    "tier": "basic_item",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Ruby_Crystal', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Ruby Crystal passive/stat effects require approved-source refresh before source_verified release.",
+    "image": "/images/items/ruby_crystal.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "runaans_hurricane",
+    "name": "Runaan's Hurricane",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 2800,
+    "stats": [
+      "+25 AD",
+      "+35% Attack Speed",
+      "+20% Crit"
+    ],
+    "passive": "Wind's Fury: AAs fire bolts at 2 nearby enemies with on-hit.",
+    "image": "/images/items/runaaans_hurricane.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "rylais_crystal_scepter",
+    "name": "Rylai's Crystal Scepter",
+    "category": "Magic",
+    "tier": "C",
+    "cost": 2700,
+    "stats": [
+      "+55 AP",
+      "+350 HP"
+    ],
+    "passive": "Rimefrost: Abilities slow enemies by 30% for 1s.",
+    "image": "/images/items/rylais_crystal_scepter.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "searing_crown",
+    "name": "Searing Crown",
+    "category": "Defense",
+    "tier": "C",
+    "cost": 2800,
+    "stats": [
+      "+350 HP",
+      "+40 Armor",
+      "+40 MR"
+    ],
+    "passive": "Radiance: Magic damage/s to nearby enemies based on max HP.",
+    "image": "/images/items/searing_crown.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "seekers_armguard",
+    "name": "Seeker's Armguard",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1200,
+    "stats": [
+      "+20 Ability Power",
+      "+30 Armor"
+    ],
+    "passive": "",
+    "image": "/images/items/seekers_armguard.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "seraphs_embrace",
+    "name": "Seraph's Embrace",
+    "category": "Magic",
+    "tier": "Upgraded",
+    "cost": 2950,
+    "stats": [
+      "+80 AP",
+      "+860 Mana",
+      "+20 Ability Haste"
+    ],
+    "passive": "Awe: Gain AP from max mana. Lifeline: Active shield based on mana.",
+    "image": "/images/items/seraphs_embrace.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "serpents_fang",
+    "name": "Serpent's Fang",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 2800,
+    "stats": [
+      "+50 AD",
+      "+10 Armor Pen"
+    ],
+    "passive": "Shield Reaver: Damage reduces enemy shields and new shield effectiveness for 3s.",
+    "image": "/images/items/serpents_fang.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "serrated_dirk",
+    "name": "Serrated Dirk",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1000,
+    "stats": [
+      "+20 Attack Damage",
+      "+10 Armor Penetration Flat"
+    ],
+    "passive": "",
+    "image": "/images/items/serrated_dirk.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "seryldas_grudge",
+    "name": "Serylda's Grudge",
+    "category": "Physical",
+    "tier": "S",
+    "cost": 3100,
+    "stats": [
+      "+40 AD",
+      "+15 Ability Haste"
+    ],
+    "passive": "Last Whisper: +33% Armor Pen. Icy: Ability damage slows 30% for 1s. Frostbite: 3 Icy stacks deal bonus damage + 50% Grievous Wounds (5s CD).",
+    "image": "/images/items/serylda_s_grudge.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "sheen",
+    "name": "Sheen",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 900,
+    "stats": [
+      "+10 Ability Haste"
+    ],
+    "passive": "",
+    "image": "/images/items/sheen.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "shimmering_spark",
+    "name": "Shimmering Spark",
+    "category": "Support",
+    "tier": "-",
+    "cost": 500,
+    "stats": [
+      "+8 Ability Power"
+    ],
+    "passive": "",
+    "image": "/images/items/shimmering_spark.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "soul_transfer",
+    "name": "Soul Transfer",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 2800,
+    "stats": [
+      "+40 AD",
+      "+20% Attack Speed"
+    ],
+    "passive": "On death, transfer stats to nearest allied champion.",
+    "image": "/images/items/soul_transfer.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "spear_of_shojin",
+    "name": "Spear of Shojin",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3100,
+    "stats": [
+      "+40 AD",
+      "+450 HP"
+    ],
+    "passive": "Dragonforce: +20 basic ability haste. Focused Will: Damage to champs/monsters increases ability damage by 3% per stack (max 12%).",
+    "image": "/images/items/spear_of_shojin.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "spectral_sickle",
+    "name": "Spectral Sickle",
+    "category": "Support",
+    "tier": "Component",
+    "cost": 400,
+    "stats": [
+      "+5 AD"
+    ],
+    "passive": "Tribute: Attacking champions grants bonus gold.",
+    "image": "/images/items/spectral_sickle.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "spectres_cowl",
+    "name": "Spectre's Cowl",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1100,
+    "stats": [
+      "+25 Magic Resist",
+      "+200 Health"
+    ],
+    "passive": "",
+    "image": "/images/items/spectres_cowl.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "spirit_visage",
+    "name": "Spirit Visage",
+    "category": "Boots",
+    "tier": "upgraded_or_support_item",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Stat Tags: ['health_or_resists']",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Spirit_Visage', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Spirit Visage passive/stat effects require approved-source refresh before source_verified release.",
+    "image": "/images/items/spirit_visage.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "staff_of_flowing_water",
+    "name": "Staff of Flowing Water",
+    "category": "Support",
+    "tier": "B",
+    "cost": 2600,
+    "stats": [
+      "+45 AP",
+      "+20 Ability Haste",
+      "+5% Heal & Shield Power",
+      "+100 HP",
+      "+50% Base Mana Regen"
+    ],
+    "passive": "Rapids: Healing/shielding ally grants both 10 AH + 20-40 AP for 6s.",
+    "image": "/images/items/staff_of_flowing_water.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "staff_of_flowing_waters",
+    "name": "Staff of Flowing Waters",
+    "category": "Support",
+    "tier": "Unknown",
+    "cost": 2300,
+    "stats": [
+      "+60 AP",
+      "+10 Ability Haste"
+    ],
+    "passive": "Heals/shields grant ally bonus AP + AH.",
+    "image": "/images/items/staff_of_flowing_waters.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "stasis_enchant",
+    "name": "Stasis Enchant",
+    "category": "Boots",
+    "tier": "S",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Become invulnerable and untargetable for 2.5s.",
+    "image": "/images/items/stasis_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "steraks_gage",
+    "name": "Sterak's Gage",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 3200,
+    "stats": [
+      "+400 HP"
+    ],
+    "passive": "Bloodlust: Gain AD from base AD. Lifeline: Shield at 35% HP = 75% bonus HP (90s CD). Limited to 1 Lifeline.",
+    "image": "/images/items/steraks_gage.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "stinger",
+    "name": "Stinger",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1200,
+    "stats": [
+      "+25% Attack Speed",
+      "+10 Ability Haste"
+    ],
+    "passive": "",
+    "image": "/images/items/stinger.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "stoneplate_enchant",
+    "name": "Stoneplate Enchant",
+    "category": "Boots",
+    "tier": "boot_enchantment",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Stat Tags: ['health_or_resists']",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Stoneplate_Enchant', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Stoneplate Enchant is a Wild Rift item record prepared for economy, cooldown, build-slot, RAG, and graph-aware recommendation logic.",
+    "image": "/images/items/stoneplate_enchant.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "stormrazor",
+    "name": "Stormrazor",
+    "category": "Physical",
+    "tier": "A",
+    "cost": 2800,
+    "stats": [
+      "+40 Attack Damage",
+      "+15% Attack Speed",
+      "+25% Critical Rate"
+    ],
+    "passive": "",
+    "image": "/images/items/stormrazor.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "stormsurge",
+    "name": "Stormsurge",
+    "category": "Magic",
+    "tier": "A",
+    "cost": 2700,
+    "stats": [
+      "+85 Ability Power"
+    ],
+    "passive": "",
+    "image": "/images/items/stormsurge.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "stridebreaker",
+    "name": "Stridebreaker",
+    "category": "Boots",
+    "tier": "B",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Dash and create shockwave that slows.",
+    "image": "/images/items/stridebreaker_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "sundered_sky",
+    "name": "Sundered Sky",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3100,
+    "stats": [
+      "+45 AD",
+      "+300 HP",
+      "+15 Ability Haste"
+    ],
+    "passive": "Lightshield Strike: First AA on each champion crits and heals.",
+    "image": "/images/items/sundered_sky.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "sunfire_aegis",
+    "name": "Sunfire Aegis",
+    "category": "Defense",
+    "tier": "S",
+    "cost": 3000,
+    "stats": [
+      "+500 HP",
+      "+50 Armor",
+      "+15 Ability Haste"
+    ],
+    "passive": "Immolate: Magic damage/s nearby. Flametouch: At max stacks, AAs burn.",
+    "image": "/images/items/sunfire_aegis.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "sweeping_lens",
+    "name": "Sweeping Lens",
+    "category": "Boots",
+    "tier": "vision_or_trinket",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Sweeping_Lens', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Sweeping Lens passive/stat effects require approved-source refresh before source_verified release.",
+    "image": "/images/items/sweeping_lens.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "tear_of_the_goddess",
+    "name": "Tear of the Goddess",
+    "category": "Magic",
+    "tier": "-",
+    "cost": 900,
+    "stats": [
+      "+10 Ability Haste",
+      "+200 Mana"
+    ],
+    "passive": "",
+    "image": "/images/items/tear_of_the_goddess.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "terminus",
+    "name": "Terminus",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+30 AD",
+      "+30% Attack Speed"
+    ],
+    "passive": "Juxtaposition: AAs alternate Light (bonus resists) and Dark (bonus pen) stacks.",
+    "image": "/images/items/terminus.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "the_collector",
+    "name": "The Collector",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+50 AD",
+      "+25% Crit",
+      "+10 Armor Pen"
+    ],
+    "passive": "Death and Taxes: Execute below 5% HP + bonus gold on kill.",
+    "image": "/images/items/the_collector.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "thornmail",
+    "name": "Thornmail",
+    "category": "Defense",
+    "tier": "S",
+    "cost": 2900,
+    "stats": [
+      "+350 HP",
+      "+60 Armor"
+    ],
+    "passive": "Thorns: Reflect damage to attackers. Apply 40% GW (60% on immobilize).",
+    "image": "/images/items/thornmail.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "titanic_hydra",
+    "name": "Titanic Hydra",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 3200,
+    "stats": [
+      "+500 HP",
+      "+35 AD"
+    ],
+    "passive": "Cleave: AAs deal 2% max HP bonus damage in a cone. Active: Empowered AA.",
+    "image": "/images/items/titanic_hydra.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "trinity_force",
+    "name": "Trinity Force",
+    "category": "Physical",
+    "tier": "S",
+    "cost": 3333,
+    "stats": [
+      "+30 AD",
+      "+20 Ability Haste",
+      "+30% Attack Speed",
+      "+333 HP"
+    ],
+    "passive": "Fervor: +5% MS. Spellblade: After ability, next AA deals 200% base AD (1.5s CD). Valor: AAs grant 20/10 MS for 2s. Limited to 1 Spellblade.",
+    "image": "/images/items/trinity_force.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "unending_despair",
+    "name": "Unending Despair",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 2800,
+    "stats": [
+      "+400 HP",
+      "+50 Armor",
+      "+10 Ability Haste"
+    ],
+    "passive": "Despair: In combat, periodically drain nearby enemy HP and heal.",
+    "image": "/images/items/unending_despair.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "vampiric_scepter",
+    "name": "Vampiric Scepter",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1200,
+    "stats": [
+      "+10 Attack Damage"
+    ],
+    "passive": "",
+    "image": "/images/items/vampiric_scepter.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "veil_enchant",
+    "name": "Veil Enchant",
+    "category": "Boots",
+    "tier": "B",
+    "cost": 500,
+    "stats": [],
+    "passive": "Active: Gain spell shield blocking next ability.",
+    "image": "/images/items/veil_enchant.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "void_staff",
+    "name": "Void Staff",
+    "category": "Magic",
+    "tier": "A",
+    "cost": 2800,
+    "stats": [
+      "+70 Ability Power"
+    ],
+    "passive": "",
+    "image": "/images/items/void_staff.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "wardens_mail",
+    "name": "Warden's Mail",
+    "category": "Defense",
+    "tier": "-",
+    "cost": 1050,
+    "stats": [
+      "+35 Armor"
+    ],
+    "passive": "",
+    "image": "/images/items/wardens_mail.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "warding_totem",
+    "name": "Warding Totem",
+    "category": "Boots",
+    "tier": "vision_or_trinket",
+    "cost": null,
+    "stats": [
+      "Source Status: pending_allowed_source_refresh",
+      "Source Urls: ['https://wiki.leagueoflegends.com/en-us/WR:Warding_Totem', 'https://www.wildriftfire.com/item-list']"
+    ],
+    "passive": "Warding Totem passive/stat effects require approved-source refresh before source_verified release.",
+    "image": "/images/items/warding_totem.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "warmogs_armor",
+    "name": "Warmog's Armor",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 2850,
+    "stats": [
+      "+700 HP",
+      "+10 Ability Haste"
+    ],
+    "passive": "Warmog's Heart: 3% max HP/s regen out of combat (requires 1100 bonus HP).",
+    "image": "/images/items/warmogs_armor.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "winters_approach",
+    "name": "Winter's Approach",
+    "category": "Defense",
+    "tier": "Upgraded",
+    "cost": 2600,
+    "stats": [
+      "+400 HP",
+      "+500 Mana"
+    ],
+    "passive": "Awe: Gain HP from max mana. Mana Charge: Stacks mana. Transforms into Fimbulwinter.",
+    "image": "/images/items/winters_approach.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "wits_end",
+    "name": "Wit's End",
+    "category": "Physical",
+    "tier": "C",
+    "cost": 2700,
+    "stats": [
+      "+30 AD",
+      "+40% Attack Speed",
+      "+40 MR"
+    ],
+    "passive": "Fray: AAs deal 15-80 bonus magic damage on-hit (scales with level).",
+    "image": "/images/items/wits_end.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "yordle_trap",
+    "name": "Yordle Trap",
+    "category": "Defense",
+    "tier": "B",
+    "cost": 2600,
+    "stats": [
+      "+350 HP",
+      "+40 Armor",
+      "+15 Ability Haste"
+    ],
+    "passive": "Point Runner: Gain MS near turrets/Void Gates. Place Void Gates for vision.",
+    "image": "/images/items/yordle_trap.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "youmuus_ghostblade",
+    "name": "Youmuu's Ghostblade",
+    "category": "Physical",
+    "tier": "B",
+    "cost": 3000,
+    "stats": [
+      "+55 AD",
+      "+15 Ability Haste"
+    ],
+    "passive": "Razor: +18 Armor Pen. Haunt: Active burst MS for 6s. Passive out-of-combat MS.",
+    "image": "/images/items/youmuus_ghostblade.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  },
+  {
+    "id": "zeal",
+    "name": "Zeal",
+    "category": "Physical",
+    "tier": "-",
+    "cost": 1400,
+    "stats": [
+      "+15% Attack Speed",
+      "+20% Critical Rate"
+    ],
+    "passive": "",
+    "image": "/images/items/zeal.png",
+    "source_status": "canonical_v0_7_runtime_compatibility_view"
+  },
+  {
+    "id": "zekes_convergence",
+    "name": "Zeke's Convergence",
+    "category": "Defense",
+    "tier": "S",
+    "cost": 2700,
+    "stats": [
+      "+300 HP",
+      "+30 Armor",
+      "+30 MR",
+      "+15 Ability Haste"
+    ],
+    "passive": "Conduit: Casting ult creates frost storm. Nearby ally AAs deal bonus magic damage.",
+    "image": "/images/items/zekes_convergence.png",
+    "source_status": "legacy_runtime_compatibility_preserved"
+  }
+]

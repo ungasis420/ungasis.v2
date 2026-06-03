@@ -1,0 +1,78 @@
+{
+  "version": "0.6.0-chunk1.1",
+  "default_node_radius": 18,
+  "node_types": {
+    "Champion": {
+      "shape": "circle",
+      "icon": "champion",
+      "size_basis": "relationship_degree",
+      "label_priority": 1
+    },
+    "Ability": {
+      "shape": "rounded_square",
+      "icon": "ability",
+      "size_basis": "effect_count",
+      "label_priority": 2
+    },
+    "Item": {
+      "shape": "hexagon",
+      "icon": "item",
+      "size_basis": "recommendation_frequency",
+      "label_priority": 2
+    },
+    "Rune": {
+      "shape": "diamond",
+      "icon": "rune",
+      "size_basis": "synergy_degree",
+      "label_priority": 2
+    },
+    "Spell": {
+      "shape": "triangle",
+      "icon": "spell",
+      "size_basis": "usage_degree",
+      "label_priority": 2
+    },
+    "Effect": {
+      "shape": "small_circle",
+      "icon": "effect",
+      "size_basis": "global_degree",
+      "label_priority": 3
+    },
+    "Build": {
+      "shape": "card",
+      "icon": "build",
+      "size_basis": "confidence",
+      "label_priority": 2
+    },
+    "Patch": {
+      "shape": "pill",
+      "icon": "patch",
+      "size_basis": "change_count",
+      "label_priority": 3
+    },
+    "SourceClaim": {
+      "shape": "document",
+      "icon": "source",
+      "size_basis": "claim_strength",
+      "label_priority": 4
+    },
+    "ValidationRule": {
+      "shape": "shield",
+      "icon": "qa",
+      "size_basis": "severity",
+      "label_priority": 4
+    }
+  },
+  "color_semantics": {
+    "source_verified": "trusted_source_color_token",
+    "generated_rule": "generated_strategy_color_token",
+    "pending_allowed_source_refresh": "pending_color_token",
+    "source_conflict": "conflict_color_token",
+    "user_corrected_pending_revalidation": "correction_color_token"
+  },
+  "accessibility": [
+    "do_not_rely_only_on_color",
+    "include_icons_and_labels",
+    "support_high_contrast_mode"
+  ]
+}

@@ -1,0 +1,2972 @@
+{
+  "meta": {
+    "type": "matchups",
+    "scope": "baron",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 27,
+    "total_entries": 178,
+    "confidence_source": "theorycraft_meta_inference"
+  },
+  "matchups": [
+    {
+      "champion_id": "aatrox",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "early_bully_denies_stacks",
+          "win_condition": [
+            "q_sweetspot_poke",
+            "zone_from_cs"
+          ],
+          "threats": [
+            "late_game_scaling"
+          ],
+          "counterplay": [
+            "freeze_wave_deny_q_stacks"
+          ]
+        },
+        {
+          "target": "kayle",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "bully_pre_ranged_form",
+          "win_condition": [
+            "all_in_pre_transform",
+            "deny_scaling"
+          ],
+          "threats": [
+            "late_game_1v9"
+          ],
+          "counterplay": [
+            "all_in_every_cooldown_pre_6"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "sustain_through_poke",
+          "win_condition": [
+            "q_sustain_outsustains",
+            "e_healing"
+          ],
+          "threats": [
+            "r_engage_in_fights"
+          ],
+          "counterplay": [
+            "sustain_with_e_passive"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "anti_heal_burst",
+          "win_condition": [
+            "ignite_reduces_healing",
+            "burst_combo"
+          ],
+          "threats": [
+            "late_game_unkillable"
+          ],
+          "counterplay": [
+            "ignite_during_r_then_burst"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "true_damage_parry_outduels",
+          "win_condition": [
+            "short_trades_only"
+          ],
+          "threats": [
+            "q_vitals_true_damage",
+            "w_parry"
+          ],
+          "counterplay": [
+            "never_extend_trades"
+          ]
+        },
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "q_resets_dodge_sweetspots",
+          "win_condition": [
+            "q_when_irelia_dashes"
+          ],
+          "threats": [
+            "q_dash_through_q_sweetspots"
+          ],
+          "counterplay": [
+            "predict_q_resets"
+          ]
+        },
+        {
+          "target": "riven",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "fast_combo_dodges_q",
+          "win_condition": [
+            "q_sweetspot_during_combo"
+          ],
+          "threats": [
+            "e_shield_fast_combo"
+          ],
+          "counterplay": [
+            "q_timing_on_riven_approach"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "camille",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "true_damage_ignores_armor",
+          "win_condition": [
+            "q2_true_damage_trades",
+            "r_lockdown"
+          ],
+          "threats": [
+            "wither_slow"
+          ],
+          "counterplay": [
+            "short_q2_trades"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "true_damage_ignores_armor_stack",
+          "win_condition": [
+            "q2_true_damage",
+            "e_engage"
+          ],
+          "threats": [
+            "r_engage_teamfight"
+          ],
+          "counterplay": [
+            "q2_true_damage_trades"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "true_damage_cuts_hp",
+          "win_condition": [
+            "q2_true_damage_shreds",
+            "r_lockdown"
+          ],
+          "threats": [
+            "passive_cc_immune"
+          ],
+          "counterplay": [
+            "q2_true_damage_ignores_hp_stacking"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "true_damage_vs_hp_stacker",
+          "win_condition": [
+            "q2_percent_hp_true_damage"
+          ],
+          "threats": [
+            "q_knockup_if_caught"
+          ],
+          "counterplay": [
+            "dodge_q_with_e_then_trade"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "jax",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "e_dodges_q2_and_autos",
+          "win_condition": [
+            "bait_e_then_trade"
+          ],
+          "threats": [
+            "e_counter_strike_dodges_q2"
+          ],
+          "counterplay": [
+            "bait_e_then_engage"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "parry_stuns_on_e",
+          "win_condition": [
+            "e_from_unexpected_angle"
+          ],
+          "threats": [
+            "w_parry_e_stun"
+          ],
+          "counterplay": [
+            "vary_e_timing"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "5_stacks_kills_in_trade",
+          "win_condition": [
+            "short_trades_only"
+          ],
+          "threats": [
+            "5_bleed_stacks_noxian_might"
+          ],
+          "counterplay": [
+            "never_let_5_stacks_build"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "darius",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.2,
+          "reason": "lane_bully_denies_stacks",
+          "win_condition": [
+            "zone_from_cs",
+            "5_stacks_all_in"
+          ],
+          "threats": [
+            "wither_late_game"
+          ],
+          "counterplay": [
+            "freeze_wave_zone_from_minions"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "bleed_and_anti_heal",
+          "win_condition": [
+            "ignite_during_r",
+            "5_stacks_execute"
+          ],
+          "threats": [
+            "late_hp_stacking"
+          ],
+          "counterplay": [
+            "ignite_during_r_then_r_execute"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "sustain_through_poke",
+          "win_condition": [
+            "pull_e_combo",
+            "ghost_run_down"
+          ],
+          "threats": [
+            "r_engage_away"
+          ],
+          "counterplay": [
+            "ghost_e_pull_run_down"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "bully_in_lane",
+          "win_condition": [
+            "dodge_q_then_punish",
+            "bleed_stacks"
+          ],
+          "threats": [
+            "late_hp_scaling"
+          ],
+          "counterplay": [
+            "sidestep_q_then_e_pull_combo"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "kited_to_death",
+          "win_condition": [
+            "ghost_flash_engage"
+          ],
+          "threats": [
+            "tumble_condemn_kite"
+          ],
+          "counterplay": [
+            "ghost_flash_only_hope"
+          ]
+        },
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "w_mist_untargetable",
+          "win_condition": [
+            "pull_out_of_mist"
+          ],
+          "threats": [
+            "w_mist_dodges_pull"
+          ],
+          "counterplay": [
+            "e_pull_outside_mist"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "parry_blocks_pull",
+          "win_condition": [
+            "bait_parry_then_pull"
+          ],
+          "threats": [
+            "w_parry_e_pull"
+          ],
+          "counterplay": [
+            "delay_e_to_bait_parry"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "fiora",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "aatrox",
+          "lane": "baron",
+          "difficulty": 0.2,
+          "reason": "parry_q_and_true_damage",
+          "win_condition": [
+            "w_parry_q_sweetspot",
+            "q_vitals"
+          ],
+          "threats": [
+            "r_healing_if_slow_fight"
+          ],
+          "counterplay": [
+            "w_parry_q3_sweetspot"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "parry_e_pull",
+          "win_condition": [
+            "w_parry_e_pull",
+            "q_vitals"
+          ],
+          "threats": [
+            "5_stack_noxian_might"
+          ],
+          "counterplay": [
+            "w_parry_e_pull_stun_him"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "parry_e_stun",
+          "win_condition": [
+            "w_parry_hookshot_stun",
+            "q_vitals"
+          ],
+          "threats": [
+            "q2_true_damage"
+          ],
+          "counterplay": [
+            "w_parry_e_stun_timing"
+          ]
+        },
+        {
+          "target": "sett",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "kite_vitals_outplay",
+          "win_condition": [
+            "q_vitals_kite",
+            "w_parry_haymaker"
+          ],
+          "threats": [
+            "e_pull_w_haymaker"
+          ],
+          "counterplay": [
+            "w_parry_w_haymaker_center"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "kennen",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "ranged_poke_stun_kite",
+          "win_condition": [
+            "q_gap_close_w_parry_stun"
+          ],
+          "threats": [
+            "ranged_poke_r_stun"
+          ],
+          "counterplay": [
+            "q_gap_close_then_w_parry"
+          ]
+        },
+        {
+          "target": "teemo",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "blind_negates_autos",
+          "win_condition": [
+            "w_parry_blind"
+          ],
+          "threats": [
+            "q_blind_negates_vitals"
+          ],
+          "counterplay": [
+            "w_parry_q_blind"
+          ]
+        },
+        {
+          "target": "gnar",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "ranged_poke_mega_gnar_r",
+          "win_condition": [
+            "all_in_mini_gnar"
+          ],
+          "threats": [
+            "mini_poke_mega_r"
+          ],
+          "counterplay": [
+            "all_in_when_rage_bar_low"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "irelia",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "aatrox",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "q_resets_dodge_sweetspots",
+          "win_condition": [
+            "q_through_minions_dodge_q",
+            "botrk_shred"
+          ],
+          "threats": [
+            "r_healing"
+          ],
+          "counterplay": [
+            "q_reset_through_minions_to_dodge"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "q_dodges_q_channel",
+          "win_condition": [
+            "q_dash_out_of_q",
+            "sustained_dps"
+          ],
+          "threats": [
+            "q_knockup_if_caught"
+          ],
+          "counterplay": [
+            "q_to_minion_during_sion_q"
+          ]
+        },
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "early_pressure_denies_stacks",
+          "win_condition": [
+            "all_in_level_4_5",
+            "botrk_spike"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "all_in_at_5_stacks_passive"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "sustained_dps_shreds",
+          "win_condition": [
+            "botrk_shred",
+            "wits_end_mr"
+          ],
+          "threats": [
+            "r_engage_teamfight"
+          ],
+          "counterplay": [
+            "botrk_sustained_dps"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "renekton",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "empowered_w_breaks_shield",
+          "win_condition": [
+            "e_stun_trade_back"
+          ],
+          "threats": [
+            "w_stun_burst_dash_out"
+          ],
+          "counterplay": [
+            "e_stun_after_renekton_w"
+          ]
+        },
+        {
+          "target": "sett",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "e_pull_w_haymaker",
+          "win_condition": [
+            "q_dodge_w_center"
+          ],
+          "threats": [
+            "e_pull_w_true_damage"
+          ],
+          "counterplay": [
+            "q_sideways_dodge_w_center"
+          ]
+        },
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "w_mist_negates_engage",
+          "win_condition": [
+            "all_in_when_w_down"
+          ],
+          "threats": [
+            "w_mist_untargetable"
+          ],
+          "counterplay": [
+            "bait_w_then_engage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "jax",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "e_dodges_q2_autos",
+          "win_condition": [
+            "e_dodge_q2",
+            "sustained_dps"
+          ],
+          "threats": [
+            "e_hookshot_engage"
+          ],
+          "counterplay": [
+            "e_counter_strike_on_q2_timing"
+          ]
+        },
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "e_dodges_autos",
+          "win_condition": [
+            "e_dodge_autos_stun",
+            "sustained_dps"
+          ],
+          "threats": [
+            "q_resets"
+          ],
+          "counterplay": [
+            "e_on_irelia_engage"
+          ]
+        },
+        {
+          "target": "tryndamere",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "e_dodges_autos_during_r",
+          "win_condition": [
+            "e_dodge_during_trynd_r"
+          ],
+          "threats": [
+            "r_undying_burst"
+          ],
+          "counterplay": [
+            "e_when_trynd_r_active"
+          ]
+        },
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "early_pressure_outscales_1v1",
+          "win_condition": [
+            "early_trades_late_1v1"
+          ],
+          "threats": [
+            "wither_slow"
+          ],
+          "counterplay": [
+            "trade_early_outscale_1v1"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "w_mist_negates_e_stun",
+          "win_condition": [
+            "bait_w_then_e"
+          ],
+          "threats": [
+            "w_mist_untargetable"
+          ],
+          "counterplay": [
+            "wait_for_w_expire"
+          ]
+        },
+        {
+          "target": "kennen",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "ranged_poke_kite",
+          "win_condition": [
+            "q_gap_close_e_stun"
+          ],
+          "threats": [
+            "ranged_poke_r_stun"
+          ],
+          "counterplay": [
+            "q_leap_onto_kennen"
+          ]
+        },
+        {
+          "target": "teemo",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "blind_negates_autos",
+          "win_condition": [
+            "e_during_blind"
+          ],
+          "threats": [
+            "q_blind_negates_e_stun_autos"
+          ],
+          "counterplay": [
+            "e_after_blind_wears_off"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "riven",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "combo_burst_denies_stacks",
+          "win_condition": [
+            "fast_combo_burst",
+            "zone_from_cs"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "fast_q_combo_trades"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "e_shield_q_dodge",
+          "win_condition": [
+            "e_dodge_q_channel",
+            "fast_combo"
+          ],
+          "threats": [
+            "q_knockup"
+          ],
+          "counterplay": [
+            "e_through_sion_q"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "shield_absorbs_q_poke",
+          "win_condition": [
+            "e_shield_absorbs_q",
+            "short_trades"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "e_shield_q_poke_short_trade"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "burst_combo_kills",
+          "win_condition": [
+            "ignite_burst_combo"
+          ],
+          "threats": [
+            "late_hp_regen"
+          ],
+          "counterplay": [
+            "ignite_during_r_burst"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "renekton",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "empowered_w_breaks_shield",
+          "win_condition": [
+            "bait_w_then_trade"
+          ],
+          "threats": [
+            "w_stun_through_shield"
+          ],
+          "counterplay": [
+            "trade_when_fury_low"
+          ]
+        },
+        {
+          "target": "garen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "silence_negates_combo",
+          "win_condition": [
+            "trade_after_q_silence"
+          ],
+          "threats": [
+            "q_silence_breaks_combo"
+          ],
+          "counterplay": [
+            "e_shield_q_silence_then_combo"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.5,
+          "reason": "parry_stuns_on_w_or_q3",
+          "win_condition": [
+            "bait_parry"
+          ],
+          "threats": [
+            "w_parry_q3_stun"
+          ],
+          "counterplay": [
+            "bait_parry_with_q1_q2"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "sett",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "early_bully_denies_stacks",
+          "win_condition": [
+            "e_pull_w_haymaker",
+            "zone_from_cs"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "e_pull_auto_w_combo"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "w_haymaker_burst",
+          "win_condition": [
+            "e_pull_w_center_true_damage"
+          ],
+          "threats": [
+            "q_knockup"
+          ],
+          "counterplay": [
+            "dodge_q_then_e_w_combo"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "w_true_damage_ignores_armor",
+          "win_condition": [
+            "w_center_true_damage"
+          ],
+          "threats": [
+            "r_engage_away"
+          ],
+          "counterplay": [
+            "w_true_damage_center_on_malphite"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "w_true_damage_ignores_hp",
+          "win_condition": [
+            "w_center_true_damage",
+            "ignite"
+          ],
+          "threats": [
+            "late_regen"
+          ],
+          "counterplay": [
+            "w_true_damage_center"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "parry_haymaker_kite_vitals",
+          "win_condition": [
+            "e_pull_before_parry"
+          ],
+          "threats": [
+            "w_parry_w_haymaker"
+          ],
+          "counterplay": [
+            "e_pull_immediately"
+          ]
+        },
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "w_mist_dodges_w",
+          "win_condition": [
+            "e_pull_out_of_mist"
+          ],
+          "threats": [
+            "w_mist_dodges_haymaker"
+          ],
+          "counterplay": [
+            "e_pull_outside_mist"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "kited_and_condemned",
+          "win_condition": [
+            "flash_e_pull"
+          ],
+          "threats": [
+            "tumble_condemn_kite"
+          ],
+          "counterplay": [
+            "flash_e_only_hope"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "renekton",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "empowered_w_burst",
+          "win_condition": [
+            "fury_w_stun_burst",
+            "e_in_out_trade"
+          ],
+          "threats": [
+            "botrk_sustained_dps"
+          ],
+          "counterplay": [
+            "e_in_fury_w_q_e_out"
+          ]
+        },
+        {
+          "target": "riven",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "w_stun_through_shield",
+          "win_condition": [
+            "w_stun_breaks_combo",
+            "fury_burst"
+          ],
+          "threats": [
+            "fast_combo_dodge"
+          ],
+          "counterplay": [
+            "w_stun_when_riven_approaches"
+          ]
+        },
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.2,
+          "reason": "lane_bully_denies_stacks",
+          "win_condition": [
+            "e_in_w_q_e_out",
+            "deny_cs"
+          ],
+          "threats": [
+            "wither_late_scaling"
+          ],
+          "counterplay": [
+            "trade_every_fury_cycle"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "empowered_w_burst",
+          "win_condition": [
+            "fury_w_burst_trade"
+          ],
+          "threats": [
+            "windwall"
+          ],
+          "counterplay": [
+            "w_stun_through_windwall"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "w_mist_negates_combo",
+          "win_condition": [
+            "bait_w_then_trade"
+          ],
+          "threats": [
+            "w_mist_untargetable"
+          ],
+          "counterplay": [
+            "bait_w_then_e_w_combo"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "parry_stuns_on_w",
+          "win_condition": [
+            "bait_parry_then_w"
+          ],
+          "threats": [
+            "w_parry_w_stun"
+          ],
+          "counterplay": [
+            "fake_w_bait_parry"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "kited_to_death",
+          "win_condition": [
+            "e_gap_close_fury_w"
+          ],
+          "threats": [
+            "tumble_condemn"
+          ],
+          "counterplay": [
+            "e_close_gap_fury_w_burst"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "gwen",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "w_mist_dodges_pull",
+          "win_condition": [
+            "w_mist_on_e_pull",
+            "sustained_dps"
+          ],
+          "threats": [
+            "5_stacks_if_caught"
+          ],
+          "counterplay": [
+            "w_mist_when_darius_e"
+          ]
+        },
+        {
+          "target": "renekton",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "w_mist_negates_combo",
+          "win_condition": [
+            "w_mist_on_w_stun",
+            "outscale"
+          ],
+          "threats": [
+            "fury_burst"
+          ],
+          "counterplay": [
+            "w_mist_timing_on_w"
+          ]
+        },
+        {
+          "target": "sett",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "w_mist_dodges_haymaker",
+          "win_condition": [
+            "w_mist_on_haymaker",
+            "sustained_dps"
+          ],
+          "threats": [
+            "e_pull"
+          ],
+          "counterplay": [
+            "w_mist_when_sett_w"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "sustained_true_damage",
+          "win_condition": [
+            "q_center_true_damage",
+            "w_mist"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "sustained_q_true_damage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "kayle",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "outscaled_late",
+          "win_condition": [
+            "all_in_pre_ranged"
+          ],
+          "threats": [
+            "late_game_ranged_form"
+          ],
+          "counterplay": [
+            "all_in_before_kayle_transforms"
+          ]
+        },
+        {
+          "target": "kennen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "ranged_poke_r_stun",
+          "win_condition": [
+            "e_gap_close_w_mist"
+          ],
+          "threats": [
+            "ranged_poke_kite"
+          ],
+          "counterplay": [
+            "e_gap_close_then_w_mist"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "true_damage_vs_true_damage",
+          "win_condition": [
+            "w_mist_engage"
+          ],
+          "threats": [
+            "silver_bolts_kite"
+          ],
+          "counterplay": [
+            "w_mist_then_engage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "malphite",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "tryndamere",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "e_as_slow_negates_autos",
+          "win_condition": [
+            "e_as_slow",
+            "armor_stacking"
+          ],
+          "threats": [
+            "r_undying_rage"
+          ],
+          "counterplay": [
+            "e_as_slow_then_armor_stack"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "armor_stacking_as_slow",
+          "win_condition": [
+            "armor_stacking",
+            "e_as_slow"
+          ],
+          "threats": [
+            "windwall"
+          ],
+          "counterplay": [
+            "stack_armor_e_slow"
+          ]
+        },
+        {
+          "target": "garen",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "armor_stacking_poke",
+          "win_condition": [
+            "q_poke_armor_stack"
+          ],
+          "threats": [
+            "q_silence_e_spin"
+          ],
+          "counterplay": [
+            "q_poke_from_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "true_damage_ignores_armor",
+          "win_condition": [
+            "r_engage_away"
+          ],
+          "threats": [
+            "q_vitals_true_damage"
+          ],
+          "counterplay": [
+            "avoid_1v1_group"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "true_damage_ignores_armor",
+          "win_condition": [
+            "r_engage_away"
+          ],
+          "threats": [
+            "q2_true_damage"
+          ],
+          "counterplay": [
+            "avoid_lane_group"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "pulled_and_killed",
+          "win_condition": [
+            "q_poke_avoid_pull"
+          ],
+          "threats": [
+            "e_pull_5_stacks"
+          ],
+          "counterplay": [
+            "stay_max_range_q_poke"
+          ]
+        },
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "sustained_true_damage",
+          "win_condition": [
+            "r_engage_away"
+          ],
+          "threats": [
+            "q_center_true_damage"
+          ],
+          "counterplay": [
+            "avoid_extended_trades"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ornn",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "cc_chain_denies_stacking",
+          "win_condition": [
+            "w_brittle_e_knockup",
+            "deny_cs"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "w_brittle_trade"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "cc_chain_interrupts_q",
+          "win_condition": [
+            "e_knockup_interrupts_q",
+            "w_brittle"
+          ],
+          "threats": [
+            "hp_scaling"
+          ],
+          "counterplay": [
+            "e_during_sion_q_channel"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "brittle_shreds_hp",
+          "win_condition": [
+            "w_brittle_percent_hp"
+          ],
+          "threats": [
+            "late_regen"
+          ],
+          "counterplay": [
+            "w_brittle_percent_hp_trades"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "true_damage_ignores_tank",
+          "win_condition": [
+            "cc_chain_under_tower"
+          ],
+          "threats": [
+            "vitals_true_damage"
+          ],
+          "counterplay": [
+            "play_under_tower"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "true_damage_shreds",
+          "win_condition": [
+            "w_brittle_trade"
+          ],
+          "threats": [
+            "q2_true_damage"
+          ],
+          "counterplay": [
+            "w_brittle_short_trade"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "pulled_and_killed",
+          "win_condition": [
+            "e_knockup_disengage"
+          ],
+          "threats": [
+            "e_pull_5_stacks"
+          ],
+          "counterplay": [
+            "e_knockup_away"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "k_sante",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "cc_chain_denies_stacks",
+          "win_condition": [
+            "q3_knockup_w_trade"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "q3_knockup_short_trade"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "r_isolates_in_1v1",
+          "win_condition": [
+            "r_transforms_to_duel",
+            "q3_knockup"
+          ],
+          "threats": [
+            "hp_scaling"
+          ],
+          "counterplay": [
+            "r_to_isolate_then_duel"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "r_duel_mode_shreds",
+          "win_condition": [
+            "r_transform_duel",
+            "w_damage_reduction"
+          ],
+          "threats": [
+            "late_regen"
+          ],
+          "counterplay": [
+            "r_to_duel_ignite"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "parry_blocks_r",
+          "win_condition": [
+            "r_from_angle"
+          ],
+          "threats": [
+            "w_parry_r"
+          ],
+          "counterplay": [
+            "r_from_unexpected_angle"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "true_damage_in_1v1",
+          "win_condition": [
+            "w_damage_reduction"
+          ],
+          "threats": [
+            "q2_true_damage_in_r"
+          ],
+          "counterplay": [
+            "w_during_q2"
+          ]
+        },
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "sustained_true_damage",
+          "win_condition": [
+            "short_trades"
+          ],
+          "threats": [
+            "q_true_damage_center"
+          ],
+          "counterplay": [
+            "short_trades_only"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "shen",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "e_taunt_denies_stacking",
+          "win_condition": [
+            "e_taunt_trade",
+            "r_global_impact"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "e_taunt_short_trades"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "q_magic_damage_shreds",
+          "win_condition": [
+            "q_empowered_aa_trades",
+            "r_global"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "q_empowered_trades"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "w_dodge_q_e_taunt",
+          "win_condition": [
+            "w_dodge_zone_q",
+            "e_taunt"
+          ],
+          "threats": [
+            "hp_scaling"
+          ],
+          "counterplay": [
+            "w_dodge_sion_q"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "parry_taunts_back",
+          "win_condition": [
+            "e_from_angle"
+          ],
+          "threats": [
+            "w_parry_e_taunt"
+          ],
+          "counterplay": [
+            "vary_e_timing"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "pulled_and_stacked",
+          "win_condition": [
+            "e_taunt_disengage"
+          ],
+          "threats": [
+            "e_pull_5_stacks"
+          ],
+          "counterplay": [
+            "e_taunt_away"
+          ]
+        },
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "sustained_damage_outsustains",
+          "win_condition": [
+            "short_trades_r_map"
+          ],
+          "threats": [
+            "sustained_true_damage"
+          ],
+          "counterplay": [
+            "short_trades_focus_map_with_r"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "gnar",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "ranged_poke_denies_stacks",
+          "win_condition": [
+            "mini_gnar_poke",
+            "mega_gnar_r"
+          ],
+          "threats": [
+            "wither_in_mini"
+          ],
+          "counterplay": [
+            "poke_in_mini_deny_stacks"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "ranged_poke_mega_r",
+          "win_condition": [
+            "mini_poke_mega_r_wall"
+          ],
+          "threats": [
+            "q_knockup"
+          ],
+          "counterplay": [
+            "poke_in_mini_r_wall_in_mega"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "w_percent_hp_poke",
+          "win_condition": [
+            "w_percent_hp_poke_mini",
+            "mega_r"
+          ],
+          "threats": [
+            "late_regen"
+          ],
+          "counterplay": [
+            "w_percent_hp_in_mini"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "ranged_poke_mini",
+          "win_condition": [
+            "mini_poke_from_range"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "poke_from_range_in_mini"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "gap_close_kills_mini",
+          "win_condition": [
+            "mega_gnar_cc_chain"
+          ],
+          "threats": [
+            "q_gap_close_to_mini"
+          ],
+          "counterplay": [
+            "transform_mega_on_irelia_engage"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "hookshot_catches_mini",
+          "win_condition": [
+            "mega_r_wall_stun"
+          ],
+          "threats": [
+            "e_gap_close_mini"
+          ],
+          "counterplay": [
+            "mega_r_on_camille_e"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "parry_mega_r",
+          "win_condition": [
+            "bait_parry"
+          ],
+          "threats": [
+            "w_parry_r_stun"
+          ],
+          "counterplay": [
+            "bait_parry_then_r"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "nasus",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "free_stacking_vs_passive",
+          "win_condition": [
+            "free_q_stacks",
+            "scale_to_late"
+          ],
+          "threats": [
+            "r_engage_teamfight"
+          ],
+          "counterplay": [
+            "free_farm_q_stacks"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.5,
+          "reason": "free_stacking_vs_tank",
+          "win_condition": [
+            "free_q_stacks",
+            "wither_kite"
+          ],
+          "threats": [
+            "hp_scaling_roam"
+          ],
+          "counterplay": [
+            "farm_q_stacks_split"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "bullied_denied_stacks",
+          "win_condition": [
+            "survive_to_divine_sunderer"
+          ],
+          "threats": [
+            "zone_from_all_cs"
+          ],
+          "counterplay": [
+            "farm_under_tower"
+          ]
+        },
+        {
+          "target": "renekton",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "bullied_denied_stacks",
+          "win_condition": [
+            "survive_to_items"
+          ],
+          "threats": [
+            "fury_combo_trades"
+          ],
+          "counterplay": [
+            "farm_under_tower"
+          ]
+        },
+        {
+          "target": "gnar",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "ranged_poke_denies",
+          "win_condition": [
+            "wither_mini_gnar"
+          ],
+          "threats": [
+            "mini_poke_mega_r"
+          ],
+          "counterplay": [
+            "wither_when_mini_approaches"
+          ]
+        },
+        {
+          "target": "aatrox",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "early_bully",
+          "win_condition": [
+            "survive_to_stacks"
+          ],
+          "threats": [
+            "q_sweetspot_zoning"
+          ],
+          "counterplay": [
+            "farm_under_tower_scale"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "kayle",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.5,
+          "reason": "outscales_massively",
+          "win_condition": [
+            "survive_to_ranged_form",
+            "r_invulnerability"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "farm_safely_to_transform"
+          ]
+        },
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.5,
+          "reason": "both_scale_kayle_ranged",
+          "win_condition": [
+            "ranged_form_kites_nasus"
+          ],
+          "threats": [
+            "wither_slow"
+          ],
+          "counterplay": [
+            "farm_scale_kite_in_ranged"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "all_in_kills_pre_transform",
+          "win_condition": [
+            "r_invulnerability"
+          ],
+          "threats": [
+            "q_gap_close_burst"
+          ],
+          "counterplay": [
+            "r_when_irelia_engages"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "r_lockdown_kills",
+          "win_condition": [
+            "r_invulnerability_in_hextech"
+          ],
+          "threats": [
+            "r_lockdown_burst"
+          ],
+          "counterplay": [
+            "r_self_inside_camille_r"
+          ]
+        },
+        {
+          "target": "renekton",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "early_bully_kills",
+          "win_condition": [
+            "survive_to_transform"
+          ],
+          "threats": [
+            "fury_burst_trades"
+          ],
+          "counterplay": [
+            "hug_tower_survive"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "early_bully_kills",
+          "win_condition": [
+            "survive_to_transform"
+          ],
+          "threats": [
+            "pull_5_stacks"
+          ],
+          "counterplay": [
+            "hug_tower_farm"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "kennen",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "ranged_poke_denies_stacks",
+          "win_condition": [
+            "aa_poke_deny_cs",
+            "r_teamfight"
+          ],
+          "threats": [
+            "wither_slow"
+          ],
+          "counterplay": [
+            "poke_from_range_deny_stacks"
+          ]
+        },
+        {
+          "target": "jax",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "ranged_poke_kite",
+          "win_condition": [
+            "ranged_poke",
+            "e_escape_leap"
+          ],
+          "threats": [
+            "q_leap_e_stun"
+          ],
+          "counterplay": [
+            "poke_from_range_e_away"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "ranged_poke_kite",
+          "win_condition": [
+            "ranged_poke",
+            "r_teamfight"
+          ],
+          "threats": [
+            "q_gap_close"
+          ],
+          "counterplay": [
+            "poke_e_away"
+          ]
+        },
+        {
+          "target": "sett",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "ranged_kite",
+          "win_condition": [
+            "poke_from_range",
+            "e_escape"
+          ],
+          "threats": [
+            "flash_e_pull"
+          ],
+          "counterplay": [
+            "poke_from_max_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "q_gap_close_kills",
+          "win_condition": [
+            "e_stun_disengage"
+          ],
+          "threats": [
+            "q_dash_onto_kennen"
+          ],
+          "counterplay": [
+            "e_stun_away"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_q",
+          "win_condition": [
+            "poke_when_w_down"
+          ],
+          "threats": [
+            "windwall_blocks_q"
+          ],
+          "counterplay": [
+            "trade_when_windwall_cd"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "hookshot_catches",
+          "win_condition": [
+            "e_away_from_hookshot"
+          ],
+          "threats": [
+            "e_gap_close"
+          ],
+          "counterplay": [
+            "e_lightning_rush_away"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "teemo",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "blind_denies_q_stacks",
+          "win_condition": [
+            "q_blind_on_q_stack_attempt"
+          ],
+          "threats": [
+            "wither_late_scaling"
+          ],
+          "counterplay": [
+            "q_blind_when_nasus_approaches_cs"
+          ]
+        },
+        {
+          "target": "tryndamere",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "blind_negates_autos_in_r",
+          "win_condition": [
+            "q_blind_during_r"
+          ],
+          "threats": [
+            "r_undying_rage"
+          ],
+          "counterplay": [
+            "q_blind_during_trynd_r"
+          ]
+        },
+        {
+          "target": "jax",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "blind_negates_e_stun_autos",
+          "win_condition": [
+            "q_blind_during_e"
+          ],
+          "threats": [
+            "q_leap_e_stun"
+          ],
+          "counterplay": [
+            "q_blind_on_jax_leap"
+          ]
+        },
+        {
+          "target": "sett",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "ranged_poke_kite",
+          "win_condition": [
+            "aa_poke_mushroom_zone"
+          ],
+          "threats": [
+            "flash_e_pull"
+          ],
+          "counterplay": [
+            "poke_from_range_mushroom_paths"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "q_gap_close_burst",
+          "win_condition": [
+            "q_blind_on_dash"
+          ],
+          "threats": [
+            "q_dash_through_minions"
+          ],
+          "counterplay": [
+            "q_blind_when_irelia_dashes"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "hookshot_gap_close",
+          "win_condition": [
+            "mushroom_escape_paths"
+          ],
+          "threats": [
+            "e_gap_close_burst"
+          ],
+          "counterplay": [
+            "mushroom_approach_paths"
+          ]
+        },
+        {
+          "target": "yasuo",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_q",
+          "win_condition": [
+            "aa_poke_when_w_down"
+          ],
+          "threats": [
+            "windwall_blocks_q_blind"
+          ],
+          "counterplay": [
+            "trade_when_windwall_down"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "tryndamere",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "early_crit_burst_denies",
+          "win_condition": [
+            "fury_crit_trades",
+            "split_push"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "fury_crit_trades_early"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "sustained_dps_split",
+          "win_condition": [
+            "split_push_towers",
+            "r_undying"
+          ],
+          "threats": [
+            "q_knockup"
+          ],
+          "counterplay": [
+            "split_push_ignore_sion"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "split_push_ignores_tank",
+          "win_condition": [
+            "split_push_take_towers"
+          ],
+          "threats": [
+            "e_as_slow"
+          ],
+          "counterplay": [
+            "split_push_force_rotation"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "teemo",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "blind_negates_autos_in_r",
+          "win_condition": [
+            "all_in_when_blind_down"
+          ],
+          "threats": [
+            "q_blind_during_r"
+          ],
+          "counterplay": [
+            "all_in_after_blind_wears_off"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "as_slow_negates_dps",
+          "win_condition": [
+            "split_push_avoid_fights"
+          ],
+          "threats": [
+            "e_as_slow_armor"
+          ],
+          "counterplay": [
+            "split_push_dont_fight"
+          ]
+        },
+        {
+          "target": "renekton",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "early_bully_fury_burst",
+          "win_condition": [
+            "survive_to_items"
+          ],
+          "threats": [
+            "fury_w_burst"
+          ],
+          "counterplay": [
+            "farm_to_botrk_spike"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "dr_mundo",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "magic_damage_ignores_armor",
+          "win_condition": [
+            "q_poke_e_trades",
+            "scale_to_unkillable"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "q_poke_from_range"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "sustained_damage_outsustains",
+          "win_condition": [
+            "q_poke_r_regen",
+            "outscale"
+          ],
+          "threats": [
+            "q_knockup"
+          ],
+          "counterplay": [
+            "q_poke_r_regen"
+          ]
+        },
+        {
+          "target": "ornn",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "passive_cc_immune_sustain",
+          "win_condition": [
+            "passive_blocks_cc",
+            "sustain_through_trades"
+          ],
+          "threats": [
+            "brittle_percent_hp"
+          ],
+          "counterplay": [
+            "passive_cc_immune_sustain_trades"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "true_damage_ignores_hp",
+          "win_condition": [
+            "r_regen_outsustain"
+          ],
+          "threats": [
+            "vitals_true_damage"
+          ],
+          "counterplay": [
+            "r_and_try_to_outsustain"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "bleed_and_ignite_anti_heal",
+          "win_condition": [
+            "r_regen"
+          ],
+          "threats": [
+            "ignite_reduces_r_healing"
+          ],
+          "counterplay": [
+            "r_away_from_darius"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "true_damage_shreds_hp",
+          "win_condition": [
+            "q_slow_catch"
+          ],
+          "threats": [
+            "silver_bolts_true_damage"
+          ],
+          "counterplay": [
+            "q_slow_run_down"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "sion",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "hp_stacking_outscales",
+          "win_condition": [
+            "w_hp_stacking",
+            "titanic_scaling"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "farm_w_stacks"
+          ]
+        },
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.5,
+          "reason": "both_scale_sion_teamfights",
+          "win_condition": [
+            "team_fight_with_r",
+            "wave_clear"
+          ],
+          "threats": [
+            "q_stacking"
+          ],
+          "counterplay": [
+            "push_wave_roam"
+          ]
+        },
+        {
+          "target": "teemo",
+          "lane": "baron",
+          "difficulty": 0.5,
+          "reason": "q_cc_catches_ranged",
+          "win_condition": [
+            "q_knockup_catch",
+            "r_engage"
+          ],
+          "threats": [
+            "blind_poke"
+          ],
+          "counterplay": [
+            "charge_q_on_approach"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "true_damage_ignores_hp",
+          "win_condition": [
+            "q_knockup_under_tower"
+          ],
+          "threats": [
+            "vitals_true_damage"
+          ],
+          "counterplay": [
+            "play_under_tower"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "bullied_in_lane",
+          "win_condition": [
+            "scale_to_teamfights"
+          ],
+          "threats": [
+            "pull_5_stacks"
+          ],
+          "counterplay": [
+            "farm_safely_scale"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "true_damage_shreds_hp",
+          "win_condition": [
+            "q_knockup_catch"
+          ],
+          "threats": [
+            "q2_true_damage"
+          ],
+          "counterplay": [
+            "q_knockup_on_approach"
+          ]
+        },
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "q_dodges_q_channel",
+          "win_condition": [
+            "q_on_irelia_approach"
+          ],
+          "threats": [
+            "q_dash_dodges_q"
+          ],
+          "counterplay": [
+            "charge_q_on_dash_prediction"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "gragas",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "poke_and_disengage",
+          "win_condition": [
+            "q_poke_r_disengage"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "q_poke_from_range"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "e_interrupts_q",
+          "win_condition": [
+            "e_body_slam_interrupts_q"
+          ],
+          "threats": [
+            "hp_scaling"
+          ],
+          "counterplay": [
+            "e_during_sion_q_channel"
+          ]
+        },
+        {
+          "target": "dr_mundo",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "w_percent_hp_poke",
+          "win_condition": [
+            "w_percent_hp_trades",
+            "r_disengage"
+          ],
+          "threats": [
+            "late_regen"
+          ],
+          "counterplay": [
+            "w_percent_hp_short_trades"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "parry_blocks_e_stun",
+          "win_condition": [
+            "r_knockback_disengage"
+          ],
+          "threats": [
+            "w_parry_e_stun"
+          ],
+          "counterplay": [
+            "bait_parry_then_e"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "hookshot_catches",
+          "win_condition": [
+            "e_interrupt_hookshot"
+          ],
+          "threats": [
+            "e_gap_close_q2"
+          ],
+          "counterplay": [
+            "e_body_slam_on_hookshot"
+          ]
+        },
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "q_dash_through_barrel",
+          "win_condition": [
+            "e_stun_on_dash"
+          ],
+          "threats": [
+            "q_dash_sustain"
+          ],
+          "counterplay": [
+            "e_body_slam_on_approach"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ambessa",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.3,
+          "reason": "early_bully_denies_stacks",
+          "win_condition": [
+            "passive_dash_trades",
+            "r_suppress"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "passive_dash_trades_deny_cs"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "dash_dodges_q",
+          "win_condition": [
+            "passive_dash_dodge_q",
+            "r_suppress"
+          ],
+          "threats": [
+            "q_knockup"
+          ],
+          "counterplay": [
+            "dash_through_sion_q"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "sustained_trades_shred",
+          "win_condition": [
+            "passive_trades",
+            "trinity_spellblade"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "sustained_trades_with_passive"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "parry_blocks_r",
+          "win_condition": [
+            "r_from_angle"
+          ],
+          "threats": [
+            "w_parry_r_suppress"
+          ],
+          "counterplay": [
+            "bait_parry_then_r"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "kited_and_condemned",
+          "win_condition": [
+            "passive_dash_gap_close"
+          ],
+          "threats": [
+            "condemn_tumble_kite"
+          ],
+          "counterplay": [
+            "passive_dash_close_gap"
+          ]
+        },
+        {
+          "target": "gwen",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "w_mist_dodges_abilities",
+          "win_condition": [
+            "bait_w_then_trade"
+          ],
+          "threats": [
+            "w_mist_untargetable"
+          ],
+          "counterplay": [
+            "bait_w_then_engage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "garen",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "q_silence_denies_wither",
+          "win_condition": [
+            "q_silence_trade",
+            "passive_regen"
+          ],
+          "threats": [
+            "late_scaling"
+          ],
+          "counterplay": [
+            "q_silence_then_e_spin"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "q_silence_interrupts",
+          "win_condition": [
+            "q_silence_during_q",
+            "e_spin"
+          ],
+          "threats": [
+            "hp_scaling"
+          ],
+          "counterplay": [
+            "q_during_sion_q_channel"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "passive_regen_outsustains",
+          "win_condition": [
+            "passive_regen_sustain",
+            "e_spin"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "passive_regen_between_trades"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "kited_to_death",
+          "win_condition": [
+            "flash_q_silence"
+          ],
+          "threats": [
+            "tumble_condemn_kite"
+          ],
+          "counterplay": [
+            "flash_q_only_hope"
+          ]
+        },
+        {
+          "target": "kennen",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "ranged_poke_stun",
+          "win_condition": [
+            "q_silence_catch"
+          ],
+          "threats": [
+            "ranged_poke_r_stun"
+          ],
+          "counterplay": [
+            "q_ms_to_close_gap"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "true_damage_outduels",
+          "win_condition": [
+            "silence_q2_timing"
+          ],
+          "threats": [
+            "q2_true_damage"
+          ],
+          "counterplay": [
+            "q_silence_before_q2"
+          ]
+        },
+        {
+          "target": "darius",
+          "lane": "baron",
+          "difficulty": 0.5,
+          "reason": "skill_matchup_pull_punishes",
+          "win_condition": [
+            "q_silence_e_spin_disengage"
+          ],
+          "threats": [
+            "e_pull_5_stacks"
+          ],
+          "counterplay": [
+            "q_in_e_spin_then_back_off"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "singed",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "proxy_denies_stacking",
+          "win_condition": [
+            "proxy_behind_tower",
+            "fling_away_from_cs"
+          ],
+          "threats": [
+            "wither_catches"
+          ],
+          "counterplay": [
+            "proxy_wave_behind_tower"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "proxy_outpushes",
+          "win_condition": [
+            "proxy_wave",
+            "fling_interrupts"
+          ],
+          "threats": [
+            "r_charge"
+          ],
+          "counterplay": [
+            "proxy_behind_tower"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "poison_ignores_armor",
+          "win_condition": [
+            "proxy_poison_trail",
+            "fling"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "poison_trail_proxy"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "vayne",
+          "lane": "baron",
+          "difficulty": 0.8,
+          "reason": "kited_condemned",
+          "win_condition": [
+            "ghost_fling_catch"
+          ],
+          "threats": [
+            "condemn_tumble_kite"
+          ],
+          "counterplay": [
+            "ghost_run_at_vayne"
+          ]
+        },
+        {
+          "target": "kennen",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "ranged_poke_stun",
+          "win_condition": [
+            "fling_catch"
+          ],
+          "threats": [
+            "ranged_poke_e_escape"
+          ],
+          "counterplay": [
+            "ghost_fling_attempt"
+          ]
+        },
+        {
+          "target": "gnar",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "ranged_poke_mini",
+          "win_condition": [
+            "fling_mini_gnar"
+          ],
+          "threats": [
+            "mini_poke_mega_r"
+          ],
+          "counterplay": [
+            "fling_mini_gnar_when_close"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "rumble",
+      "role": "baron",
+      "strong_against": [
+        {
+          "target": "nasus",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "q_burn_zones_from_cs",
+          "win_condition": [
+            "q_flamespitter_zone",
+            "r_equalizer"
+          ],
+          "threats": [
+            "wither_late"
+          ],
+          "counterplay": [
+            "q_zone_from_minions"
+          ]
+        },
+        {
+          "target": "malphite",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "magic_damage_ignores_armor",
+          "win_condition": [
+            "q_burn_poke",
+            "r_equalizer"
+          ],
+          "threats": [
+            "r_engage"
+          ],
+          "counterplay": [
+            "q_burn_trades"
+          ]
+        },
+        {
+          "target": "sion",
+          "lane": "baron",
+          "difficulty": 0.4,
+          "reason": "burn_zones_q_channel",
+          "win_condition": [
+            "q_burn_during_sion_q"
+          ],
+          "threats": [
+            "q_knockup"
+          ],
+          "counterplay": [
+            "q_burn_zone_on_sion"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "irelia",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "gap_close_burst",
+          "win_condition": [
+            "w_shield_trade"
+          ],
+          "threats": [
+            "q_dash_burst"
+          ],
+          "counterplay": [
+            "w_shield_on_approach"
+          ]
+        },
+        {
+          "target": "fiora",
+          "lane": "baron",
+          "difficulty": 0.7,
+          "reason": "parry_and_true_damage",
+          "win_condition": [
+            "q_burn_from_range"
+          ],
+          "threats": [
+            "q_gap_close_vitals"
+          ],
+          "counterplay": [
+            "q_burn_from_max_range"
+          ]
+        },
+        {
+          "target": "camille",
+          "lane": "baron",
+          "difficulty": 0.6,
+          "reason": "hookshot_catches",
+          "win_condition": [
+            "w_shield_trade"
+          ],
+          "threats": [
+            "e_gap_close_q2"
+          ],
+          "counterplay": [
+            "w_shield_on_hookshot"
+          ]
+        }
+      ]
+    }
+  ]
+}
