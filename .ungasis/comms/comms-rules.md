@@ -1,7 +1,8 @@
 # Comms Rules
  
 ## Purpose
-Define the events and conditions that trigger notifications, including delivery channels and recipient routing.
+Define the events and conditions that trigger notifications, including delivery channels and
+recipient routing.
  
 ## How It Works
 ```
@@ -11,7 +12,9 @@ System Event ──> Check Notification Mapping ──> Format Message ──> D
 ## Rules
 1. Every notification must be classified by its severity tier (L0-L4).
 2. Low-severity notifications (L0-L1) are logged silently to disk and do not interrupt the user.
-3. Mid-to-high severity alerts (L2-L4) must be delivered immediately to Mel's active console or message inbox.
+3.
+Mid-to-high severity alerts (L2-L4) must be delivered immediately to Mel's active console or
+message inbox.
 4. Batch notifications that occur within 5 minutes of each other to prevent alert fatigue.
  
 ## Notification Routing Table
@@ -36,8 +39,9 @@ System Event ──> Check Notification Mapping ──> Format Message ──> D
 
 ## Additional Context
 
-### When to Use
-Use notification rules to format and deliver system warnings and status updates to Mel's delivery channels.
+### When to Use:
+Use notification rules to format and deliver system warnings and status updates to Mel's
+delivery channels.
 
 ### Example
 ```markdown
@@ -46,12 +50,14 @@ Use notification rules to format and deliver system warnings and status updates 
 - [ ] Deliver immediately to Builder Agent console.
 ```
 
-### Tags
+### Tags:
 notifications, alert-fatigue, status-updates, comms
 
-### See also
-- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
-- [comms/escalation-matrix.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/comms/escalation-matrix.md)
+### See also:
+-
+[warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+-
+[comms/escalation-matrix.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/comms/escalation-matrix.md)
  
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

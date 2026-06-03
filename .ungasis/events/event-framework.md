@@ -4,15 +4,21 @@
 Define how asynchronous events flow to coordinate independent agents and automated scripts.
 
 ## How It Works
-- **Event**: A record indicating something occurred (e.g., file creation, sprint completion, validation check).
+- **Event**: A record indicating something occurred (e.g., file creation, sprint completion,
+validation check).
 - **Emitter**: The agent, script, or system module that detects and publishes the event.
 - **Consumer**: The target agent or system module that reacts to the event.
 - **Event Schema**: `{ "type": string, "source": string, "timestamp": string, "data": object }`
 
 ## Rules
-1. **Append-Only Ledger**: All events must be permanently logged to `event-log.md`. Never delete historic entries.
-2. **Deterministic Routing**: Each event type routes to a single designated primary consumer as defined in the Event Routing Table.
-3. **Session Processing**: Events are checked and cleared during session start as part of the daily pulse logic.
+1. **Append-Only Ledger**: All events must be permanently logged to `event-log.md`.
+Never delete historic entries.
+2.
+**Deterministic Routing**: Each event type routes to a single designated primary consumer as
+defined in the Event Routing Table.
+3.
+**Session Processing**: Events are checked and cleared during session start as part of the
+daily pulse logic.
 
 ## Event Routing Table
 | Event Type | Emitter | Consumer | Action |
@@ -29,7 +35,7 @@ Define how asynchronous events flow to coordinate independent agents and automat
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use the event framework rules when defining new async event types or modifying coordination routes.
 
 ### Example
@@ -42,12 +48,19 @@ Use the event framework rules when defining new async event types or modifying c
 }
 ```
 
-### Tags
+### Tags:
 events, async, messages, framework
 
-### See also
+### See also:
 - [bus/bus-manifest.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/bus/bus-manifest.md)
 - [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
+
+## Inputs/Outputs
+
+| Direction | Channel | Description |
+|---|---|---|
+| Input | Context | Operational settings and constraints |
+| Output | Log | Actions logged and verified for accuracy |
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

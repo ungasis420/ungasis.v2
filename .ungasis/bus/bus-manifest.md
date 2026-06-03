@@ -10,7 +10,9 @@ Producer Engine ──> Publishes Event ──> Bus Router ──> Delivers to C
 
 ## Rules
 1. Every engine connection must be registered in the Manifest Table before transmitting events.
-2. No direct engine-to-engine API (Application Programming Interface) calls are allowed; all data must flow through the event bus.
+2.
+No direct engine-to-engine API (Application Programming Interface) calls are allowed; all
+data must flow through the event bus.
 3. Connections must specify the event severity level allowed (L0-L4).
 4. Deprecated routing links must be removed within one week of engine refactoring.
 
@@ -56,7 +58,7 @@ Producer Engine ──> Publishes Event ──> Bus Router ──> Delivers to C
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use the Bus Manifest to verify that events are correctly mapped between emitters and consumers.
 
 ### Example
@@ -65,12 +67,17 @@ Use the Bus Manifest to verify that events are correctly mapped between emitters
 - [ ] Verify that security shield level matches constraints.
 ```
 
-### Tags
+### Tags:
 event-bus, interconnect, security-shield, messaging
 
-### See also
-- [events/event-framework.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/events/event-framework.md)
+### See also:
+-
+[events/event-framework.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/events/event-framework.md)
 - [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
+
+## Jargon Explanations
+
+- API stands for Application Programming Interface.
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

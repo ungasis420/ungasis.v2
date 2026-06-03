@@ -17,7 +17,7 @@ def run_cmd(args):
 # Commit changes
 commit_code = run_cmd([
     "git", "commit", "-m", 
-    "Sprint F7: Token efficiency 12→20 layers — decay, TOON, MCP profiles, graphify query"
+    "feat: F21c quality push + dashboard live + software A-grade + graphify providers"
 ])
 
 if commit_code == 0 or "nothing to commit" in "stderr/stdout":

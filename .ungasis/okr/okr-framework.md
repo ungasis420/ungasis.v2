@@ -1,20 +1,27 @@
 # OKR Framework
 
 ## Purpose
-Track strategic goals rather than just individual tasks. Ensure daily operational activity aligns with objectives.
+Track strategic goals rather than just individual tasks.
+Ensure daily operational activity aligns with objectives.
 
 ## How It Works
-- **Objectives (O)**: Qualitative, inspiring, and action-oriented goals defining WHAT we want to achieve.
-- **Key Results (KRs)**: Quantitative, measurable milestones defining HOW we know if we achieved the Objective.
-- **Initiatives**: Projects, sprints, or specific tasks mapped to KRs representing WHAT we do to achieve them.
+- **Objectives (O)**: Qualitative, inspiring, and action-oriented goals defining WHAT we want
+to achieve.
+- **Key Results (KRs)**: Quantitative, measurable milestones defining HOW we know if we
+achieved the Objective.
+- **Initiatives**: Projects, sprints, or specific tasks mapped to KRs representing WHAT we do
+to achieve them.
 
 ## Rules
-1. **Quarterly Limits**: Maximum of 3 Objectives per quarter, with up to 3 Key Results per Objective.
+1.
+**Quarterly Limits**: Maximum of 3 Objectives per quarter, with up to 3 Key Results per Objective.
 2. **Scoring Scale**: Weekly updates check-in, and monthly scoring on a 0.0 to 1.0 scale:
    - `0.7 - 1.0`: Achieved (Green)
    - `0.4 - 0.6`: Making Progress (Yellow)
    - `< 0.4`: At Risk (Red)
-3. **Alignment**: Every active project in the portfolio and task in the queue must map to at least one active Key Result.
+3.
+**Alignment**: Every active project in the portfolio and task in the queue must map to at
+least one active Key Result.
 
 ## Inputs & Outputs
 - **Inputs**: Strategic guidance from Mel, project updates from the portfolio.
@@ -31,7 +38,7 @@ Track strategic goals rather than just individual tasks. Ensure daily operationa
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use OKR framework rules when evaluating weekly strategy alignment and project milestones.
 
 ### Example
@@ -40,12 +47,14 @@ Use OKR framework rules when evaluating weekly strategy alignment and project mi
 - [ ] Measure weekly progress and score as 0.4.
 ```
 
-### Tags
+### Tags:
 okr, strategy, metrics, objectives
 
-### See also
-- [jarvis-core/gaps-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/jarvis-core/gaps-rules.md)
-- [tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+### See also:
+-
+[jarvis-core/gaps-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/jarvis-core/gaps-rules.md)
+-
+[tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

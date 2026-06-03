@@ -81,11 +81,12 @@ When the Scout Engine discovers a HIGH-relevance item:
 4. If ADOPT: move to `adaptation-queue.md` with implementation plan (human)
 5. Implement in next available sprint (follows normal pipeline)
  
-Scout discoveries that affect `MODEL_ROUTING.md` or token budgets require human approval per the Adaptation Approval Levels table.
+Scout discoveries that affect `MODEL_ROUTING.md` or token budgets require human approval per
+the Adaptation Approval Levels table.
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use evolution rules to evaluate session metrics and adapt system parameters automatically.
 
 ### Example
@@ -95,12 +96,14 @@ Use evolution rules to evaluate session metrics and adapt system parameters auto
 - [ ] Suggest routing adaptation to Groq.
 ```
 
-### Tags
+### Tags:
 evolution, self-adaptation, metrics, optimization
 
-### See also
-- [evolution/metrics-pipeline.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/metrics-pipeline.md)
-- [evolution/EVOLUTION_LOCK.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/EVOLUTION_LOCK.md)
+### See also:
+-
+[evolution/metrics-pipeline.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/metrics-pipeline.md)
+-
+[evolution/EVOLUTION_LOCK.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/EVOLUTION_LOCK.md)
  
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

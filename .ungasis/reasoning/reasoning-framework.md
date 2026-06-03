@@ -1,10 +1,12 @@
 # reasoning-framework.md — Reasoning Framework
 
 ## Purpose
-This document establishes rules for when an agent should spend tokens on step-by-step reasoning (using thinking models) versus executing commands directly.
+This document establishes rules for when an agent should spend tokens on step-by-step
+reasoning (using thinking models) versus executing commands directly.
 
 ## How It Works
-When a task is loaded, the agent evaluates the Complexity and Novelty of the problem using the matrix below to determine the required Reasoning Depth.
+When a task is loaded, the agent evaluates the Complexity and Novelty of the problem using
+the matrix below to determine the required Reasoning Depth.
 
 ## Decision Matrix
 | Complexity | Novelty | Risk Level | Reasoning Depth | Recommended Model |
@@ -16,8 +18,12 @@ When a task is loaded, the agent evaluates the Complexity and Novelty of the pro
 | Low | any | Low | Skip | Cerebras Llama 8b |
 
 ## Rules
-1. **Force Deep Reasoning**: Always use Deep Reasoning when creating a new engine. Also use it when implementing changes affecting 3+ files, or dealing with L2+ security classification.
-2. **Direct Execution**: Fast-execute simple tasks (such as spelling corrections, simple file moves, and package installs) without opening a reasoning block.
+1. **Force Deep Reasoning**: Always use Deep Reasoning when creating a new engine.
+Also use it when implementing changes affecting 3+ files, or dealing with L2+ security
+classification.
+2.
+**Direct Execution**: Fast-execute simple tasks (such as spelling corrections, simple file
+moves, and package installs) without opening a reasoning block.
 
 ## Inputs and Outputs
 - **Inputs**: Task specs, file paths, dependency maps.
@@ -25,8 +31,9 @@ When a task is loaded, the agent evaluates the Complexity and Novelty of the pro
 
 ## Additional Context
 
-### When to Use
-Use this framework to select between deep step-by-step thinking models and fast direct-execution models.
+### When to Use:
+Use this framework to select between deep step-by-step thinking models and fast
+direct-execution models.
 
 ### Example
 ```markdown
@@ -35,12 +42,14 @@ Use this framework to select between deep step-by-step thinking models and fast 
 - [ ] Action: Select fast-execute model.
 ```
 
-### Tags
+### Tags:
 reasoning, decision-matrix, latency-optimization
 
-### See also
-- [decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
-- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+### See also:
+-
+[decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
+-
+[warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

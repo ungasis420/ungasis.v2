@@ -1,11 +1,13 @@
 # Context Rules
  
 ## Purpose
-Define which wiki entries, gotchas, and patterns should be automatically injected into an AI agent's context window based on task keywords.
+Define which wiki entries, gotchas, and patterns should be automatically injected into an AI
+agent's context window based on task keywords.
  
 ## How It Works
 ```
-Agent Receives Task ──> Parse Keywords ──> Match Rules Table ──> Fetch Matching Wiki Files ──> Inject to Context
+Agent Receives Task ──> Parse Keywords ──> Match Rules Table ──> Fetch Matching Wiki Files
+──> Inject to Context
 ```
  
 ## Rules
@@ -38,8 +40,9 @@ Agent Receives Task ──> Parse Keywords ──> Match Rules Table ──> Fet
 
 ## Additional Context
 
-### When to Use
-Use auto-inject rules during context composition at task session start to automatically inject relevant wiki guidelines.
+### When to Use:
+Use auto-inject rules during context composition at task session start to automatically
+inject relevant wiki guidelines.
 
 ### Example
 ```markdown
@@ -48,12 +51,14 @@ Use auto-inject rules during context composition at task session start to automa
 - [ ] Append the file to the context injection list.
 ```
 
-### Tags
+### Tags:
 context, injection, auto-inject, wiki
 
-### See also
-- [context-engine/context-budget.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-budget.md)
-- [context-engine/context-loops.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-loops.md)
+### See also:
+-
+[context-engine/context-budget.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-budget.md)
+-
+[context-engine/context-loops.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-loops.md)
  
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -1,7 +1,8 @@
 # Warning Rules Engine
 
 ## Purpose
-Define the triggers, severities, and corrective actions for predictive system warnings to prevent session failures.
+Define the triggers, severities, and corrective actions for predictive system warnings to
+prevent session failures.
 
 ## How It Works
 ```
@@ -10,7 +11,9 @@ System Metrics ──> Evaluated by Warning Rules ──> Severity Set 🔴🟡�
 
 ## Rules
 1. Warnings must be evaluated at the start of each session and after any file changes.
-2. A warning is classified into one of three severities: L3 (🔴 Critical), L2 (🟡 Warning), or L1 (🟢 Info).
+2.
+A warning is classified into one of three severities: L3 (🔴 Critical), L2 (🟡 Warning), or L1
+(🟢 Info).
 3. If any L3 warning triggers, execution must stop until a human review resolves the issue.
 
 ## Warning Triggers
@@ -39,8 +42,9 @@ System Metrics ──> Evaluated by Warning Rules ──> Severity Set 🔴🟡�
 
 ## Additional Context
 
-### When to Use
-Use warning rules to monitor system metrics and catch potential errors before they cause session failure.
+### When to Use:
+Use warning rules to monitor system metrics and catch potential errors before they cause
+session failure.
 
 ### Example
 ```markdown
@@ -49,12 +53,14 @@ Use warning rules to monitor system metrics and catch potential errors before th
 - [ ] Action: Lock session and notify human.
 ```
 
-### Tags
+### Tags:
 warnings, error-prevention, health-check
 
-### See also
-- [quality/quality-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/quality/quality-rules.md)
-- [tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+### See also:
+-
+[quality/quality-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/quality/quality-rules.md)
+-
+[tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

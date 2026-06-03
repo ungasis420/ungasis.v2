@@ -1,17 +1,21 @@
 # Suggestion Rules Engine
 
 ## Purpose
-Define target conditions and formats to proactively recommend tasks, skills, and energy management actions to the operator.
+Define target conditions and formats to proactively recommend tasks, skills, and energy
+management actions to the operator.
 
 ## How It Works
 ```
-System Triggers ──> Match Suggestion Rule ──> Format Suggestion 💡 ──> Publish Suggestion to Conductor
+System Triggers ──> Match Suggestion Rule ──> Format Suggestion 💡 ──> Publish Suggestion to
+Conductor
 ```
 
 ## Rules
 1. Suggestions must be generated and presented in the standard format:
    `💡 SUGGESTION: [what] — [why] — [effort estimate]`
-2. Suggestion trigger states must be checked on: session start, task completion, continuous idle time, and pattern detection.
+2.
+Suggestion trigger states must be checked on: session start, task completion, continuous idle
+time, and pattern detection.
 3. All suggestions must specify an effort estimate (e.g., XS, S, M, L).
 
 ## Trigger Rules Table
@@ -36,7 +40,7 @@ System Triggers ──> Match Suggestion Rule ──> Format Suggestion 💡 ─
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use suggestion rules to format and publish proactive recommendations to the conductor.
 
 ### Example
@@ -46,12 +50,14 @@ Use suggestion rules to format and publish proactive recommendations to the cond
 - [ ] Emit suggestion event.
 ```
 
-### Tags
+### Tags:
 suggestions, conductor, productivity, recommendations
 
-### See also
-- [tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
-- [orchestrator/planner-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/orchestrator/planner-rules.md)
+### See also:
+-
+[tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+-
+[orchestrator/planner-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/orchestrator/planner-rules.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

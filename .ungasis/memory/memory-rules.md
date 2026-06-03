@@ -1,7 +1,8 @@
 # Memory Rules
 
 ## Purpose
-Define the rules for when the AI agent crew saves, recalls, and forgets facts in the cross-session memory store.
+Define the rules for when the AI agent crew saves, recalls, and forgets facts in the
+cross-session memory store.
 
 ## How It Works
 ```
@@ -13,10 +14,15 @@ Conflict Detected ─────────> Mark Old as Stale ────> U
 ```
 
 ## Rules
-1. Save key facts such as user preferences, custom folder paths, verified command configurations, and developer preferences.
-2. Recall relevant facts on session startup to prevent asking duplicate questions or repeating setups.
+1.
+Save key facts such as user preferences, custom folder paths, verified command
+configurations, and developer preferences.
+2.
+Recall relevant facts on session startup to prevent asking duplicate questions or repeating setups.
 3. Forget or archive old facts when a newer, conflicting fact is verified during a task.
-4. Never store passwords, API (Application Programming Interface) keys, tokens, or private credentials in the memory index.
+4.
+Never store passwords, API (Application Programming Interface) keys, tokens, or private
+credentials in the memory index.
 5. Review the memory index at the end of every week to prune outdated entries.
 
 ## Save and Recall Criteria
@@ -43,7 +49,7 @@ Conflict Detected ─────────> Mark Old as Stale ────> U
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use these rules whenever saving, retrieving, or clearing persistent facts in the memory database.
 
 ### Example
@@ -52,12 +58,18 @@ Use these rules whenever saving, retrieving, or clearing persistent facts in the
 - [ ] Query memory for custom path variables at session start.
 ```
 
-### Tags
+### Tags:
 memory, persistent-storage, context-retrieval
 
-### See also
-- [jarvis-core/JARVIS_CORE.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/jarvis-core/JARVIS_CORE.md)
-- [context-engine/context-loops.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-loops.md)
+### See also:
+-
+[jarvis-core/JARVIS_CORE.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/jarvis-core/JARVIS_CORE.md)
+-
+[context-engine/context-loops.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-loops.md)
+
+## Jargon Explanations
+
+- API stands for Application Programming Interface.
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -1,11 +1,13 @@
 # Quality Rules
  
 ## Purpose
-Define the dimensions, weightings, and mathematical formula to compute a quality score from 1-10 for every artifact.
+Define the dimensions, weightings, and mathematical formula to compute a quality score from
+1-10 for every artifact.
  
 ## How It Works
 ```
-Audit Results ──> Rate each of 5 dimensions ──> Calculate weighted average ──> Determine Threshold action
+Audit Results ──> Rate each of 5 dimensions ──> Calculate weighted average ──> Determine
+Threshold action
 ```
  
 ## Rules
@@ -44,7 +46,7 @@ Audit Results ──> Rate each of 5 dimensions ──> Calculate weighted avera
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use quality framework rules during code reviews and quality checks to grade artifacts.
 
 ### Example
@@ -54,12 +56,14 @@ Use quality framework rules during code reviews and quality checks to grade arti
 - [ ] Compute overall score: 8.2 (Excellent).
 ```
 
-### Tags
+### Tags:
 quality, scoring, audit, matrix
 
-### See also
-- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
-- [suggestions/suggestion-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/suggestions/suggestion-rules.md)
+### See also:
+-
+[warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+-
+[suggestions/suggestion-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/suggestions/suggestion-rules.md)
  
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

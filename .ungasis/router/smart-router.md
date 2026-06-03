@@ -51,13 +51,15 @@ Confidence: [HIGH / MEDIUM / LOW]
 
 ## Rules
 1. **Automatic Kickoff**: The router evaluates tasks at session startup before files are modified.
-2. **Ambiguity Resolution**: If classification confidence is `LOW`, escalate to the `@commander` or user for manual routing.
+2.
+**Ambiguity Resolution**: If classification confidence is `LOW`, escalate to the `@commander`
+or user for manual routing.
 3. **Precedence**: Apply the first matching rule in the task type detection list.
 4. **Log Registry**: Every routing decision must be appended to `router-log.md`.
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use the Smart Router to classify user requests and determine the agent execution pipeline.
 
 ### Example
@@ -67,12 +69,20 @@ Use the Smart Router to classify user requests and determine the agent execution
 - [ ] Route task: Surgeon (Cline) -> @quality-auditor.
 ```
 
-### Tags
+### Tags:
 routing, classification, automation, agents
 
-### See also
-- [decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
+### See also:
+-
+[decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
 - [bus/bus-manifest.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/bus/bus-manifest.md)
+
+## Inputs/Outputs
+
+| Direction | Channel | Description |
+|---|---|---|
+| Input | Context | Operational settings and constraints |
+| Output | Log | Actions logged and verified for accuracy |
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

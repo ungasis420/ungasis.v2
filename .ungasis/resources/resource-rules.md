@@ -1,7 +1,8 @@
 # Resource Rules
 
 ## Purpose
-Define the protocols for key rotation, API (Application Programming Interface) error recovery, and model fallbacks when limits or failures are hit.
+Define the protocols for key rotation, API (Application Programming Interface) error
+recovery, and model fallbacks when limits or failures are hit.
 
 ## How It Works
 ```
@@ -14,8 +15,11 @@ API Connection Fails ──> Check Failure Type ──> Apply Failover Rule ─�
 ```
 
 ## Rules
-1. Rotate to the next available API key in the inventory if a 429 (Rate Limit Exceeded) error occurs.
-2. Fall back to free-tier models (e.g., Cerebras LPU, Groq Cloud) if paid models (e.g., Together AI) time out.
+1.
+Rotate to the next available API key in the inventory if a 429 (Rate Limit Exceeded) error occurs.
+2.
+Fall back to free-tier models (e.g., Cerebras LPU, Groq Cloud) if paid models (e.g., Together
+AI) time out.
 3. Stop session execution and alert Mel immediately if all fallback keys and models fail.
 4. Keep fallback paths documented in a pipe-delimited routing table.
 
@@ -41,7 +45,7 @@ API Connection Fails ──> Check Failure Type ──> Apply Failover Rule ─�
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use resource rules to manage API key limit failures and execute fallback model routing.
 
 ### Example
@@ -51,12 +55,17 @@ Use resource rules to manage API key limit failures and execute fallback model r
 - [ ] Redirect the active text generation request.
 ```
 
-### Tags
+### Tags:
 resources, failover, key-rotation, rate-limits
 
-### See also
-- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+### See also:
+-
+[warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
 - [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
+
+## Jargon Explanations
+
+- API stands for Application Programming Interface.
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

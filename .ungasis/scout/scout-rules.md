@@ -30,7 +30,7 @@ If a source produces 3+ RELEVANT in 30 days → promote to HIGH priority.
 
 ## Additional Context
 
-### When to Use
+### When to Use:
 Use research evaluation rules when reviewing discoveries auto-fetched by research scripts.
 
 ### Example
@@ -40,12 +40,28 @@ Use research evaluation rules when reviewing discoveries auto-fetched by researc
 - [ ] If score is 8.5, categorize as RELEVANT and write to wiki.
 ```
 
-### Tags
+### Tags:
 scout, research, evaluation, discoveries
 
-### See also
-- [scout/research-sources.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/research-sources.md)
-- [scout/tools-discovered.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/tools-discovered.md)
+### See also:
+-
+[scout/research-sources.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/research-sources.md)
+-
+[scout/tools-discovered.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/tools-discovered.md)
  
+## Purpose
+Define core specifications and operational rules for scout-rules.md.
+
+## Rules
+1. Process information systematically according to defined parameters.
+2. Follow standard operating sequences to ensure reliability and speed.
+
+## Inputs/Outputs
+
+| Direction | Channel | Description |
+|---|---|---|
+| Input | Context | Operational settings and constraints |
+| Output | Log | Actions logged and verified for accuracy |
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
