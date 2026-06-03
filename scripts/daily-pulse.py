@@ -263,7 +263,7 @@ def generate_report():
     try:
         os.makedirs(os.path.dirname(PULSE_OUT_PATH), exist_ok=True)
         with open(PULSE_OUT_PATH, "w", encoding="utf-8") as f:
-            f.write(report_text)
+            f.write(report_text + "\n\nLast reviewed: June 2026 | Review by: September 2026 | Owner: Mel\n")
     except Exception as e:
         print(f"Error saving report to {PULSE_OUT_PATH}: {e}")
 
