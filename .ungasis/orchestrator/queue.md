@@ -1,7 +1,6 @@
 # UNGASIS Task Queue
 
 ## Active Tasks (Pending)
-- [ ] [NEXT] F20e: Framework Gaps (feedback loops, version control for knowledge)
 - [ ] [NEXT] F20f: Form 2 Dashboard build (full implementation)
 - [ ] [CLEANUP] Add staleness footers to remaining files without them
 - [ ] [CLEANUP] Prune old graphify community labels
@@ -10,6 +9,7 @@
 - [ ] [FUTURE] UNGASIS Form 2 full web app build
 
 ## Completed Tasks (Archive)
+- [x] Sprint F20e + Phase A: Research Intelligence & Feedback Loops — 12 new files + updates ✅
 - [x] Batch 1: Foundation Intelligence (F11a-d, F14b, F14e, F16a-b) — 22 files ✅
 - [x] Sprint F19: Multi-CLI Orchestration Setup — 19 files ✅
 - [x] Batch 2: Autonomy + Planning (F12a-b, F14a, F14d, F14f, F17a-b, F17d) — 27 files ✅
@@ -22,7 +22,7 @@
 - [x] Sprint F20d: High-Value Gaps + JARVIS Intelligence Layer — 27 files ✅
 
 ## Queue Stats
-- Pending: 7 | Completed: 10 | Total: 17
+- Pending: 6 | Completed: 11 | Total: 17
 - Last pruned: June 3, 2026
 - Next review: June 10, 2026
 

@@ -850,8 +850,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780446746.5065506,
-    "ast_hash": "d1aa82fea5c969c8ecf4f3011c9971c3",
+    "mtime": 1780452392.2866552,
+    "ast_hash": "e5a4c8558344ce3fec0b9b9c467a1872",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -860,8 +860,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\GEMINI.md": {
-    "mtime": 1780442469.763191,
-    "ast_hash": "e47d1b80cc8d80765c22876116f8b4b3",
+    "mtime": 1780448237.5230658,
+    "ast_hash": "41baa43ab71b47f641ed2cc17620c2b9",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\LLM_CONTEXT.md": {
@@ -8765,8 +8765,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\queue.md": {
-    "mtime": 1780446720.4232185,
-    "ast_hash": "a43f0a06e6cbbd86f6f4e0d3ddcd79b0",
+    "mtime": 1780452397.4798377,
+    "ast_hash": "7e8fa5af41c6a05d02ad146229add72f",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\session-conductor.md": {
@@ -8845,8 +8845,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\scout.md": {
-    "mtime": 1780419508.7344143,
-    "ast_hash": "ef87a343922a6c5bf6b64c8ce31c0e8b",
+    "mtime": 1780452328.9358413,
+    "ast_hash": "43201955edce2509d7e6b82854b0c806",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\tag-sweep.md": {
@@ -9300,8 +9300,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\quality\\quality-log.md": {
-    "mtime": 1780445026.5230258,
-    "ast_hash": "f97609fe16a919511de5c5c427df6e82",
+    "mtime": 1780452475.0176778,
+    "ast_hash": "fcf83e20e59bba340c342413ac8dcf7b",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\quality\\quality-metrics.md": {
@@ -9550,18 +9550,233 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\README.md": {
-    "mtime": 1780444989.394374,
-    "ast_hash": "609cc19d694c35a352e6d4d48d37caa3",
+    "mtime": 1780452384.4198847,
+    "ast_hash": "9643afce37ba8a30a4716c577d97cc1c",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\jarvis-core\\daily-pulse-latest.md": {
-    "mtime": 1780446803.284927,
-    "ast_hash": "62b46725388c0ad78bbbf7353208f309",
+    "mtime": 1780448415.82163,
+    "ast_hash": "a268aad75f1a346c6b95010251e57e3c",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\orchestrator\\scheduled-tasks.md": {
-    "mtime": 1780446739.359409,
-    "ast_hash": "41cbbd15839f2918d8d8441fdd52518e",
+    "mtime": 1780452333.8328233,
+    "ast_hash": "d3ec3bf5a457f9db7f74ff882cb4df2f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\package.json": {
+    "mtime": 1780448175.4711409,
+    "ast_hash": "ecd78b22904ec455da1c5b19bd31b898",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\README.md": {
+    "mtime": 1780448170.6473413,
+    "ast_hash": "4dd7108c5234f9a040bba915b378afb2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\next.config.ts": {
+    "mtime": 1780448184.1234658,
+    "ast_hash": "8a9becd0dd0447503aa37374a503d4d9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\postcss.config.mjs": {
+    "mtime": 1780448186.954521,
+    "ast_hash": "d79dc8495a5f382019ecea955620e94e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\src\\app\\layout.tsx": {
+    "mtime": 1780448195.1556976,
+    "ast_hash": "3bbbb1a9f5bd2ac5a40c3b4373da7db5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\src\\app\\page.tsx": {
+    "mtime": 1780448201.7048917,
+    "ast_hash": "df1b3795b02d266b83bcea97afa699ca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\tsconfig.json": {
+    "mtime": 1780448179.8093555,
+    "ast_hash": "1dc8a9656a455d9d5dc876cb215d054a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\src\\lib\\parse-markdown.ts": {
+    "mtime": 1780448303.3907933,
+    "ast_hash": "07eb8e91f055a95a368f40992036e3fb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\events\\event-framework.md": {
+    "mtime": 1780448258.450884,
+    "ast_hash": "cc04d25ee5ab617add10fd3d0eb6ee6b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\events\\event-log.md": {
+    "mtime": 1780448263.7371678,
+    "ast_hash": "29c4d96efea8ab01011900a37be4282e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\events\\event-rules.md": {
+    "mtime": 1780448267.6864111,
+    "ast_hash": "a9ae2f7b206249487e0ce09e3d6b1e99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\okr\\okr-current.md": {
+    "mtime": 1780448246.9448907,
+    "ast_hash": "8e86950d28f341b881063dcccbd0ce16",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\okr\\okr-framework.md": {
+    "mtime": 1780448242.2409585,
+    "ast_hash": "7fa13393e6c93bbb4631155ebb637f97",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\okr\\okr-rules.md": {
+    "mtime": 1780448250.6860201,
+    "ast_hash": "8659b5aaafe4077f24b83c605ee9defc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\project-director\\states\\state-log.md": {
+    "mtime": 1780448276.7070334,
+    "ast_hash": "2ff718914dacf8e2b410e4a6a5c683f3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\project-director\\states\\state-machine.md": {
+    "mtime": 1780448271.9289584,
+    "ast_hash": "94c4b650fbc21a6293edf1ffb6382780",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\project-director\\states\\state-rules.md": {
+    "mtime": 1780448281.5604289,
+    "ast_hash": "37e4f59e0ac3e3e961430bd642963b37",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\router\\router-log.md": {
+    "mtime": 1780448292.0089915,
+    "ast_hash": "921c47410a5d00c95c93f9b1f4df2e33",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\router\\router-rules.md": {
+    "mtime": 1780448298.1543207,
+    "ast_hash": "5cc407072feb37c3db9c284d17db9cd5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\router\\smart-router.md": {
+    "mtime": 1780448288.5897684,
+    "ast_hash": "360458d5fce01c4aaec42db2696b69bc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\src\\lib\\types.ts": {
+    "mtime": 1780448334.6179237,
+    "ast_hash": "6cb217bd22e0c9416458366b8a9d9707",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\dashboard\\src\\lib\\ungasis-data.ts": {
+    "mtime": 1780448331.3435884,
+    "ast_hash": "40bff870f4e910accf18e31a4888d95b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\tracking\\feedback-tracker.md": {
+    "mtime": 1780452430.1037104,
+    "ast_hash": "0e7ec09e0b3a47a14dc3b274dfca30fa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\tracking\\retro-template.md": {
+    "mtime": 1780448354.8518772,
+    "ast_hash": "a5dd24cce53a47390ec9cd3e2d6808c9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\tracking\\time-log.md": {
+    "mtime": 1780448345.5826008,
+    "ast_hash": "6db283a91687a40a6865d1ef9ac60927",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\tracking\\time-tracker.md": {
+    "mtime": 1780448341.3473659,
+    "ast_hash": "4fd04db2a58c83ca794ccdfeebf0cb87",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\memory\\memory-inject-log.md": {
+    "mtime": 1780448367.6628666,
+    "ast_hash": "0d81841bc0ebe543f607e46f3b694df0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\memory\\memory-inject-rules.md": {
+    "mtime": 1780448363.664687,
+    "ast_hash": "094d45b38b4236a9948b96c4ab48a571",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\router\\intent-examples.md": {
+    "mtime": 1780448376.7207236,
+    "ast_hash": "f281ffa611836be391b358a8e55eac88",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\router\\intent-parser.md": {
+    "mtime": 1780448372.5427938,
+    "ast_hash": "42bee63333f85312a5aa1e0af197831d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\research-github.py": {
+    "mtime": 1780452298.578136,
+    "ast_hash": "1800f6540fc06673e549c448c4bd5a5f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\scout\\research-inbox.md": {
+    "mtime": 1780452427.4373436,
+    "ast_hash": "ea5b21e5d5375c59d70e106648042416",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\scout\\research-rules.md": {
+    "mtime": 1780452288.2105782,
+    "ast_hash": "03712964ecf58744cfae7c0a2554111d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\scout\\research-sources.md": {
+    "mtime": 1780452282.9775207,
+    "ast_hash": "b79cb874a5cfa0324c870512d45e7e32",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\scout\\tools-discovered.md": {
+    "mtime": 1780452292.6746497,
+    "ast_hash": "0c11218b590e95af64479a1ffa037f10",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\feedback-close.py": {
+    "mtime": 1780452342.2810678,
+    "ast_hash": "c97f6d70cbd9c755d5a14171749c3bb1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\quality-close.py": {
+    "mtime": 1780452453.8507555,
+    "ast_hash": "7e5e10371f0bc7141713d73c059781d0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\research-feeds.py": {
+    "mtime": 1780452315.1522553,
+    "ast_hash": "e8f548d92af34a371f866f2ed536d387",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\research-hn.py": {
+    "mtime": 1780452304.7073567,
+    "ast_hash": "941902a309c0bc94a132e881d835fdc2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\research-youtube.py": {
+    "mtime": 1780452321.19991,
+    "ast_hash": "b0c7dd6d641c6d2bd8ed854faec6c3fc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\routing-close.py": {
+    "mtime": 1780452355.7986205,
+    "ast_hash": "9a85c1505865c70b473334ce1b94ad67",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\energy-close.py": {
+    "mtime": 1780452379.3519392,
+    "ast_hash": "f348d458e1f24025534d6939a8e6eb70",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\retro-close.py": {
+    "mtime": 1780452363.0358057,
+    "ast_hash": "c6054f59961c6afa5a1410f4c27c7e74",
     "semantic_hash": ""
   }
 }

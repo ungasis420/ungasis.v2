@@ -453,3 +453,21 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Session Handoff — June 3, 2026 🖥️ PC (Sprint F20e + Phase A)
+
+**Sprint:** F20e + Phase A — Research Intelligence & Feedback Loops
+**Model:** Gemini 3.5 (Flash)
+
+**What was accomplished:**
+- **F20e: Research Intelligence:** Created 4 Python scripts (`research-github.py`, `research-hn.py`, `research-feeds.py`, `research-youtube.py`) + 4 config files (`research-inbox.md`, `research-sources.md`, `research-rules.md`, `tools-discovered.md`).
+- **Phase A: Feedback Loops:** Created 5 Python scripts closing 5 learning loops (`feedback-close.py`, `quality-close.py`, `routing-close.py`, `retro-close.py`, `energy-close.py`).
+- **All loops wired:** Quality→Prompts, Feedback→Suggestions, Time→Energy, Routing→Performance, Retro→Knowledge.
+- **Workflow & scheduled updates:** Updated `scout.md` for evaluate mode, added all 9 scripts to `scripts/README.md`, and scheduled 9 new tasks in `scheduled-tasks.md`.
+- UNGASIS now has 13 automation scripts total (was 4).
+- Scheduled Tasks: 13 total (4 original + 4 research + 5 feedback).
+- Next: Start RiftCoach Phase 5.7 using the complete UNGASIS OS.
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
