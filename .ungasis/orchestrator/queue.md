@@ -1,9 +1,7 @@
 # UNGASIS Task Queue
 
 ## Active Tasks (Pending)
-- [ ] [NEXT] F20c: Form 2 Dashboard scaffold (Next.js app)
-- [ ] [NEXT] F20d: High-Value Gaps (Integration Bus, OKR, Secrets Vault)
-- [ ] [NEXT] F20e: Framework Gaps (Event System, State Machine, Feedback Loops)
+- [ ] [NEXT] F20e: Framework Gaps (feedback loops, version control for knowledge)
 - [ ] [NEXT] F20f: Form 2 Dashboard build (full implementation)
 - [ ] [CLEANUP] Add staleness footers to remaining files without them
 - [ ] [CLEANUP] Prune old graphify community labels
@@ -20,9 +18,11 @@
 - [x] Sprint F20a: Config Sync + Designer Agent + Agent Manager — 12 files ✅
 - [x] Workflow Fixes: commander, quality-auditor, watchdog, designer — 4 files ✅
 - [x] Sprint F20b: Automation Scripts (daily-pulse, warn-check, quality-score) — 4 files ✅
+- [x] Sprint F20c: Form 2 Dashboard Scaffold — 8 files ✅
+- [x] Sprint F20d: High-Value Gaps + JARVIS Intelligence Layer — 27 files ✅
 
 ## Queue Stats
-- Pending: 9 | Completed: 8 | Total: 17
+- Pending: 7 | Completed: 10 | Total: 17
 - Last pruned: June 3, 2026
 - Next review: June 10, 2026
 
