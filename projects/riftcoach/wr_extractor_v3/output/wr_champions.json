@@ -1,109 +1,37 @@
 [
   {
-    "id": "alistar",
-    "name": "ALISTAR",
+    "id": "aatrox",
+    "name": "AATROX",
     "roles": [
-      "support"
+      "top"
     ],
-    "difficulty": 1,
+    "difficulty": 2,
     "abilities": {
       "passive": {
-        "name": "Triumphant Roar",
-        "description": "Alistar charges his roar by stunning or displacing enemy champions or when nearby enemies die. When fully charged he heals himself all nearby allied champions."
+        "name": "DEATHBRINGER STANCE",
+        "description": "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health."
       },
       "q": {
-        "name": "Pulverize",
-        "description": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air."
+        "name": "THE DARKIN BLADE",
+        "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect."
       },
       "w": {
-        "name": "Headbutt",
-        "description": "Alistar rams a target with his head, dealing damage and knocking the target back. May also target turrets to deal bonus damage."
+        "name": "INFERNAL CHAINS",
+        "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again."
       },
       "e": {
-        "name": "Trample",
-        "description": "Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if he damages an enemy champion. At full stacks Alistar's next basic attack against an enemy champion deals additional magic damage and stuns them."
+        "name": "UMBRAL DASH",
+        "description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction."
       },
       "r": {
-        "name": "Unbreakable Will",
-        "description": "Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration."
+        "name": "WORLD ENDER",
+        "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended."
       }
     },
     "stats": {
-      "win_rate": 0.496,
-      "pick_rate": 0.0464,
-      "ban_rate": 0.0052
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "akali",
-    "name": "AKALI",
-    "roles": [
-      "mid"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "ASSASSIN'S MARK",
-        "description": "Dealing spell damage to a champion creates a ring of energy around them. Exiting that ring empowers Akali's next autoattack with bonus range and damage."
-      },
-      "q": {
-        "name": "FIVE POINT STRIKE",
-        "description": "Akali throws out five kunai, dealing damage based on her bonus Attack Damage and Ability Power and slowing at maximum range."
-      },
-      "w": {
-        "name": "TWILIGHT SHROUD",
-        "description": "Akali drops a cover of smoke and briefly gains Movement Speed and restores Energy. While inside the shroud, Akali becomes invisible. Attacking or using abilities will briefly reveal her."
-      },
-      "e": {
-        "name": "SHURIKEN FLIP",
-        "description": "Akali flips backward and fires a shuriken forward, dealing magic damage. The first enemy or smoke cloud hit is marked. Re-casting dashes to the marked target, dealing additional damage."
-      },
-      "r": {
-        "name": "PERFECT EXECUTION",
-        "description": "Akali leaps in a direction, damaging enemies she strikes. Re-casting dashes in a direction, executing all enemies she strikes."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4543,
-      "pick_rate": 0.0261,
-      "ban_rate": 0.0029
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "akshan",
-    "name": "AKSHAN",
-    "roles": [
-      "mid"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "DIRTY FIGHTING",
-        "description": "Every third attack or ability hit deals bonus physical damages. Against champions, also gains damage shield for brief moment."
-      },
-      "q": {
-        "name": "AVENGERANG",
-        "description": "Like a typical boomerang spell, can hit each enemy twice (once on way out and in). Boomerang will reach some units beyond the last target hit, if it hits a different target during this it’s range will extend (theoretically range is infinite)"
-      },
-      "w": {
-        "name": "GOING ROGUE",
-        "description": "Passive: Enemies that kill Akshan’s allies become Scoundrels for few brief seconds. Killing a Scoundrel grants Akshan bonus golds and reduces the fallen ally’s death timer. Active: Gain camouflage for a few seconds. Duration is refreshed when Akshan is near a wall or in brush. Gains movement speed when moving toward Scoundrels."
-      },
-      "e": {
-        "name": "HEROIC SWING",
-        "description": "Akshan fires a rope that attaches to a wall for a few seconds to allow him to swing in a circle. While swinging, Akshan shoots an enemy he has recently damaged."
-      },
-      "r": {
-        "name": "COMEUPPANCE",
-        "description": "Locks onto an enemy champion and begins overcharging Mist shots over a few seconds."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4612,
-      "pick_rate": 0.0123,
-      "ban_rate": 0.0007
+      "win_rate": 0.488,
+      "pick_rate": 0.0616,
+      "ban_rate": 0.0592
     },
     "patch": "7.1f"
   },
@@ -144,38 +72,110 @@
     "patch": "7.1f"
   },
   {
-    "id": "aatrox",
-    "name": "AATROX",
+    "id": "akali",
+    "name": "AKALI",
     "roles": [
-      "top"
+      "mid"
     ],
-    "difficulty": 2,
+    "difficulty": 3,
     "abilities": {
       "passive": {
-        "name": "DEATHBRINGER STANCE",
-        "description": "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health."
+        "name": "ASSASSIN'S MARK",
+        "description": "Dealing spell damage to a champion creates a ring of energy around them. Exiting that ring empowers Akali's next autoattack with bonus range and damage."
       },
       "q": {
-        "name": "THE DARKIN BLADE",
-        "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect."
+        "name": "FIVE POINT STRIKE",
+        "description": "Akali throws out five kunai, dealing damage based on her bonus Attack Damage and Ability Power and slowing at maximum range."
       },
       "w": {
-        "name": "INFERNAL CHAINS",
-        "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again."
+        "name": "TWILIGHT SHROUD",
+        "description": "Akali drops a cover of smoke and briefly gains Movement Speed and restores Energy. While inside the shroud, Akali becomes invisible. Attacking or using abilities will briefly reveal her."
       },
       "e": {
-        "name": "UMBRAL DASH",
-        "description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction."
+        "name": "SHURIKEN FLIP",
+        "description": "Akali flips backward and fires a shuriken forward, dealing magic damage. The first enemy or smoke cloud hit is marked. Re-casting dashes to the marked target, dealing additional damage."
       },
       "r": {
-        "name": "WORLD ENDER",
-        "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended."
+        "name": "PERFECT EXECUTION",
+        "description": "Akali leaps in a direction, damaging enemies she strikes. Re-casting dashes in a direction, executing all enemies she strikes."
       }
     },
     "stats": {
-      "win_rate": 0.488,
-      "pick_rate": 0.0616,
-      "ban_rate": 0.0592
+      "win_rate": 0.4543,
+      "pick_rate": 0.0261,
+      "ban_rate": 0.0029
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "alistar",
+    "name": "ALISTAR",
+    "roles": [
+      "support"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "Triumphant Roar",
+        "description": "Alistar charges his roar by stunning or displacing enemy champions or when nearby enemies die. When fully charged he heals himself all nearby allied champions."
+      },
+      "q": {
+        "name": "Pulverize",
+        "description": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air."
+      },
+      "w": {
+        "name": "Headbutt",
+        "description": "Alistar rams a target with his head, dealing damage and knocking the target back. May also target turrets to deal bonus damage."
+      },
+      "e": {
+        "name": "Trample",
+        "description": "Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if he damages an enemy champion. At full stacks Alistar's next basic attack against an enemy champion deals additional magic damage and stuns them."
+      },
+      "r": {
+        "name": "Unbreakable Will",
+        "description": "Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration."
+      }
+    },
+    "stats": {
+      "win_rate": 0.496,
+      "pick_rate": 0.0464,
+      "ban_rate": 0.0052
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "akshan",
+    "name": "AKSHAN",
+    "roles": [
+      "mid"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "DIRTY FIGHTING",
+        "description": "Every third attack or ability hit deals bonus physical damages. Against champions, also gains damage shield for brief moment."
+      },
+      "q": {
+        "name": "AVENGERANG",
+        "description": "Like a typical boomerang spell, can hit each enemy twice (once on way out and in). Boomerang will reach some units beyond the last target hit, if it hits a different target during this it’s range will extend (theoretically range is infinite)"
+      },
+      "w": {
+        "name": "GOING ROGUE",
+        "description": "Passive: Enemies that kill Akshan’s allies become Scoundrels for few brief seconds. Killing a Scoundrel grants Akshan bonus golds and reduces the fallen ally’s death timer. Active: Gain camouflage for a few seconds. Duration is refreshed when Akshan is near a wall or in brush. Gains movement speed when moving toward Scoundrels."
+      },
+      "e": {
+        "name": "HEROIC SWING",
+        "description": "Akshan fires a rope that attaches to a wall for a few seconds to allow him to swing in a circle. While swinging, Akshan shoots an enemy he has recently damaged."
+      },
+      "r": {
+        "name": "COMEUPPANCE",
+        "description": "Locks onto an enemy champion and begins overcharging Mist shots over a few seconds."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4612,
+      "pick_rate": 0.0123,
+      "ban_rate": 0.0007
     },
     "patch": "7.1f"
   },
@@ -542,42 +542,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "corki",
-    "name": "CORKI",
-    "roles": [
-      "bot"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "HEXTECH MUNITIONS",
-        "description": "A percentage of Corki's basic attack damage is converted into magic damage. Corki can occasionally retrieve The Package inside his base, granting him movement speed and an empowered cast of Valkyrie."
-      },
-      "q": {
-        "name": "PHOSPHORUS BOMB",
-        "description": "Corki fires a flash bomb at a target location, dealing magic damage to enemies in the area. This attack additionally reveals units in the area for a duration."
-      },
-      "w": {
-        "name": "VALKYRIE",
-        "description": "Corki flies a short distance, dropping bombs that create a trail of fire that damages opponents who remain in it.\n\nSpecial Delivery: If Corki has The Package, the flight is longer, enemies are knocked aside and the zone slows and deals damage."
-      },
-      "e": {
-        "name": "GATLING GUN",
-        "description": "Corki's gatling gun rapidly fires in a cone towards his current target, dealing damage and reducing enemy Armor and Magic Resist."
-      },
-      "r": {
-        "name": "MISSILE BARRAGE",
-        "description": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every third missile fired will be a Big One, dealing extra damage."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4948,
-      "pick_rate": 0.0162,
-      "ban_rate": 0.0002
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "caitlyn",
     "name": "CAITLYN",
     "roles": [
@@ -614,42 +578,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "darius",
-    "name": "DARIUS",
-    "roles": [
-      "top"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "HEMORRHAGE",
-        "description": "Darius's attacks and damaging abilities cause enemies to bleed for physical damage over time, stacking up to a cap. Upon reaching full stacks, Darius gains Noxian Might for a few seconds, gaining Attack Damage and applying full stacks of Hemorrhage instead of 1."
-      },
-      "q": {
-        "name": "DECIMATE",
-        "description": "Darius winds up and swings his axe in a wide circle. Enemies struck by the blade take more damage than those struck by the handle. Darius heals based on enemy champions hit by the blade, and applies Hemorrhage."
-      },
-      "w": {
-        "name": "CRIPPLING STRIKE",
-        "description": "Darius empowers his next attack to deal additional damage with a large slow."
-      },
-      "e": {
-        "name": "APPREHEND",
-        "description": "Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him."
-      },
-      "r": {
-        "name": "NOXIAN GUILLOTINE",
-        "description": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed, granting Noxian Might and causing nearby minions and monsters to flee."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4792,
-      "pick_rate": 0.164,
-      "ban_rate": 0.0788
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "camille",
     "name": "CAMILLE",
     "roles": [
@@ -682,6 +610,78 @@
       "win_rate": 0.4804,
       "pick_rate": 0.018,
       "ban_rate": 0.0007
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "corki",
+    "name": "CORKI",
+    "roles": [
+      "bot"
+    ],
+    "difficulty": 2,
+    "abilities": {
+      "passive": {
+        "name": "HEXTECH MUNITIONS",
+        "description": "A percentage of Corki's basic attack damage is converted into magic damage. Corki can occasionally retrieve The Package inside his base, granting him movement speed and an empowered cast of Valkyrie."
+      },
+      "q": {
+        "name": "PHOSPHORUS BOMB",
+        "description": "Corki fires a flash bomb at a target location, dealing magic damage to enemies in the area. This attack additionally reveals units in the area for a duration."
+      },
+      "w": {
+        "name": "VALKYRIE",
+        "description": "Corki flies a short distance, dropping bombs that create a trail of fire that damages opponents who remain in it.\n\nSpecial Delivery: If Corki has The Package, the flight is longer, enemies are knocked aside and the zone slows and deals damage."
+      },
+      "e": {
+        "name": "GATLING GUN",
+        "description": "Corki's gatling gun rapidly fires in a cone towards his current target, dealing damage and reducing enemy Armor and Magic Resist."
+      },
+      "r": {
+        "name": "MISSILE BARRAGE",
+        "description": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every third missile fired will be a Big One, dealing extra damage."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4948,
+      "pick_rate": 0.0162,
+      "ban_rate": 0.0002
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "darius",
+    "name": "DARIUS",
+    "roles": [
+      "top"
+    ],
+    "difficulty": 2,
+    "abilities": {
+      "passive": {
+        "name": "HEMORRHAGE",
+        "description": "Darius's attacks and damaging abilities cause enemies to bleed for physical damage over time, stacking up to a cap. Upon reaching full stacks, Darius gains Noxian Might for a few seconds, gaining Attack Damage and applying full stacks of Hemorrhage instead of 1."
+      },
+      "q": {
+        "name": "DECIMATE",
+        "description": "Darius winds up and swings his axe in a wide circle. Enemies struck by the blade take more damage than those struck by the handle. Darius heals based on enemy champions hit by the blade, and applies Hemorrhage."
+      },
+      "w": {
+        "name": "CRIPPLING STRIKE",
+        "description": "Darius empowers his next attack to deal additional damage with a large slow."
+      },
+      "e": {
+        "name": "APPREHEND",
+        "description": "Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him."
+      },
+      "r": {
+        "name": "NOXIAN GUILLOTINE",
+        "description": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed, granting Noxian Might and causing nearby minions and monsters to flee."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4792,
+      "pick_rate": 0.164,
+      "ban_rate": 0.0788
     },
     "patch": "7.1f"
   },
@@ -758,42 +758,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "ekko",
-    "name": "EKKO",
-    "roles": [
-      "mid"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "Z-DRIVE RESONANCE",
-        "description": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion."
-      },
-      "q": {
-        "name": "TIMEWINDER",
-        "description": "Ekko throws a temporal grenade that expands into a time-distortion field upon hitting an enemy champion, slowing and damaging anyone caught inside. After a delay, the grenade rewinds back to Ekko, dealing damage on its return."
-      },
-      "w": {
-        "name": "PARALLEL CONVERGENCE",
-        "description": "Ekko's basic attacks deal bonus magic damage to low health enemies. He can cast Parallel Convergence to split the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and stuns enemies by suspending them in time."
-      },
-      "e": {
-        "name": "PHASE DIVE",
-        "description": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target."
-      },
-      "r": {
-        "name": "CHRONOBREAK",
-        "description": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4697,
-      "pick_rate": 0.018,
-      "ban_rate": 0.001
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "dr-mundo",
     "name": "DR. MUNDO",
     "roles": [
@@ -826,6 +790,42 @@
       "win_rate": 0.5,
       "pick_rate": 0.02,
       "ban_rate": 0.01
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "ekko",
+    "name": "EKKO",
+    "roles": [
+      "mid"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "Z-DRIVE RESONANCE",
+        "description": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion."
+      },
+      "q": {
+        "name": "TIMEWINDER",
+        "description": "Ekko throws a temporal grenade that expands into a time-distortion field upon hitting an enemy champion, slowing and damaging anyone caught inside. After a delay, the grenade rewinds back to Ekko, dealing damage on its return."
+      },
+      "w": {
+        "name": "PARALLEL CONVERGENCE",
+        "description": "Ekko's basic attacks deal bonus magic damage to low health enemies. He can cast Parallel Convergence to split the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and stuns enemies by suspending them in time."
+      },
+      "e": {
+        "name": "PHASE DIVE",
+        "description": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target."
+      },
+      "r": {
+        "name": "CHRONOBREAK",
+        "description": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4697,
+      "pick_rate": 0.018,
+      "ban_rate": 0.001
     },
     "patch": "7.1f"
   },
@@ -902,42 +902,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "fiora",
-    "name": "FIORA",
-    "roles": [
-      "top"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "Duelist's Dance",
-        "description": "Fiora challenges nearby enemy Champions to dodge her. She calls out a direction from which she will try to strike. If she can complete her own challenge, she receives a small bonus and calls out a new direction."
-      },
-      "q": {
-        "name": "Lunge",
-        "description": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects."
-      },
-      "w": {
-        "name": "Riposte",
-        "description": "Fiora parries all incoming damage and disables for a short time, then stabs in a direction. This stab slows the first enemy champion hit, or stuns them if Fiora blocked an immobilizing effect with this ability."
-      },
-      "e": {
-        "name": "Bladework",
-        "description": "Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike."
-      },
-      "r": {
-        "name": "Grand Challenge",
-        "description": "Fiora reveals all four Vitals on an enemy champion and gains movement speed while near them. If Fiora hits all 4 Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4718,
-      "pick_rate": 0.0229,
-      "ban_rate": 0.0046
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "fiddlesticks",
     "name": "FIDDLESTICKS",
     "roles": [
@@ -970,6 +934,42 @@
       "win_rate": 0.5392,
       "pick_rate": 0.0331,
       "ban_rate": 0.0295
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "fiora",
+    "name": "FIORA",
+    "roles": [
+      "top"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "Duelist's Dance",
+        "description": "Fiora challenges nearby enemy Champions to dodge her. She calls out a direction from which she will try to strike. If she can complete her own challenge, she receives a small bonus and calls out a new direction."
+      },
+      "q": {
+        "name": "Lunge",
+        "description": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects."
+      },
+      "w": {
+        "name": "Riposte",
+        "description": "Fiora parries all incoming damage and disables for a short time, then stabs in a direction. This stab slows the first enemy champion hit, or stuns them if Fiora blocked an immobilizing effect with this ability."
+      },
+      "e": {
+        "name": "Bladework",
+        "description": "Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike."
+      },
+      "r": {
+        "name": "Grand Challenge",
+        "description": "Fiora reveals all four Vitals on an enemy champion and gains movement speed while near them. If Fiora hits all 4 Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4718,
+      "pick_rate": 0.0229,
+      "ban_rate": 0.0046
     },
     "patch": "7.1f"
   },
@@ -1010,42 +1010,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "garen",
-    "name": "GAREN",
-    "roles": [
-      "top"
-    ],
-    "difficulty": 1,
-    "abilities": {
-      "passive": {
-        "name": "Perseverance",
-        "description": "If Garen has not recently been struck by damage or enemy abilities, he regenerates a percentage of his total health each second."
-      },
-      "q": {
-        "name": "Decisive Strike",
-        "description": "Garen gains a burst of movement speed, breaking free of all slows affecting him. His next attack strikes a vital area of his foe, dealing bonus damage and silencing them."
-      },
-      "w": {
-        "name": "Courage",
-        "description": "Garen reduces damage taken for a short time, and gains bonus resistance to crowd control."
-      },
-      "e": {
-        "name": "Judgment",
-        "description": "Garen rapidly spins his sword around his body, dealing physical damage to nearby enemies. Enemies hit by the bladestorm's edge are critically struck."
-      },
-      "r": {
-        "name": "Demacian Justice",
-        "description": "Garen calls upon the might of Demacia to attempt to execute an enemy champion, dealing damage in an area around his target."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5122,
-      "pick_rate": 0.1577,
-      "ban_rate": 0.0617
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "fizz",
     "name": "FIZZ",
     "roles": [
@@ -1079,6 +1043,42 @@
       "win_rate": 0.5028,
       "pick_rate": 0.0368,
       "ban_rate": 0.0395
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "garen",
+    "name": "GAREN",
+    "roles": [
+      "top"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "Perseverance",
+        "description": "If Garen has not recently been struck by damage or enemy abilities, he regenerates a percentage of his total health each second."
+      },
+      "q": {
+        "name": "Decisive Strike",
+        "description": "Garen gains a burst of movement speed, breaking free of all slows affecting him. His next attack strikes a vital area of his foe, dealing bonus damage and silencing them."
+      },
+      "w": {
+        "name": "Courage",
+        "description": "Garen reduces damage taken for a short time, and gains bonus resistance to crowd control."
+      },
+      "e": {
+        "name": "Judgment",
+        "description": "Garen rapidly spins his sword around his body, dealing physical damage to nearby enemies. Enemies hit by the bladestorm's edge are critically struck."
+      },
+      "r": {
+        "name": "Demacian Justice",
+        "description": "Garen calls upon the might of Demacia to attempt to execute an enemy champion, dealing damage in an area around his target."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5122,
+      "pick_rate": 0.1577,
+      "ban_rate": 0.0617
     },
     "patch": "7.1f"
   },
@@ -1155,42 +1155,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "graves",
-    "name": "GRAVES",
-    "roles": [
-      "jungle"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "New Destiny",
-        "description": "Graves' shotgun has some unique properties. He must reload when he runs out of ammo. Attacks fire 4 bullets, which cannot pass through units. Non-champions struck by multiple bullets are knocked back."
-      },
-      "q": {
-        "name": "End of the Line",
-        "description": "Graves fires an explosive shell that detonates after 1.5 seconds, or 0.25 seconds if it strikes terrain."
-      },
-      "w": {
-        "name": "Smoke Screen",
-        "description": "Graves fires a smoke canister at the target area creating a cloud of smoke that reduces sight range. Enemies caught in the initial impact are dealt magic damage and have their movement speed reduced briefly."
-      },
-      "e": {
-        "name": "Quickdraw",
-        "description": "Graves dashes forward gaining an Armor boost for several seconds. If Graves dashes towards an enemy champion, gain two stacks of True Grit instead. Hitting enemies with basic attacks lowers the cooldown of this skill and refreshes the resistance boost."
-      },
-      "r": {
-        "name": "Collateral Damage",
-        "description": "Graves fires an explosive shell dealing heavy damage to the first champion it hits, and pushing Graves back from recoil. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4834,
-      "pick_rate": 0.1242,
-      "ban_rate": 0.0141
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "gwen",
     "name": "GWEN",
     "roles": [
@@ -1227,38 +1191,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "hecarim",
-    "name": "HECARIM",
+    "id": "graves",
+    "name": "GRAVES",
     "roles": [
       "jungle"
     ],
     "difficulty": 2,
     "abilities": {
       "passive": {
-        "name": "WARPATH",
-        "description": "Hecarim gains Attack Damage equal to a percentage of his bonus Move Speed."
+        "name": "New Destiny",
+        "description": "Graves' shotgun has some unique properties. He must reload when he runs out of ammo. Attacks fire 4 bullets, which cannot pass through units. Non-champions struck by multiple bullets are knocked back."
       },
       "q": {
-        "name": "RAMPAGE",
-        "description": "Hecarim cleaves nearby enemies dealing physical damage. If Hecarim damages at least one enemy, he increases the damage and lowers the cooldown of subsequent Rampages."
+        "name": "End of the Line",
+        "description": "Graves fires an explosive shell that detonates after 1.5 seconds, or 0.25 seconds if it strikes terrain."
       },
       "w": {
-        "name": "SPIRIT OF DREAD",
-        "description": "Hecarim gains Armor and Magic Resist. Hecarim deals magic damage to nearby enemies, and gains Health equal to a percentage of any damage those enemies suffer."
+        "name": "Smoke Screen",
+        "description": "Graves fires a smoke canister at the target area creating a cloud of smoke that reduces sight range. Enemies caught in the initial impact are dealt magic damage and have their movement speed reduced briefly."
       },
       "e": {
-        "name": "DEVASTATING CHARGE",
-        "description": "Hecarim gains increasing Move Speed and can move through units for a short duration. His next attack knocks the target back and deals additional physical damage based on the distance he has traveled since activating the ability."
+        "name": "Quickdraw",
+        "description": "Graves dashes forward gaining an Armor boost for several seconds. If Graves dashes towards an enemy champion, gain two stacks of True Grit instead. Hitting enemies with basic attacks lowers the cooldown of this skill and refreshes the resistance boost."
       },
       "r": {
-        "name": "ONSLAUGHT OF SHADOWS",
-        "description": "Hecarim summons spectral riders and charges forward, dealing magic damage in a line. Hecarim creates a shockwave when he finishes his charge, causing nearby enemies to flee in terror."
+        "name": "Collateral Damage",
+        "description": "Graves fires an explosive shell dealing heavy damage to the first champion it hits, and pushing Graves back from recoil. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone."
       }
     },
     "stats": {
-      "win_rate": 0.5023,
-      "pick_rate": 0.0351,
-      "ban_rate": 0.0415
+      "win_rate": 0.4834,
+      "pick_rate": 0.1242,
+      "ban_rate": 0.0141
     },
     "patch": "7.1f"
   },
@@ -1299,6 +1263,42 @@
     "patch": "7.1f"
   },
   {
+    "id": "hecarim",
+    "name": "HECARIM",
+    "roles": [
+      "jungle"
+    ],
+    "difficulty": 2,
+    "abilities": {
+      "passive": {
+        "name": "WARPATH",
+        "description": "Hecarim gains Attack Damage equal to a percentage of his bonus Move Speed."
+      },
+      "q": {
+        "name": "RAMPAGE",
+        "description": "Hecarim cleaves nearby enemies dealing physical damage. If Hecarim damages at least one enemy, he increases the damage and lowers the cooldown of subsequent Rampages."
+      },
+      "w": {
+        "name": "SPIRIT OF DREAD",
+        "description": "Hecarim gains Armor and Magic Resist. Hecarim deals magic damage to nearby enemies, and gains Health equal to a percentage of any damage those enemies suffer."
+      },
+      "e": {
+        "name": "DEVASTATING CHARGE",
+        "description": "Hecarim gains increasing Move Speed and can move through units for a short duration. His next attack knocks the target back and deals additional physical damage based on the distance he has traveled since activating the ability."
+      },
+      "r": {
+        "name": "ONSLAUGHT OF SHADOWS",
+        "description": "Hecarim summons spectral riders and charges forward, dealing magic damage in a line. Hecarim creates a shockwave when he finishes his charge, causing nearby enemies to flee in terror."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5023,
+      "pick_rate": 0.0351,
+      "ban_rate": 0.0415
+    },
+    "patch": "7.1f"
+  },
+  {
     "id": "irelia",
     "name": "IRELIA",
     "roles": [
@@ -1331,42 +1331,6 @@
       "win_rate": 0.4838,
       "pick_rate": 0.0195,
       "ban_rate": 0.0098
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "jarvan-iv",
-    "name": "JARVAN IV",
-    "roles": [
-      "tank"
-    ],
-    "difficulty": 1,
-    "abilities": {
-      "passive": {
-        "name": "Martial Cadence",
-        "description": "Jarvan's first basic attack on an enemy deals bonus physical damage based on their current Health. This effect cannot occur again on the same enemy for a few seconds."
-      },
-      "q": {
-        "name": "Dragon Strike",
-        "description": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path."
-      },
-      "w": {
-        "name": "Golden Aegis",
-        "description": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies."
-      },
-      "e": {
-        "name": "Demacian Standard",
-        "description": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions. Cast again to automatically cast Dragon Strike to the flag."
-      },
-      "r": {
-        "name": "Cataclysm",
-        "description": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them. Nearby enemies are damaged at the moment of impact."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5,
-      "pick_rate": 0.02,
-      "ban_rate": 0.01
     },
     "patch": "7.1f"
   },
@@ -1439,6 +1403,42 @@
       "win_rate": 0.4862,
       "pick_rate": 0.0235,
       "ban_rate": 0.0021
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "jarvan-iv",
+    "name": "JARVAN IV",
+    "roles": [
+      "tank"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "Martial Cadence",
+        "description": "Jarvan's first basic attack on an enemy deals bonus physical damage based on their current Health. This effect cannot occur again on the same enemy for a few seconds."
+      },
+      "q": {
+        "name": "Dragon Strike",
+        "description": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path."
+      },
+      "w": {
+        "name": "Golden Aegis",
+        "description": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies."
+      },
+      "e": {
+        "name": "Demacian Standard",
+        "description": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions. Cast again to automatically cast Dragon Strike to the flag."
+      },
+      "r": {
+        "name": "Cataclysm",
+        "description": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them. Nearby enemies are damaged at the moment of impact."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5,
+      "pick_rate": 0.02,
+      "ban_rate": 0.01
     },
     "patch": "7.1f"
   },
@@ -1516,42 +1516,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "ksante",
-    "name": "K'Sante",
-    "roles": [
-      "top"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "DAUNTLESS INSTINCT",
-        "description": "K’Sante’s damage dealing abilities mark enemies to take more damage on his next hit. \nWhen All Out, K’Sante’s attacks, abilities, and passive deal more damage."
-      },
-      "q": {
-        "name": "NTOFO STRIKES",
-        "description": "K’sante slams his weapon, dealing physical damage and slowing enemies in a line. On hit, grants a stack of Ntofo Strikes. At 2 stacks, K’Sante instead fires a shockwave that stuns and pulls enemies. \nWhen All Out, the cooldown is reduced."
-      },
-      "w": {
-        "name": "PATH MAKER",
-        "description": "K’Sante charges up, gaining displacement immunity and reduced damage. He then dashes forward, dealing damage, knocking back and stunning enemies. \nWhen All Out, cooldown is refreshed, deals additional damage, no longer knocks back or stuns, but also grants increased damage reduction and dash speed."
-      },
-      "e": {
-        "name": "FOOTWORK",
-        "description": "K’Sante dashes and gains a shield. If he dashes to an ally, the dash distance is increased and both gain a shield. \nWhen All Out, cooldown is reduced and dash speed is increased."
-      },
-      "r": {
-        "name": "ALL OUT",
-        "description": "K’Sante becomes unstoppable and splits his ntofos to know back an enemy. If the enemy collides with terrain, they are knocked through, taking additional damage. K’Sante, then dashes behind them and enters All Out. While All Out, K’Sante’s abilities are upgraded. He also gains Attack Speed, Armor Penetration, and Omnivamp, while losing some maximum Health, Armor, and Magic Resist."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5095,
-      "pick_rate": 0.0741,
-      "ban_rate": 0.6186
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "jinx",
     "name": "JINX",
     "roles": [
@@ -1584,6 +1548,42 @@
       "win_rate": 0.4912,
       "pick_rate": 0.0929,
       "ban_rate": 0.0025
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "ksante",
+    "name": "K'Sante",
+    "roles": [
+      "top"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "DAUNTLESS INSTINCT",
+        "description": "K’Sante’s damage dealing abilities mark enemies to take more damage on his next hit. \nWhen All Out, K’Sante’s attacks, abilities, and passive deal more damage."
+      },
+      "q": {
+        "name": "NTOFO STRIKES",
+        "description": "K’sante slams his weapon, dealing physical damage and slowing enemies in a line. On hit, grants a stack of Ntofo Strikes. At 2 stacks, K’Sante instead fires a shockwave that stuns and pulls enemies. \nWhen All Out, the cooldown is reduced."
+      },
+      "w": {
+        "name": "PATH MAKER",
+        "description": "K’Sante charges up, gaining displacement immunity and reduced damage. He then dashes forward, dealing damage, knocking back and stunning enemies. \nWhen All Out, cooldown is refreshed, deals additional damage, no longer knocks back or stuns, but also grants increased damage reduction and dash speed."
+      },
+      "e": {
+        "name": "FOOTWORK",
+        "description": "K’Sante dashes and gains a shield. If he dashes to an ally, the dash distance is increased and both gain a shield. \nWhen All Out, cooldown is reduced and dash speed is increased."
+      },
+      "r": {
+        "name": "ALL OUT",
+        "description": "K’Sante becomes unstoppable and splits his ntofos to know back an enemy. If the enemy collides with terrain, they are knocked through, taking additional damage. K’Sante, then dashes behind them and enters All Out. While All Out, K’Sante’s abilities are upgraded. He also gains Attack Speed, Armor Penetration, and Omnivamp, while losing some maximum Health, Armor, and Magic Resist."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5095,
+      "pick_rate": 0.0741,
+      "ban_rate": 0.6186
     },
     "patch": "7.1f"
   },
@@ -1624,42 +1624,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "kalista",
-    "name": "KALISTA",
-    "roles": [
-      "bot"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "MARTIAL POISE",
-        "description": "Enter a movement command while winding up Kalista's basic attack or Pierce to lunge a short distance when she launches her attack."
-      },
-      "q": {
-        "name": "PIERCE",
-        "description": "Throw a fast moving spear that passes through enemies it kills."
-      },
-      "w": {
-        "name": "SENTINEL",
-        "description": "Gain bonus damage when Kalista and her Oathsworn strike the same target. Activate to send a soul to scout out the path, revealing the area in front of it."
-      },
-      "e": {
-        "name": "REND",
-        "description": "Attacks impale their targets with spears. Activate to rip the spears out, slowing and dealing escalating damage."
-      },
-      "r": {
-        "name": "FATE'S CALL",
-        "description": "Kalista teleports the Oathsworn ally to herself. They gain the ability to dash toward a position, knocking enemy champions back."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5006,
-      "pick_rate": 0.0507,
-      "ban_rate": 0.0356
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "karma",
     "name": "Karma",
     "roles": [
@@ -1692,6 +1656,42 @@
       "win_rate": 0.5082,
       "pick_rate": 0.0469,
       "ban_rate": 0.0031
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "kalista",
+    "name": "KALISTA",
+    "roles": [
+      "bot"
+    ],
+    "difficulty": 2,
+    "abilities": {
+      "passive": {
+        "name": "MARTIAL POISE",
+        "description": "Enter a movement command while winding up Kalista's basic attack or Pierce to lunge a short distance when she launches her attack."
+      },
+      "q": {
+        "name": "PIERCE",
+        "description": "Throw a fast moving spear that passes through enemies it kills."
+      },
+      "w": {
+        "name": "SENTINEL",
+        "description": "Gain bonus damage when Kalista and her Oathsworn strike the same target. Activate to send a soul to scout out the path, revealing the area in front of it."
+      },
+      "e": {
+        "name": "REND",
+        "description": "Attacks impale their targets with spears. Activate to rip the spears out, slowing and dealing escalating damage."
+      },
+      "r": {
+        "name": "FATE'S CALL",
+        "description": "Kalista teleports the Oathsworn ally to herself. They gain the ability to dash toward a position, knocking enemy champions back."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5006,
+      "pick_rate": 0.0507,
+      "ban_rate": 0.0356
     },
     "patch": "7.1f"
   },
@@ -1840,6 +1840,42 @@
     "patch": "7.1f"
   },
   {
+    "id": "khazix",
+    "name": "KHA'ZIX",
+    "roles": [
+      "jungle"
+    ],
+    "difficulty": 2,
+    "abilities": {
+      "passive": {
+        "name": "UNSEEN THREAT",
+        "description": "When the enemy team loses sight of Kha'Zix its next attack against enemy champions deals bonus magic damage and slows them briefly."
+      },
+      "q": {
+        "name": "TASTE THEIR FEAR",
+        "description": "Kha'Zix causes physical damage by slashes with its claws dealing additional damage if the target is isolated. Evolved Reaper Claws: basic attacks and Taste Their Fear have increased range and if a target is isolated, meaning that they have no teammates or turrets nearby, then a significant portion of Taste Their Fear's cooldown is refunded."
+      },
+      "w": {
+        "name": "VOID SPIKE",
+        "description": "Kha'Zix fires spikes to deal physical damage while also partially healing itself if it is within the explosion. Evolved Spike Racks: fires additional spikes revealing and slowing enemies for a short duration."
+      },
+      "e": {
+        "name": "LEAP",
+        "description": "Kha'Zix leaps to a targeted area and deals physical damage. Evolved Wings: Leap gains significant range and the cooldown is refunded on champion takedowns."
+      },
+      "r": {
+        "name": "VOID ASSAULT",
+        "description": "Passive: each upgrade to Void Assault allows for Kha'Zix to evolve one of his abilities. Active: Kha'Zix becomes invisible and gains movement speed briefly. Evolved Adaptive Cloaking: invisibility duration lasts longer and can be cast multiple times."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4824,
+      "pick_rate": 0.0378,
+      "ban_rate": 0.0017
+    },
+    "patch": "7.1f"
+  },
+  {
     "id": "kennen",
     "name": "KENNEN",
     "roles": [
@@ -1873,42 +1909,6 @@
       "win_rate": 0.5274,
       "pick_rate": 0.0155,
       "ban_rate": 0.0038
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "khazix",
-    "name": "KHA'ZIX",
-    "roles": [
-      "jungle"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "UNSEEN THREAT",
-        "description": "When the enemy team loses sight of Kha'Zix its next attack against enemy champions deals bonus magic damage and slows them briefly."
-      },
-      "q": {
-        "name": "TASTE THEIR FEAR",
-        "description": "Kha'Zix causes physical damage by slashes with its claws dealing additional damage if the target is isolated. Evolved Reaper Claws: basic attacks and Taste Their Fear have increased range and if a target is isolated, meaning that they have no teammates or turrets nearby, then a significant portion of Taste Their Fear's cooldown is refunded."
-      },
-      "w": {
-        "name": "VOID SPIKE",
-        "description": "Kha'Zix fires spikes to deal physical damage while also partially healing itself if it is within the explosion. Evolved Spike Racks: fires additional spikes revealing and slowing enemies for a short duration."
-      },
-      "e": {
-        "name": "LEAP",
-        "description": "Kha'Zix leaps to a targeted area and deals physical damage. Evolved Wings: Leap gains significant range and the cooldown is refunded on champion takedowns."
-      },
-      "r": {
-        "name": "VOID ASSAULT",
-        "description": "Passive: each upgrade to Void Assault allows for Kha'Zix to evolve one of his abilities. Active: Kha'Zix becomes invisible and gains movement speed briefly. Evolved Adaptive Cloaking: invisibility duration lasts longer and can be cast multiple times."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4824,
-      "pick_rate": 0.0378,
-      "ban_rate": 0.0017
     },
     "patch": "7.1f"
   },
@@ -2165,42 +2165,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "lux",
-    "name": "LUX",
-    "roles": [
-      "support"
-    ],
-    "difficulty": 1,
-    "abilities": {
-      "passive": {
-        "name": "Illumination",
-        "description": "Lux's damaging spells charge the target with energy for 5 seconds. Lux's next attack ignites the energy, dealing bonus magic damage (depending on Lux's level) to the target."
-      },
-      "q": {
-        "name": "Light Binding",
-        "description": "Lux releases a sphere of light that binds and deals damage to up to two enemy units."
-      },
-      "w": {
-        "name": "Prismatic Barrier",
-        "description": "Lux throws her wand and bends the light around any friendly target it touches, protecting them from enemy damage."
-      },
-      "e": {
-        "name": "Lucent Singularity",
-        "description": "Fires an anomaly of twisted light to an area, which slows nearby enemies. Lux can detonate it to damage enemies in the area of effect."
-      },
-      "r": {
-        "name": "Final Spark",
-        "description": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5017,
-      "pick_rate": 0.0947,
-      "ban_rate": 0.1802
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "lulu",
     "name": "LULU",
     "roles": [
@@ -2306,6 +2270,42 @@
       "win_rate": 0.5212,
       "pick_rate": 0.0502,
       "ban_rate": 0.0042
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "lux",
+    "name": "LUX",
+    "roles": [
+      "support"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "Illumination",
+        "description": "Lux's damaging spells charge the target with energy for 5 seconds. Lux's next attack ignites the energy, dealing bonus magic damage (depending on Lux's level) to the target."
+      },
+      "q": {
+        "name": "Light Binding",
+        "description": "Lux releases a sphere of light that binds and deals damage to up to two enemy units."
+      },
+      "w": {
+        "name": "Prismatic Barrier",
+        "description": "Lux throws her wand and bends the light around any friendly target it touches, protecting them from enemy damage."
+      },
+      "e": {
+        "name": "Lucent Singularity",
+        "description": "Fires an anomaly of twisted light to an area, which slows nearby enemies. Lux can detonate it to damage enemies in the area of effect."
+      },
+      "r": {
+        "name": "Final Spark",
+        "description": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5017,
+      "pick_rate": 0.0947,
+      "ban_rate": 0.1802
     },
     "patch": "7.1f"
   },
@@ -2672,42 +2672,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "nilah",
-    "name": "NILAH",
-    "roles": [
-      "fighter"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "JOY UNENDING",
-        "description": "Nilah gains increased experience from last-hitting minions along with the ability to enhance and share nearby healing and shielding from her allies."
-      },
-      "q": {
-        "name": "FORMLESS BLADE",
-        "description": "With a snap of her whip-blade, Nilah damages any enemies she hits in a straight line in her chosen direction. This action extends her attack range for a short duration."
-      },
-      "w": {
-        "name": "JUBILANT VEIL",
-        "description": "Nilah envelops herself in mist, increasing her movement speed and allowing her to gracefully dodge all incoming attacks. Any allies she touches during the mist's duration will also gain this effect."
-      },
-      "e": {
-        "name": "SLIPSTREAM",
-        "description": "Nilah enthusiastically dashes toward her target, dealing damage to any enemies she passes through on the way."
-      },
-      "r": {
-        "name": "APOTHEOSIS",
-        "description": "Twirling her whip-blade in joyful exuberance, Nilah deals damage to enemies around her before pulling them closer with her weapon."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5,
-      "pick_rate": 0.02,
-      "ban_rate": 0.01
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "nocturne",
     "name": "NOCTURNE",
     "roles": [
@@ -2740,42 +2704,6 @@
       "win_rate": 0.4968,
       "pick_rate": 0.0473,
       "ban_rate": 0.0874
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "norra",
-    "name": "NORRA",
-    "roles": [
-      "mid"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "BELOVED TRINKETS",
-        "description": "Norra’s next ability leaves Trinkets on the battlefield. When an enemy touches a Trinket, it activates and fires a projectile at the triggering enemy. When Norra’s abilities hit enemy champions, the ability’s cooldown is reduced."
-      },
-      "q": {
-        "name": "MEMORY SURGE",
-        "description": "Norra charges and fires a bolt of magical energy in target direction. She’s slowed while charging. The energy bolt stops upon hitting the first enemy champion, dealing magic damage to the target and nearby enemies. Enemies marked with Thread Sigils take bonus magic damage. \nAt full charge, all Trinkets within the area are activated and the hit target is treated as Trinket-activated."
-      },
-      "w": {
-        "name": "JOURNEY TO NOWHERE",
-        "description": "Norra reveals a mystical portal in a target circular area, dealing magic damage to all enemy champions within the area and banishing them to an alternate realm. Banished enemies are untargetable, slowed, and can’t cast."
-      },
-      "e": {
-        "name": "THREADS OF HOMECOMING",
-        "description": "Passive: Damage dealing Trinkets apply a Thread Sigil to their targets.\nNorra summons portals on both sides of a target area. The portals fire magical threads between each other, dealing magic damage to all enemies in the area and applying Thread Sigils. Thread Sigils slow their targets and increase their collision size."
-      },
-      "r": {
-        "name": "PORTALPALOOZA!",
-        "description": "Norra conjures a huge portal enveloping all units within the area. Magical projectiles will fire four times, dealing magic damage to all enemies along their path. The projectile direction is determined by swiping. The last projectile deals bonus damage."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4969,
-      "pick_rate": 0.0246,
-      "ban_rate": 0.5617
     },
     "patch": "7.1f"
   },
@@ -2816,6 +2744,78 @@
     "patch": "7.1f"
   },
   {
+    "id": "nilah",
+    "name": "NILAH",
+    "roles": [
+      "fighter"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "JOY UNENDING",
+        "description": "Nilah gains increased experience from last-hitting minions along with the ability to enhance and share nearby healing and shielding from her allies."
+      },
+      "q": {
+        "name": "FORMLESS BLADE",
+        "description": "With a snap of her whip-blade, Nilah damages any enemies she hits in a straight line in her chosen direction. This action extends her attack range for a short duration."
+      },
+      "w": {
+        "name": "JUBILANT VEIL",
+        "description": "Nilah envelops herself in mist, increasing her movement speed and allowing her to gracefully dodge all incoming attacks. Any allies she touches during the mist's duration will also gain this effect."
+      },
+      "e": {
+        "name": "SLIPSTREAM",
+        "description": "Nilah enthusiastically dashes toward her target, dealing damage to any enemies she passes through on the way."
+      },
+      "r": {
+        "name": "APOTHEOSIS",
+        "description": "Twirling her whip-blade in joyful exuberance, Nilah deals damage to enemies around her before pulling them closer with her weapon."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5,
+      "pick_rate": 0.02,
+      "ban_rate": 0.01
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "norra",
+    "name": "NORRA",
+    "roles": [
+      "mid"
+    ],
+    "difficulty": 2,
+    "abilities": {
+      "passive": {
+        "name": "BELOVED TRINKETS",
+        "description": "Norra’s next ability leaves Trinkets on the battlefield. When an enemy touches a Trinket, it activates and fires a projectile at the triggering enemy. When Norra’s abilities hit enemy champions, the ability’s cooldown is reduced."
+      },
+      "q": {
+        "name": "MEMORY SURGE",
+        "description": "Norra charges and fires a bolt of magical energy in target direction. She’s slowed while charging. The energy bolt stops upon hitting the first enemy champion, dealing magic damage to the target and nearby enemies. Enemies marked with Thread Sigils take bonus magic damage. \nAt full charge, all Trinkets within the area are activated and the hit target is treated as Trinket-activated."
+      },
+      "w": {
+        "name": "JOURNEY TO NOWHERE",
+        "description": "Norra reveals a mystical portal in a target circular area, dealing magic damage to all enemy champions within the area and banishing them to an alternate realm. Banished enemies are untargetable, slowed, and can’t cast."
+      },
+      "e": {
+        "name": "THREADS OF HOMECOMING",
+        "description": "Passive: Damage dealing Trinkets apply a Thread Sigil to their targets.\nNorra summons portals on both sides of a target area. The portals fire magical threads between each other, dealing magic damage to all enemies in the area and applying Thread Sigils. Thread Sigils slow their targets and increase their collision size."
+      },
+      "r": {
+        "name": "PORTALPALOOZA!",
+        "description": "Norra conjures a huge portal enveloping all units within the area. Magical projectiles will fire four times, dealing magic damage to all enemies along their path. The projectile direction is determined by swiping. The last projectile deals bonus damage."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4969,
+      "pick_rate": 0.0246,
+      "ban_rate": 0.5617
+    },
+    "patch": "7.1f"
+  },
+  {
     "id": "olaf",
     "name": "OLAF",
     "roles": [
@@ -2848,42 +2848,6 @@
       "win_rate": 0.5001,
       "pick_rate": 0.0154,
       "ban_rate": 0.0079
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "orianna",
-    "name": "ORIANNA",
-    "roles": [
-      "mid"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "Clockwork Windup",
-        "description": "Orianna's Attacks deal additional magic damage. This damage increases the more Orianna Attacks the same target."
-      },
-      "q": {
-        "name": "Command: Attack",
-        "description": "Orianna commands her Ball to fire toward a target location, dealing magic damage to targets along the way (deals less damage to subsequent targets). Her Ball remains at the target location after."
-      },
-      "w": {
-        "name": "Command: Dissonance",
-        "description": "Orianna commands her Ball to release a pulse of energy, dealing magic damage around it. This leaves a field behind that speeds up allies and slows enemies."
-      },
-      "e": {
-        "name": "Command: Protect",
-        "description": "Orianna commands her Ball to attach to an allied champion, Shielding them and dealing magic damage to any enemies it passes through on the way. Additionally, the Ball grants additional Armor and Magic Resist to the champion it is attached to."
-      },
-      "r": {
-        "name": "Command: Shockwave",
-        "description": "Orianna commands her Ball to unleash a shockwave, dealing magic damage and launching nearby enemies towards the Ball after a short delay."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5035,
-      "pick_rate": 0.0314,
-      "ban_rate": 0.0014
     },
     "patch": "7.1f"
   },
@@ -2925,74 +2889,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "poppy",
-    "name": "POPPY",
+    "id": "orianna",
+    "name": "ORIANNA",
     "roles": [
-      "top"
+      "mid"
     ],
     "difficulty": 2,
     "abilities": {
       "passive": {
-        "name": "IRON AMBASSADOR",
-        "description": "Poppy throws her buckler that bounces off the target. Poppy can pick it up to gain a temporary shield."
+        "name": "Clockwork Windup",
+        "description": "Orianna's Attacks deal additional magic damage. This damage increases the more Orianna Attacks the same target."
       },
       "q": {
-        "name": "HAMMER SHOCK",
-        "description": "Poppy swings her hammer, dealing damage and creating a zone that will slow enemies and explode after a delay."
+        "name": "Command: Attack",
+        "description": "Orianna commands her Ball to fire toward a target location, dealing magic damage to targets along the way (deals less damage to subsequent targets). Her Ball remains at the target location after."
       },
       "w": {
-        "name": "STEADFAST PRESENCE",
-        "description": "Poppy passively gains Armor and Magic Resist. This bonus increases when she is low on Health. Poppy can activate Steadfast Presence to gain Move Speed and stop enemy dashes around her. If a dash is stopped, the enemy is slowed and grounded."
+        "name": "Command: Dissonance",
+        "description": "Orianna commands her Ball to release a pulse of energy, dealing magic damage around it. This leaves a field behind that speeds up allies and slows enemies."
       },
       "e": {
-        "name": "HEROIC CHARGE",
-        "description": "Poppy dashes to the target and pushes it back. If the target is pushed into a wall, it is stunned."
+        "name": "Command: Protect",
+        "description": "Orianna commands her Ball to attach to an allied champion, Shielding them and dealing magic damage to any enemies it passes through on the way. Additionally, the Ball grants additional Armor and Magic Resist to the champion it is attached to."
       },
       "r": {
-        "name": "KEEPER'S VERDICT",
-        "description": "Poppy channels a hammer strike that knocks enemies very far away."
+        "name": "Command: Shockwave",
+        "description": "Orianna commands her Ball to unleash a shockwave, dealing magic damage and launching nearby enemies towards the Ball after a short delay."
       }
     },
     "stats": {
-      "win_rate": 0.5142,
-      "pick_rate": 0.0255,
-      "ban_rate": 0.0026
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "pantheon",
-    "name": "PANTHEON",
-    "roles": [
-      "jungle"
-    ],
-    "difficulty": 1,
-    "abilities": {
-      "passive": {
-        "name": "MORTAL WILL",
-        "description": "Every few spells or attacks, Pantheon's next spell is empowered."
-      },
-      "q": {
-        "name": "COMET SPEAR",
-        "description": "Pantheon either thrusts his spear or throws his spear in the chosen direction. Low health enemies are critically hit. Mortal Will: Deals additional damage."
-      },
-      "w": {
-        "name": "SHIELD VAULT",
-        "description": "Pantheon dashes to a target, damaging and stunning them. Mortal Will: Follows up with an additional attack that strikes 3 times."
-      },
-      "e": {
-        "name": "AEGIS ASSAULT",
-        "description": "Pantheon sets his shield, becoming invulnerable to damage from the front and striking repeatedly with his spear. Mortal Will: Pantheon gains movement speed."
-      },
-      "r": {
-        "name": "GRAND STARFALL",
-        "description": "Pantheon composes himself and then leaps into the air, landing at a chosen location as a comet, slowing and dealing damage in a line pointing to where he lands."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5054,
-      "pick_rate": 0.059,
-      "ban_rate": 0.0271
+      "win_rate": 0.5035,
+      "pick_rate": 0.0314,
+      "ban_rate": 0.0014
     },
     "patch": "7.1f"
   },
@@ -3033,38 +2961,74 @@
     "patch": "7.1f"
   },
   {
-    "id": "rakan",
-    "name": "RAKAN",
+    "id": "pantheon",
+    "name": "PANTHEON",
     "roles": [
-      "support"
+      "jungle"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "MORTAL WILL",
+        "description": "Every few spells or attacks, Pantheon's next spell is empowered."
+      },
+      "q": {
+        "name": "COMET SPEAR",
+        "description": "Pantheon either thrusts his spear or throws his spear in the chosen direction. Low health enemies are critically hit. Mortal Will: Deals additional damage."
+      },
+      "w": {
+        "name": "SHIELD VAULT",
+        "description": "Pantheon dashes to a target, damaging and stunning them. Mortal Will: Follows up with an additional attack that strikes 3 times."
+      },
+      "e": {
+        "name": "AEGIS ASSAULT",
+        "description": "Pantheon sets his shield, becoming invulnerable to damage from the front and striking repeatedly with his spear. Mortal Will: Pantheon gains movement speed."
+      },
+      "r": {
+        "name": "GRAND STARFALL",
+        "description": "Pantheon composes himself and then leaps into the air, landing at a chosen location as a comet, slowing and dealing damage in a line pointing to where he lands."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5054,
+      "pick_rate": 0.059,
+      "ban_rate": 0.0271
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "poppy",
+    "name": "POPPY",
+    "roles": [
+      "top"
     ],
     "difficulty": 2,
     "abilities": {
       "passive": {
-        "name": "FEY FEATHERS",
-        "description": "Rakan periodically gains a shield.\n\nLover's Leap: Rakan can join Xayah's recall."
+        "name": "IRON AMBASSADOR",
+        "description": "Poppy throws her buckler that bounces off the target. Poppy can pick it up to gain a temporary shield."
       },
       "q": {
-        "name": "GLEAMING QUILL",
-        "description": "Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies."
+        "name": "HAMMER SHOCK",
+        "description": "Poppy swings her hammer, dealing damage and creating a zone that will slow enemies and explode after a delay."
       },
       "w": {
-        "name": "GRAND ENTRANCE",
-        "description": "Dashes to a location, knocking up nearby enemies on arrival."
+        "name": "STEADFAST PRESENCE",
+        "description": "Poppy passively gains Armor and Magic Resist. This bonus increases when she is low on Health. Poppy can activate Steadfast Presence to gain Move Speed and stop enemy dashes around her. If a dash is stopped, the enemy is slowed and grounded."
       },
       "e": {
-        "name": "BATTLE DANCE",
-        "description": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.\n\nWhen cast on Xayah, the shield amount is doubled and the cooldown is reduced."
+        "name": "HEROIC CHARGE",
+        "description": "Poppy dashes to the target and pushes it back. If the target is pushed into a wall, it is stunned."
       },
       "r": {
-        "name": "THE QUICKNESS",
-        "description": "Gains movement speed, charming and dealing magic damage to enemies touched."
+        "name": "KEEPER'S VERDICT",
+        "description": "Poppy channels a hammer strike that knocks enemies very far away."
       }
     },
     "stats": {
-      "win_rate": 0.4833,
-      "pick_rate": 0.0246,
-      "ban_rate": 0.002
+      "win_rate": 0.5142,
+      "pick_rate": 0.0255,
+      "ban_rate": 0.0026
     },
     "patch": "7.1f"
   },
@@ -3105,6 +3069,42 @@
     "patch": "7.1f"
   },
   {
+    "id": "renekton",
+    "name": "Renekton",
+    "roles": [
+      "top"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "REIGN OF ANGER",
+        "description": "Renekton's attacks generate Fury, increased when he is low on life. This Fury can empower his abilities with bonus effects."
+      },
+      "q": {
+        "name": "CULL THE MEEK",
+        "description": "Renekton swings his blade, dealing moderate physical damage to all targets around him, and heals for a small portion of the damage dealt. If he has more than 50 Fury, his damage and heal are increased."
+      },
+      "w": {
+        "name": "RUTHLESS PREDATOR",
+        "description": "Renekton slashes his target twice, dealing moderate physical damage and a stun. If Renekton has more than 50 Fury, he slashes his target three times, dealing high physical damage, and stunning for longer."
+      },
+      "e": {
+        "name": "SLICE AND DICE",
+        "description": "Renekton dashes, dealing damage to units along the way. Empowered, Renekton deals bonus damage and reduces the Armor of units hit."
+      },
+      "r": {
+        "name": "DOMINUS",
+        "description": "Renekton transforms into the Tyrant form, gaining bonus Health and dealing damage to enemies around him. While in this form, Renekton gains Fury periodically."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4989,
+      "pick_rate": 0.0458,
+      "ban_rate": 0.0035
+    },
+    "patch": "7.1f"
+  },
+  {
     "id": "rell",
     "name": "RELL",
     "roles": [
@@ -3141,38 +3141,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "renekton",
-    "name": "Renekton",
+    "id": "rakan",
+    "name": "RAKAN",
     "roles": [
-      "top"
+      "support"
     ],
-    "difficulty": 3,
+    "difficulty": 2,
     "abilities": {
       "passive": {
-        "name": "REIGN OF ANGER",
-        "description": "Renekton's attacks generate Fury, increased when he is low on life. This Fury can empower his abilities with bonus effects."
+        "name": "FEY FEATHERS",
+        "description": "Rakan periodically gains a shield.\n\nLover's Leap: Rakan can join Xayah's recall."
       },
       "q": {
-        "name": "CULL THE MEEK",
-        "description": "Renekton swings his blade, dealing moderate physical damage to all targets around him, and heals for a small portion of the damage dealt. If he has more than 50 Fury, his damage and heal are increased."
+        "name": "GLEAMING QUILL",
+        "description": "Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies."
       },
       "w": {
-        "name": "RUTHLESS PREDATOR",
-        "description": "Renekton slashes his target twice, dealing moderate physical damage and a stun. If Renekton has more than 50 Fury, he slashes his target three times, dealing high physical damage, and stunning for longer."
+        "name": "GRAND ENTRANCE",
+        "description": "Dashes to a location, knocking up nearby enemies on arrival."
       },
       "e": {
-        "name": "SLICE AND DICE",
-        "description": "Renekton dashes, dealing damage to units along the way. Empowered, Renekton deals bonus damage and reduces the Armor of units hit."
+        "name": "BATTLE DANCE",
+        "description": "Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration.\n\nWhen cast on Xayah, the shield amount is doubled and the cooldown is reduced."
       },
       "r": {
-        "name": "DOMINUS",
-        "description": "Renekton transforms into the Tyrant form, gaining bonus Health and dealing damage to enemies around him. While in this form, Renekton gains Fury periodically."
+        "name": "THE QUICKNESS",
+        "description": "Gains movement speed, charming and dealing magic damage to enemies touched."
       }
     },
     "stats": {
-      "win_rate": 0.4989,
-      "pick_rate": 0.0458,
-      "ban_rate": 0.0035
+      "win_rate": 0.4833,
+      "pick_rate": 0.0246,
+      "ban_rate": 0.002
     },
     "patch": "7.1f"
   },
@@ -3250,38 +3250,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "rumble",
-    "name": "RUMBLE",
+    "id": "samira",
+    "name": "SAMIRA",
     "roles": [
-      "top"
+      "bot"
     ],
     "difficulty": 3,
     "abilities": {
       "passive": {
-        "name": "JUNKYARD TITAN",
-        "description": "Every spell Rumble casts grants him Heat. When he reaches 50 Heat he enters the Danger Zone, granting all his basic abilities bonus effects. When he reaches 150 Heat, he starts Overheating, gaining bonus Attack Speed and granting his basic attacks bonus damage, but making him unable to cast spells for a few seconds."
+        "name": "DAREDEVIL IMPULSE",
+        "description": "Samira builds a combo by hitting attacks or abilities unique from the previous hit. Samira's attacks in melee range deal additional magic damage. Samira's attacks against enemies affected by Immobilizing effects will dash her to her attack range. If the enemy is Knocked Up, she also keeps them Knocked Up briefly."
       },
       "q": {
-        "name": "FLAMESPITTER",
-        "description": "Rumble torches opponents in front of him, dealing magic damage in a cone for 3 seconds. While in Danger Zone this damage is increased."
+        "name": "FLAIR",
+        "description": "Samira fires a shot or swings her sword, dealing damage. If cast during Wild Rush, strike all enemies in her path upon completion."
       },
       "w": {
-        "name": "SCRAP SHIELD",
-        "description": "Rumble pulls up a shield, protecting him from damage and granting him a quick burst of speed. While in Danger Zone, the shield strength and speed bonus is increased."
+        "name": "BLADE WHIRL",
+        "description": "Samira slashes around her, damaging enemies and destroying enemy missiles."
       },
       "e": {
-        "name": "ELECTRO HARPOON",
-        "description": "Rumble launches a harpoon, electrocuting his target with magic damage, slowing their Move Speed, and reducing their Magic Resist. Rumble can carry 2 harpoons at a time. While in Danger Zone the damage and slow percentage is increased."
+        "name": "WILD RUSH",
+        "description": "Samira dashes through an enemy (including structures), slashing enemies she passes through and gaining Attack Speed. Killing an enemy champion refreshes this ability's cooldown."
       },
       "r": {
-        "name": "THE EQUALIZER",
-        "description": "Rumble fires off a group of rockets, creating a wall of flames that damages and slows enemies."
+        "name": "INFERNO TRIGGER",
+        "description": "Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her."
       }
     },
     "stats": {
-      "win_rate": 0.5038,
-      "pick_rate": 0.0295,
-      "ban_rate": 0.0053
+      "win_rate": 0.4787,
+      "pick_rate": 0.0827,
+      "ban_rate": 0.0519
     },
     "patch": "7.1f"
   },
@@ -3322,74 +3322,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "samira",
-    "name": "SAMIRA",
+    "id": "rumble",
+    "name": "RUMBLE",
     "roles": [
-      "bot"
+      "top"
     ],
     "difficulty": 3,
     "abilities": {
       "passive": {
-        "name": "DAREDEVIL IMPULSE",
-        "description": "Samira builds a combo by hitting attacks or abilities unique from the previous hit. Samira's attacks in melee range deal additional magic damage. Samira's attacks against enemies affected by Immobilizing effects will dash her to her attack range. If the enemy is Knocked Up, she also keeps them Knocked Up briefly."
+        "name": "JUNKYARD TITAN",
+        "description": "Every spell Rumble casts grants him Heat. When he reaches 50 Heat he enters the Danger Zone, granting all his basic abilities bonus effects. When he reaches 150 Heat, he starts Overheating, gaining bonus Attack Speed and granting his basic attacks bonus damage, but making him unable to cast spells for a few seconds."
       },
       "q": {
-        "name": "FLAIR",
-        "description": "Samira fires a shot or swings her sword, dealing damage. If cast during Wild Rush, strike all enemies in her path upon completion."
+        "name": "FLAMESPITTER",
+        "description": "Rumble torches opponents in front of him, dealing magic damage in a cone for 3 seconds. While in Danger Zone this damage is increased."
       },
       "w": {
-        "name": "BLADE WHIRL",
-        "description": "Samira slashes around her, damaging enemies and destroying enemy missiles."
+        "name": "SCRAP SHIELD",
+        "description": "Rumble pulls up a shield, protecting him from damage and granting him a quick burst of speed. While in Danger Zone, the shield strength and speed bonus is increased."
       },
       "e": {
-        "name": "WILD RUSH",
-        "description": "Samira dashes through an enemy (including structures), slashing enemies she passes through and gaining Attack Speed. Killing an enemy champion refreshes this ability's cooldown."
+        "name": "ELECTRO HARPOON",
+        "description": "Rumble launches a harpoon, electrocuting his target with magic damage, slowing their Move Speed, and reducing their Magic Resist. Rumble can carry 2 harpoons at a time. While in Danger Zone the damage and slow percentage is increased."
       },
       "r": {
-        "name": "INFERNO TRIGGER",
-        "description": "Samira unleashes a torrent of shots from her weapons, wildly shooting all enemies surrounding her."
+        "name": "THE EQUALIZER",
+        "description": "Rumble fires off a group of rockets, creating a wall of flames that damages and slows enemies."
       }
     },
     "stats": {
-      "win_rate": 0.4787,
-      "pick_rate": 0.0827,
-      "ban_rate": 0.0519
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "senna",
-    "name": "SENNA",
-    "roles": [
-      "support"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "ABSOLUTION",
-        "description": "When units die near Senna, their souls are periodically trapped by the Black Mist. Senna can attack these souls to free them, absorbing the Mist that held them in death. Mist fuels her Relic Cannon's power with increased Attack Damage, Attack Range, and Critical Strike Chance. Attacks from Senna's Relic Cannon take longer to fire, deals bonus damage , and briefly grant her a portion of her target's Movement Speed."
-      },
-      "q": {
-        "name": "PIERCING DARKNESS",
-        "description": "Piercing Darkness’s cast range matches Senna’s attack range and its cast time is improved with Attack Speed. It can target anything and applies on-hit effects to enemy champions."
-      },
-      "w": {
-        "name": "LAST EMBRACE",
-        "description": "Senna sends forth a wave of Black Mist. If it hits an enemy it latches onto them hungrily, rooting them and everything nearby after a brief delay."
-      },
-      "e": {
-        "name": "CURSE OF THE BLACK MIST",
-        "description": "Senna draws the Mist she has stored in her weapon into a storm around her, embracing darkness and becoming a wraith within. Allies who enter the area are camouflaged and also appear as wraiths as the Mist shrouds them. Wraiths gain increased movement speed, are unselectable, and hide their identities."
-      },
-      "r": {
-        "name": "DAWNING SHADOW",
-        "description": "Senna calls upon the relic stones of fallen Sentinels, splitting her relic cannon into a holy array of shadow and light. She then fires a global beam that shields allies from harm, while damaging enemies caught in the center."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5002,
-      "pick_rate": 0.046,
-      "ban_rate": 0.0066
+      "win_rate": 0.5038,
+      "pick_rate": 0.0295,
+      "ban_rate": 0.0053
     },
     "patch": "7.1f"
   },
@@ -3430,38 +3394,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "sett",
-    "name": "SETT",
+    "id": "senna",
+    "name": "SENNA",
     "roles": [
-      "top"
+      "support"
     ],
-    "difficulty": 1,
+    "difficulty": 3,
     "abilities": {
       "passive": {
-        "name": "PIT GRIT",
-        "description": "Sett's basic attacks alternate between left and right punch. Right punch is slightly stronger and faster. Sett also hates losing, gaining additional health regeneration based off of his missing health."
+        "name": "ABSOLUTION",
+        "description": "When units die near Senna, their souls are periodically trapped by the Black Mist. Senna can attack these souls to free them, absorbing the Mist that held them in death. Mist fuels her Relic Cannon's power with increased Attack Damage, Attack Range, and Critical Strike Chance. Attacks from Senna's Relic Cannon take longer to fire, deals bonus damage , and briefly grant her a portion of her target's Movement Speed."
       },
       "q": {
-        "name": "KNUCKLE DOWN",
-        "description": "Sett's next two attacks deal additional damage based off of the target's max health. Sett also gains movement speed while moving towards enemy champions."
+        "name": "PIERCING DARKNESS",
+        "description": "Piercing Darkness’s cast range matches Senna’s attack range and its cast time is improved with Attack Speed. It can target anything and applies on-hit effects to enemy champions."
       },
       "w": {
-        "name": "HAYMAKER",
-        "description": "Sett passively stores damage he takes as Grit. On cast, Sett expends all stored Grit to gain a shield and punch an area, dealing true damage in the center and physical damage on the sides."
+        "name": "LAST EMBRACE",
+        "description": "Senna sends forth a wave of Black Mist. If it hits an enemy it latches onto them hungrily, rooting them and everything nearby after a brief delay."
       },
       "e": {
-        "name": "FACEBREAKER",
-        "description": "Sett pulls in all enemies on opposite sides of him, dealing damage and stunning them. If enemies were only on one side, they are slowed instead of stunned."
+        "name": "CURSE OF THE BLACK MIST",
+        "description": "Senna draws the Mist she has stored in her weapon into a storm around her, embracing darkness and becoming a wraith within. Allies who enter the area are camouflaged and also appear as wraiths as the Mist shrouds them. Wraiths gain increased movement speed, are unselectable, and hide their identities."
       },
       "r": {
-        "name": "THE SHOW STOPPER",
-        "description": "Sett carries an enemy champion through the air and slams them into the ground, dealing damage and slowing all enemies near where they land."
+        "name": "DAWNING SHADOW",
+        "description": "Senna calls upon the relic stones of fallen Sentinels, splitting her relic cannon into a holy array of shadow and light. She then fires a global beam that shields allies from harm, while damaging enemies caught in the center."
       }
     },
     "stats": {
-      "win_rate": 0.5152,
-      "pick_rate": 0.1498,
-      "ban_rate": 0.0371
+      "win_rate": 0.5002,
+      "pick_rate": 0.046,
+      "ban_rate": 0.0066
     },
     "patch": "7.1f"
   },
@@ -3502,38 +3466,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "shyvana",
-    "name": "SHYVANA",
+    "id": "sett",
+    "name": "SETT",
     "roles": [
-      "jungle"
+      "top"
     ],
     "difficulty": 1,
     "abilities": {
       "passive": {
-        "name": "Fury of the Dragonborn",
-        "description": "Shyvana gains stacks when slaying large and epic monsters, as well as champions. Dragons grant extra stacks. Every 100 stack enhances one of Shyvana's abilities."
+        "name": "PIT GRIT",
+        "description": "Sett's basic attacks alternate between left and right punch. Right punch is slightly stronger and faster. Sett also hates losing, gaining additional health regeneration based off of his missing health."
       },
       "q": {
-        "name": "Twin Bite",
-        "description": "Shyvana strikes twice on her next attack. Basic attacks reduce the cooldown of Twin Bite. Dragon Form: Twin Bite cleaves all units in front of Shyvana. Slaying Mountain Drake causes Twin Bite to slow enemies while in Dragon Form."
+        "name": "KNUCKLE DOWN",
+        "description": "Sett's next two attacks deal additional damage based off of the target's max health. Sett also gains movement speed while moving towards enemy champions."
       },
       "w": {
-        "name": "Burnout",
-        "description": "Shyvana surrounds herself in fire, dealing magic damage per second to nearby enemies and moving faster for 3 seconds. The Movement Speed reduces over the duration of the spell. Basic attacks extend the duration of Burnout. Dragon Form: Burnout grows in size. Slaying Cloud Drake gives Shyvana 25% extra Movement Speed while in Dragon Form."
+        "name": "HAYMAKER",
+        "description": "Sett passively stores damage he takes as Grit. On cast, Sett expends all stored Grit to gain a shield and punch an area, dealing true damage in the center and physical damage on the sides."
       },
       "e": {
-        "name": "Flame Breath",
-        "description": "Shyvana unleashes a fireball that deals damage to all enemies it encounters and leaves cinders on the target, marking them for 5 seconds. Shyvana's basic attacks on marked targets deal a percentage of their maximum Health as damage on-hit. Dragon Form: Flame Breath explodes on impact or at target location, dealing bonus damage and scorching the earth for a short duration. Slaying Infernal Drake converts damage dealt to marked enemies to true damage while in Dragon Form."
+        "name": "FACEBREAKER",
+        "description": "Sett pulls in all enemies on opposite sides of him, dealing damage and stunning them. If enemies were only on one side, they are slowed instead of stunned."
       },
       "r": {
-        "name": "Dragon's Descent",
-        "description": "Shyvana transforms into a dragon and takes flight to a target location. Enemies along her path take damage and are knocked toward her target location. Shyvana passively gains Fury per second and gains 2 Fury on basic attack."
+        "name": "THE SHOW STOPPER",
+        "description": "Sett carries an enemy champion through the air and slams them into the ground, dealing damage and slowing all enemies near where they land."
       }
     },
     "stats": {
-      "win_rate": 0.5205,
-      "pick_rate": 0.0896,
-      "ban_rate": 0.055
+      "win_rate": 0.5152,
+      "pick_rate": 0.1498,
+      "ban_rate": 0.0371
     },
     "patch": "7.1f"
   },
@@ -3606,6 +3570,42 @@
       "win_rate": 0.5282,
       "pick_rate": 0.0491,
       "ban_rate": 0.0056
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "shyvana",
+    "name": "SHYVANA",
+    "roles": [
+      "jungle"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "Fury of the Dragonborn",
+        "description": "Shyvana gains stacks when slaying large and epic monsters, as well as champions. Dragons grant extra stacks. Every 100 stack enhances one of Shyvana's abilities."
+      },
+      "q": {
+        "name": "Twin Bite",
+        "description": "Shyvana strikes twice on her next attack. Basic attacks reduce the cooldown of Twin Bite. Dragon Form: Twin Bite cleaves all units in front of Shyvana. Slaying Mountain Drake causes Twin Bite to slow enemies while in Dragon Form."
+      },
+      "w": {
+        "name": "Burnout",
+        "description": "Shyvana surrounds herself in fire, dealing magic damage per second to nearby enemies and moving faster for 3 seconds. The Movement Speed reduces over the duration of the spell. Basic attacks extend the duration of Burnout. Dragon Form: Burnout grows in size. Slaying Cloud Drake gives Shyvana 25% extra Movement Speed while in Dragon Form."
+      },
+      "e": {
+        "name": "Flame Breath",
+        "description": "Shyvana unleashes a fireball that deals damage to all enemies it encounters and leaves cinders on the target, marking them for 5 seconds. Shyvana's basic attacks on marked targets deal a percentage of their maximum Health as damage on-hit. Dragon Form: Flame Breath explodes on impact or at target location, dealing bonus damage and scorching the earth for a short duration. Slaying Infernal Drake converts damage dealt to marked enemies to true damage while in Dragon Form."
+      },
+      "r": {
+        "name": "Dragon's Descent",
+        "description": "Shyvana transforms into a dragon and takes flight to a target location. Enemies along her path take damage and are knocked toward her target location. Shyvana passively gains Fury per second and gains 2 Fury on basic attack."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5205,
+      "pick_rate": 0.0896,
+      "ban_rate": 0.055
     },
     "patch": "7.1f"
   },
@@ -3864,6 +3864,43 @@
     "patch": "7.1f"
   },
   {
+    "id": "teemo",
+    "name": "TEEMO",
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "TOXIC SHOT",
+        "description": "Teemo's attacks deal bonus magic damage over time."
+      },
+      "q": {
+        "name": "BLINDING DART",
+        "description": "Teemo fires a dart that blinds its target, causing its attacks to deal no damage for a brief period."
+      },
+      "w": {
+        "name": "MOVE QUICK",
+        "description": "Teemo scampers around, passively increasing his Movement Speed until he is struck by an enemy champion or turret. Activating Move Quick causes Teemo to roll forward a short distance, sprinting for a few seconds. During this time, Move Quick's passive speed is doubled, and cannot be removed by damage."
+      },
+      "e": {
+        "name": "GUERILLA WARFARE",
+        "description": "After a delay, Teemo becomes camouflaged, unable to be seen unless near an enemy champion or turret. After exiting camouflage, Teemo gains Attack Speed."
+      },
+      "r": {
+        "name": "NOXIOUS TRAP",
+        "description": "Teemo throws an explosive poisonous trap using one of the mushrooms stored in his pack. If an enemy steps on the trap, it will release a poisonous puddle, slowing enemies and damaging them over time. If Teemo throws a mushroom onto another mushroom it will bounce, gaining additional range."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5254,
+      "pick_rate": 0.0421,
+      "ban_rate": 0.195
+    },
+    "patch": "7.1f"
+  },
+  {
     "id": "talon",
     "name": "TALON",
     "roles": [
@@ -3932,43 +3969,6 @@
       "win_rate": 0.4824,
       "pick_rate": 0.1193,
       "ban_rate": 0.0441
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "teemo",
-    "name": "TEEMO",
-    "roles": [
-      "top",
-      "mid"
-    ],
-    "difficulty": 1,
-    "abilities": {
-      "passive": {
-        "name": "TOXIC SHOT",
-        "description": "Teemo's attacks deal bonus magic damage over time."
-      },
-      "q": {
-        "name": "BLINDING DART",
-        "description": "Teemo fires a dart that blinds its target, causing its attacks to deal no damage for a brief period."
-      },
-      "w": {
-        "name": "MOVE QUICK",
-        "description": "Teemo scampers around, passively increasing his Movement Speed until he is struck by an enemy champion or turret. Activating Move Quick causes Teemo to roll forward a short distance, sprinting for a few seconds. During this time, Move Quick's passive speed is doubled, and cannot be removed by damage."
-      },
-      "e": {
-        "name": "GUERILLA WARFARE",
-        "description": "After a delay, Teemo becomes camouflaged, unable to be seen unless near an enemy champion or turret. After exiting camouflage, Teemo gains Attack Speed."
-      },
-      "r": {
-        "name": "NOXIOUS TRAP",
-        "description": "Teemo throws an explosive poisonous trap using one of the mushrooms stored in his pack. If an enemy steps on the trap, it will release a poisonous puddle, slowing enemies and damaging them over time. If Teemo throws a mushroom onto another mushroom it will bounce, gaining additional range."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5254,
-      "pick_rate": 0.0421,
-      "ban_rate": 0.195
     },
     "patch": "7.1f"
   },
@@ -4045,6 +4045,42 @@
     "patch": "7.1f"
   },
   {
+    "id": "urgot",
+    "name": "URGOT",
+    "roles": [
+      "top"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "ECHOING FLAMES",
+        "description": "Urgot's basic attacks and Purge periodically trigger blasts of flame from his legs, dealing physical damage."
+      },
+      "q": {
+        "name": "CORROSIVE CHARGE",
+        "description": "Fires an explosive charge at the target location, dealing physical damage and slowing enemies caught in the explosion."
+      },
+      "w": {
+        "name": "PURGE",
+        "description": "Urgot slows himself while he unloads his weapon on nearby enemies. Prioritizes enemy champions Urgot has recently struck with other abilities and triggers Echoing Flames."
+      },
+      "e": {
+        "name": "DISDAIN",
+        "description": "Urgot charges in a direction, shielding himself and trampling non-champion enemies. If he catches an enemy champion, he will stop and hurl them out of his way."
+      },
+      "r": {
+        "name": "FEAR BEYOND DEATH",
+        "description": "Urgot fires a chem-drill that impales the first enemy champion hit. If that champion falls below a health threshold, Urgot judges them weak and can execute them."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4988,
+      "pick_rate": 0.0546,
+      "ban_rate": 0.0325
+    },
+    "patch": "7.1f"
+  },
+  {
     "id": "twisted-fate",
     "name": "TWISTED FATE",
     "roles": [
@@ -4117,42 +4153,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "urgot",
-    "name": "URGOT",
-    "roles": [
-      "top"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "ECHOING FLAMES",
-        "description": "Urgot's basic attacks and Purge periodically trigger blasts of flame from his legs, dealing physical damage."
-      },
-      "q": {
-        "name": "CORROSIVE CHARGE",
-        "description": "Fires an explosive charge at the target location, dealing physical damage and slowing enemies caught in the explosion."
-      },
-      "w": {
-        "name": "PURGE",
-        "description": "Urgot slows himself while he unloads his weapon on nearby enemies. Prioritizes enemy champions Urgot has recently struck with other abilities and triggers Echoing Flames."
-      },
-      "e": {
-        "name": "DISDAIN",
-        "description": "Urgot charges in a direction, shielding himself and trampling non-champion enemies. If he catches an enemy champion, he will stop and hurl them out of his way."
-      },
-      "r": {
-        "name": "FEAR BEYOND DEATH",
-        "description": "Urgot fires a chem-drill that impales the first enemy champion hit. If that champion falls below a health threshold, Urgot judges them weak and can execute them."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4988,
-      "pick_rate": 0.0546,
-      "ban_rate": 0.0325
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "varus",
     "name": "VARUS",
     "roles": [
@@ -4185,6 +4185,42 @@
       "win_rate": 0.5015,
       "pick_rate": 0.0608,
       "ban_rate": 0.0034
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "velkoz",
+    "name": "VEL'KOZ",
+    "roles": [
+      "mid"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "ORGANIC DECONSTRUCTION",
+        "description": "Vel'Koz's abilities apply Organic Deconstruction to enemies on hit. If 3 stacks are accumulated, the enemy will take a burst of true damage."
+      },
+      "q": {
+        "name": "PLASMA FISSION",
+        "description": "Vel'Koz shoots a bolt of plasma that splits in two on reactivation or upon hitting an enemy. The bolt slows and damages on hit."
+      },
+      "w": {
+        "name": "VOID RIFT",
+        "description": "Vel'Koz opens a rift to the void that deals an initial burst of damage, then explodes for a second burst of damage after a delay."
+      },
+      "e": {
+        "name": "TECTONIC DISRUPTION",
+        "description": "Vel'Koz causes an explosive anomaly at target location, knocking up enemies and knocking close enemies slightly away. The closer the anomaly is to Vel’Koz the stronger the knockback effect."
+      },
+      "r": {
+        "name": "LIFE FORM DISINTEGRATION RAY",
+        "description": "Passive: Apply 3 Deconstruction stacks to an enemy champion marking them as Researched for 7 seconds.\nActive: Vel'Koz unleashes a channelled beam that he can steer in a target direction to deal magic damage and slow enemies hit. Researched enemy champions take true damage instead."
+      }
+    },
+    "stats": {
+      "win_rate": 0.4959,
+      "pick_rate": 0.0344,
+      "ban_rate": 0.007
     },
     "patch": "7.1f"
   },
@@ -4258,42 +4294,6 @@
       "win_rate": 0.5125,
       "pick_rate": 0.1139,
       "ban_rate": 0.1459
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "velkoz",
-    "name": "VEL'KOZ",
-    "roles": [
-      "mid"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "ORGANIC DECONSTRUCTION",
-        "description": "Vel'Koz's abilities apply Organic Deconstruction to enemies on hit. If 3 stacks are accumulated, the enemy will take a burst of true damage."
-      },
-      "q": {
-        "name": "PLASMA FISSION",
-        "description": "Vel'Koz shoots a bolt of plasma that splits in two on reactivation or upon hitting an enemy. The bolt slows and damages on hit."
-      },
-      "w": {
-        "name": "VOID RIFT",
-        "description": "Vel'Koz opens a rift to the void that deals an initial burst of damage, then explodes for a second burst of damage after a delay."
-      },
-      "e": {
-        "name": "TECTONIC DISRUPTION",
-        "description": "Vel'Koz causes an explosive anomaly at target location, knocking up enemies and knocking close enemies slightly away. The closer the anomaly is to Vel’Koz the stronger the knockback effect."
-      },
-      "r": {
-        "name": "LIFE FORM DISINTEGRATION RAY",
-        "description": "Passive: Apply 3 Deconstruction stacks to an enemy champion marking them as Researched for 7 seconds.\nActive: Vel'Koz unleashes a channelled beam that he can steer in a target direction to deal magic damage and slow enemies hit. Researched enemy champions take true damage instead."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4959,
-      "pick_rate": 0.0344,
-      "ban_rate": 0.007
     },
     "patch": "7.1f"
   },
@@ -4442,43 +4442,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "volibear",
-    "name": "VOLIBEAR",
-    "roles": [
-      "top",
-      "jungle"
-    ],
-    "difficulty": 1,
-    "abilities": {
-      "passive": {
-        "name": "THE RELENTLESS STORM",
-        "description": "Volibear's Attacks and abilities grant Attack Speed, and eventually cause his Attacks to deal bonus magic damage to nearby enemies."
-      },
-      "q": {
-        "name": "THUNDERING SMASH",
-        "description": "Volibear gains speed towards enemies, Stunning and damaging the first one he Attacks."
-      },
-      "w": {
-        "name": "FRENZIED MAUL",
-        "description": "Volibear damages an enemy, applying on-hit effects and gaining a mark. Casting this ability again on the same target consumes the mark to deal bonus damage and heal Volibear."
-      },
-      "e": {
-        "name": "SKY SPLITTER",
-        "description": "Volibear summons a lightning bolt at a location, dealing damage and Slowing enemies while granting Volibear a shield if he's inside the blast radius."
-      },
-      "r": {
-        "name": "STORMBRINGER",
-        "description": "Volibear leaps to a target location, Slowing and damaging enemies beneath him while gaining bonus Health. Enemy towers near his landing location become temporarily disabled."
-      }
-    },
-    "stats": {
-      "win_rate": 0.4989,
-      "pick_rate": 0.0456,
-      "ban_rate": 0.0273
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "vladimir",
     "name": "VLADIMIR",
     "roles": [
@@ -4516,38 +4479,39 @@
     "patch": "7.1f"
   },
   {
-    "id": "warwick",
-    "name": "WARWICK",
+    "id": "volibear",
+    "name": "VOLIBEAR",
     "roles": [
+      "top",
       "jungle"
     ],
     "difficulty": 1,
     "abilities": {
       "passive": {
-        "name": "ETERNAL HUNGER",
-        "description": "Warwick's basic attacks deal bonus magic damage. If Warwick is below 50% health, he heals for the same amount."
+        "name": "THE RELENTLESS STORM",
+        "description": "Volibear's Attacks and abilities grant Attack Speed, and eventually cause his Attacks to deal bonus magic damage to nearby enemies."
       },
       "q": {
-        "name": "JAWS OF THE BEAST",
-        "description": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt."
+        "name": "THUNDERING SMASH",
+        "description": "Volibear gains speed towards enemies, Stunning and damaging the first one he Attacks."
       },
       "w": {
-        "name": "BLOODHUNT",
-        "description": "Warwick senses enemies below 50% health, gaining Move Speed toward and Attack Speed against them. When they fall below 20% health, he frenzies and these bonuses triple."
+        "name": "FRENZIED MAUL",
+        "description": "Volibear damages an enemy, applying on-hit effects and gaining a mark. Casting this ability again on the same target consumes the mark to deal bonus damage and heal Volibear."
       },
       "e": {
-        "name": "PRIMAL HOWL",
-        "description": "Warwick gains damage reduction for 2.5 seconds. At the end, or if re-activated, he howls, causing nearby enemies to flee for 1 second."
+        "name": "SKY SPLITTER",
+        "description": "Volibear summons a lightning bolt at a location, dealing damage and Slowing enemies while granting Volibear a shield if he's inside the blast radius."
       },
       "r": {
-        "name": "INFINITE DURESS",
-        "description": "Warwick leaps in a direction (scaling with his bonus Move Speed), suppressing the first champion he collides with for 1.5 seconds."
+        "name": "STORMBRINGER",
+        "description": "Volibear leaps to a target location, Slowing and damaging enemies beneath him while gaining bonus Health. Enemy towers near his landing location become temporarily disabled."
       }
     },
     "stats": {
-      "win_rate": 0.5263,
-      "pick_rate": 0.0321,
-      "ban_rate": 0.0079
+      "win_rate": 0.4989,
+      "pick_rate": 0.0456,
+      "ban_rate": 0.0273
     },
     "patch": "7.1f"
   },
@@ -4584,6 +4548,42 @@
       "win_rate": 0.4675,
       "pick_rate": 0.0354,
       "ban_rate": 0.0049
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "warwick",
+    "name": "WARWICK",
+    "roles": [
+      "jungle"
+    ],
+    "difficulty": 1,
+    "abilities": {
+      "passive": {
+        "name": "ETERNAL HUNGER",
+        "description": "Warwick's basic attacks deal bonus magic damage. If Warwick is below 50% health, he heals for the same amount."
+      },
+      "q": {
+        "name": "JAWS OF THE BEAST",
+        "description": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt."
+      },
+      "w": {
+        "name": "BLOODHUNT",
+        "description": "Warwick senses enemies below 50% health, gaining Move Speed toward and Attack Speed against them. When they fall below 20% health, he frenzies and these bonuses triple."
+      },
+      "e": {
+        "name": "PRIMAL HOWL",
+        "description": "Warwick gains damage reduction for 2.5 seconds. At the end, or if re-activated, he howls, causing nearby enemies to flee for 1 second."
+      },
+      "r": {
+        "name": "INFINITE DURESS",
+        "description": "Warwick leaps in a direction (scaling with his bonus Move Speed), suppressing the first champion he collides with for 1.5 seconds."
+      }
+    },
+    "stats": {
+      "win_rate": 0.5263,
+      "pick_rate": 0.0321,
+      "ban_rate": 0.0079
     },
     "patch": "7.1f"
   },
@@ -4660,6 +4660,43 @@
     "patch": "7.1f"
   },
   {
+    "id": "yasuo",
+    "name": "YASUO",
+    "roles": [
+      "mid",
+      "top"
+    ],
+    "difficulty": 3,
+    "abilities": {
+      "passive": {
+        "name": "Way of the Wanderer",
+        "description": "Yasuo's Critical Strike Chance is doubled. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster."
+      },
+      "q": {
+        "name": "Steel Tempest",
+        "description": "Thrusts forward, damaging all enemies in a line. On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Steel Tempest fires a whirlwind that knocks Airborne. Steel Tempest is treated as a basic attack and scales with all the same things."
+      },
+      "w": {
+        "name": "Wind Wall",
+        "description": "Creates a moving wall that blocks all enemy projectiles for 4 seconds."
+      },
+      "e": {
+        "name": "Sweeping Blade",
+        "description": "Dashes through target enemy, dealing magic damage. Each cast increases your next dash's base Damage, up to a max amount. Cannot be re-cast on the same enemy for a few seconds. If Steel Tempest is cast while dashing, it will strike as a circle."
+      },
+      "r": {
+        "name": "Last Breath",
+        "description": "Blinks to an Airborne enemy champion, dealing physical damage and holding all Airborne enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm. For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration."
+      }
+    },
+    "stats": {
+      "win_rate": 0.484,
+      "pick_rate": 0.1166,
+      "ban_rate": 0.1217
+    },
+    "patch": "7.1f"
+  },
+  {
     "id": "yone",
     "name": "YONE",
     "roles": [
@@ -4694,43 +4731,6 @@
       "win_rate": 0.4997,
       "pick_rate": 0.0541,
       "ban_rate": 0.0493
-    },
-    "patch": "7.1f"
-  },
-  {
-    "id": "yasuo",
-    "name": "YASUO",
-    "roles": [
-      "mid",
-      "top"
-    ],
-    "difficulty": 3,
-    "abilities": {
-      "passive": {
-        "name": "Way of the Wanderer",
-        "description": "Yasuo's Critical Strike Chance is doubled. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster."
-      },
-      "q": {
-        "name": "Steel Tempest",
-        "description": "Thrusts forward, damaging all enemies in a line. On hit, grants a stack of Gathering Storm for a few seconds. At 2 stacks, Steel Tempest fires a whirlwind that knocks Airborne. Steel Tempest is treated as a basic attack and scales with all the same things."
-      },
-      "w": {
-        "name": "Wind Wall",
-        "description": "Creates a moving wall that blocks all enemy projectiles for 4 seconds."
-      },
-      "e": {
-        "name": "Sweeping Blade",
-        "description": "Dashes through target enemy, dealing magic damage. Each cast increases your next dash's base Damage, up to a max amount. Cannot be re-cast on the same enemy for a few seconds. If Steel Tempest is cast while dashing, it will strike as a circle."
-      },
-      "r": {
-        "name": "Last Breath",
-        "description": "Blinks to an Airborne enemy champion, dealing physical damage and holding all Airborne enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm. For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration."
-      }
-    },
-    "stats": {
-      "win_rate": 0.484,
-      "pick_rate": 0.1166,
-      "ban_rate": 0.1217
     },
     "patch": "7.1f"
   },
@@ -4808,42 +4808,6 @@
     "patch": "7.1f"
   },
   {
-    "id": "zeri",
-    "name": "ZERI",
-    "roles": [
-      "bot"
-    ],
-    "difficulty": 2,
-    "abilities": {
-      "passive": {
-        "name": "LIVING BATTERY",
-        "description": "Zeri gains Move Speed whenever she receives a shield. When she damages an enemy shield she absorbs its energy, shielding herself."
-      },
-      "q": {
-        "name": "BURST FIRE",
-        "description": "Zeri fires a burst of rounds that deals physical damage to the first enemy hit. There is a cap on the Attack Speed and bonus Attack Speed will be converted into Attack Damage; when actively cast, a lightning bolt will be fired, dealing magic damage and a slow."
-      },
-      "w": {
-        "name": "ULTRASHOCK LASER",
-        "description": "Zeri fires an electric pulse that slows and damages the first enemy hit. If the pulse hits a wall it expands into a long range laser."
-      },
-      "e": {
-        "name": "SPARK SURGE",
-        "description": "Zeri dashes a short distance and energizes her next 3 shots of Burst Fire, causing them to pierce through enemies. She will vault and grind over any terrain she touches."
-      },
-      "r": {
-        "name": "LIGHTNING CRASH",
-        "description": "Zeri discharges a nova of electricity and overcharges herself, gaining increased damage and stacking Move Speed that refreshes and gets stronger every time she hits an enemy champion. While overcharged, Burst fire becomes a faster triple shot that chains lightning between enemies."
-      }
-    },
-    "stats": {
-      "win_rate": 0.5007,
-      "pick_rate": 0.0202,
-      "ban_rate": 0.0003
-    },
-    "patch": "7.1f"
-  },
-  {
     "id": "ziggs",
     "name": "ZIGGS",
     "roles": [
@@ -4880,38 +4844,38 @@
     "patch": "7.1f"
   },
   {
-    "id": "zilean",
-    "name": "ZILEAN",
+    "id": "zeri",
+    "name": "ZERI",
     "roles": [
-      "support"
+      "bot"
     ],
     "difficulty": 2,
     "abilities": {
       "passive": {
-        "name": "TIME IN A BOTTLE",
-        "description": "Zilean stores time as Experience and can grant it to his allies. Zilean can impart this Experience on the nearest allied champion when he has enough to complete their next level up. Zilean receives as much Experience as he gives."
+        "name": "LIVING BATTERY",
+        "description": "Zeri gains Move Speed whenever she receives a shield. When she damages an enemy shield she absorbs its energy, shielding herself."
       },
       "q": {
-        "name": "TIME BOMB",
-        "description": "Tosses a bomb to target area that sticks to units that come near it, prioritizing champions and units already carrying a bomb. When it detonates it deals magic damage to the target and nearby enemies. If a Time Bomb is detonated early by another Time Bomb, it also stuns enemies. The Time Bomb can be recharged 2 times."
+        "name": "BURST FIRE",
+        "description": "Zeri fires a burst of rounds that deals physical damage to the first enemy hit. There is a cap on the Attack Speed and bonus Attack Speed will be converted into Attack Damage; when actively cast, a lightning bolt will be fired, dealing magic damage and a slow."
       },
       "w": {
-        "name": "TWISTED TIMEFLOW",
-        "description": "Makes time flow faster for himself, applying Fleeting Time to himself and gaining a damage absorbing shield. Zilean also grants Fleeting Time and identical shield to his nearest ally champion. Fleeting Time increases projectile speeds and grants move speed. Fleeting Time also increases Zilean’s ability haste."
+        "name": "ULTRASHOCK LASER",
+        "description": "Zeri fires an electric pulse that slows and damages the first enemy hit. If the pulse hits a wall it expands into a long range laser."
       },
       "e": {
-        "name": "TEMPORAL MIRAGE",
-        "description": "Creates a time-bending force field at target location. Within the force field enemy champions and projectiles are slowed."
+        "name": "SPARK SURGE",
+        "description": "Zeri dashes a short distance and energizes her next 3 shots of Burst Fire, causing them to pierce through enemies. She will vault and grind over any terrain she touches."
       },
       "r": {
-        "name": "CHRONOSHIFT",
-        "description": "Places a protective time rune on Zilean or an allied champion. If the rune bearer takes lethal damage during this time, they teleport back in time and become untargetable before they are revived and healed. If the rune bearer does not trigger the rune's revival effect, a part of Chronoshift's cooldown will be refunded."
+        "name": "LIGHTNING CRASH",
+        "description": "Zeri discharges a nova of electricity and overcharges herself, gaining increased damage and stacking Move Speed that refreshes and gets stronger every time she hits an enemy champion. While overcharged, Burst fire becomes a faster triple shot that chains lightning between enemies."
       }
     },
     "stats": {
-      "win_rate": 0.522,
-      "pick_rate": 0.0153,
-      "ban_rate": 0.0153
+      "win_rate": 0.5007,
+      "pick_rate": 0.0202,
+      "ban_rate": 0.0003
     },
     "patch": "7.1f"
   },
@@ -4948,6 +4912,42 @@
       "win_rate": 0.5,
       "pick_rate": 0.02,
       "ban_rate": 0.01
+    },
+    "patch": "7.1f"
+  },
+  {
+    "id": "zilean",
+    "name": "ZILEAN",
+    "roles": [
+      "support"
+    ],
+    "difficulty": 2,
+    "abilities": {
+      "passive": {
+        "name": "TIME IN A BOTTLE",
+        "description": "Zilean stores time as Experience and can grant it to his allies. Zilean can impart this Experience on the nearest allied champion when he has enough to complete their next level up. Zilean receives as much Experience as he gives."
+      },
+      "q": {
+        "name": "TIME BOMB",
+        "description": "Tosses a bomb to target area that sticks to units that come near it, prioritizing champions and units already carrying a bomb. When it detonates it deals magic damage to the target and nearby enemies. If a Time Bomb is detonated early by another Time Bomb, it also stuns enemies. The Time Bomb can be recharged 2 times."
+      },
+      "w": {
+        "name": "TWISTED TIMEFLOW",
+        "description": "Makes time flow faster for himself, applying Fleeting Time to himself and gaining a damage absorbing shield. Zilean also grants Fleeting Time and identical shield to his nearest ally champion. Fleeting Time increases projectile speeds and grants move speed. Fleeting Time also increases Zilean’s ability haste."
+      },
+      "e": {
+        "name": "TEMPORAL MIRAGE",
+        "description": "Creates a time-bending force field at target location. Within the force field enemy champions and projectiles are slowed."
+      },
+      "r": {
+        "name": "CHRONOSHIFT",
+        "description": "Places a protective time rune on Zilean or an allied champion. If the rune bearer takes lethal damage during this time, they teleport back in time and become untargetable before they are revived and healed. If the rune bearer does not trigger the rune's revival effect, a part of Chronoshift's cooldown will be refunded."
+      }
+    },
+    "stats": {
+      "win_rate": 0.522,
+      "pick_rate": 0.0153,
+      "ban_rate": 0.0153
     },
     "patch": "7.1f"
   },

@@ -1,3 +1,64 @@
+## Scrape Run — 2026-06-03 20:15:54 UTC
+
+### 🗡️ Item Changes
+- Added item: Runaan's Hurricane (2900g)
+- Added item: Staff of Flowing Water (2500g)
+- Added item: Redemption (2600g)
+
+### 📈 Champion Stats Changes
+- Added champion: AURELION SOL
+- Added champion: DR. MUNDO
+- Added champion: JARVAN IV
+- Added champion: LEE SIN
+- Added champion: MASTER YI
+- Added champion: MISS FORTUNE
+- Added champion: Nunu & Willump
+- Added champion: TALIYAH
+- Added champion: TWISTED FATE
+- Added champion: XIN ZHAO
+
+
+---
+## Scrape Run — 2026-06-03 19:54:35 UTC
+
+### 🗡️ Item Changes
+- Added item: Runaan's Hurricane (2900g)
+- Added item: Staff of Flowing Water (2500g)
+- Added item: Dream Maker (500g)
+- Added item: Goredrinker (500g)
+- Added item: Galeforce (500g)
+- Added item: Stridebreaker (500g)
+
+### 📈 Champion Stats Changes
+- Added champion: AURELION SOL
+- Added champion: DR. MUNDO
+- Added champion: JARVAN IV
+- Added champion: LEE SIN
+- Added champion: MASTER YI
+- Added champion: MISS FORTUNE
+- Added champion: Nunu & Willump
+- Added champion: TALIYAH
+- Added champion: TWISTED FATE
+- Added champion: XIN ZHAO
+
+
+---
+## Scrape Run — 2026-06-03 19:53:57 UTC
+
+### 📈 Champion Stats Changes
+- Added champion: AURELION SOL
+- Added champion: DR. MUNDO
+- Added champion: JARVAN IV
+- Added champion: LEE SIN
+- Added champion: MASTER YI
+- Added champion: MISS FORTUNE
+- Added champion: Nunu & Willump
+- Added champion: TALIYAH
+- Added champion: TWISTED FATE
+- Added champion: XIN ZHAO
+
+
+---
 ## Scrape Run — 2026-06-03 18:43:58 UTC
 
 ### 📈 Champion Stats Changes

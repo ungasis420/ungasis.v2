@@ -14,6 +14,7 @@ from sources.riot_champions import scrape_champions
 from sources.wrstats_meta import scrape_meta
 from sources.wrf_patch import scrape_patch
 from utils.diff import generate_changelog
+from utils.id_reconciler import reconcile_items
 
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
 CHANGELOG_PATH = os.path.join(os.path.dirname(__file__), "CHANGELOG.md")
@@ -29,6 +30,9 @@ def save_output(data: Any, filename: str) -> None:
 def run_items() -> bool:
     print("\n--- Scraping Items (wr-meta.com) ---")
     items = scrape_items()
+    print("Reconciling item IDs...")
+    base_dir = os.path.dirname(__file__)
+    items = reconcile_items(items, base_dir)
     save_output(items, "wr_items.json")
     valid = len(items) >= 100
     print(f"Validation: {'PASS' if valid else 'FAIL'} (Found {len(items)} items, target: >=100)")

@@ -296,7 +296,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "seryldas_grudge",
+    "id": "serylda_grudge",
     "name": "Serylda’s Grudge",
     "category": "physical",
     "stats": {
@@ -585,7 +585,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "dominiks_regards",
+    "id": "lord_dominiks_regards",
     "name": "Dominik’s Regards",
     "category": "physical",
     "stats": {
@@ -766,7 +766,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "soulstealer",
+    "id": "awakened_soulstealer",
     "name": "Soulstealer",
     "category": "magic",
     "stats": {
@@ -1355,7 +1355,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "staff_of_flowing_water",
+    "id": "staff_of_flowing_waters",
     "name": "Staff of Flowing Water",
     "category": "defense",
     "stats": {
@@ -1583,7 +1583,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "dream_maker",
+    "id": "dream_maker_enchant",
     "name": "Dream Maker",
     "category": "defense",
     "stats": {},
@@ -1595,7 +1595,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "goredrinker",
+    "id": "goredrinker_enchant",
     "name": "Goredrinker",
     "category": "defense",
     "stats": {},
@@ -1607,7 +1607,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "galeforce",
+    "id": "galeforce_enchant",
     "name": "Galeforce",
     "category": "defense",
     "stats": {},
@@ -1619,7 +1619,7 @@
     "scraped_at": "2026-06-03T17:00:00Z"
   },
   {
-    "id": "stridebreaker",
+    "id": "stridebreaker_enchant",
     "name": "Stridebreaker",
     "category": "defense",
     "stats": {},
@@ -2536,6 +2536,22 @@
     "cost": 0,
     "tips": "",
     "source": "wr-meta.com",
+    "patch": "7.1f",
+    "scraped_at": "2026-06-03T17:00:00Z"
+  },
+  {
+    "id": "redemption",
+    "name": "Redemption",
+    "category": "support",
+    "stats": {
+      "ability_haste": 20,
+      "max_health": 400,
+      "max_mana": 300
+    },
+    "passive": "Eternity: Restore mana from damage taken, HP from mana spent. Salvation: Near allies below 50% HP, heal them every 8s.",
+    "cost": 2600,
+    "tips": "",
+    "source": "canonical_fallback",
     "patch": "7.1f",
     "scraped_at": "2026-06-03T17:00:00Z"
   }

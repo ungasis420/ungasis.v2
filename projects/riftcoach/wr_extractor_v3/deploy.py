@@ -2,6 +2,7 @@ import os
 import shutil
 import json
 import time
+import re
 from typing import Dict, Any, List
 
 PUBLIC_DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "public", "data")
@@ -18,6 +19,51 @@ def backup_file(filepath: str) -> None:
     dest = os.path.join(BACKUP_DIR, f"{filename}.{ts}.bak")
     shutil.copy2(filepath, dest)
     print(f"Backed up: {filename} -> {os.path.basename(dest)}")
+
+def count_numbers(text):
+    """Count numeric values in a description string."""
+    return len(re.findall(r'\d+', str(text)))
+
+def should_overwrite_description(old_desc, new_desc):
+    """Only overwrite if new description has MORE numbers than old."""
+    old_count = count_numbers(old_desc)
+    new_count = count_numbers(new_desc)
+    if old_count >= new_count and old_count >= 2:
+        return False
+    if new_count > old_count:
+        return True
+    return False
+
+def karma_regression_check(champions_data):
+    """Blocker: Karma abilities must match hard locks."""
+    expected = {
+        "passive": "Mantra",
+        "q": "Inner Flame",
+        "w": "Focused Resolve",
+        "e": "Inspire",
+        "r": "Transcendent Embrace"
+    }
+    karma = None
+    for champ in champions_data:
+        if champ.get("id") == "karma" or champ.get("champion_id") == "karma":
+            karma = champ
+            break
+    if not karma:
+        # Karma isn't in this chunk; perfectly normal for part1/3
+        return True
+    abilities = karma.get("abilities", karma.get("abilities_by_key", {}))
+    for slot, expected_name in expected.items():
+        actual = abilities.get(slot, {})
+        if isinstance(actual, dict):
+            actual_name = actual.get("name", "")
+        else:
+            actual_name = str(actual)
+        if expected_name.lower() not in actual_name.lower():
+            print(f"KARMA REGRESSION FAIL: {slot} expected '{expected_name}', got '{actual_name}'")
+            return False
+    print("Karma regression: PASS")
+    return True
+
 
 def merge_champion_parts(scraped_champs_path: str) -> None:
     """Surgically merge scraped champion data into wr_champions_part1/2/3.json files."""
@@ -92,6 +138,10 @@ def merge_champion_parts(scraped_champs_path: str) -> None:
         with open(part_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Surgically merged {updated_count} champions into {part}.")
+        
+        # Run Karma Regression Check on part 2 (where Karma usually is) or just run on all
+        if not karma_regression_check(champs):
+            print("ERROR: Karma Regression Check Failed. Do not commit these changes!")
 
 def deploy() -> None:
     """Deploy all scraped files to public/data/ folder after backing up old ones."""
@@ -106,7 +156,30 @@ def deploy() -> None:
             
         dest = os.path.join(PUBLIC_DATA_DIR, filename)
         backup_file(dest)
-        shutil.copy2(src, dest)
+        
+        if filename == "wr_runes.json":
+            # Apply description quality gate
+            canonical_runes_path = os.path.join(PUBLIC_DATA_DIR, "runes.json")
+            if os.path.exists(canonical_runes_path):
+                with open(canonical_runes_path, "r", encoding="utf-8") as f:
+                    canonical_data = json.load(f)
+                old_runes_list = canonical_data.get("runes", []) if isinstance(canonical_data, dict) else canonical_data
+                old_runes_map = {r["id"]: r for r in old_runes_list if "id" in r}
+                with open(src, "r", encoding="utf-8") as f:
+                    new_runes_list = json.load(f)
+                for new_rune in new_runes_list:
+                    old_rune = old_runes_map.get(new_rune["id"])
+                    if old_rune:
+                        old_desc = old_rune.get("full_description", old_rune.get("description", ""))
+                        if not should_overwrite_description(old_desc, new_rune.get("description", "")):
+                            new_rune["description"] = old_desc
+                with open(dest, "w", encoding="utf-8") as f:
+                    json.dump(new_runes_list, f, indent=2, ensure_ascii=False)
+            else:
+                shutil.copy2(src, dest)
+        else:
+            shutil.copy2(src, dest)
+        
         print(f"Deployed: {filename} -> public/data/")
         
     # 2. Merge champions part files
