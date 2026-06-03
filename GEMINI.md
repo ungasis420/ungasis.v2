@@ -135,6 +135,11 @@ for Mel to specify them in every prompt.
 These rules are checked automatically by the Builder at task start.
 If multiple rules match, apply ALL matching rules in order.
 
+## Projects Directory
+All apps are built inside projects/. Each project is a self-contained
+app that inherits UNGASIS context. Use /scaffold to create new projects.
+Current: projects/riftcoach/ (RiftCoach), projects/newmont/ (Newmont)
+
 ---
 
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

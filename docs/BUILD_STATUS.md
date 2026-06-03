@@ -81,6 +81,20 @@ Method: Reconciliation audit cross-referencing ChatGPT Enterprise gap audit
 | Tests/lint | package.json | ⚫ | Deferred |
 | Lockfile | package-lock.json | ⚫ | Run npm install to generate |
 
+## CLI
+
+| Component | Status | Notes |
+|-----------|:------:|-------|
+| ungasis.py CLI | ✅ | Unified entry point for all 13+ scripts |
+| ungasis-test.py | ✅ | Smoke tests + schema validation |
+
+## Projects
+
+| Project | Path | Status | Notes |
+|---------|------|:------:|-------|
+| RiftCoach | projects/riftcoach/ | 🟡 | Ready for Phase 5.7 |
+| Newmont | projects/newmont/ | ⏸️ | Paused |
+
 ## Automation Scripts
 
 | Script | Path | Status | Schedule |
@@ -89,6 +103,9 @@ Method: Reconciliation audit cross-referencing ChatGPT Enterprise gap audit
 | Warning Check | scripts/warn-check.py | ✅ | Daily 9:00 AM |
 | Quality Score | scripts/quality-score.py | ✅ | On demand |
 | Tag Sweep | scripts/tag_sweep.py | ✅ | Weekly Monday |
+| Unified CLI | scripts/ungasis.py | ✅ | Unified CLI entry point |
+| Smoke Tests | scripts/ungasis-test.py | ✅ | Daily 7:45 AM |
+| GraphRAG Search | scripts/graph-search.py | ✅ | On demand |
 | Research GitHub | scripts/research-github.py | ✅ | Daily 7:00 AM |
 | Research HN | scripts/research-hn.py | ✅ | Daily 7:15 AM |
 | Research YouTube | scripts/research-youtube.py | ✅ | Weekly Sunday |
@@ -119,8 +136,8 @@ Method: Reconciliation audit cross-referencing ChatGPT Enterprise gap audit
 | Claude Squad | ⚫ | Not needed — using Agent Manager |
 
 ## Totals
-- ✅ Built: 59
-- 🟡 Scaffolded: 3 (dashboard components)
+- ✅ Built: 62
+- 🟡 Scaffolded: 5 (dashboard components + project templates)
 - ⚫ Deferred: 13
 - 🔴 Risks: 0 (all resolved in F21a)
 

@@ -15,11 +15,30 @@ except AttributeError:
 WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 WARNING_LOG_PATH = os.path.join(WORKSPACE, ".ungasis", "warnings", "warning-log.md")
 
+def validate_warning_log(content):
+    """Check warning-log.md has expected table format."""
+    issues = []
+    if '|' not in content:
+        issues.append("No table found in warning-log.md")
+    return issues
+
 def check_warnings():
     now = datetime.now()
     critical_issues = []
     warning_issues = []
     info_issues = []
+    
+    if os.path.exists(WARNING_LOG_PATH):
+        try:
+            with open(WARNING_LOG_PATH, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read()
+            issues = validate_warning_log(content)
+            if issues:
+                print("Warning: warning-log.md format issue(s) detected:")
+                for issue in issues:
+                    print(f"  - {issue}")
+        except Exception:
+            pass
     
     # 1. Stale .md files (>90 days since modified) in .ungasis/
     ungasis_dir = os.path.join(WORKSPACE, ".ungasis")

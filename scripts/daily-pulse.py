@@ -69,12 +69,27 @@ def get_last_session():
     desc = "\n".join(desc_lines) if desc_lines else "No details available."
     return sprint, session_date, desc
 
+def validate_queue_format(content):
+    """Check queue.md has expected structure."""
+    issues = []
+    if '## Active Tasks' not in content and '## Pending' not in content:
+        issues.append("Missing 'Active Tasks' or 'Pending' section header")
+    if '- [ ]' not in content and '- [x]' not in content:
+        issues.append("No task entries found (expected '- [ ]' or '- [x]')")
+    return issues
+
 def get_queue_status():
     queue_path = os.path.join(WORKSPACE, ".ungasis", "orchestrator", "queue.md")
     data = read_file_safe(queue_path)
     if not data:
         return 0, 0, 0, "No pending tasks"
     
+    issues = validate_queue_format(data)
+    if issues:
+        print("Warning: queue.md format issue(s) detected:")
+        for issue in issues:
+            print(f"  - {issue}")
+            
     pending, completed = 0, 0
     highest = "No pending tasks"
     for line in data.split("\n"):

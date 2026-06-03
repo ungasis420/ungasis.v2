@@ -10,6 +10,9 @@ These scripts make JARVIS actually DO things. Run them manually or set up as Sch
 | `warn-check.py` | Check warning conditions | `python scripts/warn-check.py` | Terminal + `.ungasis/warnings/warning-log.md` |
 | `quality-score.py` | Score a file 1-10 | `python scripts/quality-score.py [file]` | Terminal + `.ungasis/quality/quality-log.md` |
 | `tag_sweep.py` | Scan for TODOs, stale files | `python scripts/tag_sweep.py` | Terminal + `.agents/skills/auto-tagger/tag-log.md` |
+| `ungasis.py` | Unified CLI wrapper | `python scripts/ungasis.py [command]` | Terminal + Execution |
+| `ungasis-test.py` | Smoke tests + validation | `python scripts/ungasis.py test` | Terminal Output |
+| `graph-search.py` | GraphRAG search script | `python scripts/ungasis.py graph [query]` | Terminal Output |
 | `research-github.py` | Fetch GitHub trending repos | `python scripts/research-github.py` | Terminal + `.ungasis/scout/research-inbox.md` |
 | `research-hn.py` | Fetch HackerNews top stories | `python scripts/research-hn.py` | Terminal + `.ungasis/scout/research-inbox.md` |
 | `research-feeds.py` | Fetch RSS blog posts | `python scripts/research-feeds.py` | Terminal + `.ungasis/scout/research-inbox.md` |
@@ -19,6 +22,21 @@ These scripts make JARVIS actually DO things. Run them manually or set up as Sch
 | `routing-close.py` | Track routing performance | `python scripts/routing-close.py` | Terminal + Output |
 | `retro-close.py` | Extract learnings from retrospectives | `python scripts/retro-close.py` | Terminal + Output |
 | `energy-close.py` | Analyze time data vs energy patterns | `python scripts/energy-close.py` | Terminal + Output |
+
+## Quick Reference
+
+| Command | What It Does |
+|---|---|
+| `ungasis pulse` | Morning situation report |
+| `ungasis warn` | Warning scan |
+| `ungasis score [file]` | Quality score a file |
+| `ungasis research all` | Fetch from all research sources |
+| `ungasis feedback all` | Run all feedback loops |
+| `ungasis health` | Full health check |
+| `ungasis test` | Smoke tests |
+| `ungasis backup` | Create backup ZIP |
+| `ungasis version` | Show version info |
+| `ungasis graph [query]` | Search the knowledge graph |
 
 ## Requirements
 
@@ -35,6 +53,7 @@ Configure these in the Antigravity Agent Manager scheduler interface to run auto
 | **Daily Pulse** | Every day at 8:00 AM | `python scripts/daily-pulse.py` |
 | **Warning Check** | Every day at 9:00 AM | `python scripts/warn-check.py` |
 | **Quality Batch** | Every Sunday at 6:00 PM | `python scripts/quality-score.py` |
+| **Smoke Tests** | Every day at 7:45 AM | `python scripts/ungasis.py test` |
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

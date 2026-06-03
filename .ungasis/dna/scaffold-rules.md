@@ -20,18 +20,18 @@ This file explains how to blend different genomes to spin up a new project insta
 
 Follow these 7 steps to create a new project folder and launch development in under a minute:
 
-1. **Step 1:** Open PowerShell and create a new directory for the project.
+1. **Step 1:** Open PowerShell and create a new directory for the project inside the projects folder.
    ```powershell
-   mkdir C:\Projects\my-awesome-app
-   cd C:\Projects\my-awesome-app
+   mkdir c:\Users\63905\Downloads\ungasis\projects\my-awesome-app
+   cd c:\Users\63905\Downloads\ungasis\projects\my-awesome-app
    ```
-2. **Step 2:** Copy the base genome configs using `xcopy` command:
+2. **Step 2:** Copy the base genome configs:
    ```powershell
-   xcopy /s /e c:\Users\63905\Downloads\ungasis\.ungasis\dna\base-genome.md .
+   copy c:\Users\63905\Downloads\ungasis\.ungasis\dna\base-genome.md .
    ```
 3. **Step 3:** Copy the matching specialized genome (e.g., HTML):
    ```powershell
-   xcopy /s /e c:\Users\63905\Downloads\ungasis\.ungasis\dna\html-genome.md .
+   copy c:\Users\63905\Downloads\ungasis\.ungasis\dna\html-genome.md .
    ```
 4. **Step 4:** Fill out the placeholders in `QUEST_CONTEXT.md` (project name, description, target user, revenue model, stack).
 5. **Step 5:** Initialize the git repository and make your first commit.

@@ -14,6 +14,13 @@ except AttributeError:
 WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 QUALITY_LOG_PATH = os.path.join(WORKSPACE, ".ungasis", "quality", "quality-log.md")
 
+def validate_quality_log(content):
+    """Check quality-log.md has expected table format."""
+    issues = []
+    if '| Date' not in content and '| date' not in content:
+        issues.append("quality-log.md missing table header row")
+    return issues
+
 def score_file(filepath):
     if not os.path.exists(filepath):
         print(f"File not found: {filepath}")
@@ -234,13 +241,19 @@ def score_file(filepath):
     
     # Append to log
     log_content = ""
+    is_valid = True
     if os.path.exists(QUALITY_LOG_PATH):
         try:
             with open(QUALITY_LOG_PATH, "r", encoding="utf-8", errors="ignore") as f:
                 log_content = f.read()
+            issues = validate_quality_log(log_content)
+            if issues:
+                print(f"Warning: quality-log.md format issue(s) detected: {', '.join(issues)}")
+                is_valid = False
         except Exception:
             pass
-    else:
+
+    if not os.path.exists(QUALITY_LOG_PATH) or not is_valid:
         log_content = (
             "# Quality Log\n\n"
             "History database tracker to monitor quality scores, dimension ratings, and improvement trends.\n\n"

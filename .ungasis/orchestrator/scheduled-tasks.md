@@ -25,6 +25,7 @@ restaurant opens — no chef needs to remember it.
 | 11 | Routing Analysis | Monthly, 1st, 6:15 PM | python scripts/routing-close.py | Track agent performance |
 | 12 | Retro Extraction | Weekly, Sunday, 6:45 PM | python scripts/retro-close.py | Extract learnings |
 | 13 | Energy Analysis | Weekly, Sunday, 7:00 PM | python scripts/energy-close.py | Update energy patterns |
+| 14 | Smoke Tests | Daily, 7:45 AM | python scripts/ungasis.py test | Verify critical files and scripts |
 
 ## How to Set Up in Agent Manager
 1. Open Antigravity Agent Manager (separate window from IDE)

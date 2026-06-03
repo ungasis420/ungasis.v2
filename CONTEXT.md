@@ -482,6 +482,15 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
   Result: 14 confirmed built, 35 false alarms (ZIP issue), 16 genuine issues fixed
 - All genuine risks from audit are now resolved
 - Next: RiftCoach Phase 5.7 OR continue UNGASIS Form 2 dashboard wiring
+## Sprint F21b: Antifragile Hardening + Projects Folder (June 3, 2026)
+- Created projects/ folder: projects/riftcoach/, projects/newmont/
+- Created unified CLI: scripts/ungasis.py (12 commands with aliases)
+- Created smoke tests: scripts/ungasis-test.py (file checks + schema + script runs)
+- Created GraphRAG search script: scripts/graph-search.py (full keyword ranking + community matching)
+- Updated BUILD_STATUS, GEMINI.md, README.md, scheduled-tasks.md
+- UNGASIS now has: single entry point, test suite, project directory, backup command, and GraphRAG librarian
+- This is the FINAL hardening sprint before starting RiftCoach
+- Next: RiftCoach Phase 5.7 kickoff in projects/riftcoach/
 
 ---
 Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
