@@ -1,3 +1,4 @@
+"""retro-close module."""
 # scripts/retro-close.py
 import os
 import sys
@@ -16,6 +17,10 @@ PATTERNS_DIR = os.path.join(WORKSPACE, "knowledge", "wiki", "patterns")
 GOTCHAS_DIR = os.path.join(WORKSPACE, "knowledge", "wiki", "gotchas")
 
 def get_existing_items(directory):
+    """Get existing items.
+
+    Args/Returns if relevant.
+    """
     items = set()
     if os.path.exists(directory):
         for f in os.listdir(directory):
@@ -25,6 +30,10 @@ def get_existing_items(directory):
     return items
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("🔄 Retro Analysis starting...")
     today_str = datetime.now().strftime("%Y-%m-%d")
     

@@ -21,7 +21,7 @@ Agent Receives Task ──> Parse Keywords ──> Match Rules Table ──> Fet
 | "ui", "glassmorphism" | patterns | `patterns/glassmorphism.md` | Ensure premium glassmorphism styling |
 | "scroll", "background" | patterns | `patterns/sky-scroll.md` | Apply standard sky-scroll HSL gradients |
 | "chart", "color" | patterns | `patterns/chart-hex-colors.md` | Use inline hex colors for charting |
-| "api", "keys" | gotchas | `gotchas/groq-key-expiry.md` | Prevent API key rotation crashes |
+| "api", "keys" | gotchas | `gotchas/groq-key-expiry.md` | Prevent API (Application Programming Interface) key rotation crashes |
 | "cline", "overwrite" | gotchas | `gotchas/cline-rewrite.md` | Prevent surgical edit corruption |
 | "db", "storage" | decisions | `decisions/indexeddb-over-supabase.md` | Enforce offline-first IndexedDB usage |
 
@@ -35,6 +35,25 @@ Agent Receives Task ──> Parse Keywords ──> Match Rules Table ──> Fet
 | Output | Destination | Description |
 |---|---|---|
 | Injection list | Context Composer | Array of file paths to load into context |
+
+## Additional Context
+
+### When to Use
+Use auto-inject rules during context composition at task session start to automatically inject relevant wiki guidelines.
+
+### Example
+```markdown
+- [ ] Scan task description for keyword "ui".
+- [ ] Match with `patterns/glassmorphism.md`.
+- [ ] Append the file to the context injection list.
+```
+
+### Tags
+context, injection, auto-inject, wiki
+
+### See also
+- [context-engine/context-budget.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-budget.md)
+- [context-engine/context-loops.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-loops.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

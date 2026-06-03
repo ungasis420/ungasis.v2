@@ -3,7 +3,13 @@ import fs from "fs";
 import { parseMarkdownFile } from "./parse-markdown";
 import { DashboardData } from "./types";
 
-const WORKSPACE_ROOT = path.resolve(process.cwd(), "..");
+let WORKSPACE_ROOT = process.cwd();
+if (!fs.existsSync(path.join(WORKSPACE_ROOT, ".ungasis"))) {
+  const parent = path.resolve(WORKSPACE_ROOT, "..");
+  if (fs.existsSync(path.join(parent, ".ungasis"))) {
+    WORKSPACE_ROOT = parent;
+  }
+}
 
 function getFilePath(relativeToWorkspace: string): string {
   return path.join(WORKSPACE_ROOT, relativeToWorkspace);

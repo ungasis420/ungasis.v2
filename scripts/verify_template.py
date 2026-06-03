@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""verify_template module."""
 import hashlib
 import json
 import re
@@ -99,12 +100,24 @@ IGNORE_HASH = {'outputs/.keep', 'outputs/logs/.keep'}
 TEXT_EXTENSIONS = {'.md', '.txt', '.json', '.py', '.sh', '.yml', '.yaml', '.example', ''}
 
 def rel(path: Path) -> str:
+    """Rel.
+
+    Args/Returns if relevant.
+    """
     return str(path.relative_to(ROOT)).replace('\\', '/')
 
 def sha(path: Path) -> str:
+    """Sha.
+
+    Args/Returns if relevant.
+    """
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 def check_required(errors):
+    """Check required.
+
+    Args/Returns if relevant.
+    """
     for d in REQUIRED_DIRS:
         if not (ROOT / d).is_dir():
             errors.append(f'Missing required directory: {d}')
@@ -113,6 +126,10 @@ def check_required(errors):
             errors.append(f'Missing required file: {f}')
 
 def check_json(errors):
+    """Check json.
+
+    Args/Returns if relevant.
+    """
     for f in ['.claude/settings.example.json', '.claude/settings.local.example.json', 'repo-template.json']:
         p = ROOT / f
         if p.exists():
@@ -122,6 +139,10 @@ def check_json(errors):
                 errors.append(f'Invalid JSON in {f}: {e}')
 
 def check_skills(errors):
+    """Check skills.
+
+    Args/Returns if relevant.
+    """
     skills_dir = ROOT / '.claude' / 'skills'
     skills = sorted(p for p in skills_dir.iterdir() if p.is_dir())
     found = {p.name for p in skills}
@@ -144,6 +165,10 @@ def check_skills(errors):
             errors.append(f'SKILL.md missing YAML description: {rel(skill)}')
 
 def check_agents(errors):
+    """Check agents.
+
+    Args/Returns if relevant.
+    """
     names = {}
     agents_dir = ROOT / '.claude' / 'agents'
     for p in agents_dir.glob('*.md'):
@@ -160,6 +185,10 @@ def check_agents(errors):
         errors.append('Expected at least 18 Claude agents after v5 merge')
 
 def check_command_skill_collisions(errors):
+    """Check command skill collisions.
+
+    Args/Returns if relevant.
+    """
     commands_dir = ROOT / '.claude' / 'commands'
     skills_dir = ROOT / '.claude' / 'skills'
     command_names = {p.stem for p in commands_dir.glob('*.md')}
@@ -169,12 +198,20 @@ def check_command_skill_collisions(errors):
         errors.append('Command/skill name collision found: ' + ', '.join(collisions))
 
 def check_no_legacy_roots(errors):
+    """Check no legacy roots.
+
+    Args/Returns if relevant.
+    """
     if (ROOT / 'commands').exists():
         errors.append('Legacy root commands/ directory exists; use .claude/commands instead')
     if (ROOT / 'skills').exists():
         errors.append('Legacy root skills/ directory exists; use .claude/skills instead')
 
 def check_duplicates(errors):
+    """Check duplicates.
+
+    Args/Returns if relevant.
+    """
     hashes = {}
     for p in ROOT.rglob('*'):
         if not p.is_file():
@@ -191,6 +228,10 @@ def check_duplicates(errors):
         errors.append('Exact duplicate file content found: ' + '; '.join(', '.join(v) for v in dupes[:10]))
 
 def check_secret_patterns(errors):
+    """Check secret patterns.
+
+    Args/Returns if relevant.
+    """
     for p in ROOT.rglob('*'):
         if not p.is_file():
             continue
@@ -209,6 +250,10 @@ def check_secret_patterns(errors):
                 break
 
 def check_v5_keywords(errors):
+    """Check v5 keywords.
+
+    Args/Returns if relevant.
+    """
     targets = {
         'AGENTS.md': ['Think Before Coding', 'Simplicity First', 'Surgical Changes', 'Goal-Driven Execution', 'Fail-Loud Rule'],
         'docs/CONTEXT_ENGINEERING_DISCIPLINE.md': ['Acquire', 'Curate', 'Compress', 'Persist', 'Shed'],
@@ -222,6 +267,10 @@ def check_v5_keywords(errors):
                 errors.append(f'Missing v5 keyword {word!r} in {relpath}')
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     errors = []
     check_required(errors)
     check_json(errors)

@@ -12,7 +12,7 @@ ROOT_DIR = os.path.dirname(SCRIPT_DIR)
 COMMANDS = {
     'pulse': {'script': 'daily-pulse.py', 'description': 'Generate morning situation report', 'alias': ['p', 'morning']},
     'warn': {'script': 'warn-check.py', 'description': 'Check all warning conditions', 'alias': ['w', 'warnings', 'check']},
-    'score': {'script': 'quality-score.py', 'description': 'Score a markdown file (1-10)', 'alias': ['q', 'quality']},
+    'score': {'script': 'quality-score.py', 'description': 'Score a markdown file (1-10) or batch mode', 'alias': ['q', 'quality']},
     'sweep': {'script': 'tag_sweep.py', 'description': 'Scan for TODOs and stale files', 'alias': ['s', 'tags']},
     'graph': {'script': 'graph-search.py', 'description': 'Search the knowledge graph', 'alias': ['g', 'search', 'find']},
     'research': {
@@ -37,6 +37,10 @@ COMMANDS = {
 }
 
 def run_script(script_name, extra_args=None):
+    """Run script.
+
+    Args/Returns if relevant.
+    """
     script_path = os.path.join(SCRIPT_DIR, script_name)
     if not os.path.exists(script_path):
         print(f"Error: Script not found: {script_path}")
@@ -46,6 +50,10 @@ def run_script(script_name, extra_args=None):
     return subprocess.run(cmd, cwd=ROOT_DIR).returncode
 
 def cmd_health(args):
+    """Cmd health.
+
+    Args/Returns if relevant.
+    """
     print("=" * 50 + "\n  UNGASIS Health Check\n" + "=" * 50 + "\n")
     run_script('daily-pulse.py')
     print()
@@ -63,6 +71,10 @@ def cmd_health(args):
     return 0
 
 def cmd_test(args):
+    """Cmd test.
+
+    Args/Returns if relevant.
+    """
     print("UNGASIS Smoke Tests\n" + "=" * 40)
     scripts_to_test = ['daily-pulse.py', 'warn-check.py', 'quality-score.py']
     passed = failed = 0
@@ -82,10 +94,30 @@ def cmd_test(args):
                 print(f"  ERROR: {s} ({e})"); failed += 1
         else:
             print(f"  MISSING: {s}"); failed += 1
+    # Run unit tests
+    test_path = os.path.join(SCRIPT_DIR, 'tests', 'test_parsers.py')
+    if os.path.exists(test_path):
+        print("\n--- Unit Tests ---")
+        result = subprocess.run(
+            [sys.executable, '-m', 'unittest', test_path, '-v'],
+            capture_output=True, text=True, timeout=30,
+            cwd=ROOT_DIR, env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
+        )
+        if result.stdout:
+            print(result.stdout)
+        if result.stderr:
+            print(result.stderr)
+        if result.returncode != 0:
+            failed += 1
+
     print("=" * 40 + f"\nResults: {passed} passed, {failed} failed, {passed + failed} total")
     return 0 if failed == 0 else 1
 
 def cmd_backup(args):
+    """Cmd backup.
+
+    Args/Returns if relevant.
+    """
     import zipfile
     from datetime import datetime
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -113,6 +145,10 @@ def cmd_backup(args):
     return 0
 
 def cmd_version(args):
+    """Cmd version.
+
+    Args/Returns if relevant.
+    """
     context_path = os.path.join(ROOT_DIR, 'CONTEXT.md')
     sprint_count = 0
     if os.path.exists(context_path):
@@ -125,6 +161,10 @@ def cmd_version(args):
     return 0
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     if len(sys.argv) < 2:
         print("UNGASIS CLI v1.0\nUsage: python scripts/ungasis.py [command] [args]\n\nCommands:")
         for name, info in COMMANDS.items():

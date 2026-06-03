@@ -1,3 +1,4 @@
+"""energy-close module."""
 # scripts/energy-close.py
 import os
 import sys
@@ -15,6 +16,10 @@ TIME_LOG_PATH = os.path.join(WORKSPACE, ".ungasis", "tracking", "time-log.md")
 ENERGY_PATTERNS_PATH = os.path.join(WORKSPACE, ".ungasis", "project-director", "energy", "energy-patterns.md")
 
 def parse_time(time_str):
+    """Parse time.
+
+    Args/Returns if relevant.
+    """
     time_str = time_str.strip()
     for fmt in ("%I:%M %p", "%H:%M"):
         try:
@@ -24,6 +29,10 @@ def parse_time(time_str):
     return None
 
 def parse_duration(dur_str):
+    """Parse duration.
+
+    Args/Returns if relevant.
+    """
     dur_str = dur_str.strip().lower()
     if not dur_str or dur_str == "—" or dur_str == "-":
         return 0.0
@@ -42,6 +51,10 @@ def parse_duration(dur_str):
         return 0.0
 
 def get_time_block(t):
+    """Get time block.
+
+    Args/Returns if relevant.
+    """
     if 6 <= t.hour < 12:
         return "Morning (6-12)"
     elif 12 <= t.hour < 18:
@@ -52,6 +65,10 @@ def get_time_block(t):
         return "Night (0-6)"
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("⚡ Energy Analysis starting...")
     today_str = datetime.now().strftime("%Y-%m-%d")
     

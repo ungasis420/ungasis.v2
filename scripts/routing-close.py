@@ -1,3 +1,4 @@
+"""routing-close module."""
 # scripts/routing-close.py
 import os
 import sys
@@ -13,6 +14,10 @@ WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ROUTER_LOG_PATH = os.path.join(WORKSPACE, ".ungasis", "router", "router-log.md")
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("🔀 Routing Analysis starting...")
     today_str = datetime.now().strftime("%Y-%m-%d")
     

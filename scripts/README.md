@@ -22,6 +22,8 @@ These scripts make JARVIS actually DO things. Run them manually or set up as Sch
 | `routing-close.py` | Track routing performance | `python scripts/routing-close.py` | Terminal + Output |
 | `retro-close.py` | Extract learnings from retrospectives | `python scripts/retro-close.py` | Terminal + Output |
 | `energy-close.py` | Analyze time data vs energy patterns | `python scripts/energy-close.py` | Terminal + Output |
+| `graphify-providers.py` | Register backup AI providers | `python scripts/graphify-providers.py` | Terminal Output |
+| `tests/test_parsers.py` | Parser unit tests | `python -m unittest scripts/tests/test_parsers.py` | Test Results |
 
 ## Quick Reference
 

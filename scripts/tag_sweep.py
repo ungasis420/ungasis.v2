@@ -1,3 +1,4 @@
+"""tag_sweep module."""
 import os
 import re
 from datetime import datetime
@@ -12,6 +13,10 @@ EXCLUDE_DIRS = {"archive", "source-files", ".git", "node_modules"}
 EXCLUDE_FILES = {"commit_msg.txt", "commit_helper.py", "commit.py", "extract.py"}
 
 def run_sweep():
+    """Run sweep.
+
+    Args/Returns if relevant.
+    """
     print("Starting Auto-Tagger Sweep...")
     findings = []
     

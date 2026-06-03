@@ -27,5 +27,11 @@ History database tracker for all generated warning events, their severity, respo
 
 | 2026-06-03 | warning-log.md has unresolved entries | 🟢 INFO | 1 unresolved warnings | active |
 
+| 2026-06-03 | File size exceeds 200 lines | 🟡 WARNING | .ungasis/quality/quality-log.md | active |
+
+| 2026-06-03 | warning-log.md has unresolved entries | 🟢 INFO | 2 unresolved warnings | active |
+
+| 2026-06-03 | CONTEXT.md >500 lines | 🟡 WARNING | CONTEXT.md has 517 lines | active |
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

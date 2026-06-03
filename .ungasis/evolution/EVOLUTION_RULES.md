@@ -31,7 +31,7 @@ EVERY SESSION:
 | Model success rate | Completed without retry? | Layer 4 (model scoring) |
 | Context hit rate | Did Graphify return useful nodes? | Layer 6 (graph tuning) |
 | Cache hit rate | How often was semantic cache useful? | Layer 10 (cache tuning) |
-| Error rate | How many tool calls failed? | Layer 14 (MCP optimization) |
+| Error rate | How many tool calls failed? | Layer 14 (MCP (Model Context Protocol) optimization) |
 | Time to complete | Wall clock per task | Overall efficiency |
 | Human corrections | How often did Mel say "redo this"? | Rule quality scoring |
 
@@ -82,6 +82,25 @@ When the Scout Engine discovers a HIGH-relevance item:
 5. Implement in next available sprint (follows normal pipeline)
 
 Scout discoveries that affect `MODEL_ROUTING.md` or token budgets require human approval per the Adaptation Approval Levels table.
+
+## Additional Context
+
+### When to Use
+Use evolution rules to evaluate session metrics and adapt system parameters automatically.
+
+### Example
+```markdown
+- [ ] Measure error rate: 5 fails.
+- [ ] Check if MCP (Model Context Protocol) optimization is needed.
+- [ ] Suggest routing adaptation to Groq.
+```
+
+### Tags
+evolution, self-adaptation, metrics, optimization
+
+### See also
+- [evolution/metrics-pipeline.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/metrics-pipeline.md)
+- [evolution/EVOLUTION_LOCK.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/EVOLUTION_LOCK.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

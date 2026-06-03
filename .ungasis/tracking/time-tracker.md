@@ -22,5 +22,23 @@ Track active developer hours spent per project and session to evaluate team velo
 - **Energy Patterns**: Correlate session times with peak hours recorded in `energy-patterns.md`.
 - **Momentum Tracker**: Fuel velocity metrics shown on the dashboard.
 
+## Additional Context
+
+### When to Use
+Use time tracker rules at the start and end of each session to keep accurate developer metrics.
+
+### Example
+```markdown
+- [ ] Session start: Log 2026-06-03 12:00 PM.
+- [ ] Session end: Log 2026-06-03 02:00 PM (duration 2.0h).
+```
+
+### Tags
+time-tracking, velocity, metrics, productivity
+
+### See also
+- [tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+- [okr/okr-framework.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/okr/okr-framework.md)
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

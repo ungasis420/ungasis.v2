@@ -1,3 +1,4 @@
+"""research-hn module."""
 # scripts/research-hn.py
 import os
 import sys
@@ -21,6 +22,10 @@ KEYWORDS = [
 ]
 
 def fetch_json(url):
+    """Fetch json.
+
+    Args/Returns if relevant.
+    """
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     try:
         with urllib.request.urlopen(req, timeout=10) as response:
@@ -30,6 +35,10 @@ def fetch_json(url):
         return None
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("🔭 HackerNews Research starting...")
     today_str = datetime.now().strftime("%Y-%m-%d")
     

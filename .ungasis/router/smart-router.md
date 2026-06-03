@@ -1,10 +1,10 @@
 # AI Smart Router
 
 ## Purpose
-Auto-classify incoming user requests and operational tasks to direct them to the appropriate AI agent or subagent chain.
+Auto-classify requests and tasks to direct them to the appropriate AI agent or subagent chain.
 
 ## How It Works
-The Smart Router runs automatically at the start of every task session, evaluating the task description on three dimensions:
+The Smart Router runs at task start. It evaluates the task description on three dimensions:
 
 ### 1. Task Type Detection
 Based on keyword matching within the task description:
@@ -54,6 +54,25 @@ Confidence: [HIGH / MEDIUM / LOW]
 2. **Ambiguity Resolution**: If classification confidence is `LOW`, escalate to the `@commander` or user for manual routing.
 3. **Precedence**: Apply the first matching rule in the task type detection list.
 4. **Log Registry**: Every routing decision must be appended to `router-log.md`.
+
+## Additional Context
+
+### When to Use
+Use the Smart Router to classify user requests and determine the agent execution pipeline.
+
+### Example
+```markdown
+- [ ] Read task: "Fix a bug in scripts/warn-check.py".
+- [ ] Detect keyword: "bug".
+- [ ] Route task: Surgeon (Cline) -> @quality-auditor.
+```
+
+### Tags
+routing, classification, automation, agents
+
+### See also
+- [decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
+- [bus/bus-manifest.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/bus/bus-manifest.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

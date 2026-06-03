@@ -1,3 +1,4 @@
+"""graph-search module."""
 import sys
 import os
 import json
@@ -16,6 +17,10 @@ LABELS_PATH = os.path.join(ROOT_DIR, 'graphify-out', '.graphify_labels.json')
 STOP_WORDS = {"the", "a", "an", "is", "are", "was", "were", "in", "on", "at", "to", "for", "of", "and", "or", "with", "how", "what", "which", "that", "this", "does", "do"}
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     if len(sys.argv) < 2:
         print("Usage: python scripts/graph-search.py \"[query]\"")
         print("Example: python scripts/graph-search.py \"token efficiency\"")

@@ -1,3 +1,4 @@
+"""research-github module."""
 # scripts/research-github.py
 import os
 import sys
@@ -16,6 +17,10 @@ WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 INBOX_PATH = os.path.join(WORKSPACE, ".ungasis", "scout", "research-inbox.md")
 
 def fetch_json(url):
+    """Fetch json.
+
+    Args/Returns if relevant.
+    """
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
     try:
         with urllib.request.urlopen(req, timeout=10) as response:
@@ -31,6 +36,10 @@ def fetch_json(url):
         return None
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("🔭 GitHub Research starting...")
     today = datetime.now()
     seven_days_ago = (today - timedelta(days=7)).strftime("%Y-%m-%d")

@@ -1,7 +1,7 @@
 # Event Framework
 
 ## Purpose
-Define how asynchronous events flow through UNGASIS OS to enable coordination between independent agents and automated scripts.
+Define how asynchronous events flow to coordinate independent agents and automated scripts.
 
 ## How It Works
 - **Event**: A record indicating something occurred (e.g., file creation, sprint completion, validation check).
@@ -26,6 +26,28 @@ Define how asynchronous events flow through UNGASIS OS to enable coordination be
 | `okr-at-risk` | okr-rules | Commander | Escalate to Mel for strategic review |
 | `session-start` | daily-pulse.py | All | Load active context and refresh stats |
 | `git-commit` | Git Hook | Watchdog | Assess if graph re-indexing is required |
+
+## Additional Context
+
+### When to Use
+Use the event framework rules when defining new async event types or modifying coordination routes.
+
+### Example
+```json
+{
+  "type": "sprint-complete",
+  "source": "Builder",
+  "timestamp": "2026-06-03T12:00:00",
+  "data": { "sprint": "F21c" }
+}
+```
+
+### Tags
+events, async, messages, framework
+
+### See also
+- [bus/bus-manifest.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/bus/bus-manifest.md)
+- [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

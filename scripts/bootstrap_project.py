@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""bootstrap_project module."""
 import argparse
 from pathlib import Path
 
@@ -16,11 +17,19 @@ REPLACEMENTS = {
 }
 
 def should_edit(path: Path) -> bool:
+    """Should edit.
+
+    Args/Returns if relevant.
+    """
     if any(part in {'.git', 'node_modules', '.venv', '__pycache__'} for part in path.parts):
         return False
     return path.is_file() and (path.suffix in TEXT_EXTS or path.name in {'Makefile', '.gitignore'})
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     parser = argparse.ArgumentParser(description='Replace common placeholders in this project template.')
     parser.add_argument('--name', required=True, help='Project name')
     parser.add_argument('--owner', required=True, help='Project owner')

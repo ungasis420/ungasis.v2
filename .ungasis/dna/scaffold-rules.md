@@ -5,7 +5,7 @@ This file explains how to blend different genomes to spin up a new project insta
 ## COMBINATION RULES
 1. **Always Base Genome First:** You must always load and copy the `base-genome.md` contents first.
 2. **Add One Project Genome:** Add exactly one specialized genome (Next.js, HTML, or Power BI) depending on the build type.
-3. **Never Mix Project Genomes:** Never mix React/Next.js files with static HTML guidelines, or Power BI DAX code in a Next.js environment. Keep genomes isolated.
+3. **Never Mix Project Genomes:** Never mix React/Next.js files with static HTML guidelines. Also avoid Power BI DAX code in a Next.js environment. Keep genomes isolated.
 
 ## GENOME MATRIX TABLE
 
@@ -33,7 +33,7 @@ Follow these 7 steps to create a new project folder and launch development in un
    ```powershell
    copy c:\Users\63905\Downloads\ungasis\.ungasis\dna\html-genome.md .
    ```
-4. **Step 4:** Fill out the placeholders in `QUEST_CONTEXT.md` (project name, description, target user, revenue model, stack).
+4. **Step 4:** Fill out the placeholders in `QUEST_CONTEXT.md`. Include project name, stack, and revenue model.
 5. **Step 5:** Initialize the git repository and make your first commit.
    ```powershell
    git init
@@ -47,7 +47,26 @@ Follow these 7 steps to create a new project folder and launch development in un
 7. **Step 7:** Open your AI chat interface, paste the updated `SESSION_STARTER.md` file, and begin your coding quest.
 
 ## WHEN TO CREATE A NEW GENOME
-- If you notice you are using the same custom stack or configuration patterns 3 or more times across different projects, extract those files into a new specialized genome (e.g., `react-native-genome.md`).
+- If you use the same stack or patterns 3+ times across projects, extract them. Save them in a new specialized genome (e.g. `react-native-genome.md`).
+
+## Additional Context
+
+### When to Use
+Use scaffold rules when initializing new project folders and importing DNA genomes.
+
+### Example
+```markdown
+- [ ] Initialize `projects/riftcoach` folder.
+- [ ] Load `base-genome.md` and `nextjs-genome.md`.
+- [ ] Complete `QUEST_CONTEXT.md` parameters.
+```
+
+### Tags
+scaffold, dna, genomes, boilerplate
+
+### See also
+- [dna/base-genome.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/dna/base-genome.md)
+- [dna/nextjs-genome.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/dna/nextjs-genome.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -1,7 +1,7 @@
 # Resource Rules
 
 ## Purpose
-Define the protocols for key rotation, API error recovery, and model fallbacks when limits or failures are hit.
+Define the protocols for key rotation, API (Application Programming Interface) error recovery, and model fallbacks when limits or failures are hit.
 
 ## How It Works
 ```
@@ -38,6 +38,25 @@ API Connection Fails ──> Check Failure Type ──> Apply Failover Rule ─�
 | Output | Destination | Description |
 |---|---|---|
 | Failover Command | Context Composer | Route connection to alternative resource |
+
+## Additional Context
+
+### When to Use
+Use resource rules to manage API key limit failures and execute fallback model routing.
+
+### Example
+```markdown
+- [ ] Primary model Together Llama returns 504 timeout.
+- [ ] Fall back to Groq Llama target.
+- [ ] Redirect the active text generation request.
+```
+
+### Tags
+resources, failover, key-rotation, rate-limits
+
+### See also
+- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+- [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

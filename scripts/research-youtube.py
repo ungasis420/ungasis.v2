@@ -1,3 +1,4 @@
+"""research-youtube module."""
 # scripts/research-youtube.py
 import os
 import sys
@@ -16,6 +17,10 @@ INBOX_PATH = os.path.join(WORKSPACE, ".ungasis", "scout", "research-inbox.md")
 SOURCES_PATH = os.path.join(WORKSPACE, ".ungasis", "scout", "research-sources.md")
 
 def parse_date(date_str):
+    """Parse date.
+
+    Args/Returns if relevant.
+    """
     if not date_str:
         return None
     date_str = date_str.strip()
@@ -42,21 +47,37 @@ def parse_date(date_str):
     return None
 
 def find_elements_by_tag(root, tag_suffix):
+    """Find elements by tag.
+
+    Args/Returns if relevant.
+    """
     return [el for el in root.iter() if el.tag.endswith(tag_suffix)]
 
 def get_child_text(el, tag_suffix):
+    """Get child text.
+
+    Args/Returns if relevant.
+    """
     for child in el:
         if child.tag.endswith(tag_suffix):
             return (child.text or "").strip()
     return ""
 
 def get_child_attr(el, tag_suffix, attr_name):
+    """Get child attr.
+
+    Args/Returns if relevant.
+    """
     for child in el:
         if child.tag.endswith(tag_suffix):
             return child.attrib.get(attr_name, "")
     return ""
 
 def parse_sources():
+    """Parse sources.
+
+    Args/Returns if relevant.
+    """
     channels = []
     if not os.path.exists(SOURCES_PATH):
         print(f"Sources file not found: {SOURCES_PATH}.")
@@ -80,6 +101,10 @@ def parse_sources():
     return channels
 
 def fetch_youtube_videos(channel_name, channel_id):
+    """Fetch youtube videos.
+
+    Args/Returns if relevant.
+    """
     print(f"Fetching YouTube videos for: {channel_name}...")
     url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -121,6 +146,10 @@ def fetch_youtube_videos(channel_name, channel_id):
     return videos
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("🔭 YouTube Research starting...")
     today = datetime.now()
     seven_days_ago = today - timedelta(days=7)

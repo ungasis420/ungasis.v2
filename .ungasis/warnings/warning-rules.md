@@ -18,7 +18,7 @@ System Metrics ──> Evaluated by Warning Rules ──> Severity Set 🔴🟡�
 | Condition | Severity | Action |
 |---|---|---|
 | Stale file >90 days without updates | 🟡 Warning | Run tag-sweep on target directory |
-| API key expires <7 days | 🔴 Critical | Notify human to rotate keys immediately |
+| API (Application Programming Interface) key expires <7 days | 🔴 Critical | Notify human to rotate keys immediately |
 | queue.md has >20 pending tasks | 🟡 Warning | Suggest task decomposition or deferral |
 | Workspace context >70% capacity | 🔴 Critical | Run Context Decay compression protocol |
 | 3 audit failures in a row | 🔴 Critical | Lock session and trigger Rollback Engine |
@@ -36,6 +36,25 @@ System Metrics ──> Evaluated by Warning Rules ──> Severity Set 🔴🟡�
 | Output | Destination | Description |
 |---|---|---|
 | `warning_triggered` | Event Bus | warning event payload containing severity |
+
+## Additional Context
+
+### When to Use
+Use warning rules to monitor system metrics and catch potential errors before they cause session failure.
+
+### Example
+```markdown
+- [ ] Scan workspace files for missing footers.
+- [ ] Measure context window utilization (e.g. 75%).
+- [ ] Action: Lock session and notify human.
+```
+
+### Tags
+warnings, error-prevention, health-check
+
+### See also
+- [quality/quality-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/quality/quality-rules.md)
+- [tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

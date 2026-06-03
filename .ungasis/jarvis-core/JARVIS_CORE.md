@@ -43,5 +43,24 @@ User Prompt ──> Apply JARVIS Voice ──> Filter through 6 Principles ─�
 |---|---|---|
 | `jarvis_response` | User Interface | Formatted response matching the personality and voice |
 
+## Additional Context
+
+### When to Use
+Apply this core framework to define the identity, tone, and principles of the AI assistant across all turns.
+
+### Example
+```markdown
+- [ ] Proactively check for uncommitted files.
+- [ ] Format findings using a markdown table.
+- [ ] Frame explanations using kitchen analogies.
+```
+
+### Tags
+core, identity, voice-guidelines, principles
+
+### See also
+- [memory/memory-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/memory/memory-rules.md)
+- [decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

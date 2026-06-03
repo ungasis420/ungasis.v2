@@ -26,6 +26,10 @@ SECRET_HINTS = re.compile(r'(?i)(api[_-]?key|secret|token|password|private key|c
 
 
 def read_section(rel: str, limit: int = 1800) -> str:
+    """Read section.
+
+    Args/Returns if relevant.
+    """
     path = ROOT / rel
     if not path.exists():
         return f'Not found: {rel}'
@@ -38,6 +42,10 @@ def read_section(rel: str, limit: int = 1800) -> str:
 
 
 def main() -> None:
+    """Main.
+
+    Args/Returns if relevant.
+    """
     parts = [
         '# LLM Context Pack',
         '',

@@ -10,11 +10,19 @@ SCHEMA = KNOWLEDGE / 'schema'
 INDEX = KNOWLEDGE / 'index.md'
 
 def list_md(folder: Path):
+    """List md.
+
+    Args/Returns if relevant.
+    """
     if not folder.exists():
         return []
     return sorted(p.relative_to(ROOT).as_posix() for p in folder.rglob('*.md'))
 
 def section(title: str, items):
+    """Section.
+
+    Args/Returns if relevant.
+    """
     lines = [f'## {title}', '']
     if items:
         lines.extend(f'- `{item}`' for item in items)
@@ -24,6 +32,10 @@ def section(title: str, items):
     return '\n'.join(lines)
 
 def main() -> None:
+    """Main.
+
+    Args/Returns if relevant.
+    """
     KNOWLEDGE.mkdir(exist_ok=True)
     RAW.mkdir(exist_ok=True)
     WIKI.mkdir(exist_ok=True)

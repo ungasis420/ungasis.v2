@@ -1,3 +1,4 @@
+"""quality-close module."""
 # scripts/quality-close.py
 import os
 import sys
@@ -14,6 +15,10 @@ WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 QUALITY_LOG_PATH = os.path.join(WORKSPACE, ".ungasis", "quality", "quality-log.md")
 
 def guess_prompt_for_file(filepath):
+    """Guess prompt for file.
+
+    Args/Returns if relevant.
+    """
     fp = filepath.lower().replace("\\", "/")
     if "rules" in fp:
         return "delegate-build"
@@ -30,6 +35,10 @@ def guess_prompt_for_file(filepath):
     return "kickoff-A"
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("📈 Quality Analysis starting...")
     today = datetime.now()
     today_str = today.strftime("%Y-%m-%d")

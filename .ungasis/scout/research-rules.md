@@ -28,5 +28,24 @@ Track which sources produce the most RELEVANT discoveries.
 Monthly: if a source produces 0 RELEVANT in 30 days → demote to LOW priority.
 If a source produces 3+ RELEVANT in 30 days → promote to HIGH priority.
 
+## Additional Context
+
+### When to Use
+Use research evaluation rules when reviewing discoveries auto-fetched by research scripts.
+
+### Example
+```markdown
+- [ ] Read raw HN discovery: "Paseo coding agent".
+- [ ] Evaluate Stack Match (Next.js/React/TS/Python).
+- [ ] If score is 8.5, categorize as RELEVANT and write to wiki.
+```
+
+### Tags
+scout, research, evaluation, discoveries
+
+### See also
+- [scout/research-sources.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/research-sources.md)
+- [scout/tools-discovered.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/tools-discovered.md)
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

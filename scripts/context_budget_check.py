@@ -18,9 +18,17 @@ BUDGETS = {
 }
 
 def estimate_tokens(text: str) -> int:
+    """Estimate tokens.
+
+    Args/Returns if relevant.
+    """
     return int(len(text.split()) * 1.35)
 
 def main() -> None:
+    """Main.
+
+    Args/Returns if relevant.
+    """
     total = 0
     print('Context budget check')
     for rel in WATCH:

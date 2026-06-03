@@ -135,6 +135,14 @@ for Mel to specify them in every prompt.
 These rules are checked automatically by the Builder at task start.
 If multiple rules match, apply ALL matching rules in order.
 
+## Session Start Protocol
+At the START of every /goal command, the Builder:
+1. Reads the task description
+2. Checks smart-router.md keyword table for task type
+3. Logs classification to router-log.md
+4. Follows the agent chain
+This is AUTOMATIC — Mel does not need to specify.
+
 ## Projects Directory
 All apps are built inside projects/. Each project is a self-contained
 app that inherits UNGASIS context. Use /scaffold to create new projects.

@@ -69,9 +69,9 @@ Method: Reconciliation audit cross-referencing ChatGPT Enterprise gap audit
 
 | Component | Path | Status | Notes |
 |-----------|------|:------:|-------|
-| App scaffold | dashboard/ | 🟡 | Next.js 15 skeleton |
-| Data parser | dashboard/src/lib/ | 🟡 | parse-markdown.ts, ungasis-data.ts, types.ts |
-| Main page | dashboard/src/app/page.tsx | 🟡 | Mock data — needs getDashboardData() wiring |
+| App scaffold | dashboard/ | ✅ | Next.js 15 app |
+| Data parser | dashboard/src/lib/ | ✅ | parse-markdown.ts, ungasis-data.ts, types.ts |
+| Main page | dashboard/src/app/page.tsx | ✅ | Wired to real data from getDashboardData() |
 | Quest routes | dashboard/src/app/quest/ | ⚫ | Deferred |
 | Codex route | dashboard/src/app/codex/ | ⚫ | Deferred |
 | Forge route | dashboard/src/app/forge/ | ⚫ | Deferred |
@@ -79,7 +79,7 @@ Method: Reconciliation audit cross-referencing ChatGPT Enterprise gap audit
 | AI API route | dashboard/src/app/api/ | ⚫ | Deferred |
 | Additional libs | package.json | ⚫ | Zustand, Framer Motion, shadcn — add when needed |
 | Tests/lint | package.json | ⚫ | Deferred |
-| Lockfile | package-lock.json | ⚫ | Run npm install to generate |
+| Lockfile | package-lock.json | ✅ | package-lock.json created and added to git |
 
 ## CLI
 
@@ -115,6 +115,8 @@ Method: Reconciliation audit cross-referencing ChatGPT Enterprise gap audit
 | Routing Close | scripts/routing-close.py | ✅ | Monthly |
 | Retro Close | scripts/retro-close.py | ✅ | Weekly Sunday |
 | Energy Close | scripts/energy-close.py | ✅ | Weekly Sunday |
+| Graphify providers | scripts/graphify-providers.py | ✅ | Register alternative AI backends |
+| Unit Tests | scripts/tests/test_parsers.py | ✅ | Unit tests for parser functions |
 
 ## Security
 
@@ -124,6 +126,7 @@ Method: Reconciliation audit cross-referencing ChatGPT Enterprise gap audit
 | .env.example exists | ✅ | Template with placeholders |
 | No secrets in tracked files | ✅ | Reviewed and redacted |
 | git archive for exports | ✅ | Use instead of Windows ZIP |
+| Graphify providers | ✅ | 4 providers registered (Groq, OpenRouter, Together, Cerebras) |
 
 ## Infrastructure (Deferred)
 

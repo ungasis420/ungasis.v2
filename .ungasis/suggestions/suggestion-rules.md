@@ -34,5 +34,24 @@ System Triggers ──> Match Suggestion Rule ──> Format Suggestion 💡 ─
 |---|---|---|
 | `suggestion_emitted` | Event Bus | Suggestion payload sent to the workspace CLI / display |
 
+## Additional Context
+
+### When to Use
+Use suggestion rules to format and publish proactive recommendations to the conductor.
+
+### Example
+```markdown
+- [ ] Parse idle event (>10 minutes).
+- [ ] Format recommendation: "💡 SUGGESTION: Take a break — Idle for 10 minutes — XS".
+- [ ] Emit suggestion event.
+```
+
+### Tags
+suggestions, conductor, productivity, recommendations
+
+### See also
+- [tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+- [orchestrator/planner-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/orchestrator/planner-rules.md)
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

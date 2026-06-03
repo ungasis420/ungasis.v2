@@ -7,12 +7,20 @@ import subprocess
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def test_file_exists(path, name):
+    """Test file exists.
+
+    Args/Returns if relevant.
+    """
     full = os.path.join(ROOT, path)
     if os.path.exists(full):
         return True, f"{name}: exists"
     return False, f"{name}: MISSING at {path}"
 
 def test_file_has_footer(path, name):
+    """Test file has footer.
+
+    Args/Returns if relevant.
+    """
     full = os.path.join(ROOT, path)
     if not os.path.exists(full):
         return False, f"{name}: file missing"
@@ -23,6 +31,10 @@ def test_file_has_footer(path, name):
     return False, f"{name}: MISSING staleness footer"
 
 def test_md_has_table(path, name):
+    """Test md has table.
+
+    Args/Returns if relevant.
+    """
     full = os.path.join(ROOT, path)
     if not os.path.exists(full):
         return False, f"{name}: file missing"
@@ -33,6 +45,10 @@ def test_md_has_table(path, name):
     return False, f"{name}: no table found"
 
 def test_queue_format():
+    """Test queue format.
+
+    Args/Returns if relevant.
+    """
     path = os.path.join(ROOT, '.ungasis/orchestrator/queue.md')
     if not os.path.exists(path):
         return False, "queue.md: MISSING"
@@ -45,6 +61,10 @@ def test_queue_format():
     return True, f"queue.md: {pending} pending, {completed} completed"
 
 def test_script_runs(script_name):
+    """Test script runs.
+
+    Args/Returns if relevant.
+    """
     path = os.path.join(ROOT, 'scripts', script_name)
     if not os.path.exists(path):
         return False, f"{script_name}: MISSING"
@@ -63,6 +83,10 @@ def test_script_runs(script_name):
         return False, f"{script_name}: ERROR ({e})"
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("UNGASIS Smoke Tests\n" + "=" * 50)
     tests = []
     critical = [

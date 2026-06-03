@@ -1,3 +1,4 @@
+"""feedback-close module."""
 # scripts/feedback-close.py
 import os
 import sys
@@ -14,6 +15,10 @@ WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 TRACKER_PATH = os.path.join(WORKSPACE, ".ungasis", "tracking", "feedback-tracker.md")
 
 def main():
+    """Main.
+
+    Args/Returns if relevant.
+    """
     print("📊 Feedback Analysis starting...")
     today_str = datetime.now().strftime("%Y-%m-%d")
     current_month = datetime.now().strftime("%B %Y")

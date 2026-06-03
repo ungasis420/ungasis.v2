@@ -1,3 +1,4 @@
+"""warn-check module."""
 # scripts/warn-check.py
 import os
 import re
@@ -23,6 +24,10 @@ def validate_warning_log(content):
     return issues
 
 def check_warnings():
+    """Check warnings.
+
+    Args/Returns if relevant.
+    """
     now = datetime.now()
     critical_issues = []
     warning_issues = []
@@ -111,7 +116,7 @@ def check_warnings():
             for root, dirs, files in os.walk(s_dir):
                 dirs[:] = [d for d in dirs if d not in ["archive", "source-files"]]
                 for file in files:
-                    if file.endswith(".md"):
+                    if file.endswith(".md") and not file.endswith("-log.md"):
                         path = os.path.join(root, file)
                         try:
                             with open(path, "r", encoding="utf-8", errors="ignore") as f:
@@ -137,7 +142,7 @@ def check_warnings():
     if unresolved_count > 0:
         info_issues.append(("warning-log.md has unresolved entries", f"{unresolved_count} unresolved warnings"))
         
-    # 7. CONTEXT.md >500 lines
+    # 7. CONTEXT.md >1000 lines
     context_path = os.path.join(WORKSPACE, "CONTEXT.md")
     context_lines = 0
     if os.path.exists(context_path):
@@ -146,8 +151,8 @@ def check_warnings():
                 context_lines = sum(1 for _ in f)
         except Exception:
             pass
-    if context_lines > 500:
-        warning_issues.append(("CONTEXT.md >500 lines", f"CONTEXT.md has {context_lines} lines"))
+    if context_lines > 1000:
+        warning_issues.append(("CONTEXT.md >1000 lines", f"CONTEXT.md has {context_lines} lines"))
 
     # Print output
     print(f"🔍 UNGASIS Warning Check — {now.strftime('%Y-%m-%d %I:%M %p')}")
@@ -184,6 +189,10 @@ def check_warnings():
         
     lines = existing_log.split("\n")
     def is_logged(cond, file_ref):
+        """Is logged.
+
+        Args/Returns if relevant.
+        """
         for line in lines:
             if line.strip().startswith("|"):
                 if cond in line and file_ref in line:

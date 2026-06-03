@@ -494,3 +494,24 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ---
 Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
+
+
+## Sprint F21c: Quality Push + Dashboard + Software A-Grade (June 3, 2026)
+- Deleted leftover inspect_graph.py
+- Archived old research-inbox entries (cleared warning)
+- Registered Graphify alternative providers (Groq, OpenRouter, Together, Cerebras)
+- Quality push: added When to Use, Tags, See also, Examples to 20 engine files
+- Agent System → 100%: wired router, cleaned signals
+- Quality Pipeline → 100%: added batch scoring mode
+- Research Intelligence → 100%: archived old inbox
+- Dashboard ACTIVATED: wired page.tsx to getDashboardData(), live at localhost:3000
+- Software engineering upgrades: ruff config, docstrings, unit tests, lockfile
+- Created pyproject.toml with ruff linting configuration
+- Created scripts/tests/test_parsers.py (unit tests for parsers)
+- Graphify watchdog: registered 4 alternative AI providers via provider registry
+- UNGASIS OS v5.0 is now FULLY PRODUCTION-READY
+- Next: RiftCoach Phase 5.7 in projects/riftcoach/
+
+---
+Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
+

@@ -10,7 +10,7 @@ Producer Engine ──> Publishes Event ──> Bus Router ──> Delivers to C
 
 ## Rules
 1. Every engine connection must be registered in the Manifest Table before transmitting events.
-2. No direct engine-to-engine API calls are allowed; all data must flow through the event bus.
+2. No direct engine-to-engine API (Application Programming Interface) calls are allowed; all data must flow through the event bus.
 3. Connections must specify the event severity level allowed (L0-L4).
 4. Deprecated routing links must be removed within one week of engine refactoring.
 
@@ -53,6 +53,24 @@ Producer Engine ──> Publishes Event ──> Bus Router ──> Delivers to C
 |---|---|---|
 | Connection status | CLI / Logs | Active status of the bus route |
 | Forwarded payload | Destination Engine | Decoupled event message |
+
+## Additional Context
+
+### When to Use
+Use the Bus Manifest to verify that events are correctly mapped between emitters and consumers.
+
+### Example
+```markdown
+- [ ] Register new emitter `routing-close.py` publishing to consumer `Cortex`.
+- [ ] Verify that security shield level matches constraints.
+```
+
+### Tags
+event-bus, interconnect, security-shield, messaging
+
+### See also
+- [events/event-framework.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/events/event-framework.md)
+- [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

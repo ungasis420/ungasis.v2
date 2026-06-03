@@ -19,9 +19,9 @@ System Event ──> Check Notification Mapping ──> Format Message ──> D
 | Event Source | Severity | Trigger Condition | Delivery Channel | Recipient |
 |---|---|---|---|---|
 | Quality Auditor | L2 | Sprint audit FAIL | CLI Console Alert | Builder Agent / Mel |
-| Resource Manager | L3 | API limit at 80%+ | UI Header Banner | Mel |
+| Resource Manager | L3 | API (Application Programming Interface) limit at 80%+ | UI Header Banner | Mel |
 | Scout Engine | L1 | New tech discovered | Daily Summary Log | Scout inbox |
-| System Monitor | L4 | Complete API fail | Pop-up Dialog / Email | Mel |
+| System Monitor | L4 | Complete API (Application Programming Interface) fail | Pop-up Dialog / Email | Mel |
 | Conductor | L2 | Task queue blocked | CLI Console Alert | Mel |
 
 ## Inputs/Outputs
@@ -33,6 +33,25 @@ System Event ──> Check Notification Mapping ──> Format Message ──> D
 | Output | Destination | Description |
 |---|---|---|
 | Formatted notification | Delivery Channel | User-facing message or email |
+
+## Additional Context
+
+### When to Use
+Use notification rules to format and deliver system warnings and status updates to Mel's delivery channels.
+
+### Example
+```markdown
+- [ ] Receive Sprint audit FAIL event.
+- [ ] Format CLI Console Alert message.
+- [ ] Deliver immediately to Builder Agent console.
+```
+
+### Tags
+notifications, alert-fatigue, status-updates, comms
+
+### See also
+- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+- [comms/escalation-matrix.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/comms/escalation-matrix.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

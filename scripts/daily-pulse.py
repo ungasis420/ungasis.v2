@@ -1,3 +1,4 @@
+"""daily-pulse module."""
 # scripts/daily-pulse.py
 import os
 import re
@@ -17,6 +18,10 @@ WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 PULSE_OUT_PATH = os.path.join(WORKSPACE, ".ungasis", "jarvis-core", "daily-pulse-latest.md")
 
 def read_file_safe(path):
+    """Read file safe.
+
+    Args/Returns if relevant.
+    """
     if not os.path.exists(path):
         return None
     try:
@@ -27,6 +32,10 @@ def read_file_safe(path):
         return None
 
 def get_last_session():
+    """Get last session.
+
+    Args/Returns if relevant.
+    """
     context_path = os.path.join(WORKSPACE, "CONTEXT.md")
     data = read_file_safe(context_path)
     if not data:
@@ -79,6 +88,10 @@ def validate_queue_format(content):
     return issues
 
 def get_queue_status():
+    """Get queue status.
+
+    Args/Returns if relevant.
+    """
     queue_path = os.path.join(WORKSPACE, ".ungasis", "orchestrator", "queue.md")
     data = read_file_safe(queue_path)
     if not data:
@@ -103,6 +116,10 @@ def get_queue_status():
     return pending, completed, pending + completed, highest
 
 def get_warnings():
+    """Get warnings.
+
+    Args/Returns if relevant.
+    """
     warning_path = os.path.join(WORKSPACE, ".ungasis", "warnings", "warning-log.md")
     data = read_file_safe(warning_path)
     if not data:
@@ -121,6 +138,10 @@ def get_warnings():
     return count, active[:3]
 
 def get_projects():
+    """Get projects.
+
+    Args/Returns if relevant.
+    """
     path = os.path.join(WORKSPACE, ".ungasis", "project-director", "portfolio", "portfolio-overview.md")
     data = read_file_safe(path)
     if not data:
@@ -147,6 +168,10 @@ def get_projects():
     return count, summary
 
 def get_scout_discoveries():
+    """Get scout discoveries.
+
+    Args/Returns if relevant.
+    """
     path = os.path.join(WORKSPACE, ".ungasis", "scout", "scout-log.md")
     data = read_file_safe(path)
     if not data:
@@ -181,6 +206,10 @@ def get_scout_discoveries():
     return count
 
 def get_git_status():
+    """Get git status.
+
+    Args/Returns if relevant.
+    """
     git_time, git_warn = "Unknown", False
     try:
         res_ar = subprocess.run(["git", "log", "-1", "--format=%ar"], capture_output=True, text=True, check=True, cwd=WORKSPACE)
@@ -195,6 +224,10 @@ def get_git_status():
     return git_time, git_warn
 
 def get_staleness():
+    """Get staleness.
+
+    Args/Returns if relevant.
+    """
     stale_count, stale_files = 0, []
     ungasis_dir = os.path.join(WORKSPACE, ".ungasis")
     now = datetime.now()
@@ -216,6 +249,10 @@ def get_staleness():
     return stale_count, stale_files[:5]
 
 def generate_report():
+    """Generate report.
+
+    Args/Returns if relevant.
+    """
     today_str = datetime.now().strftime("%Y-%m-%d %I:%M %p")
     sprint, s_date, s_desc = get_last_session()
     pending, completed, total, top_task = get_queue_status()

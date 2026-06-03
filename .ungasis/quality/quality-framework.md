@@ -42,5 +42,24 @@ Audit Results ──> Rate each of 5 dimensions ──> Calculate weighted avera
 |---|---|---|
 | `computed_quality_score` | Quality Log | Final weighted score and rating classification |
 
+## Additional Context
+
+### When to Use
+Use quality framework rules during code reviews and quality checks to grade artifacts.
+
+### Example
+```markdown
+- [ ] Evaluate Completeness: 10/10.
+- [ ] Evaluate Clarity: 8/10.
+- [ ] Compute overall score: 8.2 (Excellent).
+```
+
+### Tags
+quality, scoring, audit, matrix
+
+### See also
+- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+- [suggestions/suggestion-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/suggestions/suggestion-rules.md)
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

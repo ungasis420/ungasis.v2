@@ -1,3 +1,4 @@
+"""quality-score module."""
 # scripts/quality-score.py
 import os
 import re
@@ -21,7 +22,15 @@ def validate_quality_log(content):
         issues.append("quality-log.md missing table header row")
     return issues
 
-def score_file(filepath):
+def score_file(filepath, quiet=False):
+    """Calculate the quality score of a markdown file.
+
+    Args:
+        filepath (str): Path to file to evaluate.
+        quiet (bool): Suppress console print tables.
+    Returns:
+        float: Overall weighted quality score.
+    """
     if not os.path.exists(filepath):
         print(f"File not found: {filepath}")
         return None
@@ -216,6 +225,10 @@ def score_file(filepath):
     overall = (c_score * 0.25) + (a_score * 0.25) + (cl_score * 0.20) + (f_score * 0.15) + (r_score * 0.15)
     
     def get_rating(val):
+        """Get rating.
+
+        Args/Returns if relevant.
+        """
         if val >= 8.0: return "EXCELLENT"
         if val >= 6.0: return "GOOD"
         if val >= 4.0: return "NEEDS WORK"
@@ -229,15 +242,16 @@ def score_file(filepath):
         ("Reusability", f"{r_score}/10", ", ".join(r_details) if r_details else "All checks passed"),
     ]
     
-    print(f"\n📊 Quality Score — {rel_path}")
-    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print(f"{'Dimension':<20} {'Score':<8} {'Details'}")
-    for dim, sc, details in dim_rows:
-        print(f"{dim:<20} {sc:<8} {details}")
-    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print(f"⭐ OVERALL SCORE: {overall:.1f} / 10.0")
-    print(f"Rating: {get_rating(overall)} (≥8=Excellent, 6-7=Good, 4-5=Needs Work, <4=Redo)")
-    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    if not quiet:
+        print(f"\n📊 Quality Score — {rel_path}")
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        print(f"{'Dimension':<20} {'Score':<8} {'Details'}")
+        for dim, sc, details in dim_rows:
+            print(f"{dim:<20} {sc:<8} {details}")
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+        print(f"⭐ OVERALL SCORE: {overall:.1f} / 10.0")
+        print(f"Rating: {get_rating(overall)} (≥8=Excellent, 6-7=Good, 4-5=Needs Work, <4=Redo)")
+        print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     
     # Append to log
     log_content = ""
@@ -247,7 +261,7 @@ def score_file(filepath):
             with open(QUALITY_LOG_PATH, "r", encoding="utf-8", errors="ignore") as f:
                 log_content = f.read()
             issues = validate_quality_log(log_content)
-            if issues:
+            if issues and not quiet:
                 print(f"Warning: quality-log.md format issue(s) detected: {', '.join(issues)}")
                 is_valid = False
         except Exception:
@@ -278,18 +292,83 @@ def score_file(filepath):
         with open(QUALITY_LOG_PATH, "w", encoding="utf-8") as f:
             f.write(new_content)
     except Exception as e:
-        print(f"Error logging quality score: {e}")
+        if not quiet:
+            print(f"Error logging quality score: {e}")
         
     return overall
 
 def show_usage():
+    """Print command-line usage information."""
     print("Usage:")
-    print("  python scripts/quality-score.py [path/to/file.md]")
+    print("  python scripts/quality-score.py [path/to/file.md] [--batch | -b]")
     print("\nNo file specified. Evaluating 3 default UNGASIS files:")
+
+def run_batch_scoring():
+    """Walk .ungasis/ and score every markdown file."""
+    ungasis_dir = os.path.join(WORKSPACE, ".ungasis")
+    md_files = []
+    for root, dirs, files in os.walk(ungasis_dir):
+        dirs[:] = [d for d in dirs if d not in ["archive", "source-files"]]
+        for file in files:
+            if file.endswith(".md"):
+                md_files.append(os.path.join(root, file))
+    
+    total_files = len(md_files)
+    if total_files == 0:
+        print("No markdown files found in .ungasis/")
+        return
+        
+    scores = []
+    excellent_count = 0
+    good_count = 0
+    needs_work_count = 0
+    redo_count = 0
+    
+    print(f"Batch Scoring Mode: Evaluating {total_files} files in .ungasis/\n")
+    print(f"{'Score':<6} | {'Rating':<12} | {'Path'}")
+    print("-" * 60)
+    
+    for path in sorted(md_files):
+        score = score_file(path, quiet=True)
+        if score is None:
+            continue
+        scores.append(score)
+        
+        if score >= 8.0:
+            rating = "EXCELLENT"
+            excellent_count += 1
+        elif score >= 6.0:
+            rating = "GOOD"
+            good_count += 1
+        elif score >= 4.0:
+            rating = "NEEDS WORK"
+            needs_work_count += 1
+        else:
+            rating = "REDO"
+            redo_count += 1
+            
+        rel_path = os.path.relpath(path, WORKSPACE).replace("\\", "/")
+        print(f"{score:>5.1f}  | {rating:<12} | {rel_path}")
+        
+    avg_score = sum(scores) / len(scores) if scores else 0
+    print("\n" + "=" * 60)
+    print("Batch Scoring Summary")
+    print("=" * 60)
+    print(f"Total Files Scored: {total_files}")
+    print(f"Average Quality Score: {avg_score:.2f} / 10.0")
+    print(f"Ratings Distribution:")
+    print(f"  Excellent (>=8.0):  {excellent_count}")
+    print(f"  Good (6.0-7.9):     {good_count}")
+    print(f"  Needs Work (4.0-5.9): {needs_work_count}")
+    print(f"  Redo (<4.0):        {redo_count}")
+    print("=" * 60)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        score_file(sys.argv[1])
+        if sys.argv[1] in ["--batch", "-b"]:
+            run_batch_scoring()
+        else:
+            score_file(sys.argv[1])
     else:
         show_usage()
         default_files = [
