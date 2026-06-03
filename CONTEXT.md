@@ -471,3 +471,17 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Sprint F21a: Reconciliation Cleanup (June 3, 2026)
+- Security: verified .gitignore, created .env.example, reviewed 4 files for secrets
+- Nested cleanup: investigated and resolved ungasis/ nested folder
+- FILE_INVENTORY: regenerated from live filesystem scan
+- BUILD_STATUS: created docs/BUILD_STATUS.md — single source of truth
+- Documentation drift: fixed Form 2 status claims in blueprints
+- Reconciliation: cross-referenced ChatGPT Enterprise audit (65 items)
+  Result: 14 confirmed built, 35 false alarms (ZIP issue), 16 genuine issues fixed
+- All genuine risks from audit are now resolved
+- Next: RiftCoach Phase 5.7 OR continue UNGASIS Form 2 dashboard wiring
+
+---
+Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel

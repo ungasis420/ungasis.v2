@@ -1,9 +1,0 @@
-# Suggested .gitignore additions
-# NOTE: Lock files should be COMMITTED, not ignored.
-# docs/SESSION_SUMMARY.md  # optional
-# docs/TOKEN_LOG.md         # optional
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp

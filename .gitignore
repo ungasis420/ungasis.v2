@@ -1,20 +1,43 @@
+# Secrets
 .env
 .env.local
+.env.production
 *.key
 *.pem
-*.zip
-*.tar.gz
+
+# UNGASIS generated outputs (large, regenerable)
+graphify-out/cache/
+.ungasis/jarvis-core/daily-pulse-latest.md
+
+# OS files
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Node
 node_modules/
-package-lock.json
+dashboard/node_modules/
+dashboard/.next/
+
+# Python
+pycache/
+*.pyc
+
+# IDE
+.vscode/settings.json
+
+# Temp files
 *.tmp
+.git_commit_msg
+commit_msg.txt
+
+# Archive & backups
+*.zip
+*.tar.gz
 *.bak
 *~
 
 # Graphify
 graphify-out/manifest.json
-graphify-out/cache/
 
 # Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

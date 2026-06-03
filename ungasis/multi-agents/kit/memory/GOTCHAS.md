@@ -1,4 +1,0 @@
-# Gotchas
-
-| Gotcha | Symptom | Fix |
-|---|---|---|

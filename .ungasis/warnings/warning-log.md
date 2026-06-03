@@ -23,5 +23,7 @@ History database tracker for all generated warning events, their severity, respo
 
 | 2026-06-03 | warning-log.md has unresolved entries | 🟢 INFO | 13 unresolved warnings | resolved |
 
+| 2026-06-03 | File size exceeds 200 lines | 🟡 WARNING | .ungasis/scout/research-inbox.md | active |
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -1,0 +1,4 @@
+kill_switch:
+  enabled: true
+  triggers: {secret: true, production: true, cost_usd: 10, cascading: 3, merge_no_human: true}
+  actions: {stop: true, lock: true, cancel_ci: true, incident: true, rollback: true, notify: [human, security]}

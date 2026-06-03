@@ -1,4 +1,0 @@
-progress_detection:
-  repeater: {threshold: 3, action: inject_context}
-  wanderer: {max: 5, action: refocus}
-  looper: {pattern: 4, reps: 2, action: circuit_break}

@@ -9,6 +9,7 @@
 - [ ] [FUTURE] UNGASIS Form 2 full web app build
 
 ## Completed Tasks (Archive)
+- [x] Sprint F21a: Reconciliation Cleanup (Security + Inventory + Build Status) — 5 files ✅
 - [x] Sprint F20e + Phase A: Research Intelligence & Feedback Loops — 12 new files + updates ✅
 - [x] Batch 1: Foundation Intelligence (F11a-d, F14b, F14e, F16a-b) — 22 files ✅
 - [x] Sprint F19: Multi-CLI Orchestration Setup — 19 files ✅
@@ -22,7 +23,7 @@
 - [x] Sprint F20d: High-Value Gaps + JARVIS Intelligence Layer — 27 files ✅
 
 ## Queue Stats
-- Pending: 6 | Completed: 11 | Total: 17
+- Pending: 6 | Completed: 12 | Total: 18
 - Last pruned: June 3, 2026
 - Next review: June 10, 2026
 

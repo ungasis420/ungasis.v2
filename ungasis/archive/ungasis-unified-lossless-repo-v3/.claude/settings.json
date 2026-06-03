@@ -1,8 +1,0 @@
-{
-  "MAX_THINKING_TOKENS": 10000,
-  "permissions": {
-    "allow": ["Read"],
-    "deny": ["Write", "Bash", "WebFetch"]
-  },
-  "note": "Safe default. Use config/permission-profiles.yml before allowing write or command access."
-}

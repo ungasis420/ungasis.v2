@@ -1,6 +1,0 @@
-scoring:
-  planner: {criteria: 30, ownership: 20, risk: 25, scope: 25}
-  builder: {test: 40, scope: 25, quality: 20, speed: 15}
-  tester: {coverage: 40, false_pos: 20, reporting: 25, complete: 15}
-  debugger: {fix: 40, hypothesis: 25, minimal: 20, scope: 15}
-  reviewer: {bugs: 35, alarms: 20, complete: 25, actionable: 20}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEMP v3 — Browser-Based Multi-Agent Guide</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+:root{--bg:#0a0e1a;--card:rgba(255,255,255,0.04);--card-h:rgba(255,255,255,0.08);--border:rgba(255,255,255,0.08);--glow:rgba(99,102,241,0.3);--t1:#e2e8f0;--t2:#94a3b8;--t3:#64748b;--indigo:#818cf8;--violet:#a78bfa;--emerald:#34d399;--amber:#fbbf24;--rose:#fb7185;--sky:#38bdf8;--r:16px;--rs:10px;--tr:all .3s cubic-bezier(.4,0,.2,1)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t1);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at 30% 20%,rgba(99,102,241,.08) 0%,transparent 50%),radial-gradient(ellipse at 70% 80%,rgba(168,85,247,.06) 0%,transparent 50%);animation:drift 20s ease-in-out infinite alternate;z-index:-1;pointer-events:none}
+@keyframes drift{0%{transform:translate(0,0)}100%{transform:translate(-2%,-1%)}}
+.progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--indigo),var(--violet),var(--emerald));z-index:9999}
+.container{max-width:920px;margin:0 auto;padding:0 24px}
+section{padding:80px 0;border-bottom:1px solid var(--border)}
+section:last-child{border-bottom:none}
+.hero{text-align:center;padding:120px 0 80px}
+.badge{display:inline-block;padding:6px 16px;border-radius:100px;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.3);color:var(--indigo);font-size:13px;font-weight:600;letter-spacing:.5px;margin-bottom:24px;text-transform:uppercase}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:900;line-height:1.1;margin-bottom:16px;background:linear-gradient(135deg,#e2e8f0 0%,#818cf8 50%,#a78bfa 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .sub{font-size:clamp(1rem,2vw,1.2rem);color:var(--t2);max-width:700px;margin:0 auto 24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px;margin-bottom:20px;backdrop-filter:blur(12px);transition:var(--tr);position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--indigo),transparent);opacity:0;transition:opacity .3s}
+.card:hover{background:var(--card-h);border-color:var(--glow);box-shadow:0 0 40px rgba(99,102,241,.08);transform:translateY(-2px)}
+.card:hover::before{opacity:1}
+.card h3{font-size:1.15rem;font-weight:700;margin-bottom:8px}
+.card p,.card li{color:var(--t2);font-size:.92rem;line-height:1.7}
+.sh{margin-bottom:40px}
+.sn{display:inline-block;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--indigo),var(--violet));color:white;font-weight:800;font-size:16px;line-height:36px;text-align:center;margin-bottom:12px}
+.sh h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin-bottom:8px}
+.sh .sd{color:var(--t2);font-size:1rem;max-width:700px}
+table.ct{width:100%;border-collapse:separate;border-spacing:0;border-radius:var(--rs);overflow:hidden;margin:20px 0;font-size:.83rem}
+.ct th{background:rgba(99,102,241,.1);color:var(--indigo);padding:10px 14px;text-align:left;font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border)}
+.ct td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--t2)}
+.ct tr:hover td{background:rgba(99,102,241,.03)}
+.hi{color:var(--emerald);font-weight:600}
+.warn{color:var(--rose);font-weight:600}
+.free-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;background:rgba(52,211,153,.15);color:var(--emerald);border:1px solid rgba(52,211,153,.3)}
+.you-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;background:rgba(99,102,241,.15);color:var(--indigo);border:1px solid rgba(99,102,241,.3)}
+.no-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;background:rgba(251,113,133,.15);color:var(--rose);border:1px solid rgba(251,113,133,.3)}
+.best-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;background:rgba(251,191,36,.15);color:var(--amber);border:1px solid rgba(251,191,36,.3)}
+pre{background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:var(--rs);padding:16px;overflow-x:auto;margin:14px 0;font-family:'JetBrains Mono',monospace;font-size:.8rem;line-height:1.6;color:var(--t2)}
+code{font-family:'JetBrains Mono',monospace;background:rgba(99,102,241,.1);color:var(--indigo);padding:2px 6px;border-radius:4px;font-size:.83em}
+.analogy{background:linear-gradient(135deg,rgba(251,191,36,.08),rgba(251,146,60,.05));border:1px solid rgba(251,191,36,.2);border-radius:var(--rs);padding:18px 22px;margin:14px 0}
+.analogy::before{content:'🍳 Everyday Analogy';display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--amber);margin-bottom:6px}
+.analogy p{color:var(--t1);font-size:.92rem;font-style:italic}
+.feynman{background:linear-gradient(135deg,rgba(52,211,153,.08),rgba(56,189,248,.05));border:1px solid rgba(52,211,153,.2);border-radius:var(--rs);padding:18px 22px;margin:14px 0}
+.feynman::before{content:'🧪 Feynman Explanation';display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--emerald);margin-bottom:6px}
+.feynman p{color:var(--t1);font-size:.92rem}
+.steps{position:relative;padding-left:40px}
+.steps::before{content:'';position:absolute;left:15px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--indigo),var(--violet),var(--emerald));border-radius:2px}
+.step{position:relative;margin-bottom:28px;padding:22px;background:var(--card);border:1px solid var(--border);border-radius:var(--rs);transition:var(--tr)}
+.step:hover{border-color:var(--glow);background:var(--card-h)}
+.step-n{position:absolute;left:-40px;top:22px;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--indigo),var(--violet));color:white;font-weight:800;font-size:13px;line-height:30px;text-align:center;box-shadow:0 0 12px rgba(99,102,241,.3)}
+.step h4{font-size:1rem;font-weight:700;margin-bottom:6px}
+.step p{color:var(--t2);font-size:.88rem}
+.workflow-box{background:linear-gradient(135deg,rgba(99,102,241,.08),rgba(168,85,247,.05));border:1px solid rgba(99,102,241,.2);border-radius:var(--r);padding:28px;margin:28px 0}
+.workflow-box h3{color:var(--indigo);font-size:1.05rem;margin-bottom:14px}
+.btt{position:fixed;bottom:32px;right:32px;width:44px;height:44px;border-radius:50%;background:var(--indigo);color:white;border:none;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;opacity:0;transition:var(--tr);z-index:999;box-shadow:0 4px 16px rgba(99,102,241,.4)}
+.btt.v{opacity:1}
+.btt:hover{transform:scale(1.1)}
+.verdict{background:linear-gradient(135deg,rgba(52,211,153,.1),rgba(56,189,248,.06));border:1px solid rgba(52,211,153,.25);border-radius:var(--r);padding:28px;margin:24px 0}
+.verdict h3{color:var(--emerald);font-size:1.1rem;margin-bottom:12px}
+@media(max-width:768px){.container{padding:0 16px}section{padding:48px 0}.hero{padding:80px 0 60px}.card{padding:20px}}
+</style>
+</head>
+<body>
+<div class="progress" id="sp"></div>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<div class="badge">Browser-Based Multi-Agent Development</div>
+<h1>Cloud IDE +<br>Multi-Agent Setup</h1>
+<p class="sub">Can you do multi-agent coding from a browser? Yes — but not with vscode.dev. Here's exactly what works, what doesn't, and the free cloud tools that give you a full terminal + AI agents.</p>
+<div style="color:var(--t3);font-size:13px;margin-top:8px">📖 ~10 min &nbsp;|&nbsp; 🎓 Beginner-friendly &nbsp;|&nbsp; 💰 All free options</div>
+</div>
+</section>
+
+<!-- THE HONEST ANSWER -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">1</div><h2>The Honest Answer</h2><p class="sd">Can vscode.dev do multi-agent orchestration? Let's be direct.</p></div>
+
+<div class="card" style="border-left:3px solid var(--rose)">
+<h3>❌ vscode.dev / github.dev = NOT enough</h3>
+<p><strong>What they are:</strong> Lightweight browser editors. You open them by going to vscode.dev or pressing <code>.</code> on any GitHub repo.</p>
+<p style="margin-top:8px"><strong>What's missing:</strong></p>
+<ul style="list-style:none;padding:0;margin:8px 0;">
+<li style="padding:3px 0">❌ <strong>No terminal</strong> — can't run CLI agents (Gemini CLI, Claude Code, etc.)</li>
+<li style="padding:3px 0">❌ <strong>No Node.js runtime</strong> — can't install npm packages</li>
+<li style="padding:3px 0">❌ <strong>Limited extensions</strong> — only "web extensions" work (most coding extensions don't)</li>
+<li style="padding:3px 0">❌ <strong>No file system access</strong> — can't create/edit files outside the browser sandbox</li>
+<li style="padding:3px 0">❌ <strong>No code execution</strong> — can't run tests, builds, or scripts</li>
+</ul>
+<p style="margin-top:8px"><strong>Good for:</strong> Quick text edits, reviewing pull requests, reading code. That's it.</p>
+</div>
+
+<div class="card" style="border-left:3px solid var(--emerald)">
+<h3>✅ GitHub Codespaces = FULL power in browser</h3>
+<p><strong>What it is:</strong> A complete Linux computer in the cloud, accessed through your browser. It looks and feels like VS Code, but has a REAL terminal, REAL file system, and can install anything.</p>
+<p style="margin-top:8px"><strong>What you get:</strong></p>
+<ul style="list-style:none;padding:0;margin:8px 0;">
+<li style="padding:3px 0">✅ <strong>Full terminal</strong> — run any CLI agent (Gemini CLI, Claude Code, Codex CLI)</li>
+<li style="padding:3px 0">✅ <strong>Node.js + npm</strong> — install any package</li>
+<li style="padding:3px 0">✅ <strong>ALL VS Code extensions</strong> — Cline, Copilot, everything works</li>
+<li style="padding:3px 0">✅ <strong>Full file system</strong> — create, edit, delete files normally</li>
+<li style="padding:3px 0">✅ <strong>Code execution</strong> — run builds, tests, dev servers, everything</li>
+<li style="padding:3px 0">✅ <strong>Copilot Agent Mode</strong> — officially supported in Codespaces</li>
+</ul>
+<p style="margin-top:8px;color:var(--emerald);font-weight:600">Free: 120 core-hours/month = ~60 hours on a 2-core machine. No credit card needed.</p>
+</div>
+
+<div class="feynman">
+<p><strong>The difference:</strong> vscode.dev is like using Google Docs — you can edit text, but you can't install software or run programs. GitHub Codespaces is like having a real computer in the cloud — you can do everything you'd do on your desktop, but from any browser, anywhere.</p>
+</div>
+</div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">2</div><h2>All Browser-Based Options Compared</h2><p class="sd">Every free cloud IDE that can run AI agents.</p></div>
+
+<table class="ct">
+<tr><th>Platform</th><th>Terminal?</th><th>Extensions?</th><th>AI Agents?</th><th>Free Tier</th><th>Verdict</th></tr>
+<tr><td><strong>vscode.dev</strong></td><td class="warn">❌ No</td><td class="warn">Web only</td><td class="warn">❌ No</td><td>Free (unlimited)</td><td><span class="no-tag">NOT ENOUGH</span></td></tr>
+<tr><td><strong>github.dev</strong></td><td class="warn">❌ No</td><td class="warn">Web only</td><td class="warn">❌ No</td><td>Free (unlimited)</td><td><span class="no-tag">NOT ENOUGH</span></td></tr>
+<tr><td><strong>GitHub Codespaces</strong></td><td class="hi">✅ Full</td><td class="hi">✅ All</td><td class="hi">✅ All CLI agents</td><td>60 hrs/mo free</td><td><span class="best-tag">⭐ BEST PICK</span></td></tr>
+<tr><td><strong>Firebase Studio</strong> (was Project IDX)</td><td class="hi">✅ Full</td><td>Open VSX only</td><td class="hi">✅ Gemini built-in</td><td>Free (5 workspaces)</td><td><span class="free-tag">GREAT FREE</span></td></tr>
+<tr><td><strong>Gitpod</strong></td><td class="hi">✅ Full</td><td>Open VSX only</td><td class="hi">✅ CLI agents</td><td>50 hrs/mo free</td><td><span class="free-tag">GOOD FREE</span></td></tr>
+<tr><td><strong>Amazon Kiro</strong></td><td class="hi">✅ Full</td><td>Built-in</td><td class="hi">✅ Spec-driven agent</td><td>50 credits/mo free</td><td><span class="free-tag">GOOD FREE</span></td></tr>
+<tr><td><strong>Google Antigravity</strong></td><td class="hi">✅ Full</td><td>Built-in</td><td class="hi">✅ Multi-agent native</td><td>Free preview (rate-limited)</td><td><span class="free-tag">IF AVAILABLE</span></td></tr>
+</table>
+
+<div class="analogy">
+<p><strong>Think of it like renting vs. visiting.</strong> vscode.dev is like visiting a show apartment — you can look around but can't move in. Codespaces is like renting a fully furnished apartment — you get the keys, the kitchen works, the internet is connected, you can live there.</p>
+</div>
+</div>
+</section>
+
+<!-- RECOMMENDED STACK -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">3</div><h2>Your Recommended Browser-Based Stack</h2><p class="sd">The best combination for multi-agent orchestration from any browser.</p></div>
+
+<div class="verdict">
+<h3>⭐ Primary: GitHub Codespaces (Your "Cloud Desktop")</h3>
+<p>This is your main workspace. It gives you a full VS Code environment with terminal, extensions, and everything you need — all from any browser on any device.</p>
+<ul style="list-style:none;padding:0;margin:12px 0;">
+<li style="padding:4px 0;color:var(--t2)">✅ <strong>Free:</strong> 120 core-hours/month (60 hours on 2-core)</li>
+<li style="padding:4px 0;color:var(--t2)">✅ <strong>Terminal:</strong> Full Linux terminal — install Gemini CLI, Claude Code Router, any npm package</li>
+<li style="padding:4px 0;color:var(--t2)">✅ <strong>Extensions:</strong> Cline, GitHub Copilot, any VS Code extension works</li>
+<li style="padding:4px 0;color:var(--t2)">✅ <strong>Copilot Agent Mode:</strong> Officially supported — even launchable directly from GitHub Issues</li>
+<li style="padding:4px 0;color:var(--t2)">✅ <strong>Persistent:</strong> Your Codespace saves state — come back later and continue</li>
+<li style="padding:4px 0;color:var(--t2)">✅ <strong>Multi-device:</strong> Start on laptop, continue on iPad, check from phone</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🌐 Secondary: Firebase Studio (Free Cloud IDE with Gemini)</h3>
+<p><strong>What:</strong> Google's free cloud IDE (used to be called Project IDX). Has Gemini AI built-in, full terminal, web previews.</p>
+<p><strong>Free:</strong> Up to 5 workspaces, Gemini assistance included. No credit card.</p>
+<p><strong>Best for:</strong> When your Codespaces hours run out, or for projects that use Google/Firebase services.</p>
+<p><strong>URL:</strong> <code>firebase.studio</code></p>
+</div>
+
+<div class="card">
+<h3>🔮 Bonus: Google Antigravity 2.0 (If Available)</h3>
+<p><strong>What:</strong> Google's newest agentic IDE announced at I/O 2026. Multi-agent native, free during preview.</p>
+<p><strong>Status:</strong> In preview — may have a waitlist. Check <code>antigravity.dev</code>.</p>
+<p><strong>Why it matters:</strong> This is the tool that has native multi-agent orchestration built right in — no extra setup needed.</p>
+</div>
+</div>
+</section>
+
+<!-- CODESPACES MULTI-AGENT SETUP -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">4</div><h2>Multi-Agent Setup in GitHub Codespaces</h2><p class="sd">Step-by-step: go from zero to 4 agents running in your browser.</p></div>
+
+<div class="steps">
+<div class="step">
+<div class="step-n">1</div>
+<h4>🚀 Create a Codespace (30 seconds)</h4>
+<p>Go to your GitHub repo → Click green <strong>"Code"</strong> button → Switch to <strong>"Codespaces"</strong> tab → Click <strong>"Create codespace on main"</strong>.</p>
+<p style="margin-top:8px">A full VS Code opens in your browser in ~30 seconds. You now have a real Linux machine.</p>
+</div>
+
+<div class="step">
+<div class="step-n">2</div>
+<h4>🔧 Install CLI Agents in Terminal (5 min)</h4>
+<pre># The terminal is at the bottom of your Codespace.
+# Install all your agents:
+
+# Agent 1: Gemini CLI (free, 1,000 req/day)
+npm install -g @google/gemini-cli
+
+# Agent 2: Claude Code Router (free via GLM/Kimi models)
+npm install -g @anthropic-ai/claude-code
+
+# Agent 3 (optional): Codex CLI (if Enterprise login works)
+npm install -g @openai/codex
+
+# Verify installations:
+gemini --version
+claude --version</pre>
+</div>
+
+<div class="step">
+<div class="step-n">3</div>
+<h4>🧩 Install Cline Extension (2 min)</h4>
+<p>In Codespaces: Click Extensions icon (sidebar) → Search "Cline" → Install.</p>
+<p>Configure Cline to use free models via OpenRouter or Ollama (if you set up a tunnel to your local machine).</p>
+<p style="margin-top:8px"><strong>Note:</strong> Your Codespace doesn't have a GPU, so local Ollama models won't run here. Use cloud-based free models (OpenRouter, Groq free tier) instead.</p>
+</div>
+
+<div class="step">
+<div class="step-n">4</div>
+<h4>🖥️ Set Up Split Terminals (1 min)</h4>
+<pre># In Codespaces terminal:
+# Click the "+" button to add terminals, or use keyboard:
+# Ctrl+Shift+` = new terminal
+
+# Terminal 1: Gemini CLI
+gemini
+
+# Terminal 2: Claude Code (with free model)
+ANTHROPIC_BASE_URL="https://open.bigmodel.cn/api/anthropic" \
+ANTHROPIC_AUTH_TOKEN="your_free_glm_key" \
+claude
+
+# Terminal 3: Your dev server
+npm run dev</pre>
+<div class="feynman"><p>You now have 3 agents + 1 dev server running in split terminals — all inside your browser. Plus Cline in the sidebar. Plus Copilot for autocomplete. That's 5 AI tools running simultaneously from any device with a browser.</p></div>
+</div>
+
+<div class="step">
+<div class="step-n">5</div>
+<h4>🔄 Use Copilot Agent Mode from GitHub Issues (Bonus)</h4>
+<p>On any GitHub Issue, look for the <strong>"Code with Copilot Agent Mode"</strong> button in the Development section. One click → Codespace opens → Copilot starts working on the issue automatically.</p>
+<p style="margin-top:8px">This is the closest thing to "assign a task and let AI handle it" — all from the browser.</p>
+</div>
+</div>
+
+<div class="analogy">
+<p><strong>Like renting a workshop in the cloud.</strong> You walk in (open browser), all the tools are already there (terminal, VS Code, npm), you hire 3 assistants (Gemini CLI, Claude Code, Cline), they each work at their own bench (split terminals), and you supervise from the middle of the room. When you're done, you lock up (stop Codespace) and come back tomorrow.</p>
+</div>
+</div>
+</section>
+
+<!-- AUTOMATE SETUP WITH DEVCONTAINER -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">5</div><h2>Automate Everything (One-Time Setup)</h2><p class="sd">Make your Codespace auto-install all agents every time it starts.</p></div>
+
+<div class="card">
+<h3>📦 devcontainer.json — Your "Auto-Setup Recipe"</h3>
+<p>Create this file in your project. Every time a Codespace launches, it automatically installs all your tools. No manual setup ever again.</p>
+<pre>// .devcontainer/devcontainer.json
+{
+  "name": "Multi-Agent Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "saoudrizwan.claude-dev",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  
+  "postCreateCommand": "npm install -g @google/gemini-cli @anthropic-ai/claude-code && echo '✅ All agents installed!'",
+  
+  "forwardPorts": [3000, 5173],
+  
+  "remoteEnv": {
+    "ANTHROPIC_BASE_URL": "${localEnv:ANTHROPIC_BASE_URL}",
+    "ANTHROPIC_AUTH_TOKEN": "${localEnv:ANTHROPIC_AUTH_TOKEN}"
+  }
+}</pre>
+<div class="feynman"><p>This file is like a <strong>shopping list taped to the front door</strong>. Every time someone enters the apartment (opens the Codespace), the groceries (tools) are automatically delivered and put away. You never have to set up manually again.</p></div>
+</div>
+</div>
+</section>
+
+<!-- WORKFLOW -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">6</div><h2>Your Browser-Based Daily Workflow</h2><p class="sd">How a typical work session looks — all from a browser tab.</p></div>
+
+<div class="workflow-box">
+<h3>🔄 The Browser-Only Workflow</h3>
+<pre style="background:transparent;border:none;padding:0;color:var(--t1);font-size:.82rem;">
+BROWSER TAB 1: M365 Copilot (Opus)  — Planning
+├── "Break today's feature into 5 tasks"
+├── Create task breakdown with files + criteria
+└── Copy task descriptions for other agents
+
+BROWSER TAB 2: GitHub Codespaces  — Building
+├── LEFT: VS Code editor + Cline sidebar (Agent 3)
+│   └── Interactive coding — you guide it
+├── BOTTOM-LEFT terminal: Gemini CLI (Agent 4)
+│   └── Research, docs, codebase analysis
+├── BOTTOM-RIGHT terminal: Claude Code Router (Agent 2)
+│   └── Autonomous task execution
+└── INLINE: Copilot autocomplete (Agent 5)
+
+BROWSER TAB 3: ChatGPT Enterprise  — Deep Reasoning
+├── Complex architecture questions
+├── Code review and debugging
+└── Alternative approaches (Best-of-N)
+
+BROWSER TAB 4: GitHub — Review
+├── Check Codespaces agent output
+├── Review diffs + commit
+└── Copilot Agent Mode from Issues
+</pre>
+</div>
+
+<div class="feynman"><p><strong>4 browser tabs = your entire multi-agent workspace.</strong> Tab 1 plans (Opus). Tab 2 builds (Codespaces with 3+ agents). Tab 3 reasons (ChatGPT). Tab 4 reviews (GitHub). You switch between tabs like switching between rooms in an office. Works on laptop, desktop, iPad — even a Chromebook.</p></div>
+</div>
+</section>
+
+<!-- HOUR BUDGET -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">7</div><h2>Managing Your Free Hours</h2><p class="sd">120 core-hours/month — how to make them last.</p></div>
+
+<div class="card">
+<h3>⏱️ How Long Do 120 Core-Hours Last?</h3>
+<table class="ct">
+<tr><th>Machine Type</th><th>Cores</th><th>Hours/Month</th><th>Hours/Day (20 workdays)</th></tr>
+<tr><td>2-core (default)</td><td>2</td><td class="hi">60 hours</td><td class="hi">3 hours/day</td></tr>
+<tr><td>4-core</td><td>4</td><td>30 hours</td><td>1.5 hours/day</td></tr>
+<tr><td>8-core</td><td>8</td><td>15 hours</td><td>45 min/day</td></tr>
+</table>
+<p style="margin-top:12px"><strong>Recommendation:</strong> Use the <strong>2-core machine</strong> (default). It gives you 3 hours/day — enough for a solid focused work session. Your AI agents do the heavy lifting, not the CPU.</p>
+</div>
+
+<div class="card">
+<h3>💡 Tips to Save Hours</h3>
+<ul style="list-style:none;padding:0;">
+<li style="padding:4px 0;color:var(--t2)">⏸️ <strong>Stop when idle</strong> — Codespaces auto-stop after 30 min, but stop manually when taking breaks</li>
+<li style="padding:4px 0;color:var(--t2)">📋 <strong>Plan in M365 Copilot FIRST</strong> — don't burn Codespace hours on planning</li>
+<li style="padding:4px 0;color:var(--t2)">🔧 <strong>Do research in ChatGPT/Copilot</strong> — only open Codespace when ready to code</li>
+<li style="padding:4px 0;color:var(--t2)">💾 <strong>Use devcontainer.json</strong> — auto-setup saves 15+ min per session</li>
+<li style="padding:4px 0;color:var(--t2)">🔄 <strong>Combine with Firebase Studio</strong> — when Codespace hours run low, switch to Firebase Studio (also free)</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🔄 Overflow Strategy: When Hours Run Out</h3>
+<table class="ct">
+<tr><th>When</th><th>Switch To</th><th>Free Limit</th></tr>
+<tr><td>Codespaces hours depleted</td><td><strong>Firebase Studio</strong></td><td>5 workspaces, Gemini built-in</td></tr>
+<tr><td>Firebase also maxed</td><td><strong>Gitpod</strong></td><td>50 hours/month free</td></tr>
+<tr><td>Need more compute</td><td><strong>Your local VS Code</strong></td><td>Unlimited (your PC)</td></tr>
+<tr><td>Light edits only</td><td><strong>github.dev</strong></td><td>Unlimited (no terminal)</td></tr>
+</table>
+</div>
+</div>
+</section>
+
+<!-- QUICK REFERENCE -->
+<section>
+<div class="container">
+<div class="sh"><div class="sn">8</div><h2>Quick Reference</h2><p class="sd">Your cheat sheet for browser-based multi-agent development.</p></div>
+
+<table class="ct">
+<tr><th>What</th><th>Where</th><th>How</th></tr>
+<tr><td>Plan & architect</td><td>M365 Copilot (browser tab)</td><td>Company-provided, Claude Opus</td></tr>
+<tr><td>Deep reasoning</td><td>ChatGPT Enterprise (browser tab)</td><td>Company-provided, GPT-5</td></tr>
+<tr><td>Code + terminal agents</td><td>GitHub Codespaces (browser tab)</td><td>Free 60 hrs/mo, full Linux VM</td></tr>
+<tr><td>In-IDE agent</td><td>Cline in Codespaces</td><td>Install extension, use free models</td></tr>
+<tr><td>CLI agent 1</td><td>Gemini CLI in Codespaces terminal</td><td><code>npm i -g @google/gemini-cli</code></td></tr>
+<tr><td>CLI agent 2</td><td>Claude Code Router in Codespaces terminal</td><td>Free via GLM 4.6 / Kimi K2</td></tr>
+<tr><td>Autocomplete</td><td>Copilot in Codespaces</td><td>Free tier, auto-enabled</td></tr>
+<tr><td>Assign tasks to AI</td><td>GitHub Issues → Copilot Agent Mode</td><td>One-click from any Issue</td></tr>
+<tr><td>Backup IDE</td><td>Firebase Studio</td><td>firebase.studio (free, 5 workspaces)</td></tr>
+</table>
+
+<div style="text-align:center;margin-top:64px;padding:32px;color:var(--t3);font-size:.85rem;">
+<p>Browser-Based Multi-Agent Guide — Built by Mel John Dimat</p>
+<p>Part of Token Efficiency Master Protocol v3.0</p>
+<p style="margin-top:8px">🌐 100% Browser &nbsp;|&nbsp; 💰 $0 Personal Cost &nbsp;|&nbsp; 🧠 4+ Agents &nbsp;|&nbsp; ☁️ Cloud-Powered</p>
+</div>
+</div>
+</section>
+
+<script>
+window.addEventListener('scroll',()=>{const s=window.scrollY,d=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('sp').style.width=(s/d)*100+'%';const b=document.getElementById('btt');s>600?b.classList.add('v'):b.classList.remove('v')});
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Aider Configuration (v4.0)
+auto-commits: true
+show-diffs: true
+read: CONVENTIONS.md
+map-tokens: 1024
+map-refresh: auto

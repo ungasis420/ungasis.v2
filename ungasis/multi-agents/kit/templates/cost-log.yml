@@ -1,5 +1,0 @@
-cost_log:
-  - task: ''
-    agents: {planner: 0, builder: 0, tester: 0, debugger: 0, reviewer: 0}
-    total: 0
-    cost: 0.00

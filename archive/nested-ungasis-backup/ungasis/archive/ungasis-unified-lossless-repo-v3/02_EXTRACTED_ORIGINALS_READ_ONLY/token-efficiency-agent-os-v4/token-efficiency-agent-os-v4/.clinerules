@@ -1,0 +1,6 @@
+# Cline Rules (v4.0)
+## Project: [PROJECT_NAME] | Stack: [TECH_STACK]
+## Rules: Follow AGENTS.md. Search before reads. Surgical edits only.
+## Memory Bank: projectbrief->PROJECT_BRIEF.md | productContext->PROJECT_MEMORY.md | systemPatterns->ARCHITECTURE_MAP.md | activeContext->TASK_HANDOFF.md | progress->SESSION_SUMMARY.md
+## Context Zones: Green(0-50%)normal | Yellow(50-70%)shorter | Orange(70-85%)compact | Red(85%+)handoff
+## Output: Changed lines with path only. No filler.

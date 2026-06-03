@@ -1,5 +1,0 @@
-retry:
-  max_debug: 3
-  max_review: 2
-  human_after_exhaustion: true
-  backoff: {exp: true, jitter: true}
