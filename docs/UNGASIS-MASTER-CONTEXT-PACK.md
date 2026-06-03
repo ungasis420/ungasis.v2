@@ -1008,6 +1008,10 @@ OUTPUT: ## GRAPHIFY UPDATE — New nodes: X | Total: X | Errors: X | Status: ✅
 
 ## Section 13: Kickoff Prompts
 
+### 13.0 Universal Launcher
+
+For the smart launcher system, attach [COPILOT-LAUNCHER.md](file:///c:/Users/63905/Downloads/ungasis/docs/COPILOT-LAUNCHER.md) to any new M365 Copilot session. See [COPILOT-LAUNCHER.md](file:///c:/Users/63905/Downloads/ungasis/docs/COPILOT-LAUNCHER.md) for the full launcher prompt.
+
 ### 13.1 Fresh Chat Kickoff (Generic UNGASIS Session)
 
 Copy-paste this into any fresh AI chat to restore full UNGASIS context:
