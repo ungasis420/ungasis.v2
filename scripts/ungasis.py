@@ -15,6 +15,16 @@ COMMANDS = {
     'score': {'script': 'quality-score.py', 'description': 'Score a markdown file (1-10) or batch mode', 'alias': ['q', 'quality']},
     'sweep': {'script': 'tag_sweep.py', 'description': 'Scan for TODOs and stale files', 'alias': ['s', 'tags']},
     'graph': {'script': 'graph-search.py', 'description': 'Search the knowledge graph', 'alias': ['g', 'search', 'find']},
+    'graph-rebuild': {
+        'script': 'graphify-run.py',
+        'description': 'Rebuild knowledge graph with auto-failover',
+        'alias': ['rebuild', 'reindex'],
+    },
+    'graph-update': {
+        'script': 'graphify-run.py',
+        'description': 'Update knowledge graph (incremental)',
+        'alias': ['update'],
+    },
     'research': {
         'script': None, 'description': 'Run research scripts (github, hn, feeds, youtube, all)', 'alias': ['r', 'scout'],
         'sub': {
@@ -191,6 +201,9 @@ def main():
     if resolved == 'test': return cmd_test(extra_args)
     if resolved == 'backup': return cmd_backup(extra_args)
     if resolved == 'version': return cmd_version(extra_args)
+
+    if resolved == 'graph-update':
+        extra_args = ['--update'] + extra_args
 
     if info.get('sub'):
         sub = extra_args[0] if extra_args else 'all'

@@ -515,3 +515,23 @@ Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 ---
 Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Session Handoff — June 3, 2026 🖥️ PC (Sprint F21d)
+
+**Sprint:** F21d — Graphify Auto-Failover Wrapper Script
+**Model:** Gemini 3.5 Flash (Medium)
+
+**What was accomplished:**
+- Created `scripts/graphify-run.py` to run Graphify with automatic provider rotation/failover (groq -> cerebras -> openrouter -> together -> gemini).
+- Integrated failover commands (`graph-rebuild`, `graph-update`) into UNGASIS CLI wrapper `scripts/ungasis.py`.
+- Documented the wrapper script and commands in `scripts/README.md`.
+- Verified and smoke-tested failover execution on incremental updates.
+
+**Files created/modified:**
+- Created: `scripts/graphify-run.py`
+- Modified: `scripts/ungasis.py`, `scripts/README.md`, `CONTEXT.md`
+
+---
+Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
+
+

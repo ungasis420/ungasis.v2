@@ -23,6 +23,7 @@ These scripts make JARVIS actually DO things. Run them manually or set up as Sch
 | `retro-close.py` | Extract learnings from retrospectives | `python scripts/retro-close.py` | Terminal + Output |
 | `energy-close.py` | Analyze time data vs energy patterns | `python scripts/energy-close.py` | Terminal + Output |
 | `graphify-providers.py` | Register backup AI providers | `python scripts/graphify-providers.py` | Terminal Output |
+| `graphify-run.py` | Graphify auto-failover wrapper | `python scripts/graphify-run.py` | Terminal Output + Re-indexed Graph |
 | `tests/test_parsers.py` | Parser unit tests | `python -m unittest scripts/tests/test_parsers.py` | Test Results |
 
 ## Quick Reference
@@ -39,6 +40,8 @@ These scripts make JARVIS actually DO things. Run them manually or set up as Sch
 | `ungasis backup` | Create backup ZIP |
 | `ungasis version` | Show version info |
 | `ungasis graph [query]` | Search the knowledge graph |
+| `ungasis graph-rebuild` | Rebuild knowledge graph with auto-failover |
+| `ungasis graph-update` | Update knowledge graph (incremental) |
 
 ## Requirements
 
