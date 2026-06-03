@@ -14,3 +14,5 @@ Produce a short session checkpoint so the next session or device can resume work
 4. Write the next 3 immediate tasks.
 5. Update `CONTEXT.md` (or the relevant file in the `context/` directory) with the latest state.
 6. Remind the user to run `git push` to synchronize changes.
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -16,3 +16,5 @@ Perform conformance audits on repository files to maintain high quality and cons
 5. Verify that domain-specific terms match the Domain Language Table (e.g., `quest`, `chapter`, `mana`).
 6. Scan for any exposed secrets, passwords, or API keys.
 7. Compile and output a report showing pass/fail status for each of the checks.
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

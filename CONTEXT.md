@@ -412,3 +412,17 @@ Next: F20b automation scripts (daily-pulse.py, warn-check.py, quality-score.py)
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+
+## Sprint F20c-PREP: Warning Fixes + Queue Prune (June 3, 2026)
+- Fixed 12-13 missing staleness footers across rules/skills/workflows
+- Synced updated rules to .clinerules/
+- Pruned queue.md from 41 pending to 9 pending tasks
+- Archived all completed Batch 1-4 + F19-F20b tasks
+- Created scheduled-tasks.md documentation
+- Re-ran warn-check.py: 0 issues (0 critical, 0 warnings, 0 info)
+- Re-ran daily-pulse.py: 9 pending | 8 completed | 0 active warnings
+- Next: F20c Form 2 Dashboard scaffold + F20d High-Value Gaps
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+

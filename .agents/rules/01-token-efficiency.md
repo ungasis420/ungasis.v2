@@ -106,3 +106,5 @@ alwaysApply: true
 - Write them to be dense and structured — every word counts
 - Use bullet points, not paragraphs
 - Define domain vocabulary upfront (see AGENTS.md) to avoid misunderstandings
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

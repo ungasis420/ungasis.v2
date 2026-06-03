@@ -23,3 +23,5 @@ Your job: verify every section from 2 source files is covered by the generated m
 - Tables only — no prose paragraphs
 - If you find a gap, log it — don't fix it
 - If context > 70%, checkpoint progress to QA-AUDIT-REPORT.md and compact
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

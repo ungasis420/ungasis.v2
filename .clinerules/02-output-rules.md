@@ -1,3 +1,7 @@
+---
+description: "Specifies reporting formats, status markers, and layout constraints for QA audits."
+alwaysApply: true
+---
 # Output Rules
 
 ## Target File
@@ -32,3 +36,5 @@ Do NOT put audit results in chat only — they must be in the file.
 
 ---
 ```
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

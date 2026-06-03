@@ -1,1 +1,1 @@
-feat: batch-3 proactive+jarvis-core — jarvis 85 to 95
+feat: F20b automation scripts — daily-pulse warn-check quality-score

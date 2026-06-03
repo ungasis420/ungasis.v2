@@ -15,3 +15,5 @@ Apply a bug fix with a structured process that prioritizes safety and self-refle
 5. Apply the fix.
 6. Run a reflection check using [04-reflection.md](file:///c:/Users/63905/Downloads/ungasis/.agents/rules/04-reflection.md).
 7. Report exactly what changed to the user.
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

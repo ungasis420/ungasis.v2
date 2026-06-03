@@ -1,3 +1,7 @@
+---
+description: "Enforces the UNGASIS 12-layer token efficiency system and file-reading strategy."
+alwaysApply: true
+---
 # Token Efficiency Protocol (UNGASIS 12-Layer + Industry Best Practices)
 
 > Saves ~350,000 tokens/month. Every layer compounds.
@@ -102,3 +106,5 @@
 - Write them to be dense and structured — every word counts
 - Use bullet points, not paragraphs
 - Define domain vocabulary upfront (see AGENTS.md) to avoid misunderstandings
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
