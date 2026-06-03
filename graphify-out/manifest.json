@@ -850,8 +850,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780441280.6223865,
-    "ast_hash": "0fd9209924a77914979bea7a7866463e",
+    "mtime": 1780445030.90304,
+    "ast_hash": "59b6bf80ff8e564a7bbea1a35d7c44bf",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -860,7 +860,7 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\GEMINI.md": {
-    "mtime": 1780441215.9156406,
+    "mtime": 1780442469.763191,
     "ast_hash": "e47d1b80cc8d80765c22876116f8b4b3",
     "semantic_hash": ""
   },
@@ -875,8 +875,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\QA-AUDIT-REPORT.md": {
-    "mtime": 1780395582.5279288,
-    "ast_hash": "64ae7977511742f0963adaec39efec38",
+    "mtime": 1780445042.8251324,
+    "ast_hash": "2ff452b2508b13933beb67efa92ee5da",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\QA-MISSION.md": {
@@ -9025,8 +9025,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\commander.md": {
-    "mtime": 1780430820.331787,
-    "ast_hash": "3c492bca218c5077139abe2dac038a75",
+    "mtime": 1780444491.4115696,
+    "ast_hash": "e65af5c80c3d610cf5dfe0fc87b695d0",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.gemini\\agents\\commander.md": {
@@ -9305,8 +9305,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\quality\\quality-log.md": {
-    "mtime": 1780432895.6205604,
-    "ast_hash": "3eb86f77976e09fba013d1288d4c507f",
+    "mtime": 1780445026.5230258,
+    "ast_hash": "f97609fe16a919511de5c5c427df6e82",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\quality\\quality-metrics.md": {
@@ -9345,8 +9345,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\warnings\\warning-log.md": {
-    "mtime": 1780432856.5126443,
-    "ast_hash": "5131e4685b590818da8eb7dcf7f50aa5",
+    "mtime": 1780445018.909068,
+    "ast_hash": "a9183dd6b576096c7502b596babc6905",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\warnings\\warning-rules.md": {
@@ -9510,8 +9510,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\designer.md": {
-    "mtime": 1780441262.8047166,
-    "ast_hash": "cc6c54aa0fc4a37b51706f3c8ad4ef60",
+    "mtime": 1780444502.893189,
+    "ast_hash": "0bdfc8bebe0b6b602bce33aaa817f7ff",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\.gemini\\agents\\designer.md": {
@@ -9522,6 +9522,46 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\cli-agents\\antigravity-agent-manager-setup.md": {
     "mtime": 1780441276.230251,
     "ast_hash": "9ced401889c60e5f7013a452df29f435",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\quality-auditor.md": {
+    "mtime": 1780444495.2131147,
+    "ast_hash": "9b6b6951350d4ecb1875bbf594661131",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\workflows\\watchdog.md": {
+    "mtime": 1780444498.7976577,
+    "ast_hash": "80079e18af226dc87ee7c9835e1ebc8a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\daily-pulse.py": {
+    "mtime": 1780445000.2905214,
+    "ast_hash": "f30a181080b5874c65a5cf7b45fcdc68",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\warn-check.py": {
+    "mtime": 1780445006.0937822,
+    "ast_hash": "4ff498a72d1cad3d75615f3279b99fcf",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\docs\\blueprints\\BLUEPRINT-automation-scripts.md": {
+    "mtime": 1780444922.4394372,
+    "ast_hash": "2a2b01f34741322f057c4e9bbeea4c70",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\quality-score.py": {
+    "mtime": 1780445012.614228,
+    "ast_hash": "3c69ed150b5c94a0e0523b7ac7a77fad",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scripts\\README.md": {
+    "mtime": 1780444989.394374,
+    "ast_hash": "609cc19d694c35a352e6d4d48d37caa3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\jarvis-core\\daily-pulse-latest.md": {
+    "mtime": 1780445016.6567037,
+    "ast_hash": "3deb264114b08083926e41ac31cb7efd",
     "semantic_hash": ""
   }
 }

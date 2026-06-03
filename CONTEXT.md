@@ -400,6 +400,15 @@ Agent crew: 6 agents + Designer (7 total)
 Slash commands: 10 (/commander, /designer, /agent-manager added)
 Next: F20b automation scripts (daily-pulse.py, warn-check.py, quality-score.py)
 
+
+## Sprint F20b: Automation Scripts (June 3, 2026)
+- Created 3 Python automation scripts: daily-pulse.py, warn-check.py, quality-score.py
+- Created scripts/README.md documentation
+- Scripts use only Python stdlib — no pip install needed
+- Output: terminal display + auto-append to UNGASIS log files
+- JARVIS now DOES things instead of just describing what to do
+- Next: Set up Scheduled Tasks in Agent Manager + F20c Form 2 Dashboard
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
