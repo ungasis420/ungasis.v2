@@ -1,0 +1,532 @@
+[
+  {
+    "id": "electrocute",
+    "name": "Electrocute",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Hitting a champion with 3 separate attacks or abilities within 3 seconds deals bonus adaptive damage.",
+    "tier": "S",
+    "image": "/images/runes/electrocute.png"
+  },
+  {
+    "id": "dark_harvest",
+    "name": "Dark Harvest",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Damaging a low-health champion deals bonus adaptive damage and harvests a soul, permanently increasing this damage.",
+    "tier": "B",
+    "image": "/images/runes/dark_harvest.png"
+  },
+  {
+    "id": "empowerment",
+    "name": "Empowerment",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "After using an ability, your next basic attack is enhanced with bonus adaptive damage.",
+    "tier": "B",
+    "image": "/images/runes/empowerment.png"
+  },
+  {
+    "id": "lethal_tempo",
+    "name": "Lethal Tempo",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Attacking a champion grants stacking attack speed. At max stacks, you also gain bonus attack range.",
+    "tier": "S",
+    "image": "/images/runes/lethal_tempo.png"
+  },
+  {
+    "id": "fleet_footwork",
+    "name": "Fleet Footwork",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Moving and attacking builds energy stacks. At full stacks, your next attack heals you and grants bonus movement speed.",
+    "tier": "A",
+    "image": "/images/runes/fleet_footwork.png"
+  },
+  {
+    "id": "conqueror",
+    "name": "Conqueror",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Attacks and abilities on champions grant stacking adaptive force. At max stacks, you also heal for a portion of damage dealt.",
+    "tier": "S",
+    "image": "/images/runes/conqueror.png"
+  },
+  {
+    "id": "grasp_of_the_undying",
+    "name": "Grasp of the Undying",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Every 3 seconds in combat, your next attack on a champion deals bonus magic damage, heals you, and permanently increases your max health.",
+    "tier": "S",
+    "image": "/images/runes/grasp_of_the_undying.png"
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "When nearby allied champions take damage, both you and the ally gain a shield and bonus movement speed.",
+    "tier": "B",
+    "image": "/images/runes/guardian.png"
+  },
+  {
+    "id": "aery",
+    "name": "Aery",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Damaging a champion sends Aery to them dealing bonus damage. Shielding or buffing an ally sends Aery to shield them instead.",
+    "tier": "A",
+    "image": "/images/runes/aery.png"
+  },
+  {
+    "id": "arcane_comet",
+    "name": "Arcane Comet",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Damaging a champion with an ability hurls a comet at their location, dealing bonus adaptive damage.",
+    "tier": "A",
+    "image": "/images/runes/arcane_comet.png"
+  },
+  {
+    "id": "phase_rush",
+    "name": "Phase Rush",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Hitting a champion with 3 attacks or abilities within 3 seconds grants a burst of movement speed and slow resistance.",
+    "tier": "A",
+    "image": "/images/runes/phase_rush.png"
+  },
+  {
+    "id": "first_strike",
+    "name": "First Strike",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "If you damage a champion before they damage you, gain bonus gold and deal increased damage for a short duration.",
+    "tier": "A",
+    "image": "/images/runes/first_strike.png"
+  },
+  {
+    "id": "ice_overlord",
+    "name": "Ice Overlord",
+    "type": "Keystone",
+    "path": "Keystone",
+    "slot": 0,
+    "description": "Immobilizing a champion deals bonus magic damage to them and nearby enemies. Also grants bonus resistances temporarily.",
+    "tier": "S",
+    "image": "/images/runes/ice_overlord.png"
+  },
+  {
+    "id": "cheap_shot",
+    "name": "Cheap Shot",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 1,
+    "description": "Deal bonus true damage to champions with impaired movement or actions (slowed, stunned, rooted, etc.).",
+    "tier": "B",
+    "image": "/images/runes/cheap_shot.png"
+  },
+  {
+    "id": "sudden_impact",
+    "name": "Sudden Impact",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 1,
+    "description": "After using a dash, blink, or leaving stealth, gain bonus armor penetration and magic penetration for a few seconds.",
+    "tier": "S",
+    "image": "/images/runes/sudden_impact.png"
+  },
+  {
+    "id": "empowered_attack",
+    "name": "Empowered Attack",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 1,
+    "description": "Your first basic attack against each champion deals bonus adaptive damage.",
+    "tier": "B",
+    "image": "/images/runes/empowered_attack.png"
+  },
+  {
+    "id": "chain_assault",
+    "name": "Chain Assault",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 2,
+    "description": "After scoring a takedown, your next attack or ability on a different champion deals bonus damage.",
+    "tier": "B",
+    "image": "/images/runes/chain_assault.png"
+  },
+  {
+    "id": "tyrant",
+    "name": "Tyrant",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 2,
+    "description": "Deal bonus damage to champions who have more max health than you.",
+    "tier": "B",
+    "image": "/images/runes/tyrant.png"
+  },
+  {
+    "id": "hubris",
+    "name": "Hubris",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 2,
+    "description": "Gain adaptive force on champion takedowns. Stacks up to a cap and partially lost on death.",
+    "tier": "B",
+    "image": "/images/runes/hubris.png"
+  },
+  {
+    "id": "eyeball_collection",
+    "name": "Eyeball Collection",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Collect eyeballs on champion takedowns. Each eyeball grants adaptive force, up to a cap.",
+    "tier": "A",
+    "image": "/images/runes/eyeball_collection.png"
+  },
+  {
+    "id": "ingenious_hunter",
+    "name": "Ingenious Hunter",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Gain item ability haste. Unique champion takedowns grant additional item ability haste, stacking up.",
+    "tier": "A",
+    "image": "/images/runes/ingenious_hunter.png"
+  },
+  {
+    "id": "relentless_hunter",
+    "name": "Relentless Hunter",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Gain bonus out-of-combat movement speed. Unique champion takedowns grant additional speed, stacking up.",
+    "tier": "C",
+    "image": "/images/runes/relentless_hunter.png"
+  },
+  {
+    "id": "zombie_ward",
+    "name": "Zombie Ward",
+    "type": "Minor",
+    "path": "Domination",
+    "slot": 3,
+    "description": "Destroying enemy wards creates a friendly Zombie Ward in its place. Zombie Wards grant vision and earn adaptive force.",
+    "tier": "A",
+    "image": "/images/runes/zombie_ward.png"
+  },
+  {
+    "id": "brutal",
+    "name": "Brutal",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 1,
+    "description": "Gain bonus adaptive force and armor/magic penetration.",
+    "tier": "A",
+    "image": "/images/runes/brutal.png"
+  },
+  {
+    "id": "triumph",
+    "name": "Triumph",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 1,
+    "description": "Champion takedowns restore a portion of your missing health and grant bonus gold.",
+    "tier": "B",
+    "image": "/images/runes/triumph.png"
+  },
+  {
+    "id": "battle_zeal",
+    "name": "Battle Zeal",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 1,
+    "description": "Gain bonus attack speed after hitting a champion with an ability. Stacks on repeated hits.",
+    "tier": "A",
+    "image": "/images/runes/battle_zeal.png"
+  },
+  {
+    "id": "last_stand",
+    "name": "Last Stand",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 2,
+    "description": "Deal increased damage when you are low on health. The lower your health, the more bonus damage you deal.",
+    "tier": "B",
+    "image": "/images/runes/last_stand.png"
+  },
+  {
+    "id": "cut_down",
+    "name": "Cut Down",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 2,
+    "description": "Deal bonus damage to champions who have more max health than you. The difference in health increases the bonus.",
+    "tier": "S",
+    "image": "/images/runes/cut_down.png"
+  },
+  {
+    "id": "coup_de_grace",
+    "name": "Coup de Grace",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 2,
+    "description": "Deal increased damage to champions who are below a health threshold.",
+    "tier": "B",
+    "image": "/images/runes/coup_de_grace.png"
+  },
+  {
+    "id": "legend_alacrity",
+    "name": "Legend: Alacrity",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 3,
+    "description": "Gain bonus attack speed on champion takedowns and large monster kills, stacking permanently.",
+    "tier": "S",
+    "image": "/images/runes/legend_alacrity.png"
+  },
+  {
+    "id": "legend_tenacity",
+    "name": "Legend: Tenacity",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 3,
+    "description": "Gain bonus tenacity (crowd control duration reduction) on champion takedowns and large monster kills, stacking permanently.",
+    "tier": "C",
+    "image": "/images/runes/legend_tenacity.png"
+  },
+  {
+    "id": "legend_bloodline",
+    "name": "Legend: Bloodline",
+    "type": "Minor",
+    "path": "Precision",
+    "slot": 3,
+    "description": "Gain bonus physical vamp on champion takedowns and large monster kills, stacking permanently.",
+    "tier": "A",
+    "image": "/images/runes/legend_bloodline.png"
+  },
+  {
+    "id": "demolish",
+    "name": "Demolish",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "Charge up a powerful attack against towers over a few seconds while near them. The empowered attack deals bonus physical damage based on your max health.",
+    "tier": "A",
+    "image": "/images/runes/demolish.png"
+  },
+  {
+    "id": "font_of_life",
+    "name": "Font of Life",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "Impairing the movement of an enemy champion marks them. Allied champions who attack marked enemies heal over time.",
+    "tier": "A",
+    "image": "/images/runes/font_of_life.png"
+  },
+  {
+    "id": "courage_of_the_colossus",
+    "name": "Courage of the Colossus",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "When you immobilize an enemy champion, gain a shield that scales with your max health and the number of nearby enemies.",
+    "tier": "A",
+    "image": "/images/runes/courage_of_the_colossus.png"
+  },
+  {
+    "id": "unshakeable",
+    "name": "Unshakeable",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 1,
+    "description": "Gain bonus tenacity and slow resistance. When immobilized, briefly gain additional resistances.",
+    "tier": "A",
+    "image": "/images/runes/unshakeable.png"
+  },
+  {
+    "id": "second_wind",
+    "name": "Second Wind",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 2,
+    "description": "After taking damage from an enemy champion, regenerate a portion of your missing health over several seconds.",
+    "tier": "S",
+    "image": "/images/runes/second_wind.png"
+  },
+  {
+    "id": "nullifying_orb",
+    "name": "Nullifying Orb",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 2,
+    "description": "When you take magic damage that would bring you below a health threshold, gain a magic damage shield.",
+    "tier": "B",
+    "image": "/images/runes/nullifying_orb.png"
+  },
+  {
+    "id": "bone_plating",
+    "name": "Bone Plating",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 2,
+    "description": "After taking damage from an enemy champion, the next three instances of damage from them are reduced.",
+    "tier": "S",
+    "image": "/images/runes/bone_plating.png"
+  },
+  {
+    "id": "overgrowth",
+    "name": "Overgrowth",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 3,
+    "description": "Absorb life essence from nearby dying minions and monsters, permanently gaining bonus max health.",
+    "tier": "S",
+    "image": "/images/runes/overgrowth.png"
+  },
+  {
+    "id": "revitalize",
+    "name": "Revitalize",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 3,
+    "description": "Heals and shields you cast and receive are increased. This bonus is enhanced on low-health targets.",
+    "tier": "A",
+    "image": "/images/runes/revitalize.png"
+  },
+  {
+    "id": "perseverance",
+    "name": "Perseverance",
+    "type": "Minor",
+    "path": "Resolve",
+    "slot": 3,
+    "description": "Gain bonus armor and magic resistance that increases when you are low on health.",
+    "tier": "S",
+    "image": "/images/runes/perseverance.png"
+  },
+  {
+    "id": "axiom_arcanist",
+    "name": "Axiom Arcanist",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "Gain bonus ability haste. Champion takedowns further reduce your remaining ultimate cooldown.",
+    "tier": "A",
+    "image": "/images/runes/axiom_arcanist.png"
+  },
+  {
+    "id": "manaflow_band",
+    "name": "Manaflow Band",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "Hitting a champion with an ability permanently increases your max mana. At max stacks, restore missing mana periodically.",
+    "tier": "B",
+    "image": "/images/runes/manaflow_band.png"
+  },
+  {
+    "id": "botanist",
+    "name": "Botanist",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "Enhance nearby honey fruits, increasing their healing and providing additional effects when consumed.",
+    "tier": "A",
+    "image": "/images/runes/botanist.png"
+  },
+  {
+    "id": "hexflash",
+    "name": "Hexflash",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 1,
+    "description": "While Flash is on cooldown, you can channel to cast a shorter-range Hexflash instead.",
+    "tier": "S",
+    "image": "/images/runes/hexflash.png"
+  },
+  {
+    "id": "transcendence",
+    "name": "Transcendence",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 2,
+    "description": "Gain bonus ability haste at certain level breakpoints. Champion takedowns reduce remaining ability cooldowns.",
+    "tier": "S",
+    "image": "/images/runes/transcendence.png"
+  },
+  {
+    "id": "celerity",
+    "name": "Celerity",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 2,
+    "description": "Gain bonus movement speed. All movement speed bonuses you receive are increased by a percentage.",
+    "tier": "B",
+    "image": "/images/runes/celerity.png"
+  },
+  {
+    "id": "absolute_focus",
+    "name": "Absolute Focus",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 2,
+    "description": "Gain bonus adaptive force while above a health threshold.",
+    "tier": "B",
+    "image": "/images/runes/absolute_focus.png"
+  },
+  {
+    "id": "scorch",
+    "name": "Scorch",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "Your next ability hit on a champion sets them ablaze, dealing bonus magic damage over time. Has a short cooldown.",
+    "tier": "B",
+    "image": "/images/runes/scorch.png"
+  },
+  {
+    "id": "nimbus_cloak",
+    "name": "Nimbus Cloak",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "After casting a summoner spell, gain a burst of bonus movement speed that decays over a few seconds.",
+    "tier": "A",
+    "image": "/images/runes/nimbus_cloak.png"
+  },
+  {
+    "id": "gathering_storm",
+    "name": "Gathering Storm",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "Gain increasing amounts of adaptive force over the course of the game at set time intervals.",
+    "tier": "B",
+    "image": "/images/runes/gathering_storm.png"
+  },
+  {
+    "id": "ixtali_seedjar",
+    "name": "Ixtali Seedjar",
+    "type": "Minor",
+    "path": "Sorcery",
+    "slot": 3,
+    "description": "Periodically gain a seed that can be planted as a ward. Seeds grant brief vision in the planted area.",
+    "tier": "C",
+    "image": "/images/runes/ixtali_seedjar.png"
+  }
+]

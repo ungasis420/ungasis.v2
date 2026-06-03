@@ -1,0 +1,871 @@
+[
+  {
+    "id": "aatrox",
+    "name": "Aatrox",
+    "classes": [
+      "Juggernaut"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Manaless",
+    "adaptiveType": "Physical",
+    "style": "Drain tank, team fight"
+  },
+  {
+    "id": "camille",
+    "name": "Camille",
+    "classes": [
+      "Diver"
+    ],
+    "roles": [
+      "Baron",
+      "Jungle"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Split push + dive"
+  },
+  {
+    "id": "ambessa",
+    "name": "Ambessa",
+    "classes": [
+      "Bruiser"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Aggressive bruiser"
+  },
+  {
+    "id": "ornn",
+    "name": "Ornn",
+    "classes": [
+      "Tank",
+      "Vanguard"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Tank engage, utility"
+  },
+  {
+    "id": "malphite",
+    "name": "Malphite",
+    "classes": [
+      "Tank",
+      "Vanguard"
+    ],
+    "roles": [
+      "Baron",
+      "Support"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Team fight engage"
+  },
+  {
+    "id": "sion",
+    "name": "Sion",
+    "classes": [
+      "Tank",
+      "Vanguard"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "CC tank, zone control"
+  },
+  {
+    "id": "lee_sin",
+    "name": "Lee Sin",
+    "classes": [
+      "Diver"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Energy",
+    "adaptiveType": "Physical",
+    "style": "Early aggression, playmaker"
+  },
+  {
+    "id": "talon",
+    "name": "Talon",
+    "classes": [
+      "Assassin"
+    ],
+    "roles": [
+      "Jungle",
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Wall-hop assassin"
+  },
+  {
+    "id": "khazix",
+    "name": "Kha'Zix",
+    "classes": [
+      "Assassin"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Isolation assassin"
+  },
+  {
+    "id": "shyvana",
+    "name": "Shyvana",
+    "classes": [
+      "Juggernaut"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Fury",
+    "adaptiveType": "Magic",
+    "style": "Farm then team fight"
+  },
+  {
+    "id": "twisted_fate",
+    "name": "Twisted Fate",
+    "classes": [
+      "Mage"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Global roam utility"
+  },
+  {
+    "id": "brand",
+    "name": "Brand",
+    "classes": [
+      "Mage"
+    ],
+    "roles": [
+      "Mid",
+      "Support"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Percent HP burn, team fight"
+  },
+  {
+    "id": "norra",
+    "name": "Norra",
+    "classes": [
+      "Mage"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Portal roaming mage"
+  },
+  {
+    "id": "viktor",
+    "name": "Viktor",
+    "classes": [
+      "Mage"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Scaling zone control"
+  },
+  {
+    "id": "akali",
+    "name": "Akali",
+    "classes": [
+      "Assassin"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Energy",
+    "adaptiveType": "Magic",
+    "style": "Mobility burst assassin"
+  },
+  {
+    "id": "ahri",
+    "name": "Ahri",
+    "classes": [
+      "Mage",
+      "Assassin"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Charm pick, roaming"
+  },
+  {
+    "id": "lissandra",
+    "name": "Lissandra",
+    "classes": [
+      "Mage"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Roaming + CC engage"
+  },
+  {
+    "id": "kaisa",
+    "name": "Kai'Sa",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Hybrid scaling assassin ADC"
+  },
+  {
+    "id": "xayah",
+    "name": "Xayah",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Feather burst, untargetable ult"
+  },
+  {
+    "id": "jhin",
+    "name": "Jhin",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Utility carry, 4th shot"
+  },
+  {
+    "id": "caitlyn",
+    "name": "Caitlyn",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Longest range, siege"
+  },
+  {
+    "id": "ezreal",
+    "name": "Ezreal",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Safest ADC, poke"
+  },
+  {
+    "id": "leona",
+    "name": "Leona",
+    "classes": [
+      "Vanguard"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "S+",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "All-in engage"
+  },
+  {
+    "id": "thresh",
+    "name": "Thresh",
+    "classes": [
+      "Catcher"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Hook + lantern playmaker"
+  },
+  {
+    "id": "karma",
+    "name": "Karma",
+    "classes": [
+      "Enchanter"
+    ],
+    "roles": [
+      "Support",
+      "Mid"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Shield + speed + poke"
+  },
+  {
+    "id": "soraka",
+    "name": "Soraka",
+    "classes": [
+      "Enchanter"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "S+",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Global heal, sustain"
+  },
+  {
+    "id": "garen",
+    "name": "Garen",
+    "classes": [
+      "Juggernaut"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Manaless",
+    "adaptiveType": "Physical",
+    "style": "Silence + execute"
+  },
+  {
+    "id": "riven",
+    "name": "Riven",
+    "classes": [
+      "Skirmisher"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Manaless",
+    "adaptiveType": "Physical",
+    "style": "Combo-heavy carry"
+  },
+  {
+    "id": "fiora",
+    "name": "Fiora",
+    "classes": [
+      "Duelist"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Split push duelist"
+  },
+  {
+    "id": "ksante",
+    "name": "K'Sante",
+    "classes": [
+      "Tank"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Technical tank"
+  },
+  {
+    "id": "poppy",
+    "name": "Poppy",
+    "classes": [
+      "Warden"
+    ],
+    "roles": [
+      "Baron",
+      "Jungle"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Anti-dash, anti-dive"
+  },
+  {
+    "id": "hecarim",
+    "name": "Hecarim",
+    "classes": [
+      "Diver"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Speed + engage"
+  },
+  {
+    "id": "vi",
+    "name": "Vi",
+    "classes": [
+      "Diver"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Point-click lockdown"
+  },
+  {
+    "id": "kayn",
+    "name": "Kayn",
+    "classes": [
+      "Skirmisher"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Form flexibility"
+  },
+  {
+    "id": "fiddlesticks",
+    "name": "Fiddlesticks",
+    "classes": [
+      "Specialist"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "S",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Fear + team fight ult"
+  },
+  {
+    "id": "syndra",
+    "name": "Syndra",
+    "classes": [
+      "Mage"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Burst mage"
+  },
+  {
+    "id": "galio",
+    "name": "Galio",
+    "classes": [
+      "Warden",
+      "Mage"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Anti-AP, global ult"
+  },
+  {
+    "id": "zed",
+    "name": "Zed",
+    "classes": [
+      "Assassin"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Energy",
+    "adaptiveType": "Physical",
+    "style": "Shadow burst assassin"
+  },
+  {
+    "id": "varus",
+    "name": "Varus",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Poke + engage ult"
+  },
+  {
+    "id": "twitch",
+    "name": "Twitch",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Stealth late-game carry"
+  },
+  {
+    "id": "miss_fortune",
+    "name": "Miss Fortune",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "S",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "AoE ult, lane bully"
+  },
+  {
+    "id": "braum",
+    "name": "Braum",
+    "classes": [
+      "Warden"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Shield wall, passive stun"
+  },
+  {
+    "id": "rakan",
+    "name": "Rakan",
+    "classes": [
+      "Catcher"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Engage + disengage"
+  },
+  {
+    "id": "lulu",
+    "name": "Lulu",
+    "classes": [
+      "Enchanter"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "S",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Polymorph, shield, ult"
+  },
+  {
+    "id": "nami",
+    "name": "Nami",
+    "classes": [
+      "Enchanter"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "S",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Heal + bubble CC"
+  },
+  {
+    "id": "nautilus",
+    "name": "Nautilus",
+    "classes": [
+      "Vanguard"
+    ],
+    "roles": [
+      "Support",
+      "Jungle"
+    ],
+    "tier": "S",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "CC chain tank"
+  },
+  {
+    "id": "darius",
+    "name": "Darius",
+    "classes": [
+      "Juggernaut"
+    ],
+    "roles": [
+      "Baron"
+    ],
+    "tier": "A",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Lane bully, execute"
+  },
+  {
+    "id": "jax",
+    "name": "Jax",
+    "classes": [
+      "Skirmisher"
+    ],
+    "roles": [
+      "Baron",
+      "Jungle"
+    ],
+    "tier": "A",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Scaling duelist"
+  },
+  {
+    "id": "irelia",
+    "name": "Irelia",
+    "classes": [
+      "Diver"
+    ],
+    "roles": [
+      "Baron",
+      "Mid"
+    ],
+    "tier": "A",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Reset diver"
+  },
+  {
+    "id": "master_yi",
+    "name": "Master Yi",
+    "classes": [
+      "Skirmisher"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "A",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Hyper carry"
+  },
+  {
+    "id": "amumu",
+    "name": "Amumu",
+    "classes": [
+      "Vanguard"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "A",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "AoE CC engage"
+  },
+  {
+    "id": "rammus",
+    "name": "Rammus",
+    "classes": [
+      "Vanguard"
+    ],
+    "roles": [
+      "Jungle"
+    ],
+    "tier": "A",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Anti-AD, taunt"
+  },
+  {
+    "id": "orianna",
+    "name": "Orianna",
+    "classes": [
+      "Mage"
+    ],
+    "roles": [
+      "Mid"
+    ],
+    "tier": "A",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Ball control mage"
+  },
+  {
+    "id": "draven",
+    "name": "Draven",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "A",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Early snowball ADC"
+  },
+  {
+    "id": "vayne",
+    "name": "Vayne",
+    "classes": [
+      "Marksman"
+    ],
+    "roles": [
+      "Dragon"
+    ],
+    "tier": "A",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Physical",
+    "style": "Percent HP true damage (nerfed)"
+  },
+  {
+    "id": "morgana",
+    "name": "Morgana",
+    "classes": [
+      "Catcher"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "A",
+    "rangeType": "Ranged",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Black Shield counter"
+  },
+  {
+    "id": "blitzcrank",
+    "name": "Blitzcrank",
+    "classes": [
+      "Catcher"
+    ],
+    "roles": [
+      "Support"
+    ],
+    "tier": "A",
+    "rangeType": "Melee",
+    "resource": "Mana",
+    "adaptiveType": "Magic",
+    "style": "Hook threat"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "enemy": "Aatrox",
+    "picks": [
+      {
+        "name": "Fiora",
+        "reason": "Parry his Q"
+      },
+      {
+        "name": "Poppy",
+        "reason": "Block his dash"
+      },
+      {
+        "name": "Teemo",
+        "reason": "Poke + blind"
+      }
+    ],
+    "tip": "Rush anti-heal, dodge Q sweet spots"
+  },
+  {
+    "enemy": "Camille",
+    "picks": [
+      {
+        "name": "Jax",
+        "reason": "Counter-strike blocks AA"
+      },
+      {
+        "name": "Poppy",
+        "reason": "Anti-dash W"
+      },
+      {
+        "name": "Renekton",
+        "reason": "Early bully"
+      }
+    ],
+    "tip": "Avoid fighting her level 1-2 passive"
+  },
+  {
+    "enemy": "Malphite",
+    "picks": [
+      {
+        "name": "Nasus",
+        "reason": "Sustain outscales"
+      },
+      {
+        "name": "Gwen",
+        "reason": "AP + percent HP damage"
+      },
+      {
+        "name": "Kayle",
+        "reason": "Scale past him"
+      }
+    ],
+    "tip": "Poke pre-6, respect ult range"
+  },
+  {
+    "enemy": "Lee Sin",
+    "picks": [
+      {
+        "name": "Rammus",
+        "reason": "Taunt + armor reflect"
+      },
+      {
+        "name": "Vi",
+        "reason": "Point-and-click ult"
+      },
+      {
+        "name": "Warwick",
+        "reason": "Sustain + suppress"
+      }
+    ],
+    "tip": "Ward buffs, avoid 1v1 pre-5"
+  },
+  {
+    "enemy": "Kha'Zix",
+    "picks": [
+      {
+        "name": "Lee Sin",
+        "reason": "Reveals stealth"
+      },
+      {
+        "name": "Rammus",
+        "reason": "Armor reflect"
+      },
+      {
+        "name": "Amumu",
+        "reason": "Group CC"
+      }
+    ],
+    "tip": "Never walk alone, isolation damage halves near allies"
+  },
+  {
+    "enemy": "Akali",
+    "picks": [
+      {
+        "name": "Galio",
+        "reason": "Anti-AP, taunt through shroud"
+      },
+      {
+        "name": "Lissandra",
+        "reason": "Point-click CC"
+      },
+      {
+        "name": "Twisted Fate",
+        "reason": "Gold card through shroud"
+      }
+    ],
+    "tip": "CC during dashes, buy Grievous Wounds"
+  },
+  {
+    "enemy": "Ahri",
+    "picks": [
+      {
+        "name": "Yasuo",
+        "reason": "Wind wall blocks charm"
+      },
+      {
+        "name": "Zed",
+        "reason": "Dodge charm with ult"
+      },
+      {
+        "name": "Kassadin",
+        "reason": "Anti-mage scaling"
+      }
+    ],
+    "tip": "Sidestep charm (12s CD early), punish when down"
+  },
+  {
+    "enemy": "Leona",
+    "picks": [
+      {
+        "name": "Morgana",
+        "reason": "Black Shield blocks ALL CC"
+      },
+      {
+        "name": "Janna",
+        "reason": "Tornado interrupts engage"
+      },
+      {
+        "name": "Braum",
+        "reason": "Shield blocks Zenith"
+      }
+    ],
+    "tip": "Stand behind minions, punish E cooldown"
+  },
+  {
+    "enemy": "Thresh",
+    "picks": [
+      {
+        "name": "Morgana",
+        "reason": "Spell shield"
+      },
+      {
+        "name": "Leona",
+        "reason": "Out-engages him"
+      },
+      {
+        "name": "Alistar",
+        "reason": "Interrupts hook follow-up"
+      }
+    ],
+    "tip": "Stand behind minions, bait hook before engaging"
+  },
+  {
+    "enemy": "Kai'Sa",
+    "picks": [
+      {
+        "name": "Caitlyn",
+        "reason": "Range advantage"
+      },
+      {
+        "name": "Draven",
+        "reason": "Early bully"
+      },
+      {
+        "name": "Ashe",
+        "reason": "Slow + kite"
+      }
+    ],
+    "tip": "Pressure her early, she is weak before 2 items"
+  },
+  {
+    "enemy": "Twisted Fate",
+    "picks": [
+      {
+        "name": "Akali",
+        "reason": "Burst before he reacts"
+      },
+      {
+        "name": "Zed",
+        "reason": "All-in potential"
+      },
+      {
+        "name": "Fizz",
+        "reason": "Dodge gold card with E"
+      }
+    ],
+    "tip": "Push wave when he uses ult to punish CS loss"
+  },
+  {
+    "enemy": "Brand",
+    "picks": [
+      {
+        "name": "Ahri",
+        "reason": "Mobility dodges skills"
+      },
+      {
+        "name": "Yasuo",
+        "reason": "Wind wall blocks W"
+      },
+      {
+        "name": "Zed",
+        "reason": "Gap close past zone"
+      }
+    ],
+    "tip": "Spread out in fights, his passive chains"
+  },
+  {
+    "enemy": "Norra",
+    "picks": [
+      {
+        "name": "Akali",
+        "reason": "Can follow portals"
+      },
+      {
+        "name": "Talon",
+        "reason": "Wall-hop matches roam"
+      },
+      {
+        "name": "Twisted Fate",
+        "reason": "Counter-roam with ult"
+      }
+    ],
+    "tip": "Track portal exits, ward deep"
+  },
+  {
+    "enemy": "Viktor",
+    "picks": [
+      {
+        "name": "Akali",
+        "reason": "Gap close past zone"
+      },
+      {
+        "name": "Zed",
+        "reason": "Burst before scaling"
+      },
+      {
+        "name": "Fizz",
+        "reason": "Untargetable dodges laser"
+      }
+    ],
+    "tip": "Pressure him before 3 items, he outscales most mids"
+  }
+]

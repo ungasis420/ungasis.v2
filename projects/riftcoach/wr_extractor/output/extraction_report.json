@@ -1,0 +1,20 @@
+{
+  "version": "2.0",
+  "patch": "7.1d",
+  "ddragon_version": "16.9.1",
+  "extracted_at": "2026-05-11 16:27",
+  "counts": {
+    "champions": 140,
+    "items": 109,
+    "runes": 53,
+    "spells": 10
+  },
+  "image_folders": {
+    "champion_portraits": 135,
+    "champion_splash": 135,
+    "champion_abilities": 0,
+    "items": 80,
+    "runes": 53,
+    "spells": 10
+  }
+}

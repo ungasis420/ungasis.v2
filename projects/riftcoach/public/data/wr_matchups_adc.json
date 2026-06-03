@@ -1,0 +1,2269 @@
+{
+  "meta": {
+    "type": "matchups",
+    "scope": "adc_duo_lane",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 22,
+    "total_strong_matchups": 65,
+    "total_weak_matchups": 68,
+    "total_entries": 133,
+    "difficulty_scale": {
+      "0.1-0.3": "hard_counter_easy_win",
+      "0.4-0.6": "skill_matchup",
+      "0.7-0.9": "hard_losing_matchup"
+    },
+    "confidence_source": "theorycraft_meta_inference",
+    "note": "ADC/Dragon Lane role. ADC vs ADC matchups."
+  },
+  "matchups": [
+    {
+      "champion_id": "ashe",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "perma_slow_denies_kiting",
+          "win_condition": [
+            "w_poke_early",
+            "r_engage_on_immobile"
+          ],
+          "threats": [
+            "late_scaling_outscales"
+          ],
+          "counterplay": [
+            "poke_early_deny_farm",
+            "r_engage_pre_6"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "outranges_short_range",
+          "win_condition": [
+            "w_poke_from_range",
+            "zone_off_cs"
+          ],
+          "threats": [
+            "all_in_post_6",
+            "condemn_wall_stun"
+          ],
+          "counterplay": [
+            "keep_distance_poke_with_w"
+          ]
+        },
+        {
+          "target": "twitch",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "e_reveals_stealth_direction",
+          "win_condition": [
+            "hawkshot_reveals",
+            "w_slow_prevents_escape"
+          ],
+          "threats": [
+            "stealth_flank_r"
+          ],
+          "counterplay": [
+            "use_e_to_scout_flanks"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "spinning_axe_outtrades",
+          "win_condition": [
+            "farm_safely_scale"
+          ],
+          "threats": [
+            "early_all_in_burst"
+          ],
+          "counterplay": [
+            "stay_max_range_farm_under_tower"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "burst_trade_wins",
+          "win_condition": [
+            "survive_to_3_items"
+          ],
+          "threats": [
+            "passive_double_shot_burst"
+          ],
+          "counterplay": [
+            "avoid_extended_trades"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outranged_and_trapped",
+          "win_condition": [
+            "match_range_with_w"
+          ],
+          "threats": [
+            "headshot_poke",
+            "trap_zone"
+          ],
+          "counterplay": [
+            "w_slow_to_match_range"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "caitlyn",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.2,
+          "reason": "massive_range_advantage",
+          "win_condition": [
+            "headshot_poke_deny_cs",
+            "trap_zone_control"
+          ],
+          "threats": [
+            "post_6_all_in"
+          ],
+          "counterplay": [
+            "abuse_range_constantly"
+          ]
+        },
+        {
+          "target": "kai_sa",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "range_denies_evolves",
+          "win_condition": [
+            "poke_deny_farm",
+            "delay_q_evolve"
+          ],
+          "threats": [
+            "evolved_e_dive"
+          ],
+          "counterplay": [
+            "headshot_on_every_cs_attempt"
+          ]
+        },
+        {
+          "target": "nilah",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "range_vs_melee",
+          "win_condition": [
+            "kite_from_range",
+            "trap_approach_paths"
+          ],
+          "threats": [
+            "w_dodge_zone",
+            "r_burst"
+          ],
+          "counterplay": [
+            "trap_chokepoints_kite_back"
+          ]
+        },
+        {
+          "target": "samira",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "range_vs_short_range",
+          "win_condition": [
+            "poke_before_engage",
+            "trap_on_dash"
+          ],
+          "threats": [
+            "w_blocks_q_and_net"
+          ],
+          "counterplay": [
+            "bait_windwall_then_trade"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "spinning_axe_outtrades_at_all_stages",
+          "win_condition": [
+            "trap_under_axe_catch",
+            "scale_with_support"
+          ],
+          "threats": [
+            "raw_aa_damage_wins"
+          ],
+          "counterplay": [
+            "place_traps_where_axes_land"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trade_in_range",
+          "win_condition": [
+            "kite_with_net",
+            "trap_disengage"
+          ],
+          "threats": [
+            "dash_into_burst_range"
+          ],
+          "counterplay": [
+            "e_net_away_from_dash"
+          ]
+        },
+        {
+          "target": "ezreal",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "q_poke_matches_range",
+          "win_condition": [
+            "trap_on_e_location",
+            "auto_harass"
+          ],
+          "threats": [
+            "q_poke_from_safety"
+          ],
+          "counterplay": [
+            "push_wave_for_headshot_procs"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "corki",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "mixed_damage_hard_to_itemize",
+          "win_condition": [
+            "r_missile_poke",
+            "package_engage"
+          ],
+          "threats": [
+            "condemn_wall_stun",
+            "true_damage_late"
+          ],
+          "counterplay": [
+            "poke_with_r_from_range"
+          ]
+        },
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "burst_vs_immobile",
+          "win_condition": [
+            "package_dive",
+            "r_poke"
+          ],
+          "threats": [
+            "late_game_dps"
+          ],
+          "counterplay": [
+            "poke_with_missiles_then_package_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "outtrades_early",
+          "win_condition": [
+            "farm_with_q_from_range"
+          ],
+          "threats": [
+            "all_in_burst"
+          ],
+          "counterplay": [
+            "q_waveclear_stay_safe"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trade_dominant",
+          "win_condition": [
+            "scale_to_mid_game"
+          ],
+          "threats": [
+            "passive_burst_combo"
+          ],
+          "counterplay": [
+            "avoid_extended_trades"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outranged_early",
+          "win_condition": [
+            "r_poke_after_first_item"
+          ],
+          "threats": [
+            "headshot_poke_early"
+          ],
+          "counterplay": [
+            "farm_safely_scale_to_trinity"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "draven",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.2,
+          "reason": "massive_early_damage_gap",
+          "win_condition": [
+            "all_in_level_1_2",
+            "zone_off_farm"
+          ],
+          "threats": [
+            "late_game_scaling"
+          ],
+          "counterplay": [
+            "spinning_axe_harass_every_cs"
+          ]
+        },
+        {
+          "target": "kai_sa",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "outtrades_pre_evolve",
+          "win_condition": [
+            "punish_before_q_evolve",
+            "force_early_kills"
+          ],
+          "threats": [
+            "evolved_abilities_post_item"
+          ],
+          "counterplay": [
+            "all_in_before_first_item"
+          ]
+        },
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.2,
+          "reason": "burst_kills_immobile",
+          "win_condition": [
+            "all_in_early",
+            "deny_all_farm"
+          ],
+          "threats": [
+            "late_game_dps"
+          ],
+          "counterplay": [
+            "zone_and_freeze_wave"
+          ]
+        },
+        {
+          "target": "jinx",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "early_bully_vs_scaling",
+          "win_condition": [
+            "force_fights_pre_3_items"
+          ],
+          "threats": [
+            "jinx_passive_resets_late"
+          ],
+          "counterplay": [
+            "aggressive_level_1_with_axes"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "range_denies_axe_catches",
+          "win_condition": [
+            "all_in_with_support"
+          ],
+          "threats": [
+            "headshot_on_axe_catch_spots"
+          ],
+          "counterplay": [
+            "vary_axe_catch_location"
+          ]
+        },
+        {
+          "target": "tristana",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "bomb_burst_trades_back",
+          "win_condition": [
+            "short_trade_with_axes"
+          ],
+          "threats": [
+            "w_jump_all_in_bomb_burst"
+          ],
+          "counterplay": [
+            "trade_then_back_off"
+          ]
+        },
+        {
+          "target": "ezreal",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "safe_farming_denies_kills",
+          "win_condition": [
+            "flash_engage",
+            "catch_after_e"
+          ],
+          "threats": [
+            "e_blink_escape",
+            "q_poke_safe"
+          ],
+          "counterplay": [
+            "force_e_then_all_in"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ezreal",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "q_poke_from_safety",
+          "win_condition": [
+            "q_poke_deny_farm",
+            "e_escape_engage"
+          ],
+          "threats": [
+            "late_game_dps"
+          ],
+          "counterplay": [
+            "q_harass_on_every_cs"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "safe_poke_outranges",
+          "win_condition": [
+            "q_poke_from_range",
+            "e_escape_all_in"
+          ],
+          "threats": [
+            "all_in_post_6"
+          ],
+          "counterplay": [
+            "poke_then_e_away"
+          ]
+        },
+        {
+          "target": "nilah",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "kite_melee_adc",
+          "win_condition": [
+            "q_poke_from_range",
+            "e_escape_dash"
+          ],
+          "threats": [
+            "w_dodge_zone"
+          ],
+          "counterplay": [
+            "maintain_range_q_poke"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "cant_match_raw_damage",
+          "win_condition": [
+            "safe_farm_scale"
+          ],
+          "threats": [
+            "all_in_burst"
+          ],
+          "counterplay": [
+            "q_farm_from_max_range"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trades_win",
+          "win_condition": [
+            "e_away_from_trades"
+          ],
+          "threats": [
+            "dash_burst_combo"
+          ],
+          "counterplay": [
+            "e_away_when_lucian_dashes"
+          ]
+        },
+        {
+          "target": "miss_fortune",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "q_bounce_outtrades",
+          "win_condition": [
+            "dodge_q_bounce",
+            "poke_from_angle"
+          ],
+          "threats": [
+            "love_tap_q_burst"
+          ],
+          "counterplay": [
+            "never_stand_behind_dying_minions"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "jhin",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "4th_shot_burst_vs_immobile",
+          "win_condition": [
+            "poke_with_q_w",
+            "4th_shot_execute"
+          ],
+          "threats": [
+            "late_dps"
+          ],
+          "counterplay": [
+            "poke_from_energized_range"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "range_and_burst_advantage",
+          "win_condition": [
+            "w_root_from_range",
+            "4th_shot_poke"
+          ],
+          "threats": [
+            "all_in_post_6"
+          ],
+          "counterplay": [
+            "w_root_when_she_approaches"
+          ]
+        },
+        {
+          "target": "twitch",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "w_reveals_area_4th_shot_burst",
+          "win_condition": [
+            "w_on_approach",
+            "r_snipe"
+          ],
+          "threats": [
+            "stealth_flank_r"
+          ],
+          "counterplay": [
+            "w_trap_on_flank_paths"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "raw_aa_damage_wins",
+          "win_condition": [
+            "q_poke_from_range"
+          ],
+          "threats": [
+            "spinning_axe_outtrades"
+          ],
+          "counterplay": [
+            "q_bounce_from_max_range"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trades_in_reload",
+          "win_condition": [
+            "w_root_kite"
+          ],
+          "threats": [
+            "punishes_reload_window"
+          ],
+          "counterplay": [
+            "never_trade_during_reload"
+          ]
+        },
+        {
+          "target": "samira",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_w_and_r",
+          "win_condition": [
+            "bait_windwall"
+          ],
+          "threats": [
+            "w_blocks_key_abilities"
+          ],
+          "counterplay": [
+            "w_after_windwall_expires"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "jinx",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "rocket_range_matches_w",
+          "win_condition": [
+            "rocket_poke",
+            "chompers_zone"
+          ],
+          "threats": [
+            "w_range_late_game"
+          ],
+          "counterplay": [
+            "rocket_harass_in_lane"
+          ]
+        },
+        {
+          "target": "corki",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "outscales_mixed_damage",
+          "win_condition": [
+            "farm_and_scale",
+            "rocket_poke"
+          ],
+          "threats": [
+            "package_engage"
+          ],
+          "counterplay": [
+            "farm_safely_to_3_items"
+          ]
+        },
+        {
+          "target": "ezreal",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "outscales_poke_adc",
+          "win_condition": [
+            "farm_and_scale",
+            "rocket_splash"
+          ],
+          "threats": [
+            "q_poke_early"
+          ],
+          "counterplay": [
+            "farm_with_rockets_from_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.8,
+          "reason": "early_bully_kills_repeatedly",
+          "win_condition": [
+            "survive_to_3_items"
+          ],
+          "threats": [
+            "spinning_axe_burst"
+          ],
+          "counterplay": [
+            "hug_tower_farm"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "burst_trades_pre_3",
+          "win_condition": [
+            "scale_past_mid_game"
+          ],
+          "threats": [
+            "dash_burst_combo"
+          ],
+          "counterplay": [
+            "farm_safely_avoid_trades"
+          ]
+        },
+        {
+          "target": "tristana",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "all_in_burst_with_bomb",
+          "win_condition": [
+            "chompers_on_jump"
+          ],
+          "threats": [
+            "w_jump_bomb_burst"
+          ],
+          "counterplay": [
+            "e_chompers_on_w_landing_spot"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "kai_sa",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "ashe",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "dive_post_6_kills_utility_adc",
+          "win_condition": [
+            "evolved_e_stealth_dive",
+            "r_engage"
+          ],
+          "threats": [
+            "slow_kiting_early"
+          ],
+          "counterplay": [
+            "play_safe_pre_evolve_then_dive"
+          ]
+        },
+        {
+          "target": "jhin",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "dive_during_reload",
+          "win_condition": [
+            "r_onto_marked_jhin",
+            "all_in_during_reload"
+          ],
+          "threats": [
+            "4th_shot_poke"
+          ],
+          "counterplay": [
+            "all_in_after_4th_shot"
+          ]
+        },
+        {
+          "target": "ezreal",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "dive_after_e_blink",
+          "win_condition": [
+            "r_after_ezreal_e",
+            "burst_combo"
+          ],
+          "threats": [
+            "q_poke_pre_evolve"
+          ],
+          "counterplay": [
+            "wait_for_ez_e_then_r_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "range_denies_evolve_timing",
+          "win_condition": [
+            "survive_to_evolve"
+          ],
+          "threats": [
+            "headshot_poke_delays_item"
+          ],
+          "counterplay": [
+            "safe_farm_accept_cs_loss"
+          ]
+        },
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "outtrades_pre_evolve",
+          "win_condition": [
+            "farm_to_q_evolve"
+          ],
+          "threats": [
+            "all_in_burst"
+          ],
+          "counterplay": [
+            "concede_lane_farm_safely"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trade_dominant_early",
+          "win_condition": [
+            "survive_to_2_items"
+          ],
+          "threats": [
+            "passive_burst"
+          ],
+          "counterplay": [
+            "avoid_trades_pre_evolve"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "kalista",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "aa_dash_kites_immobile",
+          "win_condition": [
+            "rend_stacking_trades",
+            "kite_with_passive"
+          ],
+          "threats": [
+            "late_game_dps"
+          ],
+          "counterplay": [
+            "auto_kite_and_rend_stack"
+          ]
+        },
+        {
+          "target": "jinx",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "early_trade_advantage",
+          "win_condition": [
+            "rend_burst_trades",
+            "r_engage"
+          ],
+          "threats": [
+            "rocket_range_late"
+          ],
+          "counterplay": [
+            "aggressive_rend_trades"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "kite_and_rend_outrades",
+          "win_condition": [
+            "rend_stack_trades",
+            "passive_kiting"
+          ],
+          "threats": [
+            "condemn_wall_stun"
+          ],
+          "counterplay": [
+            "kite_away_from_walls"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "raw_damage_outtrades",
+          "win_condition": [
+            "kite_with_passive"
+          ],
+          "threats": [
+            "spinning_axe_burst"
+          ],
+          "counterplay": [
+            "kite_back_and_rend"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "range_advantage_huge",
+          "win_condition": [
+            "all_in_with_support"
+          ],
+          "threats": [
+            "headshot_harass_outranges"
+          ],
+          "counterplay": [
+            "need_support_engage"
+          ]
+        },
+        {
+          "target": "miss_fortune",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "q_bounce_outtrades",
+          "win_condition": [
+            "dodge_q_bounce",
+            "kite_with_passive"
+          ],
+          "threats": [
+            "love_tap_damage"
+          ],
+          "counterplay": [
+            "dont_stand_behind_minions"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "kog_maw",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "corki",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "outscales_mixed_damage",
+          "win_condition": [
+            "survive_to_3_items",
+            "w_range_shreds"
+          ],
+          "threats": [
+            "package_dive"
+          ],
+          "counterplay": [
+            "farm_safely_outscale"
+          ]
+        },
+        {
+          "target": "sivir",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "outscales_in_dps",
+          "win_condition": [
+            "farm_and_scale",
+            "w_shreds_tanks"
+          ],
+          "threats": [
+            "w_waveclear_push"
+          ],
+          "counterplay": [
+            "match_waveclear_scale"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.9,
+          "reason": "killed_repeatedly_early",
+          "win_condition": [
+            "survive_to_3_items"
+          ],
+          "threats": [
+            "all_in_burst_kills"
+          ],
+          "counterplay": [
+            "hug_tower_concede_cs"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.8,
+          "reason": "burst_combo_kills",
+          "win_condition": [
+            "survive_early"
+          ],
+          "threats": [
+            "dash_burst"
+          ],
+          "counterplay": [
+            "stay_max_range"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "range_harass_denies_farm",
+          "win_condition": [
+            "survive_to_items"
+          ],
+          "threats": [
+            "headshot_poke"
+          ],
+          "counterplay": [
+            "farm_under_tower"
+          ]
+        },
+        {
+          "target": "kalista",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "kited_to_death",
+          "win_condition": [
+            "w_range_outranges_late"
+          ],
+          "threats": [
+            "rend_burst_early"
+          ],
+          "counterplay": [
+            "stay_behind_support"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "lucian",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.2,
+          "reason": "burst_trade_dominance",
+          "win_condition": [
+            "dash_in_combo_burst",
+            "zone_off_cs"
+          ],
+          "threats": [
+            "condemn_wall_stun"
+          ],
+          "counterplay": [
+            "e_in_passive_q_combo"
+          ]
+        },
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.2,
+          "reason": "burst_kills_immobile",
+          "win_condition": [
+            "all_in_early",
+            "deny_farm"
+          ],
+          "threats": [
+            "late_dps"
+          ],
+          "counterplay": [
+            "aggressive_level_2_all_in"
+          ]
+        },
+        {
+          "target": "jinx",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "burst_trades_win_early",
+          "win_condition": [
+            "trade_with_passive_combo",
+            "snowball_lead"
+          ],
+          "threats": [
+            "rocket_range_late"
+          ],
+          "counterplay": [
+            "e_dash_into_combo_range"
+          ]
+        },
+        {
+          "target": "kai_sa",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "burst_pre_evolve",
+          "win_condition": [
+            "punish_before_q_evolve"
+          ],
+          "threats": [
+            "evolved_e_dive"
+          ],
+          "counterplay": [
+            "trade_aggressively_pre_item"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "raw_damage_wins_trades",
+          "win_condition": [
+            "short_burst_trades"
+          ],
+          "threats": [
+            "spinning_axe_damage"
+          ],
+          "counterplay": [
+            "quick_combo_then_disengage"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outranged_in_poke",
+          "win_condition": [
+            "dash_into_trade_range"
+          ],
+          "threats": [
+            "headshot_harass"
+          ],
+          "counterplay": [
+            "e_dash_to_close_gap"
+          ]
+        },
+        {
+          "target": "ezreal",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "e_blink_denies_engage",
+          "win_condition": [
+            "trade_when_e_down"
+          ],
+          "threats": [
+            "q_poke_from_safety"
+          ],
+          "counterplay": [
+            "bait_e_then_all_in"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "miss_fortune",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "love_tap_q_burst_outranges",
+          "win_condition": [
+            "q_bounce_poke",
+            "r_in_teamfight"
+          ],
+          "threats": [
+            "condemn_disengage"
+          ],
+          "counterplay": [
+            "q_bounce_off_minions_onto_vayne"
+          ]
+        },
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "burst_vs_immobile",
+          "win_condition": [
+            "q_poke_early",
+            "r_channel"
+          ],
+          "threats": [
+            "late_dps"
+          ],
+          "counterplay": [
+            "q_bounce_harass_constantly"
+          ]
+        },
+        {
+          "target": "jinx",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "early_burst_advantage",
+          "win_condition": [
+            "q_poke_trades",
+            "e_slow_zone"
+          ],
+          "threats": [
+            "rocket_range_late"
+          ],
+          "counterplay": [
+            "trade_aggressively_pre_3_items"
+          ]
+        },
+        {
+          "target": "ezreal",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "q_bounce_outtrades",
+          "win_condition": [
+            "q_bounce_from_minions",
+            "love_tap_switch"
+          ],
+          "threats": [
+            "e_blink_escape"
+          ],
+          "counterplay": [
+            "angle_q_bounces_off_minions"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "raw_aa_damage_outtrades",
+          "win_condition": [
+            "q_poke_from_range"
+          ],
+          "threats": [
+            "all_in_spinning_axes"
+          ],
+          "counterplay": [
+            "trade_with_q_not_autos"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outranged_in_lane",
+          "win_condition": [
+            "q_bounce_poke"
+          ],
+          "threats": [
+            "headshot_range_advantage"
+          ],
+          "counterplay": [
+            "q_bounce_from_max_range"
+          ]
+        },
+        {
+          "target": "samira",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "windwall_blocks_r",
+          "win_condition": [
+            "r_from_angle",
+            "bait_windwall"
+          ],
+          "threats": [
+            "w_blocks_entire_bullet_time"
+          ],
+          "counterplay": [
+            "never_r_into_windwall"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "nilah",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "w_dodge_and_gap_close",
+          "win_condition": [
+            "e_dash_engage",
+            "r_burst"
+          ],
+          "threats": [
+            "w_range_kiting"
+          ],
+          "counterplay": [
+            "e_onto_kog_burst_down"
+          ]
+        },
+        {
+          "target": "ashe",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "gap_close_kills_utility_adc",
+          "win_condition": [
+            "e_dash_onto_ashe",
+            "w_dodge_r"
+          ],
+          "threats": [
+            "perma_slow_kiting"
+          ],
+          "counterplay": [
+            "w_through_arrow_then_engage"
+          ]
+        },
+        {
+          "target": "jhin",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "dive_during_reload",
+          "win_condition": [
+            "e_dash_during_reload",
+            "r_burst"
+          ],
+          "threats": [
+            "w_root_kiting"
+          ],
+          "counterplay": [
+            "engage_after_4th_shot"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.8,
+          "reason": "range_kites_melee",
+          "win_condition": [
+            "all_in_with_support"
+          ],
+          "threats": [
+            "trap_zone_headshot_poke"
+          ],
+          "counterplay": [
+            "need_engage_support"
+          ]
+        },
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "outtrades_even_in_melee",
+          "win_condition": [
+            "w_dodge_axes"
+          ],
+          "threats": [
+            "spinning_axe_burst"
+          ],
+          "counterplay": [
+            "w_timing_on_axe_catches"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trades_before_close",
+          "win_condition": [
+            "e_gap_close_burst"
+          ],
+          "threats": [
+            "passive_burst_combo"
+          ],
+          "counterplay": [
+            "e_through_minions_to_engage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "samira",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "miss_fortune",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "w_blocks_entire_r",
+          "win_condition": [
+            "windwall_bullet_time",
+            "all_in_after_block"
+          ],
+          "threats": [
+            "q_poke_early"
+          ],
+          "counterplay": [
+            "save_w_for_mf_r"
+          ]
+        },
+        {
+          "target": "jhin",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "w_blocks_w_and_r",
+          "win_condition": [
+            "windwall_key_abilities",
+            "dive_during_reload"
+          ],
+          "threats": [
+            "w_root_kiting"
+          ],
+          "counterplay": [
+            "engage_after_4th_shot"
+          ]
+        },
+        {
+          "target": "ashe",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "w_blocks_r_arrow",
+          "win_condition": [
+            "windwall_enchanted_arrow",
+            "all_in"
+          ],
+          "threats": [
+            "slow_kiting"
+          ],
+          "counterplay": [
+            "block_r_then_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "range_denies_style_stacking",
+          "win_condition": [
+            "all_in_with_support_cc"
+          ],
+          "threats": [
+            "headshot_poke_before_engage"
+          ],
+          "counterplay": [
+            "need_support_engage_to_start"
+          ]
+        },
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outtrades_pre_s_rank",
+          "win_condition": [
+            "build_style_rank_fast"
+          ],
+          "threats": [
+            "raw_damage_wins"
+          ],
+          "counterplay": [
+            "trade_to_build_style_with_support"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "condemn_interrupts_r",
+          "win_condition": [
+            "bait_condemn"
+          ],
+          "threats": [
+            "condemn_cancels_inferno"
+          ],
+          "counterplay": [
+            "bait_e_then_r"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "sivir",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "ashe",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "spell_shield_blocks_r",
+          "win_condition": [
+            "e_blocks_enchanted_arrow",
+            "w_waveclear"
+          ],
+          "threats": [
+            "perma_slow"
+          ],
+          "counterplay": [
+            "shield_r_then_engage"
+          ]
+        },
+        {
+          "target": "jhin",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "spell_shield_blocks_w",
+          "win_condition": [
+            "e_blocks_deadly_flourish",
+            "w_ricochet_trades"
+          ],
+          "threats": [
+            "4th_shot_burst"
+          ],
+          "counterplay": [
+            "push_wave_outfarm"
+          ]
+        },
+        {
+          "target": "varus",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "spell_shield_blocks_r",
+          "win_condition": [
+            "e_blocks_chain_of_corruption",
+            "waveclear"
+          ],
+          "threats": [
+            "blight_poke"
+          ],
+          "counterplay": [
+            "shield_r_then_engage"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "outtrades_in_autos",
+          "win_condition": [
+            "push_wave_avoid_fights"
+          ],
+          "threats": [
+            "spinning_axe_damage"
+          ],
+          "counterplay": [
+            "w_waveclear_avoid_trades"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trades_win",
+          "win_condition": [
+            "spell_shield_combo_piece"
+          ],
+          "threats": [
+            "passive_burst"
+          ],
+          "counterplay": [
+            "shield_q_then_trade_back"
+          ]
+        },
+        {
+          "target": "tristana",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "bomb_burst_all_in",
+          "win_condition": [
+            "spell_shield_e_bomb"
+          ],
+          "threats": [
+            "w_jump_bomb_burst"
+          ],
+          "counterplay": [
+            "e_shield_bomb_then_kite"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "smolder",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "safe_scaling_matchup",
+          "win_condition": [
+            "q_farm_stacks",
+            "outscale_late"
+          ],
+          "threats": [
+            "w_range_dps"
+          ],
+          "counterplay": [
+            "focus_on_q_stacking"
+          ]
+        },
+        {
+          "target": "corki",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "outscales_at_max_stacks",
+          "win_condition": [
+            "q_stack_safely",
+            "225_stack_spike"
+          ],
+          "threats": [
+            "package_dive"
+          ],
+          "counterplay": [
+            "farm_stacks_avoid_package"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.8,
+          "reason": "bullied_out_of_lane",
+          "win_condition": [
+            "survive_to_stacks"
+          ],
+          "threats": [
+            "all_in_kills_repeatedly"
+          ],
+          "counterplay": [
+            "farm_under_tower"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "burst_trades_punish",
+          "win_condition": [
+            "q_farm_from_range"
+          ],
+          "threats": [
+            "dash_burst"
+          ],
+          "counterplay": [
+            "stay_max_range"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "headshot_harass",
+          "win_condition": [
+            "q_farm_safely"
+          ],
+          "threats": [
+            "range_poke"
+          ],
+          "counterplay": [
+            "concede_prio_farm_stacks"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "tristana",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "jinx",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "w_jump_all_in_burst",
+          "win_condition": [
+            "w_onto_jinx_bomb_burst",
+            "r_execute"
+          ],
+          "threats": [
+            "chompers_on_landing"
+          ],
+          "counterplay": [
+            "w_onto_jinx_e_bomb_aa"
+          ]
+        },
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "dive_kills_immobile",
+          "win_condition": [
+            "w_jump_bomb_burst",
+            "r_knockback"
+          ],
+          "threats": [
+            "w_range_late"
+          ],
+          "counterplay": [
+            "w_onto_kog_burst"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "all_in_burst_pre_6",
+          "win_condition": [
+            "w_bomb_burst_early",
+            "r_knockback"
+          ],
+          "threats": [
+            "condemn_away"
+          ],
+          "counterplay": [
+            "all_in_when_condemn_down"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outtrades_in_autos",
+          "win_condition": [
+            "w_jump_all_in"
+          ],
+          "threats": [
+            "spinning_axe_damage"
+          ],
+          "counterplay": [
+            "all_in_commit_dont_short_trade"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "range_advantage_early",
+          "win_condition": [
+            "w_jump_engage"
+          ],
+          "threats": [
+            "headshot_harass_pre_range_scaling"
+          ],
+          "counterplay": [
+            "all_in_at_level_2"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "burst_trades_even",
+          "win_condition": [
+            "w_bomb_burst"
+          ],
+          "threats": [
+            "passive_double_shot"
+          ],
+          "counterplay": [
+            "skill_matchup_w_engage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "twitch",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "stealth_flank_kills_immobile",
+          "win_condition": [
+            "q_stealth_engage",
+            "r_spray_and_pray"
+          ],
+          "threats": [
+            "w_range_late"
+          ],
+          "counterplay": [
+            "q_flank_from_river"
+          ]
+        },
+        {
+          "target": "jinx",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "stealth_assassinate_late",
+          "win_condition": [
+            "q_stealth_flank_r",
+            "e_expunge_burst"
+          ],
+          "threats": [
+            "chompers_on_approach"
+          ],
+          "counterplay": [
+            "flank_from_unexpected_angles"
+          ]
+        },
+        {
+          "target": "ashe",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "stealth_bypasses_hawkshot",
+          "win_condition": [
+            "q_stealth_engage",
+            "r_spray"
+          ],
+          "threats": [
+            "e_reveal_stealth"
+          ],
+          "counterplay": [
+            "engage_from_outside_e_range"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.8,
+          "reason": "bullied_out_early",
+          "win_condition": [
+            "survive_to_items"
+          ],
+          "threats": [
+            "all_in_burst"
+          ],
+          "counterplay": [
+            "concede_lane_farm"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "burst_trades_destroy",
+          "win_condition": [
+            "avoid_trades_scale"
+          ],
+          "threats": [
+            "dash_burst"
+          ],
+          "counterplay": [
+            "stay_safe_scale"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "range_harass_punishes",
+          "win_condition": [
+            "q_stealth_trades"
+          ],
+          "threats": [
+            "headshot_poke"
+          ],
+          "counterplay": [
+            "q_stealth_for_short_trades"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "varus",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.3,
+          "reason": "poke_and_engage_vs_immobile",
+          "win_condition": [
+            "r_root_chain",
+            "blight_poke"
+          ],
+          "threats": [
+            "late_dps"
+          ],
+          "counterplay": [
+            "r_engage_with_support"
+          ]
+        },
+        {
+          "target": "vayne",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "poke_outranges",
+          "win_condition": [
+            "q_poke_from_range",
+            "r_root"
+          ],
+          "threats": [
+            "all_in_post_6"
+          ],
+          "counterplay": [
+            "poke_then_r_when_low"
+          ]
+        },
+        {
+          "target": "nilah",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "poke_kites_melee",
+          "win_condition": [
+            "blight_poke_from_range",
+            "r_root"
+          ],
+          "threats": [
+            "w_dodge_zone"
+          ],
+          "counterplay": [
+            "maintain_range_poke"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "outtrades_at_all_stages",
+          "win_condition": [
+            "poke_from_max_range"
+          ],
+          "threats": [
+            "all_in_burst"
+          ],
+          "counterplay": [
+            "q_poke_from_safety"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trades_punish",
+          "win_condition": [
+            "r_root_kite"
+          ],
+          "threats": [
+            "dash_into_burst_range"
+          ],
+          "counterplay": [
+            "r_when_lucian_dashes_in"
+          ]
+        },
+        {
+          "target": "samira",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "windwall_blocks_q_and_r",
+          "win_condition": [
+            "bait_windwall"
+          ],
+          "threats": [
+            "w_blocks_key_abilities"
+          ],
+          "counterplay": [
+            "r_from_angle_past_windwall"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "vayne",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "corki",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "true_damage_ignores_mixed",
+          "win_condition": [
+            "silver_bolts_shred",
+            "condemn_wall_stun"
+          ],
+          "threats": [
+            "package_engage"
+          ],
+          "counterplay": [
+            "farm_to_botrk_spike"
+          ]
+        },
+        {
+          "target": "sivir",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "outscales_utility_adc",
+          "win_condition": [
+            "farm_and_scale",
+            "true_damage_late"
+          ],
+          "threats": [
+            "w_waveclear_push"
+          ],
+          "counterplay": [
+            "farm_scale_outscale"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.9,
+          "reason": "worst_lane_matchup",
+          "win_condition": [
+            "survive_to_3_items"
+          ],
+          "threats": [
+            "spinning_axe_kills_repeatedly"
+          ],
+          "counterplay": [
+            "hug_tower_accept_cs_loss"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.8,
+          "reason": "burst_combo_kills",
+          "win_condition": [
+            "survive_early"
+          ],
+          "threats": [
+            "dash_passive_burst"
+          ],
+          "counterplay": [
+            "condemn_on_dash"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.8,
+          "reason": "range_gap_massive",
+          "win_condition": [
+            "survive_to_botrk"
+          ],
+          "threats": [
+            "headshot_zone_denies_cs"
+          ],
+          "counterplay": [
+            "farm_under_tower"
+          ]
+        },
+        {
+          "target": "miss_fortune",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "q_bounce_outtrades",
+          "win_condition": [
+            "all_in_post_6"
+          ],
+          "threats": [
+            "love_tap_q_burst"
+          ],
+          "counterplay": [
+            "avoid_q_bounce_angles"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "xayah",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "feather_root_punishes_dash_in",
+          "win_condition": [
+            "e_root_on_dash_in",
+            "r_dodge_burst"
+          ],
+          "threats": [
+            "burst_combo_early"
+          ],
+          "counterplay": [
+            "leave_feathers_then_e_when_lucian_dashes"
+          ]
+        },
+        {
+          "target": "samira",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "r_untargetable_dodges_r",
+          "win_condition": [
+            "r_featherstorm_dodge",
+            "e_root"
+          ],
+          "threats": [
+            "windwall_blocks_feathers"
+          ],
+          "counterplay": [
+            "r_to_dodge_samira_r"
+          ]
+        },
+        {
+          "target": "kai_sa",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "e_root_on_r_dive",
+          "win_condition": [
+            "feather_root_on_kaisa_r",
+            "r_dodge"
+          ],
+          "threats": [
+            "evolved_e_stealth"
+          ],
+          "counterplay": [
+            "e_recall_feathers_when_kaisa_dives"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "outtrades_in_autos",
+          "win_condition": [
+            "feather_root_self_peel"
+          ],
+          "threats": [
+            "spinning_axe_burst"
+          ],
+          "counterplay": [
+            "play_safe_set_feathers"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outranged",
+          "win_condition": [
+            "push_wave_with_q"
+          ],
+          "threats": [
+            "headshot_harass"
+          ],
+          "counterplay": [
+            "q_waveclear_avoid_trades"
+          ]
+        },
+        {
+          "target": "ezreal",
+          "lane": "duo",
+          "difficulty": 0.5,
+          "reason": "safe_farming_denies_engage",
+          "win_condition": [
+            "push_and_roam"
+          ],
+          "threats": [
+            "q_poke_from_safety"
+          ],
+          "counterplay": [
+            "push_wave_first"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "zeri",
+      "role": "duo",
+      "strong_against": [
+        {
+          "target": "kog_maw",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "mobility_vs_immobile",
+          "win_condition": [
+            "e_wall_dash_kite",
+            "r_speed"
+          ],
+          "threats": [
+            "w_range_dps"
+          ],
+          "counterplay": [
+            "kite_with_e_mobility"
+          ]
+        },
+        {
+          "target": "jinx",
+          "lane": "duo",
+          "difficulty": 0.4,
+          "reason": "mobility_dodges_chompers",
+          "win_condition": [
+            "e_over_chompers",
+            "r_speed"
+          ],
+          "threats": [
+            "rocket_range"
+          ],
+          "counterplay": [
+            "e_dash_over_traps"
+          ]
+        }
+      ],
+      "weak_against": [
+        {
+          "target": "draven",
+          "lane": "duo",
+          "difficulty": 0.7,
+          "reason": "outtrades_massively",
+          "win_condition": [
+            "e_escape_kite"
+          ],
+          "threats": [
+            "spinning_axe_burst"
+          ],
+          "counterplay": [
+            "kite_back_avoid_trades"
+          ]
+        },
+        {
+          "target": "caitlyn",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "outranged_early",
+          "win_condition": [
+            "trinity_spike_powerspike"
+          ],
+          "threats": [
+            "headshot_poke"
+          ],
+          "counterplay": [
+            "farm_to_trinity_force"
+          ]
+        },
+        {
+          "target": "lucian",
+          "lane": "duo",
+          "difficulty": 0.6,
+          "reason": "burst_trades_win",
+          "win_condition": [
+            "e_escape"
+          ],
+          "threats": [
+            "dash_burst"
+          ],
+          "counterplay": [
+            "e_away_from_trades"
+          ]
+        }
+      ]
+    }
+  ]
+}

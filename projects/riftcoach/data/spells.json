@@ -1,0 +1,72 @@
+[
+  {
+    "id": "flash",
+    "name": "Flash",
+    "effect": "Blink teleport forward a short distance. Cannot use while rooted or grounded.",
+    "cooldown": 150,
+    "bestOn": "Everyone (mandatory 99% of games)"
+  },
+  {
+    "id": "ignite",
+    "name": "Ignite",
+    "effect": "Burns target for true damage over 5s, applies Grievous Wounds (reduces healing 50%)",
+    "cooldown": 90,
+    "bestOn": "Assassins, aggressive supports, solo laners"
+  },
+  {
+    "id": "exhaust",
+    "name": "Exhaust",
+    "effect": "Slows enemy and reduces their damage output by 40% for 2.5s",
+    "cooldown": 105,
+    "bestOn": "Supports vs assassins, ADCs for self-peel"
+  },
+  {
+    "id": "smite",
+    "name": "Smite",
+    "effect": "Deals true damage to monsters/minions. Upgrades at 4 smites. Required for jungle.",
+    "cooldown": 10,
+    "bestOn": "Junglers only (mandatory)"
+  },
+  {
+    "id": "barrier",
+    "name": "Barrier",
+    "effect": "Shields yourself for 2.5s. Blocks incoming damage.",
+    "cooldown": 90,
+    "bestOn": "ADCs, mid laners vs burst assassins"
+  },
+  {
+    "id": "heal",
+    "name": "Heal",
+    "effect": "Heals you and nearby ally, grants brief movement speed boost",
+    "cooldown": 120,
+    "bestOn": "ADCs, duo lane sustain"
+  },
+  {
+    "id": "teleport",
+    "name": "Teleport",
+    "effect": "Channel to teleport to an allied structure or ward after 3.5s",
+    "cooldown": 240,
+    "bestOn": "Baron laners for map pressure"
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "effect": "Gain ramping movement speed for 6s. Extends on takedowns.",
+    "cooldown": 90,
+    "bestOn": "Darius, Olaf, Hecarim \u2014 chase-down champions"
+  },
+  {
+    "id": "cleanse",
+    "name": "Cleanse",
+    "effect": "Removes all CC effects from yourself",
+    "cooldown": 120,
+    "bestOn": "ADCs vs heavy CC comps"
+  },
+  {
+    "id": "clarity",
+    "name": "Clarity",
+    "effect": "Restores mana for you and nearby allies",
+    "cooldown": 90,
+    "bestOn": "Mana-hungry supports in ARAM"
+  }
+]

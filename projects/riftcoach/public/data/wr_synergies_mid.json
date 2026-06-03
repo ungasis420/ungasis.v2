@@ -1,0 +1,1363 @@
+{
+  "meta": {
+    "type": "synergies",
+    "scope": "mid",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_champions": 28,
+    "total_entries": 114,
+    "synergy_types": [
+      "WOMBO",
+      "PEEL",
+      "SETUP",
+      "LANE",
+      "SCALING"
+    ],
+    "confidence_source": "theorycraft_meta_inference"
+  },
+  "synergies": [
+    {
+      "champion_id": "ahri",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "lee_sin",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "charm_into_insec_or_insec_into_charm",
+          "combo": [
+            "ahri_e",
+            "lee_sin_r"
+          ],
+          "notes": "Charm sets up Lee insec, or Lee kicks into Ahri charm."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_traps_for_charm",
+          "combo": [
+            "jarvan_r",
+            "ahri_e_q_w"
+          ],
+          "notes": "J4 ult traps enemy. Ahri E charm guaranteed in arena."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "aoe_cc_chain",
+          "combo": [
+            "amumu_r",
+            "ahri_e"
+          ],
+          "notes": "Amumu R roots team. Ahri picks off charmed targets."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_cc_synergy",
+          "issue": "Both want to pick off targets independently. No combo potential."
+        }
+      ]
+    },
+    {
+      "champion_id": "akali",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "lee_sin",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "lee_kick_into_akali_burst",
+          "combo": [
+            "lee_sin_r",
+            "akali_r"
+          ],
+          "notes": "Lee kicks target into Akali. Akali bursts isolated target."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_chain_into_burst",
+          "combo": [
+            "nautilus_r",
+            "akali_r"
+          ],
+          "notes": "Nautilus R lockdown. Akali R burst on CCd target."
+        },
+        {
+          "ally": "leona",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "engage_enables_dive",
+          "combo": [
+            "leona_r",
+            "akali_r"
+          ],
+          "notes": "Leona AoE stun. Akali follows up on stunned backline."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "yuumi",
+          "score": 0.3,
+          "reason": "akali_dives_yuumi_cant_follow",
+          "issue": "Akali dives deep. Yuumi can't attach during shroud. Disconnected."
+        }
+      ]
+    },
+    {
+      "champion_id": "fizz",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_shark",
+          "combo": [
+            "jarvan_r",
+            "fizz_r"
+          ],
+          "notes": "J4 traps enemies. Fizz R shark in arena. Can't escape."
+        },
+        {
+          "ally": "lee_sin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "kick_into_shark",
+          "combo": [
+            "lee_sin_r",
+            "fizz_r"
+          ],
+          "notes": "Lee kicks target into Fizz shark. Guaranteed hit."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "aoe_root_into_shark",
+          "combo": [
+            "amumu_r",
+            "fizz_r"
+          ],
+          "notes": "Amumu R roots. Fizz R shark on rooted enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "soraka",
+          "score": 0.35,
+          "reason": "fizz_dives_no_peel_needed",
+          "issue": "Fizz dives backline. Soraka heals frontline. No synergy."
+        }
+      ]
+    },
+    {
+      "champion_id": "katarina",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "aoe_root_into_death_lotus",
+          "combo": [
+            "amumu_r",
+            "katarina_r"
+          ],
+          "notes": "S-tier wombo. Amumu R roots team. Katarina R shreds everyone."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cataclysm_traps_for_r",
+          "combo": [
+            "jarvan_r",
+            "katarina_r"
+          ],
+          "notes": "J4 traps team in arena. Katarina R in arena."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "r_knockup_into_death_lotus",
+          "combo": [
+            "malphite_r",
+            "katarina_r"
+          ],
+          "notes": "Malphite R AoE knockup. Katarina R during knockup."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.3,
+          "reason": "janna_pushes_away_kat_targets",
+          "issue": "Janna R pushes enemies away from Katarina R range."
+        }
+      ]
+    },
+    {
+      "champion_id": "ekko",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_w_stun",
+          "combo": [
+            "jarvan_r",
+            "ekko_w"
+          ],
+          "notes": "J4 traps. Ekko W stun zone inside arena. R escape if needed."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "aoe_cc_chain",
+          "combo": [
+            "amumu_r",
+            "ekko_w"
+          ],
+          "notes": "Amumu R into Ekko W stun zone. Double AoE CC."
+        },
+        {
+          "ally": "lee_sin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "kick_into_w_zone",
+          "combo": [
+            "lee_sin_r",
+            "ekko_w"
+          ],
+          "notes": "Lee kicks target into Ekko W stun zone."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "double_melee_no_frontline",
+          "issue": "Both melee carries. No frontline. Team gets shredded."
+        }
+      ]
+    },
+    {
+      "champion_id": "diana",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "yasuo",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "r_pull_into_yasuo_r",
+          "combo": [
+            "diana_r",
+            "yasuo_r"
+          ],
+          "notes": "S-tier. Diana R pulls enemies together + knockup. Yasuo R on all of them."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_ult",
+          "combo": [
+            "amumu_r",
+            "diana_r"
+          ],
+          "notes": "Amumu R roots. Diana R pulls together. Double AoE devastation."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_engage",
+          "combo": [
+            "malphite_r",
+            "diana_r"
+          ],
+          "notes": "Malphite R knockup. Diana R pull. Both AoE."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.3,
+          "reason": "janna_r_pushes_away_diana_r_targets",
+          "issue": "Janna R pushes enemies out of Diana R range."
+        }
+      ]
+    },
+    {
+      "champion_id": "zed",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "lee_sin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "double_ad_dive",
+          "combo": [
+            "lee_sin_r",
+            "zed_r"
+          ],
+          "notes": "Lee kicks carry to Zed. Zed R finishes. Double AD pressure."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_traps_for_r",
+          "combo": [
+            "jarvan_r",
+            "zed_r"
+          ],
+          "notes": "J4 traps target. Zed R death mark inside arena."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "point_click_cc_for_burst",
+          "combo": [
+            "nautilus_r",
+            "zed_r"
+          ],
+          "notes": "Nautilus R knockup on carry. Zed R follows for guaranteed burst."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "lulu",
+          "score": 0.4,
+          "reason": "zed_dives_doesnt_need_peel",
+          "issue": "Zed dives backline. Lulu peel wasted on assassin playstyle."
+        }
+      ]
+    },
+    {
+      "champion_id": "yasuo",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "diana",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "r_pull_enables_yasuo_r",
+          "combo": [
+            "diana_r",
+            "yasuo_r"
+          ],
+          "notes": "S-tier. Diana R pulls + knocks up. Yasuo R on ALL knocked-up enemies."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "r_knockup_enables_yasuo_r",
+          "combo": [
+            "malphite_r",
+            "yasuo_r"
+          ],
+          "notes": "Malphite R AoE knockup. Yasuo R guaranteed on entire team."
+        },
+        {
+          "ally": "alistar",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "w_q_knockup_enables_r",
+          "combo": [
+            "alistar_w_q",
+            "yasuo_r"
+          ],
+          "notes": "Alistar W+Q knockup. Yasuo R follows."
+        },
+        {
+          "ally": "gragas",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "e_knockup_enables_r",
+          "combo": [
+            "gragas_e",
+            "yasuo_r"
+          ],
+          "notes": "Gragas E body slam knockup. Yasuo R follow-up."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.3,
+          "reason": "janna_r_pushes_yasuo_targets",
+          "issue": "Janna R pushes enemies away from Yasuo melee range."
+        }
+      ]
+    },
+    {
+      "champion_id": "yone",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "malphite",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_knockup",
+          "combo": [
+            "malphite_r",
+            "yone_r"
+          ],
+          "notes": "Malphite R knockup. Yone R follow-up knockup. Double AoE."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "aoe_root_into_r",
+          "combo": [
+            "amumu_r",
+            "yone_r"
+          ],
+          "notes": "Amumu R roots. Yone R through rooted team."
+        },
+        {
+          "ally": "leona",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "engage_enables_r",
+          "combo": [
+            "leona_r",
+            "yone_r"
+          ],
+          "notes": "Leona R stun. Yone R follow-up through stunned enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.3,
+          "reason": "pushes_yone_targets_away",
+          "issue": "Janna R pushes enemies out of Yone's melee range."
+        }
+      ]
+    },
+    {
+      "champion_id": "annie",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "double_aoe_stun",
+          "combo": [
+            "amumu_r",
+            "annie_r"
+          ],
+          "notes": "Amumu R root + Annie Tibbers AoE stun. Double AoE CC wipe."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_engage",
+          "combo": [
+            "malphite_r",
+            "annie_r"
+          ],
+          "notes": "Malphite R knockup into Flash Tibbers. Guaranteed AoE wipe."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_tibbers",
+          "combo": [
+            "jarvan_r",
+            "annie_r"
+          ],
+          "notes": "J4 traps enemies. Annie Tibbers inside arena."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Annie is squishy. Yi is melee carry. No frontline."
+        }
+      ]
+    },
+    {
+      "champion_id": "orianna",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "malphite",
+          "score": 0.95,
+          "type": "WOMBO",
+          "reason": "ball_on_malphite_r",
+          "combo": [
+            "orianna_e_on_malphite",
+            "malphite_r",
+            "orianna_r"
+          ],
+          "notes": "S-tier. E ball on Malphite. Malphite R into team. Orianna R Shockwave."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.9,
+          "type": "WOMBO",
+          "reason": "ball_on_j4_eq",
+          "combo": [
+            "orianna_e_on_j4",
+            "jarvan_e_q",
+            "orianna_r"
+          ],
+          "notes": "Ball on J4. J4 E+Q into team. Ori R Shockwave. Cataclysm traps."
+        },
+        {
+          "ally": "hecarim",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "ball_on_hecarim_e",
+          "combo": [
+            "orianna_e_on_hecarim",
+            "hecarim_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Hecarim. Hecarim R into team. Ori R follows."
+        },
+        {
+          "ally": "wukong",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "ball_on_wukong_r",
+          "combo": [
+            "orianna_e_on_wukong",
+            "wukong_r",
+            "orianna_r"
+          ],
+          "notes": "Ball on Wukong. Wukong R spin into team. Ori R follows."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.3,
+          "reason": "ball_delivery_impossible",
+          "issue": "Yi moves too fast and unpredictably for Ori ball placement."
+        }
+      ]
+    },
+    {
+      "champion_id": "syndra",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_into_stun_burst",
+          "combo": [
+            "jarvan_r",
+            "syndra_e_r"
+          ],
+          "notes": "J4 traps. Syndra E stun + R burst inside arena."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "root_into_stun_burst",
+          "combo": [
+            "amumu_r",
+            "syndra_e_r"
+          ],
+          "notes": "Amumu R root. Syndra E stun + R burst on rooted targets."
+        },
+        {
+          "ally": "nautilus",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cc_lockdown_for_burst",
+          "combo": [
+            "nautilus_r",
+            "syndra_r"
+          ],
+          "notes": "Nautilus point-click CC. Syndra full combo on locked target."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.3,
+          "reason": "no_frontline_double_carry",
+          "issue": "Both carries. No tank. Team gets dove."
+        }
+      ]
+    },
+    {
+      "champion_id": "lux",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "aoe_root_into_lux_r",
+          "combo": [
+            "amumu_r",
+            "lux_q_e_r"
+          ],
+          "notes": "Amumu R roots team. Lux Q+E+R on rooted cluster."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_laser",
+          "combo": [
+            "jarvan_r",
+            "lux_r"
+          ],
+          "notes": "J4 traps. Lux R laser through arena."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "knockup_into_q_r",
+          "combo": [
+            "malphite_r",
+            "lux_q_r"
+          ],
+          "notes": "Malphite R knockup. Lux Q root + R laser."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Lux is immobile. Yi dives. No one protects Lux."
+        }
+      ]
+    },
+    {
+      "champion_id": "veigar",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "root_inside_cage",
+          "combo": [
+            "veigar_e_cage",
+            "amumu_r"
+          ],
+          "notes": "Veigar cage traps. Amumu R roots inside cage. Double AoE zone."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_into_cage",
+          "combo": [
+            "jarvan_r",
+            "veigar_e"
+          ],
+          "notes": "J4 traps. Veigar cage inside arena. No escape."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "knockup_into_cage_burst",
+          "combo": [
+            "malphite_r",
+            "veigar_e_r"
+          ],
+          "notes": "Malphite R groups. Veigar cage around grouped enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Veigar is immobile. Yi dives. Nobody protects Veigar."
+        }
+      ]
+    },
+    {
+      "champion_id": "viktor",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_w_r",
+          "combo": [
+            "jarvan_r",
+            "viktor_w_r"
+          ],
+          "notes": "J4 traps. Viktor W gravity field + R chaos storm inside arena."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "root_into_laser_r",
+          "combo": [
+            "amumu_r",
+            "viktor_e_r"
+          ],
+          "notes": "Amumu root. Viktor E laser + R on rooted targets."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "knockup_into_r",
+          "combo": [
+            "malphite_r",
+            "viktor_r"
+          ],
+          "notes": "Malphite R groups. Viktor R Chaos Storm on grouped enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Both need frontline protection. Neither provides it."
+        }
+      ]
+    },
+    {
+      "champion_id": "vex",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_cc",
+          "combo": [
+            "amumu_r",
+            "vex_w_r"
+          ],
+          "notes": "Amumu R root. Vex R engage + W fear on rooted targets."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "knockup_into_r_fear",
+          "combo": [
+            "malphite_r",
+            "vex_r"
+          ],
+          "notes": "Malphite R groups. Vex R + W fear on grouped enemies."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_into_fear",
+          "combo": [
+            "jarvan_r",
+            "vex_w"
+          ],
+          "notes": "J4 traps. Vex W fear inside arena."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "yi_triggers_passive_fear",
+          "issue": "Yi dashes constantly, triggering Vex passive fear on ally."
+        }
+      ]
+    },
+    {
+      "champion_id": "lissandra",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "double_aoe_cc",
+          "combo": [
+            "amumu_r",
+            "lissandra_r"
+          ],
+          "notes": "Amumu R root. Lissandra R stun. Double AoE CC wipe."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_e_engage",
+          "combo": [
+            "jarvan_r",
+            "lissandra_e_r"
+          ],
+          "notes": "J4 traps. Lissandra E claw into arena + R."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "double_engage",
+          "combo": [
+            "malphite_r",
+            "lissandra_e_r"
+          ],
+          "notes": "Malphite R knockup. Lissandra R stun follow-up."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "double_dive_no_frontline",
+          "issue": "Both dive. No sustained frontline."
+        }
+      ]
+    },
+    {
+      "champion_id": "kassadin",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "root_into_r_burst",
+          "combo": [
+            "amumu_r",
+            "kassadin_r_burst"
+          ],
+          "notes": "Amumu R root. Kassadin R into rooted cluster for AoE burst."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "knockup_into_r_dive",
+          "combo": [
+            "malphite_r",
+            "kassadin_r"
+          ],
+          "notes": "Malphite R groups. Kassadin R into grouped enemies."
+        },
+        {
+          "ally": "leona",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "cc_lockdown_for_burst",
+          "combo": [
+            "leona_r",
+            "kassadin_r"
+          ],
+          "notes": "Leona R stun. Kassadin R burst on stunned target."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "vayne",
+          "score": 0.35,
+          "reason": "double_late_game_carry",
+          "issue": "Both need to scale. Early game is 3v5."
+        }
+      ]
+    },
+    {
+      "champion_id": "aurelion_sol",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "root_into_r",
+          "combo": [
+            "amumu_r",
+            "aurelion_sol_r"
+          ],
+          "notes": "Amumu R root. ASol R massive AoE on rooted cluster."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "knockup_into_r",
+          "combo": [
+            "malphite_r",
+            "aurelion_sol_r"
+          ],
+          "notes": "Malphite R groups. ASol R on grouped enemies."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_into_r",
+          "combo": [
+            "jarvan_r",
+            "aurelion_sol_r"
+          ],
+          "notes": "J4 traps. ASol R in arena."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "ASol needs protection. Yi can't provide it."
+        }
+      ]
+    },
+    {
+      "champion_id": "vladimir",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "root_into_hemoplague",
+          "combo": [
+            "amumu_r",
+            "vladimir_r"
+          ],
+          "notes": "Amumu R root. Vlad R Hemoplague on rooted cluster. AoE bomb."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "knockup_into_r",
+          "combo": [
+            "malphite_r",
+            "vladimir_r_e_q"
+          ],
+          "notes": "Malphite R groups. Vlad Flash R E Q on grouped enemies."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_hemoplague",
+          "combo": [
+            "jarvan_r",
+            "vladimir_r"
+          ],
+          "notes": "J4 traps. Vlad R + W pool inside arena. AoE bomb."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.35,
+          "reason": "pushes_targets_away_from_r",
+          "issue": "Janna R pushes enemies out of Vlad R AoE range."
+        }
+      ]
+    },
+    {
+      "champion_id": "twisted_fate",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "nocturne",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "double_global_dive",
+          "combo": [
+            "twisted_fate_r",
+            "nocturne_r"
+          ],
+          "notes": "S-tier. TF R reveals + teleport. Nocturne R darkness + dive. Global 2-man gank."
+        },
+        {
+          "ally": "shen",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "double_global_presence",
+          "combo": [
+            "twisted_fate_r",
+            "shen_r"
+          ],
+          "notes": "TF teleports. Shen ults TF or ally. Double global pressure."
+        },
+        {
+          "ally": "lee_sin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "gank_setup_with_gold_card",
+          "combo": [
+            "lee_sin_q",
+            "twisted_fate_gold_card"
+          ],
+          "notes": "Lee ganks mid. TF gold card guarantees Lee Q follow-up."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kassadin",
+          "score": 0.4,
+          "reason": "both_scale_slow",
+          "issue": "Both need items. Team has no early pressure."
+        }
+      ]
+    },
+    {
+      "champion_id": "galio",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "nocturne",
+          "score": 0.9,
+          "type": "SETUP",
+          "reason": "r_follows_nocturne_dive",
+          "combo": [
+            "nocturne_r",
+            "galio_r"
+          ],
+          "notes": "Nocturne R dives carry. Galio R onto Nocturne for AoE knockup."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "r_onto_j4_engage",
+          "combo": [
+            "jarvan_e_q",
+            "galio_r"
+          ],
+          "notes": "J4 engages. Galio R onto J4 for AoE knockup in arena."
+        },
+        {
+          "ally": "camille",
+          "score": 0.85,
+          "type": "SETUP",
+          "reason": "r_onto_camille_r",
+          "combo": [
+            "camille_r",
+            "galio_r"
+          ],
+          "notes": "Camille R locks target. Galio R onto Camille for AoE knockup."
+        },
+        {
+          "ally": "lee_sin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "r_onto_lee_engage",
+          "combo": [
+            "lee_sin_engage",
+            "galio_r"
+          ],
+          "notes": "Lee engages. Galio R onto Lee for follow-up AoE knockup."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "kassadin",
+          "score": 0.4,
+          "reason": "both_scale_no_early_damage",
+          "issue": "Double AP with no early damage. Team lacks kill pressure."
+        }
+      ]
+    },
+    {
+      "champion_id": "ziggs",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_minefield_r",
+          "combo": [
+            "jarvan_r",
+            "ziggs_e_r"
+          ],
+          "notes": "J4 traps. Ziggs E minefield + R mega bomb inside arena."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "root_into_bombs",
+          "combo": [
+            "amumu_r",
+            "ziggs_q_e_r"
+          ],
+          "notes": "Amumu R root. Ziggs full bomb barrage on rooted targets."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "knockup_into_r",
+          "combo": [
+            "malphite_r",
+            "ziggs_r"
+          ],
+          "notes": "Malphite R groups. Ziggs R mega bomb on grouped enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline_protection",
+          "issue": "Ziggs immobile. Yi dives. Nobody protects Ziggs."
+        }
+      ]
+    },
+    {
+      "champion_id": "zoe",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "lee_sin",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "kick_into_sleep",
+          "combo": [
+            "lee_sin_r",
+            "zoe_e"
+          ],
+          "notes": "Lee kicks target. Zoe E sleep on kicked target. Q follow-up."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_into_sleep",
+          "combo": [
+            "jarvan_r",
+            "zoe_e_q"
+          ],
+          "notes": "J4 traps. Zoe E sleep inside arena. Q one-shot."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "root_into_sleep",
+          "combo": [
+            "amumu_r",
+            "zoe_e_q"
+          ],
+          "notes": "Amumu R root. Zoe E sleep on rooted target. Q burst."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Zoe needs space to poke. Yi provides no frontline."
+        }
+      ]
+    },
+    {
+      "champion_id": "aurora",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "root_into_r_zone",
+          "combo": [
+            "amumu_r",
+            "aurora_r"
+          ],
+          "notes": "Amumu R root. Aurora R zone traps rooted enemies."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "cataclysm_into_r",
+          "combo": [
+            "jarvan_r",
+            "aurora_r"
+          ],
+          "notes": "J4 traps. Aurora R zone inside arena."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "knockup_into_r",
+          "combo": [
+            "malphite_r",
+            "aurora_r"
+          ],
+          "notes": "Malphite R groups. Aurora R zone on grouped enemies."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Both squishy. No frontline."
+        }
+      ]
+    },
+    {
+      "champion_id": "norra",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "root_into_abilities",
+          "combo": [
+            "amumu_r",
+            "norra_abilities"
+          ],
+          "notes": "Amumu R root. Norra follow-up abilities on rooted targets."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.75,
+          "type": "SETUP",
+          "reason": "portal_mobility_with_engage",
+          "combo": [
+            "jarvan_e_q",
+            "norra_portal"
+          ],
+          "notes": "J4 engages. Norra portals for mobility + follow-up."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Both need protection. Neither provides it."
+        }
+      ]
+    },
+    {
+      "champion_id": "heimerdinger",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "SETUP",
+          "reason": "cataclysm_into_turrets",
+          "combo": [
+            "jarvan_r",
+            "heimerdinger_turrets_r"
+          ],
+          "notes": "J4 traps. Turrets + R mega turret inside arena. Enemies melt."
+        },
+        {
+          "ally": "amumu",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "root_in_turret_zone",
+          "combo": [
+            "amumu_r",
+            "heimerdinger_turrets"
+          ],
+          "notes": "Amumu R root. Enemies rooted in turret zone."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.75,
+          "type": "WOMBO",
+          "reason": "knockup_in_turrets",
+          "combo": [
+            "malphite_r",
+            "heimerdinger_turrets"
+          ],
+          "notes": "Malphite R groups enemies in turret zone."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "janna",
+          "score": 0.35,
+          "reason": "pushes_enemies_away_from_turrets",
+          "issue": "Janna R pushes enemies out of turret zone."
+        }
+      ]
+    },
+    {
+      "champion_id": "ryze",
+      "role": "mid",
+      "best_with": [
+        {
+          "ally": "amumu",
+          "score": 0.85,
+          "type": "WOMBO",
+          "reason": "r_teleports_amumu_for_engage",
+          "combo": [
+            "ryze_r",
+            "amumu_r"
+          ],
+          "notes": "Ryze R teleports Amumu into enemy team. Amumu R from nowhere."
+        },
+        {
+          "ally": "jarvan_iv",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_teleports_j4_engage",
+          "combo": [
+            "ryze_r",
+            "jarvan_e_q_r"
+          ],
+          "notes": "Ryze R teleports J4 into backline. J4 E+Q+R."
+        },
+        {
+          "ally": "malphite",
+          "score": 0.8,
+          "type": "WOMBO",
+          "reason": "r_teleports_malphite",
+          "combo": [
+            "ryze_r",
+            "malphite_r"
+          ],
+          "notes": "Ryze R teleports Malphite into enemy team. Malphite R from nowhere."
+        }
+      ],
+      "anti_synergy": [
+        {
+          "ally": "master_yi",
+          "score": 0.35,
+          "reason": "no_frontline",
+          "issue": "Ryze needs frontline. Yi provides none."
+        }
+      ]
+    }
+  ]
+}

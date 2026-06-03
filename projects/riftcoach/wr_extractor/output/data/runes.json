@@ -1,0 +1,479 @@
+[
+  {
+    "id": "electrocute",
+    "name": "Electrocute",
+    "type": "Keystone",
+    "effect": "Electrocute is a rune in Wild Rift .",
+    "cooldown": "20",
+    "image": "/images/runes/electrocute.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Electrocute"
+  },
+  {
+    "id": "dark_harvest",
+    "name": "Dark Harvest",
+    "type": "Keystone",
+    "effect": "Dark Harvest is a rune in Wild Rift .",
+    "cooldown": "35 s",
+    "image": "/images/runes/dark_harvest.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Dark_Harvest"
+  },
+  {
+    "id": "empowerment",
+    "name": "Empowerment",
+    "type": "Keystone",
+    "effect": "Empowerment is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/empowerment.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Empowerment"
+  },
+  {
+    "id": "lethal_tempo",
+    "name": "Lethal Tempo",
+    "type": "Keystone",
+    "effect": "Lethal Tempo is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/lethal_tempo.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Lethal_Tempo"
+  },
+  {
+    "id": "fleet_footwork",
+    "name": "Fleet Footwork",
+    "type": "Keystone",
+    "effect": "Fleet Footwork is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/fleet_footwork.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Fleet_Footwork"
+  },
+  {
+    "id": "conqueror",
+    "name": "Conqueror",
+    "type": "Keystone",
+    "effect": "Conqueror is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/conqueror.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Conqueror"
+  },
+  {
+    "id": "grasp_of_the_undying",
+    "name": "Grasp of the Undying",
+    "type": "Keystone",
+    "effect": "Grasp of the Undying is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/grasp_of_the_undying.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Grasp_of_the_Undying"
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "type": "Keystone",
+    "effect": "Guardian is a rune in Wild Rift .",
+    "cooldown": "40",
+    "image": "/images/runes/guardian.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Guardian"
+  },
+  {
+    "id": "aery",
+    "name": "Aery",
+    "type": "Keystone",
+    "effect": "Aery is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/aery.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Aery"
+  },
+  {
+    "id": "arcane_comet",
+    "name": "Arcane Comet",
+    "type": "Keystone",
+    "effect": "Arcane Comet is a rune in Wild Rift .",
+    "cooldown": "16",
+    "image": "/images/runes/arcane_comet.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Arcane_Comet"
+  },
+  {
+    "id": "phase_rush",
+    "name": "Phase Rush",
+    "type": "Keystone",
+    "effect": "Phase Rush is a rune in Wild Rift .",
+    "cooldown": "12 s",
+    "image": "/images/runes/phase_rush.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Phase_Rush"
+  },
+  {
+    "id": "first_strike",
+    "name": "First Strike",
+    "type": "Keystone",
+    "effect": "First Strike is a rune in Wild Rift .",
+    "cooldown": "20",
+    "image": "/images/runes/first_strike.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:First_Strike"
+  },
+  {
+    "id": "ice_overlord",
+    "name": "Ice Overlord",
+    "type": "Keystone",
+    "effect": "Ice Overlord is a rune in Wild Rift .",
+    "cooldown": "20 s",
+    "image": "/images/runes/ice_overlord.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Ice_Overlord"
+  },
+  {
+    "id": "cheap_shot",
+    "name": "Cheap Shot",
+    "type": "Domination",
+    "effect": "Cheap Shot is a rune in Wild Rift .",
+    "cooldown": "7 s",
+    "image": "/images/runes/cheap_shot.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Cheap_Shot"
+  },
+  {
+    "id": "chain_assault",
+    "name": "Chain Assault",
+    "type": "Domination",
+    "effect": "Chain Assault is a rune in Wild Rift .",
+    "cooldown": "15 s",
+    "image": "/images/runes/chain_assault.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Chain_Assault"
+  },
+  {
+    "id": "eyeball_collection",
+    "name": "Eyeball Collection",
+    "type": "Domination",
+    "effect": "Eyeball Collection is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/eyeball_collection.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Eyeball_Collection"
+  },
+  {
+    "id": "sudden_impact",
+    "name": "Sudden Impact",
+    "type": "Domination",
+    "effect": "Sudden Impact is a rune in Wild Rift .",
+    "cooldown": "10 s",
+    "image": "/images/runes/sudden_impact.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Sudden_Impact"
+  },
+  {
+    "id": "tyrant",
+    "name": "Tyrant",
+    "type": "Domination",
+    "effect": "Tyrant is a rune in Wild Rift .",
+    "cooldown": "10 s",
+    "image": "/images/runes/tyrant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Tyrant"
+  },
+  {
+    "id": "ingenious_hunter",
+    "name": "Ingenious Hunter",
+    "type": "Domination",
+    "effect": "Ingenious Hunter is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/ingenious_hunter.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Ingenious_Hunter"
+  },
+  {
+    "id": "empowered_attack",
+    "name": "Empowered Attack",
+    "type": "Domination",
+    "effect": "Empowered Attack is a rune in Wild Rift .",
+    "cooldown": "8 s",
+    "image": "/images/runes/empowered_attack.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Empowered_Attack"
+  },
+  {
+    "id": "hubris",
+    "name": "Hubris",
+    "type": "Domination",
+    "effect": "Hubris is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/hubris.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Hubris_(Rune)"
+  },
+  {
+    "id": "relentless_hunter",
+    "name": "Relentless Hunter",
+    "type": "Domination",
+    "effect": "Relentless Hunter is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/relentless_hunter.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Relentless_Hunter"
+  },
+  {
+    "id": "zombie_ward",
+    "name": "Zombie Ward",
+    "type": "Domination",
+    "effect": "Zombie Ward is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/zombie_ward.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Zombie_Ward"
+  },
+  {
+    "id": "brutal",
+    "name": "Brutal",
+    "type": "Precision",
+    "effect": "Brutal is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/brutal.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Brutal"
+  },
+  {
+    "id": "last_stand",
+    "name": "Last Stand",
+    "type": "Precision",
+    "effect": "Last Stand is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/last_stand.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Last_Stand"
+  },
+  {
+    "id": "legend_alacrity",
+    "name": "Legend: Alacrity",
+    "type": "Precision",
+    "effect": "Legend: Alacrity is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/legend_alacrity.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Legend:_Alacrity"
+  },
+  {
+    "id": "triumph",
+    "name": "Triumph",
+    "type": "Precision",
+    "effect": "Triumph is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/triumph.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Triumph"
+  },
+  {
+    "id": "cut_down",
+    "name": "Cut Down",
+    "type": "Precision",
+    "effect": "Giant Slayer is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/cut_down.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Cut_Down"
+  },
+  {
+    "id": "legend_tenacity",
+    "name": "Legend: Tenacity",
+    "type": "Precision",
+    "effect": "Legend: Tenacity is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/legend_tenacity.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Legend:_Tenacity"
+  },
+  {
+    "id": "battle_zeal",
+    "name": "Battle Zeal",
+    "type": "Precision",
+    "effect": "Battle Zeal is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/battle_zeal.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Battle_Zeal"
+  },
+  {
+    "id": "coup_de_grace",
+    "name": "Coup de Grace",
+    "type": "Precision",
+    "effect": "Coup de Grace is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/coup_de_grace.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Coup_de_Grace"
+  },
+  {
+    "id": "legend_bloodline",
+    "name": "Legend: Bloodline",
+    "type": "Precision",
+    "effect": "Legend: Bloodline (Wild Rift) is a rune in League of Legends .",
+    "cooldown": null,
+    "image": "/images/runes/legend_bloodline.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Legend:_Bloodline"
+  },
+  {
+    "id": "demolish",
+    "name": "Demolish",
+    "type": "Resolve",
+    "effect": "Demolish is a rune in Wild Rift .",
+    "cooldown": "35 s",
+    "image": "/images/runes/demolish.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Demolish"
+  },
+  {
+    "id": "font_of_life",
+    "name": "Font of Life",
+    "type": "Resolve",
+    "effect": "Font of Life is a rune in Wild Rift .",
+    "cooldown": "20 s",
+    "image": "/images/runes/font_of_life.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Font_of_Life"
+  },
+  {
+    "id": "courage_of_the_colossus",
+    "name": "Courage of the Colossus",
+    "type": "Resolve",
+    "effect": "Courage of the Colossus is a rune in Wild Rift .",
+    "cooldown": "10 s",
+    "image": "/images/runes/courage_of_the_colossus.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Courage_of_the_Colossus"
+  },
+  {
+    "id": "unshakeable",
+    "name": "Unshakeable",
+    "type": "Resolve",
+    "effect": "Unshakeable is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/unshakeable.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Unshakeable"
+  },
+  {
+    "id": "second_wind",
+    "name": "Second Wind",
+    "type": "Resolve",
+    "effect": "Second Wind is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/second_wind.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Second_Wind"
+  },
+  {
+    "id": "nullifying_orb",
+    "name": "Nullifying Orb",
+    "type": "Resolve",
+    "effect": "Nullifying Orb is a rune in Wild Rift .",
+    "cooldown": "60 s",
+    "image": "/images/runes/nullifying_orb.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Nullifying_Orb"
+  },
+  {
+    "id": "bone_plating",
+    "name": "Bone Plating",
+    "type": "Resolve",
+    "effect": "Bone Plating is a rune in Wild Rift .",
+    "cooldown": "30 s",
+    "image": "/images/runes/bone_plating.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Bone_Plating"
+  },
+  {
+    "id": "overgrowth",
+    "name": "Overgrowth",
+    "type": "Resolve",
+    "effect": "Overgrowth is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/overgrowth.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Overgrowth"
+  },
+  {
+    "id": "revitalize",
+    "name": "Revitalize",
+    "type": "Resolve",
+    "effect": "Revitalize is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/revitalize.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Revitalize"
+  },
+  {
+    "id": "perseverance",
+    "name": "Perseverance",
+    "type": "Resolve",
+    "effect": "Perseverance is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/perseverance.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Perseverance"
+  },
+  {
+    "id": "axiom_arcanist",
+    "name": "Axiom Arcanist",
+    "type": "Inspiration",
+    "effect": "Axiom Arcanist is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/axiom_arcanist.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Axiom_Arcanist"
+  },
+  {
+    "id": "manaflow_band",
+    "name": "Manaflow Band",
+    "type": "Inspiration",
+    "effect": "Manaflow Band is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/manaflow_band.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Manaflow_Band"
+  },
+  {
+    "id": "botanist",
+    "name": "Botanist",
+    "type": "Inspiration",
+    "effect": "Botanist is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/botanist.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Botanist"
+  },
+  {
+    "id": "hexflash",
+    "name": "Hexflash",
+    "type": "Inspiration",
+    "effect": "Hexflash is a rune in Wild Rift .",
+    "cooldown": ".",
+    "image": "/images/runes/hexflash.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Hexflash"
+  },
+  {
+    "id": "transcendence",
+    "name": "Transcendence",
+    "type": "Inspiration",
+    "effect": "Transcendence is a rune in Wild Rift .",
+    "cooldown": ".",
+    "image": "/images/runes/transcendence.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Transcendence"
+  },
+  {
+    "id": "celerity",
+    "name": "Celerity",
+    "type": "Inspiration",
+    "effect": "Celerity is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/celerity.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Celerity"
+  },
+  {
+    "id": "absolute_focus",
+    "name": "Absolute Focus",
+    "type": "Inspiration",
+    "effect": "Absolute Focus is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/absolute_focus.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Absolute_Focus"
+  },
+  {
+    "id": "scorch",
+    "name": "Scorch",
+    "type": "Inspiration",
+    "effect": "Scorch is a rune in Wild Rift .",
+    "cooldown": "8 s",
+    "image": "/images/runes/scorch.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Scorch"
+  },
+  {
+    "id": "nimbus_cloak",
+    "name": "Nimbus Cloak",
+    "type": "Inspiration",
+    "effect": "Nimbus Cloak is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/nimbus_cloak.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Nimbus_Cloak"
+  },
+  {
+    "id": "gathering_storm",
+    "name": "Gathering Storm",
+    "type": "Inspiration",
+    "effect": "Gathering Storm is a rune in Wild Rift .",
+    "cooldown": null,
+    "image": "/images/runes/gathering_storm.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Gathering_Storm"
+  },
+  {
+    "id": "ixtali_seedjar",
+    "name": "Ixtali Seedjar",
+    "type": "Inspiration",
+    "effect": "Ixtali Seedjar is a rune in Wild Rift .",
+    "cooldown": ".",
+    "image": "/images/runes/ixtali_seedjar.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Ixtali_Seedjar"
+  }
+]

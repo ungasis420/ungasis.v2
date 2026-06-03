@@ -1,0 +1,961 @@
+{
+  "meta": {
+    "type": "item_rune_counters",
+    "patch": "7.1d",
+    "schema_version": "v1",
+    "generated": "2026-05-14",
+    "total_item_categories": 12,
+    "total_item_entries": 41,
+    "total_rune_categories": 8,
+    "total_rune_entries": 24,
+    "total_entries": 65,
+    "confidence_source": "theorycraft_meta_inference",
+    "note": "Counter-building intelligence for RiftCoach AI advisor. Triggers indicate when to recommend these items/runes."
+  },
+  "item_counters": [
+    {
+      "counter_category": "anti_heal",
+      "description": "Items that reduce enemy healing effectiveness",
+      "triggers": [
+        "enemy_has_heavy_healing",
+        "enemy_has_drain_tank",
+        "enemy_has_soraka",
+        "enemy_has_yuumi",
+        "enemy_has_aatrox",
+        "enemy_has_dr_mundo",
+        "enemy_has_vladimir"
+      ],
+      "items": [
+        {
+          "item_id": "morellonomicon",
+          "stat_type": "magic",
+          "reduction": "anti_heal_on_magic_damage",
+          "best_for": [
+            "ap_mages",
+            "ap_supports"
+          ],
+          "priority": "high",
+          "notes": "Build on any AP champion when enemy has healing. Passive applies on magic damage."
+        },
+        {
+          "item_id": "mortal_reminder",
+          "stat_type": "physical",
+          "reduction": "anti_heal_on_physical_damage",
+          "best_for": [
+            "ad_carries",
+            "ad_fighters"
+          ],
+          "priority": "high",
+          "notes": "Build on ADCs and AD fighters. Passive applies on physical damage hits."
+        },
+        {
+          "item_id": "thornmail",
+          "stat_type": "tank",
+          "reduction": "anti_heal_on_being_hit",
+          "best_for": [
+            "tanks",
+            "engage_supports"
+          ],
+          "priority": "high",
+          "notes": "Build on tanks. Applies anti-heal when enemy AAs you. Best with CC to apply full effect."
+        },
+        {
+          "item_id": "chempunk_chainsword",
+          "stat_type": "physical",
+          "reduction": "anti_heal_on_physical_damage",
+          "best_for": [
+            "ad_bruisers",
+            "ad_fighters"
+          ],
+          "priority": "medium",
+          "notes": "Alternative to Mortal Reminder for bruisers who want HP + AH."
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_shield",
+      "description": "Items and strategies vs heavy shielding",
+      "triggers": [
+        "enemy_has_lulu",
+        "enemy_has_janna",
+        "enemy_has_karma",
+        "enemy_has_seraphine",
+        "enemy_has_milio",
+        "enemy_has_sett_haymaker"
+      ],
+      "items": [
+        {
+          "item_id": "serpents_fang",
+          "stat_type": "physical",
+          "reduction": "shield_reduction_on_damage",
+          "best_for": [
+            "ad_assassins",
+            "ad_fighters"
+          ],
+          "priority": "high",
+          "notes": "Reduces shields on physical damage. Core vs Lulu/Janna/Karma comps. Massive value in shield-heavy meta."
+        }
+      ],
+      "strategy_notes": "Focus burst damage to break shields before healing kicks in. Coordinate team burst on shielded target."
+    },
+    {
+      "counter_category": "armor_penetration",
+      "description": "Items that shred or penetrate enemy armor",
+      "triggers": [
+        "enemy_has_2_plus_tanks",
+        "enemy_stacking_armor",
+        "enemy_has_malphite",
+        "enemy_has_rammus",
+        "enemy_has_ornn"
+      ],
+      "items": [
+        {
+          "item_id": "lord_dominiks_regards",
+          "stat_type": "physical",
+          "reduction": "percent_armor_pen",
+          "best_for": [
+            "ad_carries"
+          ],
+          "priority": "high",
+          "notes": "Best %armor pen for ADCs. Giant Slayer bonus vs high-HP targets."
+        },
+        {
+          "item_id": "serylda_grudge",
+          "stat_type": "physical",
+          "reduction": "percent_armor_pen_plus_slow",
+          "best_for": [
+            "ad_casters",
+            "ad_assassins"
+          ],
+          "priority": "high",
+          "notes": "Armor pen + slow on abilities. Best for ability-based AD champions."
+        },
+        {
+          "item_id": "black_cleaver",
+          "stat_type": "physical",
+          "reduction": "stacking_armor_shred",
+          "best_for": [
+            "ad_bruisers",
+            "ad_fighters"
+          ],
+          "priority": "high",
+          "notes": "Stacking armor shred on AAs/abilities. Shreds for entire team. Best on multi-hit champions (Aatrox Q, Garen E)."
+        },
+        {
+          "item_id": "blade_of_the_ruined_king",
+          "stat_type": "physical",
+          "reduction": "percent_hp_on_hit",
+          "best_for": [
+            "on_hit_adcs",
+            "fighters"
+          ],
+          "priority": "high",
+          "notes": "% current HP on-hit. Best vs high-HP targets. Core on Vayne, Varus, Irelia."
+        }
+      ]
+    },
+    {
+      "counter_category": "magic_penetration",
+      "description": "Items that penetrate enemy magic resistance",
+      "triggers": [
+        "enemy_has_2_plus_mr_stackers",
+        "enemy_has_galio",
+        "enemy_has_force_of_nature"
+      ],
+      "items": [
+        {
+          "item_id": "infinity_orb",
+          "stat_type": "magic",
+          "reduction": "flat_magic_pen",
+          "best_for": [
+            "ap_burst_mages"
+          ],
+          "priority": "high",
+          "notes": "Flat magic pen + crit on low HP. Best for burst mages vs squishies."
+        },
+        {
+          "item_id": "abyssal_mask",
+          "stat_type": "tank",
+          "reduction": "mr_shred_aura",
+          "best_for": [
+            "ap_tanks",
+            "engage_tanks"
+          ],
+          "priority": "medium",
+          "notes": "MR shred aura for team. Build on tanks when team has AP damage."
+        },
+        {
+          "item_id": "morellonomicon",
+          "stat_type": "magic",
+          "reduction": "flat_magic_pen_plus_anti_heal",
+          "best_for": [
+            "ap_mages"
+          ],
+          "priority": "high",
+          "notes": "Magic pen + anti-heal. Double purpose vs healing + MR."
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_crit",
+      "description": "Items that reduce critical strike damage",
+      "triggers": [
+        "enemy_has_crit_adc",
+        "enemy_has_yasuo",
+        "enemy_has_yone",
+        "enemy_has_tryndamere"
+      ],
+      "items": [
+        {
+          "item_id": "frozen_heart",
+          "stat_type": "tank",
+          "reduction": "attack_speed_slow_aura",
+          "best_for": [
+            "tanks",
+            "bruisers"
+          ],
+          "priority": "high",
+          "notes": "AS slow aura reduces DPS from crit ADCs. Also gives armor + AH."
+        },
+        {
+          "item_id": "plated_steelcaps",
+          "stat_type": "boots",
+          "reduction": "auto_attack_damage_reduction",
+          "best_for": [
+            "anyone_vs_ad"
+          ],
+          "priority": "high",
+          "notes": "Reduces AA damage by 10%. Essential vs auto-attack heavy teams."
+        },
+        {
+          "item_id": "thornmail",
+          "stat_type": "tank",
+          "reduction": "armor_plus_reflect",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "high",
+          "notes": "Armor + damage reflect on AAs. Anti-heal on immobilize."
+        },
+        {
+          "item_id": "amaranths_twinguard",
+          "stat_type": "tank",
+          "reduction": "adaptive_resists",
+          "best_for": [
+            "tanks",
+            "bruisers"
+          ],
+          "priority": "medium",
+          "notes": "Adaptive armor/MR based on damage taken. Good vs mixed but especially strong vs sustained AD."
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_burst",
+      "description": "Items that survive burst damage",
+      "triggers": [
+        "enemy_has_assassin",
+        "enemy_has_zed",
+        "enemy_has_fizz",
+        "enemy_has_akali",
+        "enemy_has_rengar",
+        "enemy_has_kha_zix"
+      ],
+      "items": [
+        {
+          "item_id": "crown_of_the_shattered_queen",
+          "stat_type": "magic",
+          "reduction": "safeguard_damage_reduction",
+          "best_for": [
+            "ap_mages",
+            "ap_supports"
+          ],
+          "priority": "high",
+          "notes": "Safeguard absorbs first burst. 1.5s damage reduction after. Rush vs assassin lanes."
+        },
+        {
+          "item_id": "guardian_angel",
+          "stat_type": "physical",
+          "reduction": "revive_on_death",
+          "best_for": [
+            "ad_carries",
+            "ad_fighters"
+          ],
+          "priority": "high",
+          "notes": "Revive passive. Build 4th-6th item. Deters assassin dive."
+        },
+        {
+          "item_id": "steraks_gage",
+          "stat_type": "physical",
+          "reduction": "lifeline_shield_on_low_hp",
+          "best_for": [
+            "bruisers",
+            "fighters"
+          ],
+          "priority": "high",
+          "notes": "Lifeline shield when low HP. Bonus AD from base AD. Anti-burst for bruisers."
+        },
+        {
+          "item_id": "maw_of_malmortius",
+          "stat_type": "physical",
+          "reduction": "magic_lifeline_shield",
+          "best_for": [
+            "ad_vs_ap_burst"
+          ],
+          "priority": "high",
+          "notes": "Magic damage Lifeline shield. Build vs AP assassins (Fizz, Akali, Evelynn)."
+        },
+        {
+          "item_id": "edge_of_night",
+          "stat_type": "physical",
+          "reduction": "spell_shield",
+          "best_for": [
+            "ad_assassins"
+          ],
+          "priority": "medium",
+          "notes": "Spell shield blocks one ability. Good for assassins diving into CC."
+        }
+      ]
+    },
+    {
+      "counter_category": "magic_resistance",
+      "description": "Items for surviving magic damage",
+      "triggers": [
+        "enemy_has_3_plus_ap",
+        "enemy_has_double_ap_carry",
+        "enemy_has_fed_ap_mid"
+      ],
+      "items": [
+        {
+          "item_id": "force_of_nature",
+          "stat_type": "tank",
+          "reduction": "stacking_mr_plus_ms",
+          "best_for": [
+            "tanks",
+            "bruisers"
+          ],
+          "priority": "high",
+          "notes": "Stacking MR on magic damage taken. MS bonus. Best MR item vs sustained AP."
+        },
+        {
+          "item_id": "mercurys_treads",
+          "stat_type": "boots",
+          "reduction": "tenacity_plus_mr",
+          "best_for": [
+            "anyone_vs_cc_and_ap"
+          ],
+          "priority": "high",
+          "notes": "Tenacity reduces CC duration + MR. Essential vs CC-heavy AP teams."
+        },
+        {
+          "item_id": "maw_of_malmortius",
+          "stat_type": "physical",
+          "reduction": "magic_lifeline_shield",
+          "best_for": [
+            "ad_champions"
+          ],
+          "priority": "high",
+          "notes": "Magic Lifeline shield. AD + MR. Best for AD champs vs AP burst."
+        },
+        {
+          "item_id": "wits_end",
+          "stat_type": "physical",
+          "reduction": "on_hit_mr",
+          "best_for": [
+            "on_hit_adcs",
+            "fighters"
+          ],
+          "priority": "medium",
+          "notes": "MR + on-hit magic damage. Good for sustained fighters vs AP."
+        },
+        {
+          "item_id": "amaranths_twinguard",
+          "stat_type": "tank",
+          "reduction": "adaptive_resists",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "medium",
+          "notes": "Adaptive resists. Gains MR when taking magic damage."
+        }
+      ]
+    },
+    {
+      "counter_category": "armor_stacking",
+      "description": "Items for surviving physical damage",
+      "triggers": [
+        "enemy_has_4_plus_ad",
+        "enemy_has_full_ad_team",
+        "enemy_has_fed_ad_carry"
+      ],
+      "items": [
+        {
+          "item_id": "plated_steelcaps",
+          "stat_type": "boots",
+          "reduction": "aa_damage_reduction",
+          "best_for": [
+            "anyone_vs_ad"
+          ],
+          "priority": "high",
+          "notes": "10% AA damage reduction. Essential vs auto-heavy teams."
+        },
+        {
+          "item_id": "frozen_heart",
+          "stat_type": "tank",
+          "reduction": "as_slow_aura_armor",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "high",
+          "notes": "AS slow aura + high armor. Cripples auto-attack teams."
+        },
+        {
+          "item_id": "thornmail",
+          "stat_type": "tank",
+          "reduction": "armor_reflect_anti_heal",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "high",
+          "notes": "Armor + reflect + anti-heal. Triple threat vs AD."
+        },
+        {
+          "item_id": "dead_mans_plate",
+          "stat_type": "tank",
+          "reduction": "armor_ms",
+          "best_for": [
+            "tanks",
+            "bruisers"
+          ],
+          "priority": "medium",
+          "notes": "Armor + MS for engage. Good for roaming tanks."
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_on_hit",
+      "description": "Items vs on-hit builds (Vayne, Kog'Maw, Varus, Master Yi)",
+      "triggers": [
+        "enemy_has_on_hit_adc",
+        "enemy_has_vayne",
+        "enemy_has_kog_maw",
+        "enemy_has_master_yi",
+        "enemy_has_guinsoos"
+      ],
+      "items": [
+        {
+          "item_id": "frozen_heart",
+          "stat_type": "tank",
+          "reduction": "as_slow_aura",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "high",
+          "notes": "AS slow aura directly reduces on-hit DPS frequency."
+        },
+        {
+          "item_id": "thornmail",
+          "stat_type": "tank",
+          "reduction": "reflect_plus_anti_heal",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "high",
+          "notes": "Reflects damage per AA. On-hit ADCs AA fast = more reflect."
+        },
+        {
+          "item_id": "amaranths_twinguard",
+          "stat_type": "tank",
+          "reduction": "adaptive_resists",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "medium",
+          "notes": "Adaptive resists vs mixed on-hit damage (physical + magic)."
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_stealth",
+      "description": "Vision and detection vs stealth champions",
+      "triggers": [
+        "enemy_has_evelynn",
+        "enemy_has_twitch",
+        "enemy_has_rengar",
+        "enemy_has_akali_shroud",
+        "enemy_has_viego"
+      ],
+      "items": [
+        {
+          "item_id": "oracle_lens",
+          "stat_type": "vision",
+          "reduction": "reveals_stealth_in_area",
+          "best_for": [
+            "supports",
+            "junglers"
+          ],
+          "priority": "high",
+          "notes": "Sweeper reveals stealth champions in area. Essential vs Evelynn/Twitch/Rengar."
+        },
+        {
+          "item_id": "control_ward",
+          "stat_type": "vision",
+          "reduction": "reveals_area",
+          "best_for": [
+            "everyone"
+          ],
+          "priority": "high",
+          "notes": "Control ward reveals area. Place in key brush/paths vs stealth champs."
+        }
+      ],
+      "strategy_notes": "Group as 5 vs stealth assassins. Never walk alone. Ward flanks. Pink ward objectives."
+    },
+    {
+      "counter_category": "anti_mobility",
+      "description": "Items and champions that counter high-mobility enemies",
+      "triggers": [
+        "enemy_has_high_mobility",
+        "enemy_has_irelia",
+        "enemy_has_yasuo",
+        "enemy_has_lee_sin",
+        "enemy_has_katarina"
+      ],
+      "items": [
+        {
+          "item_id": "rylais_crystal_scepter",
+          "stat_type": "magic",
+          "reduction": "slow_on_ability_damage",
+          "best_for": [
+            "ap_mages",
+            "ap_supports"
+          ],
+          "priority": "medium",
+          "notes": "Perma-slow on abilities. Reduces effectiveness of mobility champions."
+        },
+        {
+          "item_id": "frozen_heart",
+          "stat_type": "tank",
+          "reduction": "as_slow_aura",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "medium",
+          "notes": "AS slow reduces auto-attack based mobile champions."
+        },
+        {
+          "item_id": "dead_mans_plate",
+          "stat_type": "tank",
+          "reduction": "ms_slow_on_hit",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "medium",
+          "notes": "MS to match mobility. Slow on first hit."
+        }
+      ],
+      "champion_counters": [
+        "poppy_w_blocks_dashes",
+        "vex_passive_fears_on_dash",
+        "singed_w_grounds"
+      ]
+    },
+    {
+      "counter_category": "anti_poke",
+      "description": "Items that sustain through poke damage",
+      "triggers": [
+        "enemy_has_poke_comp",
+        "enemy_has_ziggs",
+        "enemy_has_lux",
+        "enemy_has_varus",
+        "enemy_has_jayce"
+      ],
+      "items": [
+        {
+          "item_id": "warmogs_armor",
+          "stat_type": "tank",
+          "reduction": "out_of_combat_regen",
+          "best_for": [
+            "tanks",
+            "supports"
+          ],
+          "priority": "high",
+          "notes": "Full HP regen out of combat. Negates poke entirely between fights."
+        },
+        {
+          "item_id": "force_of_nature",
+          "stat_type": "tank",
+          "reduction": "stacking_mr_ms",
+          "best_for": [
+            "tanks"
+          ],
+          "priority": "medium",
+          "notes": "Stacking MR vs AP poke. MS to dodge skillshots."
+        },
+        {
+          "item_id": "crown_of_the_shattered_queen",
+          "stat_type": "magic",
+          "reduction": "safeguard_damage_reduction",
+          "best_for": [
+            "ap_mages"
+          ],
+          "priority": "medium",
+          "notes": "Safeguard absorbs first poke hit. Good for squishies vs poke."
+        }
+      ],
+      "strategy_notes": "Engage on poke comps. Don't let them poke you down. Hard engage beats poke."
+    }
+  ],
+  "rune_counters": [
+    {
+      "counter_category": "anti_burst_runes",
+      "description": "Rune choices to survive burst damage",
+      "triggers": [
+        "enemy_has_assassin_mid",
+        "enemy_has_burst_combo"
+      ],
+      "runes": [
+        {
+          "rune_id": "bone_plating",
+          "path": "resolve",
+          "slot": "slot_2",
+          "effectiveness": 0.9,
+          "reason": "Blocks 3 instances of damage after first hit. Directly counters burst combos.",
+          "best_vs": [
+            "zed",
+            "fizz",
+            "akali",
+            "rengar",
+            "kha_zix"
+          ]
+        },
+        {
+          "rune_id": "guardian",
+          "path": "resolve",
+          "slot": "keystone",
+          "effectiveness": 0.8,
+          "reason": "Shield on nearby ally when damaged. Anti-burst for support.",
+          "best_vs": [
+            "assassin_dive_comps"
+          ]
+        },
+        {
+          "rune_id": "second_wind",
+          "path": "resolve",
+          "slot": "slot_2",
+          "effectiveness": 0.7,
+          "reason": "Heal after taking damage. Better vs poke than burst but still useful.",
+          "best_vs": [
+            "poke_then_burst_patterns"
+          ]
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_poke_runes",
+      "description": "Rune choices to sustain through poke",
+      "triggers": [
+        "enemy_has_poke_comp",
+        "enemy_has_ranged_lane_bully"
+      ],
+      "runes": [
+        {
+          "rune_id": "second_wind",
+          "path": "resolve",
+          "slot": "slot_2",
+          "effectiveness": 0.9,
+          "reason": "Heal after taking damage from champion. Best anti-poke rune.",
+          "best_vs": [
+            "lux",
+            "ziggs",
+            "jayce",
+            "kennen",
+            "teemo"
+          ]
+        },
+        {
+          "rune_id": "fleet_footwork",
+          "path": "precision",
+          "slot": "keystone",
+          "effectiveness": 0.8,
+          "reason": "Heal + MS on energized attack. Sustain through poke lanes.",
+          "best_vs": [
+            "ranged_vs_melee_lanes"
+          ]
+        },
+        {
+          "rune_id": "revitalize",
+          "path": "resolve",
+          "slot": "slot_3",
+          "effectiveness": 0.7,
+          "reason": "Increases healing received when low HP. Synergizes with Second Wind.",
+          "best_vs": [
+            "sustained_poke_lanes"
+          ]
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_cc_runes",
+      "description": "Rune choices vs CC-heavy teams",
+      "triggers": [
+        "enemy_has_3_plus_cc",
+        "enemy_has_leona",
+        "enemy_has_nautilus",
+        "enemy_has_amumu"
+      ],
+      "runes": [
+        {
+          "rune_id": "legend_tenacity",
+          "path": "precision",
+          "slot": "slot_3",
+          "effectiveness": 0.9,
+          "reason": "Stacking tenacity reduces CC duration. Essential vs CC-heavy teams.",
+          "best_vs": [
+            "leona",
+            "nautilus",
+            "amumu",
+            "alistar"
+          ]
+        },
+        {
+          "rune_id": "phase_rush",
+          "path": "sorcery",
+          "slot": "keystone",
+          "effectiveness": 0.7,
+          "reason": "MS burst + slow resistance after 3 hits. Escape CC chains.",
+          "best_vs": [
+            "slow_heavy_comps"
+          ]
+        },
+        {
+          "rune_id": "nimbus_cloak",
+          "path": "sorcery",
+          "slot": "secondary",
+          "effectiveness": 0.7,
+          "reason": "MS on summoner spell use. Flash + Nimbus to escape CC.",
+          "best_vs": [
+            "pick_comps"
+          ]
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_tank_runes",
+      "description": "Rune choices for shredding tanks",
+      "triggers": [
+        "enemy_has_2_plus_tanks",
+        "enemy_has_frontline_heavy"
+      ],
+      "runes": [
+        {
+          "rune_id": "conqueror",
+          "path": "precision",
+          "slot": "keystone",
+          "effectiveness": 0.95,
+          "reason": "Stacking AD/AP + omnivamp. THE anti-tank keystone for sustained fights.",
+          "best_vs": [
+            "tank_comps",
+            "frontline_heavy"
+          ]
+        },
+        {
+          "rune_id": "cut_down",
+          "path": "precision",
+          "slot": "slot_2",
+          "effectiveness": 0.85,
+          "reason": "Bonus damage to higher max HP targets. Best vs tank-heavy teams.",
+          "best_vs": [
+            "malphite",
+            "ornn",
+            "dr_mundo",
+            "sion"
+          ]
+        },
+        {
+          "rune_id": "last_stand",
+          "path": "precision",
+          "slot": "slot_2",
+          "effectiveness": 0.8,
+          "reason": "Bonus damage when low HP. Great in extended fights vs tanks.",
+          "best_vs": [
+            "extended_fights"
+          ]
+        },
+        {
+          "rune_id": "lethal_tempo",
+          "path": "precision",
+          "slot": "keystone",
+          "effectiveness": 0.85,
+          "reason": "Stacking AS for sustained DPS. Shreds tanks with on-hit.",
+          "best_vs": [
+            "tank_comps_as_adc"
+          ]
+        }
+      ]
+    },
+    {
+      "counter_category": "burst_runes",
+      "description": "Rune choices for bursting squishy targets",
+      "triggers": [
+        "enemy_has_squishy_comp",
+        "enemy_has_4_plus_squishies"
+      ],
+      "runes": [
+        {
+          "rune_id": "electrocute",
+          "path": "domination",
+          "slot": "keystone",
+          "effectiveness": 0.9,
+          "reason": "Burst damage on 3 hits. Best for assassins and burst mages.",
+          "best_vs": [
+            "squishy_comps"
+          ]
+        },
+        {
+          "rune_id": "dark_harvest",
+          "path": "domination",
+          "slot": "keystone",
+          "effectiveness": 0.8,
+          "reason": "Stacking damage on low HP targets. Scales into late game.",
+          "best_vs": [
+            "squishy_comps_late_game"
+          ]
+        },
+        {
+          "rune_id": "coup_de_grace",
+          "path": "precision",
+          "slot": "slot_2",
+          "effectiveness": 0.85,
+          "reason": "Bonus damage to targets below 35% HP. Execute synergy.",
+          "best_vs": [
+            "squishy_targets"
+          ]
+        },
+        {
+          "rune_id": "sudden_impact",
+          "path": "domination",
+          "slot": "slot_1",
+          "effectiveness": 0.8,
+          "reason": "Lethality/magic pen after dash. Best on dash champions.",
+          "best_vs": [
+            "squishy_targets_as_assassin"
+          ]
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_heal_runes",
+      "description": "Rune choices to reduce enemy healing",
+      "triggers": [
+        "enemy_has_heavy_healing",
+        "enemy_has_soraka",
+        "enemy_has_yuumi"
+      ],
+      "runes": [
+        {
+          "rune_id": "ignite_spell",
+          "path": "spell",
+          "slot": "summoner",
+          "effectiveness": 0.95,
+          "reason": "Ignite reduces healing by 50%. THE anti-heal summoner spell.",
+          "best_vs": [
+            "soraka",
+            "yuumi",
+            "dr_mundo",
+            "aatrox",
+            "vladimir"
+          ]
+        },
+        {
+          "rune_id": "triumph",
+          "path": "precision",
+          "slot": "slot_1",
+          "effectiveness": 0.6,
+          "reason": "Heal on takedown. Outsustain in fights. Not direct anti-heal but sustain.",
+          "best_vs": [
+            "extended_teamfights"
+          ]
+        }
+      ],
+      "strategy_notes": "Always bring Ignite vs heavy healing. Build anti-heal items early. Focus healers first."
+    },
+    {
+      "counter_category": "melee_vs_ranged_runes",
+      "description": "Rune choices for melee champions vs ranged lane bullies",
+      "triggers": [
+        "melee_vs_ranged_matchup",
+        "baron_lane_vs_ranged"
+      ],
+      "runes": [
+        {
+          "rune_id": "second_wind",
+          "path": "resolve",
+          "slot": "slot_2",
+          "effectiveness": 0.9,
+          "reason": "Heal after each poke hit. Essential for melee vs ranged.",
+          "best_vs": [
+            "teemo",
+            "kennen",
+            "vayne_top",
+            "gnar"
+          ]
+        },
+        {
+          "rune_id": "fleet_footwork",
+          "path": "precision",
+          "slot": "keystone",
+          "effectiveness": 0.8,
+          "reason": "Heal + MS on energized attack. Sustain through poke.",
+          "best_vs": [
+            "ranged_bullies"
+          ]
+        },
+        {
+          "rune_id": "bone_plating",
+          "path": "resolve",
+          "slot": "slot_2",
+          "effectiveness": 0.7,
+          "reason": "Blocks 3 damage instances. Good vs burst trades but less vs sustained poke.",
+          "best_vs": [
+            "burst_ranged_like_lucian_mid"
+          ]
+        }
+      ]
+    },
+    {
+      "counter_category": "anti_split_runes",
+      "description": "Rune choices vs split push strategies",
+      "triggers": [
+        "enemy_has_split_pusher",
+        "enemy_has_fiora",
+        "enemy_has_jax",
+        "enemy_has_tryndamere"
+      ],
+      "runes": [
+        {
+          "rune_id": "demolish",
+          "path": "resolve",
+          "slot": "slot_1",
+          "effectiveness": 0.8,
+          "reason": "Match split push pressure with tower damage.",
+          "best_vs": [
+            "split_pushers"
+          ]
+        },
+        {
+          "rune_id": "grasp_of_the_undying",
+          "path": "resolve",
+          "slot": "keystone",
+          "effectiveness": 0.7,
+          "reason": "Sustain + HP stacking for 1v1 vs split pushers.",
+          "best_vs": [
+            "fiora",
+            "jax",
+            "tryndamere"
+          ]
+        }
+      ],
+      "strategy_notes": "Pick Teleport vs split pushers. Match the split or group as 5 and force objectives."
+    }
+  ]
+}

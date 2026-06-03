@@ -1,0 +1,1444 @@
+[
+  {
+    "id": "berserkers_greaves",
+    "name": "Berserker's Greaves",
+    "tier": "Upgraded",
+    "category": "Boots",
+    "cost": 1100,
+    "stats": [
+      "+45 MovementSpeed",
+      "+0.25 PercentAttackSpeed"
+    ],
+    "passive": "25% Attack Speed45 Move Speed",
+    "image": "/images/items/berserkers_greaves.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Berserker's_Greaves"
+  },
+  {
+    "id": "boots_of_dynamism",
+    "name": "Boots of Dynamism",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/boots_of_dynamism.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Boots_of_Dynamism"
+  },
+  {
+    "id": "boots_of_mana",
+    "name": "Boots of Mana",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/boots_of_mana.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Boots_of_Mana"
+  },
+  {
+    "id": "boots_of_speed",
+    "name": "Boots of Speed",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/boots_of_speed.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Boots_of_Speed"
+  },
+  {
+    "id": "gluttonous_greaves",
+    "name": "Gluttonous Greaves",
+    "tier": "Upgraded",
+    "category": "Boots",
+    "cost": 950,
+    "stats": [
+      "+45 MovementSpeed"
+    ],
+    "passive": "45 Move Speed4% OmnivampSlayGain 1% Omnivamp on Champion takedown, stacking up to 6 times.",
+    "image": "/images/items/gluttonous_greaves.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Gluttonous_Greaves"
+  },
+  {
+    "id": "ionian_boots_of_lucidity",
+    "name": "Ionian Boots of Lucidity",
+    "tier": "Upgraded",
+    "category": "Boots",
+    "cost": 900,
+    "stats": [
+      "+45 MovementSpeed"
+    ],
+    "passive": "10 Ability Haste45 Move SpeedIonian InsightGain 10 Summoner Spell Haste.",
+    "image": "/images/items/ionian_boots_of_lucidity.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Ionian_Boots_of_Lucidity"
+  },
+  {
+    "id": "mercurys_treads",
+    "name": "Mercury's Treads",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 1250,
+    "stats": [
+      "+20 SpellBlock",
+      "+45 MovementSpeed"
+    ],
+    "passive": "20 Magic Resist45 Move Speed30% Tenacity",
+    "image": "/images/items/mercurys_treads.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Mercury's_Treads"
+  },
+  {
+    "id": "plated_steelcaps",
+    "name": "Plated Steelcaps",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 1200,
+    "stats": [
+      "+45 MovementSpeed",
+      "+25 Armor"
+    ],
+    "passive": "25 Armor45 Move SpeedPlatingReduces incoming damage from Attacks by 10%.",
+    "image": "/images/items/plated_steelcaps.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Plated_Steelcaps"
+  },
+  {
+    "id": "dream_maker",
+    "name": "Dream Maker",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 400,
+    "stats": [
+      "+200 HPPool"
+    ],
+    "passive": "200 Health75% Base Health Regen75% Base Mana Regen9 Gold Per 10 SecondsDream MakerHealing or Shielding another ally blows Dream Bubbles to them for 3 seconds. Their next Attack deals bonus magic damag",
+    "image": "/images/items/dream_maker.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Dream_Maker"
+  },
+  {
+    "id": "galeforce",
+    "name": "Galeforce",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3500,
+    "stats": [
+      "+0.2 CritChance",
+      "+50 PhysicalDamage",
+      "+0.15 PercentAttackSpeed",
+      "+0.07 PercentMovementSpeed"
+    ],
+    "passive": "50 Attack Damage15% Attack Speed20% Critical Strike Chance7% Move SpeedMythic Passive: Grants all other Legendary items 5 Attack Damage.Maximum missile damage dealt when enemy Health is below 25%.Clou",
+    "image": "/images/items/galeforce.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Galeforce"
+  },
+  {
+    "id": "glorious_enchant",
+    "name": "Glorious Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/glorious_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Glorious_Enchant"
+  },
+  {
+    "id": "goredrinker",
+    "name": "Goredrinker",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3200,
+    "stats": [
+      "+400 HPPool",
+      "+55 PhysicalDamage"
+    ],
+    "passive": "55 Attack Damage400 Health20 Ability Haste8% OmnivampMythic Passive: Grants all other Legendary items 75 Health and 3 Ability Haste.Active - Thirsting Slash: Deal damage to nearby enemies. Restore Hea",
+    "image": "/images/items/goredrinker.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Goredrinker"
+  },
+  {
+    "id": "locket_enchant",
+    "name": "Locket Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/locket_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Locket_Enchant"
+  },
+  {
+    "id": "magnetron_enchant",
+    "name": "Magnetron Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/magnetron_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Magnetron_Enchant"
+  },
+  {
+    "id": "meteor_enchant",
+    "name": "Meteor Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/meteor_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Meteor_Enchant"
+  },
+  {
+    "id": "protobelt_enchant",
+    "name": "Protobelt Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/protobelt_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Protobelt_Enchant"
+  },
+  {
+    "id": "quicksilver_enchant",
+    "name": "Quicksilver Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/quicksilver_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Quicksilver_Enchant"
+  },
+  {
+    "id": "stasis_enchant",
+    "name": "Stasis Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/stasis_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Stasis_Enchant"
+  },
+  {
+    "id": "stoneplate_enchant",
+    "name": "Stoneplate Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/stoneplate_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Stoneplate_Enchant"
+  },
+  {
+    "id": "stridebreaker",
+    "name": "Stridebreaker",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 3300,
+    "stats": [
+      "+450 HPPool",
+      "+40 PhysicalDamage",
+      "+0.25 PercentAttackSpeed"
+    ],
+    "passive": "40 Attack Damage25% Attack Speed450 HealthCleaveAttacks deal physical damage to nearby enemies.Breaking ShockwaveDeal physical damage and Slow nearby enemies by 35%.Gain 35% decaying Move Speed per ch",
+    "image": "/images/items/stridebreaker.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Stridebreaker"
+  },
+  {
+    "id": "veil_enchant",
+    "name": "Veil Enchant",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/veil_enchant.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Veil_Enchant"
+  },
+  {
+    "id": "control_ward",
+    "name": "Control Ward",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 75,
+    "stats": [],
+    "passive": "ConsumePlaces a Control Ward that grants vision and reveals enemy Stealth Wards, traps and Camouflaged enemies.",
+    "image": "/images/items/control_ward.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Control_Ward"
+  },
+  {
+    "id": "sweeping_lens",
+    "name": "Sweeping Lens",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/sweeping_lens.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Sweeping_Lens"
+  },
+  {
+    "id": "warding_totem",
+    "name": "Warding Totem",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/warding_totem.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Warding_Totem"
+  },
+  {
+    "id": "abyssal_mask",
+    "name": "Abyssal Mask",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2650,
+    "stats": [
+      "+45 SpellBlock",
+      "+350 HPPool"
+    ],
+    "passive": "350 Health45 Magic Resist15 Ability HasteUnmakeNearby enemy champions take 12% more magic damage.",
+    "image": "/images/items/abyssal_mask.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Abyssal_Mask"
+  },
+  {
+    "id": "amaranths_twinguard",
+    "name": "Amaranth's Twinguard",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/amaranths_twinguard.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Amaranth's_Twinguard"
+  },
+  {
+    "id": "archangels_staff",
+    "name": "Archangel's Staff",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+600 MPPool",
+      "+70 MagicDamage"
+    ],
+    "passive": "70 Ability Power600 Mana25 Ability HasteAweGain Ability Power equal to 1% bonus Mana.Manaflow (8s, max 5 charges)Landing Abilities grants 9.5 max Mana (doubled vs. champions).Transforms into Seraph's ",
+    "image": "/images/items/archangels_staff.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Archangel's_Staff"
+  },
+  {
+    "id": "ardent_censer",
+    "name": "Ardent Censer",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2200,
+    "stats": [
+      "+45 MagicDamage",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "45 Ability Power10% Heal and Shield Power125% Base Mana Regen4% Move SpeedSanctifyHealing or Shielding an ally enhances you both for 6 seconds, granting 25% Attack Speed and 20 magic damage On-Hit.",
+    "image": "/images/items/ardent_censer.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Ardent_Censer"
+  },
+  {
+    "id": "awakened_soulstealer",
+    "name": "Awakened Soulstealer",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/awakened_soulstealer.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Awakened_Soulstealer"
+  },
+  {
+    "id": "bandle_fantasy",
+    "name": "Bandle Fantasy",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/bandle_fantasy.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Bandle_Fantasy"
+  },
+  {
+    "id": "black_cleaver",
+    "name": "Black Cleaver",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3000,
+    "stats": [
+      "+400 HPPool",
+      "+40 PhysicalDamage"
+    ],
+    "passive": "40 Attack Damage400 Health20 Ability HasteCarveDealing physical damage to champions reduces their Armor by 6% for 6 seconds. (stacks 5 times).FervorDealing physical damage grants 20 Move Speed for 2 s",
+    "image": "/images/items/black_cleaver.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Black_Cleaver"
+  },
+  {
+    "id": "black_mist_scythe",
+    "name": "Black Mist Scythe",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 400,
+    "stats": [
+      "+75 HPPool",
+      "+20 PhysicalDamage"
+    ],
+    "passive": "20 Attack Damage75 Health100% Base Mana Regen3 Gold Per 10 SecondsThis item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.ACTIVEWard Place an In",
+    "image": "/images/items/black_mist_scythe.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Black_Mist_Scythe"
+  },
+  {
+    "id": "blade_of_the_ruined_king",
+    "name": "Blade of the Ruined King",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3200,
+    "stats": [
+      "+40 PhysicalDamage",
+      "+0.25 PercentAttackSpeed",
+      "+0.1 PercentLifeSteal"
+    ],
+    "passive": "40 Attack Damage25% Attack Speed10% Life StealMist's EdgeAttacks deal a percentage of enemy's current Health as bonus physical damage On-Hit.Clawing ShadowsAttacking a champion 3 times Slows them by 3",
+    "image": "/images/items/blade_of_the_ruined_king.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Blade_of_the_Ruined_King"
+  },
+  {
+    "id": "bloodthirster",
+    "name": "Bloodthirster",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3400,
+    "stats": [
+      "+80 PhysicalDamage",
+      "+0.15 PercentLifeSteal"
+    ],
+    "passive": "80 Attack Damage15% Life StealIchorshieldConvert excess healing from your Lifesteal to a Shield.",
+    "image": "/images/items/bloodthirster.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Bloodthirster"
+  },
+  {
+    "id": "bulwark_of_the_mountain",
+    "name": "Bulwark of the Mountain",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 400,
+    "stats": [
+      "+250 HPPool",
+      "+20 MagicDamage"
+    ],
+    "passive": "20 Ability Power250 Health100% Base Health Regen3 Gold Per 10 SecondsThis item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.ACTIVEWard Place an",
+    "image": "/images/items/bulwark_of_the_mountain.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Bulwark_of_the_Mountain"
+  },
+  {
+    "id": "chempunk_chainsword",
+    "name": "Chempunk Chainsword",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3000,
+    "stats": [
+      "+450 HPPool",
+      "+45 PhysicalDamage"
+    ],
+    "passive": "45 Attack Damage450 Health15 Ability HasteHackshornDealing physical damage applies 40% Wounds to enemy champions for 3 seconds.",
+    "image": "/images/items/chempunk_chainsword.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Chempunk_Chainsword"
+  },
+  {
+    "id": "cosmic_drive",
+    "name": "Cosmic Drive",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3000,
+    "stats": [
+      "+350 HPPool",
+      "+70 MagicDamage",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "70 Ability Power350 Health25 Ability Haste4% Move SpeedSpelldanceDealing magic or true damage to champions grants Move Speed for 4 seconds. ",
+    "image": "/images/items/cosmic_drive.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Cosmic_Drive"
+  },
+  {
+    "id": "crown_of_the_shattered_queen",
+    "name": "Crown of the Shattered Queen",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2500,
+    "stats": [
+      "+600 MPPool",
+      "+250 HPPool",
+      "+65 MagicDamage"
+    ],
+    "passive": "65 Ability Power250 Health600 Mana15 Ability HasteSafeguardYou are Safeguarded, reducing incoming champion damage by 40%. Safeguard persists for 3 seconds after taking champion damage. (0s). Item Cool",
+    "image": "/images/items/crown_of_the_shattered_queen.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Crown_of_the_Shattered_Queen"
+  },
+  {
+    "id": "dawnshroud",
+    "name": "Dawnshroud",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/dawnshroud.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Dawnshroud"
+  },
+  {
+    "id": "dead_mans_plate",
+    "name": "Dead Man's Plate",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2900,
+    "stats": [
+      "+350 HPPool",
+      "+55 Armor",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "350 Health55 Armor4% Move SpeedShipwreckerWhile moving, build up to 20 bonus Move Speed. Your next Attack discharges built up Move Speed to deal bonus physical damage.UnsinkableReduce the effectivenes",
+    "image": "/images/items/dead_mans_plate.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Dead_Man's_Plate"
+  },
+  {
+    "id": "deaths_dance",
+    "name": "Death's Dance",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3300,
+    "stats": [
+      "+50 Armor",
+      "+60 PhysicalDamage"
+    ],
+    "passive": "60 Attack Damage50 Armor15 Ability HasteIgnore PainA percentage of damage taken is dealt to you over 3 seconds instead.DefyWhen a champion that you damaged within 3 seconds dies, cleanse Ignore Pain's",
+    "image": "/images/items/deaths_dance.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Death's_Dance"
+  },
+  {
+    "id": "divine_sunderer",
+    "name": "Divine Sunderer",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3450,
+    "stats": [
+      "+300 HPPool",
+      "+40 PhysicalDamage"
+    ],
+    "passive": "40 Attack Damage300 Health20 Ability HasteSpellblade: After using an Ability, your next Attack is enhanced with an additional  + {{ Item_Melee_Ranged_Split_B }} target max Health physical damage {{ It",
+    "image": "/images/items/divine_sunderer.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Divine_Sunderer"
+  },
+  {
+    "id": "duskblade_of_draktharr",
+    "name": "Duskblade of Draktharr",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2950,
+    "stats": [
+      "+60 PhysicalDamage"
+    ],
+    "passive": "60 Attack Damage18 Lethality15 Ability HasteNightstalker: Your Abilities deal up to an additional 16% damage based on the target's missing health. When a champion that you have damaged within the last",
+    "image": "/images/items/duskblade_of_draktharr.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Duskblade_of_Draktharr"
+  },
+  {
+    "id": "eclipse",
+    "name": "Eclipse",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+60 PhysicalDamage"
+    ],
+    "passive": "60 Attack Damage15 Ability HasteEver Rising MoonHitting a champion with 2 separate Attacks or Abilities within 2 seconds grants you a Shield for 2 seconds.",
+    "image": "/images/items/eclipse.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Eclipse"
+  },
+  {
+    "id": "edge_of_night",
+    "name": "Edge of Night",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 3000,
+    "stats": [
+      "+250 HPPool",
+      "+50 PhysicalDamage"
+    ],
+    "passive": "50 Attack Damage15 Lethality250 HealthAnnulGrants a Spell Shield that blocks the next enemy Ability.",
+    "image": "/images/items/edge_of_night.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Edge_of_Night"
+  },
+  {
+    "id": "essence_reaver",
+    "name": "Essence Reaver",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3050,
+    "stats": [
+      "+0.25 CritChance",
+      "+50 PhysicalDamage"
+    ],
+    "passive": "50 Attack Damage20 Ability Haste25% Critical Strike ChanceSpellbladeAfter using an Ability, your next Attack deals bonus physical damage and grants Mana On-Hit.",
+    "image": "/images/items/essence_reaver.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Essence_Reaver"
+  },
+  {
+    "id": "experimental_hexplate",
+    "name": "Experimental Hexplate",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3000,
+    "stats": [
+      "+450 HPPool",
+      "+40 PhysicalDamage",
+      "+0.2 PercentAttackSpeed"
+    ],
+    "passive": "40 Attack Damage20% Attack Speed450 HealthHexchargedGain 30 Ultimate Ability Haste.OverdriveAfter casting your Ultimate, gain 50% Attack Speed and 20% Move Speed for 8 seconds. ",
+    "image": "/images/items/experimental_hexplate.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Experimental_Hexplate"
+  },
+  {
+    "id": "fimbulwinter",
+    "name": "Fimbulwinter",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2400,
+    "stats": [
+      "+1000 MPPool",
+      "+550 HPPool"
+    ],
+    "passive": "550 Health1000 Mana15 Ability HasteAweGain  Health.Everlasting (0s)Immobilizing or Slowing (Melee only) an enemy champion grants a Shield for 3 seconds. The Shield is increased by 80% if more than one",
+    "image": "/images/items/fimbulwinter.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Fimbulwinter"
+  },
+  {
+    "id": "force_of_nature",
+    "name": "Force of Nature",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2800,
+    "stats": [
+      "+55 SpellBlock",
+      "+400 HPPool",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "400 Health55 Magic Resist4% Move SpeedSteadfastGain 70 Magic Resist and 6% bonus Move Speed after taking magic damage from Champions 8 times.",
+    "image": "/images/items/force_of_nature.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Force_of_Nature"
+  },
+  {
+    "id": "guardian_angel",
+    "name": "Guardian Angel",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 3200,
+    "stats": [
+      "+45 Armor",
+      "+55 PhysicalDamage"
+    ],
+    "passive": "55 Attack Damage45 ArmorRebirthUpon taking lethal damage, restores 50% base Health and 100% max Mana after 4 seconds of Stasis.",
+    "image": "/images/items/guardian_angel.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Guardian_Angel"
+  },
+  {
+    "id": "guinsoos_rageblade",
+    "name": "Guinsoo's Rageblade",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3000,
+    "stats": [
+      "+30 MagicDamage",
+      "+30 PhysicalDamage",
+      "+0.25 PercentAttackSpeed"
+    ],
+    "passive": "30 Attack Damage30 Ability Power25% Attack SpeedWrathAttacks deal 30 bonus magic damage On-Hit.Seething StrikeAttacks grant 8% Attack Speed for 3 seconds. (stacks 4 times). While fully stacked, every ",
+    "image": "/images/items/guinsoos_rageblade.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Guinsoo's_Rageblade"
+  },
+  {
+    "id": "harmonic_echo",
+    "name": "Harmonic Echo",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/harmonic_echo.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Harmonic_Echo"
+  },
+  {
+    "id": "heartsteel",
+    "name": "Heartsteel",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 3000,
+    "stats": [
+      "+900 HPPool"
+    ],
+    "passive": "900 Health100% Base Health RegenColossal Consumption (0s) per targetIf an enemy champion is nearby for a few seconds, your next Attack against them deals 70 plus 6% of your max Health as bonus physica",
+    "image": "/images/items/heartsteel.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Heartsteel"
+  },
+  {
+    "id": "hollow_radiance",
+    "name": "Hollow Radiance",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2800,
+    "stats": [
+      "+40 SpellBlock",
+      "+400 HPPool"
+    ],
+    "passive": "400 Health40 Magic Resist10 Ability Haste100% Base Health RegenImmolateAfter taking or dealing damage, deal magic damage per second to nearby enemies for 3 seconds. DesolateKilling an enemy deals magi",
+    "image": "/images/items/hollow_radiance.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Hollow_Radiance"
+  },
+  {
+    "id": "horizon_focus",
+    "name": "Horizon Focus",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2700,
+    "stats": [
+      "+75 MagicDamage"
+    ],
+    "passive": "75 Ability Power25 Ability HasteHypershotDealing Ability damage to champions at 600 range or greater Reveals them for 6 seconds. FocusWhen Hypershot is triggered, Reveal all other enemy champions with",
+    "image": "/images/items/horizon_focus.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Horizon_Focus"
+  },
+  {
+    "id": "hullbreaker",
+    "name": "Hullbreaker",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 3000,
+    "stats": [
+      "+500 HPPool",
+      "+40 PhysicalDamage",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "40 Attack Damage500 Health4% Move SpeedSkipperEvery fifth Attack against champions and epic monsters deals bonus physical damage, increased against Structures.Boarding PartyNearby allied siege and sup",
+    "image": "/images/items/hullbreaker.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Hullbreaker"
+  },
+  {
+    "id": "iceborn_gauntlet",
+    "name": "Iceborn Gauntlet",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+300 HPPool",
+      "+50 Armor"
+    ],
+    "passive": "300 Health50 Armor15 Ability HasteSpellbladeAfter using an Ability, your next Attack deals bonus physical damage On-Hit and creates a frost field for 2s that Slows.",
+    "image": "/images/items/iceborn_gauntlet.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Iceborn_Gauntlet"
+  },
+  {
+    "id": "imperial_mandate",
+    "name": "Imperial Mandate",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2250,
+    "stats": [
+      "+60 MagicDamage"
+    ],
+    "passive": "60 Ability Power20 Ability Haste125% Base Mana RegenCoordinated Fire (0s) per targetSlowing or Immobilizing an enemy champion marks them for 5 seconds. Ally champion damage detonates the mark, dealing",
+    "image": "/images/items/imperial_mandate.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Imperial_Mandate"
+  },
+  {
+    "id": "infinity_edge",
+    "name": "Infinity Edge",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3500,
+    "stats": [
+      "+0.25 CritChance",
+      "+75 PhysicalDamage"
+    ],
+    "passive": "75 Attack Damage25% Critical Strike Chance30% Critical Strike Damage",
+    "image": "/images/items/infinity_edge.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Infinity_Edge"
+  },
+  {
+    "id": "infinity_orb",
+    "name": "Infinity Orb",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/infinity_orb.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Infinity_Orb"
+  },
+  {
+    "id": "kaenic_rookern",
+    "name": "Kaenic Rookern",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2900,
+    "stats": [
+      "+80 SpellBlock",
+      "+400 HPPool"
+    ],
+    "passive": "400 Health80 Magic Resist100% Base Health RegenMagebaneAfter not taking magic damage for 15 seconds, gain a magic shield. ",
+    "image": "/images/items/kaenic_rookern.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Kaenic_Rookern"
+  },
+  {
+    "id": "knights_vow",
+    "name": "Knight's Vow",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+300 HPPool",
+      "+50 Armor"
+    ],
+    "passive": "300 Health50 Armor10 Ability Haste150% Base Health RegenSacrificeWhile near your Worthy ally, take 12% of the damage they receive and heal for 10% of the damage they deal to champions.Pledge (0s)Desig",
+    "image": "/images/items/knights_vow.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Knight's_Vow"
+  },
+  {
+    "id": "kraken_slayer",
+    "name": "Kraken Slayer",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3000,
+    "stats": [
+      "+45 PhysicalDamage",
+      "+0.4 PercentAttackSpeed",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "45 Attack Damage40% Attack Speed4% Move SpeedBring It DownEvery third Attack deals bonus physical damage On-Hit, increased based on their missing Health.",
+    "image": "/images/items/kraken_slayer.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Kraken_Slayer"
+  },
+  {
+    "id": "lich_bane",
+    "name": "Lich Bane",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+100 MagicDamage",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "100 Ability Power4% Move Speed10 Ability HasteSpellbladeAfter using an Ability, your next Attack deals bonus magic damage On-Hit.",
+    "image": "/images/items/lich_bane.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Lich_Bane"
+  },
+  {
+    "id": "lord_dominiks_regards",
+    "name": "Lord Dominik's Regards",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3300,
+    "stats": [
+      "+0.25 CritChance",
+      "+35 PhysicalDamage"
+    ],
+    "passive": "35 Attack Damage35% Armor Penetration25% Critical Strike ChanceGiant SlayerDeal up to 15% bonus damage against champions based on their bonus Health. Maximum damage bonus reached at 1500 bonus Health.",
+    "image": "/images/items/lord_dominiks_regards.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Lord_Dominik's_Regards"
+  },
+  {
+    "id": "ludens_echo",
+    "name": "Luden's Echo",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2750,
+    "stats": [
+      "+600 MPPool",
+      "+100 MagicDamage"
+    ],
+    "passive": "100 Ability Power600 Mana10 Ability HasteEchoDamaging Abilities fire 6 Echoes that deal bonus magic damage to the target and nearby enemies. Remaining Echoes fire on the primary target, dealing 20% da",
+    "image": "/images/items/ludens_echo.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Luden's_Echo"
+  },
+  {
+    "id": "magnetic_blaster",
+    "name": "Magnetic Blaster",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/magnetic_blaster.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Magnetic_Blaster"
+  },
+  {
+    "id": "malignance",
+    "name": "Malignance",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2700,
+    "stats": [
+      "+600 MPPool",
+      "+90 MagicDamage"
+    ],
+    "passive": "90 Ability Power600 Mana15 Ability HasteScornGain 20 Ultimate Ability Haste.HatefogDamaging a champion with your Ultimate burns the ground beneath them for 3s, dealing magic damage per second and redu",
+    "image": "/images/items/malignance.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Malignance"
+  },
+  {
+    "id": "mantle_of_the_twelfth_hour",
+    "name": "Mantle of the Twelfth Hour",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/mantle_of_the_twelfth_hour.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Mantle_of_the_Twelfth_Hour"
+  },
+  {
+    "id": "maw_of_malmortius",
+    "name": "Maw of Malmortius",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3100,
+    "stats": [
+      "+40 SpellBlock",
+      "+60 PhysicalDamage"
+    ],
+    "passive": "60 Attack Damage15 Ability Haste40 Magic ResistLifelineTaking magic damage that would reduce your Health below 30% grants a magic damage Shield for 3 seconds and 10% Omnivamp until end of combat.",
+    "image": "/images/items/maw_of_malmortius.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Maw_of_Malmortius"
+  },
+  {
+    "id": "morellonomicon",
+    "name": "Morellonomicon",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2850,
+    "stats": [
+      "+350 HPPool",
+      "+75 MagicDamage"
+    ],
+    "passive": "75 Ability Power350 Health15 Ability HasteGrievous WoundsDealing magic damage to champions applies 40% Wounds for 3 seconds.",
+    "image": "/images/items/morellonomicon.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Morellonomicon"
+  },
+  {
+    "id": "mortal_reminder",
+    "name": "Mortal Reminder",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3000,
+    "stats": [
+      "+0.25 CritChance",
+      "+35 PhysicalDamage"
+    ],
+    "passive": "35 Attack Damage30% Armor Penetration25% Critical Strike ChanceGrievous WoundsDealing physical damage applies 40% Wounds to enemy champions for 3 seconds.",
+    "image": "/images/items/mortal_reminder.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Mortal_Reminder"
+  },
+  {
+    "id": "muramana",
+    "name": "Muramana",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2900,
+    "stats": [
+      "+1000 MPPool",
+      "+35 PhysicalDamage"
+    ],
+    "passive": "35 Attack Damage1000 Mana15 Ability HasteAweGain 2% max Mana as bonus Attack Damage.ShockAttacks against champions deal 1.2% max Mana as bonus physical damage On-Hit. Damaging Abilities against champi",
+    "image": "/images/items/muramana.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Muramana"
+  },
+  {
+    "id": "nashors_tooth",
+    "name": "Nashor's Tooth",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+80 MagicDamage",
+      "+0.5 PercentAttackSpeed"
+    ],
+    "passive": "80 Ability Power50% Attack Speed15 Ability HasteIcathian BiteAttacks deal bonus magic damage On-Hit.",
+    "image": "/images/items/nashors_tooth.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Nashor's_Tooth"
+  },
+  {
+    "id": "navori_quickblades",
+    "name": "Navori Quickblades",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/navori_quickblades.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Navori_Quickblades"
+  },
+  {
+    "id": "oceanids_trident",
+    "name": "Oceanid's Trident",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/oceanids_trident.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Oceanid's_Trident"
+  },
+  {
+    "id": "overlords_bloodmail",
+    "name": "Overlord's Bloodmail",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2500,
+    "stats": [
+      "+400 HPPool",
+      "+40 PhysicalDamage"
+    ],
+    "passive": "40 Attack Damage400 HealthTyrannyGain  AD equal to 3% Bonus HP.RetributionGain up to 17.5% increased AD based on your percent missing Health.",
+    "image": "/images/items/overlords_bloodmail.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Overlord's_Bloodmail"
+  },
+  {
+    "id": "phantom_dancer",
+    "name": "Phantom Dancer",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2650,
+    "stats": [
+      "+0.25 CritChance",
+      "+0.65 PercentAttackSpeed",
+      "+0.1 PercentMovementSpeed"
+    ],
+    "passive": "65% Attack Speed25% Critical Strike Chance10% Move SpeedSpectral WaltzBecome Ghosted.",
+    "image": "/images/items/phantom_dancer.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Phantom_Dancer"
+  },
+  {
+    "id": "psychic_projector",
+    "name": "Psychic Projector",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/psychic_projector.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Psychic_Projector"
+  },
+  {
+    "id": "rabadons_deathcap",
+    "name": "Rabadon's Deathcap",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3500,
+    "stats": [
+      "+130 MagicDamage"
+    ],
+    "passive": "130 Ability PowerMagical OpusIncreases your total Ability Power by 30%.",
+    "image": "/images/items/rabadons_deathcap.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Rabadon's_Deathcap"
+  },
+  {
+    "id": "radiant_virtue",
+    "name": "Radiant Virtue",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2600,
+    "stats": [
+      "+30 SpellBlock",
+      "+350 HPPool",
+      "+30 Armor"
+    ],
+    "passive": "350 Health30 Armor30 Magic Resist10 Ability HasteGuiding Light: Upon casting your Ultimate you Transcend, increasing your Max Health by 12.5% for 9s. While Transcended you and allies within 1200 range",
+    "image": "/images/items/radiant_virtue.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Radiant_Virtue"
+  },
+  {
+    "id": "randuins_omen",
+    "name": "Randuin's Omen",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2700,
+    "stats": [
+      "+350 HPPool",
+      "+75 Armor"
+    ],
+    "passive": "350 Health75 ArmorResilienceReceive 30% less damage from Critical Strikes.HumilitySlow nearby enemies by 70% for 2 seconds.",
+    "image": "/images/items/randuins_omen.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Randuin's_Omen"
+  },
+  {
+    "id": "redemption",
+    "name": "Redemption",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2800,
+    "stats": [
+      "+400 HPPool",
+      "+30 MagicDamage"
+    ],
+    "passive": "30 Ability Power15 Ability Haste100% Base Mana Regen10% Heal and Shield PowerInterventionRestore 150 - 350 Health to allied units and deal 10% max Health true damage to enemy champions after 2.5 secon",
+    "image": "/images/items/redemption.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Redemption"
+  },
+  {
+    "id": "riftmaker",
+    "name": "Riftmaker",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3100,
+    "stats": [
+      "+350 HPPool",
+      "+70 MagicDamage"
+    ],
+    "passive": "70 Ability Power350 Health15 Ability HasteVoid CorruptionFor each second in combat with enemy champions, deal 2% bonus damage, up to 8%. At maximum strength, gain Omnivamp.Void InfusionGain 2% of your",
+    "image": "/images/items/riftmaker.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Riftmaker"
+  },
+  {
+    "id": "rod_of_ages",
+    "name": "Rod of Ages",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2600,
+    "stats": [
+      "+500 MPPool",
+      "+350 HPPool",
+      "+45 MagicDamage"
+    ],
+    "passive": "45 Ability Power350 Health500 ManaTimelessThis item gains 10 Health, 30 Mana and 3 Ability Power every 60 seconds up to 10 times. Upon reaching max stacks, gain a level.EternityTaking damage from cham",
+    "image": "/images/items/rod_of_ages.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Rod_of_Ages"
+  },
+  {
+    "id": "runaans_hurricane",
+    "name": "Runaan's Hurricane",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2650,
+    "stats": [
+      "+0.25 CritChance",
+      "+0.4 PercentAttackSpeed",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "40% Attack Speed25% Critical Strike Chance4% Move SpeedWind's FuryAttacks fire bolts at 2 additional enemies near the target.Each bolt deals physical damage and applies On-Hit effects.",
+    "image": "/images/items/runaans_hurricane.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Runaan's_Hurricane"
+  },
+  {
+    "id": "rylais_crystal_scepter",
+    "name": "Rylai's Crystal Scepter",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2600,
+    "stats": [
+      "+400 HPPool",
+      "+65 MagicDamage"
+    ],
+    "passive": "65 Ability Power400 HealthRimefrostDamaging Abilities Slow enemies by 30% for 1 second.",
+    "image": "/images/items/rylais_crystal_scepter.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Rylai's_Crystal_Scepter"
+  },
+  {
+    "id": "searing_crown",
+    "name": "Searing Crown",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/searing_crown.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Searing_Crown"
+  },
+  {
+    "id": "seraphs_embrace",
+    "name": "Seraph's Embrace",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+1000 MPPool",
+      "+70 MagicDamage"
+    ],
+    "passive": "70 Ability Power1000 Mana25 Ability HasteAweGain  Ability Power.Lifeline (0s)Taking damage that would reduce your Health below 30% grants a  Shield for 3 seconds.",
+    "image": "/images/items/seraphs_embrace.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Seraph's_Embrace"
+  },
+  {
+    "id": "serpents_fang",
+    "name": "Serpent's Fang",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2500,
+    "stats": [
+      "+55 PhysicalDamage"
+    ],
+    "passive": "55 Attack Damage15 LethalityShield ReaverDamaging an enemy champion reduces Shields they gain by % for 3 seconds. If they were not already affected by Shield Reaver, reduce Shields on them by %.",
+    "image": "/images/items/serpents_fang.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Serpent's_Fang"
+  },
+  {
+    "id": "seryldas_grudge",
+    "name": "Serylda's Grudge",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3000,
+    "stats": [
+      "+45 PhysicalDamage"
+    ],
+    "passive": "45 Attack Damage35% Armor Penetration15 Ability HasteBitter ColdDamaging Abilities Slow enemies below 50% Health by 30% for 1 second.",
+    "image": "/images/items/seryldas_grudge.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Serylda's_Grudge"
+  },
+  {
+    "id": "soul_transfer",
+    "name": "Soul Transfer",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/soul_transfer.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Soul_Transfer"
+  },
+  {
+    "id": "spear_of_shojin",
+    "name": "Spear of Shojin",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3100,
+    "stats": [
+      "+450 HPPool",
+      "+45 PhysicalDamage"
+    ],
+    "passive": "45 Attack Damage450 HealthDragonforce Gain 25 Basic Ability Haste.Focused Will Dealing damage with Abilities increases your Champion's Ability and Passive damage by 3% for 6 seconds. (stacks 4 times).",
+    "image": "/images/items/spear_of_shojin.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Spear_of_Shojin"
+  },
+  {
+    "id": "staff_of_flowing_waters",
+    "name": "Staff of Flowing Waters",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/staff_of_flowing_waters.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Staff_of_Flowing_Waters"
+  },
+  {
+    "id": "steraks_gage",
+    "name": "Sterak's Gage",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 3200,
+    "stats": [
+      "+400 HPPool"
+    ],
+    "passive": "400 Health20% TenacityThe Claws that CatchGain bonus Attack Damage.LifelineTaking damage that would reduce your Health below 30% grants a decaying Shield for 4.5 seconds.",
+    "image": "/images/items/steraks_gage.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Sterak's_Gage"
+  },
+  {
+    "id": "sundered_sky",
+    "name": "Sundered Sky",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3100,
+    "stats": [
+      "+400 HPPool",
+      "+45 PhysicalDamage"
+    ],
+    "passive": "45 Attack Damage400 Health10 Ability HasteLightshield StrikeYour first Attack against a champion Critically Strikes and restores Health.",
+    "image": "/images/items/sundered_sky.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Sundered_Sky"
+  },
+  {
+    "id": "sunfire_aegis",
+    "name": "Sunfire Aegis",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2700,
+    "stats": [
+      "+350 HPPool",
+      "+50 Armor"
+    ],
+    "passive": "350 Health50 Armor10 Ability HasteImmolateAfter taking or dealing damage, deal magic damage per second to nearby enemies for 3 seconds. ",
+    "image": "/images/items/sunfire_aegis.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Sunfire_Aegis"
+  },
+  {
+    "id": "terminus",
+    "name": "Terminus",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3000,
+    "stats": [
+      "+30 PhysicalDamage",
+      "+0.35 PercentAttackSpeed"
+    ],
+    "passive": "30 Attack Damage35% Attack SpeedShadowAttacks deal 30 bonus magic damage On-Hit.JuxtapositionAlternate between Light and Dark Attacks against champions: Light Attacks grant Armor and Magic Resist for ",
+    "image": "/images/items/terminus.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Terminus"
+  },
+  {
+    "id": "the_collector",
+    "name": "The Collector",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3000,
+    "stats": [
+      "+0.25 CritChance",
+      "+50 PhysicalDamage"
+    ],
+    "passive": "50 Attack Damage10 Lethality25% Critical Strike ChanceDeathYour damage executes champions that are below 5% Health.TaxesChampion kills grant 25 bonus gold.",
+    "image": "/images/items/the_collector.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:The_Collector"
+  },
+  {
+    "id": "thornmail",
+    "name": "Thornmail",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2650,
+    "stats": [
+      "+200 HPPool",
+      "+85 Armor"
+    ],
+    "passive": "200 Health85 ArmorThornsWhen struck by an Attack, deal magic damage to the attacker and apply 40% Wounds for 3 seconds if they are a champion.",
+    "image": "/images/items/thornmail.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Thornmail"
+  },
+  {
+    "id": "titanic_hydra",
+    "name": "Titanic Hydra",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 3300,
+    "stats": [
+      "+600 HPPool",
+      "+40 PhysicalDamage"
+    ],
+    "passive": "40 Attack Damage600 HealthCleaveAttacks deal physical damage on-hit and to enemies behind the target.Titanic CrescentEmpower your next Cleave to deal bonus physical damage On-Hit and deal bonus physic",
+    "image": "/images/items/titanic_hydra.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Titanic_Hydra"
+  },
+  {
+    "id": "trinity_force",
+    "name": "Trinity Force",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3333,
+    "stats": [
+      "+333 HPPool",
+      "+36 PhysicalDamage",
+      "+0.3 PercentAttackSpeed"
+    ],
+    "passive": "36 Attack Damage30% Attack Speed333 Health15 Ability HasteSpellbladeAfter using an Ability, your next Attack deals bonus physical damage On-Hit. QuickenAttacking grants 20 Move Speed for 2 seconds.",
+    "image": "/images/items/trinity_force.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Trinity_Force"
+  },
+  {
+    "id": "unending_despair",
+    "name": "Unending Despair",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2800,
+    "stats": [
+      "+400 HPPool",
+      "+50 Armor"
+    ],
+    "passive": "400 Health50 Armor15 Ability HasteAnguishEvery 4 seconds while in combat with champions, deal magic damage to nearby enemy champions and heal for 250% of the damage dealt.",
+    "image": "/images/items/unending_despair.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Unending_Despair"
+  },
+  {
+    "id": "warmogs_armor",
+    "name": "Warmog's Armor",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2750,
+    "stats": [
+      "+1100 HPPool",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "1100 Health4% Move SpeedWarmog's HeartRequires 1350 bonus Health.Restore  Health per second. If you have not taken damage within 4 seconds, restore an additional  Health per second.",
+    "image": "/images/items/warmogs_armor.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Warmog's_Armor"
+  },
+  {
+    "id": "winters_approach",
+    "name": "Winter's Approach",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2400,
+    "stats": [
+      "+500 MPPool",
+      "+550 HPPool"
+    ],
+    "passive": "550 Health500 Mana15 Ability HasteAweGain  Health.Manaflow (8s, max 4 charges)Landing Attacks and Abilities grant 6.5 max Mana (doubled vs. champions).Transforms into Fimbulwinter at 360 max Mana.",
+    "image": "/images/items/winters_approach.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Winter's_Approach"
+  },
+  {
+    "id": "wits_end",
+    "name": "Wit's End",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2800,
+    "stats": [
+      "+45 SpellBlock",
+      "+0.5 PercentAttackSpeed"
+    ],
+    "passive": "50% Attack Speed45 Magic Resist20% TenacityFrayAttacks deal bonus magic damage On-Hit.",
+    "image": "/images/items/wits_end.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Wit's_End"
+  },
+  {
+    "id": "yordle_trap",
+    "name": "Yordle Trap",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 0,
+    "stats": [],
+    "passive": "",
+    "image": "/images/items/yordle_trap.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Yordle_Trap"
+  },
+  {
+    "id": "youmuus_ghostblade",
+    "name": "Youmuu's Ghostblade",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2800,
+    "stats": [
+      "+55 PhysicalDamage",
+      "+0.04 PercentMovementSpeed"
+    ],
+    "passive": "55 Attack Damage18 Lethality4% Move SpeedHaunt Gain  Move Speed while out of combat.Wraith StepGain Move Speed and Ghosting for  seconds.",
+    "image": "/images/items/youmuus_ghostblade.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Youmuu's_Ghostblade"
+  },
+  {
+    "id": "zekes_convergence",
+    "name": "Zeke's Convergence",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2300,
+    "stats": [
+      "+30 SpellBlock",
+      "+350 HPPool",
+      "+30 Armor"
+    ],
+    "passive": "350 Health30 Armor30 Magic Resist10 Ability HasteFrostfire TempestCasting your Ultimate summons a storm around you for 5 seconds. The storm deals 30 magic damage per second to enemy champions and Slow",
+    "image": "/images/items/zekes_convergence.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Zeke's_Convergence"
+  }
+]

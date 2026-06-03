@@ -1,0 +1,149 @@
+[
+  {
+    "id": "electrocute",
+    "name": "Electrocute",
+    "type": "Keystone",
+    "effect": "3 hits in 3s deals 40-194 adaptive damage (+35% bonus AD, +20% AP)",
+    "cooldown": "20-13s"
+  },
+  {
+    "id": "dark_harvest",
+    "name": "Dark Harvest",
+    "type": "Keystone",
+    "effect": "Damage enemies below 50% HP for bonus adaptive damage. Stacks permanently on takedowns",
+    "cooldown": "40s"
+  },
+  {
+    "id": "conqueror",
+    "name": "Conqueror",
+    "type": "Keystone",
+    "effect": "Gain stacks on hit. At max stacks, gain bonus AD/AP and omnivamp",
+    "cooldown": null
+  },
+  {
+    "id": "lethal_tempo",
+    "name": "Lethal Tempo",
+    "type": "Keystone",
+    "effect": "Gain attack speed on hit, stacking up. At max stacks, gain bonus attack range",
+    "cooldown": null
+  },
+  {
+    "id": "fleet_footwork",
+    "name": "Fleet Footwork",
+    "type": "Keystone",
+    "effect": "Energized attacks heal and grant movement speed",
+    "cooldown": null
+  },
+  {
+    "id": "grasp",
+    "name": "Grasp of the Undying",
+    "type": "Keystone",
+    "effect": "Every 4s in combat, next AA deals bonus magic damage and heals. Permanently gain HP",
+    "cooldown": "4s"
+  },
+  {
+    "id": "guardian",
+    "name": "Guardian",
+    "type": "Keystone",
+    "effect": "Guard nearby ally. When either takes damage, both get a shield",
+    "cooldown": "70-40s"
+  },
+  {
+    "id": "aery",
+    "name": "Aery",
+    "type": "Keystone",
+    "effect": "Damaging champions sends Aery to deal bonus damage. Shielding allies sends Aery to shield them",
+    "cooldown": null
+  },
+  {
+    "id": "phase_rush",
+    "name": "Phase Rush",
+    "type": "Keystone",
+    "effect": "3 attacks/abilities in 3s grants burst of movement speed and slow resistance",
+    "cooldown": "15s"
+  },
+  {
+    "id": "first_strike",
+    "name": "First Strike",
+    "type": "Keystone",
+    "effect": "Hitting enemy first grants gold and bonus damage for 3s",
+    "cooldown": "25-15s"
+  },
+  {
+    "id": "brutal",
+    "name": "Brutal",
+    "type": "Domination",
+    "effect": "+7 AD or +14 AP (adaptive)",
+    "cooldown": null
+  },
+  {
+    "id": "triumph",
+    "name": "Triumph",
+    "type": "Precision",
+    "effect": "Takedowns restore 10% missing HP and grant bonus gold",
+    "cooldown": null
+  },
+  {
+    "id": "legend_alacrity",
+    "name": "Legend: Alacrity",
+    "type": "Precision",
+    "effect": "Gain attack speed on takedowns, stacking permanently",
+    "cooldown": null
+  },
+  {
+    "id": "legend_tenacity",
+    "name": "Legend: Tenacity",
+    "type": "Precision",
+    "effect": "Gain tenacity on takedowns, stacking permanently",
+    "cooldown": null
+  },
+  {
+    "id": "coup_de_grace",
+    "name": "Coup de Grace",
+    "type": "Precision",
+    "effect": "Deal 7% bonus damage to enemies below 35% HP",
+    "cooldown": null
+  },
+  {
+    "id": "bone_plating",
+    "name": "Bone Plating",
+    "type": "Resolve",
+    "effect": "After being hit, next 3 instances of damage reduced",
+    "cooldown": "45s"
+  },
+  {
+    "id": "second_wind",
+    "name": "Second Wind",
+    "type": "Resolve",
+    "effect": "After taking damage, regenerate HP over 10s",
+    "cooldown": null
+  },
+  {
+    "id": "overgrowth",
+    "name": "Overgrowth",
+    "type": "Resolve",
+    "effect": "Gain permanent HP from nearby minion deaths",
+    "cooldown": null
+  },
+  {
+    "id": "gathering_storm",
+    "name": "Gathering Storm",
+    "type": "Inspiration",
+    "effect": "Gain increasing AD/AP over time (every 2 minutes)",
+    "cooldown": null
+  },
+  {
+    "id": "manaflow_band",
+    "name": "Manaflow Band",
+    "type": "Inspiration",
+    "effect": "Hitting champions with abilities grants permanent max mana",
+    "cooldown": "15s"
+  },
+  {
+    "id": "scorch",
+    "name": "Scorch",
+    "type": "Inspiration",
+    "effect": "Abilities burn enemies for bonus magic damage over 1s",
+    "cooldown": "10s"
+  }
+]

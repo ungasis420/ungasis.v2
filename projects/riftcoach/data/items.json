@@ -1,0 +1,335 @@
+[
+  {
+    "id": "infinity_edge",
+    "name": "Infinity Edge",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3400,
+    "stats": [
+      "+60 AD",
+      "+25% Crit"
+    ],
+    "passive": "Infinity: +30% crit damage. Limit Break: excess crit converts to bonus crit damage"
+  },
+  {
+    "id": "bloodthirster",
+    "name": "Bloodthirster",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3400,
+    "stats": [
+      "+55 AD",
+      "+15% Lifesteal"
+    ],
+    "passive": "Ichorshield: Overheal creates a shield (up to 300)"
+  },
+  {
+    "id": "trinity_force",
+    "name": "Trinity Force",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3333,
+    "stats": [
+      "+25 AD",
+      "+30% AS",
+      "+200 HP"
+    ],
+    "passive": "Spellblade: After ability, next AA deals bonus damage"
+  },
+  {
+    "id": "black_cleaver",
+    "name": "Black Cleaver",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3100,
+    "stats": [
+      "+40 AD",
+      "+350 HP",
+      "+20 AH"
+    ],
+    "passive": "Carve: Attacks reduce enemy armor by 5% per hit (max 30%)"
+  },
+  {
+    "id": "steraks_gage",
+    "name": "Sterak's Gage",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3200,
+    "stats": [
+      "+50 AD",
+      "+400 HP"
+    ],
+    "passive": "Lifeline: At low HP, gain a shield based on bonus HP"
+  },
+  {
+    "id": "deaths_dance",
+    "name": "Death's Dance",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3300,
+    "stats": [
+      "+35 AD",
+      "+40 Armor",
+      "+15 AH"
+    ],
+    "passive": "Ignore: 30% of damage taken is dealt as bleed over 3s"
+  },
+  {
+    "id": "guardian_angel",
+    "name": "Guardian Angel",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2800,
+    "stats": [
+      "+40 AD",
+      "+40 Armor"
+    ],
+    "passive": "Resurrect: On death, revive with 50% base HP after 4s (300s CD)"
+  },
+  {
+    "id": "youmuus",
+    "name": "Youmuu's Ghostblade",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2800,
+    "stats": [
+      "+55 AD",
+      "+10 Lethality",
+      "+15 AH"
+    ],
+    "passive": "Haunt: Out of combat, gain ramping movement speed"
+  },
+  {
+    "id": "mortal_reminder",
+    "name": "Mortal Reminder",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 2800,
+    "stats": [
+      "+40 AD",
+      "+25% Crit"
+    ],
+    "passive": "Sepsis: Physical damage applies 40% Grievous Wounds for 3s"
+  },
+  {
+    "id": "serylda",
+    "name": "Serylda's Grudge",
+    "tier": "Upgraded",
+    "category": "Physical",
+    "cost": 3200,
+    "stats": [
+      "+40 AD",
+      "+15 AH",
+      "+20% Armor Pen"
+    ],
+    "passive": "Bitter Cold: Abilities slow enemies by 30% for 1s"
+  },
+  {
+    "id": "rabadons",
+    "name": "Rabadon's Deathcap",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 3600,
+    "stats": [
+      "+120 AP"
+    ],
+    "passive": "Increases total AP by 40%"
+  },
+  {
+    "id": "ludens",
+    "name": "Luden's Echo",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2900,
+    "stats": [
+      "+80 AP",
+      "+300 Mana",
+      "+10 AH"
+    ],
+    "passive": "Echo: Abilities deal bonus magic damage to target and nearby enemies"
+  },
+  {
+    "id": "void_staff",
+    "name": "Void Staff",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2500,
+    "stats": [
+      "+70 AP",
+      "+40% MPen"
+    ],
+    "passive": "Passive magic penetration against all targets"
+  },
+  {
+    "id": "zhonyas",
+    "name": "Zhonya's Hourglass",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2500,
+    "stats": [
+      "+75 AP",
+      "+45 Armor",
+      "+10 AH"
+    ],
+    "passive": "Stasis: Become invulnerable and untargetable for 2.5s (120s CD)"
+  },
+  {
+    "id": "morellonomicon",
+    "name": "Morellonomicon",
+    "tier": "Upgraded",
+    "category": "Magic",
+    "cost": 2500,
+    "stats": [
+      "+70 AP",
+      "+300 HP"
+    ],
+    "passive": "Affliction: Magic damage applies 40% Grievous Wounds for 3s"
+  },
+  {
+    "id": "sunfire",
+    "name": "Sunfire Aegis",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2700,
+    "stats": [
+      "+500 HP",
+      "+30 Armor",
+      "+30 MR"
+    ],
+    "passive": "Immolate: Deal magic damage per second to nearby enemies"
+  },
+  {
+    "id": "thornmail",
+    "name": "Thornmail",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2350,
+    "stats": [
+      "+200 HP",
+      "+75 Armor"
+    ],
+    "passive": "Thorns: Reflect damage on being hit. Immobilizing enemies applies 60% Grievous Wounds"
+  },
+  {
+    "id": "randuins",
+    "name": "Randuin's Omen",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2600,
+    "stats": [
+      "+400 HP",
+      "+55 Armor"
+    ],
+    "passive": "Active: Slow nearby enemies. Passive: Reduce incoming crit damage by 20%"
+  },
+  {
+    "id": "force_of_nature",
+    "name": "Force of Nature",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2600,
+    "stats": [
+      "+400 HP",
+      "+55 MR",
+      "+5% MS"
+    ],
+    "passive": "Absorb: Taking magic damage grants stacking MR and MS"
+  },
+  {
+    "id": "warmogs",
+    "name": "Warmog's Armor",
+    "tier": "Upgraded",
+    "category": "Defense",
+    "cost": 2650,
+    "stats": [
+      "+700 HP",
+      "+10 AH"
+    ],
+    "passive": "Warmog: Rapidly regenerate HP out of combat (requires 1100 bonus HP)"
+  },
+  {
+    "id": "plated_steelcaps",
+    "name": "Plated Steelcaps",
+    "tier": "Boots",
+    "category": "Boots",
+    "cost": 500,
+    "stats": [
+      "+40 MS",
+      "+15 Armor"
+    ],
+    "passive": "Block: Reduces incoming AA damage by 10%"
+  },
+  {
+    "id": "mercury_treads",
+    "name": "Mercury's Treads",
+    "tier": "Boots",
+    "category": "Boots",
+    "cost": 500,
+    "stats": [
+      "+40 MS",
+      "+10 MR"
+    ],
+    "passive": "Tenacity: +20% CC duration reduction"
+  },
+  {
+    "id": "ionian_boots",
+    "name": "Ionian Boots of Lucidity",
+    "tier": "Boots",
+    "category": "Boots",
+    "cost": 500,
+    "stats": [
+      "+40 MS",
+      "+10 AH"
+    ],
+    "passive": "Reduces summoner spell cooldowns by 10%"
+  },
+  {
+    "id": "berserker_greaves",
+    "name": "Berserker's Greaves",
+    "tier": "Boots",
+    "category": "Boots",
+    "cost": 500,
+    "stats": [
+      "+40 MS",
+      "+35% AS"
+    ],
+    "passive": "Best boots for auto-attack ADCs"
+  },
+  {
+    "id": "locket",
+    "name": "Locket Enchant",
+    "tier": "Enchantment",
+    "category": "Support",
+    "cost": 500,
+    "stats": [
+      "Active Shield"
+    ],
+    "passive": "Active: Shield all nearby allies for 2.5s. Core support enchant"
+  },
+  {
+    "id": "zekes",
+    "name": "Zeke's Convergence",
+    "tier": "Upgraded",
+    "category": "Support",
+    "cost": 2200,
+    "stats": [
+      "+250 HP",
+      "+30 Armor",
+      "+30 MR",
+      "+10 AH"
+    ],
+    "passive": "Conduit: Bind to ally. When you immobilize enemy, bonded ally deals bonus magic damage"
+  },
+  {
+    "id": "redemption",
+    "name": "Redemption",
+    "tier": "Upgraded",
+    "category": "Support",
+    "cost": 2100,
+    "stats": [
+      "+250 HP",
+      "+50% Heal Power"
+    ],
+    "passive": "Active: After 2.5s, heal allies and damage enemies in target area"
+  }
+]

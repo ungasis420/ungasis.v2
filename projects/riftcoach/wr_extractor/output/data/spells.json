@@ -1,0 +1,92 @@
+[
+  {
+    "id": "heal",
+    "name": "Heal",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 100,
+    "bestOn": "",
+    "image": "/images/spells/heal.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Heal"
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 90,
+    "bestOn": "",
+    "image": "/images/spells/ghost.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Ghost"
+  },
+  {
+    "id": "barrier",
+    "name": "Barrier",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 100,
+    "bestOn": "",
+    "image": "/images/spells/barrier.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Barrier"
+  },
+  {
+    "id": "exhaust",
+    "name": "Exhaust",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 100,
+    "bestOn": "",
+    "image": "/images/spells/exhaust.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Exhaust"
+  },
+  {
+    "id": "ignite",
+    "name": "Ignite",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 100,
+    "bestOn": "",
+    "image": "/images/spells/ignite.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Ignite"
+  },
+  {
+    "id": "cleanse",
+    "name": "Cleanse",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 110,
+    "bestOn": "",
+    "image": "/images/spells/cleanse.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Cleanse"
+  },
+  {
+    "id": "flash",
+    "name": "Flash",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 150,
+    "bestOn": "",
+    "image": "/images/spells/flash.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Flash"
+  },
+  {
+    "id": "smite",
+    "name": "Smite",
+    "effect": "",
+    "cooldown": 10,
+    "bestOn": "",
+    "image": "/images/spells/smite.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Smite"
+  },
+  {
+    "id": "clarity",
+    "name": "Clarity",
+    "effect": "Barrier · Cleanse · Exhaust · Flash · Ghost · Heal · Ignite",
+    "cooldown": 90,
+    "bestOn": "",
+    "image": "/images/spells/clarity.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Clarity"
+  },
+  {
+    "id": "teleport",
+    "name": "Teleport",
+    "effect": "Teleport is a spell that blinks you to the target after a few seconds.",
+    "cooldown": 150,
+    "bestOn": "",
+    "image": "/images/spells/teleport.png",
+    "source": "https://wiki.leagueoflegends.com/en-us/WR:Teleport"
+  }
+]

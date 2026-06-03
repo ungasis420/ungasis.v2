@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Bruiser (Aatrox, Camille, Fiora)",
+    "role": "baron",
+    "playstyle": "Sustain fighter, team fight presence",
+    "items": [
+      "Trinity Force",
+      "Sterak's Gage",
+      "Death's Dance",
+      "Guardian Angel",
+      "Spirit Visage"
+    ],
+    "runes": [
+      "Conqueror",
+      "Triumph",
+      "Legend: Alacrity",
+      "Last Stand",
+      "Overgrowth"
+    ],
+    "spells": [
+      "Flash",
+      "Ignite"
+    ]
+  },
+  {
+    "name": "Tank (Malphite, Ornn, Sion)",
+    "role": "baron",
+    "playstyle": "Frontline engage, team utility",
+    "items": [
+      "Sunfire Aegis",
+      "Thornmail",
+      "Randuin's Omen",
+      "Force of Nature",
+      "Warmog's Armor"
+    ],
+    "runes": [
+      "Grasp of the Undying",
+      "Demolish",
+      "Bone Plating",
+      "Overgrowth",
+      "Second Wind"
+    ],
+    "spells": [
+      "Flash",
+      "Teleport"
+    ]
+  },
+  {
+    "name": "Assassin JG (Lee Sin, Kha'Zix, Talon)",
+    "role": "jungle",
+    "playstyle": "Early ganks, pick-off carries",
+    "items": [
+      "Youmuu's Ghostblade",
+      "Edge of Night",
+      "Serylda's Grudge",
+      "Death's Dance",
+      "Guardian Angel"
+    ],
+    "runes": [
+      "Electrocute",
+      "Sudden Impact",
+      "Eyeball Collection",
+      "Relentless Hunter",
+      "Brutal"
+    ],
+    "spells": [
+      "Flash",
+      "Smite"
+    ]
+  },
+  {
+    "name": "Bruiser JG (Vi, Xin Zhao, Jarvan)",
+    "role": "jungle",
+    "playstyle": "Engage ganker, team fight diver",
+    "items": [
+      "Trinity Force",
+      "Sterak's Gage",
+      "Death's Dance",
+      "Randuin's Omen",
+      "Guardian Angel"
+    ],
+    "runes": [
+      "Conqueror",
+      "Triumph",
+      "Legend: Alacrity",
+      "Coup de Grace",
+      "Bone Plating"
+    ],
+    "spells": [
+      "Flash",
+      "Smite"
+    ]
+  },
+  {
+    "name": "Burst Mage (Ahri, Lissandra, Viktor)",
+    "role": "mid",
+    "playstyle": "Burst damage, zone control, roaming",
+    "items": [
+      "Luden's Echo",
+      "Rabadon's Deathcap",
+      "Void Staff",
+      "Zhonya's Hourglass",
+      "Morellonomicon"
+    ],
+    "runes": [
+      "Electrocute",
+      "Brutal",
+      "Eyeball Collection",
+      "Scorch",
+      "Manaflow Band"
+    ],
+    "spells": [
+      "Flash",
+      "Ignite"
+    ]
+  },
+  {
+    "name": "Assassin Mid (Akali, Zed)",
+    "role": "mid",
+    "playstyle": "Roaming burst, pick-off backline",
+    "items": [
+      "Youmuu's Ghostblade",
+      "Edge of Night",
+      "Serylda's Grudge",
+      "Death's Dance",
+      "Guardian Angel"
+    ],
+    "runes": [
+      "Electrocute",
+      "Sudden Impact",
+      "Eyeball Collection",
+      "Relentless Hunter",
+      "Brutal"
+    ],
+    "spells": [
+      "Flash",
+      "Ignite"
+    ]
+  },
+  {
+    "name": "Crit ADC (Kai'Sa, Jhin, Xayah, Caitlyn)",
+    "role": "dragon",
+    "playstyle": "Scaling damage carry",
+    "items": [
+      "Infinity Edge",
+      "Phantom Dancer",
+      "Bloodthirster",
+      "Mortal Reminder",
+      "Guardian Angel"
+    ],
+    "runes": [
+      "Lethal Tempo",
+      "Triumph",
+      "Legend: Alacrity",
+      "Coup de Grace",
+      "Gathering Storm"
+    ],
+    "spells": [
+      "Flash",
+      "Barrier"
+    ]
+  },
+  {
+    "name": "Poke ADC (Ezreal, Varus)",
+    "role": "dragon",
+    "playstyle": "Safe poke, kiting",
+    "items": [
+      "Essence Reaver",
+      "Muramana",
+      "Serylda's Grudge",
+      "Guardian Angel",
+      "Bloodthirster"
+    ],
+    "runes": [
+      "Conqueror",
+      "Brutal",
+      "Legend: Alacrity",
+      "Coup de Grace",
+      "Manaflow Band"
+    ],
+    "spells": [
+      "Flash",
+      "Barrier"
+    ]
+  },
+  {
+    "name": "Engage Tank Support (Leona, Thresh, Nautilus)",
+    "role": "support",
+    "playstyle": "Primary engage, CC chain, peel",
+    "items": [
+      "Locket Enchant",
+      "Zeke's Convergence",
+      "Thornmail",
+      "Randuin's Omen",
+      "Warmog's Armor"
+    ],
+    "runes": [
+      "Guardian",
+      "Font of Life",
+      "Bone Plating",
+      "Overgrowth",
+      "Second Wind"
+    ],
+    "spells": [
+      "Flash",
+      "Ignite"
+    ]
+  },
+  {
+    "name": "Enchanter Support (Lulu, Nami, Soraka)",
+    "role": "support",
+    "playstyle": "Shield, heal, buff ADC",
+    "items": [
+      "Locket Enchant",
+      "Ardent Censer",
+      "Staff of Flowing Waters",
+      "Redemption",
+      "Harmonic Echo"
+    ],
+    "runes": [
+      "Aery",
+      "Manaflow Band",
+      "Font of Life",
+      "Revitalize",
+      "Gathering Storm"
+    ],
+    "spells": [
+      "Flash",
+      "Exhaust"
+    ]
+  }
+]
