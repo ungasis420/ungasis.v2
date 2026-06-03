@@ -115,4 +115,26 @@ Current usage: ~42% — room for new customizations.
 
 ---
 
+## Auto-Routing Rules (Always Active)
+
+When starting ANY task, the Builder agent checks these conditions
+and acts accordingly. These rules run automatically — no need
+for Mel to specify them in every prompt.
+
+| # | Condition | Action | Why |
+|---|-----------|--------|-----|
+| 1 | Task creates 3+ new files | Call @blueprint-architect FIRST for spec | Blueprint-first rule — prevents hallucinated architecture |
+| 2 | Task is a bug fix (1-2 files) | Use surgical precision, change only specified files | Minimize blast radius |
+| 3 | After creating/modifying ANY .md file | Call @quality-auditor for review | Every dish gets tasted before serving |
+| 4 | After @quality-auditor PASS on 5+ files | Call @graphify-watchdog for re-index | Keep knowledge graph current |
+| 5 | After ANY sprint completion | Append to CONTEXT.md + git commit + push | Session state always saved |
+| 6 | Task mentions "UI", "component", "dashboard", "screen" | Call @designer for Design DNA compliance | Consistent glassmorphism look |
+| 7 | Task is unclear, ambiguous, or multi-sprint | Call @commander for decomposition | Commander decides routing |
+| 8 | Task mentions "test" or "overnight" | Suggest Jules for async execution | Free, runs in background |
+
+These rules are checked automatically by the Builder at task start.
+If multiple rules match, apply ALL matching rules in order.
+
+---
+
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
