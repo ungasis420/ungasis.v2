@@ -1,0 +1,302 @@
+## Scrape Run — 2026-06-03 11:07:34 UTC
+
+### 🗡️ Item Changes
+- Item 'Bloodthirster' category changed: Physical → physical
+- Item 'Guardian Angel' category changed: Physical → defense
+- Item 'Magnetic Blaster' category changed: Physical → physical
+- Item 'Blade of the Ruined King' cost changed: 3200g → 3000g
+- Item 'Blade of the Ruined King' category changed: Physical → physical
+- Added item: Runaan's Hurricane (2900g)
+- Item 'Youmuu's Ghostblade' category changed: Physical → physical
+- Item 'Duskblade of Draktharr' category changed: Physical → physical
+- Item 'Infinity Edge' category changed: Physical → physical
+- Item 'Mortal Reminder' cost changed: 3100g → 3300g
+- Item 'Mortal Reminder' category changed: Physical → physical
+- Item 'Black Cleaver' category changed: Physical → physical
+- Item 'Manamune' category changed: Physical → physical
+- Item 'Muramana' cost changed: 2950g → 2700g
+- Item 'Muramana' category changed: Physical → physical
+- Item 'Trinity Force' category changed: Physical → physical
+- Item 'Maw of Malmortius' cost changed: 2800g → 3000g
+- Item 'Maw of Malmortius' category changed: Physical → physical
+- Item 'Death's Dance' category changed: Physical → defense
+- Item 'Phantom Dancer' cost changed: 2800g → 2900g
+- Item 'Phantom Dancer' category changed: Physical → physical
+- Item 'Nashor's Tooth' category changed: Magic → magic
+- Item 'Wit's End' cost changed: 2700g → 2800g
+- Item 'Wit's End' category changed: Physical → physical
+- Item 'Essence Reaver' category changed: Physical → physical
+- Added item: Serylda’s Grudge (3300g)
+- Item 'Navori Quickblades' cost changed: 3100g → 2800g
+- Item 'Navori Quickblades' category changed: Physical → physical
+- Item 'Edge of Night' category changed: Physical → physical
+- Item 'Divine Sunderer' category changed: Physical → physical
+- Item 'Serpent's Fang' category changed: Physical → physical
+- Item 'Chempunk Chainsword' category changed: Physical → physical
+- Item 'The Collector' category changed: Physical → physical
+- Item 'Sterak's Gage' category changed: Defense → defense
+- Item 'Spear of Shojin' category changed: Physical → physical
+- Item 'Titanic Hydra' cost changed: 3200g → 3000g
+- Item 'Titanic Hydra' category changed: Physical → defense
+- Item 'Terminus' cost changed: 3000g → 3300g
+- Item 'Terminus' category changed: Physical → physical
+- Item 'Sundered Sky' cost changed: 3100g → 3000g
+- Item 'Sundered Sky' category changed: Physical → physical
+- Item 'Eclipse' category changed: Physical → physical
+- Item 'Soul Transfer' cost changed: 2800g → 3200g
+- Item 'Soul Transfer' category changed: Physical → physical
+- Item 'Hullbreaker' category changed: Physical → physical
+- Item 'Guinsoo's Rageblade' cost changed: 3000g → 3100g
+- Item 'Guinsoo's Rageblade' category changed: Physical → magic
+- Item 'Kraken Slayer' cost changed: 3200g → 2800g
+- Item 'Kraken Slayer' category changed: Physical → physical
+- Item 'Overlord's Bloodmail' category changed: Physical → defense
+- Item 'Experimental Hexplate' category changed: Physical → physical
+- Added item: Dominik’s Regards (3300g)
+- Item 'Luden's Echo' cost changed: 3000g → 2900g
+- Item 'Luden's Echo' category changed: Magic → magic
+- Item 'Morellonomicon' cost changed: 3000g → 2500g
+- Item 'Morellonomicon' category changed: Magic → defense
+- Item 'Crown of the Shattered Queen' category changed: Magic → magic
+- Item 'Rabadon's Deathcap' cost changed: 3600g → 3400g
+- Item 'Rabadon's Deathcap' category changed: Magic → magic
+- Item 'Rylai's Crystal Scepter' category changed: Magic → magic
+- Item 'Liandry's Torment' cost changed: 3150g → 3000g
+- Item 'Liandry's Torment' category changed: Magic → magic
+- Item 'Rod of Ages' category changed: Magic → magic
+- Item 'Lich Bane' cost changed: 2950g → 2800g
+- Item 'Lich Bane' category changed: Magic → magic
+- Item 'Archangel's Staff' category changed: Magic → magic
+- Item 'Seraph's Embrace' category changed: Magic → magic
+- Added item: Soulstealer (3000g)
+- Item 'Infinity Orb' cost changed: 3150g → 2900g
+- Item 'Infinity Orb' category changed: Magic → magic
+- Item 'Oceanid's Trident' cost changed: 3000g → 2600g
+- Item 'Oceanid's Trident' category changed: Magic → defense
+- Item 'Cosmic Drive' cost changed: 3000g → 2800g
+- Item 'Cosmic Drive' category changed: Magic → magic
+- Item 'Riftmaker' cost changed: 3000g → 3300g
+- Item 'Riftmaker' category changed: Magic → magic
+- Item 'Horizon Focus' cost changed: 3000g → 3100g
+- Item 'Horizon Focus' category changed: Magic → magic
+- Item 'Psychic Projector' cost changed: 3000g → 3200g
+- Item 'Psychic Projector' category changed: Magic → magic
+- Item 'Bandle Fantasy' category changed: Magic → magic
+- Item 'Malignance' cost changed: 2900g → 3000g
+- Item 'Malignance' category changed: Magic → magic
+- Item 'Sunfire Aegis' cost changed: 3000g → 2900g
+- Item 'Sunfire Aegis' category changed: Defense → defense
+- Item 'Randuin's Omen' category changed: Defense → defense
+- Item 'Thornmail' cost changed: 2900g → 2700g
+- Item 'Thornmail' category changed: Defense → defense
+- Item 'Warmog's Armor' category changed: Defense → defense
+- Item 'Iceborn Gauntlet' category changed: Defense → defense
+- Item 'Dead Man's Plate' cost changed: 2900g → 2800g
+- Item 'Dead Man's Plate' category changed: Defense → defense
+- Item 'Zeke's Convergence' category changed: Defense → defense
+- Item 'Winter's Approach' category changed: Defense → defense
+- Item 'Fimbulwinter' category changed: Defense → defense
+- Item 'Force of Nature' cost changed: 2850g → 2750g
+- Item 'Force of Nature' category changed: Defense → defense
+- Item 'Frozen Heart' category changed: Defense → defense
+- Item 'Dawnshroud' category changed: Defense → defense
+- Item 'Amaranth's Twinguard' category changed: Defense → defense
+- Item 'Mantle of the Twelfth Hour' cost changed: 3000g → 2900g
+- Item 'Mantle of the Twelfth Hour' category changed: Defense → defense
+- Item 'Searing Crown' cost changed: 2800g → 2700g
+- Item 'Searing Crown' category changed: Defense → defense
+- Item 'Heartsteel' cost changed: 3200g → 3000g
+- Item 'Heartsteel' category changed: Defense → defense
+- Added item: Redeeming (2600g)
+- Item 'Kaenic Rookern' cost changed: 2900g → 2800g
+- Item 'Kaenic Rookern' category changed: Defense → defense
+- Item 'Yordle Trap' cost changed: 2600g → 2500g
+- Item 'Yordle Trap' category changed: Defense → defense
+- Item 'Radiant Virtue' cost changed: 2800g → 2850g
+- Item 'Radiant Virtue' category changed: Defense → defense
+- Item 'Abyssal Mask' category changed: Defense → defense
+- Item 'Hollow Radiance' category changed: Defense → defense
+- Item 'Knight's Vow' cost changed: 2400g → 2500g
+- Item 'Knight's Vow' category changed: Support → defense
+- Item 'Unending Despair' cost changed: 2800g → 3000g
+- Item 'Unending Despair' category changed: Defense → defense
+- Item 'Bulwark of the Mountain' cost changed: 400g → 0g
+- Item 'Bulwark of the Mountain' category changed: Support → support
+- Item 'Black Mist Scythe' cost changed: 400g → 0g
+- Item 'Black Mist Scythe' category changed: Support → support
+- Item 'Ardent Censer' category changed: Support → defense
+- Item 'Harmonic Echo' cost changed: 2500g → 2600g
+- Item 'Harmonic Echo' category changed: Support → defense
+- Item 'Staff of Flowing Water' cost changed: 2600g → 2500g
+- Item 'Staff of Flowing Water' category changed: Support → defense
+- Item 'Imperial Mandate' category changed: Support → defense
+- Item 'Gluttonous Greaves' category changed: Boots → defense
+- Item 'Berserker's Greaves' category changed: Boots → defense
+- Item 'Mercury's Treads' category changed: Boots → defense
+- Item 'Plated Steelcaps' category changed: Boots → defense
+- Item 'Ionian Boots of Lucidity' category changed: Boots → boots
+- Item 'Boots of Mana' category changed: Boots → boots
+- Item 'Boots of Dynamism' category changed: Boots → boots
+- Item 'Stasis Enchant' cost changed: 500g → 1000g
+- Item 'Stasis Enchant' category changed: Enchant → defense
+- Item 'Locket Enchant' category changed: Enchant → defense
+- Item 'Glorious Enchant' category changed: Enchant → defense
+- Item 'Protobelt Enchant' category changed: Enchant → defense
+- Item 'Quicksilver Enchant' cost changed: 500g → 800g
+- Item 'Quicksilver Enchant' category changed: Enchant → defense
+- Added item: Stoneplate Enchant (500g)
+- Item 'Veil Enchant' category changed: Enchant → defense
+- Added item: Dream Maker (500g)
+- Added item: Goredrinker (500g)
+- Added item: Galeforce (500g)
+- Added item: Stridebreaker (500g)
+- Added item: Vampiric Scepter (1200g)
+- Added item: Zeal (1400g)
+- Added item: Kircheis Shard (900g)
+- Added item: Serrated Dirk (1000g)
+- Added item: Recurve Bow (1400g)
+- Added item: B. F. Sword (1500g)
+- Added item: Cloak of Agility (1000g)
+- Added item: Last Whisper (800g)
+- Added item: Executioner's Calling (800g)
+- Added item: Phage (1000g)
+- Added item: Stinger (1200g)
+- Added item: Caulfield's Warhammer (1200g)
+- Added item: Jaurim's Fist (1100g)
+- Added item: Tear of the Goddess (900g)
+- Added item: Aether Wisp (950g)
+- Added item: Lost Chapter (900g)
+- Added item: Fiendish Codex (1000g)
+- Added item: Blasting Wand (900g)
+- Added item: Needlessly Large Rod (1500g)
+- Added item: Haunting Guise (900g)
+- Added item: Sheen (800g)
+- Added item: Oblivion Orb (800g)
+- Added item: Prophet's Pendant (1000g)
+- Added item: Bami's Cinder (1300g)
+- Added item: Spectre's Cowl (1100g)
+- Added item: Kindlegem (1000g)
+- Added item: Giant's Belt (1000g)
+- Added item: Warden's Mail (1050g)
+- Added item: Catalyst of Aeons (1100g)
+- Added item: Chain Vest (900g)
+- Added item: Bramble Vest (1000g)
+- Added item: Hexdrinker (1200g)
+- Added item: Negatron Cloak (900g)
+- Added item: Glacial Shroud (1000g)
+- Added item: Winged Moonplate (900g)
+- Added item: Seeker's Armguard (1200g)
+- Added item: Nashor's Talon (800g)
+- Added item: Noonquiver (1350g)
+- Added item: Hextech Alternator (1400g)
+- Item 'Mejai's Soulstealer' cost changed: 1600g → 1800g
+- Item 'Mejai's Soulstealer' category changed: Magic → defense
+- Added item: Surging Scales (1300g)
+- Added item: Forbidden Idol (900g)
+- Item 'Boots of Speed' category changed: Boots → boots
+- Added item: Long Sword (500g)
+- Added item: Brawler's Gloves (500g)
+- Added item: Dagger (500g)
+- Added item: Shimmering Spark (500g)
+- Added item: Sapphire Crystal (500g)
+- Added item: Amplifying Tome (500g)
+- Added item: Ruby Crystal (500g)
+- Added item: Cloth Armor (500g)
+- Added item: Null-Magic Mantle (500g)
+- Added item: Ring of Revelation (400g)
+- Item 'Relic Shield' cost changed: 400g → 500g
+- Item 'Relic Shield' category changed: Support → support
+- Item 'Spectral Sickle' cost changed: 400g → 500g
+- Item 'Spectral Sickle' category changed: Support → support
+- Added item: Flash (0g)
+- Added item: Ghost (0g)
+- Added item: Heal (0g)
+- Added item: Barrier (0g)
+- Added item: Ignite (0g)
+- Added item: Exhaust (0g)
+- Added item: Smite (0g)
+- Added item: Сhilling Smite (0g)
+- Added item: Cleanse (0g)
+- Added item: Teleport (0g)
+
+### 🔮 Rune Changes
+- Added rune: Grasp of the Undying (keystone)
+- Added rune: Conqueror (keystone)
+- Added rune: Second Wind (minor)
+- Added rune: Overgrowth (minor)
+- Added rune: Sudden Impact (minor)
+- Added rune: Bone Plating (minor)
+- Added rune: Cut Down (minor)
+- Added rune: Perseverance (minor)
+- Added rune: Transcendence (minor)
+- Added rune: Hextech Flashtraption (minor)
+- Added rune: Ice Overlord (keystone)
+- Added rune: Electrocute (keystone)
+- Added rune: Fleet Footwork (keystone)
+- Added rune: Lethal Tempo (keystone)
+- Added rune: Zombie Ward (minor)
+- Added rune: Legend: Bloodline (minor)
+- Added rune: Nimbus Cloak (minor)
+- Added rune: Legend: Alacrity (minor)
+- Added rune: Revitalize (minor)
+- Added rune: Phase Rush (keystone)
+- Added rune: Demolish (minor)
+- Added rune: Font of Life (minor)
+- Added rune: Courage of the Colossus (minor)
+- Added rune: First Strike (keystone)
+- Added rune: Arcane Comet (keystone)
+- Added rune: Unshakeable (minor)
+- Added rune: Battle Zeal (minor)
+- Added rune: Eyeball Collector (minor)
+- Added rune: Brutal (minor)
+- Added rune: Botanist (minor)
+- Added rune: Dark Harvest (keystone)
+- Added rune: Chain Assault (minor)
+- Added rune: Last Stand (minor)
+- Added rune: Cheap Shot (minor)
+- Added rune: Tyrant (minor)
+- Added rune: Empowered Attack (minor)
+- Added rune: Coup de Grace (minor)
+- Added rune: Triumph (minor)
+- Added rune: Ingenious Hunter (minor)
+- Added rune: Hubris (minor)
+- Added rune: Manaflow Band (minor)
+- Added rune: Empowerment (keystone)
+- Added rune: Aery (keystone)
+- Added rune: Scorch (minor)
+- Added rune: Celerity (minor)
+- Added rune: Absolute Focus (minor)
+- Added rune: Gathering Storm (minor)
+- Added rune: Axiom Arcanist (minor)
+- Added rune: Legend: Tenacity (minor)
+- Added rune: Relentless Hunter (minor)
+- Added rune: Ixtali Seedjar (minor)
+- Added rune: Guardian (keystone)
+- Added rune: Nullifying Orb (minor)
+
+### ⚡ Summoner Spell Changes
+- Spell 'Flash' cooldown changed: 150ss → 0s
+- Spell 'Ghost' cooldown changed: 90ss → 0s
+- Spell 'Heal' cooldown changed: 120ss → 0s
+- Spell 'Barrier' cooldown changed: 90ss → 0s
+- Spell 'Ignite' cooldown changed: 90ss → 0s
+- Spell 'Exhaust' cooldown changed: 105ss → 0s
+- Spell 'Smite' cooldown changed: 10ss → 0s
+- Added spell: Сhilling Smite
+- Spell 'Cleanse' cooldown changed: 120ss → 0s
+- Spell 'Teleport' cooldown changed: 150ss → 0s
+
+### 📈 Champion Stats Changes
+- Added champion: AURELION SOL
+- Added champion: DR. MUNDO
+- Added champion: JARVAN IV
+- Added champion: LEE SIN
+- Added champion: MASTER YI
+- Added champion: MISS FORTUNE
+- Added champion: Nunu & Willump
+- Added champion: TALIYAH
+- Added champion: TWISTED FATE
+- Added champion: XIN ZHAO
+
+
+---

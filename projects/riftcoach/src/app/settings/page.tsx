@@ -17,7 +17,7 @@ export default function SettingsPage() {
         if (parsed.state?.keys) setKeys(parsed.state.keys);
         if (parsed.state?.routerMode) setRouterMode(parsed.state.routerMode);
       }
-    } catch {}
+    } catch { }
   }, []);
 
   const handleSave = () => {
@@ -26,7 +26,7 @@ export default function SettingsPage() {
       localStorage.setItem("riftcoach-settings", JSON.stringify(data));
       setSaved(true);
       setTimeout(() => setSaved(false), 2000);
-    } catch {}
+    } catch { }
   };
 
   const activeCount = keys.filter(k => k.trim()).length;
@@ -101,7 +101,7 @@ export default function SettingsPage() {
                 <span className="text-slate-500 ml-1">({m.provider})</span>
               </div>
               <div className="flex gap-1">
-                {(m as any).strengths.map((s: string) => (
+                {(m as any).strengths?.map((s: string) => (
                   <span key={s} className="px-1.5 py-0.5 rounded bg-slate-700 text-slate-300">{s}</span>
                 ))}
               </div>

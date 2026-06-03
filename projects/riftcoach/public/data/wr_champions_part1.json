@@ -1,7 +1,7 @@
 {
   "meta": {
     "type": "champions",
-    "patch": "7.1d",
+    "patch": "7.1f",
     "part": "1 of 3",
     "champions_included": "A through G (34 champions)",
     "total_in_game": 137,
@@ -48,37 +48,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Deathbringer Stance",
+          "name": "DEATHBRINGER STANCE",
           "brief": "Periodically, next AA deals bonus %max HP damage and heals.",
-          "full": "Every few seconds, Aatrox's next auto-attack deals bonus physical damage equal to a percentage of the target's max HP and heals him. Cooldown reduced by abilities and AAs.",
+          "full": "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "The Darkin Blade",
+          "name": "THE DARKIN BLADE",
           "brief": "3-cast Q. Each cast swings in AoE. Sweetspot deals bonus damage + knockup.",
-          "full": "Cast 1: Swing sword in rectangle. Cast 2: Swing in triangle. Cast 3: Slam in circle. Hitting the sweetspot (edge) deals bonus damage and knocks up enemies. Each cast has a short recast window.",
+          "full": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
           "cooldown": "9/8/7/6s",
           "scaling": "100% AD"
         },
         "w": {
-          "name": "Infernal Chains",
+          "name": "INFERNAL CHAINS",
           "brief": "Damages + tethers enemy. After 1.5s, pulls them back and damages again.",
-          "full": "Fires a chain that deals damage. If the target remains in range for 1.5 seconds, they are pulled back to the center and damaged again. Provides root-like effect.",
+          "full": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
           "cooldown": "12/10/8/6s",
           "scaling": "80% AD"
         },
         "e": {
-          "name": "Umbral Dash",
+          "name": "UMBRAL DASH",
           "brief": "Short dash. Passive: omnivamp on champion damage.",
-          "full": "Active: Dash a short distance. Can be used during Q casts to reposition sweetspots. Passive: Gain omnivamp on damage dealt to enemy champions.",
+          "full": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
           "cooldown": "6/5/4/3s",
           "scaling": ""
         },
         "r": {
-          "name": "World Ender",
+          "name": "WORLD ENDER",
           "brief": "Transform. Gain AD, MS, increased healing. Revive on death (if earned).",
-          "full": "Transform for 10 seconds. Gain bonus AD, movement speed, and increased self-healing from all sources by 30%. Fear nearby minions. Originally revived on death but mechanic has been adjusted.",
+          "full": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
           "cooldown": "100/85/70s",
           "scaling": ""
         }
@@ -123,9 +123,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "S",
-          "win_rate": 0.52,
-          "pick_rate": 0.12,
-          "ban_rate": 0.15
+          "win_rate": 0.488,
+          "pick_rate": 0.0616,
+          "ban_rate": 0.0592,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -274,9 +275,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.12,
-        "ban_rate": 0.15,
+        "win_rate": 0.488,
+        "pick_rate": 0.0616,
+        "ban_rate": 0.0592,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -297,8 +298,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.12,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.488,
+            "pick_rate": 0.0616,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -482,7 +490,7 @@
       ],
       "resource": "mana",
       "range_type": "ranged",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "mage",
         "assassin",
@@ -497,37 +505,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Vastayan Grace",
+          "name": "Essence Theft",
           "brief": "Killing minions/monsters grants stacks. At max stacks, next ability heals.",
-          "full": "Killing minions or monsters grants essence stacks. At maximum stacks, Ahri's next ability that hits an enemy champion heals her.",
+          "full": "Whenever Ahri hits a target with a spell, she gains a stack of Essence Theft. When she has enough stacks, her next spell that hits an enemy also heals her.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Orb of Deception",
           "brief": "Fires orb out and back. Deals magic damage going out, true damage returning.",
-          "full": "Send an orb in a line that deals magic damage on the way out and true damage on the way back. Hits all enemies in the path both ways.",
+          "full": "Ahri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back.",
           "cooldown": "7/6/5/4s",
           "scaling": "70% AP"
         },
         "w": {
           "name": "Fox-Fire",
           "brief": "Releases 3 fox-fires that lock onto nearby enemies.",
-          "full": "Release 3 fox-fires that orbit Ahri and lock onto nearby enemies, dealing magic damage. Prioritizes champions. Multiple fires can hit the same target for reduced damage.",
+          "full": "Ahri gains a brief burst of movement speed and releases three fox-fires, that lock onto and attack nearby enemies.",
           "cooldown": "9/8/7/6s",
           "scaling": "40% AP"
         },
         "e": {
           "name": "Charm",
           "brief": "Skillshot. Charms first enemy hit (walk toward Ahri + take bonus damage).",
-          "full": "Fire a kiss in a line. First enemy champion hit is charmed, forced to walk harmlessly toward Ahri for 1-1.6 seconds and takes bonus damage from Ahri's abilities.",
+          "full": "Ahri blows a kiss that damages and charms an enemy it encounters, instantly stopping movement abilities and causing them to walk harmlessly towards her. The target temporarily takes increased damage from Ahri.",
           "cooldown": "12/11/10/9s",
           "scaling": "50% AP"
         },
         "r": {
           "name": "Spirit Rush",
           "brief": "3 dashes. Each dash fires projectiles at nearby enemies.",
-          "full": "Dash up to 3 times (recast within 10 seconds). Each dash fires essence bolts at up to 3 nearby enemies, dealing magic damage. Champion takedowns extend recast window.",
+          "full": "Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush can be cast up to three times before going on cooldown.",
           "cooldown": "100/80/60s",
           "scaling": "35% AP per bolt"
         }
@@ -570,9 +578,10 @@
           "range_type": "ranged",
           "difficulty": "easy",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.1,
-          "ban_rate": 0.08
+          "win_rate": 0.5134,
+          "pick_rate": 0.047,
+          "ban_rate": 0.001,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -710,9 +719,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.1,
-        "ban_rate": 0.08,
+        "win_rate": 0.5134,
+        "pick_rate": 0.047,
+        "ban_rate": 0.001,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -733,8 +742,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.1,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5134,
+            "pick_rate": 0.047,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -915,7 +931,7 @@
       ],
       "resource": "energy",
       "range_type": "melee",
-      "difficulty": "very_hard",
+      "difficulty": "hard",
       "tags": [
         "assassin",
         "energy",
@@ -929,37 +945,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Assassin's Mark",
+          "name": "ASSASSIN'S MARK",
           "brief": "After ability, gain ring. Crossing ring empowers next AA with bonus range + damage.",
-          "full": "After damaging an enemy champion with an ability, a ring appears around them. Crossing the ring empowers Akali's next auto-attack with bonus range and magic damage.",
+          "full": "Dealing spell damage to a champion creates a ring of energy around them. Exiting that ring empowers Akali's next autoattack with bonus range and damage.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Five Point Strike",
+          "name": "FIVE POINT STRIKE",
           "brief": "Throws kunai in a cone. Deals magic damage. Slows at max range.",
-          "full": "Throw kunai in a cone, dealing magic damage to all enemies hit. At maximum range, enemies are slowed.",
+          "full": "Akali throws out five kunai, dealing damage based on her bonus Attack Damage and Ability Power and slowing at maximum range.",
           "cooldown": "1.5s",
           "scaling": "65% AD + 60% AP"
         },
         "w": {
-          "name": "Twilight Shroud",
+          "name": "TWILIGHT SHROUD",
           "brief": "Drops smoke bomb. Akali becomes invisible inside. Gains MS.",
-          "full": "Drop a smoke bomb creating a shroud. Akali becomes invisible while inside (revealed briefly when attacking). Gain bonus movement speed inside the shroud. Restores energy.",
+          "full": "Akali drops a cover of smoke and briefly gains Movement Speed and restores Energy. While inside the shroud, Akali becomes invisible. Attacking or using abilities will briefly reveal her.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "e": {
-          "name": "Shuriken Flip",
+          "name": "SHURIKEN FLIP",
           "brief": "Dash + throw shuriken. Recast to dash to marked target.",
-          "full": "Dash backward and throw a shuriken forward. The shuriken marks the first enemy or smoke cloud hit. Recast to dash to the marked target, dealing magic damage.",
+          "full": "Akali flips backward and fires a shuriken forward, dealing magic damage. The first enemy or smoke cloud hit is marked. Re-casting dashes to the marked target, dealing additional damage.",
           "cooldown": "14/12/10/8s",
           "scaling": "50% AD + 80% AP"
         },
         "r": {
-          "name": "Perfect Execution",
+          "name": "PERFECT EXECUTION",
           "brief": "2-cast ult. Cast 1: dash dealing physical damage. Cast 2: dash dealing magic execute damage.",
-          "full": "Cast 1: Dash in target direction dealing physical damage. Cast 2 (within 2.5s): Dash in target direction dealing magic damage. Cast 2 damage increases based on target's missing HP (execute).",
+          "full": "Akali leaps in a direction, damaging enemies she strikes. Re-casting dashes in a direction, executing all enemies she strikes.",
           "cooldown": "90/70/50s",
           "scaling": "50% AD + 30% AP / 50% AD + 90% AP"
         }
@@ -1002,9 +1018,10 @@
           "range_type": "melee",
           "difficulty": "very_hard",
           "tier": "S",
-          "win_rate": 0.5,
-          "pick_rate": 0.14,
-          "ban_rate": 0.2
+          "win_rate": 0.4543,
+          "pick_rate": 0.0261,
+          "ban_rate": 0.0029,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -1153,9 +1170,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.5,
-        "pick_rate": 0.14,
-        "ban_rate": 0.2,
+        "win_rate": 0.4543,
+        "pick_rate": 0.0261,
+        "ban_rate": 0.0029,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -1176,8 +1193,15 @@
             "win_rate": 0.5,
             "pick_rate": 0.14,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4543,
+            "pick_rate": 0.0261,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -1379,37 +1403,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Dirty Fighting",
+          "name": "DIRTY FIGHTING",
           "brief": "Every 3 hits deal bonus damage. Takedowns on enemy who killed ally revives that ally.",
-          "full": "Every third attack deals bonus magic damage and grants a shield. Going Rogue: When enemy champions kill an allied champion, they become Scoundrels. Akshan gains bonus gold for killing Scoundrels and REVIVES the slain allies.",
+          "full": "Every third attack or ability hit deals bonus physical damages. Against champions, also gains damage shield for brief moment.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Avengerang",
+          "name": "AVENGERANG",
           "brief": "Throws boomerang. Extends range per enemy hit. Deals damage both ways.",
-          "full": "Throw a boomerang that extends its range for each enemy hit. Deals physical damage going out and returning.",
+          "full": "Like a typical boomerang spell, can hit each enemy twice (once on way out and in). Boomerang will reach some units beyond the last target hit, if it hits a different target during this it’s range will extend (theoretically range is infinite)",
           "cooldown": "8/7/6/5s",
           "scaling": "80% AD"
         },
         "w": {
-          "name": "Going Rogue",
+          "name": "GOING ROGUE",
           "brief": "Passive: revive mechanic. Active: camouflage + MS toward Scoundrels.",
-          "full": "Passive: See Dirty Fighting. Active: Become camouflaged and gain movement speed toward Scoundrels. Attacking cancels camouflage.",
+          "full": "Passive: Enemies that kill Akshan’s allies become Scoundrels for few brief seconds. Killing a Scoundrel grants Akshan bonus golds and reduces the fallen ally’s death timer. Active: Gain camouflage for a few seconds. Duration is refreshed when Akshan is near a wall or in brush. Gains movement speed when moving toward Scoundrels.",
           "cooldown": "18/14/10/6s",
           "scaling": ""
         },
         "e": {
-          "name": "Heroic Swing",
+          "name": "HEROIC SWING",
           "brief": "Swing around terrain. Fires shots at nearest enemy during swing.",
-          "full": "Fire a grappling hook at terrain. While swinging, automatically fire shots at the nearest enemy champion, dealing physical damage. Can recast to jump off early.",
+          "full": "Akshan fires a rope that attaches to a wall for a few seconds to allow him to swing in a circle. While swinging, Akshan shoots an enemy he has recently damaged.",
           "cooldown": "14/12/10/8s",
           "scaling": "15% AD per shot"
         },
         "r": {
-          "name": "Comeuppance",
+          "name": "COMEUPPANCE",
           "brief": "Lock on to enemy. Channel, then fire a barrage of shots.",
-          "full": "Lock onto an enemy champion. After channeling, fire a barrage of shots in their direction. Shots are blocked by other enemies or terrain. Final shot deals bonus damage.",
+          "full": "Locks onto an enemy champion and begins overcharging Mist shots over a few seconds.",
           "cooldown": "80/65/50s",
           "scaling": "10% AD per shot"
         }
@@ -1449,9 +1473,10 @@
           "range_type": "ranged",
           "difficulty": "hard",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.06,
-          "ban_rate": 0.05
+          "win_rate": 0.4612,
+          "pick_rate": 0.0123,
+          "ban_rate": 0.0007,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -1578,9 +1603,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.06,
-        "ban_rate": 0.05,
+        "win_rate": 0.4612,
+        "pick_rate": 0.0123,
+        "ban_rate": 0.0007,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -1601,8 +1626,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.06,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4612,
+            "pick_rate": 0.0123,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -1761,7 +1793,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "tank",
         "support",
@@ -1776,35 +1808,35 @@
         "passive": {
           "name": "Triumphant Roar",
           "brief": "Nearby enemy deaths or CC stacks heal Alistar and nearby allies.",
-          "full": "When nearby enemy champions or large minions die, or when Alistar applies CC to champions, gain stacks. At max stacks, heal Alistar and the nearest allied champion.",
+          "full": "Alistar charges his roar by stunning or displacing enemy champions or when nearby enemies die. When fully charged he heals himself all nearby allied champions.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Pulverize",
           "brief": "AoE knockup around Alistar.",
-          "full": "Slam the ground, dealing magic damage and knocking up all nearby enemies for 1 second.",
+          "full": "Alistar smashes the ground, dealing damage to nearby enemies and tossing them into the air.",
           "cooldown": "14/13/12/11s",
           "scaling": "50% AP"
         },
         "w": {
           "name": "Headbutt",
           "brief": "Dash to target enemy and knock them back.",
-          "full": "Dash to target enemy and knock them back a fixed distance, dealing magic damage. Can be comboed with Q (W\u2192Q) for instant knockup engage.",
+          "full": "Alistar rams a target with his head, dealing damage and knocking the target back. May also target turrets to deal bonus damage.",
           "cooldown": "14/13/12/11s",
           "scaling": "70% AP"
         },
         "e": {
           "name": "Trample",
           "brief": "AoE damage around Alistar. After 5 stacks on champion, next AA stuns.",
-          "full": "Deal magic damage per second to nearby enemies for 5 seconds. Each tick on a champion grants a stack. At 5 stacks, Alistar's next auto-attack stuns the target for 1 second.",
+          "full": "Alistar tramples nearby enemy units, ignoring unit collision and gaining stacks if he damages an enemy champion. At full stacks Alistar's next basic attack against an enemy champion deals additional magic damage and stuns them.",
           "cooldown": "12/11/10/9s",
           "scaling": "40% AP"
         },
         "r": {
           "name": "Unbreakable Will",
           "brief": "Cleanse all CC + massive damage reduction for 7s.",
-          "full": "Remove all crowd control effects and gain 55-75% damage reduction for 7 seconds. THE ultimate tank ult.",
+          "full": "Alistar lets out a wild roar, removing all crowd control effects on himself, and reducing incoming physical and magical damage for the duration.",
           "cooldown": "100/85/70s",
           "scaling": ""
         }
@@ -1847,9 +1879,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.08,
-          "ban_rate": 0.06
+          "win_rate": 0.496,
+          "pick_rate": 0.0464,
+          "ban_rate": 0.0052,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -2009,9 +2042,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.08,
-        "ban_rate": 0.06,
+        "win_rate": 0.496,
+        "pick_rate": 0.0464,
+        "ban_rate": 0.0052,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -2032,8 +2065,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.496,
+            "pick_rate": 0.0464,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -2103,7 +2143,7 @@
               "Q"
             ],
             "name": "Headbutt-Pulverize (WQ Combo)",
-            "damage_estimate": "Instant knockup engage \u2014 THE Alistar combo"
+            "damage_estimate": "Instant knockup engage — THE Alistar combo"
           },
           {
             "sequence": [
@@ -2126,7 +2166,7 @@
               "AA"
             ],
             "name": "Full Combo with Trample Stun",
-            "damage_estimate": "WQ into E stacking \u2192 stun"
+            "damage_estimate": "WQ into E stacking → stun"
           }
         ]
       },
@@ -2210,7 +2250,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "tags": [
         "fighter",
         "bruiser",
@@ -2223,37 +2263,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Drakehound's Step",
+          "name": "DRAKEHOUND'S STEP",
           "brief": "Abilities grant a dash. AAs after abilities deal bonus damage.",
-          "full": "After casting an ability, Ambessa can dash in a direction. Auto-attacks after abilities deal bonus physical damage.",
+          "full": "Entering an attack or movement command while casting an ability will cause Ambessa to dash a short distance once the ability is cast, granting her next attack bonus range, damage, and attack speed, and refunding energy.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Cunning Sweep",
+          "name": "CUNNING SWEEP / SUNDERING SLAM",
           "brief": "Slash in a wide arc dealing physical damage.",
-          "full": "Sweep weapon in a wide arc dealing physical damage to all enemies hit.",
+          "full": "Ambessa sweeps her twin drakehounds in a semicircle in front of her, dealing bonus damage to enemies hit by the blades. Striking an enemy will transform the next cast of this ability for a short period of time, causing her to slam her twin drakehounds down in a line in front of her, dealing bonus damage to the first enemy hit.",
           "cooldown": "7/6/5/4s",
           "scaling": ""
         },
         "w": {
-          "name": "Repudiation",
+          "name": "REPUDIATION",
           "brief": "Shield + slash. Shield absorbs damage.",
-          "full": "Gain a shield and slash forward dealing physical damage.",
+          "full": "Ambessa gains a shield, briefly braces herself, and then slams the ground to damage nearby enemies. If she blocked any non-minion damage while bracing herself, this ability will deal increased damage.",
           "cooldown": "12/10/8/6s",
           "scaling": ""
         },
         "e": {
-          "name": "Lacerate",
+          "name": "LACERATE",
           "brief": "Dash and slash dealing physical damage.",
-          "full": "Dash in target direction and slash, dealing physical damage.",
+          "full": "Ambessa whips her twin drakehounds around herself, damaging and slowing nearby enemies. Initiating Drakehound's Step from this ability causes her to strike a second time at the end of its dash.",
           "cooldown": "10/9/8/7s",
           "scaling": ""
         },
         "r": {
-          "name": "Public Execution",
+          "name": "PUBLIC EXECUTION",
           "brief": "Dash to target, suppress, slam for massive damage.",
-          "full": "Dash to target enemy champion, suppressing them briefly, then slam them into the ground dealing massive physical damage.",
+          "full": "Ambessa blinks to the farthest enemy champion in a line of her choosing and suppresses them upon her arrival. She then slams the enemy into the ground where they take damage and are stunned.",
           "cooldown": "90/75/60s",
           "scaling": ""
         }
@@ -2294,9 +2334,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.5,
-          "pick_rate": 0.07,
-          "ban_rate": 0.08
+          "win_rate": 0.512,
+          "pick_rate": 0.0414,
+          "ban_rate": 0.0242,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -2412,9 +2453,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.5,
-        "pick_rate": 0.07,
-        "ban_rate": 0.08,
+        "win_rate": 0.512,
+        "pick_rate": 0.0414,
+        "ban_rate": 0.0242,
         "win_rate_trend": "rising",
         "tier": "A",
         "patch_history": [
@@ -2435,8 +2476,15 @@
             "win_rate": 0.5,
             "pick_rate": 0.07,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.512,
+            "pick_rate": 0.0414,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -2609,35 +2657,35 @@
         "passive": {
           "name": "Cursed Touch",
           "brief": "AAs apply Curse. Cursed targets take bonus magic damage from allies.",
-          "full": "Amumu's auto-attacks apply Curse to enemies, causing them to take bonus true damage from all incoming magic damage.",
+          "full": "Amumu's basic attacks Curse his enemies, causing them to take bonus true damage from incoming magic damage.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Bandage Toss",
           "brief": "Skillshot stun + dash to target.",
-          "full": "Throw a bandage in a line. First enemy hit is stunned and Amumu dashes to them. Has 2 charges.",
+          "full": "Amumu tosses a sticky bandage at a target, stunning and damaging the target while he pulls himself to them.",
           "cooldown": "12/10/8/6s per charge",
           "scaling": "70% AP"
         },
         "w": {
           "name": "Despair",
           "brief": "Toggle AoE %max HP burn around Amumu.",
-          "full": "Toggle: Deal magic damage per second equal to a percentage of nearby enemies' max HP. Drains mana while active.",
+          "full": "Overcome by anguish, nearby enemies lose a percentage of their maximum Health each second and have their Curses refreshed.",
           "cooldown": "1s toggle",
           "scaling": "1-2.5% max HP + 0.5% AP"
         },
         "e": {
           "name": "Tantrum",
           "brief": "AoE damage around Amumu. Passive: reduce incoming physical damage.",
-          "full": "Passive: Reduce incoming physical damage by a flat amount. Active: Deal magic damage to all nearby enemies. Cooldown reduced by 0.5s each time Amumu is hit.",
+          "full": "Permanently reduces the physical damage Amumu would take. Amumu can unleash his rage, dealing damage to surrounding enemies. Each time Amumu is hit, the cooldown on Tantrum is reduced by 0.5 seconds.",
           "cooldown": "6/5/4/3s",
           "scaling": "50% AP"
         },
         "r": {
           "name": "Curse of the Sad Mummy",
           "brief": "AoE root + damage to ALL nearby enemies.",
-          "full": "Root all nearby enemy champions and deal magic damage. THE game-winning AoE CC ult. Combo with Flash for unavoidable engage.",
+          "full": "Amumu entangles surrounding enemy units in bandages, applying his Curse, damaging them and rendering them unable to attack or move.",
           "cooldown": "100/85/70s",
           "scaling": "80% AP"
         }
@@ -2680,9 +2728,10 @@
           "range_type": "melee",
           "difficulty": "easy",
           "tier": "S",
-          "win_rate": 0.53,
-          "pick_rate": 0.1,
-          "ban_rate": 0.12
+          "win_rate": 0.5626,
+          "pick_rate": 0.0417,
+          "ban_rate": 0.0015,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -2853,9 +2902,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.53,
-        "pick_rate": 0.1,
-        "ban_rate": 0.12,
+        "win_rate": 0.5626,
+        "pick_rate": 0.0417,
+        "ban_rate": 0.0015,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -2876,8 +2925,15 @@
             "win_rate": 0.53,
             "pick_rate": 0.1,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5626,
+            "pick_rate": 0.0417,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -3071,35 +3127,35 @@
         "passive": {
           "name": "Pyromania",
           "brief": "Every 4th ability stuns. Killing minion with Q refunds mana.",
-          "full": "After casting 4 abilities, Annie's next damaging ability stuns all enemies hit. Killing a minion with Disintegrate refunds its mana cost.",
+          "full": "After casting 4 spells, Annie's next offensive spell will stun the target.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Disintegrate",
           "brief": "Targeted fireball. Refunds mana on kill.",
-          "full": "Hurl a fireball at target enemy dealing magic damage. If it kills the target, refund the mana cost and reduce cooldown by 50%.",
+          "full": "Annie hurls a Mana infused fireball, dealing damage in a small area and refunding the Mana cost and half its cooldown if it destroys the target.",
           "cooldown": "4/3.5/3/2.5s",
           "scaling": "80% AP"
         },
         "w": {
           "name": "Incinerate",
           "brief": "Cone AoE fire damage.",
-          "full": "Cast fire in a cone dealing magic damage to all enemies in the area.",
+          "full": "Annie casts a blazing cone of fire, dealing damage to all enemies in the area.",
           "cooldown": "8/7/6/5s",
           "scaling": "85% AP"
         },
         "e": {
           "name": "Molten Shield",
           "brief": "Shield self + ally. Deals damage to attackers.",
-          "full": "Grant a shield to Annie and target ally that absorbs damage. Enemies who auto-attack shielded targets take magic damage.",
+          "full": "Annie casts a shield over herself and Tibbers and gains move speed.",
           "cooldown": "10/9/8/7s",
           "scaling": "40% AP shield"
         },
         "r": {
           "name": "Summon: Tibbers",
           "brief": "Summon Tibbers. AoE damage on cast. Tibbers attacks + burns nearby enemies.",
-          "full": "Summon Tibbers at target location dealing magic damage to enemies in the area. Tibbers is a controllable pet that attacks enemies and deals AoE burn damage. With Pyromania: AoE stun on summon. Flash+R = instant AoE stun.",
+          "full": "Annie summons Tibbers, dealing damage in the area. Tibbers enrages after pouncing on an enemy or when Annie dies, gaining move and attack speed. Recast: Annie orders Tibbers to pounce on a target. He deals damage and knocks up the target when he lands.",
           "cooldown": "80/65/50s",
           "scaling": "65% AP"
         }
@@ -3141,9 +3197,10 @@
           "range_type": "ranged",
           "difficulty": "easy",
           "tier": "A",
-          "win_rate": 0.52,
-          "pick_rate": 0.06,
-          "ban_rate": 0.04
+          "win_rate": 0.4865,
+          "pick_rate": 0.0225,
+          "ban_rate": 0.0009,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -3248,9 +3305,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.06,
-        "ban_rate": 0.04,
+        "win_rate": 0.4865,
+        "pick_rate": 0.0225,
+        "ban_rate": 0.0009,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -3271,8 +3328,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.06,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4865,
+            "pick_rate": 0.0225,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -3449,35 +3513,35 @@
         "passive": {
           "name": "Frost Shot",
           "brief": "AAs and abilities slow. Crits deal bonus damage instead of extra multiplier.",
-          "full": "Ashe's auto-attacks and abilities slow enemies. Critical strikes deal bonus damage but do not multiply \u2014 instead, Ashe's crits deal increased damage based on crit chance.",
+          "full": "Ashe's attacks slow their target, causing her to deal increased damage to these targets. Ashe's critical strikes deal no bonus damage but apply an empowered slow to the target.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Ranger's Focus",
           "brief": "Stack focus on AAs. Activate for rapid-fire AS + bonus damage.",
-          "full": "Passive: AAs grant Focus stacks (max 4). Active (at 4 stacks): Gain bonus attack speed and each AA fires a flurry dealing bonus damage for 6 seconds.",
+          "full": "Ashe builds up Focus by attacking. At maximum Focus, Ashe can cast Ranger's Focus to consume all stacks of Focus, temporarily increasing her Attack Speed and transforming her basic attack into a powerful flurry attack for the duration.",
           "cooldown": "15/12/9/6s",
           "scaling": ""
         },
         "w": {
           "name": "Volley",
           "brief": "Fire 9 arrows in a cone. Each arrow slows.",
-          "full": "Fire a volley of 9 arrows in a cone dealing physical damage. Each arrow applies Frost Shot slow. Blocked by first enemy hit per arrow.",
+          "full": "Ashe fires 9 arrows in a cone for increased damage. Also applies Frost Shot.",
           "cooldown": "14/11/8/5s",
           "scaling": "100% AD"
         },
         "e": {
           "name": "Hawkshot",
           "brief": "Global vision scout. Reveals area along path.",
-          "full": "Fire a hawk spirit that flies across the map revealing terrain along its path and granting vision of the destination area. Global range.",
+          "full": "Ashe sends her Hawk Spirit on a scouting mission anywhere on the map.",
           "cooldown": "30/25/20/15s",
           "scaling": ""
         },
         "r": {
           "name": "Enchanted Crystal Arrow",
           "brief": "Global skillshot stun. Stun duration scales with distance.",
-          "full": "Fire a massive ice arrow globally. First enemy champion hit is stunned (0.5-3.5s based on distance traveled) and takes magic damage. Nearby enemies are slowed.",
+          "full": "Ashe fires a missile of ice which she can steer in the air. If the arrow collides with an enemy Champion, it deals damage and stuns the Champion, stunning for longer the farther arrow has traveled. In addition, surrounding enemy units take damage and are slowed.",
           "cooldown": "70/55/40s",
           "scaling": "100% AP"
         }
@@ -3519,9 +3583,10 @@
           "range_type": "ranged",
           "difficulty": "easy",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.08,
-          "ban_rate": 0.04
+          "win_rate": 0.5127,
+          "pick_rate": 0.0845,
+          "ban_rate": 0.0015,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -3556,7 +3621,7 @@
           "edge_type": "USES_SPELL",
           "target_node_id": "spell:flash",
           "weight": 0.9,
-          "context": "Flash for escape \u2014 Ashe has zero dashes",
+          "context": "Flash for escape — Ashe has zero dashes",
           "metadata": {
             "patch": "7.1d"
           }
@@ -3637,9 +3702,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.08,
-        "ban_rate": 0.04,
+        "win_rate": 0.5127,
+        "pick_rate": 0.0845,
+        "ban_rate": 0.0015,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -3660,8 +3725,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5127,
+            "pick_rate": 0.0845,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -3733,7 +3805,7 @@
               "AA"
             ],
             "name": "Full Engage",
-            "damage_estimate": "R stun \u2192 W slow \u2192 Q rapid fire"
+            "damage_estimate": "R stun → W slow → Q rapid fire"
           },
           {
             "sequence": [
@@ -3742,7 +3814,7 @@
               "AA"
             ],
             "name": "Poke Trade",
-            "damage_estimate": "W slow \u2192 free autos while they're slowed"
+            "damage_estimate": "W slow → free autos while they're slowed"
           },
           {
             "sequence": [
@@ -3834,7 +3906,7 @@
         "passive": {
           "name": "Cosmic Creator",
           "brief": "Damaging champions grants Stardust stacks. Stardust improves abilities.",
-          "full": "Damaging enemy champions with abilities grants permanent Stardust stacks. Stardust improves Aurelion Sol's abilities \u2014 increasing their range, size, and damage. Infinite scaling.",
+          "full": "Damaging enemy champions with abilities grants permanent Stardust stacks. Stardust improves Aurelion Sol's abilities — increasing their range, size, and damage. Infinite scaling.",
           "cooldown": "",
           "scaling": ""
         },
@@ -3862,7 +3934,7 @@
         "r": {
           "name": "Falling Star / The Skies Descend",
           "brief": "Drop a star dealing AoE damage + knockup. At 75 Stardust, becomes massive AoE.",
-          "full": "Drop a star at target location dealing magic damage and knocking up enemies. At 75 Stardust stacks, transforms into The Skies Descend \u2014 a much larger AoE with increased damage and shockwave.",
+          "full": "Drop a star at target location dealing magic damage and knocking up enemies. At 75 Stardust stacks, transforms into The Skies Descend — a much larger AoE with increased damage and shockwave.",
           "cooldown": "80/70/60s",
           "scaling": "65% AP"
         }
@@ -4220,37 +4292,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Spirit Abjuration",
+          "name": "SPIRIT ABJURATION",
           "brief": "Exiting brush or using R grants ghosting + bonus MS + empowered attacks.",
-          "full": "When Aurora exits brush or uses her ultimate, she becomes ghosted (ignores unit collision), gains bonus movement speed, and her next few attacks deal bonus magic damage.",
+          "full": "Aurora's spells and attacks exorcise spirits from the enemies she damages. Exorcised spirits follow Aurora around and heal her.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Twisting Venom",
+          "name": "TWOFOLD HEX",
           "brief": "Fire a missile that deals damage and marks. Recast detonates marks.",
-          "full": "Fire a missile dealing magic damage and marking enemies. Recast to detonate marks for additional magic damage. Marked enemies take bonus damage.",
+          "full": "Aurora sends out a missile that curses any enemies it hits. She can then recast the ability to draw active curses back toward herself, damaging foes who are hit along the way.",
           "cooldown": "8/7/6/5s",
           "scaling": "60% AP"
         },
         "w": {
-          "name": "Across the Veil",
+          "name": "ACROSS THE VEIL",
           "brief": "Hop and enter spirit realm briefly. Become untargetable during hop.",
-          "full": "Hop in target direction and briefly enter the spirit realm, becoming untargetable during the hop. Deals magic damage on arrival.",
+          "full": "Aurora leaps in a direction of her choosing, entering the spirit realm upon landing, becoming invisible, and gaining Move Speed for a short duration of time. Taking down an enemy champion resets this ability's cooldown.",
           "cooldown": "14/12/10/8s",
           "scaling": "50% AP"
         },
         "e": {
-          "name": "The Weirding",
+          "name": "THE WEIRDING",
           "brief": "Send spirits forward. They return and apply slow + damage.",
-          "full": "Send spirits in target direction that deal magic damage. The spirits then return to Aurora, slowing and damaging enemies on the way back.",
+          "full": "Aurora converges the realms, sending out a blast of spirit magic that damages and slows enemies before Aurora hops backward to safety.",
           "cooldown": "10/9/8/7s",
           "scaling": "55% AP"
         },
         "r": {
-          "name": "Between Worlds",
+          "name": "BETWEEN WORLDS",
           "brief": "Create a massive zone. Enemies inside cannot leave. Aurora can hop in and out.",
-          "full": "Create a large zone around Aurora. Enemy champions inside the zone cannot leave (walled in). Aurora can hop across the zone boundary freely. Deals magic damage to enemies inside.",
+          "full": "Aurora leaps in a direction of her choosing, releasing a shockwave that damages and slows any enemies it hits. Afterward, she creates an area that slows enemies within it and allows Aurora to teleport from one side of the area to the other.",
           "cooldown": "100/85/70s",
           "scaling": "70% AP"
         }
@@ -4289,9 +4361,10 @@
           "range_type": "ranged",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.5,
-          "pick_rate": 0.05,
-          "ban_rate": 0.06
+          "win_rate": 0.5032,
+          "pick_rate": 0.046,
+          "ban_rate": 0.0752,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -4385,9 +4458,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.5,
-        "pick_rate": 0.05,
-        "ban_rate": 0.06,
+        "win_rate": 0.5032,
+        "pick_rate": 0.046,
+        "ban_rate": 0.0752,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -4408,8 +4481,15 @@
             "win_rate": 0.5,
             "pick_rate": 0.05,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5032,
+            "pick_rate": 0.046,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -4480,7 +4560,7 @@
               "AA"
             ],
             "name": "Mark Detonation",
-            "damage_estimate": "Q mark \u2192 detonate \u2192 empowered AA"
+            "damage_estimate": "Q mark → detonate → empowered AA"
           },
           {
             "sequence": [
@@ -4490,7 +4570,7 @@
               "W"
             ],
             "name": "Zone Trap Combo",
-            "damage_estimate": "R traps enemies \u2192 full combo inside zone"
+            "damage_estimate": "R traps enemies → full combo inside zone"
           }
         ]
       },
@@ -4554,7 +4634,7 @@
       ],
       "resource": "mana",
       "range_type": "ranged",
-      "difficulty": "very_hard",
+      "difficulty": "hard",
       "tags": [
         "support",
         "roam",
@@ -4569,37 +4649,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Traveler's Call",
+          "name": "TRAVELER’S CALL",
           "brief": "Chimes spawn on map. Collecting grants MS + mana + empowered AAs.",
-          "full": "Meeps: Bard's AAs deal bonus magic damage with meeps. Meeps respawn periodically. Chimes: Ancient chimes spawn across the map. Collecting them grants experience, mana, bonus MS, and upgrades meep damage/effects.",
+          "full": "Bard attracts and collects Chimes, granting him XP, Mana, and out-of-combat Move Speed. Every collected Chime buffs Bard’s Meeps. Bard summons Meeps regularly, assisting with his basic attacks and dealing extra magic damage. When Bard has collected enough Chimes, his meeps will also deal damage in an area and slow enemies hit.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Cosmic Binding",
+          "name": "COSMIC BINDING",
           "brief": "Skillshot. Stuns if it hits 2 enemies or pins enemy to wall.",
-          "full": "Fire a bolt of energy. First enemy hit takes magic damage. If the bolt hits a second enemy or terrain behind the first target, both are stunned.",
+          "full": "Bard fires a missile which will damage and slow the first enemy struck, and continue onward. If it strikes a wall, it will stun the initial target; if it strikes another enemy, it will stun them both.",
           "cooldown": "10/9/8/7s",
           "scaling": "65% AP"
         },
         "w": {
-          "name": "Caretaker's Shrine",
+          "name": "CARETAKER’S SHRINE",
           "brief": "Place a healing shrine on ground. Heals ally who walks over it.",
-          "full": "Place a healing shrine on the ground that powers up over 10 seconds. Allied champions who walk over it are healed and gain movement speed. Can store multiple shrines.",
+          "full": "Bard conjures a Health shrine at a target location, granting the first ally champion to enter Move Speed, AP, and Health. The shrine continues growing for a short while, powering up its healing value.",
           "cooldown": "14/13/12/11s",
           "scaling": "60% AP"
         },
         "e": {
-          "name": "Magical Journey",
+          "name": "MAGICAL JOURNEY",
           "brief": "Create a portal through terrain. Both allies and enemies can use it.",
-          "full": "Open a one-way portal through a wall. Both allied and enemy champions can travel through it. Travel speed scales with Bard's movement speed.",
+          "full": "Bard opens a portal in nearby terrain. Ally and enemy champions alike can take a one-way trip through that terrain by moving into the portal.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "r": {
-          "name": "Tempered Fate",
+          "name": "TEMPERED FATE",
           "brief": "Global range. AoE stasis on ALL units (allies + enemies + turrets).",
-          "full": "Fire a projectile at global range. On arrival, all units in the area (champions, minions, turrets \u2014 allies AND enemies) enter stasis for 2.5 seconds (invulnerable + untargetable + frozen). Can be used offensively or defensively.",
+          "full": "Bard sends spirit energy arcing to a location, putting all champions, minions, monsters, and turrets hit into stasis for a brief time, as well as stunning them. Enemies hit are revealed for the duration.",
           "cooldown": "100/85/70s",
           "scaling": ""
         }
@@ -4639,9 +4719,10 @@
           "range_type": "ranged",
           "difficulty": "very_hard",
           "tier": "A",
-          "win_rate": 0.5,
-          "pick_rate": 0.04,
-          "ban_rate": 0.03
+          "win_rate": 0.4487,
+          "pick_rate": 0.0159,
+          "ban_rate": 0.0038,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -4757,9 +4838,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.5,
-        "pick_rate": 0.04,
-        "ban_rate": 0.03,
+        "win_rate": 0.4487,
+        "pick_rate": 0.0159,
+        "ban_rate": 0.0038,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -4780,8 +4861,15 @@
             "win_rate": 0.5,
             "pick_rate": 0.04,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4487,
+            "pick_rate": 0.0159,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -4858,7 +4946,7 @@
               "Q"
             ],
             "name": "Portal Engage",
-            "damage_estimate": "Portal through wall \u2192 Q stun on exit"
+            "damage_estimate": "Portal through wall → Q stun on exit"
           },
           {
             "sequence": [
@@ -4934,7 +5022,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "tank",
         "support",
@@ -4950,35 +5038,35 @@
         "passive": {
           "name": "Mana Barrier",
           "brief": "At low HP, gain shield based on max mana.",
-          "full": "When Blitzcrank drops below 30% HP, gain a shield equal to 30% of maximum mana for 10 seconds. Cooldown: 80 seconds.",
+          "full": "Blitzcrank gains a shield based on his mana when dropping to low health.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Rocket Grab",
           "brief": "Long-range hook. Pulls first enemy hit to Blitzcrank.",
-          "full": "Fire a rocket hand in a line. First enemy hit is pulled to Blitzcrank and dealt magic damage. THE signature ability \u2014 one hook wins games.",
+          "full": "Blitzcrank fires his right hand to grab an opponent on its path, dealing damage and dragging it back to him.",
           "cooldown": "18/16/14/12s",
           "scaling": "100% AP"
         },
         "w": {
           "name": "Overdrive",
           "brief": "Gain massive MS + AS for duration. Slowed after it ends.",
-          "full": "Gain bonus movement speed and attack speed for 5 seconds. After the effect ends, Blitzcrank is slowed briefly.",
+          "full": "Blitzcrank super charges himself to get dramatically increased Movement and Attack Speed. He is temporarily slowed after the effect ends.",
           "cooldown": "12/10/8/6s",
           "scaling": ""
         },
         "e": {
           "name": "Power Fist",
           "brief": "Next AA knocks up target.",
-          "full": "Empower next auto-attack to deal double damage and knock up the target for 1 second. AA reset.",
+          "full": "Blitzcrank charges up his fist to make his next attack critically strike and pop his target up in the air.",
           "cooldown": "8/7/6/5s",
           "scaling": ""
         },
         "r": {
           "name": "Static Field",
           "brief": "Passive: AAs chain lightning. Active: AoE silence + damage.",
-          "full": "Passive: Auto-attacks deal bonus magic damage that chains to nearby enemies. Active: Deal magic damage to all nearby enemies and silence them for 0.5 seconds. Removes passive until off cooldown.",
+          "full": "Enemies attacked by Blitzcrank are marked and take lightning damage after 1 second. Additionally, Blitzcrank can activate this ability to damage nearby enemies, and silence them briefly.",
           "cooldown": "60/50/40s",
           "scaling": "100% AP"
         }
@@ -5020,9 +5108,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.08,
-          "ban_rate": 0.08
+          "win_rate": 0.5071,
+          "pick_rate": 0.087,
+          "ban_rate": 0.0234,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -5075,7 +5164,7 @@
           "edge_type": "COUNTERED_BY",
           "target_node_id": "champ:morgana",
           "weight": 0.9,
-          "context": "Morgana E blocks hook entirely \u2014 hard counter",
+          "context": "Morgana E blocks hook entirely — hard counter",
           "metadata": {
             "patch": "7.1d"
           }
@@ -5138,9 +5227,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.08,
-        "ban_rate": 0.08,
+        "win_rate": 0.5071,
+        "pick_rate": 0.087,
+        "ban_rate": 0.0234,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -5161,8 +5250,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5071,
+            "pick_rate": 0.087,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -5234,7 +5330,7 @@
               "R"
             ],
             "name": "Full Hook Combo",
-            "damage_estimate": "Pull \u2192 knockup \u2192 silence \u2192 burst"
+            "damage_estimate": "Pull → knockup → silence → burst"
           },
           {
             "sequence": [
@@ -5252,7 +5348,7 @@
               "Q"
             ],
             "name": "Speed Hook",
-            "damage_estimate": "W MS \u2192 close range \u2192 guaranteed hook angle"
+            "damage_estimate": "W MS → close range → guaranteed hook angle"
           }
         ]
       },
@@ -5280,7 +5376,7 @@
           {
             "if_enemy": "champ:morgana",
             "then_avoid": "champ:blitzcrank",
-            "reason": "Morgana E blocks hook entirely \u2014 hard counter"
+            "reason": "Morgana E blocks hook entirely — hard counter"
           },
           {
             "if_enemy": "champ:sivir",
@@ -5342,37 +5438,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Blaze",
+          "name": "BLAZE",
           "brief": "Abilities set enemies ablaze (3 stacks). At 3 stacks, AoE %max HP explosion.",
-          "full": "Abilities apply Blaze stacks for 4 seconds. At 3 stacks, the target explodes dealing magic damage equal to a percentage of their max HP to nearby enemies. Ablaze targets take bonus damage from Brand's abilities.",
+          "full": "Brand's spells light his targets ablaze, dealing damage over 1 seconds, stacking up to 2 times. If Brand kills an enemy while it is ablaze he regains mana. When Blaze reaches max stacks on a Champion or large monster, it becomes unstable. It detonates in 3 seconds, applying spell effects and dealing massive damage in an area around the victim.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Sear",
+          "name": "SEAR",
           "brief": "Skillshot fireball. Stuns if target is already Ablaze.",
-          "full": "Fire a fireball in a line dealing magic damage. If the target is already Ablaze, they are stunned for 1.5 seconds.",
+          "full": "Launches a projectile that stops on the first enemy hit, dealing damage and applying a stack of Brand’s passive. If the target was previously afflicted by Brand’s passive they are also briefly stunned.",
           "cooldown": "7/6/5/4s",
           "scaling": "65% AP"
         },
         "w": {
-          "name": "Pillar of Flame",
+          "name": "PILLAR OF FLAME",
           "brief": "AoE ground fire. Bonus damage to Ablaze targets.",
-          "full": "After 0.6s delay, ignite target area dealing magic damage. Ablaze enemies take 25% bonus damage.",
+          "full": "After a short delay, Brand creates a Pillar of Flame at a target area, dealing magic damage to enemy units within the area.",
           "cooldown": "8/7/6/5s",
           "scaling": "60% AP"
         },
         "e": {
-          "name": "Conflagration",
+          "name": "CONFLAGRATION",
           "brief": "Target ability. Spreads to nearby enemies if target is Ablaze.",
-          "full": "Deal magic damage to target enemy. If the target is Ablaze, Conflagration spreads to all nearby enemies.",
+          "full": "Brand conjures a powerful blast at his target that spreads to nearby enemies, dealing magic damage. If the target is ablaze, Conflagration's spread is doubled.",
           "cooldown": "10/9/8/7s",
           "scaling": "55% AP"
         },
         "r": {
-          "name": "Pyroclasm",
+          "name": "PYROCLASM",
           "brief": "Bouncing fireball. Bounces between enemies up to 5 times. Prioritizes champions.",
-          "full": "Launch a fireball that bounces between enemies up to 5 times, dealing magic damage and applying Blaze on each bounce. Prioritizes champions. Ablaze enemies are briefly slowed.",
+          "full": "Launches a projectile that travels to the target, dealing damage and applying a stack of Brand’s passive. The projectile will then bounce to a nearby target. Does not damage Brand.",
           "cooldown": "80/65/50s",
           "scaling": "25% AP per bounce"
         }
@@ -5415,9 +5511,10 @@
           "range_type": "ranged",
           "difficulty": "easy",
           "tier": "S",
-          "win_rate": 0.53,
-          "pick_rate": 0.1,
-          "ban_rate": 0.08
+          "win_rate": 0.5263,
+          "pick_rate": 0.1134,
+          "ban_rate": 0.0857,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -5544,9 +5641,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.53,
-        "pick_rate": 0.1,
-        "ban_rate": 0.08,
+        "win_rate": 0.5263,
+        "pick_rate": 0.1134,
+        "ban_rate": 0.0857,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -5567,8 +5664,15 @@
             "win_rate": 0.53,
             "pick_rate": 0.1,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5263,
+            "pick_rate": 0.1134,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -5639,7 +5743,7 @@
               "Q"
             ],
             "name": "Full Stun Combo",
-            "damage_estimate": "W ablaze \u2192 E spread \u2192 Q stun on ablaze target"
+            "damage_estimate": "W ablaze → E spread → Q stun on ablaze target"
           },
           {
             "sequence": [
@@ -5649,7 +5753,7 @@
               "R"
             ],
             "name": "Guaranteed Stun into Ult",
-            "damage_estimate": "E ablaze \u2192 Q stun \u2192 W + R for maximum damage"
+            "damage_estimate": "E ablaze → Q stun → W + R for maximum damage"
           },
           {
             "sequence": [
@@ -5659,7 +5763,7 @@
               "Q"
             ],
             "name": "Team Fight Ult",
-            "damage_estimate": "R bouncing \u2192 E spread \u2192 W AoE \u2192 Q stun"
+            "damage_estimate": "R bouncing → E spread → W AoE → Q stun"
           }
         ]
       },
@@ -5728,7 +5832,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "tank",
         "support",
@@ -5745,35 +5849,35 @@
         "passive": {
           "name": "Concussive Blows",
           "brief": "AAs apply stacks. At 4 stacks, target is stunned.",
-          "full": "Braum's auto-attacks and ally attacks on Braum-marked targets apply Concussive Blows stacks. At 4 stacks, the target is stunned for 1-1.5 seconds. After stun, target is immune for 8 seconds.",
+          "full": "Braum's basic attacks apply Concussive Blows. Once the first stack is applied, ally basic attacks also stack Concussive Blows. Upon reaching 4 stacks, the target is stunned and takes magic damage. For the next few seconds they cannot receive new stacks, but take bonus magic damage from Braum's attacks.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Winter's Bite",
           "brief": "Skillshot slow + applies passive stack.",
-          "full": "Fire ice from Braum's shield in a line dealing magic damage and slowing the first enemy hit. Also applies a Concussive Blows stack.",
+          "full": "Braum propels freezing ice from his shield, slowing and dealing magic damage. Applies a stack of Concussive Blows.",
           "cooldown": "8/7/6/5s",
           "scaling": "2.5% max HP"
         },
         "w": {
           "name": "Stand Behind Me",
           "brief": "Dash to ally. Gain bonus armor + MR.",
-          "full": "Dash to target allied champion or minion. On arrival, both Braum and the ally gain bonus armor and magic resistance for 3 seconds.",
+          "full": "Braum leaps to a target allied champion or minion. On arrival, Braum and the ally gain Armor and Magic Resist for a few seconds.",
           "cooldown": "12/10/8/6s",
           "scaling": ""
         },
         "e": {
           "name": "Unbreakable",
           "brief": "Raise shield. Blocks ALL projectiles from that direction. Reduces first hit.",
-          "full": "Raise Braum's shield in target direction for 3-4 seconds. The shield blocks all projectiles (including ultimates) from that direction. The first blocked hit is negated; subsequent blocked hits deal reduced damage.",
+          "full": "Braum raises his shield in a direction for several seconds, intercepting all projectiles causing them to hit him and be destroyed. He negates the damage of the first attack completely and reduces the damage of all subsequent attacks from this direction.",
           "cooldown": "14/12/10/8s",
           "scaling": ""
         },
         "r": {
           "name": "Glacial Fissure",
           "brief": "Long-range AoE knockup line + slow zone.",
-          "full": "Slam the ground creating a fissure in a line. First enemy champion hit is knocked up for 1-1.5 seconds. All enemies in the area are slowed and take magic damage. Creates a slow zone.",
+          "full": "Braum slams the ground, knocking up enemies nearby and in a line in front of him. A fissure is left along the line that slows enemies.",
           "cooldown": "100/80/60s",
           "scaling": "60% AP"
         }
@@ -5815,9 +5919,10 @@
           "range_type": "melee",
           "difficulty": "easy",
           "tier": "A",
-          "win_rate": 0.5,
-          "pick_rate": 0.06,
-          "ban_rate": 0.03
+          "win_rate": 0.5177,
+          "pick_rate": 0.0497,
+          "ban_rate": 0.0108,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -5944,9 +6049,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.5,
-        "pick_rate": 0.06,
-        "ban_rate": 0.03,
+        "win_rate": 0.5177,
+        "pick_rate": 0.0497,
+        "ban_rate": 0.0108,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -5967,8 +6072,15 @@
             "win_rate": 0.5,
             "pick_rate": 0.06,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5177,
+            "pick_rate": 0.0497,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -6041,7 +6153,7 @@
               "AA"
             ],
             "name": "Passive Stun Proc",
-            "damage_estimate": "Q applies stack \u2192 3 AAs (ally or self) = stun"
+            "damage_estimate": "Q applies stack → 3 AAs (ally or self) = stun"
           },
           {
             "sequence": [
@@ -6050,14 +6162,14 @@
               "AA"
             ],
             "name": "Ult Engage",
-            "damage_estimate": "R knockup \u2192 Q slow \u2192 passive stacking"
+            "damage_estimate": "R knockup → Q slow → passive stacking"
           },
           {
             "sequence": [
               "E"
             ],
             "name": "Projectile Block",
-            "damage_estimate": "E blocks ALL projectiles \u2014 ults, abilities, AAs"
+            "damage_estimate": "E blocks ALL projectiles — ults, abilities, AAs"
           }
         ]
       },
@@ -6125,7 +6237,7 @@
       ],
       "resource": "mana",
       "range_type": "ranged",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "marksman",
         "adc",
@@ -6139,37 +6251,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Headshot",
+          "name": "HEADSHOT",
           "brief": "Every few AAs + hits from traps/net = empowered AA with bonus range + damage.",
-          "full": "After a set number of auto-attacks (reduced by traps and net hits), Caitlyn's next AA is empowered with bonus range and bonus damage. Enemies caught in traps or hit by net also trigger Headshot.",
+          "full": "Every few basic attacks, or against a target she has trapped or netted, Caitlyn will fire a headshot dealing bonus damage that scales with her critical strike chance. On trapped or netted targets, Caitlyn's Headshot attack range is doubled.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Piltover Peacemaker",
+          "name": "PILTOVER PEACEMAKER",
           "brief": "Line skillshot damage. Expands after first target.",
-          "full": "Fire a narrow shot that expands into a wide cone after hitting the first target, dealing physical damage to all enemies in the path.",
+          "full": "Caitlyn revs up her rifle for 1 second to unleash a penetrating shot that deals physical damage (deals less damage to subsequent targets).",
           "cooldown": "8/7/6/5s",
           "scaling": "130% AD"
         },
         "w": {
-          "name": "Yordle Snap Trap",
+          "name": "YORDLE SNAP TRAP",
           "brief": "Place traps that root + reveal enemies who step on them.",
-          "full": "Place a trap at target location. Enemy champions who step on it are rooted, revealed, and take bonus damage. Caitlyn gains a guaranteed Headshot on trapped targets.",
+          "full": "Caitlyn sets a trap to find sneaky yordles. When sprung, the trap reveals and immobilizes the enemy champion for brief period, granting Caitlyn an empowered Headshot.",
           "cooldown": "25/20/15/10s",
           "scaling": "60% AP"
         },
         "e": {
-          "name": "90 Caliber Net",
+          "name": "90 CALIBER NET",
           "brief": "Dash backward + fire net that slows.",
-          "full": "Fire a net that knocks Caitlyn backward and slows the first enemy hit. Hitting an enemy also grants a Headshot stack.",
+          "full": "Caitlyn fires a heavy net to slow her target. The recoil knocks Caitlyn back.",
           "cooldown": "14/12/10/8s",
           "scaling": "80% AP"
         },
         "r": {
-          "name": "Ace in the Hole",
+          "name": "ACE IN THE HOLE",
           "brief": "Lock-on long-range snipe. Can be blocked by allies.",
-          "full": "Channel for 1 second, then fire a long-range shot at target enemy champion dealing massive physical damage. Enemy champions can intercept the shot by standing in its path.",
+          "full": "Caitlyn takes time to line up the perfect shot, dealing massive damage to a single target at a huge range. Enemy champions can intercept the bullet for their ally.",
           "cooldown": "70/55/40s",
           "scaling": "200% AD"
         }
@@ -6211,9 +6323,10 @@
           "range_type": "ranged",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.08,
-          "ban_rate": 0.05
+          "win_rate": 0.4942,
+          "pick_rate": 0.223,
+          "ban_rate": 0.0308,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -6293,7 +6406,7 @@
           "edge_type": "BEST_WITH",
           "target_node_id": "champ:lux",
           "weight": 0.85,
-          "context": "Lux Q root \u2192 Caitlyn trap \u2192 guaranteed Headshot chain",
+          "context": "Lux Q root → Caitlyn trap → guaranteed Headshot chain",
           "metadata": {
             "patch": "7.1d"
           }
@@ -6340,9 +6453,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.08,
-        "ban_rate": 0.05,
+        "win_rate": 0.4942,
+        "pick_rate": 0.223,
+        "ban_rate": 0.0308,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -6363,8 +6476,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4942,
+            "pick_rate": 0.223,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -6435,7 +6555,7 @@
               "Q"
             ],
             "name": "Trap Headshot",
-            "damage_estimate": "Trap root \u2192 guaranteed Headshot + Q"
+            "damage_estimate": "Trap root → guaranteed Headshot + Q"
           },
           {
             "sequence": [
@@ -6538,42 +6658,42 @@
         "passive": {
           "name": "Adaptive Defenses",
           "brief": "AAs on champions grant shield (AD or AP based on target's damage type).",
-          "full": "Attacking an enemy champion grants Camille a shield for 2 seconds. Shield type adapts: physical shield if target deals mostly AD, magic shield if target deals mostly AP.",
+          "full": "Basic attacks on champions grant a shield equal to 20% of Camille's maximum health against their damage type (Physical or Magic) for a brief duration.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Precision Protocol",
           "brief": "2-cast AA reset. Cast 2 deals true damage after delay.",
-          "full": "First cast: AA reset dealing bonus physical damage. After 1.5 seconds, recast for a second AA reset dealing bonus damage. Second cast converts a portion to true damage.",
+          "full": "Camille's next attack deals bonus damage and grants bonus movement speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks.",
           "cooldown": "6/5/4/3s",
           "scaling": "100% AD + true"
         },
         "w": {
           "name": "Tactical Sweep",
           "brief": "Cone sweep. Outer edge deals bonus %HP damage + heals Camille.",
-          "full": "Sweep in a cone. Inner cone deals normal damage. Outer cone deals bonus physical damage based on target's max HP and heals Camille for a portion.",
+          "full": "Camille blasts in a cone after a delay, dealing damage. Enemies in the outer half are slowed and take extra damage, while also healing Camille.",
           "cooldown": "13/11/9/7s",
           "scaling": "60% AD"
         },
         "e": {
           "name": "Hookshot",
-          "brief": "Dash to wall \u2192 wall jump toward enemies. Stuns on champion hit.",
-          "full": "First cast: Dash to a wall and cling to it. Second cast: Leap from the wall in target direction. If Camille hits an enemy champion, she stuns them and gains bonus attack speed.",
+          "brief": "Dash to wall → wall jump toward enemies. Stuns on champion hit.",
+          "full": "Camille pulls herself to a wall, leaping off and knocking up enemy champions upon landing.",
           "cooldown": "14/12/10/8s",
           "scaling": ""
         },
         "r": {
           "name": "The Hextech Ultimatum",
           "brief": "Dash to target champion. Create impassable zone. Target cannot leave.",
-          "full": "Dash to target enemy champion, becoming untargetable during the dash. On arrival, create a hexagonal zone. The target cannot leave the zone by any means (even Flash). Other enemies are knocked away.",
+          "full": "Camille dashes to target champion, anchoring them to the area, and knocking away other enemies.",
           "cooldown": "80/60/40s",
           "scaling": ""
         }
       },
       "brief": "Camille, The Steel Shadow. fighter/bruiser playing baron/jungle. Tier: S.",
-      "full": "Camille, The Steel Shadow, is a fighter/bruiser champion in Wild Rift. Plays baron/jungle. mana resource. melee. Difficulty: hard. Passive: AAs on champions grant shield (AD or AP based on target's damage type). Q: 2-cast AA reset. Cast 2 deals true damage after delay. W: Cone sweep. Outer edge deals bonus %HP damage + heals Camille. E: Dash to wall \u2192 wall jump toward enemies. Stuns on champion hit. R: Dash to target champion. Create impassable zone. Target cannot leave. Tags: fighter, bruiser, true_damage, mobility, split_push, dive, baron, jungle, melee, ad. Power spikes: level_5_ult, trinity, steraks.",
-      "embedding_text": "Camille, The Steel Shadow, is a fighter/bruiser champion in Wild Rift. Plays baron/jungle. mana resource. melee. Difficulty: hard. Passive: AAs on champions grant shield (AD or AP based on target's damage type). Q: 2-cast AA reset. Cast 2 deals true damage after delay. W: Cone sweep. Outer edge deals bonus %HP damage + heals Camille. E: Dash to wall \u2192 wall jump toward enemies. Stuns on champion hit. R: Dash to target champion. Create impassable zone. Target cannot leave. Tags: fighter, bruiser, true_damage, mobility, split_push, dive, baron, jungle, melee, ad. Power spikes: level_5_ult, trinity, steraks.",
+      "full": "Camille, The Steel Shadow, is a fighter/bruiser champion in Wild Rift. Plays baron/jungle. mana resource. melee. Difficulty: hard. Passive: AAs on champions grant shield (AD or AP based on target's damage type). Q: 2-cast AA reset. Cast 2 deals true damage after delay. W: Cone sweep. Outer edge deals bonus %HP damage + heals Camille. E: Dash to wall → wall jump toward enemies. Stuns on champion hit. R: Dash to target champion. Create impassable zone. Target cannot leave. Tags: fighter, bruiser, true_damage, mobility, split_push, dive, baron, jungle, melee, ad. Power spikes: level_5_ult, trinity, steraks.",
+      "embedding_text": "Camille, The Steel Shadow, is a fighter/bruiser champion in Wild Rift. Plays baron/jungle. mana resource. melee. Difficulty: hard. Passive: AAs on champions grant shield (AD or AP based on target's damage type). Q: 2-cast AA reset. Cast 2 deals true damage after delay. W: Cone sweep. Outer edge deals bonus %HP damage + heals Camille. E: Dash to wall → wall jump toward enemies. Stuns on champion hit. R: Dash to target champion. Create impassable zone. Target cannot leave. Tags: fighter, bruiser, true_damage, mobility, split_push, dive, baron, jungle, melee, ad. Power spikes: level_5_ult, trinity, steraks.",
       "power_spikes": [
         "level_5_ult",
         "trinity",
@@ -6610,9 +6730,10 @@
           "range_type": "melee",
           "difficulty": "hard",
           "tier": "S",
-          "win_rate": 0.52,
-          "pick_rate": 0.1,
-          "ban_rate": 0.12
+          "win_rate": 0.4804,
+          "pick_rate": 0.018,
+          "ban_rate": 0.0007,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -6750,9 +6871,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.1,
-        "ban_rate": 0.12,
+        "win_rate": 0.4804,
+        "pick_rate": 0.018,
+        "ban_rate": 0.0007,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -6773,8 +6894,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.1,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4804,
+            "pick_rate": 0.018,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -6847,7 +6975,7 @@
               "Q2_true"
             ],
             "name": "E Engage Trade",
-            "damage_estimate": "Wall jump \u2192 AA reset \u2192 true damage Q2"
+            "damage_estimate": "Wall jump → AA reset → true damage Q2"
           },
           {
             "sequence": [
@@ -6859,7 +6987,7 @@
               "Q2_true"
             ],
             "name": "Ult Lockdown Combo",
-            "damage_estimate": "R lockdown \u2192 full rotation \u2192 true damage finish"
+            "damage_estimate": "R lockdown → full rotation → true damage finish"
           },
           {
             "sequence": [
@@ -6956,37 +7084,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Hextech Munitions",
+          "name": "HEXTECH MUNITIONS",
           "brief": "AAs deal mixed damage (80% magic). Package spawns for special W.",
-          "full": "Corki's auto-attacks deal 80% magic damage and 20% physical damage. Periodically, a Package spawns at base \u2014 picking it up empowers W into a long-range dash leaving a fire trail.",
+          "full": "A percentage of Corki's basic attack damage is converted into magic damage. Corki can occasionally retrieve The Package inside his base, granting him movement speed and an empowered cast of Valkyrie.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Phosphorus Bomb",
+          "name": "PHOSPHORUS BOMB",
           "brief": "AoE magic damage bomb + reveals area.",
-          "full": "Fire a bomb at target area dealing magic damage and revealing the area for 6 seconds.",
+          "full": "Corki fires a flash bomb at a target location, dealing magic damage to enemies in the area. This attack additionally reveals units in the area for a duration.",
           "cooldown": "7/6/5/4s",
           "scaling": "50% AD + 50% AP"
         },
         "w": {
-          "name": "Valkyrie",
+          "name": "VALKYRIE",
           "brief": "Dash forward leaving fire trail. Package: massive range + knockback.",
-          "full": "Dash forward, leaving a fire trail that deals magic damage. With Package: Dash range massively increased, fire trail deals increased damage, and enemies hit are knocked aside.",
+          "full": "Corki flies a short distance, dropping bombs that create a trail of fire that damages opponents who remain in it.\n\nSpecial Delivery: If Corki has The Package, the flight is longer, enemies are knocked aside and the zone slows and deals damage.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "e": {
-          "name": "Gatling Gun",
+          "name": "GATLING GUN",
           "brief": "Channel frontal cone damage. Shreds armor + MR.",
-          "full": "Fire gatling gun in a cone for 2 seconds, dealing physical damage per second and reducing enemy armor and magic resistance.",
+          "full": "Corki's gatling gun rapidly fires in a cone towards his current target, dealing damage and reducing enemy Armor and Magic Resist.",
           "cooldown": "12/11/10/9s",
           "scaling": "20% AD per tick"
         },
         "r": {
-          "name": "Missile Barrage",
+          "name": "MISSILE BARRAGE",
           "brief": "Fire rockets (charges). Every 3rd is Big One with bonus damage + AoE.",
-          "full": "Fire a missile dealing magic damage. Stores charges. Every 3rd missile is a Big One that deals bonus damage in a larger AoE.",
+          "full": "Corki fires a missile toward his target location that explodes on impact, dealing damage to enemies in an area. Corki stores missiles over time, up to a maximum. Every third missile fired will be a Big One, dealing extra damage.",
           "cooldown": "2s per charge",
           "scaling": "20% AD + 30% AP"
         }
@@ -7025,9 +7153,10 @@
           "range_type": "ranged",
           "difficulty": "medium",
           "tier": "B",
-          "win_rate": 0.49,
-          "pick_rate": 0.04,
-          "ban_rate": 0.02
+          "win_rate": 0.4948,
+          "pick_rate": 0.0162,
+          "ban_rate": 0.0002,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -7132,9 +7261,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.49,
-        "pick_rate": 0.04,
-        "ban_rate": 0.02,
+        "win_rate": 0.4948,
+        "pick_rate": 0.0162,
+        "ban_rate": 0.0002,
         "win_rate_trend": "falling",
         "tier": "B",
         "patch_history": [
@@ -7155,8 +7284,15 @@
             "win_rate": 0.49,
             "pick_rate": 0.04,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4948,
+            "pick_rate": 0.0162,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "mixed",
@@ -7311,7 +7447,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "easy",
+      "difficulty": "medium",
       "tags": [
         "fighter",
         "bruiser",
@@ -7326,37 +7462,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Hemorrhage",
+          "name": "HEMORRHAGE",
           "brief": "AAs and abilities stack bleed (5 stacks). At 5 stacks, gain massive AD.",
-          "full": "Darius's attacks and abilities apply Hemorrhage bleed stacks (max 5). Each stack deals physical damage over 5 seconds. At 5 stacks, Darius gains Noxian Might: massive bonus AD.",
+          "full": "Darius's attacks and damaging abilities cause enemies to bleed for physical damage over time, stacking up to a cap. Upon reaching full stacks, Darius gains Noxian Might for a few seconds, gaining Attack Damage and applying full stacks of Hemorrhage instead of 1.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Decimate",
+          "name": "DECIMATE",
           "brief": "Spin axe in circle. Blade (edge) heals + deals bonus damage. Handle (inner) deals less.",
-          "full": "Spin axe. Enemies hit by the blade (outer edge) take bonus physical damage and heal Darius. Enemies hit by the handle (inner) take reduced damage and don't heal.",
+          "full": "Darius winds up and swings his axe in a wide circle. Enemies struck by the blade take more damage than those struck by the handle. Darius heals based on enemy champions hit by the blade, and applies Hemorrhage.",
           "cooldown": "7/6/5/4s",
           "scaling": "100% AD"
         },
         "w": {
-          "name": "Crippling Strike",
+          "name": "CRIPPLING STRIKE",
           "brief": "AA reset that slows.",
-          "full": "Empower next auto-attack to deal bonus physical damage and slow the target. AA reset.",
+          "full": "Darius empowers his next attack to deal additional damage with a large slow.",
           "cooldown": "5/4.5/4/3.5s",
           "scaling": "140% AD"
         },
         "e": {
-          "name": "Apprehend",
+          "name": "APPREHEND",
           "brief": "Pull enemies in a cone toward Darius. Passive: armor penetration.",
-          "full": "Passive: Gain bonus armor penetration. Active: Pull all enemies in a cone toward Darius. Short range.",
+          "full": "Darius hones his axe, passively causing his physical damage to ignore a percentage of his target's Armor. When activated, Darius sweeps up his enemies with his axe's hook and pulls them to him.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "r": {
-          "name": "Noxian Guillotine",
+          "name": "NOXIAN GUILLOTINE",
           "brief": "Execute dunk. True damage. RESETS on kill.",
-          "full": "Leap to target enemy champion and deal true damage. Damage increases based on number of Hemorrhage stacks. If this kills the target, it can be recast for FREE within 20 seconds. The pentakill machine.",
+          "full": "Darius leaps to an enemy champion and strikes a lethal blow, dealing true damage. This damage is increased for each stack of Hemorrhage on the target. If Noxian Guillotine is a killing blow, its cooldown is refreshed, granting Noxian Might and causing nearby minions and monsters to flee.",
           "cooldown": "100/85/70s",
           "scaling": "true damage"
         }
@@ -7398,9 +7534,10 @@
           "range_type": "melee",
           "difficulty": "easy",
           "tier": "A",
-          "win_rate": 0.52,
-          "pick_rate": 0.1,
-          "ban_rate": 0.1
+          "win_rate": 0.4792,
+          "pick_rate": 0.164,
+          "ban_rate": 0.0788,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -7538,9 +7675,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.1,
-        "ban_rate": 0.1,
+        "win_rate": 0.4792,
+        "pick_rate": 0.164,
+        "ban_rate": 0.0788,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -7561,8 +7698,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.1,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4792,
+            "pick_rate": 0.164,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -7634,7 +7778,7 @@
               "Q"
             ],
             "name": "Standard Trade",
-            "damage_estimate": "Pull \u2192 AA \u2192 W slow \u2192 Q blade heal"
+            "damage_estimate": "Pull → AA → W slow → Q blade heal"
           },
           {
             "sequence": [
@@ -7647,7 +7791,7 @@
               "R"
             ],
             "name": "Ghost All-in",
-            "damage_estimate": "Ghost stick \u2192 5 stacks \u2192 R execute"
+            "damage_estimate": "Ghost stick → 5 stacks → R execute"
           },
           {
             "sequence": [
@@ -7734,7 +7878,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "medium",
+      "difficulty": "easy",
       "tags": [
         "assassin",
         "mage",
@@ -7748,37 +7892,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Moonsilver Blade",
+          "name": "MOONSILVER BLADE",
           "brief": "Every 3rd AA deals bonus AoE magic damage + gains AS.",
-          "full": "Every third auto-attack deals bonus magic damage to nearby enemies and grants Diana bonus attack speed for 3 seconds.",
+          "full": "Every third strike cleaves nearby enemies for an additional magic damage. After using an ability, Diana gains attack speed for her next 3 attacks.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Crescent Strike",
+          "name": "CRESCENT STRIKE",
           "brief": "Arc skillshot. Deals damage + applies Moonlight mark.",
-          "full": "Fire a crescent arc dealing magic damage. Enemies hit are afflicted with Moonlight for 3 seconds.",
+          "full": "Unleashes a bolt of lunar energy in an arc dealing magic damage, and applying Moonlight.",
           "cooldown": "8/7/6/5s",
           "scaling": "70% AP"
         },
         "w": {
-          "name": "Pale Cascade",
+          "name": "PALE CASCADE",
           "brief": "3 orbs orbit Diana. Each detonates on enemy contact. All 3 = shield refresh.",
-          "full": "Create 3 orbs that orbit Diana. Each orb detonates when it contacts an enemy, dealing magic damage. If all 3 orbs detonate, refresh the shield.",
+          "full": "Diana creates three orbiting spheres that detonate on contact with enemies to deal damage in an area. She also gains a temporary shield that absorbs damage. If her third sphere detonates, the shield gains additional strength.",
           "cooldown": "12/10/8/6s",
           "scaling": "30% AP shield + 60% AP damage"
         },
         "e": {
-          "name": "Lunar Rush",
+          "name": "LUNAR RUSH",
           "brief": "Dash to target enemy. If Moonlight marked, CD is reset.",
-          "full": "Dash to target enemy dealing magic damage. If the target is afflicted with Moonlight (from Q), the cooldown is reset and mana cost refunded.",
+          "full": "Diana dashes to an enemy and deals magic damage. Lunar Rush has no cooldown when used to dash to an enemy afflicted with Moonlight, removing Moonlight in an area.",
           "cooldown": "18/16/14/12s",
           "scaling": "50% AP"
         },
         "r": {
-          "name": "Moonfall",
+          "name": "MOONFALL",
           "brief": "AoE pull + slow around Diana. Then massive AoE damage after delay.",
-          "full": "Pull all nearby enemy champions toward Diana and slow them. After 1 second, deal massive magic damage to all enemies in the area. The more champions pulled, the more damage.",
+          "full": "Diana summons the moon in an area, slowing enemies nearby and applying Moonlight in a growing area. Releasing the button slams the moon down, spiraling enemies toward her and dealing damage scaling with the charge time.",
           "cooldown": "80/70/60s",
           "scaling": "60% AP"
         }
@@ -7820,9 +7964,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "S",
-          "win_rate": 0.52,
-          "pick_rate": 0.12,
-          "ban_rate": 0.1
+          "win_rate": 0.4789,
+          "pick_rate": 0.0127,
+          "ban_rate": 0.0008,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -7949,9 +8094,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.12,
-        "ban_rate": 0.1,
+        "win_rate": 0.4789,
+        "pick_rate": 0.0127,
+        "ban_rate": 0.0008,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -7972,8 +8117,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.12,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4789,
+            "pick_rate": 0.0127,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -8045,7 +8197,7 @@
               "AA"
             ],
             "name": "Standard Burst",
-            "damage_estimate": "Q mark \u2192 E reset \u2192 W shield + burst"
+            "damage_estimate": "Q mark → E reset → W shield + burst"
           },
           {
             "sequence": [
@@ -8056,7 +8208,7 @@
               "W"
             ],
             "name": "Flash Moonfall",
-            "damage_estimate": "Flash AoE pull \u2192 full burst"
+            "damage_estimate": "Flash AoE pull → full burst"
           },
           {
             "sequence": [
@@ -8457,7 +8609,7 @@
               "AA"
             ],
             "name": "R Engage",
-            "damage_estimate": "R for stats + regen \u2192 E empowered AA \u2192 Q slow"
+            "damage_estimate": "R for stats + regen → E empowered AA → Q slow"
           },
           {
             "sequence": [
@@ -8465,7 +8617,7 @@
               "Q"
             ],
             "name": "CC Deny",
-            "damage_estimate": "Passive drops CC \u2192 pick up canister \u2192 Q"
+            "damage_estimate": "Passive drops CC → pick up canister → Q"
           }
         ]
       },
@@ -8538,7 +8690,7 @@
       ],
       "resource": "mana",
       "range_type": "ranged",
-      "difficulty": "very_hard",
+      "difficulty": "hard",
       "tags": [
         "marksman",
         "adc",
@@ -8552,37 +8704,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "League of Draven",
+          "name": "LEAGUE OF DRAVEN",
           "brief": "Catching axes grants Adoration stacks. Cashing in on kill = massive bonus gold.",
-          "full": "Catching a Spinning Axe grants Adoration stacks. Killing an enemy champion consumes all Adoration stacks and grants bonus gold. Dying loses half your stacks.",
+          "full": "Draven gains his fans' Adoration when he catches a Spinning Axe or kills a minion, monster, or tower. Killing enemy champions grants Draven bonus gold based on how much Adoration he has.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Spinning Axe",
+          "name": "SPINNING AXE",
           "brief": "Empowered AA. Axe bounces off target. Catch it to reset.",
-          "full": "Activate to empower next AA with bonus physical damage. The axe bounces off the target and lands nearby \u2014 catching it refreshes Spinning Axe and reduces Q cooldown.",
+          "full": "Draven's next attack will deal bonus physical damage. This axe will ricochet off the target high up into the air. If Draven catches it, he automatically readies another Spinning Axe. Draven can have two Spinning Axes at once.",
           "cooldown": "8/7/6/5s",
           "scaling": "70-110% AD"
         },
         "w": {
-          "name": "Blood Rush",
+          "name": "BLOOD RUSH",
           "brief": "Gain bonus AS + MS. Refreshes on catching axe.",
-          "full": "Gain bonus attack speed and movement speed that decays. Catching a Spinning Axe refreshes Blood Rush cooldown.",
+          "full": "Draven gains increased Movement Speed and Attack Speed. The Movement Speed bonus decreases rapidly over its duration. Catching a Spinning Axe will refresh the cooldown of Blood Rush.",
           "cooldown": "10/9/8/7s",
           "scaling": ""
         },
         "e": {
-          "name": "Stand Aside",
+          "name": "STAND ASIDE",
           "brief": "Throw axes in a line. Knockback + slow.",
-          "full": "Throw two axes in a line dealing physical damage. Enemies hit are knocked aside and slowed.",
+          "full": "Draven throws his axes, dealing physical damage to targets hit and knocking them aside. Targets hit are slowed.",
           "cooldown": "14/12/10/8s",
           "scaling": "50% AD"
         },
         "r": {
-          "name": "Whirling Death",
+          "name": "WHIRLING DEATH",
           "brief": "Global skillshot. Deals damage both ways. Reverses on champion hit or max range.",
-          "full": "Hurl two massive axes globally. Axes deal physical damage to all enemies in their path. Axes reverse direction on hitting an enemy champion or reaching max range, dealing damage on the return.",
+          "full": "Draven hurls two massive axes to deal physical damage to each unit struck. Whirling Death slowly reverses direction and returns to Draven after striking an enemy champion. Draven may also activate this ability while the axes are in flight to cause it to return early. Deals less damage for each unit hit and resets when the axes reverse direction.",
           "cooldown": "80/65/50s",
           "scaling": "110% AD"
         }
@@ -8624,9 +8776,10 @@
           "range_type": "ranged",
           "difficulty": "very_hard",
           "tier": "S",
-          "win_rate": 0.53,
-          "pick_rate": 0.08,
-          "ban_rate": 0.08
+          "win_rate": 0.4846,
+          "pick_rate": 0.0644,
+          "ban_rate": 0.0252,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -8742,9 +8895,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.53,
-        "pick_rate": 0.08,
-        "ban_rate": 0.08,
+        "win_rate": 0.4846,
+        "pick_rate": 0.0644,
+        "ban_rate": 0.0252,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -8765,8 +8918,15 @@
             "win_rate": 0.53,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4846,
+            "pick_rate": 0.0644,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -8839,7 +8999,7 @@
               "E"
             ],
             "name": "Double Axe Trade",
-            "damage_estimate": "Spinning axe burst \u2192 W reset \u2192 E disengage"
+            "damage_estimate": "Spinning axe burst → W reset → E disengage"
           },
           {
             "sequence": [
@@ -8849,7 +9009,7 @@
               "AA"
             ],
             "name": "Global Snipe into Chase",
-            "damage_estimate": "R global \u2192 E knockback \u2192 axe chase"
+            "damage_estimate": "R global → E knockback → axe chase"
           },
           {
             "sequence": [
@@ -8929,7 +9089,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "tags": [
         "assassin",
         "mage",
@@ -8944,37 +9104,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Z-Drive Resonance",
+          "name": "Z-DRIVE RESONANCE",
           "brief": "Every 3rd hit on same target deals bonus magic damage + grants MS.",
-          "full": "Hitting the same enemy champion or monster with 3 attacks or abilities within 3 seconds deals bonus magic damage and grants Ekko bonus movement speed.",
+          "full": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Timewinder",
+          "name": "TIMEWINDER",
           "brief": "Throw device that expands and returns. Damages + slows.",
-          "full": "Throw a temporal device that expands into a field on reaching max range or hitting a champion. The field slows enemies and then contracts back to Ekko, dealing damage both ways.",
+          "full": "Ekko throws a temporal grenade that expands into a time-distortion field upon hitting an enemy champion, slowing and damaging anyone caught inside. After a delay, the grenade rewinds back to Ekko, dealing damage on its return.",
           "cooldown": "7/6/5/4s",
           "scaling": "60% AP"
         },
         "w": {
-          "name": "Parallel Convergence",
+          "name": "PARALLEL CONVERGENCE",
           "brief": "Place a zone. After delay: shield (if Ekko enters) + stun (enemies inside).",
-          "full": "Target an area. After 3 seconds, the zone activates: if Ekko is inside, he gains a shield. Enemies inside are stunned for 2.25 seconds. Ekko gains passive proc on stunned targets.",
+          "full": "Ekko's basic attacks deal bonus magic damage to low health enemies. He can cast Parallel Convergence to split the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and stuns enemies by suspending them in time.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "e": {
-          "name": "Phase Dive",
+          "name": "PHASE DIVE",
           "brief": "Short dash + blink to nearby enemy on next AA.",
-          "full": "Dash a short distance. Ekko's next auto-attack within 3 seconds causes him to blink to the target and deal bonus magic damage.",
+          "full": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target.",
           "cooldown": "6/5/4/3s",
           "scaling": "50% AP"
         },
         "r": {
-          "name": "Chronobreak",
+          "name": "CHRONOBREAK",
           "brief": "Rewind to position 3s ago. Heal + massive AoE damage at arrival.",
-          "full": "Become untargetable and rewind to your position from 3 seconds ago. On arrival, heal based on damage taken recently and deal massive magic damage to enemies near the arrival point.",
+          "full": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage.",
           "cooldown": "80/60/40s",
           "scaling": "150% AP"
         }
@@ -9016,9 +9176,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.08,
-          "ban_rate": 0.06
+          "win_rate": 0.4697,
+          "pick_rate": 0.018,
+          "ban_rate": 0.001,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -9089,7 +9250,7 @@
           "edge_type": "BEST_WITH",
           "target_node_id": "champ:nautilus",
           "weight": 0.8,
-          "context": "Nautilus CC chain \u2192 Ekko W stun field \u2192 burst",
+          "context": "Nautilus CC chain → Ekko W stun field → burst",
           "metadata": {
             "patch": "7.1d"
           }
@@ -9134,9 +9295,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.08,
-        "ban_rate": 0.06,
+        "win_rate": 0.4697,
+        "pick_rate": 0.018,
+        "ban_rate": 0.001,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -9157,8 +9318,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4697,
+            "pick_rate": 0.018,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -9231,7 +9399,7 @@
               "AA"
             ],
             "name": "Passive Proc Burst",
-            "damage_estimate": "E blink \u2192 AA \u2192 Q \u2192 passive 3-hit proc"
+            "damage_estimate": "E blink → AA → Q → passive 3-hit proc"
           },
           {
             "sequence": [
@@ -9242,7 +9410,7 @@
               "R"
             ],
             "name": "W Stun Combo",
-            "damage_estimate": "Place W \u2192 E in \u2192 AA + Q \u2192 R to escape"
+            "damage_estimate": "Place W → E in → AA + Q → R to escape"
           },
           {
             "sequence": [
@@ -9252,7 +9420,7 @@
               "R_back"
             ],
             "name": "Hit and Run",
-            "damage_estimate": "Burst \u2192 R rewind to safety"
+            "damage_estimate": "Burst → R rewind to safety"
           }
         ]
       },
@@ -9334,37 +9502,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Demon Shade",
+          "name": "DEMON SHADE",
           "brief": "After level 5, become permanently camouflaged when out of combat.",
-          "full": "After reaching level 5, Evelynn enters Demon Shade after being out of combat for 4 seconds. In Demon Shade, she is camouflaged (invisible to enemies unless very close) and regenerates HP.",
+          "full": "When out of combat, Evelynn enters Demon Shade. Demon Shade heals Evelynn when she is low on health and grants Camouflage after level 5.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Hate Spike",
+          "name": "HATE SPIKE",
           "brief": "Fire spike. Recast up to 3 times for follow-up spikes.",
-          "full": "Fire a line of spikes dealing magic damage to the first enemy hit. Can recast up to 3 times to fire additional spikes at the nearest enemy.",
+          "full": "Evelynn strikes out with her lasher twice, dealing damage to the first unit hit. Then, Evelynn can re-cast to shoot another line of spikes at nearby foes.",
           "cooldown": "4s",
           "scaling": "50% AP"
         },
         "w": {
-          "name": "Allure",
+          "name": "ALLURE",
           "brief": "Mark target. After 2.5s, next attack charms (if full charge) or slows.",
-          "full": "Target an enemy champion or monster. After 2.5 seconds of cooking, Evelynn's next attack or ability on the target charms them (if fully charged) and deals bonus damage, or slows them (if not fully charged).",
+          "full": "Evelynn curses her target, causing her next attack or spell after a delay to slow or charm her target, based on time cursed, and reduce their magic resist.",
           "cooldown": "12/11/10/9s",
           "scaling": ""
         },
         "e": {
-          "name": "Whiplash",
+          "name": "WHIPLASH",
           "brief": "Dash through target dealing damage. Empowered in Demon Shade.",
-          "full": "Dash through target enemy dealing magic damage. In Demon Shade, Whiplash is empowered: gains bonus range, deals bonus %max HP magic damage, and applies on-hit effects.",
+          "full": "Evelynn whips her target with her Lasher, dealing damage. She then gains movement speed for a short duration. When exiting Demon Shade, Whiplash pulls Evelynn to her target.",
           "cooldown": "8/7/6/5s",
           "scaling": "3% max HP + 30% AP"
         },
         "r": {
-          "name": "Last Caress",
+          "name": "LAST CARESS",
           "brief": "Massive AoE damage. Execute bonus below 35% HP. Blinks Evelynn backward.",
-          "full": "Deal massive magic damage to all enemies in a cone in front of Evelynn. Deals bonus damage (up to 140%) to enemies below 35% HP. Evelynn blinks backward to safety.",
+          "full": "Evelynn briefly goes untargetable and decimates the area in front of her before warping backwards a long distance.",
           "cooldown": "100/80/60s",
           "scaling": "75% AP"
         }
@@ -9404,9 +9572,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "S",
-          "win_rate": 0.52,
-          "pick_rate": 0.1,
-          "ban_rate": 0.12
+          "win_rate": 0.5077,
+          "pick_rate": 0.036,
+          "ban_rate": 0.024,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -9533,9 +9702,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.1,
-        "ban_rate": 0.12,
+        "win_rate": 0.5077,
+        "pick_rate": 0.036,
+        "ban_rate": 0.024,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -9556,8 +9725,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.1,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5077,
+            "pick_rate": 0.036,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -9738,35 +9914,35 @@
         "passive": {
           "name": "Rising Spell Force",
           "brief": "Hitting abilities grants stacking AS.",
-          "full": "Hitting an enemy with an ability grants Ezreal a stack of Rising Spell Force, granting bonus attack speed. Stacks up to 4 times.",
+          "full": "Ezreal gains increasing Attack Speed each time he successfully hits a spell, stacking up to 4 times.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Mystic Shot",
           "brief": "Long-range skillshot. Applies on-hit. Reduces all CDs on hit.",
-          "full": "Fire a bolt in a line dealing physical damage. Applies on-hit effects (Sheen, BotRK, etc.). Hitting an enemy reduces all of Ezreal's cooldowns by 1.5 seconds.",
+          "full": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns slightly if it strikes an enemy unit.",
           "cooldown": "4.5/4/3.5/3s",
           "scaling": "130% AD + 15% AP"
         },
         "w": {
           "name": "Essence Flux",
           "brief": "Mark target with energy orb. Hitting marked target detonates for bonus damage.",
-          "full": "Fire an orb that sticks to the first enemy champion or structure hit. Hitting the marked target with an attack or ability detonates the orb dealing bonus magic damage.",
+          "full": "Ezreal fires an orb that sticks to the first champion or objective hit. If Ezreal hits an enemy with the orb, it detonates and deals damage.",
           "cooldown": "10/9/8/7s",
           "scaling": "70% AP"
         },
         "e": {
           "name": "Arcane Shift",
           "brief": "Blink to target location. Fires homing bolt at nearest enemy.",
-          "full": "Blink to target location and fire a homing bolt at the nearest enemy dealing magic damage. THE safety tool \u2014 functions like a short-range Flash.",
+          "full": "Ezreal teleports to a target nearby location and fires a homing bolt which strikes the nearest enemy unit. Prioritizes enemies stuck with Essence Flux.",
           "cooldown": "19/17/15/13s",
           "scaling": "50% AD + 75% AP"
         },
         "r": {
           "name": "Trueshot Barrage",
           "brief": "Global line skillshot. Massive damage to all enemies hit.",
-          "full": "Channel for 1 second then fire a massive energy wave globally dealing magic damage to all enemies in its path. Damage reduced per enemy hit (minimum 30%).",
+          "full": "Ezreal winds up before firing a powerful barrage of energy that deals massive damage to each unit it passes through (damage is reduced for minions and non-epic monsters).",
           "cooldown": "80/65/50s",
           "scaling": "90% AD + 100% AP"
         }
@@ -9807,9 +9983,10 @@
           "range_type": "ranged",
           "difficulty": "medium",
           "tier": "S",
-          "win_rate": 0.51,
-          "pick_rate": 0.14,
-          "ban_rate": 0.08
+          "win_rate": 0.5072,
+          "pick_rate": 0.1113,
+          "ban_rate": 0.0029,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -9947,9 +10124,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.14,
-        "ban_rate": 0.08,
+        "win_rate": 0.5072,
+        "pick_rate": 0.1113,
+        "ban_rate": 0.0029,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -9970,8 +10147,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.14,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5072,
+            "pick_rate": 0.1113,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "mixed",
@@ -10041,7 +10225,7 @@
               "Q"
             ],
             "name": "W+Q Poke",
-            "damage_estimate": "Mark target with W \u2192 Q detonates for bonus damage"
+            "damage_estimate": "Mark target with W → Q detonates for bonus damage"
           },
           {
             "sequence": [
@@ -10051,7 +10235,7 @@
               "AA"
             ],
             "name": "Aggressive Trade",
-            "damage_estimate": "E in \u2192 W mark \u2192 Q burst \u2192 AA"
+            "damage_estimate": "E in → W mark → Q burst → AA"
           },
           {
             "sequence": [
@@ -10126,7 +10310,7 @@
       ],
       "resource": "mana",
       "range_type": "ranged",
-      "difficulty": "medium",
+      "difficulty": "hard",
       "tags": [
         "mage",
         "jungle",
@@ -10141,37 +10325,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "A Harmless Scarecrow",
+          "name": "A HARMLESS SCARECROW",
           "brief": "Trinket replaced with effigy that mimics Fiddlesticks. Fear enemies from fog.",
-          "full": "Fiddlesticks' trinket is replaced with an Effigy that looks like Fiddlesticks. Enemies near the effigy may be feared. Abilities fear enemies if cast from outside their vision (fog of war or brush).",
+          "full": "When participating in a takedown Fiddlesticks leaves behind a movable scarecrow. The scarecrow will move toward the nearest enemy champion and explode when killed or after several seconds, causing fear.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Terrify",
+          "name": "TERRIFY",
           "brief": "Fear target enemy. If drained, fear is longer.",
-          "full": "Fear target enemy champion for 1-2 seconds. If the target was recently drained by Fiddlesticks' W, the fear duration is increased.",
+          "full": "Passive: When Fiddlesticks is out of combat for a longer time period and is invisible to enemy units, or has been stationary for a short period, its next skill will fear the target.\n\nFiddlesticks launches a raven at a target, dealing magic damage and fear. The raven deals bonus damage if the unit has been terrified recently.",
           "cooldown": "12/11/10/9s",
           "scaling": ""
         },
         "w": {
-          "name": "Bountiful Harvest",
+          "name": "BOUNTIFUL HARVEST",
           "brief": "Channel drain on nearby enemies. Heals Fiddlesticks.",
-          "full": "Channel for 2 seconds, draining the nearest enemies dealing magic damage and healing Fiddlesticks. Healing is increased based on missing HP. Last tick deals bonus damage.",
+          "full": "Fiddlesticks drains health from nearby enemies, dealing bonus execute damage at the end of the duration. During channeling, Fiddlestick is slowed and cannot cast any other abilities.",
           "cooldown": "8/7/6/5s",
           "scaling": "50% AP"
         },
         "e": {
-          "name": "Reap",
+          "name": "REAP",
           "brief": "Slash in a crescent. Silences + slows enemies hit.",
-          "full": "Slash in a crescent in target direction dealing magic damage. Enemies hit in the center are silenced and slowed.",
+          "full": "Fiddlesticks slashes an area with its scythe, slowing all enemies hit and silencing enemies hit in the center of the slash.",
           "cooldown": "8/7/6/5s",
           "scaling": "50% AP"
         },
         "r": {
-          "name": "Crowstorm",
+          "name": "CROWSTORM",
           "brief": "Channel 1.5s then blink to location. Massive AoE damage for 5s.",
-          "full": "Channel for 1.5 seconds then blink to target location, dealing massive magic damage per second to all nearby enemies for 5 seconds. THE surprise team fight ult. Cast from fog of war for fear passive.",
+          "full": "A murder of crows flock wildly around Fiddlesticks, dealing damage per second to all enemy units in the area.",
           "cooldown": "100/85/70s",
           "scaling": "45% AP per second"
         }
@@ -10210,9 +10394,10 @@
           "range_type": "ranged",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.52,
-          "pick_rate": 0.06,
-          "ban_rate": 0.05
+          "win_rate": 0.5392,
+          "pick_rate": 0.0331,
+          "ban_rate": 0.0295,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -10283,7 +10468,7 @@
           "edge_type": "BEST_WITH",
           "target_node_id": "champ:orianna",
           "weight": 0.85,
-          "context": "Orianna ball on Fiddle \u2192 Crowstorm + Shockwave",
+          "context": "Orianna ball on Fiddle → Crowstorm + Shockwave",
           "metadata": {
             "patch": "7.1d"
           }
@@ -10328,9 +10513,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.06,
-        "ban_rate": 0.05,
+        "win_rate": 0.5392,
+        "pick_rate": 0.0331,
+        "ban_rate": 0.0295,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -10351,8 +10536,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.06,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5392,
+            "pick_rate": 0.0331,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -10432,7 +10624,7 @@
               "R"
             ],
             "name": "Flash Ult",
-            "damage_estimate": "Flash into enemy team \u2192 Crowstorm AoE"
+            "damage_estimate": "Flash into enemy team → Crowstorm AoE"
           },
           {
             "sequence": [
@@ -10441,7 +10633,7 @@
               "W"
             ],
             "name": "Drain Combo",
-            "damage_estimate": "Fear \u2192 silence \u2192 drain for sustain"
+            "damage_estimate": "Fear → silence → drain for sustain"
           }
         ]
       },
@@ -10527,35 +10719,35 @@
         "passive": {
           "name": "Duelist's Dance",
           "brief": "Vitals appear on enemies. Hitting them deals %max HP true damage + heals + grants MS.",
-          "full": "Periodically, a Vital appears on nearby enemy champions. Auto-attacking the Vital deals bonus true damage based on the target's max HP, heals Fiora, and grants movement speed.",
+          "full": "Fiora challenges nearby enemy Champions to dodge her. She calls out a direction from which she will try to strike. If she can complete her own challenge, she receives a small bonus and calls out a new direction.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Lunge",
           "brief": "Short dash. Hits first enemy. CD partially refunds on hit.",
-          "full": "Dash a short distance in target direction, striking the first enemy hit for physical damage. If Lunge hits an enemy, 60% of the cooldown is refunded.",
+          "full": "Fiora lunges in a direction and stabs a nearby enemy, dealing physical damage and applying on-hit effects.",
           "cooldown": "8/7/6/5s",
           "scaling": "95-110% AD"
         },
         "w": {
           "name": "Riposte",
           "brief": "Become immune to all damage and CC for 0.75s. Then strike forward. If CC was blocked, stun.",
-          "full": "Become invulnerable for 0.75 seconds, blocking ALL incoming damage and CC. Then strike in target direction dealing magic damage and slowing. If Riposte blocked an immobilizing CC, the struck target is STUNNED instead.",
+          "full": "Fiora parries all incoming damage and disables for a short time, then stabs in a direction. This stab slows the first enemy champion hit, or stuns them if Fiora blocked an immobilizing effect with this ability.",
           "cooldown": "18/16/14/12s",
           "scaling": "100% AP"
         },
         "e": {
           "name": "Bladework",
           "brief": "2 AAs. First slows, second crits.",
-          "full": "Empower next 2 auto-attacks. First attack slows the target. Second attack is a guaranteed critical strike dealing bonus damage.",
+          "full": "Fiora has increased attack speed for the next two attacks. The first attack slows the target, and the second attack will critically strike.",
           "cooldown": "10/8/6/4s",
           "scaling": ""
         },
         "r": {
           "name": "Grand Challenge",
           "brief": "Mark all 4 Vitals on target. Hitting all 4 creates massive AoE healing zone.",
-          "full": "Mark all 4 Vitals on target enemy champion. Hitting all 4 Vitals (or killing the target) creates a large zone that heals all allies inside over time. THE supreme dueling ult.",
+          "full": "Fiora reveals all four Vitals on an enemy champion and gains movement speed while near them. If Fiora hits all 4 Vitals or if the target dies after she has hit at least one, Fiora and her allies in the area are healed over the next few seconds.",
           "cooldown": "80/60/40s",
           "scaling": ""
         }
@@ -10599,9 +10791,10 @@
           "range_type": "melee",
           "difficulty": "hard",
           "tier": "S",
-          "win_rate": 0.52,
-          "pick_rate": 0.1,
-          "ban_rate": 0.1
+          "win_rate": 0.4718,
+          "pick_rate": 0.0229,
+          "ban_rate": 0.0046,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -10739,9 +10932,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.1,
-        "ban_rate": 0.1,
+        "win_rate": 0.4718,
+        "pick_rate": 0.0229,
+        "ban_rate": 0.0046,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -10762,8 +10955,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.1,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4718,
+            "pick_rate": 0.0229,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -10835,7 +11035,7 @@
               "AA_crit"
             ],
             "name": "Quick Vital Trade",
-            "damage_estimate": "Q lunge to vital \u2192 E crit \u2192 disengage"
+            "damage_estimate": "Q lunge to vital → E crit → disengage"
           },
           {
             "sequence": [
@@ -10850,14 +11050,14 @@
               "Q"
             ],
             "name": "Grand Challenge Full Proc",
-            "damage_estimate": "Hit all 4 vitals \u2192 healing zone"
+            "damage_estimate": "Hit all 4 vitals → healing zone"
           },
           {
             "sequence": [
               "W_parry"
             ],
             "name": "Riposte Parry",
-            "damage_estimate": "Block CC \u2192 stun if immobilizing CC blocked"
+            "damage_estimate": "Block CC → stun if immobilizing CC blocked"
           }
         ]
       },
@@ -10942,37 +11142,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Nimble Fighter",
+          "name": "SEASTONE TRIDENT",
           "brief": "Take reduced damage from AAs. Ignore unit collision.",
-          "full": "Fizz takes reduced damage from auto-attacks and ignores unit collision (can walk through minions and champions).",
+          "full": "Fizz's attacks deal additional damage over time.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Urchin Strike",
           "brief": "Dash through target dealing magic damage + on-hit.",
-          "full": "Dash through target enemy dealing magic damage and applying on-hit effects. Fixed distance \u2014 Fizz always ends up behind the target.",
+          "full": "Fizz dashes through his target, dealing magic damage and applying on hit effects.",
           "cooldown": "6/5.5/5/4.5s",
           "scaling": "55% AP + 100% AD"
         },
         "w": {
-          "name": "Seastone Trident",
+          "name": "RENDING WAVE",
           "brief": "Passive: AAs deal bonus magic damage. Active: empower next AA for burst + DoT.",
-          "full": "Passive: Auto-attacks deal bonus magic damage over 3 seconds. Active: Empower next auto-attack to deal bonus magic damage. If it kills the target, refund mana.",
+          "full": "Empowers Fizz' next attack to deal bonus damage, and killing a unit resets Rending Wave's cooldown. Additional attacks deal more damage.",
           "cooldown": "7/6/5/4s",
           "scaling": "50% AP"
         },
         "e": {
           "name": "Playful / Trickster",
           "brief": "Hop onto trident (untargetable). Recast: AoE splash on landing.",
-          "full": "Hop onto your trident becoming UNTARGETABLE for 0.75 seconds. Can recast to jump to target location dealing AoE magic damage. If not recast, land at current location with wider AoE.",
+          "full": "Fizz hops into the air, landing gracefully upon his spear and becoming untargetable. From this position, Fizz can either slam the ground or choose to jump again before smashing back down.",
           "cooldown": "12/10/8/6s",
           "scaling": "75% AP"
         },
         "r": {
           "name": "Chum the Waters",
           "brief": "Throw fish. Attaches to first champion hit. After delay: shark knockup + massive damage.",
-          "full": "Throw a fish in a line. Attaches to the first enemy champion hit (or stays at max range). After 2 seconds, a shark erupts dealing massive magic damage and knocking up enemies. Damage and knockup size scale with distance thrown.",
+          "full": "Fizz tosses a fish in a direction that attaches to any champion that touches it, slowing the target. After a short delay, a shark erupts from the ground, knocking up the target and knocking any nearby enemies aside. All enemies hit are dealt magic damage and slowed.",
           "cooldown": "80/65/50s",
           "scaling": "80% AP"
         }
@@ -11014,9 +11214,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "S",
-          "win_rate": 0.52,
-          "pick_rate": 0.12,
-          "ban_rate": 0.15
+          "win_rate": 0.5028,
+          "pick_rate": 0.0368,
+          "ban_rate": 0.0395,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -11105,7 +11306,7 @@
           "edge_type": "BEST_WITH",
           "target_node_id": "champ:nautilus",
           "weight": 0.85,
-          "context": "Nautilus R knockup \u2192 Fizz R guaranteed hit",
+          "context": "Nautilus R knockup → Fizz R guaranteed hit",
           "metadata": {
             "patch": "7.1d"
           }
@@ -11154,9 +11355,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.12,
-        "ban_rate": 0.15,
+        "win_rate": 0.5028,
+        "pick_rate": 0.0368,
+        "ban_rate": 0.0395,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -11177,8 +11378,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.12,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5028,
+            "pick_rate": 0.0368,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -11251,7 +11459,7 @@
               "E"
             ],
             "name": "Full Burst",
-            "damage_estimate": "R shark \u2192 Q through \u2192 W empowered \u2192 E escape"
+            "damage_estimate": "R shark → Q through → W empowered → E escape"
           },
           {
             "sequence": [
@@ -11261,7 +11469,7 @@
               "AA"
             ],
             "name": "E Engage",
-            "damage_estimate": "E hop \u2192 Q through \u2192 W burst \u2192 trade"
+            "damage_estimate": "E hop → Q through → W burst → trade"
           },
           {
             "sequence": [
@@ -11271,7 +11479,7 @@
               "E_escape"
             ],
             "name": "Safe Trade",
-            "damage_estimate": "Q in \u2192 W burst \u2192 E out untargetable"
+            "damage_estimate": "Q in → W burst → E out untargetable"
           }
         ]
       },
@@ -11361,37 +11569,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Colossal Smash",
+          "name": "COLOSSAL SMASH",
           "brief": "Periodically, next AA deals bonus AoE magic damage.",
-          "full": "Every few seconds, Galio's next auto-attack is empowered, dealing bonus magic damage to the target and nearby enemies. Cooldown reduced by hitting champions with abilities.",
+          "full": "Every few seconds, Galio's next basic attack deals bonus magic damage in an area. Galio gains attack speed when Colossal Smash is up. When an ability hits an epic monster or enemy champion, it reduces the cooldown of Colossal Smash by 3 seconds. This effect can only be triggered once per cast.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Winds of War",
+          "name": "WINDS OF WAR",
           "brief": "Two wind arcs converge into tornado. Tornado deals %max HP burn.",
-          "full": "Fire two wind arcs that converge at target location forming a tornado. Wind arcs deal magic damage on hit. The tornado deals magic damage per second based on enemies' max HP.",
+          "full": "Galio fires two windblasts that converge into a large tornado that deals damage over time.",
           "cooldown": "8/7/6/5s",
           "scaling": "75% AP + 4% max HP/s"
         },
         "w": {
-          "name": "Shield of Durand",
+          "name": "SHIELD OF DURAND",
           "brief": "Passive: magic damage shield. Active: channel taunt. Longer channel = wider taunt.",
-          "full": "Passive: Gain a magic damage shield that regenerates out of combat. Active: Channel for up to 2 seconds, then release to taunt all nearby enemies. Longer channel = wider radius + longer taunt duration.",
+          "full": "Galio charges a defensive stance, moving slowly. Upon releasing the charge, Galio will taunt and damage nearby enemy champions.",
           "cooldown": "14/13/12/11s",
           "scaling": ""
         },
         "e": {
-          "name": "Justice Punch",
+          "name": "JUSTICE PUNCH",
           "brief": "Dash forward. Knocks up first champion hit.",
-          "full": "Dash forward dealing magic damage. The first enemy champion hit is knocked up for 0.75 seconds. Dash stops on champion contact.",
+          "full": "Galio will briefly step back and charge, damaging and knocking up the first enemy champion he encounters.",
           "cooldown": "10/9/8/7s",
           "scaling": "60% AP"
         },
         "r": {
-          "name": "Hero's Entrance",
+          "name": "HERO'S ENTRANCE",
           "brief": "Global dash to allied champion. AoE knockup + damage reduction shield on arrival.",
-          "full": "Channel for 1.5 seconds then dash to target allied champion ANYWHERE on the map. On arrival, deal magic damage and knock up enemies in a large area. The allied champion gains damage reduction during the channel.",
+          "full": "Galio designates an ally's position as his landing spot, granting all allies in the area a magic shield. After a delay Galio smashes down location, knocking up nearby enemies.",
           "cooldown": "120/100/80s",
           "scaling": "70% AP"
         }
@@ -11432,9 +11640,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.06,
-          "ban_rate": 0.04
+          "win_rate": 0.5064,
+          "pick_rate": 0.1047,
+          "ban_rate": 0.019,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -11528,9 +11737,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.06,
-        "ban_rate": 0.04,
+        "win_rate": 0.5064,
+        "pick_rate": 0.1047,
+        "ban_rate": 0.019,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -11551,8 +11760,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.06,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5064,
+            "pick_rate": 0.1047,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -11624,7 +11840,7 @@
               "Q"
             ],
             "name": "Flash Taunt Engage",
-            "damage_estimate": "Instant AoE taunt \u2192 E knockup \u2192 Q tornado"
+            "damage_estimate": "Instant AoE taunt → E knockup → Q tornado"
           },
           {
             "sequence": [
@@ -11633,14 +11849,14 @@
               "Q"
             ],
             "name": "Standard Combo",
-            "damage_estimate": "E dash \u2192 W taunt \u2192 Q damage"
+            "damage_estimate": "E dash → W taunt → Q damage"
           },
           {
             "sequence": [
               "R_global"
             ],
             "name": "Hero's Entrance",
-            "damage_estimate": "Global R to ally \u2192 AoE knockup on arrival"
+            "damage_estimate": "Global R to ally → AoE knockup on arrival"
           }
         ]
       },
@@ -11726,35 +11942,35 @@
         "passive": {
           "name": "Perseverance",
           "brief": "Regen HP rapidly when not taking champion damage recently.",
-          "full": "After not taking damage from enemy champions or turrets for several seconds, Garen regenerates a percentage of his max HP per second. Provides incredible sustain in lane.",
+          "full": "If Garen has not recently been struck by damage or enemy abilities, he regenerates a percentage of his total health each second.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Decisive Strike",
           "brief": "AA reset + silence + MS burst.",
-          "full": "Gain 30% bonus movement speed for a few seconds. Next auto-attack within 4.5 seconds deals bonus physical damage and silences the target for 1.5 seconds. AA reset.",
+          "full": "Garen gains a burst of movement speed, breaking free of all slows affecting him. His next attack strikes a vital area of his foe, dealing bonus damage and silencing them.",
           "cooldown": "7/6/5/4s",
           "scaling": "50% AD"
         },
         "w": {
           "name": "Courage",
           "brief": "Passive: killing units grants permanent armor + MR. Active: shield + tenacity.",
-          "full": "Passive: Killing units permanently grants bonus armor and magic resistance (stacks). Active: Gain a shield and 60% tenacity + 30% damage reduction for a short duration.",
+          "full": "Garen reduces damage taken for a short time, and gains bonus resistance to crowd control.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "e": {
           "name": "Judgment",
           "brief": "Spin to win. AoE damage for 3 seconds. Deals bonus damage to single target.",
-          "full": "Spin for 3 seconds dealing physical damage to nearby enemies. Deals 25% bonus damage when hitting only one enemy. Can crit. Removes slows on cast.",
+          "full": "Garen rapidly spins his sword around his body, dealing physical damage to nearby enemies. Enemies hit by the bladestorm's edge are critically struck.",
           "cooldown": "8/7/6/5s",
           "scaling": "36% AD per spin"
         },
         "r": {
           "name": "Demacian Justice",
           "brief": "Execute ult. Deals magic damage based on target's missing HP.",
-          "full": "Call down Demacian might on target enemy champion dealing massive magic damage based on their missing HP. THE execute ult. At low HP, one-shots most targets.",
+          "full": "Garen calls upon the might of Demacia to attempt to execute an enemy champion, dealing damage in an area around his target.",
           "cooldown": "80/65/50s",
           "scaling": "true damage execute"
         }
@@ -11797,9 +12013,10 @@
           "range_type": "melee",
           "difficulty": "easy",
           "tier": "A",
-          "win_rate": 0.52,
-          "pick_rate": 0.08,
-          "ban_rate": 0.04
+          "win_rate": 0.5122,
+          "pick_rate": 0.1577,
+          "ban_rate": 0.0617,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -11937,9 +12154,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.08,
-        "ban_rate": 0.04,
+        "win_rate": 0.5122,
+        "pick_rate": 0.1577,
+        "ban_rate": 0.0617,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -11960,8 +12177,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.5122,
+            "pick_rate": 0.1577,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -12032,7 +12256,7 @@
               "E"
             ],
             "name": "Q Trade",
-            "damage_estimate": "Q silence \u2192 spin \u2192 disengage with passive regen"
+            "damage_estimate": "Q silence → spin → disengage with passive regen"
           },
           {
             "sequence": [
@@ -12041,7 +12265,7 @@
               "R"
             ],
             "name": "Full Execute",
-            "damage_estimate": "Q silence \u2192 E spin \u2192 R execute at low HP"
+            "damage_estimate": "Q silence → E spin → R execute at low HP"
           },
           {
             "sequence": [
@@ -12051,7 +12275,7 @@
               "R"
             ],
             "name": "Flash Engage",
-            "damage_estimate": "Flash \u2192 Q silence \u2192 E \u2192 R execute"
+            "damage_estimate": "Flash → Q silence → E → R execute"
           }
         ]
       },
@@ -12140,37 +12364,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Rage Gene",
+          "name": "RAGE GENE",
           "brief": "Gains Rage in combat. At max Rage, transforms into Mega Gnar (melee, tanky, CC).",
-          "full": "Gnar generates Rage when in combat or taking damage. At maximum Rage, Gnar transforms into Mega Gnar for 15 seconds \u2014 gaining massive bonus HP, armor, MR, and AD but losing range and attack speed.",
+          "full": "Gnar generates Rage when dealing and receiving damage. At maximum Rage his next ability will transform him into Mega Gnar, granting increased health, armor, magic resistance, and attack. Back in his Mini Gnar form he will still gain move speed and attack speed and range.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Boomerang Throw / Boulder Toss",
+          "name": "BOOMERANG THROW / BOULDER TOSS",
           "brief": "Mini: boomerang that returns. Mega: throw boulder that slows.",
-          "full": "Mini Gnar: Throw a boomerang that deals physical damage, slows, and returns. Catching it reduces CD. Mega Gnar: Throw a boulder that deals physical damage, slows, and stops on first enemy hit.",
+          "full": "Gnar throws a boomerang that damages and slows enemies it hits before returning to him. If he catches the boomerang its cooldown is reduced. Mega Gnar instead throws a boulder that stops on the first unit hit, damaging and slowing everything nearby. It can then be picked up to reduce the cooldown.",
           "cooldown": "15/12/9/6s",
           "scaling": "115% AD"
         },
         "w": {
-          "name": "Hyper / Wallop",
+          "name": "HYPER / WALLOP",
           "brief": "Mini: 3rd AA deals %max HP magic. Mega: AoE stun.",
-          "full": "Mini Gnar: Every 3rd auto-attack on the same target deals bonus magic damage based on target's max HP. Mega Gnar: Slam the ground, stunning and damaging enemies in a line.",
+          "full": "Gnar's attacks and spells hype him up, dealing bonus damage and granting him Move Speed. Mega Gnar is too enraged to be hyper and instead can rear up on his hind legs and smash down on the area in front of him, stunning enemies in an area.",
           "cooldown": "10/8/6/4s",
           "scaling": ""
         },
         "e": {
-          "name": "Hop / Crunch",
+          "name": "HOP / CRUNCH",
           "brief": "Mini: hop (bounce off enemies). Mega: AoE jump + slow.",
-          "full": "Mini Gnar: Hop to target location. If Gnar lands on an enemy, bounce further and deal damage. Mega Gnar: Leap to target location dealing AoE damage and slowing enemies on landing.",
+          "full": "Gnar leaps to a location and bounces off the head of any unit he lands on, traveling further. Mega Gnar is too large to bounce and instead lands with earth-shattering force, dealing damage in an area around him.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "r": {
           "name": "GNAR!",
           "brief": "Mega only: throw all nearby enemies in target direction. Stun if they hit terrain.",
-          "full": "Mega Gnar only: Throw all nearby enemies in target direction dealing massive physical damage. If thrown enemies hit terrain (walls), they are stunned for 1.5 seconds and take bonus damage. THE game-winning team fight ult.",
+          "full": "Mega Gnar throws everything around him in a chosen direction, dealing damage and slowing them. Any enemy that hits a wall is stunned and takes bonus damage.",
           "cooldown": "70/55/40s",
           "scaling": "50% AD + 100% AP"
         }
@@ -12212,9 +12436,10 @@
           "range_type": "ranged_melee",
           "difficulty": "hard",
           "tier": "A",
-          "win_rate": 0.5,
-          "pick_rate": 0.05,
-          "ban_rate": 0.04
+          "win_rate": 0.492,
+          "pick_rate": 0.0286,
+          "ban_rate": 0.0024,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -12267,7 +12492,7 @@
           "edge_type": "BEST_WITH",
           "target_node_id": "champ:orianna",
           "weight": 0.85,
-          "context": "Orianna ball on Mega Gnar \u2192 R throw + Shockwave",
+          "context": "Orianna ball on Mega Gnar → R throw + Shockwave",
           "metadata": {
             "patch": "7.1d"
           }
@@ -12308,9 +12533,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.5,
-        "pick_rate": 0.05,
-        "ban_rate": 0.04,
+        "win_rate": 0.492,
+        "pick_rate": 0.0286,
+        "ban_rate": 0.0024,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -12331,8 +12556,15 @@
             "win_rate": 0.5,
             "pick_rate": 0.05,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.492,
+            "pick_rate": 0.0286,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "mixed",
@@ -12412,7 +12644,7 @@
               "Q"
             ],
             "name": "Mega Gnar Wall Stun",
-            "damage_estimate": "R throw into wall \u2192 W stun \u2192 Q slow"
+            "damage_estimate": "R throw into wall → W stun → Q slow"
           },
           {
             "sequence": [
@@ -12420,7 +12652,7 @@
               "R_wall"
             ],
             "name": "Flash GNAR!",
-            "damage_estimate": "Flash \u2192 R into wall = game-winning team fight stun"
+            "damage_estimate": "Flash → R into wall = game-winning team fight stun"
           }
         ]
       },
@@ -12507,35 +12739,35 @@
         "passive": {
           "name": "Happy Hour",
           "brief": "Abilities grant sustain heal based on max HP.",
-          "full": "After casting an ability, Gragas heals for a percentage of his max HP over 4 seconds. Provides sustained laning.",
+          "full": "Gragas periodically heals upon using an ability.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "Barrel Roll",
           "brief": "Roll a barrel to location. Recast to detonate for AoE damage + slow.",
-          "full": "Roll a barrel to target location. The barrel ferments over time (up to 2 seconds) increasing damage and slow. Recast to detonate dealing magic damage and slowing enemies.",
+          "full": "Gragas rolls his cask to a location, which can be activated to explode or will explode on its own after 3 seconds. Enemies struck by the blast have their Movement Speed slowed.",
           "cooldown": "9/8/7/6s",
           "scaling": "70% AP"
         },
         "w": {
           "name": "Drunken Rage",
           "brief": "Channel for 0.8s. Next AA deals bonus %max HP magic damage. Damage reduction.",
-          "full": "Channel for 0.8 seconds. Gain damage reduction for 2.5 seconds. Next auto-attack deals bonus magic damage based on target's max HP.",
+          "full": "Gragas guzzles down brew from his cask for 1 second. After finishing, he becomes drunkenly empowered, dealing magic damage to all nearby enemies on his next basic attack and reducing damage received.",
           "cooldown": "5/5/5/5s",
           "scaling": "8% max HP + 55% AP"
         },
         "e": {
           "name": "Body Slam",
           "brief": "Dash forward. Stun + damage first champion hit.",
-          "full": "Dash forward dealing magic damage to enemies in path. The first enemy champion hit is stunned for 1 second.",
+          "full": "Gragas charges to a location and collides with the first enemy unit he comes across, dealing damage to all nearby enemy units and stunning them.",
           "cooldown": "12/11/10/9s",
           "scaling": "60% AP"
         },
         "r": {
           "name": "Explosive Cask",
           "brief": "Throw cask at location. Massive AoE knockback + damage.",
-          "full": "Throw an explosive cask at target location dealing magic damage and knocking enemies away from the center. Can be used to isolate targets (knock enemy carry into your team) or disengage.",
+          "full": "Gragas hurls his cask to a location, dealing damage and knocking back enemies caught in the blast radius.",
           "cooldown": "80/65/50s",
           "scaling": "80% AP"
         }
@@ -12574,9 +12806,10 @@
           "range_type": "melee",
           "difficulty": "medium",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.05,
-          "ban_rate": 0.03
+          "win_rate": 0.4805,
+          "pick_rate": 0.0162,
+          "ban_rate": 0.002,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -12681,9 +12914,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.05,
-        "ban_rate": 0.03,
+        "win_rate": 0.4805,
+        "pick_rate": 0.0162,
+        "ban_rate": 0.002,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -12704,8 +12937,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.05,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4805,
+            "pick_rate": 0.0162,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -12778,7 +13018,7 @@
               "Q"
             ],
             "name": "Burst Trade",
-            "damage_estimate": "E stun \u2192 AA \u2192 W %HP \u2192 AA \u2192 Q slow"
+            "damage_estimate": "E stun → AA → W %HP → AA → Q slow"
           },
           {
             "sequence": [
@@ -12787,7 +13027,7 @@
               "R"
             ],
             "name": "Flash E+R Insec",
-            "damage_estimate": "Flash E stun \u2192 R knockback carry into team"
+            "damage_estimate": "Flash E stun → R knockback carry into team"
           },
           {
             "sequence": [
@@ -12797,7 +13037,7 @@
               "W"
             ],
             "name": "Barrel Combo",
-            "damage_estimate": "R isolate \u2192 E stun \u2192 Q + W burst"
+            "damage_estimate": "R isolate → E stun → Q + W burst"
           }
         ]
       },
@@ -12865,7 +13105,7 @@
       ],
       "resource": "mana",
       "range_type": "ranged",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "marksman",
         "jungle",
@@ -12881,35 +13121,35 @@
         "passive": {
           "name": "New Destiny",
           "brief": "Shotgun AAs (2 bullets). Reload after 2 shots. AAs cannot pass through units.",
-          "full": "Graves' auto-attacks fire 2 bullets in a cone. Attacks cannot pass through units (blocked by first target). After 2 shots, Graves must reload. AAs deal increased damage at close range.",
+          "full": "Graves' shotgun has some unique properties. He must reload when he runs out of ammo. Attacks fire 4 bullets, which cannot pass through units. Non-champions struck by multiple bullets are knocked back.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
           "name": "End of the Line",
           "brief": "Fire smoke round. Detonates after delay or hitting terrain for AoE.",
-          "full": "Fire a smoke round that deals physical damage. After 1 second or upon hitting terrain, the round detonates dealing additional physical damage in a T-shape.",
+          "full": "Graves fires an explosive shell that detonates after 1.5 seconds, or 0.25 seconds if it strikes terrain.",
           "cooldown": "9/8/7/6s",
           "scaling": "100% AD"
         },
         "w": {
           "name": "Smoke Screen",
           "brief": "AoE smoke zone. Enemies inside have reduced vision + are slowed.",
-          "full": "Fire a smoke canister creating a zone. Enemies inside have their vision greatly reduced (can't see outside) and are slowed.",
+          "full": "Graves fires a smoke canister at the target area creating a cloud of smoke that reduces sight range. Enemies caught in the initial impact are dealt magic damage and have their movement speed reduced briefly.",
           "cooldown": "18/16/14/12s",
           "scaling": "60% AP"
         },
         "e": {
           "name": "Quickdraw",
           "brief": "Dash + gain armor stack + reload 1 bullet.",
-          "full": "Dash in target direction and reload 1 bullet. Gain a stack of True Grit (bonus armor) for 4 seconds. Stacks up to 8 times.",
+          "full": "Graves dashes forward gaining an Armor boost for several seconds. If Graves dashes towards an enemy champion, gain two stacks of True Grit instead. Hitting enemies with basic attacks lowers the cooldown of this skill and refreshes the resistance boost.",
           "cooldown": "14/12/10/8s",
           "scaling": ""
         },
         "r": {
           "name": "Collateral Damage",
           "brief": "Fire massive shell. Deals damage in line. Explodes at end for cone AoE.",
-          "full": "Fire an explosive shell in a line dealing massive physical damage. At the end of its range or on hitting an enemy champion, it explodes in a cone dealing physical damage. Knocks Graves back slightly.",
+          "full": "Graves fires an explosive shell dealing heavy damage to the first champion it hits, and pushing Graves back from recoil. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone.",
           "cooldown": "80/65/50s",
           "scaling": "150% AD"
         }
@@ -12947,9 +13187,10 @@
           "range_type": "ranged",
           "difficulty": "hard",
           "tier": "A",
-          "win_rate": 0.51,
-          "pick_rate": 0.08,
-          "ban_rate": 0.05
+          "win_rate": 0.4834,
+          "pick_rate": 0.1242,
+          "ban_rate": 0.0141,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -13065,9 +13306,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.51,
-        "pick_rate": 0.08,
-        "ban_rate": 0.05,
+        "win_rate": 0.4834,
+        "pick_rate": 0.1242,
+        "ban_rate": 0.0141,
         "win_rate_trend": "stable",
         "tier": "A",
         "patch_history": [
@@ -13088,8 +13329,15 @@
             "win_rate": 0.51,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4834,
+            "pick_rate": 0.1242,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "physical",
@@ -13163,7 +13411,7 @@
               "R"
             ],
             "name": "Full Burst",
-            "damage_estimate": "AA \u2192 Q \u2192 reload with E \u2192 AA \u2192 R execute"
+            "damage_estimate": "AA → Q → reload with E → AA → R execute"
           },
           {
             "sequence": [
@@ -13172,7 +13420,7 @@
               "AA"
             ],
             "name": "E Reset Burst",
-            "damage_estimate": "E dash + reload \u2192 double AA burst"
+            "damage_estimate": "E dash + reload → double AA burst"
           },
           {
             "sequence": [
@@ -13181,7 +13429,7 @@
               "R"
             ],
             "name": "Smoke Zone Burst",
-            "damage_estimate": "W blind \u2192 Q detonation \u2192 R execute"
+            "damage_estimate": "W blind → Q detonation → R execute"
           }
         ]
       },
@@ -13251,7 +13499,7 @@
       ],
       "resource": "mana",
       "range_type": "melee",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "tags": [
         "fighter",
         "mage",
@@ -13266,37 +13514,37 @@
       ],
       "abilities": {
         "passive": {
-          "name": "Thousand Cuts",
+          "name": "THOUSAND CUTS",
           "brief": "AAs deal bonus %max HP magic damage. Heals based on damage dealt.",
-          "full": "Gwen's auto-attacks deal bonus magic damage based on a percentage of the target's max HP. Gwen heals for a portion of the bonus damage dealt.",
+          "full": "Gwen's attacks deal bonus magic damage based on the target's health. She heals for a portion of the damage dealt to champions by this effect.",
           "cooldown": "",
           "scaling": ""
         },
         "q": {
-          "name": "Snip Snip!",
+          "name": "SNIP SNIP!",
           "brief": "2-6 snips in a cone. Center snips deal true damage.",
-          "full": "Snip 2-6 times in a cone (more snips from AA stacks). Each snip deals magic damage. The center of each snip deals TRUE damage instead. More AAs before casting = more snips.",
+          "full": "Gwen snips her scissors in a cone up to 6 times dealing magic damage. Gwen deals true damage to units in the center and applies her passive to them on each snip.",
           "cooldown": "5.5/5/4.5/4s",
           "scaling": "5% AP per snip"
         },
         "w": {
-          "name": "Hallowed Mist",
+          "name": "HALLOWED MIST",
           "brief": "Create a zone. Gwen is untargetable from outside the zone.",
-          "full": "Create a misty zone around Gwen. Gwen cannot be targeted or hit by enemies outside the zone. The zone follows Gwen once (she can reposition it). Lasts 4 seconds.",
+          "full": "Gwen summons mist that protects her from enemies outside of it. She can only be targeted by enemies who enter the mist.",
           "cooldown": "18/16/14/12s",
           "scaling": ""
         },
         "e": {
-          "name": "Skip 'n Slash",
+          "name": "SKIP 'N SLASH",
           "brief": "Dash. Gain bonus AS + range + on-hit for 4s.",
-          "full": "Dash in target direction. For 4 seconds, gain bonus attack speed, bonus range, and bonus on-hit magic damage.",
+          "full": "Gwen dashes a short distance then gains Attack Speed, attack range, and magic damage on-hit for a few seconds. If she hits an enemy during that time, this ability's cooldown is partially refunded.",
           "cooldown": "10/8/6/4s",
           "scaling": ""
         },
         "r": {
-          "name": "Needlework",
+          "name": "NEEDLEWORK",
           "brief": "3-cast ult. Each fires needles. Each successive cast fires more needles.",
-          "full": "Cast 1: Fire a needle dealing magic damage and applying slow. Cast 2 (recast): Fire 3 needles. Cast 3 (recast): Fire 5 needles. Must hit an enemy to unlock next cast.",
+          "full": "Gwen hurls a needle that slows enemies hit, deals magic damage, and applies A Thousand Cuts to champions hit. This ability can be cast up to two more times, with each cast throwing additional needles and dealing more damage.",
           "cooldown": "80/65/50s",
           "scaling": "8% AP per needle"
         }
@@ -13339,9 +13587,10 @@
           "range_type": "melee",
           "difficulty": "hard",
           "tier": "S",
-          "win_rate": 0.52,
-          "pick_rate": 0.08,
-          "ban_rate": 0.08
+          "win_rate": 0.4859,
+          "pick_rate": 0.0147,
+          "ban_rate": 0.0031,
+          "patch": "7.1f"
         }
       },
       "graph_edges": [
@@ -13468,9 +13717,9 @@
         }
       },
       "realtime": {
-        "win_rate": 0.52,
-        "pick_rate": 0.08,
-        "ban_rate": 0.08,
+        "win_rate": 0.4859,
+        "pick_rate": 0.0147,
+        "ban_rate": 0.0031,
         "win_rate_trend": "stable",
         "tier": "S",
         "patch_history": [
@@ -13491,8 +13740,15 @@
             "win_rate": 0.52,
             "pick_rate": 0.08,
             "change": "unchanged"
+          },
+          {
+            "patch": "7.1f",
+            "win_rate": 0.4859,
+            "pick_rate": 0.0147,
+            "change": "unchanged"
           }
-        ]
+        ],
+        "patch": "7.1f"
       },
       "features": {
         "damage_type": "magic",
@@ -13566,7 +13822,7 @@
               "Q"
             ],
             "name": "Standard DPS",
-            "damage_estimate": "E AS boost \u2192 AA stack \u2192 Q snip burst"
+            "damage_estimate": "E AS boost → AA stack → Q snip burst"
           },
           {
             "sequence": [
@@ -13580,7 +13836,7 @@
               "R3"
             ],
             "name": "Full All-in",
-            "damage_estimate": "W safety \u2192 E in \u2192 AA + Q + triple R needles"
+            "damage_estimate": "W safety → E in → AA + Q + triple R needles"
           },
           {
             "sequence": [

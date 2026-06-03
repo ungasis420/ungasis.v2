@@ -1,0 +1,180 @@
+{
+  "patch": "7.1f",
+  "scraped_at": "2026-06-03T17:00:00Z",
+  "changes": [
+    {
+      "champion_id": "kayle",
+      "name": "Kayle",
+      "type": "buff",
+      "note": "As a scaling champion, Kayle’s early laning phase has been leaving her under too much pressure. We’re increasing her base Attack Damage and mana regeneration to give her a steadier start in lane.",
+      "ability_changes": [
+        {
+          "ability": "Base Stats",
+          "details": [
+            "Base Attack Damage: 50 → 54",
+            "Mana Regeneration: 12 → 16"
+          ]
+        },
+        {
+          "ability": "Celestial Blessing",
+          "details": [
+            "Base Healing: 65/105/145/185 → 95/125/155/185"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "taliyah",
+      "name": "Taliyah",
+      "type": "nerf",
+      "note": "",
+      "ability_changes": [
+        {
+          "ability": "Threaded Volley",
+          "details": [
+            "Base damage from the first hit of 5 rocks：50/70/90/110 → 40/60/80/100"
+          ]
+        },
+        {
+          "ability": "Seismic Shove",
+          "details": [
+            "Cast Radius: 9 → 8"
+          ]
+        },
+        {
+          "ability": "Unraveled Earth",
+          "details": [
+            "First stone’s detonation Damage: 30/45/60/75 → 20/35/50/65"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ambessa",
+      "name": "Ambessa",
+      "type": "nerf",
+      "note": "Ambessa has been too dominant in the early game thanks to the high base shield value on her second ability, but her durability falls off later into the match. We’re adjusting the scaling structure of her shield by lowering its base value and increasing its per-level growth, giving her foes more room to trade early while improving Ambessa’s survivability in the late game.",
+      "ability_changes": [
+        {
+          "ability": "Repudiation",
+          "details": [
+            "Shield: 95 ~ 319 (Based on Level) + 125% Bonus Attack Damage → 50 ~ 330 (Based on Level) + 120% Bonus Attack Damage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "ksante",
+      "name": "K'sante",
+      "type": "buff",
+      "note": "",
+      "ability_changes": [
+        {
+          "ability": "All Out",
+          "details": [
+            "Max Health lost: 25% → 30%",
+            "Bonus Armor lost: 70% → 80%",
+            "Bonus Magic Resist lost: 70% → 80%"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "gragas",
+      "name": "Gragas",
+      "type": "nerf",
+      "note": "Gragas has been a dominant pick in higher levels of play for a while, largely due to the reliable damage from his second ability. So, we’re adjusting its damage structure by reducing some of its base damage and AP scaling, while increasing the damage dealt based on target maximum Health. This allows Gragas to maintain his solid jungle clear efficiency while also making his burst against squishier champions less oppressive.",
+      "ability_changes": [
+        {
+          "ability": "Drunken Rage",
+          "details": [
+            "Damage: 65/90/115/140 + 90% Ability Power + 7% Target’s Max Health → 35/70/105/140 + 70% Ability Power + 8% Target’s Max Health"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "viego",
+      "name": "Viego",
+      "type": "nerf",
+      "note": "Viego’s jungle clear speed has been too efficient, allowing him to snowball games more consistently than other junglers. We’re reducing the current Health damage on his first ability to slow down his early tempo. In addition, the execution potential of his fourth ability in teamfights has been outperforming, so we’re tightening its damage area to require more precise positioning and timing when engaging.",
+      "ability_changes": [
+        {
+          "ability": "Blade of the Ruined King",
+          "details": [
+            "Damage based on the target’s current Health: 3%/4%/5%/6% → 2%/3%/4%/5%"
+          ]
+        },
+        {
+          "ability": "Heartbreaker",
+          "details": [
+            "Damage Radius: 3 → 2.75"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "akshan",
+      "name": "Akshan",
+      "type": "adjust",
+      "note": "Akshan has been out of the spotlight for quite some time. Currently, during the laning phase, he relies too heavily on his third ability to find trading opportunities, resulting in a very high execution requirement. We’re increasing the damage of his first ability to give players more flexibility and strategic options when trading in lane.",
+      "ability_changes": [
+        {
+          "ability": "Avengerang",
+          "details": [
+            "Damage: 5/35/65/95 + 80% Attack Damage → 10/40/70/100 + 85% Attack Damage"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "norra",
+      "name": "Norra",
+      "type": "nerf",
+      "note": "",
+      "ability_changes": [
+        {
+          "ability": "Memory Surge",
+          "details": [
+            "Base Damage: 60/120/180/240 → 55/110/165/220"
+          ]
+        },
+        {
+          "ability": "Portalpalooza!",
+          "details": [
+            "Damage: 100/150/200 + 60% Ability Power → 100/140/180 + 55% Ability Power"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "kogmaw",
+      "name": "Kog'maw",
+      "type": "nerf",
+      "note": "Kog’Maw’s second ability currently deals too much percentage max Health damage, giving frontliners very limited room to respond against him. We’re slightly reducing its percentage max Health damage to give tank champions a more manageable experience when facing Kog’Maw.",
+      "ability_changes": [
+        {
+          "ability": "Bio-Arcane Barrage",
+          "details": [
+            "Percentage of Damage based on Max Health: 2/3/4/5% → 1.5/2.5/3.5/4.5%"
+          ]
+        }
+      ]
+    },
+    {
+      "champion_id": "shen",
+      "name": "Shen",
+      "type": "buff",
+      "note": "",
+      "ability_changes": [
+        {
+          "ability": "Twilight Assault",
+          "details": [
+            "Max Health Damage: 2.5/3/3.5/4% → 3/3.5/4/4.5%",
+            "Empowered Spirit Blade Max Health Damage: 5/5.5/6/6.5% → 5.5/6/6.5/7%"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 15b58e44ad57f6cb7c1ef63b1e0199d6d26e211d Mel <mel@aetherniti.com> 1778856540 +0800	commit (initial): Initial commit - RiftCoach v1
+15b58e44ad57f6cb7c1ef63b1e0199d6d26e211d 0000000000000000000000000000000000000000 Mel <mel@aetherniti.com> 1778856546 +0800	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 15b58e44ad57f6cb7c1ef63b1e0199d6d26e211d Mel <mel@aetherniti.com> 1778856546 +0800	Branch: renamed refs/heads/master to refs/heads/main
+15b58e44ad57f6cb7c1ef63b1e0199d6d26e211d 5e0f7df75d0d4406a994ad905ecdc014c86b7ed3 Mel <mel@aetherniti.com> 1778949590 +0800	commit: Phase 4.3 + 4.5: AI Reasoning Layer + Build Intelligence Layer
+5e0f7df75d0d4406a994ad905ecdc014c86b7ed3 beb21a4f18038b350b61e01420ea2ed59e43d0bc Mel <mel@aetherniti.com> 1778972404 +0800	commit: Phase 5.0 partial - before Cline edits
+beb21a4f18038b350b61e01420ea2ed59e43d0bc 622af01ee659117eedb74dd6ddf078f4caede4cc Mel <mel@aetherniti.com> 1779029246 +0800	commit: Update AI agent instructions, rules, prompts, and Cline config
+622af01ee659117eedb74dd6ddf078f4caede4cc 2f862077ed436a7ef889140ec4c8a29efba777f5 Mel <mel@aetherniti.com> 1779029364 +0800	commit: Update agent, delete duplicate prompt, finalize AI config
+2f862077ed436a7ef889140ec4c8a29efba777f5 7607178773c6a0fc184a48db68b368dcf1d9f7f5 Mel <mel@aetherniti.com> 1779029780 +0800	commit: Update skill.md
+7607178773c6a0fc184a48db68b368dcf1d9f7f5 18df0d9d1ae415a684b9475dd1a45343961141bf Mel <mel@aetherniti.com> 1779033112 +0800	commit: Add API matrix documentation
+18df0d9d1ae415a684b9475dd1a45343961141bf 50b62bcceb9d8320ba490da1f535e3449500081d Mel <mel@aetherniti.com> 1779033352 +0800	commit: Fix skill.md content
+50b62bcceb9d8320ba490da1f535e3449500081d c5c92bca351830e408e8b4664c2db0bd015ce539 Mel <mel@aetherniti.com> 1779048595 +0800	commit: feat(phase5.0): complete AI reasoning accuracy — cascade validation, DB cross-check, enricher cleanup
+c5c92bca351830e408e8b4664c2db0bd015ce539 ee4c006ad91a99a478f5603d0e10171c109bde19 Mel <mel@aetherniti.com> 1779050368 +0800	commit: feat(phase5.5): 6-provider cascade — Cerebras, Groq, Google AI, OpenRouter, Mistral, Together — 114 attempts
+ee4c006ad91a99a478f5603d0e10171c109bde19 7cbeeaa9865043204dd4456ef57e82130ab765ef Mel <mel@aetherniti.com> 1779063543 +0800	commit: feat(phase5.7): task 1 — inject ability type tags + interaction map into reasoning prompt (8044 chars enriched context)
+7cbeeaa9865043204dd4456ef57e82130ab765ef 76b42851a0ffb447816b90abbb451c2df8f264bb Mel <mel@aetherniti.com> 1779072316 +0800	commit: feat(phase5.7): task 2 — buildOrderRationale field + BuildOrder UI component with numbered steps
+76b42851a0ffb447816b90abbb451c2df8f264bb ae038c54e8fa3257949c03bd2c4c270efb35eb62 Mel <mel@aetherniti.com> 1779103667 +0800	commit: feat(phase5.7): task 4 — Deep WHY Gate rejects generic output, accepts grounded reasoning with champion/ability/item references
+ae038c54e8fa3257949c03bd2c4c270efb35eb62 d7e9fb10ab548dd2558c52f4c71b624ace9305fd Mel <mel@aetherniti.com> 1779104969 +0800	commit: feat(phase5.7): task 5 — Champion Abilities UI + BuildOrder + synergy/matchup wiring restored
+d7e9fb10ab548dd2558c52f4c71b624ace9305fd 9e820c893bc47801f20b790244db4ae2a94e37a8 Mel <mel@aetherniti.com> 1779127107 +0800	commit: feat(phase5.8): intent layer — detects tank/ap/burst/etc, adjusts AI reasoning + fix all TS errors (8→0)
+9e820c893bc47801f20b790244db4ae2a94e37a8 82105042368631fd14c15b9b7ea8263df960a728 Mel <mel@aetherniti.com> 1779129500 +0800	commit: docs: merge copilot-instructions + appforge.agent.md with Phase 5.7/5.8 updates
+82105042368631fd14c15b9b7ea8263df960a728 b64bf24373b84d9ae3e53d44b8199b842883d59c Mel <mel@aetherniti.com> 1779140071 +0800	commit: Phase 5.8.1: Dynamic Build Swapping - 20 variant pools, intent extractor, build modifier, UI badge

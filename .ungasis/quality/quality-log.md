@@ -1771,5 +1771,15 @@ History database tracker to monitor quality scores, dimension ratings, and impro
 
 | 2026-06-03 | .agents/skills/commander/SKILL.md | 8.4 | C:10/A:10/Cl:8/F:10/R:2 | Auto-scored |
 
+| 2026-06-03 | .ungasis/memory/memory-rules.md | 9.6 | C:10/A:10/Cl:8/F:10/R:10 | Auto-scored |
+
+| 2026-06-03 | .ungasis/jarvis-core/JARVIS_CORE.md | 9.6 | C:10/A:10/Cl:8/F:10/R:10 | Auto-scored |
+
+| 2026-06-03 | .agents/skills/commander/SKILL.md | 8.4 | C:10/A:10/Cl:8/F:10/R:2 | Auto-scored |
+
+| 2026-06-03 | docs/COPILOT-LAUNCHER.md | 7.3 | C:8/A:6/Cl:10/F:10/R:2 | Auto-scored |
+
+| 2026-06-03 | docs/UNGASIS-MASTER-CONTEXT-PACK.md | 6.3 | C:4/A:4/Cl:8/F:8/R:10 | Auto-scored |
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

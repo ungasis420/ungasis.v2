@@ -1,19 +1,18 @@
 ══════════════════════════════════════════
 🤖 UNGASIS JARVIS — Daily Pulse
-Date: 2026-06-03 12:53 PM
+Date: 2026-06-03 03:47 PM
 ══════════════════════════════════════════
 📋 LAST SESSION
-June 3, 2026 on June 3, 2026
-No details available.
+** F21d — Graphify Auto-Failover Wrapper Script on June 3, 2026
+**
+- Created `scripts/graphify-run.py` to run Graphify with automatic provider rotation/failover (groq -> cerebras -> openrouter -> together -> gemini).
+- Integrated failover commands (`graph-rebuild`, `graph-update`) into UNGASIS CLI wrapper `scripts/ungasis.py`.
 
 📊 TASK QUEUE
 Pending: 5 | Completed: 14 | Total: 19
 
 ⚠️  WARNINGS
-Active: 3
-- File size exceeds 200 lines [🟡 WARNING] in .ungasis/scout/research-inbox.md
-- File size exceeds 200 lines [🟡 WARNING] in .ungasis/quality/quality-log.md
-- CONTEXT.md >500 lines [🟡 WARNING] in CONTEXT.md has 517 lines
+Active: 0
 
 🗂️  PROJECTS
 2 active
@@ -31,7 +30,6 @@ Files >90 days old: 0
 ══════════════════════════════════════════
 💡 SUGGESTED NEXT ACTIONS
 - [Queue] [NEXT] RiftCoach Phase 5.7 kickoff — Deep WHY Layer
-- [Warnings] Address active warnings (3 unresolved)
 ══════════════════════════════════════════
 
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
