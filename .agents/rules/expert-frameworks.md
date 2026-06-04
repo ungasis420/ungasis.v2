@@ -63,5 +63,11 @@ Enhanced:
 - "Energy unsustainable" check — am I spending 4 hours on a 30-min task?
 - Kill condition: if 3 retries fail, rewrite the prompt entirely
 
+## INVESTIGATION LIMIT Enhancement (+ Chip Huyen "Fail Fast")
+- 3-strike rule: after 3 failed lookups, ASK the user
+- Never search for secrets/credentials — always ask
+- Cost-check before investigation chains (>5 commands = ask first)
+- Marathon detection: 3+ scratch scripts or 5+ scans = STOP and ask
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -52,5 +52,34 @@ Every token has a cost. Minimize waste without sacrificing quality.
 - Flag sessions that exceed 20 exchanges
 - Log model used per task for optimization review
 
+## Investigation Limit Protocol (Anti-Marathon Rule)
+When searching for information, configuration, or troubleshooting:
+
+1. **3-Strike Rule:** After 3 failed attempts to find/resolve something, STOP and ASK the user
+   - Don't search PowerShell history, browser profiles, git logs, or conversation archives
+   - Don't create more than 3 scratch/test scripts for the same question
+   - Don't scan filesystem recursively for the same pattern more than twice
+
+2. **Ask-First Threshold:** If the answer requires USER-SPECIFIC knowledge
+   (API keys, passwords, account details, personal preferences), ASK IMMEDIATELY
+   - Never search for secrets — ask the user to provide them
+   - Never scan logs/history for credentials
+   - Examples: "Which key is your Pro key?", "What's your preferred port?"
+
+3. **Cost Check:** Before starting an investigation chain, estimate:
+   - "Will this take more than 5 commands to resolve?"
+   - If YES → ask the user first, then investigate with their guidance
+   - If NO → proceed, but stop at 3 failures
+
+4. **Marathon Detection:** If you notice yourself:
+   - Creating 3+ scratch scripts for the same problem → STOP, ask user
+   - Running 5+ search/scan commands without finding the answer → STOP, ask user
+   - Scheduling timers to wait for your own background tasks → STOP, simplify approach
+   - Searching conversation history or browser data → STOP, ask user directly
+
+5. **Response Template When Stopping:**
+   "I've checked [X] and [Y] but couldn't find [Z]. 
+   Can you tell me [specific question]? This will save us ~[N] minutes."
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

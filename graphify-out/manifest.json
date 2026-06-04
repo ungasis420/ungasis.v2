@@ -660,8 +660,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONTEXT.md": {
-    "mtime": 1780484963.7301536,
-    "ast_hash": "585cf81b5996643d116a6b04114df5f6",
+    "mtime": 1780525720.9868927,
+    "ast_hash": "bb6c86b8f2d2185850e2889b641427c0",
     "semantic_hash": ""
   },
   "C:\\Users\\63905\\Downloads\\ungasis\\CONVENTIONS.md": {
@@ -20197,6 +20197,136 @@
   "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach_Handoff_v18_Current_State_v15.md": {
     "mtime": 1780523411.3145382,
     "ast_hash": "2e7d5a1ade7c2b636847fa07ef4d8530",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.agents\\rules\\expert-frameworks.md": {
+    "mtime": 1780532312.7519069,
+    "ast_hash": "3f667eba3013ba28af506c8cc8d54323",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\.ungasis\\config\\multi-agent-protocol.md": {
+    "mtime": 1780525701.6045141,
+    "ast_hash": "57eb7d7d944af3af52ada9ccde122d23",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\projects\\riftcoach\\docs\\RiftCoach_Handoff_v18.1_Current_State_v15.1_FINAL.md": {
+    "mtime": 1780526604.6328259,
+    "ast_hash": "42b5fb2277b58108ab98d4efc8a57b92",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\find_keys.py": {
+    "mtime": 1780530149.914186,
+    "ast_hash": "e5e1b3b6c5530768128abb0e88da88b6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_keys.py": {
+    "mtime": 1780530037.197942,
+    "ast_hash": "91e15640b6fdc5029f2e781f4dc8d432",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_limit.py": {
+    "mtime": 1780530055.8291051,
+    "ast_hash": "478be58c4d0442b5d3767fc1bb67707b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_sequential.py": {
+    "mtime": 1780530165.7612083,
+    "ast_hash": "543ca68a29b73103ec997bf491d11b54",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_one.py": {
+    "mtime": 1780530386.8942823,
+    "ast_hash": "7af933c94d1fdd9a1e1d3bbf2d8840d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_one_limit.py": {
+    "mtime": 1780530394.570537,
+    "ast_hash": "f2ba77d98935ac64424f4d8778e4c3d1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\search_all_keys.py": {
+    "mtime": 1780530445.6263855,
+    "ast_hash": "03ee3436c14e8129a1d0bd11e05f594c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_pro_fresh.py": {
+    "mtime": 1780530483.363738,
+    "ast_hash": "9f8ae762a2babf9ea5171b892c1e6dbb",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_error_message.py": {
+    "mtime": 1780530807.6705368,
+    "ast_hash": "be085bdd1abf88493e0c39a9d36a1ff2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\check_process_env.py": {
+    "mtime": 1780530876.2276964,
+    "ast_hash": "356eaf1f0a0e6929a5e55cd3ad3dae0f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\read_config_json.py": {
+    "mtime": 1780530957.1439104,
+    "ast_hash": "a8ffc5110f869455e3452133ca29c7ec",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\scan_gemini_folder.py": {
+    "mtime": 1780530901.6021223,
+    "ast_hash": "9350fa5239970a79e61b24c091ffddde",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\search_conv_logs.py": {
+    "mtime": 1780530893.5698087,
+    "ast_hash": "a688c08f1c2cc3654ad73c8a54e65d6f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\search_more.py": {
+    "mtime": 1780530832.7962346,
+    "ast_hash": "bfdc46fe1c7969261d8b558ee5d5741b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_all_errors.py": {
+    "mtime": 1780530818.0624306,
+    "ast_hash": "ecac5c2e6c4cfecdee87809ac784bdca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_browser_key.py": {
+    "mtime": 1780530920.369846,
+    "ast_hash": "bc3df172eff5759321d6eecd2f0bf7d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\test_browser_key_error.py": {
+    "mtime": 1780530944.2447195,
+    "ast_hash": "6901e57137893d1612f1e904007dea23",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\view_browser_key.py": {
+    "mtime": 1780530912.981647,
+    "ast_hash": "108fc66c8ca2eb1e2abb6ce1a1d2c6f2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\view_mcp_config.py": {
+    "mtime": 1780530843.3765411,
+    "ast_hash": "a55b92145e17a635180e075bb481087d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\check_history.py": {
+    "mtime": 1780531065.6463654,
+    "ast_hash": "9df56c9a729b4d95073655dbf0f3511a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\search_conv_precise.py": {
+    "mtime": 1780531084.1107433,
+    "ast_hash": "a5418fbde594251ea4b9dbbd23c675d4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\search_conv_text.py": {
+    "mtime": 1780531075.322498,
+    "ast_hash": "5622af855f42399a8778045196ec6316",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\63905\\Downloads\\ungasis\\scratch\\search_git_history.py": {
+    "mtime": 1780530965.6071856,
+    "ast_hash": "df6a681eafee2266c3afc51d90374ad3",
     "semantic_hash": ""
   }
 }
