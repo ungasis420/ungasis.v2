@@ -27,6 +27,13 @@ import os
 import time
 import re
 
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
+except AttributeError:
+    pass
+
+
 # Provider priority order (highest rate limit first)
 PROVIDERS = [
     ('groq',       'GROQ_API_KEY',       '14.4K tokens/min — best for bulk'),

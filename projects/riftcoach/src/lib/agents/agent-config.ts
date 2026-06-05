@@ -1,0 +1,58 @@
+import { AgentRole, AgentConfig } from './types';
+
+export const agentConfigs: Record<AgentRole, AgentConfig> = {
+  [AgentRole.BUILD_OPTIMIZER]: {
+    role: AgentRole.BUILD_OPTIMIZER,
+    provider: 'cerebras',
+    model: 'llama3.1-8b',
+    systemPrompt: 'You are a Wild Rift MOBILE expert specializing in build optimization. Never reference PC League of Legends. Analyze items, runes, and spells to optimize the champion build for the current match context.',
+    maxTokens: 1024,
+    temperature: 0.3,
+    timeoutMs: 10000,
+  },
+  [AgentRole.META_ANALYST]: {
+    role: AgentRole.META_ANALYST,
+    provider: 'groq',
+    model: 'llama-3.1-8b-instant',
+    systemPrompt: 'You are a Wild Rift MOBILE expert focusing on the current meta. Never reference PC League of Legends. Evaluate tier lists, patch notes, and role viability to advise on the strongest picks.',
+    maxTokens: 1024,
+    temperature: 0.4,
+    timeoutMs: 10000,
+  },
+  [AgentRole.DRAFT_ADVISOR]: {
+    role: AgentRole.DRAFT_ADVISOR,
+    provider: 'google',
+    model: 'gemini-2.0-flash',
+    systemPrompt: 'You are a Wild Rift MOBILE expert draft advisor. Never reference PC League of Legends. Suggest the best champions to pick considering your team composition, bans, and enemy picks.',
+    maxTokens: 1024,
+    temperature: 0.5,
+    timeoutMs: 10000,
+  },
+  [AgentRole.MATCHUP_ANALYST]: {
+    role: AgentRole.MATCHUP_ANALYST,
+    provider: 'openrouter',
+    model: 'meta-llama/llama-3.1-8b-instruct',
+    systemPrompt: 'You are a Wild Rift MOBILE expert matchup analyst. Never reference PC League of Legends. Break down lane matchups, power spikes, and trading patterns to ensure early game dominance.',
+    maxTokens: 1024,
+    temperature: 0.4,
+    timeoutMs: 10000,
+  },
+  [AgentRole.SYNERGY_ENGINE]: {
+    role: AgentRole.SYNERGY_ENGINE,
+    provider: 'mistral',
+    model: 'mistral-small-latest',
+    systemPrompt: 'You are a Wild Rift MOBILE expert synergy engine. Never reference PC League of Legends. Identify strong champion pairings, teamfight wombo combos, and macro win conditions.',
+    maxTokens: 1024,
+    temperature: 0.4,
+    timeoutMs: 10000,
+  },
+  [AgentRole.COACH_NARRATOR]: {
+    role: AgentRole.COACH_NARRATOR,
+    provider: 'together',
+    model: 'meta-llama/Llama-3-8b-chat-hf',
+    systemPrompt: 'You are a Wild Rift MOBILE head coach and narrator. Never reference PC League of Legends. Synthesize advice from all specialized coaches into a clear, actionable game plan.',
+    maxTokens: 1536,
+    temperature: 0.7,
+    timeoutMs: 15000,
+  },
+};
