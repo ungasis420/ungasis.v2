@@ -144,6 +144,14 @@ export default function CoachPage() {
     description?: string
     swapCount?: number
   } | null>(null)
+  const [mode, setMode] = React.useState<'standard' | 'multi-agent'>('standard')
+  const [toast, setToast] = React.useState<string | null>(null)
+
+  const showToast = React.useCallback((message: string) => {
+    setToast(message)
+    const timer = setTimeout(() => setToast(null), 4000)
+    return () => clearTimeout(timer)
+  }, [])
 
   const scrollRef = React.useRef<HTMLDivElement>(null)
   const inputRef = React.useRef<HTMLInputElement>(null)
@@ -187,6 +195,39 @@ export default function CoachPage() {
       setIsStreaming(true)
 
       try {
+        if (mode === 'multi-agent') {
+          try {
+            const response = await fetch('/api/multi-coach', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ query: trimmed }),
+            })
+
+            if (!response.ok) {
+              const errText = await response.text().catch(() => 'Unknown error')
+              throw new Error(`Server error ${response.status}: ${errText}`)
+            }
+
+            const data = await response.json() // returns OrchestratorResult
+
+            updateMessageContent(
+              assistantId,
+              JSON.stringify({
+                type: 'multi-agent',
+                mergedContent: data.mergedContent,
+                agents: data.agents,
+                totalLatencyMs: data.totalLatencyMs,
+              })
+            )
+            setIsStreaming(false)
+            return
+          } catch (multiCoachError: any) {
+            console.error('[Coach] Multi-Agent failed, falling back to standard:', multiCoachError)
+            setMode('standard')
+            showToast('Multi-Agent failed. Reverting to Standard mode.')
+          }
+        }
+
         const currentMessages = useChatStore.getState().conversations.find(
           (c) => c.id === useChatStore.getState().activeConversationId
         )?.messages ?? []
@@ -302,7 +343,7 @@ export default function CoachPage() {
         setIsStreaming(false)
       }
     },
-    [isStreaming, addMessage, updateMessageContent, autoTitleActiveConversation]
+    [isStreaming, addMessage, updateMessageContent, autoTitleActiveConversation, mode, showToast]
   )
   // ─── Event Handlers ───────────────────────────────────────────────────
 
@@ -353,6 +394,34 @@ export default function CoachPage() {
           {/* Chat History Controls */}
           {mounted && (
             <div className="flex flex-none items-center gap-2" ref={historyRef}>
+              {/* Mode Toggle Switch */}
+              <div className="flex items-center gap-1 rounded-lg border border-white/10 bg-white/5 p-0.5 mr-2">
+                <button
+                  type="button"
+                  onClick={() => setMode('standard')}
+                  className={cn(
+                    'rounded-md px-2.5 py-1 text-xs font-medium transition',
+                    mode === 'standard'
+                      ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/30'
+                      : 'text-muted-foreground hover:text-foreground border border-transparent'
+                  )}
+                >
+                  Standard
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMode('multi-agent')}
+                  className={cn(
+                    'rounded-md px-2.5 py-1 text-xs font-medium transition',
+                    mode === 'multi-agent'
+                      ? 'bg-indigo-500/20 text-indigo-400 border border-indigo-500/30'
+                      : 'text-muted-foreground hover:text-foreground border border-transparent'
+                  )}
+                >
+                  Multi-Agent
+                </button>
+              </div>
+
               {/* New Chat Button */}
               <button
                 onClick={handleNewChat}
@@ -513,6 +582,34 @@ export default function CoachPage() {
                           if (parsed?.type === 'build') {
                             return <BuildView data={parsed.data} variant={variantData} />
                           }
+                          if (parsed?.type === 'multi-agent') {
+                            return (
+                              <>
+                                <MarkdownMessage
+                                  content={parsed.mergedContent}
+                                  className="text-sm text-foreground"
+                                />
+                                <div className="mt-4 border-t border-white/10 pt-3 text-xs space-y-1.5 text-muted-foreground">
+                                  <p className="font-semibold text-foreground mb-1.5 flex items-center gap-1.5">
+                                    <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
+                                    Multi-Agent Breakdown ({parsed.totalLatencyMs ? `${(parsed.totalLatencyMs / 1000).toFixed(2)}s` : 'N/A'})
+                                  </p>
+                                  <div className="grid grid-cols-3 gap-2 py-1 font-medium border-b border-white/5">
+                                    <span>Agent</span>
+                                    <span>Confidence</span>
+                                    <span>Latency</span>
+                                  </div>
+                                  {parsed.agents?.map((agent: any) => (
+                                    <div key={agent.role} className="grid grid-cols-3 gap-2 py-0.5">
+                                      <span className="font-mono text-[10px] text-slate-300">{agent.role}</span>
+                                      <span>{agent.error ? '❌ Error' : `${Math.round(agent.confidence * 100)}%`}</span>
+                                      <span>{agent.latencyMs ? `${(agent.latencyMs).toFixed(0)}ms` : 'N/A'}</span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </>
+                            )
+                          }
                         } catch {
                           // Not JSON — render as markdown
                         }
@@ -589,6 +686,12 @@ export default function CoachPage() {
           </button>
         </form>
       </div>
+      {toast && (
+        <div className="fixed bottom-20 right-6 z-50 rounded-xl bg-slate-900 border border-white/10 text-slate-200 px-4 py-3 text-xs shadow-2xl flex items-center gap-2 animate-in fade-in slide-in-from-bottom-5 duration-300">
+          <Sparkles className="h-4 w-4 text-indigo-400 animate-pulse" />
+          <span>{toast}</span>
+        </div>
+      )}
     </div>
   )
 }
