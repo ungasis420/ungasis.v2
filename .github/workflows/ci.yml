@@ -11,6 +11,8 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,4 +26,4 @@ jobs:
         run: python -m pip install --upgrade pip pyyaml jsonschema
 
       - name: Run local repository validation
-        run: python scripts/validate_repo.py
+        run: python scripts/ungasis-test.py

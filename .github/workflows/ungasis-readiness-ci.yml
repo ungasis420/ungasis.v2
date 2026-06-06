@@ -11,10 +11,12 @@ permissions:
 jobs:
   readiness:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout project
         uses: actions/checkout@v4
         # Production note: ask a technical helper to pin this action to a full commit SHA.
 
       - name: Run simple readiness check
-        run: python scripts/check_readiness.py
+        run: python scripts/ungasis-test.py
