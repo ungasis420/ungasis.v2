@@ -1,0 +1,35 @@
+name: RiftCoach CI
+on:
+  push:
+    branches: [main]
+    paths: ['projects/riftcoach/**']
+  pull_request:
+    branches: [main]
+    paths: ['projects/riftcoach/**']
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: projects/riftcoach
+    env:
+      CEREBRAS_API_KEY: test-key-ci
+      GROQ_API_KEY: test-key-ci
+      GOOGLE_GENERATIVE_AI_API_KEY: test-key-ci
+      OPENROUTER_API_KEY: test-key-ci
+      MISTRAL_API_KEY: test-key-ci
+      TOGETHER_AI_API_KEY: test-key-ci
+      UPSTASH_REDIS_REST_URL: test-key-ci
+      UPSTASH_REDIS_REST_TOKEN: test-key-ci
+      LANGFUSE_SECRET_KEY: test-key-ci
+      LANGFUSE_PUBLIC_KEY: test-key-ci
+      LANGFUSE_BASEURL: test-key-ci
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: projects/riftcoach/package-lock.json
+      - run: npm ci
+      - run: npm run qa
