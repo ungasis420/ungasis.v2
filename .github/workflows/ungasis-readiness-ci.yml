@@ -17,4 +17,4 @@ jobs:
         # Production note: ask a technical helper to pin this action to a full commit SHA.
 
       - name: Run simple readiness check
-        run: python scripts/check_readiness.py
+        run: python scripts/warn-check.py
