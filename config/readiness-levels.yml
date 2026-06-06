@@ -1,0 +1,16 @@
+levels:
+  learning:
+    meaning: "For study and practice only."
+    real_users_allowed: false
+  internal_testing:
+    meaning: "Safe to test with fake data."
+    real_users_allowed: false
+  private_beta:
+    meaning: "Small trusted group after review."
+    real_users_allowed: "limited"
+  production_candidate:
+    meaning: "All local checks pass; waiting for final human/security review."
+    real_users_allowed: "not before approval"
+  production:
+    meaning: "Approved, monitored, backed up, and supported."
+    real_users_allowed: true

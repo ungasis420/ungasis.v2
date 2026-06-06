@@ -1,0 +1,46 @@
+version: "4.1"
+default_tier: 2
+escalation:
+  after_failures: 3
+  rule: "Escalate only after repeated failure or clear complexity."
+tiers:
+  - id: 0
+    name: "Local"
+    models:
+      - "devstral"
+      - "qwen2.5-coder:14b"
+    use_for:
+      - "autocomplete"
+      - "private drafts"
+      - "zero cost local work"
+  - id: 1
+    name: "Large"
+    models:
+      - "Opus 4.8"
+      - "GPT-4.1"
+    use_for:
+      - "architecture"
+      - "security review"
+      - "production readiness"
+  - id: 2
+    name: "Medium"
+    models:
+      - "Sonnet 4"
+      - "GPT-4.1-mini"
+    use_for:
+      - "features"
+      - "bug fixes"
+      - "normal coding"
+  - id: 3
+    name: "Small"
+    models:
+      - "Haiku 4"
+      - "GPT-4.1-nano"
+    use_for:
+      - "docs"
+      - "formatting"
+      - "simple summaries"
+safety:
+  no_real_secrets_in_online_models: true
+  verify_current_model_availability_before_production: true
+  prefer_smallest_safe_model: true

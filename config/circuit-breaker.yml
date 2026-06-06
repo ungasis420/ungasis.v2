@@ -1,27 +1,5 @@
-# Analogy: The circuit breaker is like a smoke detector in a kitchen.
-# If the chef burns 3 dishes in a row (failure_threshold: 3), the detector
-# sounds an alarm, shuts down the stove (recovery_timeout: 10), and asks the
-# restaurant manager (fallback: escalate_to_human) to check what is wrong.
-
 circuit_breaker:
-  # failure_threshold: How many mistakes (like errors or failed tasks) we allow before stopping.
-  # If we hit 3 failures, we trip the switch to protect our system.
   failure_threshold: 3
-
-  # recovery_timeout: How long (in minutes or steps) the system pauses to cool down.
-  # After 10 steps or minutes, we will check if the issue is resolved.
   recovery_timeout: 10
-
-  # fallback: What to do when the system is blocked. We stop and ask the human (Mel) for help.
   fallback: escalate_to_human
-
-  # states: The three modes the circuit breaker can be in:
-  states:
-    # closed: Everything is running normally. The path is clear.
-    closed: "Normal — agents working fine"
-    # open: Too many errors occurred. We shut down everything and escalate to Mel.
-    open: "Blocked — too many failures, stop and escalate"
-    # half_open: A testing state. We try one task to see if the issue is gone. If it fails, we lock again.
-    half_open: "Probe — trying one more time before reopening"
-
-# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+  states: {closed: Normal, open: Blocked, half_open: Probe}

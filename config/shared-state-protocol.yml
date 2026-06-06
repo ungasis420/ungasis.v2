@@ -1,0 +1,31 @@
+version: "1.0"
+file_lock_rule: "Check > Edit > Release. Max 30 minutes."
+layers:
+  - layer: 1
+    file: "TASK_BOARD.md"
+    writers:
+      - "all"
+    mode: "edit with file lock"
+  - layer: 2
+    file: "memory/PROJECT_MEMORY.md"
+    writers:
+      - "any"
+    mode: "append only"
+  - layer: 3
+    file: "memory/DECISIONS.md"
+    writers:
+      - "planner"
+      - "reviewer"
+    mode: "decision records only"
+  - layer: 4
+    file: "docs/DECISION_LOG.md"
+    writers:
+      - "planner"
+      - "reviewer"
+    mode: "append or reviewed cleanup"
+  - layer: 5
+    file: "logs/agent-events.jsonl"
+    writers:
+      - "runtime"
+      - "tester"
+    mode: "append only, no secrets"
