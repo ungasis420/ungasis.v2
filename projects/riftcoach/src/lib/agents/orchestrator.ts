@@ -113,7 +113,7 @@ async function runSynergyEngine(request: AgentRequest): Promise<AgentResponse> {
   }
 }
 
-export async function orchestrate(request: AgentRequest): Promise<OrchestratorResult> {
+export async function orchestrate(request: AgentRequest, sessionId?: string): Promise<OrchestratorResult> {
   const startTime = performance.now();
 
   const settledPromises = await Promise.allSettled([
