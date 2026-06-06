@@ -1,19 +1,42 @@
-import { OrchestratorResult, AgentRole } from "./agents/types";
+// src/lib/observability.ts
+
+import { OrchestratorResult } from './agents/types';
+
+export interface AgentTrace {
+  agentId: string;
+  champion: string;
+  role: string;
+  provider: string;
+  model: string;
+  latencyMs: number;
+  tokensIn?: number;
+  tokensOut?: number;
+  status: string;
+  cacheHit: boolean;
+}
+
+export function traceAgentCall(trace: AgentTrace): void {
+  if (process.env.NODE_ENV !== 'production') {
+    console.log(JSON.stringify(trace));
+  }
+}
 
 export function traceOrchestration(result: OrchestratorResult, cacheHit: boolean): void {
-  // Stub
+  if (process.env.NODE_ENV !== 'production') {
+    const summary = {
+      agentsCount: result.agents.length,
+      totalLatencyMs: result.totalLatencyMs,
+      successCount: result.successCount,
+      failureCount: result.failureCount,
+      cacheHit,
+    };
+    console.log(JSON.stringify(summary));
+  }
 }
 
-export function traceAgentCall(data: any): void {
-  // Stub
-}
-
-export function getTraceConfig(role: AgentRole) {
+export function getTraceConfig(agentRole: string): { isEnabled: true; functionId: string } {
   return {
     isEnabled: true,
-    functionId: `agent-${role}`,
-    metadata: {
-      role,
-    },
+    functionId: `riftcoach-${agentRole}`,
   };
 }
