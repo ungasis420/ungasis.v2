@@ -2,14 +2,18 @@ import { NextResponse } from 'next/server';
 import { orchestrate } from '@/lib/agents/orchestrator';
 import { assembleContext } from '@/lib/context-assembler';
 import { AgentRequest } from '@/lib/agents/types';
+import { createSession, getSession, updateSession } from "@/lib/memory";
 
 export const maxDuration = 60;
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { query, userRank, championPool } = body;
+    const { query, userRank, championPool, sessionId: incomingSessionId } = body;
     let { champion, matchup, teamComp } = body;
+
+    const session = incomingSessionId ? { sessionId: incomingSessionId } : createSession();
+    const sessionId = session.sessionId;
 
     if (!query || typeof query !== 'string' || !query.trim()) {
       return NextResponse.json(
@@ -51,7 +55,7 @@ export async function POST(request: Request) {
     const timeoutId = setTimeout(() => controller.abort(), 30000);
 
     try {
-      const orchestratePromise = orchestrate(agentRequest);
+      const orchestratePromise = orchestrate(agentRequest, sessionId);
       const timeoutPromise = new Promise<never>((_, reject) => {
         controller.signal.addEventListener('abort', () => reject(new Error('Request timeout')));
       });
@@ -59,7 +63,7 @@ export async function POST(request: Request) {
       const result = await Promise.race([orchestratePromise, timeoutPromise]);
       clearTimeout(timeoutId);
 
-      return NextResponse.json(result);
+      return NextResponse.json({ ...result, sessionId });
     } catch (err: any) {
       clearTimeout(timeoutId);
       if (err.message === 'Request timeout') {
