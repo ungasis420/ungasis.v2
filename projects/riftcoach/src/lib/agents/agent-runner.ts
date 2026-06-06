@@ -1,6 +1,7 @@
 import { generateText, type LanguageModel } from 'ai';
 import { AgentRole, AgentRequest, AgentResponse } from './types';
 import { agentConfigs } from './agent-config';
+import { getTraceConfig } from "../observability";
 
 async function getProviderSDK(providerName: string): Promise<(modelId: string) => LanguageModel> {
   if (providerName === 'groq') {
@@ -76,6 +77,7 @@ async function executeCall(role: AgentRole, request: AgentRequest): Promise<Agen
       maxOutputTokens: config.maxTokens,
       temperature: config.temperature,
       abortSignal: abortController.signal,
+      experimental_telemetry: getTraceConfig(role),
     });
 
     clearTimeout(timeoutId);
