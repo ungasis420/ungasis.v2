@@ -581,3 +581,21 @@ Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 
 
+## Session Handoff — June 10, 2026 🖥️ PC (Sprint S1 Pre-Flight — Wave 1)
+
+**Sprint:** S1 Pre-Flight — Wave 1 (Parallel)
+**Model:** Gemini 3.1 Pro (High)
+
+**What was accomplished:**
+- Created `specs/TEMPLATE.md` to define standard feature spec structure.
+- Created `.ungasis/decisions/TEMPLATE.md` to define standard ADR structure.
+- Authored `ADR-001-ungasis-v51-upgrade.md` (UNGASIS OS v5.1 Upgrade).
+- Audited via `@quality-auditor`; fixed security violation (Claude Pro $20/mo) and reverted source of truth to `AGENTS.md`.
+
+**Files created:**
+- `specs/TEMPLATE.md`
+- `.ungasis/decisions/TEMPLATE.md`
+- `.ungasis/decisions/ADR-001-ungasis-v51-upgrade.md`
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
