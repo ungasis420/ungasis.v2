@@ -14,16 +14,19 @@ Agent Needs API ──> Checks Inventory for Env Var Name ──> Loads Var from
 3. Every API integration must specify a usage limit and rotation schedule in the Inventory Table.
 4. Flag and disable any integration whose limit is breached.
 
-## API Keys Inventory
+## API Provider Inventory
 
-| Integration Name | Env Variable Name | Daily Limit | Monthly Budget | Rotation Frequency | Status |
-|---|---|---|---|---|---|
-| Google Gemini AI | `GEMINI_API_KEY` | 2,000 requests | $19.99 | Every 3 months | Active |
-| Groq Cloud API | `GROQ_API_KEY` | 14,400 requests | Free tier | As needed | Active |
-| Cerebras LPU | `CEREBRAS_API_KEY` | 10,000 requests | Free tier | As needed | Active |
-| Together AI | `TOGETHER_API_KEY` | 5,000 requests | $5.00 | Every 30 days | Active |
-| OpenRouter API | `OPENROUTER_API_KEY` | 1,000 requests | $10.00 | Every 30 days | Active |
-| Mistral AI | `MISTRAL_API_KEY` | 2,000 requests | Free tier | As needed | Active |
+| Provider | Tier | Cost | Models | Surfaces | Status |
+|----------|------|------|--------|----------|--------|
+| Google AI Pro | T1-Free | $0 (subscription) | Gemini 2.5 Flash/Pro | AI Studio, NotebookLM, Jules, Antigravity | Active |
+| Cerebras | T1-Free | $0 | Llama 3.1-8b | API | Active |
+| Groq | T1-Free | $0 | Llama, Mixtral | API | Active (key #2) |
+| OpenRouter | T1-Free | $0 (free models) | Various | API | Active |
+| Mistral | T1-Free | $0 | Mistral models | API | Active |
+| Together | T1-Free | $0 | Various | API | Active |
+| Claude Pro | T2-Paid | $20/mo | Opus 4.6, Sonnet | Chat/Code/Cowork/Design/Dispatch/Remote | PENDING |
+| GitHub Actions | T3-Async | $0 (2000 min/mo) | N/A | Cron workflows | PLANNED (S5) |
+| Jules | T3-Async | $0 | Gemini | GitHub PRs | Active |
 
 ## Inputs/Outputs
 

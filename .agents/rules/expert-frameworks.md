@@ -1,3 +1,7 @@
+# ⚠️ SOURCE OF TRUTH: CLAUDE.md
+# This file is a reference copy. All rules are maintained in CLAUDE.md.
+# Last synced: 2026-06-10
+
 # UNGASIS OS — Expert Framework Enhancements
 > Embedded into existing cognitive architecture modules.
 > Not separate systems — extensions of what already exists.

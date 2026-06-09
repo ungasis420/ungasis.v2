@@ -1,3 +1,7 @@
+# ⚠️ SOURCE OF TRUTH: CLAUDE.md
+# This file is a reference copy. All rules are maintained in CLAUDE.md.
+# Last synced: 2026-06-10
+
 ---
 description: "Defines the autonomous loop and error recovery rules for completing mission tasks."
 alwaysApply: true
