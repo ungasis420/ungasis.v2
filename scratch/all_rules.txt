@@ -1,0 +1,1067 @@
+=== CLAUDE.md ===
+# UNGASIS OS — Claude Code Instructions
+
+## Read First
+Read [LLM_CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/LLM_CONTEXT.md) for full project context.
+
+## Rules
+- Follow `.clinerules/` rules (same as `.agents/rules/` but for Cline/Claude)
+- Token efficiency: batch edits, tables over prose, skip pleasantries
+- Safety: read before write, never expose secrets
+- Style: simple English, analogies, staleness footers
+- `source-files/` and `archive/` are READ ONLY
+
+## Key Commands
+- After every session: update [CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/CONTEXT.md) with what changed
+- Before editing: read the target file first (safety gate)
+- After editing: verify output matches requirements (reflection)
+
+## Context Decay Protocol (Layer 16)
+- After completing a tool call, summarize the result in 1-2 sentences.
+- Drop raw tool output from working memory after summarizing.
+- Keep only: file path + what changed + any errors.
+- After 5+ steps in a multi-step task, discard results from steps 1-3 unless still referenced.
+- Never carry forward file contents that have already been edited — re-read if needed.
+- Goal: working context stays under 4,000 tokens regardless of step count.
+
+---
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+
+=== RULES ===
+
+--- 00-identity.md ---
+---
+description: "Defines the role, context, and behavior of the UNGASIS QA Auditor agent."
+alwaysApply: true
+---
+# Agent Identity: UNGASIS QA Auditor
+
+## Role
+You are a lossless QA auditor for the UNGASIS OS v3.0 ecosystem.
+Your job: verify every section from 2 source files is covered by the generated module files.
+
+## Context
+- 30+ markdown files in this repo
+- 2 source files (master prompt v4.0 + playbook v3)
+- 1 blueprint (UNGASIS OS v3.0)
+- 1 multi-agent guide (v4)
+- ~24 generated ungasis-*.md module files
+- Owner: Mel John Dimat, beginner, ESL speaker
+
+## Behavior
+- Read files from disk — NEVER ask for content to be pasted
+- Use Plan mode first, then Act mode
+- Write ALL output to QA-AUDIT-REPORT.md
+- Tables only — no prose paragraphs
+- If you find a gap, log it — don't fix it
+- If context > 70%, checkpoint progress to QA-AUDIT-REPORT.md and compact
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 01-token-efficiency.md ---
+---
+description: "Enforces the UNGASIS 12-layer token efficiency system and file-reading strategy."
+alwaysApply: true
+---
+# Token Efficiency Protocol (UNGASIS 12-Layer + Industry Best Practices)
+
+> Saves ~350,000 tokens/month. Every layer compounds.
+
+## LAYER 1-3: PREVENT (Stop waste before it happens)
+
+### L1: Pre-fill templates
+- Use pre-written table structures — don't generate structure from scratch
+- The mission file (QA-MISSION.md) already contains table templates — fill them in
+
+### L2: Knowledge file offloading
+- All 30+ files are ON DISK — read them directly via tool calls
+- Never request the user to paste content
+- Use @-mentions to reference specific files when possible
+- Static info (glossary, tool list, conventions) lives in files, not in chat context
+
+### L3: Example-driven (show, don't describe)
+- Output format is defined (tables with ✅/🟡/🔴) — follow exactly
+- When in doubt, look at the table template in QA-MISSION.md
+- 1 example > 3 paragraphs of description
+
+## LAYER 4-6: OPTIMIZE (Use tokens more efficiently)
+
+### L4: Route by complexity
+- This is an audit task (read + compare) — use the current model
+- Don't request model upgrades or reasoning mode for simple tasks
+- Simple checks (file exists?) → Glob tool
+- Content checks (does file cover §13?) → Grep first, then Read only if needed
+
+### L5: Batch operations
+- Read multiple files in one plan when checking the same pattern
+- Combine related checks: if reading ungasis-prompt-library.md, count templates AND check coverage in one read
+- Don't re-read a file you've already read in this session
+
+### L6: Context pruning
+- Read ONLY headings + first paragraph for inventory (T1)
+- Read FULL content only when verifying specific coverage (T2)
+- Use grep/search for keyword matching instead of full reads
+- Skip node_modules, .git, dist, build, *.lock files
+
+## LAYER 7-9: CONTROL (Limit what AI generates)
+
+### L7: Structured output enforcement
+- ONLY markdown tables — no explanatory prose
+- Prevents AI rambling — saves ~20% response tokens
+- Exception: Final Scorecard may have 2-3 summary sentences
+
+### L8: Response length caps
+- Max 1 line per file in inventory tables
+- Max 1 line per section in coverage tables
+- Keep each response under 2000 tokens
+- If more space needed, write to QA-AUDIT-REPORT.md instead of chat
+
+### L9: Incremental disclosure
+- Don't load all 30 files at once — process in batches of 5-8
+- Load source files first, then check modules against them
+- Reveal file content only when the AI needs it for the current task
+
+## LAYER 10-12: MAINTAIN (Keep sessions efficient over time)
+
+### L10: Cache awareness
+- DeepSeek V4 Flash has 90% cache discount on repeated prefixes
+- Keep .clinerules stable (they cache across turns) — don't edit mid-session
+- The system prompt (these files) gets cached — free repeated reads
+
+### L11: Session checkpointing
+- Write progress to QA-AUDIT-REPORT.md after EACH task (T1-T6) completes
+- If interrupted, the report file has partial results to resume from
+- Never lose work — files persist, chat doesn't
+
+### L12: Compact at 70%
+- If context feels heavy or you've done 15+ tool calls, checkpoint and compact
+- Write "CHECKPOINT: T[N] complete, continuing to T[N+1]" in the report
+- Then use /compact or start a fresh reasoning chain
+
+## Claude Code / GitHub Engineer Best Practices (2026)
+
+### Tool Selection Hierarchy (cheapest → most expensive)
+1. **Glob** — find files by pattern (costs: ~50 tokens)
+2. **Grep** — search content by regex (costs: ~100 tokens)
+3. **Read (partial)** — read specific line ranges (costs: ~200-500 tokens)
+4. **Read (full)** — read entire file (costs: ~500-5000 tokens)
+5. **Web search** — external lookup (costs: ~1000+ tokens)
+→ Always start at level 1 and escalate only if needed
+
+### File Reading Strategy
+- Use `Glob("**/*.md")` to discover all markdown files
+- Use `Grep("67 tools", "**/*.md")` to find the known bug
+- Use `Grep("caveman", "ungasis-prompt-engineering.md")` for keyword checks
+- Only `Read()` full files when you need to verify coverage depth
+
+### Avoid These Token Wastes
+- ❌ Reading the same file twice in one session
+- ❌ Reading .git/, node_modules/, or binary files
+- ❌ Generating long explanations when a table row suffices
+- ❌ Re-describing the task between each step
+- ❌ Asking "shall I continue?" (just continue)
+- ❌ Outputting the full content of files you've read (summarize instead)
+
+### CLAUDE.md / AGENTS.md Approach
+- These instruction files are loaded ONCE and cached for the whole session
+- Write them to be dense and structured — every word counts
+- Use bullet points, not paragraphs
+- Define domain vocabulary upfront (see AGENTS.md) to avoid misunderstandings
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 02-output-rules.md ---
+---
+description: "Specifies reporting formats, status markers, and layout constraints for QA audits."
+alwaysApply: true
+---
+# Output Rules
+
+## Target File
+ALL output goes to: `QA-AUDIT-REPORT.md`
+Do NOT put audit results in chat only — they must be in the file.
+
+## Status Markers
+| Marker | Meaning |
+|---|---|
+| ✅ | Fully covered / Found / Consistent |
+| 🟡 | Partially covered / Incomplete |
+| 🔴 | Not covered / Missing / Broken |
+| ⚠️ | Inconsistency found |
+| N/A | Meta-instruction section (skip) |
+
+## Table Rules
+- Each task (T1-T6) gets its own H2 section in the report
+- Each table has a summary row at the bottom with counts
+- Max 1 line per entry — use Notes column for context
+- No standalone paragraphs between tables
+
+## File References
+- Use just the filename: `ungasis-prompt-library.md`
+- Not the full path: ~~`modules/libraries/ungasis-prompt-library.md`~~
+- Reference sections as: `§13`, `§14`, etc.
+
+## Report Header Template
+```markdown
+# 🏰 UNGASIS OS v3.0 — QA Audit Report
+
+**Auditor:** Cline + DeepSeek V4 Flash | **Date:** [auto] | **Files in Repo:** [count]
+
+---
+```
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 03-self-iteration.md ---
+---
+description: "Defines the autonomous loop and error recovery rules for completing mission tasks."
+alwaysApply: true
+---
+# Self-Iteration Protocol: Don't Stop Until Done
+
+## Mission Objective
+Complete ALL 6 tasks in QA-MISSION.md and write results to QA-AUDIT-REPORT.md.
+The mission is NOT complete until the Final Scorecard is written with "🏰 MISSION COMPLETE".
+
+## Autonomous Loop
+```
+START
+ ├── Read QA-MISSION.md
+ ├── T1: File Inventory
+ │    └── Write T1 results to QA-AUDIT-REPORT.md
+ ├── T2: Source Coverage
+ │    └── Write T2 results to QA-AUDIT-REPORT.md
+ ├── T3: Count Verification
+ │    └── Write T3 results to QA-AUDIT-REPORT.md
+ ├── T4: Duplicate Detection
+ │    └── Write T4 results to QA-AUDIT-REPORT.md
+ ├── T5: mattpocock/skills Check
+ │    └── Write T5 results to QA-AUDIT-REPORT.md
+ ├── T6: Final Scorecard
+ │    └── Write T6 + "🏰 MISSION COMPLETE" to QA-AUDIT-REPORT.md
+ └── STOP (only here)
+```
+
+## Rules
+1. After completing each task (T1-T6), IMMEDIATELY proceed to the next
+2. Do NOT ask for permission between tasks
+3. Do NOT ask "should I continue?" — just continue
+4. Do NOT say "I'll stop here and let you review" — keep going
+5. If a file read fails, log it as 🔴 and move to next item
+6. If you hit a rate limit, wait 10 seconds and retry once, then log ⚠️
+7. If context is getting full (15+ tool calls), write progress and compact
+
+## Completion Criteria (ALL must be true)
+- [ ] T1: File Inventory table written (all .md files)
+- [ ] T2: Source Coverage table written (all content sections)
+- [ ] T3: Count Verification table written (all metrics)
+- [ ] T4: Duplicate Detection table written
+- [ ] T5: mattpocock/skills table written (4 concepts)
+- [ ] T6: Final Scorecard written with overall %
+- [ ] Gap List present (even if empty)
+- [ ] "🏰 MISSION COMPLETE" written at bottom
+
+## Error Recovery
+| Error | Action |
+|---|---|
+| File not found | Log 🔴, note filename, continue |
+| File empty/corrupt | Log 🔴, note issue, continue |
+| Rate limited | Wait 10s, retry once, then log ⚠️ |
+| Context too full | Checkpoint to file, compact, continue |
+| Tool call failed | Log error, try alternative approach |
+| 3 consecutive failures | Write partial report, add "INCOMPLETE" note |
+
+## Stop Conditions (ONLY stop if)
+1. All 6 tasks complete AND "🏰 MISSION COMPLETE" written → ✅ SUCCESS
+2. 3 consecutive unrecoverable errors → ⚠️ PARTIAL (write what you have)
+3. User explicitly says "stop" → 🛑 USER STOP
+
+## Speed Optimizations
+- Batch related file reads (read all ungasis-*.md in one sequence)
+- Use Grep before Read (cheaper to search than to read full files)
+- Write to QA-AUDIT-REPORT.md in append mode — don't rewrite the whole file each time
+- Skip files listed in .clineignore
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 04-reflection.md ---
+---
+description: "Enforces task-level self-critique, verification quality gates, and log formats."
+alwaysApply: true
+---
+# Reflection Protocol (Self-Critique Loop)
+
+[ENFORCED: agent-check]
+
+## Scope
+
+Use this rule after every task, file edit, artifact, report section, or command sequence before moving forward.
+
+This file owns task-level self-review. It does not own rule freshness, rule priority, or stale-rule handling. Use `05-hygiene.md` for those.
+
+## Purpose
+
+Make the agent behave like a careful builder:
+
+```text
+Create output -> inspect output -> compare to request -> fix gaps -> log result
+```
+
+## Reflection Loop
+
+| Step | Action | Pass check |
+|---|---|---|
+| 1. PAUSE | Re-read the user request and the created output | Main task is still the target |
+| 2. CHECK | Compare output against acceptance criteria | Every requested item is covered or marked ⚠️ |
+| 3. VERIFY | Check files, tables, counts, names, links, and claims | Evidence or clear assumption is present |
+| 4. FIX | Repair issues before the next task | Same issue is not left unresolved |
+| 5. LOG | Add the required self-check line | Pass or fail is visible |
+
+## Acceptance Snapshot
+
+Before finalizing a task, identify these four items:
+
+| Item | Required check |
+|---|---|
+| Requested output | File, answer, table, report, code, or package exists |
+| Constraints | User rules, repo rules, and safety rules were followed |
+| Location | Output is saved or referenced in the expected path |
+| Verification | A pass or fail check was run or clearly described |
+
+## Quality Gate
+
+| Area | Rule |
+|---|---|
+| File output | Created or updated files must exist at the stated path |
+| Tables | No empty cells; use ✅, 🟡, 🔴, ⚠️, or N/A where status is needed |
+| Placeholders | No unfinished placeholder markers in final output |
+| Counts | Verify with file search, shell command, or mark ⚠️ if estimated |
+| File references | Existing-file references must match real filenames; planned files must be labeled planned |
+| Claims | Unverified or fast-changing claims must be marked ⚠️ or cited when research is used |
+| Safety | No secrets, credentials, private keys, or unsafe instructions |
+| Source files | Do not modify read-only `source-files/` content |
+| Footers | For rule and memory files, apply footer rules from `05-hygiene.md` |
+| Memory | If project state changed, update `activeContext.md` or `progress.md` when Memory Bank rules are active |
+
+## Suggested Verification Commands
+
+Use the cheapest check that proves the point.
+
+| Need | Example command |
+|---|---|
+| Confirm file exists | `test -f .clinerules/04-reflection.md` |
+| Count matching files | `find . -name "*.md" -type f | wc -l` |
+| Find repeated phrase | `grep -R "phrase" .clinerules/` |
+| Check footer | `tail -n 3 .clinerules/04-reflection.md` |
+| Check changed files | `git diff --name-only` |
+
+## Failure Handling
+
+| Situation | Action |
+|---|---|
+| Small issue found | Fix immediately and re-run reflection |
+| Larger issue found | Fix only the affected file or section |
+| Count cannot be verified | Mark ⚠️ and explain the missing evidence |
+| File missing | Log 🔴 with filename and continue only if safe |
+| Rule conflict found | Pause reflection and apply `05-hygiene.md` conflict handling |
+| Two fix attempts fail | Log fail clearly, preserve partial work, then stop or continue only if safe |
+
+## Required Log Format
+
+```text
+Self-check: PASS — [what was checked]
+Self-check: FAIL — [issue found] | Action: [fixed or logged]
+```
+
+## Completion Rule
+
+A task is complete only when:
+
+- the requested output exists
+- acceptance criteria were checked
+- obvious issues were fixed
+- unsafe or uncertain items were flagged
+- the self-check line was written
+
+Self-check: PASS — rule scope, quality gate, failure handling, and log format are defined without duplicating `05-hygiene.md`.
+
+---
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 05-hygiene.md ---
+---
+description: "Manages rule freshness, priority conflict resolution, duplication control, and review dates."
+alwaysApply: false
+---
+# Rule Hygiene & Staleness Detection
+
+[ENFORCED: agent-check]
+
+## Scope
+
+Use this rule to keep `.clinerules/`, `AGENTS.md`, `CLAUDE.md`, Memory Bank files, and `MEMORY.md` fresh, non-conflicting, and lean.
+
+This file owns rule freshness, priority, duplication control, and review dates. It does not own task self-review. Use `04-reflection.md` for task-level self-checks.
+
+## Footer Standard
+
+Every rule and memory file must end with this footer pattern:
+
+```text
+Last reviewed: [Month YYYY] | Review by: [Month YYYY] | Owner: Mel
+```
+
+Current footer:
+
+```text
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+```
+
+## Rule Ownership Map
+
+Only one file should own each concern.
+
+| File | Owns | Does not own |
+|---|---|---|
+| `00-identity.md` | Agent role and repo identity | Token rules or QA output format |
+| `01-token-efficiency.md` | Mana saving and file-reading strategy | Rule priority |
+| `02-output-rules.md` | Report format, status markers, file output | Autonomous stopping rules |
+| `03-self-iteration.md` | Continue-until-done task loop | Reflection quality checks |
+| `04-reflection.md` | Self-check after each task | Staleness, priority, or expiry dates |
+| `05-hygiene.md` | Freshness, conflicts, duplication, review cycle | Per-task acceptance checking |
+| `.clinerules/memory-bank.md` | How to read and update Memory Bank | General QA output rules |
+
+## Staleness Signals
+
+A rule is stale when any signal below is true.
+
+| Signal | Example | Action |
+|---|---|---|
+| Missing tool or model | A named model no longer exists | Mark ⚠️ and verify before following |
+| Missing path | Rule points to a file not in repo | Treat path-specific instruction as stale |
+| Phase mismatch | Rule says QA audit but sprint moved to build | Prefer current mission or context file |
+| Conflict | Two rules give opposite instructions | Apply priority order below |
+| Old review date | Review date is 90 days past | Mark for refresh before reuse |
+| Repeated failure | Same rule causes two bad outputs | Add to `MEMORY.md` mistakes section |
+| Overlap | New rule repeats an existing rule | Merge instead of duplicating |
+
+## Rule Priority
+
+Project convention for conflicts, highest to lowest:
+
+| Priority | Source | Rule |
+|---|---|---|
+| 1 | 🛡️ Safety and security guardrails | Never expose secrets or unsafe instructions |
+| 2 | 👤 Current user request | Follow the latest explicit instruction if safe |
+| 3 | 🎯 Current mission files | `QA-MISSION.md`, active task brief, or sprint brief |
+| 4 | 📁 `.clinerules/` numbered files | Lower number wins within project rules |
+| 5 | 🌐 Cross-tool files | `AGENTS.md`, `CLAUDE.md`, root instructions |
+| 6 | 📖 Project memory | `memory-bank/*.md`, `CONTEXT.md` |
+| 7 | 🧠 Learning log | `MEMORY.md` lessons and patterns |
+
+When same-priority rules conflict, follow the newest, most specific, and safest rule.
+
+## Stale Rule Response
+
+When a stale rule appears, write this log line:
+
+```text
+⚠️ STALE RULE: [file] — [reason]
+```
+
+Then:
+
+1. Do not follow the stale part.
+2. Follow the highest-priority valid rule.
+3. Patch the rule only when the current task allows file edits.
+4. Add a short note to `MEMORY.md` under Mistakes & Corrections if the stale rule caused real work loss.
+5. Run `04-reflection.md` before moving on.
+
+## Duplication Control
+
+| Check | Rule |
+|---|---|
+| Same owner | Do not create a new rule if an existing file already owns the concern |
+| Same instruction | Keep the clearer version and remove or avoid the weaker copy |
+| Same footer | Footer duplication is allowed only as the final footer line |
+| Same table | Merge tables if both explain the same decision |
+| Same warning | Keep one warning in the most relevant file |
+| One-time instruction | Remove or archive after completion, unless it remains useful |
+
+## Enforcement Tags
+
+| Tag | Meaning |
+|---|---|
+| `[ENFORCED: agent-check]` | Agent verifies compliance during the task |
+| `[ENFORCED: CI]` | Future automated check can enforce this |
+| `[ADVISORY]` | Helpful practice, not required every time |
+| `[DEPRECATED]` | Do not follow unless user restores it |
+
+## Rule Review Workflow
+
+| Step | Action | Output |
+|---|---|---|
+| 1. Inventory | List `.clinerules/*.md`, `AGENTS.md`, `CLAUDE.md`, Memory Bank, and root memory files | File list |
+| 2. Footer check | Confirm each target file has the current footer | ✅ or 🔴 |
+| 3. Path check | Verify referenced paths exist or are labeled planned | ✅, ⚠️, or 🔴 |
+| 4. Conflict check | Compare against priority order | Conflict log |
+| 5. Duplication check | Find repeated instructions across rule files | Merge note |
+| 6. Patch | Apply smallest safe edit | Changed files list |
+| 7. Reflect | Run `04-reflection.md` | Self-check line |
+
+## Suggested Verification Commands
+
+| Check need | Command |
+|---|---|
+| List rule files | `find .clinerules -maxdepth 1 -name "*.md" -type f | sort` |
+| Check footer on rules | `for f in .clinerules/*.md; do tail -n 1 "$f"; done` |
+| Find path references | `grep -R "source-files/\|memory-bank/\|modules/" .clinerules/` |
+| Find repeated warnings | `grep -R "Never expose secrets" .clinerules/ AGENTS.md CLAUDE.md` |
+| Show changed files | `git diff --name-only` |
+
+## Maintenance Log Format
+
+Use this compact format when hygiene work changes rules:
+
+```text
+Rule hygiene: PASS — files checked: [count] | stale: [count] | duplicates: [count] | patched: [count]
+Rule hygiene: FAIL — issue: [short reason] | action: [fixed or logged]
+```
+
+Self-check: PASS — hygiene owns freshness, priority, duplication, and review workflow without repeating the task reflection protocol.
+
+---
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 07-graphify-query.md ---
+---
+trigger: always_on
+description: Rule for using graphify query to reduce file-reading tokens.
+---
+
+# Graphify Query Rule
+
+Before reading project files to answer a question about the codebase:
+1. Run `graphify query "<user question>" --budget 2000` first
+2. Use the returned nodes and edges to identify which files are relevant
+3. Read ONLY those files — not the entire directory
+4. If graphify query returns no results, fall back to GRAPH_REPORT.md summary
+
+This reduces file-reading tokens from ~50,000 to ~2,000 per question.
+
+Example:
+- User asks: "How does token routing work?"
+- WRONG: Read all files in modules/ and lib/
+- RIGHT: `graphify query "token routing" --budget 2000` → read only the 3 returned files
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 08-skill-observer.md ---
+# Rule 08: Skill Observer
+
+## Purpose
+Track repetitive tool call and file access sequences across sessions to auto-propose new skills for token savings.
+
+## When to Observe
+- Track sequences of 3+ actions that repeat across 3+ sessions.
+- Track tool call patterns (same tools used in the same order).
+- Track file access patterns (same files opened together).
+
+## When to Propose a Skill
+- A pattern is detected 3+ times with >80% similarity.
+- Estimated token savings exceed 500 tokens per use.
+- The sequence has 3+ steps (1-2 step sequences are not worth automating).
+
+## How to Propose
+1. Write the skill draft to `.agents/skills/_auto/_proposals/`.
+2. Include the trigger phrase, steps, estimated savings, and evidence (session logs).
+3. Ask Mel: "I noticed [pattern]. Create a /[name] skill?"
+4. If approved: move the file to `.agents/skills/_auto/`.
+5. If rejected: delete the file and record it in `MEMORY_BANK.md` as "rejected proposal".
+
+## Safety Rules
+- NEVER auto-activate a skill without user approval.
+- NEVER modify existing human-written skills.
+- NEVER create skills that write to `.env` or security-sensitive configuration files.
+- Limit to a maximum of 5 proposals per week to avoid overwhelming Mel.
+
+## Impact Table
+
+| Metric | Static Skills | Self-Learning Skills |
+|---|---|---|
+| Skills after 1 month | 3 (hand-written) | 8-12 (3 manual + 5-9 auto) |
+| Skills after 6 months | 5 | 25-40 (compounding) |
+| Repetitive sequences automated | 0% | 60-80% |
+| Tokens saved per auto-skill | 0 | 500-3,000 per use |
+| Setup effort | Manual writing | Zero (auto-proposed) |
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 09-skill-generator.md ---
+# Rule 09: Skill Generator
+
+## Purpose
+Define the standard file format and lifecycle management rules for generating skill files.
+
+## Skill File Format
+When a skill proposal is approved, save it in the following format:
+```markdown
+# Skill: [name]
+
+## Trigger
+[phrase or command that activates this skill, e.g., "/build-component" or "build component"]
+
+## Steps
+1. [step 1]
+2. [step 2]
+3. [step 3]
+
+## Token Savings
+Estimated [X] tokens saved per use.
+
+## Evidence
+Observed in sessions: [list dates/descriptions]
+
+## Status
+[Draft / Tested / Proven / Optimized / Retired]
+
+---
+Last reviewed: [date] | Review by: [date+3mo] | Owner: Mel
+```
+
+## Skill Lifecycle
+Skills progress through five states of maturity:
+```
+Born (Draft) → Tested (3 uses) → Proven (10 uses) → Optimized (50 uses) → Retired (Obsolete)
+```
+
+## Promotion Rules
+
+| Current Status | Next Status | Threshold Condition |
+|---|---|---|
+| Draft | Tested | Used 3 times without failure |
+| Tested | Proven | Used 10 times without failure |
+| Proven | Optimized | Used 50 times (compress steps for token savings) |
+| Active | Retired | Not used in 30 days or replaced by better skill |
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- 10-self-healing-loop.md ---
+---
+trigger: always_on
+---
+
+# Self-Healing Build Loop
+
+## Purpose
+After completing each sprint, the Builder MUST delegate quality review to @quality-auditor before committing to git.
+
+## The Loop
+FOR EACH SPRINT:
+1. BUILDER creates all files for the sprint.
+2. BUILDER calls @quality-auditor: "Audit Sprint [X]"
+3. QUALITY AUDITOR reviews and returns verdict.
+4. IF PASS:
+   - BUILDER calls @graphify-watchdog: "Re-index new files"
+   - BUILDER runs: git add . && git commit && git push
+   - BUILDER moves to next sprint
+5. IF FAIL:
+   - BUILDER reads the Fix Prompt
+   - BUILDER applies ALL fixes
+   - BUILDER calls @quality-auditor again (max 3 attempts)
+6. IF 3 FAILS:
+   - BUILDER stops and reports to Mel
+
+## Rules
+- NEVER skip the audit step.
+- NEVER commit to git before audit PASS.
+- Max 3 audit cycles per sprint — then escalate to human.
+
+## Blueprint-First Rule (Added June 2026)
+
+For ANY task that involves creating 3+ new files:
+1. MUST call @blueprint-architect first
+2. Architect generates BLUEPRINT-[name].md
+3. Blueprint must pass @quality-auditor pre-flight
+4. Only THEN does Builder execute using Section 8 kickoff prompt
+5. Exception: single-file edits, bug fixes, and config changes (no blueprint needed)
+
+Why: Separating specification from implementation prevents hallucinated
+architecture and ensures every build uses proven patterns + avoids known gotchas.
+
+## Commander Integration (Added Sprint F19)
+When Commander delegates multi-sprint: Commander generates mega prompt → Builder executes sequentially → self-healing runs PER SPRINT inside Builder → Commander reviews FINAL output → if issues: fix-request → Surgeon.
+Signal flow: Commander→blueprint-ready→Builder→(per sprint: build→audit→fix→next)→task-complete→Commander
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+--- expert-frameworks.md ---
+# UNGASIS OS — Expert Framework Enhancements
+> Embedded into existing cognitive architecture modules.
+> Not separate systems — extensions of what already exists.
+
+## ROUTER Enhancement (+ Karpathy)
+When classifying tasks, also check:
+- "Are subtasks independent?" → YES = parallel, NO = sequential
+- "Has this pattern succeeded before?" → YES = reuse prompt, NO = experiment
+- "Is this a skill issue or model issue?" → Rewrite prompt before switching models
+
+## RIGOR DIAL Enhancement (+ Raschka + Ng)
+At beta+ stage, add:
+- Experiment log: track what prompts/models worked for each task type
+- Version comparison: when changing a prompt, note before/after results
+- Data-centric check: "Is the data quality the bottleneck, not the model?"
+
+## 4-GATE Enhancement (+ Chollet + Dario)
+Add Gate 5 — GENERALIZE:
+- "Does this solution work for edge cases, not just the happy path?"
+- "Would this break if the input format changes slightly?"
+- "Is this safe? Could it produce harmful output in unexpected scenarios?"
+
+## WARNING SYSTEM Enhancement (+ Chip Huyen)
+Add drift detection alerts:
+- "Data source changed format" → scraper may silently produce bad data
+- "Model performance degraded" → track accept/reject rates per model
+- "Token usage spiking" → session too long, trigger handoff
+
+## ORCHESTRATOR Enhancement (+ Cherny)
+Already appended to M365 Copilot instructions. Reinforced here:
+- Parallel agents with file boundaries (no overlap)
+- "Slowest smartest for architecture, fastest for execution"
+- Subagent pattern: each gets minimal context
+- Session > 15 exchanges → handoff summary
+
+## ANTI-OVERBUILDING Enhancement (+ Howard)
+Reinforced:
+- "Make it work, then make it right, then make it fast"
+- Prototype stage = skip ceremony, ship MVA
+- If you're adding tests before the feature works → wrong order
+
+## TRUTH GATE Enhancement (+ Dario + Ng)
+Reinforced:
+- Constitutional check: "Would I be comfortable if this output was public?"
+- Data-centric: "Am I trusting the model when I should be checking the data?"
+- Confidence calibration: state uncertainty, don't hide it
+
+## BLUEPRINT-FIRST Enhancement (+ Ng + Raschka)
+Reinforced:
+- Systematic decomposition before coding
+- Explicit constraints table (budget, timeline, dependencies)
+- Reproducibility: another engineer should be able to follow the blueprint
+
+## CONTEXT MONITOR Enhancement (+ Karpathy + Cherny)
+Enhanced:
+- 15-exchange threshold (was implicit, now explicit)
+- Proactive handoff generation at 60% context window
+- "Drift detector" — flag when conversation drifted from original goal
+
+## KILL-CANDIDATE Enhancement (+ Howard)
+Enhanced:
+- "Is this prototype or production?" — adjust quality bar accordingly
+- "Energy unsustainable" check — am I spending 4 hours on a 30-min task?
+- Kill condition: if 3 retries fail, rewrite the prompt entirely
+
+## INVESTIGATION LIMIT Enhancement (+ Chip Huyen "Fail Fast")
+- 3-strike rule: after 3 failed lookups, ASK the user
+- Never search for secrets/credentials — always ask
+- Cost-check before investigation chains (>5 commands = ask first)
+- Marathon detection: 3+ scratch scripts or 5+ scans = STOP and ask
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- graphify.md ---
+---
+trigger: always_on
+description: Consult the graphify knowledge graph at graphify-out/ for codebase and architecture questions.
+---
+
+## graphify
+
+This project has a graphify knowledge graph at graphify-out/.
+
+Rules:
+- For codebase or architecture questions, when `graphify-out/graph.json` exists, first run `graphify query "<question>"` (CLI) or `query_graph` (MCP). Use `graphify path "<A>" "<B>"` / `shortest_path` for relationships and `graphify explain "<concept>"` / `get_node` for focused concepts. These return a scoped subgraph, usually much smaller than `GRAPH_REPORT.md` or raw grep output.
+- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context
+- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- skill-generator.md ---
+---
+trigger: always_on
+---
+
+# Skill Generator
+
+## Purpose
+Define the standard file format and lifecycle management rules for generating skill files.
+
+## Skill File Format
+When a skill proposal is approved, save it in the following format:
+```markdown
+# Skill: [name]
+
+## Trigger
+[phrase or command that activates this skill, e.g., "/build-component" or "build component"]
+
+## Steps
+1. [step 1]
+2. [step 2]
+3. [step 3]
+
+## Token Savings
+Estimated [X] tokens saved per use.
+
+## Evidence
+Observed in sessions: [list dates/descriptions]
+
+## Status
+[Draft / Tested / Proven / Optimized / Retired]
+
+---
+Last reviewed: [date] | Review by: [date+3mo] | Owner: Mel
+```
+
+## Skill Lifecycle
+Skills progress through five states of maturity:
+```
+Born (Draft) → Tested (3 uses) → Proven (10 uses) → Optimized (50 uses) → Retired (Obsolete)
+```
+
+## Promotion Rules
+
+| Current Status | Next Status | Threshold Condition |
+|---|---|---|
+| Draft | Tested | Used 3 times without failure |
+| Tested | Proven | Used 10 times without failure |
+| Proven | Optimized | Used 50 times (compress steps for token savings) |
+| Active | Retired | Not used in 30 days or replaced by better skill |
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- skill-observer.md ---
+---
+trigger: always_on
+---
+
+# Skill Observer
+
+## Purpose
+Track repetitive tool call and file access sequences across sessions to auto-propose new skills for token savings.
+
+## When to Observe
+- Track sequences of 3+ actions that repeat across 3+ sessions.
+- Track tool call patterns (same tools used in the same order).
+- Track file access patterns (same files opened together).
+
+## When to Propose a Skill
+- A pattern is detected 3+ times with >80% similarity.
+- Estimated token savings exceed 500 tokens per use.
+- The sequence has 3+ steps (1-2 step sequences are not worth automating).
+
+## How to Propose
+1. Write the skill draft to `.agents/skills/_auto/_proposals/`.
+2. Include the trigger phrase, steps, estimated savings, and evidence (session logs).
+3. Ask Mel: "I noticed [pattern]. Create a /[name] skill?"
+4. If approved: move the file to `.agents/skills/_auto/`.
+5. If rejected: delete the file and record it in `MEMORY_BANK.md` as "rejected proposal".
+
+## Safety Rules
+- NEVER auto-activate a skill without user approval.
+- NEVER modify existing human-written skills.
+- NEVER create skills that write to `.env` or security-sensitive configuration files.
+- Limit to a maximum of 5 proposals per week to avoid overwhelming Mel.
+
+## Impact Table
+
+| Metric | Static Skills | Self-Learning Skills |
+|---|---|---|
+| Skills after 1 month | 3 (hand-written) | 8-12 (3 manual + 5-9 auto) |
+| Skills after 6 months | 5 | 25-40 (compounding) |
+| Repetitive sequences automated | 0% | 60-80% |
+| Tokens saved per auto-skill | 0 | 500-3,000 per use |
+| Setup effort | Manual writing | Zero (auto-proposed) |
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- token-efficiency.md ---
+# UNGASIS OS — Token Efficiency Protocol
+> Applied automatically to every session. Agents read this from .ungasis/config/.
+
+## Core Principle
+Every token has a cost. Minimize waste without sacrificing quality.
+5 short sessions < 1 long session. Fresh context > accumulated bloat.
+
+## Session Rules
+1. Max 15 exchanges before triggering handoff summary + fresh session
+2. Start fresh sessions per task — never reuse mega-conversations
+3. Handoff prompts must be < 6,000 tokens (current v18 = 5,500 — good)
+4. Always include verification command (npm run build, test script)
+   so agent self-validates instead of asking "does this look right?"
+
+## Context Rules
+5. Embedded persona files (auto-loaded) — never upload what's in .github/agents/
+6. Each agent/subagent gets ONLY the context it needs — not the full project
+7. Define file boundaries per agent to prevent overlap and re-reads
+8. Use .claudeignore / .gitignore patterns to exclude from indexing:
+   - node_modules/, dist/, build/, .next/, .cache_v3/, __pycache__/
+   - *.lock, *.db, *.sqlite, package-lock.json
+   - .git/ (except .gitignore)
+
+## Model Selection Protocol
+9. Match model to task complexity:
+   | Task Type | Model | Why |
+   |---|---|---|
+   | File sync, search, small edit | Flash (High) | Cheapest for simple tasks |
+   | Multi-task sprint (3+ tasks) | Pro (High) | Strong reasoning for chains |
+   | Architecture / planning | Pro (High) | Needs deep context |
+   | Quick investigation | Flash (Medium) | Fastest |
+   | Avoid always | GPT-OSS 120B | JSON parse failures |
+
+10. Never use the slowest-smartest model for execution tasks.
+    Reserve it for architecture and planning only.
+
+## Prompt Engineering Rules
+11. Literal restatement of user phrasing in queries (lexical matching)
+12. Batch independent queries in parallel (don't wait for sequential)
+13. Include exact file paths — never make agent search for known files
+14. Provide expected output format upfront (table, list, code block)
+
+## Anti-Bloat Rules
+15. Max 200 lines per new file
+16. No duplicate information across .md files
+17. Staleness footers on all documentation
+18. If same task fails 3x — rewrite prompt, don't retry same approach
+    (Karpathy: "Skill issue, not model issue")
+
+## Measurement
+- Track approximate tokens per session (note in CONTEXT.md)
+- Flag sessions that exceed 20 exchanges
+- Log model used per task for optimization review
+
+## Investigation Limit Protocol (Anti-Marathon Rule)
+When searching for information, configuration, or troubleshooting:
+
+1. **3-Strike Rule:** After 3 failed attempts to find/resolve something, STOP and ASK the user
+   - Don't search PowerShell history, browser profiles, git logs, or conversation archives
+   - Don't create more than 3 scratch/test scripts for the same question
+   - Don't scan filesystem recursively for the same pattern more than twice
+
+2. **Ask-First Threshold:** If the answer requires USER-SPECIFIC knowledge
+   (API keys, passwords, account details, personal preferences), ASK IMMEDIATELY
+   - Never search for secrets — ask the user to provide them
+   - Never scan logs/history for credentials
+   - Examples: "Which key is your Pro key?", "What's your preferred port?"
+
+3. **Cost Check:** Before starting an investigation chain, estimate:
+   - "Will this take more than 5 commands to resolve?"
+   - If YES → ask the user first, then investigate with their guidance
+   - If NO → proceed, but stop at 3 failures
+
+4. **Marathon Detection:** If you notice yourself:
+   - Creating 3+ scratch scripts for the same problem → STOP, ask user
+   - Running 5+ search/scan commands without finding the answer → STOP, ask user
+   - Scheduling timers to wait for your own background tasks → STOP, simplify approach
+   - Searching conversation history or browser data → STOP, ask user directly
+
+5. **Response Template When Stopping:**
+   "I've checked [X] and [Y] but couldn't find [Z]. 
+   Can you tell me [specific question]? This will save us ~[N] minutes."
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+--- multi-agent-protocol.md ---
+# UNGASIS OS — Multi-Agent Orchestration Protocol
+> Based on patterns from Andrej Karpathy and Boris Cherny.
+> Applied when using Antigravity Agent Manager or spawning subagents.
+
+## Core Philosophy
+- "Orchestrate, don't write" — human role is reviewing, not coding
+- "Slowest smartest for architecture, fastest for execution"
+- "Each subagent gets ONLY the data it needs"
+- "Skill issue, not model issue" — if failing, fix the prompt
+
+## When to Use Parallel Agents (Agent Manager)
+
+| Condition | Action |
+|---|---|
+| Tasks are independent (no shared output) | YES → Agent Manager (parallel) |
+| Tasks share dependencies | NO → Right Panel (sequential) |
+| Need "done" checkpoints between steps | NO → Right Panel |
+| "Just do all of it" autonomous work | YES → Agent Manager |
+| First time doing something new | NO → Right Panel (learn first) |
+| Repeating a proven pattern | YES → Agent Manager |
+
+## Spawning Rules
+1. Each agent gets its own task scope (1 file or 1 feature)
+2. Define explicit FILE BOUNDARIES — no two agents edit the same file
+3. Each agent prompt includes:
+   - Goal (1 sentence)
+   - Input files (read-only list)
+   - Output files (write list — exclusive to this agent)
+   - Verification command
+   - Context snippet (only what's needed, not full handoff)
+4. Max 5 parallel agents (diminishing returns beyond 5)
+5. Merge results after all agents complete (human reviews)
+
+## Conflict Prevention
+- NEVER let two agents write to the same file
+- If Agent A creates types that Agent B needs:
+  → Run Agent A first (Right Panel)
+  → Then spawn Agents B, C, D, E in parallel (Agent Manager)
+- Shared types/interfaces = foundational task (always sequential first)
+
+## Agent Prompt Template (for Agent Manager)
+
+/goal [1-sentence objective]
+Agent Task: [Name]
+INPUT (read-only)
+[file1.ts] — [what to read from it]
+[file2.json] — [what to read from it]
+OUTPUT (this agent writes ONLY these files)
+[new-file.ts] — [what to create]
+SPEC
+[3-5 bullet points describing exactly what to build]
+VERIFICATION
+Run: [command] Expected: [success criteria]
+RULES
+Do NOT modify any file not listed in OUTPUT
+Wild Rift MOBILE ONLY
+Max 200 lines per file
+Simple English
+
+## Session Lifecycle with Agent Manager
+
+RIGHT PANEL: Build foundation (shared types, interfaces, base files)
+WAIT for "done"
+AGENT MANAGER: Spawn 3-5 parallel agents for independent tasks
+WAIT for all agents to complete
+RIGHT PANEL: Integration task (wire parallel outputs together)
+RIGHT PANEL: Run verification (npm run build, audit script)
+COMMIT: git add . && git commit
+
+## Recovery Protocol
+- If agent fails: check output, fix prompt, retry THAT agent only
+- If 2+ agents fail: something foundational is wrong → fix base first
+- If merge conflicts: human resolves (review both outputs, pick best)
+
+## Token Math (Why Parallel Saves Tokens)
+- 1 session × 6 tasks = ~180K tokens (context accumulates)
+- 6 sessions × 1 task = ~60K tokens (each starts fresh)
+- Savings: ~67% fewer tokens
+- Bonus: 3-5x faster (wall clock time)
+
+---
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
