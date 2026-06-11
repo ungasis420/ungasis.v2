@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(), viteSingleFile()],
   base: "./",
   resolve: {
+    preserveSymlinks: true,
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
