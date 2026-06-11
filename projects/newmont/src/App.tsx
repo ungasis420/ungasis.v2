@@ -2,7 +2,7 @@ import React, { useState, useEffect, ChangeEvent } from 'react';
 import AppShell from '@/components/layout/AppShell';
 import Dashboard from '@/components/Dashboard';
 import SLACalculator from '@/components/SLACalculator';
-import { FieldGapsView, RequisitionsView, HoldAnalysisView } from '@/components/Views';
+import { CandidatePipelineView, SLAReportabilityView, RequisitionsView, HoldAnalysisView } from '@/components/Views';
 
 import { useDashboardStore } from '@/stores/dashboard';
 import {
@@ -78,10 +78,12 @@ export default function App() {
     switch (activeModule) {
       case 'dashboard':
         return <Dashboard />;
-      case 'fieldgap':
-        return <FieldGapsView />;
+      case 'candidates':
+        return <CandidatePipelineView />;
       case 'sla':
         return <SLACalculator />;
+      case 'slareport':
+        return <SLAReportabilityView />;
       case 'requisitions':
         return <RequisitionsView />;
       case 'holds':

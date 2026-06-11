@@ -59,12 +59,11 @@ export default function AppShell({ children }: AppShellProps) {
   const holdCount = requisitions.length > 0 
     ? requisitions.filter(r => r.requisitionStatus === 'On Hold').length 
     : 212;
-  const totalGaps = 130; // Static fallback or calculated from fields mapping
-
   const NAV = [
     { id: 'dashboard', label: 'Dashboard', icon: 'dashboard' as const, count: null },
-    { id: 'fieldgap', label: 'Field Gaps', icon: 'gaps' as const, count: totalGaps },
+    { id: 'candidates', label: 'Candidate Pipeline', icon: 'layers' as const, count: null },
     { id: 'sla', label: 'SLA Calculator', icon: 'calc' as const, count: null },
+    { id: 'slareport', label: 'SLA Reportability', icon: 'clock' as const, count: null },
     { id: 'requisitions', label: 'Requisitions', icon: 'reqs' as const, count: openCount },
     { id: 'holds', label: 'Hold Analysis', icon: 'hold' as const, count: holdCount },
   ];

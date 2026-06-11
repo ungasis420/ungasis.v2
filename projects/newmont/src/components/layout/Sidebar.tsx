@@ -17,8 +17,9 @@ export default function Sidebar() {
 
   const navItems: NavItem[] = [
     { key: 'dashboard', label: 'Dashboard', icon: '📊' },
-    { key: 'fieldgap', label: 'Field Gaps', icon: '🔍' },
+    { key: 'candidates', label: 'Candidate Pipeline', icon: '👥' },
     { key: 'sla', label: 'SLA Calculator', icon: '⏱️' },
+    { key: 'slareport', label: 'SLA Reportability', icon: '📈' },
     { key: 'requisitions', label: 'Requisitions', icon: '💼' },
     { key: 'holds', label: 'Hold Analysis', icon: '⏸️', disabled: true, badge: 'Soon' },
   ];
