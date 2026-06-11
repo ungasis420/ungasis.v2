@@ -146,6 +146,13 @@ Use after every task, file edit, or command sequence before moving forward.
 - After sprint: run `graphify update .` before commit
 - Advanced commands: `graphify path`, `graphify explain`, check `wiki/index.md`.
 
+## Known Issue: Community Labels (June 2026)
+- Current GRAPH_REPORT.md (commit abbbe223) has 4,580 communities, all labeled generically "Community N"
+- Archive from 2026-06-02 had 200 named communities — names were lost during rebuild
+- Impact: Cosmetic only. graph-search.py queries work via node/edge relationships, not labels
+- TODO: Re-run Graphify community labeling step in a future maintenance sprint
+- Priority: Low — defer until after Newmont deliverables
+
 ## Section 10: QA & Self-Healing
 - Blueprint-First: For ANY task creating 3+ new files → call @blueprint-architect first
 - Self-Healing Loop: After sprint, call @quality-auditor. Re-index → commit only AFTER audit PASS
