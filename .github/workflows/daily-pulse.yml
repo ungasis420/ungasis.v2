@@ -4,6 +4,9 @@ on:
     - cron: '0 22 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   pulse:
     runs-on: ubuntu-latest
