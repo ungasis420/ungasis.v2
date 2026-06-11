@@ -10,7 +10,7 @@
 ## Session Rules
 - Always cite sources
 - State confidence level (high/medium/low) for each finding
-- Save findings to docs/ or scratch/ as .md files
+- Save findings to modules/ or scratch/ as .md files
 - Cross-check against Graphify knowledge base
 <!-- Staleness: 2026-06-10 -->
 
