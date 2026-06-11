@@ -54,4 +54,4 @@ Upgrade to v5.1 "AUTONOMY" with:
 - [ ] RiftCoach Phase 6.0 after validation
 - [ ] Revenue Engine ON HOLD until RiftCoach ships
 
-<!-- Staleness: 2026-06-10 | Author: Mel John Dimat | Sprint: S1 -->
+> Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

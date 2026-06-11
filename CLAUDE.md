@@ -211,6 +211,7 @@ Use after every task, file edit, or command sequence before moving forward.
 - Session hygiene: /clear between unrelated tasks; manual /compact at 60% context; autocompact fires at 50% (CLAUDE_AUTOCOMPACT_PCT_OVERRIDE)
 - Token budget awareness: working context <4,000 tokens (Section 4); .claudeignore keeps archives/caches out of context
 
-<!-- Staleness: 2026-06-11 | Owner: Mel John Dimat | Review: September 2026 -->
 <!-- This file is the SINGLE SOURCE OF TRUTH for all agent rules. -->
 <!-- .agents/rules/ and .clinerules/ are reference copies only. -->
+
+> Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

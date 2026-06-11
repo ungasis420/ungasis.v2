@@ -72,8 +72,6 @@
 
 **Status:** UNGASIS OS v4.0 — FULLY COMPLETE (all archive packs absorbed)
 
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
-
 
 ## Session Handoff — June 2, 2026 🖥️ PC (Sprint F5)
 
@@ -109,8 +107,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 **Files created:** 12 `.ungasis/` config/template files, 1 root conventions file, 2 Antigravity rules/workflows.
 **Status:** UNGASIS OS v4.0 — FORM 1 COMPLETE & POLISHED
-
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Session Handoff — June 2, 2026 🖥️ PC (Sprint F7)
@@ -329,7 +325,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 **Known issues:** UI rules tab may require Antigravity restart to load newly added rule files.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ## Session Handoff — June 3, 2026 🖥️ PC (v5.0 JARVIS Blueprint + Blueprint Architect)
 
@@ -367,7 +362,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 **Known issues:** None encountered.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Session Handoff — June 3, 2026 🖥️ PC (Sprint Batch 1 Complete)
@@ -400,7 +394,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 **Known issues:** None encountered.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Sprint F19 (June 3, 2026) — 19 new files, 5 new folders.
@@ -408,7 +401,6 @@ New: .ungasis/architect/, .ungasis/orchestrator/signals/, .ungasis/cli-agents/, 
 New command: /commander. JARVIS: 68%→70%. Next: Batch 2.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Batch 2 (June 3, 2026) — 8 sprints, 27 files. New engines:
@@ -416,7 +408,6 @@ Decomposer, Session Planner, Reasoning, Dependencies, Rollback,
 Portfolio, Risk, Decision Escalation. JARVIS: 70%→85%. Next: Batch 3.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Batch 3 (June 3, 2026) — 10 sprints, 27 files. New: Warnings,
@@ -425,7 +416,6 @@ Situational Awareness, Constraint Reasoning, Gaps Radar.
 JARVIS: 85%→95%. Next: Batch 4 (final).
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Batch 4 + JARVIS Complete (June 3, 2026) — 9 sprints, 27 files.
@@ -435,7 +425,6 @@ Total: 35 new sprints, ~100 new files across Batches 1-4 + F19.
 Next: git tag v5.0-jarvis-complete → Start RiftCoach Phase 5.7.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Sprint F20a: Config Sync + Agent Manager (June 3, 2026)
@@ -456,7 +445,6 @@ Next: F20b automation scripts (daily-pulse.py, warn-check.py, quality-score.py)
 - Next: Set up Scheduled Tasks in Agent Manager + F20c Form 2 Dashboard
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Sprint F20c-PREP: Warning Fixes + Queue Prune (June 3, 2026)
@@ -497,7 +485,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 1. F20e Framework Gaps (feedback loops, version control for knowledge) OR start RiftCoach Phase 5.7.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Session Handoff — June 3, 2026 🖥️ PC (Sprint F20e + Phase A)
@@ -515,7 +502,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - Next: Start RiftCoach Phase 5.7 using the complete UNGASIS OS.
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Sprint F21a: Reconciliation Cleanup (June 3, 2026)
@@ -539,7 +525,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - Next: RiftCoach Phase 5.7 kickoff in projects/riftcoach/
 
 ---
-Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Sprint F21c: Quality Push + Dashboard + Software A-Grade (June 3, 2026)
@@ -559,7 +544,6 @@ Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 - Next: RiftCoach Phase 5.7 in projects/riftcoach/
 
 ---
-Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Session Handoff — June 3, 2026 🖥️ PC (Sprint F21d)
@@ -578,7 +562,6 @@ Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 - Modified: `scripts/ungasis.py`, `scripts/README.md`, `CONTEXT.md`
 
 ---
-Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 
 
 ## Session Handoff — June 10, 2026 🖥️ PC (Sprint S1 Pre-Flight — Wave 1)
@@ -598,7 +581,6 @@ Last reviewed: June 3, 2026 | Review by: September 2026 | Owner: Mel
 - `.ungasis/decisions/ADR-001-ungasis-v51-upgrade.md`
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ## Session Handoff - June 11, 2026
 
@@ -612,7 +594,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 **Files created:**
 - .ungasis/presets/builder.md`n
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 - [2026-06-11] Created Design preset for UNGASIS v5.1 Agent Manager
 
@@ -642,3 +623,6 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 - [ ] Configure Goose with gemini-2.5-flash
 - [ ] RiftCoach Phase 6.0 Multi-Agent Parallel Reasoning
 - [ ] Revenue Engine ON HOLD until RiftCoach ships
+
+---
+> Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
