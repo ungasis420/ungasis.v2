@@ -24,8 +24,8 @@ Agent Needs API ──> Checks Inventory for Env Var Name ──> Loads Var from
 | OpenRouter | T1-Free | $0 (free models) | Various | API | Active |
 | Mistral | T1-Free | $0 | Mistral models | API | Active |
 | Together | T1-Free | $0 | Various | API | Active |
-| Claude Pro | T2-Paid | $20/mo | Opus 4.6, Sonnet | Chat/Code/Cowork/Design/Dispatch/Remote | PENDING |
-| GitHub Actions | T3-Async | $0 (2000 min/mo) | N/A | Cron workflows | PLANNED (S5) |
+| Claude Pro | T2-Paid | $20/mo | Opus 4.6, Sonnet | Chat/Code/Cowork/Design/Dispatch/Remote | Active |
+| GitHub Actions | T3-Async | $0 (2000 min/mo) | N/A | Cron workflows | Active |
 | Jules | T3-Async | $0 | Gemini | GitHub PRs | Active |
 
 ## Inputs/Outputs

@@ -272,11 +272,11 @@ def cmd_foreman(args):
     print("| T1-Free | Google AI Pro | Active |")
     print("| T1-Free | Cerebras | Active |")
     print("| T1-Free | Groq | Active (key #2) |")
-    print("| T2-Paid | Claude Pro | PENDING |")
+    print("| T2-Paid | Claude Pro | Active |")
     print("| T3-Async | Jules | Active |")
-    print("| T3-Async | GitHub Actions | PLANNED |")
+    print("| T3-Async | GitHub Actions | Active |")
     print("\nForeman routing: Tier 1 → Tier 2 → Tier 3")
-    print("Claude Pro status: PENDING (subscribe to activate)")
+    print("Claude Pro status: Active")
     return 0
 
 def main():
