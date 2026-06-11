@@ -614,3 +614,4 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
+- [2026-06-11] Created Design preset for UNGASIS v5.1 Agent Manager
