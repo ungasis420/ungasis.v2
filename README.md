@@ -80,7 +80,7 @@ ungasis-unified-lossless-repo-v3/
     └── ungasis-cost-monitoring.md
 ```
 
-> **PRIMARY BLUEPRINT:** [UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-opus.md](file:///c:/Users/63905/Downloads/ungasis/blueprints/UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-opus.md) is the most complete master blueprint. Other versions in `blueprints/` are archived references only — do not use for active work.
+> **PRIMARY BLUEPRINT:** [UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-opus.md](./blueprints/UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-opus.md) is the most complete master blueprint. Other versions in `blueprints/` are archived references only — do not use for active work.
 
 ## Configuration Files
 

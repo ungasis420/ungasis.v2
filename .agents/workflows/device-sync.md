@@ -36,7 +36,7 @@ Every time a device sync is prepared, update the context file with this template
 Before beginning a quest session on any device, go through this checklist:
 - [ ] Run `git pull origin main` to ensure your local repository is up to date.
 - [ ] Verify you have the correct API keys loaded in your environment.
-- [ ] Read the current state in [CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/context/README.md).
+- [ ] Read the current state in [CONTEXT.md](./context/README.md).
 - [ ] Initialize the agent using the `context-pack` skill.
 
 ---

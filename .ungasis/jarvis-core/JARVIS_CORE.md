@@ -64,9 +64,9 @@ across all turns.
 core, identity, voice-guidelines, principles
 
 ### See also:
-- [memory/memory-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/memory/memory-rules.md)
+- [memory/memory-rules.md](./.ungasis/memory/memory-rules.md)
 -
-[decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
+[decomposer/decomposer-rules.md](./.ungasis/decomposer/decomposer-rules.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

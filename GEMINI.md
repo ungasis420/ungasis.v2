@@ -2,10 +2,10 @@
 
 ## Read Order
 Before starting any work on this quest, the agent must read these files in the following order:
-1. [AGENTS.md](file:///c:/Users/63905/Downloads/ungasis/AGENTS.md) — Cross-tool rules
-2. [GEMINI.md](file:///c:/Users/63905/Downloads/ungasis/GEMINI.md) — Antigravity configuration
-3. [.agents/rules/](file:///c:/Users/63905/Downloads/ungasis/.agents/rules/) — Active rule files
-4. [CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/context/README.md) — Current state
+1. [AGENTS.md](./AGENTS.md) — Cross-tool rules
+2. [GEMINI.md](./GEMINI.md) — Antigravity configuration
+3. [.agents/rules/](./.agents/rules/) — Active rule files
+4. [CONTEXT.md](./context/README.md) — Current state
 
 ---
 
@@ -21,7 +21,7 @@ Before starting any work on this quest, the agent must read these files in the f
 | Sprint Count | 66+ completed |
 | Git Tag | v5.0-jarvis-complete |
 | Graphify | 20,929 nodes, 24,207 edges, 2,713 communities |
-| Engines | 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/architect/BLUEPRINT_CONTEXT.md)) |
+| Engines | 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](./.ungasis/architect/BLUEPRINT_CONTEXT.md)) |
 
 ---
 

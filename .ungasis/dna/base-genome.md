@@ -3,9 +3,9 @@
 This is the McDonald's franchise kit for new projects. Every project inherits this base genome before adding specific platform-type DNA.
 
 ## IDENTITY
-- Reference to Builder Profile: [@BUILDER_PROFILE.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/BUILDER_PROFILE.md)
-- Reference to Quest Context: [@QUEST_CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/QUEST_CONTEXT.md)
-- Reference to Session Starter: [@SESSION_STARTER.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/SESSION_STARTER.md)
+- Reference to Builder Profile: [@BUILDER_PROFILE.md](./.ungasis/BUILDER_PROFILE.md)
+- Reference to Quest Context: [@QUEST_CONTEXT.md](./.ungasis/QUEST_CONTEXT.md)
+- Reference to Session Starter: [@SESSION_STARTER.md](./.ungasis/SESSION_STARTER.md)
 
 ### QUEST_CONTEXT.md Template
 ```markdown

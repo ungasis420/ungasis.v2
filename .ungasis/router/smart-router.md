@@ -74,8 +74,8 @@ routing, classification, automation, agents
 
 ### See also:
 -
-[decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
-- [bus/bus-manifest.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/bus/bus-manifest.md)
+[decomposer/decomposer-rules.md](./.ungasis/decomposer/decomposer-rules.md)
+- [bus/bus-manifest.md](./.ungasis/bus/bus-manifest.md)
 
 ## Inputs/Outputs
 

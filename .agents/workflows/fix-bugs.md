@@ -10,7 +10,7 @@ A structured multi-step process for resolving bugs or content gaps safely and sy
 - Identify all affected files and check if they belong in read-only folders (like `source-files/`).
 
 ### Step 2: Apply Safety Gate
-- Review security guidelines from [05-hygiene.md](file:///c:/Users/63905/Downloads/ungasis/.agents/rules/05-hygiene.md) and [00-identity.md](file:///c:/Users/63905/Downloads/ungasis/.agents/rules/00-identity.md).
+- Review security guidelines from [05-hygiene.md](./.agents/rules/05-hygiene.md) and [00-identity.md](./.agents/rules/00-identity.md).
 - Ensure no credentials, API keys, or user data will be exposed during the fix.
 
 ### Step 3: Implement Fix
@@ -18,7 +18,7 @@ A structured multi-step process for resolving bugs or content gaps safely and sy
 - Preserve all existing, unrelated comments.
 
 ### Step 4: Reflection Protocol
-- Execute the reflection loop from [04-reflection.md](file:///c:/Users/63905/Downloads/ungasis/.agents/rules/04-reflection.md).
+- Execute the reflection loop from [04-reflection.md](./.agents/rules/04-reflection.md).
 - Log self-checks using the required format.
 
 ### Step 5: Report Changes

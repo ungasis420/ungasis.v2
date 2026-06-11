@@ -11,7 +11,7 @@
 | **Files** | ~1,222 across 240+ folders (495 active, excludes archive/graphify-out) |
 | **Graphify** | 20,929 nodes · 24,207 edges · 2,713 communities |
 | **GitHub** | ungasis420/ungasis.v2 |
-| **Location** | `C:\Users\63905\Downloads\ungasis` |
+| **Location** | `./` |
 | **Budget** | $19.99/mo Google AI Pro + $0 company tools (M365 Copilot, ChatGPT Enterprise) |
 
 ---
@@ -841,7 +841,7 @@ Output goes to `.ungasis/scout/research-inbox.md` → human reviews → ADOPT/WA
 ```
 IDENTITY: You are the Builder — Mel's primary development agent.
 OWNER: Mel John Dimat, Filipino, Manila, ESL speaker, visual learner.
-PROJECT: UNGASIS OS v5.0 JARVIS-Complete | C:\Users\63905\Downloads\ungasis
+PROJECT: UNGASIS OS v5.0 JARVIS-Complete | ./
 BUDGET: $19.99/mo Google AI Pro | JARVIS Score: 98% | 66+ sprints done
 
 VOICE: Simple English. Kitchen analogies. Tables over prose. No jargon.
@@ -1010,7 +1010,7 @@ OUTPUT: ## GRAPHIFY UPDATE — New nodes: X | Total: X | Errors: X | Status: ✅
 
 ### 13.0 Universal Launcher
 
-For the smart launcher system, attach [COPILOT-LAUNCHER.md](file:///c:/Users/63905/Downloads/ungasis/docs/COPILOT-LAUNCHER.md) to any new M365 Copilot session. See [COPILOT-LAUNCHER.md](file:///c:/Users/63905/Downloads/ungasis/docs/COPILOT-LAUNCHER.md) for the full launcher prompt.
+For the smart launcher system, attach [COPILOT-LAUNCHER.md](./COPILOT-LAUNCHER.md) to any new M365 Copilot session. See [COPILOT-LAUNCHER.md](./COPILOT-LAUNCHER.md) for the full launcher prompt.
 
 ### 13.1 Fresh Chat Kickoff (Generic UNGASIS Session)
 
@@ -1022,7 +1022,7 @@ I'm resuming work on UNGASIS OS v5.0 — my personal AI operating system.
 IDENTITY:
 - Owner: Mel John Dimat, Filipino, Manila, ESL speaker, visual learner
 - Budget: $19.99/mo Google AI Pro + $0 company tools
-- Location: C:\Users\63905\Downloads\ungasis
+- Location: ./
 - GitHub: ungasis420/ungasis.v2
 
 PROJECT STATE:
@@ -1074,7 +1074,7 @@ IDENTITY:
 - Builder: Mel John Dimat, Filipino, Manila, ESL speaker, visual learner
 - Wild Rift main: Support (Karma, Swain, Nautilus, Senna, Seraphine, Soraka, Milio)
 - Budget: $19.99/mo Google AI Pro
-- Project path: C:\Users\63905\Downloads\ungasis\projects\riftcoach\
+- Project path: ./projects/riftcoach/
 
 UNGASIS FOUNDATION (inherited):
 - 20-layer token efficiency system
@@ -1130,7 +1130,7 @@ I'm enhancing the UNGASIS OS v5.0 dashboard — Form 2 web app at dashboard/.
 
 IDENTITY:
 - Builder: Mel John Dimat, Filipino, Manila, ESL speaker, visual learner
-- Location: C:\Users\63905\Downloads\ungasis\dashboard\
+- Location: ./dashboard/
 - GitHub: ungasis420/ungasis.v2
 
 DASHBOARD STATE:
@@ -1177,7 +1177,7 @@ I'm running a maintenance session on UNGASIS OS v5.0.
 
 IDENTITY:
 - Builder: Mel John Dimat, Filipino, Manila, ESL speaker, visual learner
-- Location: C:\Users\63905\Downloads\ungasis
+- Location: ./
 - GitHub: ungasis420/ungasis.v2
 - Version: v5.0 JARVIS-Complete (98% score, 66+ sprints, ~1,222 files)
 

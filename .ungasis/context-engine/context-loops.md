@@ -27,7 +27,7 @@ Context Fresh → Growing (each response) → Reaches 70% Limit → Composed to 
 | Handoff packet | Simplified handoff format generation |
 
 ## Reference
-Refer to Layer 12 (compact at 70%) and Layer 16 (context decay) from [ungasis-token-policy.md](file:///c:/Users/63905/Downloads/ungasis/modules/ungasis-token-policy.md).
+Refer to Layer 12 (compact at 70%) and Layer 16 (context decay) from [ungasis-token-policy.md](./modules/ungasis-token-policy.md).
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

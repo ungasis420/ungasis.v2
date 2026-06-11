@@ -4,8 +4,8 @@
 This is UNGASIS OS (or current [QUEST_NAME]), a Markdown-first knowledge repository for AI-powered solopreneur development.
 
 ## Rules & Standards
-- Follow the token efficiency rules in [.clinerules/01-token-efficiency.md](file:///c:/Users/63905/Downloads/ungasis/.clinerules/01-token-efficiency.md) / [.agents/rules/01-token-efficiency.md](file:///c:/Users/63905/Downloads/ungasis/.agents/rules/01-token-efficiency.md)
-- Follow the safety gate in [.clinerules/06-safety-gate.md](file:///c:/Users/63905/Downloads/ungasis/.clinerules/06-safety-gate.md) or standard hygiene rules in [.agents/rules/05-hygiene.md](file:///c:/Users/63905/Downloads/ungasis/.agents/rules/05-hygiene.md) (always read files before editing them).
+- Follow the token efficiency rules in [.clinerules/01-token-efficiency.md](./.clinerules/01-token-efficiency.md) / [.agents/rules/01-token-efficiency.md](./.agents/rules/01-token-efficiency.md)
+- Follow the safety gate in [.clinerules/06-safety-gate.md](./.clinerules/06-safety-gate.md) or standard hygiene rules in [.agents/rules/05-hygiene.md](./.agents/rules/05-hygiene.md) (always read files before editing them).
 - Use simple English (ESL-friendly for Mel).
 - Use tables for comparisons and markdown checklists for step-by-step procedures.
 - Never expose API keys, tokens, passwords, or secrets.
@@ -56,7 +56,7 @@ This is UNGASIS OS (or current [QUEST_NAME]), a Markdown-first knowledge reposit
 
 ## Cross-Tool Awareness
 - This project is used across multiple AI assistants: Cline (which reads `.clinerules/`) and Antigravity (which reads `.agents/rules/`).
-- [AGENTS.md](file:///c:/Users/63905/Downloads/ungasis/AGENTS.md) acts as the shared configuration bridge.
+- [AGENTS.md](./AGENTS.md) acts as the shared configuration bridge.
 - When editing behavior rules, you must update the rule files in both locations: `.clinerules/` and `.agents/rules/` to keep them in sync.
 
 ---

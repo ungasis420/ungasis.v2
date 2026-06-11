@@ -47,9 +47,9 @@ feedback, suggestions, conductor, metrics
 
 ### See also:
 -
-[tracking/time-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/time-tracker.md)
+[tracking/time-tracker.md](./.ungasis/tracking/time-tracker.md)
 -
-[suggestions/suggestion-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/suggestions/suggestion-rules.md)
+[suggestions/suggestion-rules.md](./.ungasis/suggestions/suggestion-rules.md)
 
 ## Inputs/Outputs
 

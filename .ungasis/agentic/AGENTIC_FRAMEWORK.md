@@ -15,9 +15,9 @@ AI agents are organized under 7 structured disciplines, which define their speci
 
 | # | Discipline | What It Covers | UNGASIS Coverage |
 |---|---|---|---|
-| 1 | Agent Design | Roles, capabilities, boundaries | ✅ [AGENTS.md](file:///c:/Users/63905/Downloads/ungasis/AGENTS.md), [CLAUDE.md](file:///c:/Users/63905/Downloads/ungasis/CLAUDE.md), [GEMINI.md](file:///c:/Users/63905/Downloads/ungasis/GEMINI.md) |
-| 2 | Orchestration Patterns | Sequential, parallel, hierarchical, swarm, hybrid | ✅ [orchestration-patterns.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/agentic/orchestration-patterns.md) |
-| 3 | State Management | Shared state, checkpoints, handoff packets | ✅ [CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/CONTEXT.md), MEMORY_BANK |
+| 1 | Agent Design | Roles, capabilities, boundaries | ✅ [AGENTS.md](./AGENTS.md), [CLAUDE.md](./CLAUDE.md), [GEMINI.md](./GEMINI.md) |
+| 2 | Orchestration Patterns | Sequential, parallel, hierarchical, swarm, hybrid | ✅ [orchestration-patterns.md](./.ungasis/agentic/orchestration-patterns.md) |
+| 3 | State Management | Shared state, checkpoints, handoff packets | ✅ [CONTEXT.md](./CONTEXT.md), MEMORY_BANK |
 | 4 | Failure Engineering | Retry, fallback, escalate, circuit break, self-heal | ✅ `config/circuit-breaker.yml` |
 | 5 | Evaluation & Scoring | Task completion, token efficiency, error rate | ⚠️ Partial → connects to Evolution (Engine 2) |
 | 6 | Safety & Governance | Permissions, approval gates, kill switch, audit trail | ✅ `EVOLUTION_LOCK`, permission-profiles |

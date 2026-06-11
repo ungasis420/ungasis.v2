@@ -55,9 +55,9 @@ notifications, alert-fatigue, status-updates, comms
 
 ### See also:
 -
-[warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+[warnings/warning-rules.md](./.ungasis/warnings/warning-rules.md)
 -
-[comms/escalation-matrix.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/comms/escalation-matrix.md)
+[comms/escalation-matrix.md](./.ungasis/comms/escalation-matrix.md)
  
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

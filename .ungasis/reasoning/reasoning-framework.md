@@ -47,9 +47,9 @@ reasoning, decision-matrix, latency-optimization
 
 ### See also:
 -
-[decomposer/decomposer-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/decomposer/decomposer-rules.md)
+[decomposer/decomposer-rules.md](./.ungasis/decomposer/decomposer-rules.md)
 -
-[warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
+[warnings/warning-rules.md](./.ungasis/warnings/warning-rules.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

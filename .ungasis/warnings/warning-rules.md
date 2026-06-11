@@ -58,9 +58,9 @@ warnings, error-prevention, health-check
 
 ### See also:
 -
-[quality/quality-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/quality/quality-rules.md)
+[quality/quality-rules.md](./.ungasis/quality/quality-rules.md)
 -
-[tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+[tracking/feedback-tracker.md](./.ungasis/tracking/feedback-tracker.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

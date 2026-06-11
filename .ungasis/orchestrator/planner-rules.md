@@ -34,8 +34,8 @@ Use these rules during the auto-planning phase at the start of each task session
 planning, auto-planning, constraints, energy
 
 ### See also
-- [orchestrator/session-conductor.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/orchestrator/session-conductor.md)
-- [tracking/time-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/time-tracker.md)
+- [orchestrator/session-conductor.md](./.ungasis/orchestrator/session-conductor.md)
+- [tracking/time-tracker.md](./.ungasis/tracking/time-tracker.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

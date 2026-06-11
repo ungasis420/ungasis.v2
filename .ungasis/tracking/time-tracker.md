@@ -41,8 +41,8 @@ time-tracking, velocity, metrics, productivity
 
 ### See also:
 -
-[tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
-- [okr/okr-framework.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/okr/okr-framework.md)
+[tracking/feedback-tracker.md](./.ungasis/tracking/feedback-tracker.md)
+- [okr/okr-framework.md](./.ungasis/okr/okr-framework.md)
 
 ## Inputs/Outputs
 

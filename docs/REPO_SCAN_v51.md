@@ -418,7 +418,7 @@
 ### Missing Directories
 - [ ] `.ungasis/presets`
 
-### Old Path References (`C:\.projects\` or `C:\Users\63905\`)
+### Old Path References (`./` or `./`)
 - [ ] `UNGASIS-OS-v5.0-JARVIS-BLUEPRINT.md`
 - [ ] `.ungasis\cli-agents\antigravity-agent-manager-setup.md`
 - [ ] `.ungasis\cli-agents\CLI_ORCHESTRATION.md`

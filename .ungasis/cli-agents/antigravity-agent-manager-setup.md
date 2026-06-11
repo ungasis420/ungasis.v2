@@ -7,7 +7,7 @@ Visual multi-agent orchestration for UNGASIS OS.
 Launch from the Antigravity application menu or the taskbar icon. The Agent Manager runs as a separate window from the main IDE, allowing you to run both simultaneously.
 
 ## Project Setup
-1. In the Projects panel, your active project should show `C:\Users\63905\Downloads\ungasis`.
+1. In the Projects panel, your active project should show `./`.
 2. If duplicate entries with ⚠️ are visible, remove the entry showing the warning and keep the one showing the active branch name.
 3. All rules, skills, and workflows from the IDE are automatically shared with the Agent Manager.
 

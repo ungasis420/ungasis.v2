@@ -58,8 +58,8 @@ Use quality framework rules during code reviews and quality checks to grade arti
 quality, scoring, audit, matrix
 
 ### See also
-- [warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
-- [suggestions/suggestion-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/suggestions/suggestion-rules.md)
+- [warnings/warning-rules.md](./.ungasis/warnings/warning-rules.md)
+- [suggestions/suggestion-rules.md](./.ungasis/suggestions/suggestion-rules.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

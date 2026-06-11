@@ -99,8 +99,8 @@ Use evolution rules to evaluate session metrics and adapt system parameters auto
 evolution, self-adaptation, metrics, optimization
 
 ### See also
-- [evolution/metrics-pipeline.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/metrics-pipeline.md)
-- [evolution/EVOLUTION_LOCK.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/evolution/EVOLUTION_LOCK.md)
+- [evolution/metrics-pipeline.md](./.ungasis/evolution/metrics-pipeline.md)
+- [evolution/EVOLUTION_LOCK.md](./.ungasis/evolution/EVOLUTION_LOCK.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

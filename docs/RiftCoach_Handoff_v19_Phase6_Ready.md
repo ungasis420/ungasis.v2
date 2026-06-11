@@ -94,22 +94,22 @@ Intel i5-10400, 32GB DDR4, NVIDIA RTX 5060 Ti 16GB, Ollama with local models
 ### Verified Tools
 | Tool | Version | Path/Notes |
 |------|---------|------------|
-| node | v24.16.0 | NVM managed (`C:\Users\My PC\AppData\Local\nvm`) |
+| node | v24.16.0 | NVM managed (`~\AppData\Local\nvm`) |
 | npm | 11.13.0 | |
-| python | 3.13.13 | `C:\Users\My PC\AppData\Local\Programs\Python\Python313` |
+| python | 3.13.13 | `~\AppData\Local\Programs\Python\Python313` |
 | pip | 26.0.1 | |
 | code | 1.123.0 | VS Code + 6 extensions |
 | agy | 1.0.5 | **Antigravity CLI** (NOT `antigravity`) |
 | git | 2.54.0 | core.longpaths=true |
 | gcloud | — | ADC logged in (emjaydimat@gmail.com) |
 
-### PowerShell Profile (`C:\Users\My PC\Documents\WindowsPowerShell\profile.ps1`)
+### PowerShell Profile (`~\Documents\WindowsPowerShell\profile.ps1`)
 - NVM auto-loads on terminal open
 - Aliases: `rift` → RiftCoach dir, `ung` → UNGASIS dir, `gs` → git status
 
 ### NVM Environment
 ```
-NVM_HOME = C:\Users\My PC\AppData\Local\nvm
+NVM_HOME = ~\AppData\Local\nvm
 NVM_SYMLINK = C:\nvm4w\nodejs
 ```
 

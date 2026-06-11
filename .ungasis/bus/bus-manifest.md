@@ -72,8 +72,8 @@ event-bus, interconnect, security-shield, messaging
 
 ### See also:
 -
-[events/event-framework.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/events/event-framework.md)
-- [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
+[events/event-framework.md](./.ungasis/events/event-framework.md)
+- [router/smart-router.md](./.ungasis/router/smart-router.md)
 
 ## Jargon Explanations
 

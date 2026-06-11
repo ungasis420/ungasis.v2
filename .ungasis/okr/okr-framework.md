@@ -52,9 +52,9 @@ okr, strategy, metrics, objectives
 
 ### See also:
 -
-[jarvis-core/gaps-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/jarvis-core/gaps-rules.md)
+[jarvis-core/gaps-rules.md](./.ungasis/jarvis-core/gaps-rules.md)
 -
-[tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+[tracking/feedback-tracker.md](./.ungasis/tracking/feedback-tracker.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -17,7 +17,7 @@ A multi-step workflow to create, document, register, and audit a new UNGASIS kno
   - End with the standard staleness footer.
 
 ### Step 3: Register Module in README.md
-- Open [README.md](file:///c:/Users/63905/Downloads/ungasis/README.md).
+- Open [README.md](./README.md).
 - Find the "Repository Structure" tree.
 - Add the entry for the new module at the correct location.
 

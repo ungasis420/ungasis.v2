@@ -52,8 +52,8 @@ Use auto-inject rules during context composition at task session start to automa
 context, injection, auto-inject, wiki
 
 ### See also
-- [context-engine/context-budget.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-budget.md)
-- [context-engine/context-loops.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-loops.md)
+- [context-engine/context-budget.md](./.ungasis/context-engine/context-budget.md)
+- [context-engine/context-loops.md](./.ungasis/context-engine/context-loops.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

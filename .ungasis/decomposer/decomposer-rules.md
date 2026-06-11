@@ -49,9 +49,9 @@ decomposition, task-sizing, planning
 
 ### See also:
 -
-[orchestrator/planner-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/orchestrator/planner-rules.md)
+[orchestrator/planner-rules.md](./.ungasis/orchestrator/planner-rules.md)
 -
-[reasoning/reasoning-framework.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/reasoning/reasoning-framework.md)
+[reasoning/reasoning-framework.md](./.ungasis/reasoning/reasoning-framework.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

@@ -9,7 +9,7 @@ I build with: M365 Copilot Opus (planning) → Antigravity IDE (execution)
 ## What UNGASIS Is
 UNGASIS OS v5.0 is my personal AI operating system — 8,397 files,
 75+ sprints, 16 automation scripts, 20,929-node knowledge graph.
-All projects live in: C:\Users\63905\Downloads\ungasis\projects\
+All projects live in: ./projects/
 GitHub: https://github.com/ungasis420/ungasis.v2
 
 ## My Active Projects

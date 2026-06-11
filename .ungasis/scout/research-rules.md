@@ -44,8 +44,8 @@ Use research evaluation rules when reviewing discoveries auto-fetched by researc
 scout, research, evaluation, discoveries
 
 ### See also
-- [scout/research-sources.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/research-sources.md)
-- [scout/tools-discovered.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/tools-discovered.md)
+- [scout/research-sources.md](./.ungasis/scout/research-sources.md)
+- [scout/tools-discovered.md](./.ungasis/scout/tools-discovered.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

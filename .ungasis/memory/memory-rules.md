@@ -63,9 +63,9 @@ memory, persistent-storage, context-retrieval
 
 ### See also:
 -
-[jarvis-core/JARVIS_CORE.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/jarvis-core/JARVIS_CORE.md)
+[jarvis-core/JARVIS_CORE.md](./.ungasis/jarvis-core/JARVIS_CORE.md)
 -
-[context-engine/context-loops.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/context-engine/context-loops.md)
+[context-engine/context-loops.md](./.ungasis/context-engine/context-loops.md)
 
 ## Jargon Explanations
 

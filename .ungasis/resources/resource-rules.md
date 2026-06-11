@@ -60,8 +60,8 @@ resources, failover, key-rotation, rate-limits
 
 ### See also:
 -
-[warnings/warning-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/warnings/warning-rules.md)
-- [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
+[warnings/warning-rules.md](./.ungasis/warnings/warning-rules.md)
+- [router/smart-router.md](./.ungasis/router/smart-router.md)
 
 ## Jargon Explanations
 

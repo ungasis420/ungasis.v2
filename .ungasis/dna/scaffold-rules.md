@@ -22,16 +22,16 @@ Follow these 7 steps to create a new project folder and launch development in un
 
 1. **Step 1:** Open PowerShell and create a new directory for the project inside the projects folder.
    ```powershell
-   mkdir c:\Users\63905\Downloads\ungasis\projects\my-awesome-app
-   cd c:\Users\63905\Downloads\ungasis\projects\my-awesome-app
+   mkdir ./projects\my-awesome-app
+   cd ./projects\my-awesome-app
    ```
 2. **Step 2:** Copy the base genome configs:
    ```powershell
-   copy c:\Users\63905\Downloads\ungasis\.ungasis\dna\base-genome.md .
+   copy ./.ungasis\dna\base-genome.md .
    ```
 3. **Step 3:** Copy the matching specialized genome (e.g., HTML):
    ```powershell
-   copy c:\Users\63905\Downloads\ungasis\.ungasis\dna\html-genome.md .
+   copy ./.ungasis\dna\html-genome.md .
    ```
 4. **Step 4:** Fill out the placeholders in `QUEST_CONTEXT.md`. Include project name, stack, and revenue model.
 5. **Step 5:** Initialize the git repository and make your first commit.
@@ -65,8 +65,8 @@ Use scaffold rules when initializing new project folders and importing DNA genom
 scaffold, dna, genomes, boilerplate
 
 ### See also
-- [dna/base-genome.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/dna/base-genome.md)
-- [dna/nextjs-genome.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/dna/nextjs-genome.md)
+- [dna/base-genome.md](./.ungasis/dna/base-genome.md)
+- [dna/nextjs-genome.md](./.ungasis/dna/nextjs-genome.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

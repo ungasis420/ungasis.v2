@@ -136,7 +136,7 @@ echo "✅ Post-commit complete"
 ```
 
 #### PowerShell Profile Aliases
-Add to `C:\Users\My PC\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
+Add to `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`:
 ```powershell
 # One-command sprint execution
 function Sprint {

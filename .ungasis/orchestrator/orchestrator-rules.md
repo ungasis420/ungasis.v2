@@ -40,9 +40,9 @@ planning, auto-planning, constraints, energy
 
 ### See also:
 -
-[orchestrator/session-conductor.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/orchestrator/session-conductor.md)
+[orchestrator/session-conductor.md](./.ungasis/orchestrator/session-conductor.md)
 -
-[tracking/time-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/time-tracker.md)
+[tracking/time-tracker.md](./.ungasis/tracking/time-tracker.md)
  
 ## Jargon Explanations
 

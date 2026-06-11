@@ -9,29 +9,29 @@
 * **License**: Private
 
 ## 2. Read Order (MANDATORY)
-1. [LLM_CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/LLM_CONTEXT.md) (This file)
-2. [AGENTS.md](file:///c:/Users/63905/Downloads/ungasis/AGENTS.md) (Cross-tool bridge)
-3. [GEMINI.md](file:///c:/Users/63905/Downloads/ungasis/GEMINI.md) (Antigravity project config)
-4. [CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/CONTEXT.md) (Last session state)
+1. [LLM_CONTEXT.md](./LLM_CONTEXT.md) (This file)
+2. [AGENTS.md](./AGENTS.md) (Cross-tool bridge)
+3. [GEMINI.md](./GEMINI.md) (Antigravity project config)
+4. [CONTEXT.md](./CONTEXT.md) (Last session state)
 5. Relevant `.agents/rules/` or `.clinerules/` for the task
 
 ## 3. Architecture
-* [.agents/](file:///c:/Users/63905/Downloads/ungasis/.agents/) — Antigravity rules, skills, workflows
-* [.clinerules/](file:///c:/Users/63905/Downloads/ungasis/.clinerules/) — Cline agent rules (same content as .agents/rules/)
-* [.github/](file:///c:/Users/63905/Downloads/ungasis/.github/) — Copilot instructions, issue templates, CI workflows
-* [archive/](file:///c:/Users/63905/Downloads/ungasis/archive/) — READ ONLY original ZIP-extracted archives
-* [blueprints/](file:///c:/Users/63905/Downloads/ungasis/blueprints/) — Master blueprints (opus = primary)
-* [config/](file:///c:/Users/63905/Downloads/ungasis/config/) — 9 orchestration YMLs (circuit-breaker, kill-switch, etc.)
-* [context/](file:///c:/Users/63905/Downloads/ungasis/context/) — Session state files
-* [docs/](file:///c:/Users/63905/Downloads/ungasis/docs/) — Changelog, file inventory, runbook, QA plan, etc.
-* [kernels/](file:///c:/Users/63905/Downloads/ungasis/kernels/) — 7 kernel files (00-06)
-* [knowledge/](file:///c:/Users/63905/Downloads/ungasis/knowledge/) — Wiki and raw knowledge
-* [memory-bank/](file:///c:/Users/63905/Downloads/ungasis/memory-bank/) — Cline memory persistence
-* [modules/](file:///c:/Users/63905/Downloads/ungasis/modules/) — 30+ knowledge modules + production-readiness/
-* [multi-agents/](file:///c:/Users/63905/Downloads/ungasis/multi-agents/) — Orchestration master guide
-* [scripts/](file:///c:/Users/63905/Downloads/ungasis/scripts/) — Python utility scripts
-* [source-files/](file:///c:/Users/63905/Downloads/ungasis/source-files/) — READ ONLY original source documents
-* [specs/](file:///c:/Users/63905/Downloads/ungasis/specs/) — Project spec templates
+* [.agents/](./.agents/) — Antigravity rules, skills, workflows
+* [.clinerules/](./.clinerules/) — Cline agent rules (same content as .agents/rules/)
+* [.github/](./.github/) — Copilot instructions, issue templates, CI workflows
+* [archive/](./archive/) — READ ONLY original ZIP-extracted archives
+* [blueprints/](./blueprints/) — Master blueprints (opus = primary)
+* [config/](./config/) — 9 orchestration YMLs (circuit-breaker, kill-switch, etc.)
+* [context/](./context/) — Session state files
+* [docs/](./docs/) — Changelog, file inventory, runbook, QA plan, etc.
+* [kernels/](./kernels/) — 7 kernel files (00-06)
+* [knowledge/](./knowledge/) — Wiki and raw knowledge
+* [memory-bank/](./memory-bank/) — Cline memory persistence
+* [modules/](./modules/) — 30+ knowledge modules + production-readiness/
+* [multi-agents/](./multi-agents/) — Orchestration master guide
+* [scripts/](./scripts/) — Python utility scripts
+* [source-files/](./source-files/) — READ ONLY original source documents
+* [specs/](./specs/) — Project spec templates
 
 ## 4. Domain Language
 | Term | Means |
@@ -62,7 +62,7 @@
 
 ## 8. How to Start a Session
 1. Read this file.
-2. Read [CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/CONTEXT.md) for last session state.
+2. Read [CONTEXT.md](./CONTEXT.md) for last session state.
 3. If using Antigravity: `/context-pack` skill loads context automatically.
 4. If using Cline: read `.clinerules/` rules.
 5. Ask: "What is your task?"
@@ -75,7 +75,7 @@
 * **JARVIS Score**: 98% complete
 * **Sprint Count**: 66+ completed
 * **Files**: ~1,222+ files across 240+ folders
-* **Engines**: 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/architect/BLUEPRINT_CONTEXT.md))
+* **Engines**: 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](./.ungasis/architect/BLUEPRINT_CONTEXT.md))
 * **Agent Crew**: 6 agents (Commander, Blueprint Architect, Builder, Surgeon, Quality Auditor, Graphify Watchdog)
 * **Slash Commands**: 9 slash commands (/goal, /schedule, /grill-me, /blueprint, /scout, /tag-sweep, /audit, /commander, /designer)
 * **5 JARVIS Dimensions**: Second Brain, App Fabricator, Project Director, Personal JARVIS, Growth Engine

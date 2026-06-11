@@ -83,11 +83,11 @@ Features:
 Shares same rules, skills, workflows, and memory as IDE Right Panel.
 
 ## Antigravity CLI (agy)
-Installed at: `C:\Users\63905\AppData\Local\agy\bin` (or npm global)
+Installed at: `~\AppData\Local\agy\bin` (or npm global)
 Version: 1.0.4 (confirmed installed)
 Auth: already authenticated as emjaydimat@gmail.com
 Model: Gemini 3.5 Flash (Medium) — same as IDE
-Usage: `cd C:\Users\63905\Downloads\ungasis && agy`
+Usage: `cd ./ && agy`
 Shares same brain as IDE + Agent Manager.
 
 ## Blueprint Model Priority

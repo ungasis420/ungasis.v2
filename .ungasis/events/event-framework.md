@@ -52,8 +52,8 @@ Use the event framework rules when defining new async event types or modifying c
 events, async, messages, framework
 
 ### See also:
-- [bus/bus-manifest.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/bus/bus-manifest.md)
-- [router/smart-router.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/router/smart-router.md)
+- [bus/bus-manifest.md](./.ungasis/bus/bus-manifest.md)
+- [router/smart-router.md](./.ungasis/router/smart-router.md)
 
 ## Inputs/Outputs
 

@@ -45,9 +45,9 @@ scout, research, evaluation, discoveries
 
 ### See also:
 -
-[scout/research-sources.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/research-sources.md)
+[scout/research-sources.md](./.ungasis/scout/research-sources.md)
 -
-[scout/tools-discovered.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/scout/tools-discovered.md)
+[scout/tools-discovered.md](./.ungasis/scout/tools-discovered.md)
  
 ## Purpose
 Define core specifications and operational rules for scout-rules.md.

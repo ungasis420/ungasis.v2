@@ -55,9 +55,9 @@ suggestions, conductor, productivity, recommendations
 
 ### See also:
 -
-[tracking/feedback-tracker.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/tracking/feedback-tracker.md)
+[tracking/feedback-tracker.md](./.ungasis/tracking/feedback-tracker.md)
 -
-[orchestrator/planner-rules.md](file:///c:/Users/63905/Downloads/ungasis/.ungasis/orchestrator/planner-rules.md)
+[orchestrator/planner-rules.md](./.ungasis/orchestrator/planner-rules.md)
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

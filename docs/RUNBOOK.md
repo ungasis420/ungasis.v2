@@ -37,8 +37,8 @@ Use these dashboards to verify the application is working correctly:
 
 ## 5. Emergency Incident & Rollback Actions
 If Sentry alerts you to a critical error (S1 or S2 severity):
-1. **Trigger Kill Switch:** Use [kill-switch.yml](file:///c:/Users/63905/Downloads/ungasis/config/kill-switch.yml) to disable the broken feature immediately. Refer to [10-observability-incident-response.md](file:///c:/Users/63905/Downloads/ungasis/modules/production-readiness/10-observability-incident-response.md) for detail.
-2. **Execute Rollback:** If the entire release is broken, run the rollback commands specified in [12-release-rollback.md](file:///c:/Users/63905/Downloads/ungasis/modules/production-readiness/12-release-rollback.md):
+1. **Trigger Kill Switch:** Use [kill-switch.yml](./config/kill-switch.yml) to disable the broken feature immediately. Refer to [10-observability-incident-response.md](./modules/production-readiness/10-observability-incident-response.md) for detail.
+2. **Execute Rollback:** If the entire release is broken, run the rollback commands specified in [12-release-rollback.md](./modules/production-readiness/12-release-rollback.md):
    ```bash
    git revert HEAD
    git push origin main

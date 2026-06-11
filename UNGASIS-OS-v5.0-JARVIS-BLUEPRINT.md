@@ -12,7 +12,7 @@
 | **Owner** | Mel John Dimat, Filipino, Manila, ESL speaker, visual learner |
 | **Job** | Consultant, Reporting @ Korn Ferry |
 | **GitHub** | https://github.com/ungasis420/ungasis.v2 |
-| **Location** | C:\Users\63905\Downloads\ungasis |
+| **Location** | `./` |
 | **Budget** | $19.99/mo Google AI Pro + $0 company tools (M365 Copilot, ChatGPT Enterprise) |
 | **Form 1 (Knowledge Repo)** | ✅ 100% COMPLETE — 23 sprints done |
 | **Form 2 (Web App)** | 🟡 Scaffolded (dashboard/ exists, not wired) |
@@ -144,7 +144,7 @@ What makes a real JARVIS?                      Have it?
 ## 3. ARCHITECTURE — Folder Structure
 
 ```
-C:\Users\63905\Downloads\ungasis\
+`./`
 │
 ├── .agents/                           ← Antigravity agent config
 │   ├── rules/                         ← 12 rule files (00-identity through 10-self-healing + graphify)
@@ -395,10 +395,10 @@ C:\Users\63905\Downloads\ungasis\
 
 | What | Where |
 |------|-------|
-| Master keys (ALL 30) | `C:\Users\63905\.env.master` (never in git) |
-| Project keys | `C:\Users\63905\Downloads\ungasis\.env` (gitignored) |
-| Antigravity-Mem DB | `C:\Users\63905\.antigravity-mem\memory.db` |
-| MCP Config | `C:\Users\63905\.gemini\antigravity\mcp_config.json` |
+| Master keys (ALL 30) | `~/.env.master` (never in git) |
+| Project keys | `./.env` (gitignored) |
+| Antigravity-Mem DB | `~/.antigravity-mem/memory.db` |
+| MCP Config | `~/.gemini/antigravity/mcp_config.json` |
 
 ### Target Stack (Form 2 / Future Apps)
 
@@ -1081,7 +1081,7 @@ I'm continuing UNGASIS OS v5.0 — upgrading JARVIS from 35% to 68% (Batch 1).
 
 PROJECT STATE:
 - GitHub: https://github.com/ungasis420/ungasis.v2
-- Location: C:\Users\63905\Downloads\ungasis
+- Location: ./
 - Form 1: 100% COMPLETE — 23 sprints done
 - ~1,100+ files, 209+ folders, 16,538 Graphify nodes, 2,035 communities
 - ALL 9 engines + 3 automation systems active
