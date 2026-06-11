@@ -4,7 +4,7 @@
 #
 # Usage:
 #   .\docs\NEWMONT-AUTONOMOUS-BUILD.ps1              # Full run
-#   .\docs\NEWMONT-AUTONOMOUS-BUILD.ps1 -DryRun      # Preview only
+#   .\docs\NEWMONT-AUTONOMOUS-BUILD.ps1 -DryRun      # Preview
 #   .\docs\NEWMONT-AUTONOMOUS-BUILD.ps1 -SkipAgy     # Claude only
 #   .\docs\NEWMONT-AUTONOMOUS-BUILD.ps1 -SkipClaude  # agy only
 # ============================================================
@@ -21,7 +21,6 @@ $JUNCTION = "D:\nmwork"
 $SCRATCH = "C:\Users\My PC\.gemini\antigravity-cli\scratch"
 $TS = Get-Date -Format "yyyyMMdd-HHmmss"
 
-# Log setup
 $logDir = "$PROJECT\build-logs"
 New-Item $logDir -ItemType Directory -Force -EA SilentlyContinue | Out-Null
 $LOG = "$logDir\build-$TS.log"
@@ -39,10 +38,8 @@ Log ""
 
 # ============================================================
 # WAVE 1: agy Builders (Gemini Flash - FREE)
-# Pipe prompt = non-interactive. No Enter needed.
 # ============================================================
 
-# --- Prompt 1: SLA Reportability ---
 $SLA_PROMPT = @"
 Read docs/NEWMONT-CONTEXT-PACK.md. Create src/components/modules/SLAReportability.tsx.
 
@@ -71,7 +68,6 @@ rgba(255,255,255,0.10) rounded-2xl. Section header: SLA INTELLIGENCE in #00d4ff.
 ALL hex colors. Default export. React 19 + TS + Recharts. No git. One file only.
 "@
 
-# --- Prompt 2: Candidate Pipeline ---
 $PIPELINE_PROMPT = @"
 Read docs/NEWMONT-CONTEXT-PACK.md. Create src/components/modules/CandidatePipeline.tsx.
 
@@ -120,25 +116,24 @@ if (-not $SkipAgy) {
         Log ""
     }
 
-    # Copy any scratch files back to real project
-    Log "  Checking scratch for files..." "Cyan"
-    $copied = 0
-    Get-ChildItem $SCRATCH -Directory -EA SilentlyContinue | ForEach-Object {
-        Get-ChildItem $_.FullName -Recurse -Include "*.tsx","*.ts" -EA SilentlyContinue | ForEach-Object {
-            # Try to find relative path from src/
-            if ($_.FullName -match "\\src\\") {
-                $rel = $_.FullName.Substring($_.FullName.IndexOf("\src\"))
-                $dest = Join-Path $PROJECT $rel
-                $dir = Split-Path $dest -Parent
-                if (-not (Test-Path $dir)) { New-Item $dir -ItemType Directory -Force | Out-Null }
-                Copy-Item $_.FullName $dest -Force
-                Log "    Copied: $rel" "DarkGray"
-                $script:copied++
-            }
+    # Copy scratch files — ONLY during real runs, ONLY newmont files
+    if (-not $DryRun) {
+        Log "  Checking scratch for newmont files..." "Cyan"
+        $copied = 0
+        # Only look for files in paths containing "newmont" or our specific components
+        $targetFiles = @("SLAReportability.tsx", "CandidatePipeline.tsx")
+        Get-ChildItem $SCRATCH -Recurse -Include $targetFiles -EA SilentlyContinue | ForEach-Object {
+            $fileName = $_.Name
+            $dest = "$PROJECT\src\components\modules\$fileName"
+            Copy-Item $_.FullName $dest -Force
+            Log "    Copied: $fileName" "Green"
+            $copied++
         }
-    }
-    if ($copied -eq 0) {
-        Log "  No scratch files found (agy may have written directly)" "Yellow"
+        if ($copied -eq 0) {
+            Log "  No target files in scratch (agy may have written directly)" "Yellow"
+        }
+    } else {
+        Log "  [DRY RUN] Would check scratch for SLAReportability.tsx, CandidatePipeline.tsx" "DarkGray"
     }
     Log ""
 }
@@ -146,7 +141,6 @@ if (-not $SkipAgy) {
 # ============================================================
 # WAVE 2: Claude Code Foreman (Sonnet 4.6)
 # --yes = auto-approve. --print = non-interactive.
-# Reads CLAUDE.md automatically for project rules.
 # ============================================================
 
 $CLAUDE_PROMPT = @"
@@ -209,20 +203,18 @@ if (-not $SkipClaude) {
 Log "=== WAVE 3: Verification ===" "Blue"
 Log ""
 
-# Check dist/index.html
 $dist = Get-Item "$PROJECT\dist\index.html" -EA SilentlyContinue
 if ($dist) {
     $kb = [math]::Round($dist.Length / 1KB)
     if ($kb -gt 400) {
         Log "  dist/index.html: $kb KB — PASS" "Green"
     } else {
-        Log "  dist/index.html: $kb KB — small, may be incomplete" "Yellow"
+        Log "  dist/index.html: $kb KB — small, check build" "Yellow"
     }
 } else {
-    Log "  dist/index.html NOT FOUND — build may have failed" "Red"
+    Log "  dist/index.html NOT FOUND — build failed" "Red"
 }
 
-# Check new components exist
 $checks = @(
     "src\components\modules\SLAReportability.tsx",
     "src\components\modules\CandidatePipeline.tsx"
@@ -237,7 +229,6 @@ foreach ($c in $checks) {
     }
 }
 
-# Git log
 Log ""
 Log "  Recent commits:" "Cyan"
 Set-Location $PROJECT

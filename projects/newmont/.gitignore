@@ -49,3 +49,5 @@ data/
 
 # agy agent logs
 .agy-logs/
+
+build-logs/
