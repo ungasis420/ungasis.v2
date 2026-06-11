@@ -46,3 +46,6 @@ data/
 
 # static export
 /dist/
+
+# agy agent logs
+.agy-logs/
