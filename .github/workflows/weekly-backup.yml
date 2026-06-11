@@ -1,0 +1,24 @@
+name: UNGASIS Weekly Backup
+on:
+  schedule:
+    - cron: '0 16 * * 0'
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run backup
+        run: python scripts/ungasis.py backup
+      - name: Run quality score
+        run: python scripts/ungasis.py score
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ungasis-backup-${{ github.run_number }}
+          path: ungasis-backup-*.zip
+          retention-days: 30

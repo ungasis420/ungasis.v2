@@ -1,0 +1,25 @@
+name: UNGASIS Daily Pulse
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run daily pulse
+        run: python scripts/ungasis.py pulse
+      - name: Run warn check
+        run: python scripts/ungasis.py warn
+      - name: Commit pulse results
+        run: |
+          git config user.name "UNGASIS Bot"
+          git config user.email "ungasis@bot.local"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: daily pulse $(date +%Y-%m-%d)"
+          git push || echo "Nothing to push"
