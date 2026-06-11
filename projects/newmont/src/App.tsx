@@ -1,11 +1,8 @@
-'use client';
-
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import AppShell from '@/components/layout/AppShell';
-import ExecutiveDashboard from '@/components/modules/ExecutiveDashboard';
-import FieldGapCommand from '@/components/modules/FieldGapCommand';
-import SLACalculator from '@/components/modules/SLACalculator';
-import ReqAnalytics from '@/components/modules/ReqAnalytics';
+import Dashboard from '@/components/Dashboard';
+import SLACalculator from '@/components/SLACalculator';
+import { FieldGapsView, RequisitionsView, HoldAnalysisView } from '@/components/Views';
 
 import { useDashboardStore } from '@/stores/dashboard';
 import {
@@ -15,7 +12,7 @@ import {
   getPostings,
 } from '@/lib/data-engine';
 
-export default function Page() {
+export default function App() {
   const activeModule = useDashboardStore((state) => state.activeModule);
 
   const requisitions = useDashboardStore((state) => state.requisitions);
@@ -80,15 +77,17 @@ export default function Page() {
   const renderModule = () => {
     switch (activeModule) {
       case 'dashboard':
-        return <ExecutiveDashboard />;
+        return <Dashboard />;
       case 'fieldgap':
-        return <FieldGapCommand />;
+        return <FieldGapsView />;
       case 'sla':
         return <SLACalculator />;
       case 'requisitions':
-        return <ReqAnalytics />;
+        return <RequisitionsView />;
+      case 'holds':
+        return <HoldAnalysisView />;
       default:
-        return <ExecutiveDashboard />;
+        return <Dashboard />;
     }
   };
 
