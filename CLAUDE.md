@@ -146,6 +146,16 @@ Use after every task, file edit, or command sequence before moving forward.
 - After sprint: run `graphify update .` before commit
 - Advanced commands: `graphify path`, `graphify explain`, check `wiki/index.md`.
 
+### Graphify Token Guardrails (70x+ minimum)
+- Target: ≥70x token reduction per query vs raw file reads
+- SHA256 cache: ALWAYS enabled — never re-extract unchanged files
+- Incremental only: `graphify update .` — never full rebuild unless forced
+- .graphifyignore must exclude: node_modules/, .git/, archive/, graphify-out/, dist/, build/, __pycache__/
+- Thin communities (<3 nodes): omit from GRAPH_REPORT.md
+- Model routing: extraction uses subagent model (Haiku/Flash) — NOT foreman
+- Verification: check GRAPH_REPORT.md header for token stats after any run
+- Kill condition: if reduction drops below 50x → investigate .graphifyignore
+
 ## Known Issue: Community Labels (June 2026)
 - Current GRAPH_REPORT.md (commit abbbe223) has 4,580 communities, all labeled generically "Community N"
 - Archive from 2026-06-02 had 200 named communities — names were lost during rebuild
