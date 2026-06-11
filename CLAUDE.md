@@ -91,7 +91,7 @@
 **LAYER 10-12: MAINTAIN**
 - L10: Cache awareness — Keep system prompt stable across turns
 - L11: Session checkpointing — Write progress to file after EACH task
-- L12: Compact at 70% — If context heavy (15+ tool calls), checkpoint and compact
+- L12: Compact at 60% — If context heavy (15+ tool calls), checkpoint and compact (thresholds: Section 19)
 
 **Limits & Costs**:
 - Investigation Limit: 3-Strike Rule (stop after 3 failed lookups)
@@ -204,6 +204,13 @@ Use after every task, file edit, or command sequence before moving forward.
 - NEVER use local LLMs for coding tasks (cloud-first)
 - NEVER exceed 3 retry attempts without asking user
 
-<!-- Staleness: 2026-06-10 | Owner: Mel John Dimat | Review: September 2026 -->
+## Section 19: Context Management (v5.1)
+- Subagent delegation: reading/analyzing 3+ files → dispatch a subagent; main thread receives summary only
+- Subagent model: haiku default (CLAUDE_CODE_SUBAGENT_MODEL) — escalate per-task only for reasoning-heavy work
+- Compaction preservation: critical instructions must survive /compact — project name+version (UNGASIS OS v5.1), active mission/sprint file, file conventions (200-line cap, staleness footers), git convention (`type: description`), source-files/ + archive/ READ ONLY
+- Session hygiene: /clear between unrelated tasks; manual /compact at 60% context; autocompact fires at 50% (CLAUDE_AUTOCOMPACT_PCT_OVERRIDE)
+- Token budget awareness: working context <4,000 tokens (Section 4); .claudeignore keeps archives/caches out of context
+
+<!-- Staleness: 2026-06-11 | Owner: Mel John Dimat | Review: September 2026 -->
 <!-- This file is the SINGLE SOURCE OF TRUTH for all agent rules. -->
 <!-- .agents/rules/ and .clinerules/ are reference copies only. -->

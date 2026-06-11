@@ -1,0 +1,33 @@
+# UNGASIS OS — token optimization Layer 2
+# Exclude build artifacts, caches, archives, and binaries from context
+
+# Dependencies & build output
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+coverage/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Lockfiles
+*.lock
+
+# Databases & binaries
+*.db
+*.sqlite
+*.zip
+*.tar.gz
+
+# Version control & backups
+.git/
+.backup/
+
+# UNGASIS-specific (read-only / archival, never needed in context)
+archive/
+graphify-out/
+scratch/
+ungasis-backup-*.zip
