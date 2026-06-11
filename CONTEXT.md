@@ -615,3 +615,30 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 - [2026-06-11] Created Design preset for UNGASIS v5.1 Agent Manager
+
+## v5.1 "AUTONOMY" Upgrade — Complete
+**Date:** 2026-06-10
+**Branch:** feat/v5.1-autonomy
+**Sprints:** S1-S6 all PASS
+
+### What Changed
+- CLAUDE.md consolidated (3 sources → 1, 18 sections, 200+ lines)
+- 5 presets created (builder, research, debug, design, founder)
+- 4 CLI commands added (spec, decide, preset, foreman) → 17 total
+- ADR system live with ADR-001
+- SDD spec template live
+- GitHub Actions: daily-pulse + weekly-backup
+- API inventory: 9 providers across 3 tiers
+- Quality-auditor updated for v5.1 rules
+- 28 old path references fixed → 0 remaining
+- 26 reference headers added to .agents/rules/ + .clinerules/
+- Claude Pro active: Chat, Code, Cowork, Desktop, Dispatch
+- Fable 5 model available until Jun 22
+- Mobile pipeline: Dispatch paired phone→laptop, Remote Control enabled
+- Goose installed (config pending — P2)
+
+### What's Next
+- [ ] Rebuild Graphify knowledge base
+- [ ] Configure Goose with gemini-2.5-flash
+- [ ] RiftCoach Phase 6.0 Multi-Agent Parallel Reasoning
+- [ ] Revenue Engine ON HOLD until RiftCoach ships
