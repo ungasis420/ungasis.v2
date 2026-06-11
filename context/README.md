@@ -15,3 +15,4 @@ Keep it shorter than formal docs. If a file becomes long, move durable detail in
 ## Session Log
 - **2026-06-11**: Created `research.md` Agent Preset in `.ungasis/presets/` with correct file organization conventions (`modules/`). Audit passed.
 - **2026-06-11**: Created `founder.md` Agent Preset in `.ungasis/presets/`. Finalized creation of all 5 Agent Presets (Builder, Debug, Design, Founder, Research). Completed Quality Audit and committed/pushed all changes.
+- **2026-06-11**: Scaffolded `projects/newmont/CLAUDE.md` Command Center v6.0 Foreman Protocol. Audit passed.
