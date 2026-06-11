@@ -84,5 +84,35 @@ Input: [data source or props]
 Output: [what it renders]
 Constraints: max 200 lines, Shadcn/ui components, Recharts for charts
 
+## Multi-Agent Orchestration Rules (learned from v6.0-mvp)
+
+### Native Subagents (PREFERRED)
+- Use Claude Code's built-in subagent system for parallel work
+- Use /batch for embarrassingly parallel file generation
+- Use explicit delegation ("Break this into parallel tasks: ...") for complex work
+- Each subagent gets its own context — don't worry about context pollution
+
+### agy CLI Rules (FALLBACK only)
+1. ALWAYS use D:\nmwork junction for agy workspace (not D:\.projects — dot-prefix rejected)
+2. ALWAYS use PowerShell for agy invocation (not Bash — stdout not capturable)
+3. ALWAYS include --dangerously-skip-permissions flag
+4. NEVER redirect agy stdout (verify by file existence on disk)
+5. NEVER allow agy to run git commands (add explicit "DO NOT run git" in prompts)
+6. Parallel agents within wave: use Start-Process pattern in PowerShell
+7. After each wave: read all generated files, fix imports/types, run npm run build
+8. Integration = FOREMAN job (Claude Code), not agy's
+
+### Workflow Hierarchy
+1. M365 Copilot Opus → Architecture, sprint plans, skinny prompts
+2. Claude Code (Fable 5) → Foreman: orchestrate, integrate, QA, fix, commit
+3. Claude Code native subagents → Parallel file generation (PREFERRED)
+4. agy CLI → Single-file generation (FALLBACK when subagents insufficient)
+5. Playwright MCP → Browser QA verification
+
+### Auto Mode Settings
+- Auto mode ON for long-running sprints
+- Claude Code checks each tool call for safety before executing
+- Risky actions blocked automatically, safe alternatives attempted
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
