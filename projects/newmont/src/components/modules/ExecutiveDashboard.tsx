@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   useDashboardStore,
   selectTotalReqs,
@@ -53,8 +53,15 @@ export default function ExecutiveDashboard() {
   const cancelRate = useDashboardStore(selectCancelRate);
   const openReqs = useDashboardStore(selectOpenReqs);
   const onHold = useDashboardStore(selectOnHold);
-  const ttfByCountry = useDashboardStore(selectTTFByCountry);
-  const statusDistribution = useDashboardStore(selectStatusDistribution);
+  const requisitions = useDashboardStore((s) => s.requisitions);
+  const ttfByCountry = useMemo(
+    () => selectTTFByCountry(useDashboardStore.getState()),
+    [requisitions]
+  );
+  const statusDistribution = useMemo(
+    () => selectStatusDistribution(useDashboardStore.getState()),
+    [requisitions]
+  );
 
   if (!isMounted) {
     return (

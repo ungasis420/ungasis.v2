@@ -78,11 +78,11 @@ export class NewmontDB extends Dexie {
   postings!: Table<Posting>;
 
   constructor() {
-    super('NewmontDashboardDB');
+    super('NewmontCommandCenterDB');
     this.version(1).stores({
       requisitions: 'jobReqId',
-      holdEvents: 'jobReqId',
-      postings: 'jobReqId',
+      holdEvents: '++id, jobReqId',
+      postings: '++id, jobReqId',
     });
   }
 }

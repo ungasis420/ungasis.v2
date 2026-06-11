@@ -28,6 +28,8 @@ pycache/
 
 # Temp files
 *.tmp
+.playwright-mcp/
+qa-req-analytics.png
 .git_commit_msg
 commit_msg.txt
 
