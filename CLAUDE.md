@@ -8,12 +8,12 @@
 - Branch: feat/v5.1-autonomy
 - Key files: ./CONTEXT.md (session log), ./LLM_CONTEXT.md (project context)
 
-### Section 2: Read First
+## Section 2: Read First
 - Read ./LLM_CONTEXT.md before starting work
 - Read ./CONTEXT.md for session history
 - Read ./specs/ for any active specs before implementing
 
-### Section 3: Core Rules (Safety & Hygiene)
+## Section 3: Core Rules (Safety & Hygiene)
 [ENFORCED: agent-check]
 
 **Scope**: Use this rule to keep `.clinerules/`, `AGENTS.md`, `CLAUDE.md`, Memory Bank files, and `MEMORY.md` fresh, non-conflicting, and lean.
@@ -70,7 +70,7 @@
 - Max 200 lines per new file
 - Staleness footers on all .md files
 
-### Section 4: Token Efficiency
+## Section 4: Token Efficiency
 > Saves ~350,000 tokens/month. Every layer compounds.
 
 **LAYER 1-3: PREVENT**
@@ -103,7 +103,7 @@
 - Session max: 15 exchanges → handoff summary
 - Tool Selection Hierarchy: Glob (~50 tokens) -> Grep (~100 tokens) -> Read partial -> Read full.
 
-### Section 5: Output Rules
+## Section 5: Output Rules
 - QA audits → QA-AUDIT-REPORT.md with structured tables
 - Status markers: ✅ (Fully covered) / 🟡 (Partially covered) / 🔴 (Missing) / ⚠️ (Inconsistency)
 - Self-check: PASS/FAIL log after every output
@@ -111,14 +111,14 @@
 - No standalone paragraphs between tables
 - File references: Use filename only `ungasis-prompt-library.md`, not full path
 
-### Section 6: Autonomous Execution
+## Section 6: Autonomous Execution
 - Do NOT stop between tasks. Keep going until "MISSION COMPLETE"
 - Only pause for: missing info, security concern, 3-strike limit
 - Do NOT ask "should I continue?" — just continue
 - If rate limited, wait 10s and retry once, then log ⚠️
 - Stop conditions: All tasks complete, 3 consecutive unrecoverable errors, or user says "stop".
 
-### Section 7: Reflection Loop
+## Section 7: Reflection Loop
 Use after every task, file edit, or command sequence before moving forward.
 
 - **PAUSE**: re-read the requirement and the created output
@@ -133,26 +133,26 @@ Use after every task, file edit, or command sequence before moving forward.
 - Counts: Verify with search, or mark ⚠️ if estimated
 - Safety: No credentials, source-files/ untouched
 
-### Section 8: Multi-Agent Protocol
+## Section 8: Multi-Agent Protocol
 - Orchestrate, don't write: use Agent Manager for independent tasks
 - Max 5 parallel agents
 - Explicit file boundaries (no overlapping edits)
 - Each agent gets 1 task scope
 
-### Section 9: Graphify Usage
+## Section 9: Graphify Usage
 - Before reading files for architecture questions: run `graphify query "<question>" --budget 2000`
 - Use returned nodes/edges to scope file reads.
 - Fallback: GRAPH_REPORT.md
 - After sprint: run `graphify update .` before commit
 - Advanced commands: `graphify path`, `graphify explain`, check `wiki/index.md`.
 
-### Section 10: QA & Self-Healing
+## Section 10: QA & Self-Healing
 - Blueprint-First: For ANY task creating 3+ new files → call @blueprint-architect first
 - Self-Healing Loop: After sprint, call @quality-auditor. Re-index → commit only AFTER audit PASS
 - Loop flow: Build -> Audit -> If PASS (commit/push) -> If FAIL (apply fixes, retry max 3 attempts) -> If 3 FAILS (escalate to Mel)
 - Commander Integration: Commander delegates -> Builder executes -> Builder calls Auditor -> Commander reviews.
 
-### Section 11: Skill System
+## Section 11: Skill System
 - Track 3+ repeating action sequences across 3+ sessions
 - Propose new skills in .agents/skills/_auto/_proposals/
 - Limit: Max 5 proposals per week. Token savings > 500 per use.
@@ -160,7 +160,7 @@ Use after every task, file edit, or command sequence before moving forward.
 - Lifecycle: Draft (born) → Tested (3 uses) → Proven (10 uses) → Optimized (50 uses) → Retired
 - Markdown format requires: Trigger, Steps, Token Savings, Evidence, Status.
 
-### Section 12: Expert Frameworks
+## Section 12: Expert Frameworks
 - Anti-marathon: stop after 3 failed attempts
 - Same rules apply to all agents (quality-auditor, builder, etc.)
 - ROUTER: Check if subtasks are independent (parallel vs sequential)
@@ -171,34 +171,34 @@ Use after every task, file edit, or command sequence before moving forward.
 - TRUTH GATE: "Would I be comfortable if this output was public?"
 - KILL-CANDIDATE: "Energy unsustainable" check — stop if spending hours on a 30-min task.
 
-### Section 13: SDD Methodology (v5.1)
+## Section 13: SDD Methodology (v5.1)
 - Complexity check: ≤3 files = fast path, 4-10 = light spec, 10+ = full SDD
 - Spec location: specs/[feature-name].md
 - Flow: Spec → Plan → Implement → Verify
 - NEVER skip spec for 10+ file changes
 
-### Section 14: Decision Memory (v5.1)
+## Section 14: Decision Memory (v5.1)
 - All architectural decisions logged in .ungasis/decisions/ADR-NNN-slug.md
 - Template: .ungasis/decisions/TEMPLATE.md
 - Review before making similar decisions
 
-### Section 15: Presets (v5.1)
+## Section 15: Presets (v5.1)
 - Available presets: builder, research, debug, design, founder
 - Activate via: ungasis preset [name]
 - Each preset configures: model routing, token budget, output format
 
-### Section 16: Agent Routing / Foreman Protocol (v5.1)
+## Section 16: Agent Routing / Foreman Protocol (v5.1)
 - Tier 1 Free: Google AI Pro, Cerebras, Groq → use for drafts, research, fast iteration
 - Tier 2 Paid: Claude Pro → use for architecture, complex reasoning, multi-file changes
 - Tier 3 Async: Jules (GitHub PRs), GitHub Actions (scheduled tasks)
 - Rule: ALWAYS try Tier 1 first. Escalate to Tier 2 only when Tier 1 insufficient.
 
-### Section 17: Mobile Pipeline (v5.1)
+## Section 17: Mobile Pipeline (v5.1)
 - Claude Dispatch: terminal commands from phone
 - Claude Remote Control: approve/reject from phone
 - Claude Channels: Telegram/iMessage/Discord quick commands (P2)
 
-### Section 18: Anti-Patterns (v5.1)
+## Section 18: Anti-Patterns (v5.1)
 - NEVER have 2+ files containing the same rule (single source of truth = THIS FILE)
 - NEVER skip backup before major changes
 - NEVER use local LLMs for coding tasks (cloud-first)
