@@ -43,7 +43,11 @@ COMMANDS = {
     'health': {'script': None, 'description': 'Run full health check (pulse + warn + score defaults)', 'alias': ['h']},
     'test': {'script': None, 'description': 'Run smoke tests on all scripts', 'alias': ['t']},
     'backup': {'script': None, 'description': 'Create timestamped backup ZIP of critical files', 'alias': ['b']},
-    'version': {'script': None, 'description': 'Show UNGASIS version and stats', 'alias': ['v']}
+    'version': {'script': None, 'description': 'Show UNGASIS version and stats', 'alias': ['v']},
+    'spec': {'script': None, 'description': 'Create a new SDD spec from template', 'alias': []},
+    'decide': {'script': None, 'description': 'Create a new ADR (Architecture Decision Record)', 'alias': []},
+    'preset': {'script': None, 'description': 'Activate a workflow preset', 'alias': []},
+    'foreman': {'script': None, 'description': 'Show Foreman routing status', 'alias': []}
 }
 
 def run_script(script_name, extra_args=None):
@@ -170,12 +174,122 @@ def cmd_version(args):
     print(f"UNGASIS OS v5.0 — JARVIS-Fabricator\n  Sprints completed: {sprint_count}\n  Active files: {file_count}\n  Automation scripts: 13\n  Location: {ROOT_DIR}")
     return 0
 
+def cmd_spec(args):
+    """Cmd spec."""
+    if not args:
+        print("Usage: ungasis spec <feature-name>")
+        return 1
+    feature_name = args[0]
+    print(f"ungasis spec {feature_name}")
+    print(f"Creates specs/{feature_name}.md from template")
+    
+    template_path = os.path.join(ROOT_DIR, 'specs', 'TEMPLATE.md')
+    out_dir = os.path.join(ROOT_DIR, 'specs')
+    out_path = os.path.join(out_dir, f"{feature_name}.md")
+    
+    os.makedirs(out_dir, exist_ok=True)
+    if os.path.exists(template_path):
+        with open(template_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        content = content.replace('[Feature Name]', feature_name)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+    else:
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(f"# Spec: {feature_name}\n\nGenerated from ungasis spec stub.")
+            
+    print(f"Spec created: specs/{feature_name}.md")
+    return 0
+
+def cmd_decide(args):
+    """Cmd decide."""
+    if not args:
+        print("Usage: ungasis decide <slug>")
+        return 1
+    slug = args[0]
+    print(f"ungasis decide {slug}")
+    
+    import re
+    import datetime
+    decisions_dir = os.path.join(ROOT_DIR, '.ungasis', 'decisions')
+    os.makedirs(decisions_dir, exist_ok=True)
+    
+    highest = 0
+    if os.path.exists(decisions_dir):
+        for fn in os.listdir(decisions_dir):
+            m = re.match(r'ADR-(\d+)-', fn)
+            if m:
+                highest = max(highest, int(m.group(1)))
+            
+    next_num = f"{highest + 1:03d}"
+    out_name = f"ADR-{next_num}-{slug}.md"
+    out_path = os.path.join(decisions_dir, out_name)
+    
+    template_path = os.path.join(decisions_dir, 'TEMPLATE.md')
+    today = datetime.datetime.now().strftime('%Y-%m-%d')
+    
+    if os.path.exists(template_path):
+        with open(template_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        content = content.replace('[YYYY-MM-DD]', today)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+    else:
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(f"# ADR {next_num}: {slug}\nDate: {today}\n")
+            
+    print(f"Decision record created: .ungasis/decisions/{out_name}")
+    return 0
+
+def cmd_preset(args):
+    """Cmd preset."""
+    presets_dir = os.path.join(ROOT_DIR, '.ungasis', 'presets')
+    os.makedirs(presets_dir, exist_ok=True)
+    
+    if not args:
+        for fn in os.listdir(presets_dir):
+            if fn.endswith('.md') and fn != '.gitkeep':
+                print(fn)
+        return 0
+        
+    name = args[0]
+    preset_path = os.path.join(presets_dir, f"{name}.md")
+    
+    if os.path.exists(preset_path):
+        with open(preset_path, 'r', encoding='utf-8') as f:
+            print(f.read())
+    else:
+        print("Preset not found. Available: ")
+        for fn in os.listdir(presets_dir):
+            if fn.endswith('.md') and fn != '.gitkeep':
+                print(fn)
+    return 0
+
+def cmd_foreman(args):
+    """Cmd foreman."""
+    print("| Tier | Provider | Status |")
+    print("|---|---|---|")
+    print("| T1-Free | Google AI Pro | Active |")
+    print("| T1-Free | Cerebras | Active |")
+    print("| T1-Free | Groq | Active (key #2) |")
+    print("| T2-Paid | Claude Pro | PENDING |")
+    print("| T3-Async | Jules | Active |")
+    print("| T3-Async | GitHub Actions | PLANNED |")
+    print("\nForeman routing: Tier 1 → Tier 2 → Tier 3")
+    print("Claude Pro status: PENDING (subscribe to activate)")
+    return 0
+
 def main():
     """Main.
 
     Args/Returns if relevant.
     """
-    if len(sys.argv) < 2:
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
+    if len(sys.argv) < 2 or sys.argv[1] in ('--help', '-h'):
         print("UNGASIS CLI v1.0\nUsage: python scripts/ungasis.py [command] [args]\n\nCommands:")
         for name, info in COMMANDS.items():
             aliases = ', '.join(info.get('alias', []))
@@ -201,6 +315,10 @@ def main():
     if resolved == 'test': return cmd_test(extra_args)
     if resolved == 'backup': return cmd_backup(extra_args)
     if resolved == 'version': return cmd_version(extra_args)
+    if resolved == 'spec': return cmd_spec(extra_args)
+    if resolved == 'decide': return cmd_decide(extra_args)
+    if resolved == 'preset': return cmd_preset(extra_args)
+    if resolved == 'foreman': return cmd_foreman(extra_args)
 
     if resolved == 'graph-update':
         extra_args = ['--update'] + extra_args
