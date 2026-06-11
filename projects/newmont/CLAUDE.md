@@ -1,118 +1,131 @@
-# Newmont Intelligence Command Center v6.0
-
-## Your Role: FOREMAN (Not Builder)
-You orchestrate and integrate. You DO NOT generate large components.
-You DELEGATE component generation to Antigravity agents via agy CLI.
-You ONLY do: setup, prompt generation, integration, debugging, git, QA.
-
-## Build Delegation
-- For ALL file creation/editing tasks >50 lines, delegate to agy CLI
-- Command: agy -p '<skinny prompt>' --model gemini-2.5-flash
-- NEVER build files directly — always delegate to agy for component generation
-- After agy completes, verify output with: npm run build
-- If agy output has errors, fix with surgical edits (max 10 lines changed)
-- For parallel builds, run multiple agy commands in separate terminals
-
-## Token Efficiency Rules
-- NEVER generate a component >50 lines. Delegate to agy.
-- NEVER rewrite a file when a surgical edit fixes the issue.
-- For integration: read existing files, fix imports/types, wire into pages.
-- For debugging: read error, apply minimal fix, re-run. Max 3 attempts then STOP and ASK.
-- For prompt gen: max 150 tokens per agy agent prompt.
-- Save all generated prompts to docs/prompts/wave-N.md
-
-## Foreman Responsibilities
-1. SETUP: scaffold, install deps, create folders (terminal tasks)
-2. PROMPT: generate skinny agy agent prompts per wave
-3. INTEGRATE: wire agy outputs into app, fix imports/paths
-4. DEBUG: npm run dev → read errors → minimal fix → re-run
-5. BUILD: npm run build → verify zero errors → static export
-6. COMMIT: git add + commit with conventional message
-7. QA: verify data loads, charts render, calculations correct
-
-## What You NEVER Do
-- Generate full React components (agy does this)
-- Write business logic >30 lines (agy does this)
-- Create CSS/styling files (agy does this)
-- Write test files (Jules does this overnight)
-
-## Project Identity
-- Client: Newmont Mining x Korn Ferry RPO (Costa Rica)
-- Contract: CW162992 (Feb 20, 2026 – Feb 20, 2028)
-- Builder: Mel John Dimat (Manila)
-- Lead: Sondra Wozniak (Milwaukee)
-
-## Critical Constraints
-- ALL data LOCAL (IndexedDB + localStorage). No cloud. No server.
-- Newmont IP per MSA §8. No data export without approval.
-- 36% field coverage (42/116). Show 'Cannot Calculate' for missing.
-- 2 of 5 reports missing. Design placeholders.
-- Static export (next export → dist/).
-- NEVER commit CSV data to git. data/ in .gitignore.
-- Max 200 lines per file. Split if longer.
-- Port: 3001 (RiftCoach uses 3000)
-
-## Tech Stack
-Next.js 15 | React 19 | TypeScript 5.8 | Tailwind CSS 4 | Shadcn/ui
-Zustand 5 | Recharts | Papa Parse | Dexie.js | Fuse.js
-date-fns | html2canvas | jsPDF | SheetJS (xlsx)
-
-## Data Model
-### Fact Tables
-- fact_requisitions: 19,292 rows, 38 cols (AVAILABLE)
-- fact_hold_events: 23,710 rows, 7 cols (AVAILABLE)
-- fact_postings: 317 rows, 10 cols (AVAILABLE)
-- fact_candidates: FUTURE (missing report)
-- fact_workflow: FUTURE (missing report)
-
-### Key Metrics
-- Total Reqs: 19,292 | Fill Rate: 73.6% | Avg TTF: 80.1d
-- Cancelled: 21.1% | Open: 3.8% | On Hold: 1.1%
-- Countries: 13 | TTF: CR 46d, Ghana 59d, PNG 105d, Suriname 148d, Chile 190d
-
-### SLA Rules (SOW)
-- Cancel fees: 0-5d=0%, 6-20d=50%, 21+=100%
-- Hold >30d → eligible for cancellation + fee
-- Cannot Calculate (11): Time to Assign, Advertise, Brief, Shortlist, Interview, Screen BGC, Offer, Assign→Intake, Intake→Agreement, Close Req 1BD, Offer Acceptance Rate
-
-## Antigravity Prompt Template
-When generating prompts for agy agents, use this format:
-## Agent N: [Component Name]
-Path: src/[path]/[FileName].tsx
-Stack: React 19 + TypeScript + [specific libs]
-Input: [data source or props]
-Output: [what it renders]
-Constraints: max 200 lines, Shadcn/ui components, Recharts for charts
-
-## Multi-Agent Orchestration Rules (learned from v6.0-mvp)
-
-### Native Subagents (PREFERRED)
-- Use Claude Code's built-in subagent system for parallel work
-- Use /batch for embarrassingly parallel file generation
-- Use explicit delegation ("Break this into parallel tasks: ...") for complex work
-- Each subagent gets its own context — don't worry about context pollution
-
-### agy CLI Rules (FALLBACK only)
-1. ALWAYS use D:\nmwork junction for agy workspace (not D:\.projects — dot-prefix rejected)
-2. ALWAYS use PowerShell for agy invocation (not Bash — stdout not capturable)
-3. ALWAYS include --dangerously-skip-permissions flag
-4. NEVER redirect agy stdout (verify by file existence on disk)
-5. NEVER allow agy to run git commands (add explicit "DO NOT run git" in prompts)
-6. Parallel agents within wave: use Start-Process pattern in PowerShell
-7. After each wave: read all generated files, fix imports/types, run npm run build
-8. Integration = FOREMAN job (Claude Code), not agy's
-
-### Workflow Hierarchy
-1. M365 Copilot Opus → Architecture, sprint plans, skinny prompts
-2. Claude Code (Fable 5) → Foreman: orchestrate, integrate, QA, fix, commit
-3. Claude Code native subagents → Parallel file generation (PREFERRED)
-4. agy CLI → Single-file generation (FALLBACK when subagents insufficient)
-5. Playwright MCP → Browser QA verification
-
-### Auto Mode Settings
-- Auto mode ON for long-running sprints
-- Claude Code checks each tool call for safety before executing
-- Risky actions blocked automatically, safe alternatives attempted
+# Newmont Command Center — Claude Code Instructions
+## Project: D:\.projects\ungasis\projects\newmont
 
 ---
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+## FIRST ACTION ON EVERY TASK
+Read docs/NEWMONT-CONTEXT-PACK.md before doing anything.
+This file contains all field mappings, SLA data, stakeholders, and build rules.
+Do NOT invent data, field names, or metrics not in the context pack.
+
+---
+
+## BUILD RULES
+
+### Paths
+- BUILD from: D:\.projects\ungasis\projects\newmont (real path)
+- NEVER build from D:\nmwork (junction — causes Vite path errors)
+- vite.config.ts has preserveSymlinks: true (do not remove)
+
+### Commands
+- Dev: npm run dev
+- Build: npm run build (produces dist/index.html ~418KB standalone)
+- NO next build, NO next dev (Next.js was removed)
+
+### Stack
+- React 19, TypeScript 5.8, Vite 8, Zustand, Recharts, Tailwind 4
+- vite-plugin-singlefile inlines all JS/CSS into one HTML file
+- Standalone HTML — no server, no API calls, no external data fetching
+
+---
+
+## TOKEN EFFICIENCY RULES (CRITICAL — save 90-95% tokens)
+
+### Rule 1: Context from FILE, not from prompt
+- Read docs/NEWMONT-CONTEXT-PACK.md with the Read tool
+- NEVER ask the user to paste context into chat
+- Cost: ~200 tokens (vs ~8000 if pasted into prompt)
+
+### Rule 2: Surgical edits ONLY
+- NEVER rewrite an entire file to change a few lines
+- Use targeted insertions and replacements
+- If changing 5 lines in a 300-line file, edit only those 5 lines
+- Cost: ~500 tokens (vs ~4000 for full rewrite)
+
+### Rule 3: Stop after 3 failed attempts
+- If the same approach fails 3 times, STOP
+- Report: what failed, what you tried, your best guess at root cause
+- Let the user decide next steps
+- This prevents runaway debugging loops (saves ~15K tokens)
+
+### Rule 4: No clarification loops
+- When run with --yes flag, do NOT ask questions
+- Make reasonable assumptions based on context pack
+- If truly ambiguous, pick the safer option and note your choice
+
+### Rule 5: One commit per task
+- Do all work, THEN one git add -A && git commit
+- Do NOT make multiple small commits per task
+
+### Rule 6: Minimal console output
+- Do NOT cat entire files to stdout
+- Do NOT echo large blocks of code
+- Read files with the Read tool, not cat/type commands
+
+---
+
+## EXISTING ARCHITECTURE
+
+### Entry Points
+- index.html -> src/main.tsx -> src/App.tsx
+- App.tsx renders layout/AppShell.tsx which contains Sidebar + main content
+
+### Navigation / Views
+- src/components/layout/AppShell.tsx — layout wrapper with sidebar
+- src/components/layout/Sidebar.tsx — navigation sidebar
+- src/components/Dashboard.tsx — main dashboard orchestrator
+- src/components/Views.tsx — view routing (22.6 KB, handles all views)
+
+### Module Components
+- src/components/modules/ExecutiveDashboard.tsx — KPI cards + overview charts
+- src/components/modules/FieldGapCommand.tsx — REPLACE with CandidatePipeline
+- src/components/modules/ReqAnalytics.tsx — requisition analytics view
+- src/components/modules/SLACalculator.tsx — existing SLA calculator
+
+### Shared Components
+- src/components/Charts.tsx — reusable chart components
+- src/components/Icons.tsx — icon components
+- src/components/TweaksPanel.tsx — settings/tweaks panel
+
+### State and Data
+- src/stores/dashboard.ts — Zustand store
+- src/lib/data-engine.ts — CSV parsing, data processing (DO NOT modify without reason)
+- src/lib/field-gap-data.ts — field gap definitions (UPDATE with v4 mapping when asked)
+- src/lib/mock-data.ts — mock data fallbacks
+- src/types/newmont.ts — TypeScript types
+
+### Real Data Files (in data/ folder)
+- report_All_Global_REQ_New_Report_KF.csv (10.4 MB) — all requisitions
+- report_On_hold_time_Audit_KF.csv (2.3 MB) — hold/freeze dates
+- report_Posted_Requisitions_Global_KF.csv (41 KB) — posted reqs
+- TA Semantic Model_Fields.xlsx (34 KB) — field reference
+
+### Design System
+- Background: #0a0a1a
+- Glass cards: rgba(255,255,255,0.04) backdrop-blur-xl border rgba(255,255,255,0.10)
+- Accent: #00d4ff | Success: #22c55e | Warning: #f59e0b | Danger: #ef4444
+- ALL colors as inline hex (NEVER Tailwind color classes for brand colors)
+- Font: Inter with system-ui fallback. Use tabular-nums for numbers.
+- Rounded corners: rounded-2xl for cards
+- Hover: scale-[1.02] transition
+
+---
+
+## WHAT NOT TO BUILD
+- NO Coverage Intelligence or Sourcing Coverage (no field supports this)
+- NO Hold Reasons breakdown (no Hold_Reason field exists)
+- NO Reactivation Rate (no field tracks hold-to-reactivated transitions)
+- NO invented job family names (use Function field from real data)
+- NO external API calls or data fetching
+- NO server-side rendering
+
+---
+
+## GIT CONVENTIONS
+- feat: new feature (feat: add SLA reportability view)
+- fix: bug fix (fix: chart color alignment)
+- docs: documentation (docs: update context pack)
+- chore: cleanup (chore: remove unused imports)
+- refactor: code restructure (refactor: extract chart config)
+
+---
