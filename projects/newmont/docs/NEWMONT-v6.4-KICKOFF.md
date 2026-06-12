@@ -1,4 +1,3 @@
-@'
 # NEWMONT v6.4 — AUTONOMOUS KICKOFF
 ## For Claude Code Foreman | Walk Away Build
 ---
@@ -100,6 +99,3 @@ Add "Sample Data" banners. Build, QA, commit. One session. No human input.
 - No invented metrics remain
 - Sample data banners on sections without real data
 - Git committed with descriptive message
-'@ | Set-Content "D:\.projects\ungasis\projects\newmont\docs\NEWMONT-v6.4-KICKOFF.md" -Encoding UTF8
-
-Write-Host "Kickoff file created" -ForegroundColor Green

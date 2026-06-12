@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { useDashboardStore } from '@/stores/dashboard';
+import { realData } from '@/lib/real-data';
 import { CCIcons } from '@/components/Icons';
 import {
   useTweaks,
@@ -51,14 +52,14 @@ export default function AppShell({ children }: AppShellProps) {
     } catch {}
   }, [activeModule]);
 
-  // Derived counts from store or fallback to mock defaults
-  const totalReqs = requisitions.length > 0 ? requisitions.length : 19292;
-  const openCount = requisitions.length > 0 
-    ? requisitions.filter(r => r.requisitionStatus === 'Open').length 
-    : 733;
-  const holdCount = requisitions.length > 0 
-    ? requisitions.filter(r => r.requisitionStatus === 'On Hold').length 
-    : 212;
+  // Derived counts from store or fallback to real-data
+  const totalReqs = requisitions.length > 0 ? requisitions.length : realData.totalRequisitions;
+  const openCount = requisitions.length > 0
+    ? requisitions.filter(r => r.requisitionStatus === 'Open').length
+    : realData.statusDistribution.open;
+  const holdCount = requisitions.length > 0
+    ? requisitions.filter(r => r.requisitionStatus === 'On Hold').length
+    : realData.statusDistribution.onHold;
   const NAV = [
     { id: 'dashboard', label: 'Dashboard', icon: 'dashboard' as const, count: null },
     { id: 'candidates', label: 'Candidate Pipeline', icon: 'layers' as const, count: null },

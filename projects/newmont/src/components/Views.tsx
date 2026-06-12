@@ -5,6 +5,7 @@ import { useDashboardStore } from '@/stores/dashboard';
 import { Stagger, Code, MiniBars } from '@/components/Charts';
 import { CCIcons } from '@/components/Icons';
 import { MOCK_DATA } from '@/lib/mock-data';
+import { realData } from '@/lib/real-data';
 import CandidatePipeline from '@/components/modules/CandidatePipeline';
 import SLAReportability from '@/components/modules/SLAReportability';
 
@@ -148,6 +149,9 @@ export function RequisitionsView() {
 
   return (
     <div className="view">
+      <div style={{ background: '#1e293b', border: '1px solid #f59e0b', color: '#f59e0b', padding: '8px 16px', borderRadius: '8px', fontSize: '14px', textAlign: 'center', marginBottom: '16px' }}>
+        Sample data — requisition table will be populated from CORE export via Ingestion Zone
+      </div>
       <div className="view-intro">
         <div className="view-eyebrow">Live Pipeline</div>
         <div className="view-title">Requisitions</div>
@@ -268,9 +272,16 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
   const hasData = requisitions.length > 0;
 
 
-  // Derive hold aging
+  // Derive hold aging (no per-hold duration data in CORE export — use open reqs aging from real-data)
   const holdAging = useMemo(() => {
-    if (!hasData) return MOCK_DATA.holdAging;
+    if (!hasData) {
+      return [
+        { bucket: '0–30 days', count: realData.openReqsAging.under30, color: 'var(--green)' },
+        { bucket: '31–60 days', count: realData.openReqsAging.between30and60, color: 'var(--accent)' },
+        { bucket: '61–90 days', count: realData.openReqsAging.between60and90, color: 'var(--amber)' },
+        { bucket: '90+ days', count: realData.openReqsAging.over90, color: 'var(--red)' },
+      ];
+    }
 
     let b1 = 0, b2 = 0, b3 = 0, b4 = 0;
     requisitions
@@ -284,10 +295,10 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
       });
 
     return [
-      { bucket: '0–30 days', count: b1 > 0 ? b1 : 64, color: 'var(--green)' },
-      { bucket: '31–60 days', count: b2 > 0 ? b2 : 71, color: 'var(--accent)' },
-      { bucket: '61–90 days', count: b3 > 0 ? b3 : 48, color: 'var(--amber)' },
-      { bucket: '90+ days', count: b4 > 0 ? b4 : 29, color: 'var(--red)' },
+      { bucket: '0–30 days', count: b1, color: 'var(--green)' },
+      { bucket: '31–60 days', count: b2, color: 'var(--accent)' },
+      { bucket: '61–90 days', count: b3, color: 'var(--amber)' },
+      { bucket: '90+ days', count: b4, color: 'var(--red)' },
     ];
   }, [requisitions, hasData]);
 
@@ -322,21 +333,24 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
   }, [requisitions, hasData]);
 
   const totalOnHold = useMemo(() => {
-    if (!hasData) return 212;
+    if (!hasData) return realData.statusDistribution.onHold;
     return requisitions.filter((r) => r.requisitionStatus === 'On Hold').length;
   }, [requisitions, hasData]);
 
   const over90 = useMemo(() => {
-    return holdAging.find((b) => b.bucket === '90+ days')?.count ?? 29;
+    return holdAging.find((b) => b.bucket === '90+ days')?.count ?? realData.openReqsAging.over90;
   }, [holdAging]);
 
   return (
     <div className="view">
+      <div style={{ background: '#1e293b', border: '1px solid #f59e0b', color: '#f59e0b', padding: '8px 16px', borderRadius: '8px', fontSize: '14px', textAlign: 'center', marginBottom: '16px' }}>
+        Partial data — hold duration and reasons require additional CORE fields
+      </div>
       <div className="view-intro">
         <div className="view-eyebrow">Risk & Recovery</div>
         <div className="view-title">Hold Analysis</div>
         <div className="view-desc">
-          {totalOnHold} requisitions are on hold — why, for how long, and where. Aged holds are the
+          {totalOnHold} requisitions are on hold — for how long and where. Aged holds are the
           fastest path to reactivated pipeline.
         </div>
       </div>
@@ -348,7 +362,7 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
             {totalOnHold}
           </div>
           <div className="stat-note">
-            {hasData ? ((totalOnHold / requisitions.length) * 100).toFixed(1) : '1.1'}% of all reqs
+            {hasData ? ((totalOnHold / requisitions.length) * 100).toFixed(1) : ((totalOnHold / realData.totalRequisitions) * 100).toFixed(1)}% of all reqs
           </div>
         </div>
         <div className="stat">
@@ -358,29 +372,21 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
           </div>
           <div className="stat-note">priority to resolve</div>
         </div>
-        <div className="stat">
-          <div className="stat-lbl">Avg Hold Duration</div>
-          <div className="stat-val">
-            52 <span style={{ fontSize: 15, color: 'var(--text-muted)' }}>days</span>
-          </div>
-          <div className="stat-note">across active holds</div>
-        </div>
       </Stagger>
 
       <div className="two-col">
         <div className="card" style={{ padding: '20px 22px 24px' }}>
           <div style={{ marginBottom: 18 }}>
             <div className="card-title">Reason for Hold</div>
-            <div className="card-sub">Root cause across {totalOnHold} held reqs</div>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: 120, color: '#a1a1aa', fontSize: 14 }}>
-            Hold duration data not available in current CORE export
+            Hold reason and duration data not available in current CORE export. Contact Manuel Kassis for field access.
           </div>
         </div>
         <div className="card" style={{ padding: '20px 22px 24px' }}>
           <div style={{ marginBottom: 18 }}>
             <div className="card-title">Hold Aging</div>
-            <div className="card-sub">Time elapsed since hold applied</div>
+            <div className="card-sub">Time elapsed since requisition opened</div>
           </div>
           <MiniBars data={holdAging} active={active} />
         </div>
@@ -391,7 +397,16 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
           <div className="card-title">Holds by Country</div>
           <div className="card-sub">Concentration of held requisitions</div>
         </div>
-        <MiniBars data={holdByCountry} active={active} />
+        {hasData ? (
+          <MiniBars data={holdByCountry} active={active} />
+        ) : (
+          <>
+            <div style={{ background: '#1e293b', border: '1px solid #f59e0b', color: '#f59e0b', padding: '8px 16px', borderRadius: '8px', fontSize: '14px', textAlign: 'center', marginBottom: '16px' }}>
+              Sample data — pending CORE export
+            </div>
+            <MiniBars data={holdByCountry} active={active} />
+          </>
+        )}
       </div>
 
       <div
@@ -417,9 +432,8 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
         <div>
           <div className="verdict-t">{over90} requisitions have been held 90+ days</div>
           <div className="verdict-d">
-            Concentrated in Chile and PNG. Recommend a hiring-manager re-confirmation sweep —
-            historical reactivation on this cohort runs ~61%, recovering an estimated{' '}
-            {Math.round(over90 * 0.61)} fills this quarter.
+            Recommend a hiring-manager re-confirmation sweep to identify which of these are still
+            active needs versus candidates for closure.
           </div>
         </div>
       </div>

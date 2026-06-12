@@ -126,7 +126,7 @@ export default function ExecutiveDashboard() {
                       <Cell key={`cell-${index}`} fill={STATUS_COLORS[entry.name] || '#6b7280'} />
                     ))}
                   </Pie>
-                  <Tooltip contentStyle={tooltipStyle} />
+                  <Tooltip contentStyle={tooltipStyle} wrapperStyle={{ zIndex: 50 }} />
                 </PieChart>
               </ResponsiveContainer>
             </div>
@@ -155,7 +155,7 @@ export default function ExecutiveDashboard() {
                 <CartesianGrid stroke="#27272a" strokeDasharray="3 3" vertical={false} />
                 <XAxis dataKey="name" stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
                 <YAxis stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
-                <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} />
+                <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 50 }} />
                 <Bar dataKey="value" radius={[6, 6, 0, 0]} maxBarSize={60}>
                   {agingData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />
@@ -179,7 +179,7 @@ export default function ExecutiveDashboard() {
               <CartesianGrid stroke="#27272a" strokeDasharray="3 3" horizontal={false} />
               <XAxis type="number" stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
               <YAxis type="category" dataKey="name" stroke="#52525b" tick={{ fill: '#ffffff', fontSize: 11 }} width={220} tickLine={false} axisLine={false} />
-              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} />
+              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 50 }} />
               <Bar dataKey="count" fill="#00d4ff" radius={[0, 6, 6, 0]} maxBarSize={18} />
             </BarChart>
           </ResponsiveContainer>
@@ -198,7 +198,7 @@ export default function ExecutiveDashboard() {
               <CartesianGrid stroke="#27272a" strokeDasharray="3 3" vertical={false} />
               <XAxis dataKey="name" stroke="#52525b" tick={{ fill: '#ffffff', fontSize: 10 }} angle={-35} textAnchor="end" interval={0} tickLine={false} axisLine={false} />
               <YAxis stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
-              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} />
+              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 50 }} />
               <Bar dataKey="count" fill="#a78bfa" radius={[6, 6, 0, 0]} maxBarSize={40} />
             </BarChart>
           </ResponsiveContainer>
