@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDashboardStore } from '@/stores/dashboard';
 import { realData } from '@/lib/real-data';
 import { CCIcons } from '@/components/Icons';
@@ -33,6 +33,16 @@ export default function AppShell({ children }: AppShellProps) {
   const requisitions = useDashboardStore((state) => state.requisitions);
 
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+  const [collapsed, setCollapsed] = useState(() => {
+    try { return localStorage.getItem('sidebar-collapsed') === 'true'; }
+    catch { return false; }
+  });
+  const toggleSidebar = () => {
+    const next = !collapsed;
+    setCollapsed(next);
+    try { localStorage.setItem('sidebar-collapsed', String(next)); } catch {}
+  };
 
   // derived tweak styles
   const glassAlpha = (0.02 + (t.glass / 100) * 0.075).toFixed(3);
@@ -67,6 +77,8 @@ export default function AppShell({ children }: AppShellProps) {
     { id: 'slareport', label: 'SLA Reportability', icon: 'clock' as const, count: null },
     { id: 'requisitions', label: 'Requisitions', icon: 'reqs' as const, count: openCount },
     { id: 'holds', label: 'Hold Analysis', icon: 'hold' as const, count: holdCount },
+    { id: 'upload', label: 'Data Upload', icon: 'arrowUp' as const, count: null },
+    { id: 'dictionary', label: 'Data Dictionary', icon: 'folder' as const, count: null },
   ];
 
   const dateStr = new Date().toLocaleDateString('en-US', {
@@ -82,9 +94,18 @@ export default function AppShell({ children }: AppShellProps) {
       data-density={t.density === 'compact' ? 'compact' : 'comfortable'}
       data-glow={t.glow ? 'on' : 'off'}
       data-anim={active ? 'on' : 'off'}
+      data-collapsed={collapsed ? 'true' : 'false'}
     >
       {/* SIDEBAR */}
       <aside className="sidebar">
+        <button
+          className="sidebar-toggle"
+          onClick={toggleSidebar}
+          aria-label={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+          title={collapsed ? 'Expand sidebar' : 'Collapse sidebar'}
+        >
+          {collapsed ? '»' : '«'}
+        </button>
         <div className="brand">
           <div className="brand-mark">
             <CCIcons.bolt style={{ width: 18, height: 18 }} />

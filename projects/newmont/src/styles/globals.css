@@ -113,6 +113,45 @@ body {
   padding: 22px 14px 16px;
 }
 
+/* Sidebar collapse */
+.app { transition: grid-template-columns 0.2s ease-out; }
+.app[data-collapsed='true'] { --sidebar-w: 48px; }
+.sidebar-toggle {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 4;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.04);
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+.sidebar-toggle:hover { color: var(--text); background: rgba(255,255,255,0.08); }
+.nav-item span {
+  white-space: nowrap;
+  overflow: hidden;
+  transition: opacity 0.2s ease-out, width 0.2s ease-out;
+}
+.app[data-collapsed='true'] .sidebar { padding: 34px 5px 16px; overflow: hidden; }
+.app[data-collapsed='true'] .nav-item { justify-content: center; gap: 0; padding: 10px 6px; }
+.app[data-collapsed='true'] .nav-item span { opacity: 0; width: 0; }
+.app[data-collapsed='true'] .nav-item.active::before { left: -5px; }
+.app[data-collapsed='true'] .brand { justify-content: center; padding: 4px 0 16px; }
+.app[data-collapsed='true'] .brand-text,
+.app[data-collapsed='true'] .brand-badge,
+.app[data-collapsed='true'] .nav-label,
+.app[data-collapsed='true'] .sidebar-foot .foot-text { opacity: 0; width: 0; overflow: hidden; display: none; }
+.app[data-collapsed='true'] .sidebar-foot { justify-content: center; }
+.main { transition: margin-left 0.2s ease-out; }
+
 .brand {
   display: flex;
   align-items: center;
