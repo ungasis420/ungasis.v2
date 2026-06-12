@@ -25,6 +25,13 @@ export default function App() {
 
   const [loadingFile, setLoadingFile] = useState<string | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [toast, setToast] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
+
+  useEffect(() => {
+    if (!toast) return;
+    const timer = setTimeout(() => setToast(null), 4000);
+    return () => clearTimeout(timer);
+  }, [toast]);
 
   // Load initial offline-first data from IndexedDB on mount
   useEffect(() => {
@@ -56,19 +63,27 @@ export default function App() {
     try {
       await loadCSVFile(file, tableName);
 
+      let rowCount = 0;
       if (tableName === 'requisitions') {
         const data = await getRequisitions();
         setRequisitions(data);
+        rowCount = data.length;
       } else if (tableName === 'holdEvents') {
         const data = await getHoldEvents();
         setHoldEvents(data);
+        rowCount = data.length;
       } else if (tableName === 'postings') {
         const data = await getPostings();
         setPostings(data);
+        rowCount = data.length;
       }
+
+      setToast({ type: 'success', message: `Loaded ${rowCount.toLocaleString()} rows from ${file.name}` });
     } catch (err: any) {
       console.error(err);
-      setErrorMsg(`Error loading ${tableName} CSV: ${err.message || err}`);
+      const message = `Error loading ${tableName} CSV: ${err.message || err}`;
+      setErrorMsg(message);
+      setToast({ type: 'error', message });
     } finally {
       setLoadingFile(null);
     }
@@ -204,6 +219,26 @@ export default function App() {
           {renderModule()}
         </div>
       </div>
+
+      {toast && (
+        <div
+          className={`fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 rounded-xl border shadow-xl backdrop-blur-xl text-sm font-medium ${
+            toast.type === 'success'
+              ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
+              : 'bg-red-500/10 border-red-500/30 text-red-400'
+          }`}
+        >
+          <span>{toast.type === 'success' ? '✅' : '⚠️'}</span>
+          <span>{toast.message}</span>
+          <button
+            onClick={() => setToast(null)}
+            className="ml-2 text-zinc-400 hover:text-white transition-colors"
+            aria-label="Dismiss"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </AppShell>
   );
 }
