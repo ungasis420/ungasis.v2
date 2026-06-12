@@ -1,6 +1,8 @@
 import Dexie, { Table } from 'dexie';
 import Papa from 'papaparse';
 import { Requisition, HoldEvent, Posting } from '@/types/newmont';
+import { realData } from './real-data';
+import { MOCK_DATA } from './mock-data';
 
 // Maps CSV column headers to camelCase fields in the Requisition type
 const REQUISITION_MAP: Record<string, keyof Requisition> = {
@@ -190,4 +192,53 @@ export async function clearAllData(): Promise<void> {
     db.holdEvents.clear(),
     db.postings.clear(),
   ]);
+}
+
+// Getters backed by the real CORE export (real-data.ts), with mock-data fallback
+export function getRealTotalRequisitions(): number {
+  return realData?.totalRequisitions ?? MOCK_DATA.TOTAL;
+}
+
+export function getRealFillRate(): number {
+  return realData?.fillRate ?? MOCK_DATA.kpis.find((k) => k.id === 'fill')?.value ?? 0;
+}
+
+export function getRealCancelRate(): number {
+  return realData?.cancelRate ?? MOCK_DATA.kpis.find((k) => k.id === 'cancel')?.value ?? 0;
+}
+
+export function getRealAvgTimeToFill(): number {
+  return realData?.timeToFill?.average ?? MOCK_DATA.kpis.find((k) => k.id === 'ttf')?.value ?? 0;
+}
+
+export function getRealStatusDistribution() {
+  return (
+    realData?.statusDistribution ?? {
+      filled: 0,
+      cancelled: 0,
+      open: MOCK_DATA.kpis.find((k) => k.id === 'open')?.value ?? 0,
+      onHold: MOCK_DATA.kpis.find((k) => k.id === 'hold')?.value ?? 0,
+      pendingApproval: 0,
+    }
+  );
+}
+
+export function getRealByFunction() {
+  return realData?.byFunction ?? [];
+}
+
+export function getRealByCountry() {
+  return realData?.byCountry ?? [];
+}
+
+export function getRealByBusinessUnit() {
+  return realData?.byBusinessUnit ?? [];
+}
+
+export function getRealByEltMember() {
+  return realData?.byEltMember ?? [];
+}
+
+export function getRealOpenReqsAging() {
+  return realData?.openReqsAging ?? { under30: 0, between30and60: 0, between60and90: 0, over90: 0 };
 }

@@ -45,6 +45,9 @@ const CustomTooltip = ({ active, payload }: any) => {
 export default function CandidatePipeline() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', fontFamily: 'Inter, system-ui, sans-serif' }}>
+      <div style={{ background: '#1e293b', border: '1px solid #f59e0b', color: '#f59e0b', padding: '8px 16px', borderRadius: '8px', fontSize: '14px', textAlign: 'center', marginBottom: '16px' }}>
+        Sample data - pending CORE export
+      </div>
       
       {/* Header */}
       <div>

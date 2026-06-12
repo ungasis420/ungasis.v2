@@ -267,29 +267,6 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
 
   const hasData = requisitions.length > 0;
 
-  // Derive hold reasons
-  const holdReasons = useMemo(() => {
-    if (!hasData || holdEvents.length === 0) return MOCK_DATA.holdReasons;
-
-    const reasons: Record<string, number> = {};
-    holdEvents.forEach((e) => {
-      const r = e.requisitionStatus === 'On Hold' ? 'Hiring manager unavailable' : 'Budget freeze / approval pending';
-      reasons[r] = (reasons[r] || 0) + 1;
-    });
-
-    return Object.entries(reasons)
-      .map(([reason, count]) => ({
-        reason,
-        count,
-        color:
-          reason.includes('Budget')
-            ? 'var(--amber)'
-            : reason.includes('manager')
-            ? 'var(--accent)'
-            : 'var(--purple)',
-      }))
-      .sort((a, b) => b.count - a.count);
-  }, [holdEvents, hasData]);
 
   // Derive hold aging
   const holdAging = useMemo(() => {
@@ -388,13 +365,6 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
           </div>
           <div className="stat-note">across active holds</div>
         </div>
-        <div className="stat">
-          <div className="stat-lbl">Reactivation Rate</div>
-          <div className="stat-val" style={{ color: 'var(--green)' }}>
-            61%
-          </div>
-          <div className="stat-note">holds resumed in 90d</div>
-        </div>
       </Stagger>
 
       <div className="two-col">
@@ -403,7 +373,9 @@ export function HoldAnalysisView({ active = true }: HoldAnalysisViewProps) {
             <div className="card-title">Reason for Hold</div>
             <div className="card-sub">Root cause across {totalOnHold} held reqs</div>
           </div>
-          <MiniBars data={holdReasons} active={active} />
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: 120, color: '#a1a1aa', fontSize: 14 }}>
+            Hold duration data not available in current CORE export
+          </div>
         </div>
         <div className="card" style={{ padding: '20px 22px 24px' }}>
           <div style={{ marginBottom: 18 }}>
