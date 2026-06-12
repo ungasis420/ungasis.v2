@@ -108,7 +108,7 @@ export default function ExecutiveDashboard() {
             <p className="text-xs text-zinc-400 mt-1">Breakdown of all requisitions by current status</p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="h-64 w-full md:w-1/2 flex justify-center">
+            <div className="h-64 w-full md:w-1/2 flex justify-center" style={{ position: 'relative' }}>
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
@@ -126,7 +126,7 @@ export default function ExecutiveDashboard() {
                       <Cell key={`cell-${index}`} fill={STATUS_COLORS[entry.name] || '#6b7280'} />
                     ))}
                   </Pie>
-                  <Tooltip contentStyle={tooltipStyle} wrapperStyle={{ zIndex: 50 }} />
+                  <Tooltip contentStyle={tooltipStyle} wrapperStyle={{ zIndex: 1000 }} />
                 </PieChart>
               </ResponsiveContainer>
             </div>
@@ -149,13 +149,13 @@ export default function ExecutiveDashboard() {
             <h3 className="text-lg font-semibold text-white flex items-center gap-2">⏳ Open Requisitions Aging</h3>
             <p className="text-xs text-zinc-400 mt-1">How long open requisitions have been active</p>
           </div>
-          <div className="h-72 w-full">
+          <div className="h-72 w-full" style={{ position: 'relative' }}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={agingData} margin={{ top: 10, right: 10, left: -10, bottom: 10 }}>
                 <CartesianGrid stroke="#27272a" strokeDasharray="3 3" vertical={false} />
                 <XAxis dataKey="name" stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
                 <YAxis stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
-                <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 50 }} />
+                <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 1000 }} />
                 <Bar dataKey="value" radius={[6, 6, 0, 0]} maxBarSize={60}>
                   {agingData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />
@@ -173,13 +173,13 @@ export default function ExecutiveDashboard() {
           <h3 className="text-lg font-semibold text-white flex items-center gap-2">🏗️ Requisitions by Function (Top 10)</h3>
           <p className="text-xs text-zinc-400 mt-1">Job function breakdown across the full requisition pipeline</p>
         </div>
-        <div className="h-80 w-full">
+        <div className="h-80 w-full" style={{ position: 'relative' }}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={byFunction} layout="vertical" margin={{ top: 10, right: 20, left: 10, bottom: 10 }}>
               <CartesianGrid stroke="#27272a" strokeDasharray="3 3" horizontal={false} />
               <XAxis type="number" stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
               <YAxis type="category" dataKey="name" stroke="#52525b" tick={{ fill: '#ffffff', fontSize: 11 }} width={220} tickLine={false} axisLine={false} />
-              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 50 }} />
+              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 1000 }} />
               <Bar dataKey="count" fill="#00d4ff" radius={[0, 6, 6, 0]} maxBarSize={18} />
             </BarChart>
           </ResponsiveContainer>
@@ -192,13 +192,13 @@ export default function ExecutiveDashboard() {
           <h3 className="text-lg font-semibold text-white flex items-center gap-2">🌍 Requisitions by Country</h3>
           <p className="text-xs text-zinc-400 mt-1">Geographic distribution of the requisition pipeline</p>
         </div>
-        <div className="h-80 w-full">
+        <div className="h-80 w-full" style={{ position: 'relative' }}>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={byCountry} margin={{ top: 10, right: 10, left: -10, bottom: 30 }}>
               <CartesianGrid stroke="#27272a" strokeDasharray="3 3" vertical={false} />
               <XAxis dataKey="name" stroke="#52525b" tick={{ fill: '#ffffff', fontSize: 10 }} angle={-35} textAnchor="end" interval={0} tickLine={false} axisLine={false} />
               <YAxis stroke="#52525b" tick={{ fill: '#ffffff' }} fontSize={11} tickLine={false} axisLine={false} />
-              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 50 }} />
+              <Tooltip contentStyle={tooltipStyle} cursor={{ fill: 'rgba(255, 255, 255, 0.05)' }} wrapperStyle={{ zIndex: 1000 }} />
               <Bar dataKey="count" fill="#a78bfa" radius={[6, 6, 0, 0]} maxBarSize={40} />
             </BarChart>
           </ResponsiveContainer>

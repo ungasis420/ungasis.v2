@@ -78,7 +78,8 @@ Do NOT invent data, field names, or metrics not in the context pack.
 
 ### Module Components
 - src/components/modules/ExecutiveDashboard.tsx — KPI cards + overview charts
-- src/components/modules/FieldGapCommand.tsx — REPLACE with CandidatePipeline
+- src/components/modules/CandidatePipeline.tsx — candidate pipeline blocker card
+- src/components/modules/SLAReportability.tsx — SLA reportability scorecard
 - src/components/modules/ReqAnalytics.tsx — requisition analytics view
 - src/components/modules/SLACalculator.tsx — existing SLA calculator
 
@@ -90,7 +91,6 @@ Do NOT invent data, field names, or metrics not in the context pack.
 ### State and Data
 - src/stores/dashboard.ts — Zustand store
 - src/lib/data-engine.ts — CSV parsing, data processing (DO NOT modify without reason)
-- src/lib/field-gap-data.ts — field gap definitions (UPDATE with v4 mapping when asked)
 - src/lib/mock-data.ts — mock data fallbacks
 - src/types/newmont.ts — TypeScript types
 
@@ -129,4 +129,6 @@ Do NOT invent data, field names, or metrics not in the context pack.
 - refactor: code restructure (refactor: extract chart config)
 
 ---
+
+Last reviewed: June 2026 (v7.0 update)
 

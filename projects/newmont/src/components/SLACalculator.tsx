@@ -23,6 +23,7 @@ export default function SLACalculator() {
   const requisitions = useDashboardStore((s) => s.requisitions);
   const TARGET = MOCK_DATA.SLA_TARGET;
 
+  const [showHelp, setShowHelp] = useState(false);
   const [ci, setCi] = useState(0);
   const [sen, setSen] = useState(1);
   const [pri, setPri] = useState(0);
@@ -128,6 +129,25 @@ export default function SLACalculator() {
           country, seniority, priority, and sourcing capacity move the projection against the{' '}
           {TARGET}-day SLA.
         </div>
+      </div>
+
+      <div
+        className="card"
+        style={{ borderLeft: '4px solid #00d4ff', background: 'rgba(0,212,255,0.05)', padding: '14px 18px', marginBottom: 18 }}
+      >
+        <div
+          className="select-none"
+          style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', fontWeight: 600, fontSize: 13.5 }}
+          onClick={() => setShowHelp((v) => !v)}
+        >
+          <span>ℹ️ How to Use This Tool</span>
+          <span style={{ color: 'var(--text-muted)' }}>{showHelp ? '▲' : '▼'}</span>
+        </div>
+        {showHelp && (
+          <div style={{ marginTop: 12, fontSize: 12.5, color: 'var(--text-dim)', lineHeight: 1.7, whiteSpace: 'pre-line' }}>
+            {'WHAT: Estimates expected time-to-fill before a requisition opens.\n\nWHEN: Use during intake meetings and planning conversations to set realistic expectations with hiring managers.\n\nHOW:\n1. Select the target country\n2. Choose seniority level and priority\n3. Adjust recruiter capacity if needed\n4. Compare the projected days against the 75-day SLA target\n\nNOTE: Country baselines are directional estimates based on historical averages, not real-time actuals. Use for planning guidance only — not for official SLA compliance reporting.'}
+          </div>
+        )}
       </div>
 
       <div className="calc-grid">

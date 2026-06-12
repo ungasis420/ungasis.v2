@@ -80,11 +80,20 @@ function groupBy(arr, column) {
 
 try {
   const reqs = parseCsvFileToObjects(path.join(dataDir, 'report_All_Global_REQ_New_Report_KF.csv'));
-  
-  const totalRequisitions = reqs.length;
-  
-  const reqIdSet = new Set();
+
+  // Deduplicate by Job Req ID (keep last occurrence)
+  const totalRowsBeforeDedup = reqs.length;
+  const reqMap = new Map();
   reqs.forEach(r => {
+    const id = (r['Job Req ID'] || '').trim();
+    if (id) reqMap.set(id, r);
+  });
+  const dedupedReqs = Array.from(reqMap.values());
+
+  const totalRequisitions = dedupedReqs.length;
+
+  const reqIdSet = new Set();
+  dedupedReqs.forEach(r => {
     if (r['Job Req ID']) reqIdSet.add(r['Job Req ID']);
   });
   const uniqueReqIds = reqIdSet.size;
@@ -97,9 +106,9 @@ try {
     pendingApproval: 0
   };
   
-  reqs.forEach(r => {
+  dedupedReqs.forEach(r => {
     const status = (r['Requisition Status'] || '').trim().toLowerCase();
-    
+
     if (status === 'filled') statusDistribution.filled++;
     else if (status === 'cancelled' || status === 'canceled') statusDistribution.cancelled++;
     else if (status === 'open') statusDistribution.open++;
@@ -116,7 +125,7 @@ try {
   const cancelRate = totalRequisitions > 0 ? Math.round((statusDistribution.cancelled / totalRequisitions) * 1000) / 10 : 0;
   
   const ttfValues = [];
-  reqs.forEach(r => {
+  dedupedReqs.forEach(r => {
     const status = (r['Requisition Status'] || '').trim().toLowerCase();
     const isFilled = status === 'filled' || status.includes('fill');
     if (isFilled && r['Time to Fill']) {
@@ -147,10 +156,10 @@ try {
     timeToFill.count = ttfValues.length;
   }
   
-  const byFunction = groupBy(reqs, 'Function');
-  const byCountry = groupBy(reqs, 'Career Site Filter Country');
-  const byEltMember = groupBy(reqs, 'ELT Member');
-  const byBusinessUnit = groupBy(reqs, 'Business Unit');
+  const byFunction = groupBy(dedupedReqs, 'Function');
+  const byCountry = groupBy(dedupedReqs, 'Career Site Filter Country');
+  const byEltMember = groupBy(dedupedReqs, 'ELT Member');
+  const byBusinessUnit = groupBy(dedupedReqs, 'Business Unit');
   
   const postingsData = parseCsvFileToObjects(path.join(dataDir, 'report_Posted_Requisitions_Global_KF.csv'));
   const postings = {
@@ -175,7 +184,7 @@ try {
     over90: 0
   };
   
-  reqs.forEach(r => {
+  dedupedReqs.forEach(r => {
     const status = (r['Requisition Status'] || '').trim().toLowerCase();
     const isOpen = status === 'open' || (status.includes('open') && !status.includes('hold'));
     if (isOpen) {
@@ -196,6 +205,7 @@ try {
 
 export const realData = ${JSON.stringify({
     totalRequisitions,
+    totalRowsBeforeDedup,
     uniqueReqIds,
     statusDistribution,
     fillRate,
@@ -215,7 +225,8 @@ export const realData = ${JSON.stringify({
   fs.writeFileSync(outputFile, outputContent, 'utf8');
   
   console.log(`Summary:
-Total rows: ${totalRequisitions}
+Total rows before dedup: ${totalRowsBeforeDedup}
+Total requisitions (deduped): ${totalRequisitions}
 Filled count: ${statusDistribution.filled}
 Fill rate: ${fillRate}%
 Avg TTF: ${timeToFill.average} days`);
