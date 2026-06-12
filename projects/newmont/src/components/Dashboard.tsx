@@ -2,18 +2,10 @@
 
 import React, { useMemo } from 'react';
 import { useDashboardStore } from '@/stores/dashboard';
-import { useCountUp, Stagger, Sparkline, BarChart, DonutChart } from '@/components/Charts';
+import { useCountUp, Stagger, BarChart, DonutChart } from '@/components/Charts';
 import { CCIcons } from '@/components/Icons';
 import { MOCK_DATA } from '@/lib/mock-data';
-
-const SPARKS: Record<string, number[]> = {
-  reqs: [12, 14, 13, 16, 15, 18, 17, 19],
-  fill: [68, 69, 71, 70, 72, 71.5, 73, 73.6],
-  ttf: [92, 90, 88, 86, 85, 83, 81, 80.1],
-  cancel: [19, 20.5, 20, 21, 20.8, 21.3, 21, 21.1],
-  open: [60, 64, 70, 66, 72, 68, 75, 73],
-  hold: [24, 22, 25, 23, 21, 22, 20, 21],
-};
+import { realData } from '@/lib/real-data';
 
 const STATUS_COLORS: Record<string, string> = {
   Filled: 'var(--green)',
@@ -36,24 +28,13 @@ interface KpiCardProps {
     decimals?: number;
     color: string;
     icon: keyof typeof CCIcons;
-    trend: {
-      dir: 'up' | 'down' | 'flat';
-      val: string;
-      cls: string;
-    };
-    note: string;
+    subtitle: string;
   };
   active?: boolean;
 }
 
 function KpiCard({ k, active = true }: KpiCardProps) {
   const I = CCIcons[k.icon];
-  const Arrow =
-    k.trend.dir === 'up'
-      ? CCIcons.arrowUp
-      : k.trend.dir === 'down'
-      ? CCIcons.arrowDown
-      : CCIcons.minus;
   const val = useCountUp(k.value, { decimals: k.decimals || 0, active, duration: 1300 });
 
   return (
@@ -69,13 +50,8 @@ function KpiCard({ k, active = true }: KpiCardProps) {
         {k.suffix}
       </div>
       <div className="kpi-foot">
-        <span className={`kpi-trend ${k.trend.cls}`}>
-          <Arrow />
-          {k.trend.val}
-        </span>
-        <span className="kpi-note">{k.note}</span>
+        <span className="kpi-note">{k.subtitle}</span>
       </div>
-      <Sparkline points={SPARKS[k.id] || []} color={k.color} />
     </div>
   );
 }
@@ -120,8 +96,7 @@ export default function Dashboard({ active = true }: DashboardViewProps) {
         suffix: '',
         color: 'var(--accent)',
         icon: 'layers' as const,
-        trend: { dir: 'up' as const, val: '+8.4%', cls: 'trend-up' },
-        note: 'vs. prior 12 mo',
+        subtitle: 'all-time',
       },
       {
         id: 'fill',
@@ -131,8 +106,7 @@ export default function Dashboard({ active = true }: DashboardViewProps) {
         decimals: 1,
         color: 'var(--green)',
         icon: 'target' as const,
-        trend: { dir: 'up' as const, val: '+2.1 pts', cls: 'trend-up' },
-        note: 'rolling 90-day',
+        subtitle: 'all-time',
       },
       {
         id: 'ttf',
@@ -142,8 +116,7 @@ export default function Dashboard({ active = true }: DashboardViewProps) {
         decimals: 1,
         color: 'var(--amber)',
         icon: 'clock' as const,
-        trend: { dir: 'down' as const, val: '−6.3 days', cls: 'trend-good-down' },
-        note: 'improving',
+        subtitle: 'all-time',
       },
       {
         id: 'cancel',
@@ -153,8 +126,7 @@ export default function Dashboard({ active = true }: DashboardViewProps) {
         decimals: 1,
         color: 'var(--red)',
         icon: 'alert' as const,
-        trend: { dir: 'flat' as const, val: '+0.4 pts', cls: 'trend-warn' },
-        note: 'watch — above target',
+        subtitle: 'all-time',
       },
       {
         id: 'open',
@@ -163,8 +135,7 @@ export default function Dashboard({ active = true }: DashboardViewProps) {
         suffix: '',
         color: 'var(--purple)',
         icon: 'folder' as const,
-        trend: { dir: 'flat' as const, val: `${openCount} active`, cls: 'trend-flat' },
-        note: `${((openCount / total) * 100 || 0).toFixed(1)}% of pipeline`,
+        subtitle: 'current period',
       },
       {
         id: 'hold',
@@ -173,15 +144,23 @@ export default function Dashboard({ active = true }: DashboardViewProps) {
         suffix: '',
         color: 'var(--gray)',
         icon: 'pause' as const,
-        trend: { dir: 'flat' as const, val: `${((holdCount / total) * 100 || 0).toFixed(1)}% of total`, cls: 'trend-flat' },
-        note: 'see Hold Analysis',
+        subtitle: 'current period',
       },
     ];
   }, [requisitions, hasData]);
 
-  // TTF by Country derived from store if loaded, otherwise fallback
+  // TTF by Country derived from store if loaded, otherwise fallback from realData.byCountry
   const ttfByCountry = useMemo(() => {
-    if (!hasData) return MOCK_DATA.ttfByCountry;
+    if (!hasData) {
+      return realData.byCountry
+        .filter((c) => c.name !== 'Unspecified')
+        .slice(0, 5)
+        .map((c) => ({
+          country: c.name,
+          days: realData.timeToFill.average,
+          open: 0,
+        }));
+    }
 
     const countryGroups: Record<string, { totalTTF: number; count: number; open: number }> = {};
     requisitions.forEach((r) => {

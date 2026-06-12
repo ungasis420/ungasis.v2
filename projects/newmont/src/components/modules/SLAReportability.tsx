@@ -34,16 +34,15 @@ function SLACard({ title, desc, color }: CardProps) {
 
 export default function SLAReportability() {
   const pieData = [
-    { name: 'Calculable', value: 6, color: '#22c55e' },
+    { name: 'Calculable', value: 5, color: '#22c55e' },
     { name: 'Pending', value: 2, color: '#f59e0b' },
-    { name: 'Blocked', value: 9, color: '#ef4444' },
+    { name: 'Blocked', value: 10, color: '#ef4444' },
   ];
 
   const calculableItems = [
     { title: 'Time to Fill', desc: 'Approved->Offer Accept, target 50d' },
     { title: 'Fill Rate', desc: 'Filled/Total' },
     { title: 'Cancel Rate', desc: 'Cancelled/Total' },
-    { title: 'Hold Duration', desc: 'Freeze->UnFreeze' },
     { title: 'Pipeline Stage Times', desc: 'workflow dates' },
     { title: 'Req Aging', desc: 'Created->Today, 60d trigger' },
   ];
@@ -63,6 +62,7 @@ export default function SLAReportability() {
     { title: 'Time to Interview', desc: 'no KF Assigned flag' },
     { title: 'Close Req 1BD', desc: 'no Fill Date' },
     { title: 'Time to Screen BGC', desc: 'no BGC dates' },
+    { title: 'Hold Duration', desc: 'Report 3 missing freeze/unfreeze dates' },
   ];
 
   return (
@@ -130,13 +130,13 @@ export default function SLAReportability() {
           </div>
           <div>
             <h1 style={{ fontSize: '32px', fontWeight: 700, margin: '0 0 8px 0', color: '#ffffff' }}>
-              6 of 17 SLAs Calculable
+              5 of 17 SLAs Calculable
             </h1>
             <p style={{ color: '#a1a1aa', margin: 0, fontSize: '16px', lineHeight: '1.5' }}>
               Current visibility into SLA performance based on CORE fields.<br />
-              <span style={{ color: '#22c55e', fontWeight: 500 }}>6 Calculable</span> &bull;{' '}
+              <span style={{ color: '#22c55e', fontWeight: 500 }}>5 Calculable</span> &bull;{' '}
               <span style={{ color: '#f59e0b', fontWeight: 500 }}>2 Pending</span> &bull;{' '}
-              <span style={{ color: '#ef4444', fontWeight: 500 }}>9 Blocked</span>
+              <span style={{ color: '#ef4444', fontWeight: 500 }}>10 Blocked</span>
             </p>
           </div>
         </div>
@@ -154,7 +154,7 @@ export default function SLAReportability() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
             <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#22c55e' }}></div>
             <h3 style={{ fontSize: '18px', fontWeight: 600, margin: 0, color: '#ffffff' }}>
-              CALCULABLE (6)
+              CALCULABLE (5)
             </h3>
           </div>
           {calculableItems.map((item, idx) => (
@@ -178,7 +178,7 @@ export default function SLAReportability() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
             <div style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: '#ef4444' }}></div>
             <h3 style={{ fontSize: '18px', fontWeight: 600, margin: 0, color: '#ffffff' }}>
-              BLOCKED (9)
+              BLOCKED (10)
             </h3>
           </div>
           {blockedItems.map((item, idx) => (
