@@ -1,0 +1,2 @@
+cd "D:\.projects\ungasis\projects\newmont"
+claude --dangerously-skip-permissions --model sonnet --max-turns 25 --print "Read docs/NEWMONT-v6.4-KICKOFF.md. Execute ALL tasks in order. Read CLAUDE.md for project rules. Read docs/NEWMONT-CONTEXT-PACK.md for field mappings. Complete everything autonomously."

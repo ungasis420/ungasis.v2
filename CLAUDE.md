@@ -1,3 +1,26 @@
+# Read current CLAUDE.md
+$claude = Get-Content "D:\.projects\ungasis\projects\newmont\CLAUDE.md" -Raw
+
+# Prepend token efficiency header
+$header = @"
+# CRITICAL: TOKEN EFFICIENCY
+- Max turns: 10 (stop and report if hitting limit)
+- NEVER re-read a file you already read in this session
+- NEVER create temp scripts for edits — use Write tool directly
+- NEVER investigate security anomalies — just flag and proceed
+- Skip verification reads — trust your edits, let npm run build catch errors
+- One-pass strategy: Read → Edit → Build → Commit. No second passes.
+
+"@
+
+($header + $claude) | Set-Content "D:\.projects\ungasis\projects\newmont\CLAUDE.md" -Encoding UTF8
+
+# Verify
+Write-Host "CLAUDE.md updated: $(:Round((Get-Item D:\.projects\ungasis\projects\newmont\CLAUDE.md).Length/1KB, 1)) KB" -ForegroundColor Green
+
+# Commit
+git add CLAUDE.md && git commit -m "docs: add token efficiency header to CLAUDE.md"
+
 # UNGASIS OS v5.1 "AUTONOMY" — Agent Instructions
 <!-- Single source of truth. All agents read THIS file. -->
 <!-- Last consolidated: 2026-06-10 | Version: 5.1 -->
