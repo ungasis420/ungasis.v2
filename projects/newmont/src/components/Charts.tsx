@@ -90,45 +90,6 @@ export function useTooltip() {
   return { show, move, hide, node };
 }
 
-// ---- sparkline ----
-interface SparklineProps {
-  points: number[];
-  color: string;
-  w?: number;
-  h?: number;
-}
-
-export function Sparkline({ points, color, w = 64, h = 24 }: SparklineProps) {
-  if (!points || points.length === 0) return null;
-  const max = Math.max(...points);
-  const min = Math.min(...points);
-  const rng = max - min || 1;
-  const d = points
-    .map((p, i) => {
-      const x = (i / (points.length - 1)) * w;
-      const y = h - ((p - min) / rng) * (h - 4) - 2;
-      return `${i === 0 ? 'M' : 'L'}${x.toFixed(1)} ${y.toFixed(1)}`;
-    })
-    .join(' ');
-  const last = points[points.length - 1];
-  const lx = w;
-  const ly = h - ((last - min) / rng) * (h - 4) - 2;
-
-  return (
-    <svg className="kpi-spark" width={w} height={h} fill="none">
-      <path
-        d={d}
-        stroke={color}
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        opacity="0.85"
-      />
-      <circle cx={lx} cy={ly} r="2.2" fill={color} />
-    </svg>
-  );
-}
-
 // ---- country code chip ----
 const CCODE: Record<string, string> = {
   'Costa Rica': 'CRI',
