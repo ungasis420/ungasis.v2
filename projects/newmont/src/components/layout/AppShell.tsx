@@ -166,6 +166,17 @@ export default function AppShell({ children }: AppShellProps) {
         <div className="w-full">
           {children}
         </div>
+
+        <footer
+          style={{
+            fontSize: 11,
+            color: 'rgba(255,255,255,0.3)',
+            textAlign: 'center',
+            padding: 16,
+          }}
+        >
+          Newmont Intelligence Command Center v6.8 · Data as of {dateStr}
+        </footer>
       </main>
 
       {/* TWEAKS */}

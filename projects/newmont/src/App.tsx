@@ -215,7 +215,11 @@ export default function App() {
         </div>
 
         {/* Selected Module */}
-        <div className="w-full">
+        <div
+          key={activeModule}
+          className="w-full fade-in-view"
+          style={{ animation: 'fadeInView 0.25s ease-out' }}
+        >
           {renderModule()}
         </div>
       </div>

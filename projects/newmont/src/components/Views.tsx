@@ -50,26 +50,37 @@ interface ReqRow {
   title: string;
   country: string;
   flag: string;
+  functionName: string;
   status: string;
   statusCls: string;
-  days: number;
-  recruiter: string;
-  prio: string;
-  prioCls: string;
+  createdDate: string;
 }
 
 export function RequisitionsView() {
   const requisitions = useDashboardStore((s) => s.requisitions);
+  const hasData = requisitions.length > 0;
 
   const [q, setQ] = useState('');
   const [filter, setFilter] = useState('All');
-  const [sort, setSort] = useState<{ key: keyof ReqRow; dir: number }>({ key: 'days', dir: -1 });
+  const [sort, setSort] = useState<{ key: keyof ReqRow; dir: number }>({ key: 'createdDate', dir: -1 });
+  const [displayLimit, setDisplayLimit] = useState(100);
 
   const filters = ['All', 'Open', 'Filled', 'On Hold', 'Cancelled'];
 
   // Map data state dynamically
   const reqRows = useMemo<ReqRow[]>(() => {
-    if (requisitions.length === 0) return MOCK_DATA.reqRows;
+    if (!hasData) {
+      return MOCK_DATA.reqRows.map((r) => ({
+        id: r.id,
+        title: r.title,
+        country: r.country,
+        flag: r.flag,
+        functionName: '—',
+        status: r.status,
+        statusCls: r.statusCls,
+        createdDate: '—',
+      }));
+    }
 
     return requisitions.map((r, idx) => {
       const status = r.requisitionStatus || 'Open';
@@ -78,45 +89,29 @@ export function RequisitionsView() {
       else if (status === 'Cancelled') statusCls = 'b-cancelled';
       else if (status === 'On Hold') statusCls = 'b-hold';
 
-      const age = r.age ?? 0;
-      const recruiter = `${r.taFirstName || ''} ${r.taLastName || ''}`.trim() || 'M. Reyes';
       const flag = COUNTRY_FLAGS[r.careerSiteFilterCountry || ''] || '🌐';
-
-      // Prio estimation
-      let prio = 'Medium';
-      let prioCls = 'b-med';
-      if (age > 100) {
-        prio = 'Critical';
-        prioCls = 'b-crit';
-      } else if (age > 70) {
-        prio = 'High';
-        prioCls = 'b-high';
-      } else if (age < 30) {
-        prio = 'Low';
-        prioCls = 'b-low';
-      }
 
       return {
         id: r.jobReqId || `REQ-${84210 + idx * 37}`,
         title: r.jobTitle || 'Role Title',
         country: r.careerSiteFilterCountry || 'Unknown',
         flag,
+        functionName: r.functionName || '—',
         status,
         statusCls,
-        days: age,
-        recruiter,
-        prio,
-        prioCls,
+        createdDate: r.dateCreated || '—',
       };
     });
-  }, [requisitions]);
+  }, [requisitions, hasData]);
 
   const rows = useMemo(() => {
     let r = reqRows.filter(
       (x) =>
         (filter === 'All' || x.status.toLowerCase() === filter.toLowerCase()) &&
         (q === '' ||
-          (x.title + x.country + x.id + x.recruiter).toLowerCase().includes(q.toLowerCase()))
+          (x.title + x.country + x.id + x.functionName + x.status + x.createdDate)
+            .toLowerCase()
+            .includes(q.toLowerCase()))
     );
 
     const { key, dir } = sort;
@@ -131,6 +126,13 @@ export function RequisitionsView() {
 
     return r;
   }, [reqRows, q, filter, sort]);
+
+  // Reset pagination when the result set changes
+  React.useEffect(() => {
+    setDisplayLimit(100);
+  }, [q, filter]);
+
+  const visibleRows = rows.slice(0, displayLimit);
 
   const th = (key: keyof ReqRow, label: string, num?: boolean) => (
     <th
@@ -149,9 +151,11 @@ export function RequisitionsView() {
 
   return (
     <div className="view">
-      <div style={{ background: '#1e293b', border: '1px solid #f59e0b', color: '#f59e0b', padding: '8px 16px', borderRadius: '8px', fontSize: '14px', textAlign: 'center', marginBottom: '16px' }}>
-        Sample data — requisition table will be populated from CORE export via Ingestion Zone
-      </div>
+      {!hasData && (
+        <div style={{ background: '#1e293b', border: '1px solid #f59e0b', color: '#f59e0b', padding: '8px 16px', borderRadius: '8px', fontSize: '14px', textAlign: 'center', marginBottom: '16px' }}>
+          Sample data — requisition table will be populated from CORE export via Ingestion Zone
+        </div>
+      )}
       <div className="view-intro">
         <div className="view-eyebrow">Live Pipeline</div>
         <div className="view-title">Requisitions</div>
@@ -189,26 +193,26 @@ export function RequisitionsView() {
             fontWeight: 600,
           }}
         >
-          {rows.length} of {reqRows.length}
+          Showing {visibleRows.length} of {rows.length} requisitions
+          {rows.length !== reqRows.length && ` (filtered from ${reqRows.length})`}
         </div>
       </div>
 
       <div className="card" style={{ overflow: 'hidden' }}>
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto" style={{ maxHeight: 560, overflowY: 'auto' }}>
           <table className="data">
             <thead>
               <tr>
                 {th('id', 'Req ID')}
-                {th('title', 'Role')}
+                {th('title', 'Job Title')}
                 {th('country', 'Country')}
+                {th('functionName', 'Function')}
                 {th('status', 'Status')}
-                {th('days', 'Days Open', true)}
-                {th('recruiter', 'Recruiter')}
-                {th('prio', 'Priority')}
+                {th('createdDate', 'Created Date')}
               </tr>
             </thead>
             <tbody>
-              {rows.map((r) => (
+              {visibleRows.map((r) => (
                 <tr key={r.id}>
                   <td>
                     <span className="req-id">{r.id}</span>
@@ -222,32 +226,16 @@ export function RequisitionsView() {
                       {r.country}
                     </span>
                   </td>
+                  <td className="cell-muted">{r.functionName}</td>
                   <td>
                     <span className={`badge ${r.statusCls}`}>{r.status}</span>
                   </td>
-                  <td
-                    className="num"
-                    style={{
-                      fontWeight: 600,
-                      color:
-                        r.days > 120
-                          ? 'var(--red)'
-                          : r.days > 75
-                          ? 'var(--amber)'
-                          : 'var(--text)',
-                    }}
-                  >
-                    {r.days}
-                  </td>
-                  <td className="cell-muted">{r.recruiter}</td>
-                  <td>
-                    <span className={`badge ${r.prioCls}`}>{r.prio}</span>
-                  </td>
+                  <td className="cell-muted">{r.createdDate}</td>
                 </tr>
               ))}
               {rows.length === 0 && (
                 <tr>
-                  <td colSpan={7} style={{ textAlign: 'center', color: 'var(--text-dim)', padding: '40px' }}>
+                  <td colSpan={6} style={{ textAlign: 'center', color: 'var(--text-dim)', padding: '40px' }}>
                     No requisitions match your filters.
                   </td>
                 </tr>
@@ -256,6 +244,26 @@ export function RequisitionsView() {
           </table>
         </div>
       </div>
+
+      {visibleRows.length < rows.length && (
+        <div style={{ textAlign: 'center', marginTop: 16 }}>
+          <button
+            onClick={() => setDisplayLimit((d) => d + 100)}
+            style={{
+              background: 'rgba(255,255,255,0.05)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              color: 'var(--text)',
+              borderRadius: 8,
+              padding: '8px 20px',
+              fontSize: 12.5,
+              fontWeight: 600,
+              cursor: 'pointer',
+            }}
+          >
+            Load more ({rows.length - visibleRows.length} remaining)
+          </button>
+        </div>
+      )}
     </div>
   );
 }
