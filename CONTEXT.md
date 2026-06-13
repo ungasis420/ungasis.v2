@@ -1,13 +1,20 @@
 # UNGASIS OS — Current State
 
 ## Version
-v6.2 Automation Pipeline Wired (June 13, 2026)
+v6.3 JARVIS Score + Commands Page (June 14, 2026)
 
 ## Last Session
-- Date: June 13, 2026
-- Duration: ~5 hours (mega-session)
-- Agent: M365 Copilot Opus + Agy CLI + Claude Code CLI
+- Date: June 14, 2026
+- Duration: ~1 hour
+- Agent: Claude Code CLI
 - Outcome: success
+
+## What Was Completed (June 14, 2026)
+- generate-context-pack.py: one command for all context files
+- jarvis-score.py: weighted JARVIS capability score calculator
+- battle-test.ps1: -Json flag writes .ungasis/dashboard/battle-test.json
+- startup-sequence.py: prints JARVIS score after TOP 3 ACTIONS
+- Dashboard: CommandsPage added, wired into App.tsx + Sidebar (6/6 pages complete)
 
 ## What Was Completed (June 13, 2026)
 - v5.4 AUTOMATE: 5 scripts (task-router, self-heal, one-shot-build, scheduler, cross-project)
@@ -34,15 +41,14 @@ v6.2 Automation Pipeline Wired (June 13, 2026)
 
 ## Pending (Next Session)
 1. Graph community re-labeling (improve context-inject relevance)
-2. Dashboard Settings page (Wave 4)
-3. Verify one-shot-build.ps1 end-to-end with task-router + pre/post-flight pipeline on a real task
-4. UNGASIS enters MAINTENANCE MODE  only fix bugs, no new features
+2. Verify one-shot-build.ps1 end-to-end with task-router + pre/post-flight pipeline on a real task
+3. UNGASIS enters MAINTENANCE MODE  only fix bugs, no new features
 
 ## Projects
 | Project | Version | Status | Next |
 |---------|---------|--------|------|
-| UNGASIS OS | v6.0 Wave 3 | Active | Fix scripts + wire orchestration |
-| Dashboard | LIVE (381.7 KB) | 5/6 pages | Settings page (Wave 4) |
+| UNGASIS OS | v6.3 | Active | Maintenance mode |
+| Dashboard | LIVE (381.7 KB) | 6/6 pages | Maintenance mode |
 | Newmont | v6.8 | Active | QIM demo June 18-19 |
 | RiftCoach | Phase 5.5-A | Paused | Phase 6 after Newmont QIM |
 
@@ -65,4 +71,4 @@ v6.2 Automation Pipeline Wired (June 13, 2026)
 - Date: 2026-06-13
 - File: docs/handoffs/handoff-2026-06-13.md
 
-_Last reviewed: June 13, 2026 | Review by: September 2026 | Owner: Mel_
+_Last reviewed: June 14, 2026 | Review by: September 2026 | Owner: Mel_

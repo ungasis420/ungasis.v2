@@ -7,6 +7,7 @@ import { AgentsPage } from './pages/AgentsPage';
 import { WikiPage } from './pages/WikiPage';
 import { AutomationPage } from './pages/AutomationPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { CommandsPage } from './pages/CommandsPage';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/agents" element={<AgentsPage />} />
             <Route path="/wiki" element={<WikiPage />} />
             <Route path="/automation" element={<AutomationPage />} />
+            <Route path="/commands" element={<CommandsPage />} />
             <Route path="/settings" element={<SettingsPage />} />
           </Routes>
         </main>

@@ -8,6 +8,7 @@ const navItems = [
   { label: 'Agents', path: '/agents' },
   { label: 'Wiki', path: '/wiki' },
   { label: 'Automation', path: '/automation' },
+  { label: '⌘ Commands', path: '/commands' },
   { label: 'Settings', path: '/settings' },
 ];
 

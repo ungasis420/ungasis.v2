@@ -232,6 +232,11 @@ def main():
     for a in actions[:3]:
         print(f"  - {a}")
     print(f"  Status: {get_context_status_line()}")
+
+    score_out = run_capture("jarvis-score.py")
+    if score_out:
+        print(score_out.strip())
+
     return 0
 
 if __name__ == "__main__":
