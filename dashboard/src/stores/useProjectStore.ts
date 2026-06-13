@@ -19,7 +19,7 @@ export const useProjectStore = create<ProjectStore>(() => ({
       version: 'v6.0',
       status: 'active',
       stack: 'Python + Markdown + Git',
-      nextMilestone: 'v6.0 Wave 3'
+      nextMilestone: 'Wave 3 Wiki+Auto'
     },
     {
       name: 'Newmont',

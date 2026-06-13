@@ -3,7 +3,7 @@
 > Source of truth: [CLAUDE.md](./CLAUDE.md). This passport is a quick-reference companion.
 
 ## 1. Identity
-* **Project**: UNGASIS OS v6.0 JARVIS GUI — COMPLETE (Wave 2 done)
+* **Project**: UNGASIS OS v6.0 JARVIS GUI  Wave 2 complete
 * **Type**: Knowledge repo + real apps (Newmont, RiftCoach, Dashboard)
 * **Owner**: Mel John Dimat (Filipino, Manila, ESL speaker, visual learner)
 * **Budget**: $19.99/mo Google AI Pro + $0 company tools (M365 Copilot, ChatGPT Enterprise)
@@ -78,14 +78,14 @@
 * **Antigravity-Mem**: Installed, verified.
 * **JARVIS Score**: 98% complete
 * **Sprint Count**: 66+ completed
-* **Scripts**: ~44 automation scripts (`scripts/`)
+* **Scripts**: ~48 automation scripts (`scripts/`)
 * **Wiki**: 56 pages
 * **Files**: ~1,222+ files across 240+ folders
 * **Engines**: 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](./.ungasis/architect/BLUEPRINT_CONTEXT.md))
 * **Agent Crew**: 6 agents (Commander, Blueprint Architect, Builder, Surgeon, Quality Auditor, Graphify Watchdog)
 * **Slash Commands**: 9 slash commands (/goal, /schedule, /grill-me, /blueprint, /scout, /tag-sweep, /audit, /commander, /designer)
 * **5 JARVIS Dimensions**: Second Brain, App Fabricator, Project Director, Personal JARVIS, Growth Engine
-* **Dashboard**: LIVE at dashboard/dist/index.html, 6 pages, 3 working
+* **Dashboard**: LIVE at dashboard/dist/index.html, 6 pages (3 live)
 * **Next milestone**: v6.0 Wave 3 (Wiki + Automation pages)
 
 ## 10. Scope Boundaries

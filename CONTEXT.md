@@ -1,4 +1,4 @@
-## v6.0 JARVIS GUI — Wave 2 Complete (June 13, 2026)
+## v6.0 JARVIS GUI  Wave 2 Complete (June 13, 2026)
 - Wave 1: scaffold + data layer + startup sequence ✅
 - Wave 2: routing + projects + agents + auto-logging ✅
 - v6.1: youtube-ingest.py + auto-trigger.py ✅
@@ -6,7 +6,7 @@
 - Dashboard: 3/6 pages live (Dashboard, Projects, Agents)
 - Wiki/Automation/Settings: Wave 3 stubs
 - Next: Wave 3 (Wiki + Automation pages)
-- Scripts: ~44 | Wiki: 56 pages | Build: 376KB single-file
+- Scripts: ~48 | Wiki: 56 pages | Build: 376KB single-file
 
 ---
 
