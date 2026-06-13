@@ -103,17 +103,9 @@ def post_session():
                 "--from", "ungasis", "--to", "ungasis"])
     print(proc.stdout)
 
-    sessions_file = ROOT / ".ungasis" / "tracking" / "sessions.jsonl"
-    already_logged = False
-    if sessions_file.exists():
-        today = datetime.now(timezone.utc).date().isoformat()
-        for line in sessions_file.read_text(encoding="utf-8").splitlines():
-            if today in line:
-                already_logged = True
-                break
-
-    if not already_logged:
-        run([sys.executable, "scripts/token-logger.py", "--quick"], input="")
+    run([sys.executable, "scripts/token-logger.py", "--unattended",
+         "--agent", "auto", "--task", "auto-trigger post-session",
+         "--exchanges", "0", "--tokens", "0"])
 
     log_action("post-session", "ok", "cross-project checked")
     print("AUTO-TRIGGER [OK]")

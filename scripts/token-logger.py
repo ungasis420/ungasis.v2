@@ -67,6 +67,26 @@ def ask_yesno(label):
         print("  Please type yes or no.")
 
 
+def collect_unattended(agent, task, exchanges, tokens):
+    """Build a session dict from CLI args, no prompts."""
+    return {
+        "timestamp": datetime.now().isoformat(timespec="seconds"),
+        "project": "ungasis",
+        "task": task,
+        "agent": agent,
+        "model": "other",
+        "duration_minutes": 0,
+        "exchanges": exchanges,
+        "files_changed": 0,
+        "lines_added": 0,
+        "lines_removed": 0,
+        "outcome": "success",
+        "wiki_context_used": False,
+        "notes": "",
+        "estimated_tokens": tokens,
+    }
+
+
 def collect(quick):
     """Run the questionnaire and return a session dict."""
     print("=" * 50)
@@ -142,7 +162,30 @@ def main():
     parser.add_argument("--quick", action="store_true",
                         help="Short mode: project, task, agent, duration, "
                              "exchanges, outcome only.")
+    parser.add_argument("--unattended", action="store_true",
+                        help="No prompts. Requires --agent, --task, "
+                             "--exchanges, --tokens.")
+    parser.add_argument("--agent", help="Agent name (unattended mode)")
+    parser.add_argument("--task", help="Task description (unattended mode)")
+    parser.add_argument("--exchanges", type=int,
+                        help="Number of exchanges (unattended mode)")
+    parser.add_argument("--tokens", type=int,
+                        help="Estimated tokens (unattended mode)")
     args = parser.parse_args()
+
+    if args.unattended:
+        missing = [name for name, val in [
+            ("--agent", args.agent), ("--task", args.task),
+            ("--exchanges", args.exchanges), ("--tokens", args.tokens),
+        ] if val is None]
+        if missing:
+            print(f"--unattended requires: {', '.join(missing)}")
+            return 1
+        session = collect_unattended(args.agent, args.task,
+                                       args.exchanges, args.tokens)
+        save(session)
+        show_summary(session)
+        return 0
 
     try:
         session = collect(args.quick)

@@ -122,6 +122,8 @@ $commitMsg = "feat: one-shot build — $Task"
 git commit -m $commitMsg
 Write-Host ""
 
+python (Join-Path $ProjectRoot "scripts\token-logger.py") --unattended --agent $Agent --task $Task --exchanges 1 --tokens 2000
+
 Write-Host "=== Pipeline complete ===" -ForegroundColor Magenta
 
 # Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
