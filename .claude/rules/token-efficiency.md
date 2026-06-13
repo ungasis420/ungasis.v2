@@ -25,4 +25,17 @@
 - Don't add comments explaining obvious code.
 - Don't refactor code you weren't asked to touch.
 
+## Session Launch Protocol
+- ALWAYS: /effort low (default for ALL tasks)
+- ONLY use /effort high for: architecture decisions, complex multi-file refactors
+- Max turns: 7 (not 15) — forces Claude to be focused
+- NEVER read third-party source code (site-packages/, node_modules/)
+- If a tool CLI fails, use --help only (max 3 discovery commands)
+- If still stuck after 3 attempts → STOP and ask user
+
+## Prompt Pre-Flight (before pasting /goal)
+- Include tool CLI help output for any non-standard tool
+- Include "DO NOT re-extract/re-index — work with existing data" when applicable
+- Include known gotchas (e.g., "DeepSeek key may not be set")
+
 ## File: Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
