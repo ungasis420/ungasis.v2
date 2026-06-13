@@ -95,8 +95,8 @@ def main():
         riftcoach_status = rc_match.group(1)
 
     name = "Mel John Dimat"
-    role = "Assistant"
-    manager = "Mel"
+    role = "Consultant, Reporting"
+    manager = "Kurt Leander Helmuth"
     description = "personal AI operating system"
 
     # Extracted Sections

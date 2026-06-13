@@ -73,6 +73,11 @@ $routingRaw = python (Join-Path $ProjectRoot "scripts\task-router.py") --task $T
 $routing = $routingRaw | ConvertFrom-Json
 Write-Step "task-router" "OK" "agent=$($routing.agent) model=$($routing.model) effort=$($routing.effort)"
 
+# STEP 1.5: context-inject (build hot-context from graph)
+Write-Step "context-inject" "START" "Querying knowledge graph"
+python (Join-Path $ProjectRoot "scripts/context-inject.py") --task $TaskDescription | Out-Null
+Write-Step "context-inject" "PASS" "Hot context injected"
+
 # STEP 2: pre-flight.py (7 checks)
 Write-Step "pre-flight" "START" "Running pre-flight checks"
 python (Join-Path $ProjectRoot "scripts\pre-flight.py") --project ungasis --json | Out-Null
