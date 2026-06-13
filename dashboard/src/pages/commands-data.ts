@@ -73,7 +73,7 @@ export const COMMAND_SECTIONS: CommandSection[] = [
       },
       {
         name: 'context-inject',
-        command: 'python scripts/context-inject.py',
+        command: 'python scripts/context-inject.py --task "<topic>"',
         description: 'Inject relevant knowledge graph context for a specific task'
       },
       {
