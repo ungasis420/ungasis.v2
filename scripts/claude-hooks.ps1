@@ -8,7 +8,7 @@
 
 param (
     [Parameter(Mandatory = $true)]
-    [ValidateSet("before", "after")]
+    [ValidateSet("before", "after", "post-commit", "post-session")]
     [string]$Phase,
 
     [string]$Task = ""
@@ -31,6 +31,14 @@ if ($Phase -eq "before") {
     Write-Host "Wrote hot context to $HotContext"
     Write-Host ""
     Write-Host $output
+}
+elseif ($Phase -eq "post-commit") {
+    Write-Host "Running post-commit auto-trigger..." -ForegroundColor Cyan
+    python (Join-Path $ProjectRoot "scripts\auto-trigger.py") --action post-commit
+}
+elseif ($Phase -eq "post-session") {
+    Write-Host "Running post-session auto-trigger..." -ForegroundColor Cyan
+    python (Join-Path $ProjectRoot "scripts\auto-trigger.py") --action post-session
 }
 else {
     Write-Host "Logging session (quick mode)..." -ForegroundColor Cyan
