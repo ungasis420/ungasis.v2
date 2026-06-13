@@ -1,9 +1,31 @@
-## Hot Context for: "test"
-| Page | Relevance | Key Insight |
-|------|-----------|-------------|
-| Claude Fable 5 UI/UX One-Shots � 5 Tests | 9 | Who:** Gary Simon (DesignCourse) � full-stack developer with 20+ years experience, 1.17M subscribers [youtube.com] |
-| Fable 5 for Web Design is Next Level!!! (3D, Interactive, Animated!) | 2 | Who:** Codex Community � 216K subscribers, web development education channel [youtube.com] |
-| I Made Opus 4.8 and Fable 5 Build the Same App (RAW RESULTS) | 2 | Who:** Pat Simmons � AI builder, founder of Persimmons Studio, publisher of "AI for Mortals" newsletter [youtube.com] |
-| Groq API Keys Expiring Silently | 1 | A bug where Groq API keys expire without any notification, breaking agent tasks mid-execution. |
+# Hot Context (auto-generated)
+Task: fix wiki health scoring
+Generated: 2026-06-13T14:11:19.804565+00:00
+Nodes: 15
 
-<!-- staleness: generated 2026-06-13T08:12:00+00:00, regenerate per task -->
+## Relevant Knowledge
+- **health**
+- **parse_wiki_page()**
+- **Parse a wiki page and return structured data dict.**
+- **parse_champion_wiki()**
+- **Extract entity name from wiki URL.**
+- **Parse a wiki champion page for structured data.**
+- **Extract rune data and download icons from wiki.**
+- **All 137 Wild Rift champions as of Patch 7.1d. Each entry: (slug_id, wiki_page_n**
+- **to_wiki_filename()**
+- **Convert slug to wiki-style filename (spaces to underscores, first cap).**
+- **Fetch wiki page and extract base stats. Uses requests like v2.**
+- **run_batch_scoring()**
+- **Test quality scoring dimensions.**
+- **cmd_health()**
+- **Cmd health.      Args/Returns if relevant.**
+
+## Related Files
+- projects/riftcoach/data/riftcoach_wr_merged_intelligence_database_v0_7_1_targeted_fix/riftcoach_wr_merged_intelligence_database_v0_7_1/raw_sources/wr_opus_zip/extracted/wr_opus/wr_gold_formulas_v3.json
+- projects/riftcoach/wr_extractor/archive/wr_extractor.py
+- projects/riftcoach/wr_extractor/wr_extractor_v2.py
+- projects/riftcoach/wr_profile_extractor/champion_list.py
+- projects/riftcoach/wr_profile_extractor/extract_profiles.py
+- scripts/quality-score.py
+- scripts/tests/test_parsers.py
+- scripts/ungasis.py

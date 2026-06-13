@@ -1,0 +1,4 @@
+2026-06-13 21:29:09 | task-router | START | test orchestration
+2026-06-13 21:29:09 | task-router | OK | agent=claude model=sonnet effort=high
+2026-06-13 21:29:09 | pre-flight | START | Running pre-flight checks
+2026-06-13 21:29:09 | pre-flight | FAIL | Pre-flight checks failed

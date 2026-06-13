@@ -1,7 +1,18 @@
 {
-  "used_today": 0,
-  "remaining": 45000,
-  "budget": 45000,
-  "percent_used": 0.0,
-  "message": ""
+  "today": {
+    "date": "2026-06-13",
+    "used": 62100,
+    "budget": 50000,
+    "percent": 124.2,
+    "status": "RED"
+  },
+  "rows": [
+    {
+      "date": "2026-06-13",
+      "used": 62100,
+      "budget": 50000,
+      "percent": 124.2,
+      "status": "RED"
+    }
+  ]
 }

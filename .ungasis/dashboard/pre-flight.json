@@ -1,0 +1,37 @@
+[
+  {
+    "check": "CLAUDE.md Check",
+    "status": "PASS",
+    "detail": "CLAUDE.md exists and < 100 lines"
+  },
+  {
+    "check": "Git Clean Check",
+    "status": "FAIL",
+    "detail": "Git working tree has unstaged changes"
+  },
+  {
+    "check": "Wiki Health Check",
+    "status": "PASS",
+    "detail": "Wiki health 98% >= 90%"
+  },
+  {
+    "check": "File Lines Check",
+    "status": "PASS",
+    "detail": "Project dir not found, skipping line check"
+  },
+  {
+    "check": "API Keys Check",
+    "status": "PASS",
+    "detail": "No API keys in staged files"
+  },
+  {
+    "check": "Package.json Check",
+    "status": "PASS",
+    "detail": "package.json exists or not JS project"
+  },
+  {
+    "check": "Last Build Check",
+    "status": "PASS",
+    "detail": "No previous build found"
+  }
+]
