@@ -15,6 +15,18 @@ param (
     [switch]$DryRun
 )
 
+$expectedRoot = "D:\.projects\ungasis"
+if ((Get-Location).Path -ne $expectedRoot) {
+    Write-Host "❌ WRONG DIRECTORY: $(Get-Location). Expected: $expectedRoot" -ForegroundColor Red
+    Write-Host "Run: cd $expectedRoot" -ForegroundColor Yellow
+    exit 1
+}
+if (-not (Test-Path "CLAUDE.md")) {
+    Write-Host "❌ CLAUDE.md not found. Are you in the right project?" -ForegroundColor Red
+    exit 1
+}
+Write-Host "✅ Path verified: $expectedRoot" -ForegroundColor Green
+
 $ProjectRoot = (Get-Item $PSScriptRoot).Parent.FullName
 Set-Location $ProjectRoot
 
