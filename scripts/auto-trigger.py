@@ -75,6 +75,20 @@ def post_commit():
         log_action("post-commit", "ok", "graphify not installed, skipped")
         print("AUTO-TRIGGER [graphify not installed, skipped]")
 
+    # -- copilot-instructions hook ------------------------------------------
+    # Regenerates .github/copilot-instructions.md after every commit so that
+    # M365 Copilot always reflects the latest rules, stack, and conventions.
+    copilot_script = ROOT / "scripts" / "generate-copilot-instructions.py"
+    if copilot_script.exists():
+        cp = run([sys.executable, str(copilot_script), "--quiet"])
+        if cp.returncode == 0:
+            log_action("post-commit", "ok", "copilot-instructions regenerated")
+            print("AUTO-TRIGGER [copilot-instructions updated]")
+        else:
+            log_action("post-commit", "warning", "copilot-instructions regen failed")
+            print("AUTO-TRIGGER [copilot-instructions WARN]")
+    # -- end copilot-instructions hook --------------------------------------
+
     log_action("post-commit", "ok", f"health {score}%")
     print("AUTO-TRIGGER [OK]")
     return 0
@@ -125,10 +139,27 @@ ACTIONS = {"post-commit": post_commit, "post-build": post_build,
            "post-session": post_session}
 
 
+def list_triggers():
+    """Print all registered hooks in a human-readable table."""
+    print("=== UNGASIS Auto-Trigger Registry ===")
+    for action in ACTIONS:
+        print(f"  [{action}]")
+    print()
+    print("  post-commit hooks:")
+    print("    1. wiki-lint health check")
+    print("    2. graphify re-index (if installed)")
+    print("    3. generate-copilot-instructions.py --quiet  [M365 Copilot auto-sync]")
+
+
 def main():
     ap = argparse.ArgumentParser(description="Run post-action triggers.")
-    ap.add_argument("--action", required=True, choices=list(ACTIONS))
+    grp = ap.add_mutually_exclusive_group(required=True)
+    grp.add_argument("--action", choices=list(ACTIONS), help="Fire a trigger event")
+    grp.add_argument("--list", action="store_true", help="List all registered triggers")
     args = ap.parse_args()
+    if args.list:
+        list_triggers()
+        return 0
     return ACTIONS[args.action]()
 
 
