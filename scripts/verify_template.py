@@ -13,7 +13,6 @@ REQUIRED_FILES = [
     'LLM_CONTEXT.md',
     'llms.txt',
     'PROJECT_START_HERE.md',
-    'AGENTS.md',
     'CLAUDE.md',
     '.gitignore',
     '.env.example',
@@ -255,7 +254,6 @@ def check_v5_keywords(errors):
     Args/Returns if relevant.
     """
     targets = {
-        'AGENTS.md': ['Think Before Coding', 'Simplicity First', 'Surgical Changes', 'Goal-Driven Execution', 'Fail-Loud Rule'],
         'docs/CONTEXT_ENGINEERING_DISCIPLINE.md': ['Acquire', 'Curate', 'Compress', 'Persist', 'Shed'],
         'docs/LLM_KNOWLEDGE_BASE.md': ['raw/', 'wiki/', 'schema/'],
         'docs/SPEC_DRIVEN_DEVELOPMENT_OS.md': ['interview', 'requirements', 'design', 'tasks', 'human review'],

@@ -1,6 +1,6 @@
 # Bugfix Prompt Template
 
-Read AGENTS.md and docs/TEST_COMMANDS.md.
+Read CLAUDE.md and docs/TEST_COMMANDS.md.
 
 ## Bug
 [Describe the bug: what happens vs what should happen]

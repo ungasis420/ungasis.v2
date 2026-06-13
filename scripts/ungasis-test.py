@@ -92,7 +92,7 @@ def main():
     critical = [
         ('CONTEXT.md', 'CONTEXT.md'),
         ('GEMINI.md', 'GEMINI.md'),
-        ('AGENTS.md', 'AGENTS.md'),
+        ('CLAUDE.md', 'CLAUDE.md'),
         ('.ungasis/orchestrator/queue.md', 'queue.md'),
         ('.ungasis/warnings/warning-log.md', 'warning-log.md'),
         ('.ungasis/quality/quality-log.md', 'quality-log.md'),

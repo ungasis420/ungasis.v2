@@ -1,6 +1,6 @@
 # Task Prompt Template
 
-Read AGENTS.md, docs/PROJECT_BRIEF.md, docs/TEST_COMMANDS.md, and docs/TASK_HANDOFF.md.
+Read CLAUDE.md, docs/PROJECT_BRIEF.md, docs/TEST_COMMANDS.md, and docs/TASK_HANDOFF.md.
 
 ## Task
 [Describe the task clearly]

@@ -1,6 +1,6 @@
 # Refactor Prompt Template
 
-Read AGENTS.md and docs/TEST_COMMANDS.md.
+Read CLAUDE.md and docs/TEST_COMMANDS.md.
 
 ## Target
 [File or module to refactor]

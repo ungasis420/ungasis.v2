@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WIKI = ROOT / "knowledge" / "wiki"
 DASHBOARD_OUT = ROOT / ".ungasis" / "dashboard" / "wiki-health.json"
-SUBFOLDERS = ("gotchas", "decisions", "metrics", "patterns")
+SUBFOLDERS = ("gotchas", "decisions", "metrics", "patterns", "uncategorized")
 STALE_DAYS = 30
 MIN_CHARS = 50
 

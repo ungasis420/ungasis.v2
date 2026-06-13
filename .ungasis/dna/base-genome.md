@@ -39,7 +39,7 @@ This is the McDonald's franchise kit for new projects. Every project inherits th
 ## RULES
 - Cline Rules: c:/Users/63905/Downloads/ungasis/.clinerules/ (Rules 00-09)
 - Antigravity Rules: c:/Users/63905/Downloads/ungasis/.agents/rules/
-- Platform Rules: `CLAUDE.md`, `GEMINI.md`, `AGENTS.md`, `CONVENTIONS.md`
+- Platform Rules: `CLAUDE.md`, `GEMINI.md`, `CONVENTIONS.md`
 
 ## CONFIGS
 - `.editorconfig`: Sets indentation (2 spaces), line endings (LF), character set (UTF-8).
@@ -73,7 +73,6 @@ This is the McDonald's franchise kit for new projects. Every project inherits th
 | `c:/Users/63905/Downloads/ungasis/.ungasis/BUILDER_PROFILE.md` | `.ungasis/BUILDER_PROFILE.md` | Builder context |
 | `c:/Users/63905/Downloads/ungasis/CONVENTIONS.md` | `CONVENTIONS.md` | Code styling standards |
 | `c:/Users/63905/Downloads/ungasis/.clinerules/` | `.clinerules/` | Agent rules |
-| `c:/Users/63905/Downloads/ungasis/AGENTS.md` | `AGENTS.md` | Cross-tool rules |
 
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

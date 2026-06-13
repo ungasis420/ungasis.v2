@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WATCH = [
-    'CLAUDE.md', 'AGENTS.md', 'LLM_CONTEXT.md', 'llms.txt',
+    'CLAUDE.md', 'LLM_CONTEXT.md', 'llms.txt',
     'docs/HANDOFF.md', 'docs/SPEC.md', 'knowledge/index.md'
 ]
 

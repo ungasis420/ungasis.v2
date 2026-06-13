@@ -56,7 +56,7 @@ This is UNGASIS OS (or current [QUEST_NAME]), a Markdown-first knowledge reposit
 
 ## Cross-Tool Awareness
 - This project is used across multiple AI assistants: Cline (which reads `.clinerules/`) and Antigravity (which reads `.agents/rules/`).
-- [AGENTS.md](./AGENTS.md) acts as the shared configuration bridge.
+- [CLAUDE.md](./CLAUDE.md) acts as the shared configuration bridge.
 - When editing behavior rules, you must update the rule files in both locations: `.clinerules/` and `.agents/rules/` to keep them in sync.
 
 ---

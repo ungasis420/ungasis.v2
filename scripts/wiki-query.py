@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 WIKI = Path(__file__).resolve().parent.parent / "knowledge" / "wiki"
-SUBFOLDERS = ("gotchas", "decisions", "metrics", "patterns")
+SUBFOLDERS = ("gotchas", "decisions", "metrics", "patterns", "uncategorized")
 # Common words carry little signal and otherwise drown out rare query terms
 # (e.g. "how"/"to" matching every page's 5W+1H "How:" field).
 STOPWORDS = set("the a an and or but to of in on for with is are was were be this "

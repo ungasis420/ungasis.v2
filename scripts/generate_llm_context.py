@@ -60,7 +60,7 @@ def main() -> None:
 
 ## Agent working rules
 
-1. Read this file plus `AGENTS.md` and `CLAUDE.md` before non-trivial work.
+1. Read this file plus `CLAUDE.md` before non-trivial work.
 2. Ask only blocking questions.
 3. Write or update a spec before code when requirements are unclear.
 4. Implement the smallest useful patch.

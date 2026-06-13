@@ -14,7 +14,7 @@
 - [ ] Criteria 3
 
 ## Build Rules
-1. Read [AGENTS.md](./AGENTS.md) and [CONVENTIONS.md](./CONVENTIONS.md) first.
+1. Read [CLAUDE.md](./CLAUDE.md) and [CONVENTIONS.md](./CONVENTIONS.md) first.
 2. Maintain component files under 200 lines.
 3. Every markdown file must end with the standard staleness footer.
 

@@ -1,7 +1,7 @@
 # Fresh Chat Starter
 
 Read these files in order:
-1. AGENTS.md (rules)
+1. CLAUDE.md (rules)
 2. docs/PROJECT_BRIEF.md (project context)
 3. docs/TASK_HANDOFF.md (current state)
 4. docs/TEST_COMMANDS.md (validation)

@@ -15,7 +15,7 @@ AI agents are organized under 7 structured disciplines, which define their speci
 
 | # | Discipline | What It Covers | UNGASIS Coverage |
 |---|---|---|---|
-| 1 | Agent Design | Roles, capabilities, boundaries | ✅ [AGENTS.md](./AGENTS.md), [CLAUDE.md](./CLAUDE.md), [GEMINI.md](./GEMINI.md) |
+| 1 | Agent Design | Roles, capabilities, boundaries | ✅ [CLAUDE.md](./CLAUDE.md), [GEMINI.md](./GEMINI.md) |
 | 2 | Orchestration Patterns | Sequential, parallel, hierarchical, swarm, hybrid | ✅ [orchestration-patterns.md](./.ungasis/agentic/orchestration-patterns.md) |
 | 3 | State Management | Shared state, checkpoints, handoff packets | ✅ [CONTEXT.md](./CONTEXT.md), MEMORY_BANK |
 | 4 | Failure Engineering | Retry, fallback, escalate, circuit break, self-heal | ✅ `config/circuit-breaker.yml` |

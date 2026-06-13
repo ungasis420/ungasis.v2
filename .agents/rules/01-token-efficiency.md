@@ -114,10 +114,10 @@ alwaysApply: true
 - ❌ Asking "shall I continue?" (just continue)
 - ❌ Outputting the full content of files you've read (summarize instead)
 
-### CLAUDE.md / AGENTS.md Approach
+### CLAUDE.md Approach
 - These instruction files are loaded ONCE and cached for the whole session
 - Write them to be dense and structured — every word counts
 - Use bullet points, not paragraphs
-- Define domain vocabulary upfront (see AGENTS.md) to avoid misunderstandings
+- Define domain vocabulary upfront (see CLAUDE.md) to avoid misunderstandings
 
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel

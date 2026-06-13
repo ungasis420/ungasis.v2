@@ -83,7 +83,7 @@ def score_file(filepath, quiet=False):
     a_details = []
     basename = os.path.basename(filepath)
     is_kebab = re.match(r'^[a-z0-9]+(-[a-z0-9]+)*\.[a-z0-9]+$', basename) is not None
-    allowed_uppers = ["README.md", "CONTEXT.md", "GEMINI.md", "AGENTS.md", "CONVENTIONS.md", "LLM_CONTEXT.md", "MODEL_ROUTING.md", "QA-AUDIT-REPORT.md", "QA-MISSION.md", "JARVIS_CORE.md", "SKILL.md"]
+    allowed_uppers = ["README.md", "CONTEXT.md", "GEMINI.md", "CONVENTIONS.md", "LLM_CONTEXT.md", "MODEL_ROUTING.md", "QA-AUDIT-REPORT.md", "QA-MISSION.md", "JARVIS_CORE.md", "SKILL.md"]
     if is_kebab or basename in allowed_uppers:
         a_score += 2
     else:

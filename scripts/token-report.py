@@ -13,7 +13,7 @@ Usage:
 import argparse
 import json
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 SESSIONS_FILE = Path(".ungasis/tracking/sessions.jsonl")
@@ -36,11 +36,18 @@ def load_sessions():
 
 
 def parse_time(s):
-    """Parse an ISO timestamp; return None if missing/bad."""
+    """Parse an ISO timestamp; return None if missing/bad.
+
+    Always returns a naive datetime (UTC) so comparisons between
+    naive and offset-aware timestamps never crash.
+    """
     try:
-        return datetime.fromisoformat(s.get("timestamp", ""))
+        dt = datetime.fromisoformat(s.get("timestamp", ""))
     except (ValueError, AttributeError):
         return None
+    if dt.tzinfo is not None:
+        dt = dt.astimezone(timezone.utc).replace(tzinfo=None)
+    return dt
 
 
 def avg(nums):

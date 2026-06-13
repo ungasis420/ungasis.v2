@@ -138,7 +138,7 @@ def cmd_backup(args):
     zip_name = f"ungasis-backup-{timestamp}.zip"
     zip_path = os.path.join(ROOT_DIR, zip_name)
     critical_folders = ['.ungasis', '.agents', '.gemini', '.clinerules', '.mcp', 'config', 'scripts', 'docs', 'knowledge', 'context', 'projects']
-    critical_files = ['CONTEXT.md', 'GEMINI.md', 'AGENTS.md', 'LLM_CONTEXT.md', 'CONVENTIONS.md', '.gitignore']
+    critical_files = ['CONTEXT.md', 'GEMINI.md', 'CLAUDE.md', 'LLM_CONTEXT.md', 'CONVENTIONS.md', '.gitignore']
     count = 0
     with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
         for f in critical_files:

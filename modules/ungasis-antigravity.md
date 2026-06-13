@@ -100,7 +100,7 @@ Imagine your development workspace is a restaurant kitchen. The different tools 
 
 ## 9. Tool Coexistence & Integration
 
-* **Antigravity and Cline:** Both read `AGENTS.md` in the project root to share basic constraints. However, they keep their detailed configuration files separate (Cline reads `.clinerules/` and `CLAUDE.md`, Antigravity reads `.agents/` and `GEMINI.md`).
+* **Antigravity and Cline:** Both read `CLAUDE.md` in the project root to share basic constraints. However, they keep their detailed configuration files separate (Cline reads `.clinerules/` and `CLAUDE.md`, Antigravity reads `.agents/` and `GEMINI.md`).
 * **Jules with Antigravity:** Use Antigravity for active local building. Once complete, git push your changes. Assign Jules to run automated checks or write unit tests overnight by creating a GitHub issue.
 
 ---
