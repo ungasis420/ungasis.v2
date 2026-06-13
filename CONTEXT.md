@@ -1,3 +1,12 @@
+## v5.4 AUTOMATE — Status
+- ✅ Wave 1: Task router (scripts/task-router.py) — classifies tasks, recommends agent/model/tokens/reasoning
+- ✅ Wave 2: One-shot build pipeline (scripts/one-shot-build.ps1) — route → context → prompt → verify → self-heal → commit
+- ✅ Wave 2: CONTEXT.md status section updated (this entry)
+- ⏳ Wave 3: pending
+- ⏳ Wave 4: pending
+
+---
+
 ## v5.3 CONNECT — Status
 - ✅ Wiki auto-injection (wiki-inject.py)
 - ✅ Session recovery script (session-recovery.py)
