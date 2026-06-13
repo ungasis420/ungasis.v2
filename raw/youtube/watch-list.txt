@@ -1,0 +1,5 @@
+# YouTube watch list — one URL per line, # for comments/disabled entries
+# python scripts/youtube-ingest.py --file raw/youtube/watch-list.txt
+# https://www.youtube.com/watch?v=dQw4w9WgXcQ
+# https://youtu.be/jNQXAC9IVRw
+# https://www.youtube.com/watch?v=9bZkp7q19f0

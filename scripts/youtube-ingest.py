@@ -94,12 +94,30 @@ def log_result(entry):
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
 
 
+def read_urls_from_file(path):
+    urls = []
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        urls.append(line)
+    return urls
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python scripts/youtube-ingest.py <url> [<url> ...]")
+        print("       python scripts/youtube-ingest.py --file <path>")
         return 1
 
-    urls = sys.argv[1:]
+    if sys.argv[1] == "--file":
+        if len(sys.argv) < 3:
+            print("Usage: python scripts/youtube-ingest.py --file <path>")
+            return 1
+        urls = read_urls_from_file(sys.argv[2])
+    else:
+        urls = sys.argv[1:]
+
     results = []
 
     for url in urls:

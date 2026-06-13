@@ -146,8 +146,18 @@ def get_context_status_line():
     except Exception:
         pass
     return "(no status found)"
+def get_version():
+    path = os.path.join(ROOT, "LLM_CONTEXT.md")
+    try:
+        text = open(path, encoding="utf-8", errors="ignore").read()
+        m = re.search(r"Project.*?:\s*UNGASIS OS (v[\d.]+)", text)
+        if m:
+            return m.group(1)
+    except Exception:
+        pass
+    return "v?"
 def main():
-    print("UNGASIS OS v5.4 | Good morning, Mel.")
+    print(f"UNGASIS OS {get_version()} | Good morning, Mel.")
     print("Type 'python scripts/ungasis.py pulse' for full health")
 
     print("SYSTEM HEALTH")

@@ -10,6 +10,7 @@ Stdlib only. UTF-8 throughout.
 """
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -65,6 +66,14 @@ def post_commit():
         log_action("post-commit", "warning", f"health {score}%")
         print("AUTO-TRIGGER [WARNING]")
         return 0
+
+    if shutil.which("graphify"):
+        run(["graphify", "."])
+        log_action("post-commit", "ok", "graphify re-indexed")
+        print("AUTO-TRIGGER [graphify re-indexed]")
+    else:
+        log_action("post-commit", "ok", "graphify not installed, skipped")
+        print("AUTO-TRIGGER [graphify not installed, skipped]")
 
     log_action("post-commit", "ok", f"health {score}%")
     print("AUTO-TRIGGER [OK]")
