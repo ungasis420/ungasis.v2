@@ -1,10 +1,28 @@
-# Token Efficiency Rules (auto-applied at session start)
-- Complete all work in a single response. Max 1 turn.
-- Never ask clarifying questions. Assume reasonable defaults.
-- Never explain what you will do. Just do it.
-- Never echo or summarize the prompt.
-- Skip verification reads unless explicitly asked.
-- Read .ungasis/context/hot-context.md first for task-relevant knowledge.
-- Don't scan directories unless the task requires file discovery.
-- Keep git commit messages under 72 chars.
-- Don't print file contents after writing.
+# Token Efficiency Rules (auto-applied at session start  zero cost)
+
+## Session Behavior
+- Complete ALL work in a single response. Max 1 turn per session.
+- Never ask clarifying questions. Make reasonable assumptions and state them.
+- Never explain what you're about to do. Just do it.
+- Never echo or summarize the prompt back.
+- Never print file contents after writing them unless asked.
+- Don't list directory contents unless the task requires file discovery.
+
+## Context Loading
+- Read .ungasis/context/hot-context.md FIRST for task-relevant knowledge graph data.
+- If hot-context.md is empty or missing, proceed without it.
+- Only read files explicitly mentioned in the prompt.
+- Trust the file system  skip verification reads unless asked.
+
+## Output
+- Code + commit only. No prose explanations unless asked.
+- Git commit messages: under 72 chars, format: type: description
+- Don't print success messages for each step. One summary at the end.
+
+## Anti-Waste
+- Don't install packages unless the task requires a missing one.
+- Don't create backup files. Git is the backup.
+- Don't add comments explaining obvious code.
+- Don't refactor code you weren't asked to touch.
+
+## File: Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
