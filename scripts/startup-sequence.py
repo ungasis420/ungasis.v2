@@ -1,0 +1,193 @@
+#!/usr/bin/env python3
+"""startup-sequence.py — Morning startup summary for UNGASIS OS.
+
+Runs 5 quick checks (system health, last session, wiki freshness,
+pending tasks, scheduled backup) and prints a formatted summary with
+suggested next actions. Designed to run from $PROFILE on shell start.
+Must finish in <3s, no network calls, stdlib only.
+"""
+import os
+import re
+import sys
+import glob
+import subprocess
+from datetime import datetime
+
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+except AttributeError:
+    pass
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+SCRIPTS = os.path.join(ROOT, "scripts")
+SUBPROC_TIMEOUT = 2
+
+
+def run_capture(script_name):
+    """Run a script under SCRIPTS and return its stdout, or None on failure."""
+    path = os.path.join(SCRIPTS, script_name)
+    if not os.path.exists(path):
+        return None
+    try:
+        res = subprocess.run(
+            [sys.executable, path],
+            capture_output=True, text=True, encoding="utf-8", errors="ignore",
+            timeout=SUBPROC_TIMEOUT, cwd=ROOT,
+        )
+        return res.stdout
+    except Exception:
+        return None
+
+
+def check_health():
+    """Pull a few key lines out of daily-pulse.py output."""
+    out = run_capture("daily-pulse.py")
+    if not out:
+        return ["  (pulse unavailable)"], False
+    lines = []
+    warn_count = 0
+    for pattern, label in [
+        (r"Pending:\s*\d+.*Total:\s*\d+", None),
+        (r"Active:\s*\d+", "Warnings"),
+        (r"Last commit:.*", None),
+        (r"Files >90 days old:\s*\d+", None),
+    ]:
+        m = re.search(pattern, out)
+        if m:
+            lines.append(f"  {m.group(0).strip()}")
+            if label == "Warnings":
+                wm = re.search(r"\d+", m.group(0))
+                warn_count = int(wm.group(0)) if wm else 0
+    has_warning = "No git commit in >24 hours" in out or warn_count > 0
+    return lines or ["  (no data)"], has_warning
+
+
+def check_last_session():
+    out = run_capture("session-recovery.py")
+    if not out:
+        return ["  (no session log)"]
+    lines = []
+    for ln in out.splitlines():
+        s = ln.strip()
+        if s.startswith("- Last task") or s.startswith("- Outcome"):
+            lines.append(f"  {s.lstrip('- ')}")
+    return lines or ["  (no prior session found)"]
+
+
+def check_wiki():
+    wiki_dir = os.path.join(ROOT, "knowledge", "wiki")
+    total = 0
+    stale = []
+    now = datetime.now()
+    for root_dir, _, files in os.walk(wiki_dir):
+        for f in files:
+            if not f.endswith(".md"):
+                continue
+            total += 1
+            path = os.path.join(root_dir, f)
+            try:
+                text = open(path, encoding="utf-8", errors="ignore").read()
+            except Exception:
+                continue
+            m = re.search(r"Review by:\s*([A-Za-z]+ \d{4})", text)
+            if m:
+                try:
+                    review_by = datetime.strptime(m.group(1), "%B %Y")
+                    if now > review_by:
+                        stale.append(os.path.relpath(path, ROOT).replace("\\", "/"))
+                except ValueError:
+                    pass
+    return total, stale
+
+
+def check_pending_tasks():
+    context_path = os.path.join(ROOT, "CONTEXT.md")
+    if not os.path.exists(context_path):
+        return "Unknown", []
+    text = open(context_path, encoding="utf-8", errors="ignore").read()
+    headings = list(re.finditer(r"^##\s+(.*)$", text, re.MULTILINE))
+    if not headings:
+        return "Unknown", []
+    last = headings[-1]
+    title = last.group(1).strip()
+    section = text[last.end():]
+    items = []
+    for ln in section.splitlines():
+        s = ln.strip()
+        if s.startswith("- ") and len(items) < 5:
+            items.append(s[2:])
+        if s.startswith("---") or s.startswith("## "):
+            break
+    return title, items
+
+
+def check_backup():
+    today = datetime.now().strftime("%Y%m%d")
+    patterns = [
+        os.path.join(ROOT, ".ungasis", "backups", f"*{today}*.zip"),
+        os.path.join(ROOT, f"ungasis-backup-{today}*.zip"),
+    ]
+    for pat in patterns:
+        if glob.glob(pat):
+            return True
+    return False
+
+
+def main():
+    print()
+    print("UNGASIS OS v5.4 | Good morning, Mel.")
+    print("Type 'python scripts/ungasis.py pulse' for full health")
+    print()
+
+    print("🩺 SYSTEM HEALTH")
+    health_lines, has_warning = check_health()
+    for ln in health_lines:
+        print(ln)
+    print()
+
+    print("📝 LAST SESSION")
+    for ln in check_last_session():
+        print(ln)
+    print()
+
+    print("📚 WIKI FRESHNESS")
+    total, stale = check_wiki()
+    print(f"  {total} pages | {len(stale)} due for review")
+    for s in stale[:3]:
+        print(f"  - {s}")
+    print()
+
+    print("📋 PENDING (from CONTEXT.md)")
+    title, items = check_pending_tasks()
+    print(f"  Latest: {title}")
+    for item in items[:3]:
+        print(f"  - {item}")
+    print()
+
+    print("📦 SCHEDULED BACKUP")
+    backed_up = check_backup()
+    print(f"  Today's backup: {'found' if backed_up else 'not found'}")
+    print()
+
+    print("💡 TOP 3 SUGGESTED ACTIONS")
+    suggestions = []
+    if has_warning:
+        suggestions.append("Run 'python scripts/ungasis.py warn' to check warnings")
+    if stale:
+        suggestions.append(f"Review stale wiki page: {stale[0]}")
+    if items:
+        suggestions.append(f"Continue: {items[0]}")
+    if not backed_up:
+        suggestions.append("Run 'python scripts/ungasis.py backup' (no backup today)")
+    if not suggestions:
+        suggestions.append("All clear — pick up where CONTEXT.md left off")
+    for s in suggestions[:3]:
+        print(f"  - {s}")
+    print()
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+# staleness: generated 2026-06-13, regenerate when ungasis.py/session-recovery.py output formats change
