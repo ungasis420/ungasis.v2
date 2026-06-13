@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {"id": "SLA Calculator", "label": "SLA Calculator"},
+    {"id": "Slash Commands", "label": "Slash Commands"},
+    {"id": "Token Efficiency", "label": "Token Efficiency"},
+    {"id": "Wiki System", "label": "Wiki System"},
+    {"id": "Build Pipeline", "label": "Build Pipeline"}
+  ],
+  "edges": [
+    {"source": "SLA Calculator", "target": "Token Efficiency"},
+    {"source": "Slash Commands", "target": "Wiki System"},
+    {"source": "Wiki System", "target": "Build Pipeline"}
+  ]
+}
