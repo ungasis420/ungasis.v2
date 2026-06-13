@@ -1,13 +1,22 @@
 Identity
-I am Mel's AI, Assistant. ESL speaker, visual/kinesthetic learner.
-Building UNGASIS OS v6.0 (personal AI operating system, ~52 scripts,
-56 wiki pages, live dashboard, 20929-node knowledge graph)
-and RiftCoach (in development). Manager: Mel.
+I am Mel John Dimat, Consultant, Reporting. ESL speaker, visual/kinesthetic learner.
+Building UNGASIS OS v1.0 (personal AI operating system, ~59 scripts,
+56 wiki pages, live dashboard, 20K+-node knowledge graph)
+and RiftCoach (in development). Manager: Kurt Leander Helmuth.
 
 Cognitive Architecture (Always Active  Run Silently on Every Response)
-[Missing Section: Cognitive Architecture]
+- Read before write (safety gate)
+- Max 200 lines per new file
+- Max 15 exchanges per session → write handoff summary
+- 3-strike rule: 3 failures → STOP and ask user
+- Never expose secrets, API keys, .env contents
+- source-files/ and archive/ are READ ONLY
+- File boundaries: no two agents edit same file
+- Simple English, explain jargon
+- Staleness footers on all .md files
+- Git: type: description (feat/fix/docs/perf/chore)
 
-UNGASIS OS v6.0
+UNGASIS OS v1.0
 PC Path: C:\Users\63905\Downloads\ungasis  Personal Laptop Path (current): D:\.projects\ungasis
 GitHub: github.com/ungasis420/ungasis.v2
 CLI: python scripts/ungasis.py [pulse|warn|score|test|backup|graph|research]
@@ -16,29 +25,18 @@ Quick commands: "start [project]" | "maintenance" | "status" | "continue"
 For full context: attach docs/UNGASIS-MASTER-CONTEXT-PACK.md
 
 Projects
-* **Version**: v6.0 JARVIS GUI — Wave 2 complete (June 13, 2026)
-* **v5.3 CONNECT**: ✅ COMPLETE (wiki-inject, session-recovery, verifier, merge-agy-output, claude-hooks)
-* **v5.4 AUTOMATE**: ✅ COMPLETE (task-router, self-heal, one-shot-build, scheduled-tasks, cross-project)
-* **GitHub**: Pushed, tag v5.0-jarvis-complete
-* **Graphify**: 20,929 nodes, 24,207 edges, 4,580 communities
-* **Antigravity-Mem**: Installed, verified.
-* **JARVIS Score**: 98% complete
-* **Sprint Count**: 66+ completed
-* **Scripts**: ~48 automation scripts (`scripts/`)
-* **Wiki**: 56 pages
-* **Files**: ~1,222+ files across 240+ folders
-* **Engines**: 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](./.ungasis/architect/BLUEPRINT_CONTEXT.md))
-* **Agent Crew**: 6 agents (Commander, Blueprint Architect, Builder, Surgeon, Quality Auditor, Graphify Watchdog)
-* **Slash Commands**: 9 slash commands (/goal, /schedule, /grill-me, /blueprint, /scout, /tag-sweep, /audit, /commander, /designer)
-* **5 JARVIS Dimensions**: Second Brain, App Fabricator, Project Director, Personal JARVIS, Growth Engine
-* **Dashboard**: LIVE at dashboard/dist/index.html, 6 pages (3 live)
-* **Next milestone**: v6.0 Wave 3 (Wiki + Automation pages)
+[Missing Section: Current Status]
 
 Response Rules
-[Missing Section: Response Rules]
+- Do NOT stop between tasks. Keep going until MISSION COMPLETE.
+- Only pause for: missing info, security concern, 3-strike limit
+- Stop conditions: all tasks complete, 3 consecutive errors, or user says "stop"
 
-Tools (Simplified Stack  v6.0)
-[Missing Section: Tools]
+Tools (Simplified Stack  v1.0)
+- Tier 1 Free: Google AI Pro, Cerebras, Groq → drafts, research, fast iteration
+- Tier 2 Paid: Claude Pro → architecture, complex reasoning, multi-file changes
+- Tier 3 Async: Jules (GitHub PRs), GitHub Actions (scheduled tasks)
+- Rule: ALWAYS try Tier 1 first. Escalate only when insufficient.
 
 UNGASIS Token Tracking
 - 5 short sessions < 1 long session
@@ -50,16 +48,32 @@ UNGASIS Token Tracking
 - For full token rules: see .claude/rules/token-efficiency.md
 
 UNGASIS LESSONS (this sprint)
-[Missing Section: Lessons]
+- Newmont sidebar is in AppShell.tsx, NOT Sidebar.tsx (dead code)
+- Two SLACalculator files: interactive vs reportability
+- CSV data has duplicates — always deduplicate by Job Req ID (18,935 unique)
+- Graphify community labels are generic "Community N" — cosmetic only
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 Expertise
-[Missing Section: Expertise]
+- Max 5 parallel agents
+- Explicit file boundaries (no overlapping edits)
+- Each agent gets 1 task scope
+- For full protocol: see .claude/rules/multi-agent.md
 
 ORCHESTRATOR  Enhanced
-[Missing Section: Orchestrator]
+- Before architecture questions: run graphify query "<question>" --budget 2000
+- Fallback: GRAPH_REPORT.md
+- After sprint: run graphify update . before commit
+- For full graphify rules: see .claude/rules/graphify.md
 
 NEWMONT LESSONS
-[Missing Section: Newmont Lessons]
+- Newmont sidebar is in AppShell.tsx, NOT Sidebar.tsx (dead code)
+- Two SLACalculator files: interactive vs reportability
+- CSV data has duplicates — always deduplicate by Job Req ID (18,935 unique)
+- Graphify community labels are generic "Community N" — cosmetic only
+
+Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ---
-Staleness Footer: Generated at 2026-06-13T12:41:06.624604+00:00
+Staleness Footer: Generated at 2026-06-13T16:23:43.053011+00:00

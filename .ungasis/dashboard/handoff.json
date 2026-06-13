@@ -1,0 +1,8 @@
+{
+  "version": "6.2",
+  "date": "2026-06-14",
+  "duration": "Unknown",
+  "decisions": "- D11: CONTEXT.md must be updated after every session (root cause of stale scans)\n- D12: Never run Claude Sonnet via Agy CLI (100% drift rate)\n- D13: Gemini Pro only via Agy, Claude only via Claude Code CLI\n- D14: Anti-drift protocol: archived OneDrive/Downloads/ungasis-os copies\n- D15: Path assertion mandatory in all prompts and one-shot-build.ps1\n- D16: M365 Copilot instructions auto-generated from CLAUDE.md + system state",
+  "files_changed": "No files tracked.",
+  "handoff_path": "docs\\handoffs\\handoff-2026-06-14.md"
+}

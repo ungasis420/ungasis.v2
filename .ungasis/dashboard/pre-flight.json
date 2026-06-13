@@ -16,8 +16,8 @@
   },
   {
     "check": "File Lines Check",
-    "status": "PASS",
-    "detail": "Project dir not found, skipping line check"
+    "status": "FAIL",
+    "detail": "File D:\\.projects\\ungasis\\projects\\newmont\\scripts\\aggregate-csv.js > 200 lines"
   },
   {
     "check": "API Keys Check",

@@ -33,5 +33,7 @@ History database tracker for all generated warning events, their severity, respo
 
 | 2026-06-03 | CONTEXT.md >500 lines | 🟡 WARNING | CONTEXT.md has 517 lines | resolved |
 
+| 2026-06-13 | Missing staleness footer | 🟡 WARNING | .ungasis/context/hot-context.md | active |
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
