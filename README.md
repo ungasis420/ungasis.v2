@@ -1,5 +1,7 @@
 # 🏰 UNGASIS OS v5.2 — Personal AI Operating System
 
+[![CI](https://github.com/ungasis420/ungasis.v2/actions/workflows/ungasis-ci.yml/badge.svg)](https://github.com/ungasis420/ungasis.v2/actions/workflows/ungasis-ci.yml)
+
 > **AI Builder's Personal Operating System for Solopreneurs**
 >
 > Author: Mel John Dimat | Version: 5.2 | Date: June 2026
