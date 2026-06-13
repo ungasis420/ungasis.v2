@@ -5,11 +5,14 @@ Scans knowledge/wiki/ for STALE, EMPTY, ORPHAN, and DUPLICATE pages,
 prints a health report, and appends the result to log.md.
 Stdlib only. UTF-8 throughout.
 """
+import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-WIKI = Path(__file__).resolve().parent.parent / "knowledge" / "wiki"
+ROOT = Path(__file__).resolve().parent.parent
+WIKI = ROOT / "knowledge" / "wiki"
+DASHBOARD_OUT = ROOT / ".ungasis" / "dashboard" / "wiki-health.json"
 SUBFOLDERS = ("gotchas", "decisions", "metrics", "patterns")
 STALE_DAYS = 30
 MIN_CHARS = 50
@@ -80,10 +83,18 @@ def main():
               "report STALE/EMPTY/ORPHAN/DUPLICATE pages")
         return 0
 
+    json_mode = "--json" in sys.argv
+
     pages = collect_pages()
     total = len(pages)
     if total == 0:
         print("Wiki is empty — nothing to lint.")
+        if json_mode:
+            DASHBOARD_OUT.parent.mkdir(parents=True, exist_ok=True)
+            DASHBOARD_OUT.write_text(json.dumps({
+                "total_pages": 0, "health_pct": 0.0, "orphans": 0,
+                "stale": 0, "timestamp": now_iso(),
+            }, ensure_ascii=False, indent=2), encoding="utf-8")
         return 0
 
     listed = indexed_paths()
@@ -132,6 +143,15 @@ def main():
 
     with (WIKI / "log.md").open("a", encoding="utf-8") as f:
         f.write(f"[{now_iso()}] LINT: score {score}%, {issue_count} issues found\n")
+
+    if json_mode:
+        DASHBOARD_OUT.parent.mkdir(parents=True, exist_ok=True)
+        DASHBOARD_OUT.write_text(json.dumps({
+            "total_pages": total, "health_pct": score,
+            "orphans": len(issues["ORPHAN"]), "stale": len(issues["STALE"]),
+            "timestamp": now_iso(),
+        }, ensure_ascii=False, indent=2), encoding="utf-8")
+
     return 0
 
 

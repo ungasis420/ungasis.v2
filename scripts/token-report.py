@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 SESSIONS_FILE = Path(".ungasis/tracking/sessions.jsonl")
+DASHBOARD_OUT = Path(".ungasis/dashboard/tokens.json")
 
 
 def load_sessions():
@@ -165,6 +166,20 @@ def main():
 
     if args.json:
         print(json.dumps(rows, ensure_ascii=False, indent=2))
+        daily = {}
+        for r in rows:
+            t = parse_time(r)
+            if not t:
+                continue
+            d = t.date().isoformat()
+            entry = daily.setdefault(d, {"date": d, "tokens": 0, "model": r.get("agent", "?")})
+            entry["tokens"] += r.get("estimated_tokens", 0)
+        DASHBOARD_OUT.parent.mkdir(parents=True, exist_ok=True)
+        DASHBOARD_OUT.write_text(json.dumps({
+            "daily": sorted(daily.values(), key=lambda d: d["date"]),
+            "total_tokens": sum(r.get("estimated_tokens", 0) for r in rows),
+            "total_sessions": len(rows),
+        }, ensure_ascii=False, indent=2), encoding="utf-8")
         return 0
 
     report_overview(rows)

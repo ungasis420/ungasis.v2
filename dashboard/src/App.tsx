@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { SystemHealth } from './components/SystemHealth';
+import { GlassCard } from './components/GlassCard';
+import { useDashboardStore } from './stores/dashboardStore';
 
 export default function App() {
+  const { health, fetchHealth } = useDashboardStore();
+
+  useEffect(() => {
+    fetchHealth();
+  }, [fetchHealth]);
+
   return (
     <div className="flex h-screen p-6 overflow-hidden" style={{ backgroundColor: '#0a0a1a' }}>
       <Sidebar />
@@ -18,6 +26,23 @@ export default function App() {
           </div>
           <div className="col-span-1 lg:col-span-2 h-64">
             <SystemHealth />
+          </div>
+          <div className="col-span-1 h-64">
+            <GlassCard className="p-6 h-full flex flex-col justify-center gap-2">
+              <div style={{ color: '#00d4ff', fontSize: '14px', fontWeight: 600 }}>JARVIS Score</div>
+              {health ? (
+                <>
+                  <div style={{ color: '#ffffff', fontSize: '32px', fontWeight: 700 }}>
+                    {health.jarvis_score}%
+                  </div>
+                  <div style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '12px' }}>
+                    Wiki: {health.wiki_health}% · Scripts: {health.script_count} · Graph nodes: {health.graph_nodes}
+                  </div>
+                </>
+              ) : (
+                <div style={{ color: 'rgba(255, 255, 255, 0.5)', fontSize: '14px' }}>Loading…</div>
+              )}
+            </GlassCard>
           </div>
         </div>
       </main>

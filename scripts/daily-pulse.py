@@ -1,10 +1,11 @@
 """daily-pulse module."""
 # scripts/daily-pulse.py
+import json
 import os
 import re
 import sys
 import subprocess
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 
 try:
     import sys
@@ -16,6 +17,7 @@ except AttributeError:
 
 WORKSPACE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 PULSE_OUT_PATH = os.path.join(WORKSPACE, ".ungasis", "jarvis-core", "daily-pulse-latest.md")
+DASHBOARD_OUT = os.path.join(WORKSPACE, ".ungasis", "dashboard", "health.json")
 
 def read_file_safe(path):
     """Read file safe.
@@ -248,6 +250,51 @@ def get_staleness():
     stale_files.sort(key=lambda x: x[1], reverse=True)
     return stale_count, stale_files[:5]
 
+def get_wiki_health():
+    """Run wiki-lint.py --json and read the resulting health score."""
+    try:
+        subprocess.run([sys.executable, os.path.join("scripts", "wiki-lint.py"), "--json"],
+                        capture_output=True, text=True, cwd=WORKSPACE, check=False)
+        wiki_json = os.path.join(WORKSPACE, ".ungasis", "dashboard", "wiki-health.json")
+        with open(wiki_json, "r", encoding="utf-8") as f:
+            return json.load(f).get("health_pct", 0)
+    except Exception:
+        return 0
+
+def get_script_count():
+    """Count Python scripts in scripts/."""
+    scripts_dir = os.path.join(WORKSPACE, "scripts")
+    if not os.path.exists(scripts_dir):
+        return 0
+    return len([f for f in os.listdir(scripts_dir) if f.endswith(".py")])
+
+def get_graph_nodes():
+    """Read node count from graphify-out/GRAPH_REPORT.md."""
+    path = os.path.join(WORKSPACE, "graphify-out", "GRAPH_REPORT.md")
+    data = read_file_safe(path)
+    if not data:
+        return 0
+    m = re.search(r"([\d,]+)\s+nodes", data)
+    return int(m.group(1).replace(",", "")) if m else 0
+
+def generate_json_report():
+    """Build and write the health.json dashboard file."""
+    wiki_health = get_wiki_health()
+    script_count = get_script_count()
+    graph_nodes = get_graph_nodes()
+    jarvis_score = round(wiki_health, 1)
+    payload = {
+        "wiki_health": wiki_health,
+        "script_count": script_count,
+        "graph_nodes": graph_nodes,
+        "jarvis_score": jarvis_score,
+        "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    }
+    os.makedirs(os.path.dirname(DASHBOARD_OUT), exist_ok=True)
+    with open(DASHBOARD_OUT, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(json.dumps(payload, ensure_ascii=False, indent=2))
+
 def generate_report():
     """Generate report.
 
@@ -320,4 +367,7 @@ def generate_report():
         print(f"Error saving report to {PULSE_OUT_PATH}: {e}")
 
 if __name__ == "__main__":
-    generate_report()
+    if "--json" in sys.argv:
+        generate_json_report()
+    else:
+        generate_report()

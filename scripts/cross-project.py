@@ -1,6 +1,10 @@
 import os
 import argparse
+import json
 import re
+from datetime import datetime, timezone
+
+DASHBOARD_OUT = os.path.join(".ungasis", "dashboard", "lessons.json")
 
 def get_files(wiki_dir):
     md_files = []
@@ -47,13 +51,18 @@ def score_lesson(content, to_proj):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--from', dest='from_proj', required=True)
-    parser.add_argument('--to', dest='to_proj', required=True)
+    parser.add_argument('--from', dest='from_proj', default='ungasis')
+    parser.add_argument('--to', dest='to_proj', default='ungasis')
+    parser.add_argument('--json', action='store_true')
     args = parser.parse_args()
 
     wiki_dir = os.path.join("knowledge", "wiki")
     if not os.path.exists(wiki_dir):
         print("Wiki directory not found.")
+        if args.json:
+            os.makedirs(os.path.dirname(DASHBOARD_OUT), exist_ok=True)
+            with open(DASHBOARD_OUT, "w", encoding="utf-8") as f:
+                json.dump({"lessons": []}, f, ensure_ascii=False, indent=2)
         return
 
     files = get_files(wiki_dir)
@@ -83,6 +92,16 @@ def main():
     print("|---|---|---|---|")
     for r in results:
         print(f"| {r['lesson']} | `{r['source']}` | {r['app']} | {r['insight']} |")
+
+    if args.json:
+        now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        lessons = [{
+            "source": r["source"], "target": args.to_proj,
+            "lesson": r["lesson"], "date": now,
+        } for r in results]
+        os.makedirs(os.path.dirname(DASHBOARD_OUT), exist_ok=True)
+        with open(DASHBOARD_OUT, "w", encoding="utf-8") as f:
+            json.dump({"lessons": lessons}, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     main()

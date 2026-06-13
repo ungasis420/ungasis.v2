@@ -1,0 +1,64 @@
+{
+  "lessons": [
+    {
+      "source": "index.md",
+      "target": "ungasis",
+      "lesson": "UNGASIS Wiki Index",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "another-ai-goldrush-just-started-and-nobody-even-r.md",
+      "target": "ungasis",
+      "lesson": "Another AI Goldrush Just Started (and nobody even realises)",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "session-starter-pattern.md",
+      "target": "ungasis",
+      "lesson": "Session Starter Pattern",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "autonomous-batch-pipeline.md",
+      "target": "ungasis",
+      "lesson": "Autonomous Batch Pipeline",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "cloudflare-over-vercel.md",
+      "target": "ungasis",
+      "lesson": "Cloudflare Pages over Vercel",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "DECISION_FRAMEWORK.md",
+      "target": "ungasis",
+      "lesson": "Decision Framework",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "graphify-openai-backend.md",
+      "target": "ungasis",
+      "lesson": "Graphify OpenAI Base URL Handling",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "model-performance.md",
+      "target": "ungasis",
+      "lesson": "Model Performance Metrics",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "time-to-ship.md",
+      "target": "ungasis",
+      "lesson": "Time to Ship Metrics",
+      "date": "2026-06-13T09:13:44+00:00"
+    },
+    {
+      "source": "token-costs.md",
+      "target": "ungasis",
+      "lesson": "Token Cost Metrics",
+      "date": "2026-06-13T09:13:44+00:00"
+    }
+  ]
+}

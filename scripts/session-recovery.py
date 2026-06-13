@@ -6,7 +6,9 @@ in .ungasis/tracking/sessions.jsonl, then prints a compact recovery
 prompt (what was done, what's next, key files) capped at ~300 tokens.
 Stdlib only, UTF-8.
 """
+import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -14,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CONTEXT = ROOT / "CONTEXT.md"
 SESSIONS = ROOT / ".ungasis" / "tracking" / "sessions.jsonl"
+DASHBOARD_OUT = ROOT / ".ungasis" / "dashboard" / "session.json"
 MAX_CHARS = 1200  # ~300 tokens budget
 MAX_ITEMS = 5
 
@@ -56,12 +59,31 @@ def extract_field(section, label):
     return out
 
 
+def extract_version(section):
+    m = re.search(r"\bv\d+\.\d+(?:\.\d+)?\b", section)
+    return m.group(0) if m else ""
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--json", action="store_true")
+    args = ap.parse_args()
+
     session = last_session_log()
     section = last_context_section()
 
     whats_next = extract_field(section, "what's next")
     files = extract_field(section, "files created/modified") or extract_field(section, "files created")
+
+    if args.json:
+        DASHBOARD_OUT.parent.mkdir(parents=True, exist_ok=True)
+        DASHBOARD_OUT.write_text(json.dumps({
+            "last_version": extract_version(section),
+            "last_task": session.get("task", "") if session else "",
+            "next_steps": whats_next,
+            "files_changed": len(files),
+        }, ensure_ascii=False, indent=2), encoding="utf-8")
+        return 0
 
     lines = ["## Session Recovery"]
     if session:
