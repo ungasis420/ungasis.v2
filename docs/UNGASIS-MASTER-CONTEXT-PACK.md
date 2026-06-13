@@ -210,7 +210,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | Milestone | Status | Key Achievement |
 |---|---|---|
 | v5.3 CONNECT | ✅ COMPLETE | Wiki auto-injection, auto-logging hooks, session recovery, verifier layer, merge-agy-output fix |
-| v5.4 AUTOMATE | 🔧 IN PROGRESS | Task router + one-shot build pipeline + self-healing loop + scheduled tasks + cross-project intelligence done; final wiring in progress |
+| v5.4 AUTOMATE | ✅ COMPLETE | Task router, one-shot build pipeline, self-healing loop, scheduled tasks, cross-project intelligence — all 5 scripts smoke-tested |
 
 ### Known Issues (June 2026)
 
@@ -232,7 +232,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | v5.1 | MEASURE | ✅ COMPLETE | CLAUDE.md slimmed 76%, token logger, memory layers verified |
 | v5.2 | WIKI | ✅ COMPLETE | 50 wiki pages, wiki-ingest/lint/query/reindex scripts, 98% health |
 | v5.3 | CONNECT | ✅ COMPLETE | Auto-inject wiki into agents, token-logger automation, session recovery, merge-agy-output fix, Verifier layer |
-| v5.4 | AUTOMATE | 🔧 IN PROGRESS | One-shot build script, self-healing loop (3 hypothesis → fix → verify), task router, Windows Task Scheduler, cross-project intelligence |
+| v5.4 | AUTOMATE | ✅ COMPLETE | One-shot build script, self-healing loop (3 hypothesis → fix → verify), task router, Windows Task Scheduler, cross-project intelligence |
 | v6.0 | JARVIS GUI | 📋 PLANNED | Vite + React + Glassmorphism dashboard, Persona Factory, proactive intelligence, revenue pipeline, skill acquisition |
 
 ### v5.3 CONNECT Tasks (Next Up)
@@ -432,7 +432,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 |---|---|---|---|---|
 | Newmont | v6.8 | Active | Vite 8 + React 19 + Tailwind 4 + Zustand 5 | QIM demo June 18–19 |
 | RiftCoach | Phase 5.5-A | Active | Next.js | 6 providers, 114 models, Phase 6 |
-| UNGASIS OS | v5.4 | AUTOMATE in progress | Python + Markdown + Git | Finish v5.4 AUTOMATE |
+| UNGASIS OS | v5.4 | AUTOMATE complete | Python + Markdown + Git | Start v6.0 JARVIS GUI |
 | Dashboard | Planned | Not started | Vite 8 + React 19 + Tailwind 4 | v6.0 JARVIS GUI |
 
 ### Project Paths
@@ -501,7 +501,7 @@ Paste this into a fresh M365 Copilot Opus chat to restore context:
 I'm Mel John Dimat (Manila, Filipino, visual learner, ESL speaker). I'm building UNGASIS OS — my personal AI operating system.
 
 Current state:
-- Version: v5.4 AUTOMATE — IN PROGRESS (v5.3 CONNECT complete)
+- Version: v5.4 AUTOMATE — ✅ COMPLETE (v5.3 CONNECT also complete)
 - Previous: v5.2 WIKI complete (50 wiki pages, 98% health, 0 orphans)
 - Previous: v5.1 MEASURE complete (CLAUDE.md slimmed 76%, token logger built)
 - Source of truth: CLAUDE.md (canonical for all agents)
@@ -510,14 +510,14 @@ Current state:
 
 What was just completed:
 - v5.3 CONNECT: wiki-inject.py, session-recovery.py, verifier.py, merge-agy-output.ps1, claude-hooks.ps1
-- v5.4 AUTOMATE (3/5): task-router.py, one-shot-build.ps1, self-heal.py, scheduled-tasks.ps1, cross-project.py
+- v5.4 AUTOMATE (5/5): task-router.py, one-shot-build.ps1, self-heal.py, scheduled-tasks.ps1, cross-project.py — all verified + smoke-tested, tagged v5.4-automate-complete
 
-What to do next — finish v5.4 AUTOMATE:
-1. Wire self-heal.py into one-shot-build.ps1 fully
-2. Verify scheduled-tasks.ps1 registers correctly on Windows Task Scheduler
-3. Run cross-project.py end-to-end (Newmont → RiftCoach)
-4. Run python scripts/verifier.py on all new v5.4 scripts
-5. Update docs + git tag v5.4-automate-complete once done
+What to do next — start v6.0 JARVIS GUI:
+1. Plan Vite + React + Glassmorphism dashboard structure
+2. Design Persona Factory module
+3. Scope proactive intelligence features
+4. Scope revenue pipeline + skill acquisition modules
+5. Create v6.0 blueprint in docs/blueprints/
 
 Key files:
 - CLAUDE.md (canonical source of truth, ~75 lines)
@@ -613,3 +613,4 @@ Git: feat: v5.3 verifier layer + merge-agy-output fix
 ---
 
 Last reviewed: June 13, 2026 | Review by: September 2026 | Owner: Mel
+

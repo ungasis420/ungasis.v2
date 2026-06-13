@@ -1,9 +1,11 @@
-## v5.4 AUTOMATE — Status
+## v5.4 AUTOMATE — ✅ COMPLETE (June 13, 2026)
 - ✅ Wave 1: Task router (scripts/task-router.py) — classifies tasks, recommends agent/model/tokens/reasoning
+- ✅ Wave 1: Self-healing loop (scripts/self-heal.py) — 3-hypothesis detect → fix → verify
+- ✅ Wave 1: Cross-project intelligence (scripts/cross-project.py) — transfers lessons between projects
 - ✅ Wave 2: One-shot build pipeline (scripts/one-shot-build.ps1) — route → context → prompt → verify → self-heal → commit
-- ✅ Wave 2: CONTEXT.md status section updated (this entry)
-- ⏳ Wave 3: pending
-- ⏳ Wave 4: pending
+- ✅ Wave 2: Scheduled tasks (scripts/scheduled-tasks.ps1) — registers DailyBackup, WeeklyWikiLint, WeeklyPulse
+- ✅ All 5 scripts smoke-tested; tagged v5.4-automate-complete
+- Next: v6.0 JARVIS GUI
 
 ---
 
