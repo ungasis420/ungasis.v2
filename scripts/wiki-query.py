@@ -12,6 +12,12 @@ from pathlib import Path
 
 WIKI = Path(__file__).resolve().parent.parent / "knowledge" / "wiki"
 SUBFOLDERS = ("gotchas", "decisions", "metrics", "patterns")
+# Common words carry little signal and otherwise drown out rare query terms
+# (e.g. "how"/"to" matching every page's 5W+1H "How:" field).
+STOPWORDS = set("the a an and or but to of in on for with is are was were be this "
+                "that these those it its as at by from we you they i will can not have "
+                "has had do does our your their if then so than into out up down more "
+                "how what when where why who which about handle use using make".split())
 
 
 def parse_page(path):
@@ -66,10 +72,12 @@ def main():
     ap.add_argument("--limit", type=int, default=5, help="number of results")
     args = ap.parse_args()
 
-    words = [w for w in re.findall(r"[a-z0-9]+", args.query.lower()) if w]
-    if not words:
+    raw_words = [w for w in re.findall(r"[a-z0-9]+", args.query.lower()) if w]
+    if not raw_words:
         print("ERROR: empty query")
         return 1
+    # Drop stopwords, but fall back to the raw words if nothing is left.
+    words = [w for w in raw_words if w not in STOPWORDS] or raw_words
 
     scored = [(score(p, words), p) for p in collect()]
     scored = [sp for sp in scored if sp[0] > 0]
