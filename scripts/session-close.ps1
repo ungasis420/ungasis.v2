@@ -18,16 +18,17 @@ $script:StepResults = @()
 function Run-Step($Name, $Command) {
     Write-Host "`n--- $Name ---" -ForegroundColor Cyan
     try {
+        $global:LASTEXITCODE = 0
         Invoke-Expression $Command
-        if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne $null) {
-            Write-Host "  FAIL (exit $LASTEXITCODE)" -ForegroundColor Red
-            $script:StepResults += [PSCustomObject]@{ Step = $Name; Status = "FAIL"; ExitCode = $LASTEXITCODE }
+        if ($global:LASTEXITCODE -ne 0) {
+            Write-Host "[FAIL] $Name" -ForegroundColor Red
+            $script:StepResults += [PSCustomObject]@{ Step = $Name; Status = "FAIL"; ExitCode = $global:LASTEXITCODE }
         } else {
-            Write-Host "  OK" -ForegroundColor Green
+            Write-Host "[PASS] $Name" -ForegroundColor Green
             $script:StepResults += [PSCustomObject]@{ Step = $Name; Status = "PASS"; ExitCode = 0 }
         }
     } catch {
-        Write-Host "  WARNING: $_" -ForegroundColor Yellow
+        Write-Host "[FAIL] $Name" -ForegroundColor Red
         $script:StepResults += [PSCustomObject]@{ Step = $Name; Status = "FAIL"; ExitCode = "ERR" }
     }
 }
@@ -50,18 +51,17 @@ Run-Step "Git Add" "git add -A"
 
 $status = git status --short
 if ($status) {
-    Write-Host "`n--- Git Commit ---" -ForegroundColor Cyan
-    git commit -m $Message
-    Write-Host "  OK" -ForegroundColor Green
+    $safeMessage = $Message -replace '"', '\"'
+    Run-Step "Git Commit" "git commit -m `"$safeMessage`""
     if (-not $NoPush) {
-        Write-Host "`n--- Git Push ---" -ForegroundColor Cyan
-        git push
-        Write-Host "  OK" -ForegroundColor Green
+        Run-Step "Git Push" "git push"
     } else {
         Write-Host "`n  Skipped push (-NoPush flag)" -ForegroundColor Yellow
+        $script:StepResults += [PSCustomObject]@{ Step = "Git Push"; Status = "SKIP"; ExitCode = 0 }
     }
 } else {
     Write-Host "`n  Nothing to commit (working tree clean)" -ForegroundColor Yellow
+    $script:StepResults += [PSCustomObject]@{ Step = "Git Commit"; Status = "SKIP"; ExitCode = 0 }
 }
 
 Write-Host "`n--- Step Summary ---" -ForegroundColor Cyan
