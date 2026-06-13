@@ -17,12 +17,12 @@
   {
     "check": "File Lines Check",
     "status": "FAIL",
-    "detail": "File D:\\.projects\\ungasis\\projects\\newmont\\scripts\\aggregate-csv.js > 200 lines"
+    "detail": "File D:\\.projects\\ungasis\\dashboard\\src\\pages\\commands-data.ts > 200 lines"
   },
   {
     "check": "API Keys Check",
     "status": "FAIL",
-    "detail": "API key pattern sk- found in .ungasis/dashboard/battle-test.json"
+    "detail": "API key pattern sk- found in docs/ungasis-ai-frameworks-roadmap.md"
   },
   {
     "check": "Package.json Check",

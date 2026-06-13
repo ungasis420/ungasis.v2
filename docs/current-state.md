@@ -4,7 +4,7 @@
 ```
 ══════════════════════════════════════════
 🤖 UNGASIS JARVIS — Daily Pulse
-Date: 2026-06-14 01:57 AM
+Date: 2026-06-14 02:44 AM
 ══════════════════════════════════════════
 📋 LAST SESSION
 Last Handoff on Unknown Date
@@ -26,7 +26,7 @@ Active: 1
 Discoveries (7 days): 0
 
 📦 GIT STATUS
-Last commit: 4 minutes ago
+Last commit: 10 minutes ago
 
 📁 STALENESS
 Files >90 days old: 0
@@ -216,11 +216,11 @@ Health score:  98.1%
 
 ## Recent Commits
 ```
+e155656 fix: context-inject uses --task flag not positional arg
+06cfdf4 feat: CommandsPage updated  49 commands across 10 sections (100% coverage)
+9089d38 docs: session close - auto-generated context + handoff
 d2948b5 fix: backfill session goals and outcomes in sessions.jsonl
 00dcd0d feat: session-close adds backup + battle-test + jarvis-score + context-pack
-2159724 feat: session-close adds backup + battle-test + jarvis-score + context-pack
-6444a3c fix: session-capture writes real goals and outcomes/goal
-606d7df fix: generate-context-pack Unicode crash on Windows emoji output
 ```
 
 
