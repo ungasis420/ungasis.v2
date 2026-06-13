@@ -4,7 +4,7 @@
 ```
 ══════════════════════════════════════════
 🤖 UNGASIS JARVIS — Daily Pulse
-Date: 2026-06-14 02:44 AM
+Date: 2026-06-14 03:32 AM
 ══════════════════════════════════════════
 📋 LAST SESSION
 Last Handoff on Unknown Date
@@ -26,7 +26,7 @@ Active: 1
 Discoveries (7 days): 0
 
 📦 GIT STATUS
-Last commit: 10 minutes ago
+Last commit: 5 minutes ago
 
 📁 STALENESS
 Files >90 days old: 0
@@ -216,11 +216,11 @@ Health score:  98.1%
 
 ## Recent Commits
 ```
-e155656 fix: context-inject uses --task flag not positional arg
-06cfdf4 feat: CommandsPage updated  49 commands across 10 sections (100% coverage)
-9089d38 docs: session close - auto-generated context + handoff
-d2948b5 fix: backfill session goals and outcomes in sessions.jsonl
-00dcd0d feat: session-close adds backup + battle-test + jarvis-score + context-pack
+817d950 docs: add session launch protocol + anti-waste rules to token-efficiency
+fcbad34 chore: post-graphify session cleanup
+fb9d5e0 chore: persist post-commit graph re-label
+50bd94d fix: graphify re-index excluding archive + permanent community re-labeling
+4de6fed docs: session close - auto-generated context + handoff
 ```
 
 

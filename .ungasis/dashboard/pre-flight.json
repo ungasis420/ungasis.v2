@@ -21,8 +21,8 @@
   },
   {
     "check": "API Keys Check",
-    "status": "FAIL",
-    "detail": "API key pattern sk- found in docs/ungasis-ai-frameworks-roadmap.md"
+    "status": "PASS",
+    "detail": "No API keys in staged files"
   },
   {
     "check": "Package.json Check",
