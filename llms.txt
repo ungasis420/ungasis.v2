@@ -1,11 +1,11 @@
-# UNGASIS OS v4.0
+# UNGASIS OS v5.2
 
 > Unified Generative AI System for Independent Solopreneurs. A Markdown-first knowledge repo providing token efficiency, multi-agent orchestration, and production readiness frameworks.
 
 ## Key Files
-- [LLM_CONTEXT.md](LLM_CONTEXT.md): Project passport — read this first
-- [AGENTS.md](AGENTS.md): Cross-tool agent configuration
-- [GEMINI.md](GEMINI.md): Antigravity IDE project rules
+- [CLAUDE.md](CLAUDE.md): Canonical source of truth — read this first
+- [LLM_CONTEXT.md](LLM_CONTEXT.md): Project passport
+- [GEMINI.md](GEMINI.md): Antigravity (agy) configuration
 - [CONTEXT.md](CONTEXT.md): Current session state
 - [README.md](README.md): Project overview
 

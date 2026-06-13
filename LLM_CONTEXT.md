@@ -1,19 +1,21 @@
 # LLM_CONTEXT.md — Project Passport
 
+> Source of truth: [CLAUDE.md](./CLAUDE.md). This passport is a quick-reference companion.
+
 ## 1. Identity
-* **Project**: UNGASIS OS v5.0 — JARVIS-Fabricator (98% complete)
-* **Type**: Markdown-first knowledge repo — NOT a running app
+* **Project**: UNGASIS OS v5.2 — personal AI operating system
+* **Type**: Knowledge repo + real apps (Newmont, RiftCoach, Dashboard)
 * **Owner**: Mel John Dimat (Filipino, Manila, ESL speaker, visual learner)
 * **Budget**: $19.99/mo Google AI Pro + $0 company tools (M365 Copilot, ChatGPT Enterprise)
 * **GitHub**: https://github.com/ungasis420/ungasis.v2
 * **License**: Private
 
 ## 2. Read Order (MANDATORY)
-1. [LLM_CONTEXT.md](./LLM_CONTEXT.md) (This file)
-2. [AGENTS.md](./AGENTS.md) (Cross-tool bridge)
-3. [GEMINI.md](./GEMINI.md) (Antigravity project config)
+1. [CLAUDE.md](./CLAUDE.md) (Canonical source of truth)
+2. [LLM_CONTEXT.md](./LLM_CONTEXT.md) (This passport)
+3. [GEMINI.md](./GEMINI.md) (Antigravity / agy config — Gemini only)
 4. [CONTEXT.md](./CONTEXT.md) (Last session state)
-5. Relevant `.agents/rules/` or `.clinerules/` for the task
+5. Relevant `.claude/rules/` (Claude) or `.gemini/rules/` (Gemini) for the task
 
 ## 3. Architecture
 * [.agents/](./.agents/) — Antigravity rules, skills, workflows
@@ -68,9 +70,9 @@
 5. Ask: "What is your task?"
 
 ## 9. Current Status
-* **Version**: v5.0 JARVIS-Complete (June 3, 2026)
+* **Version**: v5.2 (June 13, 2026)
 * **GitHub**: Pushed, tag v5.0-jarvis-complete
-* **Graphify**: 20,929 nodes, 24,207 edges, 2,713 communities
+* **Graphify**: 20,929 nodes, 24,207 edges, 4,580 communities
 * **Antigravity-Mem**: Installed, verified.
 * **JARVIS Score**: 98% complete
 * **Sprint Count**: 66+ completed
@@ -82,8 +84,8 @@
 * **Next milestone**: Use as foundation for RiftCoach project.
 
 ## 10. Scope Boundaries
-* **In scope**: Updating modules, fixing docs, adding knowledge.
-* **Out of scope**: Building a running app from this repo, deploying, adding executable code (unless Mel explicitly asks).
+* **In scope**: Updating modules/docs/knowledge; building & maintaining the apps under `projects/` (Newmont, RiftCoach) and `dashboard/`.
+* **Out of scope**: Editing `source-files/` or `archive/` (READ ONLY); exposing secrets.
 
 ---
 

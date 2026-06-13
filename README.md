@@ -1,8 +1,10 @@
-# 🏰 UNGASIS OS v4.0 — Unified Lossless Repository
+# 🏰 UNGASIS OS v5.2 — Personal AI Operating System
 
 > **AI Builder's Personal Operating System for Solopreneurs**
 >
-> Author: Mel John Dimat | Version: 4.0 | Date: June 2026 | Cost: $19.99/mo (Google AI Pro, 3-month trial: June-August 2026) + $0 company-provided tools (M365 Copilot, ChatGPT Enterprise)
+> Author: Mel John Dimat | Version: 5.2 | Date: June 2026
+>
+> Source of truth: [CLAUDE.md](./CLAUDE.md). This README is an overview.
 
 ---
 
@@ -25,83 +27,45 @@ UNGASIS OS is a complete ecosystem of **30+ markdown knowledge modules** that se
 ## Repository Structure
 
 ```
-ungasis-unified-lossless-repo-v3/
+ungasis/
 │
-├── .clinerules/                    # 🤖 Agent behavior rules
-│   ├── 00-identity.md              #    Who the agent is
-│   ├── 01-token-efficiency.md      #    12-layer token saving protocol
-│   ├── 02-output-rules.md          #    Structured output enforcement
-│   └── 03-self-iteration.md        #    Autonomous loop (don't stop)
+├── CLAUDE.md            # 🧭 Canonical source of truth (all agents)
+├── GEMINI.md            # 🪐 Antigravity (agy) config — Gemini-specific
+├── LLM_CONTEXT.md       # 🛂 Project passport (quick reference)
+├── CONTEXT.md           # 📓 Rolling session log
+├── README.md            # 📖 This file
 │
-├── .clineignore                    # 🚫 Files excluded from AI indexing
-├── .gitignore                      # 📂 Files excluded from Git tracking
-├── AGENTS.md                       # 🤝 Cross-tool agent instructions
-├── README.md                       # 📖 This file
-├── QA-MISSION.md                   # 🎯 Current audit mission brief
-├── QA-AUDIT-REPORT.md              # 📊 Generated audit results
+├── .claude/             # 🤖 Claude Code config + rules/ (token-efficiency, multi-agent, graphify, model-routing)
+├── .gemini/             # 🪐 Antigravity agents/ + rules/ (token-efficiency, build-protocol)
+├── .github/             # 🐙 Copilot instructions, issue templates, CI
+├── .ungasis/            # ⚙️ OS internals: config/, architect/, orchestrator/, dna/, context-engine/
 │
-├── source-files/                   # 📁 Original master prompts (READ-ONLY)
-│   ├── AI_Builders_Master_Workflow_Prompt_v4.0.md
-│   └── unified_beginner_solopreneur_app_building_workflow_playbook_v3.md
-│
-├── blueprints/                     # 🏗️ Master architecture documents
-│   ├── README.md                   #    Primary blueprint router
-│   ├── UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-opus.md (PRIMARY)
-│   ├── UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-chatgpt.md
-│   └── UNGASIS-OS-v3.0-MASTER-BLUEPRINT_chatgpt-ent.md
-│
-├── multi-agent/                    # 🤖 Multi-agent orchestration
-│   └── multi-agent-orchestration-master-guide-v4.md
-│
-└── modules/                        # 📚 Generated knowledge modules
-    ├── ungasis-ai-operating-model.md
-    ├── ungasis-chatgpt-feature-router.md
-    ├── ungasis-m365-feature-router.md
-    ├── ungasis-instruction-hierarchy.md
-    ├── ungasis-decision-matrix.md
-    ├── ungasis-stack-lanes.md
-    ├── ungasis-tool-stack-strategy.md
-    ├── ungasis-output-control-rules.md
-    ├── ungasis-html-manual-spec.md
-    ├── ungasis-source-ledger.md
-    ├── ungasis-30day-roadmap.md
-    ├── ungasis-hallucination-guide.md
-    ├── ungasis-recovery-mode.md
-    ├── ungasis-portfolio-strategy.md
-    ├── ungasis-monetization-strategy.md
-    ├── ungasis-backup-strategy.md
-    ├── ungasis-gold-skeleton.md
-    ├── ungasis-me-as-mvp-workflow.md
-    ├── ungasis-prompt-engineering.md
-    ├── ungasis-glossary.md
-    ├── ungasis-prompt-library.md
-    ├── ungasis-sop-library.md
-    ├── ungasis-version-control.md
-    └── ungasis-cost-monitoring.md
+├── projects/            # 🚀 Real apps — newmont/ (Vite+React+Tailwind+Zustand), riftcoach/ (Next.js)
+├── dashboard/           # 📊 Dashboard app (same stack as Newmont)
+├── scripts/             # 🐍 Python utilities (wiki-ingest, wiki-query, ungasis.py, graphify, ~25 scripts)
+├── knowledge/           # 📚 Wiki (Karpathy method) + raw knowledge
+│   └── wiki/            #    hot.md cache, decisions/, patterns/, gotchas/
+├── modules/             # 📦 Generated knowledge modules
+├── blueprints/          # 🏗️ Master architecture documents
+├── docs/                # 📄 Changelog, runbook, QA plan, audits
+├── specs/               # 📐 Project spec templates
+├── source-files/        # 🔒 Original master prompts (READ ONLY)
+└── archive/             # 🔒 Historical / sunset files (READ ONLY)
 ```
-
-> **PRIMARY BLUEPRINT:** [UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-opus.md](./blueprints/UNGASIS-OS-v3.0-MASTER-BLUEPRINT_m365-opus.md) is the most complete master blueprint. Other versions in `blueprints/` are archived references only — do not use for active work.
 
 ## Configuration Files
 
-⚠️ **MANUAL:** Extract config YMLs (`circuit-breaker.yml`, `graceful-degradation.yml`, `token-budget.yml`, `kill-switch.yml`) from ZIP (`ungasis-production-candidate-repo-v2.zip` or similar backups in `archive/`) to `config/` folder.
+Orchestration configs live in `.ungasis/config/`. Detailed agent rules live in
+`.claude/rules/` (Claude Code) and `.gemini/rules/` (Antigravity).
 
-## How to Run the QA Audit
+## Build & Verify
 
-### Prerequisites
-- GitHub account (free)
-- OpenRouter account with DeepSeek V4 Flash free model
+- `npm run build` — build the apps (Newmont, RiftCoach, Dashboard)
+- `python scripts/ungasis.py pulse` — system health check
+- Always verify the build passes before committing.
 
-### Steps
-1. **Push this repo** to a private GitHub repository
-2. **Open Codespace:** Code → Codespaces → Create codespace (2-core, free)
-3. **Install Cline:** Extensions → search "Cline" → Install
-4. **Configure Cline:** Settings → API Provider = OpenRouter → Model = `deepseek/deepseek-v4-flash:free`
-5. **Run the audit:** Open Cline chat → paste: `Read QA-MISSION.md and execute all 6 tasks. Write results to QA-AUDIT-REPORT.md. Do not stop until all tasks are complete and "🏰 MISSION COMPLETE" is written.`
-6. **Results:** Check `QA-AUDIT-REPORT.md` when done
-
-### If DeepSeek is slow/rate-limited
-Switch Cline to: `google/gemini-3-flash` (backup model)
+> The old Cline/Codespaces QA-audit workflow is retired. See `archive/QA-MISSION.md`
+> for the historical brief.
 
 ## Token Efficiency Summary
 

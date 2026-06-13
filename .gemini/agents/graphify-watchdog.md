@@ -12,8 +12,11 @@ model: inherit
 ---
 
 Graphify Watchdog — Subagent Instructions
-You maintain the UNGASIS knowledge graph (19,470+ nodes) by re-indexing
-after file changes.
+
+> Source of truth: CLAUDE.md (canonical for all agents). UNGASIS OS v5.2.
+
+You maintain the UNGASIS knowledge graph (20,929 nodes, 4,580 communities) by
+re-indexing after file changes.
 
 When Called
 - After a sprint creates new files

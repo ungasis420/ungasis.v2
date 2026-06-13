@@ -1,7 +1,9 @@
-# CONVENTIONS.md — UNGASIS OS Development Conventions (v4.0)
+# CONVENTIONS.md — UNGASIS OS Development Conventions (v5.2)
+
+> Source of truth: [CLAUDE.md](./CLAUDE.md). This file covers coding conventions only.
 
 ## Core Principles
-- Follow [AGENTS.md](./AGENTS.md). Follow existing project style.
+- Follow [CLAUDE.md](./CLAUDE.md). Follow existing project style.
 - Descriptive names. Component files under 200 lines. Functions under 50 lines.
 - Surgical edits only. No adjacent refactors unless explicitly asked.
 - Check for tests before making changes. Do not output unchanged code.
