@@ -1,0 +1,35 @@
+# UNGASIS OS v6.0 — Claude Code CLI Context
+
+Project: UNGASIS OS v6.0 | D:\.projects\ungasis (Dev Drive, ReFS)
+Source of truth: CLAUDE.md — read first, always
+
+Current state: v6.0 Wave 2 complete
+- Dashboard LIVE at dashboard/dist/index.html (6 pages, glassmorphism, HashRouter)
+- ~42 scripts | 55 wiki pages (98% health) | 20K-node Graphify graph
+- Auto-triggers wired: scripts/auto-trigger.py (post-commit, post-build, post-session)
+- Startup: python scripts/startup-sequence.py → 5 JSON files for dashboard
+
+Rules: .claude/rules/
+- token-efficiency.md, multi-agent.md, graphify.md, model-routing.md
+
+DO NOT TOUCH (unless explicitly asked):
+- archive/, source-files/, .env, projects/
+
+Token logging:
+- Use --unattended for auto-logging after builds:
+  python scripts/token-logger.py --unattended --agent claude --task "..." --exchanges N --tokens N
+
+File limits:
+- Max 200 lines per new file
+- Staleness footers on all .md files: "Last reviewed: [date] | Review by: [date] | Owner: Mel"
+
+Git format: type: description (feat/fix/docs/perf/chore)
+
+Build verify:
+- Dashboard: cd dashboard && npm run build
+- Other projects: npm run build (Newmont, RiftCoach)
+- Verify file: python scripts/verifier.py <file>
+
+After commit: python scripts/auto-trigger.py --action post-commit
+
+3-tool stack: M365 Copilot Opus (plan), Claude Code CLI (you — edit existing, multi-file, git), Agy CLI (create new files only)

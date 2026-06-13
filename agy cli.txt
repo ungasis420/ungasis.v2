@@ -1,0 +1,37 @@
+# UNGASIS OS v6.0 — Agy CLI (Antigravity) Context
+
+Project: UNGASIS OS v6.0 | D:\.projects\ungasis (Dev Drive, ReFS)
+Source of truth: CLAUDE.md → GEMINI.md — read both first
+
+Current state: v6.0 Wave 2 complete
+- Dashboard LIVE at dashboard/dist/index.html (6 pages, glassmorphism, HashRouter)
+- ~42 scripts | 55 wiki pages (98% health) | 20K-node Graphify graph
+
+Agy scratch: C:\Users\My PC\.gemini\antigravity-cli\scratch\
+ALWAYS clean scratch before starting:
+  Remove-Item -Recurse -Force "C:\Users\My PC\.gemini\antigravity-cli\scratch"
+
+Agy writes to scratch ROOT — run merge-agy-output.ps1 after to merge into project.
+
+/effort high — type INSIDE the session (no --effort flag at launch)
+
+DO NOT TOUCH:
+- scripts/ (Claude Code owns)
+- archive/, source-files/, .env
+
+Agy role: CREATE new files only, never edit existing files.
+
+File limits:
+- Max 200 lines per new file
+- Staleness footers on all .md files: "Last reviewed: [date] | Review by: [date] | Owner: Mel"
+
+Design DNA (glassmorphism):
+- ALL colors as inline hex in style={} — NEVER Tailwind color classes
+- Base #0a0a1a, accent #00d4ff, secondary #a78bfa
+- Glass: bg-white/[0.04], backdrop-blur-xl, border-white/10, rounded-2xl
+
+Git format: type: description (feat/fix/docs/perf/chore)
+
+Build verify: cd dashboard && npm run build
+
+3-tool stack: M365 Copilot Opus (plan), Claude Code CLI (edit existing), Agy CLI (you — create new files)
