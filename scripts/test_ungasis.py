@@ -43,18 +43,26 @@ def test_context_inject(mock_graph_path):
     assert score_sla > score_slash
     assert score_slash == 0
 
-def test_session_pacer(mock_sessions_path, monkeypatch, capsys):
-    monkeypatch.setattr(session_pacer, "LOG_FILE", mock_sessions_path)
+def test_session_pacer(monkeypatch, capsys, tmp_path):
+    from datetime import datetime
+    today = datetime.now().date().isoformat()
+    sessions_path = tmp_path / "sessions.jsonl"
+    sessions_path.write_text(
+        "\n".join(json.dumps({"timestamp": f"{today}T10:00:00Z", "estimated_tokens": tokens, "duration_minutes": minutes})
+                  for tokens, minutes in [(1000, 10), (2000, 20), (1500, 15)]) + "\n"
+    )
+
+    monkeypatch.setattr(session_pacer, "LOG_FILE", str(sessions_path))
     monkeypatch.setattr(sys, "argv", ["session-pacer.py", "--json"])
-    
+
     try:
         session_pacer.main()
     except SystemExit:
         pass
-        
+
     captured = capsys.readouterr()
     data = json.loads(captured.out)
-    
+
     assert data["hours_elapsed"] == 0.75
 
 def test_verifier():
