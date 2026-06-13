@@ -1,3 +1,12 @@
+## v5.3 CONNECT — Status
+- ✅ Wiki auto-injection (wiki-inject.py)
+- ✅ Session recovery script (session-recovery.py)
+- ✅ Verifier layer + merge-agy-output fix
+- ✅ Auto-logging hooks (scripts/claude-hooks.ps1) + hot-context.md template
+- ✅ CONTEXT.md status section (this entry)
+
+---
+
 ## Session Log — Coach Narrator Agent Integration (June 5, 2026)
 - Created and verified `coach-narrator.ts` under `projects/riftcoach/src/lib/agents/`.
 - Exported `getCoachNarratorResult` which synthesizes responses from `build-optimizer`, `draft-advisor`, `matchup-analyst`, `meta-analyst`, and `synergy-engine` agents.
