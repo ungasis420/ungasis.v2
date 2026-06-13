@@ -1,7 +1,7 @@
 # UNGASIS OS — Current State
 
 ## Version
-v6.0 JARVIS GUI — Wave 3 COMPLETE (June 13, 2026)
+v6.0 JARVIS GUI Wave 3 COMPLETE (June 13, 2026)
 
 ## Last Session
 - Date: June 13, 2026
@@ -19,6 +19,7 @@ v6.0 JARVIS GUI — Wave 3 COMPLETE (June 13, 2026)
 - Anti-drift: archived stale copies, anti-drift.md rule, path assertion in one-shot-build
 - New scripts: generate-handoff.py, pre-flight.py, post-flight.py, generate-copilot-instructions.py, generate-agent-prompt.py
 - New agents: flight-controller.md, quality-auditor-v2.md
+- Completed milestones: token-efficiency rules, slash commands, .claudeignore, thinking token cap
 
 ## Decisions Made
 - D11: CONTEXT.md must be updated after every session (root cause of stale scans)
@@ -29,13 +30,12 @@ v6.0 JARVIS GUI — Wave 3 COMPLETE (June 13, 2026)
 - D16: M365 Copilot instructions auto-generated from CLAUDE.md + system state
 
 ## Pending (Next Session)
-1. Fix generate-copilot-instructions.py (wrong identity, missing Cognitive Architecture)
-2. Fix pre-flight.py (wiki JSON parse error, file lines check skipped)
-3. Wire 3-layer orchestration (task-router + pre-flight + post-flight into one-shot-build)
-4. Create token-budget.py (daily budget tracker)
-5. Reconcile wiki page count (50 vs 56)
-6. Push 5 unpushed commits to origin
-7. Update UNGASIS-MASTER-CONTEXT-PACK.md to v6.0 Wave 3
+1. Fix youtube-ingest-v2.py (yt-dlp title fetch failing, score always 0)
+2. Fix session-pacer.py (uses wall clock instead of active session time)
+3. Fix context-inject.py keyword matching (substring match returns irrelevant nodes like "Cooking Translation" for "SLA calculator"  needs word boundary matching)
+4. Graph community re-labeling (improve context-inject relevance)
+5. Dashboard Settings page (Wave 4)
+6. UNGASIS enters MAINTENANCE MODE  only fix bugs, no new features
 
 ## Projects
 | Project | Version | Status | Next |
@@ -46,8 +46,8 @@ v6.0 JARVIS GUI — Wave 3 COMPLETE (June 13, 2026)
 | RiftCoach | Phase 5.5-A | Paused | Phase 6 after Newmont QIM |
 
 ## System Stats
-- Scripts: 52 (46 Python + 6 PowerShell)
-- Wiki: 50 pages, 98% health, 1 empty page
+- Scripts: 57 (51 Python + 6 PowerShell)
+- Wiki: 56 pages, 98% health
 - Dashboard: LIVE at dashboard/dist/index.html (381.7 KB)
 - Graph: 20,929 nodes, 24,207 edges, 4,580 communities
 - JARVIS Score: 98%
