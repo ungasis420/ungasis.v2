@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Smart YouTube transcript ingest with relevance filtering.
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+Last reviewed: June 14, 2026 | Review by: September 2026 | Owner: Mel
 """
 import argparse
 import json
@@ -33,13 +33,14 @@ def get_title(url):
         res = subprocess.run(["yt-dlp", "--get-title", url], capture_output=True, text=True, check=True)
         return res.stdout.strip()
     except Exception:
-        return "Unknown_Video_Title"
+        video_id = url.split("v=")[-1].split("&")[0] if "v=" in url else url.split("/")[-1]
+        return f"Video_{video_id}"
 
 def get_transcript(url):
     video_id = url.split("v=")[-1].split("&")[0] if "v=" in url else url.split("/")[-1]
     try:
-        ts = YouTubeTranscriptApi.get_transcript(video_id)
-        return ts
+        snippets = YouTubeTranscriptApi().fetch(video_id)
+        return [{"text": s.text} for s in snippets]
     except Exception:
         return []
 

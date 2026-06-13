@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Token burn rate pacer. Compares actual usage vs ideal pace line.
-Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+Last reviewed: June 14, 2026 | Review by: September 2026 | Owner: Mel
 """
 import argparse
 import json
@@ -23,7 +23,7 @@ def main():
 
     today = datetime.now().date()
     tokens_used = 0
-    first_time = None
+    active_minutes = 0.0
 
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE, "r", encoding="utf-8") as f:
@@ -34,16 +34,12 @@ def main():
                     ts = datetime.fromisoformat(data["timestamp"])
                     if ts.date() == today:
                         tokens_used += int(data.get("estimated_tokens", 0))
-                        if first_time is None or ts < first_time:
-                            first_time = ts
+                        active_minutes += float(data.get("duration_minutes", 0))
                 except Exception:
                     pass
 
-    now = datetime.now()
-    if first_time is None:
-        hours_elapsed = 0.0
-    else:
-        hours_elapsed = (now - first_time).total_seconds() / 3600.0
+    # Active session time only (sum of per-session durations), not wall clock
+    hours_elapsed = active_minutes / 60.0
 
     # Avoid zero division and negative time
     hours_elapsed = max(0.01, hours_elapsed)

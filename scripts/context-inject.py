@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Query graphify-out/graph.json -> write task-relevant hot-context.md."""
+"""Query graphify-out/graph.json -> write task-relevant hot-context.md.
+Last reviewed: June 14, 2026 | Review by: September 2026 | Owner: Mel
+"""
 import sys
 import json
 import argparse
@@ -31,7 +33,7 @@ def score_node(node, keywords):
     for kw in keywords:
         if label == kw:
             score += 3
-        elif kw in label:
+        elif re.search(r'\b' + re.escape(kw) + r'\b', label, re.IGNORECASE):
             score += 1
     return score
 
