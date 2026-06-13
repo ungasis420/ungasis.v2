@@ -94,22 +94,20 @@ def main():
     if rc_match:
         riftcoach_status = rc_match.group(1)
 
-    name = "Mel's AI"
+    name = "Mel John Dimat"
     role = "Assistant"
     manager = "Mel"
     description = "personal AI operating system"
 
     # Extracted Sections
-    cog_arch = extract_section(claude_text, "Cognitive Architecture")
-    resp_rules = extract_section(claude_text, "Response Rules")
-    tools = extract_section(claude_text, "Tools")
-    token_tracking = extract_section(claude_text, "Token Tracking")
-    if "Missing Section" in token_tracking:
-        token_tracking = extract_section(claude_text, "Token Efficiency")
-    lessons = extract_section(claude_text, "Lessons")
-    expertise = extract_section(claude_text, "Expertise")
-    orchestrator = extract_section(claude_text, "Orchestrator")
-    newmont_lessons = extract_section(claude_text, "Newmont Lessons")
+    cog_arch = extract_section(claude_text, "Core Rules")
+    resp_rules = extract_section(claude_text, "Autonomous Execution")
+    tools = extract_section(claude_text, "Agent Routing")
+    token_tracking = extract_section(claude_text, "Token Efficiency")
+    lessons = extract_section(claude_text, "Known Issues")
+    expertise = extract_section(claude_text, "Multi-Agent")
+    orchestrator = extract_section(claude_text, "Graphify")
+    newmont_lessons = extract_section(claude_text, "Known Issues")
 
     # Project table extraction from LLM_CONTEXT
     project_table = extract_section(llm_text, "Projects")

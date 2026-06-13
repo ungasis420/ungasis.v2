@@ -10,6 +10,8 @@ import subprocess
 import time
 import re
 
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 def check_claude_md():
     if not os.path.exists('CLAUDE.md'):
         return "FAIL", "CLAUDE.md not found"
@@ -29,24 +31,27 @@ def check_git_clean():
         return "PASS", "Git not found, skipping"
 
 def check_wiki_health():
-    # calls wiki-lint.py --json, reads result
+    # wiki-lint.py --json does not emit JSON; it prints a text report
+    # ending with a "Health score: NN.N%" line. Parse that directly.
     try:
         result = subprocess.run(['python', 'scripts/wiki-lint.py', '--json'], capture_output=True, text=True)
-        if result.returncode == 0 and result.stdout:
-            data = json.loads(result.stdout)
-            health = data.get('health', 0)
-            if health < 90:
-                return "FAIL", f"Wiki health {health}% < 90%"
-            return "PASS", f"Wiki health {health}% >= 90%"
-        return "FAIL", "Wiki health check failed to read json"
+        score_match = re.search(r'Health score:\s*([\d.]+)%', result.stdout)
+        if not score_match:
+            return "FAIL", "Wiki health check failed to parse output"
+        health = float(score_match.group(1))
+        if health < 90:
+            return "FAIL", f"Wiki health {health:.0f}% < 90%"
+        return "PASS", f"Wiki health {health:.0f}% >= 90%"
     except Exception as e:
         return "FAIL", f"Wiki health check failed: {e}"
 
 def check_file_lines(project):
-    project_dir = os.path.join('projects', project) if project else '.'
+    project_dir = os.path.join(ROOT, 'projects', project) if project else ROOT
     if not os.path.exists(project_dir):
         return "PASS", "Project dir not found, skipping line check"
-    for root, _, files in os.walk(project_dir):
+    excluded_dirs = {'.venv', 'venv', 'node_modules', '.git', 'dist', 'build', 'archive', 'graphify-out'}
+    for root, dirs, files in os.walk(project_dir):
+        dirs[:] = [d for d in dirs if d not in excluded_dirs]
         for file in files:
             filepath = os.path.join(root, file)
             if file.endswith(('.py', '.ts', '.js', '.tsx')):
@@ -77,7 +82,7 @@ def check_api_keys():
         return "PASS", "Could not check staged files"
 
 def check_package_json(project):
-    project_dir = os.path.join('projects', project) if project else '.'
+    project_dir = os.path.join(ROOT, 'projects', project) if project else ROOT
     is_js = False
     if os.path.exists(project_dir):
         for f in os.listdir(project_dir):
@@ -89,7 +94,7 @@ def check_package_json(project):
     return "PASS", "package.json exists or not JS project"
 
 def check_last_build(project):
-    project_dir = os.path.join('projects', project) if project else '.'
+    project_dir = os.path.join(ROOT, 'projects', project) if project else ROOT
     build_dir = os.path.join(project_dir, 'dist')
     if not os.path.exists(build_dir):
         return "PASS", "No previous build found"
