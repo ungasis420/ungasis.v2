@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import sys
+import json
 from datetime import datetime
 
 def generate_prompt(args):
@@ -21,10 +22,10 @@ def generate_prompt(args):
 
     # Output template
     template = f"""=== MANDATORY PATH ASSERTION ===
-PROJECT ROOT: {args.project}
+PROJECT ROOT: D:\\.projects\\ungasis
 VERIFY FIRST: Run pwd then ls CLAUDE.md  if not found, STOP.
 DO NOT search C:\\Users, Downloads, OneDrive, or any other directory.
-ALL file paths are relative to {args.project}
+ALL file paths are relative to D:\\.projects\\ungasis
 ================================
 /effort {args.effort}
 {args.goal}
@@ -36,7 +37,15 @@ VERIFY: {verify_cmds}
 ---
 Staleness footer: Generated at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}. Always use a freshly generated prompt.
 """
-    print(template)
+    if args.json:
+        print(json.dumps({
+            "prompt": template,
+            "agent": args.agent,
+            "effort": args.effort,
+            "char_count": len(template)
+        }))
+    else:
+        print(template)
 
 def main():
     parser = argparse.ArgumentParser(description="Generate Agy/Claude prompts with mandatory anti-drift header.")
@@ -46,6 +55,7 @@ def main():
     parser.add_argument("--project", choices=["ungasis", "newmont", "riftcoach"], default="ungasis")
     parser.add_argument("--effort", choices=["high", "low"], default="high")
     parser.add_argument("--do-not-touch", default="CLAUDE.md,.env,archive/,source-files/")
+    parser.add_argument("--json", action="store_true", help="Output JSON")
     
     args = parser.parse_args()
     generate_prompt(args)
