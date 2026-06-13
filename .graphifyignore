@@ -1,0 +1,11 @@
+# Graphify extraction exclusions
+# Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+#
+# archive/ and source-files/ are read-only legacy backups (often from other
+# machines/paths) - indexing them pollutes context-inject results with
+# stale data (#graphify-relabel-fix).
+archive/
+ungasis/archive/
+source-files/
+node_modules/
+.git/

@@ -71,6 +71,15 @@ def post_commit():
         run(["graphify", "."])
         log_action("post-commit", "ok", "graphify re-indexed")
         print("AUTO-TRIGGER [graphify re-indexed]")
+
+        relabel = run([sys.executable, "scripts/graph-relabel.py"])
+        print(relabel.stdout)
+        if relabel.returncode == 0:
+            log_action("post-commit", "ok", "communities re-labeled")
+            print("AUTO-TRIGGER [communities re-labeled]")
+        else:
+            log_action("post-commit", "warning", "graph-relabel failed")
+            print("AUTO-TRIGGER [graph-relabel WARN]")
     else:
         log_action("post-commit", "ok", "graphify not installed, skipped")
         print("AUTO-TRIGGER [graphify not installed, skipped]")
@@ -150,7 +159,8 @@ def list_triggers():
     print("  post-commit hooks:")
     print("    1. wiki-lint health check")
     print("    2. graphify re-index (if installed)")
-    print("    3. generate-copilot-instructions.py --quiet  [M365 Copilot auto-sync]")
+    print("    3. graph-relabel.py  [permanent community re-labeling]")
+    print("    4. generate-copilot-instructions.py --quiet  [M365 Copilot auto-sync]")
 
 
 def main():

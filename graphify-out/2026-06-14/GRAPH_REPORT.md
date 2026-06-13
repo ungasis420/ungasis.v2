@@ -4,7 +4,7 @@
 - cluster-only mode — file stats not available
 
 ## Summary
-- 17296 nodes · 22417 edges · 1842 communities (1544 shown, 298 thin omitted)
+- 17296 nodes · 22433 edges · 1835 communities (1537 shown, 298 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 62 edges (avg confidence: 0.84)
 - Token cost: 0 input · 0 output
 
@@ -19,78 +19,78 @@
 - [[_COMMUNITY_Projects Records + Aatrox + Ahri|Projects: Records + Aatrox + Ahri]]
 - [[_COMMUNITY_Projects Records + Aatrox + Ahri|Projects: Records + Aatrox + Ahri]]
 - [[_COMMUNITY_Projects Tsx + Nav + Sidebar|Projects: Tsx + Nav + Sidebar]]
-- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Archive Test + Simple + Words|Archive: Test + Simple + Words]]
 - [[_COMMUNITY_Projects Source + Opus + Champion|Projects: Source + Opus + Champion]]
 - [[_COMMUNITY_Projects Source + Opus + Champion|Projects: Source + Opus + Champion]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Archive Template + Sop + Research|Archive: Template + Sop + Research]]
+- [[_COMMUNITY_Archive Engine + App + Evidence|Archive: Engine + App + Evidence]]
 - [[_COMMUNITY_Projects Stats + Rflathpmodperlevel + Flatmppoolmod|Projects: Stats + Rflathpmodperlevel + Flatmppoolmod]]
 - [[_COMMUNITY_Ungasis Chatgpt + Projects + Data|Ungasis: Chatgpt + Projects + Data]]
-- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Archive Intelligence + Ungasis + Kernel|Archive: Intelligence + Ungasis + Kernel]]
 - [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Archive Framework + Loop + Thinking|Archive: Framework + Loop + Thinking]]
 - [[_COMMUNITY_Projects Version + Key + Name|Projects: Version + Key + Name]]
 - [[_COMMUNITY_Projects Riftcoach + Schema + Coreidentity|Projects: Riftcoach + Schema + Coreidentity]]
-- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Archive Context + Sop + Steps|Archive: Context + Sop + Steps]]
 - [[_COMMUNITY_Community 18|Community 18]]
 - [[_COMMUNITY_Modules Context + Sop + Steps|Modules: Context + Sop + Steps]]
-- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Archive Prompt + Beginner + Ungasis|Archive: Prompt + Beginner + Ungasis]]
 - [[_COMMUNITY_Community 21|Community 21]]
-- [[_COMMUNITY_Community 22|Community 22]]
-- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Archive Merge + Map + Cross|Archive: Merge + Map + Cross]]
+- [[_COMMUNITY_Archive Ungasis + Workflow + Module|Archive: Ungasis + Workflow + Module]]
 - [[_COMMUNITY_Community 24|Community 24]]
 - [[_COMMUNITY_Modules Ungasis + Workflow + Module|Modules: Ungasis + Workflow + Module]]
-- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Archive Ungasis + Workflow + Module|Archive: Ungasis + Workflow + Module]]
 - [[_COMMUNITY_Community 27|Community 27]]
 - [[_COMMUNITY_Projects Image + Full + Sprite|Projects: Image + Full + Sprite]]
 - [[_COMMUNITY_Community 29|Community 29]]
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Modules Rules + Rule + Why|Modules: Rules + Rule + Why]]
 - [[_COMMUNITY_Modules Workflow + Phase + Ungasis|Modules: Workflow + Phase + Ungasis]]
-- [[_COMMUNITY_Community 33|Community 33]]
-- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Archive Workflow + Phase + Ungasis|Archive: Workflow + Phase + Ungasis]]
+- [[_COMMUNITY_Archive Rules + Rule + Why|Archive: Rules + Rule + Why]]
 - [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 36|Community 36]]
-- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Archive Problem + Recovery + Mode|Archive: Problem + Recovery + Mode]]
 - [[_COMMUNITY_Blueprints Addendum + Gap + Quest|Blueprints: Addendum + Gap + Quest]]
 - [[_COMMUNITY_Community 39|Community 39]]
 - [[_COMMUNITY_Modules Problem + Recovery + Mode|Modules: Problem + Recovery + Mode]]
-- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Archive Problem + Recovery + Mode|Archive: Problem + Recovery + Mode]]
 - [[_COMMUNITY_Community 42|Community 42]]
-- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Archive Incident + Response + Observability|Archive: Incident + Response + Observability]]
 - [[_COMMUNITY_Community 44|Community 44]]
-- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Archive Phase + Idea + Goal|Archive: Phase + Idea + Goal]]
 - [[_COMMUNITY_Community 46|Community 46]]
-- [[_COMMUNITY_Community 47|Community 47]]
-- [[_COMMUNITY_Community 48|Community 48]]
-- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Archive Production + Test + Simple|Archive: Production + Test + Simple]]
+- [[_COMMUNITY_Archive Sop + Steps + Safety|Archive: Sop + Steps + Safety]]
+- [[_COMMUNITY_Archive Production + Staging + Ready|Archive: Production + Staging + Ready]]
 - [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Community 51|Community 51]]
-- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Archive Auto + Research + Loop|Archive: Auto + Research + Loop]]
 - [[_COMMUNITY_Projects Champions + Part + Json|Projects: Champions + Part + Json]]
-- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Archive Placeholder|Archive: Placeholder]]
 - [[_COMMUNITY_Community 55|Community 55]]
-- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Archive Prompt + Rule + Ungasis|Archive: Prompt + Rule + Ungasis]]
 - [[_COMMUNITY_Community 57|Community 57]]
-- [[_COMMUNITY_Community 58|Community 58]]
-- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Archive Stop + Rules + Self|Archive: Stop + Rules + Self]]
+- [[_COMMUNITY_Archive Framework + Power + Main|Archive: Framework + Power + Main]]
 - [[_COMMUNITY_Blueprints Quest + Key + Command|Blueprints: Quest + Key + Command]]
 - [[_COMMUNITY_Community 61|Community 61]]
 - [[_COMMUNITY_Community 62|Community 62]]
 - [[_COMMUNITY_Modules Monetization + Notes + Analogy|Modules: Monetization + Notes + Analogy]]
-- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Archive Monetization + Notes + Analogy|Archive: Monetization + Notes + Analogy]]
 - [[_COMMUNITY_Community 65|Community 65]]
 - [[_COMMUNITY_Community 66|Community 66]]
-- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Archive Item + Design + Checklist|Archive: Item + Design + Checklist]]
 - [[_COMMUNITY_Community 68|Community 68]]
 - [[_COMMUNITY_Community 69|Community 69]]
 - [[_COMMUNITY_Modules Item + Design + Checklist|Modules: Item + Design + Checklist]]
 - [[_COMMUNITY_Modules Example + Verification + Prompt|Modules: Example + Verification + Prompt]]
-- [[_COMMUNITY_Community 72|Community 72]]
-- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Archive Item + Design + Checklist|Archive: Item + Design + Checklist]]
+- [[_COMMUNITY_Archive Example + Verification + Prompt|Archive: Example + Verification + Prompt]]
 - [[_COMMUNITY_Community 74|Community 74]]
 - [[_COMMUNITY_Community 75|Community 75]]
-- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Archive What + Start + Here|Archive: What + Start + Here]]
 - [[_COMMUNITY_Router Rules + Purpose + How|Router: Rules + Purpose + How]]
 - [[_COMMUNITY_Projects Data + Files + React|Projects: Data + Files + React]]
 - [[_COMMUNITY_Community 79|Community 79]]
@@ -98,88 +98,81 @@
 - [[_COMMUNITY_Projects Build + Variants + Variantitempool|Projects: Build + Variants + Variantitempool]]
 - [[_COMMUNITY_Projects Riftcoach + Schema + Coreidentity|Projects: Riftcoach + Schema + Coreidentity]]
 - [[_COMMUNITY_Community 83|Community 83]]
-- [[_COMMUNITY_Community 84|Community 84]]
-- [[_COMMUNITY_Community 85|Community 85]]
-- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Archive Tpl + Playbook + Library|Archive: Tpl + Playbook + Library]]
+- [[_COMMUNITY_Archive Layer + Instruction + Level|Archive: Layer + Instruction + Level]]
+- [[_COMMUNITY_Archive Stack + Api + Side|Archive: Stack + Api + Side]]
 - [[_COMMUNITY_Projects Relationship + Chunk + Entity|Projects: Relationship + Chunk + Entity]]
 - [[_COMMUNITY_Community 88|Community 88]]
 - [[_COMMUNITY_Modules Layer + Instruction + Level|Modules: Layer + Instruction + Level]]
 - [[_COMMUNITY_Projects Json + Final + Validation|Projects: Json + Final + Validation]]
 - [[_COMMUNITY_Community 91|Community 91]]
 - [[_COMMUNITY_Community 92|Community 92]]
-- [[_COMMUNITY_Community 93|Community 93]]
-- [[_COMMUNITY_Projects Routes + Components + Architecture|Projects: Routes + Components + Architecture]]
-- [[_COMMUNITY_Community 95|Community 95]]
-- [[_COMMUNITY_Community 96|Community 96]]
+- [[_COMMUNITY_Archive Stack + Api + Side|Archive: Stack + Api + Side]]
+- [[_COMMUNITY_Archive Architecture + Map + Data|Archive: Architecture + Map + Data]]
+- [[_COMMUNITY_Archive Prompt + Rule + Operating|Archive: Prompt + Rule + Operating]]
+- [[_COMMUNITY_Archive Tpl + Project + Prompt|Archive: Tpl + Project + Prompt]]
 - [[_COMMUNITY_Projects Baron + Lane + Dragon|Projects: Baron + Lane + Dragon]]
-- [[_COMMUNITY_Specs Goals + Requirements + Feature|Specs: Goals + Requirements + Feature]]
-- [[_COMMUNITY_Community 99|Community 99]]
+- [[_COMMUNITY_Archive Goals + Requirements + Feature|Archive: Goals + Requirements + Feature]]
+- [[_COMMUNITY_Archive Cross + Reference + Bridge|Archive: Cross + Reference + Bridge]]
 - [[_COMMUNITY_Community 100|Community 100]]
 - [[_COMMUNITY_Modules Tool + Stack + Cost|Modules: Tool + Stack + Cost]]
 - [[_COMMUNITY_Community 102|Community 102]]
 - [[_COMMUNITY_Community 103|Community 103]]
-- [[_COMMUNITY_Community 104|Community 104]]
-- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Archive Intelligence + Power + Purpose|Archive: Intelligence + Power + Purpose]]
 - [[_COMMUNITY_Blueprints Layer + Quest + Key|Blueprints: Layer + Quest + Key]]
-- [[_COMMUNITY_Community 107|Community 107]]
+- [[_COMMUNITY_Archive Intelligence + Power + Ungasis|Archive: Intelligence + Power + Ungasis]]
+- [[_COMMUNITY_Archive Production + Readiness + Security|Archive: Production + Readiness + Security]]
 - [[_COMMUNITY_Community 109|Community 109]]
-- [[_COMMUNITY_Community 110|Community 110]]
-- [[_COMMUNITY_Code Microsoft + Copilot + Supabase|Code: Microsoft + Copilot + Supabase]]
-- [[_COMMUNITY_Community 112|Community 112]]
-- [[_COMMUNITY_Community 113|Community 113]]
+- [[_COMMUNITY_Archive Template + Spec + Power|Archive: Template + Spec + Power]]
+- [[_COMMUNITY_Archive Ungasis + Workflow + Library|Archive: Ungasis + Workflow + Library]]
+- [[_COMMUNITY_Archive Template + Spec + Power|Archive: Template + Spec + Power]]
+- [[_COMMUNITY_Archive Stack + Workflow + Tool|Archive: Stack + Workflow + Tool]]
 - [[_COMMUNITY_Multi Agents Part + Agent + Multi|Multi Agents: Part + Agent + Multi]]
 - [[_COMMUNITY_Projects Nunu + Jarvan + Willump|Projects: Nunu + Jarvan + Willump]]
 - [[_COMMUNITY_Projects Item + Normalize + Build|Projects: Item + Normalize + Build]]
 - [[_COMMUNITY_Projects Depth + Champion + Ability|Projects: Depth + Champion + Ability]]
 - [[_COMMUNITY_Projects Type + Width + Speed|Projects: Type + Width + Speed]]
-- [[_COMMUNITY_Context Engine Context + Budget + Purpose|Context Engine: Context + Budget + Purpose]]
-- [[_COMMUNITY_Ungasis Agent + Workflow + Configuration|Ungasis: Agent + Workflow + Configuration]]
-- [[_COMMUNITY_Community 121|Community 121]]
+- [[_COMMUNITY_Archive Budget + Context + Compaction|Archive: Budget + Context + Compaction]]
+- [[_COMMUNITY_Archive Agent + Routing + Ungasis|Archive: Agent + Routing + Ungasis]]
+- [[_COMMUNITY_Archive Type + Schema + Required|Archive: Type + Schema + Required]]
 - [[_COMMUNITY_Blueprints Workflow + Gap + Low|Blueprints: Workflow + Gap + Low]]
 - [[_COMMUNITY_Projects Task + Phase + Riftcoach|Projects: Task + Phase + Riftcoach]]
 - [[_COMMUNITY_Scripts Get + Args + Returns|Scripts: Get + Args + Returns]]
 - [[_COMMUNITY_Projects Download + Extract + Data|Projects: Download + Extract + Data]]
+- [[_COMMUNITY_Community 126|Community 126]]
 - [[_COMMUNITY_Modules Group + Skeleton + Gold|Modules: Group + Skeleton + Gold]]
-- [[_COMMUNITY_Ungasis Lane + Command + Center|Ungasis: Lane + Command + Center]]
+- [[_COMMUNITY_Archive Lane + Code + Command|Archive: Lane + Code + Command]]
 - [[_COMMUNITY_Community 129|Community 129]]
-- [[_COMMUNITY_Community 130|Community 130]]
-- [[_COMMUNITY_Ungasis Agent + Sequential + Docs|Ungasis: Agent + Sequential + Docs]]
-- [[_COMMUNITY_Community 132|Community 132]]
+- [[_COMMUNITY_Archive Project + Brief + User|Archive: Project + Brief + User]]
+- [[_COMMUNITY_Ungasis Agent + Sequential + Handoff|Ungasis: Agent + Sequential + Handoff]]
+- [[_COMMUNITY_Archive Day + Week + Template|Archive: Day + Week + Template]]
 - [[_COMMUNITY_Blueprints Gap + Low + Medium|Blueprints: Gap + Low + Medium]]
 - [[_COMMUNITY_Projects Build + Engine + Enrichedbuild|Projects: Build + Engine + Enrichedbuild]]
 - [[_COMMUNITY_Projects Keys + Models + Configs|Projects: Keys + Models + Configs]]
 - [[_COMMUNITY_Projects Build + Engine + Enrichedbuild|Projects: Build + Engine + Enrichedbuild]]
-- [[_COMMUNITY_Community 137|Community 137]]
 - [[_COMMUNITY_Projects Framework|Projects: Framework]]
 - [[_COMMUNITY_Community 139|Community 139]]
-- [[_COMMUNITY_Community 140|Community 140]]
+- [[_COMMUNITY_Archive Engine + Power + Research|Archive: Engine + Power + Research]]
 - [[_COMMUNITY_Community 141|Community 141]]
 - [[_COMMUNITY_Community 142|Community 142]]
 - [[_COMMUNITY_Modules Manual + Html + Content|Modules: Manual + Html + Content]]
 - [[_COMMUNITY_Projects Keys + Models + Configs|Projects: Keys + Models + Configs]]
 - [[_COMMUNITY_Projects Build + Modifier + Modifieritem|Projects: Build + Modifier + Modifieritem]]
 - [[_COMMUNITY_Community 146|Community 146]]
-- [[_COMMUNITY_Community 147|Community 147]]
+- [[_COMMUNITY_Archive Engine + Power + Research|Archive: Engine + Power + Research]]
 - [[_COMMUNITY_Projects Champions + Part + Json|Projects: Champions + Part + Json]]
 - [[_COMMUNITY_Projects Spawn + Respawn + Timer|Projects: Spawn + Respawn + Timer]]
-- [[_COMMUNITY_Community 151|Community 151]]
-- [[_COMMUNITY_Community 152|Community 152]]
-- [[_COMMUNITY_Community 153|Community 153]]
-- [[_COMMUNITY_Community 154|Community 154]]
-- [[_COMMUNITY_Community 155|Community 155]]
+- [[_COMMUNITY_Archive Readme + Raw + Knowledge|Archive: Readme + Raw + Knowledge]]
+- [[_COMMUNITY_Archive Coverage + Video + New|Archive: Coverage + Video + New]]
+- [[_COMMUNITY_Archive Manual + Html + Content|Archive: Manual + Html + Content]]
+- [[_COMMUNITY_Archive Backup + What + Ungasis|Archive: Backup + What + Ungasis]]
+- [[_COMMUNITY_Archive Stack + Cost + Tool|Archive: Stack + Cost + Tool]]
+- [[_COMMUNITY_Archive Backup + What + Scenario|Archive: Backup + What + Scenario]]
 - [[_COMMUNITY_Projects Type + Schema + Champion|Projects: Type + Schema + Champion]]
-- [[_COMMUNITY_Community 157|Community 157]]
-- [[_COMMUNITY_Multi Agents Part + Failure + Taxonomy|Multi Agents: Part + Failure + Taxonomy]]
-- [[_COMMUNITY_Community 159|Community 159]]
-- [[_COMMUNITY_Community 160|Community 160]]
+- [[_COMMUNITY_Archive Project + Brief + Name|Archive: Project + Brief + Name]]
+- [[_COMMUNITY_Archive Project + Master + Core|Archive: Project + Master + Core]]
 - [[_COMMUNITY_Docs Rules + Context + File|Docs: Rules + Context + File]]
-- [[_COMMUNITY_Community 162|Community 162]]
-- [[_COMMUNITY_Community 163|Community 163]]
-- [[_COMMUNITY_Community 164|Community 164]]
-- [[_COMMUNITY_Community 165|Community 165]]
-- [[_COMMUNITY_Community 166|Community 166]]
 - [[_COMMUNITY_Projects Groq + Keys + Openrouter|Projects: Groq + Keys + Openrouter]]
-- [[_COMMUNITY_Community 168|Community 168]]
 - [[_COMMUNITY_Docs Section + Agent + Ungasis|Docs: Section + Agent + Ungasis]]
 - [[_COMMUNITY_Modules Week + Day + Build|Modules: Week + Day + Build]]
 - [[_COMMUNITY_Projects Total + Color + Slots|Projects: Total + Color + Slots]]
@@ -192,24 +185,23 @@
 - [[_COMMUNITY_Projects Type + Item + Schema|Projects: Type + Item + Schema]]
 - [[_COMMUNITY_Agents Step + Blueprint + Architect|Agents: Step + Blueprint + Architect]]
 - [[_COMMUNITY_Projects Tsx + Page + Champion|Projects: Tsx + Page + Champion]]
-- [[_COMMUNITY_Context Stack + Context + Current|Context: Stack + Context + Current]]
+- [[_COMMUNITY_Archive Stack + Upgrade + Commands|Archive: Stack + Upgrade + Commands]]
 - [[_COMMUNITY_Projects Groq + Keys + Openrouter|Projects: Groq + Keys + Openrouter]]
 - [[_COMMUNITY_Quality Quality + Rules + Intent|Quality: Quality + Rules + Intent]]
 - [[_COMMUNITY_Events Blueprint + Standard + Event|Events: Blueprint + Standard + Event]]
 - [[_COMMUNITY_Modules Api + Key + Never|Modules: Api + Key + Never]]
-- [[_COMMUNITY_Ungasis Identity + Rules + File|Ungasis: Identity + Rules + File]]
 - [[_COMMUNITY_Modules Lifecycle + Ladder + Table|Modules: Lifecycle + Ladder + Table]]
 - [[_COMMUNITY_Projects Type + Schema + Spell|Projects: Type + Schema + Spell]]
 - [[_COMMUNITY_Projects Type + Source + Items|Projects: Type + Source + Items]]
 - [[_COMMUNITY_Scripts Test + Detection + Table|Scripts: Test + Detection + Table]]
-- [[_COMMUNITY_Ungasis Production Readiness Pack V1 Schema + Contract + System|Ungasis Production Readiness Pack V1: Schema + Contract + System]]
+- [[_COMMUNITY_Archive Schema + Contract + System|Archive: Schema + Contract + System]]
 - [[_COMMUNITY_Projects Usereasoning + Reasoning + Usereasoningresult|Projects: Usereasoning + Reasoning + Usereasoningresult]]
 - [[_COMMUNITY_Modules Lane + Code + Ungasis|Modules: Lane + Code + Ungasis]]
 - [[_COMMUNITY_Projects Builds + Total + Validation|Projects: Builds + Total + Validation]]
 - [[_COMMUNITY_Projects Type + Seconds + Cooldown|Projects: Type + Seconds + Cooldown]]
 - [[_COMMUNITY_Projects Items + Part + Json|Projects: Items + Part + Json]]
-- [[_COMMUNITY_Code Agent + Rules + Gemini|Code: Agent + Rules + Gemini]]
-- [[_COMMUNITY_Code Routing + Model + New|Code: Routing + Model + New]]
+- [[_COMMUNITY_Code Rules + Rule + Agent|Code: Rules + Rule + Agent]]
+- [[_COMMUNITY_Archive Routing + Model + Rules|Archive: Routing + Model + Rules]]
 - [[_COMMUNITY_Blueprints Instructions + Custom + Chatgpt|Blueprints: Instructions + Custom + Chatgpt]]
 - [[_COMMUNITY_Projects Name + Description + Colloq|Projects: Name + Description + Colloq]]
 - [[_COMMUNITY_Projects Types + Description + Effects|Projects: Types + Description + Effects]]
@@ -221,12 +213,12 @@
 - [[_COMMUNITY_Code Session + Rules + Builder|Code: Session + Rules + Builder]]
 - [[_COMMUNITY_Projects Rag + Retriever + Datachunk|Projects: Rag + Retriever + Datachunk]]
 - [[_COMMUNITY_Projects Type + Build + Schema|Projects: Type + Build + Schema]]
-- [[_COMMUNITY_Ungasis Rule + Reflection + Scope|Ungasis: Rule + Reflection + Scope]]
+- [[_COMMUNITY_Ungasis Rule + Reflection + Loop|Ungasis: Rule + Reflection + Loop]]
 - [[_COMMUNITY_Projects Items + System + Layout|Projects: Items + System + Layout]]
 - [[_COMMUNITY_Projects Tsx + Page + Empty|Projects: Tsx + Page + Empty]]
-- [[_COMMUNITY_Projects Graph + Explorer + Spec|Projects: Graph + Explorer + Spec]]
+- [[_COMMUNITY_Projects Skill + Implementation + Procedure|Projects: Skill + Implementation + Procedure]]
 - [[_COMMUNITY_Blueprints Instructions + Custom + Where|Blueprints: Instructions + Custom + Where]]
-- [[_COMMUNITY_Context Engine Context + Loops + Purpose|Context Engine: Context + Loops + Purpose]]
+- [[_COMMUNITY_Archive Context + Source + Loops|Archive: Context + Source + Loops]]
 - [[_COMMUNITY_Projects Champions + Part + Json|Projects: Champions + Part + Json]]
 - [[_COMMUNITY_Projects Rag + Retriever + Datachunk|Projects: Rag + Retriever + Datachunk]]
 - [[_COMMUNITY_Projects Champions + Canonical + Public|Projects: Champions + Canonical + Public]]
@@ -242,20 +234,20 @@
 - [[_COMMUNITY_Projects Type + Source + Claim|Projects: Type + Source + Claim]]
 - [[_COMMUNITY_Blueprints Fix + Pattern + Into|Blueprints: Fix + Pattern + Into]]
 - [[_COMMUNITY_Project Director Escalation + Log + Purpose|Project Director: Escalation + Log + Purpose]]
-- [[_COMMUNITY_Projects Build + Phase + Riftcoach|Projects: Build + Phase + Riftcoach]]
+- [[_COMMUNITY_Projects File + Build + Phase|Projects: File + Build + Phase]]
 - [[_COMMUNITY_Projects Entity + Version + Type|Projects: Entity + Version + Type]]
 - [[_COMMUNITY_Projects Level + Notes + Base|Projects: Level + Notes + Base]]
 - [[_COMMUNITY_Projects Type + Required + Schema|Projects: Type + Required + Schema]]
-- [[_COMMUNITY_Ungasis What + Key + Numbers|Ungasis: What + Key + Numbers]]
+- [[_COMMUNITY_Archive Repository + What + Key|Archive: Repository + What + Key]]
 - [[_COMMUNITY_Projects Prompt + Template + Build|Projects: Prompt + Template + Build]]
 - [[_COMMUNITY_Docs Agent + Phase + Handoff|Docs: Agent + Phase + Handoff]]
 - [[_COMMUNITY_Code Layer + Agent + Antigravity|Code: Layer + Agent + Antigravity]]
 - [[_COMMUNITY_Resources Api + Inventory + Rules|Resources: Api + Inventory + Rules]]
-- [[_COMMUNITY_Workflows Workflow + Active + Workflows|Workflows: Workflow + Active + Workflows]]
-- [[_COMMUNITY_Knowledge Index + Knowledge + Raw|Knowledge: Index + Knowledge + Raw]]
+- [[_COMMUNITY_Archive Loop + Workflow + Growth|Archive: Loop + Workflow + Growth]]
+- [[_COMMUNITY_Archive Index + Knowledge + Raw|Archive: Index + Knowledge + Raw]]
 - [[_COMMUNITY_Projects Section + Data + Handoff|Projects: Section + Data + Handoff]]
-- [[_COMMUNITY_Warnings Warning + Templates + Outputs|Warnings: Warning + Templates + Outputs]]
-- [[_COMMUNITY_Docs Status + Form + Build|Docs: Status + Form + Build]]
+- [[_COMMUNITY_Archive Output + Mode + Example|Archive: Output + Mode + Example]]
+- [[_COMMUNITY_Docs Ungasis + Status + Form|Docs: Ungasis + Status + Form]]
 - [[_COMMUNITY_Blueprints Project + Cli + Quest|Blueprints: Project + Cli + Quest]]
 - [[_COMMUNITY_Blueprints Kickoff + Ungasis + Blueprint|Blueprints: Kickoff + Ungasis + Blueprint]]
 - [[_COMMUNITY_Code Engine + Detail + Agent|Code: Engine + Detail + Agent]]
@@ -281,8 +273,8 @@
 - [[_COMMUNITY_Projects Champions + Canonical + Opus|Projects: Champions + Canonical + Opus]]
 - [[_COMMUNITY_Projects Name + Rationale + Slot|Projects: Name + Rationale + Slot]]
 - [[_COMMUNITY_Projects Type + Entity + Depth|Projects: Type + Entity + Depth]]
-- [[_COMMUNITY_Context Decisions + Decision + Log|Context: Decisions + Decision + Log]]
-- [[_COMMUNITY_Token Efficiency Agent Os V4 Verified + Sources|Token Efficiency Agent Os V4: Verified + Sources]]
+- [[_COMMUNITY_Archive Decisions + Source + Claude|Archive: Decisions + Source + Claude]]
+- [[_COMMUNITY_Archive Memory + Graph + Option|Archive: Memory + Graph + Option]]
 - [[_COMMUNITY_Code June + Sprint + Session|Code: June + Sprint + Session]]
 - [[_COMMUNITY_Code Copilot + Instructions + Github|Code: Copilot + Instructions + Github]]
 - [[_COMMUNITY_Blueprints Session + Who + Where|Blueprints: Session + Who + Where]]
@@ -296,7 +288,7 @@
 - [[_COMMUNITY_Projects Accent + Tier + Text|Projects: Accent + Tier + Text]]
 - [[_COMMUNITY_Docs Blueprint + Extractor + Data|Docs: Blueprint + Extractor + Data]]
 - [[_COMMUNITY_Bus Agentic + Loop + Purpose|Bus: Agentic + Loop + Purpose]]
-- [[_COMMUNITY_Skills Skill + Code + Review|Skills: Skill + Code + Review]]
+- [[_COMMUNITY_Archive Review + Skill + Code|Archive: Review + Skill + Code]]
 - [[_COMMUNITY_Projects Matchups + Total + Adc|Projects: Matchups + Total + Adc]]
 - [[_COMMUNITY_Projects Matchups + Total + Duo|Projects: Matchups + Total + Duo]]
 - [[_COMMUNITY_Projects Matchups + Total + Support|Projects: Matchups + Total + Support]]
@@ -314,9 +306,9 @@
 - [[_COMMUNITY_Projects Type + Edge + Schema|Projects: Type + Edge + Schema]]
 - [[_COMMUNITY_Projects Type + Node + Schema|Projects: Type + Node + Schema]]
 - [[_COMMUNITY_Projects Type + Schema + Source|Projects: Type + Schema + Source]]
-- [[_COMMUNITY_Ungasis Production Readiness Pack V1 Supply + Chain + Security|Ungasis Production Readiness Pack V1: Supply + Chain + Security]]
-- [[_COMMUNITY_Skills Skill + Research + Code|Skills: Skill + Research + Code]]
-- [[_COMMUNITY_Context User + Profile + Owner|Context: User + Profile + Owner]]
+- [[_COMMUNITY_Archive Supply + Chain + Security|Archive: Supply + Chain + Security]]
+- [[_COMMUNITY_Archive Research + Code + Skill|Archive: Research + Code + Skill]]
+- [[_COMMUNITY_Archive User + Profile + Owner|Archive: User + Profile + Owner]]
 - [[_COMMUNITY_Code Device + Handoff + Workflow|Code: Device + Handoff + Workflow]]
 - [[_COMMUNITY_Blueprints Engine + Agent + Automation|Blueprints: Engine + Agent + Automation]]
 - [[_COMMUNITY_Cli Agents Setup + Antigravity + Agent|Cli Agents: Setup + Antigravity + Agent]]
@@ -330,10 +322,10 @@
 - [[_COMMUNITY_Projects Boots + Version + Basic|Projects: Boots + Version + Basic]]
 - [[_COMMUNITY_Projects Type + Source + Schema|Projects: Type + Source + Schema]]
 - [[_COMMUNITY_Scripts Args + Returns + Relevant|Scripts: Args + Returns + Relevant]]
-- [[_COMMUNITY_Ungasis Owner + Mel + John|Ungasis: Owner + Mel + John]]
+- [[_COMMUNITY_Archive Agent + Owner + Mel|Archive: Agent + Owner + Mel]]
 - [[_COMMUNITY_Projects Version + Meta + Game|Projects: Version + Meta + Game]]
-- [[_COMMUNITY_Projects Type + Decision + Schema|Projects: Type + Decision + Schema]]
-- [[_COMMUNITY_Modules Guide + Device + Antigravity|Modules: Guide + Device + Antigravity]]
+- [[_COMMUNITY_Projects Type + Decision + Architecture|Projects: Type + Decision + Architecture]]
+- [[_COMMUNITY_Archive Changelog + Master + Coverage|Archive: Changelog + Master + Coverage]]
 - [[_COMMUNITY_Knowledge Knowledge + Rules + Naming|Knowledge: Knowledge + Rules + Naming]]
 - [[_COMMUNITY_Docs All + Agent + Agents|Docs: All + Agent + Agents]]
 - [[_COMMUNITY_Blueprints Phase + Jarvis + Batch|Blueprints: Phase + Jarvis + Batch]]
@@ -348,9 +340,9 @@
 - [[_COMMUNITY_Scripts Args + Returns + Relevant|Scripts: Args + Returns + Relevant]]
 - [[_COMMUNITY_Code Phase + Jarvis + Batch|Code: Phase + Jarvis + Batch]]
 - [[_COMMUNITY_Projects Builds + Champions + Comps|Projects: Builds + Champions + Comps]]
-- [[_COMMUNITY_Ungasis Source + Verified + Ledger|Ungasis: Source + Verified + Ledger]]
+- [[_COMMUNITY_Archive Source + Ledger + Verified|Archive: Source + Ledger + Verified]]
 - [[_COMMUNITY_Scripts List + Section + Main|Scripts: List + Section + Main]]
-- [[_COMMUNITY_Cli Agents Cli + Orchestration + Agent|Cli Agents: Cli + Orchestration + Agent]]
+- [[_COMMUNITY_Cli Agents Cli + Agent + Orchestration|Cli Agents: Cli + Agent + Orchestration]]
 - [[_COMMUNITY_Projects Champion + Version + Source|Projects: Champion + Version + Source]]
 - [[_COMMUNITY_Projects Boots + Enchants + Json|Projects: Boots + Enchants + Json]]
 - [[_COMMUNITY_Projects Champions + Add + Remove|Projects: Champions + Add + Remove]]
@@ -409,7 +401,6 @@
 - [[_COMMUNITY_Tool Configs Gpt + Chatgpt + Custom|Tool Configs: Gpt + Chatgpt + Custom]]
 - [[_COMMUNITY_Projects Tsx + Hex + Portrait|Projects: Tsx + Hex + Portrait]]
 - [[_COMMUNITY_Architect Blueprint + Context + System|Architect: Blueprint + Context + System]]
-- [[_COMMUNITY_Rules Rule + Staleness + Hygiene|Rules: Rule + Staleness + Hygiene]]
 - [[_COMMUNITY_Cli Agents Claude + Code + Setup|Cli Agents: Claude + Code + Setup]]
 - [[_COMMUNITY_Projects Cooldowns + Source + Json|Projects: Cooldowns + Source + Json]]
 - [[_COMMUNITY_Projects Boots + Enchantments + Trinkets|Projects: Boots + Enchantments + Trinkets]]
@@ -432,11 +423,12 @@
 - [[_COMMUNITY_Scripts Test + Args + Returns|Scripts: Test + Args + Returns]]
 - [[_COMMUNITY_Specs Design + Feature + Name|Specs: Design + Feature + Name]]
 - [[_COMMUNITY_Projects Agent + Task + Wave|Projects: Agent + Task + Wave]]
+- [[_COMMUNITY_Rules Claude + Reference + Copy|Rules: Claude + Reference + Copy]]
 - [[_COMMUNITY_Rules Claude + Layer + File|Rules: Claude + Layer + File]]
 - [[_COMMUNITY_Agents Rules + Commander + Purpose|Agents: Rules + Commander + Purpose]]
 - [[_COMMUNITY_Scripts Edit + Main + Bootstrap|Scripts: Edit + Main + Bootstrap]]
 - [[_COMMUNITY_Scripts Read + Section + Main|Scripts: Read + Section + Main]]
-- [[_COMMUNITY_Projects Route + Contract + Report|Projects: Route + Contract + Report]]
+- [[_COMMUNITY_Archive Known + Status + What|Archive: Known + Status + What]]
 - [[_COMMUNITY_Blueprints Data + Model + Quest|Blueprints: Data + Model + Quest]]
 - [[_COMMUNITY_Blueprints Data + Model + Quest|Blueprints: Data + Model + Quest]]
 - [[_COMMUNITY_Blueprints Cli + Antigravity + Install|Blueprints: Cli + Antigravity + Install]]
@@ -447,7 +439,7 @@
 - [[_COMMUNITY_Projects Values + Damage + Ratio|Projects: Values + Damage + Ratio]]
 - [[_COMMUNITY_Projects Builds + Total + Json|Projects: Builds + Total + Json]]
 - [[_COMMUNITY_Projects Synergies + Total + Mid|Projects: Synergies + Total + Mid]]
-- [[_COMMUNITY_Knowledge Decision + Framework + What|Knowledge: Decision + Framework + What]]
+- [[_COMMUNITY_Knowledge Decision + Staleness + Framework|Knowledge: Decision + Staleness + Framework]]
 - [[_COMMUNITY_Decomposer Template + Decomposition + Goal|Decomposer: Template + Decomposition + Goal]]
 - [[_COMMUNITY_Orchestrator Rules + Orchestrator + Purpose|Orchestrator: Rules + Orchestrator + Purpose]]
 - [[_COMMUNITY_Projects Task + Phase + Riftcoach|Projects: Task + Phase + Riftcoach]]
@@ -463,6 +455,7 @@
 - [[_COMMUNITY_Projects Synergies + Total + Mid|Projects: Synergies + Total + Mid]]
 - [[_COMMUNITY_Projects Cache + Scrape + Notes|Projects: Cache + Scrape + Notes]]
 - [[_COMMUNITY_Reasoning Reasoning + Framework + Purpose|Reasoning: Reasoning + Framework + Purpose]]
+- [[_COMMUNITY_Rules Reflection + Loop + Protocol|Rules: Reflection + Loop + Protocol]]
 - [[_COMMUNITY_Projects Type + Slots + Ability|Projects: Type + Slots + Ability]]
 - [[_COMMUNITY_Projects Type + Node + Schema|Projects: Type + Node + Schema]]
 - [[_COMMUNITY_Projects Type + Job + Source|Projects: Type + Job + Source]]
@@ -473,7 +466,7 @@
 - [[_COMMUNITY_Projects Tech + Stack + Framework|Projects: Tech + Stack + Framework]]
 - [[_COMMUNITY_Agentic Capability + Matrix + Rules|Agentic: Capability + Matrix + Rules]]
 - [[_COMMUNITY_Skills Request + Build + Template|Skills: Request + Build + Template]]
-- [[_COMMUNITY_Chatgpt Ent Operating + Model + Chatgpt|Chatgpt Ent: Operating + Model + Chatgpt]]
+- [[_COMMUNITY_Archive Project + Tpl + Effortless|Archive: Project + Tpl + Effortless]]
 - [[_COMMUNITY_Scripts Scheduled + Agent + Manager|Scripts: Scheduled + Agent + Manager]]
 - [[_COMMUNITY_Projects Costs + Unit + Cast|Projects: Costs + Unit + Cast]]
 - [[_COMMUNITY_Projects Section + Handoff + Current|Projects: Section + Handoff + Current]]
@@ -483,7 +476,7 @@
 - [[_COMMUNITY_Code Reflection + Claude + Loop|Code: Reflection + Claude + Loop]]
 - [[_COMMUNITY_Comms Rules + Comms + Purpose|Comms: Rules + Comms + Purpose]]
 - [[_COMMUNITY_Comms Notification + Rules + Purpose|Comms: Notification + Rules + Purpose]]
-- [[_COMMUNITY_Modules Module + Connector + Permission|Modules: Module + Connector + Permission]]
+- [[_COMMUNITY_Archive Documentation + Readiness + Permission|Archive: Documentation + Readiness + Permission]]
 - [[_COMMUNITY_Context Engine Auto + Rules + Inject|Context Engine: Auto + Rules + Inject]]
 - [[_COMMUNITY_Context Engine Context + Rules + Purpose|Context Engine: Context + Rules + Purpose]]
 - [[_COMMUNITY_Dna Conventions + Powerbi + Genome|Dna: Conventions + Powerbi + Genome]]
@@ -518,7 +511,7 @@
 - [[_COMMUNITY_Projects Text + Glass + Accent|Projects: Text + Glass + Accent]]
 - [[_COMMUNITY_Scout Adaptation + Queue + Approved|Scout: Adaptation + Queue + Approved]]
 - [[_COMMUNITY_Projects Appforge + Agent + Pipeline|Projects: Appforge + Agent + Pipeline]]
-- [[_COMMUNITY_Projects Guardrails + Riftcoach + Json|Projects: Guardrails + Riftcoach + Json]]
+- [[_COMMUNITY_Archive Guardrails + Skill + Cross|Archive: Guardrails + Skill + Cross]]
 - [[_COMMUNITY_Dashboard Parsedmarkdown + Page + Tsx|Dashboard: Parsedmarkdown + Page + Tsx]]
 - [[_COMMUNITY_Projects Skill + Pattern + Appforge|Projects: Skill + Pattern + Appforge]]
 - [[_COMMUNITY_Code Layer + Claude + Token|Code: Layer + Claude + Token]]
@@ -527,14 +520,14 @@
 - [[_COMMUNITY_Workflows Device + Conflict + Resolution|Workflows: Device + Conflict + Resolution]]
 - [[_COMMUNITY_Projects Riftcoach + Intelligence + Database|Projects: Riftcoach + Intelligence + Database]]
 - [[_COMMUNITY_Projects Show + Badge + Relationship|Projects: Show + Badge + Relationship]]
-- [[_COMMUNITY_Code Llm + Context + Project|Code: Llm + Context + Project]]
+- [[_COMMUNITY_Code Llm + Context + Key|Code: Llm + Context + Key]]
 - [[_COMMUNITY_Modules Tpl + Turn + Into|Modules: Tpl + Turn + Into]]
 - [[_COMMUNITY_Modules Memory + Extended + Context|Modules: Memory + Extended + Context]]
 - [[_COMMUNITY_Projects Approved + Version + Policy|Projects: Approved + Version + Policy]]
 - [[_COMMUNITY_Projects Approved + Version + Policy|Projects: Approved + Version + Policy]]
 - [[_COMMUNITY_Projects Verified + Items + Meta|Projects: Verified + Items + Meta]]
 - [[_COMMUNITY_Projects Reasoning + Enricheditemdata + Enrichedrunedata|Projects: Reasoning + Enricheditemdata + Enrichedrunedata]]
-- [[_COMMUNITY_Specs Template + Acceptance + Design|Specs: Template + Acceptance + Design]]
+- [[_COMMUNITY_Specs Template + Stop + Coding|Specs: Template + Stop + Coding]]
 - [[_COMMUNITY_Projects Policy + Reference + Lol|Projects: Policy + Reference + Lol]]
 - [[_COMMUNITY_Projects Nunu + Updated + Merge|Projects: Nunu + Updated + Merge]]
 - [[_COMMUNITY_Projects Exact + Overlay + Preserved|Projects: Exact + Overlay + Preserved]]
@@ -553,7 +546,6 @@
 - [[_COMMUNITY_Projects Rune + Path + Slots|Projects: Rune + Path + Slots]]
 - [[_COMMUNITY_Projects Option + Download + Only|Projects: Option + Download + Only]]
 - [[_COMMUNITY_Projects Depth + Champion + Ability|Projects: Depth + Champion + Ability]]
-- [[_COMMUNITY_Projects Build + Engine + Enrichedbuild|Projects: Build + Engine + Enrichedbuild]]
 - [[_COMMUNITY_Blueprints Zone + Agents + Tool|Blueprints: Zone + Agents + Tool]]
 - [[_COMMUNITY_Blueprints Zone + Agents + Tool|Blueprints: Zone + Agents + Tool]]
 - [[_COMMUNITY_Docs Stage + Claude + Pro|Docs: Stage + Claude + Pro]]
@@ -605,7 +597,7 @@
 - [[_COMMUNITY_Projects Retrievalresult + Champion + Aliases|Projects: Retrievalresult + Champion + Aliases]]
 - [[_COMMUNITY_Architect Rules + Architect + Blueprint|Architect: Rules + Architect + Blueprint]]
 - [[_COMMUNITY_Projects Explorer + Adr + Path|Projects: Explorer + Adr + Path]]
-- [[_COMMUNITY_Issue Template Behavior + Bug + Report|Issue Template: Behavior + Bug + Report]]
+- [[_COMMUNITY_Issue Template Bug + Report + Behavior|Issue Template: Bug + Report + Behavior]]
 - [[_COMMUNITY_Projects Stats + Hpperlevel + Mpperlevel|Projects: Stats + Hpperlevel + Mpperlevel]]
 - [[_COMMUNITY_Projects Flow + Architecture + Json|Projects: Flow + Architecture + Json]]
 - [[_COMMUNITY_Skills Rules + Skill + Auto|Skills: Rules + Skill + Auto]]
@@ -685,7 +677,7 @@
 - [[_COMMUNITY_Projects Graph + Obsidian + Style|Projects: Graph + Obsidian + Style]]
 - [[_COMMUNITY_Agentic Agentic + Framework + Agents|Agentic: Agentic + Framework + Agents]]
 - [[_COMMUNITY_Docs Stack + Dashboard + Section|Docs: Stack + Dashboard + Section]]
-- [[_COMMUNITY_Code Typeddict|Code: Typeddict]]
+- [[_COMMUNITY_Archive Agentstate + Typeddict|Archive: Agentstate + Typeddict]]
 - [[_COMMUNITY_Scripts Walk + Generate + Tree|Scripts: Walk + Generate + Tree]]
 - [[_COMMUNITY_Docs Upgrade + Blueprint + Ungasis|Docs: Upgrade + Blueprint + Ungasis]]
 - [[_COMMUNITY_Modules Layers + Token + Policy|Modules: Layers + Token + Policy]]
@@ -741,7 +733,7 @@
 - [[_COMMUNITY_Modules Tpl + Safety + Quality|Modules: Tpl + Safety + Quality]]
 - [[_COMMUNITY_Modules Scenario + Disaster + Recovery|Modules: Scenario + Disaster + Recovery]]
 - [[_COMMUNITY_Modules Portfolio + Readiness + Checklist|Modules: Portfolio + Readiness + Checklist]]
-- [[_COMMUNITY_Ungasis Kill + Switch + Config|Ungasis: Kill + Switch + Config]]
+- [[_COMMUNITY_Archive Security + Policy + Start|Archive: Security + Policy + Start]]
 - [[_COMMUNITY_Modules Device + Sync + Rules|Modules: Device + Sync + Rules]]
 - [[_COMMUNITY_Projects Meta + Tier + Difficulty|Projects: Meta + Tier + Difficulty]]
 - [[_COMMUNITY_Docs Handoff + Phase + Riftcoach|Docs: Handoff + Phase + Riftcoach]]
@@ -774,6 +766,7 @@
 - [[_COMMUNITY_Projects Chat + Store + Chatmessage|Projects: Chat + Store + Chatmessage]]
 - [[_COMMUNITY_Skills Batch + Executor + Skill|Skills: Batch + Executor + Skill]]
 - [[_COMMUNITY_Projects Builds + Total + Validation|Projects: Builds + Total + Validation]]
+- [[_COMMUNITY_Projects Pass + Parse + Hard|Projects: Pass + Parse + Hard]]
 - [[_COMMUNITY_Reasoning Reasoning + Budget + Token|Reasoning: Reasoning + Budget + Token]]
 - [[_COMMUNITY_Dna Freemium + Template + Revenue|Dna: Freemium + Template + Revenue]]
 - [[_COMMUNITY_Project Director Risk + Framework + Purpose|Project Director: Risk + Framework + Purpose]]
@@ -794,7 +787,6 @@
 - [[_COMMUNITY_Projects Reference + Builds + References|Projects: Reference + Builds + References]]
 - [[_COMMUNITY_Projects Ability + Haste + Formula|Projects: Ability + Haste + Formula]]
 - [[_COMMUNITY_Projects Minion + Base + Growth|Projects: Minion + Base + Growth]]
-- [[_COMMUNITY_Projects Soul + Requirement + Effects|Projects: Soul + Requirement + Effects]]
 - [[_COMMUNITY_Agentic Patterns + Orchestration + Purpose|Agentic: Patterns + Orchestration + Purpose]]
 - [[_COMMUNITY_Agents Designer + Agent + Instructions|Agents: Designer + Agent + Instructions]]
 - [[_COMMUNITY_Projects Local + Repo + Update|Projects: Local + Repo + Update]]
@@ -805,6 +797,7 @@
 - [[_COMMUNITY_Projects Runagent + Getprovidersdk + Getcoachnarratorresult|Projects: Runagent + Getprovidersdk + Getcoachnarratorresult]]
 - [[_COMMUNITY_Docs How + Readme + Blueprints|Docs: How + Readme + Blueprints]]
 - [[_COMMUNITY_Blueprints What + Files + Handoff|Blueprints: What + Files + Handoff]]
+- [[_COMMUNITY_Blueprints All + Complete + Current|Blueprints: All + Complete + Current]]
 - [[_COMMUNITY_Projects Draft + Advisor + Draftadvisoroutput|Projects: Draft + Advisor + Draftadvisoroutput]]
 - [[_COMMUNITY_Projects Phase + Profile + Sources|Projects: Phase + Profile + Sources]]
 - [[_COMMUNITY_Bus Rules + Bus + Purpose|Bus: Rules + Bus + Purpose]]
@@ -911,7 +904,6 @@
 - [[_COMMUNITY_Projects Source + Opus + Candidate|Projects: Source + Opus + Candidate]]
 - [[_COMMUNITY_Workflows Watchdog + Graphify + Index|Workflows: Watchdog + Graphify + Index]]
 - [[_COMMUNITY_Projects Threshold + Criteria + Confidence|Projects: Threshold + Criteria + Confidence]]
-- [[_COMMUNITY_Projects Game + Time + Description|Projects: Game + Time + Description]]
 - [[_COMMUNITY_Projects Tier + Threshold + Multiplier|Projects: Tier + Threshold + Multiplier]]
 - [[_COMMUNITY_Skills Skill + Bug + Purpose|Skills: Skill + Bug + Purpose]]
 - [[_COMMUNITY_Skills Skill + Scout + Purpose|Skills: Skill + Scout + Purpose]]
@@ -929,7 +921,7 @@
 - [[_COMMUNITY_Projects Phase + Validate + Zip|Projects: Phase + Validate + Zip]]
 - [[_COMMUNITY_Projects Phase + Validate + Cli|Projects: Phase + Validate + Cli]]
 - [[_COMMUNITY_Tool Configs Claude + Project + Instructions|Tool Configs: Claude + Project + Instructions]]
-- [[_COMMUNITY_Code Identity + Claude + Agent|Code: Identity + Claude + Agent]]
+- [[_COMMUNITY_Code Identity + Agent + Ungasis|Code: Identity + Agent + Ungasis]]
 - [[_COMMUNITY_Cortex Rules + Contact + Purpose|Cortex: Rules + Contact + Purpose]]
 - [[_COMMUNITY_Projects Aurelionsol + Version + Key|Projects: Aurelionsol + Version + Key]]
 - [[_COMMUNITY_Projects Synergies + Json + Patch|Projects: Synergies + Json + Patch]]
@@ -1013,11 +1005,12 @@
 - [[_COMMUNITY_Projects Costburn + Summonerteleport + Name|Projects: Costburn + Summonerteleport + Name]]
 - [[_COMMUNITY_Code Audit + Sprint + Files|Code: Audit + Sprint + Files]]
 - [[_COMMUNITY_Projects Rag + Retriever + Datachunk|Projects: Rag + Retriever + Datachunk]]
-- [[_COMMUNITY_Ungasis Browser + Orchestrator + Prompt|Ungasis: Browser + Orchestrator + Prompt]]
-- [[_COMMUNITY_Issue Template Task + Multi + Agent|Issue Template: Task + Multi + Agent]]
+- [[_COMMUNITY_Archive Browser + Orchestrator + Prompt|Archive: Browser + Orchestrator + Prompt]]
+- [[_COMMUNITY_Issue Template Ownership + Task + Map|Issue Template: Ownership + Task + Map]]
 - [[_COMMUNITY_Skills Sweep + Log + June|Skills: Sweep + Log + June]]
 - [[_COMMUNITY_Blueprints Blueprint + Chatgpt + Readme|Blueprints: Blueprint + Chatgpt + Readme]]
 - [[_COMMUNITY_Projects Path + Phase + Extract|Projects: Path + Phase + Extract]]
+- [[_COMMUNITY_Projects Alistar + Version + Key|Projects: Alistar + Version + Key]]
 - [[_COMMUNITY_Context Glossary|Context: Glossary]]
 - [[_COMMUNITY_Skills Skill + Context + Pack|Skills: Skill + Context + Pack]]
 - [[_COMMUNITY_Docs Toml + Preset + System|Docs: Toml + Preset + System]]
@@ -1048,7 +1041,6 @@
 - [[_COMMUNITY_Modules Workflow + Beginner + Git|Modules: Workflow + Beginner + Git]]
 - [[_COMMUNITY_Modules Recovery + How + Recover|Modules: Recovery + How + Recover]]
 - [[_COMMUNITY_Modules Github + Pages + How|Modules: Github + Pages + How]]
-- [[_COMMUNITY_Projects Aphelios + Version + Key|Projects: Aphelios + Version + Key]]
 - [[_COMMUNITY_Presets Debug + Bug + Preset|Presets: Debug + Bug + Preset]]
 - [[_COMMUNITY_Projects Reasoning + Enricher + Data|Projects: Reasoning + Enricher + Data]]
 - [[_COMMUNITY_Okr Rules + Okr + Purpose|Okr: Rules + Okr + Purpose]]
@@ -1099,7 +1091,7 @@
 - [[_COMMUNITY_Docs Antigravity + Selection + Tool|Docs: Antigravity + Selection + Tool]]
 - [[_COMMUNITY_Projects Image + Full + Sprite|Projects: Image + Full + Sprite]]
 - [[_COMMUNITY_Projects Maxrank + Effect + Summoner|Projects: Maxrank + Effect + Summoner]]
-- [[_COMMUNITY_Ungasis Graceful + Degradation + Policy|Ungasis: Graceful + Degradation + Policy]]
+- [[_COMMUNITY_Archive Failure + Taxonomy + Failures|Archive: Failure + Taxonomy + Failures]]
 - [[_COMMUNITY_Projects Tool + Stack + Selection|Projects: Tool + Stack + Selection]]
 - [[_COMMUNITY_Presets Research + Tables + Preset|Presets: Research + Tables + Preset]]
 - [[_COMMUNITY_Skills Readme + Auto + Generated|Skills: Readme + Auto + Generated]]
@@ -1119,6 +1111,7 @@
 - [[_COMMUNITY_Modules Multi + Coordination + Protocol|Modules: Multi + Coordination + Protocol]]
 - [[_COMMUNITY_Projects Relationship + Engine + Synergyentry|Projects: Relationship + Engine + Synergyentry]]
 - [[_COMMUNITY_Projects Boots + Enchantments + Trinkets|Projects: Boots + Enchantments + Trinkets]]
+- [[_COMMUNITY_Modules Backup + Inventory + What|Modules: Backup + Inventory + What]]
 - [[_COMMUNITY_Modules Template + Simple + Weekly|Modules: Template + Simple + Weekly]]
 - [[_COMMUNITY_Modules Quality + Gate + Automation|Modules: Quality + Gate + Automation]]
 - [[_COMMUNITY_Modules Rollback + Template + Plan|Modules: Rollback + Template + Plan]]
@@ -1175,15 +1168,15 @@
 - [[_COMMUNITY_Projects Symbolic + Neuro + Reasoning|Projects: Symbolic + Neuro + Reasoning]]
 - [[_COMMUNITY_Modules Incident + Response + Observability|Modules: Incident + Response + Observability]]
 - [[_COMMUNITY_Rules Claude + Reference + Copy|Rules: Claude + Reference + Copy]]
+- [[_COMMUNITY_Rules Claude + Reference + Copy|Rules: Claude + Reference + Copy]]
 - [[_COMMUNITY_Rules Skill + When + Propose|Rules: Skill + When + Propose]]
 - [[_COMMUNITY_Modules Mvp + Workflow + Full|Modules: Mvp + Workflow + Full]]
-- [[_COMMUNITY_Rules Claude + Reference + Copy|Rules: Claude + Reference + Copy]]
 - [[_COMMUNITY_Rules Claude + Reference + Copy|Rules: Claude + Reference + Copy]]
 - [[_COMMUNITY_Docs Cerebras + Llama + Api|Docs: Cerebras + Llama + Api]]
 - [[_COMMUNITY_Code Graphify + Query + Claude|Code: Graphify + Query + Claude]]
 - [[_COMMUNITY_Context Readme + Context + Folder|Context: Readme + Context + Folder]]
 - [[_COMMUNITY_Scripts Daily + Pulse + Script|Scripts: Daily + Pulse + Script]]
-- [[_COMMUNITY_Modules Observability + Incident + Response|Modules: Observability + Incident + Response]]
+- [[_COMMUNITY_Archive Incident + Response + Documentation|Archive: Incident + Response + Documentation]]
 - [[_COMMUNITY_Projects Source + Chunk + Index|Projects: Source + Chunk + Index]]
 - [[_COMMUNITY_Events Event + Log + Ungasis|Events: Event + Log + Ungasis]]
 - [[_COMMUNITY_Projects Feature + Definitions + Json|Projects: Feature + Definitions + Json]]
@@ -1220,7 +1213,7 @@
 - [[_COMMUNITY_Projects Traversal + Graph + Query|Projects: Traversal + Graph + Query]]
 - [[_COMMUNITY_Ungasis Stack + Routing + Matrix|Ungasis: Stack + Routing + Matrix]]
 - [[_COMMUNITY_Ungasis Hallucination + Detection + Protocol|Ungasis: Hallucination + Detection + Protocol]]
-- [[_COMMUNITY_Code Github + Cloudflare + Pages|Code: Github + Cloudflare + Pages]]
+- [[_COMMUNITY_Code Backup + Export + Migration|Code: Backup + Export + Migration]]
 - [[_COMMUNITY_Issue Template Task + Template + Multi|Issue Template: Task + Template + Multi]]
 - [[_COMMUNITY_Ungasis Failure + Taxonomy + Failures|Ungasis: Failure + Taxonomy + Failures]]
 - [[_COMMUNITY_Ungasis Security + Policy|Ungasis: Security + Policy]]
@@ -1332,12 +1325,13 @@
 - [[_COMMUNITY_Modules Ungasis + Sop + Sops|Modules: Ungasis + Sop + Sops]]
 - [[_COMMUNITY_Modules Copy + Paste + Helper|Modules: Copy + Paste + Helper]]
 - [[_COMMUNITY_Modules Safety + Warning + Sop|Modules: Safety + Warning + Sop]]
+- [[_COMMUNITY_Modules Sop + Setting + Copilot|Modules: Sop + Setting + Copilot]]
 - [[_COMMUNITY_Modules Goal + Weekly + Playbook|Modules: Goal + Weekly + Playbook]]
 - [[_COMMUNITY_Modules Tools + Phase + Validate|Modules: Tools + Phase + Validate]]
 - [[_COMMUNITY_Modules Mvp + Phase + Design|Modules: Mvp + Phase + Design]]
 - [[_COMMUNITY_Modules Functional + Mvp + Playbook|Modules: Functional + Mvp + Playbook]]
 - [[_COMMUNITY_Modules Decision + Point + Test|Modules: Decision + Point + Test]]
-- [[_COMMUNITY_Ungasis Grilling + Gate|Ungasis: Grilling + Gate]]
+- [[_COMMUNITY_Archive Safety + Sop + Steps|Archive: Safety + Sop + Steps]]
 - [[_COMMUNITY_Projects Difficulty + Power + Spikes|Projects: Difficulty + Power + Spikes]]
 - [[_COMMUNITY_Projects Champions + Part + Json|Projects: Champions + Part + Json]]
 - [[_COMMUNITY_Projects Matchups + Total + Baron|Projects: Matchups + Total + Baron]]
@@ -1356,11 +1350,12 @@
 - [[_COMMUNITY_Projects Upgrade + Wards + Upgraded|Projects: Upgrade + Wards + Upgraded]]
 - [[_COMMUNITY_Blueprints Zone + Agents + Tool|Blueprints: Zone + Agents + Tool]]
 - [[_COMMUNITY_Modules Output + Mode + Part|Modules: Output + Mode + Part]]
+- [[_COMMUNITY_Projects Garen + Meta + Tier|Projects: Garen + Meta + Tier]]
 - [[_COMMUNITY_Projects Aitask + Modelconfig + Apikeyslot|Projects: Aitask + Modelconfig + Apikeyslot]]
 - [[_COMMUNITY_Projects Game + Champion + Ability|Projects: Game + Champion + Ability]]
 - [[_COMMUNITY_Projects Opus + Json + Files|Projects: Opus + Json + Files]]
 - [[_COMMUNITY_Projects Garen + Meta + Tier|Projects: Garen + Meta + Tier]]
-- [[_COMMUNITY_Blueprints Ungasis + Blueprint + Graphify|Blueprints: Ungasis + Blueprint + Graphify]]
+- [[_COMMUNITY_Projects Value + Radius + Effect|Projects: Value + Radius + Effect]]
 - [[_COMMUNITY_Projects Power + Skill + Set|Projects: Power + Skill + Set]]
 - [[_COMMUNITY_Projects Alistar + Meta + Tier|Projects: Alistar + Meta + Tier]]
 - [[_COMMUNITY_Projects Rows + Candidate + Claims|Projects: Rows + Candidate + Claims]]
@@ -1526,7 +1521,6 @@
 - [[_COMMUNITY_Modules Sop + Preparing + Private|Modules: Sop + Preparing + Private]]
 - [[_COMMUNITY_Modules Idea + Phase + Pick|Modules: Idea + Phase + Pick]]
 - [[_COMMUNITY_Modules Analogy + Cost + What|Modules: Analogy + Cost + What]]
-- [[_COMMUNITY_Projects Width + Base + Mantra|Projects: Width + Base + Mantra]]
 - [[_COMMUNITY_Docs Current + State + What|Docs: Current + State + What]]
 - [[_COMMUNITY_Docs Architecture + Current + Phase|Docs: Architecture + Current + Phase]]
 - [[_COMMUNITY_Projects Issues + Known + Tech|Projects: Issues + Known + Tech]]
@@ -1717,7 +1711,6 @@
 - [[_COMMUNITY_Projects Target + Range + Type|Projects: Target + Range + Type]]
 - [[_COMMUNITY_Scratch Search + Keys + All|Scratch: Search + Keys + All]]
 - [[_COMMUNITY_Scratch Search + Git + History|Scratch: Search + Git + History]]
-- [[_COMMUNITY_Projects Damage + Values + Type|Projects: Damage + Values + Type]]
 - [[_COMMUNITY_Projects Data + Section + Database|Projects: Data + Section + Database]]
 - [[_COMMUNITY_Projects Brief + Description + Type|Projects: Brief + Description + Type]]
 - [[_COMMUNITY_Projects Active + Effects + Type|Projects: Active + Effects + Type]]
@@ -1744,17 +1737,17 @@
   docs/semantic-cache-plan.md → knowledge/sops/agent-workflows/cline-debug.md
 - `Auto-Tagger Rules` --semantically_similar_to--> `Quality Auditor Agent`  [INFERRED] [semantically similar]
   .agents/skills/auto-tagger/tag-rules.yml → .gemini/agents/quality-auditor.md
+- `Blueprint Architect Rules` --references--> `Self-Healing Build Loop`  [INFERRED]
+  .ungasis/architect/ARCHITECT_RULES.md → .agents/rules/10-self-healing-loop.md
 - `Context Composer` --conceptually_related_to--> `Rule 07: Graphify Query`  [INFERRED]
   .ungasis/context-engine/context-composer.md → .agents/rules/07-graphify-query.md
 - `Agent Evals & Runtime Governance Module` --conceptually_related_to--> `Multi-Agent Dev Orchestration Kit Master Guide`  [INFERRED]
   modules/production-readiness/08-agent-evals-runtime-governance.md → multi-agents/multi-agent-orchestration-master-guide-v4.md
-- `UNGASIS OS v5.0 JARVIS-Fabricator Blueprint` --conceptually_related_to--> `UNGASIS OS v5.0 Master Context Pack`  [INFERRED]
-  blueprints/UNGASIS-OS-v5.0-JARVIS-BLUEPRINT.md → docs/UNGASIS-MASTER-CONTEXT-PACK.md
 
 ## Import Cycles
 - None detected.
 
-## Communities (1842 total, 298 thin omitted)
+## Communities (1835 total, 298 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.12
@@ -1776,7 +1769,7 @@ Nodes (95): records, aatrox, ahri, akali, akshan, alistar, annie, ashe (+87 more
 Cohesion: 0.03
 Nodes (56): AppShell(), MOBILE_NAV, titleFromPath(), metadata, PageTransition(), NAV, NavItem, Sidebar() (+48 more)
 
-### Community 5 - "Community 5"
+### Community 5 - "Archive: Test + Simple + Words"
 Cohesion: 0.14
 Nodes (17): determination, formula, notes, buff_effects, adaptive_force, burn_damage, elder_immolation, empowered_recall (+9 more)
 
@@ -1788,13 +1781,13 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 Cohesion: 0.13
 Nodes (14): field_level_provenance_required, counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url (+6 more)
 
-### Community 8 - "Community 8"
-Cohesion: 0.26
-Nodes (11): bool, float, str, ensure_cache_dir(), fetch_content(), get_cache_path(), is_cache_valid(), Create cache directory if it doesn't exist. (+3 more)
+### Community 8 - "Archive: Template + Sop + Research"
+Cohesion: 0.12
+Nodes (16): e, raw, ability_type, active_effects, brief_description, cast_time, crowd_control_types, damage_types (+8 more)
 
-### Community 9 - "Community 9"
-Cohesion: 0.17
-Nodes (12): 10. BUILDER PROFILE, 13. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 3. ARCHITECTURE — Folder Structure, Communication Preferences, Complete Handoff Document for Fresh Chat Continuation, Current JARVIS Score: 98%, Design DNA (+4 more)
+### Community 9 - "Archive: Engine + App + Evidence"
+Cohesion: 0.16
+Nodes (9): BuildDataSnapshot, ValidationResult, BuildDataSnapshot, ConfidenceLevel, ValidationResult, BuildDataSnapshot, ConfidenceLevel, ValidationResult (+1 more)
 
 ### Community 10 - "Projects: Stats + Rflathpmodperlevel + Flatmppoolmod"
 Cohesion: 0.05
@@ -1804,17 +1797,17 @@ Nodes (70): stats, stats, stats, stats, stats, stats, stats, FlatAttackSpeedMod 
 Cohesion: 0.40
 Nodes (5): ChatGPT Projects, Data Safety Levels (0-4), HTML Manual Specification, 5-Layer Instruction Stack, M365 Copilot Router
 
-### Community 12 - "Community 12"
+### Community 12 - "Archive: Intelligence + Ungasis + Kernel"
+Cohesion: 0.17
+Nodes (12): 10. BUILDER PROFILE, 13. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 3. ARCHITECTURE — Folder Structure, Communication Preferences, Complete Handoff Document for Fresh Chat Continuation, Current JARVIS Score: 98%, Design DNA (+4 more)
+
+### Community 13 - "Community 13"
 Cohesion: 0.18
 Nodes (11): About Mel, Conversation Starters, Description, His Active Projects, His Stack, How to Respond, Instructions (System Prompt), Knowledge Files (Upload These) (+3 more)
 
-### Community 13 - "Community 13"
+### Community 14 - "Archive: Framework + Loop + Thinking"
 Cohesion: 0.20
 Nodes (8): items, meta, patch_version, source_status, version, schema_version, source_families, source_statuses
-
-### Community 14 - "Community 14"
-Cohesion: 0.18
-Nodes (9): Active Tasks, How to Set Up in Agent Manager, How to Verify Tasks Are Running, Purpose, Troubleshooting, UNGASIS Scheduled Tasks, How to Spawn Parallel Agents, Quick Reference (+1 more)
 
 ### Community 15 - "Projects: Version + Key + Name"
 Cohesion: 0.04
@@ -1824,7 +1817,7 @@ Nodes (85): blurb, id, key, name, partype, tags, title, version (+77 more)
 Cohesion: 0.04
 Nodes (54): AbilityDetail, Boots, BuildArchetype, BuildMath, BuildRule, Champion, ChampionAbilities, ChampionBuild (+46 more)
 
-### Community 17 - "Community 17"
+### Community 17 - "Archive: Context + Sop + Steps"
 Cohesion: 0.18
 Nodes (11): confidence, synergy_response, archetype, confidence, overall_rating, pair_synergies, power_curve, suggested_swaps (+3 more)
 
@@ -1836,49 +1829,49 @@ Nodes (10): How to Respond, Last Session Summary, My Learning Style, Rules for T
 Cohesion: 0.13
 Nodes (15): 🍳 Analogy: The Restaurant Menu, CONTEXT.md Template, Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Example: UNGASIS OS CONTEXT.md, How to Use CONTEXT.md Across Your Tools (+7 more)
 
-### Community 20 - "Community 20"
-Cohesion: 0.20
-Nodes (10): colloq, description, into, name, plaintext, stats, tags, stats (+2 more)
-
-### Community 21 - "Community 21"
+### Community 20 - "Archive: Prompt + Beginner + Ungasis"
 Cohesion: 0.20
 Nodes (9): Context Decay Protocol (Layer 16), Key Commands, Read First, Rules, UNGASIS OS — Claude Code Instructions, Graphify Rules, Scaffold Workflow, Cline Claude Config (+1 more)
 
-### Community 22 - "Community 22"
+### Community 21 - "Community 21"
 Cohesion: 0.20
 Nodes (10): description, tagline, version, app, _meta, chunk, game, generated (+2 more)
 
-### Community 23 - "Community 23"
+### Community 22 - "Archive: Merge + Map + Cross"
 Cohesion: 0.22
 Nodes (9): 8. AI Architecture (7 Layers), Layer 1: Inference Fallback Chain, Layer 2: Memory System, Layer 3: RAG (No Vector DB Needed), Layer 4: Generation (What AI Creates), Layer 5: Reasoning Examples, Layer 6: Prediction (Pure Math, No AI), Layer 7: Quest Master Personality (+1 more)
 
-### Community 24 - "Community 24"
+### Community 23 - "Archive: Ungasis + Workflow + Module"
 Cohesion: 0.22
 Nodes (9): blurb, id, key, name, partype, tags, title, version (+1 more)
+
+### Community 24 - "Community 24"
+Cohesion: 0.22
+Nodes (9): 5 Subagent Definitions (.gemini/agents/), 9 Slash Commands, Agent Roster (6 Agents), Auto-Routing Rules (Always Active), Intent Parser — Natural Language Shortcuts, Section 6: Agent System, Self-Healing Build Loop (Rule 10), Skills (14 Folders in .agents/skills/) (+1 more)
 
 ### Community 25 - "Modules: Ungasis + Workflow + Module"
 Cohesion: 0.17
 Nodes (11): Beginner recovery mode, Data level key, Hard rules, How to use this module, QA checklist for this module, Quick approval checklist ✋, Source basis, Step index (+3 more)
 
-### Community 26 - "Community 26"
-Cohesion: 0.22
-Nodes (9): 5 Subagent Definitions (.gemini/agents/), 9 Slash Commands, Agent Roster (6 Agents), Auto-Routing Rules (Always Active), Intent Parser — Natural Language Shortcuts, Section 6: Agent System, Self-Healing Build Loop (Rule 10), Skills (14 Folders in .agents/skills/) (+1 more)
+### Community 26 - "Archive: Ungasis + Workflow + Module"
+Cohesion: 0.25
+Nodes (8): mana, raw, source_status, costs, costs, costs, costs, costs
 
 ### Community 27 - "Community 27"
-Cohesion: 0.22
-Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+Cohesion: 0.25
+Nodes (7): comps, avgGameLength, banPriorities, metaIdentity, patch, patchChanges, season
 
 ### Community 28 - "Projects: Image + Full + Sprite"
 Cohesion: 0.44
 Nodes (23): full, group, h, sprite, w, x, y, image (+15 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.22
-Nodes (9): uploaded_file_metadata, champion_count, id_normalization, merge_rules, new_champions, patch_version, source, version (+1 more)
+Cohesion: 0.25
+Nodes (8): File Conventions, Git Conventions, Output Rules, Read-Only Directories, Section 11: Workflow & Conventions, Security Rules, Sprint Workflow, Token Efficiency Rules (Compressed)
 
 ### Community 30 - "Community 30"
 Cohesion: 0.25
-Nodes (7): comps, avgGameLength, banPriorities, metaIdentity, patch, patchChanges, season
+Nodes (7): Example Outputs, How It Works, Inputs/Outputs, Purpose, Rules, Severity Layouts, Warning Templates Engine
 
 ### Community 31 - "Modules: Rules + Rule + Why"
 Cohesion: 0.14
@@ -1888,153 +1881,137 @@ Nodes (14): 10. 12-Phase Delivery Pattern, 11. “Say Next” Pattern, 12. Progr
 Cohesion: 0.22
 Nodes (8): 13. 📊 Summary: 10 Phases at a Glance, 14. ⚠️ Common Mistakes by Phase, 1. 🗺️ The Big Picture — Phase Flow Diagram, 2. 📅 Week-by-Week Progress Visual, Key Decision Points in the Flow, 📖 Table of Contents, 🏁 The Golden Rule of This Workflow, UNGASIS Content Module: 10-Phase Build Workflow
 
-### Community 33 - "Community 33"
-Cohesion: 0.25
-Nodes (8): File Conventions, Git Conventions, Output Rules, Read-Only Directories, Section 11: Workflow & Conventions, Security Rules, Sprint Workflow, Token Efficiency Rules (Compressed)
-
-### Community 34 - "Community 34"
-Cohesion: 0.25
-Nodes (7): Example Outputs, How It Works, Inputs/Outputs, Purpose, Rules, Severity Layouts, Warning Templates Engine
-
-### Community 35 - "Community 35"
+### Community 33 - "Archive: Workflow + Phase + Ungasis"
 Cohesion: 0.29
 Nodes (7): 14. Design System, Addendum v1 Gap 11: Glassmorphism Design Pattern, Breakpoints: Desktop 1024+ | Tablet 768-1023 | Mobile <768, CSS Recipe, Effects: Star field, Parallax, Glow pulse, Typewriter, Fade-in, Progress anim, Particle burst, Scan-line, Tailwind Shorthand, Where Glass Is Used
 
-### Community 36 - "Community 36"
+### Community 34 - "Archive: Rules + Rule + Why"
 Cohesion: 0.29
 Nodes (7): Branch Strategy (Simple — Solo Developer), Commit Message Format, Daily Git Pattern, Gap 9b: Git Branch and Commit Workflow (Low), Insert into: Section 16 (Daily Workflow) or Section 22 (Deployment), Types: feat, fix, docs, refactor, style, test, chore, When to Branch
 
-### Community 37 - "Community 37"
+### Community 35 - "Community 35"
 Cohesion: 0.29
 Nodes (7): 12.1 Builder Agent (Antigravity — Primary), 12.2 Commander Agent, 12.3 Blueprint Architect Agent, 12.4 Quality Auditor Agent, 12.5 Designer Agent, 12.6 Graphify Watchdog Agent, Section 12: Agent Personas & Instructions
+
+### Community 36 - "Community 36"
+Cohesion: 0.33
+Nodes (6): Layer 13: Retrieval-Based Memory, Layer 14: Tool Schema Pruning, Layer 15: Compact Encoding (TOON Protocol), Layer 16: Context Decay / Stale Eviction, Layer 17: Prompt Prefix Caching (Provider-Level), Token Efficiency Layers 13-17 (Upgrade from 12-Layer System)
+
+### Community 37 - "Archive: Problem + Recovery + Mode"
+Cohesion: 0.40
+Nodes (6): Blueprint Architect Rules, Auto-Tagger Rules, Blueprint Workflow, Commander Workflow, Pipeline Manifest, Quality Auditor Agent
 
 ### Community 38 - "Blueprints: Addendum + Gap + Quest"
 Cohesion: 0.06
 Nodes (34): 10. Tech Stack, 11. File Structure, 15. Architecture Decision Records, 16. Daily Workflow, 17. Hour-Saving Protocol, 19. New Quest Wizard Spec, 1. Executive Summary, 20. AI Command Bar (Cmd+K) (+26 more)
 
 ### Community 39 - "Community 39"
-Cohesion: 0.29
-Nodes (7): 20+ JARVIS Subsystems (in .ungasis/), 3 Automation Systems, 9 Core Engines, Directory Structure (Top-Level), Event System — How Engines Talk, Section 2: Architectural Blueprint, The 5 Dimensions of JARVIS
+Cohesion: 0.33
+Nodes (6): 30 API Keys — 6 Providers, 4. TECH & TOOL STACK, AI Tools, Hardware — 4 Devices, Key Locations, Target Stack (Form 2 / Future Apps)
 
 ### Community 40 - "Modules: Problem + Recovery + Mode"
 Cohesion: 0.04
 Nodes (48): 10. When to Stop and Ask for Human Help, 11. Recovery Mode Exit — How to Know You Are Fixed, 1. What Is Recovery Mode?, 2. Trigger Phrases — When to Activate, 3. The 10 Recovery Mode Rules, 4. The Diagnostic Structure Template, 5. Common Beginner Problems — Quick Fix Guide, 6. "What to Send Me" Template — Minimum Info for Debugging (+40 more)
 
-### Community 41 - "Community 41"
-Cohesion: 0.29
-Nodes (7): Portfolio Overview, Project Directory Conventions, Project State Machine, Scaffold Rules, Scheduled Tasks (14 Active), Section 9: Projects, Transition Rules
-
-### Community 42 - "Community 42"
-Cohesion: 0.52
-Nodes (6): Connections, How It Works, Matching & Scoring Heuristic, Memory Inject Rules, Purpose, Rules
-
-### Community 43 - "Community 43"
-Cohesion: 0.33
-Nodes (6): Layer 13: Retrieval-Based Memory, Layer 14: Tool Schema Pruning, Layer 15: Compact Encoding (TOON Protocol), Layer 16: Context Decay / Stale Eviction, Layer 17: Prompt Prefix Caching (Provider-Level), Token Efficiency Layers 13-17 (Upgrade from 12-Layer System)
-
-### Community 44 - "Community 44"
-Cohesion: 0.33
-Nodes (6): bytes, filename, raw_preserved_path, sha256, source_status, m365_opus_postmerge_wr_champions_merged_v070_full
-
-### Community 45 - "Community 45"
+### Community 41 - "Archive: Problem + Recovery + Mode"
 Cohesion: 0.33
 Nodes (6): 13.0 Universal Launcher, 13.1 Fresh Chat Kickoff (Generic UNGASIS Session), 13.2 RiftCoach Phase 5.7 Kickoff (Deep WHY Layer), 13.3 Dashboard Enhancement Kickoff, 13.4 Maintenance/Cleanup Kickoff, Section 13: Kickoff Prompts
 
-### Community 46 - "Community 46"
-Cohesion: 0.33
-Nodes (6): Build Status Summary, Key Metrics, OKRs — Q3 2026 (July-September), Section 4: Current State, Sprint History (66+ Sprints), Task Queue
-
-### Community 47 - "Community 47"
+### Community 42 - "Community 42"
 Cohesion: 0.33
 Nodes (6): Device Handoff Protocol, Files to Upload for a Fresh Chat, Known Issues, Post-Session Verification, Pre-Session Verification, Section 14: Handoff Checklist
 
-### Community 48 - "Community 48"
+### Community 43 - "Archive: Incident + Response + Observability"
 Cohesion: 0.33
 Nodes (6): Git Commit Format, Quality Auditor — 9-Point Checklist, Score Thresholds, Scoring Dimensions (5-dimension weighted average), Section 7: Quality System, Staleness Footer (Required on ALL .md files)
 
-### Community 49 - "Community 49"
+### Community 44 - "Community 44"
 Cohesion: 0.33
 Nodes (6): 6. Build Mode, Beginner note, Build Mode Rules, Example output, Output format, When to use
 
-### Community 50 - "Community 50"
+### Community 45 - "Archive: Phase + Idea + Goal"
 Cohesion: 0.33
-Nodes (6): nunu_public_record_summary, ability_keys, id, image_preserved, name, splash_preserved
+Nodes (6): Active Tasks, How to Set Up in Agent Manager, How to Verify Tasks Are Running, Purpose, Troubleshooting, UNGASIS Scheduled Tasks
 
-### Community 51 - "Community 51"
+### Community 46 - "Community 46"
+Cohesion: 0.33
+Nodes (4): Requirements, Scheduled Tasks Setup (For Agent Manager), Scripts Overview, UNGASIS Automation Scripts
+
+### Community 47 - "Archive: Production + Test + Simple"
 Cohesion: 0.33
 Nodes (5): CONTEXT.md Update Template, Device Sync Workflow, Git Commands, Purpose, Session Start Checklist per Device
 
-### Community 52 - "Community 52"
+### Community 48 - "Archive: Sop + Steps + Safety"
 Cohesion: 0.33
 Nodes (5): Output Format, /quality-auditor — Quality Audit Workflow, Safety, Steps, When to Use
+
+### Community 49 - "Archive: Production + Staging + Ready"
+Cohesion: 0.40
+Nodes (5): 10 Chapters, 3. Quest System, 5 Zones: 🏰 Command Center · 📜 Quest Log · 📖 Codex · ⚒️ Forge · ⚙️ Settings, 7 Quest Scenarios, RPG → Builder Mapping
+
+### Community 50 - "Community 50"
+Cohesion: 0.40
+Nodes (5): 12. Sprint Roadmap, Addendum v1 Gap 5: Agent Kickoff Prompt Templates, Cline Kickoff (Sprint 0), Gemini CLI ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash Refactor, Jules Background Task
+
+### Community 51 - "Community 51"
+Cohesion: 0.40
+Nodes (5): 10 Chapters, 3. Quest System, 5 Zones: 🏰 Command Center · 📜 Quest Log · 📖 Codex · ⚒️ Forge · ⚙️ Settings, 7 Quest Scenarios, RPG → Builder Mapping
+
+### Community 52 - "Archive: Auto + Research + Loop"
+Cohesion: 0.40
+Nodes (5): 10 Chapters, 3. Quest System, 5 Zones: 🏰 Command Center · 📜 Quest Log · 📖 Codex · ⚒️ Forge · ⚙️ Settings, 7 Quest Scenarios, RPG → Builder Mapping
 
 ### Community 53 - "Projects: Champions + Part + Json"
 Cohesion: 0.04
 Nodes (44): champions, meta, champions_included, generated, layers, note, part, patch (+36 more)
 
-### Community 54 - "Community 54"
-Cohesion: 0.40
-Nodes (5): 10 Chapters, 3. Quest System, 5 Zones: 🏰 Command Center · 📜 Quest Log · 📖 Codex · ⚒️ Forge · ⚙️ Settings, 7 Quest Scenarios, RPG → Builder Mapping
-
-### Community 55 - "Community 55"
-Cohesion: 0.40
-Nodes (5): 12. Sprint Roadmap, Addendum v1 Gap 5: Agent Kickoff Prompt Templates, Cline Kickoff (Sprint 0), Gemini CLI ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash Refactor, Jules Background Task
-
-### Community 56 - "Community 56"
-Cohesion: 0.40
-Nodes (5): 10 Chapters, 3. Quest System, 5 Zones: 🏰 Command Center · 📜 Quest Log · 📖 Codex · ⚒️ Forge · ⚙️ Settings, 7 Quest Scenarios, RPG → Builder Mapping
-
-### Community 57 - "Community 57"
-Cohesion: 0.40
-Nodes (5): 10 Chapters, 3. Quest System, 5 Zones: 🏰 Command Center · 📜 Quest Log · 📖 Codex · ⚒️ Forge · ⚙️ Settings, 7 Quest Scenarios, RPG → Builder Mapping
-
-### Community 58 - "Community 58"
+### Community 54 - "Archive: Placeholder"
 Cohesion: 0.40
 Nodes (5): editor.formatOnSave, editor.tabSize, editor.wordWrap, files.autoSave, settings
 
-### Community 59 - "Community 59"
+### Community 55 - "Community 55"
 Cohesion: 0.40
 Nodes (4): Acceptance Criteria for Fix, Fix Instructions, Handoff: Review to Fix, Issues Identified
+
+### Community 56 - "Archive: Prompt + Rule + Ungasis"
+Cohesion: 0.40
+Nodes (5): 5 Control Rules, Agent Roles, Merge Order, Part 1: Architecture & Agent Roles, System Diagram
+
+### Community 57 - "Community 57"
+Cohesion: 0.50
+Nodes (4): 13. Browser-Only Workflow, Addendum v1 Gap 6: Cline-Specific Workflow, Addendum v1 Gap 8: Gemini CLI ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash 1M Context Advantage, CLAUDE.md Content (Auto-Generated)
+
+### Community 58 - "Archive: Stop + Rules + Self"
+Cohesion: 0.50
+Nodes (4): 18. Cost Analysis, Addendum v1 Gap 12: Never Pay a Peso Principle, The Protocol, What Happens at Every Limit
+
+### Community 59 - "Archive: Framework + Power + Main"
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk5.zip, bytes, outer_member, sha256
 
 ### Community 60 - "Blueprints: Quest + Key + Command"
 Cohesion: 0.05
 Nodes (40): 10. Tech Stack, 11. File Structure, 12. Sprint Roadmap, 13. Browser-Only Workflow, 14. Design System, 15. Architecture Decision Records, 16. Daily Workflow, 17. Hour-Saving Protocol (+32 more)
 
 ### Community 61 - "Community 61"
-Cohesion: 0.40
-Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 13 - Testing Locally, Steps
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk6.zip, bytes, outer_member, sha256
 
 ### Community 62 - "Community 62"
-Cohesion: 0.40
-Nodes (5): 5 Control Rules, Agent Roles, Merge Order, Part 1: Architecture & Agent Roles, System Diagram
+Cohesion: 0.50
+Nodes (3): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md
 
 ### Community 63 - "Modules: Monetization + Notes + Analogy"
 Cohesion: 0.04
 Nodes (46): 10. How to Separate Free vs. Paid Features, 11. Pricing Research Basics, 12. Tax and Legal General Caution, 13. Monetization Readiness Checklist — Complete, 14. Lossless Merge Audit, 1. When NOT to Monetize Yet, 2. How to Validate Willingness to Pay — WITHOUT Building Payments, 3. $0-Upfront Revenue Tests — 10 Methods (+38 more)
 
-### Community 64 - "Community 64"
-Cohesion: 0.50
-Nodes (4): 13. Browser-Only Workflow, Addendum v1 Gap 6: Cline-Specific Workflow, Addendum v1 Gap 8: Gemini CLI ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash 1M Context Advantage, CLAUDE.md Content (Auto-Generated)
+### Community 64 - "Archive: Monetization + Notes + Analogy"
+Cohesion: 0.67
+Nodes (3): Human Intervention, Orchestration Architecture, Sequential Defaults
 
 ### Community 65 - "Community 65"
-Cohesion: 0.50
-Nodes (4): 18. Cost Analysis, Addendum v1 Gap 12: Never Pay a Peso Principle, The Protocol, What Happens at Every Limit
-
-### Community 66 - "Community 66"
-Cohesion: 0.50
-Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk1.zip, bytes, outer_member, sha256
-
-### Community 67 - "Community 67"
-Cohesion: 0.50
-Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk5.zip, bytes, outer_member, sha256
-
-### Community 68 - "Community 68"
-Cohesion: 0.50
-Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk6.zip, bytes, outer_member, sha256
-
-### Community 69 - "Community 69"
-Cohesion: 0.50
-Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk7.zip, bytes, outer_member, sha256
+Cohesion: 0.67
+Nodes (3): 5-Level Graceful Degradation, Circuit Breaker, Part 5: Debug Loops & Self-Healing
 
 ### Community 70 - "Modules: Item + Design + Checklist"
 Cohesion: 0.05
@@ -2043,22 +2020,6 @@ Nodes (43): 1. 🍳 Why Design Matters (Even for MVPs), 2. ✅ The Before-Sharin
 ### Community 71 - "Modules: Example + Verification + Prompt"
 Cohesion: 0.05
 Nodes (43): 10. Source Ledger Template, 11. When In Doubt — The Golden Rule, 1. What Is AI Hallucination?, 2. Why Should You Care?, 3. The 8 High-Risk Categories, ✅ 4.1 Statistics & Numbers, ✅ 4.2 URLs & Links, ✅ 4.3 Legal Claims (+35 more)
-
-### Community 72 - "Community 72"
-Cohesion: 0.50
-Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk9.zip, bytes, outer_member, sha256
-
-### Community 73 - "Community 73"
-Cohesion: 0.50
-Nodes (4): 1. Why Backups Matter, 🍳 Kitchen Analogy, 🏠 The House Analogy, What Can Go Wrong (And It WILL — Eventually)
-
-### Community 74 - "Community 74"
-Cohesion: 0.67
-Nodes (3): Human Intervention, Orchestration Architecture, Sequential Defaults
-
-### Community 75 - "Community 75"
-Cohesion: 0.67
-Nodes (3): 5-Level Graceful Degradation, Circuit Breaker, Part 5: Debug Loops & Self-Healing
 
 ### Community 77 - "Router: Rules + Purpose + How"
 Cohesion: 0.05
@@ -2096,7 +2057,7 @@ Nodes (12): errors, generated_at_utc, status, version, warnings, checks, generat
 Cohesion: 0.07
 Nodes (38): aliases, adc, baron, baron_lane, bot, dragon, dragon_lane, duo (+30 more)
 
-### Community 98 - "Specs: Goals + Requirements + Feature"
+### Community 98 - "Archive: Goals + Requirements + Feature"
 Cohesion: 0.18
 Nodes (10): Acceptance criteria, Constraints, Goals, Non-goals, Open questions, Problem, Requirements: [Feature Name], Risks (+2 more)
 
@@ -2126,9 +2087,9 @@ Nodes (96): depth_1, depth_2, depth_1, depth_2, depth_1, depth_2, depth_1, depth
 
 ### Community 118 - "Projects: Type + Width + Speed"
 Cohesion: 0.18
-Nodes (11): type, type, type, ability_forms, passive_effects, patch_version, speed, width (+3 more)
+Nodes (11): type, type, type, type, ability_forms, cast_time, damage_values, patch_version (+3 more)
 
-### Community 119 - "Context Engine: Context + Budget + Purpose"
+### Community 119 - "Archive: Budget + Context + Compaction"
 Cohesion: 0.29
 Nodes (6): Context Budget, How It Works, Inputs/Outputs, Profile Budgets, Purpose, Rules
 
@@ -2152,7 +2113,7 @@ Nodes (34): extractChampions(), cache_path(), download_batch(), download_image()
 Cohesion: 0.06
 Nodes (34): 1. What Is the Gold Skeleton?, 2. The Status System, 3. Data Level Reference, 4. How to Read the Skeleton, 5. The Full Gold Skeleton, 6. Status Summary Dashboard, 7. What to Build First — Top 10 for Beginners, 8. Stage Progression Guide (+26 more)
 
-### Community 131 - "Ungasis: Agent + Sequential + Docs"
+### Community 131 - "Ungasis: Agent + Sequential + Handoff"
 Cohesion: 0.40
 Nodes (5): Builder Agent, Debugger Agent, Planner Agent, Reviewer Agent, Tester Agent
 
@@ -2161,16 +2122,16 @@ Cohesion: 0.06
 Nodes (34): 12 Gap Fills (5 Medium + 7 Low), 25. Android + Power Platform + Token Prevention, 3-Zone Budget (per quest, configurable), Addendum Summary, CLAUDE.md Content (Auto-Generated), Cline Kickoff (Sprint 0), CSS Recipe, Gap 10: Data Flow Diagram Expanded (Low) (+26 more)
 
 ### Community 134 - "Projects: Build + Engine + Enrichedbuild"
-Cohesion: 0.11
-Nodes (23): buildRationalePrompt(), dedup(), EnrichedBuild, EnrichedRune, EnrichedSpell, enrichRunes(), findBestBuild(), findChampion() (+15 more)
+Cohesion: 0.12
+Nodes (22): buildRationalePrompt(), dedup(), EnrichedBuild, EnrichedRune, EnrichedSpell, enrichRunes(), findBestBuild(), findChampion() (+14 more)
 
 ### Community 135 - "Projects: Keys + Models + Configs"
 Cohesion: 0.08
 Nodes (33): formatRelationshipDataForPrompt(), buildUserMessage(), callGoogleAI(), callProvider(), CEREBRAS_CONFIGS, CEREBRAS_KEYS, CEREBRAS_MODELS, containsAny() (+25 more)
 
 ### Community 136 - "Projects: Build + Engine + Enrichedbuild"
-Cohesion: 0.11
-Nodes (24): buildRationalePrompt(), buildTemplate(), dedup(), EnrichedBuild, EnrichedRune, EnrichedSpell, enrichRunes(), findBestBuild() (+16 more)
+Cohesion: 0.06
+Nodes (48): buildRationalePrompt(), buildTemplate(), dedup(), EnrichedBuild, EnrichedRune, EnrichedSpell, enrichRunes(), findBestBuild() (+40 more)
 
 ### Community 143 - "Modules: Manual + Html + Content"
 Cohesion: 0.06
@@ -2189,24 +2150,24 @@ Cohesion: 0.06
 Nodes (32): champions, _meta, chunk, game, generated, patch, total_champions, version (+24 more)
 
 ### Community 149 - "Projects: Spawn + Respawn + Timer"
-Cohesion: 0.08
-Nodes (29): buff_duration, notes, respawn_timer, spawn_time, first_spawn, individual_buffs, respawn_timer, types (+21 more)
+Cohesion: 0.05
+Nodes (49): buff_duration, notes, respawn_timer, spawn_time, first_spawn, individual_buffs, respawn_timer, soul (+41 more)
 
 ### Community 156 - "Projects: Type + Schema + Champion"
-Cohesion: 0.06
-Nodes (50): type, type, additionalProperties, type, type, type, type, const (+42 more)
+Cohesion: 0.05
+Nodes (53): type, AbilityData, type, additionalProperties, type, type, ChampionData, ChampionStats (+45 more)
 
 ### Community 161 - "Docs: Rules + Context + File"
 Cohesion: 0.06
 Nodes (30): 10. smart-router.md — Keyword Routing, 11. intent-parser.md — Intent Mapping, 12. okr-current.md — Q3 2026 Objectives, 13. quality-rules.md — Scoring Dimensions, 14. scaffold-rules.md — Scaffold Output, 15. scheduled-tasks.md — 14 Tasks, 16. research-sources.md, 17-18. Tracking Rules (+22 more)
 
 ### Community 167 - "Projects: Groq + Keys + Openrouter"
-Cohesion: 0.05
-Nodes (53): buildModifiedRationalePrompt(), buildRouteB(), ChatMessage, getNextGroqKey(), getNextOpenRouterKey(), GROQ_KEYS, GROQ_MODELS, GroqModel (+45 more)
+Cohesion: 0.06
+Nodes (51): buildModifiedRationalePrompt(), buildRouteB(), ChatMessage, getNextGroqKey(), getNextOpenRouterKey(), GROQ_KEYS, GROQ_MODELS, GroqModel (+43 more)
 
 ### Community 169 - "Docs: Section + Agent + Ungasis"
-Cohesion: 0.14
-Nodes (16): Builder Identity, Communication Rules, Component Rules, Dashboard Cards (Form 2), Glassmorphism Theme (Design DNA), Immediate (This Week), JARVIS Personality, Long-Term (2027+) (+8 more)
+Cohesion: 0.07
+Nodes (32): UNGASIS Build Status, 20+ JARVIS Subsystems (in .ungasis/), 3 Automation Systems, 9 Core Engines, Build Status Summary, Builder Identity, Communication Rules, Component Rules (+24 more)
 
 ### Community 171 - "Modules: Week + Day + Build"
 Cohesion: 0.07
@@ -2229,8 +2190,8 @@ Cohesion: 0.05
 Nodes (57): desc, examples, desc, examples, champion_pair_synergies, desc, examples, desc (+49 more)
 
 ### Community 184 - "Projects: Formula + Notes + Example"
-Cohesion: 0.06
-Nodes (51): example, formula, gold_per_point, notes, reduction_formula, reference_item, formula, notes (+43 more)
+Cohesion: 0.07
+Nodes (36): example, formula, gold_per_point, notes, reduction_formula, reference_item, armor, magic_resist (+28 more)
 
 ### Community 186 - "Modules: Copy + Paste + Prompt"
 Cohesion: 0.06
@@ -2252,7 +2213,7 @@ Nodes (13): Before Writing Any Blueprint, READ These Files:, Blueprint Generatio
 Cohesion: 0.09
 Nodes (21): DEFAULT_STYLE, TIER_STYLES, ALL_ROLES, Champion, initials(), TierListPage(), ALL_ROLES, Champion (+13 more)
 
-### Community 201 - "Context: Stack + Context + Current"
+### Community 201 - "Archive: Stack + Upgrade + Commands"
 Cohesion: 0.33
 Nodes (5): Commands, Current stack, Stack Context, Stack principles, Upgrade path
 
@@ -2272,10 +2233,6 @@ Nodes (27): Agent Routing Table, blueprint-cache.md — Reusable Blueprint Templ
 Cohesion: 0.04
 Nodes (47): 10. 🎪 Mock API Responses, 11. 🔄 Key Rotation & Hygiene, 12. 🚨 What to Do If a Key Is Exposed — Emergency SOP, 13. 🤖 What NEVER to Paste into AI Chats, 14. ✅ Complete Secret Safety Checklist, 1. 🔓 Why This Matters — The Unlocked Safe Analogy, 2. 🚫 The "Never Do This" List, 3. 🔒 How to Store Keys Safely — The Safer Pattern (+39 more)
 
-### Community 220 - "Ungasis: Identity + Rules + File"
-Cohesion: 0.40
-Nodes (4): Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role
-
 ### Community 222 - "Modules: Lifecycle + Ladder + Table"
 Cohesion: 0.05
 Nodes (56): 10. 🧪 Stage 7 — Private Beta, 11. 💰 Stage 8 — Revenue Test, 12. 🚀 Stage 9 — Public MVP, 13. 🏢 Stage 10 — Commercial SaaS, 14. ⚖️ Stage 11 — High-Risk / Regulated, 15. 📊 Quick Reference: Rigor Dial Summary Table, 16. 🧭 How to Use This: Decision Flowchart, 17. 📌 Default Assumption (+48 more)
@@ -2293,8 +2250,8 @@ Cohesion: 0.07
 Nodes (17): Test queue.md parsing logic., Test counting pending tasks in queue., Test parsing an empty queue., Test quality scoring dimensions., Test staleness footer detection in markdown., Test markdown table detection., Test heading structure existence., Test warning detection logic. (+9 more)
 
 ### Community 235 - "Projects: Usereasoning + Reasoning + Usereasoningresult"
-Cohesion: 0.09
-Nodes (19): UseReasoningResult, BuildDataSnapshot, ValidationResult, UseReasoningResult, BuildDataSnapshot, ConfidenceLevel, ValidationResult, UseReasoningResult (+11 more)
+Cohesion: 0.16
+Nodes (10): UseReasoningResult, UseReasoningResult, UseReasoningResult, EnrichedChampionData, EnrichedItemData, EnrichedRuneData, EnrichedSpellData, ReasoningRequest (+2 more)
 
 ### Community 237 - "Modules: Lane + Code + Ungasis"
 Cohesion: 0.08
@@ -2312,11 +2269,11 @@ Nodes (47): additionalProperties, type, type, items, type, type, $id, type (+39 
 Cohesion: 0.08
 Nodes (25): items, _meta, category, game, generated, patch, sources, total_items (+17 more)
 
-### Community 243 - "Code: Agent + Rules + Gemini"
+### Community 243 - "Code: Rules + Rule + Agent"
 Cohesion: 0.14
 Nodes (14): Agent Crew, Agent Manager Integration, Auto-Routing Rules (Always Active), Domain Language Table, File Edit Rules, GEMINI.md — Antigravity Agent Configuration, Project Identity, Projects Directory (+6 more)
 
-### Community 248 - "Code: Routing + Model + New"
+### Community 248 - "Archive: Routing + Model + Rules"
 Cohesion: 0.53
 Nodes (5): Model Routing (v4.0), Model Routing (v4.0 - NEW), Reasoning Budget by Task Type, Routing Table, Rules
 
@@ -2326,11 +2283,11 @@ Nodes (25): ALSO UPLOAD: BUILDER_PROFILE.md, QUEST_CONTEXT.md, MEMORY_BANK.md as
 
 ### Community 251 - "Projects: Name + Description + Colloq"
 Cohesion: 0.05
-Nodes (69): colloq, description, into, name, plaintext, tags, colloq, description (+61 more)
+Nodes (76): colloq, description, into, name, plaintext, tags, colloq, description (+68 more)
 
 ### Community 252 - "Projects: Types + Description + Effects"
-Cohesion: 0.05
-Nodes (57): e, passive, q, r, raw, ability_type, active_effects, brief_description (+49 more)
+Cohesion: 0.08
+Nodes (30): passive, q, ability_type, active_effects, brief_description, crowd_control_types, damage_types, defense_types (+22 more)
 
 ### Community 254 - "Projects: Zip + Chatgpt + Path"
 Cohesion: 0.07
@@ -2364,7 +2321,7 @@ Nodes (21): Champion, compact(), CounterEntry, dataCache, DataChunk, estimateTok
 Cohesion: 0.07
 Nodes (37): build_legality_rules, patch_version, schema_version, additionalProperties, type, type, type, type (+29 more)
 
-### Community 267 - "Ungasis: Rule + Reflection + Scope"
+### Community 267 - "Ungasis: Rule + Reflection + Loop"
 Cohesion: 0.15
 Nodes (12): Rule Hygiene & Staleness Detection, Duplication Control, Enforcement Tags, Footer Standard, Maintenance Log Format, Rule Ownership Map, Rule Priority, Rule Review Workflow (+4 more)
 
@@ -2376,7 +2333,7 @@ Nodes (23): inventory_slots, layout, named_uniques, purchase_restriction, sell_r
 Cohesion: 0.10
 Nodes (14): MarkdownMessageProps, CoachPage(), EMPTY_MESSAGES, SUGGESTIONS, EMPTY_MESSAGES, SUGGESTIONS, EMPTY_MESSAGES, SUGGESTIONS (+6 more)
 
-### Community 272 - "Projects: Graph + Explorer + Spec"
+### Community 272 - "Projects: Skill + Implementation + Procedure"
 Cohesion: 0.20
 Nodes (9): accessibility, component, data_inputs, implementation_options, panels, purpose, routes, states (+1 more)
 
@@ -2384,7 +2341,7 @@ Nodes (9): accessibility, component, data_inputs, implementation_options, panels
 Cohesion: 0.12
 Nodes (15): ALSO UPLOAD: BUILDER_PROFILE.md, QUEST_CONTEXT.md, MEMORY_BANK.md as knowledge files, ChatGPT Enterprise — Custom Instructions, Claude Projects — System Prompt, Custom GPT Blueprint: "UNGASIS Builder", GEMINI.md — Gemini CLI ⚠️ SUNSET June 18, 2026 — Replaced by Antigravity CLI (agy). Install: curl -fsSL https://antigravity.google/cli/install.sh | bash Configuration, GitHub Copilot Instructions, How would you like ChatGPT to respond?, M365 Copilot — Custom Instructions (+7 more)
 
-### Community 279 - "Context Engine: Context + Loops + Purpose"
+### Community 279 - "Archive: Context + Source + Loops"
 Cohesion: 0.29
 Nodes (6): Context Loops, How It Works, Inputs/Outputs, Purpose, Reference, Rules
 
@@ -2401,16 +2358,16 @@ Cohesion: 0.09
 Nodes (22): exact_claim_policy, generated_at_utc, runtime_exclusions, source_counts, canonical_abilities, canonical_champions, canonical_champions_active_runtime, canonical_champions_total_including_excluded_source_records (+14 more)
 
 ### Community 284 - "Projects: Gold + Turret + Notes"
-Cohesion: 0.24
-Nodes (11): jungle_camps, large_camp, notes, scuttle_crab, small_camp, gold, xp, gold (+3 more)
+Cohesion: 0.10
+Nodes (23): economy, jungle_camps, passive_gold_generation, turret_gold, large_camp, notes, scuttle_crab, small_camp (+15 more)
 
 ### Community 288 - "Blueprints: Layer + Pattern + Addendum"
 Cohesion: 0.09
 Nodes (22): 3-Zone Budget (per quest, configurable), 8. AI Architecture (7 Layers), Addendum v1 Gap 3: Token Efficiency Protocol, Addendum v1 Gap 4: Multi-Agent Orchestration Patterns, Addendum v3 Inline Merge: Complete 12-Layer Token Efficiency, API Key Health Check Procedure, Layer 1: Inference Fallback Chain, Layer 2: Memory System (+14 more)
 
 ### Community 290 - "Projects: Bytes + Sha + Zip"
-Cohesion: 0.15
-Nodes (20): bytes, filename, path, sha256, data_zip, src_zip, wr_chatgpt_zip, wr_opus_zip (+12 more)
+Cohesion: 0.09
+Nodes (32): bytes, filename, path, sha256, generated_at_utc, bytes, filename, raw_preserved_path (+24 more)
 
 ### Community 292 - "Projects: Phase + Now + Opus"
 Cohesion: 0.09
@@ -2448,7 +2405,7 @@ Nodes (10): API Key Health Check Procedure, Branch Strategy (Simple — Solo Dev
 Cohesion: 0.60
 Nodes (5): Escalation Log, History Table, Inputs/Outputs, Purpose, Rules
 
-### Community 310 - "Projects: Build + Phase + Riftcoach"
+### Community 310 - "Projects: File + Build + Phase"
 Cohesion: 0.07
 Nodes (27): 10. Roadmap Recommendation, 1. File Inventory, 2. Complete File Tree, 3. Tech Stack (Actual from package.json), 4. Architecture Map, 5. AI Provider System Deep Dive, 6. Quality Assessment, 7. Health Check Results (+19 more)
 
@@ -2457,14 +2414,14 @@ Cohesion: 0.11
 Nodes (17): count, entity_type, generated_at_utc, patch_version, records, version, entity_types, matching_methods (+9 more)
 
 ### Community 314 - "Projects: Level + Notes + Base"
-Cohesion: 0.08
-Nodes (28): champions, champion_stats, base_crit_damage, base_stats_list, level_scaling_formula, max_level, notes, base_crit_damage (+20 more)
+Cohesion: 0.06
+Nodes (43): champions, formula, notes, example, formula, notes, champion_stats, base_crit_damage (+35 more)
 
 ### Community 315 - "Projects: Type + Required + Schema"
 Cohesion: 0.09
 Nodes (33): type, type, type, properties, required, type, $defs, championAbilityLock (+25 more)
 
-### Community 319 - "Ungasis: What + Key + Numbers"
+### Community 319 - "Archive: Repository + What + Key"
 Cohesion: 0.50
 Nodes (4): How to Run the QA Audit, If DeepSeek is slow/rate-limited, Prerequisites, Steps
 
@@ -2484,11 +2441,11 @@ Nodes (20): Agent Behavior, Agent Crew, AGENTS.md — Cross-Tool Agent Instructi
 Cohesion: 0.11
 Nodes (22): API Keys Inventory, Monthly Spend Log, Fallback Routing Table, API Inventory, API Keys Inventory, API Provider Inventory, How It Works, Inputs/Outputs (+14 more)
 
-### Community 328 - "Workflows: Workflow + Active + Workflows"
+### Community 328 - "Archive: Loop + Workflow + Growth"
 Cohesion: 0.29
 Nodes (8): Automation Safety Workflow, Build-Iterate-Verify Workflow, Continuous Improvement Workflow, Daily Session Workflow, Parallel Agents Workflow, Project Kickoff Workflow, Research to Decision Workflow, Active Workflows
 
-### Community 329 - "Knowledge: Index + Knowledge + Raw"
+### Community 329 - "Archive: Index + Knowledge + Raw"
 Cohesion: 0.33
 Nodes (5): Knowledge Index, Raw sources, Schema files, Source fidelity rule, Wiki pages
 
@@ -2496,11 +2453,11 @@ Nodes (5): Knowledge Index, Raw sources, Schema files, Source fidelity rule, Wik
 Cohesion: 0.04
 Nodes (46): 8 Skill Sets (synced v2 Master → embedded file), Antigravity Commands, API Routes, Architecture, Core Libraries, Data Folder Relationship, Data Pipeline, data/ (v0.7.1 Canonical — Read-Only Reference) (+38 more)
 
-### Community 331 - "Warnings: Warning + Templates + Outputs"
+### Community 331 - "Archive: Output + Mode + Example"
 Cohesion: 0.25
 Nodes (7): Code (if applicable), Floating Dot Navigation, Gotchas, Source, Tags, What, When to Use
 
-### Community 336 - "Docs: Status + Form + Build"
+### Community 336 - "Docs: Ungasis + Status + Form"
 Cohesion: 0.17
 Nodes (11): Automation Scripts, CLI, Form 1.5: JARVIS OS (.ungasis/), Form 1: Knowledge OS, Form 2: Dashboard, Infrastructure (Deferred), Projects, Security (+3 more)
 
@@ -2553,8 +2510,8 @@ Cohesion: 0.33
 Nodes (5): Acceptance Criteria, Context, Files NOT to Touch, Files to Touch, Task
 
 ### Community 351 - "Projects: Context + Builder + Builddraftcontext"
-Cohesion: 0.12
-Nodes (8): Ability, BuildTemplate, Champion, CounterMatchup, Item, Rune, SummonerSpell, TeamComp
+Cohesion: 0.11
+Nodes (9): formatGold(), Ability, BuildTemplate, Champion, CounterMatchup, Item, Rune, SummonerSpell (+1 more)
 
 ### Community 353 - "Modules: Source + Ledger + Rule"
 Cohesion: 0.10
@@ -2569,8 +2526,8 @@ Cohesion: 0.10
 Nodes (19): meta, confidence_source, generated, note, patch, schema_version, scope, score_scale (+11 more)
 
 ### Community 357 - "Projects: Report + Targeted + Fix"
-Cohesion: 0.36
-Nodes (8): blocking_refs, explicit_non_goals, final_validation_status, generated_at_utc, modified_files, protected_changed, report_name, scope
+Cohesion: 0.19
+Nodes (14): blocking_refs, explicit_non_goals, final_validation_status, generated_at_utc, modified_files, nunu_public_record_summary, ability_keys, id (+6 more)
 
 ### Community 358 - "Projects: Total + Synergies + Synergy"
 Cohesion: 0.10
@@ -2634,7 +2591,7 @@ Nodes (27): Do not edit this file. All rules are maintained in /CLAUDE.md, Last 
 
 ### Community 388 - "Projects: Source + Version + Merge"
 Cohesion: 0.11
-Nodes (17): alias_normalization, generated_at_utc, hard_gates, json_parse_pass, jsonl_parse_pass, karma_lock_pass, no_official_exact_value_promotion, public_runtime_data_unchanged (+9 more)
+Nodes (19): alias_normalization, generated_at_utc, mechanic_claim_counts_by_top_area, abilities, base_stats, policy, source_file_preserved, source_id (+11 more)
 
 ### Community 389 - "Projects: Nunu + Champion + Public"
 Cohesion: 0.10
@@ -2656,7 +2613,7 @@ Nodes (19): 1. EXECUTIVE SUMMARY, 2. RESEARCH FINDINGS, 3. ARCHITECTURE, 4. TASK
 Cohesion: 0.16
 Nodes (18): Agentic Loop, How It Works, Inputs/Outputs, Purpose, Rules, Steps Explained, Additional Context, Bus Manifest (+10 more)
 
-### Community 396 - "Skills: Skill + Code + Review"
+### Community 396 - "Archive: Review + Skill + Code"
 Cohesion: 0.50
 Nodes (3): Code Review Skill, Purpose, Steps
 
@@ -2728,11 +2685,11 @@ Nodes (26): additionalProperties, type, description, type, $id, type, type, type
 Cohesion: 0.10
 Nodes (24): additionalProperties, type, $id, type, type, properties, edge_id, interaction (+16 more)
 
-### Community 429 - "Skills: Skill + Research + Code"
+### Community 429 - "Archive: Research + Code + Skill"
 Cohesion: 0.50
 Nodes (3): Purpose, Research to Code Skill, Steps
 
-### Community 432 - "Context: User + Profile + Owner"
+### Community 432 - "Archive: User + Profile + Owner"
 Cohesion: 0.33
 Nodes (5): Constraints, Do not repeat, Owner, User Profile, Working style
 
@@ -2753,8 +2710,8 @@ Cohesion: 0.15
 Nodes (12): 60-Second Scaffold SOP, Combination Rules, DNA Rules, Genome Matrix Table, Inputs/Outputs, Jargon Explanations, Purpose, Rules (+4 more)
 
 ### Community 444 - "Dna: Rules + Scaffold + Combination"
-Cohesion: 0.18
-Nodes (10): 60-SECOND SCAFFOLD SOP, Additional Context, COMBINATION RULES, Example, GENOME MATRIX TABLE, scaffold-rules.md — Scaffolding Combination Rules, See also, Tags (+2 more)
+Cohesion: 0.11
+Nodes (17): 60-SECOND SCAFFOLD SOP, Additional Context, COMBINATION RULES, Example, GENOME MATRIX TABLE, scaffold-rules.md — Scaffolding Combination Rules, See also, Tags (+9 more)
 
 ### Community 445 - "Projects: Phase + Prompt + Merge"
 Cohesion: 0.10
@@ -2792,11 +2749,11 @@ Nodes (17): fetch_feed_items(), find_elements_by_tag(), get_child_attr(), get_ch
 Cohesion: 0.18
 Nodes (11): _meta, chunk, game, generated, patch, version, system_overview, app_name (+3 more)
 
-### Community 458 - "Projects: Type + Decision + Schema"
+### Community 458 - "Projects: Type + Decision + Architecture"
 Cohesion: 0.11
 Nodes (23): additionalProperties, type, type, type, type, $id, type, properties (+15 more)
 
-### Community 459 - "Modules: Guide + Device + Antigravity"
+### Community 459 - "Archive: Changelog + Master + Coverage"
 Cohesion: 0.67
 Nodes (4): Antigravity Ecosystem Guide, Cross-Device Workflow Guide, Device Sync Protocol, Extended Memory & Context Engineering
 
@@ -2856,7 +2813,7 @@ Nodes (16): 7. JARVIS-FABRICATOR ROADMAP (Phases 1-5), Batch 1 (~2.5 hrs): Found
 Cohesion: 0.08
 Nodes (24): architecture, api_routes, data_flow, data_relationships, database_files, tech_stack, ui_pages, builds → champions (+16 more)
 
-### Community 492 - "Ungasis: Source + Verified + Ledger"
+### Community 492 - "Archive: Source + Ledger + Verified"
 Cohesion: 0.40
 Nodes (5): M365 Requirements to GitHub Issues Prompt, Confidence Levels, Source Priority Order, Verified Source Ledger, Verification Workflow
 
@@ -2864,13 +2821,13 @@ Nodes (5): M365 Requirements to GitHub Issues Prompt, Confidence Levels, Source 
 Cohesion: 0.26
 Nodes (11): list_md(), main(), Path, list_md(), main(), section(), str, List md.      Args/Returns if relevant. (+3 more)
 
-### Community 503 - "Cli Agents: Cli + Orchestration + Agent"
+### Community 503 - "Cli Agents: Cli + Agent + Orchestration"
 Cohesion: 0.15
 Nodes (12): Agent Roles, Antigravity Agent Manager, Antigravity CLI (agy), Blueprint Model Priority, CLI_ORCHESTRATION.md — CLI Orchestration Operations Manual, Device Constraints, Error Handling, How It Works (+4 more)
 
 ### Community 504 - "Projects: Champion + Version + Source"
-Cohesion: 0.08
-Nodes (21): abilities, audit_notes, champion_id, champion_name, correction_id, no_lol_pc_overwrite, patch_version, protected (+13 more)
+Cohesion: 0.10
+Nodes (18): abilities, audit_notes, champion_id, champion_name, correction_id, no_lol_pc_overwrite, patch_version, protected (+10 more)
 
 ### Community 506 - "Projects: Boots + Enchants + Json"
 Cohesion: 0.16
@@ -2993,8 +2950,8 @@ Cohesion: 0.19
 Nodes (13): download_file(), extract_one(), extract_stats(), main(), profile_candidates(), Generate ordered list of candidate URLs to try for champion profile media., Download a file. Returns True on success., Fetch wiki page and extract base stats. Uses requests like v2. (+5 more)
 
 ### Community 555 - "Rules: Rules + Blueprint + Workflow"
-Cohesion: 0.17
-Nodes (13): Blueprint Architect Rules, Auto-Tagger Rules, Blueprint Workflow, Commander Workflow, Pipeline Manifest, Quality Auditor Agent, Quality Audit Workflow, Blueprint-First Rule (Added June 2026) (+5 more)
+Cohesion: 0.12
+Nodes (15): GRAPHIFY UPDATE, Graphify Watchdog, Quality Audit Workflow, Blueprint-First Rule (Added June 2026), Commander Integration (Added Sprint F19), Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10 (+7 more)
 
 ### Community 556 - "Context Engine: Rules + Index + Context"
 Cohesion: 0.12
@@ -3017,8 +2974,8 @@ Cohesion: 0.24
 Nodes (10): 13. HANDOFF SUMMARY, Files to Read First in Any New Session, What's Next, What Was Accomplished (June 2, 2026), 14. HANDOFF SUMMARY, Files to Read First in Any New Session, Files to Upload for a Fresh Chat (if needed), Key Metrics (+2 more)
 
 ### Community 575 - "Code: Rule + Hygiene + Staleness"
-Cohesion: 0.12
-Nodes (16): Reflection Protocol, Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Duplication Control, Enforcement Tags, Footer Standard, Maintenance Log Format, Rule Hygiene & Staleness Detection (+8 more)
+Cohesion: 0.11
+Nodes (25): Reflection Protocol, Duplication Control, Enforcement Tags, Footer Standard, Maintenance Log Format, Rule Hygiene & Staleness Detection, Rule Ownership Map, Rule Priority (+17 more)
 
 ### Community 576 - "Projects: Items + Json + Verified"
 Cohesion: 0.14
@@ -3037,8 +2994,8 @@ Cohesion: 0.13
 Nodes (14): DESIGN SYSTEM (for any UI work), My Active Projects, My AI Providers (7 total), QUICK COMMANDS (just type these), RULES, STEP 1: DETECT what I'm ask, STEP 1: DETECT what I'm asking, STEP 2: PLAN & ARCHITECT (Do NOT write code) (+6 more)
 
 ### Community 581 - "Docs: Rules + Memory + Research"
-Cohesion: 0.22
-Nodes (9): 20-Layer Token Efficiency System, Adaptation Approval Levels, Feedback Loop Scripts (5 closed loops), Memory Injection Rules, Research Scripts Pipeline, Research Sources, Section 8: Research & Learning System, Self-Evolution Rules (+1 more)
+Cohesion: 0.17
+Nodes (15): 20-Layer Token Efficiency System, Adaptation Approval Levels, Feedback Loop Scripts (5 closed loops), Memory Injection Rules, Research Scripts Pipeline, Research Sources, Section 8: Research & Learning System, Self-Evolution Rules (+7 more)
 
 ### Community 582 - "Projects: Shape + Icon + Size"
 Cohesion: 0.10
@@ -3100,10 +3057,6 @@ Nodes (12): assetCandidates(), candidateNames(), OVERRIDES, portraitCandidates()
 Cohesion: 0.15
 Nodes (11): Active Agent Crew, BLUEPRINT_CONTEXT.md — Blueprint Context Cheat Sheet, Builder Identity, Current System State, Design DNA Specifications, Engines and Systems Status, File Conventions, Knowledge Gotchas List (+3 more)
 
-### Community 627 - "Rules: Rule + Staleness + Hygiene"
-Cohesion: 0.06
-Nodes (34): Acceptance Snapshot, Completion Rule, Do not edit this file. All rules are maintained in /CLAUDE.md, Failure Handling, Last synced: 2026-06-10, Last synced: 2026-06-10, Purpose, Quality Gate (+26 more)
-
 ### Community 632 - "Cli Agents: Claude + Code + Setup"
 Cohesion: 0.25
 Nodes (7): claude-code-setup.md — Claude Code CLI Setup, How It Works, Inputs and Outputs, Installation and Authentication, Operational Rules, Purpose, Troubleshooting Table
@@ -3137,8 +3090,8 @@ Cohesion: 0.20
 Nodes (12): count, entity_type, generated_at_utc, patch_version, records, version, count, entity_type (+4 more)
 
 ### Community 643 - "Modules: What + Ungasis + Backup"
-Cohesion: 0.17
-Nodes (11): 10. What to Do First If a Platform Goes Down — Emergency Card, 2. What to Backup Regularly, 4. Vendor Lock-In Risk Assessment, 5. What Happens If Free Tier Becomes Paid, API Key Inventory Template, Complete Backup Inventory, 🚨 EMERGENCY QUICK REFERENCE, 📖 Table of Contents (+3 more)
+Cohesion: 0.15
+Nodes (12): 10. What to Do First If a Platform Goes Down — Emergency Card, 1. Why Backups Matter, 4. Vendor Lock-In Risk Assessment, 5. What Happens If Free Tier Becomes Paid, 🚨 EMERGENCY QUICK REFERENCE, 🍳 Kitchen Analogy, 📖 Table of Contents, The Escape Plan Rule (+4 more)
 
 ### Community 644 - "Modules: Cost + Monitoring + Table"
 Cohesion: 0.22
@@ -3192,6 +3145,10 @@ Nodes (12): Alternatives considered, API / service contracts, Context, Data mode
 Cohesion: 0.07
 Nodes (28): 1. Upstash Redis Database, 2. Langfuse Account, 3. Install Dependencies, Agent 6.5-W1A: Redis Client, Agent 6.5-W1B: Response Cache, Agent 6.5-W1C: Session Memory, Agent 6.5-W1D: Observability Wrappers, CRITICAL RULES (Repeated — Never Violate) (+20 more)
 
+### Community 667 - "Rules: Claude + Reference + Copy"
+Cohesion: 0.29
+Nodes (6): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md, ⚠️ SOURCE OF TRUTH: CLAUDE.md, This file is a reference copy. All rules are maintained in CLAUDE.md.
+
 ### Community 668 - "Rules: Claude + Layer + File"
 Cohesion: 0.07
 Nodes (28): Avoid These Token Wastes, Claude Code / GitHub Engineer Best Practices (2026), CLAUDE.md / AGENTS.md Approach, Do not edit this file. All rules are maintained in /CLAUDE.md, File Reading Strategy, L10: Cache awareness, L11: Session checkpointing, L12: Compact at 70% (+20 more)
@@ -3208,7 +3165,7 @@ Nodes (9): bool, main(), bool, Path, main(), should_edit(), Should edit.      Ar
 Cohesion: 0.31
 Nodes (8): main(), int, main(), read_section(), str, Read section.      Args/Returns if relevant., Main.      Args/Returns if relevant., read_section()
 
-### Community 689 - "Projects: Route + Contract + Report"
+### Community 689 - "Archive: Known + Status + What"
 Cohesion: 0.33
 Nodes (4): known_issue, version, known_issue, version
 
@@ -3225,8 +3182,8 @@ Cohesion: 0.15
 Nodes (13): 26. Prompt OS + Future Skills + MCP + 12-Layer Tokens, 27. Agent-Specific Workflows, Additional Tools (from Quick Patch Fixes 3-6), CLAUDE.md Content (Auto-Generated), Communication, Conventions, 📊 FINAL DOCUMENT SUMMARY — UNGASIS OS v4.0 MASTER BLUEPRINT, Gap 6: Cline-Specific Workflow (Low) (+5 more)
 
 ### Community 695 - "Blueprints: Jarvis + Stack + Complete"
-Cohesion: 0.09
-Nodes (23): 11. KICKOFF PROMPTS, 13. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 2. CURRENT STATE — What Exists, 30 API Keys — 6 Providers, 3. ARCHITECTURE — Folder Structure, 3 Automation Systems — All Complete, 4-Agent Crew (+15 more)
+Cohesion: 0.15
+Nodes (12): 11. KICKOFF PROMPTS, 13. KNOWN ISSUES, 1. EXECUTIVE SUMMARY, 3. ARCHITECTURE — Folder Structure, Complete Handoff Document for Fresh Chat Continuation, Current JARVIS Score: 98%, KICKOFF A: Continue JARVIS Upgrade (Batch 1), KICKOFF B: Start RiftCoach Development (+4 more)
 
 ### Community 696 - "Projects: Jsonl + Read + Json"
 Cohesion: 0.26
@@ -3252,7 +3209,7 @@ Nodes (11): builds, meta, archetypes, coverage, generated, patch, schema_version
 Cohesion: 0.17
 Nodes (11): meta, confidence_source, generated, patch, schema_version, scope, synergy_types, total_champions (+3 more)
 
-### Community 704 - "Knowledge: Decision + Framework + What"
+### Community 704 - "Knowledge: Decision + Staleness + Framework"
 Cohesion: 0.32
 Nodes (11): Decision Categories, Decision Entry Template, Decision Framework, Gotchas, Impact Table, Source, Staleness Rules, Tags (+3 more)
 
@@ -3309,12 +3266,16 @@ Cohesion: 0.17
 Nodes (11): meta, confidence_source, generated, patch, schema_version, scope, synergy_types, total_champions (+3 more)
 
 ### Community 722 - "Projects: Cache + Scrape + Notes"
-Cohesion: 0.16
-Nodes (17): Any, str, Any, float, str, classify_change(), Classify the change type as buff, nerf, or adjust based on notes and details tex, Scrape and structure champion balance updates from wildriftfire.com/patch-notes. (+9 more)
+Cohesion: 0.10
+Nodes (28): Any, str, Any, float, str, bool, float, str (+20 more)
 
 ### Community 724 - "Reasoning: Reasoning + Framework + Purpose"
 Cohesion: 0.17
 Nodes (11): Additional Context, Decision Matrix, Example, How It Works, Inputs and Outputs, Purpose, reasoning-framework.md — Reasoning Framework, Rules (+3 more)
+
+### Community 725 - "Rules: Reflection + Loop + Protocol"
+Cohesion: 0.20
+Nodes (10): Acceptance Snapshot, Completion Rule, Failure Handling, Purpose, Quality Gate, Reflection Loop, Reflection Protocol (Self-Critique Loop), Required Log Format (+2 more)
 
 ### Community 726 - "Projects: Type + Slots + Ability"
 Cohesion: 0.15
@@ -3357,12 +3318,12 @@ Cohesion: 0.17
 Nodes (10): schema_version, templates, build_request, counter_request, data_quality_request, build-request.md — Build Request Template, Delegation Prompt Template, Purpose (+2 more)
 
 ### Community 762 - "Scripts: Scheduled + Agent + Manager"
-Cohesion: 0.29
-Nodes (5): Quick Reference, Requirements, Scheduled Tasks Setup (For Agent Manager), Scripts Overview, UNGASIS Automation Scripts
+Cohesion: 0.33
+Nodes (4): Quick Reference, How to Spawn Parallel Agents, Quick Reference, Scheduled Task Format
 
 ### Community 766 - "Projects: Costs + Unit + Cast"
-Cohesion: 0.10
-Nodes (23): unit, value, mana, raw, source_status, unit, value, costs (+15 more)
+Cohesion: 0.14
+Nodes (14): r, special_mechanics, ability_type, active_effects, brief_description, crowd_control_types, damage_types, defense_types (+6 more)
 
 ### Community 769 - "Projects: Section + Handoff + Current"
 Cohesion: 0.11
@@ -3545,14 +3506,14 @@ Cohesion: 0.29
 Nodes (6): Conflict Resolution, Part 4: Sequential Pipeline, conflict_resolution, database_version, schema_version, Conflict Resolution Rules
 
 ### Community 875 - "Projects: Riftcoach + Intelligence + Database"
-Cohesion: 0.50
-Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk4.zip, bytes, outer_member, sha256
+Cohesion: 0.10
+Nodes (21): nested_chatgpt_archives, riftcoach_wr_intelligence_database_v0_6_0_chunk2.zip, riftcoach_wr_intelligence_database_v0_6_0_chunk3.zip, riftcoach_wr_intelligence_database_v0_6_0_chunk4.zip, riftcoach_wr_intelligence_database_v0_6_0_chunk7.zip, riftcoach_wr_intelligence_database_v0_6_0_chunk9.zip, bytes, outer_member (+13 more)
 
 ### Community 876 - "Projects: Show + Badge + Relationship"
 Cohesion: 0.20
 Nodes (9): component, display_rules, max_rows_per_section, show_confidence_badge, show_source_status_badge, show_view_all_link, purpose, sections (+1 more)
 
-### Community 877 - "Code: Llm + Context + Project"
+### Community 877 - "Code: Llm + Context + Key"
 Cohesion: 0.15
 Nodes (11): 10. Scope Boundaries, 1. Identity, 2. Read Order (MANDATORY), 3. Architecture, 4. Domain Language, 5. Key Rules, 6. Tools & Devices, 7. Security (+3 more)
 
@@ -3651,10 +3612,6 @@ Nodes (9): Command Line Options, Notes, Option 1: Download ALL 137 champions, Op
 ### Community 932 - "Projects: Depth + Champion + Ability"
 Cohesion: 0.06
 Nodes (35): depth_1, depth_2, depth_1, depth_2, depth_1, depth_2, depth_1, depth_2 (+27 more)
-
-### Community 947 - "Projects: Build + Engine + Enrichedbuild"
-Cohesion: 0.11
-Nodes (24): buildRationalePrompt(), buildTemplate(), dedup(), EnrichedBuild, EnrichedRune, EnrichedSpell, enrichRunes(), findBestBuild() (+16 more)
 
 ### Community 957 - "Blueprints: Zone + Agents + Tool"
 Cohesion: 0.22
@@ -3860,7 +3817,7 @@ Nodes (7): ARCHITECT_RULES.md — Blueprint Architect Rules, How It Works, Input
 Cohesion: 0.25
 Nodes (7): ADR: Relationship Explorer Technology Direction, Chosen path, Context, Decision, Options considered, Reversal path, Why not heavier now
 
-### Community 1057 - "Issue Template: Behavior + Bug + Report"
+### Community 1057 - "Issue Template: Bug + Report + Behavior"
 Cohesion: 0.33
 Nodes (5): Actual Behavior, Description, Environment, Expected Behavior, Steps to Reproduce
 
@@ -4520,6 +4477,10 @@ Nodes (6): Evidence, Skill Proposal: Batch Executor, Status, Steps, Token Saving
 Cohesion: 0.08
 Nodes (25): builds, meta, archetypes, coverage, generated, patch, schema_version, source (+17 more)
 
+### Community 1348 - "Projects: Pass + Parse + Hard"
+Cohesion: 0.29
+Nodes (7): hard_gates, json_parse_pass, jsonl_parse_pass, karma_lock_pass, no_official_exact_value_promotion, public_runtime_data_unchanged, raw_source_preserved
+
 ### Community 1349 - "Reasoning: Reasoning + Budget + Token"
 Cohesion: 0.29
 Nodes (6): How It Works, Inputs and Outputs, Monthly Tracking Rules, Purpose, reasoning-budget.md — Reasoning Token Budgets, Reasoning Depth Allocations
@@ -4600,10 +4561,6 @@ Nodes (11): cdr_equivalent, examples, formula, notes, 100_AH, 10_AH, 20_AH, 40_A
 Cohesion: 0.22
 Nodes (13): base, growth_per_wave, minion_gold, base, growth_per_wave, caster_minion, melee_minion, notes (+5 more)
 
-### Community 1405 - "Projects: Soul + Requirement + Effects"
-Cohesion: 0.20
-Nodes (10): soul, chemtech_soul, cloud_soul, hextech_soul, infernal_soul, mountain_soul, ocean_soul, effects (+2 more)
-
 ### Community 1410 - "Agentic: Patterns + Orchestration + Purpose"
 Cohesion: 0.52
 Nodes (6): How It Works, Inputs/Outputs, Orchestration Patterns, Patterns, Purpose, Rules
@@ -4643,6 +4600,10 @@ Nodes (5): Blueprints Directory, How They're Generated, How to Execute, Naming C
 ### Community 1478 - "Blueprints: What + Files + Handoff"
 Cohesion: 0.33
 Nodes (6): 14. HANDOFF SUMMARY, Files to Read First in Any New Session, Files to Upload for a Fresh Chat (if needed), Key Metrics, What's Next, What Was Accomplished (June 2, 2026)
+
+### Community 1479 - "Blueprints: All + Complete + Current"
+Cohesion: 0.33
+Nodes (6): 2. CURRENT STATE — What Exists, 3 Automation Systems — All Complete, 4-Agent Crew, 7 Slash Commands, 9 Engines — All Complete, All 23 Sprints Completed (June 2, 2026 — Single Day)
 
 ### Community 1480 - "Projects: Draft + Advisor + Draftadvisoroutput"
 Cohesion: 0.29
@@ -4801,8 +4762,8 @@ Cohesion: 0.52
 Nodes (6): How It Works, Inputs/Outputs, Memory Queries, Purpose, Query Reference Table, Rules
 
 ### Community 1528 - "Projects: Stats + Name + Description"
-Cohesion: 0.10
-Nodes (21): colloq, depth, description, from, into, name, plaintext, stats (+13 more)
+Cohesion: 0.09
+Nodes (24): colloq, depth, description, from, into, name, plaintext, stats (+16 more)
 
 ### Community 1529 - "Modules: Tpl + Monetization + Business"
 Cohesion: 0.48
@@ -4885,8 +4846,8 @@ Cohesion: 0.33
 Nodes (6): anti_armor, crit_onhit, lifeline, slots, spellblade, game_rules
 
 ### Community 1551 - "Projects: Intent + Variantbadge + Extractor"
-Cohesion: 0.15
-Nodes (12): BuildIntent, VariantBadge, IntentPattern, VariantBadge, extractBuildIntent(), hasBuildIntent(), INTENT_PATTERNS, IntentPattern (+4 more)
+Cohesion: 0.13
+Nodes (14): BuildIntent, VariantBadge, extractBuildIntent(), hasBuildIntent(), IntentPattern, VariantBadge, extractBuildIntent(), hasBuildIntent() (+6 more)
 
 ### Community 1552 - "Prompt Evolution: Prompt + Library + Purpose"
 Cohesion: 0.52
@@ -5064,10 +5025,6 @@ Nodes (5): Expected Output, Safety, Steps, /watchdog — Graphify Re-index Workf
 Cohesion: 0.29
 Nodes (10): confidence_levels, high, low, medium, criteria, threshold, criteria, threshold (+2 more)
 
-### Community 1646 - "Projects: Game + Time + Description"
-Cohesion: 0.29
-Nodes (10): description, time, early_game, late_game, mid_game, description, time, description (+2 more)
-
 ### Community 1647 - "Projects: Tier + Threshold + Multiplier"
 Cohesion: 0.31
 Nodes (9): soft_caps, tier_1, tier_2, multiplier, note, threshold, multiplier, note (+1 more)
@@ -5128,9 +5085,9 @@ Nodes (23): SummonerHeal, name, cooldown, cooldownBurn, cost, costBurn, costType
 Cohesion: 0.47
 Nodes (5): Claude Project Instructions, ALSO UPLOAD: BUILDER_PROFILE.md, QUEST_CONTEXT.md, MEMORY_BANK.md as knowledge files, Claude Projects — System Prompt, WHERE TO SET: Claude > Projects > [Project Name] > Project Instructions, UNGASIS Builder GPT Spec
 
-### Community 1728 - "Code: Identity + Claude + Agent"
-Cohesion: 0.25
-Nodes (7): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role, ?? REFERENCE COPY � Source of truth is CLAUDE.md
+### Community 1728 - "Code: Identity + Agent + Ungasis"
+Cohesion: 0.31
+Nodes (8): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Agent Identity: UNGASIS QA Auditor, Behavior, Context, Role, ?? REFERENCE COPY � Source of truth is CLAUDE.md, Agent Identity: UNGASIS QA Auditor
 
 ### Community 1729 - "Cortex: Rules + Contact + Purpose"
 Cohesion: 0.60
@@ -5317,8 +5274,8 @@ Cohesion: 0.60
 Nodes (5): Inputs/Outputs, Purpose, Risk Templates, Rules, Templates Table
 
 ### Community 1799 - "Rules: Claude + Identity + Reference"
-Cohesion: 0.18
-Nodes (10): Agent Identity: UNGASIS QA Auditor, Behavior, Context, Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md, Role (+2 more)
+Cohesion: 0.13
+Nodes (13): Agent Identity: UNGASIS QA Auditor, Behavior, Context, Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md, Role (+5 more)
 
 ### Community 1800 - "Rules: Clinerules + Claude + Rules"
 Cohesion: 0.25
@@ -5472,6 +5429,10 @@ Nodes (5): Auto-Tagger Log, June 02, 2026 — Sweep Type: manual, June 03, 2026 
 Cohesion: 0.50
 Nodes (3): sha256_path(), Path, str
 
+### Community 2019 - "Projects: Alistar + Version + Key"
+Cohesion: 0.22
+Nodes (9): blurb, id, key, name, partype, tags, title, version (+1 more)
+
 ### Community 2022 - "Skills: Skill + Context + Pack"
 Cohesion: 0.50
 Nodes (3): Context Pack Skill, Purpose, Steps
@@ -5583,10 +5544,6 @@ Nodes (4): 8. 🔙 How to Recover from Mistakes, Decision Table: Which Recovery 
 ### Community 2074 - "Modules: Github + Pages + How"
 Cohesion: 0.50
 Nodes (4): 9. 🌍 How to Use GitHub Pages for Free Hosting, How to Set Up GitHub Pages, ⚠️ Important Notes, What GitHub Pages Can Host
-
-### Community 2079 - "Projects: Aphelios + Version + Key"
-Cohesion: 0.22
-Nodes (9): blurb, id, key, name, partype, tags, title, version (+1 more)
 
 ### Community 2082 - "Presets: Debug + Bug + Preset"
 Cohesion: 0.22
@@ -5788,6 +5745,10 @@ Nodes (17): AntiSynergyEntry, cache, CounterStrategyEntry, dataDir, difficultyTo
 Cohesion: 0.11
 Nodes (17): boots, enchantments, enchantment, stasis_default, meta, game_rules, generated, layers (+9 more)
 
+### Community 2356 - "Modules: Backup + Inventory + What"
+Cohesion: 0.67
+Nodes (3): 2. What to Backup Regularly, API Key Inventory Template, Complete Backup Inventory
+
 ### Community 2357 - "Modules: Template + Simple + Weekly"
 Cohesion: 0.67
 Nodes (3): 9. 📝 Simple Weekly Tracking Template, How to Use This Template, Template: `docs/COST_TRACKER.md`
@@ -5868,6 +5829,10 @@ Nodes (7): 24. Sprint Skinny Prompts, S1 — Foundation (for Gemini Agent), S2 �
 Cohesion: 0.29
 Nodes (6): 1. Kitchen Analogy, 2. Monitoring Stack, 3. Incident Severity Levels, 4. Incident Response Steps, 5. Cross-References, Observability & Incident Response — Smoke Alarms and Fire Drills
 
+### Community 2532 - "Rules: Claude + Reference + Copy"
+Cohesion: 0.29
+Nodes (6): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md, ⚠️ SOURCE OF TRUTH: CLAUDE.md, This file is a reference copy. All rules are maintained in CLAUDE.md.
+
 ### Community 2550 - "Rules: Claude + Reference + Copy"
 Cohesion: 0.29
 Nodes (6): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md, ⚠️ SOURCE OF TRUTH: CLAUDE.md, This file is a reference copy. All rules are maintained in CLAUDE.md.
@@ -5877,10 +5842,6 @@ Cohesion: 0.29
 Nodes (7): How to Propose, Impact Table, Purpose, Rule 08: Skill Observer, Safety Rules, When to Observe, When to Propose a Skill
 
 ### Community 2632 - "Rules: Claude + Reference + Copy"
-Cohesion: 0.29
-Nodes (6): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md, ⚠️ SOURCE OF TRUTH: CLAUDE.md, This file is a reference copy. All rules are maintained in CLAUDE.md.
-
-### Community 2639 - "Rules: Claude + Reference + Copy"
 Cohesion: 0.29
 Nodes (6): Do not edit this file. All rules are maintained in /CLAUDE.md, Last synced: 2026-06-10, Last synced: 2026-06-10, ?? REFERENCE COPY � Source of truth is CLAUDE.md, ⚠️ SOURCE OF TRUTH: CLAUDE.md, This file is a reference copy. All rules are maintained in CLAUDE.md.
 
@@ -5942,7 +5903,7 @@ Nodes (16): info, info, info, info, info, info, info, info (+8 more)
 
 ### Community 3282 - "Projects: Counters + Strong + Weak"
 Cohesion: 0.17
-Nodes (16): counters, counters, counters, counters, strong_vs, weak_vs, counters, difficulty (+8 more)
+Nodes (16): counters, counters, counters, strong_vs, weak_vs, counters, counters, difficulty (+8 more)
 
 ### Community 3283 - "Projects: Type + Node + Properties"
 Cohesion: 0.17
@@ -5950,7 +5911,7 @@ Nodes (16): type, type, type, properties, explain, filters, max_depth, relations
 
 ### Community 3284 - "Projects: Counters + Strong + Weak"
 Cohesion: 0.17
-Nodes (16): counters, counters, counters, strong_vs, weak_vs, counters, counters, difficulty (+8 more)
+Nodes (16): counters, counters, counters, strong_vs, weak_vs, counters, counters, counters (+8 more)
 
 ### Community 3292 - "Projects: Node + Shape + Icon"
 Cohesion: 0.13
@@ -6013,8 +5974,8 @@ Cohesion: 0.19
 Nodes (10): BuildIntent, getAvailableIntents(), getVariantPool(), hasVariant(), INTENT_META, normalizeRole(), VARIANT_POOLS, VariantItemPool (+2 more)
 
 ### Community 3334 - "Projects: Gold + Cost + Quest"
-Cohesion: 0.11
-Nodes (25): cost, quest_gold, economy, passive_gold_generation, starting_gold, support_items, turret_gold, notes (+17 more)
+Cohesion: 0.24
+Nodes (13): cost, quest_gold, starting_gold, support_items, cost, quest_gold, cost, quest_gold (+5 more)
 
 ### Community 3336 - "Docs: Sdd + Spec + Driven"
 Cohesion: 0.33
@@ -6042,11 +6003,15 @@ Nodes (10): Copy-Paste Helper Prompt, Done Checklist, QA Checklist for This Modu
 
 ### Community 3391 - "Modules: Copy + Paste + Helper"
 Cohesion: 0.18
-Nodes (11): Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Safety Warning, Safety Warning, SOP 05 - Setting Up an M365 Copilot Notebook (+3 more)
+Nodes (11): Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Safety Warning, Safety Warning, SOP 13 - Testing Locally (+3 more)
 
 ### Community 3392 - "Modules: Safety + Warning + Sop"
 Cohesion: 0.18
-Nodes (11): Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Safety Warning, Safety Warning, Safety Warning, SOP 03 - Creating a Project Brief (+3 more)
+Nodes (11): Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Safety Warning, Safety Warning, Safety Warning, SOP 04 - Setting Up a ChatGPT Project (+3 more)
+
+### Community 3393 - "Modules: Sop + Setting + Copilot"
+Cohesion: 0.18
+Nodes (11): Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Safety Warning, Safety Warning, SOP 03 - Creating a Project Brief, SOP 05 - Setting Up an M365 Copilot Notebook (+3 more)
 
 ### Community 3394 - "Modules: Goal + Weekly + Playbook"
 Cohesion: 0.18
@@ -6086,7 +6051,7 @@ Nodes (10): meta, confidence_source, generated, patch, schema_version, scope, to
 
 ### Community 3413 - "Projects: Type + Effect + Properties"
 Cohesion: 0.18
-Nodes (11): type, type, type, type, type, properties, ability_type, cast_time (+3 more)
+Nodes (11): type, type, type, type, type, properties, ability_type, cooldowns (+3 more)
 
 ### Community 3421 - "Blueprints: Top + Append + New"
 Cohesion: 0.29
@@ -6106,7 +6071,7 @@ Nodes (10): 11. 📈 Phase 9 — Track Metrics, 🚦 Decision Point, 🎯 Goal, 
 
 ### Community 3450 - "Modules: Key + Actions + Prototype"
 Cohesion: 0.20
-Nodes (10): 6. 🖱️ Phase 4 — Build Clickable Prototype, 🚦 Decision Point, 🎯 Goal, 📋 Key Actions, 📦 Output, Prototype Checklist (from Playbook §11), ⏱️ Time Estimate, 🛠️ Tools (+2 more)
+Nodes (10): 6. 🖱️ Phase 4 — Build Clickable Prototype, 🚦 Decision Point, 🎯 Goal, 📋 Key Actions, 📋 Key Actions, 📦 Output, Prototype Checklist (from Playbook §11), ⏱️ Time Estimate (+2 more)
 
 ### Community 3451 - "Modules: Playbook + Phase + Deploy"
 Cohesion: 0.20
@@ -6140,6 +6105,10 @@ Nodes (9): 4. Tool Registry, Zone A: 🧠 THINK (Unlimited), Zone B: 🎨 PROTOT
 Cohesion: 0.22
 Nodes (9): 2. Output Modes, 7. Audit Mode, 8. Default Mode Rules, Beginner note, Example output, Output format, Part A — Output Depth Control, Special rule for Mel (+1 more)
 
+### Community 3493 - "Projects: Garen + Meta + Tier"
+Cohesion: 0.22
+Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
+
 ### Community 3494 - "Projects: Aitask + Modelconfig + Apikeyslot"
 Cohesion: 0.22
 Nodes (8): AIRequest, AIResponse, AITask, APIKeySlot, ChatMessage, ModelConfig, ModelUsage, RouterState
@@ -6156,17 +6125,17 @@ Nodes (9): checks, canonical_official_fields_overwritten, json_files_checked, js
 Cohesion: 0.22
 Nodes (9): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, synergies, wiki_url (+1 more)
 
-### Community 3500 - "Blueprints: Ungasis + Blueprint + Graphify"
-Cohesion: 0.25
-Nodes (6): GRAPHIFY UPDATE, UNGASIS OS v5.0 — JARVIS-Fabricator Blueprint, UNGASIS Build Status, Graphify Watchdog, UNGASIS OS v4.0 Master Blueprint, UNGASIS OS v5.0 JARVIS-Fabricator Blueprint
+### Community 3503 - "Projects: Value + Radius + Effect"
+Cohesion: 0.16
+Nodes (15): unit, value, unit, value, value, unit, cast_time, effect_radius (+7 more)
 
 ### Community 3524 - "Projects: Power + Skill + Set"
 Cohesion: 0.33
 Nodes (6): Excel, Power Apps, Power Automate, Power BI, Skill Set 7: Microsoft Power Platform MVP, Power BI DNA
 
 ### Community 3525 - "Projects: Alistar + Meta + Tier"
-Cohesion: 0.25
-Nodes (8): PowerSpike, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, alistar
+Cohesion: 0.13
+Nodes (14): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, field_level_provenance_required (+6 more)
 
 ### Community 3526 - "Projects: Rows + Candidate + Claims"
 Cohesion: 0.29
@@ -6178,11 +6147,11 @@ Nodes (8): 18. No Fake Completion Rule, 19. Required Status Labels, 20. Honest C
 
 ### Community 3530 - "Projects: Wiki + Url + Akali"
 Cohesion: 0.25
-Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, full_data, akali
+Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, wiki_url, akali
 
 ### Community 3531 - "Projects: Akshan + Meta + Tier"
-Cohesion: 0.13
-Nodes (14): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, field_level_provenance_required (+6 more)
+Cohesion: 0.25
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, akshan
 
 ### Community 3532 - "Projects: Amumu + Meta + Tier"
 Cohesion: 0.25
@@ -6270,7 +6239,7 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 
 ### Community 3553 - "Projects: Full + Data + Galio"
 Cohesion: 0.25
-Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, galio
+Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, full_data, galio
 
 ### Community 3554 - "Projects: Gnar + Meta + Tier"
 Cohesion: 0.25
@@ -6318,7 +6287,7 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 
 ### Community 3565 - "Projects: Jinx + Meta + Tier"
 Cohesion: 0.25
-Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jinx
+Nodes (8): PowerSpike, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jinx
 
 ### Community 3566 - "Projects: Kalista + Meta + Tier"
 Cohesion: 0.25
@@ -6330,7 +6299,7 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 
 ### Community 3568 - "Projects: Katarina + Meta + Tier"
 Cohesion: 0.25
-Nodes (8): wiki_url, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, katarina
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, katarina
 
 ### Community 3569 - "Projects: Kayle + Meta + Tier"
 Cohesion: 0.25
@@ -6366,7 +6335,7 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 
 ### Community 3579 - "Projects: Difficulty + Annie + Meta"
 Cohesion: 0.25
-Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, difficulty, annie
+Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, wiki_url, annie
 
 ### Community 3580 - "Projects: Aurelion + Sol + Meta"
 Cohesion: 0.25
@@ -6390,7 +6359,7 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 
 ### Community 3585 - "Projects: Braum + Meta + Tier"
 Cohesion: 0.25
-Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, playstyle, braum
+Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, difficulty, braum
 
 ### Community 3586 - "Projects: Caitlyn + Meta + Tier"
 Cohesion: 0.25
@@ -6410,7 +6379,7 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 
 ### Community 3590 - "Projects: Diana + Meta + Tier"
 Cohesion: 0.25
-Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, diana
+Nodes (8): difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, playstyle, diana
 
 ### Community 3591 - "Projects: Mundo + Meta + Tier"
 Cohesion: 0.25
@@ -6478,7 +6447,7 @@ Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, 
 
 ### Community 3607 - "Projects: Wiki + Url + Jinx"
 Cohesion: 0.25
-Nodes (8): wiki_url, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jinx
+Nodes (8): counters, difficulty, full_data, meta_tier, playstyle, power_spikes, wiki_url, jinx
 
 ### Community 3608 - "Projects: Jayce + Meta + Tier"
 Cohesion: 0.25
@@ -6637,8 +6606,8 @@ Cohesion: 0.33
 Nodes (6): anti_armor, crit_onhit, lifeline, slots, spellblade, game_rules
 
 ### Community 3731 - "Projects: Runtime + Src + Contract"
-Cohesion: 0.22
-Nodes (7): generated_at_utc, source_archives, audit_date, blockers, hard_gates_before_runtime_replace, scope, source_archive
+Cohesion: 0.33
+Nodes (5): audit_date, blockers, hard_gates_before_runtime_replace, scope, source_archive
 
 ### Community 3732 - "Projects: Karma + Lock + Version"
 Cohesion: 0.33
@@ -6677,8 +6646,8 @@ Cohesion: 0.60
 Nodes (3): load_keys(), main(), test_rate_limit()
 
 ### Community 3900 - "Modules: Steps + Sop + Safety"
-Cohesion: 0.18
-Nodes (11): Copy-Paste Helper Prompt, Copy-Paste Helper Prompt, Done Checklist, Done Checklist, Safety Warning, Safety Warning, SOP 04 - Setting Up a ChatGPT Project, SOP 09 - Creating a UX Flow (+3 more)
+Cohesion: 0.40
+Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 09 - Creating a UX Flow, Steps
 
 ### Community 3901 - "Projects: Data + Section + Pipeline"
 Cohesion: 0.33
@@ -6689,8 +6658,8 @@ Cohesion: 0.40
 Nodes (5): ValidationRule, icon, label_priority, shape, size_basis
 
 ### Community 3909 - "Projects: Riftcoach + Intelligence + Database"
-Cohesion: 0.15
-Nodes (13): nested_chatgpt_archives, riftcoach_wr_intelligence_database_v0_6_0_chunk1_1.zip, riftcoach_wr_intelligence_database_v0_6_0_chunk2.zip, riftcoach_wr_intelligence_database_v0_6_0_chunk3.zip, bytes, outer_member, sha256, bytes (+5 more)
+Cohesion: 0.50
+Nodes (4): riftcoach_wr_intelligence_database_v0_6_0_chunk1_1.zip, bytes, outer_member, sha256
 
 ### Community 3910 - "Code: Claude + Skill + Generator"
 Cohesion: 0.50
@@ -6798,15 +6767,11 @@ Nodes (5): Copy-Paste Helper Prompt, Done Checklist, Safety Warning, SOP 21 - Pr
 
 ### Community 3952 - "Modules: Idea + Phase + Pick"
 Cohesion: 0.40
-Nodes (5): 3. 💡 Phase 1 — Pick and Narrow the Idea, 💡 Analogy, Idea Scoring Table, 📋 Key Actions, 📦 Output
+Nodes (5): 3. 💡 Phase 1 — Pick and Narrow the Idea, 💡 Analogy, Idea Scoring Table, 📦 Output, 🚫 What NOT to Do Yet
 
 ### Community 3953 - "Modules: Analogy + Cost + What"
 Cohesion: 0.40
 Nodes (5): 6. 💥 What Happens When You Hit a Limit, 8. 💸 Cost Projection Ranges If Upgrade Needed, 🍳 Analogy, 🍳 Analogy, Total Monthly Cost at Different Stages
-
-### Community 3960 - "Projects: Width + Base + Mantra"
-Cohesion: 0.67
-Nodes (3): width, base, mantra
 
 ### Community 3962 - "Docs: Current + State + What"
 Cohesion: 0.67
@@ -7417,7 +7382,7 @@ Nodes (3): get_quota_details(), load_keys(), main()
   .ungasis/user-patterns/pattern-library.md · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **10599 isolated node(s):** `extensions`, `editor.formatOnSave`, `editor.tabSize`, `editor.wordWrap`, `files.autoSave` (+10594 more)
+- **10585 isolated node(s):** `extensions`, `editor.formatOnSave`, `editor.tabSize`, `editor.wordWrap`, `files.autoSave` (+10580 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **298 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -7426,14 +7391,14 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Feedback Adoption Metrics` and `Discovered Patterns Library`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `architecture` connect `Projects: Builds + Champions + Comps` to `Projects: Prompt + Template + Build`, `Projects: Accent + Tier + Text`, `Community 22`, `Projects: Data + Desc + Sources`, `Projects: Threshold + Desc + Pipeline`?**
+- **Why does `architecture` connect `Projects: Builds + Champions + Comps` to `Projects: Prompt + Template + Build`, `Projects: Accent + Tier + Text`, `Community 21`, `Projects: Data + Desc + Sources`, `Projects: Threshold + Desc + Pipeline`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `name` connect `Projects: Name + Rationale + Slot` to `Projects: Name + Persona + Full`, `Community 22`?**
+- **Why does `name` connect `Projects: Name + Rationale + Slot` to `Projects: Name + Persona + Full`, `Community 21`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **Why does `keystones` connect `Projects: Name + Rationale + Slot` to `Projects: Rune + Path + Slots`, `Projects: Version + Seedjar + Rune`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `extensions`, `editor.formatOnSave`, `editor.tabSize` to the rest of the system?**
-  _10769 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _10755 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
 - **Should `Projects: Tsx + Page + Item` be split into smaller, more focused modules?**
