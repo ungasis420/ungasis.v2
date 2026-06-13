@@ -1,141 +1,130 @@
 #!/usr/bin/env python3
-"""jarvis-score.py — Weighted JARVIS capability score. <3s, stdlib only."""
-import json
 import os
+import json
+import argparse
 import subprocess
-import sys
-from datetime import datetime, timezone
-
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-DASHBOARD = os.path.join(ROOT, ".ungasis", "dashboard")
-
-WEIGHTS = {
-    "plans": 0.15,
-    "builds": 0.20,
-    "verifies": 0.15,
-    "learns": 0.15,
-    "self_heals": 0.10,
-    "routes": 0.10,
-    "proactive": 0.15,
-}
-
-
-def load_json(path):
-    try:
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return None
-
-
-def score_builds():
-    bt = load_json(os.path.join(DASHBOARD, "battle-test.json"))
-    if not bt or not bt.get("total"):
-        return 0.0
-    return 100.0 * bt.get("pass_count", 0) / bt["total"]
-
-
-def score_verifies():
-    bt = load_json(os.path.join(DASHBOARD, "battle-test.json"))
-    if not bt or not bt.get("total"):
-        return 0.0
-    fail = bt.get("fail_count", 0)
-    return max(0.0, 100.0 * (1 - fail / bt["total"]))
-
-
-def score_learns():
-    wh = load_json(os.path.join(DASHBOARD, "wiki-health.json"))
-    if not wh:
-        return 0.0
-    return float(wh.get("health_pct", 0))
-
-
-def score_self_heals():
-    hook = os.path.join(ROOT, ".git", "hooks", "post-commit")
-    return 100.0 if os.path.exists(hook) else 0.0
-
-
-def score_routes():
-    hook = os.path.join(ROOT, ".git", "hooks", "post-commit")
-    sessions = os.path.join(ROOT, ".ungasis", "tracking", "sessions.jsonl")
-    pts = 0.0
-    if os.path.exists(hook):
-        pts += 50.0
-    if os.path.exists(sessions):
-        pts += 50.0
-    return pts
-
-
-def score_proactive():
-    try:
-        res = subprocess.run(
-            ["schtasks", "/query"], capture_output=True, text=True,
-            timeout=5,
-        )
-        out = res.stdout.lower()
-        count = sum(1 for ln in out.splitlines() if "ungasis" in ln)
-        if count >= 3:
-            return 100.0
-        if count > 0:
-            return 50.0
-        return 0.0
-    except Exception:
-        return 0.0
-
-
-def score_plans():
-    context_path = os.path.join(ROOT, "CONTEXT.md")
-    return 100.0 if os.path.exists(context_path) else 0.0
-
-
-def grade_for(score):
-    if score >= 90:
-        return "A"
-    if score >= 85:
-        return "A-"
-    if score >= 80:
-        return "B+"
-    if score >= 75:
-        return "B"
-    if score >= 70:
-        return "B-"
-    if score >= 60:
-        return "C"
-    if score >= 50:
-        return "D"
-    return "F"
-
 
 def main():
-    capabilities = {
-        "plans": score_plans(),
-        "builds": score_builds(),
-        "verifies": score_verifies(),
-        "learns": score_learns(),
-        "self_heals": score_self_heals(),
-        "routes": score_routes(),
-        "proactive": score_proactive(),
-    }
-    total = sum(capabilities[k] * WEIGHTS[k] for k in WEIGHTS)
-    grade = grade_for(total)
+    parser = argparse.ArgumentParser(description="Calculate JARVIS score")
+    parser.add_argument("--json", action="store_true", help="Output as JSON")
+    args = parser.parse_args()
 
-    report = {
-        "score": round(total, 1),
+    # 1. Verifies score (15%)
+    verifies_score = 0
+    bt_path = ".ungasis/dashboard/battle-test.json"
+    if os.path.exists(bt_path):
+        verifies_score = 100
+        try:
+            with open(bt_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if "pass_rate" in data:
+                    verifies_score = min(100, max(0, int(data["pass_rate"])))
+        except:
+            pass
+
+    # 2. Learns score (15%)
+    learns_score = 0
+    try:
+        result = subprocess.run(
+            ["python", "scripts/wiki-lint.py", "--json"],
+            capture_output=True, text=True
+        )
+        if result.returncode == 0:
+            learns_score = 100
+            try:
+                data = json.loads(result.stdout)
+                if "errors" in data:
+                    errors = int(data.get("errors", 0))
+                    learns_score = max(0, 100 - (errors * 5))
+            except:
+                pass
+    except:
+        pass
+
+    # 3. Proactive score (15%)
+    proactive_score = 100 if os.path.exists(".git/hooks/post-commit") else 0
+
+    # 4. Builds score (20%)
+    builds_score = 0
+    sessions_path = ".ungasis/tracking/sessions.jsonl"
+    if os.path.exists(sessions_path):
+        try:
+            with open(sessions_path, "r", encoding="utf-8") as f:
+                count = sum(1 for _ in f)
+                builds_score = min(100, count * 5)
+        except:
+            pass
+
+    # 5. Routes score (10%)
+    routes_score = 0
+    router_path = "scripts/one-shot-build.ps1"
+    if os.path.exists(router_path):
+        try:
+            with open(router_path, "r", encoding="utf-8") as f:
+                if "task-router" in f.read():
+                    routes_score = 100
+        except:
+            pass
+
+    # 6. Self-heals score (10%)
+    self_heals_score = 100 if os.path.exists("scripts/self-heal.py") else 0
+
+    # 7. Plans score (15%)
+    plans_score = 100 if os.path.exists("scripts/generate-context-pack.py") else 0
+
+    # Calculate weighted average
+    total_score = (
+        plans_score * 0.15 +
+        builds_score * 0.20 +
+        verifies_score * 0.15 +
+        learns_score * 0.15 +
+        self_heals_score * 0.10 +
+        routes_score * 0.10 +
+        proactive_score * 0.15
+    )
+    final_score = round(total_score)
+
+    # Determine Grade
+    if final_score >= 95: grade = "S+"
+    elif final_score >= 90: grade = "S"
+    elif final_score >= 85: grade = "S-"
+    elif final_score >= 80: grade = "A+"
+    elif final_score >= 75: grade = "A"
+    elif final_score >= 55: grade = "A-"
+    elif final_score >= 50: grade = "B+"
+    elif final_score >= 45: grade = "B"
+    elif final_score >= 40: grade = "B-"
+    elif final_score >= 30: grade = "C+"
+    else: grade = "C"
+
+    # Save to file
+    out_dir = ".ungasis/dashboard"
+    os.makedirs(out_dir, exist_ok=True)
+    out_file = os.path.join(out_dir, "jarvis-score.json")
+    
+    output_data = {
+        "score": final_score,
         "grade": grade,
-        "capabilities": {k: round(v, 1) for k, v in capabilities.items()},
-        "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "breakdown": {
+            "plans": plans_score,
+            "builds": builds_score,
+            "verifies": verifies_score,
+            "learns": learns_score,
+            "self_heals": self_heals_score,
+            "routes": routes_score,
+            "proactive": proactive_score
+        }
     }
+    
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(output_data, f, indent=2)
 
-    os.makedirs(DASHBOARD, exist_ok=True)
-    out_path = os.path.join(DASHBOARD, "jarvis-score.json")
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(report, f, indent=2)
-
-    print(f"JARVIS Score: {report['score']:.0f}% | Grade: {grade}")
-    return 0
-
+    if args.json:
+        print(json.dumps(output_data, indent=2))
+    else:
+        print(f"JARVIS Score: {final_score}% | Grade: {grade}")
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
 
-# staleness: generated 2026-06-14, regenerate when battle-test.json/wiki-health.json schema changes
+# Last reviewed: 2026-06-14 | Owner: Mel

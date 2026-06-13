@@ -1,0 +1,37 @@
+[
+  {
+    "check": "Build Output Check",
+    "status": "FAIL",
+    "detail": "Build output not found"
+  },
+  {
+    "check": "Build Size Check",
+    "status": "FAIL",
+    "detail": "No build dir to size"
+  },
+  {
+    "check": "Secrets Check",
+    "status": "PASS",
+    "detail": "No build output to check"
+  },
+  {
+    "check": "Changed Lines Check",
+    "status": "FAIL",
+    "detail": "File scripts/session-capture.py > 200 lines"
+  },
+  {
+    "check": "MD Staleness Check",
+    "status": "PASS",
+    "detail": "All changed .md files have staleness footer"
+  },
+  {
+    "check": "Git Committed Check",
+    "status": "FAIL",
+    "detail": "Uncommitted changes exist"
+  },
+  {
+    "check": "Verifier Check",
+    "status": "FAIL",
+    "detail": "verifier.py failed on scripts/session-capture.py"
+  }
+]
