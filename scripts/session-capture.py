@@ -7,7 +7,40 @@ import glob
 import json
 import os
 import sys
+import re
+import time
+import subprocess
 from datetime import datetime
+
+def get_default_goal():
+    try:
+        root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        context_path = os.path.join(root_dir, "CONTEXT.md")
+        if os.path.exists(context_path):
+            with open(context_path, "r", encoding="utf-8") as f:
+                text = f.read()
+            m = re.search(r"^##\s+Pending.*?(?=\n##|\Z)", text, re.MULTILINE | re.DOTALL)
+            if m:
+                section = m.group(0)
+                for ln in section.splitlines():
+                    s = ln.strip()
+                    if re.match(r"^\d+\.\s+", s) or s.startswith("- "):
+                        return re.sub(r"^\d+\.\s+|- \s*", "", s).strip()
+    except Exception:
+        pass
+    return "maintenance"
+
+def get_outcome():
+    try:
+        root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        res = subprocess.run(["git", "log", "-1", "--format=%ct"], capture_output=True, text=True, cwd=root_dir)
+        if res.returncode == 0:
+            commit_ts = int(res.stdout.strip())
+            if time.time() - commit_ts < 600:
+                return "success"
+    except Exception:
+        pass
+    return "incomplete"
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -91,6 +124,9 @@ def extract_session_data(filepath):
         
     estimated_tokens = chars // 4
     
+    if goal == "No goal specified":
+        goal = get_default_goal()
+    
     return {
         "file": filepath,
         "session_id": os.path.basename(filepath).replace(".jsonl", ""),
@@ -128,7 +164,7 @@ def process_session(sdata, args):
                 "session_id": sdata["session_id"],
                 "goal": sdata["goal"],
                 "task": sdata["goal"],
-                "outcome": "success" if sdata["files_changed"] else "unknown",
+                "outcome": get_outcome(),
                 "files_changed": sdata["files_changed"]
             }
             f.write(json.dumps(log_entry) + "\n")
