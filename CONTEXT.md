@@ -1,3 +1,15 @@
+## v6.0 JARVIS GUI — Wave 2 Complete (June 13, 2026)
+- Wave 1: scaffold + data layer + startup sequence ✅
+- Wave 2: routing + projects + agents + auto-logging ✅
+- v6.1: youtube-ingest.py + auto-trigger.py ✅
+- Fixes: single-file build, dynamic greeting, graphify trigger, batch ingest ✅
+- Dashboard: 3/6 pages live (Dashboard, Projects, Agents)
+- Wiki/Automation/Settings: Wave 3 stubs
+- Next: Wave 3 (Wiki + Automation pages)
+- Scripts: ~44 | Wiki: 56 pages | Build: 376KB single-file
+
+---
+
 ## v5.4 AUTOMATE — ✅ COMPLETE (June 13, 2026)
 - ✅ Wave 1: Task router (scripts/task-router.py) — classifies tasks, recommends agent/model/tokens/reasoning
 - ✅ Wave 1: Self-healing loop (scripts/self-heal.py) — 3-hypothesis detect → fix → verify

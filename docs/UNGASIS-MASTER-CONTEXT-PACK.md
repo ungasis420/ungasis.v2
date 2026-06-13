@@ -169,6 +169,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 
 | Milestone | Status | Key Achievement |
 |---|---|---|
+| v6.0 JARVIS GUI Wave 2 | ✅ COMPLETE | Dashboard live (3/6 pages), routing, projects, agents, auto-logging, auto-triggers |
 | v5.2 WIKI | ✅ COMPLETE | 50 wiki pages, 98% health, 0 orphans |
 | v5.1 MEASURE | ✅ COMPLETE | CLAUDE.md slimmed 76% (12.8 KB → 3.1 KB), token logger built |
 | Root cleanup | ✅ COMPLETE | GEMINI.md slimmed 77% (153 → 45 lines), AGENTS.md sunset, 3 files archived |
@@ -203,7 +204,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 
 ### Summary Numbers
 
-~32 scripts | 50 wiki pages | 20,929 Graphify nodes | 4,580 communities | ~1,222 files | 240+ folders | 5 Gemini agents | 4 Claude rules | 2 Gemini rules | 13 agent skills | 9 config YMLs
+~44 scripts | 56 wiki pages | 20,929 Graphify nodes | 4,580 communities | ~1,222 files | 240+ folders | 5 Gemini agents | 4 Claude rules | 2 Gemini rules | 13 agent skills | 9 config YMLs
 
 ### Version Status (v5.3 / v5.4)
 
@@ -211,6 +212,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 |---|---|---|
 | v5.3 CONNECT | ✅ COMPLETE | Wiki auto-injection, auto-logging hooks, session recovery, verifier layer, merge-agy-output fix |
 | v5.4 AUTOMATE | ✅ COMPLETE | Task router, one-shot build pipeline, self-healing loop, scheduled tasks, cross-project intelligence — all 5 scripts smoke-tested |
+| v6.0 JARVIS GUI Wave 2 | ✅ COMPLETE | Dashboard live (3/6 pages), routing, projects/agents pages, auto-logging, auto-triggers, youtube-ingest |
 
 ### Known Issues (June 2026)
 
@@ -233,7 +235,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | v5.2 | WIKI | ✅ COMPLETE | 50 wiki pages, wiki-ingest/lint/query/reindex scripts, 98% health |
 | v5.3 | CONNECT | ✅ COMPLETE | Auto-inject wiki into agents, token-logger automation, session recovery, merge-agy-output fix, Verifier layer |
 | v5.4 | AUTOMATE | ✅ COMPLETE | One-shot build script, self-healing loop (3 hypothesis → fix → verify), task router, Windows Task Scheduler, cross-project intelligence |
-| v6.0 | JARVIS GUI | 📋 PLANNED | Vite + React + Glassmorphism dashboard, Persona Factory, proactive intelligence, revenue pipeline, skill acquisition |
+| v6.0 | JARVIS GUI Wave 2 | ✅ COMPLETE | Vite + React + Glassmorphism dashboard live (3/6 pages), routing, projects + agents pages, auto-logging, auto-triggers |
 
 ### v5.3 CONNECT Tasks (Next Up)
 
@@ -432,7 +434,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 |---|---|---|---|---|
 | Newmont | v6.8 | Active | Vite 8 + React 19 + Tailwind 4 + Zustand 5 | QIM demo June 18–19 |
 | RiftCoach | Phase 5.5-A | Active | Next.js | 6 providers, 114 models, Phase 6 |
-| UNGASIS OS | v5.4 | AUTOMATE complete | Python + Markdown + Git | Start v6.0 JARVIS GUI |
+| UNGASIS OS | v6.0 | Wave 2 complete | Python + Markdown + Git | v6.0 Wave 3 (Wiki + Automation pages) |
 | Dashboard | Planned | Not started | Vite 8 + React 19 + Tailwind 4 | v6.0 JARVIS GUI |
 
 ### Project Paths
@@ -501,8 +503,9 @@ Paste this into a fresh M365 Copilot Opus chat to restore context:
 I'm Mel John Dimat (Manila, Filipino, visual learner, ESL speaker). I'm building UNGASIS OS — my personal AI operating system.
 
 Current state:
-- Version: v5.4 AUTOMATE — ✅ COMPLETE (v5.3 CONNECT also complete)
-- Previous: v5.2 WIKI complete (50 wiki pages, 98% health, 0 orphans)
+- Version: v6.0 JARVIS GUI — Wave 2 ✅ COMPLETE (June 13, 2026)
+- Previous: v5.4 AUTOMATE complete, v5.3 CONNECT complete
+- Previous: v5.2 WIKI complete (56 wiki pages, 98% health, 0 orphans)
 - Previous: v5.1 MEASURE complete (CLAUDE.md slimmed 76%, token logger built)
 - Source of truth: CLAUDE.md (canonical for all agents)
 - Repo: D:\.projects\ungasis | GitHub: github.com/ungasis420/ungasis.v2
@@ -511,13 +514,16 @@ Current state:
 What was just completed:
 - v5.3 CONNECT: wiki-inject.py, session-recovery.py, verifier.py, merge-agy-output.ps1, claude-hooks.ps1
 - v5.4 AUTOMATE (5/5): task-router.py, one-shot-build.ps1, self-heal.py, scheduled-tasks.ps1, cross-project.py — all verified + smoke-tested, tagged v5.4-automate-complete
+- v6.0 Wave 1: scaffold + data layer + startup sequence
+- v6.0 Wave 2: routing + projects + agents pages + auto-logging, dashboard LIVE (3/6 pages)
+- v6.1: youtube-ingest.py + auto-trigger.py
 
-What to do next — start v6.0 JARVIS GUI:
-1. Plan Vite + React + Glassmorphism dashboard structure
-2. Design Persona Factory module
-3. Scope proactive intelligence features
-4. Scope revenue pipeline + skill acquisition modules
-5. Create v6.0 blueprint in docs/blueprints/
+What to do next — v6.0 Wave 3:
+1. Build Wiki page (browse/search knowledge/wiki/)
+2. Build Automation page (script status, triggers)
+3. Build Settings page
+4. Wire remaining 3/6 dashboard pages to live data
+5. Update v6.0 blueprint in docs/blueprints/
 
 Key files:
 - CLAUDE.md (canonical source of truth, ~75 lines)

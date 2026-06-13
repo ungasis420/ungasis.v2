@@ -1,3 +1,5 @@
 {"action": "post-commit", "result": "ok", "detail": "health 98.0%", "timestamp": "2026-06-13T08:57:07+00:00"}
 {"action": "post-build", "result": "fail", "detail": ".ungasis/jarvis-core/daily-pulse-latest.md, docs/blueprints/v6.0-jarvis-gui-blueprint-part1.md, docs/blueprints/v6.0-jarvis-gui-blueprint-part2.md, knowledge/wiki/log.md, scripts/claude-hooks.ps1", "timestamp": "2026-06-13T08:57:08+00:00"}
 {"action": "post-session", "result": "ok", "detail": "cross-project checked", "timestamp": "2026-06-13T08:57:08+00:00"}
+{"action": "post-commit", "result": "ok", "detail": "graphify re-indexed", "timestamp": "2026-06-13T10:04:39+00:00"}
+{"action": "post-commit", "result": "ok", "detail": "health 98.0%", "timestamp": "2026-06-13T10:04:39+00:00"}

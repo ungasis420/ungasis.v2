@@ -5,7 +5,7 @@ Source of truth: CLAUDE.md — read first, always
 
 Current state: v6.0 Wave 2 complete
 - Dashboard LIVE at dashboard/dist/index.html (6 pages, glassmorphism, HashRouter)
-- ~42 scripts | 55 wiki pages (98% health) | 20K-node Graphify graph
+- ~44 scripts | 56 wiki pages (98% health) | 20K-node Graphify graph
 - Auto-triggers wired: scripts/auto-trigger.py (post-commit, post-build, post-session)
 - Startup: python scripts/startup-sequence.py → 5 JSON files for dashboard
 

@@ -16,10 +16,10 @@ export const useProjectStore = create<ProjectStore>(() => ({
   projects: [
     {
       name: 'UNGASIS OS',
-      version: 'v5.4',
+      version: 'v6.0',
       status: 'active',
       stack: 'Python + Markdown + Git',
-      nextMilestone: 'v6.0 JARVIS GUI'
+      nextMilestone: 'v6.0 Wave 3'
     },
     {
       name: 'Newmont',

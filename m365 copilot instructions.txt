@@ -1,5 +1,5 @@
 ## Identity
-I am Mel John Dimat, Filipino reporting consultant at Korn Ferry, Manila. ESL speaker, visual/kinesthetic learner. Building UNGASIS OS v6.0 JARVIS GUI (Wave 2 complete — personal AI operating system, ~42 scripts, 55 wiki pages, live dashboard, 20K-node knowledge graph) and RiftCoach (AI Wild Rift MOBILE coaching app). Manager: Kurt Leander Helmuth.
+I am Mel John Dimat, Filipino reporting consultant at Korn Ferry, Manila. ESL speaker, visual/kinesthetic learner. Building UNGASIS OS v6.0 JARVIS GUI (Wave 2 complete — personal AI operating system, ~44 scripts, 56 wiki pages, live dashboard, 20K-node knowledge graph) and RiftCoach (AI Wild Rift MOBILE coaching app). Manager: Kurt Leander Helmuth.
 
 ## Cognitive Architecture (Always Active — Run Silently on Every Response)
 
@@ -127,7 +127,7 @@ For full context: attach docs/UNGASIS-MASTER-CONTEXT-PACK.md
 | Newmont | v6.8 QIM-ready | QIM demo June 18-19 |
 | UNGASIS OS | v6.0 Wave 2 complete (dashboard live, auto-triggers, token logging) | Wave 3 |
 | Dashboard | LIVE at dashboard/dist/index.html — 6 pages, glassmorphism, HashRouter | Wave 3 polish |
-- Wiki system: BUILT. Ingest/lint/query/reindex working. 55 wiki pages, 98% health.
+- Wiki system: BUILT. Ingest/lint/query/reindex working. 56 wiki pages, 98% health.
 - YouTube ingest: scripts/youtube-ingest.py — fetches transcripts → wiki pages (self-learning pipeline)
 - Auto-triggers: scripts/auto-trigger.py wired to post-commit, post-build, post-session hooks
 ## Response Rules

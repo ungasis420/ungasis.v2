@@ -3,7 +3,7 @@
 > Source of truth: [CLAUDE.md](./CLAUDE.md). This passport is a quick-reference companion.
 
 ## 1. Identity
-* **Project**: UNGASIS OS v5.4 AUTOMATE — personal AI operating system (✅ COMPLETE)
+* **Project**: UNGASIS OS v6.0 JARVIS GUI — COMPLETE (Wave 2 done)
 * **Type**: Knowledge repo + real apps (Newmont, RiftCoach, Dashboard)
 * **Owner**: Mel John Dimat (Filipino, Manila, ESL speaker, visual learner)
 * **Budget**: $19.99/mo Google AI Pro + $0 company tools (M365 Copilot, ChatGPT Enterprise)
@@ -70,7 +70,7 @@
 5. Ask: "What is your task?"
 
 ## 9. Current Status
-* **Version**: v5.4 AUTOMATE — ✅ COMPLETE (June 13, 2026)
+* **Version**: v6.0 JARVIS GUI — Wave 2 complete (June 13, 2026)
 * **v5.3 CONNECT**: ✅ COMPLETE (wiki-inject, session-recovery, verifier, merge-agy-output, claude-hooks)
 * **v5.4 AUTOMATE**: ✅ COMPLETE (task-router, self-heal, one-shot-build, scheduled-tasks, cross-project)
 * **GitHub**: Pushed, tag v5.0-jarvis-complete
@@ -78,13 +78,15 @@
 * **Antigravity-Mem**: Installed, verified.
 * **JARVIS Score**: 98% complete
 * **Sprint Count**: 66+ completed
-* **Scripts**: ~32 automation scripts (`scripts/`)
+* **Scripts**: ~44 automation scripts (`scripts/`)
+* **Wiki**: 56 pages
 * **Files**: ~1,222+ files across 240+ folders
 * **Engines**: 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](./.ungasis/architect/BLUEPRINT_CONTEXT.md))
 * **Agent Crew**: 6 agents (Commander, Blueprint Architect, Builder, Surgeon, Quality Auditor, Graphify Watchdog)
 * **Slash Commands**: 9 slash commands (/goal, /schedule, /grill-me, /blueprint, /scout, /tag-sweep, /audit, /commander, /designer)
 * **5 JARVIS Dimensions**: Second Brain, App Fabricator, Project Director, Personal JARVIS, Growth Engine
-* **Next milestone**: Start v6.0 JARVIS GUI — Vite + React + Glassmorphism dashboard, Persona Factory, proactive intelligence, revenue pipeline, skill acquisition.
+* **Dashboard**: LIVE at dashboard/dist/index.html, 6 pages, 3 working
+* **Next milestone**: v6.0 Wave 3 (Wiki + Automation pages)
 
 ## 10. Scope Boundaries
 * **In scope**: Updating modules/docs/knowledge; building & maintaining the apps under `projects/` (Newmont, RiftCoach) and `dashboard/`.
