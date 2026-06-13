@@ -102,6 +102,31 @@ def check_pending_tasks():
         if s.startswith("---") or s.startswith("## "):
             break
     return title, items
+def check_stale_reviews():
+    """Scan top-level + rules .md files for 'Last reviewed:' footers >60 days old."""
+    stale = []
+    now = datetime.now()
+    patterns = [
+        os.path.join(ROOT, "*.md"),
+        os.path.join(ROOT, ".claude", "rules", "*.md"),
+        os.path.join(ROOT, ".gemini", "rules", "*.md"),
+    ]
+    for pat in patterns:
+        for path in glob.glob(pat):
+            try:
+                text = open(path, encoding="utf-8", errors="ignore").read()
+            except Exception:
+                continue
+            m = re.search(r"Last reviewed:\s*([A-Za-z]+ \d{4})", text)
+            if not m:
+                continue
+            try:
+                reviewed = datetime.strptime(m.group(1), "%B %Y")
+            except ValueError:
+                continue
+            if (now - reviewed).days > 60:
+                stale.append(os.path.relpath(path, ROOT).replace("\\", "/"))
+    return stale
 def check_backup():
     today = datetime.now().strftime("%Y%m%d")
     patterns = [
@@ -187,13 +212,18 @@ def main():
 
     print("TOP 3 ACTIONS")
     actions = []
-    wiki_pct = get_wiki_health_pct()
-    if wiki_pct is not None and wiki_pct < 90:
-        actions.append("Fix wiki health (run wiki-reindex.py)")
+    stale_reviews = check_stale_reviews()
+    if stale_reviews:
+        actions.append(f"Review {len(stale_reviews)} stale file(s) (>60 days): {stale_reviews[0]}")
     if not backed_up:
         actions.append("Run backup (python scripts/ungasis.py backup)")
+    if items:
+        actions.append(f"Continue pending: {items[0]}")
+    wiki_pct = get_wiki_health_pct()
+    if wiki_pct is not None and wiki_pct < 90 and len(actions) < 3:
+        actions.append("Fix wiki health (run wiki-reindex.py)")
     age_hours = get_last_session_age_hours()
-    if age_hours is None or age_hours > 24:
+    if (age_hours is None or age_hours > 24) and len(actions) < 3:
         actions.append("Log your session")
     if has_warning and len(actions) < 3:
         actions.append("Run 'python scripts/ungasis.py warn' to check warnings")

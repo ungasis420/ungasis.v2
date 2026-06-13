@@ -127,6 +127,8 @@ def process_session(sdata, args):
                 "model": "claude",
                 "session_id": sdata["session_id"],
                 "goal": sdata["goal"],
+                "task": sdata["goal"],
+                "outcome": "success" if sdata["files_changed"] else "unknown",
                 "files_changed": sdata["files_changed"]
             }
             f.write(json.dumps(log_entry) + "\n")

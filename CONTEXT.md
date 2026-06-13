@@ -1,7 +1,7 @@
 # UNGASIS OS — Current State
 
 ## Version
-v6.0 JARVIS GUI Wave 3 COMPLETE (June 13, 2026)
+v6.2 Automation Pipeline Wired (June 13, 2026)
 
 ## Last Session
 - Date: June 13, 2026
@@ -15,6 +15,9 @@ v6.0 JARVIS GUI Wave 3 COMPLETE (June 13, 2026)
 - v6.0 Wave 2: HashRouter + 6 pages + ProjectCard + AgentCard + auto-logging
 - v6.0 Wave 3: WikiPage + AutomationPage wired, copilot-instructions generator, auto-trigger hook
 - v6.1: youtube-ingest.py + auto-trigger.py + batch ingest
+- v6.1 fixes: youtube-ingest-v2 scoring, session-pacer timing, context-inject word boundary matching
+- v6.2: startup-sequence.py proactive detection (stale review footers >60 days, pending CONTEXT items in TOP 3 ACTIONS)
+- v6.2: session-capture.py now writes "task"/"outcome" fields so session-recovery.py shows real last-task data
 - Fixes: single-file build, dynamic greeting, graphify trigger
 - Anti-drift: archived stale copies, anti-drift.md rule, path assertion in one-shot-build
 - New scripts: generate-handoff.py, pre-flight.py, post-flight.py, generate-copilot-instructions.py, generate-agent-prompt.py
@@ -30,12 +33,10 @@ v6.0 JARVIS GUI Wave 3 COMPLETE (June 13, 2026)
 - D16: M365 Copilot instructions auto-generated from CLAUDE.md + system state
 
 ## Pending (Next Session)
-1. Fix youtube-ingest-v2.py (yt-dlp title fetch failing, score always 0)
-2. Fix session-pacer.py (uses wall clock instead of active session time)
-3. Fix context-inject.py keyword matching (substring match returns irrelevant nodes like "Cooking Translation" for "SLA calculator"  needs word boundary matching)
-4. Graph community re-labeling (improve context-inject relevance)
-5. Dashboard Settings page (Wave 4)
-6. UNGASIS enters MAINTENANCE MODE  only fix bugs, no new features
+1. Graph community re-labeling (improve context-inject relevance)
+2. Dashboard Settings page (Wave 4)
+3. Verify one-shot-build.ps1 end-to-end with task-router + pre/post-flight pipeline on a real task
+4. UNGASIS enters MAINTENANCE MODE  only fix bugs, no new features
 
 ## Projects
 | Project | Version | Status | Next |
