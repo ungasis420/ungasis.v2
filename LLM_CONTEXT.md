@@ -3,7 +3,7 @@
 > Source of truth: [CLAUDE.md](./CLAUDE.md). This passport is a quick-reference companion.
 
 ## 1. Identity
-* **Project**: UNGASIS OS v5.2 — personal AI operating system
+* **Project**: UNGASIS OS v5.4 AUTOMATE — personal AI operating system (IN PROGRESS, 3/5 tasks done)
 * **Type**: Knowledge repo + real apps (Newmont, RiftCoach, Dashboard)
 * **Owner**: Mel John Dimat (Filipino, Manila, ESL speaker, visual learner)
 * **Budget**: $19.99/mo Google AI Pro + $0 company tools (M365 Copilot, ChatGPT Enterprise)
@@ -70,18 +70,20 @@
 5. Ask: "What is your task?"
 
 ## 9. Current Status
-* **Version**: v5.2 (June 13, 2026)
+* **Version**: v5.4 AUTOMATE — IN PROGRESS (3/5 tasks done) (June 13, 2026)
+* **v5.3 CONNECT**: ✅ COMPLETE (wiki-inject, session-recovery, verifier, merge-agy-output, claude-hooks)
 * **GitHub**: Pushed, tag v5.0-jarvis-complete
 * **Graphify**: 20,929 nodes, 24,207 edges, 4,580 communities
 * **Antigravity-Mem**: Installed, verified.
 * **JARVIS Score**: 98% complete
 * **Sprint Count**: 66+ completed
+* **Scripts**: ~32 automation scripts (`scripts/`)
 * **Files**: ~1,222+ files across 240+ folders
 * **Engines**: 9 core engines + 20 subsystems (see [BLUEPRINT_CONTEXT.md](./.ungasis/architect/BLUEPRINT_CONTEXT.md))
 * **Agent Crew**: 6 agents (Commander, Blueprint Architect, Builder, Surgeon, Quality Auditor, Graphify Watchdog)
 * **Slash Commands**: 9 slash commands (/goal, /schedule, /grill-me, /blueprint, /scout, /tag-sweep, /audit, /commander, /designer)
 * **5 JARVIS Dimensions**: Second Brain, App Fabricator, Project Director, Personal JARVIS, Growth Engine
-* **Next milestone**: Use as foundation for RiftCoach project.
+* **Next milestone**: Complete v5.4 AUTOMATE — wire self-heal.py into one-shot-build.ps1, verify scheduled-tasks.ps1, run cross-project.py end-to-end (Newmont → RiftCoach).
 
 ## 10. Scope Boundaries
 * **In scope**: Updating modules/docs/knowledge; building & maintaining the apps under `projects/` (Newmont, RiftCoach) and `dashboard/`.

@@ -182,6 +182,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | wiki-lint.py | Health check for wiki (staleness, format, orphans) | `scripts/wiki-lint.py` |
 | wiki-query.py | Search wiki, inject context into agent prompts | `scripts/wiki-query.py` |
 | wiki-reindex.py | Rebuild wiki index | `scripts/wiki-reindex.py` |
+| wiki-inject.py | Auto-inject hot wiki context into agent prompts (v5.3) | `scripts/wiki-inject.py` |
 
 ### Automation Scripts
 
@@ -190,10 +191,26 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | ungasis.py | Main CLI — 11 commands (pulse, status, build, etc.) | `scripts/ungasis.py` |
 | token-logger.py | Interactive session token logger (183 lines) | `scripts/token-logger.py` |
 | token-report.py | Usage report with 7 sections (197 lines) | `scripts/token-report.py` |
+| session-recovery.py | Resume from last CONTEXT.md / session log state (v5.3) | `scripts/session-recovery.py` |
+| verifier.py | 5-check quality verdict (footer, length, English, secrets, headings) (v5.3) | `scripts/verifier.py` |
+| merge-agy-output.ps1 | Merge Antigravity scratch output back into repo (v5.3) | `scripts/merge-agy-output.ps1` |
+| claude-hooks.ps1 | Auto-logging hooks for Claude Code sessions (v5.3) | `scripts/claude-hooks.ps1` |
+| task-router.py | Classify tasks → recommend agent + model + reasoning budget (v5.4) | `scripts/task-router.py` |
+| self-heal.py | 3-hypothesis self-healing loop (detect → fix → verify) (v5.4) | `scripts/self-heal.py` |
+| one-shot-build.ps1 | Spawn → build → verify → self-heal → commit pipeline (v5.4) | `scripts/one-shot-build.ps1` |
+| scheduled-tasks.ps1 | Windows Task Scheduler setup for automation/goal tasks (v5.4) | `scripts/scheduled-tasks.ps1` |
+| cross-project.py | Transfer lessons between projects (Newmont → RiftCoach) (v5.4) | `scripts/cross-project.py` |
 
 ### Summary Numbers
 
-~25 scripts | 50 wiki pages | 20,929 Graphify nodes | 4,580 communities | ~1,222 files | 240+ folders | 5 Gemini agents | 4 Claude rules | 2 Gemini rules | 13 agent skills | 9 config YMLs
+~32 scripts | 50 wiki pages | 20,929 Graphify nodes | 4,580 communities | ~1,222 files | 240+ folders | 5 Gemini agents | 4 Claude rules | 2 Gemini rules | 13 agent skills | 9 config YMLs
+
+### Version Status (v5.3 / v5.4)
+
+| Milestone | Status | Key Achievement |
+|---|---|---|
+| v5.3 CONNECT | ✅ COMPLETE | Wiki auto-injection, auto-logging hooks, session recovery, verifier layer, merge-agy-output fix |
+| v5.4 AUTOMATE | 🔧 IN PROGRESS | Task router + one-shot build pipeline + self-healing loop + scheduled tasks + cross-project intelligence done; final wiring in progress |
 
 ### Known Issues (June 2026)
 
@@ -214,8 +231,8 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | v5.0 | JARVIS | ✅ COMPLETE | Full OS foundation, 9 engines, 20 subsystems, blueprint system |
 | v5.1 | MEASURE | ✅ COMPLETE | CLAUDE.md slimmed 76%, token logger, memory layers verified |
 | v5.2 | WIKI | ✅ COMPLETE | 50 wiki pages, wiki-ingest/lint/query/reindex scripts, 98% health |
-| v5.3 | CONNECT | 🔜 NEXT | Auto-inject wiki into agents, token-logger automation, session recovery, merge-agy-output fix, Verifier layer |
-| v5.4 | AUTOMATE | 📋 PLANNED | One-shot build script, self-healing loop (3 hypothesis → fix → verify), task router, Windows Task Scheduler, cross-project intelligence |
+| v5.3 | CONNECT | ✅ COMPLETE | Auto-inject wiki into agents, token-logger automation, session recovery, merge-agy-output fix, Verifier layer |
+| v5.4 | AUTOMATE | 🔧 IN PROGRESS | One-shot build script, self-healing loop (3 hypothesis → fix → verify), task router, Windows Task Scheduler, cross-project intelligence |
 | v6.0 | JARVIS GUI | 📋 PLANNED | Vite + React + Glassmorphism dashboard, Persona Factory, proactive intelligence, revenue pipeline, skill acquisition |
 
 ### v5.3 CONNECT Tasks (Next Up)
@@ -415,7 +432,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 |---|---|---|---|---|
 | Newmont | v6.8 | Active | Vite 8 + React 19 + Tailwind 4 + Zustand 5 | QIM demo June 18–19 |
 | RiftCoach | Phase 5.5-A | Active | Next.js | 6 providers, 114 models, Phase 6 |
-| UNGASIS OS | v5.2 | WIKI complete | Python + Markdown + Git | v5.3 CONNECT |
+| UNGASIS OS | v5.4 | AUTOMATE in progress | Python + Markdown + Git | Finish v5.4 AUTOMATE |
 | Dashboard | Planned | Not started | Vite 8 + React 19 + Tailwind 4 | v6.0 JARVIS GUI |
 
 ### Project Paths
@@ -484,24 +501,23 @@ Paste this into a fresh M365 Copilot Opus chat to restore context:
 I'm Mel John Dimat (Manila, Filipino, visual learner, ESL speaker). I'm building UNGASIS OS — my personal AI operating system.
 
 Current state:
-- Version: v5.2 WIKI — COMPLETE (50 wiki pages, 98% health, 0 orphans)
+- Version: v5.4 AUTOMATE — IN PROGRESS (v5.3 CONNECT complete)
+- Previous: v5.2 WIKI complete (50 wiki pages, 98% health, 0 orphans)
 - Previous: v5.1 MEASURE complete (CLAUDE.md slimmed 76%, token logger built)
-- Previous: Root cleanup complete (GEMINI.md slimmed 77%, AGENTS.md sunset)
 - Source of truth: CLAUDE.md (canonical for all agents)
 - Repo: D:\.projects\ungasis | GitHub: github.com/ungasis420/ungasis.v2
 - Budget: $19.99/mo Google AI Pro + $20/mo Claude Pro + $0 company tools
 
 What was just completed:
-- v5.2 WIKI: 50 wiki pages created, wiki-ingest/lint/query/reindex scripts built
-- Root cleanup: GEMINI.md slimmed, AGENTS.md sunset, audit completed
-- Master Context Pack created: docs/UNGASIS-MASTER-CONTEXT-PACK.md
+- v5.3 CONNECT: wiki-inject.py, session-recovery.py, verifier.py, merge-agy-output.ps1, claude-hooks.ps1
+- v5.4 AUTOMATE (3/5): task-router.py, one-shot-build.ps1, self-heal.py, scheduled-tasks.ps1, cross-project.py
 
-What to do next — v5.3 CONNECT:
-1. Auto-inject wiki context before agent sessions (wiki-query.py → agent prompt)
-2. Claude Code hooks for auto-logging (token-logger automation)
-3. Fix merge-agy-output.ps1
-4. Add Verifier layer (second AI as critic)
-5. Session recovery protocol (claude-progress.txt)
+What to do next — finish v5.4 AUTOMATE:
+1. Wire self-heal.py into one-shot-build.ps1 fully
+2. Verify scheduled-tasks.ps1 registers correctly on Windows Task Scheduler
+3. Run cross-project.py end-to-end (Newmont → RiftCoach)
+4. Run python scripts/verifier.py on all new v5.4 scripts
+5. Update docs + git tag v5.4-automate-complete once done
 
 Key files:
 - CLAUDE.md (canonical source of truth, ~75 lines)
