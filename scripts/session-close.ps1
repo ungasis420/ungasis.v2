@@ -13,13 +13,22 @@ param(
 $ErrorActionPreference = "Continue"
 Set-Location D:\.projects\ungasis
 
+$script:StepResults = @()
+
 function Run-Step($Name, $Command) {
     Write-Host "`n--- $Name ---" -ForegroundColor Cyan
     try {
         Invoke-Expression $Command
-        Write-Host "  OK" -ForegroundColor Green
+        if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne $null) {
+            Write-Host "  FAIL (exit $LASTEXITCODE)" -ForegroundColor Red
+            $script:StepResults += [PSCustomObject]@{ Step = $Name; Status = "FAIL"; ExitCode = $LASTEXITCODE }
+        } else {
+            Write-Host "  OK" -ForegroundColor Green
+            $script:StepResults += [PSCustomObject]@{ Step = $Name; Status = "PASS"; ExitCode = 0 }
+        }
     } catch {
         Write-Host "  WARNING: $_" -ForegroundColor Yellow
+        $script:StepResults += [PSCustomObject]@{ Step = $Name; Status = "FAIL"; ExitCode = "ERR" }
     }
 }
 
@@ -33,6 +42,10 @@ Run-Step "Wrap-up" "python scripts/wrap-up.py --skip-capture"
 Run-Step "Copilot Instructions" "python scripts/generate-copilot-instructions.py --quiet"
 Run-Step "Battle Test" "python -m pytest scripts/test_ungasis.py -v --tb=short"
 Run-Step "Wiki Lint" "python scripts/wiki-lint.py"
+Run-Step "Backup" "python scripts/ungasis.py backup"
+Run-Step "Battle Test (JSON)" ".\scripts\battle-test.ps1 -Json"
+Run-Step "JARVIS Score" "python scripts/jarvis-score.py"
+Run-Step "Context Pack" "python scripts/generate-context-pack.py --project ungasis"
 Run-Step "Git Add" "git add -A"
 
 $status = git status --short
@@ -50,6 +63,9 @@ if ($status) {
 } else {
     Write-Host "`n  Nothing to commit (working tree clean)" -ForegroundColor Yellow
 }
+
+Write-Host "`n--- Step Summary ---" -ForegroundColor Cyan
+$script:StepResults | Format-Table -AutoSize | Out-String | Write-Host
 
 Write-Host "`n========================================" -ForegroundColor White
 Write-Host "  SESSION CLOSED" -ForegroundColor White
