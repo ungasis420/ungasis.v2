@@ -1,4 +1,4 @@
-# UNGASIS OS v5.2 — Master Context Pack
+# UNGASIS OS v6.0 JARVIS GUI — Wave 3 COMPLETE — Master Context Pack
 
 > **Date:** June 13, 2026
 > **Owner:** Mel John Dimat, Manila
@@ -169,6 +169,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 
 | Milestone | Status | Key Achievement |
 |---|---|---|
+| v6.0 JARVIS GUI Wave 3 | ✅ COMPLETE | Dashboard LIVE (5/6 pages, 381.7 KB), context-inject (70x savings), token-budget, session-pacer, session-capture, youtube-ingest-v2 |
 | v6.0 JARVIS GUI Wave 2 | ✅ COMPLETE | Dashboard live (3/6 pages), routing, projects, agents, auto-logging, auto-triggers |
 | v5.2 WIKI | ✅ COMPLETE | 50 wiki pages, 98% health, 0 orphans |
 | v5.1 MEASURE | ✅ COMPLETE | CLAUDE.md slimmed 76% (12.8 KB → 3.1 KB), token logger built |
@@ -204,7 +205,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 
 ### Summary Numbers
 
-~44 scripts | 56 wiki pages | 20,929 Graphify nodes | 4,580 communities | ~1,222 files | 240+ folders | 5 Gemini agents | 4 Claude rules | 2 Gemini rules | 13 agent skills | 9 config YMLs
+~57 scripts | 56 wiki pages | 20,929 Graphify nodes | 4,580 communities | ~1,222 files | 240+ folders | 5 Gemini agents | 4 Claude rules | 2 Gemini rules | 13 agent skills | 9 config YMLs
 
 ### Version Status (v5.3 / v5.4)
 
@@ -213,6 +214,7 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | v5.3 CONNECT | ✅ COMPLETE | Wiki auto-injection, auto-logging hooks, session recovery, verifier layer, merge-agy-output fix |
 | v5.4 AUTOMATE | ✅ COMPLETE | Task router, one-shot build pipeline, self-healing loop, scheduled tasks, cross-project intelligence — all 5 scripts smoke-tested |
 | v6.0 JARVIS GUI Wave 2 | ✅ COMPLETE | Dashboard live (3/6 pages), routing, projects/agents pages, auto-logging, auto-triggers, youtube-ingest |
+| v6.0 JARVIS GUI Wave 3 | ✅ COMPLETE | Dashboard LIVE (5/6 pages, 381.7 KB), context-inject (70x savings), token-budget tracker, session-pacer, session-capture wired into auto-trigger, youtube-ingest-v2 |
 
 ### Known Issues (June 2026)
 
@@ -434,8 +436,8 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 |---|---|---|---|---|
 | Newmont | v6.8 | Active | Vite 8 + React 19 + Tailwind 4 + Zustand 5 | QIM demo June 18–19 |
 | RiftCoach | Phase 5.5-A | Active | Next.js | 6 providers, 114 models, Phase 6 |
-| UNGASIS OS | v6.0 | Wave 2 complete | Python + Markdown + Git | v6.0 Wave 3 (Wiki + Automation pages) |
-| Dashboard | Planned | Not started | Vite 8 + React 19 + Tailwind 4 | v6.0 JARVIS GUI |
+| UNGASIS OS | v6.0 | Wave 3 complete | Python + Markdown + Git | v6.0 Wave 4 (Settings page, graph re-labeling) |
+| Dashboard | LIVE (5/6 pages) | Active | Vite 8 + React 19 + Tailwind 4 | Settings page (Wave 4) |
 
 ### Project Paths
 
