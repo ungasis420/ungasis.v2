@@ -1,18 +1,5 @@
 {
-  "hooks": {
-    "SessionStart": [
-      {
-        "matcher": "compact",
-        "hooks": [
-          {
-            "type": "command",
-            "shell": "powershell",
-            "command": "$c = Get-Content \"$env:CLAUDE_PROJECT_DIR\\.claude\\hooks\\precompact.md\" -Raw; @{hookSpecificOutput=@{hookEventName='SessionStart';additionalContext=$c}} | ConvertTo-Json -Compress",
-            "timeout": 30,
-            "statusMessage": "Restoring UNGASIS context after compaction"
-          }
-        ]
-      }
-    ]
+  "env": {
+    "MAX_THINKING_TOKENS": "10000"
   }
 }
