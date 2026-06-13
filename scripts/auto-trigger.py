@@ -130,6 +130,8 @@ def post_session():
          "--agent", "auto", "--task", "auto-trigger post-session",
          "--exchanges", "0", "--tokens", "0"])
 
+    run([sys.executable, "scripts/session-capture.py"])
+
     log_action("post-session", "ok", "cross-project checked")
     print("AUTO-TRIGGER [OK]")
     return 0

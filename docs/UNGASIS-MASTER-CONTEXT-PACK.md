@@ -18,8 +18,8 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 
 | Layer | Path | Purpose |
 |---|---|---|
-| Knowledge Wiki | `knowledge/wiki/` | 50 wiki pages (patterns, gotchas, decisions, metrics, SOPs) |
-| Automation | `scripts/` | ~25 Python scripts (ungasis.py, token-logger, wiki tools) |
+| Knowledge Wiki | `knowledge/wiki/` | 56 wiki pages (patterns, gotchas, decisions, metrics, SOPs) |
+| Automation | `scripts/` | ~57 scripts (ungasis.py, token-logger, wiki tools, context-inject, session-pacer, session-capture, youtube-ingest-v2) |
 | Config | `.ungasis/` | DNA files, presets, context engine, orchestrator, tracking |
 | Projects | `projects/` | Real apps — Newmont, RiftCoach |
 | Dashboard | `dashboard/` | Planned JARVIS GUI (Vite + React + Tailwind) |
@@ -40,8 +40,8 @@ UNGASIS OS is a **personal AI operating system for solopreneurs**. It combines a
 | Metric | Value |
 |---|---|
 | Total files | ~1,222+ across 240+ folders |
-| Wiki pages | 50 (98% health, 0 orphans) |
-| Scripts | ~25 Python scripts |
+| Wiki pages | 56 (98% health, 1 issue) |
+| Scripts | ~57 Python/PowerShell scripts |
 | Graphify | 20,929 nodes, 24,207 edges, 4,580 communities |
 | Sprints completed | 66+ |
 | JARVIS Score | 98% |
@@ -503,9 +503,9 @@ Paste this into a fresh M365 Copilot Opus chat to restore context:
 I'm Mel John Dimat (Manila, Filipino, visual learner, ESL speaker). I'm building UNGASIS OS — my personal AI operating system.
 
 Current state:
-- Version: v6.0 JARVIS GUI — Wave 2 ✅ COMPLETE (June 13, 2026)
+- Version: v6.0 JARVIS GUI — Wave 3 ✅ COMPLETE (June 13, 2026)
 - Previous: v5.4 AUTOMATE complete, v5.3 CONNECT complete
-- Previous: v5.2 WIKI complete (56 wiki pages, 98% health, 0 orphans)
+- Previous: v5.2 WIKI complete (56 wiki pages, 98% health)
 - Previous: v5.1 MEASURE complete (CLAUDE.md slimmed 76%, token logger built)
 - Source of truth: CLAUDE.md (canonical for all agents)
 - Repo: D:\.projects\ungasis | GitHub: github.com/ungasis420/ungasis.v2
@@ -516,14 +516,12 @@ What was just completed:
 - v5.4 AUTOMATE (5/5): task-router.py, one-shot-build.ps1, self-heal.py, scheduled-tasks.ps1, cross-project.py — all verified + smoke-tested, tagged v5.4-automate-complete
 - v6.0 Wave 1: scaffold + data layer + startup sequence
 - v6.0 Wave 2: routing + projects + agents pages + auto-logging, dashboard LIVE (3/6 pages)
-- v6.1: youtube-ingest.py + auto-trigger.py
+- v6.0 Wave 3: Dashboard LIVE (5/6 pages, 385K dist), context-inject.py (70x token savings), token-budget tracker, session-pacer.py, session-capture.py (wired into auto-trigger post-session), youtube-ingest-v2
 
-What to do next — v6.0 Wave 3:
-1. Build Wiki page (browse/search knowledge/wiki/)
-2. Build Automation page (script status, triggers)
-3. Build Settings page
-4. Wire remaining 3/6 dashboard pages to live data
-5. Update v6.0 blueprint in docs/blueprints/
+What to do next — v6.0 Wave 4:
+1. Build Settings page (6th dashboard page)
+2. Graph community re-labeling (4,580 communities currently generic "Community N")
+3. Update v6.0 blueprint in docs/blueprints/
 
 Key files:
 - CLAUDE.md (canonical source of truth, ~75 lines)
