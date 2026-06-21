@@ -4,4 +4,4 @@ Total tokens   : ~218,649 (estimated)
 Avg (no wiki)  : ~18,221 tokens/session
 Recent half    : ~20,080 tokens/session
 Trend          : UP
-This week      : 0 sessions (known freshness bug, self-resolved during sprint)
+This week      : 0 sessions
