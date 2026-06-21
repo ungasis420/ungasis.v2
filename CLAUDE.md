@@ -24,7 +24,7 @@
 ## Core Rules
 - Read before write (safety gate)
 - Max 200 lines per new file
-- Max 15 exchanges per session → write handoff summary
+- Max 7 exchanges per session → write handoff summary
 - 3-strike rule: 3 failures → STOP and ask user
 - Never expose secrets, API keys, .env contents
 - source-files/ and archive/ are READ ONLY
