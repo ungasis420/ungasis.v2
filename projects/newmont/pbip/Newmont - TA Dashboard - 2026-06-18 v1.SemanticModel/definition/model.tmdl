@@ -1,0 +1,45 @@
+model Model
+	culture: en-PH
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-PH
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup workfile
+
+	annotation PBI_QueryGroupOrder = 2
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["R1_Clean","R2_Posted","R3_OnHold","RD1_Details","RD2_StartDate","CD2_Offers","_Measures","OnHold_Validated"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DateTableTemplate_f840cfd7-6ee1-4919-9503-52e2a2d7cb7c
+ref table R1_Clean
+ref table LocalDateTable_8d38505c-5fa4-41a9-9ced-4672f98c0475
+ref table LocalDateTable_3b26ad14-a2a5-45ce-b558-5320cfac107c
+ref table R2_Posted
+ref table LocalDateTable_ed0eae64-c0d7-482f-a34b-e33468eab3b9
+ref table LocalDateTable_aa9ad246-7fd3-45f5-a6cc-dfdf5609dbe2
+ref table R3_OnHold
+ref table LocalDateTable_244e7b22-5647-403f-b1e5-beb0be8d810a
+ref table LocalDateTable_d1a589e5-1d3d-4a39-83ee-261d7dae47ab
+ref table RD1_Details
+ref table LocalDateTable_6e655013-bf94-416c-9d1e-874b47836ee9
+ref table LocalDateTable_2ec757bd-60af-49bf-b3d2-dd26829abd92
+ref table LocalDateTable_cb43d770-7f68-4ab8-90e0-4dc4ecd50d05
+ref table RD2_StartDate
+ref table LocalDateTable_6ba195ab-3a65-406b-9b0b-8bb1ce41a599
+ref table CD2_Offers
+ref table DateTable
+ref table _Measures
+ref table OnHold_Validated
+ref table LocalDateTable_8c032630-7a02-4c1b-a87c-4d659bf18a39
+ref table LocalDateTable_7978b5c7-2c04-48c5-989a-2994c6c39150
+ref table LocalDateTable_4bad6864-78d7-4651-83ec-e766d0f89702
+ref table 'Measure Dictionary'
+
+ref cultureInfo en-PH
+

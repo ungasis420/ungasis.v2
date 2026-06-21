@@ -1,0 +1,112 @@
+table DateTable
+	lineageTag: a4e7476b-65e3-422f-8277-810cec69cc20
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: 78938d08-f863-49a4-880c-18bfd6300d2c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: ef6b4573-d470-4e94-bdcc-6df3b289ccd9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: bb7ff5a7-751c-4744-bb88-39ea01336ed1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		lineageTag: 621fbe3b-fba6-48a4-b812-def7b55c1245
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Short'
+		lineageTag: 19912c85-80fa-4e9e-995d-170068f9fdce
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Short]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: de8f180f-77fd-45dd-9943-459c59c869af
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Month
+		lineageTag: e5cfa702-ebdc-4ef4-a0ad-e0879155e04d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year-Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year-Quarter
+		lineageTag: f032cbea-da95-4587-8642-513f6748d0cb
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year-Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Year'
+		formatString: 0
+		lineageTag: a843a863-e089-431f-bb26-02028dd1eee4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Fiscal Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week Number'
+		formatString: 0
+		lineageTag: e1a2015d-cce5-4ce2-9d89-5ac231146732
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Week Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DateTable = calculated
+		mode: import
+		source =
+				
+				VAR MinDate = DATE(2019, 10, 1)
+				VAR MaxDate = DATE(2026, 12, 31)
+				RETURN
+				ADDCOLUMNS(
+				    CALENDAR(MinDate, MaxDate),
+				    "Year", YEAR([Date]),
+				    "Month Number", MONTH([Date]),
+				    "Month Name", FORMAT([Date], "MMMM"),
+				    "Month Short", FORMAT([Date], "MMM"),
+				    "Quarter", "Q" & FORMAT([Date], "Q"),
+				    "Year-Month", FORMAT([Date], "YYYY-MM"),
+				    "Year-Quarter", YEAR([Date]) & "-Q" & FORMAT([Date], "Q"),
+				    "Fiscal Year", IF(MONTH([Date]) >= 7, YEAR([Date]) + 1, YEAR([Date])),
+				    "Week Number", WEEKNUM([Date])
+				)
+
+	annotation PBI_Id = d0fc15b7998d410ea2f6b7da239a2f13
+

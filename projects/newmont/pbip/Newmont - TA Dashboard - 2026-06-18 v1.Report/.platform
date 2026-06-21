@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Newmont - TA Dashboard - 2026-06-18 v1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "833bf962-85e0-4f27-911b-0f163d96c98e"
+  }
+}

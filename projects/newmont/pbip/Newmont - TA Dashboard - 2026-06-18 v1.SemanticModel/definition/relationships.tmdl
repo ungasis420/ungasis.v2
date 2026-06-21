@@ -1,0 +1,97 @@
+relationship cdac4c8f-c9ed-4b8d-bcef-be2571c5098b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R1_Clean.'Approved Date'
+	toColumn: LocalDateTable_8d38505c-5fa4-41a9-9ced-4672f98c0475.Date
+
+relationship 36df40fa-0f79-453d-aae1-498071d3fc55
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R1_Clean.'Closed Date'
+	toColumn: LocalDateTable_3b26ad14-a2a5-45ce-b558-5320cfac107c.Date
+
+relationship e9591243-4f54-4d7a-a23c-ed106824de96
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R2_Posted.'Post End Date'
+	toColumn: LocalDateTable_ed0eae64-c0d7-482f-a34b-e33468eab3b9.Date
+
+relationship 6ef43332-384b-430d-a1a0-4edcff1c7ab9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R2_Posted.'Posting Start Date (Timestamp)'
+	toColumn: LocalDateTable_aa9ad246-7fd3-45f5-a6cc-dfdf5609dbe2.Date
+
+relationship 23b50fdd-f4b7-4686-9f26-9384c3cb4084
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R3_OnHold.'Created Date (Timestamp)'
+	toColumn: LocalDateTable_244e7b22-5647-403f-b1e5-beb0be8d810a.Date
+
+relationship e3fbe43b-ebab-46a4-b880-0d74b3c56fb0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: R3_OnHold.'Closed Date'
+	toColumn: LocalDateTable_d1a589e5-1d3d-4a39-83ee-261d7dae47ab.Date
+
+relationship b5bee1ea-91c2-4d94-8f2e-b273bf8c3b0b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RD1_Details.'Date Created'
+	toColumn: LocalDateTable_6e655013-bf94-416c-9d1e-874b47836ee9.Date
+
+relationship 6c044cba-d291-4f85-80f3-a3643e4dbd16
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RD1_Details.'Approved Date'
+	toColumn: LocalDateTable_2ec757bd-60af-49bf-b3d2-dd26829abd92.Date
+
+relationship 68c2eca4-a666-428e-b587-18027d11a2f8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RD1_Details.'Closed Cancelled Date'
+	toColumn: LocalDateTable_cb43d770-7f68-4ab8-90e0-4dc4ecd50d05.Date
+
+relationship 9d636c32-7534-4d98-aa3f-e8fea173082a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RD2_StartDate.'Tentative Start Date'
+	toColumn: LocalDateTable_6ba195ab-3a65-406b-9b0b-8bb1ce41a599.Date
+
+relationship ede940b5-d3cf-3153-e443-53e6b74ef999
+	fromColumn: R1_Clean.'Date Created'
+	toColumn: DateTable.Date
+
+relationship f1c306a0-67d8-903f-44b1-8c0a0f93829c
+	fromColumn: R2_Posted.'Job Req ID'
+	toColumn: R1_Clean.'Job Req ID'
+
+relationship f373f16a-4b0f-9b20-78d9-9757332a1591
+	fromColumn: R3_OnHold.'Job Req ID'
+	toColumn: R1_Clean.'Job Req ID'
+
+relationship fc38465d-3da1-0b11-47fe-cb7aec986236
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: R1_Clean.'Job Req ID'
+	toColumn: RD1_Details.'Job Req ID'
+
+relationship 9ef7de54-6c89-3451-f234-ebb0287223c8
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: R1_Clean.'Job Req ID'
+	toColumn: RD2_StartDate.'Job Req ID'
+
+relationship e3c6bc4b-ee0d-ee22-869c-3ba23d7976dc
+	fromColumn: CD2_Offers.'Job Req ID'
+	toColumn: R1_Clean.'Job Req ID'
+
+relationship afb3f0ee-9ba2-4dee-b7af-a69c595380e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OnHold_Validated.'Closed Date'
+	toColumn: LocalDateTable_8c032630-7a02-4c1b-a87c-4d659bf18a39.Date
+
+relationship eda66ad7-f862-4cae-830a-482b53640e9b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OnHold_Validated.'Offer Accept Date'
+	toColumn: LocalDateTable_7978b5c7-2c04-48c5-989a-2994c6c39150.Date
+
+relationship 1875bf6e-8bc2-4909-b2f8-c054d7f5f8f3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OnHold_Validated.'Approved Date'
+	toColumn: LocalDateTable_4bad6864-78d7-4651-83ec-e766d0f89702.Date
+
+relationship 0f7f8429-0460-2e10-8f69-f86f969c29da
+	fromColumn: OnHold_Validated.'Job Req ID'
+	toColumn: R1_Clean.'Job Req ID'
+

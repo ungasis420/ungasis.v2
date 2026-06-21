@@ -1,0 +1,75 @@
+table RD2_StartDate
+	lineageTag: ab99d7a9-7f37-4f9c-aea1-a6d47c85d18b
+
+	column 'Job Req ID'
+		dataType: string
+		lineageTag: 3f58c390-b209-4e5c-b822-8c5c428bc04e
+		summarizeBy: none
+		sourceColumn: Job Req ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tentative Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ba3e7e42-fd78-4e34-95a8-462dd0857bca
+		summarizeBy: none
+		sourceColumn: Tentative Start Date
+
+		variation Variation
+			isDefault
+			relationship: 9d636c32-7534-4d98-aa3f-e8fea173082a
+			defaultHierarchy: LocalDateTable_6ba195ab-3a65-406b-9b0b-8bb1ce41a599.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition RD2_StartDate = m
+		mode: import
+		source = ```
+				let
+				    Source = Excel.Workbook(
+				        File.Contents(
+				            "C:\Users\DIMATM\OneDrive - Korn Ferry\Desktop\newmont\Req Details - File #2.xlsx"
+				        ),
+				        null, true
+				    ),
+				    FirstSheet = Source{0}[Data],
+				    PromotedHeaders = Table.PromoteHeaders(FirstSheet, [PromoteAllScalars=true]),
+				    TrimmedHeaders = Table.TransformColumnNames(PromotedHeaders, Text.Trim),
+				
+				    // Clean blanks first
+				    CleanBlanks = Table.ReplaceValue(
+				        TrimmedHeaders, "", null, Replacer.ReplaceValue,
+				        {"Tentative Start Date"}
+				    ),
+				
+				    // Set types
+				    SetTypes = Table.TransformColumnTypes(CleanBlanks, {
+				        {"Job Req ID", type text},
+				        {"Tentative Start Date", type date}
+				    }),
+				
+				    // SORT: Put rows WITH dates first, then by latest date on top
+				    Sorted = Table.Sort(SetTypes, {
+				        {"Tentative Start Date", Order.Descending}
+				    }),
+				
+				    // DEDUPLICATE: Keep only the FIRST row per Job Req ID
+				    // (which is the latest date, or a date over null)
+				    Deduplicated = Table.Distinct(Sorted, {"Job Req ID"}),
+				
+				    // Remove the Year column if it exists (cleanup)
+				    ColumnNames = Table.ColumnNames(Deduplicated),
+				    RemoveYear = if List.Contains(ColumnNames, "Year") 
+				        then Table.RemoveColumns(Deduplicated, {"Year"})
+				        else Deduplicated
+				in
+				    RemoveYear
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,166 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b370e5d8cac0b3e98374",
+  "position": {
+    "x": 18,
+    "y": 538,
+    "z": 13000,
+    "height": 257,
+    "width": 526,
+    "tabOrder": 13000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "📋 PIPELINE COVERAGE NOTE"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "This page shows OFFER-STAGE pipeline data sourced from CD2_Offers."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🟢 CURRENT COVERAGE:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Total offers extended"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Offer acceptance (Status=\"Accepted\" + Accept Date populated)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Hire conversion (Hired On date populated)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Country distribution"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "⚠️ DATA OBSERVATION:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Note 123-record gap between Offers Accepted (368) and Total Hired (491)."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "This may reflect normal ATS behavior (status clears post-hire) or data"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "quality drift. Question logged for Sondra/Manuel discussion."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🟡 PENDING PHASE 4 (R4 INGESTION):"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Full top-of-funnel: Sourced → Screened → Interviewed → Offer"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Source/channel attribution"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Cycle time per pipeline stage"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Drop-off analysis between stages"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

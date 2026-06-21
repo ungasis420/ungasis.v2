@@ -1,0 +1,278 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c949fcefd88565e82cd2",
+  "position": {
+    "x": 865,
+    "y": 71,
+    "z": 3000,
+    "height": 729,
+    "width": 434,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "📊 DATA SOURCES & ASSUMPTIONS"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "SOURCES:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• R1_Clean — main reqs table (18,935 rows)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• R2_Posted — posted requisitions"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• R3_OnHold — hold audit history (886 events)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• CD2_Offers — offer-stage data (716 offers)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• OnHold_Validated — semantic model export (1,162 rows,"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "  Test_Onhold time field)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• DateTable — central date dimension"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "KEY ASSUMPTIONS:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Fill Rate = Filled ÷ (Filled + Cancelled) = \"Closed Req Fill Rate\""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• TTF = R1[Time to Fill], calendar days"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• On Hold (216) = current snapshot, not audit history (886)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Avg Hold Days (47.61) from Test_Onhold field"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Hold data freshness: 2022 - April 2025"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Offers Accepted = Status=\"Accepted\" + Accept Date populated"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Total Hired = Hired On date populated"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "PHASE 4 ROADMAP:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Manuel hold-source reconciliation"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• R4 candidate pipeline ingestion"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• SLA target thresholds + R/Y/G coloring"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Recruiter Name filter (per Sondra)        ⭐ NEW"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Costa Rica drill-down view (per Sondra)   ⭐ NEW"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Newmont PBI workspace publish"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Hold data refresh strategy"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Offer lifecycle clarification (Hired On semantics)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Data quality audits for team management"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "REPORTING TRACK:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Newmont = \"Summary Reporting\" track (per Sondra's deck)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Includes: Exec Summary + Req Details + SLAs + Candidate Details"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Excludes Full Suite: AHD 2.0, Recruiter Scorecard, "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "  Inclusion, Talent & Demand, Auto Billing"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "132183f0beb7045ede0b",
+  "position": {
+    "x": 723.0034129692832,
+    "y": 207.50853242320818,
+    "z": 0,
+    "height": 63.344709897610919,
+    "width": 524.23208191126275,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Days Approved to Accept"
+                }
+              },
+              "queryRef": "_Measures.Avg Days Approved to Accept",
+              "nativeQueryRef": "Avg Days Approved to Accept"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Hold Days"
+                }
+              },
+              "queryRef": "_Measures.Avg Hold Days",
+              "nativeQueryRef": "Avg Hold Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Max Hold_Days"
+                }
+              },
+              "queryRef": "_Measures.Max Hold Days",
+              "nativeQueryRef": "Max Hold Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Median Hold_Days"
+                }
+              },
+              "queryRef": "_Measures.Median Hold Days",
+              "nativeQueryRef": "Median Hold Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Reqs Currently On Hold"
+                }
+              },
+              "queryRef": "_Measures.Reqs Currently On Hold",
+              "nativeQueryRef": "Reqs Currently On Hold"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Reqs Ever On_Hold"
+                }
+              },
+              "queryRef": "_Measures.Reqs Ever On Hold",
+              "nativeQueryRef": "Reqs Ever On Hold"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Max Hold_Days"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "5fd831980d61aa181452",
+  "displayName": "05 Measure Dictionary",
+  "displayOption": "ActualSize",
+  "height": 1440,
+  "width": 2360,
+  "pageBinding": {
+    "name": "95fbd9112779e3bc9370",
+    "type": "Default",
+    "parameters": [],
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "197L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

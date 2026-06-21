@@ -1,0 +1,159 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f8041adf04e369a18928",
+  "position": {
+    "x": 446.66666666666669,
+    "y": 71.666666666666671,
+    "z": 2000,
+    "height": 688.33333333333337,
+    "width": 390,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "❓ OPEN QUESTIONS FOR NEWMONT"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "1. HOLD METHODOLOGY (Phase 4) - for Manuel"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → 3 different \"On Hold Time\" sources in semantic model."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → Currently using Test_Onhold field."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → Methodology + unit verification needed."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "2. OFFER LIFECYCLE QUESTION"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → we noticed discrepancies in the funnel and its outside our scope, we will use data audits to check process and look for any gaps and bottlenecks"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "3. DATA REFRESH FREQUENCY for Manuel"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → Hold data ends April 2025."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → Refresh strategy for full QIM demo?"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "4. OTHER RPO / \"DARREN\" REPORTS COMPARISON"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → Per earlier Corey ask: connect with other RPO "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "     reporting analyst (Canada) to see what info they"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "     can pull from the system."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "   → Does this comparison change Phase 4 reporting scope?"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "89914f44bb298c7d4d3b",
+  "position": {
+    "x": 10.129870129870129,
+    "y": 266.49350649350646,
+    "z": 0,
+    "height": 81.038961038961034,
+    "width": 1270.12987012987,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Total_Requisitions"
+                }
+              },
+              "queryRef": "R1_Clean.Total Requisitions",
+              "nativeQueryRef": "Total Requisitions"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Total Filled"
+                }
+              },
+              "queryRef": "R1_Clean.Total Filled",
+              "nativeQueryRef": "Total Filled"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Total Cancelled"
+                }
+              },
+              "queryRef": "R1_Clean.Total Cancelled",
+              "nativeQueryRef": "Total Cancelled"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Total_Open"
+                }
+              },
+              "queryRef": "R1_Clean.Total Open",
+              "nativeQueryRef": "Total Open"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Total On Hold"
+                }
+              },
+              "queryRef": "R1_Clean.Total On Hold",
+              "nativeQueryRef": "Total On Hold"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Fill Rate"
+                }
+              },
+              "queryRef": "R1_Clean.Fill Rate",
+              "nativeQueryRef": "Fill Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Cancel Rate"
+                }
+              },
+              "queryRef": "R1_Clean.Cancel Rate",
+              "nativeQueryRef": "Cancel Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Avg TTF"
+                }
+              },
+              "queryRef": "R1_Clean.Avg TTF",
+              "nativeQueryRef": "Avg TTF"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Aged 60 Plus"
+                }
+              },
+              "queryRef": "R1_Clean.Aged 60 Plus",
+              "nativeQueryRef": "Aged 60 Plus"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "R1_Clean"
+                    }
+                  },
+                  "Property": "Avg Days Open"
+                }
+              },
+              "queryRef": "R1_Clean.Avg Days Open",
+              "nativeQueryRef": "Avg Days Open"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CD2_Offers"
+                    }
+                  },
+                  "Property": "Total Offers"
+                }
+              },
+              "queryRef": "CD2_Offers.Total Offers",
+              "nativeQueryRef": "Total Offers"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CD2_Offers"
+                    }
+                  },
+                  "Property": "Offers Accepted"
+                }
+              },
+              "queryRef": "CD2_Offers.Offers Accepted",
+              "nativeQueryRef": "Offers Accepted"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CD2_Offers"
+                    }
+                  },
+                  "Property": "Offer Acceptance Rate"
+                }
+              },
+              "queryRef": "CD2_Offers.Offer Acceptance Rate",
+              "nativeQueryRef": "Offer Acceptance Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CD2_Offers"
+                    }
+                  },
+                  "Property": "Avg Time to Accept"
+                }
+              },
+              "queryRef": "CD2_Offers.Avg Time to Accept",
+              "nativeQueryRef": "Avg Time to Accept"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CD2_Offers"
+                    }
+                  },
+                  "Property": "Avg Time to Start"
+                }
+              },
+              "queryRef": "CD2_Offers.Avg Time to Start",
+              "nativeQueryRef": "Avg Time to Start"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,102 @@
+table OnHold_Validated
+	lineageTag: f6c686a7-7f02-4a29-b725-47eabb8e98ea
+
+	column 'Job Req ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 08fa32eb-7d82-480b-bf82-cb4f9a0d04cc
+		summarizeBy: none
+		sourceColumn: Job Req ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Title'
+		dataType: string
+		lineageTag: 066fc4e4-8fa2-4d0f-9901-c0da45d0e295
+		summarizeBy: none
+		sourceColumn: Job Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Application Status'
+		dataType: string
+		lineageTag: f87c6fc4-7d7a-4a43-8cb6-a98a84cba83e
+		summarizeBy: none
+		sourceColumn: Application Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Career Site Filter Country'
+		dataType: string
+		lineageTag: 70555ffb-c625-4a27-9a87-32b9406ba61d
+		summarizeBy: none
+		sourceColumn: Career Site Filter Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Closed Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5439116d-5772-4dc5-8736-0a36a37812c6
+		summarizeBy: none
+		sourceColumn: Closed Date
+
+		variation Variation
+			isDefault
+			relationship: afb3f0ee-9ba2-4dee-b7af-a69c595380e7
+			defaultHierarchy: LocalDateTable_8c032630-7a02-4c1b-a87c-4d659bf18a39.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offer Accept Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 522681c9-02f2-4c67-806c-7e45c7ab19f4
+		summarizeBy: none
+		sourceColumn: Offer Accept Date
+
+		variation Variation
+			isDefault
+			relationship: eda66ad7-f862-4cae-830a-482b53640e9b
+			defaultHierarchy: LocalDateTable_7978b5c7-2c04-48c5-989a-2994c6c39150.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Approved Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 79a6d190-a9bb-42b5-8a27-0f3993dc1702
+		summarizeBy: none
+		sourceColumn: Approved Date
+
+		variation Variation
+			isDefault
+			relationship: 1875bf6e-8bc2-4909-b2f8-c054d7f5f8f3
+			defaultHierarchy: LocalDateTable_4bad6864-78d7-4651-83ec-e766d0f89702.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Test_Onhold time.On Hold Time'
+		dataType: double
+		lineageTag: 8a1a899a-a9e3-40bb-ab68-6f2bc0f50b89
+		summarizeBy: sum
+		sourceColumn: Test_Onhold time.On Hold Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition OnHold_Validated = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\DIMATM\OneDrive - Korn Ferry\Desktop\newmont\03_OnHoldTime_FINAL_validated.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Job Req ID", Int64.Type}, {"Job Title", type text}, {"Application Status", type text}, {"Career Site Filter Country", type text}, {"Closed Date", type datetime}, {"Offer Accept Date", type datetime}, {"Approved Date", type datetime}, {"Test_Onhold time.On Hold Time", type number}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

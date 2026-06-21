@@ -1,0 +1,116 @@
+table _Measures
+	lineageTag: b735c298-aff9-494b-ae8b-23a715766f6d
+
+	measure 'Reqs Currently On Hold' =
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( R1_Clean[Job Req ID] ),
+			    R1_Clean[Requisition Status] = "On Hold"
+			)
+		formatString: 0
+		lineageTag: fe8152a9-3107-43bd-805b-886fb7a882b7
+
+	measure 'Avg Hold Days' =
+			
+			CALCULATE (
+			    AVERAGE ( OnHold_Validated[Test_Onhold time.On Hold Time] ),
+			    OnHold_Validated[Test_Onhold time.On Hold Time] > 0
+			)
+		lineageTag: 199bd0fc-0961-47b0-a949-8487edc38f90
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Median Hold_Days' =
+			
+			MEDIANX (
+			    FILTER ( OnHold_Validated, OnHold_Validated[Test_Onhold time.On Hold Time] > 0 ),
+			    OnHold_Validated[Test_Onhold time.On Hold Time]
+			)
+		lineageTag: e90e44d1-fa85-4d3b-a6ff-1605268c454c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Max Hold_Days' =
+			
+			CALCULATE (
+			    MAX ( OnHold_Validated[Test_Onhold time.On Hold Time] ),
+			    OnHold_Validated[Test_Onhold time.On Hold Time] > 0
+			)
+		lineageTag: e7bedca8-a222-4a33-a184-ae83b6e556b0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Reqs Ever On_Hold' =
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( OnHold_Validated[Job Req ID] ),
+			    OnHold_Validated[Test_Onhold time.On Hold Time] > 0
+			)
+		formatString: 0
+		lineageTag: 5bb5c19e-9a4f-4c69-950e-ced91d02cdc2
+
+	measure 'Avg Days Approved to Accept' =
+			
+			AVERAGEX (
+			    FILTER (
+			        OnHold_Validated,
+			        NOT ISBLANK ( OnHold_Validated[Offer Accept Date] )
+			            && NOT ISBLANK ( OnHold_Validated[Approved Date] )
+			    ),
+			    DATEDIFF (
+			        OnHold_Validated[Approved Date],
+			        OnHold_Validated[Offer Accept Date],
+			        DAY
+			    )
+			)
+		lineageTag: 28a36ffd-8c00-4069-a2db-04935b7d18e8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Requisitions' =
+			
+			FORMAT ( [Total_Requisitions], "#,##0" )
+		lineageTag: d5fa77f3-7e9d-45e3-881b-ca1f29bf352d
+
+	measure 'Total Open' =
+			
+			FORMAT ( [Total_Open], "#,##0" )
+		lineageTag: f9722153-dc02-4117-aa53-f6c80c1cba55
+
+	measure 'Reqs Ever On Hold' =
+			
+			FORMAT ( [Reqs Ever On_Hold], "#,##0" )
+		lineageTag: 150b36e4-d2b3-4c11-8a46-189407b32a7e
+
+	measure 'Median Hold Days' =
+			
+			FORMAT ( [Median Hold_Days], "#,##0" ) & " d"
+		lineageTag: 2013484f-b912-40f3-8896-e03ff310f25f
+
+	measure 'Max Hold Days' =
+			
+			FORMAT ( [Max Hold_Days], "#,##0" )
+		lineageTag: 4a9ae66f-6120-461e-bb9c-238810a57bad
+
+	column Column1
+		dataType: string
+		isHidden
+		lineageTag: f4048694-e4ae-4cb7-b402-9d62a176e37b
+		summarizeBy: none
+		sourceColumn: Column1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

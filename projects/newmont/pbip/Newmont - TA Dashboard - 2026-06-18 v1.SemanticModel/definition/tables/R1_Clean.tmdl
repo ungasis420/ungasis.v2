@@ -1,0 +1,491 @@
+table R1_Clean
+	lineageTag: 209da6e5-b088-484d-b136-a09517cb4d44
+
+	measure Total_Requisitions = COUNTROWS(R1_Clean)
+		formatString: 0
+		lineageTag: f606746d-a7c8-4a46-9dcd-aa86fe788abf
+
+	measure 'Total Filled' =
+			
+			CALCULATE(
+			    COUNTROWS(R1_Clean),
+			    R1_Clean[Requisition Status] = "Filled"
+			)
+		formatString: 0
+		lineageTag: 8c39f517-a3c7-4dfa-9fe0-376db924a035
+
+	measure 'Total Cancelled' =
+			
+			CALCULATE(
+			    COUNTROWS(R1_Clean),
+			    R1_Clean[Requisition Status] = "Cancelled"
+			)
+		formatString: 0
+		lineageTag: 05f7d33c-034f-4ed0-8f32-8e996254a110
+
+	measure Total_Open =
+			
+			CALCULATE(
+			    COUNTROWS(R1_Clean),
+			    R1_Clean[Requisition Status] = "Open"
+			)
+		formatString: 0
+		lineageTag: b385a5c6-5e10-42b6-b3d3-2726e4ce1a6a
+
+	measure 'Total On Hold' =
+			
+			CALCULATE(
+			    COUNTROWS(R1_Clean),
+			    R1_Clean[Requisition Status] = "On Hold"
+			)
+		formatString: 0
+		lineageTag: 5cf37b6e-a32f-407e-8ff0-48c42b4f016d
+
+	measure 'Fill Rate' =
+			
+			DIVIDE(
+			    [Total Filled],
+			    [Total Filled] + [Total Cancelled],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 6c7e7d6a-0836-4ee0-b4a2-b953153452d6
+
+	measure 'Cancel Rate' =
+			
+			DIVIDE(
+			    [Total Cancelled],
+			    [Total_Requisitions],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 8175e11d-db57-4d66-a8b1-7ecba92f07f9
+
+	measure 'Avg TTF' =
+			
+			AVERAGE(R1_Clean[Time to Fill])
+		lineageTag: 4f4455ac-4740-4452-82d8-bdb793be643e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Aged 60 Plus' =
+			
+			CALCULATE(
+			    COUNTROWS(R1_Clean),
+			    R1_Clean[Requisition Status] = "Open",
+			    R1_Clean[Days_Open] >= 60
+			)
+		formatString: 0
+		lineageTag: 933ab4b6-7954-433f-8b4f-78b3fb7ac6f8
+
+	measure 'On Hold Count' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(R3_OnHold[Job Req ID]),
+			    R3_OnHold[Requisition Status] = "Open"
+			)
+		formatString: 0
+		lineageTag: 1cf239d9-c1de-405b-8cef-5d568f5506e1
+
+	measure 'Avg Days Open' =
+			
+			CALCULATE(
+			    AVERAGE(R1_Clean[Days_Open]),
+			    R1_Clean[Requisition Status] = "Open"
+			)
+		lineageTag: e10edc67-cacb-44f5-a84f-0825bacc7ce3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Job Req ID'
+		dataType: string
+		lineageTag: 245ae0bc-4ec0-4393-a5bd-6a866e5abb8f
+		summarizeBy: none
+		sourceColumn: Job Req ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Requisition Status'
+		dataType: string
+		lineageTag: 7d03411e-7717-40a7-a0ae-c8d5385f83b3
+		summarizeBy: none
+		sourceColumn: Requisition Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Candidate Progress'
+		dataType: string
+		lineageTag: aa2795d3-727c-4882-8d0c-811eabf0c8ab
+		summarizeBy: none
+		sourceColumn: Candidate Progress
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Title'
+		dataType: string
+		lineageTag: 4d521955-bf99-48b7-a693-e621feaecb9e
+		summarizeBy: none
+		sourceColumn: Job Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SAP Position ID'
+		dataType: string
+		lineageTag: 19c50d53-5405-4722-af64-fb82fb20d245
+		summarizeBy: none
+		sourceColumn: SAP Position ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Position Subtype'
+		dataType: string
+		lineageTag: 88bb3bb5-4d7e-4177-99a2-f64862fb707e
+		summarizeBy: none
+		sourceColumn: Position Subtype
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Unit'
+		dataType: string
+		lineageTag: f030eca7-86fc-4248-b8d8-17dc2e2dae9c
+		summarizeBy: none
+		sourceColumn: Business Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Function
+		dataType: string
+		lineageTag: 485ac597-b5b2-4c83-930e-872989982740
+		summarizeBy: none
+		sourceColumn: Function
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Location'
+		dataType: string
+		lineageTag: fac28ff4-d08f-424c-a99c-ffa9da566633
+		summarizeBy: none
+		sourceColumn: Job Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: ae1d25bf-d6c0-4e4f-b26c-3cabe66bcd47
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location1
+		dataType: string
+		lineageTag: c55662ba-531b-46a0-9792-0a7715dc4b71
+		summarizeBy: none
+		sourceColumn: Location1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Onsite/Remote Position'
+		dataType: string
+		lineageTag: 144d6ed7-5faf-4807-81bd-57a2023a835f
+		summarizeBy: none
+		sourceColumn: Onsite/Remote Position
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Union Bid'
+		dataType: string
+		lineageTag: 5d5fb800-d39a-4188-9991-d9846a841e74
+		summarizeBy: none
+		sourceColumn: Union Bid
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pay Grade'
+		dataType: string
+		lineageTag: ec2a3995-17fb-40ed-804e-33f83f973a58
+		summarizeBy: none
+		sourceColumn: Pay Grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pay Scale Group'
+		dataType: string
+		lineageTag: 34348633-938d-4309-bf9a-0f01b2380205
+		summarizeBy: none
+		sourceColumn: Pay Scale Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pay Scale Level'
+		dataType: string
+		lineageTag: 1d615e61-e905-4dbf-944f-ea1c63feacbc
+		summarizeBy: none
+		sourceColumn: Pay Scale Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition First Name'
+		dataType: string
+		isHidden
+		lineageTag: 0927da78-50ff-4b1d-a6e7-1513a354dafb
+		summarizeBy: none
+		sourceColumn: Talent Acquisition First Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition Last Name'
+		dataType: string
+		isHidden
+		lineageTag: 6bd931df-b97d-4e7d-a55f-31264839ce45
+		summarizeBy: none
+		sourceColumn: Talent Acquisition Last Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hiring Manager First name'
+		dataType: string
+		isHidden
+		lineageTag: 5a5ebcb6-0b61-4f9a-a61e-fb04f731c64b
+		summarizeBy: none
+		sourceColumn: Hiring Manager First name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hiring Manager Last Name'
+		dataType: string
+		isHidden
+		lineageTag: 0f1f8249-bbc3-4d72-81ab-901a55802e3f
+		summarizeBy: none
+		sourceColumn: Hiring Manager Last Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Direct Supervisor First Name'
+		dataType: string
+		isHidden
+		lineageTag: ebba1895-b826-425d-9cbc-ea3328b006fc
+		summarizeBy: none
+		sourceColumn: Direct Supervisor First Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Direct Supervisor Last Name'
+		dataType: string
+		isHidden
+		lineageTag: dfe82ba8-2e8c-4b8d-8c01-05f8a0bb8cd6
+		summarizeBy: none
+		sourceColumn: Direct Supervisor Last Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Created'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a7749675-3381-4929-9e0d-a4a6369b3fd3
+		summarizeBy: none
+		sourceColumn: Date Created
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Approved Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 070bc097-e6f0-4419-9b9d-9105b2cf064e
+		summarizeBy: none
+		sourceColumn: Approved Date
+
+		variation Variation
+			isDefault
+			relationship: cdac4c8f-c9ed-4b8d-bcef-be2571c5098b
+			defaultHierarchy: LocalDateTable_8d38505c-5fa4-41a9-9ced-4672f98c0475.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Closed Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2a82f8cd-e14e-432e-a1a7-e25b264259ba
+		summarizeBy: none
+		sourceColumn: Closed Date
+
+		variation Variation
+			isDefault
+			relationship: 36df40fa-0f79-453d-aae1-498071d3fc55
+			defaultHierarchy: LocalDateTable_3b26ad14-a2a5-45ce-b558-5320cfac107c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Days_Open
+		dataType: int64
+		formatString: 0
+		lineageTag: 4c2804d3-4e4b-4275-b6d5-07facebc6461
+		summarizeBy: sum
+		sourceColumn: Days_Open
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason for Requisition'
+		dataType: string
+		lineageTag: 9d2d98e1-cf0a-4bf1-bdbd-cb6d8d3bb40a
+		summarizeBy: none
+		sourceColumn: Reason for Requisition
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is this position budgeted?'
+		dataType: string
+		lineageTag: 66cd46b9-0d27-425a-b1ad-279a331096c4
+		summarizeBy: none
+		sourceColumn: Is this position budgeted?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Will this position have direct reports?'
+		dataType: string
+		lineageTag: 39f004ca-fa99-4eba-8ab0-1004f0882e16
+		summarizeBy: none
+		sourceColumn: Will this position have direct reports?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Openings Filled'
+		dataType: int64
+		formatString: 0
+		lineageTag: e0809fd6-30a5-47ba-b6be-99ade05943f4
+		summarizeBy: sum
+		sourceColumn: Openings Filled
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Time to Fill'
+		dataType: double
+		lineageTag: 727e8d19-b799-4349-8e52-17d42decddfa
+		summarizeBy: sum
+		sourceColumn: Time to Fill
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Country
+		dataType: string
+		lineageTag: 6e46d0ed-c631-40d9-b52a-92e8c067dcd9
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ELT Member'
+		dataType: string
+		lineageTag: 7397eaec-9e34-446b-ac1b-9f6d107c8da6
+		summarizeBy: none
+		sourceColumn: ELT Member
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notes
+		dataType: string
+		isHidden
+		lineageTag: 132d315f-920a-4f3e-8661-ee579e15ebad
+		summarizeBy: none
+		sourceColumn: Notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Template Name'
+		dataType: string
+		lineageTag: 40b1d91b-7fa7-447d-96f4-228de9c1ae29
+		summarizeBy: none
+		sourceColumn: Template Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Maximum Annual Base Salary'
+		dataType: string
+		isHidden
+		lineageTag: d0e9baf3-6b73-45b4-b7d8-57b78586b58b
+		summarizeBy: none
+		sourceColumn: Maximum Annual Base Salary
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mid-Point Annual Base Salary'
+		dataType: string
+		isHidden
+		lineageTag: a0602ebe-54aa-43fe-838e-afb2a14051a6
+		summarizeBy: none
+		sourceColumn: Mid-Point Annual Base Salary
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Minimum Annual Base Salary'
+		dataType: string
+		isHidden
+		lineageTag: 5ded6ec0-6dd9-4b13-8904-fd98fb2bf0bc
+		summarizeBy: none
+		sourceColumn: Minimum Annual Base Salary
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition R1_Clean = m
+		mode: import
+		queryGroup: workfile
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\DIMATM\OneDrive - Korn Ferry\Desktop\newmont\report_All_Global_REQ_New_Report_KF.xlsx")),
+				    R1_Clean_Sheet = Source{[Item="R1_Clean",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(R1_Clean_Sheet, [PromoteAllScalars=true]),
+				    #"Trimmed Headers" = Table.TransformColumnNames(#"Promoted Headers", Text.Trim),
+				    #"Set Types" = Table.TransformColumnTypes(#"Trimmed Headers", {
+				        {"Job Req ID", type text},
+				        {"SAP Position ID", type text},
+				        {"Date Created", type date},
+				        {"Approved Date", type date},
+				        {"Closed Date", type date},
+				        {"Age", Int64.Type},
+				        {"Openings Filled", Int64.Type},
+				        {"Time to Fill", type number}
+				    }),
+				    #"Renamed Columns" = Table.RenameColumns(#"Set Types", {
+				        {"Age", "Days_Open"},
+				        {"Career Site Filter Country", "Country"}
+				    }, MissingField.Ignore),
+				    #"Removed Helpers" = Table.RemoveColumns(#"Renamed Columns", {
+				        "Duplicate?", "Date Used for Keep", "Keep?",
+				        "Column42", "Row Labels", "Count of Job Req ID",
+				        "Column45", "Validation Check", "Result"
+				    }, MissingField.Ignore)
+				in
+				    #"Removed Helpers"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

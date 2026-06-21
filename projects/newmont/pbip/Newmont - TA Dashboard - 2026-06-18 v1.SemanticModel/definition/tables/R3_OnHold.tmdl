@@ -1,0 +1,104 @@
+table R3_OnHold
+	lineageTag: 6219628f-1ab2-414a-bdba-dfa13f7327bc
+
+	column 'Job Req ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0dab0c76-446e-44eb-9773-995793e20390
+		summarizeBy: none
+		sourceColumn: Job Req ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Requisition Status'
+		dataType: string
+		lineageTag: 9587e95c-59b8-45ab-9b37-4ffb68f700ee
+		summarizeBy: none
+		sourceColumn: Requisition Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created Date (Timestamp)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 32701eac-eeda-4783-8aaf-294d3eefa16b
+		summarizeBy: none
+		sourceColumn: Created Date (Timestamp)
+
+		variation Variation
+			isDefault
+			relationship: 23b50fdd-f4b7-4686-9f26-9384c3cb4084
+			defaultHierarchy: LocalDateTable_244e7b22-5647-403f-b1e5-beb0be8d810a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Closed Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 64315c2c-1fcf-41fa-9c3b-031f143e6975
+		summarizeBy: none
+		sourceColumn: Closed Date
+
+		variation Variation
+			isDefault
+			relationship: e3fbe43b-ebab-46a4-b880-0d74b3c56fb0
+			defaultHierarchy: LocalDateTable_d1a589e5-1d3d-4a39-83ee-261d7dae47ab.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Job Title'
+		dataType: string
+		lineageTag: b69ff5cc-8399-494c-beb9-0665c768f8c7
+		summarizeBy: none
+		sourceColumn: Job Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition First Name'
+		dataType: string
+		isHidden
+		lineageTag: 330026c0-6259-4504-9634-f0db00d4dec7
+		summarizeBy: none
+		sourceColumn: Talent Acquisition First Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition Last Name'
+		dataType: string
+		isHidden
+		lineageTag: 94c7564e-7d27-4d5d-b27f-bb60bfc0f4e4
+		summarizeBy: none
+		sourceColumn: Talent Acquisition Last Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Duplicate?
+		dataType: int64
+		formatString: 0
+		lineageTag: 118fc3b2-d867-4e54-acf4-fef04151c254
+		summarizeBy: sum
+		sourceColumn: Duplicate?
+
+		annotation SummarizationSetBy = Automatic
+
+	partition R3_OnHold = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\DIMATM\OneDrive - Korn Ferry\Desktop\newmont\report_On_hold_time_Audit_KF.xlsx"), null, true),
+				    report_On_hold_time_Audit_KF_Sheet = Source{[Item="report_On_hold_time_Audit_KF",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(report_On_hold_time_Audit_KF_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Job Req ID", Int64.Type}, {"Requisition Status", type text}, {"Created Date (Timestamp)", type datetime}, {"Closed Date", type date}, {"Job Title", type text}, {"Talent Acquisition First Name", type text}, {"Talent Acquisition Last Name", type text}, {"Duplicate?", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

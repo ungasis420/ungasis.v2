@@ -1,0 +1,145 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "5d14bf4fe2a6115d8036",
+  "position": {
+    "x": 15,
+    "y": 91,
+    "z": 1000,
+    "height": 520,
+    "width": 2179,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Dictionary"
+                    }
+                  },
+                  "Property": "Page"
+                }
+              },
+              "queryRef": "Measure Dictionary.Page",
+              "nativeQueryRef": "Page"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Dictionary"
+                    }
+                  },
+                  "Property": "Measure"
+                }
+              },
+              "queryRef": "Measure Dictionary.Measure",
+              "nativeQueryRef": "Measure"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Dictionary"
+                    }
+                  },
+                  "Property": "What It Shows (Plain English)"
+                }
+              },
+              "queryRef": "Measure Dictionary.What It Shows (Plain English)",
+              "nativeQueryRef": "What It Shows (Plain English)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Dictionary"
+                    }
+                  },
+                  "Property": "How It's Calculated"
+                }
+              },
+              "queryRef": "Measure Dictionary.How It's Calculated",
+              "nativeQueryRef": "How It's Calculated"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Dictionary"
+                    }
+                  },
+                  "Property": "Source"
+                }
+              },
+              "queryRef": "Measure Dictionary.Source",
+              "nativeQueryRef": "Source"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure Dictionary"
+                    }
+                  },
+                  "Property": "Why It Matters"
+                }
+              },
+              "queryRef": "Measure Dictionary.Why It Matters",
+              "nativeQueryRef": "Why It Matters"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BoldHeader'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "48415fac27c7770de6b4",
+  "position": {
+    "x": 15.454545454545453,
+    "y": 635.45454545454538,
+    "z": 3000,
+    "height": 69.090909090909079,
+    "width": 332.72727272727269,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "ℹ️ DAX formulas shown are simplified for clarity. Some measures use intermediate helper measures. Full DAX visible in Power BI Modeling view. ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "14px",
+                      "color": "#999999"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

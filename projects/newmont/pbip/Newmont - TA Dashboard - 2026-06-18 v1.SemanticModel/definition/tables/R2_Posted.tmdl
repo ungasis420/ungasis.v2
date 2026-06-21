@@ -1,0 +1,119 @@
+table R2_Posted
+	lineageTag: 498b34cd-95d6-492f-8022-e2cb7a0dfdf1
+
+	column 'Job Req ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b50bf9d-acb3-4810-915b-265c9e23fac5
+		summarizeBy: none
+		sourceColumn: Job Req ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Title'
+		dataType: string
+		lineageTag: 0bf08980-0c8f-499d-af4e-a0d5cb5805dd
+		summarizeBy: none
+		sourceColumn: Job Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location '
+		dataType: string
+		lineageTag: 400d99c0-33f9-4efc-b886-0eb8eca37d30
+		summarizeBy: none
+		sourceColumn: "Location "
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Board ID'
+		dataType: string
+		lineageTag: c506c32d-a65b-4ac1-bbba-e0cf6b9bd65c
+		summarizeBy: none
+		sourceColumn: Board ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Post End Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e30bc60f-2d29-4115-925d-305afcd4a46f
+		summarizeBy: none
+		sourceColumn: Post End Date
+
+		variation Variation
+			isDefault
+			relationship: e9591243-4f54-4d7a-a23c-ed106824de96
+			defaultHierarchy: LocalDateTable_ed0eae64-c0d7-482f-a34b-e33468eab3b9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Posting Start Date (Timestamp)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2929eee6-e9b5-45ad-9c5a-5a0928a3afb1
+		summarizeBy: none
+		sourceColumn: Posting Start Date (Timestamp)
+
+		variation Variation
+			isDefault
+			relationship: 6ef43332-384b-430d-a1a0-4edcff1c7ab9
+			defaultHierarchy: LocalDateTable_aa9ad246-7fd3-45f5-a6cc-dfdf5609dbe2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Posting Status'
+		dataType: string
+		lineageTag: a56fd7eb-3d43-4f21-a498-f7f427b37782
+		summarizeBy: none
+		sourceColumn: Posting Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition First Name'
+		dataType: string
+		isHidden
+		lineageTag: 4a8d0f18-0d04-4d9c-ba53-552792dc3ce9
+		summarizeBy: none
+		sourceColumn: Talent Acquisition First Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition Last Name'
+		dataType: string
+		isHidden
+		lineageTag: 178e1d03-d347-42e3-a1d5-33fdadec4c9e
+		summarizeBy: none
+		sourceColumn: Talent Acquisition Last Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Post Expiration Date'
+		dataType: string
+		lineageTag: d45b0ac7-0f7f-45a1-a0b9-2a7a212a6d55
+		summarizeBy: none
+		sourceColumn: Post Expiration Date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition R2_Posted = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\DIMATM\OneDrive - Korn Ferry\Desktop\newmont\report_Posted_Requisitions_Global_KF.xlsx"), null, true),
+				    report_Posted_Requisitions_Glob_Sheet = Source{[Item="report_Posted_Requisitions_Glob",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(report_Posted_Requisitions_Glob_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Job Req ID", Int64.Type}, {"Job Title", type text}, {"Location ", type text}, {"Board ID", type text}, {"Post End Date", type date}, {"Posting Start Date (Timestamp)", type datetime}, {"Posting Status", type text}, {"Talent Acquisition First Name", type text}, {"Talent Acquisition Last Name", type text}, {"Post Expiration Date", type any}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

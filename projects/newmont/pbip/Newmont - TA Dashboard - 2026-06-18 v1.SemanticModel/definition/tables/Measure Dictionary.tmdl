@@ -1,0 +1,197 @@
+table 'Measure Dictionary'
+	lineageTag: 88a2a509-3cd2-43c5-9e71-49f5350cecc7
+
+	column #
+		formatString: 0
+		lineageTag: 29b26d7f-211c-4763-a448-ad25dc6bb365
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [#]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Page
+		lineageTag: 765b4e55-f420-46b4-9911-c801ac0b4d58
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Page]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Measure
+		lineageTag: d3753bb5-b7d7-4e2b-bd9e-b5681cd53007
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Measure]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'What It Shows (Plain English)'
+		lineageTag: 0021ac5d-9919-436b-891b-13e073475a17
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [What It Shows (Plain English)]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'How It''s Calculated'
+		lineageTag: 61736f15-5722-4579-9606-c81702c5d091
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [How It's Calculated]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Source
+		lineageTag: ca4c2fbc-1dc4-42cf-8e7b-9763a954401e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Source]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Why It Matters'
+		lineageTag: bbbc0725-a440-4003-ad1e-3ec8a861297b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Why It Matters]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Measure Dictionary' = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "#", INTEGER,
+				    "Page", STRING,
+				    "Measure", STRING,
+				    "What It Shows (Plain English)", STRING,
+				    "How It's Calculated", STRING,
+				    "Source", STRING,
+				    "Why It Matters", STRING,
+				    {
+				        { 1, "Page 1", "Total Requisitions",
+				          "Count of every job opening in our dataset, regardless of status.",
+				          "COUNTROWS(R1_Clean)",
+				          "R1_Clean (hub table, 18,935 rows)",
+				          "Baseline scale — answers 'how big is the recruitment universe?'" },
+				
+				        { 2, "Page 1", "Closed Req Fill Rate",
+				          "Of the requisitions we closed, what % were successfully filled?",
+				          "DIVIDE([Filled Reqs], [Filled Reqs] + [Cancelled Reqs])",
+				          "R1_Clean (Status field)",
+				          "Core health KPI — directly maps to RPO SLA. Excludes open reqs to avoid bias." },
+				
+				        { 3, "Page 1", "Avg Time to Fill",
+				          "Average number of calendar days from req creation to hire.",
+				          "AVERAGE(R1_Clean[Time to Fill])",
+				          "R1_Clean[Time to Fill] (calendar days)",
+				          "Speed metric — KF global avg is 52d; Newmont currently 79.74d." },
+				
+				        { 4, "Page 1", "Open Requisitions",
+				          "Reqs currently active (not filled, not cancelled, not on hold).",
+				          "CALCULATE(COUNTROWS(R1_Clean), R1_Clean[Status]=""Open"")",
+				          "R1_Clean (Status field)",
+				          "Current workload — what the recruiters are actively working on." },
+				
+				        { 5, "Page 1", "Currently On Hold",
+				          "Reqs in 'On Hold' status RIGHT NOW (snapshot, not history).",
+				          "CALCULATE(COUNTROWS(R1_Clean), R1_Clean[Status]=""On Hold"")",
+				          "R1_Clean snapshot (per Sondra)",
+				          "Real-time bottleneck count — different from R3_OnHold history (886)." },
+				
+				        { 6, "Page 1", "Avg Hold Duration",
+				          "On average, how many days does a req stay on hold once held?",
+				          "AVERAGE(OnHold_Validated[Test_Onhold time.On Hold Time])",
+				          "OnHold_Validated (Manuel's semantic model export)",
+				          "Bottleneck severity — unit (cal/biz days) pending Corey confirmation." },
+				
+				        { 7, "Page 1", "Median Hold Duration",
+				          "The middle hold duration — half are shorter, half are longer.",
+				          "MEDIAN(OnHold_Validated[Test_Onhold time.On Hold Time])",
+				          "OnHold_Validated",
+				          "Resistant to outliers (758d max). Better 'typical' than average." },
+				
+				        { 8, "Page 1", "Max Hold Duration",
+				          "The longest single hold duration in the dataset.",
+				          "MAX(OnHold_Validated[Test_Onhold time.On Hold Time])",
+				          "OnHold_Validated",
+				          "Worst-case visibility — flags extreme bottlenecks for escalation." },
+				
+				        { 9, "Page 1", "Avg Days Approved to Accept",
+				          "Average days from req approval to candidate accepting offer.",
+				          "AVERAGE(CD2_Offers[Days Approved to Accept])",
+				          "CD2_Offers (applicant grain)",
+				          "Sondra's Option D — pending Corey decision for QIM inclusion." },
+				
+				        { 10, "Page 1", "Reqs Ever On Hold",
+				          "How many unique reqs have been on hold at least once historically.",
+				          "DISTINCTCOUNT(R3_OnHold[Job Req ID])",
+				          "R3_OnHold (audit history)",
+				          "Historical frequency — different from 'Currently On Hold' (216)." },
+				
+				        { 11, "Page 2", "Avg TTF by Country",
+				          "Same 'Avg Time to Fill' measure, sliced by Country dimension.",
+				          "AVERAGE(R1_Clean[Time to Fill]) sliced by R1_Clean[Country]",
+				          "R1_Clean + Country dimension",
+				          "Geographic comparison — surfaces country-level bottlenecks." },
+				
+				        { 12, "Page 2", "Hold Time by Job Title (Top 10)",
+				          "Total hold days grouped by Job Title, top 10 ranked.",
+				          "SUM(OnHold_Validated[Test_Onhold time.On Hold Time]) by Job Title, TOPN(10)",
+				          "OnHold_Validated joined to RD1_Details (for Job Title)",
+				          "Shows which roles accumulate most hold days. Volume view." },
+				
+				        { 13, "Page 2", "Hold Time by Req (Top 10)",
+				          "Total hold days per Job Req ID, top 10 ranked.",
+				          "SUM(OnHold_Validated[Test_Onhold time.On Hold Time]) by Job Req ID, TOPN(10)",
+				          "OnHold_Validated[Job Req ID]",
+				          "Spotlight on most-held individual reqs." },
+				
+				        { 14, "Page 2", "Filled Reqs (helper)",
+				          "Count of reqs where final Status = 'Filled'.",
+				          "CALCULATE(COUNTROWS(R1_Clean), R1_Clean[Status]=""Filled"")",
+				          "R1_Clean (Status field)",
+				          "Helper measure — numerator of Fill Rate. Not a KPI by itself." },
+				
+				        { 15, "Page 2", "Cancelled Reqs (helper)",
+				          "Count of reqs where final Status = 'Cancelled'.",
+				          "CALCULATE(COUNTROWS(R1_Clean), R1_Clean[Status]=""Cancelled"")",
+				          "R1_Clean (Status field)",
+				          "Helper measure — part of Fill Rate denominator. Not a KPI by itself." },
+				
+				        { 16, "Page 3", "Total Offers",
+				          "Total offers extended in the filter context (Year=2026 default).",
+				          "COUNTROWS(CD2_Offers)",
+				          "CD2_Offers",
+				          "Top of offer funnel — denominator for offer-stage metrics." },
+				
+				        { 17, "Page 3", "Offers Accepted",
+				          "Offers with Status='Accepted' AND an Accept Date populated.",
+				          "CALCULATE(COUNTROWS(CD2_Offers), CD2_Offers[Status]=""Accepted"", NOT(ISBLANK(CD2_Offers[Accept Date])))",
+				          "CD2_Offers",
+				          "Strict definition — both fields must agree (data quality safeguard)." },
+				
+				        { 18, "Page 3", "Offer Accept Rate",
+				          "Of all offers extended, what % were accepted?",
+				          "DIVIDE([Offers Accepted], [Total Offers])",
+				          "CD2_Offers",
+				          "Conversion KPI — KF global avg 67%; Newmont currently 51.4%." },
+				
+				        { 19, "Page 3", "Total Hired",
+				          "Candidates with a populated 'Hired On' date.",
+				          "CALCULATE(COUNTROWS(CD2_Offers), NOT(ISBLANK(CD2_Offers[Hired On])))",
+				          "CD2_Offers",
+				          "Loose definition (kept open) — 123-record gap vs Accepted is intentional for Corey." },
+				
+				        { 20, "Page 4", "SLA Status Matrix (visual only)",
+				          "Manual R/Y/G classification of each SLA metric (not a DAX measure).",
+				          "Hardcoded in visual: Green=Ready, Yellow=Needs Verification, Red=Blocked",
+				          "Page 4 text + matrix visual",
+				          "Decision tool for June 18 — shows what's ready, pending, blocked." }
+				    }
+				)
+
+	annotation PBI_Id = e70208b4d1624d1aa6bec32dc039f3c8
+

@@ -1,0 +1,243 @@
+table CD2_Offers
+	lineageTag: 6ba610c4-4100-43be-919a-b87a8d6831e7
+
+	measure 'Total Offers' = COUNTROWS(CD2_Offers)
+		formatString: 0
+		lineageTag: 57466cc2-b6f6-469d-b556-71a17d9f657b
+
+	measure 'Offers Accepted' = ```
+			
+			CALCULATE (
+			    COUNTROWS ( CD2_Offers ),
+			    CD2_Offers[Offer Status] = "Accepted",
+			    NOT ISBLANK ( CD2_Offers[Offer Accept Date] )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 818142cd-a3e3-474a-b054-698d033f9355
+
+	measure 'Offer Acceptance Rate' =
+			
+			DIVIDE(
+			    [Offers Accepted],
+			    [Total Offers],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 1f734ed9-59f9-46f7-b02d-28b244e35bcb
+
+	measure 'Avg Time to Accept' =
+			
+			AVERAGEX(
+			    FILTER(
+			        CD2_Offers,
+			        NOT(ISBLANK(CD2_Offers[Offer Created Date]))
+			            && NOT(ISBLANK(CD2_Offers[Offer Accept Date]))
+			    ),
+			    DATEDIFF(
+			        CD2_Offers[Offer Created Date],
+			        CD2_Offers[Offer Accept Date],
+			        DAY
+			    )
+			)
+		lineageTag: c6a7c4b5-68f7-40d7-b00b-728598a91356
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Time to Start' =
+			
+			AVERAGEX(
+			    FILTER(
+			        CD2_Offers,
+			        NOT(ISBLANK(CD2_Offers[Offer Accept Date]))
+			            && NOT(ISBLANK(CD2_Offers[Tentative Start Date]))
+			    ),
+			    DATEDIFF(
+			        CD2_Offers[Offer Accept Date],
+			        CD2_Offers[Tentative Start Date],
+			        DAY
+			    )
+			)
+		lineageTag: 140a5430-401d-4ea3-8ba2-9c8a93bc219c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Hired' = ```
+			
+			CALCULATE (
+			    COUNTROWS ( CD2_Offers ),
+			    NOT ISBLANK ( CD2_Offers[Hired On] )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: a0856c2d-9ada-4dac-99a4-f5a3d85dd5fb
+
+	column 'Job Req ID'
+		dataType: string
+		lineageTag: 7f62cd8c-ea7a-45d8-a1dd-947d5055eebe
+		summarizeBy: none
+		sourceColumn: Job Req ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Candidate ID'
+		dataType: string
+		lineageTag: 95bc48bb-ce06-4758-9f16-ec0d6eace30c
+		summarizeBy: none
+		sourceColumn: Candidate ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'First Name'
+		dataType: string
+		isHidden
+		lineageTag: d95c252e-123f-4169-a007-70fdac680766
+		summarizeBy: none
+		sourceColumn: First Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Name'
+		dataType: string
+		isHidden
+		lineageTag: 3c4855e9-8e1e-46ad-8dd4-33171a14e6aa
+		summarizeBy: none
+		sourceColumn: Last Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offer Type'
+		dataType: string
+		lineageTag: e30f0553-eb47-485e-83f7-7ebdc57da3ac
+		summarizeBy: none
+		sourceColumn: Offer Type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offer Status'
+		dataType: string
+		lineageTag: dae7400f-704b-41df-bc32-8e9f520f11f6
+		summarizeBy: none
+		sourceColumn: Offer Status
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Candidate Offer Response Date'
+		dataType: string
+		lineageTag: 46a4de7a-61ec-42eb-a4c7-05b6f9369f2a
+		summarizeBy: none
+		sourceColumn: Candidate Offer Response Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Candidate Offer Accept Date'
+		dataType: string
+		lineageTag: 0c98fe7a-63b9-4e1a-98e1-b5941413b2d5
+		summarizeBy: none
+		sourceColumn: Candidate Offer Accept Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hired On'
+		dataType: string
+		lineageTag: 20c3ace5-4a09-4441-954e-4cf2207278e9
+		summarizeBy: none
+		sourceColumn: Hired On
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offer Accept Date'
+		dataType: string
+		lineageTag: 0bcd1d80-2aee-4cd7-8f99-dde322a3b41d
+		summarizeBy: none
+		sourceColumn: Offer Accept Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offer Approved Date'
+		dataType: string
+		lineageTag: d0439f46-689e-473b-af0f-a145bffec2c6
+		summarizeBy: none
+		sourceColumn: Offer Approved Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offer Created Date'
+		dataType: string
+		lineageTag: 68270087-7bac-4ce5-9c7f-be018bf6eb54
+		summarizeBy: none
+		sourceColumn: Offer Created Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tentative Start Date'
+		dataType: string
+		lineageTag: 0c461ad1-2f07-473c-8fac-aa4c6d899231
+		summarizeBy: none
+		sourceColumn: Tentative Start Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Has Offer Status?'
+		dataType: string
+		lineageTag: a8ee165d-e966-4a8b-ab91-b90cae8bfc2f
+		summarizeBy: none
+		sourceColumn: Has Offer Status?
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CD2_Offers = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(
+				        File.Contents(
+				            "C:\Users\DIMATM\OneDrive - Korn Ferry\Desktop\newmont\Candidate Details - File #2.xlsx"
+				        ),
+				        null, true
+				    ),
+				    FirstSheet = Source{0}[Data],
+				    PromotedHeaders = Table.PromoteHeaders(FirstSheet, [PromoteAllScalars=true]),
+				    TrimmedHeaders = Table.TransformColumnNames(PromotedHeaders, Text.Trim),
+				    SetTypes = Table.TransformColumnTypes(TrimmedHeaders, {
+				        {"Job Req ID", type text}
+				    })
+				in
+				    SetTypes
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

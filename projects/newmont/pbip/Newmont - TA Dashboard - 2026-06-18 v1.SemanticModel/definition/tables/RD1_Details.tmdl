@@ -1,0 +1,319 @@
+table RD1_Details
+	lineageTag: aab0256c-0dab-478c-ac38-9c300fb8e761
+
+	column 'Job Req ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0eb5c8dd-ccba-471d-ba77-8ef524cce1f9
+		summarizeBy: none
+		sourceColumn: Job Req ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SAP Position ID'
+		dataType: string
+		lineageTag: 6085ebd5-7ad5-4a04-af48-085ad5e3b8c5
+		summarizeBy: none
+		sourceColumn: SAP Position ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Title'
+		dataType: string
+		lineageTag: 6b4ba3f4-3937-4945-acd6-0e9e1a3ef00d
+		summarizeBy: none
+		sourceColumn: Job Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Number of Openings'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8732f747-5aaa-4d7b-990e-fb9f4229c70d
+		summarizeBy: sum
+		sourceColumn: Number of Openings
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Number of Openings Remaining'
+		dataType: int64
+		formatString: 0
+		lineageTag: e3f37524-0d94-4a96-9aca-dc69a154276f
+		summarizeBy: sum
+		sourceColumn: Number of Openings Remaining
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Openings Filled (DEPRECATED)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 06e94a74-1210-4c0a-a53b-179509835dd3
+		summarizeBy: sum
+		sourceColumn: Openings Filled (DEPRECATED)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Requisition Status'
+		dataType: string
+		lineageTag: f7256ad8-a154-410f-8c00-f9da20d88f2f
+		summarizeBy: none
+		sourceColumn: Requisition Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Created'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 70ffd4d5-62c6-4c83-a597-cc206ca8d641
+		summarizeBy: none
+		sourceColumn: Date Created
+
+		variation Variation
+			isDefault
+			relationship: b5bee1ea-91c2-4d94-8f2e-b273bf8c3b0b
+			defaultHierarchy: LocalDateTable_6e655013-bf94-416c-9d1e-874b47836ee9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Approved Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 216c0c37-3a68-438b-89b0-9060af2d1fbf
+		summarizeBy: none
+		sourceColumn: Approved Date
+
+		variation Variation
+			isDefault
+			relationship: 6c044cba-d291-4f85-80f3-a3643e4dbd16
+			defaultHierarchy: LocalDateTable_2ec757bd-60af-49bf-b3d2-dd26829abd92.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'On Hold'
+		dataType: string
+		lineageTag: 41e3b61f-5de8-43cc-82b2-bd322eb5cda4
+		summarizeBy: none
+		sourceColumn: On Hold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Closed Cancelled Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 61fe9eae-bac3-4c08-ba50-6a632131f82e
+		summarizeBy: none
+		sourceColumn: Closed Cancelled Date
+
+		variation Variation
+			isDefault
+			relationship: 68c2eca4-a666-428e-b587-18027d11a2f8
+			defaultHierarchy: LocalDateTable_cb43d770-7f68-4ab8-90e0-4dc4ecd50d05.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Closed Filled Date'
+		dataType: string
+		lineageTag: be356324-4367-465c-95f7-150638fb21b8
+		summarizeBy: none
+		sourceColumn: Closed Filled Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hiring Manager First name'
+		dataType: string
+		lineageTag: 9c8a6e23-02d7-43fc-9def-57d6d5f3033d
+		summarizeBy: none
+		sourceColumn: Hiring Manager First name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hiring Manager Last Name'
+		dataType: string
+		lineageTag: 4d2b8a8f-bb8e-4585-a795-7e3bb30bb365
+		summarizeBy: none
+		sourceColumn: Hiring Manager Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition First Name'
+		dataType: string
+		lineageTag: 33512f7a-b9e1-43da-ad78-52c83a8c6759
+		summarizeBy: none
+		sourceColumn: Talent Acquisition First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Talent Acquisition Last Name'
+		dataType: string
+		lineageTag: b8beb400-d497-4df7-96d5-ebb2da33574e
+		summarizeBy: none
+		sourceColumn: Talent Acquisition Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Unit'
+		dataType: string
+		lineageTag: 917ec09c-cddd-4a90-bdf4-603e775101bc
+		summarizeBy: none
+		sourceColumn: Business Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cost Center'
+		dataType: string
+		lineageTag: ed8962e5-016f-4123-8cf0-e7f259f28a82
+		summarizeBy: none
+		sourceColumn: Cost Center
+
+		annotation SummarizationSetBy = Automatic
+
+	column Function
+		dataType: string
+		lineageTag: 8fed2ddf-edbc-49dd-9be2-72843f4cf0a7
+		summarizeBy: none
+		sourceColumn: Function
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Code'
+		dataType: string
+		lineageTag: ee683f87-267e-4ac4-b01f-407504989ab1
+		summarizeBy: none
+		sourceColumn: Job Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Grade'
+		dataType: string
+		lineageTag: e3218c0a-53f5-4ef9-ae71-5aa856891987
+		summarizeBy: none
+		sourceColumn: Job Grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Type'
+		dataType: string
+		lineageTag: 6bf55468-7912-42c1-9bf7-3644b8b8e617
+		summarizeBy: none
+		sourceColumn: Job Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Legal Entity'
+		dataType: string
+		lineageTag: 5fbae4a5-144a-4518-9d6b-3eb562eb9315
+		summarizeBy: none
+		sourceColumn: Legal Entity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Notes
+		dataType: string
+		lineageTag: a151fc2c-ecbd-4a3b-877b-ebb5aef836f5
+		summarizeBy: none
+		sourceColumn: Notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pay Grade'
+		dataType: string
+		lineageTag: 352aad94-aef7-4638-a4e8-f982ca88a065
+		summarizeBy: none
+		sourceColumn: Pay Grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Position Subtype'
+		dataType: string
+		lineageTag: b659dcae-710f-489b-8a39-ee8e1ee56ea7
+		summarizeBy: none
+		sourceColumn: Position Subtype
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Org Level Cons'
+		dataType: string
+		lineageTag: f0305542-e1c5-4788-96b3-e0306d3889e5
+		summarizeBy: none
+		sourceColumn: Org Level Cons
+
+		annotation SummarizationSetBy = Automatic
+
+	column Evergreen
+		dataType: string
+		lineageTag: 934fa50a-f42a-45be-bc7d-291c0f0f0f05
+		summarizeBy: none
+		sourceColumn: Evergreen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: 9efc94e7-2ca7-485a-ad1e-6dcba1e47963
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location_2
+		dataType: string
+		lineageTag: ee1bc000-2b34-4723-80ed-d7fd174383a0
+		summarizeBy: none
+		sourceColumn: Location_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location_Complete
+		dataType: string
+		lineageTag: 9be5ff37-2772-414e-9fab-36dee3fc9f69
+		summarizeBy: none
+		sourceColumn: Location_Complete
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 73c7d4bc-7324-4ebe-8c27-3c24d1b8e81c
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 76c8d1f2-d670-4748-9a6f-bb829481d101
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason for Requisition'
+		dataType: string
+		lineageTag: 3996045c-5fdb-47d5-93f1-aa2ff9bcc2b0
+		summarizeBy: none
+		sourceColumn: Reason for Requisition
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'In R1?'
+		dataType: string
+		lineageTag: 1fa44b1d-b8ed-4109-be7e-086a36b44c8e
+		summarizeBy: none
+		sourceColumn: In R1?
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RD1_Details = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\DIMATM\OneDrive - Korn Ferry\Desktop\newmont\Req Details - File #1.xlsx"), null, true),
+				    rd_1_Table = Source{[Item="rd_1",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(rd_1_Table,{{"Job Req ID", Int64.Type}, {"SAP Position ID", type any}, {"Job Title", type text}, {"Number of Openings", Int64.Type}, {"Number of Openings Remaining", Int64.Type}, {"Openings Filled (DEPRECATED)", Int64.Type}, {"Requisition Status", type text}, {"Date Created", type datetime}, {"Approved Date", type datetime}, {"On Hold", type any}, {"Closed Cancelled Date", type datetime}, {"Closed Filled Date", type any}, {"Hiring Manager First name", type text}, {"Hiring Manager Last Name", type text}, {"Talent Acquisition First Name", type text}, {"Talent Acquisition Last Name", type text}, {"Business Unit", type any}, {"Cost Center", type text}, {"Function", type text}, {"Job Code", type text}, {"Job Grade", type any}, {"Job Type", type any}, {"Legal Entity", type text}, {"Notes", type any}, {"Pay Grade", type text}, {"Position Subtype", type any}, {"Org Level Cons", type text}, {"Evergreen", type text}, {"Location", type any}, {"Location_2", type text}, {"Location_Complete", type any}, {"Region", type text}, {"Country", type text}, {"Reason for Requisition", type text}, {"In R1?", type any}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

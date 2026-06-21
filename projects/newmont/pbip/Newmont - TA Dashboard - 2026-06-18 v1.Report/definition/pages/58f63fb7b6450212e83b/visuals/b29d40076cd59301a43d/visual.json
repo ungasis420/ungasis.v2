@@ -1,0 +1,191 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "b29d40076cd59301a43d",
+  "position": {
+    "x": 0,
+    "y": 71,
+    "z": 1000,
+    "height": 662,
+    "width": 425,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "🚥 SLA STATUS MATRIX (June 17, 2026)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🟢 GREEN — Ready to Report (Validated)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Total Reqs: 18,935"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Closed Req Fill Rate: 77.85% (Filled ÷ Filled+Cancelled)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Avg Time to Fill: 79.74 days (calendar)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Currently On Hold: 216 (snapshot per Sondra)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Total Offers: 716"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Offer Accept Rate: 51.4% (Status=\"Accepted\" + Accept Date)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🟡 YELLOW — Needs Verification"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Avg Hold Duration: 47.61 days (Test_Onhold field — methodology pending)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Total Hired: 491 (gap vs Offers Accepted 368 — Hired On lifecycle Q)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Job Ad Posted within 1 BD: R2 dates exist, baseline pending"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Offer Acceptance Rate (40.31%): March SLA analysis said not reportable"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Candidate Pipeline Funnel: R4 ingestion pending Phase 4"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Approved → Accept (132.38 days): applicant grain, requires verification"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "🔴 RED — Blocked / Not Reportable"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Close Reqs within 1 Business Day"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Source / Channel mix"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "ℹ️ Hold metrics reflect data through April 2025. Refresh through June 2026 pending (Phase 4).",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "14px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
