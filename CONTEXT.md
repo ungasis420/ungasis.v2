@@ -40,9 +40,9 @@ v6.3 JARVIS Score + Commands Page (June 14, 2026)
 - D16: M365 Copilot instructions auto-generated from CLAUDE.md + system state
 
 ## Pending (Next Session)
-1. Graph community re-labeling (improve context-inject relevance)
-2. Verify one-shot-build.ps1 end-to-end with task-router + pre/post-flight pipeline on a real task
-3. UNGASIS enters MAINTENANCE MODE  only fix bugs, no new features
+1. Token-reduction validation phase: run 3 normal small Claude Code sessions using session-close-light.ps1 and compare against ~20,080 baseline.
+2. Newmont QIM Phase 4 Wave 1: Costa Rica filter + HM/BU slicers (Sondra's June 18 scope).
+3. Backlog: fix session-capture.py slash-command parser (lines 95-113) so /goal is detected from command-name entries, not just plain text.
 
 ## Projects
 | Project | Version | Status | Next |
