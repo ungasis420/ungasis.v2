@@ -12,6 +12,8 @@
 
 ## What Is This?
 
+In short: UNGASIS turns scattered notes, scripts, and AI agent workflows into one self-tracking system you run from this repo.
+
 UNGASIS OS is a complete ecosystem of **30+ markdown knowledge modules** that serve as your personal AI builder's operating system. It covers everything from idea capture → validation → build → deploy → monetization — using a **free-first tool stack** with 110+ tools and 30 API keys.
 
 ## Key Numbers
