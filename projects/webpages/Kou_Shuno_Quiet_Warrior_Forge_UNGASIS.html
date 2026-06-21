@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kou.Shuno — The Quiet Warrior's Forge | by UNGASIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#08070d;--obs:#0d0a14;--sf:rgba(255,255,255,.04);--sf2:rgba(255,255,255,.07);--bd:rgba(255,255,255,.1);
+  --cr:#dc2626;--cr2:#ef4444;--bl:#7f1d1d;
+  --gd:#d4af37;--gd2:#fbbf24;--gd3:#f5e6a8;
+  --rs:#fda4af;--rs2:#fb7185;
+  --jd:#10b981;--jd2:#34d399;
+  --tx:#e5e7eb;--dm:#9ca3af;--br:#fafaf9;--cr-soft:#fee2e2;
+  --blur:24px;--r:18px;--rsm:12px;
+  --ff:'Cinzel',serif;--fm:'JetBrains Mono',monospace;--fb:'Inter',system-ui,sans-serif;
+  --e:cubic-bezier(.4,0,.2,1)
+}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--fb);background:var(--bg);color:var(--tx);line-height:1.7;overflow-x:hidden}
+::selection{background:var(--gd);color:var(--bg)}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(212,175,55,.4);border-radius:3px}
+
+canvas#fx{position:fixed;inset:0;z-index:0;pointer-events:none}
+.sky{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 20% 15%,rgba(220,38,38,.10),transparent 50%),radial-gradient(ellipse at 85% 85%,rgba(212,175,55,.07),transparent 50%),linear-gradient(180deg,#08070d 0%,#0d0a14 50%,#08070d 100%)}
+.prog{position:fixed;top:0;left:0;height:2px;z-index:10001;background:linear-gradient(90deg,var(--cr),var(--gd),var(--rs));width:0;box-shadow:0 0 10px rgba(212,175,55,.5)}
+
+.g{background:var(--sf);backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r);transition:all .4s var(--e)}
+.g:hover{border-color:rgba(212,175,55,.4);box-shadow:0 12px 40px rgba(212,175,55,.08);transform:translateY(-2px)}
+.gs{background:var(--sf);backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r)}
+
+nav{position:fixed;top:2px;left:0;right:0;z-index:10000;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;background:rgba(8,7,13,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--bd)}
+.logo{font-family:var(--ff);font-weight:900;font-size:1.2rem;background:linear-gradient(135deg,var(--cr2),var(--gd),var(--rs));-webkit-background-clip:text;-webkit-text-fill-color:transparent;cursor:pointer;letter-spacing:.18em;text-transform:uppercase}
+.lnk{display:flex;gap:2px;flex-wrap:wrap}
+.lnk a{color:var(--dm);text-decoration:none;font-size:.72rem;font-weight:600;padding:7px 11px;border-radius:8px;transition:all .25s;white-space:nowrap;letter-spacing:.1em;text-transform:uppercase;font-family:var(--fm)}
+.lnk a:hover,.lnk a.on{color:var(--gd);background:rgba(212,175,55,.08)}
+.ham{display:none;background:0;border:0;color:var(--br);font-size:1.5rem;cursor:pointer}
+@media(max-width:960px){.lnk{display:none}.lnk.open{display:flex;flex-direction:column;position:absolute;top:54px;left:0;right:0;background:rgba(8,7,13,.97);padding:14px;border-bottom:1px solid var(--bd);z-index:9999}.ham{display:block}}
+
+.pg{display:none;opacity:0;transform:translateY(14px);transition:.5s}.pg.on{display:block;opacity:1;transform:none}
+.wr{max-width:1200px;margin:auto;padding:96px 24px 64px}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 24px;position:relative}
+.crest{font-size:1.4rem;margin-bottom:12px;letter-spacing:.5em;color:var(--gd);font-weight:300;opacity:.7}
+.badge{display:inline-flex;gap:10px;align-items:center;border:1px solid rgba(212,175,55,.35);background:rgba(212,175,55,.05);color:var(--gd);border-radius:0;padding:9px 24px;font-weight:600;font-size:.74rem;margin-bottom:26px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--fm)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--cr2);animation:pu 2.4s infinite}@keyframes pu{50%{opacity:.3}}
+h1{font-family:var(--ff);font-size:clamp(2.6rem,8.5vw,5.6rem);line-height:.95;font-weight:900;letter-spacing:.04em;background:linear-gradient(135deg,var(--cr2) 0%,var(--gd) 50%,var(--rs) 100%);background-size:280% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:sh 9s linear infinite;text-transform:uppercase}
+@keyframes sh{to{background-position:280% center}}
+.tagline{font-family:var(--ff);font-style:italic;color:var(--gd);font-size:clamp(1rem,2vw,1.3rem);margin-top:20px;letter-spacing:.16em;font-weight:500;text-transform:uppercase;opacity:.9}
+.sub{max-width:780px;color:var(--dm);font-size:clamp(.98rem,2.2vw,1.18rem);margin-top:22px;font-weight:300;line-height:1.65}
+.cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:38px}
+.btn{border:0;border-radius:0;padding:14px 32px;font-weight:700;font-size:.78rem;cursor:pointer;font-family:var(--fm);transition:all .4s var(--e);letter-spacing:.18em;text-transform:uppercase}
+.pri{background:linear-gradient(135deg,var(--cr),var(--cr2));color:var(--br);box-shadow:0 6px 24px rgba(220,38,38,.3)}
+.pri:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(220,38,38,.45)}
+.gho{background:0;color:var(--gd);border:1px solid rgba(212,175,55,.4)}
+.gho:hover{background:rgba(212,175,55,.06);border-color:var(--gd)}
+
+/* PANTHEON QUOTE BLOCK */
+.pantheon{margin-top:42px;max-width:680px;padding:28px 32px;border-left:2px solid var(--gd);background:rgba(212,175,55,.03);text-align:left;backdrop-filter:blur(20px)}
+.pantheon-quote{font-family:var(--ff);font-style:italic;font-size:1.15rem;color:var(--gd3);line-height:1.6;letter-spacing:.01em}
+.pantheon-author{font-family:var(--fm);color:var(--gd);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;margin-top:14px;font-weight:700}
+
+/* SECTION HEADINGS */
+.sh{display:flex;gap:16px;align-items:center;margin:0 0 28px;padding-bottom:16px;border-bottom:1px solid var(--bd)}
+.sn{width:50px;height:50px;border-radius:0;display:grid;place-items:center;font-weight:900;color:var(--br);flex-shrink:0;background:linear-gradient(135deg,var(--cr),var(--bl));font-family:var(--ff);font-size:1.1rem;border:1px solid rgba(212,175,55,.3)}
+.sn.gd{background:linear-gradient(135deg,var(--gd),var(--gd2));color:var(--bg);border-color:rgba(212,175,55,.5)}
+.sn.jd{background:linear-gradient(135deg,var(--jd),var(--jd2));color:var(--bg)}
+.sn.rs{background:linear-gradient(135deg,var(--rs2),var(--cr));color:var(--br)}
+.st{font-family:var(--ff);font-size:clamp(1.4rem,3.2vw,2.1rem);font-weight:900;color:var(--br);letter-spacing:.06em;text-transform:uppercase}
+.subt{color:var(--dm);font-size:.92rem;margin-bottom:26px;font-style:italic;font-family:var(--ff);letter-spacing:.05em}
+
+/* DASHBOARD */
+.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px}
+.dn{font-family:var(--ff);font-size:2.6rem;font-weight:900;background:linear-gradient(135deg,var(--gd),var(--rs));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.04em}
+
+/* CARDS */
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:16px 0}
+.cd{padding:26px}
+.ci{font-size:2rem;margin-bottom:14px;color:var(--gd)}
+.ct{font-family:var(--ff);font-weight:700;color:var(--br);font-size:1.05rem;margin-bottom:10px;letter-spacing:.04em;text-transform:uppercase}
+.cm{color:var(--dm);font-size:.92rem;line-height:1.6}
+
+/* TABLES */
+.tw{overflow-x:auto;margin:18px 0;border-radius:var(--rsm)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--sf);border:1px solid var(--bd);border-radius:var(--rsm);overflow:hidden}
+thead{background:linear-gradient(135deg,rgba(220,38,38,.12),rgba(212,175,55,.08))}
+th{padding:13px 15px;text-align:left;font-weight:700;color:var(--br);font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;border-bottom:2px solid rgba(212,175,55,.25);font-family:var(--fm)}
+td{padding:12px 15px;border-bottom:1px solid rgba(255,255,255,.04)}
+tr:hover td{background:rgba(212,175,55,.04)}
+
+/* CALLOUTS */
+.co{padding:22px 24px;border-radius:var(--rsm);margin:18px 0;border-left:3px solid;position:relative}
+.cgd{border-color:var(--gd);background:rgba(212,175,55,.07)}
+.ccr{border-color:var(--cr);background:rgba(220,38,38,.06)}
+.cjd{border-color:var(--jd);background:rgba(16,185,129,.06)}
+.crs{border-color:var(--rs);background:rgba(253,164,175,.05)}
+.lb{font-family:var(--fm);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;margin-bottom:10px}
+
+/* PANTHEON QUOTE (in-page, smaller) */
+.pq{position:relative;padding:22px 26px 22px 60px;border-radius:var(--rsm);margin:18px 0;background:linear-gradient(135deg,rgba(212,175,55,.05),rgba(220,38,38,.03));border-left:2px solid var(--gd)}
+.pq:before{content:'“';position:absolute;top:0px;left:14px;font-size:5rem;color:var(--gd);font-family:var(--ff);font-weight:900;line-height:1;opacity:.4}
+.pq-text{font-family:var(--ff);font-style:italic;color:var(--gd3);font-size:1.05rem;line-height:1.55;letter-spacing:.01em}
+.pq-author{font-family:var(--fm);color:var(--gd);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-top:10px;font-weight:700}
+
+/* TIMELINE */
+.tl{position:relative;padding-left:38px;margin:22px 0}
+.tl:before{content:'';position:absolute;left:14px;top:0;bottom:0;width:1px;background:linear-gradient(var(--cr),var(--gd),var(--rs),var(--jd))}
+.ti{position:relative;margin-bottom:20px;padding:14px 18px;background:var(--sf);border:1px solid var(--bd);border-radius:var(--rsm)}
+.td{position:absolute;left:-31px;top:18px;width:14px;height:14px;border-radius:50%;border:2px solid var(--bg);box-shadow:0 0 12px rgba(212,175,55,.5)}
+
+/* BAR CHARTS */
+.bi{margin-bottom:12px}
+.bl{display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:5px;font-family:var(--fm);letter-spacing:.05em}
+.bt{height:30px;border-radius:0;background:rgba(255,255,255,.05);overflow:hidden;border:1px solid var(--bd)}
+.bf{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:14px;font-size:.7rem;font-weight:700;color:var(--bg);transition:width 1.8s var(--e);letter-spacing:.1em;text-transform:uppercase;font-family:var(--fm)}
+
+/* CHECKLIST */
+.chk{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.04);cursor:pointer;transition:padding-left .3s var(--e)}
+.chk:hover{padding-left:6px}
+.cbx{width:22px;height:22px;flex:0 0 22px;border:1px solid var(--gd);border-radius:0;margin-top:3px;display:grid;place-items:center;background:transparent;transition:all .3s}
+.chk.dn .cbx{background:var(--gd);border-color:var(--gd)}
+.chk.dn .cbx:after{content:'✓';color:var(--bg);font-weight:900;font-size:.78rem}
+.chk.dn .chtx{text-decoration:line-through;color:var(--dm)}
+
+/* CALCULATOR */
+.cf input{width:100%;padding:12px 14px;border-radius:0;border:1px solid var(--bd);background:var(--obs);color:var(--gd);font-size:1rem;font-family:var(--fm);outline:none;letter-spacing:.05em;font-weight:700}
+.cf input:focus{border-color:var(--gd)}
+.cf label{display:block;color:var(--dm);font-weight:600;font-size:.72rem;margin-bottom:6px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--fm)}
+.big{font-family:var(--ff);font-size:2.8rem;font-weight:900;background:linear-gradient(135deg,var(--gd),var(--jd2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:.04em}
+
+/* GLOSSARY */
+.gls{width:min(460px,100%);padding:13px 20px;border-radius:0;border:1px solid var(--bd);background:var(--obs);color:var(--gd);font-size:.95rem;font-family:var(--fm);outline:none;margin-bottom:20px;letter-spacing:.05em}
+.gls:focus{border-color:var(--gd)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.gt{color:var(--gd);font-weight:700;font-size:.92rem;margin-bottom:6px;font-family:var(--ff);letter-spacing:.05em;text-transform:uppercase}
+
+/* PILLARS (7 PILLARS) */
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0}
+.pillar{padding:20px 16px;text-align:center;background:var(--sf);border:1px solid var(--bd);border-top:2px solid var(--gd);border-radius:0;transition:all .4s var(--e)}
+.pillar:hover{background:rgba(212,175,55,.05);transform:translateY(-3px)}
+.pillar-num{font-family:var(--fm);font-size:.7rem;color:var(--gd);letter-spacing:.2em;margin-bottom:8px}
+.pillar-name{font-family:var(--ff);font-size:1.1rem;color:var(--br);font-weight:700;margin-bottom:6px;letter-spacing:.08em;text-transform:uppercase}
+.pillar-desc{font-size:.82rem;color:var(--dm);line-height:1.5}
+
+/* BUTTONS / BACK TO TOP */
+.bk{position:fixed;right:24px;bottom:24px;width:50px;height:50px;border-radius:0;border:1px solid var(--gd);background:rgba(8,7,13,.9);color:var(--gd);font-size:1.1rem;font-weight:900;cursor:pointer;opacity:0;transform:translateY(16px);transition:all .35s var(--e);z-index:9999;backdrop-filter:blur(12px);font-family:var(--fm)}
+.bk.v{opacity:1;transform:none}
+.bk:hover{background:var(--gd);color:var(--bg)}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.vis{opacity:1;transform:none}
+
+/* DIVIDER */
+.divider{display:flex;align-items:center;gap:18px;margin:36px 0;color:var(--gd);font-family:var(--ff);font-size:1rem;letter-spacing:.5em;text-transform:uppercase;opacity:.6}
+.divider:before,.divider:after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.3),transparent)}
+
+/* RITUAL BLOCKS */
+.ritual{padding:20px 22px;background:rgba(212,175,55,.04);border:1px solid rgba(212,175,55,.18);border-radius:var(--rsm);margin:12px 0}
+.ritual-time{font-family:var(--fm);font-size:.7rem;color:var(--gd);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.ritual-title{font-family:var(--ff);color:var(--br);font-size:1.05rem;font-weight:700;letter-spacing:.05em;margin-bottom:8px;text-transform:uppercase}
+.ritual-body{color:var(--dm);font-size:.88rem;line-height:1.6}
+
+/* FOOTER */
+footer{text-align:center;padding:54px 24px;color:var(--dm);font-size:.78rem;border-top:1px solid var(--bd);margin-top:42px}
+footer .quote{font-family:var(--ff);font-style:italic;font-size:1.15rem;color:var(--gd);max-width:640px;margin:0 auto 18px;letter-spacing:.04em}
+
+@media(max-width:600px){.cg{grid-template-columns:1fr}.dg{grid-template-columns:repeat(2,1fr)}h1{font-size:2.4rem}}
+@media print{nav,.prog,.bk,canvas,.sky{display:none!important}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div><canvas id="fx"></canvas><div class="prog" id="prog"></div>
+
+<nav>
+<div class="logo" onclick="go('home')">◉ Kou.Shuno</div>
+<button class="ham" onclick="document.querySelector('.lnk').classList.toggle('open')">☰</button>
+<div class="lnk" id="lnk">
+<a href="#" onclick="go('home')" class="on" data-p="home">Forge</a>
+<a href="#" onclick="go('mind')" data-p="mind">Mind</a>
+<a href="#" onclick="go('strat')" data-p="strat">Strategy</a>
+<a href="#" onclick="go('paths')" data-p="paths">Paths</a>
+<a href="#" onclick="go('plan')" data-p="plan">30 Days</a>
+<a href="#" onclick="go('money')" data-p="money">Sovereignty</a>
+<a href="#" onclick="go('ai')" data-p="ai">AI</a>
+<a href="#" onclick="go('tools')" data-p="tools">Arsenal</a>
+<a href="#" onclick="go('codex')" data-p="codex">Codex</a>
+</div>
+</nav>
+
+<!-- ==================== HOME / THE FORGE ==================== -->
+<div class="pg on" id="pg-home">
+<section class="hero">
+<div class="crest">◆ ◆ ◆</div>
+<div class="badge"><span class="dot"></span> The Quiet Warrior's Forge · v1.0</div>
+<h1>Kou.Shuno</h1>
+<p class="tagline">Magna Cum Laude. Strategist. Sovereign.</p>
+<p class="sub">A psychology graduate who turned analytics into a quiet weapon. An introvert who reads rooms others cannot. A warrior who fights without raising her voice. This forge is built for the woman who has been underestimating herself for too long.</p>
+<div class="cta">
+<button class="btn pri" onclick="go('mind')">◉ Enter the Forge</button>
+<button class="btn gho" onclick="go('strat')">View Strategy</button>
+<button class="btn gho" onclick="go('plan')">30-Day Path</button>
+</div>
+
+<!-- ROTATING PANTHEON HERO QUOTE -->
+<div class="pantheon">
+<div class="pantheon-quote" id="heroQuote">"The cave you fear to enter holds the treasure you seek."</div>
+<div class="pantheon-author" id="heroAuthor">◆ Joseph Campbell</div>
+</div>
+</section>
+
+<div class="wr">
+
+<!-- DASHBOARD: HER CREDENTIALS, REFRAMED -->
+<div class="sh"><div class="sn gd">◉</div><div class="st">Who You Already Are</div></div>
+<p class="subt">Not who you might become. Who you have been all along.</p>
+<div class="dg" style="margin-bottom:32px">
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c1">0</div><div class="cm" style="font-family:var(--fm);letter-spacing:.1em;text-transform:uppercase;font-size:.7rem">Magna Cum Laude</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c2">0</div><div class="cm" style="font-family:var(--fm);letter-spacing:.1em;text-transform:uppercase;font-size:.7rem">Years HR Analytics</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c3">0</div><div class="cm" style="font-family:var(--fm);letter-spacing:.1em;text-transform:uppercase;font-size:.7rem">Steps from a VP</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c4">0</div><div class="cm" style="font-family:var(--fm);letter-spacing:.1em;text-transform:uppercase;font-size:.7rem">Day Path</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c5">₱0</div><div class="cm" style="font-family:var(--fm);letter-spacing:.1em;text-transform:uppercase;font-size:.7rem">Capital Required</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c6">₱80K</div><div class="cm" style="font-family:var(--fm);letter-spacing:.1em;text-transform:uppercase;font-size:.7rem">Monthly Target</div></div>
+</div>
+
+<!-- THE QUIET TRUTH -->
+<div class="sh"><div class="sn">◉</div><div class="st">The Quiet Truth No One Has Spoken Out Loud</div></div>
+
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ First, Some Truth</div>
+<div style="color:var(--br);font-size:1.02rem;line-height:1.7">You graduated <b>Magna Cum Laude in Psychology from PLM</b>. You have <b>5 years of analytics experience</b> reporting directly to a Vice President. You read people, you read data, and you read between the lines of both.<br><br>The imposter voice tells you that you are not enough. <b style="color:var(--gd)">The voice is lying.</b> Read your own resume slowly. That woman is formidable. The work now is not to become her — it is to <b style="color:var(--gd)">recognize that you already are her.</b></div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"You are afraid because you are valuable. The afraid are not weak — they are guarding something worth guarding."</div>
+<div class="pq-author">◆ Adapted from Jordan Peterson</div>
+</div>
+
+<!-- WHAT THIS FORGE IS -->
+<div class="cg" style="margin-top:30px">
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">A Mirror, Not a Mountain</div><div class="cm">This is not a course to climb. It is a mirror that shows you what is already true. Walk through it slowly. Sit with what stings.</div></div>
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">Built for Quiet Power</div><div class="cm">The world rewards the loud. This forge is built for the woman whose strategy is silence, whose weapons are observation and patience.</div></div>
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">Knowledge → Execution</div><div class="cm">You already know enough. The forge is designed to attack the gap between knowing and doing — with kindness, but without mercy.</div></div>
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">Sovereignty, Not Hustle</div><div class="cm">No grinding. No hustle culture. Sovereignty is built by a queen who refuses to chase what should be brought to her door.</div></div>
+</div>
+
+<div class="divider">◆     ◆     ◆</div>
+
+<div class="co crs">
+<div class="lb" style="color:var(--rs)">◆ A Note from the Pantheon</div>
+<div style="font-family:var(--ff);font-style:italic;color:var(--gd3);font-size:1.05rem;line-height:1.7">"Sometimes the strongest thing a woman can do is not become someone new — but stop apologizing for the woman she already is. The work is not to add. The work is to subtract the lies."</div>
+<div class="pq-author" style="margin-top:14px">◆ In the spirit of Donna Paulsen</div>
+</div>
+
+</div></div>
+
+<!-- ==================== MIND / THE MINDSET FORGE ==================== -->
+<div class="pg" id="pg-mind"><div class="wr">
+<div class="sh"><div class="sn">1</div><div class="st">The Mindset Forge</div></div>
+<p class="subt">Before strategy. Before money. The mind must be steady.</p>
+
+<div class="pq">
+<div class="pq-text">"You wield more power than you know. Step into your power."</div>
+<div class="pq-author">◆ The Ancient One</div>
+</div>
+
+<!-- THE IMPOSTER ANTIDOTE -->
+<div class="sh" style="margin-top:36px"><div class="sn rs">2</div><div class="st">The Imposter Antidote</div></div>
+<p class="subt">Five evidence-based reframes for the voice that whispers \"you don't belong.\"</p>
+
+<div class="co ccr">
+<div class="lb" style="color:var(--cr2)">◆ Diagnosis First</div>
+<div style="color:var(--tx)">Imposter syndrome is not a sign that you are a fraud. It is a sign that you are <b style="color:var(--gd)">underestimating your own evidence</b> while overestimating everyone else's confidence. Confidence is not data. <b style="color:var(--gd)">Your credentials are data.</b></div>
+</div>
+
+<div class="cg" style="margin-top:18px">
+<div class="g cd rv">
+<div class="ci">◉</div>
+<div class="ct">Reframe 1 — The Receipts</div>
+<div class="cm">Write your credentials on paper: PLM Magna Cum Laude. 5 years analytics. Direct to a VP. <b style="color:var(--gd)">Read it out loud.</b> Imposter syndrome cannot survive contact with your own receipts.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">◉</div>
+<div class="ct">Reframe 2 — The Comparison Tax</div>
+<div class="cm">You compare your <i>inside</i> (doubt, fear) to other people's <i>outside</i> (polish, posture). This is a rigged game. Stop playing it. Compare your work to your own past work — nothing else.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">◉</div>
+<div class="ct">Reframe 3 — The Threshold</div>
+<div class="cm">If you were truly unqualified, you would not have imposter syndrome. <b style="color:var(--gd)">Real imposters do not feel like imposters.</b> The fact that you check yourself is proof that you are awake.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">◉</div>
+<div class="ct">Reframe 4 — The Cost of Hiding</div>
+<div class="cm">Every hour you hide your work is an hour someone less skilled takes the room. The world does not benefit from your modesty. It is hurt by it. Step forward.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">◉</div>
+<div class="ct">Reframe 5 — The 70% Rule</div>
+<div class="cm">If you are 70% ready, ship it. The remaining 30% is learned by doing, not by waiting. Perfectionism is procrastination wearing makeup.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">◉</div>
+<div class="ct">The Daily Ritual</div>
+<div class="cm">Each morning, read this aloud: <i style="color:var(--gd)">"I am qualified. I am observant. I am rare. I do not need permission to be the woman I already am."</i></div>
+</div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"Doubt kills more dreams than failure ever will. The cave you are avoiding is the one with your gold in it."</div>
+<div class="pq-author">◆ In the spirit of Joseph Campbell + Robert Greene</div>
+</div>
+
+<!-- THE 7 PILLARS -->
+<div class="sh" style="margin-top:36px"><div class="sn gd">3</div><div class="st">The 7 Pillars</div></div>
+<p class="subt">Your inner architecture. Built from the pantheon. Carried forever.</p>
+
+<div class="pillars">
+<div class="pillar rv"><div class="pillar-num">PILLAR I</div><div class="pillar-name">Truth</div><div class="pillar-desc">See clearly. Stop softening reality. The truth, even painful, is your friend.</div></div>
+<div class="pillar rv"><div class="pillar-num">PILLAR II</div><div class="pillar-name">Compassion</div><div class="pillar-desc">For yourself first. Talk to yourself the way Donna would talk to Harvey.</div></div>
+<div class="pillar rv"><div class="pillar-num">PILLAR III</div><div class="pillar-name">Strategy</div><div class="pillar-desc">Think 10 moves ahead. Sun Tzu won battles before they began. So will you.</div></div>
+<div class="pillar rv"><div class="pillar-num">PILLAR IV</div><div class="pillar-name">Discipline</div><div class="pillar-desc">Show up when you do not feel like it. Musashi practiced when no one watched.</div></div>
+<div class="pillar rv"><div class="pillar-num">PILLAR V</div><div class="pillar-name">Patience</div><div class="pillar-desc">Wisdom is slow. Solomon waited. Ragnar studied the sea before he sailed.</div></div>
+<div class="pillar rv"><div class="pillar-num">PILLAR VI</div><div class="pillar-name">Sovereignty</div><div class="pillar-desc">You answer to no one but the woman you intend to become. Crown yourself.</div></div>
+<div class="pillar rv"><div class="pillar-num">PILLAR VII</div><div class="pillar-name">Mastery</div><div class="pillar-desc">A lifetime craft. Not a finish line. The Pantheon serve mastery, not approval.</div></div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"I don't have dreams. I have goals. Now I am moving toward them."</div>
+<div class="pq-author">◆ In the spirit of Harvey Specter</div>
+</div>
+
+<!-- THE WALLFLOWER'S EDGE -->
+<div class="sh" style="margin-top:36px"><div class="sn jd">4</div><div class="st">The Wallflower's Edge</div></div>
+<p class="subt">Your introversion is not a flaw. It is a moat the loud cannot cross.</p>
+
+<div class="co cjd">
+<div class="lb" style="color:var(--jd2)">◆ The Hidden Math</div>
+<div style="color:var(--tx)">Loud people gather attention. <b style="color:var(--gd)">Quiet people gather data.</b> In HR analytics — your field — the second is worth more. The wallflower sees patterns the room misses. She is paid for what she notices, not what she announces.</div>
+</div>
+
+<div class="tw"><table><thead><tr><th>The Lie You Were Told</th><th>The Truth The Pantheon Teaches</th></tr></thead><tbody>
+<tr><td>Introverts must learn to be louder.</td><td>Introverts must learn to be <b style="color:var(--gd)">selectively visible</b>. Speak rarely. When you do, the room listens.</td></tr>
+<tr><td>You need to network like extroverts do.</td><td>You need <b style="color:var(--gd)">three strong allies</b>, not 300 contacts. Quality over volume. Robert Greene knew this.</td></tr>
+<tr><td>You should pretend to enjoy small talk.</td><td>You should master <b style="color:var(--gd)">substantial questions</b>. People remember those who made them think, not those who agreed.</td></tr>
+<tr><td>You are too sensitive.</td><td>You are <b style="color:var(--gd)">accurately calibrated</b>. The world is harsh because most are dulled. You feel correctly.</td></tr>
+<tr><td>You need to put yourself out there.</td><td>You need to <b style="color:var(--gd)">build assets that find clients without you</b>. Your dashboards. Your writing. Your AI workflows.</td></tr>
+</tbody></table></div>
+
+<div class="pq">
+<div class="pq-text">"In the midst of chaos, there is also opportunity. The wise observe; the foolish react."</div>
+<div class="pq-author">◆ Sun Tzu</div>
+</div>
+
+<!-- KNOWLEDGE TO EXECUTION BRIDGE -->
+<div class="sh" style="margin-top:36px"><div class="sn">5</div><div class="st">From Knowledge to Execution</div></div>
+<p class="subt">The hardest war you will fight. The most important one too.</p>
+
+<div class="co ccr">
+<div class="lb" style="color:var(--cr2)">◆ The Diagnosis</div>
+<div style="color:var(--tx)">You read. You learn. You research. You collect frameworks like Donna collects power moves. But execution is where the war is won. <b style="color:var(--gd)">Perfectionism is procrastination wearing a tailored suit.</b> The pantheon will not let you hide behind it anymore.</div>
+</div>
+
+<div class="cg" style="margin-top:18px">
+<div class="g cd"><div class="ci">◉</div><div class="ct">The 24-Hour Rule</div><div class="cm">No insight gets to live in your head past 24 hours. Either ship it, write it, message it, or kill it. Ideas that loiter become regrets.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">The 70% Ship</div><div class="cm">When something feels 70% ready, it is ready. The last 30% only reveals itself in the wild. Musashi did not perfect the sword before he drew it.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Done > Perfect</div><div class="cm">Three rough things shipped beat one perfect thing in your drafts folder. Always. Always. Always.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Daily Smallest Win</div><div class="cm">One small finished thing per day. Sent. Posted. Closed. Shipped. The compounding of these defeats any 5-year plan.</div></div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"Trauma is not what happens to you. Trauma is what happens inside you, as a result of what happened to you. The healing begins when you stop blaming yourself for the wound."</div>
+<div class="pq-author">◆ Gabor Maté</div>
+</div>
+
+<!-- WARRIOR RITUALS -->
+<div class="sh" style="margin-top:36px"><div class="sn">6</div><div class="st">The Daily Rituals</div></div>
+<p class="subt">Three durations. Pick what your day can hold. Do not skip.</p>
+
+<div class="ritual rv">
+<div class="ritual-time">§ The 3-Minute Ritual — For the hardest mornings</div>
+<div class="ritual-title">The Breath • The Receipt • The Move</div>
+<div class="ritual-body">Three slow breaths. Read your credentials aloud. Choose one small action and do it before the doubt finishes its sentence.</div>
+</div>
+
+<div class="ritual rv">
+<div class="ritual-time">§ The 10-Minute Ritual — Standard practice</div>
+<div class="ritual-title">Sit • Read • Plan • Move</div>
+<div class="ritual-body">2 min stillness. 3 min reading (Pantheon quote, philosophy, or strategy). 3 min plan today's one shipping move. 2 min start the move.</div>
+</div>
+
+<div class="ritual rv">
+<div class="ritual-time">§ The 20-Minute Ritual — The forge day</div>
+<div class="ritual-title">Steel • Stoic • Strategist • Ship</div>
+<div class="ritual-body">5 min breathing or stretching. 5 min reading (Aurelius, Seneca, Peterson, Maté). 5 min strategy review of the week. 5 min start the most important shipping move.</div>
+</div>
+
+<div class="pq" style="margin-top:30px">
+<div class="pq-text">"It is not the man who has too little, but the man who craves more, that is poor."</div>
+<div class="pq-author">◆ Seneca</div>
+</div>
+
+</div></div>
+
+<!-- ==================== STRATEGY ==================== -->
+<div class="pg" id="pg-strat"><div class="wr">
+<div class="sh"><div class="sn gd">7</div><div class="st">The Strategy</div></div>
+<p class="subt">Where psychology, data, and patience converge into a weapon.</p>
+
+<div class="pq">
+<div class="pq-text">"Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat."</div>
+<div class="pq-author">◆ Sun Tzu</div>
+</div>
+
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ Your Rare Trinity</div>
+<div style="color:var(--br);font-size:1.02rem;line-height:1.7">Most analysts know numbers. Most psychologists understand people. <b style="color:var(--gd)">You do both — inside HR — reporting to a VP.</b> This trinity (Psychology + Data + Strategic Access) is uncommon enough that it commands premium rates the moment you stop hiding it.</div>
+</div>
+
+<!-- THE PROFILE -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">Your Strategic Profile</h3>
+<div class="tw"><table><thead><tr><th>Asset</th><th>Market Value</th><th>The Quiet Weapon</th></tr></thead><tbody>
+<tr><td><b style="color:var(--gd)">PLM Magna Cum Laude</b></td><td>Filter pass to premium roles</td><td>You belong in any conversation. Stop apologizing.</td></tr>
+<tr><td><b style="color:var(--gd)">BS Psychology</b></td><td>The "why behind the data" advantage</td><td>You see patterns spreadsheet jockeys cannot see.</td></tr>
+<tr><td><b style="color:var(--gd)">5+ Years HR Analytics</b></td><td>$15-$35/hr remote ceiling</td><td>Senior-level. Not junior. Charge accordingly.</td></tr>
+<tr><td><b style="color:var(--gd)">VP-Direct Reporting</b></td><td>Executive vocabulary</td><td>You already speak the language of senior leaders.</td></tr>
+<tr><td><b style="color:var(--gd)">Introversion</b></td><td>Pattern-recognition moat</td><td>You see what the loud miss. This is your edge.</td></tr>
+<tr><td><b style="color:var(--gd)">QC Location / Remote-Ready</b></td><td>Low overhead, global reach</td><td>EU/US/AU clients all become possible.</td></tr>
+</tbody></table></div>
+
+<!-- THE 3-PHASE STRATEGIC PATH -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">The 3 Phases</h3>
+<div class="tl">
+<div class="ti"><div class="td" style="background:var(--cr)"></div><b style="color:var(--cr2);font-family:var(--fm);letter-spacing:.15em;font-size:.8rem;text-transform:uppercase">Phase I — Position (Weeks 1-2)</b><div style="color:var(--dm);margin-top:6px">Stay employed. Update LinkedIn to reflect your real strategic profile. Stop calling yourself "just an analyst." You are a People Analytics Specialist with executive access.</div></div>
+<div class="ti"><div class="td" style="background:var(--gd)"></div><b style="color:var(--gd);font-family:var(--fm);letter-spacing:.15em;font-size:.8rem;text-transform:uppercase">Phase II — Test (Weeks 3-6)</b><div style="color:var(--dm);margin-top:6px">Apply to 2 calm remote People Analytics roles per week. Build one HR dashboard portfolio piece. Take one inquiry conversation — just to prove you can.</div></div>
+<div class="ti"><div class="td" style="background:var(--rs)"></div><b style="color:var(--rs);font-family:var(--fm);letter-spacing:.15em;font-size:.8rem;text-transform:uppercase">Phase III — Cross (Weeks 7-12)</b><div style="color:var(--dm);margin-top:6px">Land one calm remote role OR a first paying client. When confirmed side income meets your target — cross the bridge. Not before.</div></div>
+</div>
+
+<!-- ANTI-PERFECTIONISM PROTOCOL -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">The Anti-Perfectionism Protocol</h3>
+<p class="subt">Your strategy will fail if execution waits for certainty.</p>
+
+<div class="cg">
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">Action Trumps Analysis</div><div class="cm">Read one article. Apply it the same day. Reading without applying is sophisticated procrastination. The Pantheon does not approve.</div></div>
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">The Deadline Knife</div><div class="cm">Every task gets a hard deadline. Not "this week." Not "soon." A date and a time. The deadline is the difference between a craftsman and a daydreamer.</div></div>
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">Ship Ugly First</div><div class="cm">Version 1 is allowed to be ugly. Version 2 is allowed to be wrong. Only Version 5 needs to be excellent. Most never get to Version 5 because Version 1 stayed in drafts.</div></div>
+<div class="g cd rv"><div class="ci">◉</div><div class="ct">Public Accountability</div><div class="cm">Tell one trusted person what you will ship and when. Shame of unfulfilled commitment is the discipline you have been avoiding.</div></div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"The man who moves a mountain begins by carrying away small stones. You are not failing because you cannot move the mountain. You are failing because you are waiting for the mountain to move itself."</div>
+<div class="pq-author">◆ Adapted from Confucius</div>
+</div>
+
+<!-- STREET-SMART REALITIES -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">Street-Smart Realities</h3>
+<p class="subt">What no one will tell you because they are too kind. The Pantheon is honest.</p>
+
+<div class="tw"><table><thead><tr><th>The Polite Lie</th><th>The Street-Smart Truth</th></tr></thead><tbody>
+<tr><td>"Find your passion and money will follow."</td><td>Find what people pay for that you also do well. Passion is a fragile employer. Skill + demand is sovereign.</td></tr>
+<tr><td>"Believe in yourself."</td><td>Show yourself receipts. Belief built on evidence survives storms. Belief built on positive thinking does not.</td></tr>
+<tr><td>"Just put yourself out there."</td><td>Build a one-page case study of your best work. Send it to 10 specific people. Targeted > shouted.</td></tr>
+<tr><td>"Network more."</td><td>Cultivate 3 strong relationships per quarter. Quality compounds; quantity exhausts.</td></tr>
+<tr><td>"Charge what you are worth."</td><td>Charge what the market pays for your trinity. Then raise it every quarter until clients flinch. Flinch = your price.</td></tr>
+<tr><td>"You can do anything you set your mind to."</td><td>You can master 1-2 things if you stop trying to master 5. Focus is the rarest discipline.</td></tr>
+</tbody></table></div>
+
+<div class="pq">
+<div class="pq-text">"When you want something, all the universe conspires — but only after you have stopped waiting and started moving."</div>
+<div class="pq-author">◆ Adapted from Coelho + Marcus Aurelius</div>
+</div>
+</div></div>
+
+<!-- ==================== INCOME PATHS ==================== -->
+<div class="pg" id="pg-paths"><div class="wr">
+<div class="sh"><div class="sn rs">8</div><div class="st">The Income Paths</div></div>
+<p class="subt">Ranked for the quiet warrior. Calm-first. Premium-first.</p>
+
+<div class="pq">
+<div class="pq-text">"Choose your battles wisely. Many are not worth the sword's edge."</div>
+<div class="pq-author">◆ Miyamoto Musashi</div>
+</div>
+
+<div style="margin:24px 0">
+<div class="bi"><div class="bl"><span>◉ People Analytics Consultant (remote)</span><span>15/15</span></div><div class="bt"><div class="bf" style="width:100%;background:linear-gradient(90deg,var(--gd),var(--gd2))">The Crown Path</div></div></div>
+<div class="bi"><div class="bl"><span>◉ HR Data / HRIS Specialist (remote)</span><span>13/15</span></div><div class="bt"><div class="bf" style="width:87%;background:linear-gradient(90deg,var(--cr2),var(--gd))">Strong Fit</div></div></div>
+<div class="bi"><div class="bl"><span>◉ Org Design / Workforce Planning</span><span>12/15</span></div><div class="bt"><div class="bf" style="width:80%;background:linear-gradient(90deg,var(--rs2),var(--cr))">Psyche + Data Edge</div></div></div>
+<div class="bi"><div class="bl"><span>◉ Productized HR Dashboards</span><span>11/15</span></div><div class="bt"><div class="bf" style="width:74%;background:linear-gradient(90deg,var(--jd),var(--gd))">Anti-Procrastination</div></div></div>
+<div class="bi"><div class="bl"><span>◉ People Analytics Templates / Course</span><span>10/15</span></div><div class="bt"><div class="bf" style="width:67%;background:linear-gradient(90deg,var(--gd),var(--rs))">Forever Asset</div></div></div>
+<div class="bi"><div class="bl"><span>◉ HR Coaching for Introverts</span><span>9/15</span></div><div class="bt"><div class="bf" style="width:60%;background:linear-gradient(90deg,var(--rs2),var(--gd))">Year 2 Premium</div></div></div>
+<div class="bi"><div class="bl"><span>◉ Remote Reporting Specialist (any industry)</span><span>9/15</span></div><div class="bt"><div class="bf" style="width:60%;background:linear-gradient(90deg,var(--jd),var(--cr))">Safe Default</div></div></div>
+<div class="bi"><div class="bl"><span>◉ Generic VA / Junior Analyst</span><span>4/15</span></div><div class="bt"><div class="bf" style="width:27%;background:linear-gradient(90deg,var(--bl),var(--cr))">Avoid</div></div></div>
+</div>
+
+<div class="tw"><table><thead><tr><th>#</th><th>Path</th><th>Income</th><th>Calm</th><th>Speed</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>1</td><td>People Analytics Consultant</td><td>5</td><td>4</td><td>4</td><td style="color:var(--jd2)">◆ Start Here</td></tr>
+<tr><td>2</td><td>HR Data / HRIS Specialist</td><td>4</td><td>5</td><td>5</td><td>Calm + Fast</td></tr>
+<tr><td>3</td><td>Org Design / Workforce Planning</td><td>5</td><td>3</td><td>3</td><td>Premium</td></tr>
+<tr><td>4</td><td>Productized HR Dashboards</td><td>4</td><td>5</td><td>3</td><td>Anti-Perfection</td></tr>
+<tr><td>5</td><td>Templates / Mini-Course</td><td>4</td><td>5</td><td>2</td><td>Year 1-2</td></tr>
+<tr><td>6</td><td>HR Coaching for Introverts</td><td>4</td><td>3</td><td>2</td><td>After Story</td></tr>
+<tr><td>7</td><td>Remote Reporting Specialist</td><td>4</td><td>4</td><td>5</td><td>Fast Bridge</td></tr>
+<tr><td>8</td><td>Generic VA</td><td>1</td><td>3</td><td>5</td><td style="color:var(--cr2)">Beneath You</td></tr>
+</tbody></table></div>
+
+<!-- THE CROWN PATH DEEP DIVE -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">◆ The Crown Path — People Analytics Consultant</h3>
+
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ Why This Is Yours</div>
+<div style="color:var(--tx);line-height:1.7">Companies in the EU and US desperately need <b style="color:var(--gd)">people who can read data AND people</b>. They are paying $25-$50/hr for someone with your trinity. Most generic analysts cannot do the psychology layer. Most psychologists cannot do the data layer. <b style="color:var(--gd)">You can do both.</b></div>
+</div>
+
+<div class="cg">
+<div class="g cd"><div class="ci">◉</div><div class="ct">What You Offer</div><div class="cm">Attrition modeling. Engagement diagnostics. Hiring funnel analysis. Pulse survey design. Workforce reporting. Executive dashboards. All explained in plain language to people who do not love numbers.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">What You Charge</div><div class="cm">Hourly: $15-$30/hr starting. Retainer: $1,500-$4,000/month per client. Project: $1,500-$8,000 per dashboard build. The wallflower's edge: never the cheapest, never the loudest.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Where to Find Them</div><div class="cm">LinkedIn (premium for 3 months). Remote.co. We Work Remotely. Toptal (after 6 months). Direct outreach to SaaS HR companies. Maersk + PLM alumni networks.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">How to Sound</div><div class="cm">Calm. Strategic. Measured. Never desperate. Jessica Pearson does not chase clients. She makes them earn the meeting. Practice this voice in writing first — always.</div></div>
+</div>
+
+<!-- WHAT NOT TO DO -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">What She Refuses</h3>
+<div class="tw"><table><thead><tr><th>The Trap</th><th>Why It Drains You</th><th>The Sovereign Choice</th></tr></thead><tbody>
+<tr><td>Generic VA work at $4-$6/hr</td><td>Undervalues your trinity. Fills your time. Empties your spirit.</td><td>Specialist roles at $15-$30/hr. Half the hours. Triple the dignity.</td></tr>
+<tr><td>Onsite roles</td><td>Commute drains the introvert. Office politics drain the empath.</td><td>100% remote. Period. Not negotiable.</td></tr>
+<tr><td>Sales/SDR roles</td><td>Wrong nervous system. Wrong wiring. You will hate it.</td><td>Analytics + ops where your data does the selling for you.</td></tr>
+<tr><td>"Wear many hats" startups</td><td>Chaos. Burnout. No respect for your specialty.</td><td>Clear-scope roles in mature SaaS or scale-ups.</td></tr>
+<tr><td>Commission-only sales</td><td>The opposite of calm. The opposite of you.</td><td>Base + benefits OR retainer-based consulting.</td></tr>
+<tr><td>Toxic micromanagers</td><td>Triggers every imposter wound you have.</td><td>Interview them. Ask about their team's last 3 quarters. Walk if vague.</td></tr>
+<tr><td>Hustle-culture LinkedIn content</td><td>Anxiety. Comparison. Self-doubt loop.</td><td>Unfollow. Read books and quietly outperform them.</td></tr>
+</tbody></table></div>
+
+<div class="pq">
+<div class="pq-text">"No is a complete sentence. The most powerful word in your vocabulary is the one you use to protect the work you said yes to."</div>
+<div class="pq-author">◆ In the spirit of Jessica Pearson</div>
+</div>
+</div></div>
+
+<!-- ==================== 30-DAY FORGE ==================== -->
+<div class="pg" id="pg-plan"><div class="wr">
+<div class="sh"><div class="sn jd">9</div><div class="st">The 30-Day Forge</div></div>
+<p class="subt">Thirty small wins. One per day. Designed to defeat procrastination disguised as research.</p>
+
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ The Rule of This Forge</div>
+<div style="color:var(--tx)">Each day's task is small. <b style="color:var(--gd)">Small enough that you cannot use \"not enough time\" as an excuse.</b> The forge is not designed for grand gestures. It is designed for the compound effect of small, completed acts — the only thing that has ever changed a life.</div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"Discipline is doing what needs to be done, even when you do not want to do it. Especially when you do not want to do it."</div>
+<div class="pq-author">◆ Adapted from David Goggins + Musashi</div>
+</div>
+
+<div class="gs" style="padding:20px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><b style="color:var(--gd);font-family:var(--fm);letter-spacing:.18em;font-size:.78rem;text-transform:uppercase">Forge Progress</b><b style="color:var(--gd);font-family:var(--ff);font-size:1.4rem"><span id="dp">0</span> / 30</b></div>
+<div class="bt" style="height:14px"><div id="db" class="bf" style="width:0%;background:linear-gradient(90deg,var(--cr),var(--gd),var(--jd))"></div></div>
+</div>
+
+<div id="cl"></div>
+
+<!-- THE 4 PHASES OVERLAY -->
+<div class="divider">◆ The Four Sovereign Phases ◆</div>
+
+<div class="cg">
+<div class="g cd"><div class="ci">I</div><div class="ct">Sovereign Mind (Days 1-7)</div><div class="cm">Receipts. Re-positioning. Imposter killshots. The mind is steady before the brand goes public.</div></div>
+<div class="g cd"><div class="ci">II</div><div class="ct">Sovereign Brand (Days 8-14)</div><div class="cm">LinkedIn alchemy. Portfolio piece. The wallflower becomes selectively visible.</div></div>
+<div class="g cd"><div class="ci">III</div><div class="ct">Sovereign Offer (Days 15-22)</div><div class="cm">Productize. Price. Pitch one warm contact. The first ship.</div></div>
+<div class="g cd"><div class="ci">IV</div><div class="ct">Sovereign Income (Days 23-30)</div><div class="cm">Apply. Send. Follow up. Land OR refine. Build the rhythm that lasts a lifetime.</div></div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"You will never reach your destination if you stop and throw stones at every dog that barks. Keep walking. The barking ends, the path remains."</div>
+<div class="pq-author">◆ Winston Churchill, in the warrior tradition</div>
+</div>
+</div></div>
+
+<!-- ==================== SOVEREIGNTY ==================== -->
+<div class="pg" id="pg-money"><div class="wr">
+<div class="sh"><div class="sn gd">10</div><div class="st">Sovereignty</div></div>
+<p class="subt">Money is not the goal. Money is the soil in which sovereignty grows.</p>
+
+<div class="pq">
+<div class="pq-text">"He who has a why can bear almost any how. But he who has wealth and wisdom never has to ask either question."</div>
+<div class="pq-author">◆ Adapted from Nietzsche + Solomon</div>
+</div>
+
+<!-- THE MATH -->
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ The Math Is On Your Side</div>
+<div style="color:var(--tx);line-height:1.7">A generic VA earns $5-$7/hr. <b style="color:var(--gd)">You will not be that.</b> A specialist with your trinity (Psychology + Data + Executive Access) commands $15-$30/hr at the floor and $30-$50/hr at the ceiling. The numbers below show what becomes possible the moment you stop discounting yourself.</div>
+</div>
+
+<!-- INCOME CALCULATOR -->
+<div class="gs" style="padding:28px;margin:24px 0">
+<h3 style="color:var(--gd);margin-bottom:18px;font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">◆ The Sovereignty Calculator</h3>
+<p style="color:var(--dm);margin-bottom:18px;font-size:.9rem">Adjust the dials. See what a calm life looks like in numbers.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px">
+<div class="cf"><label>USD / Hour</label><input id="hr" type="number" value="18" oninput="calc()"></div>
+<div class="cf"><label>Hours / Week</label><input id="hw" type="number" value="25" oninput="calc()"></div>
+<div class="cf"><label>PHP / USD</label><input id="fx" type="number" value="61.25" step=".25" oninput="calc()"></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:24px;text-align:center">
+<div><div class="cm" style="font-family:var(--fm);letter-spacing:.15em;font-size:.7rem;text-transform:uppercase">Monthly Income</div><div class="big" id="mo">₱0</div></div>
+<div><div class="cm" style="font-family:var(--fm);letter-spacing:.15em;font-size:.7rem;text-transform:uppercase">Annual Income</div><div class="big" id="ann" style="font-size:1.8rem">₱0</div></div>
+<div><div class="cm" style="font-family:var(--fm);letter-spacing:.15em;font-size:.7rem;text-transform:uppercase">Savings (30%)</div><div class="big" id="sav" style="font-size:1.8rem">₱0</div></div>
+</div>
+</div>
+
+<!-- INCOME SCENARIOS -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">The Income Map</h3>
+<div class="tw"><table><thead><tr><th>Scenario</th><th>Rate</th><th>Hrs / Wk</th><th>Monthly</th><th>The Truth</th></tr></thead><tbody>
+<tr><td>Generic VA</td><td>$6/hr</td><td>40</td><td style="color:var(--dm)">₱63,700</td><td>Drains spirit. Beneath you.</td></tr>
+<tr><td><b style="color:var(--rs)">HR Reporting Specialist</b></td><td><b>$12/hr</b></td><td><b>25</b></td><td style="color:var(--rs)"><b>₱79,600</b></td><td>Realistic. Calm. Target zone.</td></tr>
+<tr><td><b style="color:var(--gd)">People Analytics Consultant</b></td><td><b>$18/hr</b></td><td><b>25</b></td><td style="color:var(--gd)"><b>₱119,400</b></td><td>The Crown Path. Sustainable.</td></tr>
+<tr><td><b style="color:var(--jd2)">Senior People Analytics</b></td><td><b>$25/hr</b></td><td><b>25</b></td><td style="color:var(--jd2)"><b>₱165,800</b></td><td>Year 1-2. Premium positioning.</td></tr>
+<tr><td><b style="color:var(--gd)">Fractional Analytics Lead</b></td><td><b>$40/hr</b></td><td><b>20</b></td><td style="color:var(--gd)"><b>₱212,300</b></td><td>Year 2-3. The ceiling lifts.</td></tr>
+</tbody></table></div>
+
+<div class="co crs">
+<div class="lb" style="color:var(--rs)">◆ Reality Check</div>
+<div style="color:var(--tx);line-height:1.7">At <b style="color:var(--gd)">$18/hr × 25 hrs/week</b>, you earn ₱119K/month working five hours per day with weekends free, no commute, in pajamas. That is <b style="color:var(--gd)">above most full-time onsite Senior HR Analyst salaries in QC</b>. You are not chasing a dream. You are claiming math.</div>
+</div>
+
+<!-- THE THREE BUCKETS -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">The Three Sovereign Buckets</h3>
+<p class="subt">Where your money lives. Each with a purpose. None borrowing from another.</p>
+
+<div class="cg">
+<div class="g cd rv">
+<div class="ci">I</div>
+<div class="ct" style="color:var(--gd)">Bucket I — The Foundation</div>
+<div class="cm"><b style="color:var(--br)">50% of income.</b> Living. Emergency fund (6 months). Health. Family. Boring. Untouchable. This bucket is sacred — it is the reason all other buckets get to exist.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">II</div>
+<div class="ct" style="color:var(--rs)">Bucket II — The Garden</div>
+<div class="cm"><b style="color:var(--br)">20-30% of income.</b> Self-investment. Books. Courses. Tools. Skin/hair/wellness as discipline, not vanity. Therapy. Travel that teaches. The Garden grows the woman who earns more next year.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">III</div>
+<div class="ct" style="color:var(--jd2)">Bucket III — The Compound</div>
+<div class="cm"><b style="color:var(--br)">20-30% of income.</b> Pay Maya. Index funds. REITs. ETFs. Time-tested instruments. Boring is the point. The compound interest you do not have to think about is the wealth you keep when income breaks.</div>
+</div>
+</div>
+
+<!-- THE INVESTOR TRACK -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">The Investor Track (Newbie-Safe)</h3>
+<p class="subt">Pay Maya is your starting altar. The disciplines that compound from there.</p>
+
+<div class="tw"><table><thead><tr><th>Stage</th><th>What You Do</th><th>The Sovereign Move</th></tr></thead><tbody>
+<tr><td><b>Month 1</b></td><td>Open Pay Maya investment funds. Auto-deposit ₱2,000.</td><td>Tiny. Start anyway. The habit is the asset.</td></tr>
+<tr><td><b>Month 2-3</b></td><td>Add ₱5,000 monthly. Track in a simple sheet.</td><td>Boring is the point. Boring compounds.</td></tr>
+<tr><td><b>Month 4-6</b></td><td>Open a UITF or MP2 (Pag-IBIG). Spread risk.</td><td>You are no longer "trying." You are a real investor.</td></tr>
+<tr><td><b>Month 7-12</b></td><td>Add ETFs via local broker. ₱10-20K monthly.</td><td>Calm. Diversified. Future-proof.</td></tr>
+<tr><td><b>Year 2+</b></td><td>Add foreign ETFs (S&P 500). 20-30% of savings.</td><td>You are operating like a quiet hedge fund.</td></tr>
+</tbody></table></div>
+
+<div class="pq">
+<div class="pq-text">"The best time to plant a tree was twenty years ago. The second best time is today. Plant. Stop planning the orchard."</div>
+<div class="pq-author">◆ Ancient Proverb (warrior tradition)</div>
+</div>
+
+<!-- WHERE TO FIND CALM PREMIUM CLIENTS -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">Where The Quiet Warrior Hunts</h3>
+
+<div class="tw"><table><thead><tr><th>Platform</th><th>Best For</th><th>The Sovereign Move</th></tr></thead><tbody>
+<tr><td><b style="color:var(--gd)">LinkedIn (Premium)</b></td><td>People Analytics roles, EU/US recruiters</td><td>Update headline. Stop being invisible. Let them come.</td></tr>
+<tr><td><b style="color:var(--gd)">Remote.co / We Work Remotely</b></td><td>Fully-remote HR analytics positions</td><td>Filter: People Analytics, HRIS, Reporting</td></tr>
+<tr><td><b style="color:var(--gd)">OnlineJobs.ph</b></td><td>PH-friendly remote</td><td>Filter $10/hr+ only. Skip noise.</td></tr>
+<tr><td>Jobstreet (Remote filter)</td><td>Local + remote</td><td>Apply only to senior or specialist roles. Beneath = beneath.</td></tr>
+<tr><td>Toptal / Crossover</td><td>Premium remote talent</td><td>After 6 months portfolio. Premium gates open then.</td></tr>
+<tr><td>PLM + Maersk alumni networks</td><td>Warm intros</td><td>One quiet message to 5 people > 100 cold posts.</td></tr>
+<tr><td>SaaS HR companies (direct)</td><td>Highest-pay path</td><td>Email Head of People at Lattice/Culture Amp/15Five-style firms</td></tr>
+</tbody></table></div>
+
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ The Soft Pitch Template</div>
+<div style="color:var(--tx);font-family:var(--ff);font-style:italic;font-size:1rem;line-height:1.75">"Hello [Name]. I am a People Analytics specialist with 5 years of experience reporting directly to a Vice President at a Fortune 500. PLM Magna Cum Laude, Psychology. I help leaders see the patterns their dashboards hide. I am quietly building a calm remote practice and would value 15 minutes if your team has needs in [their specific area]."</div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"Do not raise your voice. Improve your argument. The room turns toward the quiet one with the sharpest mind."</div>
+<div class="pq-author">◆ In the spirit of Desmond Tutu + Jessica Pearson</div>
+</div>
+</div></div>
+
+<!-- ==================== AI PATH ==================== -->
+<div class="pg" id="pg-ai"><div class="wr">
+<div class="sh"><div class="sn rs">11</div><div class="st">The AI Path</div></div>
+<p class="subt">For the beginner who learns by reading. The pantheon approves of curiosity, not paralysis.</p>
+
+<div class="pq">
+<div class="pq-text">"Knowledge without action is a beautiful weapon you never drew. Draw it. The world is unimpressed by sheaths."</div>
+<div class="pq-author">◆ Adapted from Musashi</div>
+</div>
+
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ The AI Reframe</div>
+<div style="color:var(--tx);line-height:1.7">AI is not another thing to perfect before you start. <b style="color:var(--gd)">AI is the patient assistant the introvert has been needing.</b> It does not interrupt. It does not judge. It does not require small talk. It executes the boring parts so you can do the strategic part. This is the wallflower's secret weapon.</div>
+</div>
+
+<!-- HER FIRST 5 -->
+<h3 style="margin-top:30px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">Her First Five (Free)</h3>
+
+<div class="cg">
+<div class="g cd"><div class="ci">I</div><div class="ct">Elements of AI</div><div class="cm">Free • 6-8 hrs • Univ. of Helsinki. The foundation. No code. No math. Pure understanding.</div></div>
+<div class="g cd"><div class="ci">II</div><div class="ct">Google AI Essentials</div><div class="cm">Free • 5-6 hrs • Coursera audit. LinkedIn badge. Practical. Done in a weekend.</div></div>
+<div class="g cd"><div class="ci">III</div><div class="ct">AWS Prompt Engineering</div><div class="cm">Free • 4 hrs • Highest ROI of any free course. Apply Monday at work.</div></div>
+<div class="g cd"><div class="ci">IV</div><div class="ct">ChatGPT Power User</div><div class="cm">Free • 3-5 hrs • Daily work hack. Time you save compounds into freedom.</div></div>
+<div class="g cd"><div class="ci">V</div><div class="ct">IBM AI Fundamentals</div><div class="cm">Free audit • ~10 hrs • Globally recognized badge. Display proudly on LinkedIn.</div></div>
+</div>
+
+<!-- HOW TO USE AI IN HER ACTUAL WORK -->
+<h3 style="margin-top:30px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">AI Applied to People Analytics</h3>
+<p class="subt">The workflows that turn AI into a quiet competitive advantage.</p>
+
+<div class="tw"><table><thead><tr><th>Workflow</th><th>Tool</th><th>Time Saved</th></tr></thead><tbody>
+<tr><td>Drafting attrition narratives from data</td><td>ChatGPT + your dashboard</td><td>~4 hrs/week</td></tr>
+<tr><td>Executive summary of pulse surveys</td><td>Claude / GPT</td><td>~3 hrs/week</td></tr>
+<tr><td>Onboarding email templates</td><td>ChatGPT</td><td>~2 hrs/week</td></tr>
+<tr><td>HR policy first drafts</td><td>Copilot</td><td>~3 hrs/week</td></tr>
+<tr><td>Power BI / Tableau DAX formula generation</td><td>ChatGPT</td><td>~4 hrs/week</td></tr>
+<tr><td>Meeting note synthesis for VP debriefs</td><td>Otter + GPT</td><td>~2 hrs/week</td></tr>
+<tr><td><b style="color:var(--gd)">Total weekly time given back</b></td><td>—</td><td><b style="color:var(--gd)">~18 hrs/week</b></td></tr>
+</tbody></table></div>
+
+<div class="co cjd">
+<div class="lb" style="color:var(--jd2)">◆ What 18 Saved Hours Buys</div>
+<div style="color:var(--tx);line-height:1.7">18 hours weekly. That is more than half a workweek. Spent on the side practice. Spent on reading. Spent on the Garden bucket. Spent on her sovereignty. <b style="color:var(--gd)">AI is not a tool. AI is time.</b> And time, for the woman who knows what she is doing with it, is the most expensive currency that exists.</div>
+</div>
+
+<!-- 12-WEEK AI CURRICULUM -->
+<h3 style="margin-top:30px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">The 12-Week AI Curriculum</h3>
+<div class="tl">
+<div class="ti"><div class="td" style="background:var(--cr)"></div><b style="color:var(--cr2);font-family:var(--fm);letter-spacing:.15em;font-size:.78rem;text-transform:uppercase">Weeks 1-3 — Foundations</b><div style="color:var(--dm);margin-top:6px">Elements of AI + Google AI Essentials. One module per weekend. No pressure to apply yet.</div></div>
+<div class="ti"><div class="td" style="background:var(--gd)"></div><b style="color:var(--gd);font-family:var(--fm);letter-spacing:.15em;font-size:.78rem;text-transform:uppercase">Weeks 4-6 — Prompting Mastery</b><div style="color:var(--dm);margin-top:6px">AWS Prompt Engineering. Apply to one HR email per day. Watch your speed double.</div></div>
+<div class="ti"><div class="td" style="background:var(--rs)"></div><b style="color:var(--rs);font-family:var(--fm);letter-spacing:.15em;font-size:.78rem;text-transform:uppercase">Weeks 7-9 — Workflow Building</b><div style="color:var(--dm);margin-top:6px">Build one full AI-assisted workflow at Maersk. Document it. This is your portfolio piece.</div></div>
+<div class="ti"><div class="td" style="background:var(--jd)"></div><b style="color:var(--jd2);font-family:var(--fm);letter-spacing:.15em;font-size:.78rem;text-transform:uppercase">Weeks 10-12 — Credential + Display</b><div style="color:var(--dm);margin-top:6px">IBM AI Fundamentals or Azure AI-900. Add badge to LinkedIn. The recruiter quietly takes note.</div></div>
+</div>
+
+<!-- STUDY TIPS FOR HER -->
+<h3 style="margin-top:30px;color:var(--br);font-family:var(--ff);font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase">Study Tips for the Quiet Mind</h3>
+<div class="cg">
+<div class="g cd"><div class="ci">◉</div><div class="ct">One Saturday Morning</div><div class="cm">Just one. Each week. With coffee, music, and the door closed. The ritual matters more than the duration.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Apply Within 24 Hours</div><div class="cm">Learn it Saturday. Use it Monday. Otherwise the knowledge dies in your notes.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Teach Your Notes</div><div class="cm">After each course, write a 1-page summary as if explaining to a junior. The teaching is the test.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Show Your Work Quietly</div><div class="cm">One LinkedIn post per month about something you learned. Not bragging. Not loud. Just visible.</div></div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"You do not rise to the level of your goals. You fall to the level of your systems."</div>
+<div class="pq-author">◆ James Clear</div>
+</div>
+</div></div>
+
+<!-- ==================== ARSENAL ==================== -->
+<div class="pg" id="pg-tools"><div class="wr">
+<div class="sh"><div class="sn">12</div><div class="st">The Arsenal</div></div>
+<p class="subt">Sacred tools. Few. Mastered. Quiet weapons.</p>
+
+<div class="pq">
+<div class="pq-text">"It is better to have one sword you can wield in your sleep than ten you must read instructions for."</div>
+<div class="pq-author">◆ Adapted from Musashi</div>
+</div>
+
+<div class="co cgd">
+<div class="lb" style="color:var(--gd)">◆ The Law of the Arsenal</div>
+<div style="color:var(--tx)">A small arsenal mastered defeats a large arsenal half-known. <b style="color:var(--gd)">Master five tools before you learn a sixth.</b> The knowledge-hoarder collects software like trinkets. The warrior keeps her blades sharp.</div>
+</div>
+
+<div class="cg" style="margin-top:18px">
+<div class="g cd"><div class="ci">◉</div><div class="ct">ChatGPT / Claude / Copilot</div><div class="cm">Your daily strategist. Free tier. Use it for drafting, summarizing, brainstorming. The patient assistant the introvert deserves.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Power BI / Tableau Public</div><div class="cm">Your portfolio weapon. One beautiful dashboard published online > a hundred unfinished spreadsheets in your folder.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Excel / Google Sheets</div><div class="cm">You already master this. Sharpen it. Pivot tables, INDEX/MATCH, basic Power Query. Foundation of all analytics.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Notion</div><div class="cm">Your second brain. Knowledge base. SOPs. Personal CRM. Client tracker. One workspace to organize the chaos that drains you.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">LinkedIn (Premium for 3 mo)</div><div class="cm">Your hunting ground. ₱1,400/month. Worth it for the first 90 days. Recruiter search becomes recruiter outreach.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Canva</div><div class="cm">Beautiful portfolio piece. Client report cover pages. LinkedIn graphics. Make polish a habit, not an event.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">HubSpot CRM (Free)</div><div class="cm">Track every conversation. Every lead. Every follow-up date. The professional uses a CRM. The amateur uses memory.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Grammarly</div><div class="cm">Free version is enough. Polish every client email. The wallflower writes better than she speaks. Lean into that.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Pay Maya / GCash Invest</div><div class="cm">Your investor starting altar. Auto-deposit ₱2K/mo from day one. The habit is the asset.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Toggl Track</div><div class="cm">Time tracking. Protect boundaries. Bill honestly. Toggl tells you the truth about where the hours go.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Bitwarden</div><div class="cm">Password manager. Free. Sovereignty requires security. The chaos of forgotten passwords is below you.</div></div>
+<div class="g cd"><div class="ci">◉</div><div class="ct">Wise / Payoneer</div><div class="cm">Receive USD from foreign clients. Cheaper than banks. The day you receive your first dollar, you have crossed.</div></div>
+</div>
+
+<div class="pq">
+<div class="pq-text">"A craftsman is known by the tools he refuses to buy. Most do not need more tools. They need to master the three they already own."</div>
+<div class="pq-author">◆ In the warrior tradition</div>
+</div>
+</div></div>
+
+<!-- ==================== CODEX (GLOSSARY + QUOTE LIBRARY) ==================== -->
+<div class="pg" id="pg-codex"><div class="wr">
+<div class="sh"><div class="sn gd">◉</div><div class="st">The Codex</div></div>
+<p class="subt">The vocabulary of sovereignty. Searchable. Sacred.</p>
+
+<input class="gls" id="gs" placeholder="◉ Search the Codex..." oninput="dg()">
+<div class="gg" id="grd"></div>
+
+<!-- THE QUOTE LIBRARY -->
+<div class="divider" style="margin-top:60px">◆ The Quote Library ◆</div>
+<p class="subt" style="margin-bottom:32px">The Pantheon, gathered in one place. Read one each morning before the world starts.</p>
+
+<div id="quoteLib"></div>
+
+</div></div>
+
+<button class="bk" id="bk" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<footer>
+<div class="quote">"You did not survive the wounds. You learned to wear them as armor. The forge is not where you become someone new — it is where you remember who you have always been."</div>
+<div><b>Kou.Shuno — The Quiet Warrior's Forge v1.0</b></div>
+<div style="margin-top:6px">Crafted by UNGASIS / Mel · June 2026 · In service of the woman behind the codename</div>
+<div style="margin-top:14px;font-size:.7rem;color:rgba(255,255,255,.3);font-family:var(--fm);letter-spacing:.2em;text-transform:uppercase">Truth · Compassion · Strategy · Discipline · Patience · Sovereignty · Mastery</div>
+</footer>
+
+<script>
+// ==================== PARTICLES (sakura + ember dust) 60fps ====================
+(function(){
+const c=document.getElementById('fx'),x=c.getContext('2d');
+let W,H,ps=[];
+function sz(){W=c.width=innerWidth;H=c.height=innerHeight}
+addEventListener('resize',sz);sz();
+class P{
+constructor(){this.r()}
+r(){
+this.x=Math.random()*W;
+this.y=Math.random()*H;
+this.vx=(Math.random()-.5)*.2;
+this.vy=Math.random()*.3+.05;
+this.s=Math.random()*2+.6;
+this.o=Math.random()*.35+.08;
+const t=Math.random();
+this.h=t<.5?'212,175,55':(t<.8?'253,164,175':'220,38,38');
+}
+u(){this.x+=this.vx;this.y+=this.vy;if(this.y>H+10||this.x<-10||this.x>W+10)this.r()}
+d(){x.beginPath();x.arc(this.x,this.y,this.s,0,7);x.fillStyle='rgba('+this.h+','+this.o+')';x.fill()}
+}
+for(let i=0;i<70;i++)ps.push(new P());
+(function loop(){x.clearRect(0,0,W,H);ps.forEach(p=>{p.u();p.d()});requestAnimationFrame(loop)})();
+})();
+
+// ==================== ROUTING ====================
+function go(id){
+document.querySelectorAll('.pg').forEach(p=>p.classList.toggle('on',p.id==='pg-'+id));
+document.querySelectorAll('.lnk a').forEach(a=>a.classList.toggle('on',a.dataset.p===id));
+document.querySelector('.lnk').classList.remove('open');
+setTimeout(()=>scrollTo({top:0,behavior:'smooth'}),30);
+setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>ob.observe(el)),100);
+}
+
+// ==================== SCROLL PROGRESS + BACK TO TOP ====================
+addEventListener('scroll',()=>{
+const h=document.documentElement;
+document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';
+document.getElementById('bk').classList.toggle('v',h.scrollTop>400);
+});
+
+// ==================== REVEAL ====================
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
+
+// ==================== COUNTER ANIMATION ====================
+function ac(el,t,p='',s=''){if(!el)return;let c=0;const st=Math.max(1,Math.floor(t/50));const i=setInterval(()=>{c+=st;if(c>=t){c=t;clearInterval(i)}el.textContent=p+c+s},25)}
+setTimeout(()=>{
+ac(document.getElementById('c1'),1);
+ac(document.getElementById('c2'),5);
+ac(document.getElementById('c3'),0);
+ac(document.getElementById('c4'),30);
+document.getElementById('c5').textContent='₱0';
+document.getElementById('c6').textContent='₱80K';
+},500);
+
+// ==================== ROTATING HERO QUOTE ====================
+const heroQuotes=[
+{q:"The cave you fear to enter holds the treasure you seek.",a:"Joseph Campbell"},
+{q:"You wield more power than you know. Step into your power.",a:"The Ancient One"},
+{q:"In the midst of chaos, there is also opportunity. The wise observe; the foolish react.",a:"Sun Tzu"},
+{q:"You are afraid because you are valuable. The afraid are not weak.",a:"In the spirit of Peterson"},
+{q:"No is a complete sentence. Use it to protect the work you said yes to.",a:"In the spirit of Jessica Pearson"},
+{q:"Doubt kills more dreams than failure ever will. The cave has your gold.",a:"Joseph Campbell + Robert Greene"},
+{q:"It is not the man who has too little, but the man who craves more, that is poor.",a:"Seneca"},
+{q:"The healing begins when you stop blaming yourself for the wound.",a:"Gabor Maté"}
+];
+let hqi=0;
+function rotateHero(){
+const q=heroQuotes[hqi];
+const qEl=document.getElementById('heroQuote'),aEl=document.getElementById('heroAuthor');
+if(!qEl||!aEl)return;
+qEl.style.opacity=0;aEl.style.opacity=0;
+setTimeout(()=>{
+qEl.textContent='"'+q.q+'"';
+aEl.textContent='◆ '+q.a;
+qEl.style.opacity=1;aEl.style.opacity=1;
+},400);
+hqi=(hqi+1)%heroQuotes.length;
+}
+setTimeout(()=>{document.getElementById('heroQuote').style.transition='opacity .8s';document.getElementById('heroAuthor').style.transition='opacity .8s';setInterval(rotateHero,7000)},2000);
+
+// ==================== SOVEREIGNTY CALCULATOR ====================
+function calc(){
+const hr=document.getElementById('hr'),hw=document.getElementById('hw'),fx=document.getElementById('fx');
+if(!hr)return;
+const r=+hr.value||0,h=+hw.value||0,f=+fx.value||61.25;
+const mo=r*h*4.33*f;
+const ann=mo*12;
+const sav=mo*0.3;
+document.getElementById('mo').textContent='₱'+Math.round(mo).toLocaleString();
+document.getElementById('ann').textContent='₱'+Math.round(ann).toLocaleString();
+document.getElementById('sav').textContent='₱'+Math.round(sav).toLocaleString();
+}
+setTimeout(calc,200);
+
+// ==================== 30-DAY FORGE CHECKLIST ====================
+(function(){
+const tasks=[
+// Phase I - Sovereign Mind (Days 1-7)
+{p:'I',t:'Write your credentials on paper. Read them aloud. Once is enough today.'},
+{p:'I',t:'Read the Imposter Antidote. Mark which of the 5 reframes hits the hardest.'},
+{p:'I',t:'Pick 1 of the 7 Pillars to anchor this week. Write it where you will see it daily.'},
+{p:'I',t:'Identify 3 people who think highly of you. Write the list. Tell no one.'},
+{p:'I',t:'Cancel one small subscription or obligation that drains your energy. Just one.'},
+{p:'I',t:'Choose your 3-minute ritual time (morning). Set the alarm. Honor it tomorrow.'},
+{p:'I',t:'Re-read your Receipts aloud. Sit with the discomfort. The voice gets quieter.'},
+// Phase II - Sovereign Brand (Days 8-14)
+{p:'II',t:'Update your LinkedIn headline: "People Analytics Specialist | PLM Magna | 5+ yrs"'},
+{p:'II',t:'Add People Analytics, HR Data, Power BI, Tableau, Excel to LinkedIn skills.'},
+{p:'II',t:'Add PLM Magna Cum Laude + BS Psychology prominently to your profile.'},
+{p:'II',t:'Take a fresh professional headshot. Phone camera. Natural light. Calm expression.'},
+{p:'II',t:'Connect with 5 former colleagues you respect. No pitch. Just the connection.'},
+{p:'II',t:'Write a 1-page case study of your best HR analytics work. Rough draft only.'},
+{p:'II',t:'Polish the case study. Post it as a LinkedIn document. Ship ugly first.'},
+// Phase III - Sovereign Offer (Days 15-22)
+{p:'III',t:'Decide your first service: HR Dashboard build? Attrition analysis? Pick ONE.'},
+{p:'III',t:'Write a 1-page service description. Plain English. No jargon. No apology.'},
+{p:'III',t:'Set 3 price tiers: floor ($15/hr), ideal ($22/hr), premium ($30/hr).'},
+{p:'III',t:'Identify 5 SaaS HR companies you would love to work with. Make the list.'},
+{p:'III',t:'Find one Head of People at each on LinkedIn. Write down their names.'},
+{p:'III',t:'Draft your Soft Pitch from the Sovereignty page. Adapt to one company.'},
+{p:'III',t:'Send the Soft Pitch to one person. Just one. The first ship is the hardest.'},
+{p:'III',t:'Send the Soft Pitch to 4 more. Done is greater than perfect.'},
+// Phase IV - Sovereign Income (Days 23-30)
+{p:'IV',t:'Apply to 3 remote People Analytics roles. Use the Crown Path positioning.'},
+{p:'IV',t:'Apply to 3 remote HR Data / HRIS Specialist roles.'},
+{p:'IV',t:'Apply to 3 remote Reporting Specialist roles (broad safety net).'},
+{p:'IV',t:'Open Pay Maya investment fund. Auto-deposit ₱2,000 monthly. Start tiny.'},
+{p:'IV',t:'Open Wise account for receiving USD from future foreign clients.'},
+{p:'IV',t:'Schedule a 30-min Sunday review ritual. Same time each week. Forever.'},
+{p:'IV',t:'Identify 1 trusted ally to share weekly progress with. Public accountability.'},
+{p:'IV',t:'Re-read the Pantheon library. End the forge. Begin month 2 immediately.'}
+];
+const sv=JSON.parse(localStorage.getItem('kouShuno30')||'{}');
+const cl=document.getElementById('cl');
+if(cl){
+tasks.forEach((task,i)=>{
+const d=document.createElement('div');
+d.className='chk'+(sv[i]?' dn':'');
+d.innerHTML='<div class="cbx"></div><div class="chtx"><span style="color:var(--gd);font-family:var(--fm);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase">Day '+(i+1)+' · Phase '+task.p+'</span><br><span style="color:var(--tx);font-size:.95rem;line-height:1.55">'+task.t+'</span></div>';
+d.onclick=()=>{d.classList.toggle('dn');sv[i]=d.classList.contains('dn')?1:0;localStorage.setItem('kouShuno30',JSON.stringify(sv));up()};
+cl.appendChild(d);
+});
+function up(){
+const n=Object.values(sv).filter(Boolean).length;
+const dp=document.getElementById('dp'),db=document.getElementById('db');
+if(dp)dp.textContent=n;
+if(db)db.style.width=(n/30*100)+'%';
+}
+up();
+}
+})();
+
+// ==================== CODEX / GLOSSARY ====================
+const gl=[
+['Imposter Syndrome','The lie that whispers you do not belong while you do.','Real imposters do not feel like imposters. Your doubt is proof of your awareness.'],
+['Receipts','Your documented credentials and achievements.','Imposter syndrome cannot survive contact with your own receipts. Keep them close.'],
+['The 70% Rule','When 70% ready, ship it. The last 30% reveals itself only in the wild.','Perfectionism is procrastination wearing a tailored suit.'],
+['The 24-Hour Rule','No insight may live in your head past 24 hours unused.','Ideas that loiter become regrets.'],
+['Knowledge Hoarding','Collecting frameworks instead of applying them.','The bookshelf is not the gym. Reading is not lifting.'],
+['Perfectionism','Procrastination disguised as quality control.','Ship ugly first. Polish in version 5, never version 1.'],
+['Wallflower’s Edge','The pattern-recognition moat introverts hold over the loud.','You are paid for what you notice, not what you announce.'],
+['Selectively Visible','Speaking rarely, but powerfully when you do.','When the quiet one speaks, the room turns.'],
+['Pantheon','The teachers — ancient and modern — who guide your mind.','Read one each morning. Build your inner council.'],
+['7 Pillars','Truth, Compassion, Strategy, Discipline, Patience, Sovereignty, Mastery.','Your inner architecture. Carried forever.'],
+['Sovereignty','The state of being your own ruler, not a subject of moods or markets.','The opposite of hustle. The end of permission-seeking.'],
+['People Analytics','Using data to understand and improve workforce decisions.','Your specialty. The trinity of psyche + data + access.'],
+['HRIS','Human Resources Information System.','The infrastructure layer of modern HR. Workday, BambooHR, SAP SuccessFactors.'],
+['Workforce Planning','Forecasting talent needs against business strategy.','The strategic future of HR analytics. Premium-paid.'],
+['Attrition Modeling','Predicting which employees may leave and why.','Your portfolio piece. Build one in a public sample.'],
+['Pulse Survey','Short, recurring employee sentiment check.','The diagnostic instrument of modern engagement work.'],
+['Dashboard','A visual summary of key metrics.','Beautiful dashboards are sold. Ugly ones are deleted.'],
+['Power BI','Microsoft analytics platform. Free desktop version.','Master this. Publish one piece to Power BI service publicly.'],
+['DAX','Data Analysis Expressions. The formula language of Power BI.','ChatGPT writes DAX for you. Learn enough to verify it.'],
+['Retainer','Fixed monthly fee for ongoing service.','Predictable. Calm. The opposite of hourly chasing.'],
+['Productized Service','A fixed-scope, fixed-price offer.','Removes the negotiation. Honors your time.'],
+['Soft Pitch','A short, calm, value-led introduction message.','Designed for the wallflower who refuses to chase.'],
+['Three Buckets','Foundation, Garden, Compound. Where your money lives.','Each with one purpose. None borrowing from another.'],
+['Compounding','Returns generating more returns over time.','The slow miracle. Most underestimate it. The patient inherit it.'],
+['Pay Maya','PH digital wallet with investment features.','Your starting investor altar. Tiny is fine. Start anyway.'],
+['ETF','Exchange-Traded Fund. A bundle of stocks traded like one.','Diversification in one purchase. The lazy investor’s sword.'],
+['Index Fund','A fund that tracks a market index (e.g., S&P 500).','The boring, undefeated investment strategy of the last 50 years.'],
+['REIT','Real Estate Investment Trust.','Own real estate without owning the building. Income-producing.'],
+['LinkedIn Premium','Paid LinkedIn with InMail, recruiter visibility, learning.','Worth 3 months at the start. Cancel after if no return.'],
+['Notion','All-in-one workspace for notes, tasks, databases.','Your second brain. The knowledge-hoarder finally puts it to work.'],
+['ChatGPT','OpenAI conversational model.','Your patient assistant. Free tier is enough.'],
+['Prompt Engineering','The craft of writing better instructions for AI.','Highest ROI skill of the decade. Free to learn.'],
+['Generative AI','AI that creates new content.','Calculator = answers. GenAI = creative partner.'],
+['AI Workflow','A repeatable process where AI does part of the work.','Build one. Document it. This is the modern resume.'],
+['The Forge','This entire system. Where mind, money, and method are tempered.','Not a course to finish. A discipline to keep.'],
+['The Garden','Bucket II. Self-investment.','Books. Courses. Tools. Wellness. The future you, funded.'],
+['The Compound','Bucket III. Investments.','Boring instruments. Patient years. The wealth that survives layoffs.'],
+['The Foundation','Bucket I. Living expenses + emergency fund.','Sacred. Untouchable. The reason the other buckets get to play.'],
+['Stoicism','Ancient discipline of focusing only on what you control.','Aurelius, Seneca, Epictetus. The original CBT.'],
+['Discipline','Doing what needs doing, especially when you do not want to.','The rarest virtue. The one that bends a life.'],
+['Mastery','Lifetime pursuit of one craft, deeply.','Robert Greene wrote a book on it. Read it.']
+];
+function dg(){
+const gs=document.getElementById('gs'),grd=document.getElementById('grd');
+if(!gs||!grd)return;
+const q=(gs.value||'').toLowerCase();
+grd.innerHTML=gl.filter(w=>w.join(' ').toLowerCase().includes(q)).map(w=>'<div class="g cd"><div class="gt">'+w[0]+'</div><div style="font-size:.88rem;margin-bottom:8px;color:var(--tx);line-height:1.55">'+w[1]+'</div><div style="font-family:var(--ff);font-style:italic;color:var(--gd3);font-size:.88rem;line-height:1.55;border-top:1px solid rgba(212,175,55,.15);padding-top:8px;margin-top:8px">◆ '+w[2]+'</div></div>').join('');
+}
+dg();
+
+// ==================== QUOTE LIBRARY (THE PANTHEON, FULL) ====================
+const quotes=[
+{q:"You are afraid because you are valuable. The afraid are not weak — they are guarding something worth guarding.",a:"Jordan Peterson"},
+{q:"Trauma is not what happens to you. Trauma is what happens inside you, as a result of what happened to you.",a:"Gabor Maté"},
+{q:"The healing begins when you stop blaming yourself for the wound.",a:"Gabor Maté"},
+{q:"In the midst of chaos, there is also opportunity. The wise observe; the foolish react.",a:"Sun Tzu"},
+{q:"Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.",a:"Sun Tzu"},
+{q:"Choose your battles wisely. Many are not worth the sword’s edge.",a:"Miyamoto Musashi"},
+{q:"Knowledge without action is a beautiful weapon you never drew. Draw it.",a:"In the spirit of Musashi"},
+{q:"It is better to have one sword you can wield in your sleep than ten you must read instructions for.",a:"In the spirit of Musashi"},
+{q:"You wield more power than you know. Step into your power.",a:"The Ancient One"},
+{q:"We never lose our demons, Mordo. We only learn to live above them.",a:"The Ancient One"},
+{q:"No is a complete sentence. The most powerful word in your vocabulary is the one you use to protect the work you said yes to.",a:"In the spirit of Jessica Pearson"},
+{q:"Do not raise your voice. Improve your argument. The room turns toward the quiet one with the sharpest mind.",a:"In the spirit of Jessica Pearson + Tutu"},
+{q:"Loyalty is everything. Without it, the rest is performance.",a:"In the spirit of Jessica Pearson"},
+{q:"You don’t send a puppy to do a wolf’s job.",a:"In the spirit of Jessica Pearson"},
+{q:"I don’t have dreams. I have goals. Now I am moving toward them.",a:"Harvey Specter"},
+{q:"When you’re backed against the wall, break the damn thing down.",a:"Harvey Specter"},
+{q:"The mind is its own place, and in itself can make a heaven of hell, a hell of heaven.",a:"John Milton"},
+{q:"It is not the man who has too little, but the man who craves more, that is poor.",a:"Seneca"},
+{q:"You have power over your mind — not outside events. Realize this, and you will find strength.",a:"Marcus Aurelius"},
+{q:"Discipline is doing what needs to be done, even when you do not want to do it.",a:"In the spirit of David Goggins + Musashi"},
+{q:"The cave you fear to enter holds the treasure you seek.",a:"Joseph Campbell"},
+{q:"You do not rise to the level of your goals. You fall to the level of your systems.",a:"James Clear"},
+{q:"Doubt kills more dreams than failure ever will.",a:"Suzy Kassem"},
+{q:"You will never reach your destination if you stop and throw stones at every dog that barks. Keep walking.",a:"Winston Churchill (in the warrior tradition)"},
+{q:"The man who moves a mountain begins by carrying away small stones.",a:"Confucius"},
+{q:"He who knows others is wise. He who knows himself is enlightened.",a:"Lao Tzu"},
+{q:"By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and Third, by experience, which is the bitterest.",a:"Confucius"},
+{q:"Most people don’t know that the king who decides is the one who waits.",a:"In the spirit of Solomon"},
+{q:"Sometimes the strongest thing a woman can do is not become someone new — but stop apologizing for the woman she already is.",a:"In the spirit of Donna Paulsen"},
+{q:"Power is a game played with patience. The patient inherit. The frantic exhaust themselves.",a:"In the spirit of Robert Greene"},
+{q:"Power, like a desolating pestilence, pollutes whate'er it touches. Wield it with wisdom or not at all.",a:"In the spirit of Robert Greene"},
+{q:"The best time to plant a tree was twenty years ago. The second best time is today. Plant. Stop planning the orchard.",a:"Ancient Proverb"}
+];
+function renderQuotes(){
+const ql=document.getElementById('quoteLib');
+if(!ql)return;
+ql.innerHTML=quotes.map(q=>'<div class="pq" style="margin-bottom:16px"><div class="pq-text">“'+q.q+'”</div><div class="pq-author">◆ '+q.a+'</div></div>').join('');
+}
+renderQuotes();
+</script>
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Brothameyns — Lifetime Partnership Playbook by UNGASIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0d1a;--sf:rgba(255,255,255,.04);--sf2:rgba(255,255,255,.07);--bd:rgba(255,255,255,.12);
+  --rd:#818cf8;--rd2:#a78bfa;--sh:#f43f5e;--sh2:#ec4899;
+  --gd:#fbbf24;--gd2:#d4af37;--em:#10b981;--em2:#34d399;
+  --tx:#e2e8f0;--dm:#94a3b8;--br:#fefce8;--rg:#fde7d3;
+  --blur:24px;--r:18px;--rsm:12px;
+  --f:'Inter',system-ui,sans-serif;--fs:'Cormorant Garamond',serif;
+  --e:cubic-bezier(.4,0,.2,1)
+}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--f);background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden}
+::selection{background:var(--gd);color:var(--bg)}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:rgba(251,191,36,.35);border-radius:3px}
+canvas#fx{position:fixed;inset:0;z-index:0;pointer-events:none}
+.sky{position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 15% 20%,rgba(129,140,248,.12),transparent 45%),radial-gradient(ellipse at 85% 80%,rgba(244,63,94,.10),transparent 45%),linear-gradient(180deg,#0a0d1a,#0f1024 50%,#0a0d1a)}
+.prog{position:fixed;top:0;left:0;height:3px;z-index:10001;background:linear-gradient(90deg,var(--rd),var(--gd),var(--sh));width:0}
+.g{background:var(--sf);backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r);transition:all .35s var(--e)}
+.g:hover{border-color:rgba(251,191,36,.35);box-shadow:0 12px 40px rgba(251,191,36,.1);transform:translateY(-2px)}
+.gs{background:var(--sf);backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r)}
+nav{position:fixed;top:3px;left:0;right:0;z-index:10000;padding:11px 22px;display:flex;justify-content:space-between;align-items:center;background:rgba(10,13,26,.9);backdrop-filter:blur(22px);border-bottom:1px solid var(--bd)}
+.logo{font-family:var(--fs);font-weight:900;font-size:1.35rem;background:linear-gradient(135deg,var(--rd2) 0%,var(--gd) 50%,var(--sh) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;cursor:pointer;letter-spacing:.02em}
+.lnk{display:flex;gap:4px;flex-wrap:wrap}
+.lnk a{color:var(--dm);text-decoration:none;font-size:.76rem;font-weight:700;padding:6px 11px;border-radius:8px;transition:all .2s;white-space:nowrap;letter-spacing:.02em}
+.lnk a:hover,.lnk a.on{color:var(--gd);background:rgba(251,191,36,.1)}
+.ham{display:none;background:0;border:0;color:var(--br);font-size:1.5rem;cursor:pointer}
+@media(max-width:900px){.lnk{display:none}.lnk.open{display:flex;flex-direction:column;position:absolute;top:54px;left:0;right:0;background:rgba(10,13,26,.97);padding:14px;border-bottom:1px solid var(--bd);z-index:9999}.ham{display:block}}
+.pg{display:none;opacity:0;transform:translateY(14px);transition:.45s}.pg.on{display:block;opacity:1;transform:none}
+.wr{max-width:1200px;margin:auto;padding:96px 22px 60px}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px;position:relative}
+.crest{font-size:1.6rem;margin-bottom:8px;letter-spacing:.4em;color:var(--gd);font-weight:300}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(251,191,36,.35);background:rgba(251,191,36,.06);color:var(--gd);border-radius:999px;padding:8px 22px;font-weight:700;font-size:.82rem;margin-bottom:22px;letter-spacing:.04em}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--em);animation:pu 2s infinite}@keyframes pu{50%{opacity:.3}}
+h1{font-family:var(--fs);font-size:clamp(2.6rem,8vw,5.4rem);line-height:1;font-weight:900;letter-spacing:-.02em;background:linear-gradient(135deg,#818cf8 0%,#fbbf24 40%,#f43f5e 75%,#a78bfa 100%);background-size:300% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:sh 9s linear infinite;font-style:italic}
+@keyframes sh{to{background-position:300% center}}
+.sub{max-width:780px;color:var(--dm);font-size:clamp(1rem,2.3vw,1.3rem);margin-top:20px;font-weight:300;line-height:1.55}
+.tagline{font-family:var(--fs);font-style:italic;color:var(--gd);font-size:clamp(1rem,2vw,1.2rem);margin-top:14px;letter-spacing:.05em}
+.cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:34px}
+.btn{border:0;border-radius:14px;padding:14px 28px;font-weight:800;font-size:.9rem;cursor:pointer;font-family:var(--f);transition:all .35s var(--e);letter-spacing:.03em}
+.pri{background:linear-gradient(135deg,var(--gd) 0%,var(--gd2) 100%);color:var(--bg);box-shadow:0 6px 24px rgba(251,191,36,.3)}
+.pri:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(251,191,36,.45)}
+.gho{background:0;color:var(--tx);border:1px solid var(--bd)}.gho:hover{border-color:var(--gd);color:var(--gd)}
+.sh{display:flex;gap:14px;align-items:center;margin:0 0 26px;padding-bottom:14px;border-bottom:1px solid var(--bd)}
+.sn{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-weight:900;color:var(--bg);flex-shrink:0;background:linear-gradient(135deg,var(--gd),var(--gd2));font-family:var(--fs)}
+.sn.r{background:linear-gradient(135deg,var(--rd),var(--rd2))}
+.sn.s{background:linear-gradient(135deg,var(--sh),var(--sh2))}
+.sn.e{background:linear-gradient(135deg,var(--em),var(--em2))}
+.st{font-family:var(--fs);font-size:clamp(1.5rem,3.2vw,2.2rem);font-weight:900;color:var(--br);letter-spacing:-.01em;font-style:italic}
+.subt{color:var(--dm);font-size:.94rem;margin-bottom:24px;font-style:italic}
+
+/* Dual portrait grid - Red | Shari */
+.duo{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;margin:30px 0;align-items:stretch}
+.duo-card{padding:24px;border-radius:var(--r);background:var(--sf);border:1px solid var(--bd);backdrop-filter:blur(var(--blur))}
+.duo-card.red{border-left:3px solid var(--rd)}
+.duo-card.shari{border-left:3px solid var(--sh)}
+.duo-name{font-family:var(--fs);font-size:1.4rem;font-weight:900;margin-bottom:4px;font-style:italic}
+.duo-name.red{color:var(--rd2)}.duo-name.shari{color:var(--sh2)}
+.duo-role{color:var(--dm);font-size:.84rem;margin-bottom:14px;letter-spacing:.04em;text-transform:uppercase}
+.duo-list{list-style:none;font-size:.88rem;color:var(--tx)}
+.duo-list li{padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.duo-list li:last-child{border:0}
+.amp{display:grid;place-items:center;font-family:var(--fs);font-size:3.5rem;color:var(--gd);font-weight:900;font-style:italic}
+@media(max-width:768px){.duo{grid-template-columns:1fr}.amp{transform:rotate(90deg);padding:0}}
+
+.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+.dn{font-family:var(--fs);font-size:2.5rem;font-weight:900;background:linear-gradient(135deg,var(--gd),var(--rg));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-style:italic}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin:16px 0}
+.cd{padding:24px}.ci{font-size:2.2rem;margin-bottom:12px}.ct{font-weight:800;color:var(--br);font-size:1.08rem;margin-bottom:8px}.cm{color:var(--dm);font-size:.9rem}
+.tw{overflow-x:auto;margin:16px 0;border-radius:var(--rsm)}
+table{width:100%;border-collapse:collapse;font-size:.86rem;background:var(--sf);border:1px solid var(--bd);border-radius:var(--rsm);overflow:hidden}
+thead{background:linear-gradient(135deg,rgba(251,191,36,.14),rgba(129,140,248,.1))}
+th{padding:12px 14px;text-align:left;font-weight:800;color:var(--br);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;border-bottom:2px solid rgba(251,191,36,.25)}
+td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,.05)}
+tr:hover td{background:rgba(251,191,36,.04)}
+.co{padding:20px 22px;border-radius:var(--rsm);margin:16px 0;border-left:4px solid}
+.cgd{border-color:var(--gd);background:rgba(251,191,36,.08)}
+.cem{border-color:var(--em);background:rgba(16,185,129,.08)}
+.cr{border-color:var(--rd);background:rgba(129,140,248,.08)}
+.cs{border-color:var(--sh);background:rgba(244,63,94,.08)}
+.lb{font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.fy{position:relative;padding:18px 20px 18px 52px;border-radius:var(--rsm);margin:16px 0;background:linear-gradient(135deg,rgba(251,191,36,.06),rgba(244,63,94,.04));border:1px solid rgba(251,191,36,.2)}
+.fy:before{content:'✨';position:absolute;top:16px;left:16px;font-size:1.3rem}
+.fy b{color:var(--gd)}.fy .d{color:var(--dm);font-size:.92rem;margin-top:4px}
+.tl{position:relative;padding-left:38px;margin:20px 0}
+.tl:before{content:'';position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(var(--rd),var(--gd),var(--sh),var(--em))}
+.ti{position:relative;margin-bottom:18px}
+.td{position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 12px rgba(251,191,36,.4)}
+.bi{margin-bottom:11px}.bl{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:4px}
+.bt{height:30px;border-radius:15px;background:rgba(255,255,255,.06);overflow:hidden}
+.bf{height:100%;border-radius:15px;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;font-size:.72rem;font-weight:800;color:var(--bg);transition:width 1.5s var(--e)}
+.cf input{width:100%;padding:11px 14px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:1rem;font-family:var(--f);outline:none}
+.cf input:focus{border-color:var(--gd)}
+.cf label{display:block;color:var(--dm);font-weight:800;font-size:.82rem;margin-bottom:5px;letter-spacing:.04em}
+.big{font-family:var(--fs);font-size:2.8rem;font-weight:900;background:linear-gradient(135deg,var(--gd),var(--em));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-style:italic}
+.gls{width:min(460px,100%);padding:13px 20px;border-radius:14px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:.95rem;font-family:var(--f);outline:none;margin-bottom:18px}
+.gls:focus{border-color:var(--gd)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.gt{color:var(--gd);font-weight:900;font-size:1rem;margin-bottom:4px;font-family:var(--fs);font-style:italic}
+.chk{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer}
+.cbx{width:22px;height:22px;flex:0 0 22px;border:2px solid var(--bd);border-radius:7px;margin-top:2px;display:grid;place-items:center}
+.chk.dn .cbx{background:var(--em);border-color:var(--em)}
+.chk.dn .cbx:after{content:'✓';color:#fff;font-weight:900;font-size:.75rem}
+.chk.dn .chtx{text-decoration:line-through;color:var(--dm)}
+.who{display:inline-block;padding:1px 8px;border-radius:6px;font-size:.7rem;font-weight:800;margin-right:6px;letter-spacing:.04em}
+.who.r{background:rgba(129,140,248,.18);color:var(--rd2)}
+.who.s{background:rgba(244,63,94,.18);color:var(--sh2)}
+.who.both{background:rgba(251,191,36,.18);color:var(--gd)}
+.bk{position:fixed;right:22px;bottom:22px;width:52px;height:52px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--gd),var(--gd2));color:var(--bg);font-size:1.3rem;font-weight:900;cursor:pointer;opacity:0;transform:translateY(16px);transition:all .3s var(--e);z-index:9999;box-shadow:0 6px 20px rgba(251,191,36,.4)}
+.bk.v{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.rv.vis{opacity:1;transform:none}
+.divider{display:flex;align-items:center;gap:14px;margin:32px 0;color:var(--gd);font-family:var(--fs);font-style:italic;font-size:1.1rem;letter-spacing:.1em}
+.divider:before,.divider:after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(251,191,36,.3),transparent)}
+footer{text-align:center;padding:48px 22px;color:var(--dm);font-size:.78rem;border-top:1px solid var(--bd);margin-top:42px}
+footer .quote{font-family:var(--fs);font-style:italic;font-size:1.1rem;color:var(--gd);max-width:600px;margin:0 auto 14px;letter-spacing:.02em}
+@media(max-width:600px){.cg{grid-template-columns:1fr}.dg{grid-template-columns:repeat(2,1fr)}h1{font-size:2.4rem}}
+@media print{nav,.prog,.bk,canvas,.sky{display:none!important}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div><canvas id="fx"></canvas><div class="prog" id="prog"></div>
+<nav><div class="logo" onclick="go('home')">✨ The Brothameyns</div><button class="ham" onclick="document.querySelector('.lnk').classList.toggle('open')">☰</button><div class="lnk" id="lnk"><a href="#" onclick="go('home')" class="on" data-p="home">Home</a><a href="#" onclick="go('synergy')" data-p="synergy">⚡ Synergy</a><a href="#" onclick="go('paths')" data-p="paths">🗺️ Joint Paths</a><a href="#" onclick="go('plan')" data-p="plan">📋 90-Day</a><a href="#" onclick="go('wealth')" data-p="wealth">💰 Wealth</a><a href="#" onclick="go('ai')" data-p="ai">🧠 AI Together</a><a href="#" onclick="go('tools')" data-p="tools">🛠️ Tools</a><a href="#" onclick="go('gloss')" data-p="gloss">📖 Glossary</a></div></nav>
+
+<!-- HOME -->
+<div class="pg on" id="pg-home">
+<section class="hero">
+<div class="crest">❖ ❖ ❖</div>
+<div class="badge"><span class="dot"></span> A Lifetime Partnership Playbook · Crafted by UNGASIS · June 2026</div>
+<h1>The Brothameyns</h1>
+<p class="tagline">"Two minds. One legacy. Built together, on purpose."</p>
+<p class="sub">Red & Shari — a quadrilingual operations veteran and a UP-educated team architect. Apart, each commands premium remote roles. <b style="color:var(--gd)">Together, they unlock income paths and wealth structures most professionals never see.</b></p>
+<div class="cta">
+<button class="btn pri" onclick="go('synergy')">✨ See the Synergy Engine</button>
+<button class="btn gho" onclick="go('paths')">🗺️ Explore Joint Paths</button>
+<button class="btn gho" onclick="go('wealth')">💰 The Wealth Math</button>
+</div>
+</section>
+
+<div class="wr">
+<!-- DUAL PORTRAIT -->
+<div class="sh"><div class="sn">❖</div><div class="st">Their Combined Profile</div></div>
+<p class="subt">The rare pairing the market has not priced yet.</p>
+
+<div class="duo">
+<div class="duo-card red rv">
+<div class="duo-name red">Red</div>
+<div class="duo-role">The Linguist Strategist</div>
+<ul class="duo-list">
+<li>🌍 <b>4 languages</b> — Spanish, German, English, Tagalog</li>
+<li>🚢 <b>10+ years Maersk</b> — international operations</li>
+<li>📚 <b>Hardcore reader</b> — deep knowledge synthesizer</li>
+<li>👥 <b>Born trainer</b> — inspires teams effortlessly</li>
+<li>💰 <b>Investor mindset</b> — forex + crypto active</li>
+<li>🤝 <b>Social butterfly</b> — networks open doors</li>
+</ul>
+</div>
+
+<div class="amp">&</div>
+
+<div class="duo-card shari rv">
+<div class="duo-name shari">Shari</div>
+<div class="duo-role">The Calm Architect</div>
+<ul class="duo-list">
+<li>🎓 <b>UP graduate</b> — instant credibility filter</li>
+<li>👑 <b>5+ years Maersk</b> — team leader, manager</li>
+<li>🌸 <b>Calm energy</b> — strategic clarity under pressure</li>
+<li>📋 <b>Systems mind</b> — turns chaos into SOPs</li>
+<li>💡 <b>Customer obsessed</b> — client-success natural</li>
+<li>🏡 <b>Home-first</b> — building long-term, not loud</li>
+</ul>
+</div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="sh" style="margin-top:36px"><div class="sn e">★</div><div class="st">The Combined Dashboard</div></div>
+<div class="dg" style="margin-bottom:30px">
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c1">0</div><div class="cm">Combined Years at Maersk</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c2">0</div><div class="cm">Languages Between Them</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c3">0</div><div class="cm">Joint Income Paths</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c4">0</div><div class="cm">Day Coordinated Plan</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c5">₱0</div><div class="cm">Starting Capital Needed</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c6">₱200K</div><div class="cm">Realistic Joint Monthly</div></div>
+</div>
+
+<!-- THE INSIGHT NO ONE TOLD THEM -->
+<div class="sh"><div class="sn">💡</div><div class="st">The Insight No One Has Told Them Yet</div></div>
+<p class="subt">Their individual playbooks are good. Their combined playbook is generational.</p>
+
+<div class="co cgd"><div class="lb" style="color:var(--gd)">✨ The unfair truth</div>Red alone is a quadrilingual specialist. Shari alone is a calm team leader. <b>Together, they are a complete remote operations company that can be hired as one unit, sold as a brand, or franchised as a team.</b> The market pays a couple-led consultancy 2-3x what it pays solo freelancers — because trust comes built-in.</div>
+
+<div class="cg">
+<div class="g cd rv"><div class="ci">🌍</div><div class="ct">Languages × Leadership = Premium Agency</div><div class="cm">Red speaks ES/DE. Shari manages teams. Together they can sell <b>multilingual managed services</b> at $50-$80/hr — not $15-$30 each.</div></div>
+<div class="g cd rv"><div class="ci">📚</div><div class="ct">Deep Reading × Systems Thinking = Frameworks That Sell</div><div class="cm">Red absorbs ideas. Shari structures them. They can <b>package proprietary playbooks</b> as digital products — a forever asset.</div></div>
+<div class="g cd rv"><div class="ci">👥</div><div class="ct">Charisma × Calm = Bulletproof Brand</div><div class="cm">Red attracts. Shari retains. The classic founder duo formula — like Spanx, Patagonia, or Honest Co.</div></div>
+<div class="g cd rv"><div class="ci">💰</div><div class="ct">Risk Capital × Steady Income = Wealth Compound</div><div class="cm">Red invests. Shari banks the safety net. Together they can <b>fund growth without selling the family farm</b>.</div></div>
+<div class="g cd rv"><div class="ci">🏡</div><div class="ct">Maersk × Maersk = Double Credibility Stack</div><div class="cm">Two Fortune-500 alumni from the same company = a built-in narrative recruiters and clients trust instantly.</div></div>
+<div class="g cd rv"><div class="ci">✨</div><div class="ct">Public × Private = Optimal Energy Split</div><div class="cm">Red goes outside (sales, networking, content). Shari runs the inside (delivery, ops, quality). No one burns out.</div></div>
+</div>
+
+<div class="co cs" style="margin-top:24px"><div class="lb" style="color:var(--sh2)">💞 The lifetime partner truth</div>A great marriage is two operating systems that boot each other faster. Red boots Shari outward (visibility, networking, bigger swings). Shari boots Red inward (clarity, calm, execution). <b>This playbook designs around that.</b></div>
+</div></div>
+
+<!-- SYNERGY ENGINE -->
+<div class="pg" id="pg-synergy"><div class="wr">
+<div class="sh"><div class="sn">1</div><div class="st">The Synergy Engine</div></div>
+<p class="subt">Six pairings that turn 1 + 1 into 4. These are not strategies — they are leverage points.</p>
+
+<div class="fy"><b>The Pairing Principle</b><div class="d">Solo skills are additive. Paired skills are multiplicative. Red + Shari is not Red's income + Shari's income — it is a new third entity that earns what neither could alone.</div></div>
+
+<!-- SYNERGY MATRIX TABLE -->
+<div class="tw"><table><thead><tr><th>Red Brings</th><th>+</th><th>Shari Brings</th><th>=</th><th>Joint Asset</th></tr></thead><tbody>
+<tr><td>Spanish + German fluency</td><td>+</td><td>Customer ops + team management</td><td>=</td><td><b style="color:var(--gd)">Multilingual Customer Ops Agency</b></td></tr>
+<tr><td>Hardcore reading + frameworks</td><td>+</td><td>Calm structuring + SOPs</td><td>=</td><td><b style="color:var(--gd)">Digital playbook / course business</b></td></tr>
+<tr><td>Social charisma + sales energy</td><td>+</td><td>Delivery quality + client retention</td><td>=</td><td><b style="color:var(--gd)">Couple-led consultancy brand</b></td></tr>
+<tr><td>Forex + crypto risk capital</td><td>+</td><td>Stable income safety net</td><td>=</td><td><b style="color:var(--gd)">Family investment portfolio</b></td></tr>
+<tr><td>Network + outreach</td><td>+</td><td>Internal systems + client success</td><td>=</td><td><b style="color:var(--gd)">Lead-gen + retention machine</b></td></tr>
+<tr><td>Maersk veteran (10yr)</td><td>+</td><td>Maersk veteran (5yr)</td><td>=</td><td><b style="color:var(--gd)">15-year logistics consulting niche</b></td></tr>
+</tbody></table></div>
+
+<!-- THE THREE BUSINESS MODELS THEY CAN BUILD -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ Three Businesses Only They Can Build</h3>
+<p class="subt">These are not generic ideas. Each one requires their exact combined profile.</p>
+
+<div class="cg">
+<div class="g cd rv">
+<div class="ci">🌐</div>
+<div class="ct" style="color:var(--gd)">1. The Multilingual Ops Studio</div>
+<div class="cm" style="margin-bottom:10px"><b style="color:var(--rd2)">Red:</b> Spanish/German client-facing, EU/LATAM outreach, sales calls.<br><b style="color:var(--sh2)">Shari:</b> Onboarding, SOPs, weekly reports, English client comms, team coordination.<br><b style="color:var(--gd)">Together:</b> A 2-person agency serving 3-5 EU/US logistics or e-commerce clients at $3-$8K each per month.</div>
+<div style="font-size:.82rem;color:var(--em)"><b>Potential revenue: ₱300K-₱800K/month combined</b></div>
+</div>
+
+<div class="g cd rv">
+<div class="ci">📚</div>
+<div class="ct" style="color:var(--gd)">2. The Logistics Playbook Company</div>
+<div class="cm" style="margin-bottom:10px"><b style="color:var(--rd2)">Red:</b> Writes content, hosts webinars, builds audience in ES/DE/EN.<br><b style="color:var(--sh2)">Shari:</b> Builds templates, SOPs, training materials, course structure.<br><b style="color:var(--gd)">Together:</b> A digital products business — templates, mini-courses, paid newsletters for small logistics ops teams.</div>
+<div style="font-size:.82rem;color:var(--em)"><b>Potential: ₱50K-₱300K/month passive (after build)</b></div>
+</div>
+
+<div class="g cd rv">
+<div class="ci">💫</div>
+<div class="ct" style="color:var(--gd)">3. The Maersk Alumni Consultancy</div>
+<div class="cm" style="margin-bottom:10px"><b style="color:var(--rd2)">Red:</b> Reaches ex-colleagues across global Maersk offices.<br><b style="color:var(--sh2)">Shari:</b> Designs the offer, packages the service, manages delivery.<br><b style="color:var(--gd)">Together:</b> 15 combined years of inside knowledge sold as advisory retainers to logistics startups and 3PLs.</div>
+<div style="font-size:.82rem;color:var(--em)"><b>Potential: 2-3 retainers × $2-$5K = ₱400K+/month</b></div>
+</div>
+</div>
+
+<div class="co cem" style="margin-top:24px"><div class="lb" style="color:var(--em2)">🌿 Critical sequencing</div>Do <b>Path #1 first</b> (income now). Layer #2 in months 4-6 (passive assets). Reach for #3 in year 2 (premium positioning). Never start with #3 — you need stories first.</div>
+
+<!-- ROLE SPLIT -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ Their Natural Role Split</h3>
+<p class="subt">Most couples in business fail because they fight over the same lanes. The Brothameyns are built for clean lanes.</p>
+
+<div class="tw"><table><thead><tr><th>Domain</th><th>Owner</th><th>Why</th></tr></thead><tbody>
+<tr><td><b>Outbound sales + outreach</b></td><td><span class="who r">Red</span></td><td>Social butterfly + multilingual + charisma</td></tr>
+<tr><td><b>Client onboarding + delivery</b></td><td><span class="who s">Shari</span></td><td>Calm + UP polish + systems mind</td></tr>
+<tr><td><b>Content + training + thought leadership</b></td><td><span class="who r">Red</span></td><td>Hardcore reader + born trainer</td></tr>
+<tr><td><b>Operations + SOPs + quality</b></td><td><span class="who s">Shari</span></td><td>Team leader DNA + structure-first</td></tr>
+<tr><td><b>Network maintenance + community</b></td><td><span class="who r">Red</span></td><td>Energy renews from people</td></tr>
+<tr><td><b>Client success + retention</b></td><td><span class="who s">Shari</span></td><td>Trust-builder + low-drama</td></tr>
+<tr><td><b>Risk capital + investments</b></td><td><span class="who r">Red</span></td><td>Already running forex + crypto</td></tr>
+<tr><td><b>Cash flow + family finances</b></td><td><span class="who s">Shari</span></td><td>Calm number-keeper, long view</td></tr>
+<tr><td><b>Big decisions + strategy</b></td><td><span class="who both">Both</span></td><td>Tuesday night 30-min ritual</td></tr>
+<tr><td><b>AI learning + tool adoption</b></td><td><span class="who both">Both</span></td><td>Saturday mornings together</td></tr>
+</tbody></table></div>
+
+<div class="co cgd"><div class="lb" style="color:var(--gd)">👑 The rule that saves marriages-in-business</div>Once a domain is assigned, the other partner does NOT override. You can advise, suggest, question — but the owner decides. This is how couples scale without resentment.</div>
+</div></div>
+
+<!-- JOINT PATHS -->
+<div class="pg" id="pg-paths"><div class="wr">
+<div class="sh"><div class="sn s">2</div><div class="st">Joint Income Paths — Ranked by Synergy</div></div>
+<p class="subt">Ranking favors: combined leverage, calm execution, generational wealth potential.</p>
+
+<div style="margin-bottom:26px">
+<div class="bi"><div class="bl"><span>🌐 Multilingual Ops Studio (joint)</span><span>15/15</span></div><div class="bt"><div class="bf" style="width:100%;background:linear-gradient(90deg,var(--gd),var(--em))">✨ The Crown Path</div></div></div>
+<div class="bi"><div class="bl"><span>📚 Joint Digital Products / Course</span><span>13/15</span></div><div class="bt"><div class="bf" style="width:87%;background:linear-gradient(90deg,var(--rd),var(--gd))">Passive Asset</div></div></div>
+<div class="bi"><div class="bl"><span>💫 Maersk Alumni Consultancy</span><span>13/15</span></div><div class="bt"><div class="bf" style="width:87%;background:linear-gradient(90deg,var(--sh),var(--gd))">Year 2 Premium</div></div></div>
+<div class="bi"><div class="bl"><span>👥 Couple-led Coaching Brand</span><span>12/15</span></div><div class="bt"><div class="bf" style="width:80%;background:linear-gradient(90deg,var(--rd),var(--sh))">Founder Duo Play</div></div></div>
+<div class="bi"><div class="bl"><span>💰 Family Investment Vehicle</span><span>11/15</span></div><div class="bt"><div class="bf" style="width:74%;background:linear-gradient(90deg,var(--em),var(--gd))">Wealth Engine</div></div></div>
+<div class="bi"><div class="bl"><span>🌍 Joint Remote Roles (parallel)</span><span>10/15</span></div><div class="bt"><div class="bf" style="width:67%;background:linear-gradient(90deg,var(--rd),var(--em))">Safe Default</div></div></div>
+<div class="bi"><div class="bl"><span>📈 LATAM E-commerce Side Brand</span><span>9/15</span></div><div class="bt"><div class="bf" style="width:60%;background:linear-gradient(90deg,var(--sh),var(--rd))">Hidden Opportunity</div></div></div>
+<div class="bi"><div class="bl"><span>🏠 Tax-smart PH Structure (LLC/sole)</span><span>8/15</span></div><div class="bt"><div class="bf" style="width:54%;background:linear-gradient(90deg,var(--gd),var(--rd))">Year 1 Foundation</div></div></div>
+</div>
+
+<div class="tw"><table><thead><tr><th>#</th><th>Joint Path</th><th>Income</th><th>Stress</th><th>Time to Money</th><th>Best Move</th></tr></thead><tbody>
+<tr><td>1</td><td>Multilingual Ops Studio</td><td>5</td><td>4</td><td>2-4 mo</td><td style="color:var(--em)">★ START HERE</td></tr>
+<tr><td>2</td><td>Joint Digital Products</td><td>4</td><td>5</td><td>6-12 mo</td><td>Layer in month 4-6</td></tr>
+<tr><td>3</td><td>Maersk Alumni Consultancy</td><td>5</td><td>3</td><td>3-6 mo</td><td>Year 1-2</td></tr>
+<tr><td>4</td><td>Couple Coaching Brand</td><td>4</td><td>3</td><td>6-12 mo</td><td>After story</td></tr>
+<tr><td>5</td><td>Family Investment Vehicle</td><td>4</td><td>5</td><td>Forever</td><td>Day 1 setup</td></tr>
+<tr><td>6</td><td>Parallel Remote Roles</td><td>4</td><td>4</td><td>1-2 mo</td><td>Bridge income</td></tr>
+<tr><td>7</td><td>LATAM E-com Side Brand</td><td>4</td><td>3</td><td>4-8 mo</td><td>Side R&D</td></tr>
+<tr><td>8</td><td>PH Tax Structure</td><td>3</td><td>5</td><td>Day 1</td><td>Foundation</td></tr>
+</tbody></table></div>
+
+<!-- HIDDEN OPPORTUNITIES -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ Hidden Opportunities (No One Will Tell You These)</h3>
+
+<div class="cg">
+<div class="g cd rv"><div class="ci">📝</div><div class="ct">EU/LATAM CV Polish Service</div><div class="cm">Red writes ES/DE CVs. Shari builds the template + UP-style polish. Fee: ₱2-5K per CV. Demand is huge among Filipinos applying to EU companies.</div></div>
+<div class="g cd rv"><div class="ci">🎓</div><div class="ct">UP Alumni Network Activation</div><div class="cm">Shari's UP network = warm lead bank. One LinkedIn post about your joint consultancy can generate 5-10 inbound leads in week one.</div></div>
+<div class="g cd rv"><div class="ci">🌏</div><div class="ct">Timezone Arbitrage Coverage</div><div class="cm">Red handles EU (early AM PH). Shari handles US/AU (late PM PH). Together you offer 18-hour client coverage — enterprise clients pay premium for this.</div></div>
+<div class="g cd rv"><div class="ci">📊</div><div class="ct">Forex/Crypto-Aware Ops Consulting</div><div class="cm">Crypto + logistics is a $billion+ underserved niche (cross-border payments). Red's investing knowledge + Shari's ops = unique offer.</div></div>
+<div class="g cd rv"><div class="ci">📧</div><div class="ct">"Done-with-You" SOP Service</div><div class="cm">Most small businesses do not need full-time consultants. They need someone to build their SOP library once. ₱30-80K per project. Shari leads.</div></div>
+<div class="g cd rv"><div class="ci">🏙️</div><div class="ct">QC Remote-Worker Community</div><div class="cm">Host a monthly meetup of Quezon City remote workers. Red brings energy, Shari brings warmth. This becomes a referral + sponsorship pipeline.</div></div>
+</div>
+
+<!-- WHAT TO AVOID -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ Joint Traps to Avoid</h3>
+
+<div class="tw"><table><thead><tr><th>Trap</th><th>Why It Hurts Couples</th><th>Better Move</th></tr></thead><tbody>
+<tr><td>Both quit Maersk at the same time</td><td>Zero safety net = panic decisions</td><td>One transitions first, the other holds the income floor</td></tr>
+<tr><td>Both work on the same task</td><td>Conflict + role confusion</td><td>One owner per task, the other reviews only</td></tr>
+<tr><td>No separate workspaces</td><td>Work bleeds into home, no off-switch</td><td>Each person needs one dedicated zone</td></tr>
+<tr><td>Hustle culture content as a couple</td><td>Anxiety, comparison, fake productivity</td><td>Read together. Plan together. Brag privately.</td></tr>
+<tr><td>Skipping family/home rituals for work</td><td>The whole point disappears</td><td>Sacred no-work hours: Sunday + after 6 PM</td></tr>
+<tr><td>Sharing all logins, no boundaries</td><td>Decision fatigue + accidental overrides</td><td>Each owns their tools. Shared docs only for joint work.</td></tr>
+<tr><td>Mixing investment + grocery money</td><td>One bad trade = household stress</td><td>3 buckets: Family (Shari) / Business (joint) / Risk (Red)</td></tr>
+</tbody></table></div>
+</div></div>
+
+<!-- 90-DAY COORDINATED PLAN -->
+<div class="pg" id="pg-plan"><div class="wr">
+<div class="sh"><div class="sn e">3</div><div class="st">The 90-Day Coordinated Plan</div></div>
+<p class="subt">Two checklists, one mission. Click to mark done — progress saves in this browser.</p>
+
+<div class="co cgd"><div class="lb" style="color:var(--gd)">✨ How to use this plan</div>Red and Shari work in parallel, not sequence. Each day has both tasks. The whole plan runs in 60-90 min/day combined — 30 min Red, 30 min Shari, 30 min weekly together review.</div>
+
+<!-- PHASES -->
+<h3 style="margin-top:24px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.4rem">❖ The 4 Phases</h3>
+<div class="tl">
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--rd)"></div><b style="color:var(--rd2);font-size:.86rem">Phase 1 · Foundation (Days 1-14)</b><div class="cm">Set up business basics. LinkedIn revamp for both. Open joint operating bank account. Both apply to 5-10 calm remote roles as backup.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--gd)"></div><b style="color:var(--gd);font-size:.86rem">Phase 2 · First Joint Win (Days 15-45)</b><div class="cm">Land the first joint client OR one solid remote role for each. Test the operating rhythm. Learn the AI basics together.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--sh)"></div><b style="color:var(--sh2);font-size:.86rem">Phase 3 · Productize (Days 46-75)</b><div class="cm">Turn the first delivery into a packaged offer. Build a simple website + offer doc. Start building the playbook asset.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--em)"></div><b style="color:var(--em2);font-size:.86rem">Phase 4 · Compound (Days 76-90)</b><div class="cm">Raise rates. Add 2nd retainer. Calculate path to ₱200K joint monthly. Plan Maersk exit timeline.</div></div>
+</div>
+
+<!-- RED CHECKLIST -->
+<div class="sh" style="margin-top:32px"><div class="sn r">R</div><div class="st">Red's 30-Day List</div></div>
+<div class="gs" style="padding:16px;margin-bottom:14px"><b style="color:var(--rd2)">Red Progress: <span id="rp">0</span>/30</b><div class="bt" style="margin-top:8px;height:12px"><div id="rb" class="bf" style="width:0%;background:linear-gradient(90deg,var(--rd),var(--rd2))"></div></div></div>
+<div id="rcl"></div>
+
+<!-- SHARI CHECKLIST -->
+<div class="sh" style="margin-top:32px"><div class="sn s">S</div><div class="st">Shari's 30-Day List</div></div>
+<div class="gs" style="padding:16px;margin-bottom:14px"><b style="color:var(--sh2)">Shari Progress: <span id="sp">0</span>/30</b><div class="bt" style="margin-top:8px;height:12px"><div id="sb" class="bf" style="width:0%;background:linear-gradient(90deg,var(--sh),var(--sh2))"></div></div></div>
+<div id="scl"></div>
+
+<!-- COUPLE RITUALS -->
+<h3 style="margin-top:34px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ The Couple Rituals That Keep It Working</h3>
+<p class="subt">These are non-negotiable. The plan fails without them.</p>
+
+<div class="cg">
+<div class="g cd"><div class="ci">☕</div><div class="ct">Sunday 9 AM — Weekly Plan (45 min)</div><div class="cm">Coffee. No phones. Review last week wins, plan this week priorities, check pipeline. End with one shared joy.</div></div>
+<div class="g cd"><div class="ci">🕑</div><div class="ct">Tuesday 8 PM — Big-Decision Window (30 min)</div><div class="cm">Any decision ₱10K+ or business-direction-level happens here. Never decide in passing.</div></div>
+<div class="g cd"><div class="ci">📚</div><div class="ct">Saturday 10 AM — AI Learning (60 min)</div><div class="cm">One AI course chapter together. Discuss. Apply to current work. Treat it like book club.</div></div>
+<div class="g cd"><div class="ci">💰</div><div class="ct">First Sunday of Month — Money Date (45 min)</div><div class="cm">Review income, expenses, investments, savings goal progress. No blame. Pure numbers.</div></div>
+<div class="g cd"><div class="ci">🚷</div><div class="ct">Sundays After 6 PM — Sacred Off Hours</div><div class="cm">No work. No client thoughts. Reset together. This rule pays itself back 10x in clarity.</div></div>
+<div class="g cd"><div class="ci">🎉</div><div class="ct">Quarterly — Win Celebration</div><div class="cm">Every 3 months, mark progress with a small ritual: dinner out, weekend trip, gift. Compounding morale.</div></div>
+</div>
+</div></div>
+
+<!-- WEALTH MATH -->
+<div class="pg" id="pg-wealth"><div class="wr">
+<div class="sh"><div class="sn">4</div><div class="st">The Wealth Math — Five Years Out</div></div>
+<p class="subt">This is the page no employer ever shows. The compounding math of two earners + investments + low expenses + time.</p>
+
+<div class="fy"><b>The Compounding Truth</b><div class="d">Their individual earning ceilings are visible. Their joint compounding ceiling is invisible — because no one models it. Below is the math, conservative-case only.</div></div>
+
+<!-- JOINT INCOME CALCULATOR -->
+<div class="gs" style="padding:26px;margin:22px 0">
+<h3 style="color:var(--gd);margin-bottom:16px;font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ The Joint Income Calculator</h3>
+<p class="cm" style="margin-bottom:14px">Plug in your numbers. See your combined monthly income at a glance.</p>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:14px">
+<div class="cf"><label style="color:var(--rd2)">Red: USD/hour</label><input id="rhr" type="number" value="22" oninput="calc()"></div>
+<div class="cf"><label style="color:var(--sh2)">Shari: USD/hour</label><input id="shr" type="number" value="14" oninput="calc()"></div>
+<div class="cf"><label style="color:var(--rd2)">Red: hours/week</label><input id="rhw" type="number" value="30" oninput="calc()"></div>
+<div class="cf"><label style="color:var(--sh2)">Shari: hours/week</label><input id="shw" type="number" value="25" oninput="calc()"></div>
+<div class="cf" style="grid-column:1/-1"><label>PHP / USD</label><input id="fx" type="number" value="61.25" step=".25" oninput="calc()"></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:18px;text-align:center">
+<div><div class="cm" style="color:var(--rd2)">Red Monthly</div><div class="big" id="rmo" style="font-size:1.6rem">₱0</div></div>
+<div><div class="cm" style="color:var(--sh2)">Shari Monthly</div><div class="big" id="smo" style="font-size:1.6rem">₱0</div></div>
+<div><div class="cm" style="color:var(--gd)">Combined Monthly</div><div class="big" id="cmo">₱0</div></div>
+<div><div class="cm" style="color:var(--em)">Annual Total</div><div class="big" id="ann" style="font-size:1.6rem">₱0</div></div>
+</div>
+</div>
+
+<!-- 5-YEAR SCENARIO TABLE -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ The 5-Year Wealth Trajectory</h3>
+<p class="subt">Conservative assumptions: 5% annual rate increase, 20% of joint income saved, 8% portfolio return.</p>
+
+<div class="tw"><table><thead><tr><th>Year</th><th>Joint Monthly Income</th><th>Annual Savings (20%)</th><th>Portfolio Value (8% return)</th><th>Milestone</th></tr></thead><tbody>
+<tr><td><b>Year 1</b></td><td>₱180,000</td><td>₱432,000</td><td>₱466,560</td><td>Both transitioned. Calm baseline.</td></tr>
+<tr><td><b>Year 2</b></td><td>₱240,000</td><td>₱576,000</td><td>₱1,125,485</td><td>First joint client retainer.</td></tr>
+<tr><td><b>Year 3</b></td><td>₱300,000</td><td>₱720,000</td><td>₱1,992,524</td><td>Productized offer launched.</td></tr>
+<tr><td><b>Year 4</b></td><td>₱360,000</td><td>₱864,000</td><td>₱3,084,886</td><td>Hire first team member.</td></tr>
+<tr><td style="background:rgba(251,191,36,.06)"><b style="color:var(--gd)">Year 5</b></td><td><b style="color:var(--gd)">₱420,000</b></td><td><b style="color:var(--gd)">₱1,008,000</b></td><td><b style="color:var(--gd)">₱4,420,996</b></td><td><b style="color:var(--em2)">Financial independence visible</b></td></tr>
+</tbody></table></div>
+
+<div class="co cem"><div class="lb" style="color:var(--em2)">✨ What this really means</div>By Year 5, the Brothameyns can own a <b>₱4.4M+ investment portfolio</b> generating roughly ₱30-35K/month in passive returns alone — on top of their joint business income. <b>That is generational-wealth math, starting from zero capital today.</b></div>
+
+<!-- THE THREE-BUCKET SYSTEM -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ The Three-Bucket System</h3>
+<p class="subt">Their existing forex + crypto investing gets a real structure. No more mixing pockets.</p>
+
+<div class="cg">
+<div class="g cd rv">
+<div class="ci">🏠</div>
+<div class="ct" style="color:var(--sh2)">Bucket 1 — Family / Foundation</div>
+<div class="cm"><b>Owner: Shari.</b> Living expenses, emergency fund (6 months), education savings, home, healthcare. Boring on purpose. Never touched for "opportunities." 50% of joint income.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">💼</div>
+<div class="ct" style="color:var(--gd)">Bucket 2 — Business / Compound</div>
+<div class="cm"><b>Owner: Joint.</b> Tools, courses, marketing, hiring, business reinvestment. 20-30% of joint income. Every peso here should return more than it cost within 12 months.</div>
+</div>
+<div class="g cd rv">
+<div class="ci">📈</div>
+<div class="ct" style="color:var(--rd2)">Bucket 3 — Growth / Risk</div>
+<div class="cm"><b>Owner: Red.</b> Forex, crypto, index funds, REITs, individual stocks. 20-30% of joint income. Wins celebrated. Losses absorbed. Never raids Bucket 1.</div>
+</div>
+</div>
+
+<!-- HOUSEHOLD ECONOMICS ADVANTAGE -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ Their Hidden Economic Advantage</h3>
+
+<div class="tw"><table><thead><tr><th>Lever</th><th>Solo Cost</th><th>Couple Cost</th><th>Annual Savings</th></tr></thead><tbody>
+<tr><td>Internet + utilities</td><td>2 households</td><td>1 household</td><td>₱60,000+</td></tr>
+<tr><td>Co-working / office</td><td>2 desks</td><td>1 shared office</td><td>₱30-50,000</td></tr>
+<tr><td>Health insurance</td><td>Individual plans</td><td>Family plan (cheaper/head)</td><td>₱18,000+</td></tr>
+<tr><td>Subscription tools (AI, design, CRM)</td><td>Doubled</td><td>Shared family plans</td><td>₱30,000+</td></tr>
+<tr><td>Mental load / time</td><td>Both run all errands solo</td><td>Specialize + trade</td><td>~10 hrs/week</td></tr>
+<tr><td>Tax structure (if PH BIR-registered)</td><td>Individual filings</td><td>Joint optimization</td><td>Varies, often 5-15%</td></tr>
+<tr><td><b style="color:var(--gd)">Total estimated</b></td><td>—</td><td>—</td><td><b style="color:var(--gd)">₱140,000+/yr saved</b></td></tr>
+</tbody></table></div>
+
+<div class="co cgd"><div class="lb" style="color:var(--gd)">💡 The compound effect</div>₱140K/year saved + invested at 8% return for 10 years = roughly <b>₱2.2M extra wealth</b> from cost-sharing alone — before any income growth. <b>This is the silent superpower of couples.</b></div>
+
+<!-- THE EXIT MATH -->
+<h3 style="margin-top:32px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ When Can They Both Leave Maersk?</h3>
+
+<div class="tw"><table><thead><tr><th>Milestone</th><th>Trigger Condition</th><th>Estimated Timeline</th></tr></thead><tbody>
+<tr><td><b style="color:var(--rd2)">Red exits first</b></td><td>Joint side income ≥ 100% of Red's Maersk salary for 3 months</td><td>Month 4-7</td></tr>
+<tr><td><b style="color:var(--sh2)">Shari exits second</b></td><td>Joint income ≥ ₱180K/month + 6-month family runway</td><td>Month 8-14</td></tr>
+<tr><td><b style="color:var(--em2)">Financial flexibility</b></td><td>Portfolio income covers 50% of expenses</td><td>Year 4-5</td></tr>
+<tr><td><b style="color:var(--gd)">Real freedom</b></td><td>Portfolio income covers 100% of expenses</td><td>Year 7-10</td></tr>
+</tbody></table></div>
+
+<div class="co cs" style="margin-top:18px"><div class="lb" style="color:var(--sh2)">💞 Why Shari should exit second</div>Her calm income + benefits = the safety net Red uses to take bigger swings. This is not unfair — it is strategic. <b>Insurance pays for outsized wins.</b></div>
+</div></div>
+
+<!-- AI TOGETHER -->
+<div class="pg" id="pg-ai"><div class="wr">
+<div class="sh"><div class="sn r">5</div><div class="st">Learning AI — Together</div></div>
+<p class="subt">Two beginners. One curriculum. One Saturday morning at a time.</p>
+
+<div class="fy"><b>The Couple AI Advantage</b><div class="d">Most people learn AI alone, get distracted, and quit. The Brothameyns have a built-in study partner, accountability buddy, application sandbox (each other's work), and a teacher (whoever gets it first explains it to the other). This is the highest-leverage learning context that exists.</div></div>
+
+<h3 style="margin-top:24px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ The Shared 90-Day AI Curriculum</h3>
+<div class="tl">
+<div class="ti"><div class="td" style="background:var(--em)"></div><b style="color:var(--em2);font-size:.86rem">Weeks 1-2 · Foundations Together</b><div class="cm"><span class="who both">Both</span> Elements of AI + Google AI Essentials. Discuss every Saturday. Apply to Maersk emails by Monday.</div></div>
+<div class="ti"><div class="td" style="background:var(--rd)"></div><b style="color:var(--rd2);font-size:.86rem">Weeks 3-5 · Prompting Mastery</b><div class="cm"><span class="who r">Red</span> drafts client outreach prompts. <span class="who s">Shari</span> drafts client onboarding prompts. Trade and review.</div></div>
+<div class="ti"><div class="td" style="background:var(--sh)"></div><b style="color:var(--sh2);font-size:.86rem">Weeks 6-8 · Workflow Building</b><div class="cm"><span class="who both">Both</span> build one shared AI workflow: lead-to-onboarded-client pipeline. Showcase on LinkedIn as a couple.</div></div>
+<div class="ti"><div class="td" style="background:var(--gd)"></div><b style="color:var(--gd);font-size:.86rem">Weeks 9-12 · Specialization Split</b><div class="cm"><span class="who r">Red</span> goes deep on content/translation AI. <span class="who s">Shari</span> goes deep on ops/CRM AI. Teach each other monthly.</div></div>
+</div>
+
+<div class="co cgd"><div class="lb" style="color:var(--gd)">✨ The Saturday ritual that compounds</div>Coffee. One course chapter. 30 min discussion: "How would we use this in our business?" 30 min application. Done by lunch. <b>52 Saturdays = 52 weeks of compounded AI competency.</b></div>
+
+<h3 style="margin-top:28px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ Their Recommended First Five</h3>
+<div class="cg">
+<div class="g cd"><div class="ct" style="color:var(--em2)">1. Elements of AI</div><div class="cm">Free · 6-8 hrs · Two Saturdays. The foundation. Both finish before anything else.</div></div>
+<div class="g cd"><div class="ct" style="color:var(--em2)">2. Google AI Essentials</div><div class="cm">Free · 5-6 hrs · One Saturday. Shareable LinkedIn badge for both.</div></div>
+<div class="g cd"><div class="ct" style="color:var(--em2)">3. AWS Prompt Engineering</div><div class="cm">Free · 4 hrs · Highest ROI of any free course. Apply Monday.</div></div>
+<div class="g cd"><div class="ct" style="color:var(--em2)">4. ChatGPT Power User</div><div class="cm">Free · 3-5 hrs · Daily work hack. Time saved compounds.</div></div>
+<div class="g cd"><div class="ct" style="color:var(--em2)">5. IBM AI Fundamentals</div><div class="cm">Free audit · ~10 hrs · Recognized badge both should display.</div></div>
+</div>
+
+<h3 style="margin-top:28px;color:var(--br);font-family:var(--fs);font-style:italic;font-size:1.5rem">❖ AI Workflows To Build First</h3>
+<div class="tw"><table><thead><tr><th>Workflow</th><th>Owner</th><th>What It Saves</th></tr></thead><tbody>
+<tr><td>Multilingual email drafting (ES/DE/EN)</td><td><span class="who r">Red</span></td><td>~5 hrs/week</td></tr>
+<tr><td>Weekly client report auto-summary</td><td><span class="who s">Shari</span></td><td>~3 hrs/week</td></tr>
+<tr><td>SOP template generation</td><td><span class="who s">Shari</span></td><td>~4 hrs/week</td></tr>
+<tr><td>Lead research + outreach prep</td><td><span class="who r">Red</span></td><td>~6 hrs/week</td></tr>
+<tr><td>Content scheduling (LinkedIn posts)</td><td><span class="who both">Both</span></td><td>~4 hrs/week</td></tr>
+<tr><td><b style="color:var(--gd)">Combined time saved</b></td><td>—</td><td><b style="color:var(--gd)">~22 hrs/week</b></td></tr>
+</tbody></table></div>
+<div class="co cem"><div class="lb" style="color:var(--em2)">🌿 What 22 saved hours buys</div>That is a full extra workday for the family, every week. Or another retainer client without burning out. AI is not a tool — it is time given back.</div>
+</div></div>
+
+<!-- TOOLS -->
+<div class="pg" id="pg-tools"><div class="wr">
+<div class="sh"><div class="sn">6</div><div class="st">The Power Couple Tool Stack</div></div>
+<p class="subt">All free or low-cost. Beginner-safe. Each tool has an owner.</p>
+<div class="cg">
+<div class="g cd"><div class="ci">🤖</div><div class="ct">ChatGPT / Copilot <span class="who both">Both</span></div><div class="cm">Daily AI assistant. Both have personal accounts.</div></div>
+<div class="g cd"><div class="ci">🌍</div><div class="ct">DeepL Translator <span class="who r">Red</span></div><div class="cm">Pro ES/DE translation. Better than Google Translate for business.</div></div>
+<div class="g cd"><div class="ci">📝</div><div class="ct">Notion (shared workspace) <span class="who both">Both</span></div><div class="cm">Joint knowledge base, SOPs, client database, content calendar.</div></div>
+<div class="g cd"><div class="ci">📊</div><div class="ct">Google Sheets / Workspace <span class="who s">Shari</span></div><div class="cm">Trackers, reports, finance dashboards. Shari’s natural home.</div></div>
+<div class="g cd"><div class="ci">🎨</div><div class="ct">Canva Pro (1 family seat) <span class="who s">Shari</span></div><div class="cm">Brand kit, proposals, social assets. Two seats included.</div></div>
+<div class="g cd"><div class="ci">💬</div><div class="ct">Slack / Discord <span class="who both">Both</span></div><div class="cm">Client + team communication.</div></div>
+<div class="g cd"><div class="ci">📹</div><div class="ct">Zoom / Google Meet <span class="who both">Both</span></div><div class="cm">Client calls. Each has own background + framing.</div></div>
+<div class="g cd"><div class="ci">💼</div><div class="ct">LinkedIn Premium (1 first) <span class="who r">Red</span></div><div class="cm">Start with Red. Add Shari in month 3.</div></div>
+<div class="g cd"><div class="ci">🔗</div><div class="ct">HubSpot CRM (Free) <span class="who s">Shari</span></div><div class="cm">Client + lead tracking. Shari owns + maintains.</div></div>
+<div class="g cd"><div class="ci">📝</div><div class="ct">Grammarly <span class="who both">Both</span></div><div class="cm">Polish every email. Free tier excellent.</div></div>
+<div class="g cd"><div class="ci">📈</div><div class="ct">TradingView <span class="who r">Red</span></div><div class="cm">Forex + crypto charting. Already familiar.</div></div>
+<div class="g cd"><div class="ci">📚</div><div class="ct">Readwise / Kindle <span class="who r">Red</span></div><div class="cm">Highlights become content. Books become assets.</div></div>
+<div class="g cd"><div class="ci">⏱️</div><div class="ct">Toggl Track <span class="who both">Both</span></div><div class="cm">Time tracking. Protects boundaries. Bills clients honestly.</div></div>
+<div class="g cd"><div class="ci">🔐</div><div class="ct">Bitwarden Family <span class="who both">Both</span></div><div class="cm">Shared vault for joint logins. Free family plan.</div></div>
+<div class="g cd"><div class="ci">💵</div><div class="ct">Wise / Payoneer <span class="who both">Both</span></div><div class="cm">Receive USD/EUR from foreign clients. Cheaper than banks.</div></div>
+</div>
+
+<div class="co cgd" style="margin-top:18px"><div class="lb" style="color:var(--gd)">👑 The rule</div>Tool count stays low. Pick 5 to master in month 1. Add slowly. A simple stack used daily beats a premium stack abandoned.</div>
+</div></div>
+
+<!-- GLOSSARY -->
+<div class="pg" id="pg-gloss"><div class="wr">
+<div class="sh"><div class="sn">7</div><div class="st">The Partnership Glossary</div></div>
+<p class="subt">Terms a power couple actually needs. Search to filter.</p>
+<input class="gls" id="gs" placeholder="✨ Search... (retainer, bucket, productize)" oninput="dg()">
+<div class="gg" id="grd"></div>
+</div></div>
+
+<button class="bk" id="bk" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<footer>
+<div class="quote">"Apart, you each have a career. Together, you have a compounding machine. Build it slowly, on purpose."</div>
+<div><b>The Brothameyns — Lifetime Partnership Playbook v1.0</b></div>
+<div style="margin-top:4px">Crafted by UNGASIS / Mel · June 2026 · With deep respect for the two of you</div>
+<div style="margin-top:10px;font-size:.7rem;color:rgba(255,255,255,.3)">Languages × Calm × Logistics × Leadership × Time = Generational Wealth. ✨</div>
+</footer>
+
+<script>
+// =========== 60FPS PARTICLES (gold + rose-gold dust) ===========
+(function(){
+const c=document.getElementById('fx'),x=c.getContext('2d');let W,H,ps=[];
+function sz(){W=c.width=innerWidth;H=c.height=innerHeight}addEventListener('resize',sz);sz();
+class P{constructor(){this.r()}r(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.25;this.vy=(Math.random()-.5)*.25;this.s=Math.random()*1.8+.4;this.o=Math.random()*.35+.08;const rand=Math.random();this.h=rand<.5?'251,191,36':(rand<.75?'129,140,248':'244,63,94')}u(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.r()}d(){x.beginPath();x.arc(this.x,this.y,this.s,0,7);x.fillStyle='rgba('+this.h+','+this.o+')';x.fill()}}
+for(let i=0;i<75;i++)ps.push(new P());
+(function loop(){x.clearRect(0,0,W,H);ps.forEach(p=>{p.u();p.d()});requestAnimationFrame(loop)})()
+})();
+
+// =========== ROUTING ===========
+function go(id){
+document.querySelectorAll('.pg').forEach(p=>p.classList.toggle('on',p.id==='pg-'+id));
+document.querySelectorAll('.lnk a').forEach(a=>a.classList.toggle('on',a.dataset.p===id));
+document.querySelector('.lnk').classList.remove('open');
+setTimeout(()=>scrollTo({top:0,behavior:'smooth'}),30);
+setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>ob.observe(el)),100);
+}
+
+// =========== SCROLL EFFECTS ===========
+addEventListener('scroll',()=>{
+const h=document.documentElement;
+document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';
+document.getElementById('bk').classList.toggle('v',h.scrollTop>400);
+});
+
+// =========== REVEAL ===========
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
+
+// =========== COUNTERS ===========
+function ac(el,t,p='',s=''){if(!el)return;let c=0;const st=Math.max(1,Math.floor(t/50));const i=setInterval(()=>{c+=st;if(c>=t){c=t;clearInterval(i)}el.textContent=p+c+s},25)}
+setTimeout(()=>{
+ac(document.getElementById('c1'),15);
+ac(document.getElementById('c2'),4);
+ac(document.getElementById('c3'),8);
+ac(document.getElementById('c4'),90);
+document.getElementById('c5').textContent='₱0';
+document.getElementById('c6').textContent='₱200K';
+},500);
+
+// =========== JOINT INCOME CALCULATOR ===========
+function calc(){
+const rhr=document.getElementById('rhr'),shr=document.getElementById('shr'),rhw=document.getElementById('rhw'),shw=document.getElementById('shw'),fx=document.getElementById('fx');
+if(!rhr)return;
+const r=(+rhr.value||0)*(+rhw.value||0)*4.33*(+fx.value||61.25);
+const s=(+shr.value||0)*(+shw.value||0)*4.33*(+fx.value||61.25);
+const c=r+s,a=c*12;
+document.getElementById('rmo').textContent='₱'+Math.round(r).toLocaleString();
+document.getElementById('smo').textContent='₱'+Math.round(s).toLocaleString();
+document.getElementById('cmo').textContent='₱'+Math.round(c).toLocaleString();
+document.getElementById('ann').textContent='₱'+Math.round(a).toLocaleString();
+}
+setTimeout(calc,200);
+
+// =========== RED'S 30-DAY CHECKLIST ===========
+(function(){
+const tasks=[
+'Update LinkedIn headline: Multilingual Ops Strategist | ES/DE/EN | Ex-Maersk',
+'Take a fresh professional headshot (warm, confident)',
+'Rewrite About section: lead with languages + Maersk + AI-curious',
+'List 30 EU/LATAM companies hiring multilingual remote roles',
+'Start Elements of AI together with Shari (Saturday 10 AM)',
+'Open Wise + Payoneer accounts for foreign payments',
+'Draft cold outreach template in Spanish + German',
+'Send 5 LinkedIn connection requests to ex-Maersk colleagues in EU',
+'Post #1 on LinkedIn: lessons from 10 years at Maersk',
+'Apply to 5 multilingual remote roles (parallel income)',
+'Build a 1-page "Multilingual Ops Studio" landing pitch',
+'Send 10 cold outreach emails to EU logistics startups',
+'Complete Google AI Essentials (1 Saturday)',
+'Schedule 3 discovery calls (any incoming interest)',
+'Use AI to draft client proposal template (review with Shari)',
+'Activate Spanish/German job alerts on LinkedIn + Remote.co',
+'Post #2 on LinkedIn: building a couple-led consultancy',
+'Reach out to 10 Maersk alumni in EU/US/LATAM',
+'Complete AWS Prompt Engineering (free)',
+'Review week 1-2 with Shari (Sunday plan)',
+'Run first live discovery call (with Shari co-listening)',
+'Send 10 more outreach emails (refined based on responses)',
+'Set up Readwise for book highlights -> content',
+'Draft first 5-piece content series in Spanish for LinkedIn',
+'Build forex/crypto monthly review template',
+'Schedule first client demo / proposal call',
+'Calculate path: which mix hits joint ₱200K?',
+'Post #3 on LinkedIn: a framework you just learned',
+'Have one networking coffee (real life, in QC)',
+'Month 1 review with Shari: leads, learnings, what to drop'
+];
+const sv=JSON.parse(localStorage.getItem('brothRed')||'{}');
+const cl=document.getElementById('rcl');
+if(cl){tasks.forEach((t,i)=>{const d=document.createElement('div');d.className='chk'+(sv[i]?' dn':'');d.innerHTML='<div class="cbx"></div><div class="chtx"><b style="color:var(--rd2);font-size:.78rem">Day '+(i+1)+'</b><br>'+t+'</div>';d.onclick=()=>{d.classList.toggle('dn');sv[i]=d.classList.contains('dn')?1:0;localStorage.setItem('brothRed',JSON.stringify(sv));up()};cl.appendChild(d)});
+function up(){const n=Object.values(sv).filter(Boolean).length;const rp=document.getElementById('rp'),rb=document.getElementById('rb');if(rp)rp.textContent=n;if(rb)rb.style.width=n/30*100+'%'}up()}
+})();
+
+// =========== SHARI'S 30-DAY CHECKLIST ===========
+(function(){
+const tasks=[
+'Update LinkedIn headline: UP Team Leader | Ex-Maersk | Client Success & Operations',
+'Take a fresh professional headshot (calm, polished)',
+'Rewrite About section: lead with UP + Maersk + ops + AI-savvy',
+'Build a clean SOP template in Google Docs (your gift to the business)',
+'Start Elements of AI with Red (Saturday 10 AM)',
+'Set up shared Notion workspace + family + business sections',
+'Set up HubSpot Free CRM, ready for first client',
+'Get 3 LinkedIn recommendations from former Maersk colleagues',
+'Create the joint pitch deck (10 slides max) in Canva',
+'Apply to 5 calm remote Client Success / Account Manager roles',
+'Design the client onboarding email sequence (5 emails)',
+'Set up time blocks: deep work 8:30-11, admin 11-12:30',
+'Complete Google AI Essentials (1 Saturday)',
+'Build the simple finance tracker: income, savings, buckets',
+'Use AI to summarize Maersk weekly reports as practice',
+'Define the family runway: 6 months of expenses, where stored',
+'Post #1 on LinkedIn: a calm leadership insight',
+'Reach out to 5 Maersk alumni (warm intros via Red)',
+'Complete AWS Prompt Engineering (free) with Red',
+'Sunday plan with Red: review what is working',
+'Co-lead first client discovery call (you handle questions about delivery)',
+'Build the first SOP for the joint business (intake -> onboarding)',
+'Set up Bitwarden Family vault for shared logins',
+'Post #2 on LinkedIn: a polished case study from Maersk',
+'Define your no-list: no nights, no weekends, no commission-only',
+'Review the joint pipeline + revenue forecast',
+'Send 10 polished follow-up emails to warm leads',
+'Set up Grammarly Pro (or use free) on every browser',
+'Plan the Tuesday big-decision rituals + Sunday money date',
+'Month 1 review with Red: what to keep, improve, stop'
+];
+const sv=JSON.parse(localStorage.getItem('brothShari')||'{}');
+const cl=document.getElementById('scl');
+if(cl){tasks.forEach((t,i)=>{const d=document.createElement('div');d.className='chk'+(sv[i]?' dn':'');d.innerHTML='<div class="cbx"></div><div class="chtx"><b style="color:var(--sh2);font-size:.78rem">Day '+(i+1)+'</b><br>'+t+'</div>';d.onclick=()=>{d.classList.toggle('dn');sv[i]=d.classList.contains('dn')?1:0;localStorage.setItem('brothShari',JSON.stringify(sv));up()};cl.appendChild(d)});
+function up(){const n=Object.values(sv).filter(Boolean).length;const sp=document.getElementById('sp'),sb=document.getElementById('sb');if(sp)sp.textContent=n;if(sb)sb.style.width=n/30*100+'%'}up()}
+})();
+
+// =========== GLOSSARY ===========
+const gl=[
+['Three-Bucket System','Family / Business / Risk — each with one owner.','The reason couples in business don\'t fight about money.'],
+['Compounding','Returns earning more returns over time.','A snowball that picks up snow as it rolls.'],
+['Productize','Turn a custom service into a fixed-price offer.','From "we do whatever" to "buy this package for $X."'],
+['Retainer','Fixed monthly payment for ongoing service.','A gym membership but for your consultancy.'],
+['Joint Asset','Something you build together that out-lives both careers.','A business, a portfolio, a brand — not a salary.'],
+['Founder Duo','Two-person founding team with clear lanes.','Like Page & Brin, like Spanx, like Patagonia.'],
+['Lane','One person\'s clear ownership domain.','Once assigned, the other partner does not steer.'],
+['Productized Service','Same scope, same price, every time.','Combo meal, not custom catering.'],
+['Lead Magnet','Free thing that attracts ideal clients.','Like a perfume sample at the mall.'],
+['Discovery Call','First chat to learn if you and a client fit.','A first date for business.'],
+['Onboarding','First 14 days a new client experiences you.','The first impression sets every renewal.'],
+['CRM','Customer Relationship Management.','Phone contacts on steroids.'],
+['Pipeline','Visible list of potential and active deals.','Your sales weather forecast.'],
+['Backlog','Things you said yes to but have not done.','The silent debt that drains energy. Keep it small.'],
+['Burn Rate','How fast you spend money each month.','How long your money lasts if income stopped.'],
+['Runway','Months of expenses you have saved.','The Brothameyns target: 6 months minimum.'],
+['Multilingual Premium','Higher pay for speaking multiple languages.','Red\'s 4-6x income multiplier.'],
+['Async Work','Reply when ready, not in real-time.','Texting vs phone call.'],
+['Maersk Alumni','People who used to work at Maersk.','A built-in warm network. Use it.'],
+['Productized Offer','A clearly named package with fixed price.','"Multilingual Ops Sprint — $4,500 / 30 days."'],
+['Couple-led Brand','A consultancy/agency with two visible founders.','Trust built in. Marketing built in.'],
+['Anchor Client','Your first big retainer that proves the model.','The story you sell to the next 10 clients.'],
+['Boundary','A line that protects energy.','"We do not work Sunday" is a complete sentence.'],
+['Cash Flow','Money in vs money out, monthly.','The pulse you check first.'],
+['Compounding Time','Hours saved that buy future hours.','22 hrs/week saved = a full extra workday.'],
+['Generational Wealth','Money that outlives one person\'s career.','Built through assets, not salaries.'],
+['Joint Vehicle','Shared structure for income or investing.','Could be a partnership, LLC, or shared accounts.'],
+['Portfolio Income','Money that arrives without daily work.','Dividends, interest, rentals — the holy grail.'],
+['Risk Capital','Money you can afford to lose.','Forex + crypto money lives here, not grocery money.'],
+['SOP','Standard Operating Procedure — a recipe for work.','Anyone can follow it. Even AI.'],
+['Specialization','Doing one thing exceptionally well.','Heart surgeon vs general doctor.'],
+['Stack','The tools you use to run the business.','Smaller stack used = bigger output.'],
+['UP Network','University of the Philippines alumni community.','Shari\'s warm-lead bank. Activate it.'],
+['Value Ladder','Step-by-step offer pricing.','Free post -> low-ticket -> retainer -> custom.'],
+['Wise / Payoneer','Tools to receive USD/EUR from clients.','Bank-cheap, fast, essential.'],
+['Workflow','Repeatable steps that complete a job.','Your morning routine, but for business.'],
+['Compound Effect','Small actions × time = huge results.','One Saturday × 52 weeks = a new skill.']
+];
+function dg(){const gs=document.getElementById('gs'),grd=document.getElementById('grd');if(!gs||!grd)return;const q=(gs.value||'').toLowerCase();grd.innerHTML=gl.filter(w=>w.join(' ').toLowerCase().includes(q)).map(w=>'<div class="g cd"><div class="gt">'+w[0]+'</div><div style="font-size:.88rem;margin-bottom:6px">'+w[1]+'</div><div class="cm" style="font-style:italic;color:var(--gd)">✨ '+w[2]+'</div></div>').join('')}
+dg();
+</script>
+</body>
+</html>

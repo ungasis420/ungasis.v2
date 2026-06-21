@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unckiel's Tour Guide & Travel Agency</title>
+<meta name="theme-color" content="#06080f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="description" content="Premium guided tours across Luzon Philippines"><meta property="og:title" content="Unckiel's Tour Guide"><meta property="og:description" content="Discover the Hidden Philippines"><meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ====== TOKENS + THEMES ====== */
+:root { --font-sans:'Inter',system-ui,sans-serif; --font-serif:'Playfair Display',Georgia,serif; --radius:20px; --blur:24px; --tr:0.4s cubic-bezier(.25,.46,.45,.94); }
+[data-theme="dark"] {
+  --bg:#06080f; --bg2:#0c1019; --card:rgba(255,255,255,0.035); --card2:rgba(255,255,255,0.06);
+  --bdr:rgba(255,255,255,0.08); --bdr2:rgba(255,255,255,0.16);
+  --t1:#f0f2f8; --t2:rgba(240,242,248,0.6); --t3:rgba(240,242,248,0.4);
+  --ac:#00e5c8; --acR:0,229,200; --ac2:#3b82f6; --ac3:#f59e0b; --ac4:#ec4899; --ac5:#22c55e; --ac6:#a855f7;
+  --grad:linear-gradient(135deg,#00e5c8,#3b82f6); --inp:rgba(255,255,255,0.05); --nav:rgba(6,8,15,0.88);
+}
+[data-theme="light"] {
+  --bg:#f8fafb; --bg2:#fff; --card:rgba(0,0,0,0.03); --card2:rgba(0,0,0,0.05);
+  --bdr:rgba(0,0,0,0.08); --bdr2:rgba(0,0,0,0.15);
+  --t1:#0f172a; --t2:rgba(15,23,42,0.6); --t3:rgba(15,23,42,0.4);
+  --ac:#0d9488; --acR:13,148,136; --ac2:#2563eb; --ac3:#d97706; --ac4:#db2777; --ac5:#16a34a; --ac6:#9333ea;
+  --grad:linear-gradient(135deg,#0d9488,#2563eb); --inp:rgba(0,0,0,0.04); --nav:rgba(255,255,255,0.92);
+}
+
+/* ====== RESET ====== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--t1);overflow-x:hidden;line-height:1.65;transition:background .5s,color .5s}
+a{color:var(--ac);text-decoration:none;transition:var(--tr)} a:hover{opacity:.85}
+img{max-width:100%;display:block} button{font-family:var(--font-sans);cursor:pointer}
+::selection{background:rgba(var(--acR),.25)}
+::-webkit-scrollbar{width:8px} ::-webkit-scrollbar-track{background:var(--bg)} ::-webkit-scrollbar-thumb{background:rgba(var(--acR),.15);border-radius:4px}
+
+/* ====== GLASS ====== */
+.glass{background:var(--card);backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));border:1px solid var(--bdr);border-radius:var(--radius);transition:var(--tr)}
+.glass:hover{background:var(--card2);border-color:var(--bdr2);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.2)}
+
+/* ====== LAYOUT ====== */
+.container{max-width:1240px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+section{padding:100px 0;position:relative;z-index:1}
+.section-hdr{text-align:center;margin-bottom:60px}
+.section-tag{display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px}
+.section-hdr h2{font-family:var(--font-serif);font-size:clamp(2rem,4.5vw,3rem);font-weight:800;letter-spacing:-1px;margin-bottom:12px}
+.section-hdr p{color:var(--t2);max-width:560px;margin:0 auto;font-size:1.05rem}
+
+/* ====== BUTTONS ====== */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:700;font-size:14px;border:none;transition:var(--tr)}
+.btn-p{background:var(--grad);color:#06080f} .btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(var(--acR),.3)}
+.btn-o{background:transparent;color:var(--t1);border:1.5px solid var(--bdr)} .btn-o:hover{border-color:var(--ac);transform:translateY(-2px)}
+.btn-sm{padding:10px 20px;font-size:13px} .btn-lg{padding:18px 36px;font-size:16px}
+
+/* ====== BG ORBS ====== */
+.bg-orbs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.12;animation:orbF 25s infinite ease-in-out}
+.orb:nth-child(1){width:500px;height:500px;background:var(--ac);top:-10%;left:-5%}
+.orb:nth-child(2){width:400px;height:400px;background:var(--ac2);top:50%;right:-8%;animation-delay:-8s}
+.orb:nth-child(3){width:350px;height:350px;background:var(--ac6);bottom:-5%;left:30%;animation-delay:-16s}
+@keyframes orbF{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(60px,-80px) scale(1.1)}66%{transform:translate(-40px,50px) scale(.9)}}
+
+/* ====== ANIMATIONS ====== */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes kenBurns{0%{transform:scale(1)}50%{transform:scale(1.1) translate(-1%,-1%)}100%{transform:scale(1)}}
+
+/* ====== NAV ====== */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--nav);backdrop-filter:blur(20px);border-bottom:1px solid var(--bdr);padding:0 24px;transition:var(--tr)}
+.nav-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-icon{width:42px;height:42px;border-radius:12px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#06080f}
+.logo-text{font-size:17px;font-weight:800;color:var(--t1)} .logo-text span{color:var(--ac)}
+.nav-links{display:flex;gap:24px;list-style:none} .nav-links a{color:var(--t2);font-size:13px;font-weight:600;padding:6px 0;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--grad);transition:var(--tr);border-radius:2px}
+.nav-links a:hover{color:var(--t1);opacity:1} .nav-links a:hover::after{width:100%}
+.nav-ctrls{display:flex;align-items:center;gap:10px}
+.tog{width:42px;height:42px;border-radius:10px;border:1px solid var(--bdr);background:var(--card);color:var(--t1);display:flex;align-items:center;justify-content:center;font-size:18px;transition:var(--tr)} .tog:hover{border-color:var(--ac);transform:scale(1.05)}
+.nav-book{padding:10px 22px;border-radius:10px;background:var(--grad);color:#06080f;font-weight:700;font-size:13px;border:none;transition:var(--tr)} .nav-book:hover{transform:scale(1.05)}
+.hamburger{display:none;background:none;border:none;padding:8px;flex-direction:column;gap:5px} .hamburger span{width:22px;height:2px;background:var(--t1);border-radius:2px;transition:var(--tr)}
+
+/* ====== HERO ====== */
+.hero{min-height:100vh;position:relative;z-index:1;overflow:hidden;display:flex;align-items:center;justify-content:center;padding-top:72px;background:linear-gradient(135deg,#0c1019 0%,#0a2540 30%,#0d3b66 50%,#1a535c 70%,#06080f 100%)}
+.hero>*:not(.hero-content){display:none!important}
+[data-theme="light"] .hero{background:linear-gradient(135deg,#e0f2f1 0%,#b2dfdb 30%,#80cbc4 50%,#4db6ac 70%,#f8fafb 100%)}
+.hero-content{position:relative;z-index:2;text-align:center;max-width:820px;padding:0 24px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:100px;background:rgba(var(--acR),.1);border:1px solid rgba(var(--acR),.2);font-size:13px;color:var(--ac);font-weight:600;margin-bottom:24px;animation:fadeUp .8s ease-out}
+.hero h1{font-family:var(--font-serif);font-size:clamp(2.5rem,7vw,4.5rem);font-weight:900;line-height:1.1;letter-spacing:-2px;margin-bottom:20px;animation:fadeUp .8s ease-out .15s both}
+.hero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero>p,.hero-content>p{font-size:1.15rem;color:var(--t2);max-width:580px;margin:0 auto 36px;animation:fadeUp .8s ease-out .3s both}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:fadeUp .8s ease-out .45s both}
+.hero-stats{display:flex;gap:36px;justify-content:center;flex-wrap:wrap;margin-top:60px;animation:fadeUp .8s ease-out .6s both}
+.stat{text-align:center} .stat-num{font-size:2.5rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.stat-lbl{font-size:12px;color:var(--t3);margin-top:6px;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+
+/* ====== DEST CARDS ====== */
+.filter-bar{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:36px}
+.filter-bar select,.filter-bar input{padding:12px 18px;border-radius:12px;background:var(--card);border:1px solid var(--bdr);color:var(--t1);font-family:var(--font-sans);font-size:14px;outline:none;transition:var(--tr);min-width:170px}
+.filter-bar select:focus,.filter-bar input:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(var(--acR),.1)}
+.dest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:24px}
+.dest-card{padding:0;overflow:hidden;cursor:pointer} .dest-card:hover{transform:translateY(-6px)}
+.dest-img{height:220px;position:relative;overflow:hidden} .dest-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease} .dest-card:hover .dest-img img{transform:scale(1.08)}
+.dest-ov{position:absolute;inset:0;background:linear-gradient(to top,var(--bg) 0%,transparent 60%)}
+.dest-badge{position:absolute;top:14px;left:14px;padding:5px 12px;border-radius:8px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);font-size:12px;font-weight:700;color:#fff}
+.dest-rating{position:absolute;top:14px;right:14px;padding:5px 10px;border-radius:8px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);font-size:13px;font-weight:700;color:var(--ac3)}
+.dest-body{padding:22px} .dest-body h3{font-size:1.25rem;font-weight:800;margin-bottom:6px;font-family:var(--font-serif)}
+.dest-body>p{color:var(--t2);font-size:.88rem;margin-bottom:14px;line-height:1.5}
+.star-rating{display:flex;gap:2px;margin-bottom:10px} .star-rating .star{font-size:18px;cursor:pointer;transition:0.2s;color:var(--t3)} .star-rating .star.active,.star-rating .star:hover{color:var(--ac3);transform:scale(1.15)} .rating-count{font-size:.78rem;color:var(--t2);margin-left:6px}
+.dest-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.dest-tag{padding:4px 10px;border-radius:8px;font-size:11px;font-weight:600;background:rgba(var(--acR),.08);color:var(--ac);border:1px solid rgba(var(--acR),.12)}
+.dest-meta{display:flex;justify-content:space-between;align-items:center}
+.dest-price{font-size:1.15rem;font-weight:800} .dest-price span{font-size:.78rem;color:var(--t2);font-weight:400}
+
+/* ====== VIDEO ====== */
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:24px}
+.video-card{padding:0;overflow:hidden} .video-card:hover{transform:translateY(-4px)}
+.video-wrap{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0;background:var(--card)}
+.video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.video-info{padding:18px} .video-info h4{font-size:.95rem;font-weight:700;margin-bottom:4px} .video-info p{font-size:.83rem;color:var(--t2)}
+
+/* ====== MAP ====== */
+.map-embed{border-radius:var(--radius);overflow:hidden;border:1px solid var(--bdr);height:400px}
+.map-embed iframe{width:100%;height:100%;border:none}
+.map-v{padding:32px;border-radius:24px;background:var(--card);border:1px solid var(--bdr)}
+.map-g{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;min-height:420px}
+.mn{padding:16px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid var(--bdr);transition:var(--tr);cursor:pointer}
+.mn:hover{transform:scale(1.03);border-color:var(--ac)} .mn-e{font-size:2rem;margin-bottom:4px} .mn h4{font-size:.85rem;font-weight:700;margin-bottom:2px} .mn p{font-size:.7rem;color:var(--t2)}
+.mn-d{margin-top:4px;font-size:.65rem;padding:2px 8px;border-radius:6px;background:rgba(var(--acR),.08);color:var(--ac);font-weight:600}
+.mc{grid-column:2;grid-row:2;background:rgba(var(--acR),.05);border-color:rgba(var(--acR),.2)}
+
+/* ====== INFOGRAPHIC ====== */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.info-card{padding:24px;text-align:center} .info-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 12px}
+.info-card h4{font-size:.92rem;font-weight:700;margin-bottom:4px} .info-card p{font-size:.82rem;color:var(--t2)}
+.info-stat{font-size:1.8rem;font-weight:900;margin-top:8px;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.chart-box{padding:28px;margin-top:28px} .chart-title{font-size:1rem;font-weight:700;margin-bottom:20px;text-align:center}
+.bars{display:flex;align-items:flex-end;justify-content:space-around;height:200px;gap:10px}
+.bar-g{display:flex;flex-direction:column;align-items:center;flex:1}
+.bar-w{width:100%;max-width:48px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:170px}
+.bar{width:100%;border-radius:8px 8px 0 0;min-height:4px;transition:height 1.5s cubic-bezier(.34,1.56,.64,1)}
+.bar-v{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:700;white-space:nowrap}
+.bar-l{font-size:10px;color:var(--t2);margin-top:6px;text-align:center;font-weight:600}
+
+/* ====== PROCESS ====== */
+.pflow{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;padding:20px 0}
+.pstep{text-align:center;padding:16px;flex:1;min-width:130px}
+.pnum{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;margin:0 auto 10px;background:var(--grad);color:#06080f}
+.pstep h4{font-size:.88rem;font-weight:700;margin-bottom:3px} .pstep p{font-size:.75rem;color:var(--t2)}
+.parr{font-size:1.2rem;color:var(--ac);flex-shrink:0;animation:pA 1.5s infinite}
+@keyframes pA{0%,100%{opacity:.4;transform:translateX(0)}50%{opacity:1;transform:translateX(4px)}}
+
+/* ====== TIMELINE ====== */
+.timeline{position:relative;padding:20px 0}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:3px;background:var(--grad);transform:translateX(-50%);border-radius:3px}
+.tl-item{display:flex;align-items:flex-start;margin-bottom:36px;position:relative}
+.tl-item:nth-child(odd){flex-direction:row} .tl-item:nth-child(even){flex-direction:row-reverse}
+.tl-c{width:45%;padding:22px} .tl-dot{position:absolute;left:50%;top:22px;width:16px;height:16px;border-radius:50%;background:var(--grad);transform:translateX(-50%);z-index:2;box-shadow:0 0 16px rgba(var(--acR),.3)}
+.tl-step{font-size:11px;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.tl-c h3{font-size:1rem;font-weight:700;margin-bottom:4px} .tl-c p{font-size:.83rem;color:var(--t2);line-height:1.5}
+.print-btn{padding:10px 22px;border-radius:10px;background:var(--card);border:1px solid var(--bdr);color:var(--t1);font-weight:700;transition:var(--tr);display:inline-flex;align-items:center;gap:8px} .print-btn:hover{border-color:var(--ac)}
+
+/* ====== PACKAGES ====== */
+.pkg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:start}
+.pkg{padding:32px;text-align:center;position:relative;overflow:hidden}
+.pkg.feat{border-color:rgba(var(--acR),.3)} .pkg.feat::before{content:'';position:absolute;inset:-1px;background:var(--grad);z-index:-1;border-radius:var(--radius);opacity:.08}
+.pkg-badge{position:absolute;top:18px;right:-30px;padding:5px 40px;font-size:11px;font-weight:800;background:var(--grad);color:#06080f;transform:rotate(45deg);text-transform:uppercase;letter-spacing:1px}
+.pkg-icon{font-size:3rem;margin-bottom:14px} .pkg-name{font-family:var(--font-serif);font-size:1.3rem;font-weight:800;margin-bottom:4px} .pkg-desc{color:var(--t2);font-size:.88rem}
+.pkg-price{font-size:2.5rem;font-weight:900;margin:18px 0;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.pkg-price span{font-size:.82rem;-webkit-text-fill-color:var(--t2)}
+.pkg-features{list-style:none;text-align:left;margin:20px 0}
+.pkg-features li{padding:9px 0;border-bottom:1px solid var(--bdr);font-size:.88rem;color:var(--t2);display:flex;align-items:center;gap:8px}
+.chk{color:var(--ac);font-weight:700;width:20px;height:20px;border-radius:50%;background:rgba(var(--acR),.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.pkg-btn{width:100%;padding:13px;border-radius:12px;font-weight:700;font-size:14px;border:none;transition:var(--tr)}
+.pkg-btn.p{background:var(--grad);color:#06080f} .pkg-btn.o{background:transparent;color:var(--t1);border:1.5px solid var(--bdr)} .pkg-btn:hover{transform:translateY(-2px)}
+
+/* ====== BOOKING ====== */
+.book-section{border-radius:24px;background:var(--card);backdrop-filter:blur(var(--blur));border:1px solid var(--bdr);padding:40px}
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.book-info h2{font-family:var(--font-serif);font-size:1.8rem;font-weight:800;margin-bottom:14px} .book-info>p{color:var(--t2);margin-bottom:20px}
+.book-perks{list-style:none} .book-perks li{padding:8px 0;display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--t2)}
+.fg{margin-bottom:18px} .fg label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--t2)}
+.fg input,.fg select,.fg textarea{width:100%;padding:13px 15px;border-radius:12px;background:var(--inp);border:1px solid var(--bdr);color:var(--t1);font-family:var(--font-sans);font-size:14px;transition:var(--tr);outline:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(var(--acR),.1)}
+.fg textarea{resize:vertical;min-height:70px} .fr{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.promo-row{display:flex;gap:8px} .promo-row input{flex:1}
+.promo-apply{padding:13px 18px;border-radius:12px;background:var(--card);border:1px solid var(--bdr);color:var(--ac);font-weight:700;white-space:nowrap;transition:var(--tr)} .promo-apply:hover{border-color:var(--ac)}
+.promo-msg{font-size:.83rem;margin-top:6px;font-weight:600} .promo-msg.ok{color:var(--ac5)} .promo-msg.err{color:var(--ac4)}
+.form-submit{width:100%;padding:15px;border-radius:12px;background:var(--grad);color:#06080f;font-weight:800;font-size:15px;border:none;transition:var(--tr)} .form-submit:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(var(--acR),.3)}
+.form-ok{display:none;text-align:center;padding:40px} .form-ok.show{display:block} .form-ok .ok-icon{font-size:3.5rem;margin-bottom:14px} .form-ok h3{font-size:1.4rem;font-weight:800;margin-bottom:6px} .form-ok p{color:var(--t2)}
+
+/* Calendar */
+.cal{padding:22px;border-radius:var(--radius);background:var(--card);border:1px solid var(--bdr);margin-top:20px}
+.cal-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px} .cal-hdr h3{font-size:.95rem;font-weight:700}
+.cal-nav{display:flex;gap:6px} .cal-nav button{width:32px;height:32px;border-radius:8px;background:var(--card2);border:1px solid var(--bdr);color:var(--t1);font-size:15px;transition:var(--tr)} .cal-nav button:hover{border-color:var(--ac)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center}
+.cal-dn{font-size:10px;font-weight:700;color:var(--t3);padding:6px 0;text-transform:uppercase}
+.cal-d{padding:8px 3px;border-radius:6px;font-size:12px;font-weight:500;color:var(--t2);cursor:pointer;transition:0.2s;position:relative}
+.cal-d:hover{background:rgba(var(--acR),.08);color:var(--t1)} .cal-d.av{color:var(--ac);font-weight:700;background:rgba(var(--acR),.06)}
+.cal-d.av::after{content:'';position:absolute;bottom:3px;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--ac)}
+.cal-d.today{border:2px solid var(--ac)} .cal-d.empty{cursor:default}
+
+/* ====== APP MOCKUP ====== */
+.mock-flex{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.mock-text{flex:1;min-width:280px} .mock-text h2{font-family:var(--font-serif);font-size:1.8rem;font-weight:800;margin-bottom:14px} .mock-text>p{color:var(--t2);margin-bottom:20px}
+.fl{list-style:none} .fl li{padding:10px 0;display:flex;align-items:center;gap:10px;font-size:.92rem}
+.fi{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.phone{flex:0 0 280px;height:580px;border-radius:32px;border:3px solid var(--bdr2);background:var(--bg2);padding:12px;position:relative;box-shadow:0 30px 60px rgba(0,0,0,.25)}
+.ph-notch{width:100px;height:24px;border-radius:0 0 12px 12px;background:var(--bg);margin:0 auto 12px}
+.ph-screen{padding:8px;overflow:hidden;height:calc(100% - 80px)}
+.ph-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px} .ph-hdr h3{font-size:.9rem;font-weight:700}
+.ph-av{width:28px;height:28px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:12px}
+.ph-search{width:100%;padding:9px 12px;border-radius:10px;background:var(--inp);border:1px solid var(--bdr);color:var(--t2);font-size:11px;margin-bottom:12px}
+.ph-c{padding:12px;border-radius:10px;margin-bottom:8px;background:var(--card);border:1px solid var(--bdr)}
+.ph-ct{font-size:.78rem;font-weight:700;margin-bottom:2px} .ph-cs{font-size:.68rem;color:var(--t2)} .ph-cp{font-size:.82rem;font-weight:700;color:var(--ac);margin-top:4px}
+.ph-nav{position:absolute;bottom:12px;left:12px;right:12px;display:flex;justify-content:space-around;padding:8px;border-radius:12px;background:var(--card2);border:1px solid var(--bdr)}
+.pn{text-align:center;font-size:8px;color:var(--t3)} .pn.act{color:var(--ac)} .pn-i{font-size:14px;margin-bottom:1px}
+
+/* ====== MERCH ====== */
+.merch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+.merch-card{padding:18px;text-align:center} .merch-pv{height:140px;border-radius:12px;margin-bottom:12px;display:flex;align-items:center;justify-content:center;font-size:3rem}
+.merch-card h4{font-size:.9rem;font-weight:700;margin-bottom:3px} .merch-card p{font-size:.78rem;color:var(--t2)} .merch-p{color:var(--ac);font-weight:800;margin-top:4px;font-size:1rem}
+
+/* ====== LEARN ====== */
+.learn-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.lc{padding:22px} .lc-h{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.lc-i{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.lc h4{font-size:.95rem;font-weight:700}
+.ll{list-style:none} .ll li{padding:6px 0;border-bottom:1px solid var(--bdr);display:flex;align-items:flex-start;gap:6px;font-size:.83rem;color:var(--t2)} .ll li::before{content:'→';color:var(--ac);font-weight:700;flex-shrink:0}
+
+/* ====== TESTIMONIALS ====== */
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.tc{padding:24px} .tc-stars{color:var(--ac3);font-size:13px;margin-bottom:8px;letter-spacing:2px}
+.tc-q{font-size:.88rem;color:var(--t2);font-style:italic;line-height:1.55;margin-bottom:14px}
+.tc-a{display:flex;align-items:center;gap:10px} .tc-av{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px}
+.tc-n{font-size:.85rem;font-weight:700} .tc-r{font-size:.75rem;color:var(--t2)}
+
+/* ====== CTA ====== */
+.cta{text-align:center;padding:60px 36px;border-radius:24px;background:linear-gradient(135deg,rgba(var(--acR),.06),rgba(59,130,246,.06));border:1px solid rgba(var(--acR),.12)}
+.cta h2{font-family:var(--font-serif);font-size:clamp(1.6rem,4vw,2.3rem);font-weight:800;margin-bottom:12px} .cta>p{color:var(--t2);max-width:460px;margin:0 auto 24px}
+.c-grid{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.c-item{padding:18px 24px;border-radius:14px;background:var(--card);border:1px solid var(--bdr);text-align:center;min-width:160px}
+.c-item .ci{font-size:20px;margin-bottom:4px} .c-item h4{font-size:.85rem;font-weight:700;margin-bottom:2px} .c-item p{font-size:.8rem;color:var(--t2)}
+
+/* ====== CHAT ====== */
+.chat-btn{position:fixed;bottom:24px;right:24px;z-index:999;width:52px;height:52px;border-radius:50%;background:var(--grad);color:#06080f;display:flex;align-items:center;justify-content:center;font-size:24px;border:none;box-shadow:0 8px 25px rgba(var(--acR),.3);transition:var(--tr)} .chat-btn:hover{transform:scale(1.1)}
+.chat-box{position:fixed;bottom:86px;right:24px;z-index:999;width:320px;max-height:440px;border-radius:18px;background:var(--bg2);border:1px solid var(--bdr);box-shadow:0 20px 60px rgba(0,0,0,.3);display:none;flex-direction:column;overflow:hidden} .chat-box.open{display:flex}
+.chat-hdr{padding:14px 18px;background:var(--grad);color:#06080f;display:flex;justify-content:space-between;align-items:center} .chat-hdr h4{font-weight:800;font-size:.9rem} .chat-close{background:none;border:none;font-size:16px;cursor:pointer;color:#06080f}
+.chat-body{flex:1;padding:14px;overflow-y:auto;min-height:220px}
+.chat-msg{padding:9px 12px;border-radius:12px;margin-bottom:8px;font-size:.82rem;max-width:85%;line-height:1.4}
+.chat-msg.bot{background:var(--card);color:var(--t1);border:1px solid var(--bdr)} .chat-msg.user{background:rgba(var(--acR),.15);color:var(--t1);margin-left:auto}
+.chat-inp{display:flex;gap:6px;padding:10px 14px;border-top:1px solid var(--bdr)}
+.chat-input{flex:1;padding:9px 12px;border-radius:10px;background:var(--inp);border:1px solid var(--bdr);color:var(--t1);font-size:12px;outline:none} .chat-input:focus{border-color:var(--ac)}
+.chat-send{padding:9px 14px;border-radius:10px;background:var(--grad);color:#06080f;border:none;font-weight:700;font-size:12px}
+
+/* Music */
+.music-btn{position:fixed;bottom:24px;left:24px;z-index:999;width:44px;height:44px;border-radius:50%;background:var(--card);border:1px solid var(--bdr);color:var(--t1);display:flex;align-items:center;justify-content:center;font-size:18px;backdrop-filter:blur(8px);transition:var(--tr)} .music-btn:hover{border-color:var(--ac)}
+
+/* Footer */
+footer{padding:32px 24px;border-top:1px solid var(--bdr);text-align:center} footer p{color:var(--t3);font-size:.8rem}
+
+/* ====== PRINT ====== */
+@media print{
+  body{background:#fff!important;color:#000!important}
+  nav,.bg-orbs,.chat-btn,.chat-box,.music-btn,.hero,.filter-bar,.star-rating,#videos,#app,#merch,#contact,footer{display:none!important}
+  .glass,.book-section,.map-v,.cal{background:#fff!important;border:1px solid #ddd!important;backdrop-filter:none!important;box-shadow:none!important}
+  section{padding:16px 0!important;page-break-inside:avoid} .container{max-width:100%!important}
+  .dest-grid,.pkg-grid,.info-grid,.learn-grid,.test-grid{grid-template-columns:1fr 1fr!important}
+  .tl-c,.mn,.info-card,.tc,.lc{background:#f9f9f9!important;border:1px solid #ddd!important} a{color:#000!important}
+}
+
+/* ====== RESPONSIVE ====== */
+@media(max-width:900px){
+  .nav-links{display:none} .hamburger{display:flex}
+  nav.open .nav-links{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--nav);backdrop-filter:blur(20px);padding:20px;gap:14px;border-bottom:1px solid var(--bdr)}
+  .dest-grid,.video-grid{grid-template-columns:1fr} .book-grid{grid-template-columns:1fr} .fr{grid-template-columns:1fr}
+  .timeline::before{left:20px} .tl-item,.tl-item:nth-child(even){flex-direction:column;padding-left:40px} .tl-c{width:100%} .tl-dot{left:20px}
+  .mock-flex{flex-direction:column-reverse} .phone{flex:none;width:100%;max-width:280px;margin:0 auto}
+  .map-g{grid-template-columns:1fr 1fr} .mc{grid-column:auto;grid-row:auto}
+  .parr{transform:rotate(90deg)} .pkg-grid{grid-template-columns:1fr}
+  .chat-box{width:calc(100vw - 48px)}
+}
+@media(max-width:480px){.hero h1{font-size:2rem;letter-spacing:-1px} .book-section{padding:20px} section{padding:60px 0} .map-g{grid-template-columns:1fr}}
+
+/* ====== SKY CYCLE ====== */
+.sky-cycle{position:fixed;inset:0;z-index:-1;pointer-events:none;transition:none}
+[data-theme="light"] .sky-cycle{opacity:0.55}
+/* ====== SCROLL PROGRESS ====== */
+.scroll-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:var(--grad);z-index:1001;transition:none;box-shadow:0 0 8px rgba(var(--acR),.5)}
+/* ====== FLASH DEAL ====== */
+.flash-deal{text-align:center;padding:20px;margin-bottom:40px;border-radius:16px;background:linear-gradient(135deg,rgba(255,80,20,.08),rgba(245,158,11,.08));border:1px solid rgba(245,158,11,.15)}
+.flash-deal h3{font-size:1rem;font-weight:800;margin-bottom:8px;color:var(--ac3)}
+.flash-timer{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.flash-unit{padding:10px 14px;border-radius:10px;background:var(--card);border:1px solid var(--bdr);min-width:60px;text-align:center}
+.flash-num{font-size:1.5rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.flash-lbl{font-size:10px;color:var(--t3);text-transform:uppercase;font-weight:600;margin-top:2px}
+.flash-code{margin-top:10px;font-size:.88rem;color:var(--t2)} .flash-code b{color:var(--ac);font-size:1rem}
+/* ====== LIGHTBOX ====== */
+.lightbox{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;flex-direction:column;padding:24px}
+.lightbox.active{display:flex} .lightbox img{max-width:90vw;max-height:75vh;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.5);object-fit:cover}
+.lb-caption{color:#fff;font-size:1.1rem;font-weight:700;margin-top:16px;text-align:center;font-family:var(--font-serif)}
+.lb-close{position:absolute;top:20px;right:24px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:0.2s} .lb-close:hover{background:rgba(255,255,255,.2);transform:scale(1.1)}
+/* ====== CONFETTI ====== */
+.confetti-container{position:fixed;inset:0;z-index:3000;pointer-events:none;overflow:hidden}
+.confetti-piece{position:absolute;width:10px;height:10px;top:-20px;opacity:1;border-radius:2px}
+@keyframes confFall{0%{transform:translateY(0) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+/* ====== BACK TO TOP ====== */
+.btt{position:fixed;bottom:86px;right:24px;z-index:998;width:42px;height:42px;border-radius:50%;background:var(--card);border:1px solid var(--bdr);color:var(--t1);display:flex;align-items:center;justify-content:center;font-size:18px;backdrop-filter:blur(8px);transition:var(--tr);opacity:0;pointer-events:none;transform:translateY(10px)}
+.btt.show{opacity:1;pointer-events:auto;transform:translateY(0)} .btt:hover{border-color:var(--ac);transform:translateY(-2px)}
+/* ====== MICRO-INTERACTIONS ====== */
+.btn{position:relative;overflow:hidden} .btn .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.3);transform:scale(0);animation:rippleAnim .6s ease-out;pointer-events:none}
+@keyframes rippleAnim{to{transform:scale(4);opacity:0}} .tilt-card{transition:transform .3s ease}
+/* ====== SVG ROUTE ====== */
+.svg-route-wrap{padding:32px;border-radius:24px;background:var(--card);border:1px solid var(--bdr);margin-top:28px;overflow:hidden}
+.svg-route-wrap h3{text-align:center;font-weight:700;font-size:1.05rem;margin-bottom:16px}
+.svg-route{width:100%;max-width:900px;margin:0 auto;display:block}
+.route-path{fill:none;stroke:url(#routeGrad);stroke-width:3;stroke-linecap:round;stroke-dasharray:2000;stroke-dashoffset:2000;transition:stroke-dashoffset 0s}
+.route-path.drawn{transition:stroke-dashoffset 3s cubic-bezier(.25,.46,.45,.94);stroke-dashoffset:0}
+.route-dot{opacity:0;transition:opacity .5s ease} .route-dot.show{opacity:1}
+.route-label{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;fill:var(--t1)}
+/* ====== PAGE LOADER ====== */
+.page-loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .5s ease}
+.page-loader.done{opacity:0;pointer-events:none}
+.loader-logo{font-size:3rem;margin-bottom:16px;animation:fadeUp .8s ease-out}
+.loader-text{font-size:1rem;font-weight:700;color:var(--t2);animation:fadeUp .8s ease-out .2s both}
+.loader-bar{width:200px;height:4px;border-radius:4px;background:var(--card);margin-top:20px;overflow:hidden}
+.loader-fill{height:100%;width:0%;background:var(--grad);border-radius:4px;animation:loaderFill 1.2s ease-out forwards}
+@keyframes loaderFill{to{width:100%}}
+/* ====== SCROLL % ====== */
+.scroll-pct{position:fixed;top:8px;right:16px;z-index:1001;font-size:11px;font-weight:700;color:var(--ac);opacity:0;transition:opacity .3s;pointer-events:none;background:var(--card);padding:3px 8px;border-radius:6px;border:1px solid var(--bdr);backdrop-filter:blur(8px)} .scroll-pct.show{opacity:1}
+/* DOT NAV CSS removed */
+/* ====== SKIP LINK ====== */
+.skip-link{position:fixed;top:-50px;left:16px;z-index:10000;padding:10px 20px;background:var(--grad);color:#06080f;font-weight:800;border-radius:0 0 10px 10px;transition:top .2s} .skip-link:focus{top:0}
+/* ====== FOCUS ====== */
+*:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
+/* ====== SECTION DIVIDERS ====== */
+.section-divider{height:1px;max-width:200px;margin:0 auto;background:var(--grad);opacity:.3;border:none}
+/* ====== CHAT TYPING ====== */
+.typing-dots{display:flex;gap:4px;padding:9px 12px;align-items:center}
+.typing-dots span{width:6px;height:6px;border-radius:50%;background:var(--ac);opacity:.3;animation:typeDot 1.4s infinite}
+.typing-dots span:nth-child(2){animation-delay:.2s} .typing-dots span:nth-child(3){animation-delay:.4s}
+@keyframes typeDot{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-4px)}}
+/* ====== LAZY MAP ====== */
+.map-placeholder{height:400px;border-radius:var(--radius);background:var(--card);border:1px solid var(--bdr);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr)}
+.map-placeholder:hover{background:var(--card2);border-color:var(--ac)}
+.map-placeholder .mp-icon{font-size:3rem;margin-bottom:12px} .map-placeholder .mp-text{font-size:1rem;font-weight:700;color:var(--t1)} .map-placeholder .mp-sub{font-size:.82rem;color:var(--t2);margin-top:4px}
+@media print{.scroll-progress,.scroll-pct,.page-loader,.btt,.sky-cycle,.lightbox,.section-divider{display:none!important}}
+
+/* ====== WEATHER CENTER v5 ====== */
+.weather-controls{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;align-items:center}
+.weather-controls select{padding:12px 18px;border-radius:12px;background:var(--card);border:1px solid var(--bdr);color:var(--t1);font-family:var(--font-sans);font-size:14px;outline:none;transition:var(--tr);min-width:200px}
+.weather-controls select:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(var(--acR),.1)}
+.wx-ctrl-btn{width:42px;height:42px;border-radius:10px;border:1px solid var(--bdr);background:var(--card);color:var(--t1);display:flex;align-items:center;justify-content:center;font-size:18px;transition:var(--tr);cursor:pointer;flex-shrink:0}
+.wx-ctrl-btn:hover{border-color:var(--ac);background:var(--card2);transform:scale(1.05)}
+.wx-ctrl-btn.spinning .wx-spin-icon{animation:wxSpin 1s linear infinite}
+@keyframes wxSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.weather-card{padding:28px;border-radius:20px;background:var(--card);border:1px solid var(--bdr);backdrop-filter:blur(var(--blur));max-width:750px;margin:0 auto;text-align:center;transition:var(--tr)}
+.weather-card.loading{opacity:.6}
+.wx-city{font-family:var(--font-serif);font-size:1.4rem;font-weight:800;margin-bottom:4px}
+.wx-icon{font-size:3.5rem;margin:12px 0}.wx-temp{font-size:2.8rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.wx-desc{color:var(--t2);font-size:1rem;margin-top:4px;font-weight:600}
+.wx-details{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.wx-detail{padding:10px 14px;border-radius:12px;background:rgba(var(--acR),.06);border:1px solid rgba(var(--acR),.1);text-align:center;min-width:85px;transition:var(--tr)}
+.wx-detail:hover{background:rgba(var(--acR),.1);transform:translateY(-2px)}
+.wx-detail .wxd-val{font-size:1.05rem;font-weight:800;color:var(--t1)}.wx-detail .wxd-lbl{font-size:.68rem;color:var(--t2);text-transform:uppercase;font-weight:600;margin-top:2px}
+.wx-time{font-size:.75rem;color:var(--t3);margin-top:14px}
+.wind-arrow{display:inline-block;font-size:1.1rem;transition:transform .5s ease;line-height:1}
+.wind-compass{font-size:.6rem;color:var(--t3);font-weight:700;letter-spacing:.5px;margin-top:1px}
+/* Alerts */
+.wx-alerts{margin-top:18px}.wx-alert{display:flex;align-items:flex-start;gap:10px;padding:12px 16px;border-radius:12px;margin-bottom:8px;font-size:.82rem;line-height:1.4;text-align:left}
+.wx-alert-icon{font-size:1.2rem;flex-shrink:0;margin-top:1px}
+.wx-alert-text{flex:1}.wx-alert-title{font-weight:800;margin-bottom:2px}.wx-alert-desc{color:var(--t2);font-size:.78rem}
+.wx-alert.red{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);color:#ef4444}
+.wx-alert.orange{background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.2);color:#f97316}
+.wx-alert.yellow{background:rgba(245,158,11,.1);border:1px solid rgba(245,158,11,.2);color:#f59e0b}
+.wx-alert.green{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.15);color:#22c55e}
+.wx-alert.blue{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.15);color:#3b82f6}
+/* Sunrise/Sunset */
+.wx-sun-section{margin-top:18px;padding:16px;border-radius:16px;background:rgba(var(--acR),.03);border:1px solid rgba(var(--acR),.08)}
+.wx-sun-title{font-size:.82rem;font-weight:700;color:var(--t2);margin-bottom:10px}
+.wx-sun-arc{position:relative;width:220px;height:115px;margin:0 auto 12px;overflow:hidden}
+.wx-sun-arc-bg{width:220px;height:220px;border-radius:50%;border:2px dashed var(--bdr);position:absolute;top:0;left:0}
+.wx-sun-dot{width:14px;height:14px;border-radius:50%;background:var(--ac3);position:absolute;box-shadow:0 0 10px rgba(245,158,11,.5);transition:all .5s}
+.wx-sun-labels{display:flex;justify-content:space-between;align-items:center;padding:0 4px}
+.wx-sun-lbl{text-align:center}.wx-sun-lbl .sun-icon{font-size:1.2rem}.wx-sun-lbl .sun-time{font-size:.78rem;font-weight:700;color:var(--t1)}.wx-sun-lbl .sun-label{font-size:.6rem;color:var(--t3);text-transform:uppercase;font-weight:600}
+.wx-sun-countdown{font-size:.78rem;color:var(--ac3);font-weight:700;margin-top:6px}
+/* AQI */
+.wx-aqi-section{margin-top:18px;padding:16px;border-radius:16px;background:rgba(var(--acR),.03);border:1px solid rgba(var(--acR),.08)}
+.wx-aqi-title{font-size:.82rem;font-weight:700;color:var(--t2);margin-bottom:10px}
+.wx-aqi-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:center}
+.wx-aqi-badge{padding:10px 18px;border-radius:14px;text-align:center;min-width:100px}
+.wx-aqi-num{font-size:1.8rem;font-weight:900;line-height:1}.wx-aqi-label{font-size:.68rem;font-weight:700;text-transform:uppercase;margin-top:2px}
+.wx-aqi-detail{padding:8px 12px;border-radius:10px;background:var(--card);border:1px solid var(--bdr);text-align:center;min-width:70px}
+.wx-aqi-detail .aqd-val{font-size:.9rem;font-weight:800;color:var(--t1)}.wx-aqi-detail .aqd-lbl{font-size:.6rem;color:var(--t3);font-weight:600}
+/* UV Chart */
+.wx-uv-section{margin-top:18px;padding:16px;border-radius:16px;background:rgba(var(--acR),.03);border:1px solid rgba(var(--acR),.08)}
+.wx-uv-title{font-size:.82rem;font-weight:700;color:var(--t2);margin-bottom:10px}
+.wx-uv-chart{display:flex;align-items:flex-end;gap:3px;height:120px;padding:0 4px}
+.wx-uv-bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;height:100%}
+.wx-uv-bar{width:100%;min-width:6px;max-width:20px;border-radius:4px 4px 0 0;transition:height .8s ease;margin-top:auto}
+.wx-uv-val{font-size:.55rem;font-weight:800;color:var(--t1);margin-bottom:2px}
+.wx-uv-hr{font-size:.5rem;color:var(--t3);margin-top:3px;font-weight:600}
+.wx-uv-legend{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.wx-uv-leg{font-size:.6rem;display:flex;align-items:center;gap:3px;color:var(--t2)}
+.wx-uv-leg span{width:10px;height:10px;border-radius:3px;display:inline-block}
+/* Pollen */
+.wx-pollen-section{margin-top:18px;padding:16px;border-radius:16px;background:rgba(var(--acR),.03);border:1px solid rgba(var(--acR),.08)}
+.wx-pollen-title{font-size:.82rem;font-weight:700;color:var(--t2);margin-bottom:10px}
+.wx-pollen-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.wx-pollen-item{padding:10px 14px;border-radius:12px;background:var(--card);border:1px solid var(--bdr);text-align:center;min-width:80px;transition:var(--tr)}
+.wx-pollen-item:hover{transform:translateY(-2px)}.wx-pollen-icon{font-size:1.2rem;margin-bottom:2px}
+.wx-pollen-val{font-size:.9rem;font-weight:800;color:var(--t1)}.wx-pollen-name{font-size:.6rem;color:var(--t3);font-weight:600}
+.wx-pollen-na{color:var(--t3);font-size:.82rem;padding:10px}
+/* Radar */
+.wx-radar-section{margin-top:18px}
+.wx-radar-title{font-size:.82rem;font-weight:700;color:var(--t2);margin-bottom:10px;text-align:center}
+.wx-radar-placeholder{height:320px;border-radius:16px;background:var(--card);border:1px solid var(--bdr);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:var(--tr)}
+.wx-radar-placeholder:hover{background:var(--card2);border-color:var(--ac)}
+.wx-radar-placeholder .rp-icon{font-size:2.5rem;margin-bottom:8px}.wx-radar-placeholder .rp-text{font-size:.92rem;font-weight:700;color:var(--t1)}.wx-radar-placeholder .rp-sub{font-size:.78rem;color:var(--t2);margin-top:2px}
+.wx-radar-frame{border-radius:16px;overflow:hidden;border:1px solid var(--bdr);height:320px}.wx-radar-frame iframe{width:100%;height:100%;border:none}
+/* Sub titles + hourly + 7day */
+.wx-sub-title{font-size:.92rem;font-weight:700;margin:22px 0 12px;text-align:center;color:var(--t2)}
+.wx-hourly-scroll{display:flex;gap:10px;overflow-x:auto;padding:8px 4px 12px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.wx-hourly-scroll::-webkit-scrollbar{height:4px}.wx-hourly-scroll::-webkit-scrollbar-thumb{background:rgba(var(--acR),.15);border-radius:4px}
+.wx-hour-card{flex:0 0 72px;scroll-snap-align:start;padding:12px 8px;border-radius:12px;background:var(--card);border:1px solid var(--bdr);text-align:center;transition:var(--tr)}
+.wx-hour-card:hover{border-color:var(--ac);background:var(--card2)}.wx-hour-card.now{border-color:var(--ac);background:rgba(var(--acR),.08)}
+.wxh-time{font-size:.68rem;font-weight:700;color:var(--t3);text-transform:uppercase}.wxh-icon{font-size:1.3rem;margin:4px 0}.wxh-temp{font-size:.88rem;font-weight:800;color:var(--t1)}.wxh-rain{font-size:.62rem;color:var(--ac2);font-weight:600;margin-top:2px}.wxh-wind{font-size:.58rem;color:var(--t3);margin-top:1px}
+.wx-forecast-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;max-width:750px;margin:0 auto}
+.wx-day-card{padding:14px 8px;border-radius:14px;background:var(--card);border:1px solid var(--bdr);text-align:center;transition:var(--tr)}
+.wx-day-card:hover{border-color:var(--ac);background:var(--card2);transform:translateY(-3px)}.wx-day-card.today{border-color:var(--ac);background:rgba(var(--acR),.06)}
+.wxd-day{font-size:.72rem;font-weight:700;color:var(--t3);text-transform:uppercase;margin-bottom:4px}.wxd-icon{font-size:1.6rem;margin:6px 0}
+.wxd-hi{font-size:.95rem;font-weight:800;color:var(--t1)}.wxd-lo{font-size:.78rem;color:var(--t3);font-weight:600}
+.wxd-rain-chance{font-size:.65rem;color:var(--ac2);font-weight:700;margin-top:4px;padding:2px 6px;border-radius:6px;background:rgba(59,130,246,.06);display:inline-block}
+.wxd-wind-dir{font-size:.58rem;color:var(--t3);margin-top:2px}
+@media(max-width:900px){.wx-forecast-grid{grid-template-columns:repeat(4,1fr)}.wx-radar-frame,.wx-radar-placeholder{height:260px}}
+@media(max-width:480px){.wx-forecast-grid{grid-template-columns:repeat(3,1fr)}.wx-hour-card{flex:0 0 64px}.weather-controls{flex-direction:column;align-items:stretch}.weather-controls select{min-width:100%}.wx-sun-arc{width:180px;height:95px}.wx-sun-arc-bg{width:180px;height:180px}.wx-uv-chart{height:90px}}
+/* ====== DOT NAV v2 (Phase 8.8) ====== */
+.dot-nav{position:fixed;left:auto;right:20px;top:50%;transform:translateY(-50%);z-index:998;display:flex;flex-direction:column;gap:12px;padding:14px 8px;border-radius:20px;background:var(--card);backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));border:1px solid var(--bdr);transition:background .3s,border-color .3s}
+.dot-nav:hover{background:var(--card2);border-color:var(--bdr2)}
+.dn-dot{position:relative;width:10px;height:10px;border-radius:50%;background:var(--t3);border:none;padding:0;cursor:pointer;transition:all .3s ease;display:block}
+.dn-dot:hover{background:var(--ac);transform:scale(1.4)}
+.dn-dot.active{background:var(--ac);box-shadow:0 0 8px rgba(var(--acR),.4);transform:scale(1.3)}
+.dn-tip{position:absolute;right:calc(100% + 14px);top:50%;transform:translateY(-50%) translateX(4px);opacity:0;pointer-events:none;white-space:nowrap;padding:7px 14px;border-radius:10px;background:rgba(6,8,15,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);font-size:11px;font-weight:700;color:#f0f2f8;transition:all .25s cubic-bezier(.25,.46,.45,.94);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+[data-theme="light"] .dn-tip{background:rgba(255,255,255,.92);color:#0f172a;border-color:rgba(0,0,0,.08);box-shadow:0 8px 24px rgba(0,0,0,.1)}
+.dn-dot:hover .dn-tip{opacity:1;transform:translateY(-50%) translateX(0);pointer-events:auto}
+@media(max-width:900px){.dot-nav{display:none}}
+@media print{.dot-nav{display:none!important}}
+/* ====== PREMIUM TOOLTIPS (Phase 8.9) ====== */
+.premium-tip{position:fixed;z-index:9000;padding:8px 16px;border-radius:12px;background:rgba(6,8,15,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);font-size:12px;font-weight:600;color:#f0f2f8;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.3);pointer-events:none;opacity:0;transform:translateY(4px);transition:opacity .2s ease,transform .2s ease;max-width:260px;line-height:1.4}
+.premium-tip.show{opacity:1;transform:translateY(0)}
+[data-theme="light"] .premium-tip{background:rgba(255,255,255,.94);color:#0f172a;border:1px solid rgba(0,0,0,.08);box-shadow:0 8px 24px rgba(0,0,0,.1)}
+
+/* ====== SEA OF CLOUDS INTELLIGENCE (Phase 9.0-A) ====== */
+.wx-soc-section{margin-top:22px;padding:20px;border-radius:18px;background:linear-gradient(135deg,rgba(var(--acR),.04),rgba(168,85,247,.04));border:1px solid rgba(var(--acR),.1)}
+.wx-soc-title{font-size:.92rem;font-weight:800;color:var(--t1);margin-bottom:14px;text-align:center;display:flex;align-items:center;justify-content:center;gap:8px}
+.wx-soc-title .soc-badge{font-size:.6rem;padding:3px 8px;border-radius:6px;background:rgba(168,85,247,.12);color:#a855f7;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+/* Probability Gauge */
+.soc-gauge{text-align:center;margin-bottom:16px}
+.soc-gauge-ring{position:relative;width:160px;height:90px;margin:0 auto 10px;overflow:hidden}
+.soc-gauge-bg{width:160px;height:160px;border-radius:50%;border:10px solid var(--card2);border-bottom-color:transparent;border-left-color:transparent;position:absolute;top:0;left:0;transform:rotate(225deg)}
+.soc-gauge-fill{width:160px;height:160px;border-radius:50%;border:10px solid transparent;border-top-color:var(--ac);border-right-color:var(--ac);position:absolute;top:0;left:0;transform:rotate(225deg);transition:all 1.2s cubic-bezier(.34,1.56,.64,1);clip-path:inset(0 0 0 0)}
+.soc-gauge-pct{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-size:2.2rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.soc-gauge-label{font-size:.82rem;font-weight:700;padding:4px 14px;border-radius:8px;display:inline-block;margin-top:2px}
+.soc-gauge-label.soc-high{background:rgba(34,197,94,.12);color:#22c55e}
+.soc-gauge-label.soc-good{background:rgba(0,229,200,.12);color:#00e5c8}
+.soc-gauge-label.soc-fair{background:rgba(245,158,11,.12);color:#f59e0b}
+.soc-gauge-label.soc-low{background:rgba(239,68,68,.12);color:#ef4444}
+.soc-gauge-label.soc-none{background:rgba(var(--acR),.06);color:var(--t3)}
+/* Factor Chips */
+.soc-factors{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:14px}
+.soc-factor{padding:8px 12px;border-radius:10px;background:var(--card);border:1px solid var(--bdr);text-align:center;min-width:85px;transition:var(--tr)}
+.soc-factor:hover{border-color:var(--ac);transform:translateY(-2px)}
+.soc-factor .sf-val{font-size:.88rem;font-weight:800;color:var(--t1)}.soc-factor .sf-lbl{font-size:.6rem;color:var(--t3);text-transform:uppercase;font-weight:600;margin-top:2px}
+.soc-factor .sf-icon{font-size:1rem;margin-bottom:2px}
+/* Best Time Callout */
+.soc-best-time{text-align:center;padding:10px 16px;border-radius:12px;background:rgba(168,85,247,.06);border:1px solid rgba(168,85,247,.12);font-size:.82rem;color:var(--t2);margin-bottom:14px}
+.soc-best-time strong{color:#a855f7;font-weight:800}
+/* Elevation Info */
+.soc-elevation{text-align:center;font-size:.75rem;color:var(--t3);display:flex;align-items:center;justify-content:center;gap:6px}
+.soc-elevation .soc-elev-bar{width:60px;height:6px;border-radius:3px;background:var(--card2);overflow:hidden;display:inline-block;vertical-align:middle}
+.soc-elevation .soc-elev-fill{height:100%;border-radius:3px;transition:width .8s ease}
+/* 7-Day SoC Forecast */
+.soc-forecast-title{font-size:.82rem;font-weight:700;color:var(--t2);margin:16px 0 10px;text-align:center}
+.soc-forecast-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;max-width:750px;margin:0 auto}
+.soc-day{padding:10px 6px;border-radius:12px;background:var(--card);border:1px solid var(--bdr);text-align:center;transition:var(--tr)}
+.soc-day:hover{border-color:var(--ac);transform:translateY(-2px)}
+.soc-day .sd-day{font-size:.65rem;font-weight:700;color:var(--t3);text-transform:uppercase;margin-bottom:4px}
+.soc-day .sd-icon{font-size:1.3rem;margin-bottom:2px}
+.soc-day .sd-pct{font-size:.85rem;font-weight:800;color:var(--t1)}
+.soc-day .sd-label{font-size:.55rem;font-weight:700;padding:2px 6px;border-radius:4px;display:inline-block;margin-top:3px}
+.soc-day .sd-label.soc-high{background:rgba(34,197,94,.12);color:#22c55e}
+.soc-day .sd-label.soc-good{background:rgba(0,229,200,.12);color:#00e5c8}
+.soc-day .sd-label.soc-fair{background:rgba(245,158,11,.12);color:#f59e0b}
+.soc-day .sd-label.soc-low{background:rgba(239,68,68,.12);color:#ef4444}
+.soc-day .sd-label.soc-none{background:rgba(var(--acR),.06);color:var(--t3)}
+/* Historical Chart */
+.soc-hist-title{font-size:.82rem;font-weight:700;color:var(--t2);margin:18px 0 10px;text-align:center}
+.soc-hist-chart{display:flex;align-items:flex-end;gap:4px;height:110px;padding:0 4px;max-width:750px;margin:0 auto}
+.soc-hist-bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;height:100%}
+.soc-hist-bar{width:100%;min-width:8px;max-width:36px;border-radius:4px 4px 0 0;transition:height 1s ease;margin-top:auto}
+.soc-hist-val{font-size:.55rem;font-weight:800;color:var(--t1);margin-bottom:2px}
+.soc-hist-mo{font-size:.5rem;color:var(--t3);margin-top:3px;font-weight:700}
+.soc-hist-note{text-align:center;font-size:.7rem;color:var(--t3);margin-top:8px;font-style:italic}
+/* No data state */
+.soc-no-data{text-align:center;padding:20px;color:var(--t3);font-size:.88rem}
+.soc-no-data .soc-nd-icon{font-size:2rem;margin-bottom:8px}
+/* Responsive */
+@media(max-width:900px){.soc-forecast-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:480px){.soc-forecast-grid{grid-template-columns:repeat(3,1fr)}.soc-factors{gap:6px}.soc-factor{min-width:72px;padding:6px 8px}.soc-gauge-ring{width:130px;height:72px}.soc-gauge-bg,.soc-gauge-fill{width:130px;height:130px}.soc-gauge-pct{font-size:1.8rem}}
+</style>
+</head>
+<body>
+
+<a href="#destinations" class="skip-link">Skip to content</a>
+<div class="page-loader" id="pageLoader"><div class="loader-logo">🏝️</div><div class="loader-text">Unckiel's Tours</div><div class="loader-bar"><div class="loader-fill"></div></div></div>
+<div class="bg-orbs"><div class="orb"></div><div class="orb"></div><div class="orb"></div></div>
+
+<div class="sky-cycle" id="skyCycle"></div>
+<!-- NAV -->
+<div class="scroll-pct" id="scrollPct">0%</div>
+<div class="scroll-progress" id="scrollProg"></div>
+<nav id="navbar" role="navigation" aria-label="Main navigation"><div class="nav-inner">
+  <a href="#hero" class="logo"><div class="logo-icon">U</div><div class="logo-text">Unckiel's <span>Tours</span></div></a>
+  <ul class="nav-links"><li><a href="#destinations">Destinations</a></li><li><a href="#gmap">Map</a></li><li><a href="#packages">Packages</a></li><li><a href="#booking">Book</a></li><li><a href="#learn">Tips</a></li><li><a href="#weather">Weather</a></li></ul>
+  <div class="nav-ctrls"><button class="tog" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">🌙</button><button class="tog" id="langBtn" aria-label="Toggle language" title="Language">🇵🇭</button><button class="nav-book" onclick="scrollTo('#booking')">Book Now ✈️</button></div>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="this.closest('nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+</div></nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+    <div class="hero-badge">🇵🇭 <span data-en="Your Local PH Travel Expert" data-tl="Ang Iyong Lokal na PH Travel Expert">Your Local PH Travel Expert</span></div>
+    <h1><span data-en="Discover the" data-tl="Tuklasin ang">Discover the</span> <span class="hl" data-en="Hidden Philippines" data-tl="Nakatagong Pilipinas">Hidden Philippines</span></h1>
+    <p data-en="Premium guided tours across Luzon — from the misty Cordilleras to the golden shores of Zambales." data-tl="Premium na guided tours sa Luzon — mula sa Cordilleras hanggang sa Zambales.">Premium guided tours across Luzon — from the misty Cordilleras to the golden shores of Zambales.</p>
+    <div class="hero-btns"><button class="btn btn-p btn-lg" onclick="scrollTo('#booking')">Book Your Adventure 🗺️</button><button class="btn btn-o btn-lg" onclick="scrollTo('#destinations')">View Destinations</button></div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num" data-target="50">0</div><div class="stat-lbl">Tour Routes</div></div>
+      <div class="stat"><div class="stat-num" data-target="12000">0</div><div class="stat-lbl">Happy Travelers</div></div>
+      <div class="stat"><div class="stat-num" data-target="5">0</div><div class="stat-lbl">Regions</div></div>
+      <div class="stat"><div class="stat-num" data-target="98">0</div><div class="stat-lbl">% Satisfaction</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<hr class="section-divider">
+<section id="destinations"><div class="container">
+  <div class="section-hdr reveal"><div class="section-tag" style="background:rgba(var(--acR),.08);color:var(--ac);">🗺️ Destinations</div><h2>Explore Luzon's Hidden Gems</h2><p>Hand-picked destinations curated by expert local guides.</p></div>
+  <div class="filter-bar reveal"><input type="text" id="searchDest" placeholder="🔍 Search destinations..." oninput="filterDests()"><select id="filterBudget" onchange="filterDests()"><option value="">💰 All Budgets</option><option value="low">Under ₱2,000</option><option value="mid">₱2,000–₱3,500</option><option value="high">₱3,500+</option></select><select id="filterActivity" onchange="filterDests()"><option value="">🎯 All Activities</option><option value="hiking">🥾 Hiking</option><option value="beach">🏖️ Beach</option><option value="culture">🎨 Culture</option><option value="road">🏍️ Road Trip</option></select></div>
+  <div class="dest-grid" id="destGrid">
+    <div class="dest-card glass reveal" data-name="tanay rizal daranak treasure mountain" data-budget="1500" data-activity="hiking"><div class="dest-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#047857,#00e5c8);display:flex;align-items:center;justify-content:center;font-size:4rem;">⛰️</div><div class="dest-ov"></div><div class="dest-badge">📍 Rizal</div><div class="dest-rating">⭐ 4.8</div></div><div class="dest-body"><h3>Tanay, Rizal</h3><div class="star-rating" data-dest="tanay"></div><p>Gateway to Sierra Madre — Treasure Mountain sea of clouds, Daranak Falls, Masungi Georeserve. Just 2 hours from Manila!</p><div class="dest-tags"><span class="dest-tag">🌊 Waterfalls</span><span class="dest-tag">🥾 Hiking</span><span class="dest-tag">☁️ Sea of Clouds</span></div><div class="dest-meta"><div class="dest-price">₱1,500 <span>/ person</span></div><button class="btn btn-p btn-sm" onclick="scrollTo('#booking')">Book →</button></div></div></div>
+
+    <div class="dest-card glass reveal" data-name="marilaque loop road trip scenic" data-budget="2000" data-activity="road"><div class="dest-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0e4d64,#3b82f6);display:flex;align-items:center;justify-content:center;font-size:4rem;">🏍️</div><div class="dest-ov"></div><div class="dest-badge">📍 Rizal-Laguna-Quezon</div><div class="dest-rating">⭐ 4.7</div></div><div class="dest-body"><h3>Marilaque Loop</h3><div class="star-rating" data-dest="marilaque"></div><p>The legendary 117.5km highway. Twisting mountain roads, roadside cafés, Jariel's Peak, and Sierra Madre views.</p><div class="dest-tags"><span class="dest-tag">🏍️ Road Trip</span><span class="dest-tag">☕ Cafés</span><span class="dest-tag">🌲 Mountains</span></div><div class="dest-meta"><div class="dest-price">₱2,000 <span>/ person</span></div><button class="btn btn-p btn-sm" onclick="scrollTo('#booking')">Book →</button></div></div></div>
+
+    <div class="dest-card glass reveal" data-name="quezon borawan cagbalete pahiyas" data-budget="2500" data-activity="beach culture"><div class="dest-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#0369a1,#06b6d4);display:flex;align-items:center;justify-content:center;font-size:4rem;">🏝️</div><div class="dest-ov"></div><div class="dest-badge">📍 Quezon</div><div class="dest-rating">⭐ 4.6</div></div><div class="dest-body"><h3>Quezon Province</h3><div class="star-rating" data-dest="quezon"></div><p>Borawan's white sands, Cagbalete Island, Pahiyas Festival, Villa Escudero, and famous Pancit Lucban.</p><div class="dest-tags"><span class="dest-tag">🏖️ Islands</span><span class="dest-tag">⛪ Heritage</span><span class="dest-tag">🎉 Festivals</span></div><div class="dest-meta"><div class="dest-price">₱2,500 <span>/ person</span></div><button class="btn btn-p btn-sm" onclick="scrollTo('#booking')">Book →</button></div></div></div>
+
+    <div class="dest-card glass reveal" data-name="zambales anawangin liwliwa pinatubo beach surf" data-budget="3000" data-activity="beach hiking"><div class="dest-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#ea580c,#f59e0b);display:flex;align-items:center;justify-content:center;font-size:4rem;">🏖️</div><div class="dest-ov"></div><div class="dest-badge">📍 Zambales</div><div class="dest-rating">⭐ 4.9</div></div><div class="dest-body"><h3>Zambales</h3><div class="star-rating" data-dest="zambales"></div><p>Pristine Anawangin & Nagsasa Coves, surfing at Liwliwa, Crystal Beach bonfires, and Mt. Pinatubo crater lake.</p><div class="dest-tags"><span class="dest-tag">🏄 Surfing</span><span class="dest-tag">⛺ Camping</span><span class="dest-tag">🌋 Pinatubo</span></div><div class="dest-meta"><div class="dest-price">₱3,000 <span>/ person</span></div><button class="btn btn-p btn-sm" onclick="scrollTo('#booking')">Book →</button></div></div></div>
+
+    <div class="dest-card glass reveal" data-name="cordillera banaue sagada rice terraces highlands" data-budget="5500" data-activity="hiking culture"><div class="dest-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#4a1d96,#a855f7);display:flex;align-items:center;justify-content:center;font-size:4rem;">🌾</div><div class="dest-ov"></div><div class="dest-badge">📍 Cordillera</div><div class="dest-rating">⭐ 4.9</div></div><div class="dest-body"><h3>Cordilleras</h3><div class="star-rating" data-dest="cordillera"></div><p>UNESCO Banaue & Batad Rice Terraces, Sagada Hanging Coffins, Sumaguing Cave, Buscalan tattoo village.</p><div class="dest-tags"><span class="dest-tag">🌾 UNESCO</span><span class="dest-tag">⚰️ Hanging Coffins</span><span class="dest-tag">🏔️ Highlands</span></div><div class="dest-meta"><div class="dest-price">₱5,500 <span>/ person</span></div><button class="btn btn-p btn-sm" onclick="scrollTo('#booking')">Book →</button></div></div></div>
+
+    <div class="dest-card glass reveal" data-name="baguio summer capital benguet strawberry" data-budget="3500" data-activity="culture"><div class="dest-img"><div style="width:100%;height:100%;background:linear-gradient(135deg,#065f46,#22c55e);display:flex;align-items:center;justify-content:center;font-size:4rem;">🌲</div><div class="dest-ov"></div><div class="dest-badge">📍 Benguet</div><div class="dest-rating">⭐ 4.8</div></div><div class="dest-body"><h3>Baguio</h3><div class="star-rating" data-dest="baguio"></div><p>Cool pine city at 1,500m! Burnham Park, BenCab Museum, La Trinidad Strawberry Farm, and Night Market.</p><div class="dest-tags"><span class="dest-tag">🍓 Strawberries</span><span class="dest-tag">🎨 Art</span><span class="dest-tag">🌲 Pine Forest</span></div><div class="dest-meta"><div class="dest-price">₱3,500 <span>/ person</span></div><button class="btn btn-p btn-sm" onclick="scrollTo('#booking')">Book →</button></div></div></div>
+  </div>
+</div></section>
+
+<!-- VIDEOS REMOVED -->
+
+<!-- GOOGLE MAP -->
+<hr class="section-divider">
+<section id="gmap"><div class="container">
+  <div class="section-hdr reveal"><div class="section-tag" style="background:rgba(59,130,246,.08);color:var(--ac2);">📍 Interactive Map</div><h2>Find Our Destinations</h2><p>All tour destinations on the map.</p></div>
+  <div class="map-placeholder reveal" id="mapPlaceholder" onclick="loadMap()"><div class="mp-icon">🗺️</div><div class="mp-text">Click to Load Interactive Map</div><div class="mp-sub">Google Maps — Luzon, Philippines</div></div>
+  <div class="map-v reveal" style="margin-top:28px;"><div style="text-align:center;margin-bottom:16px;font-weight:700;font-size:1.05rem;">🧭 Visual Route Map from Manila</div>
+    <div class="map-g">
+      <div class="mn"><div class="mn-e">🏔️</div><h4>Cordilleras</h4><p>Banaue · Sagada</p><div class="mn-d">⏱ 9-10 hrs</div></div>
+      <div class="mn"><div class="mn-e">🌲</div><h4>Baguio</h4><p>1,500m ASL</p><div class="mn-d">⏱ 4-5 hrs</div></div>
+      <div class="mn"><div class="mn-e">🏖️</div><h4>Zambales</h4><p>Anawangin · Liwliwa</p><div class="mn-d">⏱ 3-4 hrs</div></div>
+      <div class="mn"><div class="mn-e">🏍️</div><h4>Marilaque</h4><p>117.5km loop</p><div class="mn-d">⏱ 3-4 hrs</div></div>
+      <div class="mn mc"><div class="mn-e">📍</div><h4>MANILA</h4><p>Home Base</p><div class="mn-d">🏠 Start</div></div>
+      <div class="mn"><div class="mn-e">⛰️</div><h4>Tanay</h4><p>Daranak · Treasure Mtn</p><div class="mn-d">⏱ 1.5-2 hrs</div></div>
+      <div class="mn"><div class="mn-e">🎉</div><h4>Lucban</h4><p>Pahiyas Festival</p><div class="mn-d">⏱ 3-4 hrs</div></div>
+      <div class="mn"><div class="mn-e">🏝️</div><h4>Quezon Coast</h4><p>Borawan · Cagbalete</p><div class="mn-d">⏱ 3-5 hrs</div></div>
+      <div class="mn"><div class="mn-e">⛪</div><h4>Tayabas</h4><p>Heritage Town</p><div class="mn-d">⏱ 2.5-3 hrs</div></div>
+    </div>
+  </div>
+
+ <div class="svg-route-wrap reveal" id="svgRouteWrap" style="margin-top:28px;">
+  <h3>🗺️ Animated Route — Manila to All Destinations</h3>
+  <svg class="svg-route" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg">
+   <defs><linearGradient id="routeGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#00e5c8"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs>
+   <path id="routePath" class="route-path" d="M450,320 C450,280 350,250 250,200 C200,175 150,140 120,100 M450,320 C450,280 550,250 650,200 C700,175 750,140 780,100 M450,320 C380,280 280,260 200,280 M450,320 C520,280 620,260 700,280"/>
+   <circle class="route-dot" cx="450" cy="320" r="8" fill="#00e5c8"/><text class="route-label" x="450" y="348" text-anchor="middle">📍 Manila</text>
+   <circle class="route-dot" cx="250" cy="200" r="6" fill="#f59e0b"/><text class="route-label" x="250" y="190" text-anchor="middle">🏖️ Zambales</text>
+   <circle class="route-dot" cx="120" cy="100" r="6" fill="#a855f7"/><text class="route-label" x="120" y="88" text-anchor="middle">🌾 Cordilleras</text>
+   <circle class="route-dot" cx="200" cy="280" r="6" fill="#22c55e"/><text class="route-label" x="200" y="300" text-anchor="middle">🌲 Baguio</text>
+   <circle class="route-dot" cx="650" cy="200" r="6" fill="#3b82f6"/><text class="route-label" x="650" y="190" text-anchor="middle">⛰️ Tanay</text>
+   <circle class="route-dot" cx="780" cy="100" r="6" fill="#06b6d4"/><text class="route-label" x="780" y="88" text-anchor="middle">🏝️ Quezon</text>
+   <circle class="route-dot" cx="700" cy="280" r="6" fill="#ec4899"/><text class="route-label" x="700" y="300" text-anchor="middle">🏍️ Marilaque</text>
+  </svg>
+ </div>
+</div></section>
+
+<!-- INFOGRAPHICS -->
+<hr class="section-divider">
+<section id="stats"><div class="container">
+  <div class="section-hdr reveal"><div class="section-tag" style="background:rgba(245,158,11,.08);color:var(--ac3);">📊 Infographic</div><h2>Why These Destinations?</h2></div>
+  <div class="info-grid">
+    <div class="info-card glass reveal"><div class="info-icon" style="background:rgba(var(--acR),.08);">🌿</div><h4>Tanay Visitors/Yr</h4><p>Closest nature escape from Manila.</p><div class="info-stat">500K+</div></div>
+    <div class="info-card glass reveal"><div class="info-icon" style="background:rgba(59,130,246,.08);">🏍️</div><h4>Marilaque Riders/Wk</h4><p>Famous weekend loop.</p><div class="info-stat">2,000+</div></div>
+    <div class="info-card glass reveal"><div class="info-icon" style="background:rgba(245,158,11,.08);">🏖️</div><h4>Zambales Coast</h4><p>Untouched coves & surf.</p><div class="info-stat">170 km</div></div>
+    <div class="info-card glass reveal"><div class="info-icon" style="background:rgba(168,85,247,.08);">🌾</div><h4>Terraces Age</h4><p>UNESCO — Ifugao-carved.</p><div class="info-stat">2,000 yrs</div></div>
+    <div class="info-card glass reveal"><div class="info-icon" style="background:rgba(236,72,153,.08);">🎉</div><h4>Pahiyas Fest</h4><p>Lucban's harvest celebration.</p><div class="info-stat">May 15</div></div>
+    <div class="info-card glass reveal"><div class="info-icon" style="background:rgba(34,197,94,.08);">🌡️</div><h4>Baguio Temp</h4><p>Cool escape year-round!</p><div class="info-stat">15-23°C</div></div>
+  </div>
+  <div class="chart-box glass reveal"><div class="chart-title">📊 Tour Cost per Person (₱)</div>
+    <div class="bars" id="costChart">
+      <div class="bar-g"><div class="bar-w"><div class="bar" style="height:4px;background:linear-gradient(to top,#047857,#00e5c8);" data-h="27"><div class="bar-v" style="color:#00e5c8;">₱1.5K</div></div></div><div class="bar-l">Tanay</div></div>
+      <div class="bar-g"><div class="bar-w"><div class="bar" style="height:4px;background:linear-gradient(to top,#0e4d64,#3b82f6);" data-h="36"><div class="bar-v" style="color:#3b82f6;">₱2K</div></div></div><div class="bar-l">Marilaque</div></div>
+      <div class="bar-g"><div class="bar-w"><div class="bar" style="height:4px;background:linear-gradient(to top,#0369a1,#06b6d4);" data-h="45"><div class="bar-v" style="color:#06b6d4;">₱2.5K</div></div></div><div class="bar-l">Quezon</div></div>
+      <div class="bar-g"><div class="bar-w"><div class="bar" style="height:4px;background:linear-gradient(to top,#ea580c,#f59e0b);" data-h="55"><div class="bar-v" style="color:#f59e0b;">₱3K</div></div></div><div class="bar-l">Zambales</div></div>
+      <div class="bar-g"><div class="bar-w"><div class="bar" style="height:4px;background:linear-gradient(to top,#065f46,#34d399);" data-h="64"><div class="bar-v" style="color:#34d399;">₱3.5K</div></div></div><div class="bar-l">Baguio</div></div>
+      <div class="bar-g"><div class="bar-w"><div class="bar" style="height:4px;background:linear-gradient(to top,#4a1d96,#a855f7);" data-h="100"><div class="bar-v" style="color:#a855f7;">₱5.5K</div></div></div><div class="bar-l">Cordilleras</div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- HOW IT WORKS -->
+<hr class="section-divider">
+<section id="howto"><div class="container">
+  <div class="section-hdr reveal"><div class="section-tag" style="background:rgba(59,130,246,.08);color:var(--ac2);">📋 How It Works</div><h2>Book in 5 Easy Steps</h2></div>
+  <div class="pflow reveal"><div class="pstep"><div class="pnum">1</div><h4>Browse</h4><p>Pick destination</p></div><div class="parr">→</div><div class="pstep"><div class="pnum">2</div><h4>Choose</h4><p>Select package</p></div><div class="parr">→</div><div class="pstep"><div class="pnum">3</div><h4>Book</h4><p>GCash/Bank/Card</p></div><div class="parr">→</div><div class="pstep"><div class="pnum">4</div><h4>Briefed</h4><p>Get itinerary</p></div><div class="parr">→</div><div class="pstep"><div class="pnum">5</div><h4>Travel!</h4><p>Make memories 🎉</p></div></div>
+  <div class="section-hdr reveal" style="margin-top:70px;"><div class="section-tag" style="background:rgba(34,197,94,.08);color:var(--ac5);">⏱️ Itinerary</div><h2>3-Day Zambales Adventure</h2><p><button class="print-btn" onclick="window.print()">🖨️ Print This Itinerary</button></p></div>
+  <div class="timeline reveal">
+    <div class="tl-item"><div class="tl-c glass"><div class="tl-step">Day 1 — AM</div><h3>🚌 Manila → Zambales</h3><p>4-5 hr ride via NLEX-SCTEX. Lunch at carinderia. Check into Liwliwa resort.</p></div><div class="tl-dot"></div></div>
+    <div class="tl-item"><div class="tl-c glass"><div class="tl-step">Day 1 — PM</div><h3>🏄 Surf + Sunset</h3><p>Surfing at Liwliwa. Legendary sunset. Bonfire dinner with fresh seafood.</p></div><div class="tl-dot"></div></div>
+    <div class="tl-item"><div class="tl-c glass"><div class="tl-step">Day 2</div><h3>🚤 Island Hopping</h3><p>Anawangin Cove → Nagsasa → snorkeling. Optional: Capones lighthouse.</p></div><div class="tl-dot"></div></div>
+    <div class="tl-item"><div class="tl-c glass"><div class="tl-step">Day 3 — AM</div><h3>🌋 Mt. Pinatubo</h3><p>4x4 through lahar + trek to turquoise crater lake.</p></div><div class="tl-dot"></div></div>
+    <div class="tl-item"><div class="tl-c glass"><div class="tl-step">Day 3 — PM</div><h3>🏠 Return</h3><p>Pasalubong shopping. Ride back with memories! 📸</p></div><div class="tl-dot"></div></div>
+  </div>
+</div></section>
+
+<!-- PACKAGES -->
+<hr class="section-divider">
+<section id="packages"><div class="container">
+  <div class="section-hdr reveal"><div class="section-tag" style="background:rgba(var(--acR),.08);color:var(--ac);">💰 Packages</div><h2>Choose Your Adventure</h2></div>
+  <div class="flash-deal reveal" id="flashDeal"><h3>🔥 Flash Deal — Limited Time!</h3><div class="flash-timer"><div class="flash-unit"><div class="flash-num" id="fdDays">00</div><div class="flash-lbl">Days</div></div><div class="flash-unit"><div class="flash-num" id="fdHrs">00</div><div class="flash-lbl">Hours</div></div><div class="flash-unit"><div class="flash-num" id="fdMin">00</div><div class="flash-lbl">Min</div></div><div class="flash-unit"><div class="flash-num" id="fdSec">00</div><div class="flash-lbl">Sec</div></div></div><div class="flash-code">Use code <b>LAKBAY10</b> for 10% OFF!</div></div>
+<div class="pkg-grid">
+    <div class="pkg glass reveal"><div class="pkg-icon">🎒</div><div class="pkg-name">Solo Lakbay</div><div class="pkg-desc">Solo & budget</div><div class="pkg-price">₱1,500 <span>/ trip</span></div><ul class="pkg-features"><li><span class="chk">✓</span>Day trip</li><li><span class="chk">✓</span>Local guide</li><li><span class="chk">✓</span>Transport</li><li><span class="chk">✓</span>Entrance fees</li><li><span class="chk">✓</span>Lunch</li><li><span class="chk">✓</span>Insurance</li></ul><button class="pkg-btn o" onclick="scrollTo('#booking')">Get Started</button></div>
+    <div class="pkg glass feat reveal"><div class="pkg-badge">BEST VALUE</div><div class="pkg-icon">👥</div><div class="pkg-name">Barkada Pack</div><div class="pkg-desc">Groups 4-8</div><div class="pkg-price">₱3,500 <span>/ person</span></div><ul class="pkg-features"><li><span class="chk">✓</span>2D/1N adventure</li><li><span class="chk">✓</span>Tour coordinator</li><li><span class="chk">✓</span>Private van</li><li><span class="chk">✓</span>Resort stay</li><li><span class="chk">✓</span>3 meals + snacks</li><li><span class="chk">✓</span>All activities</li><li><span class="chk">✓</span>Drone coverage</li><li><span class="chk">✓</span>Free merch</li></ul><button class="pkg-btn p" onclick="scrollTo('#booking')">Book Now 🔥</button></div>
+    <div class="pkg glass reveal"><div class="pkg-icon">👑</div><div class="pkg-name">Premium Lakad</div><div class="pkg-desc">Luxury 2-4</div><div class="pkg-price">₱8,000 <span>/ person</span></div><ul class="pkg-features"><li><span class="chk">✓</span>3D/2N multi-dest</li><li><span class="chk">✓</span>Senior manager</li><li><span class="chk">✓</span>Premium SUV</li><li><span class="chk">✓</span>Boutique hotel</li><li><span class="chk">✓</span>Premium meals</li><li><span class="chk">✓</span>Pro photo/video</li><li><span class="chk">✓</span>Hidden spots</li><li><span class="chk">✓</span>Custom itinerary</li><li><span class="chk">✓</span>24/7 concierge</li></ul><button class="pkg-btn o" onclick="scrollTo('#booking')">Contact Us</button></div>
+  </div>
+</div></section>
+
+<!-- BOOKING -->
+<hr class="section-divider">
+<section id="booking"><div class="container">
+  <div class="section-hdr reveal"><div class="section-tag" style="background:rgba(var(--acR),.08);color:var(--ac);">📝 Book</div><h2>Reserve Your Adventure</h2><p>Fill the form — confirmed within 24hrs.</p></div>
+  <div class="book-section reveal"><div class="book-grid">
+    <div class="book-info"><h2>Why Book With Us?</h2><p>We handle everything.</p>
+      <ul class="book-perks"><li>✅ Free cancellation 48hrs</li><li>💰 No hidden fees</li><li>🛡️ Insurance included</li><li>📱 24/7 Viber support</li><li>📸 Free drone coverage</li><li>🎁 Free merch for first-timers</li><li>💳 GCash, Maya, BPI, BDO</li></ul>
+      <div class="cal"><div class="cal-hdr"><h3 id="calMonth">June 2026</h3><div class="cal-nav"><button onclick="chgMo(-1)">‹</button><button onclick="chgMo(1)">›</button></div></div><div class="cal-grid" id="calGrid"></div></div>
+    </div>
+    <div>
+      <form id="bookForm" onsubmit="submitBook(event)">
+        <div class="fr"><div class="fg"><label>Full Name *</label><input name="name" placeholder="Juan Dela Cruz" required></div><div class="fg"><label>Phone *</label><input name="phone" placeholder="0917-XXX-XXXX" required></div></div>
+        <div class="fg"><label>Email *</label><input type="email" name="email" placeholder="you@email.com" required></div>
+        <div class="fr"><div class="fg"><label>Destination *</label><select name="dest" required><option value="">Select...</option><option>⛰️ Tanay</option><option>🏍️ Marilaque</option><option>🏝️ Quezon</option><option>🏖️ Zambales</option><option>🌾 Cordilleras</option><option>🌲 Baguio</option></select></div><div class="fg"><label>Package *</label><select name="pkg" required><option value="">Select...</option><option>🎒 Solo ₱1,500</option><option>👥 Barkada ₱3,500</option><option>👑 Premium ₱8,000</option></select></div></div>
+        <div class="fr"><div class="fg"><label>Date *</label><input type="date" name="date" required></div><div class="fg"><label>Travelers *</label><input type="number" name="pax" min="1" max="20" placeholder="4" required></div></div>
+        <div class="fg"><label>🎟️ Promo Code</label><div class="promo-row"><input type="text" id="promoInput" placeholder="Enter code..."><button type="button" class="promo-apply" onclick="applyPromo()">Apply</button></div><div class="promo-msg" id="promoMsg"></div></div>
+        <div class="fg"><label>Special Requests</label><textarea name="notes" placeholder="Dietary needs, accessibility?"></textarea></div>
+        <button type="submit" class="form-submit">🚀 Submit Booking</button>
+      </form>
+      <div class="form-ok" id="formOk"><div class="ok-icon">🎉</div><h3>Maraming Salamat!</h3><p>Booking received! We'll contact you within 24 hours.</p></div>
+    </div>
+  </div></div>
+</div></section>
+
+<!-- APP MOCKUP -->
+<hr class="section-divider">
+<section id="app"><div class="container"><div class="mock-flex reveal">
+  <div class="mock-text"><div class="section-tag" style="background:rgba(236,72,153,.08);color:var(--ac4);display:inline-block;">📱 Coming Soon</div><h2>Your Pocket Travel Buddy</h2><p>Book tours, chat with guides — all from your phone.</p>
+    <ul class="fl"><li><div class="fi" style="background:rgba(var(--acR),.08);">🗺️</div><div><strong>Smart Planner</strong> — AI itinerary</div></li><li><div class="fi" style="background:rgba(59,130,246,.08);">💬</div><div><strong>Guide Chat</strong> — Direct messaging</div></li><li><div class="fi" style="background:rgba(245,158,11,.08);">📸</div><div><strong>Gallery</strong> — Trip photos</div></li><li><div class="fi" style="background:rgba(168,85,247,.08);">⭐</div><div><strong>Rewards</strong> — Earn points</div></li></ul>
+  </div>
+  <div class="phone"><div class="ph-notch"></div><div class="ph-screen"><div class="ph-hdr"><h3>Unckiel's Tours</h3><div class="ph-av">👤</div></div><div class="ph-search">🔍 Search...</div><div class="ph-c" style="border-left:3px solid var(--ac);"><div class="ph-ct">⛰️ Tanay Day Trip</div><div class="ph-cs">Daranak + Treasure Mtn</div><div class="ph-cp">₱1,500/pax</div></div><div class="ph-c" style="border-left:3px solid var(--ac3);"><div class="ph-ct">🏖️ Zambales 2D/1N</div><div class="ph-cs">Liwliwa + Anawangin</div><div class="ph-cp">₱3,500/pax</div></div><div class="ph-c" style="border-left:3px solid var(--ac6);"><div class="ph-ct">🌾 Cordillera 4D/3N</div><div class="ph-cs">Banaue + Sagada</div><div class="ph-cp">₱5,500/pax</div></div><div class="ph-c" style="border-left:3px solid var(--ac4);"><div class="ph-ct">🏍️ Marilaque</div><div class="ph-cs">117.5km + cafés</div><div class="ph-cp">₱2,000/pax</div></div></div><div class="ph-nav"><div class="pn act"><div class="pn-i">🏠</div>Home</div><div class="pn"><div class="pn-i">🔍</div>Explore</div><div class="pn"><div class="pn-i">🗓️</div>Trips</div><div class="pn"><div class="pn-i">💬</div>Chat</div><div class="pn"><div class="pn-i">👤</div>Profile</div></div></div>
+</div></div></section>
+
+<!-- MERCH -->
+<hr class="section-divider">
+<section id="merch"><div class="container"><div class="section-hdr reveal"><div class="section-tag" style="background:rgba(245,158,11,.08);color:var(--ac3);">🛍️ Merch</div><h2>Wear Your Adventure</h2></div>
+<div class="merch-grid"><div class="merch-card glass reveal"><div class="merch-pv" style="background:linear-gradient(135deg,#064e3b,#065f46);">👕</div><h4>Lakbay Tee</h4><p>Premium cotton</p><div class="merch-p">₱450</div></div><div class="merch-card glass reveal"><div class="merch-pv" style="background:linear-gradient(135deg,#1e3a5f,#0e4d64);">🧢</div><h4>Explorer Cap</h4><p>Embroidered</p><div class="merch-p">₱350</div></div><div class="merch-card glass reveal"><div class="merch-pv" style="background:linear-gradient(135deg,#4a1d96,#6d28d9);">🎒</div><h4>Trail Daypack</h4><p>20L waterproof</p><div class="merch-p">₱1,200</div></div><div class="merch-card glass reveal"><div class="merch-pv" style="background:linear-gradient(135deg,#ea580c,#f59e0b);">☕</div><h4>Tumbler</h4><p>Steel + PH map</p><div class="merch-p">₱550</div></div><div class="merch-card glass reveal"><div class="merch-pv" style="background:linear-gradient(135deg,#0369a1,#06b6d4);">🧲</div><h4>Magnet Set</h4><p>Per destination</p><div class="merch-p">₱150</div></div></div>
+</div></section>
+
+<!-- LEARNING -->
+<hr class="section-divider">
+<section id="learn"><div class="container"><div class="section-hdr reveal"><div class="section-tag" style="background:rgba(34,197,94,.08);color:var(--ac5);">📚 Tips</div><h2>Be a Smarter Traveler</h2></div>
+<div class="learn-grid">
+  <div class="lc glass reveal"><div class="lc-h"><div class="lc-i" style="background:rgba(var(--acR),.08);">🎒</div><h4>Packing</h4></div><ul class="ll"><li>Sunscreen SPF50+</li><li>Quick-dry clothes</li><li>Waterproof bag</li><li>Flashlight/headlamp</li><li>Power bank</li><li>Cash small bills</li></ul></div>
+  <div class="lc glass reveal"><div class="lc-h"><div class="lc-i" style="background:rgba(245,158,11,.08);">🗓️</div><h4>Best Season</h4></div><ul class="ll"><li><b>Tanay</b> — Nov-May</li><li><b>Marilaque</b> — Oct-Mar</li><li><b>Quezon</b> — May Pahiyas!</li><li><b>Zambales</b> — Nov-May</li><li><b>Baguio</b> — Feb Panagbenga!</li><li><b>Cordilleras</b> — Nov-Apr</li></ul></div>
+  <div class="lc glass reveal"><div class="lc-h"><div class="lc-i" style="background:rgba(236,72,153,.08);">⚠️</div><h4>Safety</h4></div><ul class="ll"><li>Register at barangay</li><li>Hire local guides</li><li>Check weather 24hrs before</li><li>Leave No Trace</li><li>Respect indigenous culture</li><li>Proper footwear!</li></ul></div>
+  <div class="lc glass reveal"><div class="lc-h"><div class="lc-i" style="background:rgba(59,130,246,.08);">💰</div><h4>Budget</h4></div><ul class="ll"><li>Transport: ₱300-3,000</li><li>Entrance: ₱50-300</li><li>Food: ₱200-1,500/day</li><li>Stay: ₱500-2,000+</li><li>Guide: ₱500-1,500/group</li></ul></div>
+  <div class="lc glass reveal"><div class="lc-h"><div class="lc-i" style="background:rgba(168,85,247,.08);">🗣️</div><h4>Filipino Phrases</h4></div><ul class="ll"><li><b>"Magkano po?"</b> — How much?</li><li><b>"Saan po ang…?"</b> — Where?</li><li><b>"Salamat po!"</b> — Thanks!</li><li><b>"May signal ba?"</b> — Signal?</li><li><b>"Gaano kalayo?"</b> — How far?</li></ul></div>
+  <div class="lc glass reveal"><div class="lc-h"><div class="lc-i" style="background:rgba(34,197,94,.08);">🏛️</div><h4>Cordillera Etiquette</h4></div><ul class="ll"><li>Don't touch Hanging Coffins</li><li>Ask permission in Igorot areas</li><li>Apo Whang-Od: official guides</li><li>Stay on marked trails</li><li>Bring warm layers</li></ul></div>
+</div></div></section>
+
+<!-- TESTIMONIALS -->
+<!-- WEATHER CENTER v5 -->
+<hr class="section-divider">
+<section id="weather"><div class="container">
+ <div class="section-hdr reveal">
+  <div class="section-tag" style="background:rgba(var(--acR),.08);color:var(--ac);">🌤️ Weather Center</div>
+  <h2 data-en="Destination Weather Center" data-tl="Sentro ng Lagay ng Panahon">Destination Weather Center</h2>
+  <p data-en="Live conditions, UV index, air quality, pollen, alerts, hourly &amp; 7-day forecast, radar." data-tl="Live na panahon, UV, kalidad ng hangin, pollen, alerto, bawat oras at 7-araw, radar.">Live conditions, UV index, air quality, pollen, alerts, hourly &amp; 7-day forecast, radar.</p>
+ </div>
+ <div class="weather-controls reveal">
+  <select id="wxPlace" onchange="fetchWeather()">
+   <option value="">🌍 Select a destination...</option>
+   <option value="14.57,121.38|Tanay, Rizal">⛰️ Tanay, Rizal</option>
+   <option value="14.45,121.45|Marilaque Loop">🏍️ Marilaque Loop</option>
+   <option value="14.04,121.61|Quezon Province">🏝️ Quezon Province</option>
+   <option value="15.43,120.05|Zambales">🏖️ Zambales</option>
+   <option value="16.92,121.06|Banaue, Ifugao">🌾 Banaue (Cordilleras)</option>
+   <option value="17.09,121.00|Sagada, Mt. Province">⚰️ Sagada (Cordilleras)</option>
+   <option value="16.41,120.60|Baguio City">🌲 Baguio City</option>
+   <option value="14.60,120.98|Manila (Home Base)">📍 Manila (Home Base)</option>
+  </select>
+  <button class="wx-ctrl-btn" id="wxRefreshBtn" onclick="refreshWeather()" title="Refresh"><span class="wx-spin-icon">🔄</span></button>
+  <button class="wx-ctrl-btn" id="wxThemeBtn" onclick="toggleWxTheme()" title="Toggle theme"><span id="wxThemeIcon">🌙</span></button>
+ </div>
+ <div class="weather-card glass reveal" id="wxCard" style="display:none;">
+  <div class="wx-city" id="wxCity">—</div>
+  <div class="wx-icon" id="wxIcon">⏳</div>
+  <div class="wx-temp" id="wxTemp">—</div>
+  <div class="wx-desc" id="wxDesc">Select a destination</div>
+  <div class="wx-details">
+   <div class="wx-detail"><div class="wxd-val"><span class="wind-arrow" id="wxWindArrow">➤</span> <span id="wxWind">—</span></div><div class="wxd-lbl">💨 Wind</div><div class="wind-compass" id="wxWindDir">—</div></div>
+   <div class="wx-detail"><div class="wxd-val" id="wxHumid">—</div><div class="wxd-lbl">💧 Humidity</div></div>
+   <div class="wx-detail"><div class="wxd-val" id="wxRain">—</div><div class="wxd-lbl">🌧️ Rain</div></div>
+   <div class="wx-detail"><div class="wxd-val" id="wxUV">—</div><div class="wxd-lbl">☀️ UV</div></div>
+   <div class="wx-detail"><div class="wxd-val" id="wxFeels">—</div><div class="wxd-lbl">🌡️ Feels</div></div>
+  </div>
+  <div class="wx-time" id="wxTime"></div>
+  <!-- ⚠️ Weather Alerts -->
+  <div class="wx-alerts" id="wxAlerts"></div>
+  <!-- 🌅 Sunrise/Sunset -->
+  <div class="wx-sun-section" id="wxSunSection" style="display:none;">
+   <div class="wx-sun-title">🌅 Sunrise &amp; Sunset</div>
+   <div class="wx-sun-arc" id="wxSunArc"><div class="wx-sun-arc-bg"></div><div class="wx-sun-dot" id="wxSunDot"></div></div>
+   <div class="wx-sun-labels"><div class="wx-sun-lbl"><div class="sun-icon">🌅</div><div class="sun-time" id="wxSunrise">—</div><div class="sun-label">Sunrise</div></div><div class="wx-sun-lbl"><div class="sun-icon">☀️</div><div class="sun-time" id="wxDaylight">—</div><div class="sun-label">Daylight</div></div><div class="wx-sun-lbl"><div class="sun-icon">🌇</div><div class="sun-time" id="wxSunset">—</div><div class="sun-label">Sunset</div></div></div>
+   <div class="wx-sun-countdown" id="wxSunCountdown"></div>
+  </div>
+  <!-- ☀️ UV Index Chart -->
+  <div class="wx-uv-section" id="wxUvSection" style="display:none;">
+   <div class="wx-uv-title">☀️ UV Index — Today's Hourly Breakdown</div>
+   <div class="wx-uv-chart" id="wxUvChart"></div>
+   <div class="wx-uv-legend"><div class="wx-uv-leg"><span style="background:#22c55e"></span>Low 0-2</div><div class="wx-uv-leg"><span style="background:#f59e0b"></span>Moderate 3-5</div><div class="wx-uv-leg"><span style="background:#f97316"></span>High 6-7</div><div class="wx-uv-leg"><span style="background:#ef4444"></span>Very High 8-10</div><div class="wx-uv-leg"><span style="background:#a855f7"></span>Extreme 11+</div></div>
+  </div>
+  <!-- 🫁 AQI -->
+  <div class="wx-aqi-section" id="wxAqiSection" style="display:none;">
+   <div class="wx-aqi-title">🫁 Air Quality Index</div>
+   <div class="wx-aqi-row">
+    <div class="wx-aqi-badge" id="wxAqiBadge"><div class="wx-aqi-num" id="wxAqiNum">—</div><div class="wx-aqi-label" id="wxAqiLabel">Loading</div></div>
+    <div class="wx-aqi-detail"><div class="aqd-val" id="wxPm25">—</div><div class="aqd-lbl">PM2.5</div></div>
+    <div class="wx-aqi-detail"><div class="aqd-val" id="wxPm10">—</div><div class="aqd-lbl">PM10</div></div>
+    <div class="wx-aqi-detail"><div class="aqd-val" id="wxO3">—</div><div class="aqd-lbl">Ozone</div></div>
+    <div class="wx-aqi-detail"><div class="aqd-val" id="wxNo2">—</div><div class="aqd-lbl">NO₂</div></div>
+   </div>
+  </div>
+  <!-- 🌿 Pollen -->
+  <div class="wx-pollen-section" id="wxPollenSection" style="display:none;">
+   <div class="wx-pollen-title">🌿 Pollen Count</div>
+   <div class="wx-pollen-row" id="wxPollenRow"></div>
+  </div>
+  <!-- ⏰ Hourly -->
+  <div class="wx-sub-title" id="wxHourlyTitle" style="display:none;">⏰ Next 24 Hours</div>
+  <div class="wx-hourly-scroll" id="wxHourly"></div>
+  <!-- 📅 7-Day -->
+  <div class="wx-sub-title" id="wxForecastTitle" style="display:none;">📅 7-Day Forecast</div>
+  <div class="wx-forecast-grid" id="wxForecast"></div>
+ </div>
+
+ <!-- ☁️ Sea of Clouds Intelligence (Phase 9.0-A) -->
+ <div class="wx-soc-section" id="wxSocSection" style="display:none;">
+  <div class="wx-soc-title">☁️ Sea of Clouds Intelligence <span class="soc-badge">Live</span></div>
+  <!-- Probability Gauge -->
+  <div class="soc-gauge" id="socGauge">
+   <div class="soc-gauge-ring"><div class="soc-gauge-bg"></div><div class="soc-gauge-fill" id="socGaugeFill"></div><div class="soc-gauge-pct" id="socGaugePct">—</div></div>
+   <div class="soc-gauge-label soc-none" id="socGaugeLabel">Select a destination</div>
+  </div>
+  <!-- Factor Chips -->
+  <div class="soc-factors" id="socFactors">
+   <div class="soc-factor"><div class="sf-icon">☁️</div><div class="sf-val" id="socCloudLow">—</div><div class="sf-lbl">Low Clouds</div></div>
+   <div class="soc-factor"><div class="sf-icon">🌥️</div><div class="sf-val" id="socCloudMid">—</div><div class="sf-lbl">Mid Clouds</div></div>
+   <div class="soc-factor"><div class="sf-icon">💧</div><div class="sf-val" id="socHumidity">—</div><div class="sf-lbl">Humidity</div></div>
+   <div class="soc-factor"><div class="sf-icon">🌡️</div><div class="sf-val" id="socDewGap">—</div><div class="sf-lbl">Dew Gap</div></div>
+   <div class="soc-factor"><div class="sf-icon">💨</div><div class="sf-val" id="socWind">—</div><div class="sf-lbl">Wind</div></div>
+   <div class="soc-factor"><div class="sf-icon">⛰️</div><div class="sf-val" id="socElev">—</div><div class="sf-lbl">Elevation</div></div>
+  </div>
+  <!-- Best Time -->
+  <div class="soc-best-time" id="socBestTime">⏰ Best viewing: <strong>Tomorrow 5:00 — 6:30 AM</strong> at dawn when clouds settle in valleys</div>
+  <!-- Elevation Bar -->
+  <div class="soc-elevation" id="socElevInfo">⛰️ Elevation advantage: <span class="soc-elev-bar"><span class="soc-elev-fill" id="socElevFill" style="width:0%;background:var(--ac);"></span></span> <span id="socElevText">—</span></div>
+  <!-- 7-Day Dawn Forecast -->
+  <div class="soc-forecast-title" id="socForecastTitle" style="display:none;">📅 7-Day Dawn Forecast (4–7 AM)</div>
+  <div class="soc-forecast-grid" id="socForecastGrid"></div>
+  <!-- Historical Monthly Chart -->
+  <div class="soc-hist-title" id="socHistTitle" style="display:none;">📊 Best Months for Sea of Clouds (3-Year Avg)</div>
+  <div class="soc-hist-chart" id="socHistChart"></div>
+  <div class="soc-hist-note" id="socHistNote" style="display:none;">Based on dawn cloud cover + humidity data from Open-Meteo Archive API</div>
+ </div>
+ <!-- 🛰️ Radar -->
+ <div class="wx-radar-section reveal" style="margin-top:28px;">
+  <div class="wx-radar-title">🛰️ Live Weather Radar — Philippines</div>
+  <div class="wx-radar-placeholder" id="wxRadarPlaceholder" onclick="loadRadar()"><div class="rp-icon">🛰️</div><div class="rp-text">Click to Load Live Radar Map</div><div class="rp-sub">Windy.com — Wind, Rain &amp; Cloud Layers</div></div>
+ </div>
+</div></section>
+
+<section><div class="container"><div class="section-hdr reveal"><div class="section-tag" style="background:rgba(245,158,11,.08);color:var(--ac3);">💬 Reviews</div><h2>What Travelers Say</h2></div>
+<div class="test-grid">
+  <div class="tc glass reveal"><div class="tc-stars">★★★★★</div><div class="tc-q">"Best Zambales trip! Anawangin was life-changing. Everything seamless. 10/10!"</div><div class="tc-a"><div class="tc-av" style="background:rgba(var(--acR),.1);">👩</div><div><div class="tc-n">Maria Santos</div><div class="tc-r">Zambales — Barkada</div></div></div></div>
+  <div class="tc glass reveal"><div class="tc-stars">★★★★★</div><div class="tc-q">"Cordillera tour was a dream! Banaue in person was surreal. Worth every peso!"</div><div class="tc-a"><div class="tc-av" style="background:rgba(168,85,247,.1);">👨</div><div><div class="tc-n">James Reyes</div><div class="tc-r">Cordilleras — Premium</div></div></div></div>
+  <div class="tc glass reveal"><div class="tc-stars">★★★★★</div><div class="tc-q">"First solo trip — felt so safe! Daranak was refreshing. Free merch bonus!"</div><div class="tc-a"><div class="tc-av" style="background:rgba(245,158,11,.1);">👩</div><div><div class="tc-n">Kim Dela Cruz</div><div class="tc-r">Tanay — Solo</div></div></div></div>
+</div></div></section>
+
+<!-- CTA -->
+<section id="contact"><div class="container"><div class="cta reveal">
+  <h2>Ready for Your Next <span style="color:var(--ac);">Adventure</span>?</h2><p>Book now — 10% OFF first trip! 🎉</p>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><button class="btn btn-p btn-lg" onclick="scrollTo('#booking')">Book Now 🔥</button><button class="btn btn-o btn-lg" onclick="alert('📞 0917-XXX-XXXX or @UnckielsTours')">Contact Us 📞</button></div>
+  <div class="c-grid"><div class="c-item"><div class="ci">📱</div><h4>Phone</h4><p>0917-XXX-XXXX</p></div><div class="c-item"><div class="ci">💬</div><h4>Facebook</h4><p>@UnckielsTours</p></div><div class="c-item"><div class="ci">📧</div><h4>Email</h4><p>book@unckielstours.ph</p></div><div class="c-item"><div class="ci">📍</div><h4>Office</h4><p>Manila, PH</p></div></div>
+</div></div></section>
+
+<footer><div class="container"><p>© 2024-2026 Unckiel's Tour Guide & Travel Agency 🇵🇭</p><p style="margin-top:4px;">DOT Accredited · Licensed · Insured</p></div></footer>
+
+<!-- CHAT -->
+<!-- DOT NAV v2 (Phase 8.8) -->
+<nav class="dot-nav" id="dotNav" aria-label="Section navigation">
+<button class="dn-dot active" onclick="scrollTo('#hero')" aria-label="Home"><span class="dn-tip">🏠 Home</span></button>
+<button class="dn-dot" onclick="scrollTo('#destinations')" aria-label="Destinations"><span class="dn-tip">🗺️ Destinations</span></button>
+<button class="dn-dot" onclick="scrollTo('#gmap')" aria-label="Map"><span class="dn-tip">📍 Map</span></button>
+<button class="dn-dot" onclick="scrollTo('#stats')" aria-label="Stats"><span class="dn-tip">📊 Stats</span></button>
+<button class="dn-dot" onclick="scrollTo('#howto')" aria-label="How It Works"><span class="dn-tip">📋 How It Works</span></button>
+<button class="dn-dot" onclick="scrollTo('#packages')" aria-label="Packages"><span class="dn-tip">💰 Packages</span></button>
+<button class="dn-dot" onclick="scrollTo('#booking')" aria-label="Book"><span class="dn-tip">📝 Book</span></button>
+<button class="dn-dot" onclick="scrollTo('#app')" aria-label="App"><span class="dn-tip">📱 App</span></button>
+<button class="dn-dot" onclick="scrollTo('#merch')" aria-label="Merch"><span class="dn-tip">🛍️ Merch</span></button>
+<button class="dn-dot" onclick="scrollTo('#learn')" aria-label="Tips"><span class="dn-tip">📚 Tips</span></button>
+<button class="dn-dot" onclick="scrollTo('#weather')" aria-label="Weather"><span class="dn-tip">⛅ Weather</span></button>
+<button class="dn-dot" onclick="scrollTo('#contact')" aria-label="Contact"><span class="dn-tip">📞 Contact</span></button>
+</nav>
+<button class="btt" id="bttBtn" aria-label="Back to top" onclick="scrollTo('#hero')">↑</button>
+<button class="chat-btn" id="chatToggle" aria-label="Open chat">💬</button>
+<div class="chat-box" id="chatBox"><div class="chat-hdr"><h4>💬 Unckiel's Assistant</h4><button class="chat-close" onclick="toggleChat()">✕</button></div><div class="chat-body" id="chatBody"><div class="chat-msg bot">Mabuhay! 🇵🇭 How can I help? Ask about destinations, packages, or booking!</div></div><div class="chat-inp"><input class="chat-input" id="chatInput" placeholder="Type..." onkeydown="if(event.key==='Enter')sendChat()"><button class="chat-send" onclick="sendChat()">Send</button></div></div>
+
+<!-- MUSIC -->
+<button class="music-btn" id="musicBtn" aria-label="Toggle music">🔇</button>
+<audio id="bgMusic" loop preload="none"><source src="https://cdn.pixabay.com/audio/2022/10/25/audio_33a004c60a.mp3" type="audio/mpeg"></audio>
+
+<!-- ═══════ JAVASCRIPT ═══════ -->
+<script>
+function scrollTo(s){var e=document.querySelector(s);if(e){e.scrollIntoView({behavior:'smooth'});document.getElementById('navbar').classList.remove('open')}}
+
+// THEME
+var themeBtn=document.getElementById('themeBtn');
+var st=localStorage.getItem('ut-theme')||'dark';
+document.documentElement.setAttribute('data-theme',st);
+themeBtn.textContent=st==='dark'?'🌙':'☀️';
+themeBtn.onclick=function(){var c=document.documentElement.getAttribute('data-theme');var n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('ut-theme',n);themeBtn.textContent=n==='dark'?'🌙':'☀️'};
+
+// LANGUAGE
+var lang='en';var langBtn=document.getElementById('langBtn');
+langBtn.onclick=function(){lang=lang==='en'?'tl':'en';langBtn.textContent=lang==='en'?'🇵🇭':'🇺🇸';document.querySelectorAll('[data-en][data-tl]').forEach(function(el){el.textContent=el.getAttribute('data-'+lang)})};
+
+// REVEAL
+var rObs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){rObs.observe(el)});
+
+// COUNTERS
+function animC(){document.querySelectorAll('.stat-num[data-target]').forEach(function(c){var t=+c.getAttribute('data-target'),s=t/125,cur=0;var tm=setInterval(function(){cur+=s;if(cur>=t){cur=t;clearInterval(tm)}c.textContent=Math.floor(cur).toLocaleString()+(t===98?'%':'+')},16)})}
+var hObs=new IntersectionObserver(function(e){if(e[0].isIntersecting){animC();hObs.disconnect()}},{threshold:0.4});
+var hs=document.querySelector('.hero-stats');if(hs)hObs.observe(hs);
+
+// BAR CHART
+var cObs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.querySelectorAll('.bar').forEach(function(b){setTimeout(function(){b.style.height=b.getAttribute('data-h')+'%'},150)});cObs.unobserve(x.target)}})},{threshold:0.25});
+document.querySelectorAll('.bars').forEach(function(c){cObs.observe(c)});
+
+// STAR RATINGS
+var ratings=JSON.parse(localStorage.getItem('ut-ratings')||'{}');
+document.querySelectorAll('.star-rating').forEach(function(sr){
+  var dest=sr.getAttribute('data-dest'),saved=ratings[dest]||0;
+  for(var i=1;i<=5;i++){(function(i){
+    var s=document.createElement('span');s.className='star'+(i<=saved?' active':'');s.textContent='★';
+    s.onclick=function(){ratings[dest]=i;localStorage.setItem('ut-ratings',JSON.stringify(ratings));sr.querySelectorAll('.star').forEach(function(st,idx){st.className='star'+(idx<i?' active':'')});cnt.textContent=i+'/5 ⭐'};
+    sr.appendChild(s);
+  })(i)}
+  var cnt=document.createElement('span');cnt.className='rating-count';cnt.textContent=saved?saved+'/5 ⭐':'Rate this';sr.appendChild(cnt);
+});
+
+// FILTER
+function filterDests(){
+  var q=document.getElementById('searchDest').value.toLowerCase();
+  var b=document.getElementById('filterBudget').value;
+  var a=document.getElementById('filterActivity').value;
+  document.querySelectorAll('.dest-card').forEach(function(c){
+    var name=c.dataset.name||'',budget=+(c.dataset.budget||0),act=c.dataset.activity||'';
+    var show=true;
+    if(q&&name.indexOf(q)<0)show=false;
+    if(b==='low'&&budget>2000)show=false;
+    if(b==='mid'&&(budget<2000||budget>3500))show=false;
+    if(b==='high'&&budget<3500)show=false;
+    if(a&&act.indexOf(a)<0)show=false;
+    c.style.display=show?'':'none';
+  });
+}
+
+// CALENDAR
+var cY=2026,cM=5,avDates=[5,6,7,12,13,14,19,20,21,26,27,28];
+function renderCal(){
+  var g=document.getElementById('calGrid'),ml=document.getElementById('calMonth');
+  var mos=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var ds=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  ml.textContent=mos[cM]+' '+cY;
+  var h=ds.map(function(d){return '<div class="cal-dn">'+d+'</div>'}).join('');
+  var fd=new Date(cY,cM,1).getDay(),dim=new Date(cY,cM+1,0).getDate(),today=new Date();
+  for(var i=0;i<fd;i++)h+='<div class="cal-d empty"></div>';
+  for(var d=1;d<=dim;d++){
+    var isT=d===today.getDate()&&cM===today.getMonth()&&cY===today.getFullYear();
+    var isA=avDates.indexOf(d)>=0;
+    var cl='cal-d';if(isT)cl+=' today';if(isA)cl+=' av';
+    h+='<div class="'+cl+'" onclick="selDate('+d+')">'+d+'</div>';
+  }
+  g.innerHTML=h;
+}
+function chgMo(dir){cM+=dir;if(cM>11){cM=0;cY++}if(cM<0){cM=11;cY--}renderCal()}
+function selDate(d){var mo=String(cM+1).padStart(2,'0'),dy=String(d).padStart(2,'0');var di=document.querySelector('input[name="date"]');if(di)di.value=cY+'-'+mo+'-'+dy;scrollTo('#booking')}
+renderCal();
+
+// PROMO
+var promoCodes={LAKBAY10:{d:10,m:'🎉 10% OFF!'},BARKADA15:{d:15,m:'🎉 15% OFF Barkada!'},FIRSTTRIP:{d:10,m:'🎉 Welcome 10% OFF!'}};
+function applyPromo(){var v=document.getElementById('promoInput').value.toUpperCase().trim(),msg=document.getElementById('promoMsg');if(promoCodes[v]){msg.className='promo-msg ok';msg.textContent=promoCodes[v].m}else{msg.className='promo-msg err';msg.textContent='❌ Invalid. Try LAKBAY10, BARKADA15, FIRSTTRIP'}}
+
+// BOOKING
+function submitBook(e){e.preventDefault();document.getElementById('bookForm').style.display='none';document.getElementById('formOk').classList.add('show');fireConfetti();setTimeout(function(){document.getElementById('bookForm').style.display='block';document.getElementById('bookForm').reset();document.getElementById('formOk').classList.remove('show');var pm=document.getElementById('promoMsg');if(pm)pm.textContent=''},5000)}
+
+// CHAT
+document.getElementById('chatToggle').onclick=toggleChat;
+function toggleChat(){document.getElementById('chatBox').classList.toggle('open')}
+var chatR={hello:'Mabuhay! 👋 Ask about destinations, packages, booking, or type HELP!',hi:'Hello po! 🇵🇭 Ready for adventure?',hey:'Kamusta! 😊 What can I help you with?',price:'💰 Packages: ₱1,500 Solo, ₱3,500 Barkada, ₱8,000 Premium.',cost:'💰 Tours from ₱1,500/pax. Premium up to ₱8,000.',cheap:'🎒 Cheapest: Solo at ₱1,500 — Tanay day trip!',zambales:'🏖️ Zambales: Anawangin, Liwliwa surf, Pinatubo! From ₱3,000.',tanay:'⛰️ Tanay: 2hrs from Manila! Daranak + Treasure Mtn. From ₱1,500!',cordillera:'🌾 Cordilleras: Banaue+Sagada 4D/3N. UNESCO+coffins+cave! From ₱5,500.',baguio:'🌲 Baguio: 15-23°C! Burnham, BenCab, Night Market. From ₱3,500.',quezon:'🏝️ Quezon: Borawan, Cagbalete, Pahiyas! From ₱2,500.',marilaque:'🏍️ Marilaque: 117.5km scenic ride! From ₱2,000.',book:'📝 Scroll to booking form or call 0917-XXX-XXXX!',promo:'🎟️ Codes: LAKBAY10 (10%), BARKADA15 (15%), FIRSTTRIP (10%).',help:'ℹ️ Try: destinations, prices, promo, book, weather, safety, food',weather:'🌤️ Best: Nov-May (dry). Baguio cool year-round 15-23°C!',food:'🍛 Must-try: Bulalo (Tanay), Pancit Lucban (Quezon), Strawberry taho (Baguio)!',safety:'🛡️ All tours: insurance + certified guides + 24/7 Viber support.',gcash:'💳 GCash, Maya, BPI, BDO, credit cards accepted!',thanks:'Salamat din po! 🙏 Book anytime!',salamat:'Walang anuman! 🇵🇭 See you on the trail!'};
+function sendChat(){var input=document.getElementById('chatInput'),msg=input.value.trim();if(!msg)return;var body=document.getElementById('chatBody');body.innerHTML+='<div class="chat-msg user">'+msg+'</div>';input.value='';var typing=document.createElement('div');typing.className='typing-dots';typing.innerHTML='<span></span><span></span><span></span>';body.appendChild(typing);body.scrollTop=body.scrollHeight;var key=Object.keys(chatR).find(function(k){return msg.toLowerCase().indexOf(k)>=0})||'';setTimeout(function(){typing.remove();body.innerHTML+='<div class="chat-msg bot">'+(chatR[key]||"Try: help, destinations, prices, promo, book! 😊")+'</div>';body.scrollTop=body.scrollHeight},800+Math.random()*400)}
+
+// MUSIC
+var musicBtn=document.getElementById('musicBtn'),bgM=document.getElementById('bgMusic'),playing=false;
+musicBtn.onclick=function(){if(playing){bgM.pause();musicBtn.textContent='🔇'}else{bgM.volume=0.3;bgM.play().catch(function(){});musicBtn.textContent='🔊'}playing=!playing};
+
+// NAV SCROLL
+window.addEventListener('scroll',function(){document.getElementById('navbar').style.boxShadow=window.pageYOffset>80?'0 4px 30px rgba(0,0,0,.25)':'none'});
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();scrollTo(this.getAttribute('href'))})});
+
+// PARALLAX
+document.addEventListener('mousemove',function(e){var x=(e.clientX/window.innerWidth-.5)*15,y=(e.clientY/window.innerHeight-.5)*15;document.querySelectorAll('.orb').forEach(function(o,i){var s=(i+1)*.6;o.style.transform='translate('+x*s+'px,'+y*s+'px)'})});
+
+// ═══ SKY CYCLE ═══
+var skyEl=document.getElementById('skyCycle');if(skyEl){var skyK=[{p:0,r:255,g:120,b:40,o:.22},{p:.05,r:255,g:170,b:60,o:.28},{p:.12,r:255,g:210,b:100,o:.22},{p:.2,r:255,g:240,b:180,o:.12},{p:.3,r:160,g:210,b:255,o:.1},{p:.4,r:100,g:180,b:255,o:.08},{p:.5,r:255,g:220,b:100,o:.15},{p:.58,r:255,g:160,b:50,o:.25},{p:.66,r:255,g:80,b:20,o:.3},{p:.74,r:180,g:40,b:100,o:.25},{p:.82,r:60,g:20,b:100,o:.22},{p:.9,r:15,g:10,b:50,o:.18},{p:1,r:255,g:120,b:40,o:.22}];function lerpSky(a,b,t){return{r:Math.round(a.r+(b.r-a.r)*t),g:Math.round(a.g+(b.g-a.g)*t),b:Math.round(a.b+(b.b-a.b)*t),o:+(a.o+(b.o-a.o)*t).toFixed(3)};}function updSky(){var sT=window.pageYOffset||0,dH=Math.max(document.documentElement.scrollHeight-window.innerHeight,1),prog=(sT/dH*1.5)%1,idx=0;for(var j=1;j<skyK.length;j++){if(skyK[j].p>=prog){idx=j-1;break;}}var a=skyK[idx],b=skyK[Math.min(idx+1,skyK.length-1)],rng=b.p-a.p||1,t=(prog-a.p)/rng,c=lerpSky(a,b,t),o2=(c.o*.5).toFixed(3),o3=(c.o*.15).toFixed(3);skyEl.style.background='radial-gradient(ellipse 160% 80% at 50% 100%,rgba('+c.r+','+c.g+','+c.b+','+c.o+'),rgba('+c.r+','+c.g+','+c.b+','+o2+') 40%,rgba('+c.r+','+c.g+','+c.b+','+o3+') 70%,transparent 100%),radial-gradient(ellipse 120% 60% at 50% 0%,rgba('+c.r+','+c.g+','+c.b+','+o3+'),transparent 60%)';}var skyTk=false;window.addEventListener('scroll',function(){if(!skyTk){requestAnimationFrame(function(){updSky();skyTk=false});skyTk=true}});updSky();}
+// ═══ SCROLL PROGRESS ═══
+var progBar=document.getElementById('scrollProg');function updProg(){var s=window.pageYOffset||0,h=Math.max(document.documentElement.scrollHeight-window.innerHeight,1);progBar.style.width=(s/h*100).toFixed(1)+'%';}window.addEventListener('scroll',function(){requestAnimationFrame(updProg)});
+// ═══ FLASH COUNTDOWN ═══
+(function(){var end=new Date();end.setDate(end.getDate()+3);end.setHours(23,59,59,0);function u(){var n=new Date(),d=end-n;if(d<=0){document.getElementById('flashDeal').innerHTML='<h3>Deal Expired!</h3>';return;}document.getElementById('fdDays').textContent=String(Math.floor(d/864e5)).padStart(2,'0');document.getElementById('fdHrs').textContent=String(Math.floor(d%864e5/36e5)).padStart(2,'0');document.getElementById('fdMin').textContent=String(Math.floor(d%36e5/6e4)).padStart(2,'0');document.getElementById('fdSec').textContent=String(Math.floor(d%6e4/1e3)).padStart(2,'0');}u();setInterval(u,1000);})();
+// ═══ LIGHTBOX ═══
+function openLB(s,c){var l=document.getElementById('lightbox');document.getElementById('lbImg').src=s;document.getElementById('lbCap').textContent=c;l.classList.add('active');document.body.style.overflow='hidden';}
+function closeLB(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB();});
+// ═══ CONFETTI ═══
+function fireConfetti(){var c=document.createElement('div');c.className='confetti-container';document.body.appendChild(c);var cl=['#00e5c8','#3b82f6','#f59e0b','#ec4899','#22c55e','#a855f7','#ff6b6b','#ffd93d'];for(var i=0;i<80;i++){var p=document.createElement('div');p.className='confetti-piece';p.style.left=Math.random()*100+'vw';p.style.background=cl[Math.floor(Math.random()*cl.length)];p.style.width=(6+Math.random()*8)+'px';p.style.height=(6+Math.random()*8)+'px';p.style.borderRadius=Math.random()>.5?'50%':'2px';p.style.animation='confFall '+(1.5+Math.random()*2)+'s ease-out '+(Math.random()*.8)+'s forwards';c.appendChild(p);}setTimeout(function(){c.remove()},4500);}
+// ═══ BACK TO TOP ═══
+var bttBtn=document.getElementById('bttBtn');window.addEventListener('scroll',function(){bttBtn.classList.toggle('show',window.pageYOffset>600);});
+// ═══ RIPPLE + TILT ═══
+document.querySelectorAll('.btn').forEach(function(b){b.addEventListener('click',function(e){var r=document.createElement('span');r.className='ripple';var rect=this.getBoundingClientRect();r.style.left=(e.clientX-rect.left)+'px';r.style.top=(e.clientY-rect.top)+'px';r.style.width=r.style.height=Math.max(rect.width,rect.height)+'px';this.appendChild(r);setTimeout(function(){r.remove()},600);});});
+document.querySelectorAll('.dest-card,.pkg,.tc,.merch-card,.lc,.mn,.info-card').forEach(function(c){c.classList.add('tilt-card');c.addEventListener('mousemove',function(e){var r=this.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;this.style.transform='perspective(600px) rotateY('+x*6+'deg) rotateX('+-y*6+'deg) translateY(-4px)';});c.addEventListener('mouseleave',function(){this.style.transform='';});});
+// ═══ SVG ROUTE DRAW ═══
+var svgWrap=document.getElementById('svgRouteWrap');if(svgWrap){var svgObs=new IntersectionObserver(function(e){if(e[0].isIntersecting){document.getElementById('routePath').classList.add('drawn');svgWrap.querySelectorAll('.route-dot').forEach(function(d,i){setTimeout(function(){d.classList.add('show');},600+i*350);});svgObs.disconnect();}},{threshold:0.2});svgObs.observe(svgWrap);}
+// ═══ PAGE LOADER ═══
+window.addEventListener('load',function(){setTimeout(function(){document.getElementById('pageLoader').classList.add('done');setTimeout(function(){document.getElementById('pageLoader').remove();},600);},1400);});
+// ═══ SCROLL % ═══
+var scrollPct=document.getElementById('scrollPct'),pctTimer;window.addEventListener('scroll',function(){var s=window.pageYOffset||0,h=Math.max(document.documentElement.scrollHeight-window.innerHeight,1),p=Math.round(s/h*100);scrollPct.textContent=p+'%';scrollPct.classList.add('show');clearTimeout(pctTimer);pctTimer=setTimeout(function(){scrollPct.classList.remove('show');},1500);});
+// ═══ DOT NAV ═══
+// DOT NAV v2 (Phase 8.8)
+(function(){var dn=document.getElementById('dotNav');if(!dn)return;var dots=dn.querySelectorAll('.dn-dot');var sIds=['hero','destinations','gmap','stats','howto','packages','booking','app','merch','learn','weather','contact'];var sEls=sIds.map(function(id){return document.getElementById(id)});function upd(){var sY=window.pageYOffset||0;var wH=window.innerHeight;var act=0;for(var i=sEls.length-1;i>=0;i--){if(sEls[i]){var t=sEls[i].getBoundingClientRect().top+sY-wH*0.35;if(sY>=t){act=i;break;}}}dots.forEach(function(d,i){d.classList.toggle('active',i===act);});}var tk=false;window.addEventListener('scroll',function(){if(!tk){requestAnimationFrame(function(){upd();tk=false});tk=true}});upd();})();
+// ═══ KEYBOARD ═══
+document.addEventListener('keydown',function(e){if(e.key==='/'&&!e.ctrlKey&&document.activeElement.tagName!=='INPUT'){e.preventDefault();var s=document.getElementById('searchDest');if(s){s.focus();s.scrollIntoView({behavior:'smooth',block:'center'});}}if(e.key==='t'&&e.altKey){e.preventDefault();document.getElementById('themeBtn').click();}});
+// ═══ LAZY MAP ═══
+function loadMap(){var p=document.getElementById('mapPlaceholder');p.outerHTML='<div class="map-embed"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960000!2d120.5!3d15.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c84f0e4b1b1b%3A0x0!2sLuzon%2C+Philippines!5e0!3m2!1sen!2sph!4v1" loading="lazy" allowfullscreen title="Tour Map" style="width:100%;height:100%;border:none;"></iframe></div>';}
+// ═══ HAMBURGER ARIA ═══
+document.querySelector('.hamburger').addEventListener('click',function(){var x=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!x);});
+
+
+// ═══ LIVE WEATHER (Open-Meteo API — free, no key) ═══
+// ═══ WEATHER CENTER v5 ═══
+var wxCodes={0:'☀️ Clear sky',1:'🌤️ Mostly clear',2:'⛅ Partly cloudy',3:'☁️ Overcast',45:'🌫️ Foggy',48:'🌫️ Depositing fog',51:'🌦️ Light drizzle',53:'🌧️ Moderate drizzle',55:'🌧️ Dense drizzle',61:'🌧️ Slight rain',63:'🌧️ Moderate rain',65:'🌧️ Heavy rain',71:'🌨️ Slight snow',73:'🌨️ Moderate snow',75:'❄️ Heavy snow',80:'🌦️ Slight showers',81:'🌧️ Moderate showers',82:'⛈️ Violent showers',95:'⛈️ Thunderstorm',96:'⛈️ Thunderstorm + hail',99:'⛈️ Severe thunderstorm'};
+function wxI(c){return(wxCodes[c]||'🌤️ ?').split(' ')[0];}
+function wxL(c){return(wxCodes[c]||'Unknown').split(' ').slice(1).join(' ');}
+function d2c(d){return['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'][Math.round(d/22.5)%16];}
+function d2r(d){return d+90;}
+function fT(iso){return new Date(iso).toLocaleTimeString('en-PH',{hour:'2-digit',minute:'2-digit',hour12:true});}
+function uvColor(v){if(v<=2)return'#22c55e';if(v<=5)return'#f59e0b';if(v<=7)return'#f97316';if(v<=10)return'#ef4444';return'#a855f7';}
+// Theme
+function toggleWxTheme(){var el=document.documentElement,c=el.getAttribute('data-theme'),n=c==='dark'?'light':'dark';el.setAttribute('data-theme',n);localStorage.setItem('ut-theme',n);document.getElementById('wxThemeIcon').textContent=n==='dark'?'🌙':'☀️';var g=document.getElementById('themeBtn');if(g)g.textContent=n==='dark'?'🌙':'☀️';}
+(function(){var t=document.documentElement.getAttribute('data-theme');var w=document.getElementById('wxThemeIcon');if(w)w.textContent=t==='dark'?'🌙':'☀️';})();
+// Refresh
+function refreshWeather(){var b=document.getElementById('wxRefreshBtn');if(!document.getElementById('wxPlace').value)return;b.classList.add('spinning');fetchWeather();setTimeout(function(){b.classList.remove('spinning');},1200);}
+// Radar
+function loadRadar(){var p=document.getElementById('wxRadarPlaceholder'),s=document.getElementById('wxPlace');var la=14.6,lo=121.0;if(s.value){var c=s.value.split('|')[0].split(',');la=c[0];lo=c[1];}p.outerHTML='<div class="wx-radar-frame"><iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=7&overlay=rain&product=ecmwf&level=surface&lat='+la+'&lon='+lo+'" loading="lazy" allowfullscreen title="Radar"></iframe></div>';}
+// AQI
+function aqiInfo(v){if(v<=50)return{bg:'rgba(34,197,94,.15)',c:'#22c55e',l:'Good'};if(v<=100)return{bg:'rgba(245,158,11,.15)',c:'#f59e0b',l:'Moderate'};if(v<=150)return{bg:'rgba(249,115,22,.15)',c:'#f97316',l:'Unhealthy (Sensitive)'};if(v<=200)return{bg:'rgba(239,68,68,.15)',c:'#ef4444',l:'Unhealthy'};if(v<=300)return{bg:'rgba(168,85,247,.15)',c:'#a855f7',l:'Very Unhealthy'};return{bg:'rgba(127,29,29,.2)',c:'#7f1d1d',l:'Hazardous'};}
+// Sun arc
+function updateSunArc(sr,ss){var sec=document.getElementById('wxSunSection');sec.style.display='block';var rise=new Date(sr),set=new Date(ss),now=new Date();document.getElementById('wxSunrise').textContent=fT(sr);document.getElementById('wxSunset').textContent=fT(ss);var dm=set-rise,dh=Math.floor(dm/36e5),dn=Math.floor((dm%36e5)/6e4);document.getElementById('wxDaylight').textContent=dh+'h '+dn+'m';var p=Math.max(0,Math.min(1,(now-rise)/(set-rise)));var dot=document.getElementById('wxSunDot'),aw=dot.parentElement.offsetWidth||220,ah=dot.parentElement.offsetHeight||115;var ang=Math.PI*(1-p),cx=aw/2-7,cy=ah-7,rx=aw/2-12,ry=ah-15;dot.style.left=Math.round(cx-rx*Math.cos(ang))+'px';dot.style.top=Math.round(cy-ry*Math.sin(ang))+'px';dot.style.opacity=p>0&&p<1?'1':'0.3';var cd=document.getElementById('wxSunCountdown');if(now<rise){var df=rise-now;cd.textContent='🌅 Sunrise in '+Math.floor(df/36e5)+'h '+Math.floor((df%36e5)/6e4)+'m';}else if(now<set){var df=set-now;cd.textContent='🌇 Sunset in '+Math.floor(df/36e5)+'h '+Math.floor((df%36e5)/6e4)+'m';}else{cd.textContent='🌙 Sun has set. Next sunrise tomorrow.';}}
+// Smart Alerts (threshold-based)
+function genAlerts(d){var a=[],c=d.current,dy=d.daily;var uv=dy&&dy.uv_index_max?dy.uv_index_max[0]:0;var wnd=c.wind_speed_10m||0;var rain=c.precipitation||0;var code=c.weather_code||0;if(uv>=11)a.push({cls:'red',icon:'☀️',title:'Extreme UV ('+uv+')',desc:'Avoid outdoor exposure 10AM-3PM. Apply SPF50+ sunscreen.'});else if(uv>=8)a.push({cls:'orange',icon:'☀️',title:'Very High UV ('+uv+')',desc:'Wear hat + sunglasses. Reapply sunscreen every 2 hours.'});else if(uv>=6)a.push({cls:'yellow',icon:'☀️',title:'High UV ('+uv+')',desc:'Seek shade during midday. Use SPF30+ sunscreen.'});if(wnd>=60)a.push({cls:'red',icon:'💨',title:'Storm-Force Wind ('+Math.round(wnd)+' km/h)',desc:'Stay indoors. Secure loose objects. Dangerous for travel.'});else if(wnd>=40)a.push({cls:'orange',icon:'💨',title:'Strong Wind ('+Math.round(wnd)+' km/h)',desc:'Caution on mountain roads. Hold onto hats!'});else if(wnd>=25)a.push({cls:'yellow',icon:'💨',title:'Breezy ('+Math.round(wnd)+' km/h)',desc:'Good for surfing in Zambales! Secure tent pegs if camping.'});if(code>=95)a.push({cls:'red',icon:'⛈️',title:'Thunderstorm Alert',desc:'Seek shelter immediately. Avoid open areas and water.'});else if(code>=80)a.push({cls:'orange',icon:'🌧️',title:'Heavy Showers Expected',desc:'Bring rain gear. Roads may be slippery.'});else if(code>=61)a.push({cls:'yellow',icon:'🌧️',title:'Rain Expected',desc:'Pack an umbrella or poncho for your trip.'});if(rain>=10)a.push({cls:'red',icon:'🌊',title:'Heavy Rainfall ('+rain+' mm)',desc:'Possible flooding in low areas. Check road conditions.'});var feels=c.apparent_temperature||0;if(feels>=40)a.push({cls:'red',icon:'🌡️',title:'Extreme Heat (Feels '+Math.round(feels)+'°C)',desc:'Stay hydrated! Risk of heatstroke. Rest in shade frequently.'});else if(feels>=35)a.push({cls:'orange',icon:'🌡️',title:'Hot (Feels '+Math.round(feels)+'°C)',desc:'Drink water regularly. Wear light clothing.'});if(a.length===0)a.push({cls:'green',icon:'✅',title:'All Clear — Great Travel Weather!',desc:'Conditions are good. Enjoy your trip!'});var h='';a.forEach(function(x){h+='<div class="wx-alert '+x.cls+'"><div class="wx-alert-icon">'+x.icon+'</div><div class="wx-alert-text"><div class="wx-alert-title">'+x.title+'</div><div class="wx-alert-desc">'+x.desc+'</div></div></div>';});document.getElementById('wxAlerts').innerHTML=h;}
+// UV Chart
+function buildUvChart(hourly){var sec=document.getElementById('wxUvSection');var chart=document.getElementById('wxUvChart');if(!hourly||!hourly.uv_index){sec.style.display='none';return;}sec.style.display='block';var now=new Date(),todayStr=now.toISOString().split('T')[0];var bars='',maxUv=0;var indices=[];for(var i=0;i<hourly.time.length;i++){if(hourly.time[i].startsWith(todayStr)){var uv=hourly.uv_index[i]||0;if(uv>maxUv)maxUv=uv;indices.push({hr:new Date(hourly.time[i]).getHours(),uv:uv});}}if(indices.length===0){sec.style.display='none';return;}maxUv=Math.max(maxUv,1);var dayIndices=indices.filter(function(x){return x.hr>=5&&x.hr<=19;});if(dayIndices.length===0)dayIndices=indices;dayIndices.forEach(function(x){var pct=Math.max(4,(x.uv/maxUv)*100);var lb=x.hr===0?'12A':x.hr<12?(x.hr+'A'):x.hr===12?'12P':((x.hr-12)+'P');var isNow=x.hr===now.getHours();bars+='<div class="wx-uv-bar-wrap"><div class="wx-uv-val">'+x.uv.toFixed(1)+'</div><div class="wx-uv-bar" style="height:'+pct+'%;background:'+uvColor(x.uv)+';'+(isNow?'box-shadow:0 0 8px '+uvColor(x.uv)+';border:1px solid '+uvColor(x.uv)+';':'')+'"></div><div class="wx-uv-hr">'+(isNow?'Now':lb)+'</div></div>';});chart.innerHTML=bars;}
+// AQI + Pollen fetch
+function fetchAQI(lat,lon){var url='https://air-quality-api.open-meteo.com/v1/air-quality?latitude='+lat+'&longitude='+lon+'&current=us_aqi,pm2_5,pm10,ozone,nitrogen_dioxide,alder_pollen,birch_pollen,grass_pollen,mugwort_pollen&timezone=Asia%2FManila';fetch(url).then(function(r){return r.json()}).then(function(d){if(!d.current)return;var c=d.current;document.getElementById('wxAqiSection').style.display='block';var aqi=Math.round(c.us_aqi||0);var info=aqiInfo(aqi);var badge=document.getElementById('wxAqiBadge');badge.style.background=info.bg;badge.style.color=info.c;badge.style.border='1px solid '+info.c;document.getElementById('wxAqiNum').textContent=aqi;document.getElementById('wxAqiLabel').textContent=info.l;document.getElementById('wxPm25').textContent=c.pm2_5!=null?c.pm2_5.toFixed(1):'—';document.getElementById('wxPm10').textContent=c.pm10!=null?c.pm10.toFixed(1):'—';document.getElementById('wxO3').textContent=c.ozone!=null?c.ozone.toFixed(0):'—';document.getElementById('wxNo2').textContent=c.nitrogen_dioxide!=null?c.nitrogen_dioxide.toFixed(0):'—';var ps=document.getElementById('wxPollenSection'),pr=document.getElementById('wxPollenRow');var pollen=[{n:'Alder',v:c.alder_pollen,i:'🌳'},{n:'Birch',v:c.birch_pollen,i:'🌿'},{n:'Grass',v:c.grass_pollen,i:'🌾'},{n:'Mugwort',v:c.mugwort_pollen,i:'🌼'}];var hasP=pollen.some(function(p){return p.v!=null&&p.v>0;});if(hasP){ps.style.display='block';var ph='';pollen.forEach(function(p){if(p.v!=null){var lvl=p.v<10?'Low':p.v<50?'Moderate':p.v<100?'High':'Very High';ph+='<div class="wx-pollen-item"><div class="wx-pollen-icon">'+p.i+'</div><div class="wx-pollen-val">'+Math.round(p.v)+'</div><div class="wx-pollen-name">'+p.n+' ('+lvl+')</div></div>';}});pr.innerHTML=ph;}else{ps.style.display='block';pr.innerHTML='<div class="wx-pollen-na">🌿 Pollen data not available for this region (Philippines). Available in Europe only.</div>';}}).catch(function(){document.getElementById('wxAqiSection').style.display='none';document.getElementById('wxPollenSection').style.display='none';});}
+// Main fetch
+function fetchWeather(){var sel=document.getElementById('wxPlace'),card=document.getElementById('wxCard');if(!sel.value){card.style.display='none';return;}var parts=sel.value.split('|'),coords=parts[0].split(','),city=parts[1],lat=coords[0],lon=coords[1];card.style.display='block';card.classList.add('loading');document.getElementById('wxCity').textContent=city;document.getElementById('wxIcon').textContent='⏳';document.getElementById('wxTemp').textContent='Loading...';document.getElementById('wxDesc').textContent='Fetching...';document.getElementById('wxHourly').innerHTML='';document.getElementById('wxForecast').innerHTML='';document.getElementById('wxAlerts').innerHTML='';['wxHourlyTitle','wxForecastTitle','wxSunSection','wxUvSection','wxAqiSection','wxPollenSection','wxSocSection','socForecastTitle','socHistTitle','socHistNote'].forEach(function(id){document.getElementById(id).style.display='none';});var url='https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&current=temperature_2m,relative_humidity_2m,precipitation,weather_code,wind_speed_10m,wind_direction_10m,apparent_temperature,is_day&hourly=temperature_2m,precipitation_probability,weather_code,wind_speed_10m,wind_direction_10m,is_day,uv_index,cloud_cover_low,cloud_cover_mid,cloud_cover_high,relative_humidity_2m,dew_point_2m&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weather_code,sunrise,sunset,uv_index_max,wind_speed_10m_max,wind_direction_10m_dominant&timezone=Asia%2FManila&forecast_days=7';fetch(url).then(function(r){return r.json()}).then(function(d){card.classList.remove('loading');var c=d.current;document.getElementById('wxIcon').textContent=wxI(c.weather_code||0);document.getElementById('wxTemp').textContent=Math.round(c.temperature_2m)+'°C';document.getElementById('wxDesc').textContent=wxL(c.weather_code||0);document.getElementById('wxWind').textContent=Math.round(c.wind_speed_10m)+' km/h';document.getElementById('wxHumid').textContent=c.relative_humidity_2m+'%';document.getElementById('wxRain').textContent=c.precipitation+' mm';document.getElementById('wxFeels').textContent=Math.round(c.apparent_temperature)+'°C';document.getElementById('wxUV').textContent=d.daily&&d.daily.uv_index_max?d.daily.uv_index_max[0]:'—';var wD=c.wind_direction_10m||0;var ar=document.getElementById('wxWindArrow');if(ar)ar.style.transform='rotate('+d2r(wD)+'deg)';var cp=document.getElementById('wxWindDir');if(cp)cp.textContent=d2c(wD)+' ('+Math.round(wD)+'°)';document.getElementById('wxTime').textContent='Updated: '+new Date(c.time).toLocaleString('en-PH',{hour:'2-digit',minute:'2-digit',month:'short',day:'numeric',hour12:true});genAlerts(d);if(d.daily&&d.daily.sunrise)updateSunArc(d.daily.sunrise[0],d.daily.sunset[0]);if(d.hourly)buildUvChart(d.hourly);if(d.hourly&&d.hourly.time){document.getElementById('wxHourlyTitle').style.display='block';var hB=document.getElementById('wxHourly'),nI=0,nD=new Date();for(var i=0;i<d.hourly.time.length;i++){if(new Date(d.hourly.time[i])>=nD){nI=i;break;}}var hH='';for(var h=nI;h<Math.min(nI+24,d.hourly.time.length);h++){var ht=new Date(d.hourly.time[h]),hh=ht.getHours(),iN=h===nI;var hT=Math.round(d.hourly.temperature_2m[h]),hC=d.hourly.weather_code[h]||0;var hR=d.hourly.precipitation_probability?d.hourly.precipitation_probability[h]:0;var hW=d.hourly.wind_speed_10m?Math.round(d.hourly.wind_speed_10m[h]):0;var hDr=d.hourly.wind_direction_10m?d.hourly.wind_direction_10m[h]:0;var lb=hh===0?'12AM':hh<12?(hh+'AM'):hh===12?'12PM':((hh-12)+'PM');hH+='<div class="wx-hour-card'+(iN?' now':'')+'"><div class="wxh-time">'+(iN?'Now':lb)+'</div><div class="wxh-icon">'+wxI(hC)+'</div><div class="wxh-temp">'+hT+'°</div>';if(hR>0)hH+='<div class="wxh-rain">💧'+hR+'%</div>';hH+='<div class="wxh-wind"><span style="display:inline-block;transform:rotate('+d2r(hDr)+'deg);font-size:.65rem;">➤</span>'+hW+'</div></div>';}hB.innerHTML=hH;}if(d.daily&&d.daily.time){document.getElementById('wxForecastTitle').style.display='block';var fB=document.getElementById('wxForecast'),ds=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],tS=new Date().toISOString().split('T')[0],fH='';for(var j=0;j<d.daily.time.length;j++){var dd=new Date(d.daily.time[j]+'T00:00'),dn=j===0?'Today':ds[dd.getDay()],iT=d.daily.time[j]===tS;var hi=Math.round(d.daily.temperature_2m_max[j]),lo=Math.round(d.daily.temperature_2m_min[j]);var dC=d.daily.weather_code[j]||0,rP=d.daily.precipitation_probability_max?d.daily.precipitation_probability_max[j]:0;var dW=d.daily.wind_direction_10m_dominant?d.daily.wind_direction_10m_dominant[j]:0;fH+='<div class="wx-day-card'+(iT?' today':'')+'"><div class="wxd-day">'+dn+'</div><div class="wxd-icon">'+wxI(dC)+'</div><div class="wxd-hi">'+hi+'°</div><div class="wxd-lo">'+lo+'°</div>';if(rP>0)fH+='<div class="wxd-rain-chance">💧 '+rP+'%</div>';fH+='<div class="wxd-wind-dir"><span style="display:inline-block;transform:rotate('+d2r(dW)+'deg);font-size:.55rem;">➤</span> '+d2c(dW)+'</div></div>';}fB.innerHTML=fH;}updateSoC(d,city);}).catch(function(){card.classList.remove('loading');document.getElementById('wxIcon').textContent='❌';document.getElementById('wxTemp').textContent='Error';document.getElementById('wxDesc').textContent='Check internet.';});fetchAQI(lat,lon);}
+
+// PREMIUM TOOLTIPS (Phase 8.9)
+(function(){
+var tip=document.createElement('div');tip.className='premium-tip';tip.id='premiumTip';document.body.appendChild(tip);
+var tm=[
+{s:'.nav-book',t:'📝 Jump to booking form'},
+{s:'#themeBtn',t:'🌗 Switch dark / light mode'},
+{s:'#langBtn',t:'🌐 Toggle English / Filipino'},
+{s:'#musicBtn',t:'🎵 Toggle ambient music'},
+{s:'#bttBtn',t:'⬆️ Scroll back to top'},
+{s:'#chatToggle',t:'💬 Chat with our assistant'},
+{s:'.print-btn',t:'🖨️ Print this itinerary'},
+{s:'#wxRefreshBtn',t:'🔄 Refresh weather data'},
+{s:'#wxThemeBtn',t:'🌗 Toggle weather theme'},
+{s:'#mapPlaceholder',t:'🗺️ Click to load Google Maps'},
+{s:'#wxRadarPlaceholder',t:'🛰️ Click to load live radar'}
+];
+tm.forEach(function(t){var el=document.querySelector(t.s);if(el)el.setAttribute('data-tip',t.t);});
+document.querySelectorAll('.dest-card').forEach(function(c){var n=c.querySelector('h3'),b=c.querySelector('.btn');if(n&&b)b.setAttribute('data-tip','🎯 Book '+n.textContent+' now');});
+document.querySelectorAll('.pkg').forEach(function(p){var n=p.querySelector('.pkg-name'),b=p.querySelector('.pkg-btn');if(n&&b)b.setAttribute('data-tip','📦 Select '+n.textContent);});
+document.querySelectorAll('.merch-card').forEach(function(c){var n=c.querySelector('h4'),pr=c.querySelector('.merch-p');if(n&&pr)c.setAttribute('data-tip','🛒 '+n.textContent+' — '+pr.textContent);});
+document.querySelectorAll('.info-card').forEach(function(c){var n=c.querySelector('h4'),s=c.querySelector('.info-stat');if(n&&s)c.setAttribute('data-tip','📊 '+n.textContent+': '+s.textContent);});
+document.querySelectorAll('.lc').forEach(function(c){var n=c.querySelector('h4');if(n)c.setAttribute('data-tip','📚 '+n.textContent+' tips for travelers');});
+document.querySelectorAll('.tc').forEach(function(c){var n=c.querySelector('.tc-n');if(n)c.setAttribute('data-tip','💬 Review by '+n.textContent);});
+var hT;
+document.addEventListener('mouseover',function(e){var el=e.target.closest('[data-tip]');if(!el||el.closest('.dot-nav'))return;clearTimeout(hT);tip.textContent=el.getAttribute('data-tip');tip.style.visibility='hidden';tip.classList.add('show');var tw=tip.offsetWidth,th=tip.offsetHeight;tip.style.visibility='';var r=el.getBoundingClientRect();var left=r.left+r.width/2-tw/2;var top=r.top-th-10;if(top<5)top=r.bottom+10;if(left<5)left=5;if(left+tw>window.innerWidth-5)left=window.innerWidth-tw-5;tip.style.left=left+'px';tip.style.top=top+'px';});
+document.addEventListener('mouseout',function(e){var el=e.target.closest('[data-tip]');if(el&&!el.closest('.dot-nav')){hT=setTimeout(function(){tip.classList.remove('show');},80);}});
+window.addEventListener('scroll',function(){tip.classList.remove('show');},{passive:true});
+})();
+
+
+// ═══ SEA OF CLOUDS INTELLIGENCE (Phase 9.0-A) ═══
+// Elevation data per destination (meters ASL at viewpoint)
+var socElevations={'Tanay, Rizal':620,'Marilaque Loop':500,'Quezon Province':200,'Zambales':1486,'Banaue, Ifugao':1500,'Sagada, Mt. Province':1700,'Baguio City':1846,'Manila (Home Base)':16};
+// Elevation multiplier for probability
+function socElevMult(elev){if(elev>=1600)return 1;if(elev>=1200)return .85;if(elev>=600)return .6;if(elev>=300)return .4;return .15;}
+// Probability label + class
+function socLabel(pct){if(pct>=70)return{t:'HIGH CHANCE ⭐',c:'soc-high'};if(pct>=50)return{t:'GOOD CHANCE',c:'soc-good'};if(pct>=30)return{t:'FAIR CHANCE',c:'soc-fair'};if(pct>=10)return{t:'LOW CHANCE',c:'soc-low'};return{t:'UNLIKELY',c:'soc-none'};}
+// Icon for probability
+function socIcon(pct){if(pct>=70)return'🌊';if(pct>=50)return'☁️';if(pct>=30)return'🌥️';if(pct>=10)return'⛅';return'☀️';}
+// Gauge color based on percentage
+function socGaugeColor(pct){if(pct>=70)return'#22c55e';if(pct>=50)return'#00e5c8';if(pct>=30)return'#f59e0b';if(pct>=10)return'#ef4444';return'var(--t3)';}
+// Calculate SoC probability from weather data
+function calcSocScore(cloudLow,cloudMid,cloudHigh,humidity,temp,dewPoint,wind,elev){
+ var humF=humidity>75?Math.min(100,humidity*1.2):humidity*.5;
+ var dewGap=Math.abs(temp-dewPoint);
+ var dewF=Math.max(0,100-dewGap*20);
+ var windF=Math.max(0,100-wind*5);
+ var raw=(cloudLow*.30)+((100-cloudMid)*.15)+((100-cloudHigh)*.10)+(humF*.20)+(dewF*.15)+(windF*.10);
+ var score=Math.round(Math.min(100,Math.max(0,raw*socElevMult(elev))));
+ return score;
+}
+// Main SoC updater — called by fetchWeather after data arrives
+function updateSoC(data,city){
+ var sec=document.getElementById('wxSocSection');
+ var elev=socElevations[city]||0;
+ if(elev<200){
+  sec.style.display='block';
+  sec.innerHTML='<div class="wx-soc-title">☁️ Sea of Clouds Intelligence <span class="soc-badge">Live</span></div><div class="soc-no-data"><div class="soc-nd-icon">🏖️</div>Sea of clouds requires mountain elevations (600m+).<br><strong>'+city+'</strong> is at '+elev+'m — try Sagada, Baguio, or Banaue!</div>';
+  return;
+ }
+ // Reset HTML structure (in case it was replaced by no-data)
+ if(!document.getElementById('socGaugePct')){
+  sec.innerHTML='<div class="wx-soc-title">☁️ Sea of Clouds Intelligence <span class="soc-badge">Live</span></div><div class="soc-gauge" id="socGauge"><div class="soc-gauge-ring"><div class="soc-gauge-bg"></div><div class="soc-gauge-fill" id="socGaugeFill"></div><div class="soc-gauge-pct" id="socGaugePct">—</div></div><div class="soc-gauge-label soc-none" id="socGaugeLabel">Calculating...</div></div><div class="soc-factors" id="socFactors"><div class="soc-factor"><div class="sf-icon">☁️</div><div class="sf-val" id="socCloudLow">—</div><div class="sf-lbl">Low Clouds</div></div><div class="soc-factor"><div class="sf-icon">🌥️</div><div class="sf-val" id="socCloudMid">—</div><div class="sf-lbl">Mid Clouds</div></div><div class="soc-factor"><div class="sf-icon">💧</div><div class="sf-val" id="socHumidity">—</div><div class="sf-lbl">Humidity</div></div><div class="soc-factor"><div class="sf-icon">🌡️</div><div class="sf-val" id="socDewGap">—</div><div class="sf-lbl">Dew Gap</div></div><div class="soc-factor"><div class="sf-icon">💨</div><div class="sf-val" id="socWind">—</div><div class="sf-lbl">Wind</div></div><div class="soc-factor"><div class="sf-icon">⛰️</div><div class="sf-val" id="socElev">—</div><div class="sf-lbl">Elevation</div></div></div><div class="soc-best-time" id="socBestTime"></div><div class="soc-elevation" id="socElevInfo"></div><div class="soc-forecast-title" id="socForecastTitle" style="display:none;">📅 7-Day Dawn Forecast (4–7 AM)</div><div class="soc-forecast-grid" id="socForecastGrid"></div><div class="soc-hist-title" id="socHistTitle" style="display:none;">📊 Best Months for Sea of Clouds (3-Year Avg)</div><div class="soc-hist-chart" id="socHistChart"></div><div class="soc-hist-note" id="socHistNote" style="display:none;">Based on dawn cloud cover + humidity data from Open-Meteo Archive API</div>';
+ }
+ sec.style.display='block';
+ var h=data.hourly;if(!h||!h.cloud_cover_low)return;
+ // Find next dawn (4-7 AM) data
+ var now=new Date(),dawnHrs=[];
+ for(var i=0;i<h.time.length;i++){
+  var t=new Date(h.time[i]),hr=t.getHours();
+  if(hr>=4&&hr<=7&&t>now){dawnHrs.push(i);if(dawnHrs.length>=4)break;}
+ }
+ // Use first available dawn hour for current reading, fallback to current hour
+ var idx=dawnHrs.length>0?dawnHrs[0]:0;
+ // Find current hour as alternative
+ for(var j=0;j<h.time.length;j++){if(new Date(h.time[j])>=now){if(dawnHrs.length===0)idx=j;break;}}
+ var cL=h.cloud_cover_low[idx]||0,cM=h.cloud_cover_mid?h.cloud_cover_mid[idx]:0,cH=h.cloud_cover_high?h.cloud_cover_high[idx]:0;
+ var hum=h.relative_humidity_2m?h.relative_humidity_2m[idx]:data.current.relative_humidity_2m||0;
+ var tmp=h.temperature_2m[idx]||data.current.temperature_2m||25;
+ var dew=h.dew_point_2m?h.dew_point_2m[idx]:tmp-3;
+ var wnd=h.wind_speed_10m?h.wind_speed_10m[idx]:data.current.wind_speed_10m||0;
+ var score=calcSocScore(cL,cM,cH,hum,tmp,dew,wnd,elev);
+ var lbl=socLabel(score);
+ // Update gauge
+ document.getElementById('socGaugePct').textContent=score+'%';
+ var gl=document.getElementById('socGaugeLabel');gl.textContent=lbl.t;gl.className='soc-gauge-label '+lbl.c;
+ // Gauge fill rotation (0%=225deg, 100%=405deg → range=180deg)
+ var fillDeg=225+(score/100)*180;
+ var gf=document.getElementById('socGaugeFill');
+ gf.style.borderTopColor=socGaugeColor(score);gf.style.borderRightColor=socGaugeColor(score);
+ gf.style.transform='rotate('+fillDeg+'deg)';
+ // Factor chips
+ document.getElementById('socCloudLow').textContent=Math.round(cL)+'%';
+ document.getElementById('socCloudMid').textContent=Math.round(cM)+'%';
+ document.getElementById('socHumidity').textContent=Math.round(hum)+'%';
+ document.getElementById('socDewGap').textContent=Math.round(Math.abs(tmp-dew))+'°C';
+ document.getElementById('socWind').textContent=Math.round(wnd)+' km/h';
+ document.getElementById('socElev').textContent=elev+'m';
+ // Best time
+ var dawnTime=dawnHrs.length>0?new Date(h.time[dawnHrs[0]]):null;
+ var bt=document.getElementById('socBestTime');
+ if(dawnTime){
+  var dayNames=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var tmrw=dawnTime.getDate()===now.getDate()?'Today':dawnTime.getDate()===now.getDate()+1?'Tomorrow':dayNames[dawnTime.getDay()];
+  bt.innerHTML='⏰ Best viewing: <strong>'+tmrw+' 5:00 — 6:30 AM</strong> at dawn when clouds settle in valleys';
+ }else{bt.innerHTML='⏰ Best viewing: <strong>Dawn (5:00–6:30 AM)</strong> when cool air traps clouds in valleys';}
+ // Elevation bar
+ var ei=document.getElementById('socElevInfo');
+ var eMult=socElevMult(elev);var eLabel=eMult>=1?'Excellent':eMult>=.85?'Very Good':eMult>=.6?'Moderate':eMult>=.4?'Limited':'Very Low';
+ ei.innerHTML='⛰️ Elevation advantage: <span class="soc-elev-bar"><span class="soc-elev-fill" id="socElevFill" style="width:'+Math.round(eMult*100)+'%;background:'+socGaugeColor(eMult*100)+';"></span></span> <span>'+elev+'m — '+eLabel+'</span>';
+ // ═══ 7-Day Dawn Forecast ═══
+ buildSocForecast(data,elev);
+ // ═══ Historical (separate API call) ═══
+ var coords=document.getElementById('wxPlace').value.split('\n')[0].split(',');
+ fetchSocHistory(coords[0],coords[1],elev);
+}
+// 7-Day Dawn Forecast
+function buildSocForecast(data,elev){
+ var h=data.hourly;if(!h||!h.cloud_cover_low)return;
+ document.getElementById('socForecastTitle').style.display='block';
+ var days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+ var now=new Date(),todayStr=now.toISOString().split('T')[0];
+ // Group dawn hours (4-7 AM) by date
+ var byDate={};
+ for(var i=0;i<h.time.length;i++){
+  var t=new Date(h.time[i]),hr=t.getHours(),ds=h.time[i].split('T')[0];
+  if(hr>=4&&hr<=7){
+   if(!byDate[ds])byDate[ds]=[];
+   byDate[ds].push({cL:h.cloud_cover_low[i]||0,cM:h.cloud_cover_mid?h.cloud_cover_mid[i]:0,cH:h.cloud_cover_high?h.cloud_cover_high[i]:0,hum:h.relative_humidity_2m?h.relative_humidity_2m[i]:70,tmp:h.temperature_2m[i]||20,dew:h.dew_point_2m?h.dew_point_2m[i]:17,wnd:h.wind_speed_10m?h.wind_speed_10m[i]:5});
+  }
+ }
+ var dates=Object.keys(byDate).sort().slice(0,7);
+ var fH='';
+ dates.forEach(function(ds,j){
+  var hrs=byDate[ds];
+  // Average dawn values
+  var avgCL=0,avgCM=0,avgCH=0,avgH=0,avgT=0,avgD=0,avgW=0;
+  hrs.forEach(function(x){avgCL+=x.cL;avgCM+=x.cM;avgCH+=x.cH;avgH+=x.hum;avgT+=x.tmp;avgD+=x.dew;avgW+=x.wnd;});
+  var n=hrs.length;avgCL/=n;avgCM/=n;avgCH/=n;avgH/=n;avgT/=n;avgD/=n;avgW/=n;
+  var score=calcSocScore(avgCL,avgCM,avgCH,avgH,avgT,avgD,avgW,elev);
+  var lbl=socLabel(score);
+  var dd=new Date(ds+'T00:00');
+  var dayName=ds===todayStr?'Today':j===1?'Tmrw':days[dd.getDay()];
+  fH+='<div class="soc-day"><div class="sd-day">'+dayName+'</div><div class="sd-icon">'+socIcon(score)+'</div><div class="sd-pct">'+score+'%</div><div class="sd-label '+lbl.c+'">'+lbl.t.replace(' ⭐','')+'</div></div>';
+ });
+ document.getElementById('socForecastGrid').innerHTML=fH;
+}
+// Historical Monthly Averages (Open-Meteo Archive API)
+function fetchSocHistory(lat,lon,elev){
+ // Fetch last 3 years of data, monthly dawn averages
+ var now=new Date();
+ var endYear=now.getFullYear()-1;
+ var startYear=endYear-2;
+ var startDate=startYear+'-01-01';
+ var endDate=endYear+'-12-31';
+ var url='https://archive-api.open-meteo.com/v1/archive?latitude='+lat+'&longitude='+lon+'&start_date='+startDate+'&end_date='+endDate+'&hourly=cloud_cover_low,cloud_cover_mid,cloud_cover_high,relative_humidity_2m,temperature_2m,dew_point_2m,wind_speed_10m&timezone=Asia%2FManila';
+ fetch(url).then(function(r){return r.json()}).then(function(d){
+  if(!d.hourly||!d.hourly.cloud_cover_low){
+   document.getElementById('socHistTitle').style.display='none';return;
+  }
+  document.getElementById('socHistTitle').style.display='block';
+  document.getElementById('socHistNote').style.display='block';
+  var h=d.hourly;
+  // Group by month, only dawn hours (4-7 AM)
+  var months={};
+  for(var m=0;m<12;m++)months[m]={scores:[],count:0};
+  for(var i=0;i<h.time.length;i++){
+   var t=new Date(h.time[i]),hr=t.getHours(),mo=t.getMonth();
+   if(hr>=4&&hr<=7){
+    var sc=calcSocScore(h.cloud_cover_low[i]||0,h.cloud_cover_mid?h.cloud_cover_mid[i]:0,h.cloud_cover_high?h.cloud_cover_high[i]:0,h.relative_humidity_2m?h.relative_humidity_2m[i]:70,h.temperature_2m[i]||20,h.dew_point_2m?h.dew_point_2m[i]:17,h.wind_speed_10m?h.wind_speed_10m[i]:5,elev);
+    months[mo].scores.push(sc);months[mo].count++;
+   }
+  }
+  var moNames=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var maxAvg=0;
+  var avgs=moNames.map(function(_,m){
+   var avg=months[m].count>0?Math.round(months[m].scores.reduce(function(a,b){return a+b},0)/months[m].count):0;
+   if(avg>maxAvg)maxAvg=avg;return avg;
+  });
+  maxAvg=Math.max(maxAvg,1);
+  var bH='';
+  avgs.forEach(function(avg,m){
+   var pct=Math.max(4,(avg/maxAvg)*100);
+   bH+='<div class="soc-hist-bar-wrap"><div class="soc-hist-val">'+avg+'%</div><div class="soc-hist-bar" style="height:'+pct+'%;background:'+socGaugeColor(avg)+';"></div><div class="soc-hist-mo">'+moNames[m]+'</div></div>';
+  });
+  document.getElementById('socHistChart').innerHTML=bH;
+ }).catch(function(){
+  document.getElementById('socHistTitle').style.display='none';
+  document.getElementById('socHistNote').style.display='none';
+ });
+}
+</script>
+<div class="lightbox" id="lightbox" onclick="closeLB()"><button class="lb-close" onclick="closeLB()">✕</button><img id="lbImg" src="" alt=""><div class="lb-caption" id="lbCap"></div></div>
+</body>
+</html>

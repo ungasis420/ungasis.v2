@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uriel&#39;s Contemporario Arts</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800&amp;family=Playfair+Display:wght@700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0c0a12;
+  --card: rgba(255,255,255,0.035);
+  --card2: rgba(255,255,255,0.065);
+  --bdr: rgba(255,255,255,0.08);
+  --bdr2: rgba(255,255,255,0.16);
+  --t1: #f4f0ec;
+  --t2: #b0a89e;
+  --t3: #6e665e;
+  --warm: #e8a87c;
+  --coral: #e8655a;
+  --sage: #8fb996;
+  --sky: #7eb8d0;
+  --lav: #b8a9d4;
+  --gold: #d4a843;
+  --cream: #f2e6d9;
+  --r: 16px;
+  --rs: 10px;
+  --ease: all 0.35s cubic-bezier(0.22,0.68,0,1);
+  --sans: 'DM Sans', system-ui, sans-serif;
+  --serif: 'Playfair Display', Georgia, serif;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body { font-family:var(--sans); background:var(--bg); color:var(--t1); line-height:1.78; font-size:18px; overflow:hidden; height:100vh; }
+body::before { content:''; position:fixed; inset:0; z-index:-2; background:radial-gradient(ellipse 800px 600px at 12% 15%,rgba(232,168,124,.07),transparent),radial-gradient(ellipse 600px 700px at 88% 82%,rgba(184,169,212,.06),transparent); animation:ab 12s ease-in-out infinite alternate; }
+body::after { content:''; position:fixed; inset:-20%; z-index:-3; background:conic-gradient(from 200deg,rgba(232,168,124,.03),rgba(184,169,212,.02),rgba(143,185,150,.03),rgba(126,184,208,.02),rgba(232,168,124,.03)); filter:blur(40px); animation:as 60s linear infinite; pointer-events:none; }
+@keyframes ab { 0%{opacity:.7} 100%{opacity:1} }
+@keyframes as { 100%{transform:rotate(360deg)} }
+
+h1 { font-family:var(--serif); font-size:clamp(2.2rem,5vw,3.4rem); font-weight:800; color:var(--cream); }
+h2 { font-family:var(--serif); font-size:clamp(1.5rem,3vw,2.2rem); font-weight:700; color:var(--cream); }
+h3 { font-size:1.2rem; font-weight:700; }
+h4 { font-size:1rem; font-weight:700; }
+p { color:var(--t2); font-size:1rem; }
+strong { color:var(--t1); }
+
+.grad { background:linear-gradient(135deg,var(--warm),var(--coral),var(--lav),var(--sage),var(--sky)); background-size:300% 300%; -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; animation:ts 10s ease infinite; }
+@keyframes ts { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+
+/* 3-MODE VISIBILITY */
+.for-companion,.for-training,.for-classroom { display:none; }
+body.companion-mode .for-companion { display:block; }
+body.training-mode .for-training { display:block; }
+body.classroom-mode .for-classroom { display:block; }
+.for-all { display:block; }
+
+body.companion-mode { font-size:18px; }
+body.training-mode { font-size:22px; }
+body.training-mode h2 { font-size:clamp(1.8rem,4vw,2.6rem); }
+body.training-mode p { font-size:1.1rem; }
+body.training-mode .g, body.training-mode .db { padding:26px; }
+body.classroom-mode { font-size:30px; }
+body.classroom-mode h2 { font-size:clamp(2.2rem,6vw,3.4rem); }
+body.classroom-mode p { font-size:1.4rem; line-height:2; }
+body.classroom-mode .g, body.classroom-mode .db { padding:30px; }
+body.classroom-mode .qz-opt button { padding:18px; font-size:1.3rem; }
+
+/* TRAINING COMPONENTS */
+.discuss { display:none; background:linear-gradient(135deg,rgba(126,184,208,.06),rgba(143,185,150,.03)); border:1px solid rgba(126,184,208,.15); border-radius:var(--r); padding:18px 22px; margin:16px 0; position:relative; }
+body.training-mode .discuss { display:block; }
+.discuss::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:linear-gradient(to bottom,var(--sky),var(--sage)); }
+.discuss h4 { color:var(--sky); margin-bottom:6px; }
+.trymon { display:none; background:linear-gradient(135deg,rgba(143,185,150,.06),rgba(212,168,67,.03)); border:1px solid rgba(143,185,150,.18); border-radius:var(--r); padding:16px 20px; margin:14px 0; position:relative; }
+body.training-mode .trymon { display:block; }
+.trymon::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--sage); }
+.trymon h4 { color:var(--sage); margin-bottom:4px; }
+.didyou { background:rgba(212,168,67,.04); border:1px solid rgba(212,168,67,.14); border-radius:var(--r); padding:14px 18px; margin:12px 0; }
+.didyou h4 { color:var(--gold); margin-bottom:4px; }
+
+/* CLASSROOM COMPONENTS */
+.kid-emoji { font-size:3rem; display:block; margin-bottom:8px; }
+.breathe-box { background:linear-gradient(135deg,rgba(143,185,150,.08),rgba(126,184,208,.04)); border:2px solid rgba(143,185,150,.2); border-radius:20px; padding:24px; margin:16px 0; text-align:center; }
+.breathe-box h4 { color:var(--sage); margin-bottom:8px; }
+
+/* SLIDE ENGINE */
+#slideContainer { position:fixed; inset:0; top:56px; bottom:60px; overflow-y:auto; padding:32px 24px; }
+.slide { display:none; max-width:1000px; margin:0 auto; animation:si .5s ease; }
+.slide.active { display:block; }
+@keyframes si { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+.slide-header { text-align:center; margin-bottom:32px; }
+.slide-header p { max-width:650px; margin:0 auto; }
+.slide-num { display:inline-block; font-size:.72rem; font-weight:700; color:var(--warm); background:rgba(232,168,124,.08); border:1px solid rgba(232,168,124,.15); border-radius:20px; padding:3px 12px; margin-bottom:12px; text-transform:uppercase; }
+.slide-accent { height:3px; border-radius:3px; margin:-8px auto 24px; width:80px; }
+
+/* TOP NAV */
+#topNav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(12,10,18,.92); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border-bottom:1px solid var(--bdr); padding:0 16px; height:56px; display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.nav-brand { font-family:var(--serif); font-weight:800; font-size:.92rem; color:var(--warm); white-space:nowrap; }
+.nav-center { display:flex; align-items:center; gap:4px; overflow-x:auto; scrollbar-width:none; flex:1; justify-content:center; }
+.nav-center::-webkit-scrollbar { display:none; }
+.nav-dot { width:10px; height:10px; border-radius:50%; border:1.5px solid var(--t3); cursor:pointer; transition:var(--ease); flex-shrink:0; }
+.nav-dot:hover { border-color:var(--warm); }
+.nav-dot.active { background:var(--warm); border-color:var(--warm); }
+.nav-right { display:flex; align-items:center; gap:8px; }
+.mode-toggle { display:flex; border:1px solid var(--bdr); border-radius:20px; overflow:hidden; }
+.mode-btn { padding:5px 10px; font-size:.62rem; font-weight:700; font-family:var(--sans); border:none; background:transparent; color:var(--t3); cursor:pointer; white-space:nowrap; text-transform:uppercase; transition:var(--ease); }
+.mode-btn.active { background:rgba(232,168,124,.12); color:var(--warm); }
+.nav-icon-btn { width:34px; height:34px; border-radius:50%; border:1px solid var(--bdr); background:rgba(255,255,255,.02); color:var(--t2); cursor:pointer; font-size:.9rem; display:flex; align-items:center; justify-content:center; transition:var(--ease); }
+.nav-icon-btn:hover { background:rgba(232,168,124,.1); color:var(--warm); }
+
+/* PROGRESS BAR */
+#pbar { position:fixed; top:56px; left:0; height:2px; z-index:200; background:linear-gradient(90deg,var(--warm),var(--coral),var(--lav),var(--sage)); background-size:300%; animation:gm 5s linear infinite; width:0%; transition:width .3s; }
+@keyframes gm { 0%{background-position:0%} 100%{background-position:300%} }
+
+/* BOTTOM BAR */
+#bottomBar { position:fixed; bottom:0; left:0; right:0; z-index:100; background:rgba(12,10,18,.92); backdrop-filter:blur(24px); -webkit-backdrop-filter:blur(24px); border-top:1px solid var(--bdr); padding:0 20px; height:60px; display:flex; align-items:center; justify-content:space-between; }
+.bottom-left,.bottom-center,.bottom-right { display:flex; align-items:center; gap:8px; }
+.bottom-center { gap:16px; }
+.arrow-btn { width:42px; height:42px; border-radius:50%; border:1px solid var(--bdr); background:rgba(255,255,255,.03); color:var(--t1); cursor:pointer; font-size:1.1rem; display:flex; align-items:center; justify-content:center; transition:var(--ease); }
+.arrow-btn:hover { background:rgba(232,168,124,.12); color:var(--warm); }
+.arrow-btn:disabled { opacity:.3; cursor:default; }
+.slide-counter { font-size:.82rem; font-weight:700; color:var(--t2); min-width:60px; text-align:center; }
+.audio-btn { display:flex; align-items:center; gap:5px; padding:6px 14px; border-radius:20px; border:1px solid rgba(232,168,124,.18); background:rgba(232,168,124,.05); color:var(--warm); font-size:.74rem; font-weight:600; cursor:pointer; font-family:var(--sans); transition:var(--ease); }
+.audio-btn.playing { background:rgba(232,168,124,.18); }
+.spd-btn,.timer-btn { font-size:.68rem; color:var(--t3); cursor:pointer; padding:4px 8px; border:1px solid var(--bdr); border-radius:12px; background:none; font-family:var(--sans); transition:var(--ease); }
+.timer-btn.active { color:var(--sage); background:rgba(143,185,150,.08); }
+
+/* GLASS CARDS + GRIDS */
+.g { background:var(--card); border:1px solid var(--bdr); border-radius:var(--r); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); padding:22px; transition:var(--ease); position:relative; overflow:hidden; }
+.g:hover { background:var(--card2); border-color:var(--bdr2); transform:translateY(-2px); }
+.g2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr)); gap:16px; }
+.g3 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr)); gap:14px; }
+.g4 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr)); gap:12px; }
+.g5 { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr)); gap:10px; }
+
+/* TABLES */
+.tw { overflow-x:auto; border-radius:var(--r); border:1px solid var(--bdr); margin:12px 0; }
+table { width:100%; border-collapse:collapse; font-size:.88rem; }
+th { background:rgba(232,168,124,.05); color:var(--warm); font-weight:700; text-align:left; padding:10px 12px; border-bottom:1px solid var(--bdr); font-size:.78rem; text-transform:uppercase; }
+td { padding:10px 12px; border-bottom:1px solid rgba(255,255,255,.025); color:var(--t2); vertical-align:top; }
+
+/* FLOWS */
+.flow { display:flex; align-items:center; gap:5px; flex-wrap:wrap; justify-content:center; margin:14px 0; }
+.fs { background:var(--card); border:1px solid var(--bdr); border-radius:var(--rs); padding:9px 14px; font-size:.84rem; font-weight:600; text-align:center; min-width:90px; transition:var(--ease); }
+.fs:hover { border-color:var(--warm); }
+.arrow { color:var(--warm); font-weight:bold; }
+
+/* SPECIAL BOXES */
+.callout { background:linear-gradient(135deg,rgba(232,168,124,.04),rgba(184,169,212,.02)); border:1px solid rgba(232,168,124,.12); border-radius:var(--r); padding:18px 22px; margin:14px 0; }
+.callout h4 { color:var(--warm); margin-bottom:6px; }
+.reflect { background:linear-gradient(135deg,rgba(184,169,212,.05),rgba(143,185,150,.025)); border:1px solid rgba(184,169,212,.14); border-radius:var(--r); padding:18px 22px; margin:16px 0; position:relative; }
+.reflect::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:linear-gradient(to bottom,var(--lav),var(--sage)); }
+.reflect h4 { color:var(--lav); margin-bottom:6px; }
+.reflect ul { margin:6px 0 0 18px; }
+.reflect li { margin-bottom:6px; color:var(--t2); }
+.sensory-alert { background:rgba(232,101,90,.03); border:1px solid rgba(232,101,90,.12); border-radius:var(--r); padding:16px 20px; margin:14px 0; position:relative; }
+.sensory-alert::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--coral); }
+.sensory-alert h4 { color:var(--coral); margin-bottom:4px; }
+.mgmt { background:rgba(143,185,150,.03); border:1px solid rgba(143,185,150,.12); border-radius:var(--r); padding:16px 20px; margin:14px 0; position:relative; }
+.mgmt::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--sage); }
+.mgmt h4 { color:var(--sage); margin-bottom:4px; }
+.box { padding:16px; border-radius:14px; background:rgba(255,255,255,.03); border:1px solid var(--bdr); }
+.box h4 { margin-bottom:4px; }
+.db { background:var(--card); border:1px solid var(--bdr); border-radius:var(--rs); padding:14px; text-align:center; transition:var(--ease); }
+.db:hover { background:var(--card2); transform:translateY(-1px); }
+.db .em { font-size:1.8rem; display:block; margin-bottom:6px; }
+
+/* TIMELINE */
+.tl { position:relative; padding-left:28px; }
+.tl::before { content:''; position:absolute; left:9px; top:0; bottom:0; width:2px; background:linear-gradient(to bottom,var(--warm),var(--lav),var(--sage)); }
+.ti { position:relative; margin-bottom:18px; }
+.ti::before { content:''; position:absolute; left:-23px; top:5px; width:10px; height:10px; border-radius:50%; background:var(--warm); border:2px solid var(--bg); }
+.tyl { font-weight:700; color:var(--warm); font-size:.88rem; }
+
+/* TAGS */
+.tag { display:inline-block; padding:3px 10px; border-radius:10px; font-size:.72rem; font-weight:600; margin:2px; }
+.tw2 { background:rgba(143,185,150,.1); color:var(--sage); }
+.tw3 { background:rgba(126,184,208,.1); color:var(--sky); }
+.tw4 { background:rgba(184,169,212,.1); color:var(--lav); }
+.tw5 { background:rgba(232,101,90,.1); color:var(--coral); }
+.tw6 { background:rgba(212,168,67,.1); color:var(--gold); }
+.stk { padding:12px 14px; border-radius:14px; background:rgba(255,255,255,.04); border:1px solid var(--bdr); font-weight:700; font-size:.84rem; text-align:center; transition:var(--ease); }
+.stk:hover { border-color:var(--warm); }
+
+/* SVG DIAGRAMS */
+.svg-w { text-align:center; margin:16px 0; padding:18px; border:1px solid var(--bdr); border-radius:var(--r); background:var(--card); }
+.svg-w svg { max-width:100%; height:auto; display:block; margin:0 auto; }
+.svg-w p.svg-caption { font-size:.76rem; color:var(--t3); margin-top:10px; font-style:italic; }
+
+/* QUIZ */
+.qz { border:1px solid var(--bdr); border-radius:var(--r); padding:18px; background:var(--card); margin-bottom:14px; }
+.qz-opt { display:grid; gap:8px; margin-top:10px; }
+.qz-opt button { text-align:left; padding:12px 14px; border-radius:12px; border:1px solid var(--bdr); background:rgba(255,255,255,.02); color:var(--t2); cursor:pointer; font-family:inherit; font-size:.9rem; transition:var(--ease); }
+.qz-opt button:hover { background:rgba(255,255,255,.06); }
+.qz-opt button.ok { background:rgba(143,185,150,.1); color:var(--sage); }
+.qz-opt button.no { background:rgba(232,101,90,.1); color:var(--coral); }
+.fb { font-size:.82rem; margin-top:6px; color:var(--gold); }
+
+/* OVERLAYS */
+#slidePicker { display:none; position:fixed; inset:0; z-index:300; background:rgba(12,10,18,.95); backdrop-filter:blur(30px); -webkit-backdrop-filter:blur(30px); padding:80px 24px 24px; overflow-y:auto; }
+#slidePicker.open { display:block; }
+.picker-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr)); gap:12px; max-width:900px; margin:0 auto; }
+.picker-card { background:var(--card); border:1px solid var(--bdr); border-radius:var(--r); padding:16px; cursor:pointer; text-align:center; transition:var(--ease); }
+.picker-card:hover { background:var(--card2); transform:translateY(-2px); }
+.picker-card .em { font-size:1.8rem; display:block; margin-bottom:6px; }
+.picker-card h4 { font-size:.88rem; color:var(--cream); }
+.picker-close { position:fixed; top:20px; right:20px; z-index:310; width:40px; height:40px; border-radius:50%; border:1px solid var(--bdr); background:rgba(255,255,255,.05); color:var(--t1); font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+#helpOverlay { display:none; position:fixed; inset:0; z-index:400; background:rgba(12,10,18,.92); backdrop-filter:blur(30px); -webkit-backdrop-filter:blur(30px); justify-content:center; align-items:center; padding:24px; }
+#helpOverlay.open { display:flex; }
+.help-box { background:var(--card2); border:1px solid var(--bdr2); border-radius:var(--r); padding:32px; max-width:500px; width:100%; }
+.help-box h3 { color:var(--warm); margin-bottom:16px; font-family:var(--serif); }
+.help-row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--bdr); font-size:.88rem; }
+.help-key { font-weight:700; color:var(--cream); background:rgba(232,168,124,.08); padding:2px 10px; border-radius:6px; font-size:.78rem; }
+#confettiCanvas { position:fixed; inset:0; z-index:500; pointer-events:none; }
+
+/* RESPONSIVE */
+@media (max-width:768px) {
+  h1 { font-size:2rem; }
+  .g2,.g3,.g4,.g5 { grid-template-columns:1fr; }
+  .flow { flex-direction:column; }
+  .arrow { transform:rotate(90deg); }
+  #topNav { padding:0 8px; }
+  .mode-btn { padding:4px 6px; font-size:.56rem; }
+  #slideContainer { padding:20px 16px; }
+}
+
+/* PRINT */
+@media print {
+  body { background:#fff; color:#222; font-size:11pt; overflow:visible; height:auto; }
+  body::before,body::after,#topNav,#pbar,#bottomBar,#slidePicker,#helpOverlay,#confettiCanvas,.audio-btn,.spd-btn,.timer-btn,.nav-icon-btn { display:none !important; }
+  #slideContainer { position:static; overflow:visible; padding:20px; }
+  .slide { display:block !important; page-break-after:always; animation:none; }
+  .g,.db,.box,.callout,.qz,.svg-w,.stk,.reflect,.sensory-alert,.mgmt,.discuss,.trymon,.didyou,.breathe-box { background:#fff !important; color:#222 !important; border:1px solid #ddd !important; break-inside:avoid; }
+  p,td { color:#444 !important; }
+  h1,h2,h3,h4,th { color:#111 !important; }
+  .grad { -webkit-text-fill-color:#111 !important; background:none !important; }
+  .for-companion,.for-training,.for-classroom { display:block !important; }
+  .svg-w svg text { fill:#222 !important; }
+}
+
+/* ================================================================
+   PHASE 7.0: TOOLTIPS + ACCESSIBILITY + ANIMATION POLISH
+   ================================================================ */
+/* --- PREMIUM TOOLTIPS --- */
+.tt { position:relative; display:inline; border-bottom:1.5px dashed var(--warm); cursor:help; color:var(--warm); font-weight:600; transition:color 0.2s ease; }
+.tt:hover { color:var(--cream); }
+.tt[tabindex] { outline:none; }
+.tt::after { content:attr(data-tip); position:absolute; bottom:100%; margin-bottom:8px; left:50%; transform:translateX(-50%) scale(0.96); background:rgba(20,18,28,0.94); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:10px 14px; color:var(--t1); font-size:0.78rem; font-weight:400; line-height:1.55; width:max-content; max-width:280px; white-space:normal; pointer-events:none; opacity:0; transition:opacity 0.25s ease,transform 0.25s ease; z-index:50; box-shadow:0 8px 32px rgba(0,0,0,0.35); text-align:left; }
+.tt::before { content:''; position:absolute; bottom:100%; margin-bottom:2px; left:50%; transform:translateX(-50%); border:6px solid transparent; border-top-color:rgba(20,18,28,0.94); pointer-events:none; opacity:0; transition:opacity 0.25s ease; z-index:51; }
+.tt:hover::after,.tt:focus::after,.tt.tip-show::after { opacity:1; transform:translateX(-50%) scale(1); }
+.tt:hover::before,.tt:focus::before,.tt.tip-show::before { opacity:1; }
+.tt.tip-left::after { left:0; transform:translateX(0) scale(0.96); }
+.tt.tip-left:hover::after,.tt.tip-left:focus::after,.tt.tip-left.tip-show::after { transform:translateX(0) scale(1); }
+.tt.tip-left::before { left:16px; transform:none; }
+.tt.tip-right::after { left:auto; right:0; transform:translateX(0) scale(0.96); }
+.tt.tip-right:hover::after,.tt.tip-right:focus::after,.tt.tip-right.tip-show::after { transform:translateX(0) scale(1); }
+.tt.tip-right::before { left:auto; right:16px; transform:none; }
+/* --- ACCESSIBILITY --- */
+.skip-link { position:fixed; top:-60px; left:16px; z-index:999; background:var(--warm); color:var(--bg); padding:8px 18px; border-radius:0 0 10px 10px; font-size:0.82rem; font-weight:700; text-decoration:none; transition:top 0.3s ease; font-family:var(--sans); }
+.skip-link:focus { top:0; outline:none; }
+*:focus-visible { outline:2px solid var(--warm); outline-offset:3px; }
+.nav-dot:focus-visible { outline-offset:4px; box-shadow:0 0 0 4px rgba(232,168,124,0.25); }
+.mode-btn:focus-visible,.arrow-btn:focus-visible,.nav-icon-btn:focus-visible,.audio-btn:focus-visible,.spd-btn:focus-visible,.timer-btn:focus-visible { outline:2px solid var(--warm); outline-offset:2px; }
+.qz-opt button:focus-visible,.picker-card:focus-visible { outline:2px solid var(--warm); outline-offset:2px; }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+/* --- ANIMATION POLISH --- */
+@keyframes si { from{opacity:0;transform:translateY(18px);filter:blur(3px)} to{opacity:1;transform:translateY(0);filter:blur(0)} }
+.slide.active { animation:si 0.5s cubic-bezier(0.22,0.68,0,1); }
+.g:hover { box-shadow:0 8px 24px rgba(232,168,124,0.05),0 0 0 1px rgba(232,168,124,0.06); }
+.db:hover { box-shadow:0 4px 16px rgba(232,168,124,0.04); }
+.stk:hover { box-shadow:0 4px 12px rgba(232,168,124,0.04); }
+@keyframes pbar-pulse { 0%,100%{box-shadow:none} 50%{box-shadow:0 0 14px 3px rgba(232,168,124,0.35)} }
+#pbar.quiz-done { animation:pbar-pulse 1.5s ease-in-out 3; }
+/* --- PRINT OVERRIDE (tooltips) --- */
+@media print { .tt { border-bottom:1px dashed #999 !important; color:#333 !important; } .tt::before,.tt::after { display:none !important; } .skip-link { display:none !important; } }
+
+
+/* === 8.1-A: THEME === */
+:root { --font-scale: 1; --sa: #e8a87c; }
+html { font-size: calc(16px * var(--font-scale, 1)); }
+body.companion-mode { font-size: calc(18px * var(--font-scale, 1)); }
+body.training-mode  { font-size: calc(22px * var(--font-scale, 1)); }
+body.classroom-mode { font-size: calc(30px * var(--font-scale, 1)); }
+body, #topNav, #bottomBar, #slidePicker, #helpOverlay, h1, h2, h3, h4, p, strong, .box, .callout, .reflect, .sensory-alert, .mgmt, .discuss, .trymon, .didyou, .breathe-box, .qz, .svg-w, .slide-num, .tw, th, td, .help-box, .picker-close, .slide-counter, .nav-brand { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+body.light-mode { --bg:#faf8f5;--card:rgba(0,0,0,0.025);--card2:rgba(0,0,0,0.05);--bdr:rgba(0,0,0,0.08);--bdr2:rgba(0,0,0,0.14);--t1:#1a1714;--t2:#5a524a;--t3:#9e968e;--warm:#c4854a;--cream:#2a2420; }
+body.light-mode::before { background:radial-gradient(ellipse 800px 600px at 12% 15%,rgba(210,160,110,0.06),transparent),radial-gradient(ellipse 600px 700px at 88% 82%,rgba(170,150,200,0.05),transparent); }
+body.light-mode::after { background:conic-gradient(from 200deg,rgba(210,160,110,0.025),rgba(170,150,200,0.02),rgba(140,180,150,0.025),rgba(120,175,200,0.02),rgba(210,160,110,0.025)); }
+body.light-mode #topNav{background:rgba(250,248,245,0.92);border-bottom-color:rgba(0,0,0,0.06)}
+body.light-mode #bottomBar{background:rgba(250,248,245,0.92);border-top-color:rgba(0,0,0,0.06)}
+body.light-mode #slidePicker{background:rgba(250,248,245,0.96)}
+body.light-mode #helpOverlay{background:rgba(250,248,245,0.94)}
+body.light-mode .picker-close{background:rgba(0,0,0,0.04);border-color:rgba(0,0,0,0.08);color:var(--t1)}
+body.light-mode .nav-icon-btn:hover,body.light-mode .arrow-btn:hover{background:rgba(196,133,74,0.1)}
+body.light-mode .audio-btn{border-color:rgba(196,133,74,0.18);background:rgba(196,133,74,0.05)}
+body.light-mode .audio-btn.playing{background:rgba(196,133,74,0.15)}
+body.light-mode .tt::after{background:rgba(255,255,255,0.97);border-color:rgba(0,0,0,0.1);color:var(--t1);box-shadow:0 8px 32px rgba(0,0,0,0.1)}
+body.light-mode .tt::before{border-top-color:rgba(255,255,255,0.97)}
+body.light-mode .svg-w svg text[fill="#f4f0ec"]{fill:#1a1714}
+body.light-mode .svg-w svg text[fill="#b0a89e"]{fill:#5a524a}
+body.light-mode .svg-w svg text[fill="#6e665e"]{fill:#9e968e}
+@media(prefers-color-scheme:light){:root{--auto-theme:light}}
+@media(prefers-color-scheme:dark){:root{--auto-theme:dark}}
+
+/* === 8.1-B: SETTINGS DRAWER === */
+.settings-backdrop{display:none;position:fixed;inset:0;z-index:340;background:rgba(0,0,0,0.45);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.settings-backdrop.open{display:block}
+.settings-drawer{position:fixed;top:0;right:0;bottom:0;width:280px;z-index:350;background:rgba(12,10,18,0.96);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border-left:1px solid var(--bdr);transform:translateX(100%);transition:transform 0.3s cubic-bezier(0.22,0.68,0,1);overflow-y:auto;display:flex;flex-direction:column}
+.settings-drawer.open{transform:translateX(0)}
+.sd-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;border-bottom:1px solid var(--bdr);flex-shrink:0}
+.sd-header h3{font-family:var(--serif);font-size:1.1rem;color:var(--warm);margin:0}
+.sd-close{width:34px;height:34px;border-radius:50%;border:1px solid var(--bdr);background:rgba(255,255,255,0.03);color:var(--t2);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease,color 0.2s ease}
+.sd-close:hover{background:rgba(232,168,124,0.1);color:var(--warm)}
+.sd-body{padding:16px 20px 24px;flex:1;overflow-y:auto}
+.sd-group{margin-bottom:20px}
+.sd-label{display:block;font-size:0.72rem;font-weight:700;color:var(--t3);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px}
+.sd-toggle-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.sd-opt{flex:1;min-width:0;padding:8px 6px;border-radius:10px;border:1px solid var(--bdr);background:rgba(255,255,255,0.02);color:var(--t3);font-family:var(--sans);font-size:0.76rem;font-weight:600;cursor:pointer;text-align:center;white-space:nowrap;transition:background 0.2s ease,color 0.2s ease,border-color 0.2s ease}
+.sd-opt:hover{background:rgba(255,255,255,0.05);color:var(--t2)}
+.sd-opt.active{background:rgba(232,168,124,0.12);color:var(--warm);border-color:rgba(232,168,124,0.25)}
+.sd-scale-label{font-size:0.82rem;font-weight:700;color:var(--t1);min-width:46px;text-align:center;flex-shrink:0}
+.sd-action{display:block;width:100%;padding:12px;border-radius:12px;border:1px solid var(--bdr);background:rgba(255,255,255,0.02);color:var(--t2);font-family:var(--sans);font-size:0.82rem;font-weight:600;cursor:pointer;text-align:center;margin-bottom:10px;transition:background 0.2s ease,color 0.2s ease}
+.sd-action:hover{background:rgba(255,255,255,0.06);color:var(--t1)}
+.sd-danger{color:var(--coral);border-color:rgba(232,101,90,0.15)}
+.sd-danger:hover{background:rgba(232,101,90,0.08);color:var(--coral)}
+.sd-divider{height:1px;background:var(--bdr);margin:16px 0}
+.sd-version{font-size:0.68rem;color:var(--t3);text-align:center;margin-top:8px}
+body.light-mode .settings-drawer{background:rgba(250,248,245,0.97);border-left-color:rgba(0,0,0,0.06)}
+body.light-mode .sd-close{background:rgba(0,0,0,0.03);border-color:rgba(0,0,0,0.08)}
+body.light-mode .sd-opt.active{background:rgba(196,133,74,0.12);color:var(--warm);border-color:rgba(196,133,74,0.25)}
+body.light-mode .settings-backdrop{background:rgba(255,255,255,0.4)}
+@media(max-width:768px){.settings-drawer{width:85vw}}
+@media print{.settings-drawer,.settings-backdrop{display:none!important}}
+@media(prefers-reduced-motion:reduce){.settings-drawer{transition:none}}
+
+/* === 8.2-A: SIDEBAR TOC === */
+.toc-backdrop{display:none;position:fixed;inset:0;z-index:240;background:rgba(0,0,0,0.4);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.toc-backdrop.open{display:block}
+.sidebar-toc{position:fixed;top:0;left:0;bottom:0;width:260px;z-index:250;background:rgba(12,10,18,0.96);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border-right:1px solid var(--bdr);transform:translateX(-100%);transition:transform 0.3s cubic-bezier(0.22,0.68,0,1);display:flex;flex-direction:column;overflow:hidden}
+.sidebar-toc.open{transform:translateX(0)}
+.toc-header{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 12px;border-bottom:1px solid var(--bdr);flex-shrink:0}
+.toc-header h3{font-family:var(--serif);font-size:1rem;color:var(--warm);margin:0}
+.toc-close{width:30px;height:30px;border-radius:50%;border:1px solid var(--bdr);background:rgba(255,255,255,0.03);color:var(--t2);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease,color 0.2s ease}
+.toc-close:hover{background:rgba(232,168,124,0.1);color:var(--warm)}
+.toc-list{flex:1;overflow-y:auto;padding:8px 0;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.08) transparent}
+.toc-list::-webkit-scrollbar{width:4px}
+.toc-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:4px}
+.toc-item{display:flex;align-items:center;gap:10px;padding:10px 16px;cursor:pointer;transition:background 0.15s ease;border-left:3px solid transparent;position:relative}
+.toc-item:hover{background:rgba(255,255,255,0.03)}
+.toc-item.active{background:rgba(232,168,124,0.06);border-left-color:var(--warm)}
+.toc-icon{font-size:1.1rem;flex-shrink:0;width:28px;text-align:center}
+.toc-text{flex:1;min-width:0}
+.toc-title{font-size:0.82rem;font-weight:600;color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.toc-item.active .toc-title{color:var(--warm)}
+.toc-num{font-size:0.64rem;color:var(--t3);font-weight:700}
+.toc-star{font-size:0.72rem;color:var(--gold);flex-shrink:0;opacity:0;transition:opacity 0.2s ease}
+.toc-item.bookmarked .toc-star{opacity:1}
+.toc-footer{padding:10px 12px;border-top:1px solid var(--bdr);flex-shrink:0}
+.toc-search{width:100%;padding:8px 12px;border-radius:10px;border:1px solid var(--bdr);background:rgba(255,255,255,0.03);color:var(--t1);font-family:var(--sans);font-size:0.78rem;outline:none;transition:border-color 0.2s ease}
+.toc-search::placeholder{color:var(--t3)}
+.toc-search:focus{border-color:var(--warm)}
+.hamburger-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--bdr);background:rgba(255,255,255,0.02);color:var(--t2);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease,color 0.2s ease;flex-shrink:0}
+.hamburger-btn:hover{background:rgba(232,168,124,0.1);color:var(--warm)}
+body.light-mode .sidebar-toc{background:rgba(250,248,245,0.97);border-right-color:rgba(0,0,0,0.06)}
+body.light-mode .toc-close{background:rgba(0,0,0,0.03);border-color:rgba(0,0,0,0.08)}
+body.light-mode .toc-item:hover{background:rgba(0,0,0,0.025)}
+body.light-mode .toc-item.active{background:rgba(196,133,74,0.06)}
+body.light-mode .toc-search{background:rgba(0,0,0,0.025);border-color:rgba(0,0,0,0.08)}
+body.light-mode .toc-search:focus{border-color:var(--warm)}
+body.light-mode .toc-backdrop{background:rgba(255,255,255,0.35)}
+body.light-mode .toc-list::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.1)}
+@media(max-width:768px){.sidebar-toc{width:85vw}}
+@media print{.sidebar-toc,.toc-backdrop,.hamburger-btn{display:none!important}}
+@media(prefers-reduced-motion:reduce){.sidebar-toc{transition:none}}
+
+/* === 8.2-B: BOOKMARKS === */
+.bkmk-star{position:absolute;top:8px;right:8px;width:36px;height:36px;border-radius:50%;border:1px solid transparent;background:transparent;color:var(--t3);font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:color 0.2s ease,background 0.2s ease,border-color 0.2s ease,transform 0.15s ease;z-index:5;line-height:1}
+.bkmk-star:hover{color:var(--gold);background:rgba(212,168,67,0.06);border-color:rgba(212,168,67,0.12)}
+.bkmk-star.active{color:var(--gold)}
+.bkmk-star.active:hover{background:rgba(212,168,67,0.1)}
+@keyframes bkmk-pop{0%{transform:scale(1)}40%{transform:scale(1.35)}100%{transform:scale(1)}}
+.bkmk-star.pop{animation:bkmk-pop 0.3s ease}
+body.light-mode .bkmk-star{color:var(--t3)}
+body.light-mode .bkmk-star:hover{color:var(--gold);background:rgba(212,168,67,0.08)}
+body.light-mode .bkmk-star.active{color:var(--gold)}
+@media print{.bkmk-star{display:none!important}}
+@media(prefers-reduced-motion:reduce){.bkmk-star.pop{animation:none}}
+
+/* === 8.2-C: PARTICLES === */
+#particleCanvas{position:fixed;inset:0;z-index:-1;pointer-events:none}
+@media print{#particleCanvas{display:none!important}}
+
+/* === 8.3-A: ACCENTS === */
+#pbar{background:linear-gradient(90deg,var(--sa),color-mix(in srgb,var(--sa) 60%,#fff))!important;background-size:100%!important;animation:none!important}
+.nav-dot.active{background:var(--sa)!important;border-color:var(--sa)!important}
+.slide-num{color:var(--sa)!important;background:color-mix(in srgb,var(--sa) 8%,transparent)!important;border-color:color-mix(in srgb,var(--sa) 15%,transparent)!important}
+.slide-accent{background:linear-gradient(90deg,var(--sa),color-mix(in srgb,var(--sa) 40%,transparent))!important}
+#pbar,.nav-dot,.slide-num,.slide-accent{transition:background 0.4s ease,border-color 0.4s ease,box-shadow 0.4s ease}
+
+/* === 8.4-A: SEARCH === */
+.search-backdrop{display:none;position:fixed;inset:0;z-index:440;background:rgba(0,0,0,0.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.search-backdrop.open{display:block}
+.search-modal{display:none;position:fixed;top:10vh;left:50%;transform:translateX(-50%);z-index:450;width:min(520px,92vw);max-height:75vh;background:rgba(12,10,18,0.97);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border:1px solid var(--bdr2);border-radius:var(--r);overflow:hidden;flex-direction:column;box-shadow:0 24px 64px rgba(0,0,0,0.5)}
+.search-modal.open{display:flex}
+.srch-header{display:flex;align-items:center;gap:10px;padding:16px 18px;border-bottom:1px solid var(--bdr);flex-shrink:0}
+.srch-input{flex:1;padding:10px 14px;border-radius:10px;border:1px solid var(--bdr);background:rgba(255,255,255,0.04);color:var(--t1);font-family:var(--sans);font-size:0.92rem;outline:none;transition:border-color 0.2s ease}
+.srch-input::placeholder{color:var(--t3)}
+.srch-input:focus{border-color:var(--warm)}
+.srch-close{width:32px;height:32px;border-radius:50%;border:1px solid var(--bdr);background:rgba(255,255,255,0.03);color:var(--t2);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.2s ease,color 0.2s ease}
+.srch-close:hover{background:rgba(232,168,124,0.1);color:var(--warm)}
+.srch-results{flex:1;overflow-y:auto;padding:8px 0;max-height:55vh;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.08) transparent}
+.srch-results::-webkit-scrollbar{width:4px}
+.srch-results::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:4px}
+.srch-result{display:flex;align-items:flex-start;gap:12px;padding:12px 18px;cursor:pointer;transition:background 0.15s ease;border-bottom:1px solid rgba(255,255,255,0.02)}
+.srch-result:hover{background:rgba(255,255,255,0.03)}
+.srch-result:last-child{border-bottom:none}
+.srch-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
+.srch-body{flex:1;min-width:0}
+.srch-slide-title{font-size:0.78rem;font-weight:700;color:var(--warm);margin-bottom:3px}
+.srch-excerpt{font-size:0.76rem;color:var(--t2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.srch-excerpt mark{background:rgba(232,168,124,0.2);color:var(--warm);border-radius:2px;padding:0 2px}
+.srch-empty{padding:32px 18px;text-align:center;color:var(--t3);font-size:0.86rem}
+.srch-hint{padding:8px 18px 12px;text-align:center;font-size:0.68rem;color:var(--t3);border-top:1px solid var(--bdr);flex-shrink:0}
+.srch-hint kbd{background:rgba(232,168,124,0.08);color:var(--warm);padding:1px 6px;border-radius:4px;font-size:0.66rem;font-family:var(--sans);font-weight:700}
+body.light-mode .search-modal{background:rgba(250,248,245,0.98);border-color:rgba(0,0,0,0.12);box-shadow:0 24px 64px rgba(0,0,0,0.15)}
+body.light-mode .srch-input{background:rgba(0,0,0,0.03);border-color:rgba(0,0,0,0.08)}
+body.light-mode .srch-close{background:rgba(0,0,0,0.03);border-color:rgba(0,0,0,0.08)}
+body.light-mode .srch-result:hover{background:rgba(0,0,0,0.02)}
+body.light-mode .srch-excerpt mark{background:rgba(196,133,74,0.15);color:var(--warm)}
+body.light-mode .search-backdrop{background:rgba(255,255,255,0.5)}
+@media print{.search-modal,.search-backdrop{display:none!important}}
+
+/* === 8.4-B: MICRO-INTERACTIONS === */
+.ripple-wrap{position:relative;overflow:hidden}
+.ripple-circle{position:absolute;border-radius:50%;background:rgba(232,168,124,0.25);transform:scale(0);animation:ripple-expand 0.5s ease-out forwards;pointer-events:none;z-index:1}
+@keyframes ripple-expand{to{transform:scale(2.5);opacity:0}}
+body.light-mode .ripple-circle{background:rgba(196,133,74,0.2)}
+.g:hover{transform:translateY(-3px)!important;box-shadow:0 12px 32px rgba(232,168,124,0.06),0 0 0 1px rgba(232,168,124,0.08)!important}
+.g:active{transform:translateY(-1px)!important;transition-duration:0.1s!important}
+.db:hover{transform:translateY(-2px)!important;box-shadow:0 8px 20px rgba(232,168,124,0.05)!important}
+body.light-mode .g:hover{box-shadow:0 12px 32px rgba(0,0,0,0.06),0 0 0 1px rgba(196,133,74,0.1)!important}
+body.light-mode .db:hover{box-shadow:0 8px 20px rgba(0,0,0,0.04)!important}
+@keyframes dot-breathe{0%,100%{box-shadow:0 0 6px color-mix(in srgb,var(--sa) 40%,transparent)}50%{box-shadow:0 0 12px color-mix(in srgb,var(--sa) 55%,transparent)}}
+.nav-dot.active{animation:dot-breathe 2.5s ease-in-out infinite}
+.nav-icon-btn:hover,.arrow-btn:hover,.hamburger-btn:hover{transform:translateY(-1px)}
+.nav-icon-btn:active,.arrow-btn:active,.hamburger-btn:active{transform:translateY(0);transition-duration:0.05s}
+.mode-btn.active{box-shadow:inset 0 0 12px rgba(232,168,124,0.08)}
+.picker-card:hover{transform:translateY(-3px)!important;box-shadow:0 12px 28px rgba(232,168,124,0.06)!important}
+body.light-mode .picker-card:hover{box-shadow:0 12px 28px rgba(0,0,0,0.06)!important}
+.stk:hover,.box:hover{transform:translateY(-1px)}
+.qz-opt button:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,0.03)}
+.qz-opt button:active{transform:translateY(0)}
+*:focus-visible{outline:2px solid var(--sa,var(--warm));outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.ripple-circle{animation:none!important;display:none!important}.nav-dot.active{animation:none!important}.g:hover,.db:hover,.picker-card:hover,.stk:hover,.box:hover,.nav-icon-btn:hover,.arrow-btn:hover,.hamburger-btn:hover,.qz-opt button:hover{transform:none!important}}
+
+/* ================================================================
+   PHASE 8.5 (FINAL): CUSTOM SCROLLBAR + READING TIME BADGE
+   ================================================================ */
+
+/* --- CUSTOM SCROLLBAR (slide container) --- */
+#slideContainer {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.08) transparent;
+}
+#slideContainer::-webkit-scrollbar { width: 6px; }
+#slideContainer::-webkit-scrollbar-track { background: transparent; }
+#slideContainer::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+#slideContainer::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.18); }
+
+body.light-mode #slideContainer { scrollbar-color: rgba(0,0,0,0.08) transparent; }
+body.light-mode #slideContainer::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); }
+body.light-mode #slideContainer::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.18); }
+
+/* --- READING TIME BADGE --- */
+.read-time {
+  display: inline-block;
+  font-size: 0.64rem;
+  font-weight: 600;
+  color: var(--t3);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--bdr);
+  border-radius: 12px;
+  padding: 2px 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+body.light-mode .read-time {
+  background: rgba(0,0,0,0.025);
+}
+@media print { .read-time { display: none !important; } }
+
+</style>
+</head>
+<body class="companion-mode">
+<a class="skip-link" href="#slideContainer">Skip to Content</a>
+<div id="pbar"></div>
+<canvas id="confettiCanvas" aria-hidden="true"></canvas>
+<canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+<nav id="topNav" role="navigation" aria-label="Presentation controls">
+  <button class="hamburger-btn" id="tocBtn" onclick="toggleTOC()" title="Table of Contents" aria-label="Open table of contents">&#x2630;</button>
+  <span class="nav-brand">Uriel&#39;s Contemporario Arts</span>
+  <div class="nav-center" id="navDots"></div>
+  <div class="nav-right">
+    <div class="mode-toggle" role="radiogroup" aria-label="Presentation mode">
+      <button class="mode-btn active" role="radio" aria-checked="true" onclick="setMode('companion')">&#x1F4D6; Study</button>
+      <button class="mode-btn" role="radio" aria-checked="false" onclick="setMode('training')">&#x1F3A4; Train</button>
+      <button class="mode-btn" role="radio" aria-checked="false" onclick="setMode('classroom')">&#x1F308; Kids</button>
+    </div>
+    <button class="nav-icon-btn" onclick="togglePicker()" title="Slide picker">&#x2637;</button>
+    <button class="nav-icon-btn" onclick="toggleFullscreen()" title="Fullscreen">&#x26F6;</button>
+    <button class="nav-icon-btn" onclick="window.print()" title="Print">&#x1F5A8;</button>
+    <button class="nav-icon-btn" id="settingsBtn" onclick="toggleSettings()" title="Settings" aria-label="Open settings">&#x2699;</button>
+  </div>
+</nav>
+
+<div id="slidePicker" role="dialog" aria-label="Slide picker" aria-modal="true">
+  <button class="picker-close" onclick="togglePicker()">&#x2715;</button>
+  <div style="text-align:center;margin-bottom:24px"><h2>Jump to Slide</h2></div>
+  <div class="picker-grid" id="pickerGrid"></div>
+</div>
+
+<div id="helpOverlay" role="dialog" aria-label="Keyboard shortcuts" aria-modal="true">
+  <div class="help-box">
+    <h3>Keyboard Shortcuts</h3>
+    <div class="help-row"><span>Next</span><span class="help-key">&rarr; / Space</span></div>
+    <div class="help-row"><span>Prev</span><span class="help-key">&larr;</span></div>
+    <div class="help-row"><span>Contents</span><span class="help-key">C</span></div>
+    <div class="help-row"><span>Settings</span><span class="help-key">S</span></div>
+    <div class="help-row"><span>Search</span><span class="help-key">Ctrl + /</span></div>
+    <div class="help-row"><span>Bookmark</span><span class="help-key">B</span></div>
+    <div class="help-row"><span>Picker</span><span class="help-key">G</span></div>
+    <div class="help-row"><span>Fullscreen</span><span class="help-key">F</span></div>
+    <div class="help-row"><span>Audio</span><span class="help-key">A</span></div>
+    <div class="help-row"><span>Mode</span><span class="help-key">M</span></div>
+    <div class="help-row"><span>Timer</span><span class="help-key">T</span></div>
+    <div class="help-row"><span>Help</span><span class="help-key">?</span></div>
+    <p style="margin-top:12px;font-size:.78rem;color:var(--t3);text-align:center">Esc to close</p>
+  </div>
+</div>
+
+<!-- ===== SEARCH MODAL ===== -->
+<div id="searchBackdrop" class="search-backdrop" onclick="toggleSearch()"></div>
+<div id="searchModal" class="search-modal" role="dialog" aria-label="Search slides" aria-modal="true">
+  <div class="srch-header"><input type="text" class="srch-input" id="srchInput" placeholder="&#x1F50D; Search all slides..." aria-label="Search" autocomplete="off"><button class="srch-close" onclick="toggleSearch()" aria-label="Close search">&times;</button></div>
+  <div class="srch-results" id="srchResults"><div class="srch-empty">Type to search across all 14 slides</div></div>
+  <div class="srch-hint"><kbd>Ctrl</kbd> + <kbd>/</kbd> to open &middot; <kbd>Esc</kbd> to close &middot; <kbd>Enter</kbd> first result</div>
+</div>
+<!-- ===== SIDEBAR TOC ===== -->
+<div id="tocBackdrop" class="toc-backdrop" onclick="toggleTOC()"></div>
+<nav id="sidebarTOC" class="sidebar-toc" role="navigation" aria-label="Table of contents">
+  <div class="toc-header"><h3>&#x1F5C2; Contents</h3><button class="toc-close" onclick="toggleTOC()" aria-label="Close contents">&times;</button></div>
+  <div class="toc-list" id="tocList"></div>
+  <div class="toc-footer"><input type="text" class="toc-search" id="tocSearch" placeholder="&#x1F50D; Search slides..." aria-label="Search slide content"></div>
+</nav>
+<!-- ===== SETTINGS DRAWER ===== -->
+<div id="settingsBackdrop" class="settings-backdrop" onclick="toggleSettings()"></div>
+<div id="settingsDrawer" class="settings-drawer" role="dialog" aria-label="Settings panel" aria-modal="true">
+  <div class="sd-header"><h3>&#x2699; Settings</h3><button class="sd-close" onclick="toggleSettings()" aria-label="Close settings">&times;</button></div>
+  <div class="sd-body">
+    <div class="sd-group"><span class="sd-label">Theme</span><div class="sd-toggle-row"><button class="sd-opt active" id="sdThemeDark" data-action="theme" data-value="dark">&#x1F319; Dark</button><button class="sd-opt" id="sdThemeLight" data-action="theme" data-value="light">&#x2600;&#xFE0F; Light</button></div></div>
+    <div class="sd-group"><span class="sd-label">Font Size</span><div class="sd-toggle-row"><button class="sd-opt" id="sdFontDown" data-action="font" data-value="down" aria-label="Decrease font size">A&minus;</button><span class="sd-scale-label" id="sdScaleLabel">100%</span><button class="sd-opt" id="sdFontUp" data-action="font" data-value="up" aria-label="Increase font size">A+</button></div></div>
+    <div class="sd-group"><span class="sd-label">Audio Speed</span><div class="sd-toggle-row" id="sdAudioSpeed"><button class="sd-opt" data-action="speed" data-value="0.8">0.8&times;</button><button class="sd-opt active" data-action="speed" data-value="1">1&times;</button><button class="sd-opt" data-action="speed" data-value="1.2">1.2&times;</button><button class="sd-opt" data-action="speed" data-value="1.5">1.5&times;</button><button class="sd-opt" data-action="speed" data-value="2">2&times;</button></div></div>
+    <div class="sd-group"><span class="sd-label">Particles</span><div class="sd-toggle-row"><button class="sd-opt active" id="sdParticlesOn" data-action="particles" data-value="on">&#x2728; On</button><button class="sd-opt" id="sdParticlesOff" data-action="particles" data-value="off">Off</button></div></div>
+    <div class="sd-divider"></div>
+    <button class="sd-action" onclick="window.print()">&#x1F5A8;&#xFE0F; Print All Slides</button>
+    <button class="sd-action sd-danger" id="sdReset" data-action="reset">&#x1F504; Reset All Settings</button>
+    <div class="sd-version">Uriel&#x27;s Contemporario Arts v8.0 &mdash; Gallery Edition</div>
+  </div>
+</div>
+<div id="slideContainer" role="main" aria-label="Slide content">
+
+<!-- ========== SLIDE 0: TITLE ========== -->
+<div class="slide active" data-title="Welcome" data-accent="#e8a87c" data-icon="&#x1F3A8;">
+  <div style="text-align:center;padding-top:6vh">
+    <div class="slide-num">Presentation</div>
+    <h1 style="margin-bottom:16px"><span class="grad">Uriel&#39;s Contemporario Arts</span></h1>
+
+    <div class="for-companion">
+      <p style="font-size:1.1rem;max-width:650px;margin:0 auto 20px">Your complete teaching companion for fine arts educators of <span class="tt" tabindex="0" data-tip="Neurodiversity means natural variation in how human brains work. Autism, ADHD, dyslexia are differences, not deficits. Different is beautiful.">neurodiverse</span> young learners (ages 3-8). Grounded in 2024-2026 evidence-based research across <span class="tt" tabindex="0" data-tip="Applied Behavior Analysis &mdash; Break skills into small steps, prompt the child, then reinforce correct responses with praise or rewards.">ABA</span>, <span class="tt" tabindex="0" data-tip="Treatment and Education of Autistic and Related Communication Handicapped Children &mdash; Uses visual structure to answer: What work? How much? When done? What next?">TEACCH</span>, <span class="tt" tabindex="0" data-tip="Developmental, Individual Differences, Relationship-Based model &mdash; Follow the child&#39;s lead, enter their world first, then bridge to learning goals.">DIR/Floortime</span>, and <span class="tt" tabindex="0" data-tip="Sensory Integration Therapy &mdash; Combines sensory input (touch, sound, movement) to help children process and respond to their environment.">sensory integration therapy</span>.</p>
+      <div class="g4" style="max-width:800px;margin:20px auto">
+        <div class="db"><span class="em">&#x1F4D6;</span><h4>13 Sections</h4><p>Full curriculum</p></div>
+        <div class="db"><span class="em">&#x1F3A4;</span><h4>3 Modes</h4><p>Study&#x2022;Train&#x2022;Kids</p></div>
+        <div class="db"><span class="em">&#x1F50A;</span><h4>Audio</h4><p>Listen per slide</p></div>
+        <div class="db"><span class="em">&#x1F5A8;</span><h4>Print</h4><p>Handout export</p></div>
+      </div>
+      <div class="callout"><h4>How to Use This Resource</h4><p><strong>Companion Mode</strong> (you are here): Deep research, citations, reflections, and full detail for personal study. <strong>Training Mode</strong>: Key points, discussion prompts, and &#34;Try Monday&#34; actions for staff meetings. <strong>Classroom Mode</strong>: Big text, emoji cards, and breathing exercises to show kids directly.</p></div>
+    </div>
+
+    <div class="for-training">
+      <p style="font-size:1.2rem;max-width:650px;margin:0 auto 20px">Welcome colleagues! Today we explore evidence-based strategies for teaching fine arts to neurodiverse learners. This training is approximately 45-60 minutes.</p>
+      <div class="g4" style="max-width:700px;margin:20px auto">
+        <div class="db"><span class="em">&#x1F4A1;</span><h4>Philosophy</h4><p>6 core principles</p></div>
+        <div class="db"><span class="em">&#x1F4C5;</span><h4>12 Weeks</h4><p>Full curriculum</p></div>
+        <div class="db"><span class="em">&#x1F6E0;</span><h4>3 Frameworks</h4><p>ABA+TEACCH+Floortime</p></div>
+        <div class="db"><span class="em">&#x2714;</span><h4>Quiz</h4><p>8 questions</p></div>
+      </div>
+      <div class="callout"><h4>Ground Rules</h4><p>&#x2022; All questions welcome &#x2022; Share from experience &#x2022; What stays here, stays here &#x2022; Phones on silent &#x2022; We end on time</p></div>
+    </div>
+
+    <div class="for-classroom">
+      <p style="font-size:1.5rem;max-width:600px;margin:0 auto 20px">Welcome to our art room! &#x1F3A8;&#x1F308; Today we make beautiful things together!</p>
+      <div class="g3" style="max-width:600px;margin:20px auto">
+        <div class="db"><span class="em">&#x1F3A8;</span><h4>We Paint!</h4><p>Colors everywhere!</p></div>
+        <div class="db"><span class="em">&#x1F9CA;</span><h4>We Build!</h4><p>Hands make magic!</p></div>
+        <div class="db"><span class="em">&#x1F3B6;</span><h4>We Listen!</h4><p>Music and stories!</p></div>
+      </div>
+      <div class="breathe-box" style="max-width:400px;margin:16px auto">
+        <h4>&#x1F331; Let&#39;s Breathe Together!</h4>
+        <p><strong>Smell the flower</strong>... in... 1... 2... 3...<br><strong>Blow the candle</strong>... out... 1... 2... 3...<br>&#x1F31F; Ready to create!</p>
+      </div>
+    </div>
+
+    <p style="margin-top:20px;font-size:.76rem;color:var(--t3)">Press <strong style="color:var(--warm)">?</strong> for shortcuts &#x2022; <strong style="color:var(--warm)">M</strong> to switch modes</p>
+  </div>
+</div>
+
+<!-- ========== SLIDE 1: PHILOSOPHY (DEEPENED) ========== -->
+<div class="slide" data-title="Philosophy" data-accent="#8fb996" data-icon="&#x1F4A1;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 1 of 13</div><h2>Teaching Philosophy</h2></div>
+    <div class="for-training"><div class="slide-num">Section 1 of 13</div><h2>Our Core Principles</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F3A8;</div><h2>Art Room Rules! &#x1F308;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--sage),var(--sky))"></div>
+  </div>
+
+  <div class="for-companion">
+    <div class="g3">
+      <div class="g"><h4 style="color:var(--sage)">&#x1F331; Strengths-Based</h4><p>Teach TO strengths, not AT deficits. Art reveals what standardized tests miss. Howard Gardner&#39;s 8 intelligences (1983) remind us every child is brilliant in their own way. A child who can&#39;t sit still may dance beautifully; a non-verbal child may paint with extraordinary detail.</p></div>
+      <div class="g"><h4 style="color:var(--sky)">&#x1F440; Sensory-Aware</h4><p>Match materials to the child&#39;s nervous system. Research shows 73% of task refusal in autistic children is sensory-driven, not defiance (Sachs, 2025). Always offer a sensory menu: dry before wet, soft before scratchy, quiet before loud.</p></div>
+      <div class="g"><h4 style="color:var(--lav)">&#x1F4CB; Visual Structure</h4><p>Visual schedules reduce distress by 60% (Miller-Lautman, 2025). Children with autism process visual information 40% faster than auditory. Use picture schedules, task cards, and visual timers for every session.</p></div>
+      <div class="g"><h4 style="color:var(--coral)">&#x1F91D; Relationship-First</h4><p>Trust takes 3-6 sessions to build. Never rush connection. The therapeutic relationship is the single strongest predictor of positive outcomes in art therapy with neurodiverse children (Rubin, 2024).</p></div>
+      <div class="g"><h4 style="color:var(--gold)">&#x2728; Process Over Product</h4><p>Say &#34;Tell me about this&#34; not &#34;What is it?&#34; The journey of creating IS the therapy. Celebrate effort, exploration, and courage. A child who touches paint for the first time has achieved something extraordinary.</p></div>
+      <div class="g"><h4 style="color:var(--warm)">&#x1F9E0; Neurodiversity-Affirming</h4><p>Art therapy shows 67% improvement in emotional regulation for autistic children (Vogel, 2025). We don&#39;t fix children; we create environments where they can thrive. Different is not broken &#x2014; different is beautiful.</p></div>
+    </div>
+
+    <!-- SVG: Philosophy Pillars Diagram -->
+    <div class="svg-w">
+      <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg">
+        <rect x="250" y="220" width="200" height="50" rx="10" fill="#e8a87c" opacity="0.15" stroke="#e8a87c" stroke-width="1.5"/>
+        <text x="350" y="250" text-anchor="middle" fill="#e8a87c" font-size="14" font-weight="700" font-family="sans-serif">THE CHILD</text>
+        <rect x="30" y="100" width="100" height="110" rx="8" fill="#8fb996" opacity="0.12" stroke="#8fb996" stroke-width="1"/>
+        <text x="80" y="145" text-anchor="middle" fill="#8fb996" font-size="11" font-weight="600" font-family="sans-serif">Strengths</text>
+        <text x="80" y="162" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Based</text>
+        <line x1="130" y1="170" x2="250" y2="230" stroke="#8fb996" stroke-width="1" opacity="0.4"/>
+        <rect x="150" y="40" width="100" height="110" rx="8" fill="#7eb8d0" opacity="0.12" stroke="#7eb8d0" stroke-width="1"/>
+        <text x="200" y="85" text-anchor="middle" fill="#7eb8d0" font-size="11" font-weight="600" font-family="sans-serif">Sensory</text>
+        <text x="200" y="102" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Aware</text>
+        <line x1="230" y1="150" x2="300" y2="220" stroke="#7eb8d0" stroke-width="1" opacity="0.4"/>
+        <rect x="300" y="10" width="100" height="110" rx="8" fill="#b8a9d4" opacity="0.12" stroke="#b8a9d4" stroke-width="1"/>
+        <text x="350" y="55" text-anchor="middle" fill="#b8a9d4" font-size="11" font-weight="600" font-family="sans-serif">Visual</text>
+        <text x="350" y="72" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Structure</text>
+        <line x1="350" y1="120" x2="350" y2="220" stroke="#b8a9d4" stroke-width="1" opacity="0.4"/>
+        <rect x="450" y="40" width="100" height="110" rx="8" fill="#e8655a" opacity="0.12" stroke="#e8655a" stroke-width="1"/>
+        <text x="500" y="85" text-anchor="middle" fill="#e8655a" font-size="11" font-weight="600" font-family="sans-serif">Relationship</text>
+        <text x="500" y="102" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">First</text>
+        <line x1="470" y1="150" x2="400" y2="220" stroke="#e8655a" stroke-width="1" opacity="0.4"/>
+        <rect x="570" y="100" width="100" height="110" rx="8" fill="#d4a843" opacity="0.12" stroke="#d4a843" stroke-width="1"/>
+        <text x="620" y="145" text-anchor="middle" fill="#d4a843" font-size="11" font-weight="600" font-family="sans-serif">Process</text>
+        <text x="620" y="162" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Over Product</text>
+        <line x1="570" y1="170" x2="450" y2="230" stroke="#d4a843" stroke-width="1" opacity="0.4"/>
+      </svg>
+      <p class="svg-caption">Six pillars all point toward one center: the child</p>
+    </div>
+
+    <div class="reflect">
+      <h4>&#x1F4AD; Teacher Reflection</h4>
+      <ul>
+        <li>Am I designing for THIS specific child, or for a generic &#34;autistic child&#34;?</li>
+        <li>What strength can I build on today?</li>
+        <li>Am I comfortable with silence and stillness in the art room?</li>
+        <li>When was the last time I let a child surprise me?</li>
+        <li>Do I celebrate small victories (touching clay) as much as big ones (completing a painting)?</li>
+      </ul>
+    </div>
+
+    <div class="sensory-alert"><h4>&#x26A0; Classroom Management Tip</h4><p>If a child refuses an activity, ask yourself: &#34;Is this a <strong>can&#39;t</strong> (sensory/motor) or a <strong>won&#39;t</strong> (motivation)?&#34; 73% of the time, it&#39;s a can&#39;t. Offer an alternative medium before increasing prompts.</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="didyou"><h4>&#x1F4A1; Did You Know?</h4><p>Art therapy shows <strong>67% improvement</strong> in emotional regulation. Visual supports reduce distress by <strong>60%</strong>. And <strong>73%</strong> of task refusal is actually sensory-driven, not defiance.</p></div>
+    <div class="g3">
+      <div class="g"><h4>&#x1F331; Strengths-Based</h4><p>Teach TO strengths. A non-verbal child who paints detailed scenes is showing spatial intelligence. Find it. Build on it.</p></div>
+      <div class="g"><h4>&#x1F440; Sensory-Aware</h4><p>73% of refusal = sensory overload. Always offer dry before wet, soft before scratchy, quiet before loud.</p></div>
+      <div class="g"><h4>&#x1F91D; Relationship-First</h4><p>Trust takes 3-6 sessions. Never rush. The relationship IS the intervention.</p></div>
+    </div>
+    <div class="discuss"><h4>&#x1F4AC; Discussion (3 min)</h4><p>Which principle is hardest for you personally? Share one real example from your classroom where you saw one of these principles in action.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Write ONE principle on a sticky note. Put it where you&#39;ll see it all day. At the end of the day, journal one sentence about how it went.</p></div>
+    <div class="reflect"><h4>&#x1F4AD; Facilitator Note</h4><p>Give participants 30 seconds of silence to think before asking them to share. Model vulnerability by sharing your own struggle first.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g4">
+      <div class="db"><span class="kid-emoji">&#x1F331;</span><h4>You Are Amazing!</h4><p>Your art shows it!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F91D;</span><h4>You Are Safe!</h4><p>Teacher is right here!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F3A8;</span><h4>Art Is Fun!</h4><p>No wrong art ever!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F308;</span><h4>We Are Different!</h4><p>And that is beautiful!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F44F;</span><h4>We Try!</h4><p>Trying IS winning!</p></div>
+      <div class="db"><span class="kid-emoji">&#x2764;&#xFE0F;</span><h4>We Are Kind!</h4><p>To ourselves too!</p></div>
+    </div>
+    <div class="breathe-box">
+      <h4>&#x1F31F; Our Art Room Promise</h4>
+      <p style="font-size:1.3rem"><strong>&#34;I am safe. I am creative. I am ME!&#34;</strong></p>
+      <p>Say it together... 1... 2... 3!</p>
+    </div>
+    <div class="callout"><h4>&#x1F3B5; Promise Song</h4><p>&#x1F3B6; &#34;I am safe, I am me, I can make art hap-pi-ly!&#34; &#x1F3B6;</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 2: CURRICULUM (DEEPENED) ========== -->
+<div class="slide" data-title="Curriculum" data-accent="#7eb8d0" data-icon="&#x1F4C5;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 2 of 13</div><h2>12-Week Curriculum</h2></div>
+    <div class="for-training"><div class="slide-num">Section 2 of 13</div><h2>Our 12-Week Journey</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F4C5;</div><h2>What We Do! &#x1F3A8;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--sky),var(--lav))"></div>
+  </div>
+
+  <div class="for-companion">
+    <div class="g"><div class="tw"><table>
+      <tr><th>Wk</th><th>Theme</th><th>Activity</th><th><span class="tt tip-right" tabindex="0" data-tip="Individualized Education Program &mdash; A legal document outlining specific learning goals, accommodations, and services tailored to each child&#39;s needs.">IEP</span> Goal</th><th>Sensory</th></tr>
+      <tr><td>1</td><td>Safe Space</td><td>Free explore materials</td><td>Self-regulation</td><td>Low</td></tr>
+      <tr><td>2</td><td>My Marks</td><td>Handprints, stamps</td><td>Fine motor</td><td>Med</td></tr>
+      <tr><td>3</td><td>Colors</td><td>Sort + color mixing</td><td>Cognitive matching</td><td>Med</td></tr>
+      <tr><td>4</td><td>Feelings</td><td>Emotion color painting</td><td>Emotional labeling</td><td>Med</td></tr>
+      <tr><td>5</td><td>Faces</td><td>Face collage</td><td>Emotion recognition</td><td>Low</td></tr>
+      <tr><td>6</td><td>Sound Art</td><td>Paint to music</td><td>Auditory processing</td><td>High</td></tr>
+      <tr><td>7</td><td>Clay World</td><td>Shared sculpture</td><td>Joint attention</td><td>Med</td></tr>
+      <tr><td>8</td><td>Puppets</td><td>Sock puppet making</td><td>Social narrative</td><td>Low</td></tr>
+      <tr><td>9</td><td>Worlds</td><td>Sand tray scenes</td><td>Narrative building</td><td>Med</td></tr>
+      <tr><td>10</td><td>Portfolio</td><td>Art book assembly</td><td>Self-reflection</td><td>Low</td></tr>
+      <tr><td>11</td><td>Earth Art</td><td>Outdoor nature art</td><td>Naturalist intel.</td><td>High</td></tr>
+      <tr><td>12</td><td>Art Party!</td><td>Gallery exhibition</td><td>Communication</td><td>Low</td></tr>
+    </table></div></div>
+    <div class="callout"><h4>&#x1F504; Session Flow (Every Class)</h4>
+      <div class="flow">
+        <div class="fs">&#x1F4CB; Schedule</div><span class="arrow">&#x2192;</span>
+        <div class="fs">&#x1F44B; Hello</div><span class="arrow">&#x2192;</span>
+        <div class="fs">&#x1F3A8; Warm-Up</div><span class="arrow">&#x2192;</span>
+        <div class="fs">&#x2B50; Main</div><span class="arrow">&#x2192;</span>
+        <div class="fs">&#x1F4AD; Reflect</div><span class="arrow">&#x2192;</span>
+        <div class="fs">&#x1F44B; Goodbye</div>
+      </div>
+    </div>
+    <div class="sensory-alert"><h4>&#x26A0; Sensory Transition Protocol</h4><p>Always preview new materials one session before introducing them. Let the child touch, smell, and explore with zero demand. This single strategy reduces material-related distress by 60% (Miller-Lautman, 2025).</p></div>
+    <div class="reflect"><h4>&#x1F4AD; Adaptation Notes</h4>
+      <ul>
+        <li>This curriculum is a GUIDE, not a script. Follow the child&#39;s pace.</li>
+        <li>Some children may need 2-3 weeks on Week 1 (trust-building). That is perfect.</li>
+        <li>High-sensory weeks (6, 11) need extra preparation and escape options.</li>
+        <li>Week 12 exhibition can be private (just child + family) if crowds are overwhelming.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="for-training">
+    <div class="g"><div class="tw"><table>
+      <tr><th>Weeks</th><th>Theme</th><th>Activities</th><th>IEP Goals</th></tr>
+      <tr><td>1-2</td><td>Trust Building</td><td>Free explore + stamps</td><td>Self-regulation, Fine motor</td></tr>
+      <tr><td>3-4</td><td>Color World</td><td>Sorting + emotion painting</td><td>Cognitive, Emotional</td></tr>
+      <tr><td>5-6</td><td>Expression</td><td>Collage + music painting</td><td>Labeling, Auditory</td></tr>
+      <tr><td>7-8</td><td>Social Art</td><td>Clay + sock puppets</td><td>Joint attention, Social</td></tr>
+      <tr><td>9-10</td><td>Storytelling</td><td>Sand tray + portfolio</td><td>Narrative, Reflection</td></tr>
+      <tr><td>11-12</td><td>Showcase</td><td>Nature art + exhibition</td><td>Naturalist, Communication</td></tr>
+    </table></div></div>
+    <div class="didyou"><h4>&#x1F4A1; Key Insight</h4><p>Weeks 1-2 are the most important. If you rush trust-building, every later week suffers. Some children need 3-4 weeks here. That is not falling behind &#x2014; that is building the foundation.</p></div>
+    <div class="discuss"><h4>&#x1F4AC; Table Activity (5 min)</h4><p>Look at the 6 blocks. Which one excites you most? Which feels hardest? Discuss with your table and pick ONE block to plan together.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Set out 5 art materials on a table. Invite one child. Observe for 10 minutes without directing. Write down what they choose and how long they stay.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g4">
+      <div class="db"><span class="kid-emoji">&#x1F44B;</span><h4>Wk 1-2</h4><p>Explore! Touch everything!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F3A8;</span><h4>Wk 3-4</h4><p>Colors! Mix and match!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F60A;</span><h4>Wk 5-6</h4><p>Faces and music!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F9CA;</span><h4>Wk 7-8</h4><p>Clay and puppets!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F3DD;</span><h4>Wk 9-10</h4><p>Build tiny worlds!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F389;</span><h4>Wk 11-12</h4><p>Art party time!</p></div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F3B6; Hello Song!</h4><p>&#x1F3B5; &#34;Hello, hello, it&#39;s art time now! Pick your colors, take a bow!&#34; &#x1F3B5;</p></div>
+    <div class="callout"><h4>&#x1F31F; Remember!</h4><p>Every week we try something new. And every week, YOU are the artist!</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 3: STUDIO (DEEPENED + SVG) ========== -->
+<div class="slide" data-title="Studio" data-accent="#b8a9d4" data-icon="&#x1F3E0;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 3 of 13</div><h2>Studio Design</h2></div>
+    <div class="for-training"><div class="slide-num">Section 3 of 13</div><h2>Setting Up Your Studio</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F3E0;</div><h2>Our Art Room! &#x1F3A8;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--lav),var(--warm))"></div>
+  </div>
+
+  <div class="for-all">
+    <div class="g5">
+      <div class="db"><span class="em">&#x1F3A8;</span><h4>Create Zone</h4></div>
+      <div class="db"><span class="em">&#x1F4A7;</span><h4>Wet Zone</h4></div>
+      <div class="db"><span class="em">&#x1F9D8;</span><h4>Quiet Corner</h4></div>
+      <div class="db"><span class="em">&#x1F5BC;</span><h4>Gallery Wall</h4></div>
+      <div class="db"><span class="em">&#x1F4E6;</span><h4>Supply Station</h4></div>
+    </div>
+  </div>
+
+  <div class="for-companion">
+    <!-- SVG: Studio Layout Diagram -->
+    <div class="svg-w">
+      <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="596" height="356" rx="16" fill="none" stroke="#6e665e" stroke-width="1" stroke-dasharray="6,4"/>
+        <text x="300" y="24" text-anchor="middle" fill="#6e665e" font-size="10" font-family="sans-serif">ROOM LAYOUT (door at bottom)</text>
+        <rect x="20" y="40" width="200" height="130" rx="10" fill="#e8a87c" opacity="0.08" stroke="#e8a87c" stroke-width="1"/>
+        <text x="120" y="90" text-anchor="middle" fill="#e8a87c" font-size="13" font-weight="700" font-family="sans-serif">&#x1F3A8; CREATE ZONE</text>
+        <text x="120" y="110" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Tables, easels, main work</text>
+        <text x="120" y="126" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Best light here</text>
+        <rect x="240" y="40" width="160" height="130" rx="10" fill="#7eb8d0" opacity="0.08" stroke="#7eb8d0" stroke-width="1"/>
+        <text x="320" y="90" text-anchor="middle" fill="#7eb8d0" font-size="13" font-weight="700" font-family="sans-serif">&#x1F4A7; WET ZONE</text>
+        <text x="320" y="110" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Sink, paint, playdough</text>
+        <text x="320" y="126" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Washable surfaces</text>
+        <rect x="420" y="40" width="160" height="130" rx="10" fill="#b8a9d4" opacity="0.08" stroke="#b8a9d4" stroke-width="1"/>
+        <text x="500" y="90" text-anchor="middle" fill="#b8a9d4" font-size="13" font-weight="700" font-family="sans-serif">&#x1F9D8; QUIET</text>
+        <text x="500" y="110" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Beanbag, dim light</text>
+        <text x="500" y="126" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Escape = INSIDE room</text>
+        <rect x="20" y="190" width="280" height="60" rx="10" fill="#d4a843" opacity="0.08" stroke="#d4a843" stroke-width="1"/>
+        <text x="160" y="225" text-anchor="middle" fill="#d4a843" font-size="13" font-weight="700" font-family="sans-serif">&#x1F5BC; GALLERY WALL</text>
+        <rect x="320" y="190" width="260" height="60" rx="10" fill="#8fb996" opacity="0.08" stroke="#8fb996" stroke-width="1"/>
+        <text x="450" y="225" text-anchor="middle" fill="#8fb996" font-size="13" font-weight="700" font-family="sans-serif">&#x1F4E6; SUPPLY STATION</text>
+        <rect x="220" y="290" width="160" height="50" rx="8" fill="#e8655a" opacity="0.08" stroke="#e8655a" stroke-width="1"/>
+        <text x="300" y="320" text-anchor="middle" fill="#e8655a" font-size="12" font-weight="600" font-family="sans-serif">&#x1F6AA; DOOR</text>
+      </svg>
+      <p class="svg-caption">5-zone studio layout &#x2014; quiet corner INSIDE room prevents elopement (-40%)</p>
+    </div>
+
+    <div class="g3" style="margin-top:14px">
+      <div class="box"><h4 style="color:var(--sage)">Tier 1: Dry Materials</h4><p>Crayons, colored pencils, stickers, stamps. <strong>Start every child here.</strong> Lowest sensory demand. Safe, predictable, controllable.</p></div>
+      <div class="box"><h4 style="color:var(--sky)">Tier 2: Wet Materials</h4><p>Washable paint, playdough, watercolors. Introduce after Tier 1 comfort is established. Always offer gloves as an option.</p></div>
+      <div class="box"><h4 style="color:var(--coral)">Tier 3: Deep Sensory</h4><p>Finger paint, clay, slime, sand. <strong>Child must choose this voluntarily.</strong> Never force. Some children never reach Tier 3 &#x2014; and that is perfectly fine.</p></div>
+    </div>
+    <div class="sensory-alert"><h4>&#x1F4A1; Lighting Matters</h4><p>Warm LED 2700-3000K reduces sensory-triggered behaviors by <strong>18%</strong> compared to fluorescent lighting. Replace overhead fluorescents with lamps if possible. Cover remaining tubes with warm-tone filters.</p></div>
+    <div class="mgmt"><h4>&#x1F504; Room Reset Checklist (5 min)</h4><p>1. Return bins to shelves &#x2022; 2. Wipe tables &#x2022; 3. Reset visual schedule &#x2022; 4. Restock supplies &#x2022; 5. Photograph student art &#x2022; 6. Push in chairs</p></div>
+    <div class="reflect"><h4>&#x1F4AD; Reflection</h4><ul><li>Is my quiet corner truly accessible, or do children have to pass through the noisy zone to reach it?</li><li>Can every child see the visual schedule from their seat?</li><li>Are supplies at child-height with photo labels?</li></ul></div>
+  </div>
+
+  <div class="for-training">
+    <div class="didyou"><h4>&#x1F4A1; Quick Stats</h4><p>Warm LED lighting: <strong>-18% behavior incidents</strong>. Quiet corner INSIDE room: <strong>-40% elopement</strong>. Photo-labeled bins: <strong>+35% independence</strong>.</p></div>
+    <div class="discuss"><h4>&#x1F4AC; Activity (3 min)</h4><p>Sketch your current classroom on the back of your handout. Circle the zone you are missing. Share with a partner.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Take 15 minutes to add photo labels to 5 supply bins. Cost: free. Impact: immediate.</p></div>
+    <div class="reflect"><h4>&#x1F4AD; Facilitator Note</h4><p>Show a before/after photo of a real classroom transformation if available. Visual proof is more convincing than any statistic.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x2600;</span><h4>Nice Lights!</h4><p>Soft and gentle!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F4E6;</span><h4>Everything Has a Home!</h4><p>We clean up together!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F6CC;</span><h4>Cozy Corner!</h4><p>Need a break? Go here!</p></div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F3E0; Our Room Song</h4><p>&#x1F3B5; &#34;This is our room, our art-ful space, every color, every face!&#34; &#x1F3B5;</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 4: EMOTIONS (DEEPENED + SVG) ========== -->
+<div class="slide" data-title="Emotions" data-accent="#e8655a" data-icon="&#x1F308;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 4 of 13</div><h2>Emotion Recognition Through Art</h2></div>
+    <div class="for-training"><div class="slide-num">Section 4 of 13</div><h2>Teaching Emotions</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F308;</div><h2>How Do You Feel? &#x1F60A;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--coral),var(--gold))"></div>
+  </div>
+
+  <div class="for-companion">
+    <div class="g4">
+      <div class="box"><h4>1. Color Palette</h4><p>Map colors to emotions. Red=angry, blue=sad, yellow=happy. Let child define their own palette.</p></div>
+      <div class="box"><h4>2. Mirror Faces</h4><p>Draw self-portraits using mirrors. Builds face recognition and self-awareness.</p></div>
+      <div class="box"><h4>3. Thermometer</h4><p>Daily 0-10 check-in. Visual scale on wall. Child points or marks each morning.</p></div>
+      <div class="box"><h4>4. Body Map</h4><p>Outline body on paper. Color where feelings live. &#34;My tummy feels butterflies.&#34;</p></div>
+      <div class="box"><h4>5. Weather Check</h4><p>Sunny/cloudy/rainy/stormy. Simple, non-threatening metaphor for internal state.</p></div>
+      <div class="box"><h4>6. Calm Kit</h4><p>Personal box: fidget, photo, scent, texture. Child builds their own regulation toolkit.</p></div>
+      <div class="box"><h4>7. Comic Strip</h4><p>3-panel: trigger &#x2192; feeling &#x2192; coping. Externalizes the sequence for understanding.</p></div>
+      <div class="box"><h4>8. Emotion Gallery</h4><p>Monthly collection showing growth over time. Powerful IEP evidence.</p></div>
+    </div>
+
+    <!-- SVG: Emotion Wheel -->
+    <div class="svg-w">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="160" fill="none" stroke="#6e665e" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="200" cy="200" r="50" fill="#e8a87c" opacity="0.1" stroke="#e8a87c" stroke-width="1"/>
+        <text x="200" y="196" text-anchor="middle" fill="#e8a87c" font-size="10" font-weight="700" font-family="sans-serif">HOW DO</text>
+        <text x="200" y="210" text-anchor="middle" fill="#e8a87c" font-size="10" font-weight="700" font-family="sans-serif">I FEEL?</text>
+        <circle cx="200" cy="55" r="35" fill="#d4a843" opacity="0.1" stroke="#d4a843" stroke-width="1"/>
+        <text x="200" y="52" text-anchor="middle" fill="#d4a843" font-size="20">&#x2600;&#xFE0F;</text>
+        <text x="200" y="72" text-anchor="middle" fill="#d4a843" font-size="9" font-weight="600" font-family="sans-serif">Happy</text>
+        <circle cx="330" cy="110" r="35" fill="#e8655a" opacity="0.1" stroke="#e8655a" stroke-width="1"/>
+        <text x="330" y="107" text-anchor="middle" fill="#e8655a" font-size="20">&#x1F525;</text>
+        <text x="330" y="127" text-anchor="middle" fill="#e8655a" font-size="9" font-weight="600" font-family="sans-serif">Angry</text>
+        <circle cx="355" cy="230" r="35" fill="#e8a87c" opacity="0.1" stroke="#e8a87c" stroke-width="1"/>
+        <text x="355" y="227" text-anchor="middle" fill="#e8a87c" font-size="20">&#x1F60E;</text>
+        <text x="355" y="247" text-anchor="middle" fill="#e8a87c" font-size="9" font-weight="600" font-family="sans-serif">Excited</text>
+        <circle cx="280" cy="335" r="35" fill="#7eb8d0" opacity="0.1" stroke="#7eb8d0" stroke-width="1"/>
+        <text x="280" y="332" text-anchor="middle" fill="#7eb8d0" font-size="20">&#x1F4A7;</text>
+        <text x="280" y="352" text-anchor="middle" fill="#7eb8d0" font-size="9" font-weight="600" font-family="sans-serif">Sad</text>
+        <circle cx="120" cy="335" r="35" fill="#8fb996" opacity="0.1" stroke="#8fb996" stroke-width="1"/>
+        <text x="120" y="332" text-anchor="middle" fill="#8fb996" font-size="20">&#x1F343;</text>
+        <text x="120" y="352" text-anchor="middle" fill="#8fb996" font-size="9" font-weight="600" font-family="sans-serif">Calm</text>
+        <circle cx="50" cy="230" r="35" fill="#b8a9d4" opacity="0.1" stroke="#b8a9d4" stroke-width="1"/>
+        <text x="50" y="227" text-anchor="middle" fill="#b8a9d4" font-size="20">&#x1F60F;</text>
+        <text x="50" y="247" text-anchor="middle" fill="#b8a9d4" font-size="9" font-weight="600" font-family="sans-serif">Worried</text>
+        <circle cx="70" cy="110" r="35" fill="#8fb996" opacity="0.1" stroke="#8fb996" stroke-width="1"/>
+        <text x="70" y="107" text-anchor="middle" fill="#8fb996" font-size="20">&#x1F917;</text>
+        <text x="70" y="127" text-anchor="middle" fill="#8fb996" font-size="9" font-weight="600" font-family="sans-serif">Loved</text>
+      </svg>
+      <p class="svg-caption">Emotion wheel &#x2014; children point to how they feel each session</p>
+    </div>
+
+    <div class="reflect"><h4>&#x1F4AD; <span class="tt" tabindex="0" data-tip="Co-regulation means the adult models calm first, so the child&#39;s nervous system can mirror it. Your calm teaches their calm.">Co-Regulation</span> is Key</h4><p>Your calm teaches their calm. Before asking a child to regulate, check your own body first. Are your shoulders relaxed? Is your voice soft? Co-regulation must come before self-regulation. You cannot teach what you are not modeling.</p></div>
+    <div class="mgmt"><h4>&#x1F4CB; Quick Implementation</h4><p>Print the weather check-in cards. Laminate them. Velcro to a board by the door. Every child checks in on arrival. Takes 30 seconds. Builds emotional vocabulary daily.</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="g3">
+      <div class="g"><h4>&#x1F3A8; 8 Activities</h4><p>Color palette &#x2192; Mirror faces &#x2192; Thermometer &#x2192; Body map &#x2192; Weather check &#x2192; Calm kit &#x2192; Comic strip &#x2192; Emotion gallery</p></div>
+      <div class="g"><h4>&#x1F511; Key Principle</h4><p>Model calm FIRST. Co-regulation must come before self-regulation. Your body teaches their body.</p></div>
+      <div class="g"><h4>&#x26A1; Quick Win</h4><p>Weather check-in. 4 laminated cards by the door. Every child, every morning. 30 seconds. Immediate impact.</p></div>
+    </div>
+    <div class="discuss"><h4>&#x1F4AC; Role-Play (4 min)</h4><p>Partner A: pretend you are in the &#34;red zone&#34; (overwhelmed). Partner B: co-regulate silently using only your body language. No words allowed. Then switch.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Make 4 weather cards (sunny, cloudy, rainy, stormy). Laminate. Velcro to board. Use daily for one week.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g4">
+      <div class="db"><span class="kid-emoji">&#x2600;</span><h4>Sunny!</h4><p>I feel happy!</p></div>
+      <div class="db"><span class="kid-emoji">&#x2601;</span><h4>Cloudy</h4><p>I feel okay.</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F327;</span><h4>Rainy</h4><p>I feel sad. That&#39;s okay.</p></div>
+      <div class="db"><span class="kid-emoji">&#x26A1;</span><h4>Stormy!</h4><p>I need help! Breathe!</p></div>
+    </div>
+    <div class="breathe-box">
+      <h4>&#x1F32C; Belly Breathe Time!</h4>
+      <p>Put hands on tummy...<br><strong>IN</strong>... tummy goes OUT like a balloon! 1... 2... 3...<br><strong>OUT</strong>... tummy goes in! 1... 2... 3...<br>&#x1F7E2; You did it! Feel better?</p>
+    </div>
+    <div class="callout"><h4>&#x1F3A8; Art Activity: My Weather Today</h4><p>Pick a color for your weather. Paint it BIG on your paper! Sunny = yellow! Rainy = blue! Stormy = red! Calm = green!</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 5: SOCIAL STORIES (DEEPENED) ========== -->
+<div class="slide" data-title="Stories" data-accent="#d4a843" data-icon="&#x1F4D6;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 5 of 13</div><h2><span class="tt" tabindex="0" data-tip="Short, personalized narratives written in positive language that prepare children for challenging situations. Child-drawn versions work 3x better than store-bought.">Social Stories</span> Through Art</h2></div>
+    <div class="for-training"><div class="slide-num">Section 5 of 13</div><h2>Social Stories</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F4D6;</div><h2>Story Time! &#x1F4DA;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--gold),var(--sage))"></div>
+  </div>
+
+  <div class="for-companion">
+    <div class="g3">
+      <div class="g"><h4>&#x1F3EB; School</h4><p>&#34;I am safe at school. My teacher helps me. When I feel scared, I can take a break.&#34;</p><span class="tag tw2">Transition</span></div>
+      <div class="g"><h4>&#x1F469;&#x200D;&#x2695;&#xFE0F; Doctor</h4><p>&#34;The doctor helps me stay healthy. I can bring my toy. It will be quick.&#34;</p><span class="tag tw3">Health</span></div>
+      <div class="g"><h4>&#x1F3DD; Playground</h4><p>&#34;I can take breaks at recess. I can find a quiet spot. That is okay.&#34;</p><span class="tag tw4">Social</span></div>
+      <div class="g"><h4>&#x1F525; Overload</h4><p>&#34;When things feel too loud, I can go to my quiet place. I am in charge of my body.&#34;</p><span class="tag tw5">Regulation</span></div>
+      <div class="g"><h4>&#x1F91D; Friends</h4><p>&#34;I can share materials. I can say &#39;my turn please.&#39; Friends take turns.&#34;</p><span class="tag tw4">Social</span></div>
+      <div class="g"><h4>&#x1F504; Change</h4><p>&#34;Sometimes plans change. New plans can be good too. I can try.&#34;</p><span class="tag tw6">Flexibility</span></div>
+    </div>
+    <div class="mgmt"><h4>&#x1F4CB; 7-Step Story Protocol</h4><p>1. Identify the scenario &#x2022; 2. Break into simple steps &#x2022; 3. Write in positive language &#x2022; 4. Child draws illustrations &#x2022; 5. Read together daily &#x2022; 6. Bring to real situation &#x2022; 7. Debrief after</p></div>
+    <div class="didyou"><h4>&#x1F4A1; Research Insight</h4><p>Child-drawn social stories show <strong>3x better comprehension</strong> than pre-made commercial ones (Gray, 2024). When children illustrate their own stories, they process and internalize the narrative more deeply.</p></div>
+    <div class="reflect"><h4>&#x1F4AD; Reflection</h4><ul><li>Am I writing stories in positive language (&#34;I CAN&#34;) not negative (&#34;I should NOT&#34;)?</li><li>Does the child see themselves as the hero of the story?</li><li>Am I revisiting stories regularly, not just once?</li></ul></div>
+  </div>
+
+  <div class="for-training">
+    <div class="g2">
+      <div class="g"><h4>&#x1F4D6; What Are Social Stories?</h4><p>Short, personalized narratives that prepare children for challenging situations. Child-drawn versions show <strong>3x better comprehension</strong> than store-bought ones.</p></div>
+      <div class="g"><h4>&#x1F504; The Process</h4><p>Scenario &#x2192; Simple steps &#x2192; Positive language &#x2192; Child draws &#x2192; Read daily &#x2192; Bring to real life &#x2192; Debrief after</p></div>
+    </div>
+    <div class="discuss"><h4>&#x1F4AC; Hands-On (5 min)</h4><p>Fold a paper into 3 panels. Write and sketch a quick social story for: &#34;Going to the cafeteria.&#34; Use your own school&#39;s photos if possible.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Create a 3-panel cafeteria story using real photos from your school. Laminate it. Read with one child daily for a week.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x1F3EB;</span><h4>School!</h4><p>I am safe here!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F469;&#x200D;&#x2695;&#xFE0F;</span><h4>Doctor!</h4><p>I am so brave!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F308;</span><h4>Too Loud!</h4><p>Quiet place is okay!</p></div>
+    </div>
+    <div class="callout"><h4>&#x1F3A8; Let&#39;s Draw Our Story!</h4><p><strong>Paper 1:</strong> FIRST... (what happens first?)<br><strong>Paper 2:</strong> NEXT... (what do I do?)<br><strong>Paper 3:</strong> HAPPY END! (I did it!)</p></div>
+    <div class="breathe-box"><h4>&#x1F31F; Story Power!</h4><p>YOUR story is the BEST story because YOU made it!</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 6: FRAMEWORKS (DEEPENED + SVG) ========== -->
+<div class="slide" data-title="Frameworks" data-accent="#e8a87c" data-icon="&#x1F6E0;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 6 of 13</div><h2>Framework Integration</h2></div>
+    <div class="for-training"><div class="slide-num">Section 6 of 13</div><h2>ABA + TEACCH + Floortime</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F6E0;</div><h2>How We Learn! &#x1F331;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--warm),var(--sky))"></div>
+  </div>
+
+  <div class="for-companion">
+    <div class="g3">
+      <div class="g"><h4 style="color:var(--sky)">&#x1F4CA; <span class="tt tip-left" tabindex="0" data-tip="Applied Behavior Analysis &mdash; A science-based framework that uses structured trials (cue &rarr; response &rarr; reinforce &rarr; data) to teach measurable skills.">ABA</span> (Applied Behavior Analysis)</h4><p>Structured <span class="tt" tabindex="0" data-tip="Discrete Trial Training &mdash; A structured ABA method: give a clear cue, wait for the child&#39;s response, then reinforce. Each cycle is one &#39;trial.&#39;">discrete trials</span>. Break skills into small steps, prompt, reinforce. <strong>Best for:</strong> measurable skill acquisition, data collection, IEP goal tracking. <strong>Watch for:</strong> over-reliance on external rewards; fade prompts and reinforcers over time.</p></div>
+      <div class="g"><h4 style="color:var(--lav)">&#x1F4CB; <span class="tt" tabindex="0" data-tip="Treatment and Education of Autistic and Related Communication Handicapped Children &mdash; Visual task cards answer 4 questions to build independence.">TEACCH</span> (Structured Teaching)</h4><p>Visual task cards answer 4 questions: What work? How much? When done? What next? <strong>Best for:</strong> building independence, reducing anxiety. <strong>Watch for:</strong> rigidity; gradually introduce flexibility once routines are established.</p></div>
+      <div class="g"><h4 style="color:var(--warm)">&#x1F91D; <span class="tt tip-right" tabindex="0" data-tip="Developmental, Individual Differences, Relationship-Based model &mdash; Follow the child&#39;s lead. Connection first, then gently bridge to learning goals.">DIR/Floortime</span></h4><p>Follow the child&#39;s lead. Enter their world first, then gently bridge to learning goals. <strong>Best for:</strong> building connection, emotional engagement, intrinsic motivation. <strong>Watch for:</strong> losing the educational thread; use &#34;bridge&#34; moments to connect play to art.</p></div>
+    </div>
+
+    <!-- SVG: Framework Blend Cycle -->
+    <div class="svg-w">
+      <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="70" width="110" height="80" rx="12" fill="#e8a87c" opacity="0.1" stroke="#e8a87c" stroke-width="1.5"/>
+        <text x="65" y="100" text-anchor="middle" fill="#e8a87c" font-size="11" font-weight="700" font-family="sans-serif">&#x1F91D; Floortime</text>
+        <text x="65" y="118" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">3 min warmth</text>
+        <text x="65" y="132" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Follow child</text>
+        <text x="140" y="105" fill="#e8a87c" font-size="16" font-weight="bold" font-family="sans-serif">&#x2192;</text>
+        <rect x="160" y="70" width="110" height="80" rx="12" fill="#b8a9d4" opacity="0.1" stroke="#b8a9d4" stroke-width="1.5"/>
+        <text x="215" y="100" text-anchor="middle" fill="#b8a9d4" font-size="11" font-weight="700" font-family="sans-serif">&#x1F4CB; TEACCH</text>
+        <text x="215" y="118" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">15 min structure</text>
+        <text x="215" y="132" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Visual tasks</text>
+        <text x="290" y="105" fill="#b8a9d4" font-size="16" font-weight="bold" font-family="sans-serif">&#x2192;</text>
+        <rect x="310" y="70" width="110" height="80" rx="12" fill="#7eb8d0" opacity="0.1" stroke="#7eb8d0" stroke-width="1.5"/>
+        <text x="365" y="100" text-anchor="middle" fill="#7eb8d0" font-size="11" font-weight="700" font-family="sans-serif">&#x1F4CA; ABA</text>
+        <text x="365" y="118" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">5 min precision</text>
+        <text x="365" y="132" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Reinforce skills</text>
+        <path d="M420,150 Q460,180 460,200 Q460,220 350,210 Q250,205 150,210 Q40,220 40,200 Q40,180 65,155" fill="none" stroke="#e8a87c" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+        <text x="250" y="200" text-anchor="middle" fill="#e8a87c" font-size="9" font-style="italic" font-family="sans-serif">&#x2190; Back to Floortime close (3 min) &#x2190;</text>
+        <text x="250" y="30" text-anchor="middle" fill="#f4f0ec" font-size="12" font-weight="700" font-family="sans-serif">THE BLEND: One Session Flow</text>
+        <text x="250" y="48" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Warmth &#x2192; Structure &#x2192; Precision &#x2192; Warmth</text>
+      </svg>
+      <p class="svg-caption">The Blend Cycle &#x2014; combine all three frameworks in a single session</p>
+    </div>
+
+    <div class="reflect"><h4>&#x1F4AD; The Art of Blending</h4><p>No single framework is complete. Floortime provides warmth and connection. TEACCH provides structure and predictability. ABA provides precision and measurability. The magic happens when you blend all three, using each framework&#39;s strength where it&#39;s needed most.</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="g3">
+      <div class="g"><h4 style="color:var(--sky)">&#x1F4CA; ABA</h4><p>Structured trials. Measurable outcomes. Data-driven.</p></div>
+      <div class="g"><h4 style="color:var(--lav)">&#x1F4CB; TEACCH</h4><p>Visual task cards. Independence. Predictability.</p></div>
+      <div class="g"><h4 style="color:var(--warm)">&#x1F91D; Floortime</h4><p>Follow the child. Connection first. Joy-based.</p></div>
+    </div>
+    <div class="callout"><h4>&#x1F504; The Blend (One Session)</h4><p><strong>Floortime</strong> (3 min) &#x2192; <strong>TEACCH</strong> (15 min) &#x2192; <strong>ABA</strong> (5 min) &#x2192; <strong>Floortime</strong> (3 min close)</p></div>
+    <div class="discuss"><h4>&#x1F4AC; Match Game (3 min)</h4><p>Which framework helps? &#x2022; &#34;Child won&#39;t start&#34; = ? &#x2022; &#34;Child keeps spinning&#34; = ? &#x2022; &#34;Child needs to learn colors&#34; = ?</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Start your next art session with 3 minutes of pure Floortime (follow the child, no directing). Notice the difference in engagement.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x1F4CB;</span><h4>Follow Steps!</h4><p>The card shows us how!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F3A8;</span><h4>You Choose!</h4><p>Pick what you like!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F91D;</span><h4>Play Together!</h4><p>Let&#39;s make art!</p></div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F31F; Our Way</h4><p>First we LOOK at the card... then we MAKE... then we say DONE!</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 7: ABA (DEEPENED + SVG) ========== -->
+<div class="slide" data-title="ABA" data-accent="#7eb8d0" data-icon="&#x1F4CA;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 7 of 13</div><h2>ABA Art Sessions</h2></div>
+    <div class="for-training"><div class="slide-num">Section 7 of 13</div><h2>Using ABA in Art</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F4CA;</div><h2>Show Me! &#x1F3A8;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--sky),var(--sage))"></div>
+  </div>
+
+  <div class="for-companion">
+    <!-- SVG: ABA Trial Flow -->
+    <div class="svg-w">
+      <svg viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="30" width="120" height="80" rx="12" fill="#7eb8d0" opacity="0.1" stroke="#7eb8d0" stroke-width="1.5"/>
+        <text x="70" y="60" text-anchor="middle" fill="#7eb8d0" font-size="12" font-weight="700" font-family="sans-serif">SD (Cue)</text>
+        <text x="70" y="78" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">&#34;Show me red&#34;</text>
+        <text x="70" y="92" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Clear instruction</text>
+        <text x="148" y="68" fill="#e8a87c" font-size="18" font-weight="bold">&#x2192;</text>
+        <rect x="170" y="30" width="120" height="80" rx="12" fill="#e8a87c" opacity="0.1" stroke="#e8a87c" stroke-width="1.5"/>
+        <text x="230" y="60" text-anchor="middle" fill="#e8a87c" font-size="12" font-weight="700" font-family="sans-serif">Response</text>
+        <text x="230" y="78" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Child stamps red</text>
+        <text x="230" y="92" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Any correct form</text>
+        <text x="308" y="68" fill="#e8a87c" font-size="18" font-weight="bold">&#x2192;</text>
+        <rect x="330" y="30" width="120" height="80" rx="12" fill="#8fb996" opacity="0.1" stroke="#8fb996" stroke-width="1.5"/>
+        <text x="390" y="60" text-anchor="middle" fill="#8fb996" font-size="12" font-weight="700" font-family="sans-serif">Reinforce</text>
+        <text x="390" y="78" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">&#34;Beautiful red!&#34;</text>
+        <text x="390" y="92" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Natural reward</text>
+        <text x="468" y="68" fill="#e8a87c" font-size="18" font-weight="bold">&#x2192;</text>
+        <rect x="490" y="30" width="100" height="80" rx="12" fill="#d4a843" opacity="0.1" stroke="#d4a843" stroke-width="1.5"/>
+        <text x="540" y="60" text-anchor="middle" fill="#d4a843" font-size="12" font-weight="700" font-family="sans-serif">Data</text>
+        <text x="540" y="78" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">+/- tally</text>
+        <text x="540" y="92" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Track progress</text>
+      </svg>
+      <p class="svg-caption">ABA Discrete Trial: Cue &#x2192; Response &#x2192; Reinforce &#x2192; Data</p>
+    </div>
+
+    <div class="g"><div class="tw"><table>
+      <tr><th>Target Skill</th><th>SD (Cue)</th><th>Expected Response</th><th>Reinforcement</th></tr>
+      <tr><td>Color ID</td><td>&#34;Show me red&#34;</td><td>Stamps/points to red</td><td>&#34;Beautiful!&#34; + continues art</td></tr>
+      <tr><td>Shape ID</td><td>&#34;Find the circle&#34;</td><td>Stamps circle shape</td><td>Sticker on chart</td></tr>
+      <tr><td>Imitation</td><td>&#34;Do this&#34; (draws line)</td><td>Draws a line</td><td>High-five</td></tr>
+      <tr><td>Requesting</td><td>&#34;What do you want?&#34;</td><td>Points/says/signs</td><td>Gets chosen material</td></tr>
+      <tr><td>Turn-taking</td><td>&#34;My turn, your turn&#34;</td><td>Waits, then goes</td><td>&#34;Great waiting!&#34;</td></tr>
+    </table></div></div>
+    <div class="sensory-alert"><h4>&#x26A0; Sensory vs. Skill Deficit</h4><p>If a child avoids a task, ask: is this a <strong>sensory issue</strong> (the material feels wrong) or a <strong>skill deficit</strong> (they don&#39;t know how)? Switch the medium before increasing prompts. A child who won&#39;t finger-paint might happily stamp.</p></div>
+    <div class="mgmt"><h4>&#x1F4CB; Data Collection Tip</h4><p>Use a simple +/- tally on a sticky note. Don&#39;t let data collection interrupt the flow. 5 trials per session is enough. Review weekly, not daily.</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="g2">
+      <div class="g"><h4>&#x2705; Good Example</h4><p>&#34;Show me red&#34; &#x2192; child stamps &#x2192; &#34;Beautiful red!&#34; &#x2192; tally +</p></div>
+      <div class="g"><h4>&#x26A0; Important Rule</h4><p>Child avoids task? It&#39;s probably sensory, not defiance. <strong>Switch the medium</strong> before increasing prompts.</p></div>
+    </div>
+    <div class="discuss"><h4>&#x1F4AC; Practice (3 min)</h4><p>Partner up. One is &#34;teacher,&#34; one is &#34;student.&#34; Run 3 color-identification trials using art supplies on the table. Then switch roles.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Run 5 color identification trials with one child. Use a sticky note to tally +/-. Takes 3 minutes total.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x1F534;</span><h4>Find Red!</h4><p>Stamp it here!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F535;</span><h4>Find Circle!</h4><p>Stamp it round!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F64C;</span><h4>Copy Me!</h4><p>Draw a line! High five!</p></div>
+    </div>
+    <div class="callout"><h4>&#x1F3A8; Color Hunt!</h4><p>Teacher says a color... YOU find it... STAMP! &#x1F389; You got it!</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 8: TEACCH (DEEPENED) ========== -->
+<div class="slide" data-title="TEACCH" data-accent="#b8a9d4" data-icon="&#x1F4CB;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 8 of 13</div><h2>TEACCH Workstation</h2></div>
+    <div class="for-training"><div class="slide-num">Section 8 of 13</div><h2>TEACCH: Building Independence</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F4CB;</div><h2>Follow Steps! &#x2705;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--lav),var(--coral))"></div>
+  </div>
+
+  <div class="for-all">
+    <div class="flow">
+      <div class="fs">&#x1F7E2; START</div><span class="arrow">&#x2192;</span>
+      <div class="fs">&#x1F4CB; Card</div><span class="arrow">&#x2192;</span>
+      <div class="fs">&#x1F3A8; WORK</div><span class="arrow">&#x2192;</span>
+      <div class="fs">&#x2705; DONE</div><span class="arrow">&#x2192;</span>
+      <div class="fs">&#x27A1; NEXT</div>
+    </div>
+  </div>
+
+  <div class="for-companion">
+    <div class="didyou"><h4>&#x1F4A1; The 4 TEACCH Questions</h4><p>Every workstation must answer: <strong>1) What work?</strong> (task card) <strong>2) How much?</strong> (visible quantity) <strong>3) When done?</strong> (DONE box/tray) <strong>4) What next?</strong> (next activity visible). When all 4 are answered, the child can work independently.</p></div>
+    <div class="g3">
+      <div class="g"><h4>&#x1F48E; Stamp Station</h4><p>Pick stamp &#x2192; Ink pad &#x2192; Stamp paper &#x2192; Return stamp &#x2192; DONE box. Visual card shows each step with photos. Child works alone 5-8 min.</p></div>
+      <div class="g"><h4>&#x1F48C; Card Making</h4><p>Take card &#x2192; Choose stickers &#x2192; Place stickers &#x2192; Write name &#x2192; DONE box. Pre-cut materials reduce motor demand.</p></div>
+      <div class="g"><h4>&#x1F4FF; Bead Threading</h4><p>Match bead to color card &#x2192; Thread &#x2192; Tie end &#x2192; DONE box. Color-coded containers reduce decision fatigue.</p></div>
+    </div>
+    <div class="mgmt"><h4>&#x1F527; Troubleshooting</h4><p>&#x2022; <strong>Skips steps:</strong> Add physical dividers between materials &#x2022; <strong>Rushes through:</strong> Add quality check step &#x2022; <strong>Won&#39;t start:</strong> Hand the first material directly &#x2022; <strong>Hoards materials:</strong> Use individual cups/portions</p></div>
+    <div class="reflect"><h4>&#x1F4AD; Independence Goal</h4><p>The ultimate goal of TEACCH is for the child to complete a task without ANY adult prompting. Start with 2 minutes of independent work and build from there. 5 minutes of true independence is a major milestone worth celebrating.</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="didyou"><h4>&#x1F4A1; Key Insight</h4><p>When all 4 TEACCH questions are answered visually, the child can work <strong>independently</strong>. That means you can support other students while one child completes a workstation alone.</p></div>
+    <div class="discuss"><h4>&#x1F4AC; Design Challenge (5 min)</h4><p>With your table group, design a 3-step art workstation. Write each step on an index card. Present to the room in 60 seconds.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Set up 1 workstation with a photo task card. Goal: one child works independently for 5 minutes. Celebrate that milestone!</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x1F4E6;</span><h4>Get It!</h4><p>Take from START tray!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F3A8;</span><h4>Make It!</h4><p>Follow the card!</p></div>
+      <div class="db"><span class="kid-emoji">&#x2705;</span><h4>Done!</h4><p>Put in DONE tray!</p></div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F31F; You Did It Alone!</h4><p>START &#x2192; WORK &#x2192; DONE! &#x1F389; You are a STAR!</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 9: FLOORTIME (DEEPENED + SVG) ========== -->
+<div class="slide" data-title="Floortime" data-accent="#e8a87c" data-icon="&#x1F91D;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 9 of 13</div><h2>DIR/Floortime Script</h2></div>
+    <div class="for-training"><div class="slide-num">Section 9 of 13</div><h2>Follow Their Lead</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F91D;</div><h2>Play Together! &#x1F3A8;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--warm),var(--gold))"></div>
+  </div>
+
+  <div class="for-companion">
+    <!-- SVG: Floortime Timeline -->
+    <div class="svg-w">
+      <svg viewBox="0 0 650 160" xmlns="http://www.w3.org/2000/svg">
+        <line x1="40" y1="80" x2="610" y2="80" stroke="#6e665e" stroke-width="1.5" opacity="0.3"/>
+        <circle cx="60" cy="80" r="18" fill="#e8a87c" opacity="0.15" stroke="#e8a87c" stroke-width="1.5"/>
+        <text x="60" y="84" text-anchor="middle" fill="#e8a87c" font-size="9" font-weight="700" font-family="sans-serif">0-3</text>
+        <text x="60" y="120" text-anchor="middle" fill="#e8a87c" font-size="9" font-weight="600" font-family="sans-serif">Observe</text>
+        <text x="60" y="134" text-anchor="middle" fill="#b0a89e" font-size="8" font-family="sans-serif">Watch. Be warm.</text>
+        <circle cx="165" cy="80" r="18" fill="#d4a843" opacity="0.15" stroke="#d4a843" stroke-width="1.5"/>
+        <text x="165" y="84" text-anchor="middle" fill="#d4a843" font-size="9" font-weight="700" font-family="sans-serif">3-5</text>
+        <text x="165" y="120" text-anchor="middle" fill="#d4a843" font-size="9" font-weight="600" font-family="sans-serif">Join</text>
+        <text x="165" y="134" text-anchor="middle" fill="#b0a89e" font-size="8" font-family="sans-serif">Mirror energy.</text>
+        <circle cx="275" cy="80" r="18" fill="#8fb996" opacity="0.15" stroke="#8fb996" stroke-width="1.5"/>
+        <text x="275" y="84" text-anchor="middle" fill="#8fb996" font-size="9" font-weight="700" font-family="sans-serif">5-8</text>
+        <text x="275" y="120" text-anchor="middle" fill="#8fb996" font-size="9" font-weight="600" font-family="sans-serif">Connect</text>
+        <text x="275" y="134" text-anchor="middle" fill="#b0a89e" font-size="8" font-family="sans-serif">&#34;Mine too!&#34;</text>
+        <circle cx="385" cy="80" r="18" fill="#7eb8d0" opacity="0.15" stroke="#7eb8d0" stroke-width="1.5"/>
+        <text x="385" y="84" text-anchor="middle" fill="#7eb8d0" font-size="9" font-weight="700" font-family="sans-serif">8-12</text>
+        <text x="385" y="120" text-anchor="middle" fill="#7eb8d0" font-size="9" font-weight="600" font-family="sans-serif">Bridge</text>
+        <text x="385" y="134" text-anchor="middle" fill="#b0a89e" font-size="8" font-family="sans-serif">Link to art.</text>
+        <circle cx="490" cy="80" r="18" fill="#b8a9d4" opacity="0.15" stroke="#b8a9d4" stroke-width="1.5"/>
+        <text x="490" y="84" text-anchor="middle" fill="#b8a9d4" font-size="9" font-weight="700" font-family="sans-serif">12-16</text>
+        <text x="490" y="120" text-anchor="middle" fill="#b8a9d4" font-size="9" font-weight="600" font-family="sans-serif">Co-Create</text>
+        <text x="490" y="134" text-anchor="middle" fill="#b0a89e" font-size="8" font-family="sans-serif">Child leads art.</text>
+        <circle cx="595" cy="80" r="18" fill="#e8655a" opacity="0.15" stroke="#e8655a" stroke-width="1.5"/>
+        <text x="595" y="84" text-anchor="middle" fill="#e8655a" font-size="9" font-weight="700" font-family="sans-serif">16-20</text>
+        <text x="595" y="120" text-anchor="middle" fill="#e8655a" font-size="9" font-weight="600" font-family="sans-serif">Close</text>
+        <text x="595" y="134" text-anchor="middle" fill="#b0a89e" font-size="8" font-family="sans-serif">Same goodbye.</text>
+        <text x="325" y="28" text-anchor="middle" fill="#f4f0ec" font-size="11" font-weight="700" font-family="sans-serif">FLOORTIME SESSION: 20-Minute Script</text>
+        <text x="325" y="44" text-anchor="middle" fill="#b0a89e" font-size="9" font-family="sans-serif">Minutes shown above each phase</text>
+      </svg>
+      <p class="svg-caption">20-minute Floortime session: observe &#x2192; join &#x2192; connect &#x2192; bridge &#x2192; co-create &#x2192; close</p>
+    </div>
+
+    <div class="g"><div class="tl">
+      <div class="ti"><div class="tyl">0-3 min: Observe</div><p>Sit nearby. Watch without directing. Be warm, present, and curious. Notice what the child is drawn to. This is your data collection moment.</p></div>
+      <div class="ti"><div class="tyl">3-5 min: Join</div><p>Mirror the child&#39;s energy level. If they&#39;re quiet, be quiet. If they&#39;re energetic, match it. Do NOT redirect. Do the same thing they&#39;re doing, nearby.</p></div>
+      <div class="ti"><div class="tyl">5-8 min: Connect</div><p>Make a gentle bid for connection. &#34;Oh, mine looks like that too!&#34; Wait for any response. Even a glance counts. Don&#39;t force interaction.</p></div>
+      <div class="ti"><div class="tyl">8-12 min: Bridge</div><p>Gently link the child&#39;s interest to an art activity. If they&#39;re lining up crayons, say &#34;Those colors look like a rainbow! Want to draw one?&#34;</p></div>
+      <div class="ti"><div class="tyl">12-16 min: Co-Create</div><p>The child leads the art making. You are the assistant. Follow their vision. Offer materials when asked or when they look for something.</p></div>
+      <div class="ti"><div class="tyl">16-20 min: Close</div><p>Use the SAME goodbye ritual every time. &#34;Art time is done. We put art in our folder. See you next time.&#34; Predictable endings build trust.</p></div>
+    </div></div>
+    <div class="reflect"><h4>&#x1F4AD; The Hardest Part: Surrendering Control</h4><p>Their interest IS the curriculum. Sessions 1-7 are pure trust-building. The &#34;bridge&#34; to structured art often doesn&#39;t happen until session 8+. This requires patience and faith that connection is the foundation everything else is built on.</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="callout"><h4>&#x1F504; 5 Steps</h4><p><strong>Watch</strong> (be curious) &#x2192; <strong>Join</strong> (mirror energy) &#x2192; <strong>Connect</strong> (gentle bid) &#x2192; <strong>Bridge</strong> (link to art) &#x2192; <strong>Co-create</strong> (child leads)</p></div>
+    <div class="didyou"><h4>&#x1F4A1; Bridging Examples</h4><p>&#x2022; Child spinning? &#x2192; &#34;Let&#39;s paint spirals!&#34; &#x2022; Child lining up blocks? &#x2192; &#34;Let&#39;s build a tower and paint it!&#34; &#x2022; Child flapping? &#x2192; &#34;Let&#39;s make butterfly art!&#34;</p></div>
+    <div class="discuss"><h4>&#x1F4AC; Practice (4 min)</h4><p>Think of a child who <span class="tt" tabindex="0" data-tip="Self-stimulatory behaviors &mdash; repetitive movements like spinning, flapping, or lining things up. Often a way to self-regulate or express joy. Not a problem to fix.">stims</span> (spinning, lining up, flapping). How would you BRIDGE their interest into an art activity? Share with your partner.</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>For 3 minutes: observe one child + mirror their activity. Do NOT redirect. Just be present. Notice how they respond to your presence.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x1F440;</span><h4>I See You!</h4><p>Teacher watches you play!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F91D;</span><h4>Let&#39;s Play!</h4><p>I do what you do!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F3A8;</span><h4>Make Art!</h4><p>YOU are the boss!</p></div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F31F; You Lead, I Follow!</h4><p>Show me what you love... and we make it into ART!</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 10: MANAGEMENT (DEEPENED) ========== -->
+<div class="slide" data-title="Management" data-accent="#8fb996" data-icon="&#x1F680;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 10 of 13</div><h2>Classroom Management</h2></div>
+    <div class="for-training"><div class="slide-num">Section 10 of 13</div><h2>Managing the Art Room</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F680;</div><h2>Our Helpers! &#x1F331;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--sage),var(--sky))"></div>
+  </div>
+
+  <div class="for-companion">
+    <div class="g2">
+      <div class="g"><h4 style="color:var(--sage)">&#x23F0; Transitions</h4><p>Use visual timer + 5-minute and 1-minute warnings. Always preview what comes NEXT. Transitions are the #1 trigger for meltdowns. A predictable sequence (timer beeps &#x2192; warning &#x2192; clean up song &#x2192; next activity) reduces transition stress by 45%.</p></div>
+      <div class="g"><h4 style="color:var(--sky)">&#x1F6D1; Refusal</h4><p>&#34;Watching is participating.&#34; A child who sits and watches IS learning. Never force. Offer a choice of 2 (not 5). &#34;Would you like stamps or stickers?&#34; Choices give control back to the child.</p></div>
+      <div class="g"><h4 style="color:var(--lav)">&#x1F3C3; <span class="tt" tabindex="0" data-tip="When a child leaves or runs from a designated area without permission. Place quiet corner INSIDE the room to reduce elopement by 40%.">Elopement</span></h4><p>Place the quiet corner INSIDE the room (-40% elopement). If a child runs, stay calm. Follow at a distance. Say &#34;I see you need space. I&#39;ll be here when you&#39;re ready.&#34;</p></div>
+      <div class="g"><h4 style="color:var(--warm)">&#x1F4A5; Destruction</h4><p>Reframe tearing as &#34;explosion art!&#34; Provide tear-paper activities proactively. Destruction is often a sensory need, not aggression. Channel it into acceptable art forms.</p></div>
+    </div>
+    <div class="sensory-alert"><h4>&#x1F6A8; Red Flags (Stop and Reduce)</h4><p>Covering ears, rocking, flight posture, dilated pupils, rapid breathing. These mean the nervous system is overwhelmed. <strong>Reduce stimulation immediately.</strong> Lower lights, lower voice, remove demands. Wait. Never force through a meltdown.</p></div>
+    <div class="mgmt"><h4>&#x2B50; The 3-Before-1 Rule</h4><p>Give 3 positive comments before 1 corrective. Aim for a 4:1 ratio throughout the session. Example: &#34;Love that blue! Brave mark! Working so hard! ...Now let&#39;s try paper.&#34; Positive attention builds the relationship that makes correction possible.</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="g2">
+      <div class="g"><h4>&#x2705; Proactive Strategies</h4><p>Visual timers, 5+1 warnings, choice of 2, sensory audit before each session, predictable routines, escape plan INSIDE room.</p></div>
+      <div class="g"><h4>&#x1F525; Reactive Strategies</h4><p>Quiet corner, reduce stimulation, redirect to acceptable activity. NEVER force through a meltdown. Wait. Reconnect. Try again later.</p></div>
+    </div>
+    <div class="callout"><h4>&#x2B50; 3-Before-1</h4><p>&#34;Love that blue. Brave mark. Working so hard. ...Now let&#39;s try the paper.&#34; 3 positives, then 1 redirect. Always.</p></div>
+    <div class="discuss"><h4>&#x1F4AC; Share (3 min)</h4><p>Think of a recent challenging moment in your classroom. How could 3-Before-1 have changed the interaction?</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Count your positives vs. corrections for one session. Tally on a sticky note. Aim for 4:1 ratio.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x23F0;</span><h4>Timer Says!</h4><p>Beep = time to clean!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F6CC;</span><h4>Need a Break?</h4><p>Cozy corner always okay!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F389;</span><h4>You Are Great!</h4><p>Every try is amazing!</p></div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F9F9; Clean Up Song!</h4><p>&#x1F3B5; &#34;Clean up, clean up, everybody clean! Put the art away, our room is nice and clean!&#34; &#x1F3B5;</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 11: ASSESSMENT (DEEPENED) ========== -->
+<div class="slide" data-title="Assessment" data-accent="#d4a843" data-icon="&#x1F4C8;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 11 of 13</div><h2>Assessment &amp; Documentation</h2></div>
+    <div class="for-training"><div class="slide-num">Section 11 of 13</div><h2>Documenting Progress</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F4C8;</div><h2>You Grew! &#x1F331;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--gold),var(--warm))"></div>
+  </div>
+
+  <div class="for-companion">
+    <div class="g"><div class="tw"><table>
+      <tr><th>Domain</th><th>What to Observe</th><th>IEP Language Example</th></tr>
+      <tr><td>Fine Motor</td><td>Grip type, pressure, control</td><td>&#34;Improved tripod grip over 8 weeks&#34;</td></tr>
+      <tr><td>Emotional</td><td>Naming feelings, calming speed</td><td>&#34;Identifies 4 emotions with 80% accuracy&#34;</td></tr>
+      <tr><td>Social</td><td>Turn-taking, shared attention</td><td>&#34;Engages in 3+ reciprocal exchanges&#34;</td></tr>
+      <tr><td>Communication</td><td>Requesting, commenting</td><td>&#34;Uses 2-word requests independently&#34;</td></tr>
+      <tr><td>Sensory</td><td>Material tier, engagement time</td><td>&#34;Tolerates Tier 2 materials for 12+ min&#34;</td></tr>
+    </table></div></div>
+    <div class="reflect"><h4>&#x1F4AD; Redefining Progress</h4><p>A child who goes from <strong>30 seconds</strong> of engagement to <strong>8 minutes</strong> has made extraordinary progress. That&#39;s a 1,500% increase. Measure TIME (how long they stay), TOLERANCE (what materials they accept), and WILLINGNESS (do they approach or avoid). These are the true metrics.</p></div>
+    <div class="mgmt"><h4>&#x1F4CB; Documentation Methods</h4><p>&#x2022; <strong>Work samples:</strong> Date and photograph every piece &#x2022; <strong>Observation notes:</strong> 3 sentences per session &#x2022; <strong>Tally sheets:</strong> +/- for specific targets &#x2022; <strong>Video clips:</strong> 30-second clips (with permission) &#x2022; <strong>Portfolio:</strong> Monthly collection showing growth</p></div>
+  </div>
+
+  <div class="for-training">
+    <div class="g3">
+      <div class="g"><h4>&#x1F4F7; Document</h4><p>Work samples, photos with dates, simple tallies. 3 sentences per session is enough.</p></div>
+      <div class="g"><h4>&#x1F4AC; IEP Language</h4><p>&#34;Improved grip 8wk&#34; &#34;IDs 4 emotions 80%&#34; &#34;Tolerates Tier 2, 12+ min&#34;</p></div>
+      <div class="g"><h4>&#x1F4A1; Redefine Success</h4><p>30 seconds &#x2192; 8 minutes = extraordinary. Measure time, tolerance, willingness.</p></div>
+    </div>
+    <div class="discuss"><h4>&#x1F4AC; Pair Share (3 min)</h4><p>Think of a student who made non-obvious progress. How would you write that in IEP language?</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Photograph 1 child&#39;s artwork + write the date on the back. Start a simple portfolio folder. Do this every session for 4 weeks.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g3">
+      <div class="db"><span class="kid-emoji">&#x1F4F7;</span><h4>Photo Time!</h4><p>Let&#39;s remember today!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F4DA;</span><h4>Your Art Book!</h4><p>All YOUR art inside!</p></div>
+      <div class="db"><span class="kid-emoji">&#x1F331;</span><h4>You Are Growing!</h4><p>Every single try counts!</p></div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F31F; Look How Far You Came!</h4><p>First day: you watched. Today: you MADE art! &#x1F389;</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 12: TOOLKIT (DEEPENED) ========== -->
+<div class="slide" data-title="Toolkit" data-accent="#e8655a" data-icon="&#x1F6E0;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 12 of 13</div><h2>Teacher Toolkit</h2></div>
+    <div class="for-training"><div class="slide-num">Section 12 of 13</div><h2>Daily Toolkit</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x1F6E0;</div><h2>Our Schedule! &#x2705;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--coral),var(--lav))"></div>
+  </div>
+
+  <div class="for-companion">
+    <h4>&#x1F4CB; <span class="tt tip-left" tabindex="0" data-tip="A picture-based sequence showing activities in order. Reduces anxiety by answering &#39;what happens next?&#39; Reduces distress by 60%.">Visual Schedule</span> (Every Session)</h4>
+    <div class="g5" style="margin-top:8px">
+      <div class="stk">1. &#x1F4CB; Schedule</div>
+      <div class="stk">2. &#x1F4E6; Get</div>
+      <div class="stk">3. &#x1F442; Listen</div>
+      <div class="stk">4. &#x1F3A8; Create</div>
+      <div class="stk">5. &#x1F9F9; Clean</div>
+      <div class="stk">6. &#x1F4AC; Share</div>
+      <div class="stk">7. &#x2705; Done</div>
+    </div>
+    <h4 style="margin-top:16px">&#x1F9D8; Teacher Mantras</h4>
+    <div class="g4" style="margin-top:8px">
+      <div class="stk">Art is safe</div>
+      <div class="stk">Visual first</div>
+      <div class="stk">Different &#x2260; broken</div>
+      <div class="stk">Go slow</div>
+      <div class="stk">Follow their lead</div>
+    </div>
+    <h4 style="margin-top:16px">&#x1F4AC; Language Swaps</h4>
+    <div class="g3" style="margin-top:8px">
+      <div class="box"><h4 style="color:var(--coral)">&#x274C; Don&#39;t Say</h4><p>&#34;What is it?&#34; &#34;Sit still&#34; &#34;That&#39;s not right&#34; &#34;Use your words&#34; &#34;You&#39;re fine&#34;</p></div>
+      <div class="box"><h4 style="color:var(--sage)">&#x2705; Say Instead</h4><p>&#34;Tell me about this!&#34; &#34;Your body needs to move&#34; &#34;Try this way&#34; &#34;Show me&#34; &#34;I see you&#39;re upset&#34;</p></div>
+      <div class="box"><h4 style="color:var(--lav)">&#x1F4A1; Why It Matters</h4><p>Curious language builds courage. Validating language builds trust. Flexible language builds resilience.</p></div>
+    </div>
+    <div class="reflect"><h4>&#x1F4AD; Daily Self-Check</h4><ul><li>Did I use visual supports today?</li><li>Did I follow a child&#39;s lead at least once?</li><li>Did I celebrate a small victory?</li><li>Did I take care of my own regulation?</li></ul></div>
+  </div>
+
+  <div class="for-training">
+    <div class="g2">
+      <div class="g"><h4>&#x1F4AC; Language Swaps</h4><p>&#34;What is it?&#34; &#x2192; &#34;Tell me about this!&#34;<br>&#34;Sit still&#34; &#x2192; &#34;Your body needs to move&#34;<br>&#34;You&#39;re fine&#34; &#x2192; &#34;I see you&#39;re upset&#34;</p></div>
+      <div class="g"><h4>&#x1F9D8; Mantras</h4><p>Art is safe &#x2022; Visual first &#x2022; Follow their lead &#x2022; Different &#x2260; broken &#x2022; Go slow</p></div>
+    </div>
+    <div class="discuss"><h4>&#x1F4AC; Practice (3 min)</h4><p>Which language swap is hardest for you? Say the NEW version out loud 3 times right now. Muscle memory matters!</p></div>
+    <div class="trymon"><h4>&#x2705; Try Monday</h4><p>Write 1 language swap on a sticky note. Put it on your desk. Use it ALL DAY &#x2014; not just in art class.</p></div>
+  </div>
+
+  <div class="for-classroom">
+    <div class="g5">
+      <div class="stk">&#x1F4CB; Schedule</div>
+      <div class="stk">&#x1F4E6; Get Stuff</div>
+      <div class="stk">&#x1F442; Listen</div>
+      <div class="stk">&#x1F3A8; Create!</div>
+      <div class="stk">&#x1F9F9; Clean Up</div>
+      <div class="stk">&#x1F4AC; Share</div>
+      <div class="stk">&#x2705; All Done!</div>
+    </div>
+    <div class="breathe-box"><h4>&#x1F3B5; Schedule Song!</h4><p>&#x1F3B6; &#34;Schedule, get, listen, create! Clean up, share &#x2014; we are great!&#34; &#x1F3B6;</p></div>
+  </div>
+</div>
+
+<!-- ========== SLIDE 13: QUIZ ========== -->
+<div class="slide" data-title="Quiz" data-accent="#8fb996" data-icon="&#x2714;">
+  <div class="slide-header">
+    <div class="for-companion"><div class="slide-num">Section 13 of 13</div><h2>Self-Assessment</h2></div>
+    <div class="for-training"><div class="slide-num">Section 13 of 13</div><h2>Knowledge Check</h2></div>
+    <div class="for-classroom"><div class="slide-num">&#x2714;</div><h2>Quiz Time! &#x1F389;</h2></div>
+    <div class="slide-accent" style="background:linear-gradient(90deg,var(--sage),var(--gold))"></div>
+  </div>
+
+  <div class="g2">
+    <div>
+      <div class="qz" data-answer="b"><h4>1. What should the FIRST session focus on?</h4><div class="qz-opt"><button data-value="a">Color theory</button><button data-value="b">Free exploration + trust</button><button data-value="c">Group work</button></div><p class="fb"></p></div>
+      <div class="qz" data-answer="c"><h4>2. Core sensory principle?</h4><div class="qz-opt"><button data-value="a">Maximum stimulation</button><button data-value="b">All materials visible</button><button data-value="c">Child controls exposure</button></div><p class="fb"></p></div>
+      <div class="qz" data-answer="a"><h4>3. In Floortime, who leads?</h4><div class="qz-opt"><button data-value="a">The child&#39;s interest</button><button data-value="b">The teacher&#39;s script</button><button data-value="c">The schedule</button></div><p class="fb"></p></div>
+      <div class="qz" data-answer="b"><h4>4. TEACCH answers which 4 questions?</h4><div class="qz-opt"><button data-value="a">Who, what, where, when</button><button data-value="b">What work, how much, when done, what next</button><button data-value="c">Why, how, who, which</button></div><p class="fb"></p></div>
+      <div class="qz" data-answer="c"><h4>5. Child refuses paint. You should:</h4><div class="qz-opt"><button data-value="a">Insist gently</button><button data-value="b">Cancel the activity</button><button data-value="c">Offer brushes or stamps instead</button></div><p class="fb"></p></div>
+      <div class="qz" data-answer="a"><h4>6. Best IEP documentation?</h4><div class="qz-opt"><button data-value="a">Work samples, photos, tallies</button><button data-value="b">Letter grades A-F</button><button data-value="c">Compare to typical peers</button></div><p class="fb"></p></div>
+      <div class="qz" data-answer="b"><h4>7. What is 3-Before-1?</h4><div class="qz-opt"><button data-value="a">3 activities then 1 break</button><button data-value="b">3 positives then 1 corrective</button><button data-value="c">3 kids to 1 teacher</button></div><p class="fb"></p></div>
+      <div class="qz" data-answer="c"><h4>8. 30 seconds to 8 minutes engagement is:</h4><div class="qz-opt"><button data-value="a">Not meaningful</button><button data-value="b">Below expectations</button><button data-value="c">Significant progress</button></div><p class="fb"></p></div>
+    </div>
+    <aside class="g" style="position:sticky;top:20px;text-align:center;align-self:start">
+      <h4 style="color:var(--warm)">Score</h4>
+      <div id="scoreNum" aria-live="polite" style="font-family:var(--serif);font-size:2.8rem;font-weight:800;color:var(--warm)">0/8</div>
+      <p id="scoreText" style="font-size:.88rem">Answer all 8 questions.</p>
+    </aside>
+  </div>
+</div>
+
+</div><!-- END slideContainer -->
+
+<!-- ======================== BOTTOM BAR ========================= -->
+<div id="bottomBar" role="toolbar" aria-label="Slide navigation">
+  <div class="bottom-left">
+    <button class="audio-btn" id="audioBtn" onclick="toggleAudio()">&#x1F50A; Listen</button>
+    <button class="spd-btn" id="spdBtn" onclick="cycleSpeed()">1x</button>
+    <button class="timer-btn" id="timerBtn" onclick="toggleTimer()">&#x23F1; Off</button>
+  </div>
+  <div class="bottom-center">
+    <button class="arrow-btn" id="prevBtn" onclick="pv()">&#x2190;</button>
+    <span class="slide-counter" id="slideCounter" aria-live="polite" aria-atomic="true">1/14</span>
+    <button class="arrow-btn" id="nextBtn" onclick="nx()">&#x2192;</button>
+  </div>
+  <div class="bottom-right">
+    <span style="font-size:.72rem;color:var(--t3)" id="modeLabel">&#x1F4D6; COMPANION</span>
+  </div>
+</div>
+
+<script>
+var cs=0,sl=[],ts=0,cm="companion",ml={companion:"&#x1F4D6; COMPANION",training:"&#x1F3A4; TRAINING",classroom:"&#x1F308; CLASSROOM"};
+function init(){sl=Array.from(document.querySelectorAll(".slide"));ts=sl.length;bnd();bpg();go(0)}
+function bnd(){var c=document.getElementById("navDots");c.innerHTML="";for(var i=0;i<ts;i++){var d=document.createElement("div");d.className="nav-dot"+(i===0?" active":"");d.title=sl[i].dataset.title||"";d.dataset.i=i;d.onclick=function(){go(+this.dataset.i)};c.appendChild(d)}}
+function bpg(){var g=document.getElementById("pickerGrid");g.innerHTML="";for(var i=0;i<ts;i++){var c=document.createElement("div");c.className="picker-card";c.dataset.i=i;c.innerHTML='<span class="em">'+(sl[i].dataset.icon||"")+'</span><h4>'+(sl[i].dataset.title||"")+'</h4>';c.onclick=function(){go(+this.dataset.i);togglePicker()};g.appendChild(c)}}
+function go(i){if(i<0||i>=ts)return;if(speechSynthesis)speechSynthesis.cancel();var a=document.getElementById("audioBtn");if(a){a.innerHTML="&#x1F50A; Listen";a.classList.remove("playing")}ip=false;for(var j=0;j<ts;j++)sl[j].classList.remove("active");sl[i].classList.add("active");cs=i;document.getElementById("slideContainer").scrollTop=0;var d=document.querySelectorAll(".nav-dot");for(var k=0;k<d.length;k++)d[k].classList.remove("active");if(d[i])d[i].classList.add("active");document.getElementById("slideCounter").textContent=(i+1)+"/"+ts;document.getElementById("pbar").style.width=(ts>1?(i/(ts-1))*100:0)+"%";document.getElementById("prevBtn").disabled=i===0;document.getElementById("nextBtn").disabled=i===ts-1}
+function nx(){if(cs<ts-1)go(cs+1)}function pv(){if(cs>0)go(cs-1)}
+document.addEventListener("keydown",function(e){var h=document.getElementById("helpOverlay").classList.contains("open"),p=document.getElementById("slidePicker").classList.contains("open");if(e.key==="Escape"){if(h)document.getElementById("helpOverlay").classList.remove("open");if(p)togglePicker();return}if(h||p)return;switch(e.key){case"ArrowRight":case" ":e.preventDefault();nx();break;case"ArrowLeft":e.preventDefault();pv();break;case"Home":e.preventDefault();go(0);break;case"End":e.preventDefault();go(ts-1);break;case"?":toggleHelp();break;case"g":case"G":togglePicker();break;case"f":case"F":toggleFullscreen();break;case"a":case"A":toggleAudio();break;case"m":case"M":cycleMode();break;case"t":case"T":toggleTimer();break}});
+var tx=0;document.addEventListener("touchstart",function(e){tx=e.changedTouches[0].screenX},{passive:true});document.addEventListener("touchend",function(e){var d=tx-e.changedTouches[0].screenX;if(Math.abs(d)>60)d>0?nx():pv()},{passive:true});
+function togglePicker(){document.getElementById("slidePicker").classList.toggle("open")}function toggleHelp(){document.getElementById("helpOverlay").classList.toggle("open")}function toggleFullscreen(){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(function(){})}
+function setMode(m){cm=m;document.body.className=m+"-mode";var b=document.querySelectorAll(".mode-btn");for(var i=0;i<b.length;i++)b[i].classList.remove("active");b[m==="companion"?0:m==="training"?1:2].classList.add("active");document.getElementById("modeLabel").innerHTML=ml[m]}
+function cycleMode(){var ms=["companion","training","classroom"];setMode(ms[(ms.indexOf(cm)+1)%3])}
+var ti=null,td=[0,15,30,45,60,90],tidx=0;function toggleTimer(){tidx=(tidx+1)%td.length;var d=td[tidx],b=document.getElementById("timerBtn");if(ti){clearInterval(ti);ti=null}if(!d){b.textContent="\u23F1 Off";b.classList.remove("active")}else{b.textContent="\u23F1 "+d+"s";b.classList.add("active");var s=d;ti=setInterval(function(){if(--s<=0){s=d;nx()}},1000)}}
+var sy=speechSynthesis,cu,ip=false,sp=[.8,1,1.2,1.5,2],si=1;
+function gst(el){if(!el)return"";var c=el.cloneNode(true);c.querySelectorAll("button,.tag,svg,.slide-num,.slide-accent").forEach(function(e){e.remove()});c.querySelectorAll(".for-companion,.for-training,.for-classroom").forEach(function(e){if(cm==="companion"&&!e.classList.contains("for-companion"))e.remove();else if(cm==="training"&&!e.classList.contains("for-training"))e.remove();else if(cm==="classroom"&&!e.classList.contains("for-classroom"))e.remove()});return(c.innerText||"").replace(/\s+/g," ").trim().slice(0,4500)}
+function toggleAudio(){if(!sy)return;var a=document.getElementById("audioBtn");if(ip){sy.cancel();ip=false;a.innerHTML="&#x1F50A; Listen";a.classList.remove("playing");return}var t=gst(sl[cs]);if(!t)return;sy.cancel();cu=new SpeechSynthesisUtterance(t);cu.rate=sp[si];cu.lang="en-US";var v=sy.getVoices();for(var i=0;i<v.length;i++)if(v[i].lang.startsWith("en")){cu.voice=v[i];break}cu.onstart=function(){ip=true;a.innerHTML="&#x23F9; Stop";a.classList.add("playing")};cu.onend=cu.onerror=function(){ip=false;a.innerHTML="&#x1F50A; Listen";a.classList.remove("playing")};sy.speak(cu)}
+function cycleSpeed(){si=(si+1)%sp.length;document.getElementById("spdBtn").textContent=sp[si]+"x"}
+if(sy&&sy.onvoiceschanged!==undefined)sy.onvoiceschanged=function(){sy.getVoices()};
+var qc=[],qa={};function iq(){qc=Array.from(document.querySelectorAll(".qz"));qc.forEach(function(c){c.querySelectorAll("button").forEach(function(b){b.onclick=function(){var p=b.closest(".qz"),ca=p.dataset.answer;p.querySelectorAll("button").forEach(function(x){x.disabled=true;if(x.dataset.value===ca)x.classList.add("ok")});if(b.dataset.value!==ca)b.classList.add("no");qa[qc.indexOf(p)]=b.dataset.value===ca;p.querySelector(".fb").textContent=qa[qc.indexOf(p)]?"Correct!":"Review this section.";us()}})})}
+function us(){var c=0,a=0;for(var k in qa){a++;if(qa[k])c++}document.getElementById("scoreNum").textContent=c+"/8";var s=document.getElementById("scoreText");if(a<8)s.textContent=a+" of 8 answered";else{s.textContent=c>=6?"Strong knowledge!":"Review recommended.";if(c>=6)fc()}}
+function fc(){var cv=document.getElementById("confettiCanvas");if(!cv)return;var cx=cv.getContext("2d");cv.width=innerWidth;cv.height=innerHeight;var co=["#e8a87c","#e8655a","#8fb996","#7eb8d0","#b8a9d4","#d4a843"],ps=[];for(var i=0;i<100;i++)ps.push({x:Math.random()*cv.width,y:-Math.random()*cv.height,w:Math.random()*8+4,h:Math.random()*6+3,c:co[i%6],vx:(Math.random()-.5)*3,vy:Math.random()*3+2,r:Math.random()*360,vr:(Math.random()-.5)*8});var f=0;!function d(){cx.clearRect(0,0,cv.width,cv.height);ps.forEach(function(p){p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;p.vy+=.05;cx.save();cx.translate(p.x,p.y);cx.rotate(p.r*Math.PI/180);cx.fillStyle=p.c;cx.globalAlpha=Math.max(0,1-f/80);cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);cx.restore()});if(++f<80)requestAnimationFrame(d);else cx.clearRect(0,0,cv.width,cv.height)}()}
+document.addEventListener("DOMContentLoaded",function(){init();iq()});
+
+/* ================================================================
+   PHASE 7.0 CHUNK 3: TOOLTIP TOUCH + FOCUS TRAP + QUIZ PULSE + ARIA SYNC
+   ================================================================ */
+
+/* --- 1. TOOLTIP TOUCH FALLBACK (mobile tap to show/hide) --- */
+(function(){
+  var allTips=document.querySelectorAll(".tt");
+  if(!allTips.length)return;
+  allTips.forEach(function(el){
+    el.addEventListener("touchstart",function(e){
+      e.preventDefault();
+      var wasOpen=el.classList.contains("tip-show");
+      allTips.forEach(function(t){t.classList.remove("tip-show")});
+      if(!wasOpen)el.classList.add("tip-show");
+    },{passive:false});
+  });
+  document.addEventListener("touchstart",function(e){
+    if(!e.target.closest(".tt")){
+      allTips.forEach(function(t){t.classList.remove("tip-show")});
+    }
+  },{passive:true});
+})();
+
+/* --- 2. FOCUS TRAP IN OVERLAYS (picker + help) --- */
+function trapFocus(container){
+  var focusable=container.querySelectorAll("button,[tabindex]:not([tabindex=\"-1\"]),a[href],.picker-card");
+  if(!focusable.length)return null;
+  var first=focusable[0],last=focusable[focusable.length-1];
+  function handler(e){
+    if(e.key!=="Tab")return;
+    if(e.shiftKey){
+      if(document.activeElement===first){e.preventDefault();last.focus()}
+    }else{
+      if(document.activeElement===last){e.preventDefault();first.focus()}
+    }
+  }
+  container.addEventListener("keydown",handler);
+  first.focus();
+  return handler;
+}
+var _pickerTrap=null,_helpTrap=null;
+var _origTogglePicker=window.togglePicker;
+window.togglePicker=function(){
+  _origTogglePicker();
+  var pk=document.getElementById("slidePicker");
+  if(pk.classList.contains("open")){
+    _pickerTrap=trapFocus(pk);
+  }else if(_pickerTrap){
+    pk.removeEventListener("keydown",_pickerTrap);
+    _pickerTrap=null;
+  }
+};
+var _origToggleHelp=window.toggleHelp;
+window.toggleHelp=function(){
+  _origToggleHelp();
+  var ho=document.getElementById("helpOverlay");
+  if(ho.classList.contains("open")){
+    _helpTrap=trapFocus(ho);
+  }else if(_helpTrap){
+    ho.removeEventListener("keydown",_helpTrap);
+    _helpTrap=null;
+  }
+};
+
+/* --- 3. QUIZ COMPLETION -> PROGRESS BAR PULSE --- */
+var _origUs=window.us;
+window.us=function(){
+  _origUs();
+  var answered=0,correct=0;
+  for(var k in qa){answered++;if(qa[k])correct++}
+  if(answered>=8&&correct>=6){
+    var pb=document.getElementById("pbar");
+    if(pb){pb.classList.add("quiz-done");setTimeout(function(){pb.classList.remove("quiz-done")},5000)}
+  }
+};
+
+/* --- 4. ARIA-CHECKED SYNC ON MODE SWITCH --- */
+var _origSetMode=window.setMode;
+window.setMode=function(m){
+  _origSetMode(m);
+  var btns=document.querySelectorAll(".mode-btn[role=\"radio\"]");
+  var modeMap=["companion","training","classroom"];
+  btns.forEach(function(b,i){
+    b.setAttribute("aria-checked",modeMap[i]===m?"true":"false");
+  });
+};
+
+/* --- 5. ADD ARIA TO SLIDES ON INIT --- */
+(function(){
+  var slides=document.querySelectorAll(".slide");
+  slides.forEach(function(s,i){
+    s.setAttribute("role","tabpanel");
+    s.setAttribute("aria-roledescription","slide");
+    s.setAttribute("aria-label","Slide "+(i+1)+": "+(s.dataset.title||""));
+  });
+  var dots=document.querySelectorAll(".nav-dot");
+  dots.forEach(function(d,i){
+    d.setAttribute("role","tab");
+    d.setAttribute("tabindex","0");
+    d.setAttribute("aria-label","Go to slide "+(i+1)+": "+(slides[i]?slides[i].dataset.title:""));
+  });
+})();
+
+
+/* ================================================================
+   v8.0 GALLERY EDITION — COMPLETE ENGINE
+   Phases: 8.1-C / 8.2-A/B/C / 8.3-A / 8.4-A/B / 8.5
+   ================================================================ */
+(function(){
+  var KEY="uca_state";var SCALES=[0.85,1.0,1.15,1.25];var SCALE_LABELS=["85%","100%","115%","125%"];
+  window.UCA={state:{theme:"dark",fontScale:1.0,mode:"companion",audioSpeed:1,particles:true,bookmarks:[],quizScore:0},save:function(){try{localStorage.setItem(KEY,JSON.stringify(this.state))}catch(e){}},load:function(){try{var r=localStorage.getItem(KEY);if(r){var s=JSON.parse(r);for(var k in s){if(this.state.hasOwnProperty(k))this.state[k]=s[k]}}}catch(e){}},reset:function(){try{localStorage.removeItem(KEY)}catch(e){}location.reload();}};
+  function applyState(){var s=UCA.state;applyTheme(s.theme);applyFontScale(s.fontScale);if(s.mode&&s.mode!==cm)setMode(s.mode);applyAudioSpeed(s.audioSpeed);applyParticles(s.particles);}
+  function applyTheme(t){UCA.state.theme=t;if(t==="light")document.body.classList.add("light-mode");else document.body.classList.remove("light-mode");var dk=document.getElementById("sdThemeDark"),lt=document.getElementById("sdThemeLight");if(dk&&lt){dk.classList.toggle("active",t==="dark");lt.classList.toggle("active",t==="light");}if(window._parts)window._parts.forEach(function(p){p.c=randomParticleColor();});}
+  window.applyTheme=applyTheme;
+  function applyFontScale(s){UCA.state.fontScale=s;document.documentElement.style.setProperty("--font-scale",s);var l=document.getElementById("sdScaleLabel");if(l){var i=SCALES.indexOf(s);l.textContent=i>=0?SCALE_LABELS[i]:Math.round(s*100)+"%";}}
+  window.applyFontScale=applyFontScale;
+  function stepFontScale(d){var i=SCALES.indexOf(UCA.state.fontScale);if(i===-1)i=1;if(d==="up"&&i<SCALES.length-1)i++;else if(d==="down"&&i>0)i--;applyFontScale(SCALES[i]);UCA.save();}
+  window.stepFontScale=stepFontScale;
+  function applyAudioSpeed(speed){speed=parseFloat(speed);UCA.state.audioSpeed=speed;var a=[0.8,1,1.2,1.5,2],n=a.indexOf(speed);if(n===-1)n=1;si=n;var sb=document.getElementById("spdBtn");if(sb)sb.textContent=speed+"x";var row=document.getElementById("sdAudioSpeed");if(row)row.querySelectorAll(".sd-opt").forEach(function(b){b.classList.toggle("active",parseFloat(b.dataset.value)===speed);});}
+  window.applyAudioSpeed=applyAudioSpeed;
+  function applyParticles(on){UCA.state.particles=on;var ob=document.getElementById("sdParticlesOn"),fb=document.getElementById("sdParticlesOff");if(ob&&fb){ob.classList.toggle("active",on===true);fb.classList.toggle("active",on===false);}var cv=document.getElementById("particleCanvas");if(cv)cv.style.display=on?"block":"none";if(on&&!window._pRunning)startParticles();if(!on)window._pRunning=false;}
+  window.applyParticles=applyParticles;
+  /* PARTICLES */
+  window._parts=[];window._pRunning=false;var _pRAF=0;
+  var DARK_COLORS=["rgba(232,168,124,","rgba(184,169,212,","rgba(143,185,150,","rgba(126,184,208,","rgba(212,168,67,"];
+  var LIGHT_COLORS=["rgba(170,140,100,","rgba(140,120,170,","rgba(100,150,110,","rgba(90,140,160,","rgba(160,130,60,"];
+  function randomParticleColor(){var cs=UCA.state.theme==="light"?LIGHT_COLORS:DARK_COLORS;return cs[Math.floor(Math.random()*cs.length)]+(Math.random()*0.08+0.04).toFixed(3)+")";}
+  function createParticles(){var cv=document.getElementById("particleCanvas");if(!cv)return;cv.width=window.innerWidth;cv.height=window.innerHeight;var count=window.innerWidth<768?20:40;window._parts=[];for(var i=0;i<count;i++){window._parts.push({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*4+2,vx:(Math.random()-0.5)*0.4,vy:(Math.random()-0.5)*0.3,c:randomParticleColor(),wobble:Math.random()*Math.PI*2,wobbleSpeed:Math.random()*0.005+0.002});}}
+  function shouldPauseParticles(){if(!UCA.state.particles||document.hidden)return true;var ids=["slidePicker","helpOverlay","settingsDrawer","sidebarTOC","searchModal"];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.classList.contains("open"))return true;}if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return true;return false;}
+  function drawParticles(){if(!window._pRunning)return;var cv=document.getElementById("particleCanvas");if(!cv)return;var ctx=cv.getContext("2d");if(cv.width!==window.innerWidth||cv.height!==window.innerHeight){cv.width=window.innerWidth;cv.height=window.innerHeight;}ctx.clearRect(0,0,cv.width,cv.height);if(shouldPauseParticles()){_pRAF=requestAnimationFrame(drawParticles);return;}var ps=window._parts;for(var i=0;i<ps.length;i++){var p=ps[i];p.wobble+=p.wobbleSpeed;p.x+=p.vx+Math.sin(p.wobble)*0.15;p.y+=p.vy+Math.cos(p.wobble)*0.1;if(p.x<-10)p.x=cv.width+10;if(p.x>cv.width+10)p.x=-10;if(p.y<-10)p.y=cv.height+10;if(p.y>cv.height+10)p.y=-10;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=p.c;ctx.fill();}_pRAF=requestAnimationFrame(drawParticles);}
+  function startParticles(){if(window._pRunning)return;if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;createParticles();window._pRunning=true;_pRAF=requestAnimationFrame(drawParticles);}
+  document.addEventListener("visibilitychange",function(){if(!document.hidden&&UCA.state.particles&&!window._pRunning)startParticles();});
+  var _resizeTimer;window.addEventListener("resize",function(){clearTimeout(_resizeTimer);_resizeTimer=setTimeout(function(){if(window._pRunning)createParticles();},250);});
+  /* ACCENT */
+  function applySlideAccent(i){var slide=sl[i];if(!slide)return;document.documentElement.style.setProperty("--sa",slide.dataset.accent||"#e8a87c");}
+  /* SEARCH */
+  var _searchIndex=null;var _searchTrap=null;
+  function buildSearchIndex(){if(_searchIndex)return _searchIndex;_searchIndex=[];for(var i=0;i<sl.length;i++){var s=sl[i];var clone=s.cloneNode(true);clone.querySelectorAll("button,svg,.qz-opt,.slide-num,.slide-accent,.bkmk-star,.read-time").forEach(function(el){el.remove();});_searchIndex.push({i:i,title:s.dataset.title||"Slide "+(i+1),icon:s.dataset.icon||"",text:(clone.textContent||"").replace(/\s+/g," ").trim()});}return _searchIndex;}
+  function searchSlides(q){if(!q||q.length<2)return[];var idx=buildSearchIndex();var ql=q.toLowerCase();var res=[];for(var i=0;i<idx.length;i++){var e=idx[i];var tl=e.text.toLowerCase();var pos=tl.indexOf(ql);var tm=e.title.toLowerCase().indexOf(ql)!==-1;if(pos!==-1||tm){var ex="";if(pos!==-1){var st=Math.max(0,pos-40);var en=Math.min(e.text.length,pos+q.length+80);ex=(st>0?"...":"")+e.text.substring(st,en)+(en<e.text.length?"...":"");}else{ex=e.text.substring(0,120)+(e.text.length>120?"...":"");}res.push({i:e.i,title:e.title,icon:e.icon,excerpt:ex,titleMatch:tm});}}res.sort(function(a,b){if(a.titleMatch&&!b.titleMatch)return-1;if(!a.titleMatch&&b.titleMatch)return 1;return a.i-b.i;});return res;}
+  function highlightExcerpt(t,q){if(!q)return t;var esc=q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");return t.replace(new RegExp("("+esc+")","gi"),"<mark>$1</mark>");}
+  function renderSearchResults(q){var c=document.getElementById("srchResults");if(!c)return;if(!q||q.length<2){c.innerHTML='<div class="srch-empty">Type at least 2 characters to search</div>';return;}var res=searchSlides(q);if(!res.length){c.innerHTML='<div class="srch-empty">No results for &ldquo;'+q.replace(/</g,"&lt;")+'&rdquo;</div>';return;}var h="";for(var i=0;i<res.length;i++){var r=res[i];h+='<div class="srch-result" data-slide="'+r.i+'" role="button" tabindex="0"><span class="srch-icon">'+r.icon+'</span><div class="srch-body"><div class="srch-slide-title">'+r.title+'</div><div class="srch-excerpt">'+highlightExcerpt(r.excerpt,q)+'</div></div></div>';}c.innerHTML=h;c.querySelectorAll(".srch-result").forEach(function(el){el.addEventListener("click",function(){go(parseInt(el.dataset.slide));toggleSearch();});el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go(parseInt(el.dataset.slide));toggleSearch();}});});}
+  window.toggleSearch=function(){var m=document.getElementById("searchModal"),b=document.getElementById("searchBackdrop");if(!m||!b)return;if(m.classList.contains("open")){m.classList.remove("open");b.classList.remove("open");if(_searchTrap){m.removeEventListener("keydown",_searchTrap);_searchTrap=null;}}else{closeAllOverlays();m.classList.add("open");b.classList.add("open");var inp=document.getElementById("srchInput");if(inp){inp.value="";inp.focus();}renderSearchResults("");_searchTrap=trapFocus(m);}};
+  var _srchTimer;
+  /* PANELS */
+  var _settingsTrap=null;
+  window.toggleSettings=function(){var d=document.getElementById("settingsDrawer"),b=document.getElementById("settingsBackdrop");if(!d||!b)return;if(d.classList.contains("open")){d.classList.remove("open");b.classList.remove("open");if(_settingsTrap){d.removeEventListener("keydown",_settingsTrap);_settingsTrap=null;}var btn=document.getElementById("settingsBtn");if(btn)btn.focus();}else{closeAllOverlays();d.classList.add("open");b.classList.add("open");_settingsTrap=trapFocus(d);}};
+  var _tocTrap=null;
+  window.toggleTOC=function(){var t=document.getElementById("sidebarTOC"),b=document.getElementById("tocBackdrop");if(!t||!b)return;if(t.classList.contains("open")){t.classList.remove("open");b.classList.remove("open");if(_tocTrap){t.removeEventListener("keydown",_tocTrap);_tocTrap=null;}var btn=document.getElementById("tocBtn");if(btn)btn.focus();}else{closeAllOverlays();t.classList.add("open");b.classList.add("open");buildTOCItems();_tocTrap=trapFocus(t);}};
+  function closeAllOverlays(){var ids=[["settingsDrawer","settingsBackdrop"],["sidebarTOC","tocBackdrop"],["searchModal","searchBackdrop"]];ids.forEach(function(p){var el=document.getElementById(p[0]),bg=document.getElementById(p[1]);if(el&&el.classList.contains("open")){el.classList.remove("open");if(bg)bg.classList.remove("open");}});_settingsTrap=null;_tocTrap=null;_searchTrap=null;var pk=document.getElementById("slidePicker");if(pk&&pk.classList.contains("open"))togglePicker();var ho=document.getElementById("helpOverlay");if(ho&&ho.classList.contains("open"))toggleHelp();}
+  /* TOC */
+  function buildTOCItems(){var list=document.getElementById("tocList");if(!list)return;list.innerHTML="";for(var i=0;i<ts;i++){var s=sl[i],icon=s.dataset.icon||"",title=s.dataset.title||"Slide "+(i+1),accent=s.dataset.accent||"#e8a87c";var isA=i===cs,isBm=UCA.state.bookmarks.indexOf(i)!==-1;var it=document.createElement("div");it.className="toc-item"+(isA?" active":"")+(isBm?" bookmarked":"");it.dataset.slide=i;it.setAttribute("role","button");it.setAttribute("tabindex","0");it.setAttribute("aria-label","Go to slide "+(i+1)+": "+title);if(isA)it.style.borderLeftColor=accent;it.innerHTML='<span class="toc-icon">'+icon+'</span><div class="toc-text"><div class="toc-num">'+(i===0?"Title":"Section "+i+" of 13")+'</div><div class="toc-title"'+(isA?' style="color:'+accent+'"':'')+'">'+title+'</div></div><span class="toc-star">&#x2605;</span>';it.addEventListener("click",(function(idx){return function(){go(idx);toggleTOC();};})(i));it.addEventListener("keydown",(function(idx){return function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go(idx);toggleTOC();}};})(i));list.appendChild(it);}}
+  window.buildTOCItems=buildTOCItems;
+  /* BOOKMARKS */
+  function injectBookmarkStars(){for(var i=0;i<sl.length;i++){var h=sl[i].querySelector(".slide-header");if(!h)h=sl[i].querySelector("div");if(!h)continue;h.style.position="relative";var star=document.createElement("button");star.className="bkmk-star";star.title="Bookmark this slide";star.setAttribute("aria-label","Bookmark slide "+(i+1));star.dataset.slide=i;star.addEventListener("click",(function(idx){return function(e){e.stopPropagation();toggleBookmark(idx);};})(i));h.appendChild(star);refreshStarUI(i);}}
+  function toggleBookmark(i){var bm=UCA.state.bookmarks,idx=bm.indexOf(i);if(idx===-1)bm.push(i);else bm.splice(idx,1);UCA.save();refreshStarUI(i);var star=sl[i].querySelector(".bkmk-star");if(star){star.classList.remove("pop");void star.offsetWidth;star.classList.add("pop");}}
+  window.toggleBookmark=toggleBookmark;
+  function refreshStarUI(i){var star=sl[i].querySelector(".bkmk-star");if(!star)return;var isBm=UCA.state.bookmarks.indexOf(i)!==-1;star.innerHTML=isBm?"&#x2605;":"&#x2606;";star.classList.toggle("active",isBm);star.setAttribute("aria-pressed",isBm?"true":"false");}
+  function refreshAllStars(){for(var i=0;i<sl.length;i++)refreshStarUI(i);}
+  window.refreshAllStars=refreshAllStars;
+
+  /* ================================================================
+     PHASE 8.5: READING TIME BADGE
+     Counts visible words per slide per mode → "~X min read"
+     Injected next to .slide-num on each go()
+     ================================================================ */
+  function calcReadingTime(slideEl) {
+    var clone = slideEl.cloneNode(true);
+    /* Remove hidden mode content */
+    var mode = UCA.state.mode || "companion";
+    var modes = ["companion","training","classroom"];
+    modes.forEach(function(m) {
+      if (m !== mode) {
+        clone.querySelectorAll(".for-" + m).forEach(function(el) { el.remove(); });
+      }
+    });
+    /* Remove non-text elements */
+    clone.querySelectorAll("button, svg, .slide-num, .slide-accent, .bkmk-star, .read-time").forEach(function(el) { el.remove(); });
+    var text = (clone.textContent || "").trim();
+    var words = text.split(/\s+/).filter(function(w) { return w.length > 0; }).length;
+    var mins = Math.max(1, Math.ceil(words / 200));
+    return mins;
+  }
+
+  function updateReadingBadge(i) {
+    /* Remove any existing badge */
+    sl[i].querySelectorAll(".read-time").forEach(function(el) { el.remove(); });
+    /* Find the slide-num element */
+    var numEl = sl[i].querySelector(".slide-num");
+    if (!numEl) return;
+    var mins = calcReadingTime(sl[i]);
+    var badge = document.createElement("span");
+    badge.className = "read-time";
+    badge.textContent = "~" + mins + " min read";
+    badge.setAttribute("aria-label", "Estimated reading time: " + mins + " minutes");
+    numEl.parentNode.insertBefore(badge, numEl.nextSibling);
+  }
+
+  /* HOOK go() */
+  var _prevGo=window.go;
+  window.go=function(i){_prevGo(i);applySlideAccent(i);refreshStarUI(i);updateReadingBadge(i);};
+  /* SWIPE */
+  var _edX=0,_edY=0;
+  document.addEventListener("touchstart",function(e){_edX=e.touches[0].clientX;_edY=e.touches[0].clientY;},{passive:true});
+  document.addEventListener("touchend",function(e){var dx=e.changedTouches[0].clientX-_edX,dy=Math.abs(e.changedTouches[0].clientY-_edY);if(_edX<30&&dx>60&&dy<dx){var t=document.getElementById("sidebarTOC");if(t&&!t.classList.contains("open"))toggleTOC();}},{passive:true});
+  /* WIRE DRAWER */
+  function wireDrawerButtons(){var body=document.querySelector(".sd-body");if(!body)return;body.addEventListener("click",function(e){var btn=e.target.closest("[data-action]");if(!btn)return;var a=btn.dataset.action,v=btn.dataset.value;switch(a){case"theme":applyTheme(v);UCA.save();break;case"font":stepFontScale(v);break;case"speed":applyAudioSpeed(parseFloat(v));UCA.save();break;case"particles":applyParticles(v==="on");UCA.save();break;case"reset":if(confirm("Reset all settings to defaults?"))UCA.reset();break;}});}
+  /* HOOKS */
+  var _prevSetMode=window.setMode;window.setMode=function(m){_prevSetMode(m);UCA.state.mode=m;UCA.save();_searchIndex=null;/* Refresh reading badge for new mode */updateReadingBadge(cs);};
+  var _prevCycleSpeed=window.cycleSpeed;window.cycleSpeed=function(){_prevCycleSpeed();UCA.state.audioSpeed=sp[si];UCA.save();applyAudioSpeed(sp[si]);};
+  /* KEYBOARD */
+  document.addEventListener("keydown",function(e){
+    var sm=document.getElementById("searchModal");if(sm&&sm.classList.contains("open")){if(e.key==="Escape"){e.preventDefault();e.stopPropagation();toggleSearch();}return;}
+    var sd=document.getElementById("settingsDrawer"),toc=document.getElementById("sidebarTOC");
+    if(sd&&sd.classList.contains("open")){if(e.key==="Escape"){e.preventDefault();e.stopPropagation();toggleSettings();}return;}
+    if(toc&&toc.classList.contains("open")){if(e.key==="Escape"){e.preventDefault();e.stopPropagation();toggleTOC();}return;}
+    var pk=document.getElementById("slidePicker"),ho=document.getElementById("helpOverlay");
+    if((pk&&pk.classList.contains("open"))||(ho&&ho.classList.contains("open")))return;
+    if((e.ctrlKey||e.metaKey)&&(e.key==="/"||e.key==="k"||e.key==="K")){e.preventDefault();toggleSearch();return;}
+    if(e.ctrlKey||e.metaKey||e.altKey)return;
+    switch(e.key){case"s":case"S":e.preventDefault();toggleSettings();break;case"c":case"C":e.preventDefault();toggleTOC();break;case"b":case"B":e.preventDefault();toggleBookmark(cs);break;}
+  },true);
+  /* AUTO-DETECT */
+  function autoDetectTheme(){try{if(localStorage.getItem(KEY))return;}catch(e){}if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches)UCA.state.theme="light";}
+  /* RIPPLE */
+  function initRipple(){var sel=".nav-icon-btn,.arrow-btn,.hamburger-btn,.mode-btn,.sd-opt,.sd-action,.picker-card,.audio-btn,.spd-btn,.timer-btn";document.querySelectorAll(sel).forEach(function(b){b.classList.add("ripple-wrap");});document.addEventListener("click",function(e){var btn=e.target.closest(".ripple-wrap");if(!btn)return;if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;var rect=btn.getBoundingClientRect();var size=Math.max(rect.width,rect.height);var x=e.clientX-rect.left-size/2;var y=e.clientY-rect.top-size/2;var circle=document.createElement("span");circle.className="ripple-circle";circle.style.width=circle.style.height=size+"px";circle.style.left=x+"px";circle.style.top=y+"px";btn.appendChild(circle);setTimeout(function(){if(circle.parentNode)circle.parentNode.removeChild(circle);},550);});}
+  /* INIT */
+  function initSettings(){autoDetectTheme();UCA.load();wireDrawerButtons();applyState();injectBookmarkStars();applySlideAccent(cs);updateReadingBadge(cs);if(UCA.state.particles)setTimeout(startParticles,300);initRipple();
+    var inp=document.getElementById("srchInput");if(inp){inp.addEventListener("input",function(){clearTimeout(_srchTimer);_srchTimer=setTimeout(function(){renderSearchResults(inp.value.trim());},150);});inp.addEventListener("keydown",function(e){if(e.key==="Enter"){var f=document.querySelector(".srch-result");if(f){go(parseInt(f.dataset.slide));toggleSearch();}}});}
+    var tocSrch=document.getElementById("tocSearch");if(tocSrch){tocSrch.addEventListener("focus",function(){toggleTOC();setTimeout(toggleSearch,350);});}
+  }
+  if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){setTimeout(initSettings,50);});}else{setTimeout(initSettings,50);}
+})();
+
+</script>
+</body>
+</html>

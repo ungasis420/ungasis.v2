@@ -1,0 +1,237 @@
+# 🚀 NEWMONT QIM DASHBOARD — MASTER CONTEXT PACK (v1.0)
+
+## 👤 OWNER
+Mel John Dimat — Reporting Consultant (Korn Ferry)
+Project: Newmont Account Intelligence Command Center (Power BI)
+Goal: QIM Demo (June 18–19)
+
+---
+
+# ✅ CURRENT STATE (AS OF NOW)
+
+## Data
+- ✅ R1 (All Requisitions) — loaded
+- ✅ R2 (Posting) — loaded
+- ✅ R3 (On Hold Audit) — loaded
+- ✅ Relationships: Job Req ID (validated)
+
+## Measures
+- ✅ Total Reqs (~18,935)
+- ✅ Filled Reqs
+- ✅ Fill Rate %
+- ✅ Cancelled Reqs
+- ✅ Cancel Rate %
+- ✅ Open Reqs
+- ✅ On Hold Reqs - R1
+- ✅ Avg TTF - Filled Only
+- ✅ Posted Reqs
+
+## Dashboard
+- ✅ Page 1 in progress (Executive QIM Summary)
+- ⚠️ Layout not yet optimized (no hierarchy)
+- ✅ Metrics validated (no hallucination)
+
+---
+
+# 🎯 OBJECTIVE (QIM)
+
+## Primary Goal
+Deliver a **credible, clear, executive-ready dashboard**
+
+## Success Criteria
+- Executives understand dashboard in <5 seconds
+- No hallucinated metrics
+- Only CORE-backed data used
+- Clean narrative (top → insight → trend)
+
+---
+
+# 🧭 ROADMAP
+
+## PHASE 1 (NOW)
+✅ Build Executive Summary (Page 1)
+
+## PHASE 2
+Build:
+- Current Requisitions
+- Posting Coverage
+
+## PHASE 3
+Build:
+- On-Hold Analysis
+- Data Readiness
+
+## PHASE 4 (Optional)
+- Recruiter workload
+- Deep TTF diagnostics
+
+---
+
+# ⚙️ WORKFLOW
+
+## STEP 1
+Build measures (DONE ✅)
+
+## STEP 2
+Build visuals manually (IN PROGRESS)
+
+## STEP 3
+Fix layout → storytelling
+
+## STEP 4
+Validate metrics
+
+## STEP 5
+Prepare demo narrative
+
+---
+
+# 🧠 DESIGN SYSTEM (POWER BI ADAPTED)
+
+## Layout Structure
+
+Row 1: Executive KPIs  
+Row 2: Operational KPIs  
+Row 3: Drivers  
+Row 4: Trends  
+
+---
+
+## Color Logic
+
+Green → success (filled, fill rate)  
+Red → risk (cancelled)  
+Amber → attention (open)  
+Yellow → hold  
+Purple → TTF  
+
+---
+
+# ⚠️ RULES (CRITICAL)
+
+- DO NOT invent metrics
+- DO NOT infer candidate pipeline
+- DO NOT claim SLA compliance
+- ONLY use CORE data (R1/R2/R3)
+
+---
+
+# 🧩 AGENT SYSTEM (FOR NEW CHAT)
+
+## ROLE
+Senior Power BI + Analytics Architect
+
+---
+
+## OBJECTIVES
+- Build executive dashboards
+- Validate data accuracy
+- Prevent hallucination
+- Optimize layout hierarchy
+
+---
+
+## BEHAVIOR RULES
+- Always validate using data
+- Keep outputs simple and structured
+- Prefer manual UI guidance over automation
+- Avoid overengineering
+
+---
+
+## SKILLS
+- Power BI modeling (DAX, relationships)
+- Executive storytelling
+- UX layout hierarchy
+- Data QA / audit thinking
+
+---
+
+# 💀 FAILURE CONDITIONS
+
+- Using COUNT instead of measures
+- Mislabeling fields
+- Mixing Time to Fill vs TTF_Days
+- Using unvalidated hold data as KPI
+
+---
+
+# ✅ S-GRADE LAYOUT SPEC (FINAL)
+
+ROW 1:
+Total | Filled | Fill % | Cancel % | Avg TTF
+
+ROW 2:
+Open | On Hold | Posted | Pending
+
+ROW 3:
+Donut (Status) | Bar (Function)
+
+ROW 4:
+Country | Trend
+
+---
+
+# 🚀 KICKOFF PROMPT (FOR NEW CHAT)
+
+You are a senior Power BI architect.
+
+Context:
+- Newmont QIM dashboard project
+- Using CORE data (R1/R2/R3)
+- Measures are already validated
+- Page 1 (Executive Summary) exists but layout needs upgrade
+
+Task:
+1. Upgrade layout to S-grade executive structure
+2. Ensure top-down storytelling (KPI → insight → trend)
+3. Validate all visuals use existing measures (no COUNT)
+
+DO NOT:
+- invent metrics
+- use candidate/source/SLA visuals
+
+Output:
+Step-by-step instructions only.
+
+---
+
+# 🔁 HANDOFF PROMPT (RESUME SESSION)
+
+Current progress:
+- Measures completed
+- Executive page partially built (cards exist)
+- Layout not structured
+
+Next step:
+- Reorganize visuals into 4-row executive flow
+
+Focus:
+- alignment
+- spacing
+- clarity
+
+---
+
+# 📊 DEMO NARRATIVE (FOR COREY)
+
+1. Start with top KPIs
+2. Highlight fill rate + cancel rate
+3. Move to operational load (open, hold)
+4. Show drivers (function, status)
+5. End with trends
+
+---
+
+# 🏁 END STATE
+
+Dashboard is:
+- Clean
+- Trustworthy
+- Executive-friendly
+- Demo-ready
+
+Not:
+- Fancy
+- Overdesigned
+- Overengineered

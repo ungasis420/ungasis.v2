@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Red the Brothameyn — AI Transition Playbook by UNGASIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#080816;--sf:rgba(255,255,255,.04);--bd:rgba(255,255,255,.1);--bh:rgba(232,121,249,.3);--cy:#00d4ff;--pu:#a78bfa;--gn:#22c55e;--am:#f59e0b;--rd:#ef4444;--pk:#e879f9;--or:#fb923c;--tx:#e2e8f0;--dm:#94a3b8;--br:#f8fafc;--blur:20px;--r:16px;--rs:10px;--f:'Inter',system-ui,sans-serif;--e:cubic-bezier(.4,0,.2,1)}
+html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:var(--f);background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden}
+::selection{background:var(--pk);color:var(--bg)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:rgba(232,121,249,.3);border-radius:3px}
+canvas#fx{position:fixed;inset:0;z-index:0;pointer-events:none}.sky{position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,#080816,#0f0a2a 30%,#1a0e3a 50%,#0f0a2a 70%,#080816);transition:background 1s}
+.prog{position:fixed;top:0;left:0;height:3px;z-index:10001;background:linear-gradient(90deg,var(--pk),var(--pu),var(--cy));width:0}
+.g{background:var(--sf);backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r);transition:all .3s var(--e)}.g:hover{border-color:var(--bh);box-shadow:0 8px 32px rgba(232,121,249,.08);transform:translateY(-2px)}
+.gs{background:var(--sf);backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r)}
+nav{position:fixed;top:3px;left:0;right:0;z-index:10000;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;background:rgba(8,8,22,.9);backdrop-filter:blur(22px);border-bottom:1px solid var(--bd)}
+.logo{font-weight:900;font-size:1.1rem;background:linear-gradient(135deg,var(--pk),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent;cursor:pointer}
+.lnk{display:flex;gap:4px;flex-wrap:wrap}.lnk a{color:var(--dm);text-decoration:none;font-size:.76rem;font-weight:700;padding:6px 10px;border-radius:8px;transition:all .2s;white-space:nowrap}.lnk a:hover,.lnk a.on{color:var(--pk);background:rgba(232,121,249,.1)}
+.ham{display:none;background:0;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
+@media(max-width:900px){.lnk{display:none}.lnk.open{display:flex;flex-direction:column;position:absolute;top:52px;left:0;right:0;background:rgba(8,8,22,.97);padding:14px;border-bottom:1px solid var(--bd);z-index:9999}.ham{display:block}}
+.pg{display:none;opacity:0;transform:translateY(14px);transition:.4s}.pg.on{display:block;opacity:1;transform:none}.wr{max-width:1180px;margin:auto;padding:92px 22px 56px}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(232,121,249,.3);background:rgba(232,121,249,.06);color:var(--pk);border-radius:999px;padding:8px 18px;font-weight:800;font-size:.82rem;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--gn);animation:pu 2s infinite}@keyframes pu{50%{opacity:.3}}
+h1{font-size:clamp(2.2rem,7vw,4.5rem);line-height:1.04;font-weight:900;letter-spacing:-.03em;background:linear-gradient(135deg,#e879f9,#a78bfa 35%,#00d4ff 65%,#22c55e);background-size:280% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:sh 7s linear infinite}@keyframes sh{to{background-position:280% center}}
+.sub{max-width:760px;color:var(--dm);font-size:clamp(1rem,2.3vw,1.25rem);margin-top:16px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.btn{border:0;border-radius:14px;padding:13px 24px;font-weight:900;font-size:.9rem;cursor:pointer;font-family:var(--f);transition:all .3s var(--e)}.pri{background:linear-gradient(135deg,var(--pk),var(--pu));color:var(--bg)}.pri:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(232,121,249,.3)}.gho{background:0;color:var(--tx);border:1px solid var(--bd)}.gho:hover{border-color:var(--pk);color:var(--pk)}
+.sh{display:flex;gap:14px;align-items:center;margin:0 0 24px;padding-bottom:14px;border-bottom:1px solid var(--bd)}.sn{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:900;color:var(--bg);flex-shrink:0;background:linear-gradient(135deg,var(--pk),var(--pu))}.sn.cy{background:linear-gradient(135deg,var(--cy),var(--pu))}.sn.gn{background:linear-gradient(135deg,var(--gn),#16a34a)}.sn.am{background:linear-gradient(135deg,var(--am),var(--or))}
+.st{font-size:clamp(1.3rem,3vw,1.9rem);font-weight:900;color:var(--br)}
+.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}.dn{font-size:2.1rem;font-weight:900;background:linear-gradient(135deg,var(--pk),var(--cy));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:14px 0}
+.cd{padding:22px}.ci{font-size:2rem;margin-bottom:10px}.ct{font-weight:800;color:var(--br);font-size:1.05rem;margin-bottom:6px}.cm{color:var(--dm);font-size:.9rem}
+.tw{overflow-x:auto;margin:14px 0;border-radius:var(--rs)}table{width:100%;border-collapse:collapse;font-size:.86rem;background:var(--sf);border:1px solid var(--bd);border-radius:var(--rs);overflow:hidden}thead{background:linear-gradient(135deg,rgba(232,121,249,.1),rgba(167,139,250,.1))}th{padding:11px 12px;text-align:left;font-weight:700;color:var(--br);font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;border-bottom:2px solid rgba(232,121,249,.2)}td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.04)}tr:hover td{background:rgba(232,121,249,.03)}
+.co{padding:16px 18px;border-radius:var(--rs);margin:14px 0;border-left:4px solid}.ck{border-color:var(--pu);background:rgba(167,139,250,.08)}.ci2{border-color:var(--cy);background:rgba(0,212,255,.08)}.ct2{border-color:var(--gn);background:rgba(34,197,94,.08)}.cw{border-color:var(--am);background:rgba(245,158,11,.08)}.cpk{border-color:var(--pk);background:rgba(232,121,249,.08)}
+.lb{font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.fy{position:relative;padding:16px 18px 16px 48px;border-radius:var(--rs);margin:14px 0;background:linear-gradient(135deg,rgba(232,121,249,.08),rgba(0,212,255,.04));border:1px solid rgba(232,121,249,.2)}.fy:before{content:'\1F9E0';position:absolute;top:14px;left:14px;font-size:1.2rem}.fy b{color:var(--pk)}.fy .d{color:var(--dm);font-size:.9rem;margin-top:4px}
+.tl{position:relative;padding-left:36px;margin:20px 0}.tl:before{content:'';position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(var(--pk),var(--pu),var(--cy),var(--gn),var(--am))}
+.ti{position:relative;margin-bottom:18px}.td{position:absolute;left:-28px;top:6px;width:14px;height:14px;border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 10px rgba(232,121,249,.3)}
+.bi{margin-bottom:10px}.bl{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:4px}.bt{height:28px;border-radius:14px;background:rgba(255,255,255,.06);overflow:hidden}.bf{height:100%;border-radius:14px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;font-size:.72rem;font-weight:800;color:var(--bg);transition:width 1.5s var(--e)}
+.tb{margin:20px 0}.tbb{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:14px}.tbn{padding:8px 16px;border-radius:8px;border:1px solid var(--bd);background:0;color:var(--dm);cursor:pointer;font-size:.84rem;font-weight:700;font-family:var(--f);transition:all .2s}.tbn:hover{background:rgba(232,121,249,.08);color:var(--pk)}.tbn.on{background:linear-gradient(135deg,rgba(232,121,249,.15),rgba(167,139,250,.15));color:var(--br);border-color:rgba(232,121,249,.3)}
+.tp{display:none;animation:fu .4s ease}.tp.on{display:block}@keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.crg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:10px}.crc{padding:14px;cursor:pointer;position:relative;overflow:hidden}.crc::after{content:'';position:absolute;top:0;left:0;width:3px;height:100%;border-radius:3px}.crc.fr::after{background:var(--gn)}.crc.pd::after{background:var(--am)}.crn{font-weight:700;font-size:.9rem;margin-bottom:3px}.crp{font-size:.76rem;color:var(--pk)}.crm{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}.crt{font-size:.7rem;padding:3px 8px;border-radius:999px;font-weight:700}.crtf{color:var(--gn);border:1px solid rgba(34,197,94,.3);background:rgba(34,197,94,.08)}.crtp{color:var(--am);border:1px solid rgba(245,158,11,.3);background:rgba(245,158,11,.08)}.crd{max-height:0;overflow:hidden;transition:max-height .4s;font-size:.82rem;color:var(--dm);line-height:1.5}.crc.op .crd{max-height:200px;padding-top:10px}
+.chk{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);cursor:pointer}.cbx{width:22px;height:22px;flex:0 0 22px;border:2px solid var(--bd);border-radius:6px;margin-top:2px;display:grid;place-items:center}.chk.dn .cbx{background:var(--gn);border-color:var(--gn)}.chk.dn .cbx:after{content:'\2713';color:#fff;font-weight:900;font-size:.75rem}.chk.dn .chtx{text-decoration:line-through;color:var(--dm)}
+.cf input{width:100%;padding:10px 14px;border-radius:10px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:1rem;font-family:var(--f);outline:none}.cf label{display:block;color:var(--dm);font-weight:800;font-size:.82rem;margin-bottom:4px}
+.big{font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,var(--pk),var(--gn));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.gls{width:min(460px,100%);padding:12px 18px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:.95rem;font-family:var(--f);outline:none;margin-bottom:18px}.gls:focus{border-color:var(--pk)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}.gt{color:var(--pk);font-weight:900;font-size:1rem;margin-bottom:4px}
+.lang{display:inline-flex;padding:4px 12px;border-radius:999px;font-size:.75rem;font-weight:800;margin:2px}
+.bk{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--pk),var(--pu));color:var(--bg);font-size:1.2rem;font-weight:900;cursor:pointer;opacity:0;transform:translateY(16px);transition:all .3s var(--e);z-index:9999}.bk.v{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.rv.vis{opacity:1;transform:none}
+footer{text-align:center;padding:42px 22px;color:var(--dm);font-size:.78rem;border-top:1px solid var(--bd);margin-top:40px}
+@media(max-width:600px){.cg,.crg{grid-template-columns:1fr}.dg{grid-template-columns:repeat(2,1fr)}h1{font-size:2rem}}
+@media print{nav,.prog,.bk,canvas,.sky{display:none!important}body{background:#fff;color:#000}.g,.gs{background:#f8f8f8;border:1px solid #ddd;backdrop-filter:none}}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div><canvas id="fx"></canvas><div class="prog" id="prog"></div>
+<nav><div class="logo" onclick="go('home')">📚 Red's AI Playbook</div><button class="ham" onclick="document.querySelector('.lnk').classList.toggle('open')">☰</button><div class="lnk" id="lnk"><a href="#" onclick="go('home')" class="on" data-p="home">Home</a><a href="#" onclick="go('strat')" data-p="strat">🎯 Strategy</a><a href="#" onclick="go('paths')" data-p="paths">🗺️ Paths</a><a href="#" onclick="go('plan')" data-p="plan">📋 30-Day</a><a href="#" onclick="go('ai')" data-p="ai">🧠 AI Certs</a><a href="#" onclick="go('money')" data-p="money">💰 Money</a><a href="#" onclick="go('tools')" data-p="tools">🛠️ Tools</a><a href="#" onclick="go('gloss')" data-p="gloss">📖 Glossary</a></div></nav>
+
+<!-- ======================== HOME ======================== -->
+<div class="pg on" id="pg-home">
+<section class="hero"><div class="badge"><span class="dot"></span> Personalized by UNGASIS / Mel — June 2026</div><h1>Red the Brothameyn<br>AI Transition Playbook</h1><p class="sub">For Red — 40+, 10yr Maersk veteran, quadrilingual powerhouse, book nerd, dog dad, people leader, investor mind, silently quitting, ready for what's next.</p><div class="cta"><button class="btn pri" onclick="go('strat')">🎯 Show Me the Exit Strategy</button><button class="btn gho" onclick="go('ai')">🧠 Where Do I Start with AI?</button><button class="btn gho" onclick="go('plan')">📋 Give Me a 30-Day Plan</button></div></section>
+<div class="wr">
+<div class="sh"><div class="sn">★</div><div class="st">Red's Dashboard</div></div>
+<div class="dg" style="margin-bottom:28px">
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c1">0</div><div class="cm">Languages (Superpower)</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c2">0</div><div class="cm">AI Certifications Mapped</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c3">0</div><div class="cm">Day Transition Plan</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c4">0</div><div class="cm">Income Paths Ranked</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c5">0</div><div class="cm">Years Maersk Experience</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c6">$0</div><div class="cm">AI Learning Start Cost</div></div>
+</div>
+<div class="sh"><div class="sn am">📚</div><div class="st">Built Around Red's Real Life</div></div>
+<div class="cg">
+<div class="g cd rv"><div class="ci">🌍</div><div class="ct">4 Languages = Rare Superpower</div><div class="cm"><span class="lang" style="background:rgba(239,68,68,.15);color:#ef4444">🇪🇸 Spanish</span><span class="lang" style="background:rgba(245,158,11,.15);color:#f59e0b">🇩🇪 German</span><span class="lang" style="background:rgba(0,212,255,.15);color:#00d4ff">🇺🇸 English</span><span class="lang" style="background:rgba(34,197,94,.15);color:#22c55e">🇵🇭 Tagalog</span><br><br>Spanish + German + English is a <b>$30-$50/hr combination</b> in global remote work. Less than 2% of Filipino freelancers offer this.</div></div>
+<div class="g cd rv"><div class="ci">🚢</div><div class="ct">10+ Years at Maersk</div><div class="cm">Global logistics, supply chain, enterprise processes, compliance, escalation. This is <b>international operations expertise</b>, not "just customer service."</div></div>
+<div class="g cd rv"><div class="ci">📚</div><div class="ct">Hardcore Book Nerd</div><div class="cm">Deep readers become the best AI users — they ask better questions, synthesize ideas, and teach others. AI + reading = multiplier.</div></div>
+<div class="g cd rv"><div class="ci">👥</div><div class="ct">Born Leader & Trainer</div><div class="cm">Loves to train, lead, inspire. This is a <b>coaching and consulting goldmine</b> — especially in AI adoption.</div></div>
+<div class="g cd rv"><div class="ci">💰</div><div class="ct">Investor / Financer Mindset</div><div class="cm">Forex and crypto experience. Understands risk, ROI, compound growth. Evaluates AI opportunities like investments.</div></div>
+<div class="g cd rv"><div class="ci">🐕</div><div class="ct">Dog Dad & Social Butterfly</div><div class="cm">Networks naturally. Builds trust. These skills close consulting deals and build communities.</div></div>
+</div>
+<div class="co cpk"><div class="lb" style="color:var(--pk)">🎯 One-sentence strategy</div>Red should use his <b>4 languages + Maersk expertise + leadership skills</b> to transition into high-value multilingual remote work, AI-assisted consulting, or team coaching — NOT compete with entry-level VAs.</div>
+<div class="sh" style="margin-top:36px"><div class="sn gn">⚡</div><div class="st">Lazy Shortcuts</div></div>
+<div class="cg">
+<div class="g cd rv" onclick="go('strat')" style="cursor:pointer"><div class="ci">🚪</div><div class="ct">The Exit Strategy</div><div class="cm">How to leave corporate gracefully. No panic, no drama.</div></div>
+<div class="g cd rv" onclick="go('paths')" style="cursor:pointer"><div class="ci">🗺️</div><div class="ct">All Income Paths Ranked</div><div class="cm">12 paths scored for Red's profile. Bar charts + math.</div></div>
+<div class="g cd rv" onclick="go('ai')" style="cursor:pointer"><div class="ci">🧠</div><div class="ct">AI Learning (Where to Start)</div><div class="cm">35 free certs, 12-month plan, study tips for book lovers.</div></div>
+<div class="g cd rv" onclick="go('money')" style="cursor:pointer"><div class="ci">💰</div><div class="ct">Income Calculator</div><div class="cm">Plug in your multilingual rate and see the math.</div></div>
+</div>
+</div></div>
+
+<!-- ======================== STRATEGY ======================== -->
+<div class="pg" id="pg-strat"><div class="wr">
+<div class="sh"><div class="sn">1</div><div class="st">Red's Exit + Transition Strategy</div></div>
+<div class="co cpk"><div class="lb" style="color:var(--pk)">🔑 Hard truth</div>Red is NOT "just a customer service agent." He is a <b>quadrilingual international operations specialist</b> with 10+ years at a Fortune 500 logistics company. The market for Spanish + German speakers is <b>criminally undersupplied</b>. Red is sitting on a goldmine.</div>
+<div class="fy"><b>"Silent Quitting" decoded</b><div class="d">Not laziness — it is a signal. The work-reward equation is broken. Red's brain says: "I'm worth more." The answer: <b>build the bridge BEFORE you burn the boat</b>.</div></div>
+<h3 style="margin-top:28px;color:var(--br)">🌍 Red's Unfair Advantages</h3>
+<div class="tw"><table><thead><tr><th>Advantage</th><th>Market Value</th><th>Why It Matters</th></tr></thead><tbody>
+<tr><td><b style="color:var(--pk)">Spanish fluency</b></td><td>$25-$50/hr premium</td><td>500M+ Spanish speakers. US/EU companies pay premium.</td></tr>
+<tr><td><b style="color:var(--am)">German fluency</b></td><td>$30-$60/hr premium</td><td>HIGHEST-PAID language specialists in remote work.</td></tr>
+<tr><td><b>Maersk (10+ yrs)</b></td><td>Fortune 500 credibility</td><td>Logistics, compliance — enterprise-grade skills.</td></tr>
+<tr><td><b>Leadership / Training</b></td><td>Coaching income</td><td>Companies pay $50-$150/hr for multilingual team trainers.</td></tr>
+<tr><td><b>Financial literacy</b></td><td>Investor mindset</td><td>Evaluates opportunities as ROI. Understands compound growth.</td></tr>
+<tr><td><b>Book knowledge</b></td><td>Content + consulting</td><td>Deep readers make the best AI prompters.</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">🚪 3-Phase Exit Plan</h3>
+<div class="tl">
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pk)"></div><b style="color:var(--pk);font-size:.86rem">Phase 1: Build While Employed (Month 1-2)</b><div class="cm">Stay at Maersk. Evenings/weekends: set up profiles, learn AI basics, land first side client.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pu)"></div><b style="color:var(--pu);font-size:.86rem">Phase 2: Test the Bridge (Month 3-4)</b><div class="cm">Get 1-2 paying side clients. Validate income is real. Can this replace Maersk in 6 months?</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--cy)"></div><b style="color:var(--cy);font-size:.86rem">Phase 3: Cross the Bridge (Month 5-6)</b><div class="cm">When side income ≥ 70% of salary, resign gracefully. Full transition.</div></div>
+</div>
+<div class="co ct2"><div class="lb" style="color:var(--gn)">💡 Critical rule</div>Do NOT quit before Phase 2 income is validated. Red has an investor mindset — same logic applies to career.</div>
+<h3 style="margin-top:28px;color:var(--br)">Chill + High Pay Reality</h3>
+<div class="tw"><table><thead><tr><th>You Want</th><th>You Pay With</th></tr></thead><tbody>
+<tr><td>High pay + chill</td><td>2-4 months building while still at Maersk</td></tr>
+<tr><td>High pay + instant</td><td>High stress, no safety net</td></tr>
+<tr><td>Chill + instant</td><td>Low pay ($5-$8/hr generic roles)</td></tr>
+<tr><td style="color:var(--rd)">All three at once</td><td style="color:var(--rd)">Does not exist. But Red's languages get him CLOSEST.</td></tr>
+</tbody></table></div>
+<div class="co ci2" style="margin-top:20px"><div class="lb" style="color:var(--cy)">📝 Positioning (copy-paste)</div>"Multilingual operations specialist (Spanish, German, English) with 10+ years at Maersk. I help international teams with customer operations, process design, team training, and AI-assisted workflows."</div>
+<h3 style="margin-top:28px;color:var(--br)">Career Evolution Ladder</h3>
+<div class="tl">
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--dm)"></div><b style="color:var(--dm);font-size:.84rem">Level 1 — Now: Maersk CS</b><div class="cm">Good stability, capped growth, 5-day onsite mandate.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pk)"></div><b style="color:var(--pk);font-size:.84rem">Level 2 — Multilingual Remote Specialist ← FIRST MOVE</b><div class="cm">Remote ES/DE ops for EU/US. $15-$30/hr. Work from home.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pu)"></div><b style="color:var(--pu);font-size:.84rem">Level 3 — AI Ops Consultant</b><div class="cm">Help companies implement AI in multilingual ops. $30-$50/hr.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--cy)"></div><b style="color:var(--cy);font-size:.84rem">Level 4 — Team Trainer / Coach</b><div class="cm">Workshops, courses, leadership coaching. $50-$100/hr.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.84rem">Level 5 — Fractional COO / Agency</b><div class="cm">Manage ops for multiple companies. $100-$200/hr or retainer.</div></div>
+</div>
+<div class="fy"><b>"Retainer"</b><div class="d">Like a gym membership. A client pays a fixed amount monthly for ongoing support — stable, predictable income.</div></div>
+</div></div>
+
+<!-- ======================== PATHS ======================== -->
+<div class="pg" id="pg-paths"><div class="wr">
+<div class="sh"><div class="sn am">2</div><div class="st">All Income Paths — Ranked for Red</div></div>
+<div style="margin-bottom:24px">
+<div class="bi"><div class="bl"><span>🌍 Multilingual Remote Ops</span><span>14/15</span></div><div class="bt"><div class="bf" style="width:93%;background:linear-gradient(90deg,var(--pk),var(--pu))">★ Best Path</div></div></div>
+<div class="bi"><div class="bl"><span>👥 AI Team Training</span><span>13/15</span></div><div class="bt"><div class="bf" style="width:87%;background:linear-gradient(90deg,var(--pu),var(--cy))">Natural Fit</div></div></div>
+<div class="bi"><div class="bl"><span>🤖 AI Ops Consulting</span><span>12/15</span></div><div class="bt"><div class="bf" style="width:80%;background:linear-gradient(90deg,var(--cy),var(--gn))">High Upside</div></div></div>
+<div class="bi"><div class="bl"><span>📚 Book / Knowledge Content</span><span>10/15</span></div><div class="bt"><div class="bf" style="width:67%;background:linear-gradient(90deg,var(--am),var(--or))">Passion Play</div></div></div>
+<div class="bi"><div class="bl"><span>📊 Forex/Crypto + AI</span><span>10/15</span></div><div class="bt"><div class="bf" style="width:65%;background:linear-gradient(90deg,var(--gn),#16a34a)">Amplify</div></div></div>
+<div class="bi"><div class="bl"><span>🏢 Fractional COO</span><span>9/15</span></div><div class="bt"><div class="bf" style="width:55%;background:linear-gradient(90deg,var(--pk),var(--rd))">Later</div></div></div>
+</div>
+<div class="tw"><table><thead><tr><th>#</th><th>Path</th><th>Income</th><th>Stress</th><th>Start</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>1</td><td>Multilingual Remote Ops (ES/DE)</td><td>5</td><td>4</td><td>5</td><td style="color:var(--gn)">★ Best ASAP</td></tr>
+<tr><td>2</td><td>AI Team Training / Coaching</td><td>5</td><td>4</td><td>4</td><td>Natural fit</td></tr>
+<tr><td>3</td><td>AI Ops Consulting</td><td>5</td><td>3</td><td>4</td><td>High upside</td></tr>
+<tr><td>4</td><td>Book / Knowledge content</td><td>3</td><td>5</td><td>3</td><td>Passion play</td></tr>
+<tr><td>5</td><td>AI-enhanced Forex/Crypto</td><td>4</td><td>3</td><td>4</td><td>Amplify existing</td></tr>
+<tr><td>6</td><td>Digital products (templates)</td><td>4</td><td>5</td><td>2</td><td>After proof</td></tr>
+<tr><td>7</td><td>Fractional COO</td><td>5</td><td>3</td><td>2</td><td>Year 2+</td></tr>
+<tr><td>8</td><td>Community / Membership</td><td>4</td><td>4</td><td>2</td><td>After audience</td></tr>
+<tr><td>9</td><td>Affiliate / Referral</td><td>3</td><td>5</td><td>3</td><td>Side layer</td></tr>
+<tr><td>10</td><td>YouTube / Podcast</td><td>4</td><td>3</td><td>3</td><td>Long game</td></tr>
+<tr><td>11</td><td>SaaS / App</td><td>5</td><td>2</td><td>1</td><td>Not first</td></tr>
+<tr><td>12</td><td>New employment</td><td>3</td><td>3</td><td>5</td><td>Safe fallback</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">Monetization Models</h3>
+<div class="tw"><table><thead><tr><th>Model</th><th>How</th><th>Fit?</th></tr></thead><tbody>
+<tr><td>Hourly consulting</td><td>$25-$60/hr multilingual ops</td><td>✅ Fastest</td></tr>
+<tr><td>Monthly retainer</td><td>₱80K-₱150K/client</td><td>✅ Best stability</td></tr>
+<tr><td>Workshop fee</td><td>₱15K-₱50K/session</td><td>✅ Natural for Red</td></tr>
+<tr><td>Digital product</td><td>₱999-₱4,999/sale</td><td>⏳ After proof</td></tr>
+<tr><td>Forex/crypto</td><td>Variable</td><td>✅ Already running</td></tr>
+<tr><td>Community</td><td>₱299-₱999/mo/member</td><td>⏳ After audience</td></tr>
+<tr><td>Fractional ops</td><td>$2K-$5K/mo/company</td><td>⏳ Year 2</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">🔴 What to Avoid</h3>
+<div class="tw"><table><thead><tr><th>Avoid</th><th>Why</th><th>Instead</th></tr></thead><tbody>
+<tr><td>Generic VA at $5/hr</td><td>Undervalues languages</td><td>Multilingual specialist $25-$50/hr</td></tr>
+<tr><td>Emotional rage-quit</td><td>No bridge = financial stress</td><td>Build bridge first</td></tr>
+<tr><td>Learning to code</td><td>Not his strength</td><td>Use AI as non-coder power tool</td></tr>
+<tr><td>Competing on price</td><td>Race to bottom</td><td>Compete on language + expertise</td></tr>
+<tr><td>Crypto-only income</td><td>Volatile</td><td>Service income + crypto portfolio</td></tr>
+<tr><td>Too many projects</td><td>Scattered energy</td><td>One stream validated first</td></tr>
+<tr><td>Ignoring network</td><td>Social skills = #1 asset</td><td>Tell 50 people what he does</td></tr>
+</tbody></table></div>
+</div></div>
+
+<!-- ======================== 30-DAY PLAN ======================== -->
+<div class="pg" id="pg-plan"><div class="wr">
+<div class="sh"><div class="sn gn">3</div><div class="st">Red's 30-Day Transition Blueprint</div></div>
+<p class="cm" style="margin-bottom:14px">Do this WHILE still at Maersk. 30-60 min/day evenings or weekends.</p>
+<div class="gs" style="padding:16px;margin-bottom:14px"><b style="color:var(--pk)">Progress: <span id="dp">0</span>/30</b><div class="bt" style="margin-top:8px;height:12px"><div id="db" class="bf" style="width:0%;background:linear-gradient(90deg,var(--pk),var(--cy))"></div></div></div>
+<div id="cl"></div>
+<h3 style="margin-top:28px;color:var(--br)">🕐 Typical Day (After Transition)</h3>
+<div class="tw"><table><thead><tr><th>Time</th><th>Activity</th><th>Dur</th></tr></thead><tbody>
+<tr><td>8:00</td><td>☕ Check client messages (EU overlap)</td><td>30m</td></tr>
+<tr><td>8:30</td><td>🌍 Spanish/German client tasks</td><td>2h</td></tr>
+<tr><td>10:30</td><td>🤖 AI: draft reports, translate, SOPs</td><td>45m</td></tr>
+<tr><td>11:15</td><td>📚 Read / learn (AI, book, news)</td><td>30m</td></tr>
+<tr><td>11:45</td><td>🐕 Dog walk + lunch</td><td>1.5h</td></tr>
+<tr><td>1:15</td><td>👥 Coaching call (1-2x/week)</td><td>1h</td></tr>
+<tr><td>2:15</td><td>📊 Check investments</td><td>30m</td></tr>
+<tr><td style="color:var(--gn)"><b>3:00</b></td><td style="color:var(--gn)"><b>✅ Done. Walk dogs. Read. Live.</b></td><td>—</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">🟢🟡🔴 Opportunity Filter</h3>
+<div class="cg">
+<div class="g cd" style="border-left:4px solid var(--gn)"><div class="ct" style="color:var(--gn)">🟢 ACCEPT</div><div class="cm">Remote · Values languages · Clear scope · $15+/hr · Written agreements</div></div>
+<div class="g cd" style="border-left:4px solid var(--am)"><div class="ct" style="color:var(--am)">🟡 CAUTION</div><div class="cm">Hybrid · New client · Base+commission · Night hours</div></div>
+<div class="g cd" style="border-left:4px solid var(--rd)"><div class="ct" style="color:var(--rd)">🔴 AVOID</div><div class="cm">$5/hr generic · Commission-only · 24/7 · No contract · Doesn't use languages</div></div>
+</div>
+</div></div>
+
+<!-- ======================== AI CERTS ======================== -->
+<div class="pg" id="pg-ai"><div class="wr">
+<div class="sh"><div class="sn cy">4</div><div class="st">AI Learning — Where Red Starts</div></div>
+<div class="fy"><b>"Where do I start with AI?"</b><div class="d">Red is a book lover. AI is just a new book — except this one talks back. Start by chatting with ChatGPT like a smart intern. Then learn to give better instructions. Then apply it to what you already do.</div></div>
+<div class="co cpk"><div class="lb" style="color:var(--pk)">For a book nerd</div>AI is the ultimate speed-reading tool. Summarize 400 pages in 30 seconds, translate to Spanish, extract frameworks, teach it to a team. Red's reading habit is his MULTIPLIER.</div>
+<div class="tb"><div class="tbb">
+<button class="tbn on" onclick="stab(event,'l0')">🟢 Level 0</button>
+<button class="tbn" onclick="stab(event,'l1')">🔵 Level 1</button>
+<button class="tbn" onclick="stab(event,'l2')">🟣 Level 2</button>
+<button class="tbn" onclick="stab(event,'l3')">🟡 Level 3</button>
+<button class="tbn" onclick="stab(event,'l4')">🔴 Level 4-5</button>
+</div>
+<div class="tp on" id="l0"><h3 style="color:var(--gn);margin-bottom:8px">Absolute Beginner — Free, 0-2 weeks</h3><div class="crg" id="cr0"></div></div>
+<div class="tp" id="l1"><h3 style="color:#3b82f6;margin-bottom:8px">Beginner — 2-6 weeks</h3><div class="crg" id="cr1"></div></div>
+<div class="tp" id="l2"><h3 style="color:var(--pu);margin-bottom:8px">Intermediate — 1-3 months</h3><div class="crg" id="cr2"></div></div>
+<div class="tp" id="l3"><h3 style="color:var(--am);margin-bottom:8px">Advanced — 3-6 months</h3><div class="crg" id="cr3"></div></div>
+<div class="tp" id="l4"><h3 style="color:var(--rd);margin-bottom:8px">Expert to Master — 6+ months</h3><div class="crg" id="cr4"></div></div>
+</div>
+<h3 style="margin-top:28px;color:var(--br)">📊 Free vs Paid</h3>
+<div class="gs" style="padding:22px;margin-top:10px"><div style="max-width:480px;margin:auto"><canvas id="radar"></canvas></div></div>
+<h3 style="margin-top:28px;color:var(--br)">⚡ Quick Cheat Sheet</h3>
+<div class="tw"><table><thead><tr><th>Goal</th><th>Best Combo</th><th>Cost</th><th>Time</th></tr></thead><tbody>
+<tr><td>Understand AI</td><td>Elements of AI + Google AI Essentials</td><td style="color:var(--gn)">Free</td><td>~10h</td></tr>
+<tr><td>Use AI at work</td><td>Prompt Eng + ChatGPT Power User</td><td style="color:var(--gn)">Free</td><td>~8h</td></tr>
+<tr><td>Get credential</td><td>IBM AI Fund. + AI-900</td><td>Free/$165</td><td>~25h</td></tr>
+<tr><td>Train teams</td><td>GenAI Beginners + HubSpot AI</td><td style="color:var(--gn)">Free</td><td>~14h</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">📅 12-Month Plan (Red Edition)</h3>
+<div class="tl">
+<div class="ti"><div class="td" style="background:var(--pk)"></div><b style="color:var(--pk);font-size:.86rem">Month 1-2 — Basics + Daily Use</b><div class="cm">Google AI Essentials + Elements of AI. Use ChatGPT daily.</div></div>
+<div class="ti"><div class="td" style="background:var(--pu)"></div><b style="color:var(--pu);font-size:.86rem">Month 3-4 — Prompting + Business</b><div class="cm">Prompt engineering. Apply AI to Maersk work.</div></div>
+<div class="ti"><div class="td" style="background:var(--cy)"></div><b style="color:var(--cy);font-size:.86rem">Month 5-6 — First AI Project</b><div class="cm">Build AI workflow for multilingual ops. Document as case study.</div></div>
+<div class="ti"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.86rem">Month 7-9 — Teach It</b><div class="cm">Run first AI training for a team. Red's natural habitat.</div></div>
+<div class="ti"><div class="td" style="background:var(--am)"></div><b style="color:var(--am);font-size:.86rem">Month 10-12 — Certify + Consult</b><div class="cm">Optional cert. Start consulting. Update LinkedIn.</div></div>
+</div>
+<h3 style="margin-top:28px;color:var(--br)">📝 Study Tips for Book Lovers</h3>
+<div class="cg">
+<div class="g cd"><div class="ci">📖</div><div class="ct">Treat courses like chapters</div><div class="cm">One chapter per sitting. Take notes like reading a book.</div></div>
+<div class="g cd"><div class="ci">🗣️</div><div class="ct">Teach-back to friends</div><div class="cm">Explain to 3 people and you master it.</div></div>
+<div class="g cd"><div class="ci">📝</div><div class="ct">Write summaries (Feynman)</div><div class="cm">After each course, write a 1-page summary. Like a book review.</div></div>
+<div class="g cd"><div class="ci">🌍</div><div class="ct">Learn in multiple languages</div><div class="cm">Watch in English, explain to yourself in Spanish. Double encoding.</div></div>
+<div class="g cd"><div class="ci">🐕</div><div class="ct">Audio while walking dogs</div><div class="cm">AI podcasts during dog walks = free study time.</div></div>
+<div class="g cd"><div class="ci">📊</div><div class="ct">Apply to investments</div><div class="cm">Use AI to analyze forex/crypto. Learning + earning.</div></div>
+</div>
+</div></div>
+
+<!-- ======================== MONEY ======================== -->
+<div class="pg" id="pg-money"><div class="wr">
+<div class="sh"><div class="sn am">5</div><div class="st">Money Math — Multilingual Premium</div></div>
+<div class="fy"><b>The Language Premium</b><div class="d">Generic English VA: $5-$8/hr. Spanish specialist: $15-$25/hr. German specialist: $20-$35/hr. Spanish + German + English + 10yr logistics? $30-$60/hr. Red's languages are a 4-6x multiplier.</div></div>
+<div class="gs" style="padding:22px;margin:18px 0"><h3 style="color:var(--pk);margin-bottom:14px">⏱️ Rate Calculator</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+<div class="cf"><label>USD/hr</label><input id="hr" type="number" value="30" oninput="calc()"></div>
+<div class="cf"><label>Hrs/week</label><input id="hw" type="number" value="25" oninput="calc()"></div>
+<div class="cf"><label>PHP/USD</label><input id="fx" type="number" value="61.25" step=".25" oninput="calc()"></div>
+</div>
+<div style="margin-top:16px"><div class="cm">Monthly Income</div><div class="big" id="cons">0</div><div class="cm" id="consd"></div></div></div>
+<div class="tw"><table><thead><tr><th>Scenario</th><th>Rate</th><th>Hrs</th><th>Monthly</th></tr></thead><tbody>
+<tr><td>Generic English VA</td><td>$6/hr</td><td>40</td><td style="color:var(--dm)">₱63,700</td></tr>
+<tr><td style="color:var(--pk)"><b>Red: Spanish</b></td><td><b>$20/hr</b></td><td><b>25</b></td><td style="color:var(--pk)"><b>₱132,700</b></td></tr>
+<tr><td style="color:var(--am)"><b>Red: German</b></td><td><b>$30/hr</b></td><td><b>25</b></td><td style="color:var(--am)"><b>₱199,000</b></td></tr>
+<tr><td style="color:var(--gn)"><b>Red: Bilingual Consult</b></td><td><b>$45/hr</b></td><td><b>20</b></td><td style="color:var(--gn)"><b>₱238,800</b></td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">🌐 Where to Find Work</h3>
+<div class="tw"><table><thead><tr><th>Platform</th><th>Best For</th><th>Tip</th></tr></thead><tbody>
+<tr><td><b style="color:var(--pk)">LinkedIn ⭐</b></td><td>EU/US multilingual roles</td><td>Set profile to ES+DE. Recruiters find you.</td></tr>
+<tr><td><b style="color:var(--pk)">Upwork ⭐</b></td><td>Freelance projects</td><td>Tag: Spanish, German, logistics</td></tr>
+<tr><td>Remote.co / WWR</td><td>Full remote positions</td><td>Filter: German, Spanish, ops</td></tr>
+<tr><td>OnlineJobs.ph</td><td>PH direct hire</td><td>Multilingual = 2-3x pay</td></tr>
+<tr><td>Toptal / Crossover</td><td>Premium talent</td><td>Higher bar, higher pay</td></tr>
+<tr><td>EU companies direct</td><td>Highest pay</td><td>Cold email logistics firms</td></tr>
+<tr><td>Maersk alumni</td><td>Warm referrals</td><td>Former colleagues = leads</td></tr>
+</tbody></table></div>
+<div class="co ci2"><div class="lb" style="color:var(--cy)">📈 AI + Investments</div>Use AI to summarize market news, backtest strategies, generate trade journals, track allocation, rebalancing alerts, scenario analysis.</div>
+</div></div>
+
+<!-- ======================== TOOLS ======================== -->
+<div class="pg" id="pg-tools"><div class="wr">
+<div class="sh"><div class="sn cy">6</div><div class="st">Tools Red Needs</div></div>
+<div class="cg">
+<div class="g cd"><div class="ci">🤖</div><div class="ct">ChatGPT / Copilot / Gemini</div><div class="cm">Translations, emails, SOPs, summaries, training content.</div></div>
+<div class="g cd"><div class="ci">🌍</div><div class="ct">DeepL Translator</div><div class="cm">Best AI translator for Spanish + German.</div></div>
+<div class="g cd"><div class="ci">📊</div><div class="ct">Google Sheets / Excel</div><div class="cm">Tracking, reporting, financial models.</div></div>
+<div class="g cd"><div class="ci">🎨</div><div class="ct">Canva</div><div class="cm">Training slides, LinkedIn graphics, materials.</div></div>
+<div class="g cd"><div class="ci">💬</div><div class="ct">Slack / Discord</div><div class="cm">Client comms, community management.</div></div>
+<div class="g cd"><div class="ci">📋</div><div class="ct">Notion / Obsidian</div><div class="cm">Knowledge mgmt, book notes, second brain.</div></div>
+<div class="g cd"><div class="ci">📹</div><div class="ct">Zoom / Google Meet</div><div class="cm">Coaching calls, training, client meetings.</div></div>
+<div class="g cd"><div class="ci">💼</div><div class="ct">LinkedIn Premium</div><div class="cm">Job search, networking, InMail to EU recruiters.</div></div>
+<div class="g cd"><div class="ci">📧</div><div class="ct">Gmail + Calendar</div><div class="cm">Professional email, scheduling, timezone mgmt.</div></div>
+<div class="g cd"><div class="ci">📈</div><div class="ct">TradingView</div><div class="cm">Charts, analysis for forex/crypto.</div></div>
+<div class="g cd"><div class="ci">📚</div><div class="ct">Readwise / Kindle</div><div class="cm">Highlight sync, book notes, spaced repetition.</div></div>
+<div class="g cd"><div class="ci">🔐</div><div class="ct">Bitwarden</div><div class="cm">Password manager. Essential security.</div></div>
+</div>
+</div></div>
+
+<!-- ======================== GLOSSARY ======================== -->
+<div class="pg" id="pg-gloss"><div class="wr">
+<div class="sh"><div class="sn">7</div><div class="st">Glossary — AI & Career Terms</div></div>
+<input class="gls" id="gs" placeholder="🔍 Search... (prompt, retainer, fractional)" oninput="dg()">
+<div class="gg" id="grd"></div>
+</div></div>
+
+<button class="bk" id="bk" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<footer><b>Red the Brothameyn — AI Transition Playbook v1.0</b><br>Built by UNGASIS / Mel for Red · June 15, 2026<br><span style="font-size:.7rem;color:rgba(255,255,255,.25)">Your languages are not a nice-to-have. They are a 4-6x income multiplier. 🌍🐕📚</span></footer>
+
+<script>
+// 60fps particles
+(function(){const c=document.getElementById('fx'),x=c.getContext('2d');let W,H,ps=[];function sz(){W=c.width=innerWidth;H=c.height=innerHeight}addEventListener('resize',sz);sz();class P{constructor(){this.r()}r(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;this.s=Math.random()*1.5+.3;this.o=Math.random()*.3+.06}u(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.r()}d(){x.beginPath();x.arc(this.x,this.y,this.s,0,7);x.fillStyle=`rgba(232,121,249,${this.o})`;x.fill()}}for(let i=0;i<65;i++)ps.push(new P());(function loop(){x.clearRect(0,0,W,H);ps.forEach(p=>{p.u();p.d()});requestAnimationFrame(loop)})()})();
+function go(id){document.querySelectorAll('.pg').forEach(p=>p.classList.toggle('on',p.id==='pg-'+id));document.querySelectorAll('.lnk a').forEach(a=>a.classList.toggle('on',a.dataset.p===id));document.querySelector('.lnk').classList.remove('open');setTimeout(()=>scrollTo({top:0,behavior:'smooth'}),30);setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>ob.observe(el)),100)}
+addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';document.getElementById('bk').classList.toggle('v',h.scrollTop>400)});
+addEventListener('scroll',()=>{const t=scrollY/(document.body.scrollHeight-innerHeight);const h=Math.round(260+t*20);document.getElementById('sky').style.background=`linear-gradient(180deg,hsl(${h},${60+t*10}%,${6+t*3}%),hsl(${h+15},${50}%,${10+t*4}%) 50%,hsl(${h},${60+t*10}%,${6+t*3}%))`});
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.1});document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
+function ac(el,t,p=''){let c=0;const s=Math.max(1,Math.floor(t/50));const i=setInterval(()=>{c+=s;if(c>=t){c=t;clearInterval(i)}el.textContent=p+c},25)}
+setTimeout(()=>{ac(document.getElementById('c1'),4);ac(document.getElementById('c2'),35);ac(document.getElementById('c3'),90);ac(document.getElementById('c4'),12);ac(document.getElementById('c5'),10);ac(document.getElementById('c6'),0,'$')},500);
+function stab(e,id){e.target.closest('.tb').querySelectorAll('.tbn').forEach(b=>b.classList.remove('on'));e.target.closest('.tb').querySelectorAll('.tp').forEach(p=>p.classList.remove('on'));e.target.classList.add('on');document.getElementById(id).classList.add('on')}
+function calc(){let r=+(hr?.value)||0,h=+(hw?.value)||0,f=+(fx?.value)||61.25,mo=r*h*4.33*f;if(cons)cons.textContent='P'+Math.round(mo).toLocaleString();if(consd)consd.textContent='$'+r+'/hr x '+h+' hrs/wk x 4.33 x P'+f}setTimeout(calc,100);
+const certs=[
+{l:0,n:"Elements of AI",p:"Univ. of Helsinki",c:"Free",t:"6-8 hrs",d:"Best AI intro. No code, no math.",f:1},
+{l:0,n:"AI for Everyone",p:"IBM / edX",c:"Free",t:"~10 hrs",d:"How businesses use AI.",f:1},
+{l:0,n:"AI Fluency",p:"Anthropic",c:"Free",t:"~1 hr",d:"Work WITH AI tools effectively.",f:1},
+{l:0,n:"Intro to Generative AI",p:"Google Cloud",c:"Free",t:"~45 min",d:"What is ChatGPT/Gemini.",f:1},
+{l:0,n:"Google AI Essentials",p:"Google",c:"Free",t:"5-6 hrs",d:"What AI is, use responsibly.",f:1},
+{l:0,n:"Intro to Responsible AI",p:"Google",c:"Free",t:"30 min",d:"AI ethics, fairness, bias.",f:1},
+{l:0,n:"AWS ML Essentials",p:"AWS",c:"Free",t:"~1 hr",d:"Quick ML concepts intro.",f:1},
+{l:1,n:"AI Essentials Certificate",p:"FreeAcademy.ai",c:"Free",t:"4-6 hrs",d:"Verifiable AI credential.",f:1},
+{l:1,n:"ChatGPT Power User",p:"FreeAcademy.ai",c:"Free",t:"3-5 hrs",d:"Use ChatGPT like a pro.",f:1},
+{l:1,n:"IBM AI Fundamentals",p:"IBM / Coursera",c:"Free (audit)",t:"~10 hrs",d:"IBM badge for LinkedIn.",f:1},
+{l:1,n:"Prompt Engineering",p:"AWS",c:"Free",t:"~4 hrs",d:"Write better AI instructions.",f:1},
+{l:1,n:"Google Cloud AI Path",p:"Google Cloud",c:"Free",t:"Self-paced",d:"ML workflows and GenAI.",f:1},
+{l:1,n:"GenAI for Beginners",p:"Microsoft (GitHub)",c:"Free",t:"18 lessons",d:"Prompt eng, LLMs, RAG, agents.",f:1},
+{l:1,n:"HubSpot AI Marketing",p:"HubSpot",c:"Free",t:"~4 hrs",d:"AI for marketing and CRM.",f:1},
+{l:1,n:"DeepLearning.AI Shorts",p:"DeepLearning.AI",c:"Free",t:"1-2 hrs ea",d:"Bite-sized AI courses.",f:1},
+{l:2,n:"AI-900 (Azure AI)",p:"Microsoft",c:"Free/$165 exam",t:"10-15 hrs",d:"Industry-recognized cert.",f:0},
+{l:2,n:"Prompt Eng. Certificate",p:"FreeAcademy.ai",c:"Free",t:"4-6 hrs",d:"Advanced prompting.",f:1},
+{l:2,n:"Google Digital Mktg & AI",p:"Google",c:"Free",t:"5-6 hrs",d:"AI + marketing.",f:1},
+{l:2,n:"HubSpot AI Marketers",p:"HubSpot",c:"Free",t:"2-3 hrs",d:"AI for CRM automation.",f:1},
+{l:2,n:"Databricks GenAI",p:"Databricks",c:"$200 exam",t:"~30 hrs",d:"Build GenAI systems.",f:0},
+{l:2,n:"IBM AI Developer",p:"IBM / Coursera",c:"$49/mo",t:"~3 mo",d:"Job-ready AI dev.",f:0},
+{l:3,n:"AWS AI Practitioner",p:"AWS",c:"Free/$75 exam",t:"15-20 hrs",d:"Cloud AI cert.",f:0},
+{l:3,n:"Google Cloud ML Path",p:"Google Cloud",c:"Free",t:"20-40 hrs",d:"Hands-on GCP AI.",f:1},
+{l:3,n:"AI for Finance",p:"FreeAcademy.ai",c:"Free",t:"8-10 hrs",d:"AI for investing.",f:1},
+{l:3,n:"ML Fundamentals",p:"FreeAcademy.ai",c:"Free",t:"10-15 hrs",d:"How AI models work.",f:1},
+{l:3,n:"AI for HR",p:"FreeAcademy.ai",c:"Free",t:"6-8 hrs",d:"AI for team mgmt.",f:1},
+{l:4,n:"Azure AI Engineer",p:"Microsoft",c:"$165 exam",t:"40-60 hrs",d:"Build AI on Azure.",f:0},
+{l:4,n:"AWS ML Specialty",p:"AWS",c:"$300 exam",t:"60-80 hrs",d:"Deep ML expertise.",f:0},
+{l:4,n:"GCP ML Engineer",p:"Google Cloud",c:"$200 exam",t:"~60 hrs",d:"Top ML cert.",f:0},
+{l:4,n:"Practical Deep Learning",p:"fast.ai",c:"Free",t:"40-60 hrs",d:"Best free advanced.",f:1},
+{l:4,n:"Stanford ML Spec.",p:"Coursera",c:"Free (audit)",t:"3-6 mo",d:"Gold standard ML.",f:1},
+{l:4,n:"MIT Cert ML/AI",p:"MIT xPRO",c:"$2,500+",t:"~12 wk",d:"University credential.",f:0},
+{l:4,n:"Chief AI Officer",p:"Chicago Booth",c:"$10,000+",t:"~6 mo",d:"C-suite AI.",f:0},
+{l:4,n:"Kaggle Competitions",p:"Kaggle",c:"Free",t:"Ongoing",d:"Solve real AI problems.",f:1},
+{l:4,n:"AI for Sr. Executives",p:"MIT xPRO",c:"$2,500+",t:"~6 wk",d:"Senior decision-makers.",f:0},
+];
+function rc(){for(let l=0;l<=4;l++){const g=document.getElementById('cr'+l);if(!g)continue;g.innerHTML=certs.filter(c=>c.l===l).map(c=>'<div class="g crc '+(c.f?'fr':'pd')+'" onclick="this.classList.toggle(\'op\')"><div class="crn">'+c.n+'</div><div class="crp">'+c.p+'</div><div class="crm"><span class="crt '+(c.f?'crtf':'crtp')+'">'+c.c+'</span><span class="crt" style="background:rgba(255,255,255,.06);color:var(--dm)">'+c.t+'</span></div><div class="crd">'+c.d+'</div></div>').join('')}}rc();
+addEventListener('DOMContentLoaded',()=>{const ctx=document.getElementById('radar');if(!ctx)return;new Chart(ctx,{type:'radar',data:{labels:['Technical Depth','Career Impact','Time Required','Cost Efficiency','Industry Recognition'],datasets:[{label:'Free (L0-L1)',data:[3,3,5,5,3],backgroundColor:'rgba(34,197,94,.12)',borderColor:'#22c55e',pointBackgroundColor:'#22c55e',borderWidth:2},{label:'Paid (L2+)',data:[5,5,2,2,5],backgroundColor:'rgba(232,121,249,.12)',borderColor:'#e879f9',pointBackgroundColor:'#e879f9',borderWidth:2}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8',font:{family:'Inter'}}}},scales:{r:{grid:{color:'rgba(255,255,255,.06)'},ticks:{display:false},pointLabels:{color:'#e2e8f0',font:{size:11,family:'Inter'}},suggestedMin:0,suggestedMax:5}}}})});
+(function(){const tasks=['Update LinkedIn: add Spanish, German, logistics, AI-curious','Write headline: Multilingual Ops Specialist ES/DE/EN 10yr Maersk','Complete Elements of AI (free, 6-8 hrs over 3 days)','Complete Google AI Essentials (free, 5-6 hrs)','Ask ChatGPT to rewrite CV in 3 languages','Use AI to draft 5 LinkedIn posts about multilingual ops','Join 3 remote-work communities','Research German-language remote roles','Research Spanish-language remote roles','Apply to 5 multilingual remote positions','Complete ChatGPT Power User cert (free)','Create Multilingual Ops services one-pager via AI','Share first LinkedIn post about AI + languages','Message 10 former Maersk colleagues','Apply to 5 more roles (consulting/ops focus)','Complete Prompt Engineering cert (free)','Create training outline: AI for Multilingual Teams','Draft consulting offer: scope, price, deliverables','Reach out to 5 EU companies directly','Review Week 1-2: what got responses? Refine.','Apply to premium platforms (Toptal, Crossover)','Create 30-min sample training presentation','Post on LinkedIn: lessons from 10 years at Maersk','Use AI to analyze your forex/crypto portfolio','Message 10 more contacts about new direction','Complete IBM AI Fundamentals (free)','Draft Multilingual AI Ops case study from Maersk','Set up Notion/Obsidian as second brain','Calculate: can side income reach 70% of Maersk?','Month 1 review: leads, skills, next month plan'];
+const sv=JSON.parse(localStorage.getItem('redBrothameyn')||'{}');const cl=document.getElementById('cl');
+tasks.forEach((t,i)=>{const d=document.createElement('div');d.className='chk'+(sv[i]?' dn':'');d.innerHTML='<div class="cbx"></div><div class="chtx"><b style="color:var(--dm);font-size:.78rem">Day '+(i+1)+'</b><br>'+t+'</div>';d.onclick=()=>{d.classList.toggle('dn');sv[i]=d.classList.contains('dn')?1:0;localStorage.setItem('redBrothameyn',JSON.stringify(sv));up()};cl.appendChild(d)});
+function up(){const n=Object.values(sv).filter(Boolean).length;dp.textContent=n;db.style.width=n/30*100+'%'}up()})();
+const gl=[
+['AI','Smart software that learns, writes, translates, summarizes.','A very smart intern who reads everything instantly.'],
+['Async Work','Reply when ready, not real-time.','Texting vs phone call.'],
+['Compound Growth','Returns generating more returns.','Snowball rolling downhill.'],
+['Consulting','Selling expert advice.','A doctor for businesses.'],
+['CRM','Customer Relationship Management.','Contacts on steroids.'],
+['DeepL','Best AI translator for European languages.','Google Translate but good for German/Spanish.'],
+['Fractional COO','Part-time operations chief for multiple companies.','Shared personal trainer for businesses.'],
+['Forex','Foreign exchange trading.','Buying/selling currencies for profit.'],
+['Generative AI','AI that creates new content.','Calculator = answers. GenAI = creative assistant.'],
+['LLM','Large Language Model.','Super-reader that read the internet.'],
+['LinkedIn Premium','Paid LinkedIn features.','VIP pass to professional networking.'],
+['Multilingual Premium','Higher pay for multiple languages.','The 4-6x multiplier Red is sitting on.'],
+['Notion','All-in-one workspace.','Digital second brain for book lovers.'],
+['Passive Income','Money without daily active work.','Rent, dividends, forex returns.'],
+['Prompt','Instruction you give AI.','Like ordering food: specific = better.'],
+['Prompt Engineering','Crafting better AI instructions.','Ordering like a chef, not a tourist.'],
+['RAG','AI checks data before answering.','Student checking notes before a test.'],
+['Retainer','Fixed monthly payment for services.','Gym membership for consulting.'],
+['ROI','Return on Investment.','For every peso spent, how much comes back?'],
+['SaaS','Software as a Service.','Netflix model for apps.'],
+['Second Brain','Personal knowledge system.','External memory: notes, highlights, ideas.'],
+['Silent Quitting','Doing minimum while planning exit.','Work-reward equation is broken.'],
+['SOP','Standard Operating Procedure.','Recipe card for work.'],
+['Token','Smallest text unit AI reads.','Scrabble tile for AI.'],
+['Toptal','Premium freelance platform.','VIP room of freelancing.'],
+];
+function dg(){const q=(gs.value||'').toLowerCase();grd.innerHTML=gl.filter(w=>w.join(' ').toLowerCase().includes(q)).map(w=>'<div class="g cd"><div class="gt">'+w[0]+'</div><div style="font-size:.88rem;margin-bottom:6px">'+w[1]+'</div><div class="cm" style="font-style:italic;color:var(--pk)">'+w[2]+'</div></div>').join('')}dg();
+</script>
+</body></html>

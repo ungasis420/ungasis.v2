@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Madam Shari — AI Income Playbook by UNGASIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#1a0a1f;--sf:rgba(255,255,255,.05);--bd:rgba(255,255,255,.12);--bh:rgba(244,114,182,.4);--rs:#f43f5e;--pk:#ec4899;--co:#fb7185;--lv:#c084fc;--gn:#34d399;--gd:#fbbf24;--am:#f59e0b;--rd:#ef4444;--cy:#22d3ee;--tx:#fce7f3;--dm:#c4b5d4;--br:#fdf2f8;--blur:24px;--r:18px;--rsm:12px;--f:'Inter',system-ui,sans-serif;--fs:'Playfair Display',serif;--e:cubic-bezier(.4,0,.2,1)}
+html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:var(--f);background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden}
+::selection{background:var(--pk);color:#fff}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:rgba(244,114,182,.4);border-radius:3px}
+canvas#fx{position:fixed;inset:0;z-index:0;pointer-events:none}.sky{position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,#1a0a1f,#2d0f2e 30%,#3d1232 50%,#2d0f2e 70%,#1a0a1f);transition:background 1s}
+.prog{position:fixed;top:0;left:0;height:3px;z-index:10001;background:linear-gradient(90deg,var(--rs),var(--pk),var(--lv));width:0}
+.g{background:var(--sf);backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r);transition:all .3s var(--e)}
+.g:hover{border-color:var(--bh);box-shadow:0 8px 32px rgba(244,114,182,.15);transform:translateY(-2px)}
+.gs{background:var(--sf);backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r)}
+nav{position:fixed;top:3px;left:0;right:0;z-index:10000;padding:10px 22px;display:flex;justify-content:space-between;align-items:center;background:rgba(26,10,31,.9);backdrop-filter:blur(22px);border-bottom:1px solid var(--bd)}
+.logo{font-family:var(--fs);font-weight:900;font-size:1.2rem;background:linear-gradient(135deg,var(--rs),var(--lv));-webkit-background-clip:text;-webkit-text-fill-color:transparent;cursor:pointer;letter-spacing:.02em}
+.lnk{display:flex;gap:4px;flex-wrap:wrap}.lnk a{color:var(--dm);text-decoration:none;font-size:.76rem;font-weight:700;padding:6px 10px;border-radius:8px;transition:all .2s;white-space:nowrap}
+.lnk a:hover,.lnk a.on{color:var(--pk);background:rgba(236,72,153,.12)}
+.ham{display:none;background:0;border:0;color:var(--br);font-size:1.5rem;cursor:pointer}
+@media(max-width:900px){.lnk{display:none}.lnk.open{display:flex;flex-direction:column;position:absolute;top:52px;left:0;right:0;background:rgba(26,10,31,.97);padding:14px;border-bottom:1px solid var(--bd);z-index:9999}.ham{display:block}}
+.pg{display:none;opacity:0;transform:translateY(14px);transition:.4s}.pg.on{display:block;opacity:1;transform:none}
+.wr{max-width:1180px;margin:auto;padding:92px 22px 56px}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(236,72,153,.35);background:rgba(236,72,153,.08);color:var(--pk);border-radius:999px;padding:8px 20px;font-weight:800;font-size:.82rem;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--gn);animation:pu 2s infinite}@keyframes pu{50%{opacity:.3}}
+h1{font-family:var(--fs);font-size:clamp(2.4rem,7.5vw,4.8rem);line-height:1.05;font-weight:900;letter-spacing:-.02em;background:linear-gradient(135deg,#f43f5e,#ec4899 35%,#c084fc 70%,#fb7185);background-size:280% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:sh 8s linear infinite}
+@keyframes sh{to{background-position:280% center}}
+.sub{max-width:760px;color:var(--dm);font-size:clamp(1rem,2.3vw,1.25rem);margin-top:18px;font-weight:300}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+.btn{border:0;border-radius:14px;padding:13px 26px;font-weight:800;font-size:.9rem;cursor:pointer;font-family:var(--f);transition:all .3s var(--e);letter-spacing:.01em}
+.pri{background:linear-gradient(135deg,var(--rs),var(--pk));color:#fff;box-shadow:0 4px 20px rgba(244,63,94,.3)}
+.pri:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(244,63,94,.45)}
+.gho{background:0;color:var(--tx);border:1px solid var(--bd)}.gho:hover{border-color:var(--pk);color:var(--pk)}
+.sh{display:flex;gap:14px;align-items:center;margin:0 0 24px;padding-bottom:14px;border-bottom:1px solid var(--bd)}
+.sn{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-weight:900;color:#fff;flex-shrink:0;background:linear-gradient(135deg,var(--rs),var(--pk));font-family:var(--fs)}
+.sn.lv{background:linear-gradient(135deg,var(--lv),var(--pk))}.sn.gn{background:linear-gradient(135deg,var(--gn),#10b981)}.sn.gd{background:linear-gradient(135deg,var(--gd),var(--am))}
+.st{font-family:var(--fs);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:var(--br);letter-spacing:-.01em}
+.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}
+.dn{font-family:var(--fs);font-size:2.3rem;font-weight:900;background:linear-gradient(135deg,var(--rs),var(--lv));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:14px 0}
+.cd{padding:24px}.ci{font-size:2.1rem;margin-bottom:12px}.ct{font-weight:800;color:var(--br);font-size:1.05rem;margin-bottom:8px}.cm{color:var(--dm);font-size:.9rem}
+.tw{overflow-x:auto;margin:14px 0;border-radius:var(--rsm)}
+table{width:100%;border-collapse:collapse;font-size:.86rem;background:var(--sf);border:1px solid var(--bd);border-radius:var(--rsm);overflow:hidden}
+thead{background:linear-gradient(135deg,rgba(244,63,94,.14),rgba(192,132,252,.12))}
+th{padding:12px 14px;text-align:left;font-weight:800;color:var(--br);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;border-bottom:2px solid rgba(244,63,94,.2)}
+td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.05)}tr:hover td{background:rgba(244,63,94,.04)}
+.co{padding:18px 20px;border-radius:var(--rsm);margin:14px 0;border-left:4px solid}
+.ck{border-color:var(--lv);background:rgba(192,132,252,.1)}.crs{border-color:var(--rs);background:rgba(244,63,94,.08)}
+.ct2{border-color:var(--gn);background:rgba(52,211,153,.1)}.cgd{border-color:var(--gd);background:rgba(251,191,36,.08)}
+.cw{border-color:var(--am);background:rgba(245,158,11,.08)}
+.lb{font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px}
+.fy{position:relative;padding:18px 20px 18px 50px;border-radius:var(--rsm);margin:14px 0;background:linear-gradient(135deg,rgba(244,63,94,.08),rgba(192,132,252,.06));border:1px solid rgba(244,63,94,.2)}
+.fy:before{content:'💭';position:absolute;top:16px;left:16px;font-size:1.2rem}
+.fy b{color:var(--pk)}.fy .d{color:var(--dm);font-size:.9rem;margin-top:4px}
+.tl{position:relative;padding-left:38px;margin:20px 0}
+.tl:before{content:'';position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(var(--rs),var(--pk),var(--lv),var(--gn),var(--gd))}
+.ti{position:relative;margin-bottom:18px}.td{position:absolute;left:-30px;top:6px;width:14px;height:14px;border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 12px rgba(244,63,94,.4)}
+.bi{margin-bottom:11px}.bl{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:4px}
+.bt{height:28px;border-radius:14px;background:rgba(255,255,255,.06);overflow:hidden}
+.bf{height:100%;border-radius:14px;display:flex;align-items:center;justify-content:flex-end;padding-right:12px;font-size:.72rem;font-weight:800;color:#fff;transition:width 1.5s var(--e)}
+.tb{margin:20px 0}.tbb{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:14px}
+.tbn{padding:9px 18px;border-radius:10px;border:1px solid var(--bd);background:0;color:var(--dm);cursor:pointer;font-size:.84rem;font-weight:700;font-family:var(--f);transition:all .2s}
+.tbn:hover{background:rgba(244,63,94,.1);color:var(--pk)}
+.tbn.on{background:linear-gradient(135deg,rgba(244,63,94,.18),rgba(192,132,252,.18));color:var(--br);border-color:rgba(244,63,94,.35)}
+.tp{display:none;animation:fu .4s ease}.tp.on{display:block}@keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.crg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:10px}
+.crc{padding:16px;cursor:pointer;position:relative;overflow:hidden}
+.crc::after{content:'';position:absolute;top:0;left:0;width:3px;height:100%;border-radius:3px}
+.crc.fr::after{background:var(--gn)}.crc.pd::after{background:var(--gd)}
+.crn{font-weight:800;font-size:.92rem;margin-bottom:4px}.crp{font-size:.76rem;color:var(--pk)}
+.crm{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.crt{font-size:.7rem;padding:3px 9px;border-radius:999px;font-weight:700}
+.crtf{color:var(--gn);border:1px solid rgba(52,211,153,.35);background:rgba(52,211,153,.1)}
+.crtp{color:var(--gd);border:1px solid rgba(251,191,36,.35);background:rgba(251,191,36,.1)}
+.crd{max-height:0;overflow:hidden;transition:max-height .4s;font-size:.82rem;color:var(--dm);line-height:1.5}
+.crc.op .crd{max-height:220px;padding-top:10px}
+.chk{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer}
+.cbx{width:22px;height:22px;flex:0 0 22px;border:2px solid var(--bd);border-radius:7px;margin-top:2px;display:grid;place-items:center}
+.chk.dn .cbx{background:var(--gn);border-color:var(--gn)}
+.chk.dn .cbx:after{content:'✓';color:#fff;font-weight:900;font-size:.75rem}
+.chk.dn .chtx{text-decoration:line-through;color:var(--dm)}
+.cf input{width:100%;padding:11px 14px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:1rem;font-family:var(--f);outline:none}
+.cf input:focus{border-color:var(--pk)}
+.cf label{display:block;color:var(--dm);font-weight:800;font-size:.82rem;margin-bottom:5px}
+.big{font-family:var(--fs);font-size:2.6rem;font-weight:900;background:linear-gradient(135deg,var(--rs),var(--gn));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.gls{width:min(460px,100%);padding:13px 20px;border-radius:14px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:.95rem;font-family:var(--f);outline:none;margin-bottom:18px}
+.gls:focus{border-color:var(--pk)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.gt{color:var(--pk);font-weight:900;font-size:1rem;margin-bottom:4px}
+.bk{position:fixed;right:22px;bottom:22px;width:50px;height:50px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--rs),var(--pk));color:#fff;font-size:1.2rem;font-weight:900;cursor:pointer;opacity:0;transform:translateY(16px);transition:all .3s var(--e);z-index:9999;box-shadow:0 4px 16px rgba(244,63,94,.3)}
+.bk.v{opacity:1;transform:none}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.rv.vis{opacity:1;transform:none}
+footer{text-align:center;padding:44px 22px;color:var(--dm);font-size:.78rem;border-top:1px solid var(--bd);margin-top:40px}
+@media(max-width:600px){.cg,.crg{grid-template-columns:1fr}.dg{grid-template-columns:repeat(2,1fr)}h1{font-size:2.2rem}}
+@media print{nav,.prog,.bk,canvas,.sky{display:none!important}body{background:#fff;color:#000}.g,.gs{background:#f8f8f8;border:1px solid #ddd;backdrop-filter:none}}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div><canvas id="fx"></canvas><div class="prog" id="prog"></div>
+<nav><div class="logo" onclick="go('home')">🌸 Shari's AI Playbook</div><button class="ham" onclick="document.querySelector('.lnk').classList.toggle('open')">☰</button><div class="lnk" id="lnk"><a href="#" onclick="go('home')" class="on" data-p="home">Home</a><a href="#" onclick="go('strat')" data-p="strat">✨ Strategy</a><a href="#" onclick="go('paths')" data-p="paths">🗺️ Paths</a><a href="#" onclick="go('plan')" data-p="plan">📋 30-Day</a><a href="#" onclick="go('ai')" data-p="ai">🧠 AI Certs</a><a href="#" onclick="go('money')" data-p="money">💰 Money</a><a href="#" onclick="go('tools')" data-p="tools">🛠️ Tools</a><a href="#" onclick="go('gloss')" data-p="gloss">📖 Glossary</a></div></nav>
+
+<!-- HOME -->
+<div class="pg on" id="pg-home">
+<section class="hero"><div class="badge"><span class="dot"></span> Personalized by UNGASIS / Mel — June 2026</div><h1>Madam Shari<br>The Quiet Power Playbook</h1><p class="sub">For Shari — UP graduate, 5+ year Maersk team leader, customer service queen, manager, mother of routines, low-stress, solo-thriver, ₱60K+/month ASAP, no drama, no chaos, no commute.</p><div class="cta"><button class="btn pri" onclick="go('strat')">✨ Show Me the Calm Path</button><button class="btn gho" onclick="go('plan')">📋 Give Me the 30-Day Plan</button><button class="btn gho" onclick="go('ai')">🧠 Where Do I Start with AI?</button></div></section>
+<div class="wr">
+<div class="sh"><div class="sn">★</div><div class="st">Shari's Dashboard</div></div>
+<div class="dg" style="margin-bottom:28px">
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c1">0</div><div class="cm">Years Maersk Leadership</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c2">0</div><div class="cm">AI Certifications Mapped</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c3">0</div><div class="cm">Day Action Plan</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c4">0</div><div class="cm">Income Paths Ranked</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c5">₱0</div><div class="cm">Starting Capital Needed</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c6">₱60K</div><div class="cm">Monthly Income Target</div></div>
+</div>
+<div class="sh"><div class="sn gd">🌸</div><div class="st">Built Around Shari's Real Life</div></div>
+<div class="cg">
+<div class="g cd rv"><div class="ci">🎓</div><div class="ct">UP Graduate</div><div class="cm">A UP degree opens doors. EU/US clients love it. Your name + UP on LinkedIn = instant credibility filter pass.</div></div>
+<div class="g cd rv"><div class="ci">👑</div><div class="ct">5+ Years Maersk Team Lead</div><div class="cm">You manage people, processes, escalations, and metrics at a Fortune 500. This is <b>not "just CS"</b> — this is operations leadership.</div></div>
+<div class="g cd rv"><div class="ci">🧘‍♀️</div><div class="ct">Low Stress Tolerance</div><div class="cm">This is a feature, not a bug. You will choose CALM systems. Low stress = better decisions, longer career, healthier life.</div></div>
+<div class="g cd rv"><div class="ci">🌷</div><div class="ct">Solo + Selective</div><div class="cm">Loves solo work, okay with clients and sales. Perfect profile for <b>async remote ops, account management, or client success</b>.</div></div>
+<div class="g cd rv"><div class="ci">⏰</div><div class="ct">20-40 Hours / Week</div><div class="cm">Part-time-friendly. You don't need 60-hour grind. The right rate × 25 hours = ₱60K+ easily.</div></div>
+<div class="g cd rv"><div class="ci">💗</div><div class="ct">Quezon City Based</div><div class="cm">Same city as Red. Remote-friendly. Filipino-Filipino partnership = double income, shared utilities, compound growth.</div></div>
+</div>
+<div class="co crs"><div class="lb" style="color:var(--rs)">🌹 Shari's one-sentence strategy</div>Shari should use her <b>UP credibility + Maersk leadership + calm energy</b> to land remote part-time team-leader/client-success roles — NOT entry-level VA work, NOT high-pressure sales, NOT anything that requires hustle culture.</div>
+<div class="sh" style="margin-top:36px"><div class="sn gn">⚡</div><div class="st">Soft Shortcuts</div></div>
+<div class="cg">
+<div class="g cd rv" onclick="go('strat')" style="cursor:pointer"><div class="ci">🌸</div><div class="ct">The Calm Path</div><div class="cm">How to earn ₱60K+ without stress, drama, or commute. Tailored for Shari's energy.</div></div>
+<div class="g cd rv" onclick="go('paths')" style="cursor:pointer"><div class="ci">🗺️</div><div class="ct">All Income Paths Ranked</div><div class="cm">10 paths scored for Shari's profile. Calm-first ranking.</div></div>
+<div class="g cd rv" onclick="go('ai')" style="cursor:pointer"><div class="ci">🧠</div><div class="ct">AI Learning (Beginner-Safe)</div><div class="cm">35 mostly-free certs. Start with 1 hour weekends. No overwhelm.</div></div>
+<div class="g cd rv" onclick="go('money')" style="cursor:pointer"><div class="ci">💰</div><div class="ct">Income Calculator</div><div class="cm">See exactly what rate × hours gets you to ₱60K, ₱80K, ₱100K.</div></div>
+</div>
+</div></div>
+
+<!-- STRATEGY -->
+<div class="pg" id="pg-strat"><div class="wr">
+<div class="sh"><div class="sn">1</div><div class="st">Shari's Calm Income Strategy</div></div>
+<div class="co crs"><div class="lb" style="color:var(--rs)">🔑 The truth about Shari's profile</div>Shari is a <b>UP-educated team leader from a Fortune 500 logistics company</b> with 5+ years managing people, processes, and customers. This profile commands <b>$10-$25/hr</b> in remote work — NOT the $4-$6/hr generic VA rate. The "low stress" preference is her competitive advantage, not a weakness.</div>
+<div class="fy"><b>"Low Stress is a SKILL, not a limitation"</b><div class="d">Most people work HARD. Few people work CALM. The ones who work calm — with systems, boundaries, and clarity — become indispensable to companies tired of burnt-out employees. Shari's nervous system is her business asset.</div></div>
+<h3 style="margin-top:28px;color:var(--br)">💎 Shari's Unfair Advantages</h3>
+<div class="tw"><table><thead><tr><th>Advantage</th><th>Market Value</th><th>Why It Matters</th></tr></thead><tbody>
+<tr><td><b style="color:var(--rs)">UP Degree</b></td><td>+30% credibility instant</td><td>Filters her into premium roles. Recruiters trust UP grads.</td></tr>
+<tr><td><b style="color:var(--pk)">Team Lead at Maersk (5+yr)</b></td><td>$15-$25/hr remote</td><td>Companies pay premium for proven team leaders, not just CS agents.</td></tr>
+<tr><td><b style="color:var(--lv)">Customer Service Excellence</b></td><td>Client Success roles</td><td>SaaS companies pay $20-$40/hr for Client Success Managers.</td></tr>
+<tr><td><b style="color:var(--gn)">Calm Energy</b></td><td>Premium for stability</td><td>Companies love non-drama hires. Lower turnover = better pay.</td></tr>
+<tr><td><b style="color:var(--gd)">Quezon City Local</b></td><td>Logistics + lifestyle</td><td>No relocation needed. Lower cost of living = higher net savings.</td></tr>
+<tr><td><b>Partnered with Red</b></td><td>Compound household income</td><td>Two ₱60K+ incomes from home = ₱120K+/month combined. Wealth-building.</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">🚪 Shari's 3-Phase Plan</h3>
+<div class="tl">
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--rs)"></div><b style="color:var(--rs);font-size:.86rem">Phase 1: Polish & Position (Month 1)</b><div class="cm">LinkedIn redesign. Resume rewrite. Apply to 3-5 calm remote roles per week. No pressure to land yet.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pk)"></div><b style="color:var(--pk);font-size:.86rem">Phase 2: Land & Learn (Month 2)</b><div class="cm">First client or remote role at ₱40K-₱60K. Learn AI tools to be 2x faster. Build calm work routine.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--lv)"></div><b style="color:var(--lv);font-size:.86rem">Phase 3: Scale Calmly (Month 3+)</b><div class="cm">Raise rates. Add 2nd client OR upgrade to retainer. Hit ₱60K-₱100K/month with 25-30 hrs/week.</div></div>
+</div>
+<div class="co ct2"><div class="lb" style="color:var(--gn)">💡 The calm rule</div>Never accept a role that requires being "always on." If the job description says "fast-paced rockstar wears many hats" — RUN. Shari's currency is calm.</div>
+<h3 style="margin-top:28px;color:var(--br)">The "Chill + High Pay" Reality for Shari</h3>
+<div class="tw"><table><thead><tr><th>You Want</th><th>You Pay With</th></tr></thead><tbody>
+<tr><td>₱60K + chill</td><td>4-8 weeks of careful job hunting + AI learning</td></tr>
+<tr><td>₱60K + instant</td><td>High-stress sales or BPO night shifts (Shari refuses)</td></tr>
+<tr><td>Chill + instant</td><td>₱20K-₱25K basic VA (below target)</td></tr>
+<tr><td style="color:var(--gn)">Shari's path: <b>Patience + Position + Premium</b></td><td style="color:var(--gn)">Best ROI on her profile</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">📝 Shari's LinkedIn Headline</h3>
+<div class="co ck"><div class="lb" style="color:var(--lv)">Copy-paste this</div>"UP-educated Team Leader & Customer Operations Specialist | 5+ years at Maersk | Remote-ready | Building calm, high-trust client relationships"</div>
+<h3 style="margin-top:28px;color:var(--br)">Shari's Career Evolution Ladder</h3>
+<div class="tl">
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--dm)"></div><b style="color:var(--dm);font-size:.84rem">Level 1 — Now: Onsite Team Lead</b><div class="cm">Maersk team leadership. Good base, capped, commute.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--rs)"></div><b style="color:var(--rs);font-size:.84rem">Level 2 — Remote Client Success ← FIRST MOVE</b><div class="cm">SaaS companies, Customer Success roles. ₱60K-₱100K, async, calm.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pk)"></div><b style="color:var(--pk);font-size:.84rem">Level 3 — Account Manager / Ops Coordinator</b><div class="cm">Own client relationships. ₱80K-₱130K. Retainer-friendly.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--lv)"></div><b style="color:var(--lv);font-size:.84rem">Level 4 — Team Lead / Consultant</b><div class="cm">Manage remote teams. Train others. ₱120K-₱200K.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.84rem">Level 5 — Fractional Ops Lead / Mini-Agency</b><div class="cm">Multiple clients, retainer-based. ₱200K+/month, full control.</div></div>
+</div>
+<div class="fy"><b>"Retainer"</b><div class="d">Like a beauty subscription box — predictable, monthly, and you know what's coming. Client pays you fixed monthly fee for ongoing support. Stable, calm, repeat income.</div></div>
+</div></div>
+
+<!-- PATHS -->
+<div class="pg" id="pg-paths"><div class="wr">
+<div class="sh"><div class="sn gd">2</div><div class="st">All Income Paths — Ranked for Shari</div></div>
+<p class="cm" style="margin-bottom:14px">Ranking favors CALM + LEADERSHIP + ₱60K+ income.</p>
+<div style="margin-bottom:24px">
+<div class="bi"><div class="bl"><span>💎 Remote Client Success Mgr</span><span>14/15</span></div><div class="bt"><div class="bf" style="width:93%;background:linear-gradient(90deg,var(--rs),var(--pk))">★ Best Path</div></div></div>
+<div class="bi"><div class="bl"><span>👑 Remote Team Lead (BPO/SaaS)</span><span>13/15</span></div><div class="bt"><div class="bf" style="width:87%;background:linear-gradient(90deg,var(--pk),var(--lv))">Natural Fit</div></div></div>
+<div class="bi"><div class="bl"><span>📊 Account Manager / Ops</span><span>12/15</span></div><div class="bt"><div class="bf" style="width:80%;background:linear-gradient(90deg,var(--lv),var(--gn))">High Stability</div></div></div>
+<div class="bi"><div class="bl"><span>📝 Executive / Virtual Assistant Premium</span><span>11/15</span></div><div class="bt"><div class="bf" style="width:73%;background:linear-gradient(90deg,var(--gn),var(--gd))">Calm + Flexible</div></div></div>
+<div class="bi"><div class="bl"><span>🌹 Coaching / Training Specialist</span><span>10/15</span></div><div class="bt"><div class="bf" style="width:67%;background:linear-gradient(90deg,var(--gd),var(--am))">Leverages Leadership</div></div></div>
+<div class="bi"><div class="bl"><span>💼 Project Coordinator</span><span>10/15</span></div><div class="bt"><div class="bf" style="width:65%;background:linear-gradient(90deg,var(--rs),var(--gd))">Structured</div></div></div>
+<div class="bi"><div class="bl"><span>📞 SDR / Inside Sales</span><span>7/15</span></div><div class="bt"><div class="bf" style="width:42%;background:linear-gradient(90deg,var(--am),var(--rd))">Too High Stress</div></div></div>
+<div class="bi"><div class="bl"><span>🏢 Generic BPO CSR (onsite)</span><span>5/15</span></div><div class="bt"><div class="bf" style="width:28%;background:linear-gradient(90deg,var(--rd),var(--am))">Avoid</div></div></div>
+</div>
+<div class="tw"><table><thead><tr><th>#</th><th>Path</th><th>Income</th><th>Stress</th><th>Start</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>1</td><td>Remote Client Success Manager</td><td>5</td><td>5</td><td>4</td><td style="color:var(--gn)">★ Best ASAP</td></tr>
+<tr><td>2</td><td>Remote Team Lead (BPO/SaaS)</td><td>5</td><td>4</td><td>4</td><td>Natural fit</td></tr>
+<tr><td>3</td><td>Account Manager / Ops Coordinator</td><td>4</td><td>4</td><td>4</td><td>High stability</td></tr>
+<tr><td>4</td><td>Premium Executive Assistant</td><td>4</td><td>5</td><td>5</td><td>Calm + fast start</td></tr>
+<tr><td>5</td><td>Coaching / Training Specialist</td><td>5</td><td>3</td><td>2</td><td>After 2-3 mos</td></tr>
+<tr><td>6</td><td>Project Coordinator</td><td>4</td><td>4</td><td>3</td><td>Structured</td></tr>
+<tr><td>7</td><td>Community Management</td><td>3</td><td>4</td><td>4</td><td>Side income</td></tr>
+<tr><td>8</td><td>Digital templates / courses</td><td>4</td><td>5</td><td>2</td><td>Year 2 wealth</td></tr>
+<tr><td>9</td><td>SDR / Inside Sales</td><td>4</td><td>2</td><td>3</td><td style="color:var(--rd)">Too stressful</td></tr>
+<tr><td>10</td><td>Generic BPO CSR</td><td>2</td><td>3</td><td>5</td><td style="color:var(--rd)">Below target</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">💰 Monetization Models</h3>
+<div class="tw"><table><thead><tr><th>Model</th><th>How</th><th>Fit for Shari?</th></tr></thead><tbody>
+<tr><td>Full-time remote employment</td><td>One company, ₱60-100K/mo</td><td>✅ Most stable + benefits</td></tr>
+<tr><td>Hourly contract</td><td>$10-$20/hr × 25 hrs</td><td>✅ Flexible</td></tr>
+<tr><td>Monthly retainer</td><td>₱40-80K/client × 2</td><td>✅ Best for solo</td></tr>
+<tr><td>Project-based</td><td>Fixed scope, fixed fee</td><td>✅ Clean boundaries</td></tr>
+<tr><td>Coaching session fees</td><td>₱2-5K per session</td><td>⏳ After credibility</td></tr>
+<tr><td>Digital product (template)</td><td>₱499-2,999 per sale</td><td>⏳ Passive layer</td></tr>
+<tr><td>Affiliate / Referral</td><td>Commissions for recommending tools</td><td>⏳ Side layer</td></tr>
+<tr><td>Commission-only sales</td><td>Only paid when closing</td><td>❌ Too unstable</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">🚫 What Shari Must Avoid</h3>
+<div class="tw"><table><thead><tr><th>Avoid</th><th>Why</th><th>Instead</th></tr></thead><tbody>
+<tr><td>Onsite roles</td><td>Commute drains energy</td><td>100% remote only</td></tr>
+<tr><td>Night shift BPO</td><td>Destroys sleep + health</td><td>EU/AU timezone clients (better hours)</td></tr>
+<tr><td>Generic $5/hr VA</td><td>Undervalues her UP + Maersk background</td><td>$10-$25/hr specialist roles</td></tr>
+<tr><td>Commission-only sales</td><td>Stress + uncertainty</td><td>Base + bonus structure only</td></tr>
+<tr><td>"Wear many hats" roles</td><td>Chaos and burnout</td><td>Clear scope, defined hours</td></tr>
+<tr><td>Toxic micromanaging bosses</td><td>Drains energy</td><td>Interview the boss too — values fit matters</td></tr>
+<tr><td>Multiple chaotic clients</td><td>Mental overload</td><td>1-2 calm clients, well-paid</td></tr>
+<tr><td>Hustle culture content</td><td>Anxiety + comparison</td><td>Unfollow it. Read calm leaders instead.</td></tr>
+</tbody></table></div>
+</div></div>
+
+<!-- 30-DAY PLAN -->
+<div class="pg" id="pg-plan"><div class="wr">
+<div class="sh"><div class="sn gn">3</div><div class="st">Shari's 30-Day Calm Plan</div></div>
+<p class="cm" style="margin-bottom:14px">30-60 min/day. Do it while still at Maersk. Calm, deliberate, no rush.</p>
+<div class="gs" style="padding:18px;margin-bottom:14px"><b style="color:var(--rs)">Progress: <span id="dp">0</span>/30</b><div class="bt" style="margin-top:8px;height:12px"><div id="db" class="bf" style="width:0%;background:linear-gradient(90deg,var(--rs),var(--lv))"></div></div></div>
+<div id="cl"></div>
+<h3 style="margin-top:28px;color:var(--br)">🕐 Shari's Ideal Day (After Transition)</h3>
+<div class="tw"><table><thead><tr><th>Time</th><th>Activity</th><th>Dur</th></tr></thead><tbody>
+<tr><td>7:00</td><td>☕ Coffee + morning quiet time</td><td>1h</td></tr>
+<tr><td>8:00</td><td>📧 Check client messages (calm review, not panic)</td><td>30m</td></tr>
+<tr><td>8:30</td><td>💼 Client work — focused block #1</td><td>2.5h</td></tr>
+<tr><td>11:00</td><td>🧘 Stretch + healthy snack</td><td>30m</td></tr>
+<tr><td>11:30</td><td>📊 Reporting + admin tasks</td><td>1h</td></tr>
+<tr><td>12:30</td><td>🍱 Lunch with Red (work from home perk)</td><td>1h</td></tr>
+<tr><td>1:30</td><td>💼 Client work — focused block #2</td><td>2h</td></tr>
+<tr><td>3:30</td><td>🤖 Use AI for: drafting, summarizing, automation</td><td>30m</td></tr>
+<tr><td style="color:var(--gn)"><b>4:00</b></td><td style="color:var(--gn)"><b>✅ Done. Personal time. No emails after this.</b></td><td>—</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">🟢🟡🔴 Shari's Job Filter</h3>
+<div class="cg">
+<div class="g cd" style="border-left:4px solid var(--gn)"><div class="ct" style="color:var(--gn)">🟢 ACCEPT</div><div class="cm">100% remote · Day shift (PH or EU/AU friendly) · Base + benefits · Clear scope · Calm boss · Values UP/Maersk background</div></div>
+<div class="g cd" style="border-left:4px solid var(--am)"><div class="ct" style="color:var(--am)">🟡 EVALUATE</div><div class="cm">New client (check reviews) · Some live calls · Slight overtime occasionally · Hybrid (only if 1 day/week max)</div></div>
+<div class="g cd" style="border-left:4px solid var(--rd)"><div class="ct" style="color:var(--rd)">🔴 DECLINE</div><div class="cm">Onsite · Night shift · Commission-only · "Always on" · Toxic culture · Pay below ₱40K · Vague job description</div></div>
+</div>
+</div></div>
+
+<!-- AI CERTS -->
+<div class="pg" id="pg-ai"><div class="wr">
+<div class="sh"><div class="sn lv">4</div><div class="st">AI Learning — Calm & Beginner-Safe</div></div>
+<div class="fy"><b>"Where do I start with AI?"</b><div class="d">Shari is a beginner. That is perfect. Start with curiosity, not pressure. 1 hour per Saturday morning with coffee. Don't try to learn everything — just learn what makes your work 2x easier. AI is your gentle assistant, not another stressor.</div></div>
+<div class="co crs"><div class="lb" style="color:var(--rs)">🌹 For a calm learner</div>AI is your most patient employee. It never gets tired, never sasses back, and never quits. As a team leader, you already know how to delegate to humans. AI = same skill, applied to a digital assistant.</div>
+<div class="tb"><div class="tbb">
+<button class="tbn on" onclick="stab(event,'l0')">🟢 Level 0</button>
+<button class="tbn" onclick="stab(event,'l1')">🔵 Level 1</button>
+<button class="tbn" onclick="stab(event,'l2')">🟣 Level 2</button>
+<button class="tbn" onclick="stab(event,'l3')">🟡 Level 3</button>
+<button class="tbn" onclick="stab(event,'l4')">🔴 Level 4-5</button>
+</div>
+<div class="tp on" id="l0"><h3 style="color:var(--gn);margin-bottom:8px">Absolute Beginner — Free, 0-2 weeks</h3><div class="crg" id="cr0"></div></div>
+<div class="tp" id="l1"><h3 style="color:#3b82f6;margin-bottom:8px">Beginner — 2-6 weeks</h3><div class="crg" id="cr1"></div></div>
+<div class="tp" id="l2"><h3 style="color:var(--lv);margin-bottom:8px">Intermediate — 1-3 months</h3><div class="crg" id="cr2"></div></div>
+<div class="tp" id="l3"><h3 style="color:var(--gd);margin-bottom:8px">Advanced — 3-6 months</h3><div class="crg" id="cr3"></div></div>
+<div class="tp" id="l4"><h3 style="color:var(--rd);margin-bottom:8px">Expert to Master — 6+ months</h3><div class="crg" id="cr4"></div></div>
+</div>
+<h3 style="margin-top:28px;color:var(--br)">📊 Free vs Paid Certifications</h3>
+<div class="gs" style="padding:22px;margin-top:10px"><div style="max-width:480px;margin:auto"><canvas id="radar"></canvas></div></div>
+<h3 style="margin-top:28px;color:var(--br)">⚡ Quick Cheat Sheet for Shari</h3>
+<div class="tw"><table><thead><tr><th>Goal</th><th>Best Combo</th><th>Cost</th><th>Time</th></tr></thead><tbody>
+<tr><td>Understand AI basics</td><td>Elements of AI + Google AI Essentials</td><td style="color:var(--gn)">Free</td><td>~10 hrs</td></tr>
+<tr><td>Use AI at work today</td><td>ChatGPT Power User + Prompt Engineering</td><td style="color:var(--gn)">Free</td><td>~8 hrs</td></tr>
+<tr><td>Add credibility to LinkedIn</td><td>IBM AI Fundamentals + Azure AI-900</td><td>Free/$165</td><td>~25 hrs</td></tr>
+<tr><td>Become AI-savvy team leader</td><td>HubSpot AI + GenAI for Beginners</td><td style="color:var(--gn)">Free</td><td>~14 hrs</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">📅 12-Month AI Learning Plan</h3>
+<div class="tl">
+<div class="ti"><div class="td" style="background:var(--rs)"></div><b style="color:var(--rs);font-size:.86rem">Month 1-2 — Basics + Daily Use</b><div class="cm">Elements of AI + Google AI Essentials. Use ChatGPT daily for client emails, summaries, meeting notes.</div></div>
+<div class="ti"><div class="td" style="background:var(--pk)"></div><b style="color:var(--pk);font-size:.86rem">Month 3-4 — Better Prompts</b><div class="cm">Prompt Engineering cert. Apply AI to Maersk work — faster reporting, better escalation drafts.</div></div>
+<div class="ti"><div class="td" style="background:var(--lv)"></div><b style="color:var(--lv);font-size:.86rem">Month 5-6 — First AI Workflow</b><div class="cm">Build an AI-powered onboarding template or weekly report generator. Show it on LinkedIn.</div></div>
+<div class="ti"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.86rem">Month 7-9 — Add Credential</b><div class="cm">Azure AI-900 or IBM AI Fundamentals. Add badge to LinkedIn = recruiter magnet.</div></div>
+<div class="ti"><div class="td" style="background:var(--gd)"></div><b style="color:var(--gd);font-size:.86rem">Month 10-12 — Lead with AI</b><div class="cm">Teach team how to use AI calmly. Document the playbook. Maybe coach others later.</div></div>
+</div>
+<h3 style="margin-top:28px;color:var(--br)">🌷 Study Tips for Calm Learners</h3>
+<div class="cg">
+<div class="g cd"><div class="ci">☕</div><div class="ct">Saturday morning ritual</div><div class="cm">1 hour every Saturday with coffee. No pressure, just curiosity.</div></div>
+<div class="g cd"><div class="ci">📝</div><div class="ct">Take written notes</div><div class="cm">Old-school notebook beats screens for retention. Pretty journal optional.</div></div>
+<div class="g cd"><div class="ci">🎬</div><div class="ct">Watch, don't speed-read</div><div class="cm">YouTube tutorials at 1x speed. Absorb, don't rush.</div></div>
+<div class="g cd"><div class="ci">🤝</div><div class="ct">Study with Red</div><div class="cm">Discuss what you learn together. Two minds = faster understanding.</div></div>
+<div class="g cd"><div class="ci">💼</div><div class="ct">Apply at Maersk first</div><div class="cm">Use AI to make your current job easier — proves value before you switch.</div></div>
+<div class="g cd"><div class="ci">🌸</div><div class="ct">Celebrate small wins</div><div class="cm">Finished one course? Buy yourself flowers. Calm + reward = sustainable progress.</div></div>
+</div>
+</div></div>
+
+<!-- MONEY -->
+<div class="pg" id="pg-money"><div class="wr">
+<div class="sh"><div class="sn gd">5</div><div class="st">Money Math — How Shari Hits ₱60K+</div></div>
+<div class="fy"><b>Shari's Income Equation</b><div class="d">Monthly income = USD rate × hours/week × 4.33 × ₱/USD. With UP + Maersk credentials, your floor is $10/hr. Your ceiling is $25+/hr. The math works in your favor.</div></div>
+<div class="gs" style="padding:24px;margin:18px 0"><h3 style="color:var(--rs);margin-bottom:14px">💎 Shari's Rate Calculator</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+<div class="cf"><label>USD/hour</label><input id="hr" type="number" value="12" oninput="calc()"></div>
+<div class="cf"><label>Hours/week</label><input id="hw" type="number" value="25" oninput="calc()"></div>
+<div class="cf"><label>PHP/USD</label><input id="fx" type="number" value="61.25" step=".25" oninput="calc()"></div>
+</div>
+<div style="margin-top:18px"><div class="cm">Estimated Monthly Income</div><div class="big" id="cons">₱0</div><div class="cm" id="consd"></div></div></div>
+<h3 style="margin-top:18px;color:var(--br)">📊 Income Scenarios</h3>
+<div class="tw"><table><thead><tr><th>Scenario</th><th>Rate</th><th>Hrs/Wk</th><th>Monthly ₱</th></tr></thead><tbody>
+<tr><td>Generic VA</td><td>$6/hr</td><td>40</td><td style="color:var(--dm)">₱63,700</td></tr>
+<tr><td style="color:var(--rs)"><b>Shari: Premium VA / Ops</b></td><td><b>$10/hr</b></td><td><b>25</b></td><td style="color:var(--rs)"><b>₱66,400</b></td></tr>
+<tr><td style="color:var(--pk)"><b>Shari: Client Success Mgr</b></td><td><b>$15/hr</b></td><td><b>25</b></td><td style="color:var(--pk)"><b>₱99,500</b></td></tr>
+<tr><td style="color:var(--lv)"><b>Shari: Remote Team Lead</b></td><td><b>$20/hr</b></td><td><b>25</b></td><td style="color:var(--lv)"><b>₱132,700</b></td></tr>
+<tr><td style="color:var(--gn)"><b>Shari + Red Combined</b></td><td>—</td><td>—</td><td style="color:var(--gn)"><b>₱200K+</b></td></tr>
+</tbody></table></div>
+<div class="co crs"><div class="lb" style="color:var(--rs)">🌹 Reality check</div>At $12/hr × 25 hrs/week, Shari clears ₱79K/month with weekends free and no commute. That's MORE than most onsite team lead salaries in QC. The math is on her side.</div>
+<h3 style="margin-top:28px;color:var(--br)">🌐 Where to Find Calm Remote Roles</h3>
+<div class="tw"><table><thead><tr><th>Platform</th><th>Best For</th><th>Pro Tip</th></tr></thead><tbody>
+<tr><td><b style="color:var(--rs)">LinkedIn ⭐</b></td><td>Client Success, Team Lead, Ops</td><td>Use UP + Maersk in headline. Recruiters DM YOU.</td></tr>
+<tr><td><b style="color:var(--rs)">Remote.co / We Work Remotely</b></td><td>Fully-remote roles only</td><td>Filter: Customer Success, Account Mgr</td></tr>
+<tr><td><b style="color:var(--pk)">OnlineJobs.ph</b></td><td>Premium roles for PH talent</td><td>Filter: $10/hr+ only, ignore $3-$5/hr posts</td></tr>
+<tr><td>Jobstreet PH (Remote filter)</td><td>Local + remote hybrid</td><td>Use remote filter. Skip onsite.</td></tr>
+<tr><td>Workable / Lever</td><td>Direct company applications</td><td>Find EU/US SaaS companies hiring CS managers</td></tr>
+<tr><td>Maersk alumni network</td><td>Warm referrals</td><td>Former colleagues now at other companies = leads</td></tr>
+<tr><td>FB Groups (Remote Filipino Pros)</td><td>Community + leads</td><td>Join 3-5 groups, post intro</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:28px;color:var(--br)">📝 Shari's Cover Letter Template</h3>
+<div class="co ck"><div class="lb" style="color:var(--lv)">Copy-paste this</div>"Hello [Name], I am applying for [Role]. With a UP degree and 5+ years as a Team Leader at Maersk (Fortune 500), I bring proven experience in customer operations, team management, and process improvement. I am AI-savvy, calm under pressure, and excel in remote collaboration. I would love to discuss how I can support your team."</div>
+</div></div>
+
+<!-- TOOLS -->
+<div class="pg" id="pg-tools"><div class="wr">
+<div class="sh"><div class="sn lv">6</div><div class="st">Tools Shari Actually Needs</div></div>
+<p class="cm" style="margin-bottom:14px">All free or low-cost. Beginner-friendly. Don't try to learn all at once — pick 3, master them.</p>
+<div class="cg">
+<div class="g cd"><div class="ci">🤖</div><div class="ct">ChatGPT / Copilot</div><div class="cm">Daily AI assistant — emails, summaries, meeting notes, drafts.</div></div>
+<div class="g cd"><div class="ci">📧</div><div class="ct">Gmail + Calendar</div><div class="cm">Already know it. Master Labels, Filters, Calendar blocks.</div></div>
+<div class="g cd"><div class="ci">📊</div><div class="ct">Google Sheets</div><div class="cm">Client trackers, KPI dashboards, simple reports.</div></div>
+<div class="g cd"><div class="ci">📋</div><div class="ct">Notion / Trello</div><div class="cm">Task management, SOPs, personal knowledge base.</div></div>
+<div class="g cd"><div class="ci">💬</div><div class="ct">Slack</div><div class="cm">Team chat — every remote company uses this.</div></div>
+<div class="g cd"><div class="ci">📹</div><div class="ct">Zoom / Google Meet</div><div class="cm">Client calls, team standups, 1:1 meetings.</div></div>
+<div class="g cd"><div class="ci">🔗</div><div class="ct">HubSpot CRM (Free)</div><div class="cm">Track clients, leads, follow-ups professionally.</div></div>
+<div class="g cd"><div class="ci">🎨</div><div class="ct">Canva</div><div class="cm">Beautiful client reports, presentations, LinkedIn graphics.</div></div>
+<div class="g cd"><div class="ci">💼</div><div class="ct">LinkedIn Premium</div><div class="cm">Worth $30/mo for first 3 months. See who viewed you, send InMail.</div></div>
+<div class="g cd"><div class="ci">📝</div><div class="ct">Grammarly</div><div class="cm">Polish all client emails. Free version is excellent.</div></div>
+<div class="g cd"><div class="ci">⏱️</div><div class="ct">Toggl</div><div class="cm">Time tracking — bill clients accurately, protect boundaries.</div></div>
+<div class="g cd"><div class="ci">🔐</div><div class="ct">Bitwarden</div><div class="cm">Free password manager. Essential security for client accounts.</div></div>
+</div>
+</div></div>
+
+<!-- GLOSSARY -->
+<div class="pg" id="pg-gloss"><div class="wr">
+<div class="sh"><div class="sn">7</div><div class="st">Glossary — Plain English Terms for Shari</div></div>
+<input class="gls" id="gs" placeholder="🔍 Search... (prompt, retainer, SaaS)" oninput="dg()">
+<div class="gg" id="grd"></div>
+</div></div>
+
+<button class="bk" id="bk" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<footer><b>Madam Shari — The Quiet Power Playbook v1.0</b><br>Built by UNGASIS / Mel for Madam Shari · June 15, 2026<br><span style="font-size:.7rem;color:rgba(255,255,255,.3)">Calm is your competitive advantage. Your UP + Maersk + leadership = ₱60K+ remote. No drama needed. 🌸💎</span></footer>
+
+<script>
+// 60fps particles - rose-pink palette
+(function(){const c=document.getElementById('fx'),x=c.getContext('2d');let W,H,ps=[];function sz(){W=c.width=innerWidth;H=c.height=innerHeight}addEventListener('resize',sz);sz();class P{constructor(){this.r()}r(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;this.s=Math.random()*1.5+.3;this.o=Math.random()*.3+.06;this.h=Math.random()>.5?'244,63,94':'192,132,252'}u(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.r()}d(){x.beginPath();x.arc(this.x,this.y,this.s,0,7);x.fillStyle='rgba('+this.h+','+this.o+')';x.fill()}}for(let i=0;i<70;i++)ps.push(new P());(function loop(){x.clearRect(0,0,W,H);ps.forEach(p=>{p.u();p.d()});requestAnimationFrame(loop)})()})();
+function go(id){document.querySelectorAll('.pg').forEach(p=>p.classList.toggle('on',p.id==='pg-'+id));document.querySelectorAll('.lnk a').forEach(a=>a.classList.toggle('on',a.dataset.p===id));document.querySelector('.lnk').classList.remove('open');setTimeout(()=>scrollTo({top:0,behavior:'smooth'}),30);setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>ob.observe(el)),100)}
+addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';document.getElementById('bk').classList.toggle('v',h.scrollTop>400)});
+addEventListener('scroll',()=>{const t=scrollY/(document.body.scrollHeight-innerHeight);const h=Math.round(320+t*15);document.getElementById('sky').style.background='linear-gradient(180deg,hsl('+h+','+(50+t*10)+'%,'+(8+t*3)+'%),hsl('+(h+15)+','+45+'%,'+(12+t*4)+'%) 50%,hsl('+h+','+(50+t*10)+'%,'+(8+t*3)+'%))'});
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.1});document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
+function ac(el,t,p=''){if(!el)return;let c=0;const s=Math.max(1,Math.floor(t/50));const i=setInterval(()=>{c+=s;if(c>=t){c=t;clearInterval(i)}el.textContent=p+c},25)}
+setTimeout(()=>{ac(document.getElementById('c1'),5);ac(document.getElementById('c2'),35);ac(document.getElementById('c3'),30);ac(document.getElementById('c4'),10);document.getElementById('c5').textContent='₱0';document.getElementById('c6').textContent='₱60K'},500);
+function stab(e,id){e.target.closest('.tb').querySelectorAll('.tbn').forEach(b=>b.classList.remove('on'));e.target.closest('.tb').querySelectorAll('.tp').forEach(p=>p.classList.remove('on'));e.target.classList.add('on');document.getElementById(id).classList.add('on')}
+function calc(){const hr=document.getElementById('hr'),hw=document.getElementById('hw'),fx=document.getElementById('fx'),cons=document.getElementById('cons'),consd=document.getElementById('consd');if(!hr)return;let r=+hr.value||0,h=+hw.value||0,f=+fx.value||61.25,mo=r*h*4.33*f;cons.textContent='₱'+Math.round(mo).toLocaleString();consd.textContent='$'+r+'/hr × '+h+' hrs/wk × 4.33 wks × ₱'+f}setTimeout(calc,200);
+const certs=[
+{l:0,n:"Elements of AI",p:"Univ. of Helsinki",c:"Free",t:"6-8 hrs",d:"Best AI intro. No code, no math. Calm pace.",f:1},
+{l:0,n:"AI for Everyone",p:"IBM / edX",c:"Free",t:"~10 hrs",d:"How businesses use AI. Beginner-friendly.",f:1},
+{l:0,n:"AI Fluency",p:"Anthropic",c:"Free",t:"~1 hr",d:"Quick guide to working with AI tools.",f:1},
+{l:0,n:"Intro to Generative AI",p:"Google Cloud",c:"Free",t:"~45 min",d:"What is ChatGPT/Gemini. Short and sweet.",f:1},
+{l:0,n:"Google AI Essentials",p:"Google",c:"Free",t:"5-6 hrs",d:"What AI is, how to use it responsibly.",f:1},
+{l:0,n:"Intro to Responsible AI",p:"Google",c:"Free",t:"30 min",d:"AI ethics, fairness, bias. Important basics.",f:1},
+{l:0,n:"AWS ML Essentials",p:"AWS",c:"Free",t:"~1 hr",d:"Quick ML intro for non-tech.",f:1},
+{l:1,n:"AI Essentials Cert",p:"FreeAcademy.ai",c:"Free",t:"4-6 hrs",d:"Verifiable AI credential. Resume booster.",f:1},
+{l:1,n:"ChatGPT Power User",p:"FreeAcademy.ai",c:"Free",t:"3-5 hrs",d:"Use ChatGPT like a pro. Daily work hack.",f:1},
+{l:1,n:"IBM AI Fundamentals",p:"IBM / Coursera",c:"Free (audit)",t:"~10 hrs",d:"IBM badge — recognized worldwide.",f:1},
+{l:1,n:"Prompt Engineering",p:"AWS",c:"Free",t:"~4 hrs",d:"Write better AI instructions. High ROI.",f:1},
+{l:1,n:"Google Cloud AI Path",p:"Google Cloud",c:"Free",t:"Self-paced",d:"ML workflows and GenAI courses.",f:1},
+{l:1,n:"GenAI for Beginners",p:"Microsoft (GitHub)",c:"Free",t:"18 lessons",d:"Prompts, LLMs, RAG, agents. Hands-on.",f:1},
+{l:1,n:"HubSpot AI Marketing",p:"HubSpot",c:"Free",t:"~4 hrs",d:"AI for marketing and CRM. Practical.",f:1},
+{l:1,n:"DeepLearning.AI Shorts",p:"DeepLearning.AI",c:"Free",t:"1-2 hrs",d:"Bite-sized AI courses. Easy starts.",f:1},
+{l:2,n:"AI-900 (Azure)",p:"Microsoft",c:"$165 exam",t:"10-15 hrs",d:"Industry-recognized cert. LinkedIn gold.",f:0},
+{l:2,n:"Prompt Eng. Cert",p:"FreeAcademy.ai",c:"Free",t:"4-6 hrs",d:"Advanced prompting techniques.",f:1},
+{l:2,n:"Google Digital Mktg + AI",p:"Google",c:"Free",t:"5-6 hrs",d:"AI + marketing combo.",f:1},
+{l:2,n:"HubSpot AI Marketers",p:"HubSpot",c:"Free",t:"2-3 hrs",d:"AI for CRM automation.",f:1},
+{l:2,n:"Databricks GenAI",p:"Databricks",c:"$200 exam",t:"~30 hrs",d:"Build GenAI systems.",f:0},
+{l:2,n:"IBM AI Developer",p:"IBM / Coursera",c:"$49/mo",t:"~3 mo",d:"Job-ready AI development.",f:0},
+{l:3,n:"AWS AI Practitioner",p:"AWS",c:"$75 exam",t:"15-20 hrs",d:"Cloud AI cert. Globally recognized.",f:0},
+{l:3,n:"Google Cloud ML",p:"Google Cloud",c:"Free",t:"20-40 hrs",d:"Hands-on GCP AI.",f:1},
+{l:3,n:"AI for Finance",p:"FreeAcademy.ai",c:"Free",t:"8-10 hrs",d:"AI for finance and investing.",f:1},
+{l:3,n:"ML Fundamentals",p:"FreeAcademy.ai",c:"Free",t:"10-15 hrs",d:"How AI models actually work.",f:1},
+{l:3,n:"AI for HR",p:"FreeAcademy.ai",c:"Free",t:"6-8 hrs",d:"AI for team management.",f:1},
+{l:4,n:"Azure AI Engineer (AI-102)",p:"Microsoft",c:"$165 exam",t:"40-60 hrs",d:"Advanced — build AI on Azure.",f:0},
+{l:4,n:"AWS ML Specialty",p:"AWS",c:"$300 exam",t:"60-80 hrs",d:"Deep ML expertise.",f:0},
+{l:4,n:"GCP ML Engineer",p:"Google Cloud",c:"$200 exam",t:"~60 hrs",d:"Top ML cert.",f:0},
+{l:4,n:"Practical Deep Learning",p:"fast.ai",c:"Free",t:"40-60 hrs",d:"Best free advanced course.",f:1},
+{l:4,n:"Stanford ML Spec",p:"Coursera",c:"Free (audit)",t:"3-6 mo",d:"Gold standard ML.",f:1},
+{l:4,n:"MIT Cert ML/AI",p:"MIT xPRO",c:"$2,500+",t:"~12 wk",d:"University-grade credential.",f:0},
+{l:4,n:"Kaggle Competitions",p:"Kaggle",c:"Free",t:"Ongoing",d:"Solve real AI problems publicly.",f:1},
+{l:4,n:"Chief AI Officer",p:"Chicago Booth",c:"$10K+",t:"~6 mo",d:"C-suite AI leadership.",f:0},
+{l:4,n:"AI for Sr. Executives",p:"MIT xPRO",c:"$2,500+",t:"~6 wk",d:"Senior leadership AI.",f:0},
+];
+function rc(){for(let l=0;l<=4;l++){const g=document.getElementById('cr'+l);if(!g)continue;g.innerHTML=certs.filter(c=>c.l===l).map(c=>'<div class="g crc '+(c.f?'fr':'pd')+'" onclick="this.classList.toggle(\'op\')"><div class="crn">'+c.n+'</div><div class="crp">'+c.p+'</div><div class="crm"><span class="crt '+(c.f?'crtf':'crtp')+'">'+c.c+'</span><span class="crt" style="background:rgba(255,255,255,.06);color:var(--dm)">'+c.t+'</span></div><div class="crd">'+c.d+'</div></div>').join('')}}rc();
+addEventListener('DOMContentLoaded',()=>{const ctx=document.getElementById('radar');if(!ctx)return;new Chart(ctx,{type:'radar',data:{labels:['Technical Depth','Career Impact','Time Required','Cost Efficiency','Industry Recognition'],datasets:[{label:'Free (L0-L1)',data:[3,3,5,5,3],backgroundColor:'rgba(52,211,153,.12)',borderColor:'#34d399',pointBackgroundColor:'#34d399',borderWidth:2},{label:'Paid (L2+)',data:[5,5,2,2,5],backgroundColor:'rgba(244,63,94,.12)',borderColor:'#f43f5e',pointBackgroundColor:'#f43f5e',borderWidth:2}]},options:{responsive:true,plugins:{legend:{labels:{color:'#c4b5d4',font:{family:'Inter'}}}},scales:{r:{grid:{color:'rgba(255,255,255,.06)'},ticks:{display:false},pointLabels:{color:'#fce7f3',font:{size:11,family:'Inter'}},suggestedMin:0,suggestedMax:5}}}})});
+(function(){const tasks=['Update LinkedIn: add UP + Maersk + Team Leader','Write headline: UP Team Leader 5+ yr Maersk Remote-ready','Take a fresh professional headshot','Rewrite resume: focus on leadership + ops + KPIs','Complete Elements of AI (free, 1 hour Sat)','Complete Google AI Essentials (free, 1 hour Sun)','Make list: 20 dream remote-friendly companies','Research Customer Success Manager roles','Research Remote Team Lead roles','Use AI to draft 5 LinkedIn posts about leadership','Apply to 5 calm remote roles','Complete ChatGPT Power User (free)','Polish LinkedIn About section','Get 3 LinkedIn recommendations from Maersk colleagues','Apply to 5 more roles (CS Manager focus)','Complete Prompt Engineering cert (free)','Use AI to summarize a Maersk weekly report','Reach out to 5 Maersk alumni for warm intros','Join 3 remote-work Filipino communities','Review Week 1-2: refine resume based on responses','Apply to 5 more roles (Account Manager focus)','Practice 1 mock interview with Red as interviewer','Draft answers for top 10 behavioral interview questions','Complete IBM AI Fundamentals (free, audit)','Apply to premium platforms (Toptal, Crossover)','Calculate: which role gets to ₱60K with 25 hrs?','Set up Notion as your personal CRM','Create boundaries doc: no nights, no weekends','Practice saying NO to roles that drain energy','Month 1 review: leads, learnings, next steps'];
+const sv=JSON.parse(localStorage.getItem('madamShari')||'{}');const cl=document.getElementById('cl');
+if(cl){tasks.forEach((t,i)=>{const d=document.createElement('div');d.className='chk'+(sv[i]?' dn':'');d.innerHTML='<div class="cbx"></div><div class="chtx"><b style="color:var(--dm);font-size:.78rem">Day '+(i+1)+'</b><br>'+t+'</div>';d.onclick=()=>{d.classList.toggle('dn');sv[i]=d.classList.contains('dn')?1:0;localStorage.setItem('madamShari',JSON.stringify(sv));up()};cl.appendChild(d)});function up(){const n=Object.values(sv).filter(Boolean).length;const dp=document.getElementById('dp'),db=document.getElementById('db');if(dp)dp.textContent=n;if(db)db.style.width=n/30*100+'%'}up()}})();
+const gl=[
+['AI','Smart software that writes, summarizes, translates, organizes.','A very patient assistant who never gets tired.'],
+['Async Work','Reply when ready, not in real-time.','Email or DM instead of constant calls.'],
+['Account Manager','Owns the relationship with specific clients.','Like being the trusted friend a client always calls.'],
+['Boundaries','Limits that protect your energy.','Saying no is a complete sentence. Use it.'],
+['Burnout','Mental + physical exhaustion from overwork.','When you have no more spoons left to give.'],
+['Calendar Blocking','Reserving time slots for specific work.','Same idea as appointments — but with yourself.'],
+['ChatGPT','OpenAI chatbot that writes, summarizes, drafts.','Your free 24/7 intern. Never sleeps, never complains.'],
+['Client Success Manager','Helps clients use a SaaS product well.','Like a personal trainer for the software they bought.'],
+['CRM','Customer Relationship Management software.','Phone contacts on steroids — tracks every conversation.'],
+['Cover Letter','Short intro letter for job applications.','Your first impression in writing.'],
+['Discovery Call','First meeting to learn client needs.','Like a first date — both sides explore fit.'],
+['EU Timezone','7-8 hours behind PH.','Afternoon PH = morning EU. Perfect for day-shift remote.'],
+['Fractional Role','Part-time at multiple companies.','Like being a personal trainer who serves several clients.'],
+['Generative AI','AI that creates new content.','Calculator = answer machine. GenAI = creative machine.'],
+['Hourly Rate','How much you charge per hour.','The currency of remote work. Yours = $10-$25/hr.'],
+['Inbox Zero','All emails handled, none left.','Like cleaning the dishes daily — feels great.'],
+['KPI','Key Performance Indicator — success number.','Your GPA, but for work. One number that summarizes performance.'],
+['LinkedIn Premium','Paid LinkedIn with extra features.','VIP pass — see who viewed your profile, send InMail.'],
+['Maersk','Fortune 500 logistics company.','Your gold-standard resume credential. Don\'t undervalue it.'],
+['Notion','All-in-one workspace for notes + tasks.','Your digital planner, but smarter.'],
+['Onboarding','First weeks of a new client/job.','Like the first month at a new gym — set the tone.'],
+['Passive Income','Money earned without daily work.','Rent, royalties, course sales. The dream.'],
+['Premium VA','High-tier virtual assistant with niche skills.','You. With UP + Maersk on your resume.'],
+['Prompt','The instruction you give AI.','Like ordering coffee: specific = better outcome.'],
+['Prompt Engineering','Skill of writing better AI instructions.','Coffee ordering 101 — for AI.'],
+['Remote Work','Work from anywhere, no office required.','Pajamas optional. Productivity required.'],
+['Retainer','Fixed monthly payment for ongoing services.','Beauty subscription box but for your consulting.'],
+['ROI','Return on Investment.','For every peso/hour spent, what comes back?'],
+['SaaS','Software as a Service — monthly subscription apps.','Netflix model for software (Notion, Slack, Canva).'],
+['SOP','Standard Operating Procedure — step-by-step recipe.','Recipe card for work. Anyone can follow it.'],
+['Team Lead','Manages a small team day-to-day.','Already your role — you can do this remotely too.'],
+['Token','Smallest text unit AI reads.','Like a Scrabble tile — AI counts them to think.'],
+['UP Degree','University of the Philippines — top university.','Your credential filter pass. Don\'t hide it.'],
+['Upwork','Freelance marketplace.','Where clients find freelancers. Set up a profile.'],
+['Workflow','Repeatable steps to complete a task.','Like your morning routine, but for work tasks.'],
+];
+function dg(){const gs=document.getElementById('gs'),grd=document.getElementById('grd');if(!gs||!grd)return;const q=(gs.value||'').toLowerCase();grd.innerHTML=gl.filter(w=>w.join(' ').toLowerCase().includes(q)).map(w=>'<div class="g cd"><div class="gt">'+w[0]+'</div><div style="font-size:.88rem;margin-bottom:6px">'+w[1]+'</div><div class="cm" style="font-style:italic;color:var(--pk)">💡 '+w[2]+'</div></div>').join('')}dg();
+</script>
+</body></html>

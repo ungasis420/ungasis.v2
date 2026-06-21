@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chef Etong AI Income Playbook — Built by UNGASIS</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a1a;--sf:rgba(255,255,255,.04);--sf2:rgba(255,255,255,.06);--bd:rgba(255,255,255,.1);--bh:rgba(0,212,255,.3);--cy:#00d4ff;--pu:#a78bfa;--gn:#22c55e;--am:#f59e0b;--rd:#ef4444;--pk:#ec4899;--tx:#e2e8f0;--dm:#94a3b8;--br:#f8fafc;--blur:20px;--r:16px;--rs:10px;--f:'Inter',system-ui,sans-serif;--e:cubic-bezier(.4,0,.2,1)}
+html{scroll-behavior:smooth;overflow-x:hidden}body{font-family:var(--f);background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden}
+::selection{background:var(--cy);color:var(--bg)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:rgba(0,212,255,.3);border-radius:3px}
+canvas#fx{position:fixed;inset:0;z-index:0;pointer-events:none}.sky{position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,#0a0a1a,#0d1b2a 30%,#1b2838 50%,#0d1b2a 70%,#0a0a1a);transition:background 1s}
+.prog{position:fixed;top:0;left:0;height:3px;z-index:10001;background:linear-gradient(90deg,var(--cy),var(--pu),var(--gn));width:0}
+.g{background:var(--sf);backdrop-filter:blur(var(--blur));-webkit-backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r);transition:all .3s var(--e)}.g:hover{border-color:var(--bh);box-shadow:0 8px 32px rgba(0,212,255,.08);transform:translateY(-2px)}
+.gs{background:var(--sf);backdrop-filter:blur(var(--blur));border:1px solid var(--bd);border-radius:var(--r)}
+nav{position:fixed;top:3px;left:0;right:0;z-index:10000;padding:10px 20px;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,26,.88);backdrop-filter:blur(22px);border-bottom:1px solid var(--bd)}
+.logo{font-weight:900;font-size:1.1rem;background:linear-gradient(135deg,var(--cy),var(--pu));-webkit-background-clip:text;-webkit-text-fill-color:transparent;cursor:pointer}
+.lnk{display:flex;gap:4px;flex-wrap:wrap}.lnk a{color:var(--dm);text-decoration:none;font-size:.76rem;font-weight:700;padding:6px 10px;border-radius:8px;transition:all .2s;white-space:nowrap}.lnk a:hover,.lnk a.on{color:var(--cy);background:rgba(0,212,255,.1)}
+.ham{display:none;background:0;border:0;color:#fff;font-size:1.5rem;cursor:pointer}
+@media(max-width:900px){.lnk{display:none}.lnk.open{display:flex;flex-direction:column;position:absolute;top:52px;left:0;right:0;background:rgba(10,10,26,.97);padding:14px;border-bottom:1px solid var(--bd);z-index:9999}.ham{display:block}}
+.pg{display:none;opacity:0;transform:translateY(14px);transition:.4s}.pg.on{display:block;opacity:1;transform:none}.wr{max-width:1180px;margin:auto;padding:92px 22px 56px}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 22px}
+.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(0,212,255,.3);background:rgba(0,212,255,.06);color:var(--cy);border-radius:999px;padding:8px 18px;font-weight:800;font-size:.82rem;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--gn);animation:pu 2s infinite}@keyframes pu{50%{opacity:.3}}
+h1{font-size:clamp(2.2rem,7vw,4.5rem);line-height:1.04;font-weight:900;letter-spacing:-.03em;background:linear-gradient(135deg,#00d4ff,#a78bfa 40%,#22c55e 75%,#00d4ff);background-size:260% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:sh 7s linear infinite}@keyframes sh{to{background-position:260% center}}
+.sub{max-width:740px;color:var(--dm);font-size:clamp(1rem,2.3vw,1.25rem);margin-top:16px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.btn{border:0;border-radius:14px;padding:13px 24px;font-weight:900;font-size:.9rem;cursor:pointer;font-family:var(--f);text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .3s var(--e)}.pri{background:linear-gradient(135deg,var(--cy),var(--pu));color:var(--bg)}.pri:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,212,255,.3)}.gho{background:0;color:var(--tx);border:1px solid var(--bd)}.gho:hover{border-color:var(--cy);color:var(--cy)}
+.sh{display:flex;gap:14px;align-items:center;margin:0 0 24px;padding-bottom:14px;border-bottom:1px solid var(--bd)}.sn{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:900;color:var(--bg);flex-shrink:0;background:linear-gradient(135deg,var(--cy),var(--pu))}.sn.grn{background:linear-gradient(135deg,var(--gn),#16a34a)}.sn.amb{background:linear-gradient(135deg,var(--am),#d97706)}.sn.pnk{background:linear-gradient(135deg,var(--pk),#be185d)}
+.st{font-size:clamp(1.3rem,3vw,1.9rem);font-weight:900;color:var(--br)}
+.dg{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}.dn{font-size:2.1rem;font-weight:900;background:linear-gradient(135deg,var(--cy),var(--pu));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:14px 0}
+.cd{padding:22px;transition:all .3s var(--e)}.ci{font-size:2rem;margin-bottom:10px}.ct{font-weight:800;color:var(--br);font-size:1.05rem;margin-bottom:6px}.cm{color:var(--dm);font-size:.9rem}
+.tw{overflow-x:auto;margin:14px 0;border-radius:var(--rs)}table{width:100%;border-collapse:collapse;font-size:.86rem;background:var(--sf);border:1px solid var(--bd);border-radius:var(--rs);overflow:hidden}thead{background:linear-gradient(135deg,rgba(0,212,255,.1),rgba(167,139,250,.1))}th{padding:11px 12px;text-align:left;font-weight:700;color:var(--br);font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;border-bottom:2px solid rgba(0,212,255,.2)}td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.04)}tr:hover td{background:rgba(0,212,255,.03)}
+.co{padding:16px 18px;border-radius:var(--rs);margin:14px 0;border-left:4px solid}.ck{border-color:var(--pu);background:rgba(167,139,250,.08)}.ci2{border-color:var(--cy);background:rgba(0,212,255,.08)}.ct2{border-color:var(--gn);background:rgba(34,197,94,.08)}.cw{border-color:var(--am);background:rgba(245,158,11,.08)}.cr{border-color:var(--rd);background:rgba(239,68,68,.08)}
+.lb{font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.fy{position:relative;padding:16px 18px 16px 48px;border-radius:var(--rs);margin:14px 0;background:linear-gradient(135deg,rgba(167,139,250,.08),rgba(0,212,255,.04));border:1px solid rgba(167,139,250,.2)}.fy:before{content:'🧠';position:absolute;top:14px;left:14px;font-size:1.2rem}.fy b{color:var(--pu)}.fy .d{color:var(--dm);font-size:.9rem;margin-top:4px}
+.tl{position:relative;padding-left:36px;margin:20px 0}.tl:before{content:'';position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(var(--gn),var(--cy),var(--pu),var(--am),var(--pk))}
+.ti{position:relative;margin-bottom:18px}.td{position:absolute;left:-28px;top:6px;width:14px;height:14px;border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 10px rgba(0,212,255,.3)}
+.bi{margin-bottom:10px}.bl{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:4px}.bt{height:28px;border-radius:14px;background:rgba(255,255,255,.06);overflow:hidden}.bf{height:100%;border-radius:14px;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;font-size:.72rem;font-weight:800;color:var(--bg);transition:width 1.5s var(--e)}
+.tb{margin:20px 0}.tbb{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:14px}.tbn{padding:8px 16px;border-radius:8px;border:1px solid var(--bd);background:0;color:var(--dm);cursor:pointer;font-size:.84rem;font-weight:700;font-family:var(--f);transition:all .2s var(--e)}.tbn:hover{background:rgba(0,212,255,.08);color:var(--cy)}.tbn.on{background:linear-gradient(135deg,rgba(0,212,255,.15),rgba(167,139,250,.15));color:var(--br);border-color:rgba(0,212,255,.3)}
+.tp{display:none;animation:fu .4s ease}.tp.on{display:block}@keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.crg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:10px}.crc{padding:14px;cursor:pointer;position:relative;overflow:hidden}.crc::after{content:'';position:absolute;top:0;left:0;width:3px;height:100%;border-radius:3px}.crc.fr::after{background:var(--gn)}.crc.pd::after{background:var(--am)}.crn{font-weight:700;font-size:.9rem;margin-bottom:3px}.crp{font-size:.76rem;color:var(--cy)}.crm{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}.crt{font-size:.7rem;padding:3px 8px;border-radius:999px;font-weight:700}.crtf{color:var(--gn);border:1px solid rgba(34,197,94,.3);background:rgba(34,197,94,.08)}.crtp{color:var(--am);border:1px solid rgba(245,158,11,.3);background:rgba(245,158,11,.08)}.crd{max-height:0;overflow:hidden;transition:max-height .4s;font-size:.82rem;color:var(--dm);line-height:1.5}.crc.op .crd{max-height:200px;padding-top:10px}
+.chk{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);cursor:pointer;transition:all .2s}.cbx{width:22px;height:22px;flex:0 0 22px;border:2px solid var(--bd);border-radius:6px;margin-top:2px;display:grid;place-items:center;transition:all .2s}.chk.dn .cbx{background:var(--gn);border-color:var(--gn)}.chk.dn .cbx:after{content:'✓';color:#fff;font-weight:900;font-size:.75rem}.chk.dn .chtx{text-decoration:line-through;color:var(--dm)}
+.cf input,.cf select{width:100%;padding:10px 14px;border-radius:10px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:1rem;font-family:var(--f);outline:none}.cf label{display:block;color:var(--dm);font-weight:800;font-size:.82rem;margin-bottom:4px}
+.big{font-size:2.4rem;font-weight:900;background:linear-gradient(135deg,var(--cy),var(--gn));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.gls{width:min(460px,100%);padding:12px 18px;border-radius:12px;border:1px solid var(--bd);background:var(--sf);color:var(--tx);font-size:.95rem;font-family:var(--f);outline:none;margin-bottom:18px}.gls:focus{border-color:var(--cy)}
+.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}.gt{color:var(--cy);font-weight:900;font-size:1rem;margin-bottom:4px}
+.pm{text-align:center;padding:10px;border-radius:10px;background:rgba(255,255,255,.03)}.pv{font-weight:900;font-size:1.1rem}.pl{font-size:.7rem;color:var(--dm)}
+.bk{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--cy),var(--pu));color:var(--bg);font-size:1.2rem;font-weight:900;cursor:pointer;opacity:0;transform:translateY(16px);transition:all .3s var(--e);z-index:9999}.bk.v{opacity:1;transform:none}.bk:hover{transform:translateY(-3px) scale(1.1)}
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s,transform .6s}.rv.vis{opacity:1;transform:none}
+footer{text-align:center;padding:42px 22px;color:var(--dm);font-size:.78rem;border-top:1px solid var(--bd);margin-top:40px}
+@media(max-width:600px){.cg,.crg{grid-template-columns:1fr}.dg{grid-template-columns:repeat(2,1fr)}h1{font-size:2rem}}
+@media print{nav,.prog,.bk,canvas,.sky{display:none!important}body{background:#fff;color:#000}.g,.gs{background:#f8f8f8;border:1px solid #ddd;backdrop-filter:none}}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div><canvas id="fx"></canvas><div class="prog" id="prog"></div>
+<nav><div class="logo" onclick="go('home')">🥩 Chef Etong AI Playbook</div><button class="ham" onclick="document.querySelector('.lnk').classList.toggle('open')">☰</button><div class="lnk" id="lnk"><a href="#" onclick="go('home')" class="on" data-p="home">Home</a><a href="#" onclick="go('strat')" data-p="strat">🎯 Strategy</a><a href="#" onclick="go('paths')" data-p="paths">🗺️ Paths</a><a href="#" onclick="go('plan')" data-p="plan">📋 30-Day</a><a href="#" onclick="go('ai')" data-p="ai">🧠 AI Certs</a><a href="#" onclick="go('money')" data-p="money">💰 Money</a><a href="#" onclick="go('tools')" data-p="tools">🛠️ Tools</a><a href="#" onclick="go('show')" data-p="show">🚀 Showcase</a><a href="#" onclick="go('gloss')" data-p="gloss">📖 Glossary</a></div></nav>
+
+<!-- ======================== HOME ======================== -->
+<div class="pg on" id="pg-home">
+<section class="hero"><div class="badge"><span class="dot"></span> Personalized by UNGASIS / Mel — June 2026</div><h1>Chef Etong AI Income Playbook<br>Meat Biz → AI-Powered Wealth</h1><p class="sub">For Chef Etong — father of 2, culinary graduate, frozen meat retailer, entrepreneur with generational wealth. Practical, time-constrained, lazy-smart, not tech savvy, and willing to learn what makes money.</p><div class="cta"><button class="btn pri" onclick="go('strat')">🎯 Show Etong the Strategy</button><button class="btn gho" onclick="go('plan')">📋 Start the 30-Day Plan</button><button class="btn gho" onclick="go('ai')">🧠 Learn AI the Easy Way</button></div></section>
+<div class="wr">
+<!-- DASHBOARD COUNTERS -->
+<div class="sh"><div class="sn">★</div><div class="st">Chef Etong's Dashboard</div></div>
+<div class="dg" style="margin-bottom:28px">
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c1">0</div><div class="cm">Income Paths Ranked</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c2">0</div><div class="cm">AI Certifications (Mostly Free)</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c3">0</div><div class="cm">Day Action Plan</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c4">$0</div><div class="cm">Start Cost</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c5">0</div><div class="cm">Free Tools Listed</div></div>
+<div class="g cd rv" style="text-align:center"><div class="dn" id="c6">0</div><div class="cm">Glossary Terms</div></div>
+</div>
+
+<!-- PROFILE CARDS -->
+<div class="sh"><div class="sn amb">🥩</div><div class="st">Built Around Chef Etong's Real Life</div></div>
+<div class="cg">
+<div class="g cd rv"><div class="ci">👨‍👧‍👦</div><div class="ct">Father of 2</div><div class="cm">Plan must protect time, energy, and family stability — no hustle-bro chaos.</div></div>
+<div class="g cd rv"><div class="ci">🥩</div><div class="ct">Frozen Meat Retailer</div><div class="cm">Real inventory, suppliers, pricing, customers, repeat orders — this IS his edge.</div></div>
+<div class="g cd rv"><div class="ci">👨‍🍳</div><div class="ct">Culinary Graduate</div><div class="cm">Can create premium bundles: marinated packs, ready-to-cook kits, chef-curated boxes.</div></div>
+<div class="g cd rv"><div class="ci">🧠</div><div class="ct">Lazy but Smart</div><div class="cm">AI should save time, reduce mistakes, improve sales, or create repeatable systems.</div></div>
+<div class="g cd rv"><div class="ci">⏳</div><div class="ct">Time-Constrained</div><div class="cm">15-30 min/day is enough if tasks are tiny, useful, and tied to sales/ops.</div></div>
+<div class="g cd rv"><div class="ci">💎</div><div class="ct">Generational Wealth</div><div class="cm">Goal: systems, assets, brand, and business continuity that outlive one person.</div></div>
+</div>
+<div class="co ck" style="margin-top:18px"><div class="lb" style="color:var(--pu)">🎯 One-sentence strategy</div>Chef Etong should use AI to make his frozen meat business easier to run, easier to market, easier to teach, and easier to pass down.</div>
+
+<!-- LAZY SHORTCUTS -->
+<div class="sh" style="margin-top:36px"><div class="sn grn">⚡</div><div class="st">Lazy Shortcuts — Skip to What Matters</div></div>
+<div class="cg">
+<div class="g cd rv" onclick="go('strat')" style="cursor:pointer"><div class="ci">🎯</div><div class="ct">What's Etong's Fastest Path?</div><div class="cm">Frozen meat ops → AI-assisted systems → higher-margin offers → wealth.</div></div>
+<div class="g cd rv" onclick="go('money')" style="cursor:pointer"><div class="ci">🧮</div><div class="ct">Income & Margin Calculator</div><div class="cm">Plug in price + cost → see profit instantly. Plus hourly rate calculator.</div></div>
+<div class="g cd rv" onclick="go('ai')" style="cursor:pointer"><div class="ci">🧠</div><div class="ct">Free AI Certifications</div><div class="cm">35 certs from Google, IBM, Microsoft, AWS. Level 0 to Master. Click-to-expand.</div></div>
+<div class="g cd rv" onclick="go('plan')" style="cursor:pointer"><div class="ci">📋</div><div class="ct">30-Day Checklist</div><div class="cm">Day-by-day tasks. Click to check off. No thinking required. Saves in browser.</div></div>
+</div>
+</div></div>
+
+<!-- ======================== STRATEGY ======================== -->
+<div class="pg" id="pg-strat"><div class="wr">
+<div class="sh"><div class="sn">1</div><div class="st">Chef Etong's Best AI + Income Strategy</div></div>
+<div class="co ck"><div class="lb" style="color:var(--pu)">🔑 Key insight for Chef Etong</div>Chef Etong does <b>not</b> need to become a programmer, influencer, or full-time VA. His fastest path: <b>turn frozen meat business knowledge into AI-assisted systems</b> → improve own operations → package what works → sell templates/consulting later.</div>
+<div class="fy"><b>"AI for Chef Etong"</b><div class="d">AI is like a smart kitchen assistant. It doesn't replace the chef. It prepares ingredients, writes checklists, organizes orders, suggests promos, and reminds you what to do next — so the chef-owner saves time and makes better decisions.</div></div>
+<div class="co ci2"><div class="lb" style="color:var(--cy)">👤 Personal context</div>Father of 2, culinary grad, frozen meat retailer, entrepreneur with generational wealth. Time-constrained, practical, not tech savvy, lazy-smart, willing to learn what makes money.</div>
+<div class="tw"><table><thead><tr><th>Rank</th><th>Path</th><th>Why It Fits</th><th>Money Angle</th></tr></thead><tbody>
+<tr><td><b style="color:var(--gn)">1 ★</b></td><td>AI-Assisted Frozen Meat Ops</td><td>Improves the business he already owns</td><td>Less waste, better margins, faster repeat orders</td></tr>
+<tr><td><b style="color:var(--cy)">2</b></td><td>Ready-to-Cook / Meal Kits</td><td>Culinary school + meat supply = natural advantage</td><td>Premium family packs, samgyup packs, ulam packs</td></tr>
+<tr><td><b style="color:var(--pu)">3</b></td><td>AI Content for Meat Business</td><td>Promos, recipes, reels scripts, captions</td><td>More sales without hiring a marketer</td></tr>
+<tr><td><b style="color:var(--am)">4</b></td><td>Small Food-Biz Templates</td><td>Sell what he already uses</td><td>Trackers, SOPs, menus, supplier sheets</td></tr>
+<tr><td>5</td><td>Micro-Consulting for Food Retailers</td><td>Later-stage path after proof</td><td>Setup fee + monthly support</td></tr>
+</tbody></table></div>
+
+<!-- RESTORED: Chill + High Pay -->
+<h3 style="margin-top:32px;color:var(--br);font-size:1.2rem">What "Chill + Profitable" Actually Means</h3>
+<div class="co cw"><div class="lb" style="color:var(--am)">⚠️ Reality check</div>"Chill" ≠ no work. It means CONTROLLED effort — predictable tasks, clear systems, no daily panic, and boundaries that protect family time.</div>
+<div class="fy"><b>"Chill Business"</b><div class="d">Cooking at home vs. restaurant kitchen. Both involve cooking. At home, YOU choose the recipe, pace, and breaks. In a restaurant, someone screams orders every 30 seconds. Chill business = cooking at home. You still work, but YOU control the pace.</div></div>
+<div class="tw"><table><thead><tr><th>You Want</th><th>You Pay With</th></tr></thead><tbody>
+<tr><td>High profit + chill</td><td>30-90 days building systems (trackers, SOPs, bundles)</td></tr>
+<tr><td>High profit + instant</td><td>High stress (daily grind, no systems, everything manual)</td></tr>
+<tr><td>Chill + instant</td><td>Low margin (selling commodity meat at market price)</td></tr>
+<tr><td style="color:var(--rd)">High profit + chill + instant</td><td style="color:var(--rd)">❌ Does NOT exist. Anyone selling this is lying.</td></tr>
+</tbody></table></div>
+
+<!-- RESTORED: Positioning Statement -->
+<div class="co ci2" style="margin-top:20px"><div class="lb" style="color:var(--cy)">📝 Etong's positioning statement (copy-paste)</div>"I supply quality frozen meat — family packs, ready-to-cook bundles, and chef-curated selections. I also help small food retailers set up inventory, pricing, and ordering systems that save time."</div>
+
+<!-- RESTORED: Specialization Ladder -->
+<h3 style="margin-top:32px;color:var(--br);font-size:1.2rem">The Business Evolution Ladder</h3>
+<div class="fy"><b>"Specialization"</b><div class="d">A general meat seller competes on price alone. A culinary-trained frozen meat specialist who offers chef-curated bundles, meal plans, and business systems competes on VALUE — and gets paid more.</div></div>
+<div class="tl" style="margin-top:18px">
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--dm)"></div><b style="color:var(--dm);font-size:.84rem">Level 1 — Basic Retail</b><div class="cm">Sell frozen meat at market price. Compete on price only.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pu)"></div><b style="color:var(--pu);font-size:.84rem">Level 2 — Smart Retail ← START HERE</b><div class="cm">Track inventory, know margins, message repeat customers, run promos.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.84rem">Level 3 — Premium Offers ★ TARGET</b><div class="cm">Chef-curated bundles, marinated packs, meal kits, recipe cards, subscription boxes.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--am)"></div><b style="color:var(--am);font-size:.84rem">Level 4 — Systems + Templates</b><div class="cm">Sell SOPs, trackers, and consulting to other food retailers.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pk)"></div><b style="color:var(--pk);font-size:.84rem">Level 5 — Distributor / Brand</b><div class="cm">Reseller network, branded products, passive income from systems.</div></div>
+</div>
+
+<!-- RESTORED: Feynman boxes -->
+<div class="fy"><b>"Retainer"</b><div class="d">Like a gym membership. A client pays Etong a fixed amount every month for ongoing supply or support — stable, predictable income.</div></div>
+<div class="fy"><b>"Async Work"</b><div class="d">Texting vs. phone call. Orders via Messenger/Forms = async (customers order when convenient, Etong processes in batches). No need to be "always on."</div></div>
+</div></div>
+
+<!-- ======================== ALL PATHS ======================== -->
+<div class="pg" id="pg-paths"><div class="wr">
+<div class="sh"><div class="sn amb">2</div><div class="st">All Income Paths — Ranked for Etong</div></div>
+<p class="cm" style="margin-bottom:14px">Score: 5 = best, 1 = worst. For Stress, 5 = calmer.</p>
+<!-- RESTORED: Bar chart -->
+<div style="margin-bottom:24px">
+<div class="bi"><div class="bl"><span>🏆 AI-Assisted Meat Ops</span><span>12/15</span></div><div class="bt"><div class="bf" style="width:80%;background:linear-gradient(90deg,#22c55e,#16a34a)">★ Best</div></div></div>
+<div class="bi"><div class="bl"><span>🥘 Ready-to-Cook Bundles</span><span>11/15</span></div><div class="bt"><div class="bf" style="width:73%;background:linear-gradient(90deg,var(--cy),var(--pu))">Strong Fit</div></div></div>
+<div class="bi"><div class="bl"><span>📱 AI Content Marketing</span><span>10/15</span></div><div class="bt"><div class="bf" style="width:65%;background:linear-gradient(90deg,var(--pu),var(--pk))">Practical</div></div></div>
+<div class="bi"><div class="bl"><span>📋 Templates / SOPs</span><span>9/15</span></div><div class="bt"><div class="bf" style="width:58%;background:linear-gradient(90deg,var(--am),#d97706)">After Proof</div></div></div>
+<div class="bi"><div class="bl"><span>🏪 Reseller Network</span><span>9/15</span></div><div class="bt"><div class="bf" style="width:55%;background:linear-gradient(90deg,var(--cy),var(--gn))">Later Stage</div></div></div>
+<div class="bi"><div class="bl"><span>📺 Content/Reels/YouTube</span><span>7/15</span></div><div class="bt"><div class="bf" style="width:40%;background:linear-gradient(90deg,var(--pu),var(--pk))">Long Game</div></div></div>
+<div class="bi"><div class="bl"><span>💻 SaaS/App Building</span><span>5/15</span></div><div class="bt"><div class="bf" style="width:28%;background:linear-gradient(90deg,var(--rd),var(--am))">Not First</div></div></div>
+</div>
+
+<!-- RESTORED: Full 11-model monetization table -->
+<h3 style="color:var(--br);font-size:1.2rem">Monetization Models — How Etong Gets Paid</h3>
+<div class="fy"><b>"Monetization Model"</b><div class="d">Like selling meat: per kilo (hourly), whole order (project fee), weekly delivery box (retainer), or teach others to sell meat (consulting). Same skill, different ways to earn.</div></div>
+<div class="tw"><table><thead><tr><th>Model</th><th>How It Works</th><th>Fit for Etong?</th></tr></thead><tbody>
+<tr><td>Per-order sales</td><td>Customer pays per purchase</td><td>✅ Core business</td></tr>
+<tr><td>Bundle/package</td><td>Fixed price for curated set</td><td>✅ Higher margin</td></tr>
+<tr><td>Subscription box</td><td>Monthly recurring delivery</td><td>✅ Predictable income</td></tr>
+<tr><td>Retainer/support</td><td>Monthly fee for ongoing supply</td><td>✅ Best freelance model</td></tr>
+<tr><td>Reseller margin</td><td>Resellers buy wholesale, sell retail</td><td>✅ Scale without more hours</td></tr>
+<tr><td>Template/SOP sales</td><td>Sell digital files: trackers, checklists</td><td>⏳ After proving systems</td></tr>
+<tr><td>Consulting fee</td><td>Setup + monthly advisory</td><td>⏳ After track record</td></tr>
+<tr><td>Content/affiliate</td><td>Earn from views/referrals</td><td>⏳ Side layer only</td></tr>
+<tr><td>Commission-only</td><td>Paid only on sales</td><td>❌ Too unstable</td></tr>
+<tr><td>SaaS subscription</td><td>Users pay for an app</td><td>❌ Not first move</td></tr>
+<tr><td>Investing/assets</td><td>Capital earns returns</td><td>⏳ After cash flow</td></tr>
+</tbody></table></div>
+<div class="co ck"><div class="lb" style="color:var(--pu)">🔑 Best progression</div>Improve own meat biz → prove repeatable system → create templates/SOPs → offer to other food retailers → automate only if demand repeats.</div>
+
+<!-- RESTORED: Micro-Agency / Scale path -->
+<h3 style="margin-top:32px;color:var(--br);font-size:1.2rem">Long-Term Wealth Path — Reseller Network</h3>
+<div class="fy"><b>"Micro-Agency / Reseller Network"</b><div class="d">Like a sari-sari store owner who stocks from Etong. Etong supplies meat + systems, resellers handle selling. Etong earns margin on every kilo without standing behind every counter.</div></div>
+<div class="tw"><table><thead><tr><th>Stage</th><th>Timeline</th><th>Role</th><th>Monthly Extra</th><th>Hours/Day</th></tr></thead><tbody>
+<tr><td>Solo Retailer</td><td>Now</td><td>You sell everything</td><td>Current revenue</td><td>Full day</td></tr>
+<tr><td>+ AI Systems</td><td>Month 1-3</td><td>AI handles promos, tracking</td><td>+₱10K-₱30K (less waste, more orders)</td><td>Save 1-2 hrs</td></tr>
+<tr><td>+ 3 Resellers</td><td>Month 4-6</td><td>Supply + support resellers</td><td>+₱30K-₱60K margin</td><td>1-2 hrs managing</td></tr>
+<tr><td style="color:var(--gn)"><b>+ 10 Resellers</b></td><td>Year 1+</td><td>Systems run the network</td><td style="color:var(--gn)"><b>+₱100K-₱200K+</b></td><td>2-3 hrs</td></tr>
+</tbody></table></div>
+
+<!-- RESTORED: Full What to Avoid -->
+<h3 style="margin-top:32px;color:var(--br);font-size:1.2rem">🔴 What to Avoid</h3>
+<div class="tw"><table><thead><tr><th>❌ Avoid</th><th>Why</th><th>✅ Do This Instead</th></tr></thead><tbody>
+<tr><td>Random AI use with no result</td><td>Wastes time, builds nothing</td><td>Tie every AI task to sales or operations</td></tr>
+<tr><td>Too many tools at once</td><td>Overwhelm → quit</td><td>1 AI chat + Sheets + Canva is enough</td></tr>
+<tr><td>Content-only path first</td><td>Slow money, inconsistent</td><td>Fix operations and offers first</td></tr>
+<tr><td>Building an app first</td><td>Too slow and technical</td><td>Manual system first, automate later</td></tr>
+<tr><td>Dropshipping random products</td><td>High competition, no edge</td><td>Sell what you already know (meat)</td></tr>
+<tr><td>Crypto/trading for income</td><td>Speculation ≠ income</td><td>Focus on real business income</td></tr>
+<tr><td>Copying influencers</td><td>Their model ≠ your model</td><td>Build systems that match your life</td></tr>
+</tbody></table></div>
+</div></div>
+
+<!-- ======================== 30-DAY PLAN ======================== -->
+<div class="pg" id="pg-plan"><div class="wr">
+<div class="sh"><div class="sn grn">3</div><div class="st">Chef Etong 90-Day Blueprint + 30-Day Checklist</div></div>
+<p class="cm" style="margin-bottom:16px">15-30 minutes per day. Check items off — progress saves in your browser.</p>
+<div class="tl" style="margin-bottom:28px">
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--cy)"></div><b style="color:var(--cy);font-size:.86rem">Phase 1: Organize · Days 1-14</b><div class="cm">Product list, costing, customer list, supplier tracker, first AI promo.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--pu)"></div><b style="color:var(--pu);font-size:.86rem">Phase 2: Sell · Days 15-30</b><div class="cm">Launch 2-3 bundles, collect feedback, track margin and repeat buyers.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.86rem">Phase 3: Repeat · Days 31-60</b><div class="cm">Repeat order messages, weekly bundles, recipe cards, delivery SOPs.</div></div>
+<div class="ti gs" style="padding:14px 18px"><div class="td" style="background:var(--am)"></div><b style="color:var(--am);font-size:.86rem">Phase 4: Package · Days 61-90</b><div class="cm">Turn proven workflows into reseller kit, templates, subscription box, or consulting.</div></div>
+</div>
+<h3 style="color:var(--br);margin-bottom:12px">📋 Interactive 30-Day Checklist</h3>
+<div class="gs" style="padding:16px;margin-bottom:14px"><b style="color:var(--cy)">Progress: <span id="dp">0</span>/30 days</b><div class="bt" style="margin-top:8px;height:12px"><div id="db" class="bf" style="width:0%"></div></div></div>
+<div id="cl"></div>
+
+<!-- RESTORED: Typical Day -->
+<h3 style="margin-top:32px;color:var(--br)">🕐 A Typical Day (AI-Assisted Meat Business)</h3>
+<div class="tw"><table><thead><tr><th>Time</th><th>Activity</th><th>Duration</th></tr></thead><tbody>
+<tr><td>7:00 AM</td><td>☕ Coffee + check Messenger orders overnight</td><td>20 min</td></tr>
+<tr><td>7:20 AM</td><td>📦 Confirm orders, update inventory sheet</td><td>30 min</td></tr>
+<tr><td>7:50 AM</td><td>🤖 Ask AI: "Write today's promo caption for samgyup pack"</td><td>5 min</td></tr>
+<tr><td>8:00 AM</td><td>🎨 Open Canva, drop promo image + AI caption → post</td><td>10 min</td></tr>
+<tr><td>8:10 AM</td><td>📞 Coordinate delivery / pickup</td><td>30 min</td></tr>
+<tr><td>8:40 AM</td><td>💬 Reply to customer inquiries</td><td>20 min</td></tr>
+<tr><td>9:00 AM</td><td>📊 Quick daily sales tally in Sheets</td><td>10 min</td></tr>
+<tr><td style="color:var(--gn)"><b>9:15 AM</b></td><td style="color:var(--gn)"><b>✅ AI-assisted tasks done! Rest of day = family + operations.</b></td><td>—</td></tr>
+</tbody></table></div>
+<div class="co ct2"><div class="lb" style="color:var(--gn)">💡 Total AI time</div>~15 minutes per day. The rest is normal business operations that Etong already does.</div>
+
+<!-- RESTORED: Deal Filter -->
+<h3 style="margin-top:32px;color:var(--br)">🟢🟡🔴 Deal Filter — Before Accepting Any Opportunity</h3>
+<div class="cg">
+<div class="g cd" style="border-left:4px solid var(--gn)"><div class="ct" style="color:var(--gn)">🟢 ACCEPT</div><div class="cm">Clear terms · Fixed pricing · Written orders · Predictable schedule · Reliable payment · Repeat customer potential</div></div>
+<div class="g cd" style="border-left:4px solid var(--am)"><div class="ct" style="color:var(--am)">🟡 CAUTION</div><div class="cm">New customer (no track record) · Large order (check payment first) · Consignment deals · Night/weekend delivery pressure</div></div>
+<div class="g cd" style="border-left:4px solid var(--rd)"><div class="ct" style="color:var(--rd)">🔴 AVOID</div><div class="cm">Pay-after-sell only · "Unlimited potential" with no base · Vague scope · 24/7 availability demanded · No written agreement</div></div>
+</div>
+</div></div>
+
+<!-- ======================== AI CERTS ======================== -->
+<div class="pg" id="pg-ai"><div class="wr">
+<div class="sh"><div class="sn pnk">4</div><div class="st">AI Certifications — Level 0 to Master</div></div>
+<p class="cm" style="margin-bottom:14px">35 certifications. Most FREE. Level 0-1 is enough to stand out. Click any card for details.</p>
+<div class="fy"><b>"AI Certification" = Driver's license for AI</b><div class="d">You don't NEED one to use AI, but having one PROVES to partners, customers, and future opportunities that you understand it.</div></div>
+<div class="co ct2"><div class="lb" style="color:var(--gn)">💡 For Chef Etong</div>Level 0-1 is MORE than enough. Even just completing Level 0 puts you ahead of 95% of food business owners in the Philippines.</div>
+
+<!-- RESTORED: 6-level tabs with all 35 certs -->
+<div class="tb"><div class="tbb">
+<button class="tbn on" onclick="stab(event,'l0')">🟢 Level 0</button>
+<button class="tbn" onclick="stab(event,'l1')">🔵 Level 1</button>
+<button class="tbn" onclick="stab(event,'l2')">🟣 Level 2</button>
+<button class="tbn" onclick="stab(event,'l3')">🟡 Level 3</button>
+<button class="tbn" onclick="stab(event,'l4')">🔴 Level 4</button>
+<button class="tbn" onclick="stab(event,'l5')">💎 Level 5</button>
+</div>
+<div class="tp on" id="l0"><h3 style="color:var(--gn);margin-bottom:4px">Absolute Beginner — Free, 0-2 weeks</h3><p class="cm" style="margin-bottom:10px">Understand what AI is. Zero coding.</p><div class="crg" id="cr0"></div></div>
+<div class="tp" id="l1"><h3 style="color:#3b82f6;margin-bottom:4px">Beginner — 2-6 weeks</h3><p class="cm" style="margin-bottom:10px">Get certified. Add to resume/LinkedIn.</p><div class="crg" id="cr1"></div></div>
+<div class="tp" id="l2"><h3 style="color:var(--pu);margin-bottom:4px">Intermediate — 1-3 months</h3><p class="cm" style="margin-bottom:10px">Use AI in your work. Stand out.</p><div class="crg" id="cr2"></div></div>
+<div class="tp" id="l3"><h3 style="color:var(--am);margin-bottom:4px">Advanced — 3-6 months</h3><p class="cm" style="margin-bottom:10px">AI-powered specialist. Premium rates.</p><div class="crg" id="cr3"></div></div>
+<div class="tp" id="l4"><h3 style="color:var(--rd);margin-bottom:4px">Expert — 6-12 months</h3><p class="cm" style="margin-bottom:10px">Build AI systems. Deep mastery.</p><div class="crg" id="cr4"></div></div>
+<div class="tp" id="l5"><h3 style="color:var(--pk);margin-bottom:4px">Master — 1+ year</h3><p class="cm" style="margin-bottom:10px">Lead AI strategy. Teach others.</p><div class="crg" id="cr5"></div></div>
+</div>
+
+<!-- RESTORED: Radar chart -->
+<h3 style="margin-top:28px;color:var(--br)">📊 Free vs Paid Comparison</h3>
+<div class="gs" style="padding:22px;margin-top:10px"><div style="max-width:480px;margin:auto"><canvas id="radar"></canvas></div></div>
+
+<!-- RESTORED: Quick cert cheat sheet -->
+<h3 style="margin-top:28px;color:var(--br)">⚡ Quick Cert Cheat Sheet</h3>
+<div class="tw"><table><thead><tr><th>Situation</th><th>Best Combo</th><th>Cost</th><th>Time</th></tr></thead><tbody>
+<tr><td>Just curious about AI?</td><td>Elements of AI + Google AI Essentials</td><td style="color:var(--gn)">Free</td><td>~10 hrs</td></tr>
+<tr><td>Want a badge for credibility?</td><td>IBM AI Fundamentals + ChatGPT Power User</td><td style="color:var(--gn)">Free</td><td>~15 hrs</td></tr>
+<tr><td>Use AI in meat business?</td><td>Prompt Engineering + HubSpot AI</td><td style="color:var(--gn)">Free</td><td>~8 hrs</td></tr>
+<tr><td>Serious career expansion?</td><td>AI-900 + AWS AI Practitioner</td><td>~$240 exams</td><td>~40 hrs</td></tr>
+<tr><td>Want to build AI tools?</td><td>fast.ai + Stanford ML Specialization</td><td style="color:var(--gn)">Free</td><td>6+ months</td></tr>
+</tbody></table></div>
+
+<!-- RESTORED: 12-month learning plan -->
+<h3 style="margin-top:28px;color:var(--br)">📅 12-Month Learning Plan (Lazy Version)</h3>
+<div class="tl">
+<div class="ti"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.86rem">Month 1-2 — What is AI?</b><div class="cm">Google AI Essentials + Elements of AI. First 2 free certs.</div></div>
+<div class="ti"><div class="td" style="background:var(--gn)"></div><b style="color:var(--gn);font-size:.86rem">Month 3-4 — Prompting</b><div class="cm">DeepLearning.AI short courses. Practice writing AI instructions daily.</div></div>
+<div class="ti"><div class="td" style="background:var(--cy)"></div><b style="color:var(--cy);font-size:.86rem">Month 5-6 — First AI Project</b><div class="cm">Build an AI-powered promo workflow or inventory helper for the meat biz.</div></div>
+<div class="ti"><div class="td" style="background:var(--pu)"></div><b style="color:var(--pu);font-size:.86rem">Month 7-9 — Intermediate</b><div class="cm">Optional cert if interested. Focus on applying AI to business.</div></div>
+<div class="ti"><div class="td" style="background:var(--am)"></div><b style="color:var(--am);font-size:.86rem">Month 10-12 — Review & Teach</b><div class="cm">Document what worked. Share with other food retailers. Plan year 2.</div></div>
+</div>
+
+<!-- RESTORED: Study tips -->
+<h3 style="margin-top:28px;color:var(--br)">📝 Study Tips for Visual / Busy Learners</h3>
+<div class="cg">
+<div class="g cd"><div class="ci">🎬</div><div class="ct">Watch first, read second</div><div class="cm">YouTube tutorials before docs. Eyes learn faster.</div></div>
+<div class="g cd"><div class="ci">📝</div><div class="ct">English subtitles ON</div><div class="cm">Connects spoken to written words. Builds vocab.</div></div>
+<div class="g cd"><div class="ci">✏️</div><div class="ct">Draw diagrams</div><div class="cm">Sketch concepts — even stick figures help.</div></div>
+<div class="g cd"><div class="ci">🗣️</div><div class="ct">Teach-back method</div><div class="cm">After learning, explain it in your own words.</div></div>
+<div class="g cd"><div class="ci">🍅</div><div class="ct">Pomodoro: 25 on, 5 off</div><div class="cm">Short focused bursts prevent burnout.</div></div>
+<div class="g cd"><div class="ci">🔨</div><div class="ct">Apply every week</div><div class="cm">Use what you learn in the meat business immediately.</div></div>
+</div>
+</div></div>
+
+<!-- ======================== MONEY ======================== -->
+<div class="pg" id="pg-money"><div class="wr">
+<div class="sh"><div class="sn amb">5</div><div class="st">Money Math — Meat Biz + Side Income</div></div>
+<div class="fy"><b>Business Math</b><div class="d">Profit = Selling Price − Cost − Delivery/Waste. AI doesn't change the math. It helps Etong see the math faster, price smarter, and waste less.</div></div>
+
+<div class="cg" style="margin:18px 0">
+<!-- Product margin calculator -->
+<div class="gs" style="padding:22px"><h3 style="color:var(--cy);margin-bottom:14px">🥩 Product Margin Calculator</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+<div class="cf"><label>Selling Price ₱</label><input id="sell" type="number" value="1000" oninput="calc()"></div>
+<div class="cf"><label>Product Cost ₱</label><input id="cost" type="number" value="700" oninput="calc()"></div>
+<div class="cf"><label>Other Costs ₱</label><input id="oth" type="number" value="50" oninput="calc()"></div>
+</div>
+<div style="margin-top:16px"><div class="cm">Estimated Profit</div><div class="big" id="prof">₱250</div><div class="cm" id="marg">Margin: 25.0%</div></div></div>
+<!-- Side income calc -->
+<div class="gs" style="padding:22px"><h3 style="color:var(--pu);margin-bottom:14px">💵 Template / Service Income</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+<div class="cf"><label>Price per sale ₱</label><input id="pr" type="number" value="499" oninput="calc()"></div>
+<div class="cf"><label>Sales / month</label><input id="sl" type="number" value="20" oninput="calc()"></div>
+</div>
+<div style="margin-top:16px"><div class="cm">Possible Monthly Extra</div><div class="big" id="side">₱9,980</div><div class="cm">Recipe packs, tracker templates, reseller kits, consulting.</div></div></div>
+</div>
+
+<!-- RESTORED: Hourly rate calculator -->
+<div class="gs" style="padding:22px;margin:18px 0"><h3 style="color:var(--gn);margin-bottom:14px">⏱️ Consulting / VA Rate Calculator</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+<div class="cf"><label>USD / hour</label><input id="hr" type="number" value="7" oninput="calc()"></div>
+<div class="cf"><label>Hours / week</label><input id="hw" type="number" value="10" oninput="calc()"></div>
+<div class="cf"><label>₱ / USD</label><input id="fx" type="number" value="61.25" step=".25" oninput="calc()"></div>
+</div>
+<div style="margin-top:16px"><div class="cm">Monthly Consulting/VA Income</div><div class="big" id="cons">₱0</div><div class="cm" id="consd"></div></div></div>
+
+<!-- RESTORED: Pricing strategy -->
+<h3 style="margin-top:28px;color:var(--br)">💰 Pricing Strategy Over Time</h3>
+<div class="tw"><table><thead><tr><th>Level</th><th>Product/Service</th><th>Price Range</th><th>When</th></tr></thead><tbody>
+<tr><td>🟢 Now</td><td>Frozen meat per kilo/pack</td><td>Market price + small margin</td><td>Day 1</td></tr>
+<tr><td>🟡 Month 2</td><td>Chef-curated bundles</td><td>20-40% premium over basic</td><td>After testing 3 bundles</td></tr>
+<tr><td>🟠 Month 4</td><td>Subscription box / weekly order</td><td>₱500-₱1,500/box</td><td>After 10+ repeat customers</td></tr>
+<tr><td>🔴 Month 6+</td><td>Templates + consulting</td><td>₱499-₱5,000 per sale/session</td><td>After proving the system works</td></tr>
+</tbody></table></div>
+
+<!-- RESTORED: Where to sell -->
+<h3 style="margin-top:28px;color:var(--br)">🌐 Where to Sell & Find Customers</h3>
+<div class="tw"><table><thead><tr><th>Platform</th><th>Best For</th><th>Pro Tip</th></tr></thead><tbody>
+<tr><td><b style="color:var(--cy)">Facebook / Messenger ⭐</b></td><td>Community selling, repeat orders</td><td>Post bundles in local groups daily</td></tr>
+<tr><td><b style="color:var(--cy)">Viber Groups ⭐</b></td><td>Repeat customer ordering</td><td>Create a broadcast list for promos</td></tr>
+<tr><td>Instagram</td><td>Visual food content</td><td>Recipe reels + product shots</td></tr>
+<tr><td>Shopee / Lazada</td><td>Marketplace reach</td><td>Good for frozen goods if logistics work</td></tr>
+<tr><td>Google Forms</td><td>Simple order form</td><td>Share link in Messenger/Viber</td></tr>
+<tr><td>Word of mouth</td><td>Highest trust</td><td>Ask for referrals after every good delivery</td></tr>
+<tr><td>Reseller network</td><td>Scale without more hours</td><td>Supply + system kit to local sellers</td></tr>
+</tbody></table></div>
+
+<!-- RESTORED: Pitch template -->
+<div class="co ci2" style="margin-top:18px"><div class="lb" style="color:var(--cy)">📝 Promo template (copy-paste)</div>"🥩 Chef Etong's [Bundle Name] — ₱[Price]<br>Includes: [Item 1], [Item 2], [Item 3]<br>📦 Pickup or delivery available<br>💬 Order via Messenger / Viber<br>🔥 Limited slots this week — order now!"</div>
+</div></div>
+
+<!-- ======================== TOOLS ======================== -->
+<div class="pg" id="pg-tools"><div class="wr">
+<div class="sh"><div class="sn">6</div><div class="st">Tools & Free Resources</div></div>
+<p class="cm" style="margin-bottom:14px">Everything Chef Etong needs — mostly free, beginner-friendly. Learn only what saves time or makes money.</p>
+<!-- RESTORED: 12 tool cards -->
+<div class="cg">
+<div class="g cd"><div class="ci">🤖</div><div class="ct">ChatGPT / Copilot / Gemini</div><div class="cm">Promos, recipes, SOPs, customer replies, bundle ideas. Free.</div></div>
+<div class="g cd"><div class="ci">📊</div><div class="ct">Google Sheets</div><div class="cm">Product list, cost, profit, orders, inventory. Free.</div></div>
+<div class="g cd"><div class="ci">🎨</div><div class="ct">Canva</div><div class="cm">Product posters, recipe cards, bundle graphics. Free.</div></div>
+<div class="g cd"><div class="ci">📝</div><div class="ct">Google Forms</div><div class="cm">Simple order form for repeat customers. Free.</div></div>
+<div class="g cd"><div class="ci">💬</div><div class="ct">Messenger / Viber</div><div class="cm">Customer ordering, broadcast promos, community selling. Free.</div></div>
+<div class="g cd"><div class="ci">📦</div><div class="ct">Inventory Checklist</div><div class="cm">Freezer count, expiry, fast/slow movers. Google Sheets.</div></div>
+<div class="g cd"><div class="ci">📧</div><div class="ct">Gmail + Calendar</div><div class="cm">Schedule, reminders, supplier emails. Free.</div></div>
+<div class="g cd"><div class="ci">🔗</div><div class="ct">HubSpot CRM (Free)</div><div class="cm">Track customer contacts and follow-ups. Free tier.</div></div>
+<div class="g cd"><div class="ci">📋</div><div class="ct">Trello / Notion</div><div class="cm">Task boards, weekly checklists, SOPs. Free.</div></div>
+<div class="g cd"><div class="ci">⏱️</div><div class="ct">Toggl</div><div class="cm">Time tracking if doing consulting. Free.</div></div>
+<div class="g cd"><div class="ci">🛒</div><div class="ct">Shopify / Shopee</div><div class="cm">E-commerce if scaling online. Free trial / free tier.</div></div>
+<div class="g cd"><div class="ci">🔐</div><div class="ct">Bitwarden</div><div class="cm">Password manager — essential security. Free.</div></div>
+</div>
+
+<!-- RESTORED: Free learning resources -->
+<h3 style="margin-top:28px;color:var(--br)">📚 Free Learning Resources</h3>
+<div class="tw"><table><thead><tr><th>Resource</th><th>Type</th><th>What You Learn</th></tr></thead><tbody>
+<tr><td>Shopify Learn</td><td>Free course</td><td>E-commerce fundamentals</td></tr>
+<tr><td>Canva Design School</td><td>Free course</td><td>Graphic design for product images</td></tr>
+<tr><td>Google Digital Garage</td><td>Free certs</td><td>Digital marketing + analytics</td></tr>
+<tr><td>HubSpot Academy</td><td>Free certs</td><td>CRM, marketing, sales</td></tr>
+<tr><td>Coursera (audit mode)</td><td>Free courses</td><td>Business, marketing, data</td></tr>
+<tr><td>Google Cloud Skills Boost</td><td>Free courses</td><td>AI courses with badges</td></tr>
+<tr><td>fast.ai</td><td>Free course</td><td>Practical deep learning (advanced)</td></tr>
+<tr><td>YouTube: "food business PH"</td><td>Videos</td><td>Real Filipino food business tips</td></tr>
+</tbody></table></div>
+
+<!-- RESTORED: Portfolio starter kit -->
+<h3 style="margin-top:28px;color:var(--br)">🗂️ Business Portfolio Kit (Prove Your Systems)</h3>
+<div class="tw"><table><thead><tr><th>Sample</th><th>What It Proves</th><th>Tool</th></tr></thead><tbody>
+<tr><td>Daily Sales Tracker</td><td>You know your numbers</td><td>Google Sheets</td></tr>
+<tr><td>Inventory + Supplier Tracker</td><td>You manage stock and suppliers</td><td>Google Sheets</td></tr>
+<tr><td>Customer Order List</td><td>You track repeat buyers</td><td>Sheets / CRM</td></tr>
+<tr><td>Weekly Bundle Menu</td><td>You create premium offers</td><td>Canva</td></tr>
+<tr><td>Simple SOP Checklist</td><td>You make messy work repeatable</td><td>Google Docs</td></tr>
+</tbody></table></div>
+<div class="co ck"><div class="lb" style="color:var(--pu)">UNGASIS principle</div>Tool count should stay low. A simple system used daily beats a premium app ignored after 2 days.</div>
+</div></div>
+
+<!-- ======================== SHOWCASE ======================== -->
+<div class="pg" id="pg-show"><div class="wr">
+<div class="sh"><div class="sn pnk">7</div><div class="st">Real-World AI Projects — Built by Mel / UNGASIS</div></div>
+<p class="cm" style="margin-bottom:14px">Proof that a non-programmer can build production-grade AI systems with $0-$20/month tools. This is what built Chef Etong's playbook.</p>
+<div class="cg">
+<div class="g cd rv"><div style="display:inline-flex;padding:4px 12px;border-radius:999px;font-size:.72rem;font-weight:700;background:rgba(34,197,94,.15);color:var(--gn);border:1px solid rgba(34,197,94,.3);margin-bottom:12px">✅ PARKED</div><div style="font-size:1.3rem;font-weight:900;margin-bottom:8px">UNGASIS OS v6.3</div><div class="cm" style="margin-bottom:14px">Personal AI operating system — like a smart kitchen that remembers every recipe and knows which AI chef is best.</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="pm"><div class="pv" style="color:var(--gn)">92%</div><div class="pl">JARVIS Score</div></div><div class="pm"><div class="pv">62</div><div class="pl">Scripts</div></div><div class="pm"><div class="pv">56</div><div class="pl">Wiki Pages</div></div><div class="pm"><div class="pv">40K+</div><div class="pl">Graph Nodes</div></div></div></div>
+<div class="g cd rv"><div style="display:inline-flex;padding:4px 12px;border-radius:999px;font-size:.72rem;font-weight:700;background:rgba(245,158,11,.15);color:var(--am);border:1px solid rgba(245,158,11,.3);margin-bottom:12px">🔨 QIM Demo Jun 18</div><div style="font-size:1.3rem;font-weight:900;margin-bottom:8px">Newmont Command Center</div><div class="cm" style="margin-bottom:14px">Hiring intelligence dashboard for a global gold mining company — flight cockpit for recruitment.</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="pm"><div class="pv">18,935</div><div class="pl">Requisitions</div></div><div class="pm"><div class="pv" style="color:var(--cy)">73.8%</div><div class="pl">Fill Rate</div></div><div class="pm"><div class="pv">77.6d</div><div class="pl">Avg TTF</div></div><div class="pm"><div class="pv">793KB</div><div class="pl">Build Size</div></div></div></div>
+<div class="g cd rv"><div style="display:inline-flex;padding:4px 12px;border-radius:999px;font-size:.72rem;font-weight:700;background:rgba(34,197,94,.15);color:var(--gn);border:1px solid rgba(34,197,94,.3);margin-bottom:12px">✅ Phase 6.5</div><div style="font-size:1.3rem;font-weight:900;margin-bottom:8px">RiftCoach</div><div class="cm" style="margin-bottom:14px">AI-powered gaming coach using real statistics for every champion.</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px"><div class="pm"><div class="pv">18/18</div><div class="pl">Pages</div></div><div class="pm"><div class="pv">6</div><div class="pl">AI Providers</div></div><div class="pm"><div class="pv">114</div><div class="pl">Models</div></div><div class="pm"><div class="pv">69/69</div><div class="pl">Champs</div></div></div></div>
+</div>
+<!-- RESTORED: Builder lifecycle -->
+<h3 style="margin-top:28px;color:var(--br)">🛤️ AI Builder's Lifecycle</h3>
+<div class="tw"><table><thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead><tbody>
+<tr><td>1</td><td>💡 Idea</td><td>Think of something useful to build</td></tr>
+<tr><td>2</td><td>🏠 Personal Tool</td><td>Build it for yourself first</td></tr>
+<tr><td>3</td><td>🔧 Prototype</td><td>Make it actually work</td></tr>
+<tr><td>4</td><td>📁 Portfolio</td><td>Polish it to show others</td></tr>
+<tr><td>5</td><td>🌐 Public Demo</td><td>Share online</td></tr>
+<tr><td>6</td><td>🧪 Beta</td><td>Let a few people test it</td></tr>
+<tr><td>7</td><td>💰 Revenue Test</td><td>See if anyone will pay</td></tr>
+<tr><td>8</td><td>🚀 Public MVP</td><td>Launch publicly</td></tr>
+<tr><td>9</td><td>🏢 Product</td><td>Scale if validated</td></tr>
+</tbody></table></div>
+</div></div>
+
+<!-- ======================== GLOSSARY ======================== -->
+<div class="pg" id="pg-gloss"><div class="wr">
+<div class="sh"><div class="sn">8</div><div class="st">Glossary — 45 AI & Business Terms in Plain English</div></div>
+<p class="cm" style="margin-bottom:14px">Every term explained with an everyday analogy. Search to filter.</p>
+<input class="gls" id="gs" placeholder="🔍 Search terms... (e.g., 'margin', 'SOP', 'prompt')" oninput="dg()">
+<div class="gg" id="grd"></div>
+</div></div>
+
+<button class="bk" id="bk" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<footer><b>Chef Etong AI Income Playbook v1.2 — Enhanced Edition</b><br>Built & designed by UNGASIS / Mel for Chef Etong · June 15, 2026<br>Synthesized from 4 source documents · Personalized · Feynman-style<br><span style="font-size:.7rem;color:rgba(255,255,255,.25)">No hype: AI is useful only if it saves time, reduces mistakes, improves sales, or creates repeatable systems.</span></footer>
+
+<script>
+// ===== 60fps PARTICLE CANVAS =====
+(function(){const c=document.getElementById('fx'),x=c.getContext('2d');let W,H,ps=[];function sz(){W=c.width=innerWidth;H=c.height=innerHeight}addEventListener('resize',sz);sz();class P{constructor(){this.r()}r(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.3;this.vy=(Math.random()-.5)*.3;this.s=Math.random()*1.5+.3;this.o=Math.random()*.35+.08}u(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.r()}d(){x.beginPath();x.arc(this.x,this.y,this.s,0,7);x.fillStyle=`rgba(0,212,255,${this.o})`;x.fill()}}for(let i=0;i<65;i++)ps.push(new P());(function loop(){x.clearRect(0,0,W,H);ps.forEach(p=>{p.u();p.d()});requestAnimationFrame(loop)})()})();
+
+// ===== PAGE ROUTING =====
+function go(id){document.querySelectorAll('.pg').forEach(p=>p.classList.toggle('on',p.id==='pg-'+id));document.querySelectorAll('.lnk a').forEach(a=>a.classList.toggle('on',a.dataset.p===id));document.querySelector('.lnk').classList.remove('open');setTimeout(()=>scrollTo({top:0,behavior:'smooth'}),30);setTimeout(()=>document.querySelectorAll('.rv').forEach(el=>ob.observe(el)),100)}
+
+// ===== SCROLL =====
+addEventListener('scroll',()=>{const h=document.documentElement;document.getElementById('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100+'%';document.getElementById('bk').classList.toggle('v',h.scrollTop>400)});
+// Sky cycle
+addEventListener('scroll',()=>{const t=scrollY/(document.body.scrollHeight-innerHeight);const h=Math.round(220+t*20);document.getElementById('sky').style.background=`linear-gradient(180deg,hsl(${h},${70+t*10}%,${8+t*4}%) 0%,hsl(${h+20},${60}%,${12+t*5}%) 50%,hsl(${h},${70+t*10}%,${8+t*4}%) 100%)`});
+
+// ===== REVEAL =====
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.1});document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
+
+// ===== COUNTERS =====
+function ac(el,t,p='',s=''){let c=0;const st=Math.max(1,Math.floor(t/50));const i=setInterval(()=>{c+=st;if(c>=t){c=t;clearInterval(i)}el.textContent=p+c+s},25)}
+setTimeout(()=>{ac(document.getElementById('c1'),13);ac(document.getElementById('c2'),35);ac(document.getElementById('c3'),90);ac(document.getElementById('c4'),0,'$');ac(document.getElementById('c5'),12);ac(document.getElementById('c6'),45)},500);
+
+// ===== TABS =====
+function stab(e,id){e.target.closest('.tb').querySelectorAll('.tbn').forEach(b=>b.classList.remove('on'));e.target.closest('.tb').querySelectorAll('.tp').forEach(p=>p.classList.remove('on'));e.target.classList.add('on');document.getElementById(id).classList.add('on')}
+
+// ===== CALCULATORS =====
+function calc(){
+  let s=+(sell?.value)||0,co=+(cost?.value)||0,o=+(oth?.value)||0,p=s-co-o,m=s?p/s*100:0;
+  if(prof)prof.textContent='₱'+Math.round(p).toLocaleString();
+  if(marg)marg.textContent='Margin: '+m.toFixed(1)+'%';
+  let extra=(+(pr?.value)||0)*(+(sl?.value)||0);
+  if(side)side.textContent='₱'+Math.round(extra).toLocaleString();
+  let r=+(hr?.value)||0,h=+(hw?.value)||0,f=+(fx?.value)||61.25,mo=r*h*4.33*f;
+  if(cons)cons.textContent='₱'+Math.round(mo).toLocaleString();
+  if(consd)consd.textContent=`$${r}/hr × ${h} hrs/wk × 4.33 × ₱${f}`;
+}
+setTimeout(calc,100);
+
+// ===== ALL 35 CERTIFICATIONS =====
+const certs=[
+{l:0,n:"Elements of AI",p:"Univ. of Helsinki",c:"Free",t:"6-8 hrs",d:"Best overall AI intro — no code, no math. Highly acclaimed.",f:1},
+{l:0,n:"AI for Everyone",p:"IBM / edX",c:"Free",t:"~10 hrs",d:"How businesses use AI — beginner-friendly.",f:1},
+{l:0,n:"AI Fluency",p:"Anthropic",c:"Free",t:"~1 hr",d:"How to work WITH AI tools effectively.",f:1},
+{l:0,n:"Intro to Generative AI",p:"Google Cloud",c:"Free",t:"~45 min",d:"What is ChatGPT/Gemini and how they work.",f:1},
+{l:0,n:"Google AI Essentials",p:"Google",c:"Free",t:"5-6 hrs",d:"Learn what AI is, how it works, use responsibly.",f:1},
+{l:0,n:"Intro to Responsible AI",p:"Google",c:"Free",t:"30 min",d:"AI ethics, fairness, bias. Quick and essential.",f:1},
+{l:0,n:"AWS ML Essentials",p:"AWS",c:"Free",t:"~1 hr",d:"Quick intro to ML concepts and AWS AI services.",f:1},
+{l:1,n:"AI Essentials Certificate",p:"FreeAcademy.ai",c:"Free",t:"4-6 hrs",d:"Verifiable credential covering AI fundamentals.",f:1},
+{l:1,n:"ChatGPT Power User",p:"FreeAcademy.ai",c:"Free",t:"3-5 hrs",d:"Learn to use ChatGPT like a pro at work.",f:1},
+{l:1,n:"IBM AI Fundamentals",p:"IBM / Coursera",c:"Free (audit)",t:"~10 hrs",d:"IBM professional badge — great for resumes.",f:1},
+{l:1,n:"Prompt Engineering",p:"AWS",c:"Free",t:"~4 hrs",d:"How to write better prompts for AI tools.",f:1},
+{l:1,n:"Google Cloud AI Path",p:"Google Cloud",c:"Free",t:"Self-paced",d:"Structured ML workflows and GenAI courses.",f:1},
+{l:1,n:"GenAI for Beginners",p:"Microsoft (GitHub)",c:"Free",t:"18 lessons",d:"Prompt eng, LLMs, RAG, agents with labs.",f:1},
+{l:1,n:"HubSpot AI Marketing",p:"HubSpot",c:"Free",t:"~4 hrs",d:"AI for marketing. Good for non-tech users.",f:1},
+{l:1,n:"DeepLearning.AI Shorts",p:"DeepLearning.AI",c:"Free",t:"1-2 hrs ea",d:"Bite-sized: prompt eng, RAG, fine-tuning.",f:1},
+{l:2,n:"AI-900 (Azure AI Fund.)",p:"Microsoft",c:"Free learn / $165 exam",t:"10-15 hrs",d:"Industry-recognized cert. Azure AI services.",f:0},
+{l:2,n:"Prompt Eng. Certificate",p:"FreeAcademy.ai",c:"Free",t:"4-6 hrs",d:"Advanced prompting techniques.",f:1},
+{l:2,n:"Google Digital Mktg & AI",p:"Google",c:"Free",t:"5-6 hrs",d:"AI + marketing — great for business owners.",f:1},
+{l:2,n:"HubSpot AI for Marketers",p:"HubSpot Academy",c:"Free",t:"2-3 hrs",d:"AI tools for CRM and marketing automation.",f:1},
+{l:2,n:"Databricks GenAI Eng.",p:"Databricks",c:"$200 exam",t:"~30 hrs",d:"Build GenAI systems. Fine-tuning, RAG.",f:0},
+{l:2,n:"IBM AI Developer Pro",p:"IBM / Coursera",c:"$49/mo",t:"~3 months",d:"Job-ready AI development with projects.",f:0},
+{l:3,n:"AWS AI Practitioner",p:"AWS",c:"Free learn / $75 exam",t:"15-20 hrs",d:"Cloud AI fundamentals — respected cert.",f:0},
+{l:3,n:"Google Cloud ML Path",p:"Google Cloud",c:"Free",t:"20-40 hrs",d:"Hands-on AI with Google Cloud tools.",f:1},
+{l:3,n:"AI for Finance",p:"FreeAcademy.ai",c:"Free",t:"8-10 hrs",d:"AI for bookkeeping and business finance.",f:1},
+{l:3,n:"ML Fundamentals",p:"FreeAcademy.ai",c:"Free",t:"10-15 hrs",d:"How AI models actually work.",f:1},
+{l:3,n:"AI for HR",p:"FreeAcademy.ai",c:"Free",t:"6-8 hrs",d:"AI for hiring and team management.",f:1},
+{l:4,n:"Azure AI Engineer (AI-102)",p:"Microsoft",c:"$165 exam",t:"40-60 hrs",d:"Build AI solutions on Azure.",f:0},
+{l:4,n:"AWS ML Specialty",p:"AWS",c:"$300 exam",t:"60-80 hrs",d:"Deep ML expertise. Data eng, MLOps.",f:0},
+{l:4,n:"GCP ML Engineer",p:"Google Cloud",c:"$200 exam",t:"~60 hrs",d:"Most respected ML certification.",f:0},
+{l:4,n:"Azure Data Scientist",p:"Microsoft",c:"$165 exam",t:"~50 hrs",d:"Model training and deployment.",f:0},
+{l:4,n:"Practical Deep Learning",p:"fast.ai",c:"Free",t:"40-60 hrs",d:"Best free advanced AI course.",f:1},
+{l:5,n:"Stanford ML Spec.",p:"Coursera (Andrew Ng)",c:"Free (audit)",t:"3-6 months",d:"Gold standard ML education.",f:1},
+{l:5,n:"MIT Cert in ML/AI",p:"MIT xPRO",c:"$2,500+",t:"~12 weeks",d:"University-grade credential.",f:0},
+{l:5,n:"Chief AI Officer",p:"Chicago Booth",c:"$10,000+",t:"~6 months",d:"C-suite AI transformation.",f:0},
+{l:5,n:"Kaggle Competitions",p:"Kaggle",c:"Free",t:"Ongoing",d:"Solve real AI problems publicly.",f:1},
+];
+function rc(){for(let l=0;l<=5;l++){const g=document.getElementById('cr'+l);if(!g)continue;g.innerHTML=certs.filter(c=>c.l===l).map(c=>`<div class="g crc ${c.f?'fr':'pd'}" onclick="this.classList.toggle('op')"><div class="crn">${c.n}</div><div class="crp">${c.p}</div><div class="crm"><span class="crt ${c.f?'crtf':'crtp'}">${c.c}</span><span class="crt" style="background:rgba(255,255,255,.06);color:var(--dm)">${c.t}</span></div><div class="crd">${c.d}</div></div>`).join('')}}rc();
+
+// ===== RADAR CHART =====
+addEventListener('DOMContentLoaded',()=>{const ctx=document.getElementById('radar');if(!ctx)return;new Chart(ctx,{type:'radar',data:{labels:['Technical Depth','Career Impact','Time Investment','Cost Efficiency','Industry Recognition'],datasets:[{label:'Free (L0-L1)',data:[3,3,5,5,3],backgroundColor:'rgba(34,197,94,.12)',borderColor:'#22c55e',pointBackgroundColor:'#22c55e',borderWidth:2},{label:'Paid (L2-L5)',data:[5,5,2,2,5],backgroundColor:'rgba(167,139,250,.12)',borderColor:'#a78bfa',pointBackgroundColor:'#a78bfa',borderWidth:2}]},options:{responsive:true,plugins:{legend:{labels:{color:'#94a3b8',font:{family:'Inter'}}}},scales:{r:{grid:{color:'rgba(255,255,255,.06)'},ticks:{display:false},pointLabels:{color:'#e2e8f0',font:{size:11,family:'Inter'}},suggestedMin:0,suggestedMax:5}}}})});
+
+// ===== 30-DAY CHECKLIST =====
+(function(){const tasks=['List top 20 best-selling frozen meat products','Create Sheet: product, cost, selling price, margin','Ask AI for 10 promo bundle ideas','Pick 3 bundles: family, samgyup, ulam pack','Create simple customer list: name, order, date','Use AI to write 5 Facebook captions','Create 3 Canva promo images','Post first AI-assisted promo','Track inquiries and orders in Sheet','Ask AI for reorder message templates','Message 20 past/repeat customers','Create simple supplier tracker','Create freezer inventory checklist','Review: best product, best caption, best bundle','Create marinated meat offer using culinary skills','Ask AI for 7-day meal plan using your products','Create recipe card for 1 bestseller','Post recipe + product bundle','Draft reseller offer','List 10 possible reseller partners','Create Google Form order form','Create delivery/pickup SOP','Create daily sales report template','Ask AI for waste/repricing opportunities','Run second improved promo','Collect 3 customer testimonials','Create monthly meat box subscription idea','Calculate margin for top 5 products','Pick one system to repeat weekly','Month 1 review: keep, improve, or kill each idea'];
+const sv=JSON.parse(localStorage.getItem('chefEtongV2')||'{}');const cl=document.getElementById('cl');
+tasks.forEach((t,i)=>{const d=document.createElement('div');d.className='chk'+(sv[i]?' dn':'');d.innerHTML=`<div class="cbx"></div><div class="chtx"><b style="color:var(--dm);font-size:.78rem">Day ${i+1}</b><br>${t}</div>`;d.onclick=()=>{d.classList.toggle('dn');sv[i]=d.classList.contains('dn')?1:0;localStorage.setItem('chefEtongV2',JSON.stringify(sv));up()};cl.appendChild(d)});
+function up(){const n=Object.values(sv).filter(Boolean).length;dp.textContent=n;db.style.width=n/30*100+'%'}up()})();
+
+// ===== 45-TERM GLOSSARY =====
+const gl=[
+['AI (Artificial Intelligence)','Computer programs that can think, learn, and make decisions.','Like a very fast student who learns from examples.'],
+['Algorithm','Step-by-step instructions for solving a problem.','A cooking recipe — follow the steps, get the result.'],
+['API','A way for two programs to talk to each other.','A waiter taking your order to the kitchen.'],
+['Async Work','Work where you reply when ready, not real-time.','Texting vs. phone call. You respond on YOUR schedule.'],
+['Automation','A system that does repeated work with less manual effort.','Timer on a rice cooker. Set it, then it helps you.'],
+['Bundle','A group of products sold together at one price.','Samgyup pack + sauces + side dish recommendation.'],
+['Cache','Data stored temporarily for faster access.','Snacks on the counter instead of going to the store.'],
+['Canva','Easy design tool for non-designers.','Flyers and posters without hiring a designer.'],
+['CLI','Command Line Interface — typing commands.','Texting your computer instead of tapping icons.'],
+['Cloud','Computers running on the internet, not your laptop.','A bank vault instead of under your mattress.'],
+['Context Window','How much text an AI can read at once.','Your desk size — bigger desk = more open books.'],
+['CRM','Customer Relationship Management — tracks all interactions.','Your phone contacts on steroids.'],
+['CSV','Simple file format for data tables.','A spreadsheet saved as plain text.'],
+['Dashboard','Visual page showing key numbers and charts.','Car gauges: speed, fuel, temperature at a glance.'],
+['Deep Learning','AI using many layers to understand complex data.','A team of experts, each handling one part.'],
+['Deploy','Making your app available for others to use.','Opening your restaurant for customers.'],
+['E-Commerce','Buying and selling products online.','Your meat shop, but on the internet.'],
+['Framework','Pre-built tools for building apps faster.','Pre-assembled kitchen — oven and sink included.'],
+['Generational Wealth','Assets and systems passed to family.','A business that survives beyond one person.'],
+['Generative AI','AI that creates new content from instructions.','Regular AI = calculator. GenAI = creative assistant.'],
+['Git','Saves every version of your files.','Infinite undo for your entire project.'],
+['Google Sheets','Online spreadsheet.','Notebook + calculator + dashboard in one.'],
+['GPT','The AI model behind ChatGPT.','Smart writing assistant that read millions of books.'],
+['Inventory','A list of what stock you have.','The freezer map: what is inside and how much.'],
+['JSON','Format for storing structured data.','A neatly organized filing cabinet.'],
+['KPI','Key Performance Indicator — a success number.','Your GPA — one number summarizing performance.'],
+['LLM','Large Language Model — brain behind AI chatbots.','A super-reader that read the entire internet.'],
+['Machine Learning','Teaching computers to learn from data.','Training a dog with treats — it learns from examples.'],
+['Margin','Percent of selling price left after costs.','Sell at ₱1000, keep ₱250 = 25% margin.'],
+['Micro-Agency','Tiny agency where you manage workers for clients.','Sari-sari store but for services.'],
+['Monetization','How you turn work into income.','Selling chicken: per kilo, whole, weekly box, or teaching.'],
+['Pomodoro','25 min focus + 5 min break study method.','Named after a tomato timer. Prevents burnout.'],
+['Productized Service','Fixed package with fixed price.','Combo meal instead of asking chef to cook whatever.'],
+['Prompt','The instruction you give to an AI.','Like ordering food: specific order > give me food.'],
+['Prompt Engineering','Crafting better instructions for AI.','Clear, specific orders = better AI output.'],
+['Python','A simple, popular programming language.','English for computers — easy and used everywhere.'],
+['RAG','AI looks up real data before answering.','Student checking notes before answering a question.'],
+['Retainer','Client pays fixed monthly amount.','Gym membership — stable, predictable income.'],
+['SaaS','Software as a Service — monthly app fee.','Netflix/Spotify model for software.'],
+['SEO','Writing so Google shows your content first.','Making your product appear first in search results.'],
+['SLA','Promise to deliver within a deadline.','Pizza delivery: 30 minutes or it is free.'],
+['SOP','Standard Operating Procedure — step-by-step recipe.','Adobo recipe — anyone can follow it.'],
+['Template','A reusable document or sheet.','Make once, use many times.'],
+['Token','Smallest piece of text AI reads (~1 word).','A Scrabble tile — AI counts tiles to think.'],
+['TypeScript','JavaScript with type safety.','JavaScript wearing a seatbelt — safer.'],
+];
+function dg(){const q=(gs.value||'').toLowerCase();grd.innerHTML=gl.filter(w=>w.join(' ').toLowerCase().includes(q)).map(w=>`<div class="g cd"><div class="gt">${w[0]}</div><div style="font-size:.88rem;margin-bottom:6px">${w[1]}</div><div class="cm" style="font-style:italic;color:var(--pu)">💡 ${w[2]}</div></div>`).join('')}dg();
+</script>
+</body>
+</html>
