@@ -168,17 +168,20 @@ def process_session(sdata, args):
                 "files_changed": sdata["files_changed"]
             }
             f.write(json.dumps(log_entry) + "\n")
-            
-        os.makedirs("wiki/sessions", exist_ok=True)
-        dt = datetime.fromisoformat(sdata["timestamp"]).strftime("%Y-%m-%d-%H%M")
-        wiki_path = f"wiki/sessions/session-{dt}.md"
-        with open(wiki_path, "w", encoding="utf-8") as f:
-            files_list = "\n".join([f"- {x}" for x in sdata["files_changed"]])
-            if not files_list: files_list = "- None"
-            f.write(f"---\ntitle: Session {dt}\ngoal: {sdata['goal']}\ntokens: {sdata['estimated_tokens']}\n"
-                    f"duration: {sdata['duration']}m\n---\n## Files Changed\n{files_list}\n"
-                    f"## Summary\n**First Message:** {sdata['first_assistant']}\n\n"
-                    f"**Last Message:** {sdata['last_assistant']}\n")
+
+        if not args.no_wiki:
+            os.makedirs("wiki/sessions", exist_ok=True)
+            dt = datetime.fromisoformat(sdata["timestamp"]).strftime("%Y-%m-%d-%H%M")
+            wiki_path = f"wiki/sessions/session-{dt}.md"
+            with open(wiki_path, "w", encoding="utf-8") as f:
+                files_list = "\n".join([f"- {x}" for x in sdata["files_changed"]])
+                if not files_list: files_list = "- None"
+                f.write(f"---\ntitle: Session {dt}\ngoal: {sdata['goal']}\ntokens: {sdata['estimated_tokens']}\n"
+                        f"duration: {sdata['duration']}m\n---\n## Files Changed\n{files_list}\n"
+                        f"## Summary\n**First Message:** {sdata['first_assistant']}\n\n"
+                        f"**Last Message:** {sdata['last_assistant']}\n")
+        else:
+            print(f"  [SKIP] wiki markdown (--no-wiki)")
     return sdata
 
 def main():
@@ -186,6 +189,8 @@ def main():
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--all", action="store_true")
+    parser.add_argument("--no-wiki", action="store_true",
+                        help="Skip creating wiki/sessions/*.md (still logs to sessions.jsonl)")
     args = parser.parse_args()
 
     files = find_session_files()

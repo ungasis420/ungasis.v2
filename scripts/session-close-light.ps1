@@ -32,7 +32,7 @@ Write-Host "  UNGASIS LIGHT SESSION CLOSE" -ForegroundColor White
 Write-Host "  (warn-only - no commit/push)" -ForegroundColor Gray
 Write-Host "========================================" -ForegroundColor White
 
-Run-Step "Session Capture" "python scripts/session-capture.py"
+Run-Step "Session Capture" "python scripts/session-capture.py --no-wiki"
 Run-Step "Token Report" "python scripts/token-report.py"
 
 Write-Host "`n--- Git Status ---" -ForegroundColor Cyan
