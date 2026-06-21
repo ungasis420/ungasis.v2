@@ -67,22 +67,7 @@ def post_commit():
         print("AUTO-TRIGGER [WARNING]")
         return 0
 
-    if shutil.which("graphify"):
-        run(["graphify", "."])
-        log_action("post-commit", "ok", "graphify re-indexed")
-        print("AUTO-TRIGGER [graphify re-indexed]")
-
-        relabel = run([sys.executable, "scripts/graph-relabel.py"])
-        print(relabel.stdout)
-        if relabel.returncode == 0:
-            log_action("post-commit", "ok", "communities re-labeled")
-            print("AUTO-TRIGGER [communities re-labeled]")
-        else:
-            log_action("post-commit", "warning", "graph-relabel failed")
-            print("AUTO-TRIGGER [graph-relabel WARN]")
-    else:
-        log_action("post-commit", "ok", "graphify not installed, skipped")
-        print("AUTO-TRIGGER [graphify not installed, skipped]")
+    log_action("post-commit", "ok", "graphify skipped - run graph-maintenance manually")
 
     # -- copilot-instructions hook ------------------------------------------
     # Regenerates .github/copilot-instructions.md after every commit so that
@@ -146,8 +131,23 @@ def post_session():
     return 0
 
 
+def graph_maintenance():
+    if shutil.which("graphify"):
+        run(["graphify", "."])
+        log_action("graph-maintenance", "ok", "graphify re-indexed")
+
+        relabel = run([sys.executable, "scripts/graph-relabel.py"])
+        if relabel.returncode == 0:
+            log_action("graph-maintenance", "ok", "communities re-labeled")
+        else:
+            log_action("graph-maintenance", "warning", "graph-relabel failed")
+    else:
+        log_action("graph-maintenance", "ok", "graphify not installed, skipped")
+    return 0
+
+
 ACTIONS = {"post-commit": post_commit, "post-build": post_build,
-           "post-session": post_session}
+           "post-session": post_session, "graph-maintenance": graph_maintenance}
 
 
 def list_triggers():
@@ -158,9 +158,11 @@ def list_triggers():
     print()
     print("  post-commit hooks:")
     print("    1. wiki-lint health check")
-    print("    2. graphify re-index (if installed)")
-    print("    3. graph-relabel.py  [permanent community re-labeling]")
-    print("    4. generate-copilot-instructions.py --quiet  [M365 Copilot auto-sync]")
+    print("    2. generate-copilot-instructions.py --quiet")
+    print()
+    print("  graph-maintenance hooks (manual only):")
+    print("    1. graphify re-index")
+    print("    2. graph-relabel.py")
 
 
 def main():
