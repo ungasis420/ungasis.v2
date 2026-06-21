@@ -1,9 +1,9 @@
 {
-  "score": 92,
+  "score": 94,
   "grade": "S",
   "breakdown": {
     "plans": 100,
-    "builds": 60,
+    "builds": 70,
     "verifies": 100,
     "learns": 100,
     "self_heals": 100,
