@@ -1,4 +1,5 @@
 UNGASIS OS — Personal AI Operating System (Validation Test)
+Token validation run 2 active — using session-close-light workflow.
 # 🏰 UNGASIS OS v5.2 — Personal AI Operating System
 
 [![CI](https://github.com/ungasis420/ungasis.v2/actions/workflows/ungasis-ci.yml/badge.svg)](https://github.com/ungasis420/ungasis.v2/actions/workflows/ungasis-ci.yml)
