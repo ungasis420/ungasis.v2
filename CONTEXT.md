@@ -71,4 +71,35 @@ v6.3 JARVIS Score + Commands Page (June 14, 2026)
 - Date: 2026-06-13
 - File: docs/handoffs/handoff-2026-06-13.md
 
+## 2026-06-22 — Phase 4 Wave 1.5 SHIPPED
+
+**File:** Newmont - TA Dashboard - 2026-06-22 v3.pbix (local only, pending SharePoint upload)
+
+**3 new measures shipped:**
+- CR Avg Time to Offer = 47.08 days (353 valid rows)
+- CR Avg Time to Accept = 1.74 days (285 valid rows, median 1d, 75% accept within 24h)
+- CR Avg Accept to Close = 5.66 days (277 valid rows)
+
+**Page 6 expanded:** 6 cards → 9 cards (3x3 grid + 2 slicers + 2 bars)
+**Measure Dictionary:** 20 rows → 23 rows (Wave 1.5 caveat footer added)
+**Hidden:** CR Reqs 60+ Days_Old (live COALESCE dependency, not orphan)
+
+**Wave 2 evidence (source PBIX read-only audit):**
+- Interview Stage (#3, #6): Importable, Data-Applicants_status[Funnel Category], 100% CR coverage
+- Source of Hire (#10): Importable with dedupe by Application ID
+- Female Funnel (#11): Importable, Data-Diversity[Gender Consolidated], Privacy gate required (Female Hires CR = 63, 21.65%)
+- Time to Offer/Accept: Source pre-built measures broken under CR — keep v3 custom measures
+
+**8 anti-drift lessons added:**
+1. Filename typo gate (v3pbix vs v3.pbix)
+2. Upstream precomputed columns ≠ DAX-derived
+3. DAX format inheritance bug (VALUE() wrap needed)
+4. Distribution > average for sanity checks
+5. Duplicate offer records exist (Req 39149)
+6. Country format varies BY TABLE in source PBIX
+7. Application-status history grain = 2.9M rows, must dedupe
+8. PBI VertiPaq recompresses on save (file size can shrink)
+
+**Phase 4 score:** 12 of 12 actionable (8 shipped + 4 evidence-ready)
+
 _Last reviewed: June 14, 2026 | Review by: September 2026 | Owner: Mel_
