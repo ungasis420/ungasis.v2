@@ -31,3 +31,29 @@ Costa Rica (CR) hiring funnel diagnostics, two new measures:
 ## Pending
 - Step 2: Visuals for both measures
 - Step 3: Wave 2B planning
+
+## Page 07 Shipped
+**Date:** 2026-06-22
+**File:** v5.pbix saved locally (not committed)
+
+### Layout
+- 2 KPI cards: CR Avg Time to Interview (10.8d) + CR HM:Interview Ratio (39.9%)
+- 3-stage funnel: 759 (HM Review) → 519 (Interview) → 1 (Live Interview)
+- Top 15 HM bar chart: Zeng (13.0d, slowest) → Dobson (0.0d, fastest)
+- Slicers: HM + BU (matches Page 06)
+
+### New Measure
+- `CR Distinct Apps Reaching Stage` = DISTINCTCOUNT(W2A_Applicants_Workflow_CR[Application ID]) = **5,359** (CR universe distinct apps, format `0`)
+
+### Funnel Insight
+- `Live Interview` status = 1 in CR scope — essentially F2F Interview only; the two-status `IN {"Face-to-Face Interview", "Live Interview"}` set is functionally a single-status filter for this country.
+
+### Anti-Drift Logged
+- Dobson = 0.0d average time to interview — flagged as a **data quality issue** for review, not a genuine fast-conversion outlier (likely single-application-date = interview-date pairing, needs source data check before trusting in reporting).
+
+### Relationship Path Confirmed
+- `W2A_Applicants_Workflow_CR[Job Req ID]` (Many, OneDirection) → `R1_Clean[Job Req ID]` (One) → `RD1_Details[Job Req ID]` (One, BothDirections)
+- HM Last Name can flow RD1_Details → R1_Clean → W2A_Applicants_Workflow_CR via this path, though the first hop is OneDirection only.
+
+### Format Fix
+- `CR HM:Interview Ratio` format string corrected to `"0.0\%"` (displays as 39.9%, value unchanged at 39.92...)
