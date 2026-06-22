@@ -57,3 +57,16 @@ Costa Rica (CR) hiring funnel diagnostics, two new measures:
 
 ### Format Fix
 - `CR HM:Interview Ratio` format string corrected to `"0.0\%"` (displays as 39.9%, value unchanged at 39.92...)
+
+## Measure Dictionary Updated
+**Date:** 2026-06-22
+**Action:** Appended rows 24-26 to Measure Dictionary calculated DATATABLE via Power BI MCP (partition_operations.Update with sourceType: "Calculated" + RefreshWithXMLA).
+
+Row count: 23 → 26 (verified).
+
+New rows:
+- Row 24: Page 7 | CR Avg Time to Interview (10.8d)
+- Row 25: Page 7 | CR HM:Interview Ratio (39.9%)
+- Row 26: Page 7 | CR Distinct Apps Reaching Stage (5,359)
+
+MCP technique logged: calculated DATATABLE rewrites require partition_operations.Update + RefreshWithXMLA, not table_operations.Update.
