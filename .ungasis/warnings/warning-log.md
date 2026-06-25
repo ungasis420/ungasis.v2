@@ -35,5 +35,7 @@ History database tracker for all generated warning events, their severity, respo
 
 | 2026-06-13 | Missing staleness footer | 🟡 WARNING | .ungasis/context/hot-context.md | active |
 
+| 2026-06-25 | No git commit in >24 hours | 🔴 CRITICAL | Last commit was 24.2 hours ago | active |
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
