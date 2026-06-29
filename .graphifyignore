@@ -9,3 +9,6 @@ ungasis/archive/
 source-files/
 node_modules/
 .git/
+graphify-out/
+dist/
+build/
