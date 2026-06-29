@@ -1,0 +1,62 @@
+# Mirror of .claudeignore for Gemini/Antigravity safety.
+# Dependencies
+**/node_modules/**
+.pnpm-store/
+.yarn/
+.npm/
+
+# Build outputs
+**/dist/**
+**/build/**
+**/.next/**
+out/
+coverage/
+
+# Git / env / caches
+.git/
+.env
+.env.*
+.venv/
+venv/
+**/__pycache__/**
+*.pyc
+*.lock
+
+# Binary / media / large data
+*.db
+*.sqlite
+*.sqlite3
+*.pbix
+*.zip
+*.7z
+*.rar
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.mp4
+*.mov
+*.pdf
+
+# UNGASIS generated/heavy zones
+**/archive/**
+**/graphify-out/**
+**/backups/**
+.ungasis/backups/
+.ungasis/tracking/**
+docs/handoffs/**
+wiki/sessions/**
+raw/**
+
+# Large generated graph/context files
+graph.json
+graph.html
+GRAPH_REPORT.md
+LLM_CONTEXT.md
+docs/UNGASIS-MASTER-CONTEXT-PACK*.md
+
+# Scratch/temp
+**/scratch/**
+tmp/
+temp/
