@@ -1,3 +1,8 @@
+---
+name: commander
+description: Use when the task involves orchestration, wave planning, multi-agent coordination, file-boundary safety, execution sequencing, or the /commander command.
+---
+
 # SKILL.md — Commander Orchestration Skill
 
 ## Purpose

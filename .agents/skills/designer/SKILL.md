@@ -1,3 +1,8 @@
+---
+name: designer
+description: Use when the task involves UI/UX design, frontend component planning, visual polish, accessibility, mobile-first layout, or the /designer command.
+---
+
 # Skill: Designer
 
 ## Trigger
