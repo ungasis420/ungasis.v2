@@ -43,6 +43,8 @@ next-env.d.ts
 # newmont data — NEVER commit CSVs (MSA §8)
 data/
 *.csv
+# exception: derived truth tracker, not raw Newmont data
+!tracking/kpi_truth_set.csv
 
 # static export
 /dist/
