@@ -39,6 +39,9 @@ commit_msg.txt
 *.bak
 *~
 
+# Power BI backups - large binary files
+projects/newmont/report-backups/*.pbix
+
 # Graphify
 graphify-out/manifest.json
 
