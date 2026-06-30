@@ -40,6 +40,9 @@ Use this skill for:
 6. For report performance, ask for or inspect Performance Analyzer output when available.
 7. Return short findings: issue, evidence, fix, risk.
 
+## Reference loading
+- For DAX-heavy tasks, load `references/dax-review.md`.
+
 ## UNGASIS repo routing
 - For Newmont Power BI work, prefer:
   - `projects/newmont/pbip/`
