@@ -53,3 +53,4 @@ WindowsDeveloperConfig/
 .ungasis/dashboard/wiki-health.json
 .ungasis/tracking/trigger-log.jsonl
 knowledge/wiki/log.md
+.ungasis/warnings/warning-log.md

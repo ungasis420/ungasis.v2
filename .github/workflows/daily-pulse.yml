@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   pulse:
@@ -19,10 +19,7 @@ jobs:
         run: python scripts/ungasis.py pulse
       - name: Run warn check
         run: python scripts/ungasis.py warn
-      - name: Commit pulse results
+      - name: Report generated pulse outputs
         run: |
-          git config user.name "UNGASIS Bot"
-          git config user.email "ungasis@bot.local"
-          git add -A
-          git diff --cached --quiet || git commit -m "chore: daily pulse $(date +%Y-%m-%d)"
-          git push || echo "Nothing to push"
+          echo "Daily pulse generated. Latest-state files are not committed to main."
+          git status --short
