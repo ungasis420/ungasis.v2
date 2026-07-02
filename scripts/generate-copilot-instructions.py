@@ -30,6 +30,13 @@ def extract_section(text, header):
     else:
         return text[start_pos:].strip()
 
+def _strip_footer(text):
+    """Return content with the volatile 'Staleness Footer:' line removed."""
+    return "\n".join(
+        line for line in text.splitlines()
+        if not line.startswith("Staleness Footer:")
+    )
+
 def main():
     parser = argparse.ArgumentParser(description="Generate M365 Copilot instructions")
     parser.add_argument("--output", default="docs/m365-copilot-instructions.txt", type=str)
@@ -166,9 +173,15 @@ Staleness Footer: Generated at {datetime.now(timezone.utc).isoformat()}
     else:
         out_path = Path(args.output)
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(template, encoding="utf-8")
-        if not args.quiet:
-            print(f" M365 Copilot instructions generated: {args.output} ({line_count} lines)")
+        # Skip rewriting when only the Staleness Footer timestamp changed, so
+        # the post-commit regen does not perpetually dirty the output file.
+        if out_path.exists() and _strip_footer(out_path.read_text(encoding="utf-8")) == _strip_footer(template):
+            if not args.quiet:
+                print(f" M365 Copilot instructions unchanged (footer-only): {args.output}")
+        else:
+            out_path.write_text(template, encoding="utf-8")
+            if not args.quiet:
+                print(f" M365 Copilot instructions generated: {args.output} ({line_count} lines)")
 
     if args.json:
         json_out = Path(".ungasis/dashboard/copilot-instructions.json")
