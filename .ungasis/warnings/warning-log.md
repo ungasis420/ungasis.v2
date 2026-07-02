@@ -41,5 +41,7 @@ History database tracker for all generated warning events, their severity, respo
 
 | 2026-07-01 | No git commit in >24 hours | 🔴 CRITICAL | Last commit was 24.1 hours ago | active |
 
+| 2026-07-02 | warning-log.md has unresolved entries | 🟢 INFO | 4 unresolved warnings | active |
+
 ---
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
