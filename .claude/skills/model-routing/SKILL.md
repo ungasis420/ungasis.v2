@@ -1,3 +1,8 @@
+---
+name: model-routing
+description: Use when choosing model/tier, reasoning effort, thinking budget, or routing work across free/paid/async agents. Keywords: model, tier, opus, sonnet, haiku, reasoning, routing.
+---
+
 # Model Routing (v5.2)
 # Moved from root MODEL_ROUTING.md. Source of truth: CLAUDE.md.
 

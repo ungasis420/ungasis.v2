@@ -1,3 +1,8 @@
+---
+name: multi-agent
+description: Use when orchestrating parallel subagents, file boundaries, agent memory, max-agent limits, or 3-strike recovery. Keywords: subagent, agent team, parallel, orchestration.
+---
+
 # Multi-Agent Protocol (Detailed)
 # Moved from CLAUDE.md Section 8
 

@@ -52,18 +52,19 @@
 - Tier 2 Paid: Claude Pro → architecture, complex reasoning, multi-file changes
 - Tier 3 Async: Jules (GitHub PRs), GitHub Actions (scheduled tasks)
 - Rule: ALWAYS try Tier 1 first. Escalate only when insufficient.
+- For the full model routing table, use the model-routing skill.
 
 ## Multi-Agent
 - Max 5 parallel agents
 - Explicit file boundaries (no overlapping edits)
 - Each agent gets 1 task scope
-- For full protocol: see .claude/rules/multi-agent.md
+- For full protocol: use the multi-agent skill
 
 ## Graphify
 - Before architecture questions: run graphify query "<question>" --budget 2000
 - Fallback: GRAPH_REPORT.md
 - After sprint: run graphify update . before commit
-- For full graphify rules: see .claude/rules/graphify.md
+- For full graphify rules: use the graphify skill
 
 ## Wiki System (Karpathy Method)
 - Ingest: python scripts/wiki-ingest.py <file>

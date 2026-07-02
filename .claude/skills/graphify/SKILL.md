@@ -1,3 +1,8 @@
+---
+name: graphify
+description: Use when running Graphify, knowledge-graph queries/updates, .graphifyignore, token guardrails, or GRAPH_REPORT.md. Keywords: graphify, graph, ingest, GRAPH_REPORT.
+---
+
 # Graphify Usage (Detailed)
 # Moved from CLAUDE.md Section 9
 
