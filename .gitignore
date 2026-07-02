@@ -47,3 +47,9 @@ graphify-out/manifest.json
 
 # Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 WindowsDeveloperConfig/
+
+# Auto-generated telemetry
+.ungasis/dashboard/jarvis-score.json
+.ungasis/dashboard/wiki-health.json
+.ungasis/tracking/trigger-log.jsonl
+knowledge/wiki/log.md
