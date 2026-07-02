@@ -39,13 +39,7 @@
 - Stop conditions: all tasks complete, 3 consecutive errors, or user says "stop"
 
 ## Token Efficiency (Summary)
-- 5 short sessions < 1 long session
-- Each agent gets ONLY the context it needs
-- Include exact file paths in prompts
-- Tool hierarchy: Glob (~50 tokens) → Grep (~100) → Read partial → Read full
-- Working context target: under 4,000 tokens
-- Compact at 60% context. Autocompact at 50%.
-- For full token rules: see .claude/rules/token-efficiency.md
+- For token rules, use the token-efficiency rule (.claude/rules/token-efficiency.md).
 
 ## Agent Routing
 - Tier 1 Free: Google AI Pro, Cerebras, Groq → drafts, research, fast iteration
@@ -55,16 +49,12 @@
 - For the full model routing table, use the model-routing skill.
 
 ## Multi-Agent
-- Max 5 parallel agents
-- Explicit file boundaries (no overlapping edits)
-- Each agent gets 1 task scope
-- For full protocol: use the multi-agent skill
+- Max 5 parallel agents; explicit file boundaries.
+- For full protocol, use the multi-agent skill.
 
 ## Graphify
-- Before architecture questions: run graphify query "<question>" --budget 2000
-- Fallback: GRAPH_REPORT.md
-- After sprint: run graphify update . before commit
-- For full graphify rules: use the graphify skill
+- Query: graphify query "<q>" --budget 2000; update before commit.
+- For full graphify rules, use the graphify skill.
 
 ## Wiki System (Karpathy Method)
 - Ingest: python scripts/wiki-ingest.py <file>
