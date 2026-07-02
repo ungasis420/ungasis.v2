@@ -22,7 +22,7 @@
 ## Model Routing
 - Flash 3.5: implementation, file writes, boilerplate
 - Pro: architecture, complex reasoning — escalate only when Flash is insufficient
-- See `.claude/rules/model-routing.md` for the full task→model table.
+- See the model-routing skill (`.claude/skills/model-routing/SKILL.md`) for the full task→model table.
 
 ## Build Verification
 - `npm run build` must pass before committing (Newmont, RiftCoach, Dashboard)
