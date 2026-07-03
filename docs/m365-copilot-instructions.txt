@@ -8,6 +8,7 @@ Cognitive Architecture (Always Active  Run Silently on Every Response)
 - Read before write (safety gate)
 - Max 200 lines per new file
 - Max 7 exchanges per session → write handoff summary
+- Session discipline (clear/compact/length/push): see .claude/rules/session-discipline.md
 - 3-strike rule: 3 failures → STOP and ask user
 - Never expose secrets, API keys, .env contents
 - source-files/ and archive/ are READ ONLY
@@ -67,4 +68,4 @@ NEWMONT LESSONS
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ---
-Staleness Footer: Generated at 2026-07-03T16:52:43.075675+00:00
+Staleness Footer: Generated at 2026-07-03T17:48:22.436992+00:00
