@@ -40,13 +40,7 @@ Tools (Simplified Stack  v1.0)
 - For the full model routing table, use the model-routing skill.
 
 UNGASIS Token Tracking
-- 5 short sessions < 1 long session
-- Each agent gets ONLY the context it needs
-- Include exact file paths in prompts
-- Tool hierarchy: Glob (~50 tokens) → Grep (~100) → Read partial → Read full
-- Working context target: under 4,000 tokens
-- Compact at 60% context. Autocompact at 50%.
-- For full token rules: see .claude/rules/token-efficiency.md
+- For token rules, use the token-efficiency rule (.claude/rules/token-efficiency.md).
 
 UNGASIS LESSONS (this sprint)
 - Newmont sidebar is in AppShell.tsx, NOT Sidebar.tsx (dead code)
@@ -57,16 +51,12 @@ UNGASIS LESSONS (this sprint)
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 Expertise
-- Max 5 parallel agents
-- Explicit file boundaries (no overlapping edits)
-- Each agent gets 1 task scope
-- For full protocol: use the multi-agent skill
+- Max 5 parallel agents; explicit file boundaries.
+- For full protocol, use the multi-agent skill.
 
 ORCHESTRATOR  Enhanced
-- Before architecture questions: run graphify query "<question>" --budget 2000
-- Fallback: GRAPH_REPORT.md
-- After sprint: run graphify update . before commit
-- For full graphify rules: use the graphify skill
+- Query: graphify query "<q>" --budget 2000; update before commit.
+- For full graphify rules, use the graphify skill.
 
 NEWMONT LESSONS
 - Newmont sidebar is in AppShell.tsx, NOT Sidebar.tsx (dead code)
@@ -77,4 +67,4 @@ NEWMONT LESSONS
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ---
-Staleness Footer: Generated at 2026-07-02T21:38:56.224126+00:00
+Staleness Footer: Generated at 2026-07-02T23:59:23.134866+00:00
