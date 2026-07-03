@@ -25,6 +25,7 @@
 - Read before write (safety gate)
 - Max 200 lines per new file
 - Max 7 exchanges per session → write handoff summary
+- Session discipline (clear/compact/length/push): see .claude/rules/session-discipline.md
 - 3-strike rule: 3 failures → STOP and ask user
 - Never expose secrets, API keys, .env contents
 - source-files/ and archive/ are READ ONLY

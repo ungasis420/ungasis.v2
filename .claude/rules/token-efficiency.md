@@ -28,7 +28,7 @@
 ## Session Launch Protocol
 - ALWAYS: /effort low (default for ALL tasks)
 - ONLY use /effort high for: architecture decisions, complex multi-file refactors
-- Max turns: 7 (not 15) — forces Claude to be focused
+- Turn budget: 1 turn = ideal (complete all work in one response); 7 turns/exchanges = hard ceiling. See .claude/rules/session-discipline.md.
 - NEVER read third-party source code (site-packages/, node_modules/)
 - If a tool CLI fails, use --help only (max 3 discovery commands)
 - If still stuck after 3 attempts → STOP and ask user
