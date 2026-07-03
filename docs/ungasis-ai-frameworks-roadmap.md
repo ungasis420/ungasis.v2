@@ -80,7 +80,7 @@ These are the sr dev/engineer hacks already in UNGASIS's 12-Layer Mana System:
 | L9 | CONTROL | Incremental disclosure — batch 5-8 files at a time | Wolf |
 | L10 | MAINTAIN | Cache awareness — keep system prompt stable across turns | Amodei |
 | L11 | MAINTAIN | Session checkpointing — write progress after EACH task | Cherny |
-| L12 | MAINTAIN | Compact at 60% context. Autocompact at 50%. | Karpathy |
+| L12 | MAINTAIN | Session discipline — /compact only to continue same task; no blind auto-compact (see .claude/rules/session-discipline.md) | Karpathy |
 
 ### Additional Token Hacks (Beyond 12-Layer)
 
