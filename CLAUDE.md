@@ -19,7 +19,7 @@
 - Wiki: knowledge/wiki/
 - Raw sources: raw/
 - Scripts: scripts/ (25 scripts)
-- Agent skills: .agents/skills/ (13 skills)
+- Skills: .claude/skills/ = active Claude Code project skills; .agents/skills/ = legacy/orphaned; official plugins may add extra user-level skills
 
 ## Core Rules
 - Read before write (safety gate)
