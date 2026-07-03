@@ -1,35 +1,35 @@
-# PreCompact Preservation — UNGASIS OS
+# PreCompact Preservation — UNGASIS OS v6.3
 
 CRITICAL: The following MUST survive compaction verbatim.
 
-## Project Identity
-- Project: UNGASIS OS v5.1 "AUTONOMY" — personal AI operating system
-- Owner: Mel John Dimat, Filipino reporting consultant, Manila
-- Repo: D:\.projects\ungasis (Dev Drive, ReFS)
+## Mission / Track
+- UNGASIS OS v6.3 — personal AI operating system
+- C-track: CLOSED
+- D-track: ACTIVE
 
-## Current Sprint / Mission
-- Check QA-MISSION.md and CONTEXT.md for the active mission before resuming work
-- Re-read CLAUDE.md Section 19 (Context Management) after compaction
+## Repo
+- Path: D:\.projects\ungasis (Dev Drive, ReFS)
+- Branch: main
+- Last verified checkpoint before D1-B: 2b2de78
 
-## File Conventions
-- Max 200 lines per new file
-- Staleness footers on all .md files
-- source-files/ and archive/ are READ ONLY
-- Status markers: ✅ / 🟡 / 🔴 / ⚠️
-- File references by filename only, not full path
+## Working State
+- Working state: run git status --short before resuming
 
-## Stack
-- Python project (pyproject.toml); scripts in scripts/, specs in specs/
-- No Node frontend in this repo
+## Decisions
+- Canonical scripts count = 64
+- Compact policy: no blind auto-compact bot
+- Reuse existing token/session assets first
 
-## Git Conventions
-- Commit format: `type: description` (feat, fix, chore, docs)
-- Never push without explicit instruction
-- Branch noted in CLAUDE.md header
+## Blockers
+- None
 
-## Key Constraints
-- Never expose secrets, API keys, .env contents
-- 3-strike rule: stop after 3 failed attempts
-- Tier 1 free models first; escalate to Tier 2 (Claude) only when needed
+## Next Safest Action
+- Continue D-track work; verify state before any write
 
-<!-- Staleness: 2026-06-11 | Owner: Mel John Dimat | Review: September 2026 -->
+## Hard Safety Rules
+- No push unless explicitly allowed
+- No build unless explicitly allowed
+- No MCP changes unless explicitly allowed
+- No Graphify / wiki-ingest / PBIX unless explicitly allowed
+
+<!-- Staleness: 2026-07-03 | Owner: Mel John Dimat | Review: September 2026 -->
