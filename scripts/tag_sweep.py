@@ -2,9 +2,10 @@
 import os
 import re
 from datetime import datetime
+from pathlib import Path
 
 # Paths to scan
-WORKSPACE = "c:\\Users\\63905\\Downloads\\ungasis"
+WORKSPACE = str(Path(__file__).resolve().parent.parent)
 QUEUE_PATH = os.path.join(WORKSPACE, ".ungasis", "orchestrator", "queue.md")
 TAG_LOG_PATH = os.path.join(WORKSPACE, ".agents", "skills", "auto-tagger", "tag-log.md")
 
