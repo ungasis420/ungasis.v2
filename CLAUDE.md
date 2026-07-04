@@ -94,3 +94,17 @@ Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
   hook does not self-gate its own validation.
 - PreToolUse deny reasons surface to the model as <error> tags, which trains
   Claude to avoid the pattern within-session (bonus behavior).
+
+## Skinny Prompt Template v2.3 (2026-07-06)
+
+- What changed vs v2.2: 4 rules added — success condition WAIVED when the
+  escape hatch fires (BLOCKED is a valid terminal state, not a failure);
+  own-probe mutations are documented as evidence, not self-reverted; the
+  3-strike rule now elevates to save-memory-and-STOP on a 3rd identical
+  rejection; and a W1d self-revert warning (never expect Claude to
+  self-revert its own mutations via git checkout/restore).
+- Why: v2.2 had a contradiction between its escape hatch and its success
+  condition that caused a STALE_HOOK loop on 2026-07-06.
+- When to use: all new `/goal` prompts, replacing v2.2.
+- Template: docs/prompts/skinny-template-v2.3.md
+- Reference: knowledge/wiki/decisions/skinny-template-v2.3.md
