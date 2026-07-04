@@ -12,7 +12,7 @@ This roadmap tracks what's done, what's next, and what to skip.
 |---|--------|---------|-----------------|--------|
 | 1 | **Andrej Karpathy** | Wiki-based learning (Obsidian-style knowledge) | `knowledge/wiki/` — 56 pages, Karpathy method | ✅ LIVE |
 | 2 | **Andrej Karpathy** | Skinny prompts, 1 example > 3 paragraphs | `.claude/rules/token-efficiency.md` L3 | ✅ LIVE |
-| 3 | **Francois Chollet** | Simplest solution first (ARC-style thinking) | Anti-overbuilding rule, MVA protocol | ✅ LIVE |
+| 3 | **Francois Chollet** | Simplest solution first (ARC-style thinking) | token-efficiency.md Anti-Waste (L22–26) | ✅ LIVE |
 | 4 | **Gary Marcus** | Verification layer, skeptical critique | `verifier.py`, quality-auditor agent, pre/post-flight | ✅ LIVE |
 | 5 | **Thomas Wolf** | Open-source first, community models | Tier 1 free-first routing, 7 API providers | ✅ LIVE |
 | 6 | **Dario Amodei** | Safety limits, constitutional constraints | 3-strike rule, read-only archives, secrets gate | ✅ LIVE |
