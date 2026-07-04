@@ -34,6 +34,14 @@
 - Staleness footers on all .md files
 - Git: type: description (feat/fix/docs/perf/chore)
 
+### Brain-First (check own docs before web/search)
+Before web search, spawning subagents, or reading new files, check IN ORDER:
+1. docs/handoffs/ — recent decisions and next steps
+2. .ungasis/context/hot-context.md — current session state
+3. knowledge/wiki/hot.md — hot cache (Karpathy method)
+4. python scripts/wiki-query.py "<topic>" — full wiki search
+Only escalate to web/subagents if brain returns nothing useful.
+
 ## Autonomous Execution
 - Do NOT stop between tasks. Keep going until MISSION COMPLETE.
 - Only pause for: missing info, security concern, 3-strike limit
