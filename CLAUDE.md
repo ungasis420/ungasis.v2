@@ -78,3 +78,19 @@ Only escalate to web/subagents if brain returns nothing useful.
 - Graphify community labels are generic "Community N" — cosmetic only
 
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
+
+## Hook Discipline (v2.3, added 2026-07-05)
+
+- Always use skinny-prompt-template-v2.md v2.2 discipline for /goal prompts.
+- Audit before add: check existing hook layer with /hooks before installing any new hook.
+- Allowlist hooks = speedup only. Real safety needs PreToolUse deny or permissions.deny.
+- Wrap all PowerShell hook logic in try/catch and emit deny on error (fail-closed).
+- Never hardcode user paths; always discover via $env:USERPROFILE.
+- On Windows Claude Code + Git Bash: PowerShell hook bodies MUST be wrapped as
+  powershell -NoProfile -NonInteractive -EncodedCommand <base64>. Raw -Command
+  triggers bash parse errors because Bash-tool hooks execute via /usr/bin/bash.
+- Synthetic pipe tests are not enough. Always validate hooks via real bash -c
+  invocation, using a non-matcher tool (PowerShell tool) to drive tests so the
+  hook does not self-gate its own validation.
+- PreToolUse deny reasons surface to the model as <error> tags, which trains
+  Claude to avoid the pattern within-session (bonus behavior).
