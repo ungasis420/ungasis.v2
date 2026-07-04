@@ -75,12 +75,24 @@ def cmd_health(args):
     print()
     run_script('quality-score.py')
     print()
+    # Token budget (nonzero exit at high usage is ignored by run_script)
+    run_script('token-budget.py')
+    print()
     graph_path = os.path.join(ROOT_DIR, 'graphify-out', 'graph.json')
     if os.path.exists(graph_path):
         size_mb = os.path.getsize(graph_path) / (1024 * 1024)
         print(f"  Knowledge graph: {size_mb:.1f} MB")
     else:
         print("  Knowledge graph: not found (run graphify first)")
+    # Branch sync vs last-known origin/main (local refs only, no network)
+    try:
+        res = subprocess.run(
+            ["git", "rev-list", "--left-right", "--count", "origin/main...HEAD"],
+            capture_output=True, text=True, check=True, cwd=ROOT_DIR)
+        behind, ahead = res.stdout.split()
+        print(f"  Branch sync (origin/main...HEAD): {behind} behind / {ahead} ahead")
+    except Exception:
+        print("  Branch sync: unknown")
     print("\n" + "=" * 50 + "\n  Health check complete.\n" + "=" * 50)
     return 0
 
