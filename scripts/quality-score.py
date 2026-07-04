@@ -22,12 +22,13 @@ def validate_quality_log(content):
         issues.append("quality-log.md missing table header row")
     return issues
 
-def score_file(filepath, quiet=False):
+def score_file(filepath, quiet=False, no_log=False):
     """Calculate the quality score of a markdown file.
 
     Args:
         filepath (str): Path to file to evaluate.
         quiet (bool): Suppress console print tables.
+        no_log (bool): Skip appending the score to quality-log.md.
     Returns:
         float: Overall weighted quality score.
     """
@@ -254,47 +255,48 @@ def score_file(filepath, quiet=False):
         print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
     
     # Append to log
-    log_content = ""
-    is_valid = True
-    if os.path.exists(QUALITY_LOG_PATH):
-        try:
-            with open(QUALITY_LOG_PATH, "r", encoding="utf-8", errors="ignore") as f:
-                log_content = f.read()
-            issues = validate_quality_log(log_content)
-            if issues and not quiet:
-                print(f"Warning: quality-log.md format issue(s) detected: {', '.join(issues)}")
-                is_valid = False
-        except Exception:
-            pass
+    if not no_log:
+        log_content = ""
+        is_valid = True
+        if os.path.exists(QUALITY_LOG_PATH):
+            try:
+                with open(QUALITY_LOG_PATH, "r", encoding="utf-8", errors="ignore") as f:
+                    log_content = f.read()
+                issues = validate_quality_log(log_content)
+                if issues and not quiet:
+                    print(f"Warning: quality-log.md format issue(s) detected: {', '.join(issues)}")
+                    is_valid = False
+            except Exception:
+                pass
 
-    if not os.path.exists(QUALITY_LOG_PATH) or not is_valid:
-        log_content = (
-            "# Quality Log\n\n"
-            "History database tracker to monitor quality scores, dimension ratings, and improvement trends.\n\n"
-            "## Quality History\n\n"
-            "| Date | File | Score | Dimensions (C/A/Cl/F/R) | Notes |\n"
-            "|---|---|---|---|---|\n"
-        )
-        
-    today_str = datetime.now().strftime("%Y-%m-%d")
-    dim_str = f"C:{c_score}/A:{a_score}/Cl:{cl_score}/F:{f_score}/R:{r_score}"
-    log_entry = f"| {today_str} | {rel_path} | {overall:.1f} | {dim_str} | Auto-scored |\n"
-    
-    footer_marker = "---"
-    if footer_marker in log_content:
-        parts = log_content.rsplit(footer_marker, 1)
-        new_content = parts[0] + log_entry + "\n" + footer_marker + parts[1]
-    else:
-        new_content = log_content + "\n" + log_entry
-        
-    try:
-        os.makedirs(os.path.dirname(QUALITY_LOG_PATH), exist_ok=True)
-        with open(QUALITY_LOG_PATH, "w", encoding="utf-8") as f:
-            f.write(new_content)
-    except Exception as e:
-        if not quiet:
-            print(f"Error logging quality score: {e}")
-        
+        if not os.path.exists(QUALITY_LOG_PATH) or not is_valid:
+            log_content = (
+                "# Quality Log\n\n"
+                "History database tracker to monitor quality scores, dimension ratings, and improvement trends.\n\n"
+                "## Quality History\n\n"
+                "| Date | File | Score | Dimensions (C/A/Cl/F/R) | Notes |\n"
+                "|---|---|---|---|---|\n"
+            )
+
+        today_str = datetime.now().strftime("%Y-%m-%d")
+        dim_str = f"C:{c_score}/A:{a_score}/Cl:{cl_score}/F:{f_score}/R:{r_score}"
+        log_entry = f"| {today_str} | {rel_path} | {overall:.1f} | {dim_str} | Auto-scored |\n"
+
+        footer_marker = "---"
+        if footer_marker in log_content:
+            parts = log_content.rsplit(footer_marker, 1)
+            new_content = parts[0] + log_entry + "\n" + footer_marker + parts[1]
+        else:
+            new_content = log_content + "\n" + log_entry
+
+        try:
+            os.makedirs(os.path.dirname(QUALITY_LOG_PATH), exist_ok=True)
+            with open(QUALITY_LOG_PATH, "w", encoding="utf-8") as f:
+                f.write(new_content)
+        except Exception as e:
+            if not quiet:
+                print(f"Error logging quality score: {e}")
+
     return overall
 
 def show_usage():
@@ -303,7 +305,7 @@ def show_usage():
     print("  python scripts/quality-score.py [path/to/file.md] [--batch | -b]")
     print("\nNo file specified. Evaluating 3 default UNGASIS files:")
 
-def run_batch_scoring():
+def run_batch_scoring(no_log=False):
     """Walk .ungasis/ and score every markdown file."""
     ungasis_dir = os.path.join(WORKSPACE, ".ungasis")
     md_files = []
@@ -329,7 +331,7 @@ def run_batch_scoring():
     print("-" * 60)
     
     for path in sorted(md_files):
-        score = score_file(path, quiet=True)
+        score = score_file(path, quiet=True, no_log=no_log)
         if score is None:
             continue
         scores.append(score)
@@ -364,11 +366,15 @@ def run_batch_scoring():
     print("=" * 60)
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        if sys.argv[1] in ["--batch", "-b"]:
-            run_batch_scoring()
+    cli_args = sys.argv[1:]
+    no_log_flag = "--no-log" in cli_args
+    cli_args = [a for a in cli_args if a != "--no-log"]
+
+    if cli_args:
+        if cli_args[0] in ["--batch", "-b"]:
+            run_batch_scoring(no_log=no_log_flag)
         else:
-            score_file(sys.argv[1])
+            score_file(cli_args[0], no_log=no_log_flag)
     else:
         show_usage()
         default_files = [
@@ -379,6 +385,6 @@ if __name__ == "__main__":
         for f in default_files:
             f_path = os.path.join(WORKSPACE, f)
             if os.path.exists(f_path):
-                score_file(f_path)
+                score_file(f_path, no_log=no_log_flag)
             else:
                 print(f"\nSkipped: {f} (Not found on disk)")

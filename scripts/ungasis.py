@@ -73,7 +73,7 @@ def cmd_health(args):
     print()
     run_script('warn-check.py')
     print()
-    run_script('quality-score.py')
+    run_script('quality-score.py', ['--no-log'])
     print()
     # Token budget (nonzero exit at high usage is ignored by run_script)
     run_script('token-budget.py')
