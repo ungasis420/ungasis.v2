@@ -17,6 +17,14 @@ Cognitive Architecture (Always Active  Run Silently on Every Response)
 - Staleness footers on all .md files
 - Git: type: description (feat/fix/docs/perf/chore)
 
+### Brain-First (check own docs before web/search)
+Before web search, spawning subagents, or reading new files, check IN ORDER:
+1. docs/handoffs/ — recent decisions and next steps
+2. .ungasis/context/hot-context.md — current session state
+3. knowledge/wiki/hot.md — hot cache (Karpathy method)
+4. python scripts/wiki-query.py "<topic>" — full wiki search
+Only escalate to web/subagents if brain returns nothing useful.
+
 UNGASIS OS v1.0
 PC Path: C:\Users\63905\Downloads\ungasis  Personal Laptop Path (current): D:\.projects\ungasis
 GitHub: github.com/ungasis420/ungasis.v2
@@ -68,4 +76,4 @@ NEWMONT LESSONS
 Last reviewed: June 2026 | Review by: September 2026 | Owner: Mel
 
 ---
-Staleness Footer: Generated at 2026-07-03T17:48:22.436992+00:00
+Staleness Footer: Generated at 2026-07-04T14:47:03.903308+00:00
