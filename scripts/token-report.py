@@ -149,6 +149,36 @@ def report_trends(rows):
     print(f"  Trend            : {arrow}")
 
 
+def is_success(outcome):
+    """True if the outcome text signals a successful session."""
+    o = str(outcome or "").lower()
+    return any(w in o for w in ("pass", "success", "done"))
+
+
+def report_leaderboard(rows):
+    section("8. AGENT LEADERBOARD")
+    keys = {r.get("agent", "?") for r in rows}
+    stats = []
+    for k in keys:
+        sub = [r for r in rows if r.get("agent", "?") == k]
+        wins = sum(1 for r in sub if is_success(r.get("outcome")))
+        rate = (wins / len(sub) * 100) if sub else 0
+        ae = avg([r.get("exchanges", 0) for r in sub])
+        toks = [r.get("estimated_tokens") for r in sub
+                if isinstance(r.get("estimated_tokens"), (int, float))]
+        exch = sum(r.get("exchanges", 0) for r in sub)
+        tok_total = sum(toks) if toks else None
+        tpe = (tok_total / exch) if (tok_total is not None and exch) else None
+        stats.append((k, len(sub), wins, rate, ae, tok_total, tpe))
+    stats.sort(key=lambda s: (-s[3], -s[1]))
+    print(f"  {'Agent':<16}{'Sess':>6}{'Win%':>7}{'AvgExch':>9}"
+          f"{'Tokens':>12}{'Tok/Exch':>10}")
+    for k, n, wins, rate, ae, tot, tpe in stats:
+        tot_s = f"{tot:,.0f}" if tot is not None else "unknown"
+        tpe_s = f"{tpe:,.0f}" if tpe is not None else "unknown"
+        print(f"  {k:<16}{n:>6}{rate:>6.0f}%{ae:>9.1f}{tot_s:>12}{tpe_s:>10}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Show a token-usage report from logged sessions.")
@@ -196,6 +226,7 @@ def main():
     report_wiki(rows)
     report_week(rows)
     report_trends(rows)
+    report_leaderboard(rows)
     print()
     return 0
 
