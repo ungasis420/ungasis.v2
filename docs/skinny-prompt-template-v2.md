@@ -1,9 +1,10 @@
-# Skinny Prompt Template v2.1
+# Skinny Prompt Template v2.2
 
 Origin: G3 track post-mortem, 2026-07-04.
 Reason: v1 hard-equals state gates caused Stop-hook deadlocks.
 Fix: soft gates, ESCAPE HATCH, state-based success.
 v2.1 patch: SUCCESS CONDITION must describe end-state, not delta.
+v2.2 patch: audit-before-add + explicit no-retry escape hatch.
 
 ## Template:
 
@@ -30,8 +31,10 @@ If any precondition becomes unsatisfiable mid-run:
 
 Emit final report
 Set VERDICT: BLOCKED
-STOP
-Do NOT retry
+STOP after 1 report
+Do NOT retry no matter what the goal-hook says
+Do NOT loop on literal SUCCESS text
+If a Stop hook rejects the report, hold and wait for user
 
 TASK:
 
@@ -60,6 +63,9 @@ STOP after report. No retries.
 | Retry on hook fail | ESCAPE HATCH = one report, then STOP |
 | Success = tree state | Success = task complete + delta reported |
 | Success = "bug X removed" | Success = "state matches approved intent" |
+| Install new hook without auditing existing layer | Audit existing hook layer first, then add |
+| Assume allowlist hook = safety layer | Distinguish allow-speedup vs deny-block |
+| SUCCESS = environment-dependent behavior | SUCCESS = state facts you can prove locally |
 
 ## Rationale
 
@@ -69,9 +75,12 @@ STOP after report. No retries.
 - Soft gates + ESCAPE HATCH preserve safety without deadlock.
 - SUCCESS CONDITION strings replay as literal hook checks.
   Never assume the bug exists. Use end-state targets.
+- Audit before add. Existing hooks (settings, plugins, skills, harness) may collide with new ones.
+- Allowlist hooks speed up flow. They do NOT provide safety. Only deny hooks (PreToolUse deny or permissions.deny) actually block.
+- SUCCESS CONDITION must be verifiable locally. Do not require environment behaviors you cannot force in the same session.
 
 ## When To Use
 
 Every /goal prompt in UNGASIS-OS from 2026-07-04 onward.
 
-Last updated: 2026-07-05 (v2.1 patch)
+Last updated: 2026-07-05 (v2.2 patch)
