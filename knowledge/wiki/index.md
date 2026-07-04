@@ -12,6 +12,7 @@ Last updated: 2026-06-13T15:55:15+00:00
 - decisions/indexeddb-over-supabase.md — tags:
 - decisions/nextjs-over-astro.md — tags:
 - decisions/tailwind-over-css-modules.md — tags:
+- decisions/skinny-template-v2.3.md — tags:
 
 ## Patterns
 - patterns/another-ai-goldrush-just-started-and-nobody-even-r.md — tags: agency, businesses, local, owners, system
@@ -52,6 +53,7 @@ Last updated: 2026-06-13T15:55:15+00:00
 - gotchas/newmont-sidebar-dead-code.md — tags: newmont, sidebar, appshell, dead-code, react
 - gotchas/newmont-two-slacalculator-files.md — tags: newmont, slacalculator, sla, duplicate, ambiguity
 - gotchas/slideglow-perf.md — tags:
+- gotchas/w1d-blocks-safe-reverts.md — tags:
 
 ## Metrics
 - metrics/metric-token-savings-baseline.md — tags: session, tokens, baseline, context, estimated
