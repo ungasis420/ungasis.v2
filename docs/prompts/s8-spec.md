@@ -42,4 +42,46 @@ Log every fallback to sessions.jsonl.
 T0 answers MUST cite wiki path. Hit rate ≥90%.
 Faithfulness ≥0.85 on 20-Q. No uncited claims.
 
-(§9-15 appended in S8-P10b commit)
+## 9. Phone (S8-P15 opt)
+Termux+SSH OR Tailscale+webhook. Same "ungasis chat" cmd.
+Latency ≤5s T0-1.
+
+## 10. Voice (S8-P16 opt)
+Browser Web Speech (Whisper STT + Piper TTS). Text first.
+
+## 11. Success (measurable)
+S8-1 Claude usage ≤20% chats
+S8-2 T0-2 handles ≥80% Q
+S8-3 RAG faithfulness ≥0.85
+S8-4 3+ outages survived via fallback
+S8-5 ≥90% cite wiki source
+S8-6 monthly API ≤$5
+S8-7 phone-usable
+S8-8 latency <3s T0-1
+
+## 12. Compound loop (Stage 4 tie)
+Useful answers→outputs/. Weekly re-ingest→wiki via v3.
+Smarter per usage (Karpathy).
+
+## 13. Warnings
+- Subs ≠ API budget (R15 gate)
+- Free tier limits change quarterly (auto-fallback required)
+- Client data (Newmont/KF) NEVER free tier (R19)
+- Internet down = JARVIS down
+  Emergency: grep -r knowledge/wiki/ (T-1)
+
+## 14. Out of scope
+Local LLM (rejected). Fine-tune. Multi-user auth. Web UI.
+
+## 15. Build sequence
+S8-P10 spec DONE (this)
+S8-P11 router.py       2h
+S8-P12 rag.py          1.5h
+S8-P12b index.py       1h
+S8-P13 chat.py         1.5h
+S8-P14 tracker.py      1h
+S8-P14b RAGAS 20-Q     30m
+S8-P15 phone           1h
+S8-P16 voice (OPT)     2h
+Total text-JARVIS ~8.5h | +voice+phone ~11.5h
+Marginal cost $0-5/mo
