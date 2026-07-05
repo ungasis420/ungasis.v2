@@ -54,7 +54,7 @@ v6.3 JARVIS Score + Commands Page (June 14, 2026)
 
 ## System Stats
 - Scripts: 57 (51 Python + 6 PowerShell)
-- Wiki: 59 pages, 98% health
+- Wiki: 55 pages, 98% health
 - Dashboard: LIVE at dashboard/dist/index.html (381.7 KB)
 - Graph: 20,929 nodes, 24,207 edges, 4,580 communities
 - JARVIS Score: 98%

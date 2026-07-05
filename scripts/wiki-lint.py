@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WIKI = ROOT / "knowledge" / "wiki"
 DASHBOARD_OUT = ROOT / ".ungasis" / "dashboard" / "wiki-health.json"
-SUBFOLDERS = ("gotchas", "decisions", "metrics", "patterns", "uncategorized")
+INFRA = {"index.md", "log.md", "README.md", "hot.md"}
 STALE_DAYS = 30
 MIN_CHARS = 50
 
@@ -57,12 +57,7 @@ def days_old(created):
 
 
 def collect_pages():
-    pages = []
-    for sub in SUBFOLDERS:
-        folder = WIKI / sub
-        if folder.exists():
-            pages.extend(sorted(folder.glob("*.md")))
-    return pages
+    return sorted(p for p in WIKI.rglob("*.md") if p.name not in INFRA)
 
 
 def indexed_paths():
