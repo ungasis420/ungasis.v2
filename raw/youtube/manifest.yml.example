@@ -1,0 +1,24 @@
+# manifest.yml.example — schema reference for youtube-ingest-v3 (R14)
+# Copy pattern below per entry; real manifest lives at raw/youtube/manifest.yml
+entries:
+- source: "https://youtu.be/example123"
+  file: raw/youtube/example-transcript.txt
+  sha256: "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcd"
+  kind: transcript
+  ingest: done
+  chunk_ids:
+    - w-0001
+    - w-0002
+  ingested_at: "2026-07-06T12:00:00Z"
+  usage_scope: personal-use-only
+  license_note: "YouTube ToS: no redistribution"
+
+- source: "local-note"
+  file: raw/youtube/another-transcript.txt
+  sha256: "fedcba9876543210fedcba9876543210fedcba9876543210fedcba98765432"
+  kind: transcript
+  ingest: pending
+  chunk_ids: []
+  ingested_at: null
+  usage_scope: personal-use-only
+  license_note: "YouTube ToS: no redistribution"
