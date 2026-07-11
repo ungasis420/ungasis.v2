@@ -66,8 +66,9 @@ def main():
     # script_count
     script_count = len(list(Path("scripts").glob("*.py"))) + len(list(Path("scripts").glob("*.ps1")))
 
-    # wiki_count
-    wiki_count = len(list(Path("knowledge/wiki").rglob("*.md")))
+    # wiki_count (canonical: excludes infra pages, mirrors scripts/wiki-lint.py INFRA set)
+    WIKI_INFRA = {"index.md", "log.md", "README.md", "hot.md"}
+    wiki_count = len([p for p in Path("knowledge/wiki").rglob("*.md") if p.name not in WIKI_INFRA])
 
     # dashboard_status
     if Path("dashboard/dist/index.html").exists():
