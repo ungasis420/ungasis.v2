@@ -9,6 +9,94 @@ pages feeding JARVIS RAG (Stage 8) + self-learning (Stages 2-4).
 - raw/youtube/manifest.yml (schema §4)
 - Flags: --dry-run, --transcript <path>, --resume, --init
 
+### 2a. --resume contract
+
+PURPOSE
+--resume continues work already recorded in manifest.yml as unfinished.
+Unlike default mode (§2), it never discovers or adds new transcripts —
+it only acts on entries the manifest already lists.
+
+SELECTION
+- Requires an existing, valid manifest.yml (§8 "No manifest → refuse,
+  hint --init" applies identically).
+- Eligible entries: ingest: pending or ingest: error only.
+- Ignored entries: ingest: done or ingest: skipped.
+- Files not already listed in manifest.yml are ignored (never discovered
+  or added).
+- Manifest entry order is preserved when processing eligible entries.
+
+PREFLIGHT — before any write
+For every eligible entry, before any ingest attempt:
+1. Resolve the entry's file path.
+2. Require it is contained inside raw/youtube/ (same containment rule as
+   the --transcript path validation).
+3. Require it exists as a regular .txt file.
+4. Reject watch-list.txt (§2 exclude rule).
+5. Reject duplicate file entries in the manifest (manifest-level check,
+   evaluated once across the whole manifest, not per entry).
+6. Compute the current SHA-256 of the file.
+
+HASH RULE — per eligible entry
+- Stored sha256 is null/empty: compute it now; planning proceeds.
+- Stored sha256 equals current: planning proceeds.
+- Stored sha256 differs from current: mark the entry REFUSE, reason
+  sha_mismatch (identical semantics to §8 "SHA mismatch → refuse + log")
+  — do not ingest it, do not change that entry's manifest state.
+
+BATCH SAFETY — all-or-nothing preflight
+- Preflight runs for ALL eligible entries before any entry is ingested.
+- If ANY eligible entry fails preflight (invalid path, missing file,
+  malformed state, or SHA refusal):
+  - Write the required refusal/failure JSONL record(s) for the failing
+    entry/entries (§3a schema).
+  - Zero wiki-page writes across the whole --resume invocation.
+  - Zero manifest promotion across the whole --resume invocation.
+  - Return the validation exit code (§2b).
+- --resume --dry-run: zero writes of every kind, including JSONL/wiki
+  logs — stricter than the general §5 "--dry-run: plan only, 0 writes"
+  wherever normal-mode behavior currently logs refusals under dry-run
+  (see §2b CONTRADICTIONS note recorded in docs/prompts/p3-v3-review.md;
+  implementation must not log anything under --resume --dry-run).
+
+STATE RESULTS — only reached if the whole batch passes preflight
+- Entry ingest succeeds (all its pages write): pending/error → done.
+- Entry's file is valid but too short (<200 chars, §8 Empty): pending/error
+  → skipped.
+- Entry hits a runtime failure during ingest (write error, encoding
+  error): pending/error → error.
+- An entry is never marked done until every page for that entry has
+  succeeded (same rule as default-mode execution).
+- If preflight blocks the whole batch, every entry's existing state is
+  preserved unchanged — no partial promotion.
+
+NO ELIGIBLE WORK
+- If no entry has ingest: pending or ingest: error, --resume exits
+  success with zero writes and prints exactly: NOTHING TO RESUME.
+
+### 2b. --resume CLI combinations and exit codes
+
+VALID:
+- --resume
+- --resume --dry-run
+
+INVALID (validation error, exit code 2):
+- --resume --init
+- --resume --transcript <path>
+- --resume --init --dry-run
+- --resume --transcript <path> --dry-run
+
+NORMAL MODE
+- Behavior is unchanged when --resume is absent (default discovery mode,
+  §2/§5, remains exactly as specified elsewhere in this document).
+
+EXIT CODES — apply to both normal and --resume mode
+- 0: success, including "nothing to resume"
+- 1: runtime/write failure
+- 2: validation failure (bad manifest, bad path, SHA refusal, invalid
+  flag combination)
+- 3: reserved only for genuinely undefined future behavior; no path
+  currently specified in this document returns 3
+
 ## 3. Outputs
 - knowledge/wiki/youtube/<slug>.md (1 per chunk)
 - raw/youtube/manifest.yml (updated)
